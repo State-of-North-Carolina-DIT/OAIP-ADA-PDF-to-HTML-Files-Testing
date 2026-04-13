@@ -1,3 +1,107 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71e5ec10f0e35d8915b552a267ee3bc411f6307c42119fa81906d21d9ec37cbe
-size 5403
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADA Conversion Comparison Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+</head>
+<body>
+<div id="app">
+  <!-- Top Bar -->
+  <header id="topbar">
+    <div class="topbar-brand">
+      <img src="ncdit-white-logo.png" alt="NC DIT Logo" class="topbar-logo">
+      <h1>ADA Conversion Comparison</h1>
+    </div>
+    <div class="topbar-actions">
+      <span id="repoInfo" aria-live="polite"></span>
+    </div>
+  </header>
+
+  <!-- Welcome / Loading Screen -->
+  <div id="welcome">
+    <img src="ncdit-white-logo.png" alt="NC DIT Logo" class="welcome-logo">
+    <div class="welcome-title">ADA Conversion Comparison Tool</div>
+    <div class="welcome-sub">Loading documents from GitHub...</div>
+    <div class="spinner" style="margin-top:12px"></div>
+  </div>
+
+  <!-- Workspace (hidden until folder opened) -->
+  <div id="workspace">
+    <!-- Sidebar -->
+    <aside id="sidebar" aria-label="Document folders">
+      <div class="sidebar-header">
+        <div class="sidebar-top-row">
+          <span class="sidebar-label">Documents</span>
+          <span class="sidebar-count" id="sidebarCount">0</span>
+        </div>
+        <input type="search" id="sidebarSearch" placeholder="Filter folders..." aria-label="Filter folders">
+      </div>
+      <div id="sidebarList" role="listbox" aria-label="Document list"></div>
+    </aside>
+
+    <div class="rh-v" id="sidebarHandle"></div>
+
+    <!-- Content -->
+    <main id="content">
+      <div class="conv-cols">
+        <!-- Old HTML + Old Audit Column -->
+        <div class="conv-col" id="oldHtmlCol">
+          <div class="conv-col-hdr"><span class="col-badge old">OLD</span><span class="col-label">old-converted.html</span><button class="html-toggle" id="oldHtmlToggle" title="Toggle raw HTML">&lt;/&gt;</button></div>
+          <div class="conv-col-body" id="oldHtmlBody"><div class="no-file">Select a document</div></div>
+          <div class="rh-h" id="oldAuditHandle"></div>
+          <div class="audit-panel" id="oldAuditPanel"></div>
+        </div>
+        <div class="rh-v col-handle" data-left="oldHtmlCol" data-right="newHtmlCol"></div>
+        <!-- New HTML + New Audit Column -->
+        <div class="conv-col" id="newHtmlCol">
+          <div class="conv-col-hdr">
+            <span class="col-badge new">NEW</span><span class="col-label">converted.html</span>
+            <button class="html-toggle" id="newHtmlToggle" title="Toggle raw HTML">&lt;/&gt;</button>
+          </div>
+          <div class="conv-col-body" id="newHtmlBody"><div class="no-file">Select a document</div></div>
+          <div class="rh-h" id="newAuditHandle"></div>
+          <div class="audit-panel-wrap">
+            <div class="provider-tabs" id="providerTabs" role="tablist" aria-label="Audit provider">
+              <button class="ptab active" data-provider="claude" role="tab" aria-selected="true"><img class="ptab-icon" src="https://cdn.simpleicons.org/anthropic/d4a27c" alt="Claude">Claude</button>
+              <button class="ptab" data-provider="gpt" role="tab" aria-selected="false"><img class="ptab-icon" src="https://cdn.simpleicons.org/openai/74aa9c" alt="GPT">GPT</button>
+              <button class="ptab" data-provider="gemini" role="tab" aria-selected="false"><img class="ptab-icon" src="https://cdn.simpleicons.org/googlegemini/8b9cf7" alt="Gemini">Gemini</button>
+            </div>
+            <div class="audit-panel" id="newAuditPanel"></div>
+          </div>
+        </div>
+        <div class="rh-v col-handle" data-left="newHtmlCol" data-right="pdfCol"></div>
+        <!-- PDF Column -->
+        <div class="conv-col" id="pdfCol">
+          <div class="conv-col-hdr"><span class="col-badge pdf">PDF</span><span class="col-label">source.pdf</span></div>
+          <div class="pdf-controls" id="pdfControls">
+            <button class="pdf-prev" title="Previous page" aria-label="Previous page">&#8592;</button>
+            <span class="pg-info" id="pdfPageInfo">-</span>
+            <button class="pdf-next" title="Next page" aria-label="Next page">&#8594;</button>
+            <button class="pdf-zm-out" title="Zoom out" aria-label="Zoom out">&minus;</button>
+            <button class="pdf-zm-in" title="Zoom in" aria-label="Zoom in">+</button>
+            <button class="pdf-fit" title="Fit width" aria-label="Fit to width">Fit</button>
+            <span class="zm-info" id="pdfZoomInfo">100%</span>
+          </div>
+          <div class="conv-col-body pdf-body" id="pdfBody"><div class="no-file">Select a document</div></div>
+        </div>
+      </div>
+
+      <!-- Loading overlay -->
+      <div class="loading-overlay" id="contentLoading">
+        <div class="spinner"></div>
+        <p>Loading files...</p>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
