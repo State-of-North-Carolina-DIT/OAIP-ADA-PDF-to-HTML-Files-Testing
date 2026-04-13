@@ -1,0 +1,142 @@
+{
+  "document_id": "CCR_Dam_Rules_09042018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The title slide layout is not preserved. The PDF has a centered layout with the title, author info, and date positioned between two panoramic images. The HTML renders these elements left-aligned in a single-column flow with images and text separated.",
+      "severity": "major",
+      "evidence": "PDF: Title is centered in italic blue between two landscape photos with NC logo to the left. HTML: Content is left-aligned, images are smaller and stacked, title text appears below images rather than between them.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Images on the title page are significantly smaller in the HTML compared to the PDF, where they span the full width of the slide.",
+      "severity": "minor",
+      "evidence": "PDF: Two full-width panoramic images spanning the entire slide. HTML: Same images present but rendered at reduced width.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title text on page 1 loses its italic styling in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: '15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals' is in italic blue. HTML: Same text appears in bold non-italic dark font.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 layout changes from a side-by-side arrangement (bullet list on left, image on right) to a stacked arrangement in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Bullet points on left side, construction/coal image on right side. HTML: Bullets listed first, image below.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title 'DEMLR Dam Safety Rulemaking' loses its italic blue styling in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Title in italic blue. HTML: Title in bold dark font.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 3 title 'Dam Safety CCR Rulemaking Purpose' loses its italic blue styling.",
+      "severity": "minor",
+      "evidence": "PDF: Italic blue title. HTML: Bold dark font title.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 4 title 'Dam Safety CCR Rulemaking Methodology' loses its italic blue styling.",
+      "severity": "minor",
+      "evidence": "PDF: Italic blue title. HTML: Bold dark font title.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "On page 5, the bold/underline emphasis on 'equal to or more restrictive' and 'more restrictive' is partially preserved but the underline formatting appears different.",
+      "severity": "minor",
+      "evidence": "PDF: Bold underlined text. HTML: Bold text present but underline styling may differ.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Page 7 regulatory impact analysis is rendered as a table in HTML but presented as aligned text pairs in the PDF. The data is preserved correctly.",
+      "severity": "minor",
+      "evidence": "PDF: Label-value pairs in aligned columns. HTML: Formal table with headers, rows, and borders.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Page 8 contact information is rendered as a formatted table in HTML but was aligned text in the PDF. Data is preserved.",
+      "severity": "minor",
+      "evidence": "PDF: Names, emails, and phone numbers in aligned columns. HTML: Formal table with Name/Email/Phone headers.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Regulatory Impact Analysis on page 7 of the PDF is presented as a simple label-value list, not a table. The HTML converts this into a formal table with headers 'Category' and 'Impact' that do not exist in the source PDF.",
+      "severity": "major",
+      "evidence": "PDF page 7 shows a simple two-column layout without table borders or headers. HTML adds <thead> with <th>Category</th> and <th>Impact</th> which are fabricated column headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The table header labels 'Category' and 'Impact' on the Regulatory Impact Analysis table are fabricated - they do not appear in the source PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 7 lists items like 'State Government: Minimal Costs' without any column headers. HTML adds 'Category' and 'Impact' as <th> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The hyperlinks in the HTML on page 8 are rendered as plain text rather than clickable links. The PDF contained clickable hyperlinks for the URLs and email addresses.",
+      "severity": "minor",
+      "evidence": "PDF page 8 has clickable links for 'https://deq.nc.gov/documents/15a-ncac-02k-0224...' and email addresses. The HTML renders these as plain text without <a> tags (though the contact table does not use anchor tags either).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Page 6 uses both h2 and h3, where the h3 '15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals' is actually the section subtitle/rule title that appears as bold text in the PDF, not a sub-heading under the main heading. This is a minor structural interpretation issue.",
+      "severity": "minor",
+      "evidence": "PDF page 6 shows '15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals' as bold body text, not a sub-heading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has two nested <main> elements, which is a structural duplication of the main container, though content itself is not duplicated.",
+      "severity": "minor",
+      "evidence": "HTML source shows <main> containing another <main> element.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 13,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 49.54,
+    "page_count": 8,
+    "visual_input_tokens": 18108,
+    "visual_output_tokens": 1429,
+    "content_input_tokens": 17195,
+    "content_output_tokens": 842,
+    "timestamp": "2026-04-11T06:03:13.580112",
+    "auditor_version": "1.0.0"
+  }
+}

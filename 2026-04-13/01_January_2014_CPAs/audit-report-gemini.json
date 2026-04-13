@@ -1,0 +1,21 @@
+{
+  "document_id": "01_January_2014_CPAs",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 14.9,
+    "page_count": 1,
+    "visual_input_tokens": 2890,
+    "visual_output_tokens": 125,
+    "content_input_tokens": 4812,
+    "content_output_tokens": 141,
+    "timestamp": "2026-04-11T05:54:36.444978",
+    "auditor_version": "1.0.0"
+  }
+}

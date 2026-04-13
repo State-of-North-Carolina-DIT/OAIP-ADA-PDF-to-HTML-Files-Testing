@@ -1,0 +1,70 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Center alignment of title text is lost.",
+      "severity": "minor",
+      "evidence": "The PDF centers all text on the title slide, whereas the HTML aligns all text to the left.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Large broken image placeholder or rendering artifact.",
+      "severity": "major",
+      "evidence": "A massive solid black rectangle appears in the HTML between the introductory text and the data table. This box does not exist in the source PDF.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Complex table headers are flattened and merged cells are split.",
+      "severity": "major",
+      "evidence": "In the PDF, header cells like 'Year 1' span multiple sub-columns (Events, Total Days). In the HTML, this hierarchy is flattened into a single row, concatenating the text into individual column names like 'Year 1 Events' and 'Year 1 Total Days Per Month'.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram is missing and replaced by text.",
+      "severity": "critical",
+      "evidence": "The PDF contains a visual flowchart diagram with boxes and connecting arrows ('Sound Ecological Environment'). The HTML completely fails to render this as an image, instead replacing the entire diagram with a nested, bulleted text list.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Layout of the flowchart diagram is lost.",
+      "severity": "major",
+      "evidence": "The horizontal branching layout of the flowchart in the PDF is completely lost, converted into a vertical bulleted list in the HTML.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content duplication on Page 8: The table 'Monthly Base Flow (cfs) Releases' is included both as an image and as a parsed HTML table.",
+      "severity": "minor",
+      "evidence": "In the HTML under section id='page-8', there is an image tag `<img src=\"[embedded-image-removed]\" alt=\"Table graphic showing Monthly Base Flow Releases\">` immediately followed by the actual parsed `<table>` containing the same data (Tier A, Tier B, etc.).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 202.82,
+    "page_count": 12,
+    "visual_input_tokens": 26412,
+    "visual_output_tokens": 954,
+    "content_input_tokens": 11420,
+    "content_output_tokens": 303,
+    "timestamp": "2026-04-11T05:55:42.481349",
+    "auditor_version": "1.0.0"
+  }
+}

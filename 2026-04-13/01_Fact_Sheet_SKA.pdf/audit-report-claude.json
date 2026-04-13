@@ -1,0 +1,78 @@
+{
+  "document_id": "01_Fact_Sheet_SKA.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The title block in the PDF is centered and appears in a larger/bolder font, while the HTML renders it as left-aligned smaller text without the same visual prominence.",
+      "severity": "minor",
+      "evidence": "PDF: 'FACT SHEET / DRAFT PERMIT RENEWAL / Safety-Kleen Archdale...' centered in larger font. HTML: Same text left-aligned in smaller, lighter styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings 'Background' and 'Public Comment & Public Hearing' are underlined in the PDF but rendered as larger bold headings without underline in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: underlined headings in body text size. HTML: larger bold headings without underline, styled as H2-level headings.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF header block is centered with facility info, while the HTML uses a left-aligned header block separated by a horizontal rule.",
+      "severity": "minor",
+      "evidence": "PDF page 2: centered header with facility name and address. HTML page 2: left-aligned header with horizontal divider line.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The mailing address block for Mr. Adam Ulishney is indented in the PDF but left-aligned (with less indentation) in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: address block indented significantly from left margin. HTML: address block with less indentation.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL in the PDF is presented as a hyperlink but is rendered as plain text in the HTML without an anchor tag.",
+      "severity": "minor",
+      "evidence": "PDF contains 'https://edocs.deq.nc.gov/WasteManagement/Welcome.aspx' as a clickable link. HTML renders it as plain text without an <a> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "No h1 heading is present in the HTML. The document title information appears only in a page-header div. The two section headings are rendered as h2 elements without a parent h1.",
+      "severity": "major",
+      "evidence": "The HTML has no <h1> element. The document header 'FACT SHEET / DRAFT PERMIT RENEWAL' is in a <div class='page-header'> rather than an <h1>. Two <h2> elements exist: 'Background' and 'Public Comment & Public Hearing'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header block is duplicated for both pages, which mirrors the PDF's repeated headers. The outer <main> wrapping also contains nested <main> elements, which is structurally incorrect HTML but does not duplicate content beyond what appears in the PDF.",
+      "severity": "minor",
+      "evidence": "Two instances of the page-header div with identical content appear, matching the PDF's two-page header repetition.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 26.73,
+    "page_count": 2,
+    "visual_input_tokens": 6506,
+    "visual_output_tokens": 642,
+    "content_input_tokens": 7436,
+    "content_output_tokens": 554,
+    "timestamp": "2026-04-11T05:52:28.564746",
+    "auditor_version": "1.0.0"
+  }
+}

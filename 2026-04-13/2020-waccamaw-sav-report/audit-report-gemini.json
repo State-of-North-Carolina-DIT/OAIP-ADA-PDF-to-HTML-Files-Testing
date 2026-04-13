@@ -1,0 +1,30 @@
+{
+  "document_id": "2020-waccamaw-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Side-by-side layout of images is not preserved.",
+      "severity": "major",
+      "evidence": "In the PDF (Diagram 1), two Biobase screenshot images are presented side-by-side. The HTML rendering linearizes this layout, placing the images sequentially in a single column.",
+      "page": 9,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 155.17,
+    "page_count": 10,
+    "visual_input_tokens": 22578,
+    "visual_output_tokens": 677,
+    "content_input_tokens": 10626,
+    "content_output_tokens": 147,
+    "timestamp": "2026-04-11T06:00:08.172864",
+    "auditor_version": "1.0.0"
+  }
+}

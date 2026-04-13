@@ -1,0 +1,21 @@
+{
+  "document_id": "01_NRHM_Meeting_Agenda_052708",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 12.81,
+    "page_count": 1,
+    "visual_input_tokens": 2498,
+    "visual_output_tokens": 151,
+    "content_input_tokens": 3199,
+    "content_output_tokens": 150,
+    "timestamp": "2026-04-11T05:56:11.818455",
+    "auditor_version": "1.0.0"
+  }
+}

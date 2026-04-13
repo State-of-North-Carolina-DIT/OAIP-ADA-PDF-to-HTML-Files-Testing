@@ -1,0 +1,102 @@
+{
+  "document_id": "0_JLA4_Email_Announcement_20160316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The document title 'Draft Cape Fear River Water Supply Evaluation' is italicized in the PDF but rendered in plain quotes without italics in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows italicized text for the document title; HTML shows it in regular (non-italic) text within quotation marks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The document title 'Draft Jordan Lake Water Supply Allocation Recommendations' is italicized in the PDF but rendered without italics in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows italicized text for the document title; HTML shows it in regular text within quotation marks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The URL in the PDF is rendered as a clickable hyperlink with blue underlined styling; in the HTML it appears as plain text without hyperlink formatting.",
+      "severity": "minor",
+      "evidence": "PDF shows blue underlined hyperlink; HTML shows the URL as plain unstyled text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The word 'here' appears as hyperlinks in the PDF (blue, underlined) for meeting location maps, but in the HTML they appear as plain text without hyperlink styling.",
+      "severity": "minor",
+      "evidence": "PDF: 'here' is a blue underlined hyperlink in two instances; HTML: 'here' appears as regular text with a period.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The email address 'jla4-cfrwse@lists.ncmail.net' is styled as a hyperlink in the PDF but appears as plain text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows blue underlined email link; HTML shows it as plain text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL in the PDF is rendered as a clickable hyperlink, but in the HTML it is presented as plain text without an anchor tag, losing the hyperlink functionality.",
+      "severity": "major",
+      "evidence": "PDF has a clickable hyperlink to 'http://deq.nc.gov/about/divisions/water-resources/planning/basin-planning/map-page/cape-fear-river-basin-landing/jordan-lake-water-supply-allocation/jordan-lake-water-supply-allocation-round-4'. HTML renders it as plain text without <a> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The email address in the PDF is a clickable mailto link, but in the HTML it is rendered as plain text without an anchor tag.",
+      "severity": "major",
+      "evidence": "PDF has clickable 'jla4-cfrwse@lists.ncmail.net' email link. HTML renders it as plain text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The two 'here' hyperlinks for meeting location maps in the PDF are rendered as plain text 'here' in the HTML without any link.",
+      "severity": "minor",
+      "evidence": "PDF: 'A map of the location for this meeting is available here.' with 'here' as a clickable link. HTML: same text but 'here' is plain text with no anchor tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The subtitle 'Jordan Lake Water Supply Allocations and Cape Fear Water Supply Evaluation' is rendered as h2 in the HTML, but in the PDF it appears as a subtitle/subheading rather than a distinct section heading. This is an acceptable interpretation but worth noting.",
+      "severity": "minor",
+      "evidence": "PDF shows it as a subtitle line. HTML: <h2>Jordan Lake Water Supply Allocations and Cape Fear Water Supply Evaluation</h2>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> tags, creating a structural duplication of the main content wrapper.",
+      "severity": "major",
+      "evidence": "HTML contains '<main>' inside another '<main>' element.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.15,
+    "page_count": 1,
+    "visual_input_tokens": 3709,
+    "visual_output_tokens": 680,
+    "content_input_tokens": 4768,
+    "content_output_tokens": 767,
+    "timestamp": "2026-04-11T05:57:21.987058",
+    "auditor_version": "1.0.0"
+  }
+}

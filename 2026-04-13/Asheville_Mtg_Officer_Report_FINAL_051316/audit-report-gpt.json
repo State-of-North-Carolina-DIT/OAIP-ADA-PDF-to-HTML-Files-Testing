@@ -1,0 +1,46 @@
+{
+  "document_id": "Asheville_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated boilerplate metadata not present in the PDF: an HTML <title> and imported stylesheet branding unrelated to the source document.",
+      "severity": "critical",
+      "evidence": "HTML head contains \"<title>Converted Document</title>\" and CSS comment/text \"Digital Commons NC \u2014 Standalone Theme CSS\" plus a Google Fonts import. The PDF pages show only the memorandum content and agency letterhead; no text such as \"Converted Document\" or \"Digital Commons NC\" appears in the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains duplicated structural wrapper content with nested <main> elements, creating unnecessary repeated document containers.",
+      "severity": "major",
+      "evidence": "HTML shows \"<main> <main> ... </main> </main>\". The PDF has a single continuous document structure and no equivalent duplicated container/content wrapper.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A sentence in the oral comments summary is broken by injected footer/image markup, disrupting text flow and accuracy of the extracted content.",
+      "severity": "major",
+      "evidence": "PDF reads continuously: \"Coal ash should be disposed of on Duke Energy property to avoid additional contamination to other communities.\" HTML splits this as \"Coal ash should be\" followed by a page-footer block and image tag, then \"disposed of on Duke Energy property...\" This interrupts the sentence and degrades textual fidelity.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 50.26,
+    "page_count": 5,
+    "visual_input_tokens": 11612,
+    "visual_output_tokens": 319,
+    "content_input_tokens": 8995,
+    "content_output_tokens": 477,
+    "timestamp": "2026-04-11T06:01:51.292021",
+    "auditor_version": "1.0.0"
+  }
+}

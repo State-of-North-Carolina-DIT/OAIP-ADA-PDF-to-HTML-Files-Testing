@@ -1,0 +1,38 @@
+{
+  "document_id": "01_10_Corrected_cover_letter_20201221",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Missing important images",
+      "severity": "major",
+      "evidence": "The North Carolina state seal, the signature image, and the DEQ footer logo present in the PDF are completely missing from the HTML rendering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Letterhead layout not preserved",
+      "severity": "major",
+      "evidence": "The multi-column arrangement of the letterhead in the PDF (names on the left, department name and seal in the center) is rendered as a single left-aligned stack of text in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 55.46,
+    "page_count": 1,
+    "visual_input_tokens": 2902,
+    "visual_output_tokens": 289,
+    "content_input_tokens": 3203,
+    "content_output_tokens": 163,
+    "timestamp": "2026-04-11T05:46:29.975071",
+    "auditor_version": "1.0.0"
+  }
+}

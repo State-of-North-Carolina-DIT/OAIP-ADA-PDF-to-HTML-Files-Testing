@@ -1,0 +1,46 @@
+{
+  "document_id": "0_ManteoAmend1Certif_021209",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The title and amendment heading in the PDF use blue/dark blue colored text, while the HTML renders them in black. The large adoption and certification text in the PDF is rendered in a much larger display font compared to the HTML which uses smaller regular text.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows 'Town of Manteo Core CAMA Land Use Plan Update 2007' and 'Amendment #1' in blue text with large display-size adoption/certification lines. HTML shows all text in black with adoption/certification lines in normal body text size.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF presents the adoption and certification dates as large, prominent display text centered on the page, while the HTML renders them as small left-aligned body text, reducing their visual prominence.",
+      "severity": "minor",
+      "evidence": "PDF: 'Adopted by the Manteo Town Council on December 3, 2008' and 'Certified by the Coastal Resources Commission on February 12, 2009' are in very large font, centered. HTML: same text is in small body text, left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element inside another <main> element, which is a structural duplication of the container tag, though it does not duplicate content.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping another <main>, which is redundant but does not affect content fidelity.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 22.7,
+    "page_count": 1,
+    "visual_input_tokens": 3635,
+    "visual_output_tokens": 544,
+    "content_input_tokens": 3800,
+    "content_output_tokens": 307,
+    "timestamp": "2026-04-11T05:57:38.845671",
+    "auditor_version": "1.0.0"
+  }
+}

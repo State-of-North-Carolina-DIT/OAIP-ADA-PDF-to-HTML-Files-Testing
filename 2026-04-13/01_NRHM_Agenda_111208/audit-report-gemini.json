@@ -1,0 +1,38 @@
+{
+  "document_id": "01_NRHM_Agenda_111208",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Loss of columnar layout for schedule items.",
+      "severity": "major",
+      "evidence": "In the PDF, schedule items are arranged with the time on the left, the topic in the center, and the presenter right-aligned. The HTML flattens this structure, placing the presenter's name inline immediately after the topic title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Loss of center alignment for the document header.",
+      "severity": "minor",
+      "evidence": "The meeting details at the top of the page are center-aligned in the PDF but are left-aligned in the HTML conversion.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 33.04,
+    "page_count": 1,
+    "visual_input_tokens": 2890,
+    "visual_output_tokens": 304,
+    "content_input_tokens": 2911,
+    "content_output_tokens": 140,
+    "timestamp": "2026-04-11T05:55:59.010372",
+    "auditor_version": "1.0.0"
+  }
+}

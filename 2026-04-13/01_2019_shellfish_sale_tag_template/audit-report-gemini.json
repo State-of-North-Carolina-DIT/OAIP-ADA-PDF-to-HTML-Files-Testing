@@ -1,0 +1,30 @@
+{
+  "document_id": "01_2019_shellfish_sale_tag_template",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "UNKNOWN",
+      "description": "",
+      "severity": "minor",
+      "evidence": "",
+      "page": null,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 31.54,
+    "page_count": 1,
+    "visual_input_tokens": 2885,
+    "visual_output_tokens": 365,
+    "content_input_tokens": 3281,
+    "content_output_tokens": 159,
+    "timestamp": "2026-04-11T05:50:26.417714",
+    "auditor_version": "1.0.0"
+  }
+}

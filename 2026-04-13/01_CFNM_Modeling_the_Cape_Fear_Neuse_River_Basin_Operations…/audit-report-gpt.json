@@ -1,0 +1,54 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table of contents table was converted from a simple aligned two-column list into a boxed table layout that alters the original visual structure.",
+      "severity": "major",
+      "evidence": "On page 2, the PDF shows the table of contents as plain aligned text with 'Section' and 'Page' headers and indented entries. The HTML renders it as a grid/table with borders and separate rows, changing the visual table structure substantially.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes a fabricated comment that is not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML table contains the comment \"<!-- COLUMNS: Section | Page -->\". The PDF Table of Contents page shows only the visible headings \"Section\" and \"Page\" and no comment text or equivalent content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "One sentence on page 5 is textually corrupted, changing the meaning of the node inventory description.",
+      "severity": "major",
+      "evidence": "PDF page 5 reads in substance: \"There are 58 reservoir nodes (42 actual reservoirs, 11 flood impoundments on Crabtree Creek, and five artificial storage nodes used for time-of-travel flow routing)...\" HTML page 5 reads: \"There are 58 reservoir 42 actual reservoirs, 11 flood impoundments on Crabtree Creek, and five artificial storage nodes used for time-of-travel flow routing)...\" The word \"nodes (\" is missing, causing a malformed and altered sentence.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is inconsistent with the document structure, with flow-chart page titles promoted to section-level headings.",
+      "severity": "major",
+      "evidence": "HTML uses <h2> for \"Section 1. Introduction\" and \"Section 2. Model Components,\" but also uses <h2> for figure/page titles such as \"Flow Chart of Major Nodes in the Upper Cape Fear Basin,\" \"Flow Chart of Major Nodes in the Middle Cape Fear Basin,\" etc. In the PDF these are full-page figures/diagrams, not peer section headings in the report hierarchy.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 37.22,
+    "page_count": 18,
+    "visual_input_tokens": 32475,
+    "visual_output_tokens": 900,
+    "content_input_tokens": 25077,
+    "content_output_tokens": 537,
+    "timestamp": "2026-04-11T05:51:43.386241",
+    "auditor_version": "1.0.0"
+  }
+}

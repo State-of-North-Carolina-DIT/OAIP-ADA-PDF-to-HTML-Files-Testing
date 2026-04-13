@@ -1,0 +1,21 @@
+{
+  "document_id": "0_HertfordCountyCertificationDate_022411",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 10.4,
+    "page_count": 1,
+    "visual_input_tokens": 3635,
+    "visual_output_tokens": 210,
+    "content_input_tokens": 3522,
+    "content_output_tokens": 202,
+    "timestamp": "2026-04-11T05:56:45.134357",
+    "auditor_version": "1.0.0"
+  }
+}

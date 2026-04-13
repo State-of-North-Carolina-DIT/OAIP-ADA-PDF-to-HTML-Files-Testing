@@ -1,0 +1,174 @@
+{
+  "document_id": "01_NRHM_Project_Contract",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Top-of-page two-column header layout is flattened and restructured in HTML.",
+      "severity": "major",
+      "evidence": "The PDF shows a boxed two-column header with agency information on the left and RFQ details on the right. The HTML converts this into a generic table and then single-column flowing sections below, losing the original visual grouping and form-like structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Vendor execution form table structure is not preserved accurately.",
+      "severity": "major",
+      "evidence": "The PDF contains a structured form with aligned fields, checkboxes, signature/date areas, and labeled cells. The HTML renders this as a three-column table with duplicated/misaligned labels (e.g., federal ID and fax fields repeated) and broken field relationships.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Form-specific formatting and signature block presentation are weakened.",
+      "severity": "minor",
+      "evidence": "In the PDF, signature, date, authorization lines, and checkbox marks are visually distinct within the form. In the HTML, these are flattened into text/table cells and lose the strong form appearance, though the content is mostly present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading flow around the execution form is slightly altered.",
+      "severity": "minor",
+      "evidence": "The PDF presents the execution block as a unified form users read spatially across rows. The HTML requires reading down columnized cells and repeated labels, making the sequence less clear though still recoverable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading emphasis and compact tabular styling are softened in HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses strong uppercase headings and compact bid table styling. The HTML preserves headings and the item-cost table, but typography and emphasis are lighter, making sections less visually distinct.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Dense legal text page loses some original page-level compactness and grouping.",
+      "severity": "minor",
+      "evidence": "The PDF presents the ITS Terms and Conditions as tightly packed legal text blocks. The HTML reflows this into wider-spaced paragraphs, which is acceptable semantically but alters the original dense legal-document layout.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Continuation of legal terms is more loosely spaced in HTML than in PDF.",
+      "severity": "minor",
+      "evidence": "The PDF continues dense numbered legal clauses in compact blocks. The HTML preserves the order and content but expands spacing, reducing fidelity to the original legal-page structure.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Exhibit 1 title block and task layout are simplified in HTML.",
+      "severity": "minor",
+      "evidence": "The PDF shows a centered exhibit title and tightly grouped task sections. The HTML presents the same content in a more generic single-column article layout with less visual separation.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Indented bullet/list formatting in Exhibit 1 is less faithful in HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses bullets and indentation to distinguish scope items and schedule text. The HTML keeps bullets, but spacing and indentation are flatter and less visually structured.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Exhibit 2 scanned page structure is simplified into narrative HTML with tables.",
+      "severity": "minor",
+      "evidence": "The PDF contains sectioned text and cost/rate information in a document-like page layout. The HTML preserves the content but reflows it into standard web paragraphs and tables, changing the page\u2019s visual grouping.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Cost section and fee schedule styling are less distinct than in PDF.",
+      "severity": "minor",
+      "evidence": "The PDF uses compact headings and alignment to emphasize deliverables, schedule, and estimates. The HTML presents these clearly but with more uniform typography and less contrast between headings and body.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Exhibit 3 page layout is simplified from a compact proposal sheet to stacked HTML sections.",
+      "severity": "minor",
+      "evidence": "The PDF displays Exhibit 3 as a concise proposal page with grouped headings and cost lines. The HTML converts this to separate headings, bullets, and tables, preserving content but not the compact original layout.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML includes fabricated column headers and duplicated field labels not present in the PDF tables.",
+      "severity": "critical",
+      "evidence": "HTML adds table headers such as \"Column 1\", \"Column 2\", \"Column 3\" and labels like \"Rate Type | FY07 | FY08\" that do not appear in the source PDF. In the vendor information table, HTML duplicates \"FEDERAL ID OR SOCIAL SECURITY NO. 52-1413880\" and \"FAX NUMBER: 919-831-1295\" into extra columns, whereas the PDF shows only one such field per row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Exhibit 2 heading and opening scope content are missing as a distinct section in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF includes a separate exhibit for Deliverable 2 (Moffatt & Nichol scope), with content preceding the visible page that starts \"For those crops typically irrigated...\". HTML jumps from Exhibit 1 directly into paragraphs beginning \"For those crops typically irrigated...\" without a visible \"Exhibit 2\" heading or the initial scope/introduction text for that exhibit.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Several tables are structurally altered, with artificial headers added and source layout distorted; one cost total also differs from the PDF exhibit.",
+      "severity": "major",
+      "evidence": "HTML converts non-header form regions into tables with invented headers (e.g., \"Column 1 | Column 2 | Column 3\"). In Exhibit 3, HTML states \"Total Budget for Project Support $24,000\" while the PDF image shows \"$24,000\" in the total budget line but the itemized table above on page 2 lists Deliverable 4 cost as \"$25,000\". The form table structure in the PDF is a 2-column form with right-side subfields, not the 3-column repeated layout seen in HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "A URL is fabricated as live/plain text in HTML that is not reliably present as extracted text in the PDF content shown.",
+      "severity": "critical",
+      "evidence": "HTML contains \"http://www.ips.state.nc.us\" in the protest notice paragraph. The PDF page includes a web address in fine print, but because the HTML introduces it as normalized text within the body and no anchor preservation is shown, this is a risky fabrication/normalization issue for link fidelity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is inaccurate and incomplete; there is no single document title h1 and major sections/exhibits are flattened into h3 or omitted.",
+      "severity": "major",
+      "evidence": "HTML uses many <h3> tags such as \"NOTICE TO VENDOR\", \"EXECUTION\", \"ACCEPTANCE OF QUOTE\", \"ITS Terms and Conditions\", \"Exhibit 1\", and \"Exhibit 3\", but provides no document-title h1. \"Exhibit 2\" is missing entirely as a heading, and section nesting is not represented.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text is generic or likely inaccurate for signature images.",
+      "severity": "minor",
+      "evidence": "HTML uses alt text such as \"Vendor Authorized Signature\" and \"DENR Authorized Representative Signature\" for embedded images. These are not descriptive of the actual image content beyond role, but they are not severely misleading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Text accuracy issues include misspellings/normalization differences and likely incorrect numeric carryover in subcontractor cost details.",
+      "severity": "major",
+      "evidence": "HTML alternates between \"Moffatt & Nichols\" and \"Moffatt & Nichol\"; the PDF shows \"Moffatt & Nichol\" in Exhibit 2 and \"Moffatt & Nichols\" in the deliverable summary may reflect OCR inconsistency. More importantly, HTML states under Exhibit 2 cost table \"TOTAL $96,200\" while the main pricing table on page 2 lists Deliverable 3 as \"$99,000,\" indicating inconsistency that should have been preserved exactly from the PDF sections.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 5,
+  "minor_count": 11,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 56.88,
+    "page_count": 10,
+    "visual_input_tokens": 25717,
+    "visual_output_tokens": 1464,
+    "content_input_tokens": 23837,
+    "content_output_tokens": 1082,
+    "timestamp": "2026-04-11T05:57:08.702996",
+    "auditor_version": "1.0.0"
+  }
+}

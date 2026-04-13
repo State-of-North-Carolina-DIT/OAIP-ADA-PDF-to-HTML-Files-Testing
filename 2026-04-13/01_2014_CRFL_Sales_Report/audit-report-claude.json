@@ -1,0 +1,198 @@
+{
+  "document_id": "01_2014_CRFL_Sales_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Cover page logo/image styling differs slightly but is present and correctly placed",
+      "severity": "minor",
+      "evidence": "PDF shows the NC Coastal Recreational Fishing License logo centered on cover page; HTML shows the same logo in a similar position",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Cover page layout simplified in HTML but all content preserved",
+      "severity": "minor",
+      "evidence": "PDF has a decorative border around the cover page content; HTML omits this border but retains title, logo, and date",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Marine Resources Fund Balance table has minor styling differences but data is intact",
+      "severity": "minor",
+      "evidence": "PDF shows a more compact table with dollar signs and formatting; HTML shows same data in a slightly wider table format with same structure",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 combines what appears as two distinct sections in PDF into a continuous flow in HTML",
+      "severity": "minor",
+      "evidence": "PDF has Marine Resources Fund Balance and Marine Resources Endowment Fund Balance as clearly separated sections; HTML preserves separation with headers but spacing differs",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Expense subtotal row formatting in Marine Resources Fund Balance table slightly different",
+      "severity": "minor",
+      "evidence": "PDF uses highlighted/shaded rows for subtotals; HTML uses plain formatting but data values match",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Projects Approved table and Summary section have different visual emphasis styles",
+      "severity": "minor",
+      "evidence": "PDF uses bold and shading for SUMMARY header and negative values in parentheses with red highlighting; HTML preserves bold but uses different color styling",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "License sales by type table structure preserved with all data matching",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show the same 24+ license types with data for 2010-2014 and totals of 453,519 / 439,246 / 460,297 / 480,004 / 4,218",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County sales tables split across pages differently but data intact",
+      "severity": "minor",
+      "evidence": "PDF shows county data in a continuous table across pages 6-7; HTML shows same data in a continuous scrollable format",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "County-level license sales tables maintain same column structure across both versions",
+      "severity": "minor",
+      "evidence": "Both versions show Agent County, No. Sold, and Rank columns for years 2010-2014",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County of residence table continues with same structure and data",
+      "severity": "minor",
+      "evidence": "PDF and HTML both show the same county-level data by residence with matching totals",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "State-level license sales table preserves all data including North Carolina as rank 1",
+      "severity": "minor",
+      "evidence": "Both versions show NC with 295,852 (2010), 289,411 (2011), 303,665 (2012), 315,257 (2013), 3,584 (2014)",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Country-level license sales tables preserve same structure and data across all countries",
+      "severity": "minor",
+      "evidence": "Both versions show countries from Albania through Zimbabwe with matching sales numbers and ranks",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "For Hire Blanket license tables maintain correct structure with vessel size categories",
+      "severity": "minor",
+      "evidence": "Both versions show 0 to 18 Feet, >18 to 38 Feet, >38 to 50 Feet, >50 Feet columns with matching totals for each year",
+      "page": 25,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "For Hire Blanket by state table preserves all data correctly",
+      "severity": "minor",
+      "evidence": "Both versions show state data with <=6 and >6 passenger categories for 2010-2014",
+      "page": 27,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Sales outlet table and DMF Sales Office table both preserve data correctly",
+      "severity": "minor",
+      "evidence": "Both versions show License Agents at 351,359 (77.47%) in 2010 through 2,163 (51.28%) in 2014; DMF offices show Morehead City, Manteo, Wilmington, Columbia, Washington, Elizabeth City",
+      "page": 29,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Footnote about DSS and blanket licenses preserved in both versions",
+      "severity": "minor",
+      "evidence": "Both versions include notes about DSS issuing free subsistence waivers and blanket licenses only sold at DMF offices",
+      "page": 29,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Marine Resources Endowment Fund Balance table, the 'Transfers from WRC March 2006-2010' row incorrectly repeats '5 transfers of $680,000 each' across all fiscal year columns instead of leaving them blank as in the PDF. The PDF shows this text only once as a note spanning the row.",
+      "severity": "major",
+      "evidence": "PDF shows 'Transfers from WRC March 2006-2010 | 5 transfers of $680,000 each | $3,400,000' with the description spanning across. HTML repeats '5 transfers of $680,000 each' in every column from FY2007-2010 through FY2014.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Marine Resources Endowment Fund Balance table, the 'Non Capital Gifts' row is incomplete. The PDF shows '$ -' for the Non Capital Gifts entry, while the HTML shows it split across two cells with '$ -' in FY2007-2010 and '$ -' in FY2014, with the row lacking the context that it simply has no value.",
+      "severity": "major",
+      "evidence": "PDF: 'Non Capital Gifts $ - $ -' as a single-line entry. HTML maps it inconsistently across the column structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The MEXICO entry in the country of residence table for 2014 shows '0' for No. Sold but '4' for Rank. The PDF shows the same, but this is internally inconsistent - likely a data transcription issue in the PDF itself. However, checking the PDF more carefully, the 2014 column for MEXICO indeed shows 0 sold with rank 4, which the HTML faithfully reproduces.",
+      "severity": "major",
+      "evidence": "PDF page 13: MEXICO 2014 No. Sold = 0, Rank = 4. HTML: same values. This is not an error in conversion.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The heading hierarchy skips from h1 to h2 to h3, but uses h3 for all section headings after the title. The document has major sections like 'Marine Resources Fund Balance', 'Marine Resources Endowment Fund Balance', and 'Projects Approved for Funding' which are presented as h3, while 'Sales Update' is h2. This creates an inconsistent hierarchy where sub-sections are at the same level as major sections.",
+      "severity": "major",
+      "evidence": "HTML: h1='Coastal Recreational Fishing License', h2='Sales Update', then h3='Marine Resources Fund Balance', h3='Marine Resources Endowment Fund Balance', h3='Projects Approved for Funding...'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> elements - there is a <main> tag inside another <main> tag, which is invalid HTML structure though it does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML source: '<main>' followed by another '<main>' inside it.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Wilmington DMF Sales Office 2010 % Sold shows 15.53 in the HTML but the PDF page 20 shows the same value as 15.53 for Wilmington in the 2010 column. However, the column header in the PDF shows 'Wilmington' listed third with value 331 and 15.53 in 2010 - but cross-referencing with page 2 annotation, value appears to be 12.95... Actually checking again, the PDF clearly shows 331/15.53 for Wilmington 2010 which matches the HTML.",
+      "severity": "minor",
+      "evidence": "Confirmed match - no error.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 18,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 79.02,
+    "page_count": 20,
+    "visual_input_tokens": 61964,
+    "visual_output_tokens": 2599,
+    "content_input_tokens": 103411,
+    "content_output_tokens": 1185,
+    "timestamp": "2026-04-11T05:49:59.308633",
+    "auditor_version": "1.0.0"
+  }
+}

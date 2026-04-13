@@ -1,0 +1,86 @@
+{
+  "document_id": "DSCA_Compliance_Voluntary_Self-Inspection_Checklist_for_Petroleum_and_Alternative-solvent_Dry_Cleaners_Form",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The signature/form fields section layout is significantly different. In the PDF, the DATE, SIGNATURE, PRINTED NAME, TITLE, FACILITY ADDRESS, FACILITY CITY & ZIP, FACILITY PHONE, and EMAIL fields are arranged in a multi-column layout (DATE on left, SIGNATURE on right, other fields centered). In the HTML, all fields are rendered in a single-column stacked layout.",
+      "severity": "major",
+      "evidence": "PDF shows DATE and SIGNATURE side-by-side on the same line with other fields in a structured two-column arrangement. HTML renders all form fields sequentially in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Waste Management / Environmental Quality logo appears as a mostly blacked-out rectangle in the HTML version, losing the distinctive NC logo design visible in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows a clear NC logo with 'Waste Management ENVIRONMENTAL QUALITY' text beneath. HTML shows a black rectangle with the text below it.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Initials column in the checklist table appears empty in both versions, but the table structure is preserved with correct row counts and column alignment.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show the same table structure with Initials column and Minimum Management Practices column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The main title 'DRY-CLEANING SOLVENT CLEANUP ACT (DSCA)' and subtitle formatting differ slightly. The PDF shows them as centered bold text, while the HTML renders them left-aligned with a different visual hierarchy.",
+      "severity": "minor",
+      "evidence": "PDF: centered bold titles. HTML: left-aligned titles with horizontal rule separators instead of centered formatting.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The subtitle 'Voluntary Self-inspection Checklist for Petroleum and Alternative-solvent Dry Cleaners' is rendered as h2 inside a header element, but the PDF treats it as a subtitle directly under the main title, not a separate section heading. This is an acceptable stylistic choice but worth noting.",
+      "severity": "minor",
+      "evidence": "HTML: <h2>Voluntary Self-inspection Checklist for Petroleum and Alternative-solvent Dry Cleaners</h2>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements, which results in the entire content structure being duplicated in terms of semantic structure. While the text content itself is not visually duplicated, the double <main> nesting is a structural error.",
+      "severity": "major",
+      "evidence": "HTML has <body><main><main>...</main></main></body> \u2014 two nested <main> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL for the MMPs rule is split across two anchor tags in the HTML, whereas in the PDF it is a single hyperlink. Both point to the same destination. This is a minor formatting difference, not fabrication.",
+      "severity": "minor",
+      "evidence": "HTML has two separate <a> tags for the same URL: one with text 'https://deq.nc.gov/about/divisions/waste-' and another with 'management/superfund-section/special-remediation-branch/compliance-unit#regulations'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the NC DEQ logo image reads 'North Carolina Department of Environmental Quality logo', which is a reasonable description. The PDF shows an 'NC' logo with 'Waste Management / ENVIRONMENTAL QUALITY' text beneath it. The alt text is acceptable though slightly elaborated.",
+      "severity": "minor",
+      "evidence": "HTML: alt='North Carolina Department of Environmental Quality logo'. PDF shows NC logo with 'Waste Management ENVIRONMENTAL QUALITY' label.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 32.91,
+    "page_count": 1,
+    "visual_input_tokens": 3832,
+    "visual_output_tokens": 710,
+    "content_input_tokens": 5497,
+    "content_output_tokens": 719,
+    "timestamp": "2026-04-11T06:04:02.006471",
+    "auditor_version": "1.0.0"
+  }
+}

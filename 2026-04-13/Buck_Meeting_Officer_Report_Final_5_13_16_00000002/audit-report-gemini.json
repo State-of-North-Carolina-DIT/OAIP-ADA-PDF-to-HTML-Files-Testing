@@ -1,0 +1,30 @@
+{
+  "document_id": "Buck_Meeting_Officer_Report_Final_5_13_16_00000002",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Non-tabular text structures rendered as bordered tables.",
+      "severity": "minor",
+      "evidence": "In the HTML rendering of the first page, the memo routing header (To, From, Subject) and the roman numeral outline (I, II, III, IV) are formatted as tables with visible borders, whereas the source PDF uses text alignment and list structures.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 97.8,
+    "page_count": 6,
+    "visual_input_tokens": 13830,
+    "visual_output_tokens": 436,
+    "content_input_tokens": 8677,
+    "content_output_tokens": 161,
+    "timestamp": "2026-04-11T06:03:29.097341",
+    "auditor_version": "1.0.0"
+  }
+}

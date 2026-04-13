@@ -1,0 +1,21 @@
+{
+  "document_id": "01_bardeninlet",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 18.42,
+    "page_count": 1,
+    "visual_input_tokens": 2877,
+    "visual_output_tokens": 117,
+    "content_input_tokens": 2377,
+    "content_output_tokens": 126,
+    "timestamp": "2026-04-11T05:56:30.665744",
+    "auditor_version": "1.0.0"
+  }
+}

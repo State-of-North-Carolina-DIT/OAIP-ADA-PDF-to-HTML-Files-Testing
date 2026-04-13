@@ -1,0 +1,174 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Cover collage image is cropped/split and partially displaced in the HTML.",
+      "severity": "major",
+      "evidence": "In the PDF, the full photo collage appears as one intact block centered on the cover. In the HTML, only the upper portion appears on page 1 and additional image fragments continue above the logo on page 2, breaking the intended visual grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on the cover is disrupted because the collage continues onto the next page before the logo and before the document body begins.",
+      "severity": "major",
+      "evidence": "The PDF presents title/credits, then the full collage, then the NC State logo. In the HTML, the collage is interrupted and resumed at the top of page 2, causing a reader to encounter leftover cover imagery immediately before the start of the Introduction.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page layout is not preserved at the page transition from cover to body content.",
+      "severity": "major",
+      "evidence": "The PDF page 2 begins directly with the Introduction section. The HTML page 2 begins with residual cover-page image fragments and logo before the Introduction, indicating incorrect page composition and whitespace grouping.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Introduction starts after stray cover elements, altering the visual flow of the document.",
+      "severity": "major",
+      "evidence": "In the PDF, Introduction is the first content on page 2. In the HTML, leftover cover images and branding precede the Introduction on page 2, so the top-to-bottom reading sequence differs from the source.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Chart graphics are not rendered as charts and are instead converted into loose text labels/values.",
+      "severity": "critical",
+      "evidence": "On the PDF page, Figures 1 and 2 are visible bar charts. In the HTML, these are replaced by text such as axis labels, year values, and captions without the actual chart visuals, losing graphical structure and legibility.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Embedded charts/graphics are missing on the page and replaced by textual remnants.",
+      "severity": "critical",
+      "evidence": "The PDF contains two large charts ('Total Number of Survey Sites - By Year' and 'Lake Gaston Aquatic Plant Community - 2023'). The HTML shows no actual chart images, only extracted text and captions.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Visual structure of the figures section is lost because charts are not preserved as discrete graphics.",
+      "severity": "major",
+      "evidence": "The PDF clearly separates two figures with chart boxes and captions. The HTML collapses these into text blocks, removing the figure layout and whitespace relationships.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 is not visually intact and is reformatted from a structured table into a different layout split across pages.",
+      "severity": "critical",
+      "evidence": "In the PDF, Table 1 is a single bordered table with grouped sections and aligned columns. In the HTML, the table begins at the bottom of one page and continues separately, losing the original compact structure and section presentation.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 2 structure is weakened in the HTML and appears split/reflowed rather than preserved as the original compact matrix.",
+      "severity": "major",
+      "evidence": "The PDF shows a single dense table with grouped headers ('East of Easton\u2019s Ferry Bridge' and 'West of Easton\u2019s Ferry Bridge'). The HTML version spreads the table over subsequent content flow, reducing visual integrity and making group relationships less clear.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Figure 7 chart is not preserved as a chart and is rendered as text fragments.",
+      "severity": "critical",
+      "evidence": "The PDF page shows the 'Lake Gaston Hydrilla' chart with bars and a dashed line. The HTML page shows only text labels such as title, axes, years, and caption without the plotted graphic.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Hydrilla trend graphic is missing and replaced by extracted text.",
+      "severity": "critical",
+      "evidence": "The PDF contains the full Figure 7 graphic. The HTML lacks the chart image entirely and only preserves textual elements and caption.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Figure 9 chart is not visually preserved and appears as deconstructed text in HTML.",
+      "severity": "critical",
+      "evidence": "The PDF page displays the 'Lake Gaston Lyngbya' bar/line chart. The HTML page contains only the chart title, axis labels, year labels, and caption, without the graph.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Lyngbya trend chart image is missing from the HTML.",
+      "severity": "critical",
+      "evidence": "The PDF has a full chart figure on page 16. The HTML lacks the chart graphic and shows text remnants instead.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Figure 11 chart is not preserved as a chart in HTML.",
+      "severity": "critical",
+      "evidence": "The PDF displays the 'Lake Gaston Eel Grass' chart with bars and line. The HTML shows only chart labels, scales, years, and caption text, not the actual plotted figure.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Eel grass trend graphic is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "The PDF contains the full Figure 11 chart, while the HTML replaces it with text fragments and the caption only.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 2 contains incorrect data values and row labels compared with the PDF.",
+      "severity": "major",
+      "evidence": "In the PDF, Table 2 section headers read \"East of Eaton\u2019s Ferry Bridge\" and \"West of Eaton\u2019s Ferry Bridge\". In the HTML they are rendered as \"East of Easton\u2019s Ferry Bridge\" and \"West of Easton\u2019s Ferry Bridge.\" Also, the PDF row for \"Hubquarter\" shows 2020 = \"0\", while the HTML shows 2020 = \"1.64\". The PDF row label is \"Hawtree Creek\", while the HTML truncates it to \"Hawtree\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There are multiple significant text transcription errors that alter names and scientific terms.",
+      "severity": "major",
+      "evidence": "Examples: PDF page 4/5 uses \"Cladophora sp.\", while HTML says \"Cladophra sp.\"; PDF page 5 uses \"Vallisneria neotropicalis\", while HTML says \"Valiseneria neotropicalis\"; PDF Table 2 uses \"Eaton Ferry\u2019s Bridge\" and \"Hawtree Creek\", while HTML uses \"Easton\u2019s Ferry Bridge\" and \"Hawtree\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not fully faithful to the document structure because the continued section heading is downgraded improperly.",
+      "severity": "major",
+      "evidence": "In the PDF, \"Conclusion and Management Implications\" is a main section heading and the next page continues it as \"Conclusion and Management Implications (con\u2019t)\" with equivalent prominence. In the HTML, the first is rendered as <h2> but the continuation is rendered as <h3>, implying a subsection rather than a continuation of the same section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text is weak or slightly inaccurate relative to the figure content.",
+      "severity": "minor",
+      "evidence": "The cover collage image alt text in HTML is \"Composite map and photos showing Lake Gaston aquatic vegetation,\" which is reasonable, but a separate small image alt text \"Detail photo of hands holding aquatic vegetation\" appears to isolate one panel from the collage rather than correspond to a distinct standalone figure in the PDF. Several map figure alts are generic and omit labels/species names shown prominently in the figures.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 9,
+  "major_count": 9,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 62.35,
+    "page_count": 20,
+    "visual_input_tokens": 36487,
+    "visual_output_tokens": 2239,
+    "content_input_tokens": 29959,
+    "content_output_tokens": 683,
+    "timestamp": "2026-04-11T06:00:09.233753",
+    "auditor_version": "1.0.0"
+  }
+}

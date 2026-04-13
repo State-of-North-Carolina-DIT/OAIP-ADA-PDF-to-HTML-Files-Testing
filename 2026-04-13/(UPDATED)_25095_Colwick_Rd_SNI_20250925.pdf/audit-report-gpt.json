@@ -1,0 +1,30 @@
+{
+  "document_id": "(UPDATED)_25095_Colwick_Rd_SNI_20250925.pdf",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Heading formatting and spacing differ noticeably from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF uses a compact centered serif title block with three lines and tighter spacing, while the HTML renders the main title in a larger sans-serif style with a horizontal rule beneath it and more vertical spacing. This does not remove information but changes visual emphasis.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 12.83,
+    "page_count": 1,
+    "visual_input_tokens": 2584,
+    "visual_output_tokens": 183,
+    "content_input_tokens": 3491,
+    "content_output_tokens": 140,
+    "timestamp": "2026-04-11T05:44:35.604976",
+    "auditor_version": "1.0.0"
+  }
+}

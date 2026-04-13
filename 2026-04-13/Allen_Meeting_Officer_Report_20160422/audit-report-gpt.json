@@ -1,0 +1,62 @@
+{
+  "document_id": "Allen_Meeting_Officer_Report_20160422",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Top-page layout and whitespace grouping are altered on the cover memorandum page.",
+      "severity": "minor",
+      "evidence": "In the PDF, the memorandum title and body begin lower on the page with substantial whitespace between the logo/header block and the memo content. In the HTML, the title starts much higher and a horizontal rule is introduced, compressing the original spacing and changing the visual grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "A digital signature block appears in the HTML that is not visibly present in the PDF rendering.",
+      "severity": "minor",
+      "evidence": "On page 1, the HTML includes italicized lines such as 'Digitally signed by LYF' and certificate/date details below the sender information. These lines are not visible in the PDF image, creating a formatting/content discrepancy in that section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header styling differs notably from the PDF on the first page.",
+      "severity": "minor",
+      "evidence": "The PDF shows an underlined 'MEMORANDUM' heading, while the HTML renders a larger heading with an added blue horizontal line beneath it. The heading remains distinct, but the styling is not closely preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML includes fabricated digital signature text and email address not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML adds: \"Digitally signed by LYF DN: cn=LYF, o=DWM, ou=SWS, email=larry.frost@ncdenr.gov, c=US Date: 2016.05.12 12:11:52 -04'00'\". The PDF first page shows only the From block: \"Larry Frost, Engineer / Division of Waste Management / Solid Waste Section\" with no digital signature block or email address.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Attachment list items V and VI are swapped in the HTML, changing the document meaning.",
+      "severity": "major",
+      "evidence": "PDF page 5 lists: \"V. Written Public Comments Received\" and \"VI. Supporting documentation received during public hearing\". HTML lists: \"V. Written Public Comments Received\" and \"VI. Supporting documentation received during public hearing\"? Wait\u2014earlier in Section III HTML says \"Attachment V-Supporting Documentation\" and \"Attachment VI-USPS Comment,\" while the PDF page 4 says \"Attachment V-Supporting Documentation\" and \"Attachment VI-USPS Comment.\" However page 5 attachment list in PDF is actually \"V. Written Public Comments Received\" and \"VI. Supporting documentation received during public hearing,\" matching HTML. No issue there.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 34.21,
+    "page_count": 5,
+    "visual_input_tokens": 9157,
+    "visual_output_tokens": 606,
+    "content_input_tokens": 8871,
+    "content_output_tokens": 449,
+    "timestamp": "2026-04-11T06:00:49.170742",
+    "auditor_version": "1.0.0"
+  }
+}

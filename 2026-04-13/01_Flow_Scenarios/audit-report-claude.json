@@ -1,0 +1,126 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Title slide background decorative wave graphic is partially visible in HTML but rendered differently",
+      "severity": "minor",
+      "evidence": "PDF shows full-page blue gradient background with decorative wave. HTML shows a cropped version of the wave graphic at top with white background below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title text styling differs - HTML uses dark text instead of cyan/light blue text on dark background",
+      "severity": "minor",
+      "evidence": "PDF has large cyan 'Introduction to Flow Scenarios' text on blue background. HTML has the same text but rendered in a teal/dark color on white background.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Components diagram - the hydrograph chart and cross-section illustration are split across pages in HTML",
+      "severity": "major",
+      "evidence": "PDF page 5 shows the full Flow Components slide with both the hydrograph (showing Overbank Flow, High Flow Pulses, Base Flow, Subsistence Flow) and the channel cross-section diagram together. In HTML, these are split with partial visibility across page boundaries.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Cheoah River base flow table styling differs but data is preserved",
+      "severity": "minor",
+      "evidence": "PDF shows table without visible grid lines in a presentation format. HTML shows the same data in a properly formatted table with borders and headers.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Cheoah River High Flow Events table is split across HTML pages but data appears intact",
+      "severity": "minor",
+      "evidence": "PDF shows complete table on one slide. HTML shows the table split with the bottom portion (June through Total Per Year rows and footnotes) on a subsequent page section.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Flow Regime Tied to Ecology organizational chart is converted to nested bullet list format",
+      "severity": "major",
+      "evidence": "PDF shows a hierarchical flowchart with boxes and arrows showing relationships between Sound Ecological Environment -> Subsistence Flows/Base Flows/High Flow Pulses/Overbank Flows -> their ecological functions -> specific details. HTML renders this as a flat nested bullet list losing the visual hierarchy and relationships.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Regime Tied to Ecology organizational chart/diagram missing in HTML",
+      "severity": "critical",
+      "evidence": "PDF shows a complex organizational flowchart with boxes and directional arrows. HTML replaces this with text-only bullet lists, losing the diagrammatic representation entirely.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Scenario Examples chart appears to be present but split across page boundaries in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows the complete chart on one slide. HTML shows partial chart visible at one page boundary and the remainder on the next page section.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 headings and duplicate heading structure. The document title 'Introduction to Flow Scenarios' is used as h1, but 'Instream Flow Status' appears as h2 twice (pages 2 and 3 in PDF are separate slides but use the same heading). While this reflects the PDF accurately (repeated slide title), the HTML also has a nested <main> element which is structurally incorrect.",
+      "severity": "major",
+      "evidence": "HTML has <main> nested inside <main>. Two sections both titled 'Instream Flow Status (pp 84-86 of IFC book)' as h2, which matches the PDF slides.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Sound Ecological Environment' text from the flow diagram on page 10 is rendered as an h3 heading, but in the PDF it is a label within a diagram/flowchart, not a section heading.",
+      "severity": "minor",
+      "evidence": "PDF page 10 shows 'Sound Ecological Environment' as a box label in a flowchart. HTML renders it as '<h3>Sound Ecological Environment</h3>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Cheoah River base flow table on page 8 is rendered both as an image reference and as an HTML table, which is actually good for accessibility, but the image alt text says 'Table graphic showing Monthly Base Flow Releases' suggesting it was treated as an image in the source.",
+      "severity": "minor",
+      "evidence": "HTML page-8 section contains both <figure><img> with alt text about the table AND a proper <table> element with the same data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page 8 section includes both an image placeholder for the table and a fully rendered HTML table with the same data, creating a minor duplication.",
+      "severity": "minor",
+      "evidence": "HTML section id='page-8' has both <figure><img alt='Table graphic showing Monthly Base Flow Releases'> and a <table> with Tier A and Tier B rows containing the same monthly flow values.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds a comment '<!-- COLUMNS: Tier | Jan | Feb | ... -->' and '<!-- COLUMNS: High Flows | Year 1 Events | ... -->' which are not in the PDF, but these are HTML comments not visible to users, so this is not substantive fabrication.",
+      "severity": "minor",
+      "evidence": "HTML comments before tables in sections page-8 and page-9.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 56.66,
+    "page_count": 12,
+    "visual_input_tokens": 30164,
+    "visual_output_tokens": 1351,
+    "content_input_tokens": 26553,
+    "content_output_tokens": 883,
+    "timestamp": "2026-04-11T05:53:25.221638",
+    "auditor_version": "1.0.0"
+  }
+}

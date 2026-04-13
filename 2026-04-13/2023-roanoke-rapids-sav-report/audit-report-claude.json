@@ -1,0 +1,70 @@
+{
+  "document_id": "2023-roanoke-rapids-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C5",
+      "description": "No h1 element is present in the HTML. The document title 'Roanoke Rapids Lake Vegetation Survey Report' is not rendered as an h1 heading. The first heading used is h2 ('Introduction'). There is also no clear single h1 for the document title.",
+      "severity": "major",
+      "evidence": "The PDF title page has 'Roanoke Rapids Lake Vegetation Survey Report' as the document title, but the HTML renders it only as part of a page-header div. The CSS rule 'h1:first-of-type' exists but no h1 tag is used anywhere in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The Dominion Energy URL in the references section is rendered as plain text rather than as a hyperlink, whereas the PDF shows it as a clickable link.",
+      "severity": "minor",
+      "evidence": "PDF page 5 shows the URL as a hyperlink (blue/underlined). HTML has: 'https://www.dominionenergy.com/projects-and-facilities/hydroelectric-power-facilities-and-projects/roanoke-rapids-power-station' as plain text in a <p> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside another <main> element, which is structurally incorrect and results in the entire content being duplicated in the DOM structure (though not visually duplicated).",
+      "severity": "major",
+      "evidence": "HTML shows: '<main>\\n        <main>' \u2014 two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The coontail section has a missing space ('rootlessaquatic') matching the PDF source error, which is acceptable, but page numbering in the figure pages is inconsistent with the PDF \u2014 the HTML shows page footers '1' through '11' for the figures section, matching the PDF's own numbering reset.",
+      "severity": "minor",
+      "evidence": "PDF page 5 (Coontail section) has 'rootlessaquatic' and HTML preserves this. This is not an HTML error but noted for completeness.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The table adds a 'Scientific Name' column header that is not explicitly labeled in the PDF table. The PDF table has the scientific name in italics next to the common name without a separate column header for it.",
+      "severity": "minor",
+      "evidence": "PDF Table 1 shows two implicit columns: one for species name (common + scientific) and one for # and %. The HTML separates these into four columns with headers 'Survey Overview', 'Scientific Name', '#', '%'. The data values are all correct.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for images is generally accurate and descriptive. No fabricated descriptions detected.",
+      "severity": "minor",
+      "evidence": "E.g., 'Map showing distribution and abundance of hydrilla in Roanoke Rapids Lake during the 2023 survey' accurately describes Figure 4.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": "visual:Claude visual call failed: Error code: 400 - {'error': {'code': 400, 'message': ",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.5,
+    "page_count": 19,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 42108,
+    "content_output_tokens": 834,
+    "timestamp": "2026-04-11T05:59:57.433099",
+    "auditor_version": "1.0.0"
+  }
+}

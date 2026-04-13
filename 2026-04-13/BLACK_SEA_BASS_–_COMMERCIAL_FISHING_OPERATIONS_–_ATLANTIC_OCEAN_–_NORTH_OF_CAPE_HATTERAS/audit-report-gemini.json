@@ -1,0 +1,62 @@
+{
+  "document_id": "BLACK_SEA_BASS_\u2013_COMMERCIAL_FISHING_OPERATIONS_\u2013_ATLANTIC_OCEAN_\u2013_NORTH_OF_CAPE_HATTERAS",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Document layout is severely disrupted by misplaced header and footer elements appearing within the main text flow.",
+      "severity": "major",
+      "evidence": "In the HTML, the address footer and duplicated header text appear before the main 'PROCLAMATION' title, creating a large unnatural gap and disrupting the reading order.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Document layout is disrupted by a misplaced footer element.",
+      "severity": "major",
+      "evidence": "In the HTML, the address footer is erroneously inserted between Section III and the subsequent paragraph.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Document layout is disrupted by a misplaced footer element breaking a paragraph.",
+      "severity": "major",
+      "evidence": "In the HTML, the address footer is inserted mid-sentence, breaking the text between the end of item J and its continuation (the URL).",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing graphical signature.",
+      "severity": "major",
+      "evidence": "The graphical signature present in the PDF sign-off block is missing in the HTML, replaced by an empty line.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Page headers and footers are inserted directly into the middle of continuous sentences at page breaks, which disrupts the text flow.",
+      "severity": "minor",
+      "evidence": "In Section III.B, the text reads '...or more than 100 pounds of black sea bass from' followed immediately by the page footer, a header image, and then the rest of the sentence 'April 1 through December 31...'. A similar interruption occurs in Section IV.J where a URL is split across the page break.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 69.33,
+    "page_count": 3,
+    "visual_input_tokens": 7326,
+    "visual_output_tokens": 518,
+    "content_input_tokens": 6201,
+    "content_output_tokens": 290,
+    "timestamp": "2026-04-11T06:02:13.853786",
+    "auditor_version": "1.0.0"
+  }
+}

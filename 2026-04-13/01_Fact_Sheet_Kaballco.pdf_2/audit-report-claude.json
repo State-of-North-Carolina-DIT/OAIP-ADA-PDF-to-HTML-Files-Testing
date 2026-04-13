@@ -1,0 +1,78 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf_2",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The title 'Draft Corrective Action Permit' appears larger/bolder in the HTML version compared to the PDF where it matches the same font size as the rest of the header block.",
+      "severity": "minor",
+      "evidence": "PDF: 'Draft Corrective Action Permit' is in the same font size as surrounding header text. HTML: It appears as a larger, bolder heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The centered header block in the PDF ('FACT SHEET' and the permit title/address) appears slightly differently styled in the HTML, with 'FACT SHEET' rendered as a smaller, lighter header element.",
+      "severity": "minor",
+      "evidence": "PDF: 'FACT SHEET' appears in standard bold caps. HTML: 'FACT SHEET' appears as a smaller, lighter styled text at top.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The mailing address block (Mr. Adam Ulishney, Chief...) has slightly different indentation in the HTML compared to the PDF, but the structure is preserved.",
+      "severity": "minor",
+      "evidence": "PDF: Address block is indented from left margin. HTML: Address block is similarly indented but with slightly different margins.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "URL in the administrative record reference is not rendered as a clickable hyperlink in the HTML, and the email address for the project manager is not hyperlinked either. However, the text itself matches the PDF, so no fabrication.",
+      "severity": "minor",
+      "evidence": "PDF has URL 'https://deq.nc.gov/about/divisions/waste-management/laserfiche' and email 'caroline.bari@ncdenr.gov' as plain text; HTML also has them as plain text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has no h1 element. The document title 'Draft Corrective Action Permit' is rendered as an h2. There is no clear heading hierarchy \u2014 the entire document uses only a single h2 for the title with no other headings, which is acceptable for a fact sheet but the lack of h1 is a structural issue.",
+      "severity": "major",
+      "evidence": "HTML uses <h2>Draft Corrective Action Permit</h2> as the only heading. No h1 is present.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> elements \u2014 the outer <main> wraps everything, and then there are additional <main> tags inside for page content sections. This is invalid HTML structure but does not cause content duplication.",
+      "severity": "minor",
+      "evidence": "HTML has <main> at the top level, then two more <main> elements inside for page 1 and page 2 content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The contact email for Caroline Bari appears inconsistently between pages in the PDF itself (caroline.bari@ncdenr.gov on page 1 vs caroline.bari@deq.nc.gov on page 2). The HTML preserves both email addresses as they appear in the PDF, which is faithful reproduction.",
+      "severity": "minor",
+      "evidence": "Page 1 PDF and HTML: 'caroline.bari@ncdenr.gov'; Page 2 PDF and HTML: 'caroline.bari@deq.nc.gov'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 32.1,
+    "page_count": 2,
+    "visual_input_tokens": 5914,
+    "visual_output_tokens": 559,
+    "content_input_tokens": 6886,
+    "content_output_tokens": 757,
+    "timestamp": "2026-04-11T05:52:15.486761",
+    "auditor_version": "1.0.0"
+  }
+}

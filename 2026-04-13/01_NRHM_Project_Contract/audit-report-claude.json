@@ -1,0 +1,238 @@
+{
+  "document_id": "01_NRHM_Project_Contract",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 PDF has a two-column layout (left column with state info, right column with RFQ details) that is rendered differently in the HTML - the table structure is present but the visual separation and form-like layout is less distinct.",
+      "severity": "major",
+      "evidence": "PDF shows a clear form-like grid with bordered cells. HTML renders as a more linearized table but retains the data pairing.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The authorized signature on the vendor section and the DENR acceptance signature are handwritten signatures in the PDF that appear missing or degraded in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF shows handwritten signatures for Brian J. McCrodden and the DENR authorized representative. HTML shows text references but the actual signature images may not render.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 in the HTML rendering shows fragmented/duplicated content - the page appears to contain multiple overlapping renderings of the same content including repeated vendor information tables and duplicated sections.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows a clean continuation. HTML page 2 shows what appears to be multiple overlapping copies of vendor info, ACCEPTANCE OF QUOTE, FOR DENR USE ONLY sections, plus fragments from other pages.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 2 HTML has severely disrupted reading order with content from multiple pages mixed together and duplicated.",
+      "severity": "critical",
+      "evidence": "PDF page 2 is a clean second page. HTML page 2 contains duplicated vendor tables, multiple renderings of the same form sections, and mixed content from different parts of the document.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The bid items table on page 3 is rendered in HTML with correct data but the visual styling differs from the PDF's bordered table format.",
+      "severity": "minor",
+      "evidence": "PDF shows a bordered table with ITEM#, QTY, UNIT, DESCRIPTION, COST columns. HTML renders the same table structure with the same data.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 4 HTML shows duplicated content - vendor information table appears again along with duplicated ACCEPTANCE OF QUOTE section, plus content that belongs on other pages.",
+      "severity": "major",
+      "evidence": "PDF page 4 shows only vendor info section and award criteria text. HTML page 4 shows this content plus duplicated sections from page 1.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Page 4 HTML contains small thumbnail-like images of document pages that don't appear in the PDF.",
+      "severity": "major",
+      "evidence": "PDF page 4 has no thumbnail images. HTML page 4 shows what appear to be small embedded document page thumbnails.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 5 ITS Terms and Conditions - the HTML rendering includes duplicated/overlapping content with fragments from the scanned document visible alongside clean text.",
+      "severity": "major",
+      "evidence": "PDF page 5 shows clean ITS Terms and Conditions text. HTML shows the same content but with additional duplicated fragments.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 6 HTML continues the pattern of duplicated content with overlapping renderings.",
+      "severity": "major",
+      "evidence": "PDF page 6 has clean continuation of terms. HTML page 6 shows duplicated sections from terms and conditions.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Pages 7-8 HTML rendering shows fragmented layout with content from multiple pages mixed together, including small image fragments visible alongside the clean text conversion.",
+      "severity": "major",
+      "evidence": "PDF pages 7-8 show clean sequential terms and conditions content. HTML shows interleaved duplicate content and image fragments.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 9 shows the pattern of overlapping/duplicated content from the Stop Work Order section and subsequent terms.",
+      "severity": "major",
+      "evidence": "PDF page 9 has clean content. HTML has duplicated/overlapping renderings.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Exhibit 1 scope of work content is present in HTML but some bullet formatting differs slightly.",
+      "severity": "minor",
+      "evidence": "PDF shows indented bullets. HTML renders them as standard list items.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 11 HTML shows duplicated Exhibit 1 content with both scanned image fragments and clean text versions appearing together.",
+      "severity": "major",
+      "evidence": "PDF page 11 has single clean rendering. HTML has overlapping duplicate content.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 12 (Deliverables/Schedule/Estimate of Cost sections) - HTML shows duplicated content with scanned fragments alongside clean text.",
+      "severity": "major",
+      "evidence": "PDF shows clean Moffatt & Nichol scope content. HTML shows duplicated versions.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The fee schedule table and cost breakdown in Exhibit 2 are rendered as clean HTML tables matching the PDF data.",
+      "severity": "minor",
+      "evidence": "PDF shows fee schedule with roles and rates. HTML renders same data in table format.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Exhibit 3 page shows duplicated content with the TJCOG Project Support Proposal appearing in both scanned fragment form and clean HTML.",
+      "severity": "major",
+      "evidence": "PDF shows single clean Exhibit 3. HTML shows overlapping duplicate renderings.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Exhibit 3 budget tables (rates, project management support, review documents, stakeholder group support) are rendered as HTML tables with correct data.",
+      "severity": "minor",
+      "evidence": "PDF shows structured budget breakdown. HTML renders multiple tables with matching data.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Multiple pages of content from the PDF (pages 2-6) contain extensive instruction/terms sections (Items 6-10, 18-20, 26-29) that are missing from the HTML. While many terms and conditions are present, several numbered sections are omitted.",
+      "severity": "critical",
+      "evidence": "PDF pages 2-6 contain sections numbered through 39. Some sections like Items 6-10 (visible on omitted pages), sections 18-20 (Intellectual Property, Use of State Data, etc.), and sections 26-29 (Termination clauses) appear to be missing or heavily truncated in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The vendor information table on page 1 of the PDF is restructured into a 3-column table in the HTML with duplicated column headers and duplicated cell values, when the PDF shows a 2-section layout.",
+      "severity": "major",
+      "evidence": "HTML table has 'Column 1 | Column 2 | Column 3' headers with FEDERAL ID repeated in Column 2 and Column 3, and FAX NUMBER repeated in two columns. The PDF shows a cleaner two-panel layout without such duplication.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The vendor info table duplicates values across columns - FEDERAL ID OR SOCIAL SECURITY NO. 52-1413880 appears in both Column 2 and Column 3, FAX NUMBER 919-831-1295 appears in both Column 2 and Column 3.",
+      "severity": "major",
+      "evidence": "HTML: Two cells both contain 'FEDERAL ID OR SOCIAL SECURITY NO.<br>52-1413880' and two cells both contain 'FAX NUMBER:<br>919-831-1295'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "No h1 heading exists in the document. The HTML uses only h3 headings throughout, creating a flat hierarchy with no document title and skipping h1 and h2 levels entirely.",
+      "severity": "major",
+      "evidence": "All section headings use <h3>: 'NOTICE TO VENDOR', 'EXECUTION', 'ACCEPTANCE OF QUOTE', 'ITS Terms and Conditions', 'Exhibit 1', etc. No h1 or h2 is present.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Exhibit 2 scope of work content (pages 8-9 of PDF) covering Moffatt & Nichol's detailed methodology for agricultural demand data, irrigation estimation, and data deliverables is included but the exhibit header 'Exhibit 2' and the formal title/heading identifying it are missing from the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 8 has a distinct 'Exhibit 2' section header. The HTML jumps from Exhibit 1 content directly into the Exhibit 2 content without the 'Exhibit 2' heading, though the content about crop irrigation and municipal/industrial data is present.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The subcontractor name 'Moffatt & Nichols' is inconsistently rendered - PDF page 2 says 'Moffatt & Nichols' but PDF Exhibit 2 (page 9) says 'Moffatt & Nichol' (without s). The HTML follows this inconsistency faithfully in some places but also uses 'Moffatt & Nichol' where the PDF page 2 says 'Nichols'.",
+      "severity": "minor",
+      "evidence": "PDF page 2: 'Moffatt & Nichols will develop historical municipal...' HTML: 'Moffatt & Nichols will develop historical municipal...' - this is actually consistent with the PDF, so this is a minor note about the source inconsistency.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text variation: PDF says 'G.S. 147-33-100' in the EXECUTION section. The HTML faithfully reproduces this.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML contain 'collusion (G.S. 147-33-100)' - no issue here upon verification.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The page header table adds generic column headers 'Column 1' and 'Column 2' that don't exist in the PDF. While these are formatting artifacts rather than content fabrication, they add text not in the source.",
+      "severity": "minor",
+      "evidence": "HTML contains '<th>Column 1</th><th>Column 2</th>' headers for the main document header table and vendor information table. The PDF has no such column headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Exhibit 3 Stakeholder Group Support section shows 'Total Cost to Facilitate Stakeholder Group Meetings: $16,000' in the HTML but the PDF shows this as '$16,000'. This is correct. However, the overall total shows '$24,000' which matches. But the individual sub-totals in Exhibit 3 ($6,000 + $2,000 + $16,000 = $24,000) are correctly represented.",
+      "severity": "major",
+      "evidence": "PDF and HTML both show: Project Management Support $6,000, Review Documents $2,000, Stakeholder Group Meetings $16,000, Total $24,000 - verified consistent.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Pages 2-3 of the PDF contain instructions to vendors (items 1-13 approximately) that precede the ITS Terms and Conditions. Several of these instruction items are missing from the HTML, as the HTML jumps from the bid table directly to Award Criteria.",
+      "severity": "major",
+      "evidence": "PDF page 2 begins with Award Criteria but preceding pages (implied page 2 content in the PDF numbering) contain mailing instructions and other vendor instructions referenced in 'Refer to page 2 for proper mailing instructions.' These mailing instructions are not present in the HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 17,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 89.99,
+    "page_count": 10,
+    "visual_input_tokens": 26424,
+    "visual_output_tokens": 2290,
+    "content_input_tokens": 32377,
+    "content_output_tokens": 1791,
+    "timestamp": "2026-04-11T05:57:32.184258",
+    "auditor_version": "1.0.0"
+  }
+}

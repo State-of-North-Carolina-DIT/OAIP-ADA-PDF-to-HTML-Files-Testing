@@ -1,0 +1,78 @@
+{
+  "document_id": "01_NRHM_Meeting_Agenda_052708",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a free-form layout with time slots and topics arranged in a loosely columnar format without explicit table borders, while the HTML renders the agenda items in a formal table with visible row dividers and column headers.",
+      "severity": "minor",
+      "evidence": "PDF shows agenda items as aligned text blocks without table borders. HTML wraps them in a structured table with 'Time', 'Topic', and 'Presenter' column headers and horizontal row separators.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The agenda topic headings (e.g., 'Project Finance Update', 'Project Status') appear bold in the PDF but are rendered in normal weight (not bold) in the HTML table.",
+      "severity": "minor",
+      "evidence": "PDF: 'Project Finance Update', 'Project Status', 'Discuss Model Schematic', etc. are bold. HTML: these same headings appear in regular weight text within the table cells.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The presenter names in the PDF are right-aligned on the same line as the topic headings, while in the HTML they are in a separate right column of the table, which is functionally equivalent but visually different.",
+      "severity": "minor",
+      "evidence": "PDF: presenter names like '(Neelufa Sarwar)' appear right-justified inline. HTML: they appear in a dedicated 'Presenter' column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF presents the agenda as a formatted list without explicit table structure (no visible grid/borders), while the HTML converts it into a formal table with headers 'Time', 'Topic', and 'Presenter'. The column headers are fabricated \u2014 they don't appear in the PDF.",
+      "severity": "minor",
+      "evidence": "The HTML adds <thead> with <th>Time</th>, <th>Topic</th>, <th>Presenter</th> which do not appear in the PDF. However, these are reasonable structural inferences from the content layout.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The table column headers 'Time', 'Topic', and 'Presenter' are added labels not present in the source PDF. These are structural inferences rather than substantive fabrication.",
+      "severity": "minor",
+      "evidence": "PDF has no column headers; HTML adds <th>Time</th>, <th>Topic</th>, <th>Presenter</th>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element inside another <main> element, which while not content duplication per se, indicates structural redundancy.",
+      "severity": "major",
+      "evidence": "HTML has <body><main><main>...</main></main></body> \u2014 two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'AGENDA' is rendered as h1, which is acceptable. However, the heading hierarchy is flat \u2014 there are no h2 or lower headings for the agenda items, which is a reasonable simplification given the table structure used.",
+      "severity": "minor",
+      "evidence": "Only one heading: <h1>AGENDA</h1>. Agenda item topics are within table cells rather than headings.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.16,
+    "page_count": 1,
+    "visual_input_tokens": 3830,
+    "visual_output_tokens": 577,
+    "content_input_tokens": 4536,
+    "content_output_tokens": 683,
+    "timestamp": "2026-04-11T05:56:12.248891",
+    "auditor_version": "1.0.0"
+  }
+}

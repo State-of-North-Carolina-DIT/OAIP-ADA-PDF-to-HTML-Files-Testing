@@ -1,0 +1,86 @@
+{
+  "document_id": "01_Fact_Sheet_SKA.pdf_2",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The document title block in the PDF is centered, while in the HTML it is left-aligned.",
+      "severity": "minor",
+      "evidence": "PDF shows 'FACT SHEET / DRAFT PERMIT RENEWAL / Safety-Kleen Archdale / ...' centered on the page. HTML shows these lines left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings 'Background' and 'Public Comment & Public Hearing' are underlined in the PDF but rendered as larger bold headings without underline in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: underlined headings in body text size. HTML: larger bold headings (h2-style) without underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The header block on page 2 is centered in the PDF but left-aligned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: centered 'FACT SHEET / DRAFT PERMIT RENEWAL / Safety-Kleen Archdale / ...' at top. HTML: left-aligned header block.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The mailing address block for Mr. Adam Ulishney is indented in the PDF but left-aligned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows the address block indented from the left margin. HTML shows it flush left.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL in the PDF is presented as a hyperlink but is rendered as plain text in the HTML without an anchor tag.",
+      "severity": "minor",
+      "evidence": "PDF contains 'https://edocs.deq.nc.gov/WasteManagement/Welcome.aspx' as a hyperlink. HTML renders it as plain text without an <a> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There is no h1 element in the HTML. The document title/header information is placed in a div with class 'page-header' using paragraph tags. The section headings 'Background' and 'Public Comment & Public Hearing' are rendered as h2 but there is no h1 to establish the hierarchy.",
+      "severity": "major",
+      "evidence": "The HTML uses <div class='page-header'> for the document title block and <h2> for 'Background' and 'Public Comment & Public Hearing' but has no <h1> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header block (FACT SHEET, DRAFT PERMIT RENEWAL, Safety-Kleen Archdale, address, EPA ID) is repeated as both the outer page-header div and the mid-document page-header div, reflecting the two-page PDF headers. This is acceptable consolidation but the second occurrence breaks the flow of the sentence that spans across pages.",
+      "severity": "minor",
+      "evidence": "The page header appears at the top and again mid-document before page 2 content, mirroring the PDF's two-page layout.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There is a nested <main> element inside the outer <main> element, which is invalid HTML structure.",
+      "severity": "minor",
+      "evidence": "The outer <body> contains <main>, then the content has another <main> nested inside it.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 26.61,
+    "page_count": 2,
+    "visual_input_tokens": 6432,
+    "visual_output_tokens": 596,
+    "content_input_tokens": 7436,
+    "content_output_tokens": 689,
+    "timestamp": "2026-04-11T05:52:33.037876",
+    "auditor_version": "1.0.0"
+  }
+}

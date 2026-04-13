@@ -1,0 +1,70 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The title in the HTML version uses significantly larger font sizes compared to the PDF, where the title text is roughly the same size as body text.",
+      "severity": "minor",
+      "evidence": "PDF: 'Draft Corrective Action Permit for Kaba Ilco Corporation' is in a modest centered font similar to body text size. HTML: These lines are rendered as large heading-style text, much more prominent than in the PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML adds a horizontal rule/divider line between the title and the address block that does not exist in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: No horizontal line between title and address. HTML: A dark blue/navy horizontal rule separates the title from the address block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'FACT SHEET' header at the top of the page is less prominent in the HTML compared to the PDF where it appears centered and in a standard font.",
+      "severity": "minor",
+      "evidence": "PDF: 'FACT SHEET' is centered in regular caps. HTML: 'FACT SHEET' appears smaller and in a lighter gray color.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL for the administrative record is not rendered as a clickable hyperlink in the HTML, and the email address for the project manager is present but also not hyperlinked. These are present in the PDF as plain text, so no fabrication, but link formatting is absent.",
+      "severity": "minor",
+      "evidence": "PDF contains URL 'https://deq.nc.gov/about/divisions/waste-management/laserfiche' and email 'caroline.bari@ncdenr.gov' \u2014 both appear in HTML as plain text without <a> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "On page 2, the contact email for Caroline Bari is listed as 'caroline.bari@deq.nc.gov' in the PDF, but on page 1 the PDF also uses 'caroline.bari@ncdenr.gov'. The HTML reproduces both correctly matching the PDF text on each respective page. No fabrication found.",
+      "severity": "minor",
+      "evidence": "Page 1 PDF: 'caroline.bari@ncdenr.gov'; Page 2 PDF: 'caroline.bari@deq.nc.gov'. HTML matches both.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'Draft Corrective Action Permit for Kaba Ilco Corporation' is rendered as an h1, which is reasonable. However, the document has no other headings in the PDF, so the lack of h2-h6 tags is acceptable. No hierarchy issues.",
+      "severity": "minor",
+      "evidence": "PDF has no section headings beyond the title block; HTML uses a single h1 for the title.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 28.74,
+    "page_count": 2,
+    "visual_input_tokens": 5766,
+    "visual_output_tokens": 564,
+    "content_input_tokens": 6853,
+    "content_output_tokens": 607,
+    "timestamp": "2026-04-11T05:51:48.250997",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "01_NCDAQ_Final_RH_SIP_Transmittal_Letter_040422.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "The HTML duplicates the entire content of the page. After presenting a formatted version of the page, it immediately appends an unformatted raw text dump of the same content.",
+      "severity": "critical",
+      "evidence": "In the HTML rendering, the DEQ footer at the bottom of the formatted letter is immediately followed by a repeat of the header text ('ROY COOPER...', 'April 4, 2022') and the beginning of the letter body.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The reading order is disrupted by the continuation of the duplicated text from the previous page.",
+      "severity": "critical",
+      "evidence": "The HTML rendering for this section begins with the second half of the duplicated Page 1 text (bulleted list and footer) before starting the actual header and content for Page 2.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML duplicates the content of the page, appending a raw text version after the formatted section.",
+      "severity": "critical",
+      "evidence": "The HTML rendering shows the complete page content including the signature and cc list, and then immediately shows the Page 3 header ('Daniel Blackman April 4, 2022 Page 3') again at the bottom, initiating a duplicate text block.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML presents content where the source PDF has a blank page.",
+      "severity": "critical",
+      "evidence": "The PDF page is completely blank, but the HTML rendering contains the full raw text duplicate of the content from Page 3.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 4,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 99.67,
+    "page_count": 4,
+    "visual_input_tokens": 9532,
+    "visual_output_tokens": 704,
+    "content_input_tokens": 6289,
+    "content_output_tokens": 209,
+    "timestamp": "2026-04-11T05:56:16.948612",
+    "auditor_version": "1.0.0"
+  }
+}

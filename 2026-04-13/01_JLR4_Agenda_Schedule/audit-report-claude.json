@@ -1,0 +1,102 @@
+{
+  "document_id": "01_JLR4_Agenda_Schedule",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The original slide uses indented sub-items under main agenda items, presented in a visual hierarchy. The HTML converts this to a bulleted/sub-bulleted list format which changes the visual structure but preserves the hierarchy.",
+      "severity": "major",
+      "evidence": "PDF shows indented yellow text on dark blue background without bullet points. HTML shows bullet points (filled and open circles) on white background.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The agenda title and items in the PDF are yellow text on a dark blue background, presented as a slide. The HTML renders them as black text on white background with standard heading formatting.",
+      "severity": "minor",
+      "evidence": "PDF: yellow text on dark navy blue slide background. HTML: black text on white background with a horizontal rule under the heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Jordan Lake Water Supply Storage Allocation table in the HTML is cut off at the bottom of page 1, showing only the header row and beginning of first data row, with the rest continuing on page 2.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows complete table. HTML splits the table across pages 1 and 2.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the Cape Fear \u2013 Neuse River Basin Hydrologic Model column, the HTML changes values for dates 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013 from the original content to 'EMC Model Approval' where the PDF shows different content.",
+      "severity": "major",
+      "evidence": "PDF shows: 1/1/2013 has empty cell for Hydrologic Model column; 2/1/2013 shows 'EMC Model Approval'; 4/1/2013 and 5/1/2013 are empty. HTML shows 'EMC Model Approval' for all four rows (1/1/2013, 2/1/2013, 4/1/2013, 5/1/2013).",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 11/14/2013 and 9/11/2014 rows in the PDF span across the Jordan Lake and Cape Fear columns as merged content. The HTML separates them into distinct columns with duplicated text.",
+      "severity": "major",
+      "evidence": "PDF: 11/14/2013 row has text spanning across Jordan Lake and Cape Fear columns as a single merged cell. HTML: the same text is duplicated in separate Jordan Lake and Cape Fear columns.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 'EMC Model Approval' entry in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column is duplicated across rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013. In the PDF, the 'EMC Model Approval' text appears to span or be associated with the 2/1/2013 row only, not repeated in every row from 1/1/2013 through 5/1/2013.",
+      "severity": "major",
+      "evidence": "PDF shows 'EMC Model Approval' appearing once in the Hydrologic Model column around 2/1/2013. HTML repeats 'EMC Model Approval' in rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 11/14/2013 row in the PDF shows the text 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' spanning across the Jordan Lake and Cape Fear columns. The HTML duplicates this text into both the 'Jordan Lake Water Supply Allocations' and 'Cape Fear River Basin Water Supply Plan' columns separately, but in the PDF it appears to span across columns as a single merged cell.",
+      "severity": "major",
+      "evidence": "PDF: single spanning entry for 11/14/2013. HTML: text duplicated in both column 2 and column 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 9/11/2014 row in the PDF shows 'EMC decision at the September 2014 meeting.' spanning across columns. The HTML duplicates this into both column 2 and column 3.",
+      "severity": "major",
+      "evidence": "PDF: single spanning entry for 9/11/2014. HTML: text 'EMC decision at the September 2014 meeting.' appears in both Jordan Lake and Cape Fear columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses two h1 elements \u2014 one for 'Agenda' and one for 'Jordan Lake Water Supply Storage Allocation - Updated Schedule'. Only one h1 is recommended per document. Additionally, 'Agenda' was not really a document title in the PDF but a slide heading.",
+      "severity": "minor",
+      "evidence": "HTML: <h1>Agenda</h1> and <h1>Jordan Lake Water Supply Storage Allocation - Updated Schedule</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The footnote reference '1' after 'Review Safe Yield Methodology' is rendered as plain text 'Methodology1' rather than as a superscript reference.",
+      "severity": "minor",
+      "evidence": "PDF: 'Review Safe Yield Methodology' with superscript 1. HTML: 'Review Safe Yield Methodology1'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 6,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 39.75,
+    "page_count": 2,
+    "visual_input_tokens": 6210,
+    "visual_output_tokens": 974,
+    "content_input_tokens": 6756,
+    "content_output_tokens": 974,
+    "timestamp": "2026-04-11T05:54:19.467456",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Sender details are duplicated.",
+      "severity": "minor",
+      "evidence": "The text block containing sender details ('ROY COOPER...') appears twice in side-by-side columns in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A large image containing the text from 'Certified Mail' down to the signature is embedded, duplicating the HTML text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "An image containing the top half of the email thread is embedded, duplicating the HTML text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Complete duplication of page text.",
+      "severity": "major",
+      "evidence": "The HTML displays the full email thread text twice, above and below an embedded image.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the text is embedded.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Complete duplication of page text.",
+      "severity": "major",
+      "evidence": "The HTML displays the full numbered list text twice.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the text is embedded.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Complete duplication of page text.",
+      "severity": "major",
+      "evidence": "The HTML displays the page text twice.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the text is embedded.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer text duplicated.",
+      "severity": "minor",
+      "evidence": "The legal disclaimer footer is duplicated below the embedded image.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the text is embedded.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Complete duplication of page text.",
+      "severity": "major",
+      "evidence": "The HTML displays the full letter text twice.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the letter is embedded.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the text is embedded.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Text from the next page is erroneously included.",
+      "severity": "critical",
+      "evidence": "The bottom of the HTML page contains text starting with '2. If the maximum explosive weight...', which logically belongs to Page 11.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the text is embedded.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Text from the next page is erroneously included.",
+      "severity": "critical",
+      "evidence": "The bottom of the HTML page contains text starting with 'Colonial determines...', which logically belongs to Page 12.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the text is embedded.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Text from the next page is erroneously included.",
+      "severity": "critical",
+      "evidence": "The bottom of the HTML page contains text starting with '3. Alamance Aggregates agrees...', which logically belongs to Page 13.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Erroneous embedded image of page text.",
+      "severity": "major",
+      "evidence": "A full-page screenshot of the text is embedded.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Massive text duplication.",
+      "severity": "critical",
+      "evidence": "The entire page text is duplicated multiple times in the HTML.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Text duplication.",
+      "severity": "major",
+      "evidence": "The heading text 'EXHIBITS 1A. AND 1B.' is duplicated in the HTML.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Caption duplication.",
+      "severity": "minor",
+      "evidence": "The image caption and page number appear twice below the map.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Caption duplication.",
+      "severity": "minor",
+      "evidence": "The image caption and page number appear twice below the map.",
+      "page": 16,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 4,
+  "major_count": 16,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 184.86,
+    "page_count": 17,
+    "visual_input_tokens": 37802,
+    "visual_output_tokens": 2338,
+    "content_input_tokens": 21829,
+    "content_output_tokens": 148,
+    "timestamp": "2026-04-11T05:49:33.412943",
+    "auditor_version": "1.0.0"
+  }
+}

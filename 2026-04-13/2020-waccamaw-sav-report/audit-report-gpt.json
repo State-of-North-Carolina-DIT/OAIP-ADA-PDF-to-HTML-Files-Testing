@@ -1,0 +1,46 @@
+{
+  "document_id": "2020-waccamaw-sav-report",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Title and section heading styling differs from the source.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF title is centered with serif styling and underlined section headings, while the HTML uses left-aligned sans-serif text with a horizontal rule and non-underlined headings. Content remains distinct and readable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading formatting is simplified in HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows an underlined, centered 'Results' heading; the HTML shows a left-aligned heading without underline. Body text content is preserved.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Summary heading formatting differs from the source.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF uses a centered, underlined 'Summary' heading, while the HTML uses a left-aligned heading without underline. The summary text and map placement are preserved.",
+      "page": 3,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 24.32,
+    "page_count": 10,
+    "visual_input_tokens": 17627,
+    "visual_output_tokens": 699,
+    "content_input_tokens": 14374,
+    "content_output_tokens": 142,
+    "timestamp": "2026-04-11T05:58:03.170742",
+    "auditor_version": "1.0.0"
+  }
+}

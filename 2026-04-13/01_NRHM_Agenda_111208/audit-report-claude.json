@@ -1,0 +1,70 @@
+{
+  "document_id": "01_NRHM_Agenda_111208",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a three-column layout for agenda items (time, topic, presenter) aligned across the page, while the HTML renders these as inline text in a single-column flow.",
+      "severity": "minor",
+      "evidence": "PDF shows time slots left-aligned, topics centered, and presenters right-aligned in a tabular-like layout. HTML presents all three elements concatenated on a single line (e.g., '10:00-10:10 Review Agenda and Brief Introductions (Neelufa Sarwar)').",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title 'AGENDA' is centered in the PDF but left-aligned in the HTML. The subtitle lines are also centered in PDF but left-aligned in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'AGENDA' centered at top, 'NEUSE RIVER BASIN HYDROLOGIC MODEL' and 'TECHNICAL REVIEW COMMITTEE' centered. HTML: all left-aligned with a horizontal rule under 'AGENDA'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The address and date/time information is centered in the PDF but left-aligned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: '512 N. Salisbury Street', venue, city, time, and date all centered. HTML: all left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Presenter names appear in parentheses inline with topic text in HTML, whereas in the PDF they are right-aligned in a separate column.",
+      "severity": "minor",
+      "evidence": "PDF: '(Neelufa Sarwar)' right-aligned. HTML: '(Neelufa Sarwar)' appended to the topic text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses only h1 for 'AGENDA' but does not use any subheadings (h2, h3, etc.) for the agenda items. While the PDF uses a visual layout with horizontal rules separating items, the HTML renders all agenda items as plain paragraphs with no heading hierarchy. This is a structural choice rather than an error, but it does not reflect the document's implicit structure well.",
+      "severity": "major",
+      "evidence": "Agenda items like 'Review Agenda and Brief Introductions', 'Project Finance Update', 'Project Status', etc. are all rendered as <p> tags rather than any heading level.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements, with the document content appearing inside an inner <main> tag within the outer <main> tag from the template. This is invalid HTML structure but does not cause content duplication.",
+      "severity": "major",
+      "evidence": "The template wraps everything in <main>...</main>, and the converted content also uses <main>...</main> inside it, resulting in nested main elements.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 31.32,
+    "page_count": 1,
+    "visual_input_tokens": 3802,
+    "visual_output_tokens": 824,
+    "content_input_tokens": 4616,
+    "content_output_tokens": 509,
+    "timestamp": "2026-04-11T05:56:02.198341",
+    "auditor_version": "1.0.0"
+  }
+}

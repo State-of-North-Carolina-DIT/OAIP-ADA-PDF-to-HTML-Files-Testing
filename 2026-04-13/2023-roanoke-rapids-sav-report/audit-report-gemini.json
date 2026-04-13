@@ -1,0 +1,46 @@
+{
+  "document_id": "2023-roanoke-rapids-sav-report",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Header and footer artifacts occasionally interrupt reading flow mid-sentence.",
+      "severity": "minor",
+      "evidence": "At the transition from page 3 to page 4, the PDF breaks a sentence ('...was water willow...'). In the HTML, the page number '2' and document title are inserted directly between these words, slightly disrupting the natural reading order.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML table structure introduces a new column header ('Scientific Name') that does not explicitly appear in the source PDF.",
+      "severity": "minor",
+      "evidence": "In the PDF, Table 1 has three header columns: 'Survey Overview', '#', and '%'. The HTML table adds a fourth header: '<th>Scientific Name</th>' to accommodate the scientific names of the species.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document lacks an <h1> tag, breaking the heading hierarchy by starting directly with <h2> tags.",
+      "severity": "minor",
+      "evidence": "The document title is styled using a generic div ('<div class=\"page-header\">Roanoke Rapids Lake Vegetation Survey Report</div>') and the first heading tag used in the HTML is '<h2>Introduction</h2>'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 117.75,
+    "page_count": 19,
+    "visual_input_tokens": 42584,
+    "visual_output_tokens": 875,
+    "content_input_tokens": 17144,
+    "content_output_tokens": 378,
+    "timestamp": "2026-04-11T06:01:07.433552",
+    "auditor_version": "1.0.0"
+  }
+}

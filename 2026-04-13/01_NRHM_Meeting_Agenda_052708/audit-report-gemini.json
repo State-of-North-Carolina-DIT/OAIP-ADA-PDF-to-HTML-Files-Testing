@@ -1,0 +1,38 @@
+{
+  "document_id": "01_NRHM_Meeting_Agenda_052708",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Horizontal line added.",
+      "severity": "minor",
+      "evidence": "The HTML rendering includes a horizontal line underneath the 'AGENDA' heading, which is not present in the source PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Implicit columns converted to an explicit table with added headers.",
+      "severity": "major",
+      "evidence": "The PDF uses whitespace to align text into three distinct columns. The HTML rendering transforms this into a formal HTML table with borders and injects a new header row ('Time', 'Topic', 'Presenter') that is absent from the original document.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 42.36,
+    "page_count": 1,
+    "visual_input_tokens": 2874,
+    "visual_output_tokens": 301,
+    "content_input_tokens": 2880,
+    "content_output_tokens": 159,
+    "timestamp": "2026-04-11T05:56:24.840405",
+    "auditor_version": "1.0.0"
+  }
+}

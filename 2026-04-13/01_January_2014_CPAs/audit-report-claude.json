@@ -1,0 +1,54 @@
+{
+  "document_id": "01_January_2014_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF presents all data in a single wide horizontal table fitting on one page, while the HTML renders it as a tall vertical table with wrapped cell content, significantly changing the layout from a compact wide format to a long narrow format.",
+      "severity": "major",
+      "evidence": "PDF shows a single-page wide table with all columns visible horizontally. HTML shows a narrower table where Owner-Facility text wraps extensively, making each row much taller and the table spans many vertical screens.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table column headers differ slightly in labeling but contain equivalent information. The structure (rows and columns) is preserved with the same 18 data rows and same column count.",
+      "severity": "minor",
+      "evidence": "PDF header 'Owner - Facility' vs HTML 'Owner - Facility'; PDF 'As Built Flow MGD' vs HTML column split similarly. All 18 rows are present in both versions with matching data.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title formatting differs slightly - PDF has centered title in two lines, HTML has a left-aligned title with the subtitle as a separate section header.",
+      "severity": "minor",
+      "evidence": "PDF: centered 'DWR Water Quality Programs / January 2014 Civil Penalty Assessments'. HTML: left-aligned bold 'DWR Water Quality Programs' with horizontal rule, then 'January 2014 Civil Penalty Assessments' as separate text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Total Cases: 18' footer line is preserved in the HTML, appearing at the bottom of the table.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show 'Total Cases: 18' at the bottom.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 21.46,
+    "page_count": 1,
+    "visual_input_tokens": 3542,
+    "visual_output_tokens": 675,
+    "content_input_tokens": 7993,
+    "content_output_tokens": 201,
+    "timestamp": "2026-04-11T05:54:57.687290",
+    "auditor_version": "1.0.0"
+  }
+}

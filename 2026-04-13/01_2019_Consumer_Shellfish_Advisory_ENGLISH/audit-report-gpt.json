@@ -1,0 +1,70 @@
+{
+  "document_id": "01_2019_Consumer_Shellfish_Advisory_ENGLISH",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Substantial loss of text emphasis and hierarchy on the advisory page.",
+      "severity": "major",
+      "evidence": "In the PDF on page 1, the title is very large and bold, key shellfish terms are italicized, and the main warning text is bold and centered with strong visual emphasis. In the HTML, the title is smaller, body text is regular-weight and left-aligned, and the warning no longer has the same strong emphasis.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order/content flow differs because page 1 PDF content is split across later HTML pages.",
+      "severity": "major",
+      "evidence": "The PDF page 1 includes the main advisory text and the agency attribution at the bottom as one complete page. In the HTML sequence, page 1 continues with extra legal text, page 2 repeats 'Shellfish Sanitation Section' and then shows the legal notice, and page 3 is blank, so a sighted reader encounters the content in a different sequence than in the source page pair.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page layout and section grouping are not preserved across the HTML pages.",
+      "severity": "major",
+      "evidence": "The PDF page 1 is a single centered poster-style layout with compact grouping. The HTML page 1 uses a top-left document layout with a rule line and flowing paragraphs; page 2 contains a separated legal block with large whitespace and page 3 is blank, indicating the original single-page grouping was redistributed.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Important legal notice formatting is not preserved.",
+      "severity": "major",
+      "evidence": "On PDF page 2, the legal notice is large, bold, and prominent in the center/lower page area. In the corresponding HTML page, the same legal notice appears on page 1 as regular paragraph text and on page 2 as bold text but with different placement and reduced prominence.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Content from PDF page 2 appears out of sequence in the HTML.",
+      "severity": "major",
+      "evidence": "The PDF page 2 presents 'Shellfish Sanitation Section' followed by the legal violation notice on that page. In the HTML, part of this content already appears on page 1, and page 2 repeats 'Shellfish Sanitation Section' before the notice, altering the source reading order.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "A blank HTML page is present where no corresponding PDF content exists in the provided source pages.",
+      "severity": "critical",
+      "evidence": "The third HTML rendering is entirely blank, while the provided PDF source pages contain content on pages 1 and 2 only. This introduces an extraneous page and breaks structural correspondence.",
+      "page": 3,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 18.44,
+    "page_count": 2,
+    "visual_input_tokens": 3675,
+    "visual_output_tokens": 716,
+    "content_input_tokens": 3650,
+    "content_output_tokens": 130,
+    "timestamp": "2026-04-11T05:50:09.092215",
+    "auditor_version": "1.0.0"
+  }
+}

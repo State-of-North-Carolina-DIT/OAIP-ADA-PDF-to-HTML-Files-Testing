@@ -1,0 +1,94 @@
+{
+  "document_id": "Buck_Meeting_Officer_Report_Final_5_13_16_00000002",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The green sidebar/decorative bar at the bottom of page 1 in the PDF is absent in the HTML",
+      "severity": "minor",
+      "evidence": "PDF has a green vertical bar along the left bottom edge; HTML does not show this decorative element",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The To/From/Subject block is rendered as a formal table with visible borders in the HTML, whereas in the PDF it appears as plain formatted text without borders",
+      "severity": "minor",
+      "evidence": "PDF shows To/From/Subject as text with tab-aligned content; HTML shows it in a bordered table",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The horizontal rule/red line separator under MEMORANDUM heading differs in styling",
+      "severity": "minor",
+      "evidence": "PDF has no colored separator; HTML has a red horizontal rule under the MEMORANDUM heading",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The Groundwater Assessments bullet point is missing bold/underline formatting in HTML on page 4",
+      "severity": "minor",
+      "evidence": "PDF shows 'Groundwater Assessments' as bold and underlined as a bullet header; HTML page 4 renders it without the bullet point marker styling consistent with other items",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The memo header fields (To/From/Subject) are rendered as a table in the HTML, but in the PDF they are simple label-value pairs, not a bordered table. Similarly, the outline (I-IV) is rendered as a table. While the data is accurate, the structural representation differs.",
+      "severity": "minor",
+      "evidence": "PDF shows 'To:', 'From:', 'Subject:' as simple memo fields. HTML renders them as <table> elements with rows and cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements (one inside the outer <main>), which is invalid HTML structure. More importantly, the document title 'MEMORANDUM' is rendered as h1, which is acceptable, but the section headings I, II, III, IV are rendered as h2 elements. The heading hierarchy is acceptable, but there is a structural nesting issue with duplicate <main> tags.",
+      "severity": "major",
+      "evidence": "HTML has <main> inside <body>, then another <main> inside the first <main>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Groundwater Assessments bullet point in the oral comments section (Section II) is missing its bullet marker in the HTML. It is styled with 'list-style-type: none' whereas in the PDF it has a bullet point like all other items.",
+      "severity": "minor",
+      "evidence": "PDF page 3: '\u2022 Groundwater Assessments \u2013' has a bullet. HTML: '<li style=\"list-style-type: none;\"><strong><u>Groundwater Assessments</u></strong>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor typo in PDF is faithfully reproduced: 'requests de that' appears in both PDF and HTML for the Costs bullet under Written Public Comments.",
+      "severity": "minor",
+      "evidence": "PDF page 4: 'A majority of the comments were requests de that Duke not pass on their cost to the consumers.' HTML matches.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header/footer content from page 1 of the PDF (State of North Carolina | Environmental Quality | Water Resources, address, phone) appears both in the document header area and as a page-footer div within the body of the HTML. This is minor duplication of boilerplate.",
+      "severity": "minor",
+      "evidence": "Header text appears at top of HTML and also in a div with class 'page-footer' after the outline section.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 39.43,
+    "page_count": 6,
+    "visual_input_tokens": 17102,
+    "visual_output_tokens": 727,
+    "content_input_tokens": 18902,
+    "content_output_tokens": 846,
+    "timestamp": "2026-04-11T06:02:36.824070",
+    "auditor_version": "1.0.0"
+  }
+}

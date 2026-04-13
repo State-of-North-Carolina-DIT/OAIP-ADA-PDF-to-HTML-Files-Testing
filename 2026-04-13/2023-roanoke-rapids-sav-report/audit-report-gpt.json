@@ -1,0 +1,46 @@
+{
+  "document_id": "2023-roanoke-rapids-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document title structure. The document title is not marked as an h1; instead, the first section heading is effectively treated as the top-level heading.",
+      "severity": "major",
+      "evidence": "PDF cover title: \"Roanoke Rapids Lake Vegetation Survey Report\". HTML uses a plain page-header div for the title and then starts with <h2>Introduction</h2>, with no <h1> for the document title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some image alt text is not fully faithful to the source image content and may be slightly fabricated or overly specific.",
+      "severity": "minor",
+      "evidence": "HTML alt text for Figure 1: \"Two side-by-side photos showing submersed vegetation abundance and density: hydrilla on the left, coontail on the right.\" The PDF caption identifies the subjects, but the right image visually appears more ambiguous; the alt text adds interpretive specificity beyond what is directly visible. Similarly, several map alts restate exact figure interpretations rather than purely describing visible content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There are several text accuracy/OCR issues that alter exact wording, including typographical errors and missing spaces.",
+      "severity": "major",
+      "evidence": "HTML Introduction says \"Roanoake Rapids Lake\" while the PDF says \"Roanoke Rapids Lake.\" HTML Coontail section says \"rootlessaquatic\" instead of the PDF's spaced wording \"rootless aquatic.\" HTML references section says \"Master\u2019s Thesis 141-164\" whereas the PDF reads \"Master\u2019s Thesis 141-164.\" (format preserved but punctuation/context is somewhat flattened).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 67.09,
+    "page_count": 19,
+    "visual_input_tokens": 35096,
+    "visual_output_tokens": 832,
+    "content_input_tokens": 24484,
+    "content_output_tokens": 534,
+    "timestamp": "2026-04-11T06:01:04.519498",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "NC logo/header graphic styling differs slightly but is present in both versions",
+      "severity": "minor",
+      "evidence": "PDF shows the NC Energy, Mineral & Land Resources logo with specific styling; HTML preserves the logo but with minor visual differences",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The outline section (I-IV) uses slightly different formatting in HTML",
+      "severity": "minor",
+      "evidence": "PDF uses Roman numerals with tab-aligned text in a structured list format; HTML renders them similarly but with slightly different indentation",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 in PDF is mostly blank with just footer; HTML consolidates this blank space and flows into next content section",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows large blank space with footer; HTML eliminates blank page and continues content flow",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings formatting slightly different",
+      "severity": "minor",
+      "evidence": "PDF uses bold Roman numerals with bold section titles (e.g., 'I. History/Background'); HTML preserves bold but uses slightly different heading sizes",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Bullet list indentation differs slightly between PDF and HTML",
+      "severity": "minor",
+      "evidence": "PDF bullet points have specific indentation within the page margins; HTML bullets are present but with slightly different indentation levels",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses 'MEMORANDUM' as an h1, which is acceptable as a document title. However, the section headings (I, II, III, IV) are all rendered as h2, which correctly reflects the flat structure of the document. No issues with hierarchy.",
+      "severity": "minor",
+      "evidence": "h1: MEMORANDUM; h2: I. History/Background, II. March 24, 2016 Public Meeting and Oral Comments Summary, III. Written Public Comment Summary, IV. Attachments",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page footer text is repeated multiple times throughout the HTML, matching each page break in the PDF. While this is technically duplication, it faithfully reproduces the source document's repeated footer. This is a minor formatting concern rather than a content error.",
+      "severity": "minor",
+      "evidence": "Footer text 'State of North Carolina | Environmental Quality | Energy, Mineral and Land Resources...' appears 5 times in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The first image has a descriptive alt text ('North Carolina Department of Environmental Quality logo'), which is appropriate. Subsequent images have empty alt text, which is acceptable for decorative page-break images.",
+      "severity": "minor",
+      "evidence": "First img: alt='North Carolina Department of Environmental Quality logo'; remaining imgs: alt=''",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.33,
+    "page_count": 5,
+    "visual_input_tokens": 16104,
+    "visual_output_tokens": 945,
+    "content_input_tokens": 15096,
+    "content_output_tokens": 602,
+    "timestamp": "2026-04-11T06:02:21.799236",
+    "auditor_version": "1.0.0"
+  }
+}

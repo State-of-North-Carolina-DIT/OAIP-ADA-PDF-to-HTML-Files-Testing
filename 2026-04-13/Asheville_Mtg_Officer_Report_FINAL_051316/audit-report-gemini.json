@@ -1,0 +1,70 @@
+{
+  "document_id": "Asheville_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout is broken, duplicated, and mixed with footer elements.",
+      "severity": "major",
+      "evidence": "The HTML duplicates the 'PAT McCRORY...' header text on the left side and places the footer text and colored bar above the main document title 'MEMORANDUM'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer content is incorrectly inserted into the document reading flow.",
+      "severity": "major",
+      "evidence": "The footer text and colored bar appear at the top of the content area, before the 'I. History/Background' section heading.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer content breaks a sentence and bullet point in half.",
+      "severity": "major",
+      "evidence": "The footer text and colored bar are injected between 'Coal ash should be' and 'disposed of on Duke Energy property...' within the 'Environmental' bullet point.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer content interrupts the logical flow between related paragraphs.",
+      "severity": "major",
+      "evidence": "The footer text and colored bar appear between the Section III introductory paragraph and the subsequent sentence 'The following is a summary...'.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer content is inappropriately placed between sections.",
+      "severity": "major",
+      "evidence": "The footer text and colored bar appear directly before the 'IV. Attachments' heading.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Pagination artifacts interrupt a continuous sentence across a page break.",
+      "severity": "minor",
+      "evidence": "In the HTML, the transition from Page 2 to Page 3 occurs in the middle of a sentence inside a list item. The text reads '...Coal ash should be' followed immediately by a `<div class=\"page-footer\">` and a `<figure>`, before concluding with 'disposed of on Duke Energy property...' on the other side. While no text is lost, this disrupts the structural integrity of the sentence and the list item.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 61.11,
+    "page_count": 5,
+    "visual_input_tokens": 11618,
+    "visual_output_tokens": 694,
+    "content_input_tokens": 7287,
+    "content_output_tokens": 294,
+    "timestamp": "2026-04-11T06:01:50.280194",
+    "auditor_version": "1.0.0"
+  }
+}

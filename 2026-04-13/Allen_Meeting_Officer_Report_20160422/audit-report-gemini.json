@@ -1,0 +1,46 @@
+{
+  "document_id": "Allen_Meeting_Officer_Report_20160422",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Loss of tabular alignment in the memorandum header",
+      "severity": "minor",
+      "evidence": "In the PDF, the contents of the 'To', 'From', and 'Subject' fields are vertically aligned at a consistent horizontal offset. In the HTML, they are rendered sequentially without maintaining this alignment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Hidden digital signature text is rendered visibly",
+      "severity": "minor",
+      "evidence": "The HTML includes a text block starting with 'Digitally signed by LYF' between the 'From' and 'Subject' fields, which is hidden or exists as a non-printable layer in the visual PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of list indentation for attachments",
+      "severity": "minor",
+      "evidence": "The Roman numeral list under 'IV. Attachments' is visually indented as a nested list in the PDF, but it is rendered flush left as standard paragraphs in the HTML.",
+      "page": 5,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 57.29,
+    "page_count": 5,
+    "visual_input_tokens": 11643,
+    "visual_output_tokens": 549,
+    "content_input_tokens": 7162,
+    "content_output_tokens": 145,
+    "timestamp": "2026-04-11T06:01:05.458562",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "document_id": "01_NRHM_Project_Contract",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Incorrect table structure with duplicated content in the vendor information section.",
+      "severity": "major",
+      "evidence": "On page 1, the PDF contains a complex form layout for vendor details. The HTML attempts to render this as a 3-column table, which forces incorrect grouping and duplicates several fields across columns (e.g., 'FEDERAL ID OR SOCIAL SECURITY NO.', 'Where will services be performed:', and 'FAX NUMBER' appear multiple times in the HTML table).",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 87.11,
+    "page_count": 10,
+    "visual_input_tokens": 22748,
+    "visual_output_tokens": 611,
+    "content_input_tokens": 20190,
+    "content_output_tokens": 207,
+    "timestamp": "2026-04-11T05:57:28.125889",
+    "auditor_version": "1.0.0"
+  }
+}

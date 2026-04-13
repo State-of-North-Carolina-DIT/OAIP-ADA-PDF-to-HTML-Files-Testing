@@ -1,0 +1,102 @@
+{
+  "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "North Carolina state flag image is missing from the HTML rendering on the title page",
+      "severity": "critical",
+      "evidence": "PDF shows the NC state flag prominently centered on page 1; HTML shows only a very small flag image in the upper left corner, significantly reduced in size and repositioned",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title page text sizing and centering not preserved",
+      "severity": "major",
+      "evidence": "PDF shows 'HB 1743 & Why We Are Here' as a very large centered title with 'Eco-Flows Science Advisory Board' and 'Nov 8, 2010' as centered subtitles. HTML shows these as left-aligned heading text without the same visual hierarchy",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 (blank/transition slide with NC flag) is collapsed into page 1 content area in HTML",
+      "severity": "major",
+      "evidence": "PDF has a distinct page 2 with just the NC flag on a dark background; HTML merges this into the header area of page 1",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Numbered list formatting differs - HTML uses standard ordered list while PDF uses bold numbered headings with sub-bullets",
+      "severity": "minor",
+      "evidence": "PDF shows '1. Improve River Basin Modeling' in large bold with dash sub-bullets; HTML preserves content but with smaller, more uniform styling",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide-based layout converted to continuous document flow",
+      "severity": "minor",
+      "evidence": "PDF presents each topic as a distinct slide; HTML renders as a continuous scrolling document with section headings, which is acceptable for semantic conversion but loses the discrete slide boundaries",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Modeling Supports Planning diagram - nested ellipses graphic is replaced with plain text labels",
+      "severity": "minor",
+      "evidence": "PDF shows a nested ellipse diagram with 'Water Supply Planning' in a green outer ellipse and 'River Basin Modeling' in an orange inner ellipse; HTML shows only the text labels without any diagram",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "DWR logo on contact page is present in both but appears smaller in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows the DWR Division of Water Resources logo prominently; HTML shows it but at reduced size",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h2 headings share the same text 'SAB \u2013 What It Is', which is accurate to the PDF slides but creates a somewhat confusing heading structure. The PDF uses these as separate slide titles.",
+      "severity": "minor",
+      "evidence": "Three separate div sections all have <h2>SAB \u2013 What It Is</h2>, matching the PDF's three slides with the same title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has two nested <main> elements, which is semantically incorrect HTML but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "Outer <main> wraps an inner <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The Modeling Supports Planning slide (page 10) loses the visual diagram context showing nested ellipses (River Basin Modeling inside Water Supply Planning). The HTML only renders two plain text lines.",
+      "severity": "minor",
+      "evidence": "PDF page 10 shows a nested ellipse diagram with 'Water Supply Planning' as outer ellipse and 'River Basin Modeling' as inner. HTML renders as two separate paragraphs with no indication of the nested relationship.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 40.82,
+    "page_count": 11,
+    "visual_input_tokens": 21763,
+    "visual_output_tokens": 1209,
+    "content_input_tokens": 21234,
+    "content_output_tokens": 578,
+    "timestamp": "2026-04-11T05:53:43.263992",
+    "auditor_version": "1.0.0"
+  }
+}

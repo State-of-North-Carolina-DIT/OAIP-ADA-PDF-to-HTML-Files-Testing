@@ -1,0 +1,158 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Cover page layout differs - HTML renders content in a more linear/flat layout without the centered title block styling of the PDF",
+      "severity": "minor",
+      "evidence": "PDF has a bold, centered title block with horizontal rule above it; HTML renders it more plainly with left-aligned content",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Professional engineer seal/stamp is missing or significantly different in HTML version of cover page",
+      "severity": "major",
+      "evidence": "PDF shows a North Carolina Professional Engineer seal (038141) with DocuSigned signature; HTML shows similar but placement differs",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Table of Contents layout slightly different - HTML uses more vertical spacing between entries",
+      "severity": "minor",
+      "evidence": "PDF has compact TOC with dotted leaders; HTML has more spread out entries without visual dotted leaders",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings in the body text lose underline formatting in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows underlined section headings like '2.1 Outfall 002 Sample Types'; HTML renders them without underlines",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italic text in CO Addendum quoted passage formatting differs",
+      "severity": "minor",
+      "evidence": "PDF shows the CO Addendum requirements in italic text; HTML preserves italics but block indentation is slightly different",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Mathematical equations rendered differently - HTML uses inline text formatting instead of centered equation display",
+      "severity": "minor",
+      "evidence": "PDF shows Equation 1 as centered mathematical notation with summation symbol; HTML renders as inline subscript text 'M_OF002 = \u03a3^N_n=1 m_OF002,n \u2212 m_intake,n'",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 formatting differs slightly between PDF and HTML but data content is preserved",
+      "severity": "minor",
+      "evidence": "PDF shows table with tighter formatting; HTML shows same data in a wider table format with different cell styling",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 satellite/aerial image is present in HTML but rendered with text labels extracted as separate text elements",
+      "severity": "minor",
+      "evidence": "PDF shows integrated map figure with embedded labels; HTML shows the image with some label text extracted below",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 2 flowchart - HTML renders the flowchart decision boxes and content as plain text instead of the graphical flowchart",
+      "severity": "major",
+      "evidence": "PDF shows a full graphical flowchart with diamond decision nodes and rectangular outcome boxes; HTML extracts just the text content as a linear sequence (YES/NO, decision questions, outcomes)",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 3 flowchart - HTML renders the flowchart content as plain text instead of the graphical flowchart",
+      "severity": "major",
+      "evidence": "PDF shows graphical flowchart for River Water Intake concentration determination; HTML extracts text linearly",
+      "page": 20,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer information and page numbering consolidated/removed in HTML",
+      "severity": "minor",
+      "evidence": "PDF has 'Outfall 002 Mass Load' footer with page number and date on each page; HTML shows these inline or omits them",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 headings used. The document has 'SITE CONVEYANCE NETWORK AND OUTFALL 002 PFAS MASS LOADING CALCULATION PROTOCOL' as h1, then 'TABLES' as h1, and 'FIGURES' as h1. Only one h1 should be used for the document title.",
+      "severity": "major",
+      "evidence": "HTML contains: <h1>SITE CONVEYANCE NETWORK AND OUTFALL 002 PFAS MASS LOADING CALCULATION PROTOCOL</h1>, <h1>TABLES</h1>, <h1>FIGURES</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Inconsistent heading hierarchy. Section 1 'INTRODUCTION' and Section 2 'OUTFALL 002 AND RIVER INTAKE SAMPLING' are rendered as h2, but Section 3 'PFAS MASS LOADING CALCULATION METHODOLOGY' is also h2. However, the TABLE OF CONTENTS, LIST OF TABLES, LIST OF FIGURES, and LIST OF ABBREVIATIONS are rendered as h3, when they are document-level headings that should be at the same level or higher than subsections.",
+      "severity": "major",
+      "evidence": "TABLE OF CONTENTS is <h3>, LIST OF ABBREVIATIONS is <h3>, but subsections like 2.1 Outfall 002 Sample Types are also <h3>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Table of Contents is reproduced in full as text on the page, in addition to the actual content sections themselves. This mirrors the PDF structure and is acceptable, but the TOC page header content is duplicated with the actual Geosyntec logo appearing repeatedly as embedded images throughout.",
+      "severity": "minor",
+      "evidence": "Multiple <figure><img> tags for the Geosyntec logo appear throughout, one per page header section",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In Table 1, all rows share the same 'Analytical Method' value of 'Table 3+ Lab SOP'. In the PDF, the Analytical Method column appears as a single merged cell spanning all rows. The HTML representation repeats this value per row, which is an acceptable interpretation of a merged cell but technically creates redundant data.",
+      "severity": "minor",
+      "evidence": "PDF shows single merged cell 'Table 3+ Lab SOP' spanning all analyte rows; HTML repeats '<td>Table 3+ Lab SOP</td>' 12 times",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Equation 1, the summation notation in the HTML loses the structure of the original equation. The PDF shows the subtraction of m_intake,n occurring inside the summation, but the HTML text representation is ambiguous about this.",
+      "severity": "minor",
+      "evidence": "PDF: M_OF002 = \u03a3(n=1 to N) m_OF002,n \u2212 m_intake,n. HTML: 'M<sub>OF002</sub> = \u2211<sup>N</sup><sub>n=1</sub> m<sub>OF002,n</sub> \u2212 m<sub>intake,n</sub>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes a file path reference 'Illustrator/Flow Charts/OutfallProtocol_flowchart_Sec3.4.ai' and 'Illustrator/Flow Charts/OutfallProtocol_flowchart_Sec3.5.ai' as text content. These appear to be extracted from the PDF figure source metadata and are present in the PDF page content, so not truly fabricated.",
+      "severity": "minor",
+      "evidence": "These paths appear in the PDF pages 16 and 17 as part of the figure reference metadata",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 12,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 71.74,
+    "page_count": 17,
+    "visual_input_tokens": 45869,
+    "visual_output_tokens": 1754,
+    "content_input_tokens": 45801,
+    "content_output_tokens": 1198,
+    "timestamp": "2026-04-11T05:45:34.517395",
+    "auditor_version": "1.0.0"
+  }
+}

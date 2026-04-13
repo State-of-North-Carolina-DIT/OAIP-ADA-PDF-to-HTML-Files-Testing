@@ -1,0 +1,21 @@
+{
+  "document_id": "01_bardeninlet",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 9.9,
+    "page_count": 1,
+    "visual_input_tokens": 2261,
+    "visual_output_tokens": 123,
+    "content_input_tokens": 2525,
+    "content_output_tokens": 143,
+    "timestamp": "2026-04-11T05:56:34.738040",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Data relationship diagram/graphic is missing from the HTML conversion.",
+      "severity": "major",
+      "evidence": "On PDF page 3 under 'Appendix B. Example Description of data relationships', there is a central relationship diagram with labeled boxes (Environmental Data, Gear Data, Replicate Data, Species Data, Individual Data, Tag Recapture Data, Age Data). In the HTML, this diagram is replaced by text/table content and isolated labels, but the actual graphic is not present.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Appendix A sample data block formatting is altered, reducing the visual distinction of a preformatted example.",
+      "severity": "minor",
+      "evidence": "On PDF page 2, the Appendix A sample appears as a compact monospaced/preformatted text block. In the HTML, the sample is shown as regular flowing text lines with looser spacing and larger heading treatment, which changes the presentation though the content remains readable.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Appendix B record type table contains incorrect values and mismatched labels compared with the PDF.",
+      "severity": "major",
+      "evidence": "PDF Appendix B lists: 'Record Type 8 \u2014 Fishing Gear Data' and the diagram box also shows gear data linked to the hierarchy. HTML table lists 'Record Type 8 | Fishing Gear Data', but the subsequent text block says 'Gear Data Record Type 7', creating an internal inconsistency not supported by the PDF. PDF also shows 'Replicate Data\u00b9' while HTML has 'Replicate Data1'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Appendix B key information fields table has incorrect cell values for species code byte length/position.",
+      "severity": "major",
+      "evidence": "PDF table 'Format and Position of Key Information Fields in the Database' shows 'SPECIES CODE' with 'Number of bytes 10' and 'Position to the first 11- 20'. HTML table shows 'SPECIES CODE | 10 | 11- 12', which truncates the position range and changes the data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Appendix C data dictionary table loses and alters table content, including coded values and units.",
+      "severity": "major",
+      "evidence": "PDF row for 'Bottom Composition' shows limits '1-9' but comments list letter codes 'A = Dome ... M = Natural'; HTML reproduces this contradictory layout, but more importantly the PDF uses degree symbols for temperature units while HTML changes units to 'EC' and 'C'. For example, PDF shows 'Air Temperature' unit as '\u00b0C' and HTML shows 'EC'; PDF shows 'Surface Temperature'/'Bottom Temperature' as '\u00b0C' and HTML shows plain 'C'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Multiple text transcription errors alter meaning or accuracy.",
+      "severity": "major",
+      "evidence": "PDF: '(.txt or .cvs) file' appears to be rendered in source; HTML keeps '.cvs', so not an issue. But PDF Appendix A header reads 'spstaus' and HTML matches; however, PDF Appendix B says 'Tag NUMBER field which present in both records.' HTML changes to 'TAG NUMBER field which present in both records.' Minor capitalization aside, more significant errors include PDF 'Individual Fish Data' while HTML later references 'Individual Data'. PDF title line is centered as 'Division of Marine Fisheries / CRFL Funding Data Delivery Specifications / January 2012'; HTML turns only the first line into h1 and leaves the rest as plain paragraphs, weakening document structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the source document structure, especially title and appendices.",
+      "severity": "major",
+      "evidence": "PDF has a three-line title block ('Division of Marine Fisheries', 'CRFL Funding Data Delivery Specifications', 'January 2012') followed by bold section heads 'Purpose:', 'Background:', 'Data Specifications:', 'Submittal Process:', and appendices. HTML uses only 'Division of Marine Fisheries' as h1, leaves 'CRFL Funding Data Delivery Specifications' and 'January 2012' as plain paragraphs, and promotes appendices to h2 without preserving the title block as a unified heading structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains a diagram in Appendix B, but the HTML does not expose it as an image with alt text.",
+      "severity": "minor",
+      "evidence": "PDF page shows a hierarchy diagram connecting record types under Appendix B. HTML replaces the diagram with plain text blocks such as 'Environmental Data Record Type 1', 'Gear Data Record Type 7', etc., and contains no corresponding <img> with alt text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 6,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 32.01,
+    "page_count": 10,
+    "visual_input_tokens": 18477,
+    "visual_output_tokens": 396,
+    "content_input_tokens": 17935,
+    "content_output_tokens": 992,
+    "timestamp": "2026-04-11T05:48:40.286448",
+    "auditor_version": "1.0.0"
+  }
+}

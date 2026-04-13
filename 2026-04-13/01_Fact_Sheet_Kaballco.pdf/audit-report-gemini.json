@@ -1,0 +1,21 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 50.54,
+    "page_count": 2,
+    "visual_input_tokens": 5096,
+    "visual_output_tokens": 187,
+    "content_input_tokens": 3788,
+    "content_output_tokens": 144,
+    "timestamp": "2026-04-11T05:52:03.581978",
+    "auditor_version": "1.0.0"
+  }
+}

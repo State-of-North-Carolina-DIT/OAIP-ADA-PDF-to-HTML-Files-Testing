@@ -1,0 +1,190 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Cover page collage images are rendered differently - the HTML version cuts off the bottom portion of the image collage, missing the lower-left photo and bottom-center photos",
+      "severity": "major",
+      "evidence": "PDF shows a complete bordered collage with all photos visible including ducks, boat scene, and close-up plant shots. HTML version appears to cut off at the bottom of the collage.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Cover page title formatting differs - PDF has bold title with horizontal line above, HTML has bold title with horizontal line below",
+      "severity": "minor",
+      "evidence": "PDF: red horizontal line above title; HTML: dark horizontal line below title",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings differ in formatting style - PDF uses underlined italic bold, HTML uses larger font headings",
+      "severity": "minor",
+      "evidence": "PDF 'Introduction' is underlined italic bold in smaller size; HTML 'Introduction' is a larger heading style without underline/italic",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Header/footer layout differs - PDF has running header 'Lake Gaston Aquatic Vegetation Report 2023' at top right with horizontal line; HTML places it differently",
+      "severity": "minor",
+      "evidence": "PDF has header at top of page with line separator; HTML has it as inline text between content sections",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Subsection headings formatting differs - PDF uses italic for 'Vegetation Survey' and 'Tuber Survey', HTML uses bold heading style",
+      "severity": "minor",
+      "evidence": "PDF: italic 'Vegetation Survey'; HTML: bold heading 'Vegetation Survey'",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Subsection headings formatting - PDF uses italic for 'Point Intercept Survey Effort' and 'Overall Vegetation', HTML uses bold heading style",
+      "severity": "minor",
+      "evidence": "PDF: italic subsection headers; HTML: bold heading subsection headers",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Subsection headings formatting - 'Hydrilla' and 'Lyngbya' are italic in PDF but rendered as larger bold headings in HTML",
+      "severity": "minor",
+      "evidence": "PDF: italic 'Hydrilla', 'Lyngbya'; HTML: bold heading style",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Conclusion section heading - PDF uses underlined bold italic, HTML uses larger heading style",
+      "severity": "minor",
+      "evidence": "PDF: 'Conclusion and Management Implications' underlined bold italic; HTML: plain heading style",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 styling differs but data is preserved - PDF has gray header row and alternating shading, HTML has cleaner table styling",
+      "severity": "minor",
+      "evidence": "PDF table has gray background header; HTML table has white background with borders",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 2 styling differs but data is preserved",
+      "severity": "minor",
+      "evidence": "PDF table has gray header and section dividers; HTML has cleaner styling but same data structure",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 bar graph and Figure 2 bar graph are missing as rendered images in HTML - only axis labels and data values appear as plain text",
+      "severity": "critical",
+      "evidence": "PDF shows two full bar graphs (Total Number of Survey Sites and Lake Gaston Aquatic Plant Community); HTML shows only text labels like '0 1000 2000 3000...' and species names without the actual chart graphics",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 3 (Water Willow map) and Figure 4 (Lyngbya map) are present in both versions",
+      "severity": "minor",
+      "evidence": "Both maps appear in PDF and HTML with same content",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 5 (Chara map) present in both versions",
+      "severity": "minor",
+      "evidence": "Map appears correctly in both PDF and HTML",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 7 (Lake Gaston Hydrilla chart) is missing as a rendered image in HTML - only axis text appears",
+      "severity": "critical",
+      "evidence": "PDF shows a dual-axis bar/line chart; HTML shows only text like 'Acres Rake Tosses', '0 10 20 30 40 50 60 70', etc.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 9 (Lake Gaston Lyngbya chart) is missing as a rendered image in HTML - only axis text appears",
+      "severity": "critical",
+      "evidence": "PDF shows a dual-axis bar/line chart; HTML shows only text like 'Acres', '0 5 10 15 20 25', etc.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 11 (Lake Gaston Eel Grass chart) is missing as a rendered image in HTML - only axis text appears",
+      "severity": "critical",
+      "evidence": "PDF shows a dual-axis bar/line chart; HTML shows only text like 'Acres % Sites', '0.0 0.5 1.0 1.5...', etc.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements, which is invalid HTML structure. Additionally, the heading hierarchy has some issues: 'Conclusion and Management Implications' is rendered as h2 on page 5, but the continuation on page 6 'Conclusion and Management Implications (con't)' is rendered as h3, creating an inconsistent hierarchy.",
+      "severity": "major",
+      "evidence": "PDF: 'Conclusion and Management Implications' is a major section heading on both pages 5 and 6. HTML: First instance is <h2>, continuation is <h3>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page headers ('Lake Gaston Aquatic Vegetation Report 2023') and page footers ('X | Page') from the PDF are preserved as div elements throughout the HTML, which creates repetitive content that wouldn't normally be part of a web document. However, this is a minor formatting choice rather than a substantive error.",
+      "severity": "minor",
+      "evidence": "Multiple instances of <div class='page-header'>Lake Gaston Aquatic Vegetation Report 2023</div> and <div class='page-footer'>X | Page</div> throughout the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In Table 1, the 'Emergent', 'Submersed', 'Floating Leaf', and 'Algae' category headers are rendered as regular data rows with empty cells. While the data values are all correct, these category labels function as sub-headers in the PDF's table structure and could benefit from distinct formatting. All numeric values are accurately preserved.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Emergent', 'Submersed', etc. as category sub-headers within the table. HTML renders them as <tr><td>Emergent</td><td></td><td></td><td></td><td></td></tr>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Table 1, the text states the aquatic plant community was comprised of 'submersed species (11%)' in the narrative, but Table 1 shows TOTAL SUBMERSED SPECIES as 9% of Total Vegetation (and 17% of Total Sites). This discrepancy exists in the source PDF itself, not introduced by the HTML conversion. The HTML accurately reproduces both figures.",
+      "severity": "minor",
+      "evidence": "PDF page 3 narrative: 'submersed species (11%)'. PDF Table 1: TOTAL SUBMERSED SPECIES = 9% of Total Vegetation. Both faithfully reproduced in HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The chart/graph figures (Figures 1, 2, 7, 9, 11) are not rendered as images but instead as text-based 'chart-data' divs containing axis labels and data points. While the data is preserved as text, these were visual bar/line charts in the PDF. The alt text is absent for these since they are not img tags.",
+      "severity": "minor",
+      "evidence": "PDF Figures 1, 2, 7, 9, 11 are bar/line charts. HTML renders them as <div class='chart-data'> with textual representations of axis labels and values.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 4,
+  "major_count": 2,
+  "minor_count": 15,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 73.23,
+    "page_count": 20,
+    "visual_input_tokens": 52264,
+    "visual_output_tokens": 2255,
+    "content_input_tokens": 51542,
+    "content_output_tokens": 1052,
+    "timestamp": "2026-04-11T06:00:14.962699",
+    "auditor_version": "1.0.0"
+  }
+}

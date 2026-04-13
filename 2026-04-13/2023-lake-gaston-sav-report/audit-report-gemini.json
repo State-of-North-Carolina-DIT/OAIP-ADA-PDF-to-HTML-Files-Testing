@@ -1,0 +1,54 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table converted to plain text",
+      "severity": "critical",
+      "evidence": "PDF page 15 contains a bar graph. The HTML version has converted the y-axis labels and legend text into plain text.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table converted to plain text",
+      "severity": "critical",
+      "evidence": "PDF page 16 contains a bar graph. The HTML version has converted the y-axis labels and legend text into plain text.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table converted to plain text",
+      "severity": "critical",
+      "evidence": "PDF page 18 contains a bar graph. The HTML version has converted the y-axis labels and legend text into plain text.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Chart images are missing structural <img> tags.",
+      "severity": "minor",
+      "evidence": "Figures 1, 2, 7, 9, and 11 in the PDF are bar/line charts. In the HTML, these figures lack <img> tags entirely. Instead, the raw text and data points from the charts were extracted into text blocks (e.g., <div class=\"chart-data\">). While the textual data is preserved, the visual structural elements are absent.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 48.29,
+    "page_count": 20,
+    "visual_input_tokens": 44788,
+    "visual_output_tokens": 985,
+    "content_input_tokens": 21947,
+    "content_output_tokens": 292,
+    "timestamp": "2026-04-11T05:59:06.884080",
+    "auditor_version": "1.0.0"
+  }
+}

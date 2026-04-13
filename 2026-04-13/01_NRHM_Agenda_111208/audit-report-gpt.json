@@ -1,0 +1,38 @@
+{
+  "document_id": "01_NRHM_Agenda_111208",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated boilerplate/theme content not present in the source PDF, including a CSS comment and external font import.",
+      "severity": "critical",
+      "evidence": "HTML head contains text not in the PDF: \"/* Digital Commons NC \u2014 Standalone Theme CSS */\" and \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\". The PDF page only contains the agenda content and no such branding, stylesheet text, or URL.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure is incomplete relative to the document hierarchy in the PDF. Only \"AGENDA\" is marked as an h1, while the committee/title lines are left as paragraph text instead of subordinate headings.",
+      "severity": "major",
+      "evidence": "PDF visually presents stacked title lines: \"AGENDA\", \"NEUSE RIVER BASIN HYDROLOGIC MODEL\", \"TECHNICAL REVIEW COMMITTEE\", \"MEETING\". HTML uses only <h1>AGENDA</h1> and places the remaining title lines inside a <p> block.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 11.62,
+    "page_count": 1,
+    "visual_input_tokens": 2656,
+    "visual_output_tokens": 137,
+    "content_input_tokens": 3133,
+    "content_output_tokens": 329,
+    "timestamp": "2026-04-11T05:55:43.084853",
+    "auditor_version": "1.0.0"
+  }
+}

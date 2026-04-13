@@ -1,0 +1,30 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Primary chart/image is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "On page 8, the PDF shows a large line chart labeled 'Example \u2013 Trinity River' with multiple colored flow curves and a legend. The HTML rendering shows a large black placeholder area above a table instead of the chart.",
+      "page": 8,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 31.24,
+    "page_count": 12,
+    "visual_input_tokens": 21663,
+    "visual_output_tokens": 647,
+    "content_input_tokens": 16403,
+    "content_output_tokens": 143,
+    "timestamp": "2026-04-11T05:53:02.442947",
+    "auditor_version": "1.0.0"
+  }
+}

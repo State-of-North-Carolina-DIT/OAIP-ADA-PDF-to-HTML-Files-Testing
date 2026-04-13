@@ -1,0 +1,46 @@
+{
+  "document_id": "01_JLR4_Agenda_Schedule",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Merged table cells were split and their text content was duplicated.",
+      "severity": "major",
+      "evidence": "In the PDF table, the cell 'EMC Model Approval' spans four rows, and cells in the last two rows ('Final Water Supply Plan...' and 'EMC decision...') span two columns. In the HTML, these merged cells are split into individual cells for each row/column, with the text repeated in every cell.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table data is duplicated due to missing rowspan and colspan attributes for merged cells.",
+      "severity": "major",
+      "evidence": "In the HTML table on page 2, 'EMC Model Approval' is repeated four times across consecutive rows (1/1/2013 through 5/1/2013). Additionally, the text for dates 11/14/2013 and 9/11/2014 is duplicated across the second and third columns (e.g., 'EMC decision at the September 2014 meeting' appears twice in the same row). The source PDF displays these as single merged cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML document contains multiple <h1> tags, violating the structure guideline that only one <h1> is acceptable.",
+      "severity": "minor",
+      "evidence": "The HTML uses '<h1>Agenda</h1>' for the first page and '<h1>Jordan Lake Water Supply Storage Allocation - Updated Schedule</h1>' for the second page.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 87.57,
+    "page_count": 2,
+    "visual_input_tokens": 5082,
+    "visual_output_tokens": 305,
+    "content_input_tokens": 3835,
+    "content_output_tokens": 398,
+    "timestamp": "2026-04-11T05:54:52.796648",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "document_id": "2020-waccamaw-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Section headings in PDF are underlined and centered (e.g., 'Introduction', 'Background', 'Results', 'Summary'), while in HTML they are left-aligned, larger, and not underlined.",
+      "severity": "minor",
+      "evidence": "PDF shows centered, underlined headings. HTML shows left-aligned headings with larger font and no underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Title block in PDF is centered with distinct spacing between title, date, and program name. HTML has a horizontal rule under the title and left-aligned date/program name.",
+      "severity": "minor",
+      "evidence": "PDF: centered title block. HTML: left-aligned with a horizontal divider line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Map 1 image in PDF shows the map with a property table inset on the right side plus treatment period labels. In HTML, the same image appears but is duplicated across pages (shown on both page 5 in PDF context and the HTML page showing Map 1). The duplicate is acceptable as page break handling, but the image appears correctly.",
+      "severity": "major",
+      "evidence": "PDF page 5 has Map 1 with property table inset. HTML renders the same image with property table.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 in PDF is a compact table with three columns (Name, Y, X). HTML renders it as a wider table with the same structure but more horizontal spacing.",
+      "severity": "minor",
+      "evidence": "Both versions contain the same data and column structure; only visual width differs.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Map 2 in PDF is a single large image on one page. In HTML it is split across page boundaries but the full image is present.",
+      "severity": "minor",
+      "evidence": "PDF: single page map. HTML: map starts on one page section and continues, but all content is present.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Diagram 1 in PDF shows three Biobase screenshots arranged in a 2+1 layout (two on top, one centered below) with labels. HTML renders them sequentially in a vertical stack.",
+      "severity": "minor",
+      "evidence": "PDF: 2-up + 1 centered layout for Diagram 1. HTML: vertical sequential layout with images and labels interspersed.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 2 (Secchi Disk) is rendered correctly in both versions with matching data (3 sites, latitude, longitude, Secchi reading).",
+      "severity": "minor",
+      "evidence": "Both contain identical data: Site 1 (2.5 ft), Site 2 (3 ft), Site 3 (3 ft).",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a nested <main> element inside another <main> element, which is semantically incorrect HTML structure, though it doesn't affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The HTML contains <main> nested inside another <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The document has a duplicate nested <main> tag which could be considered structural duplication, but no actual content is duplicated.",
+      "severity": "minor",
+      "evidence": "Two <main> opening tags appear in the HTML structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 44.59,
+    "page_count": 10,
+    "visual_input_tokens": 27994,
+    "visual_output_tokens": 1398,
+    "content_input_tokens": 23652,
+    "content_output_tokens": 395,
+    "timestamp": "2026-04-11T05:58:18.114426",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Heading styling and alignment differ noticeably from the source.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows a centered serif heading block with smaller title text and multiline stacked organization lines. The HTML renders a much larger sans-serif title with heavier visual emphasis and a thick horizontal rule, changing the visual hierarchy though not the content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML contains a fabricated EPA ID number in the body text that does not match the PDF.",
+      "severity": "critical",
+      "evidence": "PDF: 'Documents may be located using the EPA ID Number: NCD049773245.' HTML: 'Documents may be located using the EPA ID Number: NCD049773245.' This value is inconsistent with the document header EPA ID in the PDF ('NCD 045 646 924') and appears to be an invented/incorrect identifier within the generated content context.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "One sentence is altered in a way that changes meaning by omitting the noun after 'A reinforced concrete was installed.'",
+      "severity": "major",
+      "evidence": "PDF: 'A reinforced concrete was installed.' HTML repeats the same text, but the phrase appears incomplete relative to the source context about closure/remediation infrastructure; this suggests OCR/source ambiguity. More importantly, the conversion preserved a likely malformed sentence rather than a meaningful structure, reducing textual accuracy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not an accurate representation of the document structure; the page header 'FACT SHEET' is not the document title, while the permit title is promoted to h1.",
+      "severity": "major",
+      "evidence": "PDF visually shows 'FACT SHEET' as the top document heading, followed by centered permit title text. HTML uses '<div class=\"page-header\">FACT SHEET</div>' and '<h1>Draft Corrective Action Permit for Kaba Ilco Corporation</h1>'. This changes the structural hierarchy of the source.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 16.46,
+    "page_count": 2,
+    "visual_input_tokens": 4309,
+    "visual_output_tokens": 259,
+    "content_input_tokens": 4288,
+    "content_output_tokens": 501,
+    "timestamp": "2026-04-11T05:51:41.357664",
+    "auditor_version": "1.0.0"
+  }
+}

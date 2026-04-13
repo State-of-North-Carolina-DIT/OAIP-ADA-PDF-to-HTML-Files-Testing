@@ -1,0 +1,54 @@
+{
+  "document_id": "01_Fact_Sheet_SKA.pdf_2",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Document title block is incorrectly formatted as a running header.",
+      "severity": "major",
+      "evidence": "In the PDF, the title block ('FACT SHEET...') is centered and prominent. In the HTML, it is rendered as small, gray, left-aligned text at the top of the page, resembling a running header rather than the main document title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of hyperlink formatting.",
+      "severity": "minor",
+      "evidence": "The URL starting at the bottom of page 1 is colored blue and underlined in the PDF, but appears as plain text without link styling in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Headers and footers are inserted inline, disrupting reading order.",
+      "severity": "major",
+      "evidence": "On HTML page 2, the footer from page 1 and the header for page 2 are rendered inline between paragraphs of the main text, visually interrupting the continuous flow of the document.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of text indentation for the address block.",
+      "severity": "minor",
+      "evidence": "The mailing address block ('Mr. Adam Ulishney...') is indented in the PDF but is left-aligned with the rest of the body text in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 96.14,
+    "page_count": 2,
+    "visual_input_tokens": 5088,
+    "visual_output_tokens": 548,
+    "content_input_tokens": 4079,
+    "content_output_tokens": 143,
+    "timestamp": "2026-04-11T05:53:39.717968",
+    "auditor_version": "1.0.0"
+  }
+}

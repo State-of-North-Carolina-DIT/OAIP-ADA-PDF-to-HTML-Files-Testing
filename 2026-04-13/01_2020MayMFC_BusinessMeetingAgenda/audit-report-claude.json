@@ -1,0 +1,94 @@
+{
+  "document_id": "01_2020MayMFC_BusinessMeetingAgenda",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a left-aligned time/activity layout with indentation hierarchy, while the HTML converts this to a table format. The time-activity pairing layout is structurally different.",
+      "severity": "major",
+      "evidence": "PDF shows times (9:00 a.m., 9:10 a.m., etc.) left-aligned with activities indented to the right in a free-form layout. HTML renders these as a two-column table with 'Time' and 'Activity' headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The word 'AGENDA' in the PDF is displayed in a very large bold font as a prominent heading, while in the HTML it appears as a smaller section heading.",
+      "severity": "minor",
+      "evidence": "PDF: 'AGENDA' is in very large bold text, visually dominant. HTML: 'AGENDA' is styled as a smaller heading, less visually prominent.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italicized text in Director's Report description differs slightly in rendering.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Reports and updates on recent Division of Marine Fisheries activities' in italics. HTML renders it as regular (non-italic) text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Sub-items under Chairman's Report use different list styles between PDF and HTML.",
+      "severity": "minor",
+      "evidence": "PDF uses indented plain text without bullet markers for Letters, Ethics Training, etc. HTML uses bullet points for these items.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The agenda items in the PDF are not in a table but the HTML presents them in a structured table. While the data is preserved, the presentation format differs.",
+      "severity": "minor",
+      "evidence": "PDF: free-form layout with times and descriptions. HTML: formal table with borders and Time/Activity columns.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The rule reference in the Rulemaking Update section appears slightly different in line breaks but content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF breaks the long vote item across multiple lines with specific formatting. HTML renders it as a flowing paragraph within a bullet point.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'AGENDA' text is rendered as h2 in the HTML, which in the PDF is styled as a large title element on the same level as the main document title. This is a reasonable interpretation but could be seen as a subtitle rather than a separate section heading.",
+      "severity": "minor",
+      "evidence": "PDF shows 'AGENDA' as a large centered title. HTML uses <h2>AGENDA</h2>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF does not present the agenda as a formal table with borders and headers; it uses a time-indented list format. The HTML converts this into a structured table with 'Time' and 'Activity' column headers, which is a structural interpretation rather than a direct conversion. However, all data content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF: agenda items listed with times in left margin. HTML: <table> with <th>Time</th><th>Activity</th> headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header 'Marine Fisheries Commission Business Meeting Agenda' and page footer with asterisk notes appear inline within the table cell for the 10:00 a.m. row, duplicating the header/footer content that also appears at the top and bottom of the HTML document.",
+      "severity": "minor",
+      "evidence": "Within the 10:00 a.m. table cell: <div class='page-footer'>...* Times indicated are merely for guidance...</div> and <div class='page-header'>Marine Fisheries Commission Business Meeting Agenda</div> appear mid-content, duplicating the document-level header/footer.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 34.98,
+    "page_count": 2,
+    "visual_input_tokens": 6870,
+    "visual_output_tokens": 916,
+    "content_input_tokens": 8431,
+    "content_output_tokens": 620,
+    "timestamp": "2026-04-11T05:50:48.389387",
+    "auditor_version": "1.0.0"
+  }
+}

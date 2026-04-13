@@ -1,0 +1,102 @@
+{
+  "document_id": "2021-white-lake-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Title page text sizing and spacing differs slightly but structure is preserved",
+      "severity": "minor",
+      "evidence": "PDF shows larger bold title text with more vertical spacing; HTML shows similar bold text with a horizontal rule separator added below the title",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 in HTML has red/green color highlighting on 2021 column cells that does not appear in the PDF version",
+      "severity": "major",
+      "evidence": "PDF Table 1 shows all cells with uniform white/light background; HTML Table 1 shows red highlighting on some 2021 values and green on others",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 2 in HTML has red/green color highlighting on 2021 column cells that does not appear in the PDF version",
+      "severity": "major",
+      "evidence": "PDF Table 2 shows all cells with uniform white/light background; HTML Table 2 shows red highlighting on some 2021 values and green on others",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 7 map in the HTML version shows spikerush points in different positions compared to PDF",
+      "severity": "minor",
+      "evidence": "PDF Figure 7 shows spikerush points concentrated in the northwest/north area; HTML shows points more toward the southwest/south area",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Two nested <main> elements in the HTML. The document has two h1 elements and two h2 elements at the top, creating a broken heading hierarchy. The title page has h1 '2021 White Lake' and h2 'Aquatic Vegetation Survey', then the body has h2 'Whole Lake Survey Results'. The tables are introduced with h3 headings, which is acceptable, but the double main nesting is structurally incorrect.",
+      "severity": "major",
+      "evidence": "HTML has <main><main> nesting. Title section uses h1 '2021 White Lake' and h2 'Aquatic Vegetation Survey'. This is acceptable as a title page representation, but the nested main elements are a structural issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Figure 4 has extraneous text artifacts 'A' and '2021' appearing as separate paragraph elements outside the figcaption, duplicating labels visible in the image itself.",
+      "severity": "minor",
+      "evidence": "HTML contains '<p>A</p>' before Figure 4 image and '<p>2021</p>' after figcaption. Similarly, Figure 5 and Figure 10 have '<p>A</p>' before images. These are page layout artifacts from the PDF that appear as stray text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Figure 11 has a stray '2020' text appearing as a paragraph before the image, which is a layout artifact from the PDF page.",
+      "severity": "minor",
+      "evidence": "HTML: '<p>2020</p>' before Figure 11 image. The PDF page 17 has '2020' as a stray label on the page.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL in the references section is present as plain text rather than as a hyperlink, whereas the PDF shows it as a clickable link.",
+      "severity": "minor",
+      "evidence": "PDF shows 'https://auth1.dpr.ncparks.gov/flora/species_account.php?id=4052' as a hyperlink. HTML renders it as plain text within a <p> tag without an <a> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor species name variation: the PDF text on page 3 says 'Myriophyllum tentellum' (appears to be a typo in the original PDF) while page 4 says 'Myriophyllum tenellum'. The HTML preserves the first occurrence as 'tentellum' matching the PDF, so this is faithful but noted.",
+      "severity": "minor",
+      "evidence": "PDF page 3: 'Myriophyllum tentellum'; PDF page 4: 'Myriophyllum tenellum'. HTML preserves 'tentellum' in first mention and 'tenellum' in subsequent mentions, matching the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Figure 10 has an extra <img> tag with alt text 'Decorative graphic or legend label' that appears to be an artifact - this likely corresponds to a small embedded image element from the original document that is not a substantive figure.",
+      "severity": "minor",
+      "evidence": "HTML contains an extra img tag: '<img src=\"[embedded-image-removed]\" alt=\"Decorative graphic or legend label\" style=\"width: 43.2pt; height: auto;\">'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 58.56,
+    "page_count": 19,
+    "visual_input_tokens": 47580,
+    "visual_output_tokens": 1153,
+    "content_input_tokens": 40167,
+    "content_output_tokens": 1106,
+    "timestamp": "2026-04-11T05:59:01.735925",
+    "auditor_version": "1.0.0"
+  }
+}

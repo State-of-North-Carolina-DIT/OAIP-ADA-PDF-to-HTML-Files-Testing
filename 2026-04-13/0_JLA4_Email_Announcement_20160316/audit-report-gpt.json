@@ -1,0 +1,46 @@
+{
+  "document_id": "0_JLA4_Email_Announcement_20160316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Body text formatting is not fully preserved, including loss of hyperlink styling and some emphasis treatment.",
+      "severity": "minor",
+      "evidence": "In the PDF, URLs and 'here' links are visibly blue and underlined, and document titles in quotation marks appear italicized. In the HTML, these links and emphasized titles appear as plain dark text with no visible hyperlink styling or italic emphasis.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Hyperlinks from the PDF are not preserved as clickable links in the HTML, and the two location-map links are reduced to plain text 'here' without href targets.",
+      "severity": "major",
+      "evidence": "PDF shows a full website URL and blue linked text for the email address and three 'here' links. HTML renders the website as plain text in a paragraph ('http://deq.nc.gov/.../jordan-lake-water-supply-allocation-round-4 .') and renders the map references as plain text ('available here.') with no anchor elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Several textual details differ from the PDF, including punctuation, spacing, and one place-name sequence, causing minor loss of fidelity though not clear fabrication.",
+      "severity": "major",
+      "evidence": "PDF text reads 'Deep River, Haw River Cape Fear River, Neuse River, and Contentnea Creek sub-basins' and HTML matches this awkward sequence, but other text differs: PDF has 'website at :' followed by a linked URL and HTML keeps the URL as plain text with altered spacing before the period; PDF shows linked email 'jla4-cfrwse@lists.ncmail.net' and HTML presents it as plain text only. PDF line wraps and link formatting are not faithfully preserved.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 14.86,
+    "page_count": 1,
+    "visual_input_tokens": 2333,
+    "visual_output_tokens": 244,
+    "content_input_tokens": 3126,
+    "content_output_tokens": 431,
+    "timestamp": "2026-04-11T05:57:16.141630",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "01_January_2013_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF presents the entire table in a compact, single-page horizontal layout with all columns visible in one row. The HTML conversion breaks the table into a much taller vertical layout with significant whitespace and wrapped cell content, fundamentally changing the compact tabular presentation.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a dense table with ~30 rows fitting on one page. HTML page 1 shows the same data but with much taller rows due to text wrapping in Owner-Facility and other columns, resulting in content spreading across multiple pages.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table structure is preserved with correct columns and rows, but cell content wrapping differs significantly from the PDF, making rows much taller in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF has compact single-line or two-line entries per row. HTML wraps Owner-Facility names across 3-7 lines per cell, dramatically increasing row heights.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Currency formatting and numeric alignment appear preserved, but the overall text density and visual compactness is lost in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF shows tightly formatted monetary values right-aligned in columns. HTML maintains the values but with different visual density.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Page 2 table continues with same structure issues as page 1 - correct data but different row heights due to text wrapping.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows remaining ~10 rows plus 'Total Cases: 40' in compact format. HTML spreads this across more vertical space.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is maintained - all rows appear in the same sequence in both PDF and HTML versions.",
+      "severity": "minor",
+      "evidence": "Both versions start with LV-2013-0007 and end with SS-2012-0002, with Total Cases: 40 at the bottom.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No h1 heading exists in the HTML. The document title 'DWQ January 2013 Civil Penalty Assessments' appears only in a div with class 'page-header' rather than as an h1 heading.",
+      "severity": "minor",
+      "evidence": "The HTML uses <div class=\"page-header\">DWQ January 2013 Civil Penalty Assessments</div> but no h1 tag is present.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> tag inside another <main> tag, but this is a structural issue, not content duplication.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping the header and another <main> wrapping the table.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 27.73,
+    "page_count": 2,
+    "visual_input_tokens": 6208,
+    "visual_output_tokens": 775,
+    "content_input_tokens": 14810,
+    "content_output_tokens": 446,
+    "timestamp": "2026-04-11T05:54:46.291534",
+    "auditor_version": "1.0.0"
+  }
+}

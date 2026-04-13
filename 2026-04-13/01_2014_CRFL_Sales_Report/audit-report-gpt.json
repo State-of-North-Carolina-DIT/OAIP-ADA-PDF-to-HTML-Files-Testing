@@ -1,0 +1,222 @@
+{
+  "document_id": "01_2014_CRFL_Sales_Report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Cover page title styling and centering are not fully preserved.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a centered cover with larger bold title lines and a centered release date near the bottom; HTML page 1 presents the same content left-aligned in standard page flow with reduced visual emphasis.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Cover page layout is simplified from a dedicated centered cover to normal document flow.",
+      "severity": "minor",
+      "evidence": "PDF page 1 uses large top/bottom whitespace and centered logo/date within a cover-style layout; HTML page 1 places title, subtitle, image, and date in a left-aligned content column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County/state/country tables are split across HTML segments differently than in the PDF continuations.",
+      "severity": "minor",
+      "evidence": "PDF continuation pages keep each continuation as a single intact table per page; HTML renders the same data in long scrolling tables split by viewport/section flow, which changes visual grouping though data structure appears retained.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Country table continuation formatting is compressed in HTML and some long labels wrap more aggressively.",
+      "severity": "minor",
+      "evidence": "PDF pages with country-of-residence tables show wide landscape-style tables with long country names on one line or controlled wrapping; HTML narrows columns, causing heavier wrapping of labels such as long country names, though data remains tabular.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Country table continuation formatting is compressed in HTML and some long labels wrap more aggressively.",
+      "severity": "minor",
+      "evidence": "PDF pages with country-of-residence tables show wide landscape-style tables with long country names on one line or controlled wrapping; HTML narrows columns, causing heavier wrapping of labels such as long country names, though data remains tabular.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Country table continuation formatting is compressed in HTML and some long labels wrap more aggressively.",
+      "severity": "minor",
+      "evidence": "PDF pages with country-of-residence tables show wide landscape-style tables with long country names on one line or controlled wrapping; HTML narrows columns, causing heavier wrapping of labels such as long country names, though data remains tabular.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Country table continuation formatting is compressed in HTML and some long labels wrap more aggressively.",
+      "severity": "minor",
+      "evidence": "PDF pages with country-of-residence tables show wide landscape-style tables with long country names on one line or controlled wrapping; HTML narrows columns, causing heavier wrapping of labels such as long country names, though data remains tabular.",
+      "page": 20,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "For-hire blanket license table loses some of the PDF's grouped year-block visual structure.",
+      "severity": "minor",
+      "evidence": "PDF page 21 groups multiple years inside one framed table with repeated subheaders; HTML represents the same content as a normalized table with separate year rows, preserving data but reducing the original grouped visual hierarchy.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "For-hire blanket license continuation table loses some grouped year-block structure.",
+      "severity": "minor",
+      "evidence": "PDF page 22 continues the grouped multi-year table with strong subtable borders for 2013 and 2014; HTML flattens this into ordinary rows, keeping values but not the same visual grouping.",
+      "page": 22,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "State-of-residence for-hire table is visually simplified in HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 23 shows a compact matrix with grouped year headers and paired passenger-count columns; HTML presents the same matrix in a simplified web-table style with less distinct grouping.",
+      "page": 23,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Sales outlet and DMF office tables are visually simplified in HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 24 uses strong ruled tables with grouped year headers; HTML renders both tables accurately but with lighter styling and less pronounced header grouping.",
+      "page": 24,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML includes fabricated/reformatted content not present in the PDF: a Google Fonts import and branding/theme CSS, plus extra explanatory text inserted into a project row.",
+      "severity": "critical",
+      "evidence": "HTML head contains '@import url(https://fonts.googleapis.com/css2?family=Source+Sans+3...)' and CSS comments 'Digital Commons NC \u2014 Standalone Theme CSS', which are not part of the PDF content. In the projects table, HTML has 'DMF NCE-Inshore & Oyster Video Roll over amount from FY 2009-13' and 'WRC Boating Access Projects on hold/NCE Roll over amount from FY 2013' merged into the project-name cells, whereas the PDF shows those rollover notes as separate text in the middle area, not as part of the project names.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Project funding table structure is not faithfully preserved; rollover notes are merged into project cells instead of being separate entries/notes aligned to the relevant rows.",
+      "severity": "major",
+      "evidence": "PDF table 'Projects Approved for Funding from the Marine Resources Fund...' shows rows 'DMF NCE-Inshore & Oyster Video' and 'WRC Boating Access Projects on hold/NCE' with adjacent note text 'Roll over amount from FY 2009-13' and 'Roll over amount from FY 2013'. HTML rewrites them as single-cell strings: 'DMF NCE-Inshore & Oyster Video Roll over amount from FY 2009-13' and 'WRC Boating Access Projects on hold/NCE Roll over amount from FY 2013'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Marine Resources Endowment Fund table contains incorrect/redundant transfer text across multiple cells instead of the PDF's single explanatory note/value presentation.",
+      "severity": "major",
+      "evidence": "In HTML, row 'Transfers from WRC March 2006-2010' repeats '5 transfers of $680,000 each' across FY2007-2010 through FY2014 columns. The PDF shows this as a note/explanation with the actual amount reflected as '$ 3,400,000' in the total, not repeated in every yearly column.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "For-Hire blanket licenses by type and vessel size table loses the PDF's grouped yearly subtable structure and omits the 2014 'More than 6 passengers' row that exists in the PDF layout.",
+      "severity": "major",
+      "evidence": "PDF page for 2014 shows the year header and the '6 or fewer passengers' row, with the second row structure still present in the yearly block. HTML collapses all years into one flat table and for 2014 provides only '6 or fewer passengers' and 'Total'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is incomplete: several section titles present in the PDF are rendered as plain paragraphs rather than headings in HTML.",
+      "severity": "major",
+      "evidence": "PDF has section-like titles such as 'Coastal Recreational Fishing License sales by calendar year through date of release of this report.' and 'Number of Coastal Recreational Fishing Licenses sold by state of residence...' visually functioning as headings. HTML renders these as <p> elements rather than heading tags, while only 'Marine Resources Fund Balance', 'Marine Resources Endowment Fund Balance', and 'Projects Approved...' are marked as <h3>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some text labels are altered/truncated from the PDF, changing the exact wording of country names and labels.",
+      "severity": "major",
+      "evidence": "PDF shows labels such as 'KOREA, DEMOCRATIC PEOPLE\\'...' and 'TANZANIA, UNITED REPUBLIC...' with full names implied by the source table formatting, while HTML hardcodes truncated/modified labels like 'KOREA, DEMOCRATIC PEOPLE'S' and 'TANZANIA, UNITED REPUBLIC'. HTML also shortens 'UNITED STATES MINOR OUTL' and other cut-off labels rather than preserving the PDF text faithfully.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 19,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 60.16,
+    "page_count": 20,
+    "visual_input_tokens": 35107,
+    "visual_output_tokens": 2128,
+    "content_input_tokens": 68548,
+    "content_output_tokens": 1076,
+    "timestamp": "2026-04-11T05:49:43.997655",
+    "auditor_version": "1.0.0"
+  }
+}

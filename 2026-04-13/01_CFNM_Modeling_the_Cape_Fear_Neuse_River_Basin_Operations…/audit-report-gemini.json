@@ -1,0 +1,86 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram is entirely missing; only disjointed text labels are rendered.",
+      "severity": "critical",
+      "evidence": "The PDF contains a complex flowchart titled 'Flow Chart of Major Nodes in the Upper Cape Fear Basin' with shapes, directional arrows, text labels, and a legend. The HTML conversion has omitted the graphic entirely and instead extracted all the text from the diagram, rendering it as sequential, disconnected paragraphs.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram is entirely missing; only disjointed text labels are rendered.",
+      "severity": "critical",
+      "evidence": "The PDF contains a complex flowchart titled 'Flow Chart of Major Nodes in the Middle Cape Fear Basin' with shapes, directional arrows, and text labels. The HTML conversion has omitted the graphic entirely and instead extracted all the text from the diagram, rendering it as sequential, disconnected paragraphs.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram is entirely missing; only disjointed text labels are rendered.",
+      "severity": "critical",
+      "evidence": "The PDF contains a complex flowchart titled 'Flow Chart of Major Nodes on the Deep River' with shapes, directional arrows, and text labels. The HTML conversion has omitted the graphic entirely and instead extracted all the text from the diagram, rendering it as sequential, disconnected paragraphs.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram is entirely missing; only disjointed text labels are rendered.",
+      "severity": "critical",
+      "evidence": "The PDF contains a complex flowchart titled 'Flow Chart of Major Nodes in the Lower Cape Fear Basin' with shapes, directional arrows, and text labels. The HTML conversion has omitted the graphic entirely and instead extracted all the text from the diagram, rendering it as sequential, disconnected paragraphs.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram is entirely missing; only disjointed text labels are rendered.",
+      "severity": "critical",
+      "evidence": "The PDF contains a complex flowchart titled 'Flow Chart of Major Nodes in the Upper Neuse Basin' with shapes, directional arrows, and text labels. The HTML conversion has omitted the graphic entirely and instead extracted all the text from the diagram, rendering it as sequential, disconnected paragraphs.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram is entirely missing; only disjointed text labels are rendered.",
+      "severity": "critical",
+      "evidence": "The PDF contains a complex flowchart titled 'Flow Chart of Major Nodes in the Middle Neuse Basin' with shapes, directional arrows, and text labels. The HTML conversion has omitted the graphic entirely and instead extracted all the text from the diagram, rendering it as sequential, disconnected paragraphs.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram is entirely missing; only disjointed text labels are rendered.",
+      "severity": "critical",
+      "evidence": "The PDF contains a complex flowchart titled 'Flow Chart of Major Nodes in the Lower Neuse Basin' with shapes, directional arrows, and text labels. The HTML conversion has omitted the graphic entirely and instead extracted all the text from the diagram, rendering it as sequential, disconnected paragraphs.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Functional loss of flowchart diagrams on pages 10-16.",
+      "severity": "critical",
+      "evidence": "The source PDF contains seven complex, full-page flowchart diagrams from pages 10 through 16 depicting basin nodes and routing. The HTML fails to render these diagrams as images and instead merely extracts their disconnected text labels (e.g., 'Reidsville Dam', 'Reservoir Node', 'Demand Node', 'Flow Arc'). Because the shapes, arrows, and spatial relationships are missing, the resulting text blocks in the HTML lose all intended meaning and context.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 8,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 80.37,
+    "page_count": 18,
+    "visual_input_tokens": 40524,
+    "visual_output_tokens": 1654,
+    "content_input_tokens": 18351,
+    "content_output_tokens": 303,
+    "timestamp": "2026-04-11T05:52:01.833659",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "document_id": "BLACK_SEA_BASS_\u2013_COMMERCIAL_FISHING_OPERATIONS_\u2013_ATLANTIC_OCEAN_\u2013_NORTH_OF_CAPE_HATTERAS",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Seal/logo image is missing from the HTML rendering.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows the North Carolina Marine Fisheries seal at the upper left. The corresponding HTML page does not display this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Seal/logo image is missing from the HTML rendering.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF page includes the seal/logo at the upper left in the repeated header area, while the HTML rendering omits it.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature graphic is not preserved.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF includes a handwritten signature above Kathy B. Rawls' name. In the HTML, this appears as a blank line or typed placeholder rather than the signature image.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds substantial fabricated styling/theme content not present in the PDF, including a standalone theme title and imported web font/CSS framework metadata.",
+      "severity": "critical",
+      "evidence": "HTML head includes invented content such as \"<title>Converted Document</title>\", comment \"Digital Commons NC \u2014 Standalone Theme CSS\", and CSS variables/imports like \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...\")\". None of this metadata/styling text appears in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is incomplete: major section headings from the PDF are not represented as HTML headings, leaving only one h1 and flattening the document structure.",
+      "severity": "major",
+      "evidence": "PDF contains clear section heads such as \"RE: BLACK SEA BASS \u2013 COMMERCIAL FISHING OPERATIONS \u2013 ATLANTIC OCEAN \u2013 NORTH OF CAPE HATTERAS\", \"I. SIZE LIMIT\", \"II. HARVEST PERIOD AND LIMITS\", \"III. GEAR RESTRICTIONS\", and \"IV. GENERAL INFORMATION\". In HTML, only \"PROCLAMATION\" is marked as <h1>; the remaining headings are plain <p>, <li>, or bold/underlined text rather than hierarchical headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "One image alt text appears inaccurate/fabricated by describing a state seal that is not clearly part of the source image.",
+      "severity": "minor",
+      "evidence": "Top-left PDF image appears to be the North Carolina Marine Fisheries 200 Years circular logo. HTML alt text says \"North Carolina Marine Fisheries 200 Years celebration logo and state seal,\" adding \"state seal,\" which is not evident in the PDF image.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 36.04,
+    "page_count": 3,
+    "visual_input_tokens": 7380,
+    "visual_output_tokens": 475,
+    "content_input_tokens": 7049,
+    "content_output_tokens": 570,
+    "timestamp": "2026-04-11T06:01:43.470396",
+    "auditor_version": "1.0.0"
+  }
+}

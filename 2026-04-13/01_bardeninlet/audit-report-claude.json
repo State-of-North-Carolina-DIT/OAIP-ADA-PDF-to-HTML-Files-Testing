@@ -1,0 +1,54 @@
+{
+  "document_id": "01_bardeninlet",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The HTML rendering of the nautical chart appears slightly compressed vertically compared to the PDF original, with minor differences in aspect ratio.",
+      "severity": "minor",
+      "evidence": "The PDF image fills the page more fully vertically, while the HTML version appears slightly more compact with more white space at the bottom.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading structure present in the HTML. The document is a nautical chart image without textual sections, so the lack of headings is understandable, but there is no h1 document title.",
+      "severity": "minor",
+      "evidence": "The HTML contains no h1, h2, or any heading elements. The content is purely a figure with an image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Nested duplicate <main> elements in the HTML structure.",
+      "severity": "major",
+      "evidence": "The HTML contains <main><main><figure>...</figure></main></main> \u2014 two nested <main> tags, which is structurally duplicative.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text is generally accurate and descriptive of the nautical chart, mentioning Cape Lookout, Lookout Bight, Lighthouse Bay, Barden Inlet, depth soundings, and navigational aids. These features are all visible in the source chart. This is good alt text for an image that had none in the PDF.",
+      "severity": "minor",
+      "evidence": "Alt text: 'Nautical chart of Cape Lookout, Lookout Bight, Lighthouse Bay, and Barden Inlet showing depth soundings and navigational aids' \u2014 all features are present in the source chart image.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 22.96,
+    "page_count": 1,
+    "visual_input_tokens": 3724,
+    "visual_output_tokens": 251,
+    "content_input_tokens": 3541,
+    "content_output_tokens": 537,
+    "timestamp": "2026-04-11T05:56:39.905260",
+    "auditor_version": "1.0.0"
+  }
+}

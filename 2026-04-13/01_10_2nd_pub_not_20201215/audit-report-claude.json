@@ -1,0 +1,126 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the letter is missing in the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC state seal between the header officials' names and 'NORTH CAROLINA Environmental Quality'. The HTML version on page 2 does not render this seal.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom of page 1 is missing in the HTML conversion",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the DEQ logo at the bottom left alongside the footer address. HTML page 2 does not include this logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout with officials' names on the left and state seal centered is collapsed into a simple stacked layout",
+      "severity": "major",
+      "evidence": "PDF shows ROY COOPER/Governor, MICHAEL S. REGAN/Secretary, BRIAN WRENN/Director on the left with the seal centered and 'NORTH CAROLINA Environmental Quality' below the seal. HTML renders these as simple stacked left-aligned text blocks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of David Miller is missing in the HTML conversion",
+      "severity": "major",
+      "evidence": "PDF shows a handwritten signature above 'David Miller, PE'. HTML only shows the typed name without the signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of Brian Wrenn is missing in the HTML conversion",
+      "severity": "major",
+      "evidence": "PDF page 3 shows a handwritten signature above 'Brian Wrenn, Director'. HTML page 4 only shows the typed name without the signature image.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of Brenda Harris is missing in the HTML conversion",
+      "severity": "major",
+      "evidence": "PDF page 3 shows a handwritten signature above 'Brenda Harris'. HTML page 4 only shows the typed name without the signature image.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined title 'NOTICE OF ISSUANCE OF MINING PERMIT' formatting differs slightly",
+      "severity": "minor",
+      "evidence": "PDF shows it centered and underlined in a traditional document style. HTML shows it as a large underlined heading, left-aligned.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The handwritten date '12-15-2020' appears as underlined text rather than handwritten notation",
+      "severity": "minor",
+      "evidence": "PDF shows handwritten '12-15-2020' filled in after 'This notice was mailed on'. HTML shows '12-15-2020' as underlined text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. The document title 'NOTICE OF ISSUANCE OF MINING PERMIT' is rendered as h1, which is acceptable, but the heading hierarchy has no h2 or lower headings, and the page 1 content lacks a proper document-level heading.",
+      "severity": "major",
+      "evidence": "The HTML has two nested <main> tags and only one heading element (h1 for 'NOTICE OF ISSUANCE OF MINING PERMIT'). The cover letter on page 1 has no heading at all.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header information (ROY COOPER, Governor; MICHAEL S. REGAN, Secretary; BRIAN WRENN, Director; NORTH CAROLINA, Environmental Quality) appears both in the scanned image and as separate text in a div.page-header block, effectively duplicating the letterhead content.",
+      "severity": "major",
+      "evidence": "The <figure><img> for page 1 contains the full scanned page including the letterhead, and the div.page-header repeats: 'ROY COOPER Governor', 'MICHAEL S. REGAN Secretary', 'BRIAN WRENN Director', 'NORTH CAROLINA Environmental Quality'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer information is duplicated \u2014 it appears in the scanned page 1 image and again as text in div.page-footer.",
+      "severity": "major",
+      "evidence": "Footer text 'North Carolina Department of Environmental Quality | Division of Energy, Mineral and Land Resources...' appears both in the embedded image and in the page-footer div.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Both pages are included as full-page scanned images AND as extracted text, meaning all content on both pages is effectively duplicated.",
+      "severity": "major",
+      "evidence": "Two <figure><img> tags contain the full scanned pages, and all text content from both pages is also rendered as HTML text below/around those images.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor punctuation difference: the phone number format uses en-dashes in the PDF but the HTML reproduces them similarly. No meaning change.",
+      "severity": "minor",
+      "evidence": "PDF: '919 \u2013 707 \u2013 9228', HTML: '919 \u2013 707 \u2013 9228'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 8,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 39.42,
+    "page_count": 2,
+    "visual_input_tokens": 6968,
+    "visual_output_tokens": 1071,
+    "content_input_tokens": 6029,
+    "content_output_tokens": 808,
+    "timestamp": "2026-04-11T05:46:08.348677",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Page footers and decorative elements are injected inline into the main content, breaking the reading order and splitting paragraphs/list items.",
+      "severity": "critical",
+      "evidence": "On HTML page 3, the text of the 'Environmental' bullet point is interrupted by the page footer text ('State of North Carolina...') and a decorative gradient bar before continuing with the rest of the sentence. This issue occurs across multiple pages.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Tabular layout of memo metadata is lost.",
+      "severity": "major",
+      "evidence": "On PDF page 1, the Date, To, From, and Subject fields are aligned in a structured format. In the HTML, this alignment is completely lost, and the text is rendered as a single vertical column of blocks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Header content is duplicated and page elements are placed out of order.",
+      "severity": "major",
+      "evidence": "On HTML page 1, the right-aligned text block starting with 'PAT McCRORY' appears correctly at the top right, but then appears a second time further down the page, immediately following an improperly injected footer and gradient bar.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 51.23,
+    "page_count": 5,
+    "visual_input_tokens": 11618,
+    "visual_output_tokens": 620,
+    "content_input_tokens": 7358,
+    "content_output_tokens": 167,
+    "timestamp": "2026-04-11T06:02:24.034773",
+    "auditor_version": "1.0.0"
+  }
+}
