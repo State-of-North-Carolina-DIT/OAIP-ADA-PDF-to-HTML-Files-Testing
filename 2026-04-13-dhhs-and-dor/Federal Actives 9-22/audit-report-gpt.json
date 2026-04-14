@@ -1,0 +1,54 @@
+{
+  "document_id": "Federal Actives 9-22",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Top branding graphic is reduced and repositioned in the HTML.",
+      "severity": "minor",
+      "evidence": "In the PDF, the USDA logo and department wordmark appear prominently near the upper left above the table. In the HTML, the logo is smaller and sits within a header band with more surrounding whitespace, altering its visual prominence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling differs, including loss of color emphasis and highlighted row styling.",
+      "severity": "minor",
+      "evidence": "The PDF uses colored header text (red/green), blue state names, and a yellow highlight on the North Carolina row. The HTML renders the table in mostly uniform grayscale without the color cues or row highlight.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "One table row label is truncated in the HTML, causing loss of table data fidelity.",
+      "severity": "major",
+      "evidence": "In the PDF table, rank 48 shows the state/jurisdiction as \"District of Columbia\". In the HTML table, the corresponding row is rendered as \"District of\" with values 15.74 | 15.87 | 14.53 | 48, omitting \"Columbia\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Text accuracy issue due to truncated jurisdiction name.",
+      "severity": "major",
+      "evidence": "PDF displays the full entry \"District of Columbia\". HTML shows only \"District of\", which changes the proper noun and loses meaning.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 17.64,
+    "page_count": 1,
+    "visual_input_tokens": 3254,
+    "visual_output_tokens": 313,
+    "content_input_tokens": 5745,
+    "content_output_tokens": 269,
+    "timestamp": "2026-04-14T05:22:22.618961",
+    "auditor_version": "1.0.0"
+  }
+}

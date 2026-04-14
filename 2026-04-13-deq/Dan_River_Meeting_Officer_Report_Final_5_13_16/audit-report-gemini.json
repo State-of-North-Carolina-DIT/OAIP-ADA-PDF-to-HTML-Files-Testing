@@ -1,0 +1,46 @@
+{
+  "document_id": "Dan_River_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header text block lost right-alignment and two-column structure.",
+      "severity": "major",
+      "evidence": "In the PDF, the names and titles (e.g., 'PAT MCCRORY Governor') are right-aligned opposite the logo. In the HTML, this text block is left-aligned directly below the logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Memo routing block lost tabular alignment.",
+      "severity": "minor",
+      "evidence": "In the PDF, the text following 'To:', 'From:', and 'Subject:' is horizontally aligned to create a second column. In the HTML, this alignment is lost and the text wraps directly after the labels.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Page numbers and footers are inserted inline, occasionally interrupting sentences that span across page breaks.",
+      "severity": "minor",
+      "evidence": "In the HTML, sentences are broken by page footers, such as: '...after everyone that registered to</p> <div class=\"page-footer\"> <p>Page 2 of 4</p> </div> <p>speak was finished.' and '...do not present a <div class=\"page-footer\"> <p>Page 3 of 4</p> </div> substantial likelihood...'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 66.49,
+    "page_count": 4,
+    "visual_input_tokens": 9472,
+    "visual_output_tokens": 442,
+    "content_input_tokens": 6223,
+    "content_output_tokens": 305,
+    "timestamp": "2026-04-14T04:57:03.201120",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "document_id": "Joint Communication Bulletin  J259 Innovations Waiver Community\u201a\u00c4\u00b6",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "State seal image differs in rendering quality and positioning between PDF and HTML",
+      "severity": "minor",
+      "evidence": "PDF shows the North Carolina state seal centered at top of page; HTML shows it left-aligned at top",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Header layout differs - PDF has two-column header with divisions on left and right, HTML preserves the same structure but with slightly different spacing",
+      "severity": "minor",
+      "evidence": "Both versions show Division of Mental Health on left and Division of Medical Assistance on right, but HTML has more vertical spacing between elements",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer websites and equal opportunity text present in PDF but handled differently in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows footer at bottom of page 1; HTML moves it to a header/separator area between the header section and content",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page break between pages 1 and 2 in PDF causes content split; HTML flows continuously",
+      "severity": "minor",
+      "evidence": "PDF has content split across two pages with repeated header on page 2; HTML flows content continuously after single header",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header and footer content is duplicated. The header with Governor/Secretary names and the footer with URLs/Equal Opportunity statement appear both in a top header/footer section AND are repeated within the main content area (the division contact info block). Additionally, the mid-document footer is duplicated - once as a page-break footer and once within the main content flow.",
+      "severity": "major",
+      "evidence": "The footer 'www.ncdhhs.gov \u2219 www.ncdhhs.gov/mhddsas/ \u2219 www.ncdhhs.gov/dma/ An Equal Opportunity / Affirmative Action Employer' appears three times in the HTML: once in the initial .page-footer div, once mid-document in another .page-footer div, and the header info (Governor/Secretary) also appears in the header block separately from the main content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a nested <main> element inside another <main> element, which is invalid HTML structure. The heading hierarchy also has issues: h1 is used for the department name in the header, and h2 is used for the bulletin number, which is reasonable, but the document title 'North Carolina Department of Health and Human Services' uses h1 while it functions as an organizational header rather than the document title.",
+      "severity": "major",
+      "evidence": "HTML has <main> containing a <header>, then another <main> nested inside the first <main>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The email link for Deb Goda is not rendered as a hyperlink in the HTML, though it appears as a hyperlink in the PDF. The previous bulletins URL is also not rendered as a hyperlink in the main content, though it is in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 'deborah.goda@dhhs.nc.gov' as a clickable link and the bulletin archive URL as a hyperlink. HTML renders them as plain text: 'deborah.goda@dhhs.nc.gov' and 'https://www.ncdhhs.gov/divisions/mhddsas/joint-communication-bulletins' without <a> tags in the relevant paragraph.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor punctuation/spacing variation: 'self-sufficiency' has a space inserted as 'self- sufficiency' in the HTML, and 'in-home/community' appears as 'in- home/community'. These match the source PDF's original spacing quirks, so this is not an HTML error per se.",
+      "severity": "minor",
+      "evidence": "PDF: 'maximize his or her selfsufficiency' (no hyphen break). HTML: 'self- sufficiency' (with space after hyphen). The PDF actually has 'self-\nsufficiency' as a line break.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 35.48,
+    "page_count": 2,
+    "visual_input_tokens": 6358,
+    "visual_output_tokens": 670,
+    "content_input_tokens": 7486,
+    "content_output_tokens": 905,
+    "timestamp": "2026-04-14T05:25:07.991747",
+    "auditor_version": "1.0.0"
+  }
+}

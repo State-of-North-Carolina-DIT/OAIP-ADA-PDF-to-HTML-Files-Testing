@@ -1,0 +1,206 @@
+{
+  "document_id": "important notice   motor vehicles various issues   final",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image in the header is much smaller and left-aligned in the HTML compared to the centered, larger version in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: State seal is centered and prominently displayed at top. HTML: State seal is smaller and left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The main title in the PDF is underlined and centered, while in the HTML it is rendered as a large heading without underline, left-aligned.",
+      "severity": "minor",
+      "evidence": "PDF: 'IMPORTANT NOTICE: MOTOR VEHICLES...' is centered and underlined. HTML: Same text is left-aligned as a large heading with a horizontal rule beneath it instead of underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header block (address, PO Box, etc.) is centered in the PDF but also centered in the HTML, though the date 'February 11, 2016' is placed on the left in the HTML while it appears at the bottom in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: Date at bottom of page. HTML: Date appears above the title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The numbered list items use (1), (2), (3), (4) formatting in the PDF but standard 1., 2., 3., 4. in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: '(1) The repeal...' HTML: '1. The repeal...'",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Installation Charges' section heading is underlined and bold in the PDF but rendered as a larger heading style in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Underlined bold heading. HTML: Styled as an H2-level heading without underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings like 'Repair, Maintenance, and Installation Services' are underlined bold in the PDF but rendered as plain headings (H2 style) without underline in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Underlined bold heading. HTML: H2 heading without underline.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The example paragraphs are in italic in the PDF but rendered in normal (non-italic) text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Example text blocks are fully italicized. HTML: Example text blocks are in normal weight, non-italic.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Example paragraphs throughout the document are italicized and indented in the PDF but rendered as normal text without indentation in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Italic indented examples. HTML: Normal text, no indentation, no italic.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Example paragraphs on this page are italicized in the PDF but rendered as normal text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: All example text in italics. HTML: Examples in regular body text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The bullet list uses standard bullet markers in the PDF but renders with standard disc markers in the HTML - this is acceptable. However, the sub-section headings like 'Services Necessary to Complete the Sale' are underlined bold in PDF but plain headings in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Underlined bold section headers. HTML: H2-level headings without underline.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings 'Exceptions', 'Examples - Repair, Maintenance, and Installation Services' are underlined bold in PDF but rendered as larger headings without underline in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Underlined bold subheadings. HTML: H2 headings without underline.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Example text blocks in italics in the PDF are rendered as normal body text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Italicized examples. HTML: Normal text.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Example paragraphs are italicized in the PDF but rendered as normal text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Italic example blocks. HTML: Regular body text.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings ('Specific Exemptions', 'Service Contract for a Motor Vehicle') are underlined bold in PDF but rendered as standard headings without underlines in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Underlined bold headings. HTML: H2 headings without underline.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Example text blocks are italicized in the PDF but rendered as normal text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Italic examples. HTML: Normal text.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings are underlined bold in the PDF but rendered as H2 headings without underline in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'Deductible or Fixed Fee Related to Service Contract' underlined bold. HTML: H2 heading, no underline.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Example text blocks are italicized in the PDF but rendered as regular text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Italicized example paragraphs. HTML: Normal body text.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings underlined bold in PDF rendered as H2 headings without underline in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Underlined bold headings. HTML: H2 style headings.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Example text blocks in italics in the PDF are rendered as normal text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Italic examples. HTML: Normal text.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The final disclaimer paragraph is in italics in the PDF but rendered as normal text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Italic disclaimer. HTML: Normal body text.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Hyperlink URL for tire recapping notice appears fabricated/specific URL not visible in PDF",
+      "severity": "minor",
+      "evidence": "HTML contains href='http://www.dornc.com/taxes/sales/impnotice012516_recapping.pdf' but the PDF only shows the text as a hyperlink without revealing the specific URL path. The link text matches the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. The document has a <main> wrapper and then another <main> inside it.",
+      "severity": "major",
+      "evidence": "The outer <main> from the template wraps an inner <main> that contains the actual document content, creating a structural issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Examples in PDF are formatted in italics to distinguish them from regular text, but in HTML they are rendered as regular paragraphs without italic formatting, losing the visual distinction between examples and body text.",
+      "severity": "minor",
+      "evidence": "PDF shows examples in italic font; HTML renders them as plain <p> tags without <em> or <i> styling.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 22,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 51.48,
+    "page_count": 7,
+    "visual_input_tokens": 22226,
+    "visual_output_tokens": 2397,
+    "content_input_tokens": 28573,
+    "content_output_tokens": 512,
+    "timestamp": "2026-04-14T05:33:54.562927",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "2021 NC-478 Instructions for NC-478 Series",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a two-column layout for the main content (Purpose, General Instructions on the left; Other Credits, When to File on the right), but the HTML renders everything in a single column.",
+      "severity": "major",
+      "evidence": "PDF page 1 has 'Purpose of the NC-478 Series' and 'General Instructions' in the left column, with 'Other Credits Subject to the 50% of Tax Limit', 'When to File', 'Pass-through entities', and 'Short-period returns' in the right column. The HTML renders all content sequentially in one column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo present in the PDF header is missing in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF shows 'NCDOR' logo with 'Web 1-22' in the top-left corner. HTML only shows 'NCDOR Web 1-22' as plain text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The '2021' year in the PDF is displayed prominently in large bold text in the header area, while in the HTML it appears as part of the title text at normal heading size.",
+      "severity": "minor",
+      "evidence": "PDF has '2021' as a large standalone element in the top-right. HTML incorporates it into the title 'NC-478 Series Instructions 2021'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings like 'Purpose of the NC-478 Series' appear with a gray background/shading in the PDF but are rendered as plain bold headings in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Purpose of the NC-478 Series' with a gray background bar. HTML shows it as a plain bold heading without background.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Due to the column collapse, the reading order changes. In the PDF, a reader would encounter the left column content first, then the right column. In the HTML, content from the right column ('Other Credits Subject to the 50% of Tax Limit') appears after all left-column content including Article 3K Credits, which changes the information flow.",
+      "severity": "major",
+      "evidence": "PDF right column content ('Other Credits Subject to 50% of Tax Limit', 'When to File') appears visually parallel to left column content. HTML places all article credits first, then 'Other Credits', then 'When to File' sequentially at the bottom.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two nested <main> elements, which is semantically incorrect but does not affect content fidelity. The heading hierarchy uses h1 for the title, h2 for major sections, and h3 for subsections, which is appropriate. However, 'Other Credits Subject to the 50% of Tax Limit' is rendered as h3 with underline styling, whereas in the PDF it appears as a section heading at the same level as the Article headings, which is consistent.",
+      "severity": "minor",
+      "evidence": "HTML: <h3><u>Other Credits Subject to the 50% of Tax Limit</u></h3> \u2014 this is at the same h3 level as the Article headings, which is acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains two nested <main> elements. While this is a structural issue, it does not result in visible content duplication.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping the entire body content, and another <main> inside it wrapping the document sections.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 30.92,
+    "page_count": 1,
+    "visual_input_tokens": 3666,
+    "visual_output_tokens": 853,
+    "content_input_tokens": 5742,
+    "content_output_tokens": 485,
+    "timestamp": "2026-04-14T05:12:59.458738",
+    "auditor_version": "1.0.0"
+  }
+}

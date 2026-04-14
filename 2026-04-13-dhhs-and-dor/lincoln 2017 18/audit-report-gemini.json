@@ -1,0 +1,38 @@
+{
+  "document_id": "lincoln 2017 18",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Headings and total rows are not visually distinct from body text within the tables.",
+      "severity": "minor",
+      "evidence": "The source PDF uses bold formatting to distinguish section headers (e.g., 'A. Division of Social Services') and summary rows (e.g., 'Total Cost For...'). The HTML conversion renders all table body text in the same normal weight, losing this visual hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "A table row was incorrectly split into two separate rows during pagination.",
+      "severity": "minor",
+      "evidence": "Row 16 text is split across pages: '16 Wake Electric Membership' appears with its data values at the bottom of HTML page 1, while the remainder of the text 'Corp. - W.E. Roundup' appears in a new, separate row with empty data cells at the top of HTML page 2.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 75.07,
+    "page_count": 3,
+    "visual_input_tokens": 7254,
+    "visual_output_tokens": 478,
+    "content_input_tokens": 9418,
+    "content_output_tokens": 148,
+    "timestamp": "2026-04-14T05:34:29.581712",
+    "auditor_version": "1.0.0"
+  }
+}

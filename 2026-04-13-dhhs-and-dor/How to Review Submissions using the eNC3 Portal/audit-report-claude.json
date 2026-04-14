@@ -1,0 +1,102 @@
+{
+  "document_id": "How to Review Submissions using the eNC3 Portal",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Annotated labels on the 'Uploaded Files' graphic are partially cut off in the HTML version",
+      "severity": "minor",
+      "evidence": "In the PDF, the red annotation labels ('Total number of files uploaded', 'Number of files uploaded for the form type', 'Form name', 'File size and name') are clearly visible with orange arrows. In the HTML, the 'Form name' and 'File size and name' labels appear partially cropped at the bottom of the image.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Annotated labels on the 'Packages' graphic are partially cropped in the HTML version",
+      "severity": "minor",
+      "evidence": "In the PDF, the 'Form information' label and arrow on the right side of the Packages graphic are fully visible. In the HTML, the 'Form information' label appears cut off on the right edge.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List formatting difference for payment information items",
+      "severity": "minor",
+      "evidence": "In the PDF (page 3), payment information items (Withholding account ID, SSN or FEIN, etc.) are formatted with dashes as list markers. In the HTML, they are formatted with bullet points.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Step labels lose bold formatting partially",
+      "severity": "minor",
+      "evidence": "In the PDF, 'Step 2.' is bolded. In the HTML, the bold formatting appears preserved but the period placement differs slightly.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page break difference causes the bottom portion of the Submission Review screenshot to appear on a separate page in the HTML",
+      "severity": "minor",
+      "evidence": "In the PDF page 3, the full Submission Review screenshot with Back and Submit buttons is shown. In the HTML, the screenshot is split across page boundaries with the bottom portion (showing the file list, packages, and buttons) appearing at the top of what corresponds to page 4.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Links in the HTML point to specific YouTube URLs that are not explicitly visible in the PDF. The PDF contains generic 'Watch a video tutorial', 'Watch our other eNC3 videos', and 'Review the eNC3 FAQs' link texts without showing the destination URLs. The HTML fabricates specific URLs for these links.",
+      "severity": "minor",
+      "evidence": "HTML contains URLs like 'https://www.youtube.com/playlist?list=PLVTNpEbK_lRwxJnK7v2gama4TuGN43YW9', 'https://www.youtube.com/watch?v=HBBerlsjHDU&list=PLVTNpEbK_lRwxJnK7v2gama4TuGN43YW9&index=7&t=0s', and 'https://www.ncdor.gov/documents/enc3-electronic-filing-frequently-asked-questions' which are not visible in the PDF source text. These may be the actual underlying hyperlink destinations, but they could also be fabricated.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The annotation labels for the Uploaded Files screenshot (page 2) are duplicated - they appear both within the flow near the image figure and then again as a separate paragraph of text.",
+      "severity": "major",
+      "evidence": "In the HTML section for page 2, the labels 'Total number of files uploaded', 'File size and name', 'Form name', 'Number of files uploaded for the form type' appear as a standalone paragraph after the figure, and similarly 'Form packages added', 'Form package title', 'Form title', 'Form information' appear as a separate paragraph. In the PDF, these are purely image annotation callouts, not separate body text. Including them as standalone text is a duplication/misrepresentation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Payment Only submission items are formatted as an unordered list in HTML but as a dash-prefixed list in the PDF. Additionally, Step 1 on page 1 uses 'Step 1.' as inline text in the HTML rather than as a bold label matching the PDF's formatting with 'Step 1.' in bold.",
+      "severity": "minor",
+      "evidence": "PDF: '- Withholding account ID' etc. HTML: '<li>Withholding account ID</li>' - This is acceptable reformatting but noted for completeness.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The steps (Step 1, Step 2, Step 3) in the PDF are presented as bold inline text, not as headings. The HTML correctly keeps them as paragraph text rather than headings, which is fine. The heading hierarchy is reasonable with h1 for the document title and h2 for the two main sections.",
+      "severity": "minor",
+      "evidence": "H1: 'Submission Review and Submission Completed \u2013 Step by Step Guide', H2: 'Submission Review', H2: 'Submission Completed' - matches PDF structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML wraps content in a nested <main> element which is a structural artifact but does not add fabricated textual content.",
+      "severity": "minor",
+      "evidence": "HTML has '<main>' nested inside another '<main>' - structural issue only, no fabricated text content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 47.17,
+    "page_count": 5,
+    "visual_input_tokens": 14379,
+    "visual_output_tokens": 887,
+    "content_input_tokens": 12547,
+    "content_output_tokens": 1058,
+    "timestamp": "2026-04-14T05:24:32.510740",
+    "auditor_version": "1.0.0"
+  }
+}

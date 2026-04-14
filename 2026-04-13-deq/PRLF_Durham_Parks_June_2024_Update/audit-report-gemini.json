@@ -1,0 +1,30 @@
+{
+  "document_id": "PRLF_Durham_Parks_June_2024_Update",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "UNKNOWN",
+      "description": "",
+      "severity": "minor",
+      "evidence": "",
+      "page": null,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 53.25,
+    "page_count": 1,
+    "visual_input_tokens": 2899,
+    "visual_output_tokens": 300,
+    "content_input_tokens": 2808,
+    "content_output_tokens": 131,
+    "timestamp": "2026-04-14T05:01:58.465538",
+    "auditor_version": "1.0.0"
+  }
+}

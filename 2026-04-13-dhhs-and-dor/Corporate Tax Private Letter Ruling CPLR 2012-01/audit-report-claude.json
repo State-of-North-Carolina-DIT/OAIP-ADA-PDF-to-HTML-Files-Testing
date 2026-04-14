@@ -1,0 +1,158 @@
+{
+  "document_id": "Corporate Tax Private Letter Ruling CPLR 2012-01",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The letterhead layout is significantly altered. In the PDF, the Governor name and Secretary name are on the left and right sides respectively, flanking the centered department name and seal. In the HTML, the layout is restructured with a horizontal rule and different spatial arrangement.",
+      "severity": "major",
+      "evidence": "PDF: Beverly Eaves Perdue (left) and David W. Hoyle (right) flanking centered title with seal above. HTML: Similar names present but layout uses horizontal rules and different spacing, with P.O. Box address block moved up near the header area.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer information (P.O. Box, State Courier, Website, Equal Opportunity Employer) appears at bottom of page 1 in the PDF but is moved to the header area in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Footer info at very bottom of page 1. HTML: Same info appears near the top of the page under the letterhead.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image is present in both but appears smaller/different in rendering quality in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: Seal is centered and moderately sized. HTML: Seal is present but positioned to the left.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The bold formatting on 'shall maintain' in the quoted contract text is present in PDF but not clearly preserved in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'shall maintain' appears in bold within the underlined contract text. HTML: The bold emphasis on 'shall maintain' is not visible.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The indented block quote structure for the General Service Contract and discharge permit text differs slightly between PDF and HTML, though content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF: Block quotes are indented with underlined text. HTML: Block quotes appear as regular indented paragraphs without underlines.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined text throughout page 2 (contract quotes and permit language) loses its underline formatting in the HTML version, which is significant as the underlines denote quoted/contractual language.",
+      "severity": "major",
+      "evidence": "PDF: Multiple paragraphs of contract text are underlined. HTML: Same text appears without underlines.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined text throughout page 3 (discharge monitoring report quotes and factual statements) loses its underline formatting in the HTML version.",
+      "severity": "major",
+      "evidence": "PDF: Quoted report text and factual narrative are underlined. HTML: Same text without underlines.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Issue:' heading appears in bold and underlined in the PDF but only bold in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'Issue:' is bold and underlined. HTML: 'Issue:' appears bold only.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Department's Response:' heading formatting is preserved as bold in both versions.",
+      "severity": "minor",
+      "evidence": "PDF and HTML both show bold heading.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Footnote 1 formatting differs. In PDF it appears at the bottom of page 4 with a superscript reference. In HTML it appears between pages with slightly different positioning.",
+      "severity": "minor",
+      "evidence": "PDF: Footnote at bottom of page 4. HTML: Footnote appears in a different position between page sections.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The lettered list (a, b, c) with sub-numbered items (1, 2, 3) on page 5 has different indentation in the HTML but maintains the hierarchical structure.",
+      "severity": "minor",
+      "evidence": "PDF: Deeply indented formatted list with justified text. HTML: List with different indentation style but same structure.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Footnote 2 reference to 'Environmental Impact' in bold is present in PDF but formatting may differ in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Footnote 2 shows 'Environmental Impact' in bold. HTML: Footnote present but bold formatting on 'Environmental Impact' appears preserved.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> tags create invalid HTML structure. The document has two <main> elements, one nested inside the other.",
+      "severity": "major",
+      "evidence": "HTML contains <body><main><main>...</main></main></body>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The centered address block (P.O. Box 871, Raleigh...) appears only once in the HTML body but appears twice in the PDF (once in the letterhead at top and once at the bottom of page 1). This is acceptable consolidation, not a true duplication error in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has the address block both at the top and bottom; HTML has it once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses only h1 for the title 'North Carolina Department of Revenue'. Section headings like 'Issue:', 'Department's Response:', and 'The statement of facts submitted...' are rendered as bold paragraphs rather than proper heading elements (h2), which doesn't create a meaningful heading hierarchy.",
+      "severity": "minor",
+      "evidence": "PDF has clear section headers: 'The statement of facts submitted for the Department's consideration is as follows:', 'Issue:', 'Department's Response:' \u2014 all rendered as <p><strong> in HTML rather than headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor punctuation/formatting difference: The PDF has 'DENR')' with a closing parenthesis after the quote, while the HTML preserves this but the original text in the PDF first page shows 'DENR')' \u2014 this is consistent.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: '(\"DENR')'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The page 2 bottom address/footer block (P.O. Box 871, Raleigh...) from the PDF is not separately represented in the HTML, but this is acceptable header/footer consolidation.",
+      "severity": "minor",
+      "evidence": "PDF page 1 bottom has repeated address block; HTML omits repeated footer.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 13,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 53.31,
+    "page_count": 6,
+    "visual_input_tokens": 16214,
+    "visual_output_tokens": 1655,
+    "content_input_tokens": 18295,
+    "content_output_tokens": 781,
+    "timestamp": "2026-04-14T05:19:20.866329",
+    "auditor_version": "1.0.0"
+  }
+}

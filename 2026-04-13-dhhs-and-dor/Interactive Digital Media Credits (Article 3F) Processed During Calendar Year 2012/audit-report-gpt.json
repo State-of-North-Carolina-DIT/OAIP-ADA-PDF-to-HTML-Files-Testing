@@ -1,0 +1,38 @@
+{
+  "document_id": "Interactive Digital Media Credits (Article 3F) Processed During Calendar Year 2012",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated boilerplate, styling/theme content, and document metadata not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains text not shown in the PDF such as '<title>Converted Document</title>', CSS comment 'Digital Commons NC \u2014 Standalone Theme CSS', and imported font/theme identifiers like 'Source Sans 3', '--nc-navy', '--nc-blue', etc. The PDF only shows the revenue report content and does not contain this textual metadata/theme content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure because the PDF presents four centered title lines of similar title styling, while the HTML imposes a nested h1/h2/h3 plus paragraph structure.",
+      "severity": "major",
+      "evidence": "PDF title block: 'North Carolina Department of Revenue' / 'Technology Development Credits Taken' / 'Interactive Digital Media Credits (Article 3F)' / 'Processed during Calendar Year 2012'. HTML maps these as '<h1>North Carolina Department of Revenue</h1><h2>Technology Development Credits Taken</h2><h3>Interactive Digital Media Credits (Article 3F)</h3><p>Processed during Calendar Year 2012</p>', which adds a semantic hierarchy not clearly present in the PDF and demotes the fourth title line to body text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 15.43,
+    "page_count": 1,
+    "visual_input_tokens": 2848,
+    "visual_output_tokens": 117,
+    "content_input_tokens": 3707,
+    "content_output_tokens": 387,
+    "timestamp": "2026-04-14T05:24:17.779182",
+    "auditor_version": "1.0.0"
+  }
+}

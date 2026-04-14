@@ -1,0 +1,70 @@
+{
+  "document_id": "CWS_66_2024a1",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "In the PDF, the updated eligibility criteria text (step 1a) has red-colored text for the new additions ('and, if applicable, any half siblings of the child(ren) regardless of their relationship to the kinship care provider'). In the HTML, this text appears in standard black formatting without color distinction.",
+      "severity": "minor",
+      "evidence": "PDF shows red text for the new eligibility criteria additions; HTML renders all text in black.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF table, codes 72 and 88 rows are highlighted in red text. In the HTML, these rows appear in standard black text without any color distinction.",
+      "severity": "minor",
+      "evidence": "PDF shows codes 72 and 88 with red text highlighting; HTML shows all table rows in uniform black text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The PDF has hyperlink styling (blue underlined text) for 'Permanency Planning Manual', 'DSS-5801 Unlicensed Kinship Form - Facility ID Request', and 'Appendix 2, Child Placement and Payment System Manual'. The HTML does not show these as hyperlinks.",
+      "severity": "minor",
+      "evidence": "PDF shows blue underlined hyperlinks; HTML renders these as plain text without link styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML version has a larger, more prominent title heading compared to the PDF's bold but smaller title. The overall layout structure is preserved but the title presentation differs.",
+      "severity": "minor",
+      "evidence": "PDF: 'Unlicensed Kinship Payment Process' is bold centered text. HTML: Same title is rendered as a much larger heading element.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Hyperlinks present in the PDF are not preserved as clickable links in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF contains hyperlinks for 'Permanency Planning Manual', 'DSS-5801 Unlicensed Kinship Form - Facility ID Request', and 'Appendix 2, Child Placement and Payment System Manual'. In the HTML, these are rendered as plain text without <a> tags. No fabricated links are present, but the original links are lost.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element, resulting in duplicate structural wrapping, though content itself is not duplicated.",
+      "severity": "major",
+      "evidence": "The HTML has <main> inside <main>, which is a structural duplication artifact but does not duplicate visible content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 27.0,
+    "page_count": 1,
+    "visual_input_tokens": 3814,
+    "visual_output_tokens": 719,
+    "content_input_tokens": 5045,
+    "content_output_tokens": 427,
+    "timestamp": "2026-04-14T05:18:41.629619",
+    "auditor_version": "1.0.0"
+  }
+}

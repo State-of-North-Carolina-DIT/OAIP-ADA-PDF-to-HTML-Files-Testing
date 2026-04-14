@@ -1,0 +1,126 @@
+{
+  "document_id": "wright referral form 4june2018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Seal/logo placement differs substantially from the source.",
+      "severity": "minor",
+      "evidence": "On page 1 the PDF shows the seal centered above the title block, while the HTML places a small seal near the upper left margin with the title block below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Checkbox list converted to bulleted list, changing form-field presentation.",
+      "severity": "minor",
+      "evidence": "The PDF page 1 'SUPPORTING DOCUMENTATION' section uses empty checkboxes for each item; the HTML renders the items as standard bullets.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Form-field grouping around signature lines is loosened and spacing differs, reducing structural fidelity.",
+      "severity": "minor",
+      "evidence": "On page 1 the PDF groups MCO authorization signatures and assigned care coordinator fields in boxed/line-aligned form layout; the HTML keeps the content but with looser spacing and less rigid alignment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Contact preference options lose clear form-control spacing.",
+      "severity": "minor",
+      "evidence": "On page 2 the PDF visually separates 'Home phone', 'Work phone', 'Cell phone', and 'Email' as selectable options on one line; the HTML presents them as inline text with less distinction.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Large boxed response areas are simplified, slightly reducing the original form structure.",
+      "severity": "minor",
+      "evidence": "On page 2 the PDF contains multiple large bordered boxes for Strengths, Interests, Triggers, Academic Skill Deficits, Home/Community Troubling Behaviors, Diagnoses, and Medications; the HTML preserves them but with lighter, simplified box styling and altered spacing.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 3 condition table headings are reformatted.",
+      "severity": "minor",
+      "evidence": "The PDF page 3 lower table does not show an emphasized header row beyond the surrounding instruction text, while the HTML introduces explicit column headers 'Condition' and 'Description'. Content remains aligned but formatting differs.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Upper intervention table spacing and proportions differ from the source.",
+      "severity": "minor",
+      "evidence": "On page 3 the PDF shows a two-column table with several large blank rows; the HTML keeps the same two-column structure but with thinner rows and lighter gridlines, changing the visual grouping.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Special Education Classification/Setting area is converted from a two-cell form row into inline text.",
+      "severity": "minor",
+      "evidence": "On page 4 the PDF has a bordered two-column row with 'Special Education Classification' and 'Setting', plus a separate bordered row for 'IEP Expiration Date'; the HTML renders these as plain text lines without the original table/form cell structure.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Structured form/table region becomes less visually distinct.",
+      "severity": "minor",
+      "evidence": "The page 4 PDF uses bordered form areas for EC classification and cognitive testing; the HTML preserves order and text but reduces some of these boxed regions to simpler text blocks and lighter tables.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Several PDF form tables were not preserved with the same structure in HTML; bordered form regions and field layouts were flattened into paragraphs or simplified tables, losing row/column fidelity.",
+      "severity": "major",
+      "evidence": "PDF page 1 contains bordered form boxes for referral details and assigned care coordinator, plus checkbox-aligned supporting documentation. HTML page 1 renders these as plain <p> lines and a <ul>, not matching the original table/box structure. PDF page 4 shows a two-column row for 'Special Education Classification:' and 'Setting:' with a second row 'IEP Expiration Date:' inside one bordered table; HTML page 4 converts this to plain text lines 'Special Education Classification: Setting:' and 'IEP Expiration Date:' with no table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Contact information grids on pages 4\u20135 were converted into a single three-column table, altering the original grouped layout and cell spanning.",
+      "severity": "major",
+      "evidence": "PDF pages 4\u20135 show separate grouped contact blocks with merged left cells for roles such as 'Mental Health Professional', 'DSS Worker (if applicable)', 'Guardian Ad Litem (if applicable)', 'Court Counselor (if applicable)', and 'Other Professional involved (if applicable)'. HTML combines all into one table with headers 'Role | Contact Field | Value', changing the table structure from the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not accurate and includes invalid nesting; a heading is placed inside a strong tag within a paragraph, and form labels are elevated to headings despite not functioning as headings in the PDF.",
+      "severity": "major",
+      "evidence": "HTML uses '<strong><h1>Wright School</h1></strong>' inside a paragraph, which is structurally incorrect. It also promotes field labels like 'Strengths:', 'Interests:', 'Triggers:', 'Academic Skill Deficits:', 'Home/Community Troubling Behaviors:', 'Diagnoses:', and 'Medications:' to <h3> headings, while in the PDF these are form box labels rather than section headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some text formatting and labels were altered in ways that reduce fidelity to the source form, including omission of checkbox indicators and simplification of signature/label formatting.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows checkbox symbols next to each 'SUPPORTING DOCUMENTATION' item; HTML converts them to a plain unordered list without checkboxes. PDF page 1 presents signature lines with labels directly under each line ('Signature' and 'Print Name'); HTML reduces this to inline text 'Signature Print Name', losing the original labeling layout. PDF page 4 label reads 'Academic Skills Deficit(s):'; HTML page 4 retains it, but page 2 label becomes 'Academic Skill Deficits:' (singular 'Skill'), reflecting slight inconsistency versus the source wording.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 43.1,
+    "page_count": 5,
+    "visual_input_tokens": 8917,
+    "visual_output_tokens": 1148,
+    "content_input_tokens": 8872,
+    "content_output_tokens": 805,
+    "timestamp": "2026-04-14T05:39:42.391580",
+    "auditor_version": "1.0.0"
+  }
+}

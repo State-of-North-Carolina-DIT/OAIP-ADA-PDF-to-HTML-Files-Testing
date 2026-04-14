@@ -1,0 +1,182 @@
+{
+  "document_id": "wright referral form 4june2018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The 'Referral for' and 'Date of Referral' fields are in a boxed/bordered section in the PDF but appear as plain text fields without the visual grouping border in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows a distinct bordered box containing 'Referral for:', 'Date of Birth:', and 'Date of Referral:'. HTML renders these as inline text fields without the grouping box.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Supporting Documentation items are rendered as bullet points in HTML instead of checkboxes in PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows empty checkbox squares next to each documentation item. HTML uses bullet points (disc style) instead.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The MCO Authorization Signatures section loses the visual grouping box around 'Name of Assigned Care Coordinator' and 'Phone/Email' fields.",
+      "severity": "minor",
+      "evidence": "PDF has a bordered box around the coordinator info section. HTML renders them without the border grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image is present in both but appears slightly differently positioned.",
+      "severity": "minor",
+      "evidence": "PDF has the seal centered at the top. HTML has it left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Page 2 section boxes for Strengths, Interests, Triggers, Academic Skill Deficits, Home/Community Troubling Behaviors, Diagnoses, and Medications are rendered as labeled text without bordered boxes in HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows distinct bordered boxes/sections for each field. HTML renders them as simple bold labels without visual containers.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Describe the following' table on page 3 has been restructured in HTML with added column headers 'Condition' and 'Description' that don't exist in the PDF.",
+      "severity": "major",
+      "evidence": "PDF shows a simple two-column table where the left column has labels (Allergies, Runaway attempts, etc.) and right column is blank for descriptions. HTML adds 'Condition' and 'Description' as column headers not present in the original.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Behavioral Strategies/Mental Health Interventions table has fewer visible rows in the HTML compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 3 large empty rows in the table. HTML shows only 2 narrow empty rows.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Bedwetting row in HTML table drops the '(day/night/frequency)' clarification text to a separate line vs inline in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Bedwetting (day/night/frequency)' in one cell. HTML shows 'Bedwetting' with '(day/night/frequency)' appearing to be separated.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Contact Information table on page 4 is restructured in HTML with three columns (Role, Contact Field, Value) instead of the original PDF format which has a role label spanning multiple rows with sub-fields.",
+      "severity": "major",
+      "evidence": "PDF shows Mental Health Professional with indented Name/Agency/Address/Work Phone/Email fields. HTML shows each as a separate row repeating 'Mental Health Professional' in the Role column.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Troubling School Behaviors / School Behavioral Interventions table has fewer visible rows in HTML than PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 3 large empty rows. HTML shows only 2 narrow rows.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The 'If EC Classified' section with Special Education Classification and IEP Expiration Date loses its bordered table format in HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows a bordered table with 'Special Education Classification:' and 'Setting:' in columns. HTML renders as plain text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Page 5 Contact Information table for Court Counselor and Other Professional is restructured with three columns (Role, Contact Field, Value) repeating the role name on each row instead of the merged-cell layout in PDF.",
+      "severity": "major",
+      "evidence": "PDF shows role labels spanning multiple rows. HTML repeats each role name per row in a flat table structure.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Contact Information table restructured: PDF uses a 2-column layout (Role as row header, fields as rows within each role group) but HTML converts to a 3-column layout (Role, Contact Field, Value), flattening the row-span structure. While data is preserved, the table structure is significantly altered from the original.",
+      "severity": "major",
+      "evidence": "PDF page 4-5: Contact Information table has rows grouped by role (Mental Health Professional, DSS Worker, etc.) with fields (Name, Agency, Address, Work Phone, Email) in a 2-column format. HTML adds a third 'Value' column and repeats the role name for each field row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 'Describe the following' table on page 3 has an added 'Condition' and 'Description' header row with a thead that does not exist in the PDF. The PDF has no column headers for this table.",
+      "severity": "minor",
+      "evidence": "PDF page 3: Table has rows like 'Allergies', 'Runaway attempts' etc. with blank space for description, but no header row. HTML adds <thead> with 'Condition' and 'Description' column headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The 'Describe the following' table header columns 'Condition' and 'Description' are fabricated - these column header labels do not appear in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 3 has no column headers for the descriptive items table. HTML adds <th>Condition</th> and <th>Description</th>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The h1 element is nested inside a <strong> tag which is inside a <p> tag inside a <header>, creating invalid/unusual nesting. Additionally, the document title 'Wright School' is rendered as h1 but the surrounding context text (NC DHHS, address) is in a paragraph, splitting the header block awkwardly.",
+      "severity": "major",
+      "evidence": "HTML: <strong><h1>Wright School</h1></strong> nested inside a <p> element within <header>. This is invalid HTML nesting.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple <main> elements are used in the HTML document, which is invalid HTML5 structure. There is an outer <main> from the body wrapper and then additional <main> elements for each page section.",
+      "severity": "major",
+      "evidence": "HTML contains at least 5 <main> elements - one wrapping the entire body content and one per page section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Page 2 section headings (Strengths, Interests, Triggers, etc.) are rendered as h3, but they appear at the same structural level as other h2 sections. The section title 'Wright School / Referring Information for Admission' is rendered as h2, which is appropriate, but the sub-items like Strengths, Interests could arguably be h3 - this is a judgment call.",
+      "severity": "minor",
+      "evidence": "PDF page 2: 'Strengths:', 'Interests:', 'Triggers:' etc. are field labels in boxes. HTML: rendered as <h3> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The checkbox formatting from page 1 Supporting Documentation section is lost - PDF shows checkboxes (empty squares) next to each item, HTML converts them to a bullet list which loses the form-fillable nature.",
+      "severity": "minor",
+      "evidence": "PDF page 1: Shows empty checkbox squares next to each documentation item. HTML: Uses <ul><li> elements instead.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footers are rendered both as div elements with class 'page-footer' AND the content appears in context. However, these are legitimate page footers from the PDF so their inclusion is not duplication of content per se, just repeated formatting markers.",
+      "severity": "minor",
+      "evidence": "HTML has multiple <div class='page-footer'> elements with 'DSOHF-1-72-12 (REV) X of 5 WRIGHT SCHOOL REFERRAL FORM'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 7,
+  "minor_count": 13,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 63.51,
+    "page_count": 5,
+    "visual_input_tokens": 15304,
+    "visual_output_tokens": 1645,
+    "content_input_tokens": 13900,
+    "content_output_tokens": 1335,
+    "timestamp": "2026-04-14T05:39:51.365101",
+    "auditor_version": "1.0.0"
+  }
+}

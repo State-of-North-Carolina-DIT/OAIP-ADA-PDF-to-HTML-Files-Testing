@@ -1,0 +1,38 @@
+{
+  "document_id": "OST 02 2015a4",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Loss of table sub-heading context.",
+      "severity": "major",
+      "evidence": "In the PDF, page 2 begins with a table header row that includes the sub-heading 'PARTICIPATING WHOLE LIFE:' in the first column, grouping the subsequent rows. The HTML conversion omits this text entirely when merging the table, losing the explicit structural grouping.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Minor text omission in the first column of the table (continued on page 2).",
+      "severity": "minor",
+      "evidence": "The PDF contains the underlined label 'PARTICIPATING WHOLE LIFE:' in the first column, preceding 'WHOLE LIFE with Dividend Additions to Face Value'. The HTML omitted 'PARTICIPATING WHOLE LIFE:' and only output the second phrase in the <td> tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 67.02,
+    "page_count": 2,
+    "visual_input_tokens": 5096,
+    "visual_output_tokens": 288,
+    "content_input_tokens": 4400,
+    "content_output_tokens": 262,
+    "timestamp": "2026-04-14T05:26:57.045198",
+    "auditor_version": "1.0.0"
+  }
+}

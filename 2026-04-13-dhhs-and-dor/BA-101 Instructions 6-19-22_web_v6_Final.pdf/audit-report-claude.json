@@ -1,0 +1,94 @@
+{
+  "document_id": "BA-101 Instructions 6-19-22_web_v6_Final.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "NCDOR logo image present in PDF header is missing in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NCDOR logo graphic in the top-left corner; HTML page 1 shows only the text 'NCDOR' without the logo image",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Header layout differs - PDF has a multi-column header with logo, title, and effective date side by side; HTML stacks them vertically",
+      "severity": "minor",
+      "evidence": "PDF shows 'NCDOR' logo left, 'B-A-101 Instructions' center, 'Effective July 1, 2022' right in one row; HTML stacks these vertically",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Line instruction labels in PDF use a two-column format (Line # left, description right) while HTML renders them as single bold lines",
+      "severity": "minor",
+      "evidence": "PDF shows 'Line 1 -' as a left label with bold title to the right in a structured layout; HTML renders as a single bold line 'Line 1 - Cost Price...'",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Line-by-line instructions section in PDF uses indented two-column layout (line number + description/instruction) while HTML uses flat single-column layout",
+      "severity": "minor",
+      "evidence": "PDF indents instruction text under each Line heading with the line number as a left margin label; HTML presents them as sequential blocks",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List items under Line 4 use different bullet styles",
+      "severity": "minor",
+      "evidence": "PDF uses dash (-) bullets for exemptions list; HTML uses round bullet points (\u2022)",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 line instructions maintain same two-column indentation difference as page 1",
+      "severity": "minor",
+      "evidence": "PDF uses left-margin line labels with indented body text; HTML uses flat single-column formatting",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "URLs in the PDF (www.ncdor.gov) are referenced in the HTML text but not wrapped in anchor/hyperlink tags. The PDF shows www.ncdor.gov as a hyperlink in at least two places.",
+      "severity": "minor",
+      "evidence": "PDF shows 'www.ncdor.gov' as clickable links; HTML renders them as plain text without <a> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements and the heading hierarchy is somewhat inconsistent. The document title is split across an h1 inside a header div, then General Instructions uses h2, Line-by-Line Instructions uses h2, and the computation subsection uses h3. However, the individual line items (Line 1, Line 2, etc.) are rendered as bold paragraphs rather than headings, which is acceptable. The more notable issue is the duplicate <main> nesting.",
+      "severity": "major",
+      "evidence": "HTML has <main> inside <body>, then another <main> nested inside the first <main>, which is invalid HTML structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header information appears both in the header section and implicitly within the document flow when the page 2 header div is included. This mirrors the PDF's page structure, so it is a minor structural duplication rather than content error.",
+      "severity": "minor",
+      "evidence": "Page header 'NCDOR / Web / 7-22' appears at the top, and 'Page 2, B-A-101 Instructions, Web, 7-22' appears mid-document, both matching the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 34.6,
+    "page_count": 2,
+    "visual_input_tokens": 6900,
+    "visual_output_tokens": 879,
+    "content_input_tokens": 10240,
+    "content_output_tokens": 660,
+    "timestamp": "2026-04-14T05:16:38.481564",
+    "auditor_version": "1.0.0"
+  }
+}

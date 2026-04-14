@@ -1,0 +1,102 @@
+{
+  "document_id": "suplr 2013 0022",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal/logo image present at the top of the PDF is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 has the official NC state seal image centered at the top. The HTML version has no image, only the text 'North Carolina Department of Revenue'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout with Governor name on left and Secretary name on right is not properly preserved with the same visual spacing/alignment.",
+      "severity": "major",
+      "evidence": "PDF shows 'Pat McCory Governor' left-aligned and 'Lyons Gray Secretary' right-aligned with clear spatial separation. HTML preserves the names but the layout alignment differs somewhat, though both names are present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Re: Private Letter Ruling' line loses its indentation formatting in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Re: Private Letter Ruling' indented under the Attention line. HTML shows it left-aligned without indentation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Account ID and Federal ID lines are right-aligned in the PDF but appear slightly differently positioned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF has these fields clearly right-justified. HTML maintains them on the right side but with slightly different positioning.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The indentation of numbered questions and responses differs between PDF and HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows questions 1 and 2 with specific indentation and 'Response:' in bold. HTML preserves the bold formatting but with slightly different indentation structure.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The signature block and cc section alignment differs slightly.",
+      "severity": "minor",
+      "evidence": "PDF has 'Very truly yours' and the Administration Officer title centered/right-aligned. HTML has them right-aligned as well but with slightly different spacing.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple <main> elements are used in the HTML, creating a broken document structure. The first <main> from the outer wrapper contains a nested <main> element for page 1 content, and another <main> for page 2 content. This is structurally invalid.",
+      "severity": "major",
+      "evidence": "The HTML has three <main> tags: one from the outer template wrapper, one for page 1 content, and one for page 2 content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header 'SUPLR 2013-0022' appears three times in the HTML (once in the first page-header div, once in the page-footer area between pages, and inherently in the document). In the PDF it appears as a header on each page, so this is acceptable as header reproduction, but the first instance is inside the outer <main> while the second is outside the nested <main>, creating a slightly redundant structure.",
+      "severity": "minor",
+      "evidence": "Two instances of <div class='page-header'>SUPLR 2013-0022</div> in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image has an empty alt text attribute, which is not descriptive. The first image's alt text 'North Carolina state seal' is reasonable.",
+      "severity": "minor",
+      "evidence": "Page 2 image: <img src='[embedded-image-removed]' alt='' style='width: 601.0pt; height: auto;'>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The PDF contains a hyperlink to www.dornc.com, but in the HTML the URL is rendered as plain text rather than as a clickable link, unlike the PDF where it appears as a hyperlinked URL.",
+      "severity": "minor",
+      "evidence": "PDF: 'Website: www.dornc.com' (hyperlinked). HTML: 'Website: www.dornc.com' (plain text in footer, no <a> tag).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 35.7,
+    "page_count": 2,
+    "visual_input_tokens": 6748,
+    "visual_output_tokens": 783,
+    "content_input_tokens": 6554,
+    "content_output_tokens": 748,
+    "timestamp": "2026-04-14T05:35:45.316522",
+    "auditor_version": "1.0.0"
+  }
+}

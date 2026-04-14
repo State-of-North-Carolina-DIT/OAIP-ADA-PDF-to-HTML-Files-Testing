@@ -1,0 +1,102 @@
+{
+  "document_id": "DAAS AS 01 2020 VA Standing Written Requests for Patient Information",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout differs - PDF has two-column header with state seal on left and official names on right, HTML renders header in a single-column stacked format",
+      "severity": "minor",
+      "evidence": "PDF: State seal logo left-aligned with 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES' to its right, and ROY COOPER/MANDY COHEN/JOYCE MASSEY-SMITH right-aligned. HTML: Logo centered/left with names stacked below in single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer information rendered differently - PDF has centered footer with department info, HTML has it as a styled header/banner area at top of content",
+      "severity": "minor",
+      "evidence": "PDF: Footer at bottom with 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES \u2022 DIVISION OF AGING AND ADULT SERVICES' and address. HTML: Same information appears near the top as a styled section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Checkbox formatting slightly different - both versions show the same checked/unchecked states but styling differs",
+      "severity": "minor",
+      "evidence": "PDF uses styled checkboxes with \u2610 and \u22a0 symbols. HTML uses similar Unicode checkbox characters but rendering appearance differs slightly.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 content from the PDF (bullet points continuation and closing) is rendered on the HTML as a continuation without clear page break distinction, but content is preserved",
+      "severity": "minor",
+      "evidence": "PDF page 2 starts with bullet points about APR/CPR forwarding. HTML continues content seamlessly.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Signature block alignment differs - PDF has signature and name right-aligned/centered, HTML has it left-aligned",
+      "severity": "minor",
+      "evidence": "PDF: 'Sincerely,' and signature/name block centered-right. HTML: Left-aligned.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature image is present in both versions but positioning differs slightly",
+      "severity": "minor",
+      "evidence": "PDF: Signature centered above name. HTML: Signature left-aligned above name.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading hierarchy exists in the HTML. The document has no h1, h2, or any heading tags. All structural elements like the subject line, attention line, and addressee are rendered as bold paragraphs rather than semantic headings.",
+      "severity": "major",
+      "evidence": "The PDF has clear structural headings such as 'DEAR COUNY DIRECTOR OF SOCIAL SERVICES', 'ATTENTION: ADULT/CHILD SERVICES SUPERVISORS AND PROGRAM MANAGERS', 'SUBJECT: VA Standing Written Requests for Patient Information', and 'REQUIRED ACTION' \u2014 all rendered as <p><strong> in the HTML with no heading tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header/footer information is duplicated. The letterhead content (department name, location, mailing address, phone, fax, equal opportunity statement) appears both at the top of the document and is repeated as a mid-document block between pages 1 and 2.",
+      "severity": "major",
+      "evidence": "A second <div class='page-header'> block appears mid-document containing 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES \u2022 DIVISION OF AGING AND ADULT SERVICES', 'LOCATION: 693 Palmer Drive...', 'MAILING ADDRESS: 2101 Mail Service Center...', etc. \u2014 duplicating the header already shown at the top. This is a page footer from page 1 of the PDF that should have been consolidated or removed.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page number '2' from the PDF is rendered as a separate div element mid-document styled as a page-header, which is an odd structural choice but doesn't duplicate substantive content.",
+      "severity": "minor",
+      "evidence": "<div class='page-header'><p>2</p></div> appears between the bullet points, representing the page break.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML has a nested <main> element inside another <main> element, which is a structural issue but does not introduce fabricated content.",
+      "severity": "minor",
+      "evidence": "The outer <main> from the template wraps an inner <main> in the converted content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 37.01,
+    "page_count": 2,
+    "visual_input_tokens": 6728,
+    "visual_output_tokens": 881,
+    "content_input_tokens": 7892,
+    "content_output_tokens": 766,
+    "timestamp": "2026-04-14T05:20:49.729839",
+    "auditor_version": "1.0.0"
+  }
+}

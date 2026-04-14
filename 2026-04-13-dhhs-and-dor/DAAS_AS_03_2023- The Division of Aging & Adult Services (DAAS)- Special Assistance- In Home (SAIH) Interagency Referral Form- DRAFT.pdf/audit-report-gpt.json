@@ -1,0 +1,70 @@
+{
+  "document_id": "DAAS_AS_03_2023- The Division of Aging & Adult Services (DAAS)- Special Assistance- In Home (SAIH) Interagency Referral Form- DRAFT.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Form table/boxed sections are not preserved and are rendered as plain text blocks.",
+      "severity": "critical",
+      "evidence": "In the PDF, the IMC\u2013SAIH Application, Recertification, and Change sections are enclosed in bordered boxes with structured fields laid out in rows. In the HTML, these boxes disappear and the content is presented as loose text lines, losing the visual table/form structure and field grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Overall layout and section grouping are weakened due to loss of boxed form regions and altered spacing.",
+      "severity": "major",
+      "evidence": "The PDF uses clear bordered sections and compact alignment for grouped form fields. The HTML shows the same content in a more linear, text-heavy layout with large whitespace gaps and no enclosing boxes, reducing preservation of the original page structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling and heading emphasis are only partially preserved.",
+      "severity": "minor",
+      "evidence": "The PDF uses bold labels and blue section headers to distinguish sections and key fields. In the HTML, headings are larger but most labels and emphasis are flattened into uniform dark text, making the hierarchy less distinct.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Form/table structure from the PDF was not preserved in HTML. Boxed multi-column form fields were flattened into paragraphs and headings, losing the original row/column relationships and field alignment.",
+      "severity": "major",
+      "evidence": "PDF shows boxed sections with aligned fields such as \"IMC \u2013 SAIH Application | SAIH Application # | SAIH Application Date:\" and rows within bordered areas. HTML converts these into text blocks like \"<h2>IMC \u2013 SAIH Application SAIH Application # SAIH Application Date:</h2>\" and paragraph lines, with no table markup or preserved cell structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document structure. Non-heading form labels were promoted to h2 headings, and multiple distinct labels were merged into single headings.",
+      "severity": "major",
+      "evidence": "PDF visually presents section labels within form boxes, e.g., separate labels \"IMC \u2013 SAIH Application\", \"SAIH Application #\", and \"SAIH Application Date:\" on the same line. HTML turns them into one heading: \"<h2>IMC \u2013 SAIH Application SAIH Application # SAIH Application Date:</h2>\". Similar issue occurs with \"IMC \u2013 SAIH Recertification NC FAST SAIH PDC#\" and \"IMC \u2013 SAIH Change NC FAST SAIH PDC #\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Several text details were altered or malformed, changing fidelity to the source form.",
+      "severity": "major",
+      "evidence": "PDF has separate field labels on one line: \"Case Name:\" on the left and \"Client Phone #\" on the right; HTML merges them into one paragraph: \"Case Name: Client Phone #\". PDF similarly has \"Client Address:\" and \"Client Medicaid ID#\" as separate fields; HTML merges them into \"Client Address: Client Medicaid ID#\". PDF uses \"Date case decision is due:\" in aligned field positions within boxes; HTML preserves the text but loses the association to its original field layout.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 27.51,
+    "page_count": 1,
+    "visual_input_tokens": 2824,
+    "visual_output_tokens": 432,
+    "content_input_tokens": 3317,
+    "content_output_tokens": 621,
+    "timestamp": "2026-04-14T05:20:53.006945",
+    "auditor_version": "1.0.0"
+  }
+}

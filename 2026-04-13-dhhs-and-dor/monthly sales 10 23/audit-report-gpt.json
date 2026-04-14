@@ -1,0 +1,70 @@
+{
+  "document_id": "monthly sales 10 23",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Text styling is simplified in the HTML, reducing visual distinction of headings and table emphasis.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses stronger typographic hierarchy for the report title, table title, and the TOTALS row, while the HTML presents these with flatter font weight/size and lighter visual separation. Content remains present and readable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Category headings and subtotal lines in the business-type table lose some bold emphasis in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF clearly bolds group labels such as Apparel Group, Automotive Group, and subtotal/total rows. In the HTML these are visible but less visually distinct, making the hierarchy weaker though still understandable.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 1 contains a split and misstructured row for 'Motor Vehicle Lease (Short-Term) and Subscription' instead of preserving it as a single entry.",
+      "severity": "major",
+      "evidence": "In the PDF, the final special-category entries in Table 1 appear as distinct rows including 'Combined General Rate' and 'Motor Vehicle Lease (Short-Term) and Subscription' with gross collections '9,173,947' and taxable sales shown as a dash. In the HTML, this is broken across two rows: one row shows 'Motor Vehicle Lease (Short-Term)' with empty numeric cells, and the next row shows 'and Subscription' with '9,173,947' and '\u2013'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 2 has numerous rows split across multiple HTML rows, breaking original row integrity and making the table structure diverge from the PDF.",
+      "severity": "major",
+      "evidence": "Examples visible in HTML include '605 Electrical, plumbing and heating' on one row and 'supply dealers' with the numbers on the next row; '701 Beauty and barber shops and' on one row and 'supply dealers' on the next; '306 Restaurants, cafeterias, grills,' on one row and 'snack bars, etc.' on the next; '402 Household appliance dealers and' on one row and 'repair services' on the next; '404 Industrial, office and store furniture' on one row and 'and fixture dealers' on the next; '502 Drugstores; drug and medical' on one row and 'supply houses' on the next; '507 Jewelry stores; watch and clock' on one row and 'repair shops' on the next. In the PDF these are single table entries.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure because Table 2 is nested under another header block within the body and page-level structure is duplicated with nested <main> elements.",
+      "severity": "major",
+      "evidence": "The HTML uses one top-level header with h1 for the report title, h2 for 'TABLE 1...', and h3 for 'October 2023 Report', then later introduces another header block with h2 'TABLE 2...' and h3 'October 2023 Report' inside the same main flow. While the PDF presents two page-level tables, the HTML structure nests a second <header class=\"page-header\"> inside a nested <main>, which does not cleanly reflect the page/document structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some text presentation changes in the tables materially alter how entries are read by separating labels from their associated values.",
+      "severity": "major",
+      "evidence": "In the PDF, entries such as 'Piped natural gas, electricity, telecommunications, cable, satellite, liquor, and aviation fuel' are presented as descriptive text under 'Combined General Rate - 7%' and 'Motor Vehicle Lease (Short-Term) and Subscription - 8% and 5%' is shown as a complete label. In the HTML, these labels are spread over multiple rows with empty adjacent cells, which changes readability and weakens correspondence between labels and values.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 39.21,
+    "page_count": 2,
+    "visual_input_tokens": 4687,
+    "visual_output_tokens": 391,
+    "content_input_tokens": 13025,
+    "content_output_tokens": 860,
+    "timestamp": "2026-04-14T05:35:01.895597",
+    "auditor_version": "1.0.0"
+  }
+}

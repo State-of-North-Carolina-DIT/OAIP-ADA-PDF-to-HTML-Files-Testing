@@ -1,0 +1,38 @@
+{
+  "document_id": "09 16 Actives",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML adds fabricated metadata and styling content not present in the PDF, including a standalone theme name, CSS variables, and an external font import.",
+      "severity": "critical",
+      "evidence": "HTML contains text/code such as \"Digital Commons NC \u2014 Standalone Theme CSS\", \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\", and CSS variable names like \"--nc-navy\" and \"--nc-blue\". The source PDF pages only show the report title \"FNS ACTIVE CASE ERROR RATES\" with the table; no such theme label, font URL, or CSS text appears.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure does not accurately reflect the document structure. The PDF presents the title as a document heading with a subtitle, but the HTML uses an h2 in the header and no h1.",
+      "severity": "major",
+      "evidence": "PDF top center shows \"FNS ACTIVE CASE ERROR RATES\" with subtitle \"Oct 15 - Sept 16\". HTML uses \"<h2>FNS ACTIVE CASE ERROR RATES</h2><p>Oct 15 - Sept 16</p>\" and no h1 is present.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 20.59,
+    "page_count": 3,
+    "visual_input_tokens": 6378,
+    "visual_output_tokens": 206,
+    "content_input_tokens": 17354,
+    "content_output_tokens": 357,
+    "timestamp": "2026-04-14T05:11:13.809712",
+    "auditor_version": "1.0.0"
+  }
+}

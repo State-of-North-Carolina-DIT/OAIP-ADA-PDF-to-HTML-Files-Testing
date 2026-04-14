@@ -1,0 +1,38 @@
+{
+  "document_id": "2016 d403tc partnership tax credit summary traditional",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Form layout converted to a single table with artificial headers, losing section dividers.",
+      "severity": "major",
+      "evidence": "The PDF is a structured form with distinct sections (Part 2, 3, 4) separated by full-width headers with heavy borders. The HTML converts this entire structure into a single continuous 3-column table, adding artificial column headers ('Line Number', 'Description', 'Amount') not present in the source. The structural section headers (e.g., 'Part 2. Tax Credits...') are placed as text within the 'Description' column of otherwise empty rows, failing to preserve the clear visual grouping of the original document.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Barcode image is misplaced and reoriented.",
+      "severity": "major",
+      "evidence": "In the PDF, a vertical barcode is located to the right of the text descriptions for lines 4 through 9, nestled within the form layout. In the HTML, this barcode has been rotated horizontally and placed entirely outside the form structure, above the main content table.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 44.59,
+    "page_count": 1,
+    "visual_input_tokens": 2881,
+    "visual_output_tokens": 420,
+    "content_input_tokens": 3789,
+    "content_output_tokens": 140,
+    "timestamp": "2026-04-14T05:12:44.993934",
+    "auditor_version": "1.0.0"
+  }
+}

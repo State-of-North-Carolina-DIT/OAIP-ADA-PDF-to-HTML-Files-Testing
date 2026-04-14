@@ -1,0 +1,46 @@
+{
+  "document_id": "Stanly Budget Estimates SFY2025.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated text not present in the PDF: a Google Fonts @import URL and stylesheet/theme branding.",
+      "severity": "critical",
+      "evidence": "HTML head contains \"/* Digital Commons NC \u2014 Standalone Theme CSS */\" and \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\" plus CSS variables and styling. The PDF pages only show the report content and do not contain this text or URL.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF's repeated page header metadata and page numbers are not represented in the table structure, and the page-wise split table is merged into one HTML table. This is acceptable structurally, but one table label row is altered/incomplete.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows section total row labeled \"Total Cost For\" under \"A. Division of Social Services\" with the note below; HTML preserves this as a combined cell \"Total Cost For<br>Note that the totals may be off due to rounding.\" However, for the grand total the PDF shows \"Grand Total\" and \"All Programs and Administration\" as a grouped label across the bottom, while HTML separates them into two rows, one blank-valued row \"Grand Total\" and one data row \"All Programs and Administration\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithfully represented. Most PDF section headings are embedded as plain table rows instead of semantic headings, leaving only one h1 in HTML.",
+      "severity": "major",
+      "evidence": "PDF has visible section headings such as \"A. Division of Social Services\", \"1. Public Assistance Programs\", \"2. Public Assistance Administration\", and \"3. Services Programs\". HTML uses only \"<h1>Stanly County</h1>\" and places all other headings as regular <td> entries inside the table.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 19.02,
+    "page_count": 3,
+    "visual_input_tokens": 8772,
+    "visual_output_tokens": 268,
+    "content_input_tokens": 11407,
+    "content_output_tokens": 567,
+    "timestamp": "2026-04-14T05:29:26.493331",
+    "auditor_version": "1.0.0"
+  }
+}

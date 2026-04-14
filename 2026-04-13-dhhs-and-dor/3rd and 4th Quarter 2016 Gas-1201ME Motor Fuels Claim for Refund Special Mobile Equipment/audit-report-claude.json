@@ -1,0 +1,134 @@
+{
+  "document_id": "3rd and 4th Quarter 2016 Gas-1201ME Motor Fuels Claim for Refund Special Mobile Equipment",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF form layout with side-by-side fields and structured form boxes is collapsed into a single-column linear layout in the HTML",
+      "severity": "major",
+      "evidence": "PDF has fields like Street Address/County side by side, City/State/Zip Code on one line, Name of Contact Person/Phone Number/Fax Number on one line, and the right-side panel with 'Fill in applicable circles' and 'FEIN or SSN' alongside the address fields. HTML renders all these as a single vertical stack.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo/graphic in the PDF header is replaced with plain text 'NCDOR' in the HTML",
+      "severity": "minor",
+      "evidence": "PDF shows a stylized NCDOR logo graphic; HTML shows plain text 'NCDOR'",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The form's right-aligned answer column with arrow indicators (triangular markers) for lines 1-7 is lost in the HTML table conversion",
+      "severity": "major",
+      "evidence": "PDF shows triangular arrow markers (\u25ba) next to lines 1, 2, 4, 5, 6 indicating entry fields; HTML table has no such markers",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part 1 table in HTML adds explicit column headers (Line Description, Line Number, Motor Fuel that includes N.C. road tax) which are not presented the same way in the PDF form",
+      "severity": "minor",
+      "evidence": "PDF has inline numbered items with a right-side column header 'Motor Fuel that includes N.C. road tax'; HTML restructures this into a formal 3-column table with explicit headers",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part 2 Computation of Refund table in HTML has different column structure than the PDF",
+      "severity": "minor",
+      "evidence": "PDF shows lines 8-10 with amount fields aligned to the right; HTML renders as a table with Line Description, Line Number, and Amount columns",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Fill in applicable circles' options are rendered as bullet points instead of circle checkboxes",
+      "severity": "minor",
+      "evidence": "PDF shows empty circle checkboxes (\u25cb) next to each option; HTML shows bullet list items",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Refund for Quarter Ending options rendered as bullet points instead of radio-button circles",
+      "severity": "minor",
+      "evidence": "PDF shows \u25cb September 30, 2016 and \u25cb December 31, 2016; HTML shows bullet list items",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The 'For Office Use Only' box and mailing/questions section layout differs but content is preserved",
+      "severity": "minor",
+      "evidence": "PDF shows a bordered box with side-by-side MAIL TO and QUESTIONS columns; HTML renders as a table which preserves the same data structure",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 2 instructions content from the PDF appears after the mailing information table in the HTML, maintaining correct reading order",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML present the instruction content in the same sequence: Part 1 lines, Part 2 lines, Penalty section",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. The document has two <main> tags, one nested inside the other.",
+      "severity": "major",
+      "evidence": "The outer <main> wraps the entire content, then a second <main> is opened after the page-header div. This is structurally invalid.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The h1 element is 'NCDOR' which is the logo/agency abbreviation, not the document title. The actual document title 'GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment' is rendered as h2.",
+      "severity": "major",
+      "evidence": "PDF title: 'GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment'. HTML: <h1>NCDOR</h1> and <h2>GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment</h2>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Part 1 table in the HTML adds a 'Line Number' column that is redundant with the line numbers already embedded in the 'Line Description' column. The PDF form has only two effective columns: the line description and the value field.",
+      "severity": "major",
+      "evidence": "HTML table has three columns: 'Line Description', 'Line Number', 'Amount'. The PDF form shows descriptions on the left and a single value entry column on the right labeled 'Motor Fuel that includes N.C. road tax'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header identifier 'NCDOR' and 'Web 6-16' appear both at the top as a page-header div and are also referenced in the page 2 header section, which is acceptable consolidation of header/footer content.",
+      "severity": "minor",
+      "evidence": "First occurrence: <h1>NCDOR</h1><p>Web 6-16</p>. Second occurrence: <p>Page 2, Gas-1201ME, Web, 6-16</p>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The signature certification text order is reversed in the HTML compared to the PDF. In the PDF, 'Signature:' and 'Title:' and 'Date:' appear on one line, with the certification statement below. In the HTML, the signature/title/date line appears first, then the certification.",
+      "severity": "minor",
+      "evidence": "PDF order: 'Signature: ___ Title: ___ Date: ___' then 'I certify that, to the best of my knowledge, this claim is accurate and complete.' HTML: '<p><strong>Signature:</strong>...' then '<p>I certify that...'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 46.45,
+    "page_count": 2,
+    "visual_input_tokens": 6904,
+    "visual_output_tokens": 1226,
+    "content_input_tokens": 9533,
+    "content_output_tokens": 923,
+    "timestamp": "2026-04-14T05:14:52.693328",
+    "auditor_version": "1.0.0"
+  }
+}

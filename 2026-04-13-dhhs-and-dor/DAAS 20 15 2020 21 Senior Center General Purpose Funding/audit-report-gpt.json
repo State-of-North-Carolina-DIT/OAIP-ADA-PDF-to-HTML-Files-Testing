@@ -1,0 +1,70 @@
+{
+  "document_id": "DAAS 20 15 2020 21 Senior Center General Purpose Funding",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Header seal/logo graphic from the PDF is not preserved in the HTML on the first page.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the circular NC state seal and departmental logo block at the top left; HTML page 1 presents text header content only without the seal/logo image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Centers of Merit/Excellence allocation lines are not rendered as a proper table in the HTML flow around the page 1 to page 2 transition.",
+      "severity": "major",
+      "evidence": "In the PDF, the allocation distribution is a table with rows for Noncertified Centers, Centers of Merit, and Centers of Excellence. In the HTML, only the Noncertified row appears under the table on page 1, while the Centers of Merit and Centers of Excellence entries appear detached as plain lines above the matching-resources paragraph on page 2.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Numbering in the Centers of Excellence table is incorrect for Mecklenburg entries.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows numbered rows 53, 55, and 55 for the three Mecklenburg entries, while the HTML page 3 shows them as 53, 54, and 55. This changes the visible table data.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "One table row number is incorrect in the Centers of Excellence table. The HTML renumbers a Mecklenburg entry as 54, while the PDF shows duplicate numbering at 55 for the two Mecklenburg entries.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows: '53 Mecklenburg Levine Senior Center Matthews', then '55 Mecklenburg Shamrock Senior Center of Charlotte-Mecklenburg SCs Charlotte', and '55 Mecklenburg Tyvola Senior Center of Charlotte-Mecklenburg SCs Charlotte'. HTML shows rows '53 ... Levine Senior Center', '54 ... Shamrock Senior Center of Charlotte-Mecklenburg SCs', and '55 ... Tyvola Senior Center of Charlotte-Mecklenburg SCs'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is incomplete and does not reflect the document structure. Major section titles present in the PDF are rendered as bold paragraphs instead of headings in HTML.",
+      "severity": "major",
+      "evidence": "PDF includes visible section-style titles such as 'The ninety-one (91) Centers of Excellence are as follows:' and 'The ten (10) Centers of Merit are as follows:'. In HTML these appear as '<p><strong><u>...'</p>' rather than heading tags. Only 'ADMINISTRATIVE LETTER NO: 20-15' is an h1 and '2020-2021 General Purpose Funding by Region' is an h2.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Department header/footer content is duplicated in HTML. Material from the PDF letterhead/footer appears once in the header block and again inside the body flow.",
+      "severity": "major",
+      "evidence": "PDF page 1 has the agency contact block only in the letterhead/footer area: 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES \u2022 DIVISION OF AGING AND ADULT SERVICES' with location/address/phone lines. HTML includes this in '<header class=\"page-header\">' and also nests an additional '<main>' body after it, effectively preserving page furniture as body content rather than keeping it separate; the department contact block is duplicated conceptually from PDF page furniture into the HTML reading flow.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 25.69,
+    "page_count": 5,
+    "visual_input_tokens": 10772,
+    "visual_output_tokens": 514,
+    "content_input_tokens": 13079,
+    "content_output_tokens": 614,
+    "timestamp": "2026-04-14T05:20:23.917333",
+    "auditor_version": "1.0.0"
+  }
+}

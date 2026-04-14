@@ -1,0 +1,110 @@
+{
+  "document_id": "Ombudsman Listed by Area Agency on Aging",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table header row styling differs - PDF uses gold/yellow background for header row, HTML uses plain styling",
+      "severity": "minor",
+      "evidence": "PDF shows 'Region | Area Agency on Aging | Regional Ombudsman | Counties Served' with gold background; HTML shows same headers without background color",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Office header formatting differs slightly - PDF centers the header block, HTML left-aligns it with a heading style and red underline",
+      "severity": "minor",
+      "evidence": "PDF: centered block with bold 'Office of the State Long Term Care Ombudsman'; HTML: left-aligned large heading with horizontal rule underneath",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "PDF page 1 has centered layout for office info block, HTML page 2 uses left-aligned layout",
+      "severity": "minor",
+      "evidence": "PDF centers address, phone, fax, website; HTML left-aligns them",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table cell content alignment differs - PDF centers text in cells, HTML left-aligns",
+      "severity": "minor",
+      "evidence": "Region letters, agency names, ombudsman names, and counties are centered in PDF but left-aligned in HTML",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Previously Isothermal Commission' note is in italics in the PDF but uses parenthetical plain text format in HTML for Region C",
+      "severity": "minor",
+      "evidence": "PDF: italic '(Previously Isothermal Commission)'; HTML: '(Previously Isothermal Commission)' appears in regular text with parentheses",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page break differences cause Region E to appear at top of PDF page 3 but mid-page in HTML page 4",
+      "severity": "minor",
+      "evidence": "PDF page 3 starts with Region E; HTML continues from Region D into E on the same scrollable page",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Hyperlinks present in the PDF are not rendered as clickable <a> tags in the HTML. The website URL and all email addresses are presented as plain text rather than as hyperlinks.",
+      "severity": "minor",
+      "evidence": "PDF contains clickable links like 'https://www.ncdhhs.gov/aging', 'renee.kea@dhhs.nc.gov', 'anna@regiona.org', etc. HTML renders these as plain text without <a> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses only one heading (h1) for the entire document. The document title 'Division of Aging / North Carolina Long Term Care Ombudsman Program' from the PDF is not used as the h1; instead 'Office of the State Long Term Care Ombudsman' is the h1. The program title appears only in a page-header div. There are no h2 or lower headings to structure the regional sections.",
+      "severity": "major",
+      "evidence": "PDF title is 'Division of Aging / North Carolina Long Term Care Ombudsman Program' appearing at top of every page. HTML h1 is 'Office of the State Long Term Care Ombudsman' which is a sub-section in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements - a structural duplication. The outer <main> from the template wraps an inner <main> element containing the actual content.",
+      "severity": "major",
+      "evidence": "HTML has <body><main>...<main>...</main>...</main></body> - two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header 'Division of Aging / North Carolina Long Term Care Ombudsman Program' is repeated both in the page-header div and implicitly as context, and the footer 'As of February 2026' appears both within the content section and in the page-footer div. This mirrors the PDF's repeating headers/footers but results in duplication in a single-page HTML context.",
+      "severity": "minor",
+      "evidence": "HTML has 'As of February 2026' in the section content AND in the page-footer div. PDF repeats this on every page as a footer.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Minor formatting artifact in Region P's phone/fax information where the fax number is oddly split across lines in the HTML, though this reflects the PDF source text.",
+      "severity": "minor",
+      "evidence": "HTML: '(252) 638-3185 ext.<br>3010 F: (252)<br>638-3187' - fax number split. PDF also shows similar formatting: '(252) 638-3185 ext. 3010 F: (252) 638-3187'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 41.86,
+    "page_count": 4,
+    "visual_input_tokens": 12544,
+    "visual_output_tokens": 1022,
+    "content_input_tokens": 14390,
+    "content_output_tokens": 945,
+    "timestamp": "2026-04-14T05:27:09.748810",
+    "auditor_version": "1.0.0"
+  }
+}

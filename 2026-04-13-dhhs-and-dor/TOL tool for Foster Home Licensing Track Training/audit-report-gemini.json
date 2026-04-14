@@ -1,0 +1,54 @@
+{
+  "document_id": "TOL tool for Foster Home Licensing Track Training",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table structure altered from a form layout with spanning headers to a two-column grid.",
+      "severity": "minor",
+      "evidence": "In the PDF, headers like 'Social Worker Goals' span the full width of the table. In the HTML, these are placed into the first column of a two-column ('Prompt', 'Input') table, splitting the originally merged cells.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Form table flattened, altering visual grouping of numbered lists.",
+      "severity": "minor",
+      "evidence": "The PDF groups numbered input rows (1, 2, 3) under full-width prompt rows. The HTML converts this to a strict two-column layout, placing prompts and standalone numbers into the 'Item' column.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Form table structure converted from spanning rows to a two-column layout.",
+      "severity": "minor",
+      "evidence": "A long instructional prompt spanning the table width in the PDF is placed into the first column of a two-column ('Item', 'Response') table in the HTML.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Complex form table flattened into a simple two-column grid.",
+      "severity": "minor",
+      "evidence": "Spanning textual prompts and their associated numbered input areas in the PDF are converted into a uniform two-column format in the HTML, altering the visual structure.",
+      "page": 5,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 71.29,
+    "page_count": 5,
+    "visual_input_tokens": 11658,
+    "visual_output_tokens": 699,
+    "content_input_tokens": 6982,
+    "content_output_tokens": 170,
+    "timestamp": "2026-04-14T05:30:33.894192",
+    "auditor_version": "1.0.0"
+  }
+}

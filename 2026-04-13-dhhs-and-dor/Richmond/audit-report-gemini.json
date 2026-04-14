@@ -1,0 +1,30 @@
+{
+  "document_id": "Richmond",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Signature and date blocks lost horizontal layout.",
+      "severity": "major",
+      "evidence": "In the PDF, the signature line/title and the date line/label are arranged side-by-side with significant spacing. In the HTML, these elements are collapsed onto single consecutive lines (e.g., 'Division of Aging & Adult Services Date' instead of being separated horizontally).",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 29.29,
+    "page_count": 1,
+    "visual_input_tokens": 2895,
+    "visual_output_tokens": 244,
+    "content_input_tokens": 2952,
+    "content_output_tokens": 147,
+    "timestamp": "2026-04-14T05:27:58.576318",
+    "auditor_version": "1.0.0"
+  }
+}

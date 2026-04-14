@@ -1,0 +1,38 @@
+{
+  "document_id": "SCFAC July Agenda 20190702",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C3",
+      "description": "The first table's structure does not match the PDF: the PDF includes a full-width contact row spanning the table, while the HTML places the contact information only in the left cell and leaves the right cell empty.",
+      "severity": "major",
+      "evidence": "PDF shows a single row across the table: \"Kate Barrow [Contact Person] (919) 621-1116\" centered/full-width beneath the location/call-in row. HTML represents this as: left cell \"Kate Barrow [Contact Person] (919) 621-1116\" and right cell empty.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Stylistic emphasis present in the PDF is not preserved in several agenda entries, reducing fidelity of role/affiliation presentation.",
+      "severity": "major",
+      "evidence": "PDF italicizes items such as \"Benita Purcell and Mark Fuhrmann\", \"Consent Agenda\", \"Matt Herr, JD, Acting Assistant Director for Systems Performance\", \"DHHS, Div. MH/DD/SAS\", and the footer note \"*Agenda subject to change without notice\". HTML converts these to plain text except for the footer note.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 15.11,
+    "page_count": 1,
+    "visual_input_tokens": 2728,
+    "visual_output_tokens": 154,
+    "content_input_tokens": 3516,
+    "content_output_tokens": 409,
+    "timestamp": "2026-04-14T05:28:16.068044",
+    "auditor_version": "1.0.0"
+  }
+}

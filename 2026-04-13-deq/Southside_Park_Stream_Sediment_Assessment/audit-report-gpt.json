@@ -1,0 +1,94 @@
+{
+  "document_id": "Southside_Park_Stream_Sediment_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Overall page layout is not preserved; the original full-page figure with embedded side panels and annotations is converted into a linear report page with separate title, image, legend, tables, and notes.",
+      "severity": "major",
+      "evidence": "In the PDF, the page is dominated by a large map figure with labels, legend, scale/date/project info, and notes integrated around the figure. In the HTML, the content is reflowed into a top title block, a smaller centered image, then separate metadata, legend bullets, sample result tables, notes, and references below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The map image is present but substantially reduced in size, which lowers legibility of embedded callouts and labels compared with the source PDF.",
+      "severity": "minor",
+      "evidence": "The PDF shows a large map occupying most of the page, making sample labels and boxed results readable in context. The HTML shows the same map as a much smaller embedded image, making internal text and annotations harder to read without relying on the extracted tables below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling differs noticeably from the source, with loss of the original figure-oriented typographic hierarchy and side-panel formatting.",
+      "severity": "minor",
+      "evidence": "In the PDF, the title is vertical along the right margin and metadata such as scale/date/project number are placed in a structured side panel, while the HTML restyles them as horizontal headings and plain lines beneath the image. This does not remove content but changes the visual distinction and formatting.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML introduces fabricated structural text and headings not present in the source figure, including a standalone document title block and section labels.",
+      "severity": "critical",
+      "evidence": "PDF is a map figure with side title text such as \"STREAM SEDIMENT ASSESSMENT\", \"SOUTHSIDE PARK LANDFILL\", \"NCDEQ ID NO. NONCD00000870 TASK ORDER 870-RI-15\", \"REMOUNT ROAD, CHARLOTTE, MECKLENBURG COUNTY NC\" embedded in the figure margin, but it does not present semantic sections like \"Legend\", \"Sample Results\", \"NOTES:\", or \"REFERENCE:\" as HTML document sections/headings. HTML adds explicit section structure and labels: <h1>STREAM SEDIMENT ASSESSMENT</h1>, <h2>SOUTHSIDE PARK LANDFILL</h2>, <h3>Legend</h3>, <h3>Sample Results</h3>, <h3>NOTES:</h3>, <h3>REFERENCE:</h3>, plus wrapper labels like \"map-display\", \"map-metadata\", and a page footer paragraph.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML fabricates image alt text content not verifiable from the PDF text layer and one logo description that is not supported by the source.",
+      "severity": "critical",
+      "evidence": "HTML includes alt text values such as \"Company Logo\", \"Map showing stream sediment and surface water sample locations at Southside Park Landfill\", and \"Map legend marker\". The provided PDF figure shows visual graphics only; these exact textual descriptions do not appear in the source figure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table transcription is incomplete for one sample identifier; the HTML omits the DUP notation formatting seen in the PDF callout.",
+      "severity": "major",
+      "evidence": "PDF callout label reads \"SD-1/DUP-6102025-SD\". HTML table header reproduces this as \"SD-1/DUP-6102025-SD\", but the corresponding map sample marker label is simplified to \"SW/SD-1\" and the duplicate context is not preserved elsewhere in structured content. This is a minor integrity concern around identifier completeness across the converted structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy reflects AI-imposed document structure rather than the source figure structure.",
+      "severity": "major",
+      "evidence": "HTML uses hierarchical headings <h1>, <h2>, and multiple <h3> section headings. The PDF is a single map figure with annotations and callout boxes, not a document with explicit heading hierarchy. For example, HTML creates headings \"Legend\", \"Sample Results\", \"NOTES:\", and \"REFERENCE:\" as peer sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text is present but partly generic or speculative.",
+      "severity": "minor",
+      "evidence": "HTML alt text includes \"Company Logo\" and \"Map legend marker\". These are generic and not clearly tied to visible source text; \"Map showing stream sediment and surface water sample locations at Southside Park Landfill\" is descriptive but generated rather than sourced.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some text is normalized or expanded in ways that change the figure's presentation and may overstate document structure.",
+      "severity": "major",
+      "evidence": "PDF presents side-panel metadata as figure text, e.g., \"SCALE: 1\\\" = 200'\", \"DATE: 10/28/2025\", \"PROJECT NUMBER 215952\", \"FIGURE NO. 7\". HTML converts these into separate metadata paragraphs under a dedicated section and converts callout/legend content into formal lists and tables, altering how the information is represented.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 32.06,
+    "page_count": 1,
+    "visual_input_tokens": 2954,
+    "visual_output_tokens": 557,
+    "content_input_tokens": 4922,
+    "content_output_tokens": 1010,
+    "timestamp": "2026-04-14T05:05:30.289336",
+    "auditor_version": "1.0.0"
+  }
+}

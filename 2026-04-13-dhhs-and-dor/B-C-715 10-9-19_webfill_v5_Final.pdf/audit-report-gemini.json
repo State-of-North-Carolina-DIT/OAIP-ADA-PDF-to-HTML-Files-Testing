@@ -1,0 +1,54 @@
+{
+  "document_id": "B-C-715 10-9-19_webfill_v5_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Form layout and boxed fields flattened into single column.",
+      "severity": "major",
+      "evidence": "The top half of PDF Page 1 contains a structured layout with distinct boxes for 'DOR Use Only', 'FEIN or SSN', 'ABC Permit Number', etc. The HTML rendering flattens these entirely into a single-column, unstyled list of text labels.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Primary table and subsequent content missing from page.",
+      "severity": "critical",
+      "evidence": "PDF Page 1 includes a large data entry table ('Number of Gallons...'), a late filing penalty section, a signature block, and instructional paragraphs at the bottom. None of this content appears in the HTML rendering for Page 1.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Form footer labels incorrectly rendered as table data rows.",
+      "severity": "major",
+      "evidence": "The HTML table on Page 2 uses the column headers from the main table, but populates the data rows with footer/summary labels ('Gallons Sold (From Page 2)', 'Total Gallons Sold', '1. Late Filing Penalty') which were separate visual elements below the table in the original PDF.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Severe disruption of reading order across pages.",
+      "severity": "major",
+      "evidence": "Content that appears at the bottom of PDF Page 1 (Signature line, certification text, instructions, and mailing address) has been shifted entirely to the bottom of HTML Page 2.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 49.64,
+    "page_count": 2,
+    "visual_input_tokens": 5082,
+    "visual_output_tokens": 613,
+    "content_input_tokens": 3734,
+    "content_output_tokens": 152,
+    "timestamp": "2026-04-14T05:16:40.413406",
+    "auditor_version": "1.0.0"
+  }
+}

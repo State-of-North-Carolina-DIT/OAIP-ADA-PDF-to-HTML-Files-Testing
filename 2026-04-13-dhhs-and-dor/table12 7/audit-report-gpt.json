@@ -1,0 +1,78 @@
+{
+  "document_id": "table12 7",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Title and header styling differ from the source PDF.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses a compact centered table title in uppercase with bracketed subtitle beneath, while the HTML renders a larger left-aligned heading with a horizontal rule and more spacious spacing. Information is preserved, but visual distinction and alignment are changed.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated wrapper/template content not present in the PDF, including standalone HTML metadata and imported stylesheet references.",
+      "severity": "critical",
+      "evidence": "HTML contains text/metadata such as \"<!DOCTYPE html>\", \"<html lang=\\\"en\\\">\", \"<title>Converted Document</title>\", CSS comments \"Digital Commons NC \u2014 Standalone Theme CSS\", and \"@import url('https://fonts.googleapis.com...')\". These do not appear anywhere in the source PDF pages, which only show the table and notes.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "A table value is incorrect for fiscal year 2007-2008: the Department of Commerce transfer amount was transcribed as 800,000 instead of 200,000.",
+      "severity": "major",
+      "evidence": "In the PDF notes below the continued table: \"Effective July 1, 2007, $200,000 of the net proceeds...\" and in the 2007-2008 table row \"Department of Commerce transfer +\" the amount shown is 200,000. The HTML row shows \"Department of Commerce transfer +\" with 2007-2008 value \"800,000\" and 0.31%.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "A table value is incorrect for fiscal year 2008-2009: the Department of Commerce transfer amount was transcribed as 875,000 instead of 225,000.",
+      "severity": "major",
+      "evidence": "The PDF continued table shows in row \"Department of Commerce transfer +\" the 2008-2009 amount as 225,000. The HTML instead lists \"875,000\" for 2008-2009.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "A table value is incorrect for fiscal year 2009-2010: Local distribution allocations amount was transcribed as 10,860,329 instead of 10,869,329.",
+      "severity": "major",
+      "evidence": "In the PDF continued table, row \"Local distribution allocations\" under 2009-2010 reads \"10,869,329\" with \"3.70%\". The HTML shows \"10,860,329\" with \"3.70%\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The explanatory note for the Department of Commerce transfer is altered, changing the legal amount stated for 2008 from $25,000 to $75,000.",
+      "severity": "major",
+      "evidence": "PDF note states: \"Effective October 1, 2008, SL 2008-107 amended the quarterly transfer provision stipulating that the original $200,000 allocation be designated for industry promotion and that an additional $25,000 of the net proceeds of tax collected on unfortified wine be designated on a quarterly basis for the purpose of research and development.\" The HTML changes this to \"an additional $75,000...\"",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is imperfect: the statutory subtitle is encoded as an h2 even though it is part of the table title block rather than a true subsection heading, and there are duplicate main containers.",
+      "severity": "minor",
+      "evidence": "HTML uses \"<h1>TABLE 12. NET ALCOHOLIC BEVERAGE TAX COLLECTIONS BY TYPE</h1>\" followed by \"<h2>[\u00a7 105 ARTICLE 2C.]</h2>\" and later another \"<h2>TABLE 12. - Continued</h2>\". In the PDF these are title lines for the same table rather than section hierarchy.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 29.33,
+    "page_count": 2,
+    "visual_input_tokens": 5845,
+    "visual_output_tokens": 278,
+    "content_input_tokens": 12280,
+    "content_output_tokens": 958,
+    "timestamp": "2026-04-14T05:36:14.642069",
+    "auditor_version": "1.0.0"
+  }
+}

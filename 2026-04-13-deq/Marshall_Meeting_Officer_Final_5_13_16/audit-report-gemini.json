@@ -1,0 +1,21 @@
+{
+  "document_id": "Marshall_Meeting_Officer_Final_5_13_16",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 54.58,
+    "page_count": 6,
+    "visual_input_tokens": 13830,
+    "visual_output_tokens": 366,
+    "content_input_tokens": 8770,
+    "content_output_tokens": 170,
+    "timestamp": "2026-04-14T05:00:31.511423",
+    "auditor_version": "1.0.0"
+  }
+}

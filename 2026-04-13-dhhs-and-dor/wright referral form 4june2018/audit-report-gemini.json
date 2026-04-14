@@ -1,0 +1,54 @@
+{
+  "document_id": "wright referral form 4june2018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Checkboxes rendered as bullet points",
+      "severity": "minor",
+      "evidence": "In the 'SUPPORTING DOCUMENTATION' section of the PDF, items are preceded by empty square checkboxes. In the HTML, this is rendered as a standard unordered list with bullet points.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Signature layout collapsed",
+      "severity": "minor",
+      "evidence": "The PDF features side-by-side lines for signatures, such as a line for 'Signature' and a parallel line for 'Print Name'. The HTML collapses these onto single lines and merges the labels beneath them.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Loss of form box styling",
+      "severity": "major",
+      "evidence": "On the PDF, sections intended for longer textual input (e.g., 'Strengths:', 'Interests:', 'Triggers:') are contained within large, bordered rectangular boxes. The HTML renders these simply as text labels with white space, losing the visual bounding container.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Merged table cells split into repeating rows",
+      "severity": "minor",
+      "evidence": "The 'Contact Information' table in the PDF uses a single spanned cell in the left column for each role (e.g., 'Mental Health Professional' spans 5 rows). The HTML splits this merged cell and repeats the role name on every individual row.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 45.56,
+    "page_count": 5,
+    "visual_input_tokens": 11658,
+    "visual_output_tokens": 718,
+    "content_input_tokens": 6783,
+    "content_output_tokens": 178,
+    "timestamp": "2026-04-14T05:39:32.330008",
+    "auditor_version": "1.0.0"
+  }
+}

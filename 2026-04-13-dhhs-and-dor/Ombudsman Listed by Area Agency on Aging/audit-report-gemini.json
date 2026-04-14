@@ -1,0 +1,54 @@
+{
+  "document_id": "Ombudsman Listed by Area Agency on Aging",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The title block layout and visual hierarchy are significantly altered.",
+      "severity": "major",
+      "evidence": "In the PDF, the title consists of three centered lines with consistent importance. In the HTML, the first two lines ('Division of Aging', 'North Carolina...') are rendered as small, left-aligned text at the very top, while the third line ('Office of the State...') becomes a large, prominent heading with a bottom border.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text is inserted out of visual reading sequence near the top of the document.",
+      "severity": "minor",
+      "evidence": "The text 'As of February 2026', which appears as a bottom footer in the PDF, is placed near the top of the HTML document, before the main heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Right-alignment of phone numbers in the contact section is lost.",
+      "severity": "minor",
+      "evidence": "In the PDF, phone numbers for the ombudsman contacts are formatted to be flush right. In the HTML, they are inline and directly follow the email addresses, losing the aligned layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Hyperlinks from the source PDF were converted to plain text rather than active anchor tags (<a>).",
+      "severity": "minor",
+      "evidence": "The PDF contains blue, underlined text for emails and URLs (e.g., 'https://www.ncdhhs.gov/aging' and 'renee.kea@dhhs.nc.gov'). In the HTML, these are rendered as plain text (e.g., 'Website: https://www.ncdhhs.gov/aging' and 'renee.kea@dhhs.nc.gov') without the corresponding <a href=\"...\"> markup.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 62.62,
+    "page_count": 4,
+    "visual_input_tokens": 9468,
+    "visual_output_tokens": 551,
+    "content_input_tokens": 7783,
+    "content_output_tokens": 322,
+    "timestamp": "2026-04-14T05:27:29.286801",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "document_id": "Decision-Making Support Options in NC-Black and White 8.25.21",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF page 1 uses a two-column table-like layout with category labels in dark blue boxes on the left and bullet point descriptions on the right. The HTML renders this as a single-column layout with headings followed by bullet lists.",
+      "severity": "major",
+      "evidence": "PDF shows a structured table/grid with 'Supported Decision-Making', 'Advance Directive', etc. in dark blue boxes on the left column and descriptions in gray boxes on the right. HTML shows sequential headings with bullet lists underneath in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The dark blue styled boxes/banners for each category label in the PDF are not present in the HTML. These serve as visual grouping elements.",
+      "severity": "minor",
+      "evidence": "PDF has dark navy blue rounded rectangle boxes containing white text for each category name. HTML renders these as plain bold headings without background styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF page 2 uses a structured grid/table layout with dark blue header bars for each section and bordered content areas. The HTML renders this as a simple single-column list layout.",
+      "severity": "major",
+      "evidence": "PDF shows a visually organized grid with dark blue header bars for each section (Supported Decision-Making, Advance Directive, etc.) and bordered gray content areas. HTML shows sequential headings with simple bullet lists.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF resources page, the resource items are bolded and underlined to indicate hyperlinks. In the HTML, the items appear as plain text without underline or bold styling.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Autism Society of NC', 'First in Families NC', etc. in bold underlined text. HTML shows these as plain bullet list items without underline or bold formatting.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Under Guardianship and Alternatives, 'Rights Restoration' and 'Rethinking Guardianship' are sub-items under 'Disability Rights NC-Self-Determination and Guardianship' in the PDF, which is correctly reflected in the HTML as nested items. However, the visual hierarchy is slightly different.",
+      "severity": "minor",
+      "evidence": "PDF shows these as indented sub-bullets. HTML shows them as nested list items with circle markers, which is functionally equivalent.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "All hyperlinks from the PDF's page 2 are missing in the HTML. The PDF contains multiple hyperlinks (bolded and underlined items) that link to external resources, but the HTML renders them all as plain text without any <a> tags.",
+      "severity": "major",
+      "evidence": "PDF page 2 states 'All bolded and underlined items are hyperlinks to websites to locate agencies and gather information.' Items like 'Autism Society of NC', 'First in Families NC', 'Find your local Social Security Office', 'About Guardianship in NC', etc. should all be hyperlinks but appear as plain text in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses two <h1> elements. The document has two sections each with their own <h1>: 'Decision-Making Support Options in North Carolina' and 'Additional Resources to Learn More About\u2026'. Only one h1 is acceptable; the second should be an h2.",
+      "severity": "major",
+      "evidence": "HTML contains: <h1>Decision-Making Support Options in North Carolina</h1> and <h1>Additional Resources to Learn More About\u2026</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside another <main> element, which is a structural duplication of the main landmark.",
+      "severity": "minor",
+      "evidence": "HTML structure: <main><main>...</main></main>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 32.83,
+    "page_count": 2,
+    "visual_input_tokens": 6856,
+    "visual_output_tokens": 941,
+    "content_input_tokens": 6438,
+    "content_output_tokens": 598,
+    "timestamp": "2026-04-14T05:21:06.269608",
+    "auditor_version": "1.0.0"
+  }
+}

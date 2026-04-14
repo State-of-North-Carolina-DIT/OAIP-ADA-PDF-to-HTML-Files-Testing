@@ -1,0 +1,54 @@
+{
+  "document_id": "POTS_OPEN_\u2013_ATLANTIC_OCEAN_AND_INTERNAL_COASTAL_AND_JOINT_FISHING_WATERS_WEST_AND_SOUTH_OF_HIGHWAY_58_BRIDGE",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Severe structural dislocation with duplicated headers and misplaced footers.",
+      "severity": "critical",
+      "evidence": "In the HTML, after the initial logo and top-right header block, there is a massive blank gap, followed by the document footer rendered inline, then a duplicated header block, all occurring before the main document title 'PROCLAMATION'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text interrupts the main reading order.",
+      "severity": "major",
+      "evidence": "The footer text ('State of North Carolina...') is rendered inline as regular body text between list item VI.C and list item D, breaking the continuity of the text flow.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Extraneous header and footer text rendered inline.",
+      "severity": "minor",
+      "evidence": "Footer text is injected as standard text at the very top of the page before the page header, and the footer block is duplicated at the bottom of the page.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Pagination artifacts (page headers and footers) are embedded directly within the ordered lists, interrupting the logical flow and semantic structure of the content.",
+      "severity": "minor",
+      "evidence": "In the HTML, between list items VI.C and VI.D, the text 'State of North Carolina | Division of Marine Fisheries... Proclamation PT-2-2024 Pg. 2' is inserted inside the <li> tag for VI.C. A similar interruption occurs between IX.E and X.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 68.28,
+    "page_count": 3,
+    "visual_input_tokens": 7314,
+    "visual_output_tokens": 528,
+    "content_input_tokens": 6981,
+    "content_output_tokens": 290,
+    "timestamp": "2026-04-14T05:02:04.224743",
+    "auditor_version": "1.0.0"
+  }
+}

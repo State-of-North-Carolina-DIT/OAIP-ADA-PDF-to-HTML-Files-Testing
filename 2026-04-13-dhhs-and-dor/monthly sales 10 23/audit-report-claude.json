@@ -1,0 +1,110 @@
+{
+  "document_id": "monthly sales 10 23",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 PDF has a clear two-column layout for county data (left and right county groups side by side). The HTML conversion preserves this as a table but renders it in a different visual structure with alternating rows rather than side-by-side columns.",
+      "severity": "major",
+      "evidence": "PDF shows two distinct column groups (e.g., Alamance/Macon on same row). HTML shows the same data in a single wide table that appears to maintain the two-column structure, though with different styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 in HTML uses a simplified table format compared to the PDF. The data appears complete but horizontal rules and grouping separators between county groups are not preserved.",
+      "severity": "minor",
+      "evidence": "PDF has subtle spacing/line breaks between county groups (e.g., between Brunswick and Buncombe). HTML renders as continuous rows without these visual groupings.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Table 2 in the PDF is rendered as a two-column layout with business types on left and right. The HTML version breaks this into a single long scrolling table.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows left column (3% Tax Group, Apparel, Automotive, Food, Furniture, General Merchandise) and right column (Lumber & Building, Unclassified Group, Total, Combined General Rate, etc.) side by side. HTML renders all business types sequentially in one column.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 2 in HTML is split across multiple separate tables rather than maintaining the unified two-column table structure of the PDF. The left-side categories and right-side categories that were visually paired are now separated into sequential sections.",
+      "severity": "major",
+      "evidence": "PDF shows Type of Business columns side by side with their respective Gross Collections and Taxable Sales. HTML separates left and right into a long sequential list.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Group headers in Table 2 (e.g., 'Apparel Group - 4.75%', 'Automotive Group - 4.75%') appear bold in the PDF but the HTML rendering shows them with less visual distinction from sub-items.",
+      "severity": "minor",
+      "evidence": "PDF has bold group headers with dollar amounts. HTML shows group headers but formatting emphasis is reduced.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order for Table 2 differs significantly between PDF and HTML. In the PDF, a reader would see left column categories then right column categories on the same visual level. In HTML, all left-side categories appear first, then all right-side categories follow sequentially.",
+      "severity": "major",
+      "evidence": "PDF: Apparel Group and Lumber & Building Material Group are at similar vertical positions. HTML: Lumber & Building Material Group appears much later after all left-column groups are listed.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title and header text formatting differs slightly. PDF uses centered, bold title text. HTML uses left-aligned or differently styled header text.",
+      "severity": "minor",
+      "evidence": "PDF: 'MONTHLY REPORT OF STATE SALES AND USE TAX GROSS COLLECTIONS AND TAXABLE SALES' is centered and bold. HTML: Same text appears with different alignment/weight.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The footnotes at the bottom of page 1 and page 3 are preserved in the HTML but have slightly different visual formatting and bullet/dash styling.",
+      "severity": "minor",
+      "evidence": "PDF uses em-dash (\u2014) for notes. HTML may render these differently.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. The outer <body> contains a <main>, and inside it another <main> is used for the table content.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main>...<main>...</main>...</main></body> - nested main elements",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has two h1 elements - the page header title appears as h1, and potentially the structure uses header class='page-header' with h2 for TABLE 2, which is acceptable, but two distinct heading hierarchies exist within the same page.",
+      "severity": "minor",
+      "evidence": "First h1: 'MONTHLY REPORT OF STATE SALES AND USE TAX GROSS COLLECTIONS AND TAXABLE SALES' - only one h1 is ideal but this matches the document title",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 1 layout uses empty rows for Motor Vehicle Lease (Short-Term) and Subscription which are split across two rows in the right-hand columns, creating slightly awkward alignment but data values are preserved correctly.",
+      "severity": "minor",
+      "evidence": "Hyde row has 'Motor Vehicle Lease (Short-Term)' with empty collections/sales, and Iredell row has 'and Subscription' with 9,173,947 and '\u2013'. All values match the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 45.11,
+    "page_count": 2,
+    "visual_input_tokens": 5224,
+    "visual_output_tokens": 1339,
+    "content_input_tokens": 20193,
+    "content_output_tokens": 602,
+    "timestamp": "2026-04-14T05:34:46.690973",
+    "auditor_version": "1.0.0"
+  }
+}

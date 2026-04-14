@@ -1,0 +1,94 @@
+{
+  "document_id": "NCGS 122C-124.2.(a) LME-MCO Certificate of Compliance",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout differs - PDF has a side-by-side layout with seal/logo on left and official names on right, HTML stacks them vertically",
+      "severity": "minor",
+      "evidence": "PDF: Logo and 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES' are side by side with Governor/Secretary/Deputy info in a right-aligned box. HTML: Logo is above, then names listed below in bold left-aligned text",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Governor, Secretary, and Deputy Secretary names are bold in HTML but displayed in a different typographic style in the PDF header box",
+      "severity": "minor",
+      "evidence": "PDF: Names appear in a bordered box with specific formatting. HTML: Names appear as bold standalone lines without the box styling",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer layout simplified in HTML - location, mailing address, and contact info removed from bottom of page 1 but appear at top of page 2",
+      "severity": "minor",
+      "evidence": "PDF page 1 has full footer with address, phone, fax. HTML page 1 footer appears minimal, but the info shows at top of page 2 HTML rendering",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer contact information appears at top of page 2 in HTML instead of at bottom of page 1",
+      "severity": "minor",
+      "evidence": "PDF: Footer with location/mailing/web/phone info is at bottom of page 1. HTML: This info appears at top of page 2 rendering",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table header formatting differs slightly - PDF uses gray shading on header rows, HTML uses plain styling, but data and structure are preserved",
+      "severity": "minor",
+      "evidence": "PDF tables have gray-shaded header rows. HTML tables have plain headers. All data values match.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Solvency Review Defensive Interval table header row label differs slightly",
+      "severity": "minor",
+      "evidence": "PDF: 'Month' and 'LME-MCO' appear as separate header labels. HTML: Shows 'Month LME-MCO' combined. Structure and data are otherwise identical.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No h1 heading exists in the HTML document. All table section titles use h3 directly with no h1 or h2 headings present, creating a broken heading hierarchy.",
+      "severity": "major",
+      "evidence": "The HTML uses only <h3> tags for section headings like 'Claims Accuracy and Timeliness Review: Summary Findings', 'Solvency Review: Current Ratio Summary Findings', etc. There is no h1 document title or h2 headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Claims Accuracy table has duplicated column headers instead of properly structured Result/Finding sub-columns. Each month's data pair (value + compliance) is represented as two identically-named columns.",
+      "severity": "major",
+      "evidence": "HTML thead has: 'Timeliness of Provider Payment (Within 30 days)' repeated twice, 'Claims Processing Accuracy' repeated twice, 'Financial Accuracy' repeated twice. The PDF uses 'Result' and 'Finding' as sub-headers. Similarly, the Solvency tables have month names duplicated (e.g., 'March', 'March') instead of using value/compliant sub-columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The entire letter content (page 1) appears to be duplicated in the HTML. The letter body, signature block, header information, and footer are all rendered twice - once in an apparent first rendering and then again in a second main element.",
+      "severity": "major",
+      "evidence": "The HTML contains the full letter text starting with 'January 16, 2025' and ending with 'Attachments' inside a <main> element, but the outer document also has a <main> wrapper. The header with JOSH STEIN, DEVDUTTA SANGVAI, JAY LUDLAM appears once in the header section and the footer information (NC MEDICAID, address, phone) appears in the page-footer div - this is acceptable as header/footer consolidation. However, there are multiple <main> elements in the document which is structurally problematic.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 42.07,
+    "page_count": 3,
+    "visual_input_tokens": 9860,
+    "visual_output_tokens": 1076,
+    "content_input_tokens": 12757,
+    "content_output_tokens": 754,
+    "timestamp": "2026-04-14T05:26:26.669739",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "3.5 NC ESG Third Party Verification of Client's Income 2021.v1.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Multi-column layout for checkboxes collapsed into a single column.",
+      "severity": "major",
+      "evidence": "In the PDF, the checkboxes under 'CHECK ONE:' are arranged in three distinct columns. In the HTML, they are rendered as a single vertical column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Redundant bullet points added to checkbox list.",
+      "severity": "minor",
+      "evidence": "The HTML renders the 'CHECK ONE:' options as an unordered list, adding a bullet point before each checkbox character, which does not exist in the original PDF.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 25.92,
+    "page_count": 1,
+    "visual_input_tokens": 2928,
+    "visual_output_tokens": 314,
+    "content_input_tokens": 3083,
+    "content_output_tokens": 141,
+    "timestamp": "2026-04-14T05:14:10.070680",
+    "auditor_version": "1.0.0"
+  }
+}

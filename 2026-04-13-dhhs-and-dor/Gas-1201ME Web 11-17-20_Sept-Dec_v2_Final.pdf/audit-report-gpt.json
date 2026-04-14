@@ -1,0 +1,102 @@
+{
+  "document_id": "Gas-1201ME Web 11-17-20_Sept-Dec_v2_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Instructional infographic layout is not preserved in the HTML.",
+      "severity": "major",
+      "evidence": "The PDF page is primarily a three-branch visual diagram with central and side callouts. In the HTML, the same content is presented as a linear document with the image followed by extracted text blocks, losing the original grouped visual structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text extraction/formatting is significantly corrupted on the instruction page.",
+      "severity": "major",
+      "evidence": "The PDF shows clean short guidance statements under 'Guidelines', 'Printing', and 'Before Sending'. The HTML contains stray bullets, punctuation fragments, garbled symbol lines, and broken text such as isolated characters and dot sequences, reducing readability.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading flow is partially duplicated and altered by combining the infographic image with separately extracted text.",
+      "severity": "minor",
+      "evidence": "In the PDF, the page is consumed as a single infographic. In the HTML, the user encounters the full image first and then a second textual restatement beneath it, which changes the visual reading experience and introduces confusion due to OCR noise.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Form page layout is flattened from a structured fillable form into a linear document.",
+      "severity": "major",
+      "evidence": "The PDF uses positioned fields, side panels, line-numbered entries, and signature/mail/contact blocks arranged spatially. The HTML converts this into a top-to-bottom single-column layout with labels listed sequentially, losing the original form structure and field relationships.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Form field formatting and alignment are not preserved.",
+      "severity": "major",
+      "evidence": "The PDF visually shows entry boxes, aligned labels, checkbox circles, FEIN/SSN box, quarter-ending options, and signature/date lines. In the HTML, these are mostly plain text labels and bullet lists, so headings remain but interactive/form visual cues are lost.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is broadly preserved but spatial associations within the form are weakened.",
+      "severity": "minor",
+      "evidence": "The PDF places the 'Fill in applicable circles' panel and FEIN/SSN box alongside the top identity fields, while the HTML moves these into a sequential flow below the introductory labels. Content is still present but not encountered in the same visual grouping.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The HTML includes the instruction cover page content that the PDF explicitly marks to exclude, indicating page-level content handling is incorrect and the document boundary is not preserved.",
+      "severity": "critical",
+      "evidence": "PDF page 1 prominently says \"Do Not Include This Page\" above the handwritten forms instructions. HTML includes this page as content with `<h2>Do Not Include This Page</h2>` and sections for \"Instructions For Handwritten Forms\", \"Guidelines\", \"Printing\", and \"Before Sending\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken and multiple h1 elements are used for different parts of the document rather than a single document title with nested section headings.",
+      "severity": "major",
+      "evidence": "HTML uses `<h1>Instructions For Handwritten Forms</h1>` and later `<h1>NCDOR GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment</h1>`. It also starts with `<div class=\"page-header\"><h2>Do Not Include This Page</h2></div>`, which does not reflect a clean single-document heading structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "A nested `<main>` element duplicates top-level document container structure, causing content organization duplication and indicating improper structural conversion.",
+      "severity": "major",
+      "evidence": "HTML contains an outer `<main>` and then another inner `<main>` before the actual form content: `<main> ... <figure>...</figure> <main> ... </main> </main>`.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Several text elements from the instruction page are inaccurately OCR'd or truncated, changing or degrading meaning.",
+      "severity": "major",
+      "evidence": "HTML includes garbled text such as `CAROLINA NC \u2022 DEPARTMENT D(i) R I OF REVENUE NORTH`, `ocopies of returns.`, `,1 t\u00aeI`, `\u00b7-\u00b7 -`, and `c; ;1`, whereas the PDF image text reads clearly, e.g., \"Do not submit photocopies of returns. Submit originals only.\" and branded header text/logo without those OCR artifacts.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 7,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 31.69,
+    "page_count": 2,
+    "visual_input_tokens": 5893,
+    "visual_output_tokens": 793,
+    "content_input_tokens": 5130,
+    "content_output_tokens": 560,
+    "timestamp": "2026-04-14T05:23:15.857259",
+    "auditor_version": "1.0.0"
+  }
+}

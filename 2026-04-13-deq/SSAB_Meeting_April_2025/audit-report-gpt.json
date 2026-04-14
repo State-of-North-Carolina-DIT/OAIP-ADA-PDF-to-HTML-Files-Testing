@@ -1,0 +1,70 @@
+{
+  "document_id": "SSAB_Meeting_April_2025",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Text styling and emphasis are not fully preserved on the agenda page.",
+      "severity": "minor",
+      "evidence": "In the PDF, the main title is centered near the top in a serif style, agenda items use stronger bold emphasis, and labels such as 'Action Item:' and 'Informational Items:' appear italicized/distinct. In the HTML, the title is larger but placed lower on the page, body text appears in a sans-serif style, and emphasis differences are reduced though still somewhat distinguishable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Header branding graphics are repositioned relative to the main content.",
+      "severity": "minor",
+      "evidence": "In the PDF, the seal and agency names appear tightly integrated at the top around the centered meeting heading. In the HTML, the logos and agency text are separated higher on the page with substantial whitespace before the title block, changing visual association though the graphics remain present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "WebEx information page loses some original heading emphasis and typography.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'WebEx Meeting Information:' is underlined and centered with serif typography, and subsection labels like 'Date and time:', 'Join link:', 'Webinar number:', and 'Join by phone:' are clearly bold/underlined. In the HTML, the content is preserved but rendered in a simpler sans-serif style with reduced visual distinction.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds text that does not appear in the PDF by inventing descriptive alt text for embedded images.",
+      "severity": "critical",
+      "evidence": "HTML includes alt text such as \"North Carolina state seal and document background\" and \"North Carolina DEQ document background.\" The PDF pages show the seal/logo and page imagery but do not contain these textual descriptions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Access code in the WebEx section is transcribed incorrectly in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows: \"Access code: 243 537 31319\". HTML shows: \"Access code: 243 537 31319\". The source PDF visually appears to read \"243 537 31319\"; however, the webinar number above is \"2435 373 1319,\" indicating a likely transcription inconsistency that should be verified. This is the only numeric field with potential mismatch risk.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not an accurate structural match to the document. The main title is split across multiple centered lines in the PDF, but the HTML promotes only one line to h1 and uses h2/h3 for second-page labels that are more like section labels than nested headings.",
+      "severity": "major",
+      "evidence": "PDF first page centers: \"Secretaries\u2019 Science Advisory Board / April 2, 2025 / Public Meeting / Archdale Ground Floor Hearing Room / 10:00 am / Agenda.\" HTML uses only \"Secretaries\u2019 Science Advisory Board\" as h1 and renders the remaining title block as paragraph text. PDF second page has underlined label \"WebEx Meeting Information:\" and meeting name text below; HTML uses h2 for \"WebEx Meeting Information:\" and h3 for \"NC DEQ Secretaries' Science Advisory Board Meeting.\"",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 25.74,
+    "page_count": 2,
+    "visual_input_tokens": 5413,
+    "visual_output_tokens": 525,
+    "content_input_tokens": 4456,
+    "content_output_tokens": 580,
+    "timestamp": "2026-04-14T05:04:19.968937",
+    "auditor_version": "1.0.0"
+  }
+}

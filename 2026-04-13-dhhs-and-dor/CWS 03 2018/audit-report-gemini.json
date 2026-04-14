@@ -1,0 +1,62 @@
+{
+  "document_id": "CWS 03 2018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "State seal image is missing.",
+      "severity": "minor",
+      "evidence": "The PDF header includes the state seal of North Carolina, which is absent in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Header columns collapsed.",
+      "severity": "major",
+      "evidence": "The PDF displays the Governor's information on the left and the Secretary/Director's information on the right. The HTML collapses these into a single left-aligned column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Signature block alignment changed.",
+      "severity": "minor",
+      "evidence": "The signature block is positioned towards the center/right in the PDF, but is left-aligned in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer alignment changed.",
+      "severity": "minor",
+      "evidence": "The footer text block is centered at the bottom of the page in the PDF, but is right-aligned in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The state seal image from the letterhead was omitted in the HTML.",
+      "severity": "minor",
+      "evidence": "The original PDF contains the North Carolina state seal image centered above 'DEPARTMENT OF HEALTH AND HUMAN SERVICES'. The HTML <header> section does not include an <img> tag for this seal.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 53.75,
+    "page_count": 2,
+    "visual_input_tokens": 5082,
+    "visual_output_tokens": 464,
+    "content_input_tokens": 4181,
+    "content_output_tokens": 242,
+    "timestamp": "2026-04-14T05:18:14.628061",
+    "auditor_version": "1.0.0"
+  }
+}

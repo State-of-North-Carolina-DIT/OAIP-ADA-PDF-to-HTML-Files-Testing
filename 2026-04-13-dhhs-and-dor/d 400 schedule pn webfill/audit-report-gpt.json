@@ -1,0 +1,126 @@
+{
+  "document_id": "d 400 schedule pn webfill",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Instructional infographic reduced and integrated into page flow rather than occupying the full-page visual prominence of the PDF.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF presents a large centered infographic with four colored vertical panels dominating the page. In the HTML, the same image is present but smaller within the content column, followed by extracted text sections beneath it.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling from the instructional infographic is converted into plain section headings and bullet lists, losing the strong visual panel-based formatting.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses large labeled circles and colored columns for 'Getting Started', 'Guidelines', 'Printing', and 'Before Mailing'. In the HTML these become standard headings and bullet lists below the image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Form layout is not preserved; positioned form fields and boxes are converted into a linear document structure.",
+      "severity": "major",
+      "evidence": "On page 2, the PDF shows a fixed tax form with header fields, Part A side-by-side taxpayer/spouse residency boxes, and a structured Part B form layout. The HTML renders these as stacked text blocks and bullet lists, losing the original form geometry.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part A residency section is no longer presented as a form-style two-panel table/box layout.",
+      "severity": "major",
+      "evidence": "On page 2, the PDF has boxed areas for 'Taxpayer is' and 'Spouse is' with circles and date fields aligned horizontally. In the HTML these are converted into separate bulleted lists and standalone lines.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Form-specific visual formatting such as circles, inline labels, and field alignment is lost in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF visually distinguishes selectable residency options and date entry lines within bordered sections. The HTML shows plain bullets and text labels without equivalent form cues.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 preserves content sequence but not the original form-page layout and spacing.",
+      "severity": "major",
+      "evidence": "On page 3, the PDF uses a fixed page form with column headers, numbered lines, and Part C calculation area placed below. The HTML reflows content into a long vertical page with a table and a separate Part C section later on.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table structure is mostly preserved but split across a long reflowed layout, weakening the original integrated form presentation.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF contains Part B continuation and Part C as compact form sections on one page. In the HTML, Part B appears as a long table and Part C is separated below with a different visual presentation.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header/form typography and compact calculation-field presentation are simplified in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF emphasizes tax year, page header, and numbered calculation lines in a form layout. The HTML presents these in standard text/table styling with reduced visual distinction.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML merges page 2 continuation content into the first large table and inserts non-tabular section text as table rows, which does not preserve the original table structure.",
+      "severity": "major",
+      "evidence": "In the PDF, page 1 Part B has a table for lines 1\u201316 only, while page 2 shows a separate continuation block titled \"Part B. Allocation of Income for Part-Year Residents and Nonresidents (continued)\" with \"North Carolina Adjustments\" and lines 17\u201321 outside the first page table. In the HTML, the same table continues with rows such as \"Part B. Allocation of Income for Part-Year Residents and Nonresidents (continued)\" repeated across all four columns and \"North Carolina Adjustments\" inserted as a table row, altering row/cell structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The heading hierarchy is not faithful: multiple h1 elements are used and page-header/body text is promoted to headings inconsistently.",
+      "severity": "major",
+      "evidence": "The HTML contains at least two h1s: \"Instructions for Web Fill-In Forms\" and \"D-400 Schedule PN 2018 Part-Year Resident and Nonresident Schedule.\" It also uses h2 for form parts such as \"Part A. Residency Status\" and \"Part C. Part-Year Residents and Nonresidents Taxable Percentage,\" but the main document title is embedded inside a page-header div as an h1 rather than serving as the single top-level title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content from the PDF is duplicated in the HTML.",
+      "severity": "major",
+      "evidence": "The continuation heading \"Part B. Allocation of Income for Part-Year Residents and Nonresidents (continued)\" appears once as page text in the PDF on page 2, but in the HTML it is also inserted as an entire table row with the same phrase repeated in all four cells. The phrase \"North Carolina Adjustments\" is likewise represented as section content and as table data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some text is inaccurately transcribed or altered in ways that change wording from the PDF.",
+      "severity": "major",
+      "evidence": "The PDF instruction panel says \"Do not use brackets for negative numbers\" followed by \"Use a minus sign to show the amount is negative.\" The HTML adds parenthetical OCR-like text such as \"(Enter Whole U.S. Dollars Only [99999.00] X, -99999.00 Check)\" and \"(TAX X),\" which does not match the clean text presentation of the PDF. Also, the PDF page header says \"DO NOT MAIL THIS PAGE,\" while the later form page prominently says \"Do not send a photocopy of this form.\" The HTML adds a page-header line \"DO NOT HANDWRITE ON THIS FORM,\" which is not clearly present in the provided PDF images.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML appears to contain fabricated text not clearly present in the source PDF.",
+      "severity": "critical",
+      "evidence": "The HTML includes page-header text \"DO NOT HANDWRITE ON THIS FORM\" and \"CLEAR (X)\" near the form title. In the provided PDF images, the visible wording includes \"DO NOT MAIL THIS PAGE,\" \"Do not send a photocopy of this form.,\" and the infographic instruction \"Do not handwrite any information,\" but the exact phrase \"DO NOT HANDWRITE ON THIS FORM\" and the explicit text label \"CLEAR (X)\" are not visible.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 7,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 38.19,
+    "page_count": 3,
+    "visual_input_tokens": 8136,
+    "visual_output_tokens": 838,
+    "content_input_tokens": 7584,
+    "content_output_tokens": 917,
+    "timestamp": "2026-04-14T05:31:45.208474",
+    "auditor_version": "1.0.0"
+  }
+}

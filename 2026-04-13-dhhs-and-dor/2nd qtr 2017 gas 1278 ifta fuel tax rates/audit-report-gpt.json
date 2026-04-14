@@ -1,0 +1,54 @@
+{
+  "document_id": "2nd qtr 2017 gas 1278 ifta fuel tax rates",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Page header/title hierarchy is weakened in the HTML.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'GAS-1278' and the long title block are tightly grouped and visually prominent at the top. In the HTML, the same content is split across multiple lines/sections with more whitespace and lighter visual emphasis, making the title area less compact.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF contains the tax-rate table split across two pages, but the HTML merges both pages into a single table, changing the original page/table structure.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a full table beginning with 'STATE OR PROVINCE ST/ABBREV' and ending with 'NV Nevada'. PDF page 2 starts a new table with the same header and continues from 'NB New Brunswick' through 'WY Wyoming'. HTML contains only one <table> with all rows from 'AL Alabama' through 'WY Wyoming', instead of preserving the two-page table split.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not an accurate reflection of the source document structure because page-level repeated headers are promoted to semantic headings, creating multiple document headings and nesting issues.",
+      "severity": "major",
+      "evidence": "HTML uses '<h1>GAS-1278</h1>' followed by '<h2>International Fuel Tax Agreement (IFTA) Fuel Tax Rates for 2nd Quarter 2017 Returns</h2>' and then another page header '<h2>2nd Quarter 2017 IFTA Tax Rates</h2>' for page 2. In the PDF, '2nd Quarter 2017 IFTA Tax Rates' is a page-2 table heading, not a separate top-level section of the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Header content is duplicated in the HTML in a way that does not correspond cleanly to the source document's logical structure.",
+      "severity": "major",
+      "evidence": "The HTML includes both the first-page header block ('GAS-1278', 'International Fuel Tax Agreement (IFTA) Fuel Tax Rates for 2nd Quarter 2017 Returns') and a second-page header block ('Page 2, Gas 1278, Web, 6-17', '2nd Quarter 2017 IFTA Tax Rates') before a single combined table. In the PDF these belong to separate pages framing separate table instances; in HTML they appear consecutively ahead of one merged table, which duplicates page-level heading content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 20.12,
+    "page_count": 2,
+    "visual_input_tokens": 4721,
+    "visual_output_tokens": 210,
+    "content_input_tokens": 12432,
+    "content_output_tokens": 619,
+    "timestamp": "2026-04-14T05:13:56.702200",
+    "auditor_version": "1.0.0"
+  }
+}

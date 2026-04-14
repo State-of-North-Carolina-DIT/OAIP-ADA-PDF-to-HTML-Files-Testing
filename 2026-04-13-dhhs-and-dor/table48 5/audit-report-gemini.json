@@ -1,0 +1,38 @@
+{
+  "document_id": "table48 5",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Chart graphic is fragmented and broken.",
+      "severity": "critical",
+      "evidence": "In the PDF, Figure 48.1 is a cohesive bar and line chart. In the HTML, this chart is broken into several overlapping, vertical image fragments, making the graphic completely illegible.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Text from the chart is extracted out of context.",
+      "severity": "major",
+      "evidence": "The text elements originally contained within the chart in the PDF (such as axis labels, data point values, and legend text) have been extracted and placed as a long, unstructured vertical list at the very bottom of the HTML page, destroying the layout and context.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 44.97,
+    "page_count": 1,
+    "visual_input_tokens": 2850,
+    "visual_output_tokens": 326,
+    "content_input_tokens": 4788,
+    "content_output_tokens": 160,
+    "timestamp": "2026-04-14T05:38:16.496085",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "CS 10 2002",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header names and titles layout changed from two columns to one.",
+      "severity": "major",
+      "evidence": "In the PDF, the Governor/Secretary and Director/Phone details are arranged in two parallel columns. In the HTML, they are stacked in a single left-aligned column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of text formatting used for emphasis (italics and underlines).",
+      "severity": "major",
+      "evidence": "The PDF contains italicized sentences and underlined phrases for emphasis (e.g., 'not', 'unlicensed relative...'). The HTML renders these as plain text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of text formatting used for emphasis (italics and underlines).",
+      "severity": "major",
+      "evidence": "The PDF contains italicized sentences and underlined phrases for emphasis (e.g., 'very', 'cannot', 'until September 30, 2002'). The HTML renders these as plain text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of text formatting used for emphasis (italics and underlines).",
+      "severity": "major",
+      "evidence": "The PDF contains italicized sentences and underlined phrases for emphasis (e.g., 'cannot', 'trial home visit'). The HTML predominantly renders these as plain text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Image extraction error causing inverted colors.",
+      "severity": "major",
+      "evidence": "The signature image in the PDF is black ink on a white/transparent background. In the HTML, it appears as a negative image (white signature strokes on a solid black rectangle).",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of bold italic formatting on document identifier.",
+      "severity": "minor",
+      "evidence": "The document code 'CS-10-2002' is bold and italicized in the PDF, but rendered as plain text in the HTML (which flowed to the top of page 5's rendering).",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of underline formatting in table cells.",
+      "severity": "major",
+      "evidence": "The PDF table uses underlines to emphasize key policy terms ('may', 'may not'). The HTML table renders these terms as plain text without underlines.",
+      "page": 5,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 6,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 59.15,
+    "page_count": 5,
+    "visual_input_tokens": 11658,
+    "visual_output_tokens": 956,
+    "content_input_tokens": 7679,
+    "content_output_tokens": 148,
+    "timestamp": "2026-04-14T05:17:57.570102",
+    "auditor_version": "1.0.0"
+  }
+}

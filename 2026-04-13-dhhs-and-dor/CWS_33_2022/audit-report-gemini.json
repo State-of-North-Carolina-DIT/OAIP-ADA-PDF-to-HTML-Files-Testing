@@ -1,0 +1,46 @@
+{
+  "document_id": "CWS_33_2022",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout changed from multi-column to single-column",
+      "severity": "major",
+      "evidence": "In the PDF, the header contains a logo, department name, and official names arranged horizontally in distinct sections separated by a vertical line. In the HTML, these elements are stacked vertically in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Date alignment changed",
+      "severity": "minor",
+      "evidence": "The date 'June 21, 2022' is centered on the page in the PDF, but left-aligned in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page footer incorrectly inserted into reading flow",
+      "severity": "critical",
+      "evidence": "The footer content from the bottom of PDF page 1 ('NC DEPARTMENT OF HEALTH AND HUMAN SERVICES...') has been inserted into the middle of the document's main text flow on HTML page 2, interrupting the paragraphs.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 37.54,
+    "page_count": 2,
+    "visual_input_tokens": 5090,
+    "visual_output_tokens": 444,
+    "content_input_tokens": 4066,
+    "content_output_tokens": 157,
+    "timestamp": "2026-04-14T05:18:08.467754",
+    "auditor_version": "1.0.0"
+  }
+}

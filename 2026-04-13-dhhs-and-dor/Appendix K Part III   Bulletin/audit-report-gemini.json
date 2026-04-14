@@ -1,0 +1,38 @@
+{
+  "document_id": "Appendix K Part III   Bulletin",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Added horizontal line below title",
+      "severity": "minor",
+      "evidence": "The HTML rendering includes a solid horizontal line separating the main title from the body text, which is not present in the original PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of bold text formatting on the main title",
+      "severity": "minor",
+      "evidence": "The main title 'SPECIAL BULLETIN COVID-19...' is strongly bolded in the source PDF. In the HTML conversion, it is rendered with a normal font weight, losing the bold emphasis.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 47.06,
+    "page_count": 1,
+    "visual_input_tokens": 2899,
+    "visual_output_tokens": 299,
+    "content_input_tokens": 2621,
+    "content_output_tokens": 135,
+    "timestamp": "2026-04-14T05:15:58.102305",
+    "auditor_version": "1.0.0"
+  }
+}

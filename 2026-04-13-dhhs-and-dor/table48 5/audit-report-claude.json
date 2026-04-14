@@ -1,0 +1,110 @@
+{
+  "document_id": "table48 5",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a two-column layout with the table on the left and the 'Freight car lines tax rate and base' explanatory text on the right. The HTML renders everything in a single column, with the explanatory text placed below the table instead of beside it.",
+      "severity": "major",
+      "evidence": "PDF: Table and explanatory paragraph are side-by-side. HTML: Explanatory text appears below the table in a single-column flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The table header structure is significantly altered. The PDF has a multi-line merged header spanning several rows (e.g., 'Collection fees on overdue tax debts', 'OSBM Civil Penalty & Forfeiture Fund', 'Collection cost of fines/forfeitures', 'Year-over-year % change Amount to General Fund'). The HTML simplifies these into single-line headers, losing the hierarchical structure and some clarity.",
+      "severity": "major",
+      "evidence": "PDF: Multi-row header with wrapped text like 'Collection fees on overdue tax debts [$]'. HTML: Flattened headers like 'Collection fees on overdue tax debts ($)'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Several data cells in the HTML table appear empty or show different formatting for dash/missing values compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF uses '-' for missing values consistently in the table. HTML appears to handle these similarly but some cells may appear blank rather than showing dashes.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The bar chart (Figure 48.1) in the PDF is a clear, detailed combination bar and line chart showing collections and % change. In the HTML, the chart appears to be present but is rendered at much lower quality/resolution and appears significantly degraded in legibility.",
+      "severity": "major",
+      "evidence": "PDF: Clear bar chart with readable axis labels, legend, and trend line. HTML: Chart appears present but with reduced clarity and legibility.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title 'TABLE 48. FREIGHT CAR LINES TAX COLLECTIONS' and subtitle '[\u00a7 105 ARTICLE 8A.]' have different formatting. The PDF centers them, while the HTML left-aligns them.",
+      "severity": "minor",
+      "evidence": "PDF: Centered, bold title. HTML: Left-aligned title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined heading 'Freight car lines tax rate and base:' in the PDF appears with underlining, while the HTML version's formatting may differ.",
+      "severity": "minor",
+      "evidence": "PDF: Underlined text for the section heading. HTML: May not preserve the underline styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The reading order is disrupted. In the PDF, the explanatory text about freight car lines tax rate appears to the right of the table, meant to be read alongside it. In the HTML, it appears after the table and before the chart, with additional separated data listings that appear to be extracted chart data rendered as text.",
+      "severity": "major",
+      "evidence": "PDF: Table + side text, then chart. HTML: Table, then explanatory text, then what appears to be chart data as text, then chart fragments.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The chart data for Figure 48.1 is duplicated extensively. The figure's underlying data table (fiscal year, collections, % change) is presented both within the main HTML table and then repeated again in a raw text format within the figure section, appearing as individual <p> elements listing each year's data.",
+      "severity": "major",
+      "evidence": "The HTML contains the data like '1996 422,026 -3.15%' through '2010 345,414 88.27%' repeated as paragraph elements after the main table, along with duplicated axis labels ($0-$600, -60% to 100%) and repeated figure title 'Figure 48.1 Freight Car Lines Tax Net Collections to General Fund and % Change'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the main table for fiscal year 2001-02, the 'Collection fees on overdue tax debts' column shows the value '3' in the HTML, which matches the PDF. However, the formula check: 528,537 - 9,647 + 3 = 518,893, not 518,887 as shown. This discrepancy exists in the source PDF itself, so it is faithfully reproduced.",
+      "severity": "minor",
+      "evidence": "PDF row: 528,537 | 9,647 | 3 | - | - | 518,887. HTML row matches. The note 'Detail may not add to totals due to rounding' covers this.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements, which is semantically incorrect but not a heading hierarchy issue. The heading structure uses h1 for the table title and h2 for 'Freight car lines tax rate and base:', which reasonably reflects the document structure.",
+      "severity": "minor",
+      "evidence": "HTML has <main> inside <main>, but heading hierarchy h1 -> h2 is acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the three images is somewhat generic and fragmented. The chart is split into three separate image tags with partial descriptions rather than one comprehensive alt text for the complete chart.",
+      "severity": "minor",
+      "evidence": "Alt texts: 'Outer border and background for Figure 48.1 chart', 'Inner border elements for Figure 48.1 chart', 'Bar chart and line graph showing Freight Car Lines Tax Net Collections to General Fund and % Change from 1996 to 2010'. The third is reasonable but the first two are not very descriptive.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 44.82,
+    "page_count": 1,
+    "visual_input_tokens": 2826,
+    "visual_output_tokens": 1087,
+    "content_input_tokens": 7103,
+    "content_output_tokens": 850,
+    "timestamp": "2026-04-14T05:38:18.589998",
+    "auditor_version": "1.0.0"
+  }
+}

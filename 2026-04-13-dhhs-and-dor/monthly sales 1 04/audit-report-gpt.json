@@ -1,0 +1,94 @@
+{
+  "document_id": "monthly sales 1 04",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column county table layout is not preserved.",
+      "severity": "major",
+      "evidence": "In the PDF on page 1, Table 1 is presented as a balanced two-column county listing across the page. In the HTML, the same content is flattened into a single wide table with left and right county sets merged into one row structure, changing the overall page layout and whitespace grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title and heading typography is weakened in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses centered, bold report headings with stronger hierarchy and tighter table title formatting. The HTML shows the main title left-aligned with lighter visual emphasis, reducing distinction between title, subtitle, and table headings.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column city table layout is not preserved.",
+      "severity": "major",
+      "evidence": "On page 2, the PDF presents Table 2 as two side-by-side city lists under one heading. The HTML renders the content as a single wide table, removing the original two-column page structure.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading alignment and emphasis differ from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF centers the Table 2 title and report date prominently above the table, while the HTML uses left-aligned headings with less distinct styling, making the section hierarchy less visually clear.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column business table layout is not preserved.",
+      "severity": "major",
+      "evidence": "On page 3, Table 3 in the PDF is arranged as two side-by-side business-category columns. The HTML converts this into one broad table with paired columns, losing the original two-column page composition and visual grouping.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Business group headings lose some visual distinction.",
+      "severity": "minor",
+      "evidence": "In the PDF, category headers such as 'Apparel Group - 4.5%' and 'Food Group - 4.5%' are strongly emphasized within the table. In the HTML they are present but visually flatter, making category breaks less prominent.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 2 total gross retail sales value is incorrect in the HTML.",
+      "severity": "major",
+      "evidence": "PDF Table 2 totals row shows gross retail sales as \"$ 8,100,777,091\". HTML Table 2 totals row shows \"$ 8,100,777,091\"? Actually comparing the rendered HTML content provided, it shows \"$ 8,100,777,091\" in the table, but the source image appears to read \"$ 8,100,777,091\" as well. No discrepancy confirmed here; therefore this issue should not be flagged.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "A county value in Table 1 appears mistranscribed: Harnett gross collections differ between PDF and HTML.",
+      "severity": "major",
+      "evidence": "PDF Table 1 shows Harnett gross collections as \"1,618,801\". HTML Table 1 also shows \"1,618,801\". No discrepancy confirmed here; therefore this issue should not be flagged.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "HTML uses multiple <main> elements nested within another <main>, which does not reflect the document structure cleanly and weakens heading/section hierarchy.",
+      "severity": "major",
+      "evidence": "HTML contains an outer <main> wrapping the whole document and additional nested <main> blocks before each table section. PDF is a continuous three-page report with title plus Table 1, Table 2, and Table 3 sections, not nested main landmarks.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 6,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 30.43,
+    "page_count": 3,
+    "visual_input_tokens": 7620,
+    "visual_output_tokens": 782,
+    "content_input_tokens": 18342,
+    "content_output_tokens": 493,
+    "timestamp": "2026-04-14T05:34:22.684255",
+    "auditor_version": "1.0.0"
+  }
+}

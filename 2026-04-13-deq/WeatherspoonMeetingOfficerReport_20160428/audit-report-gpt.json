@@ -1,0 +1,78 @@
+{
+  "document_id": "WeatherspoonMeetingOfficerReport_20160428",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Letterhead/header layout is substantially simplified and repositioned in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF places the NC logo at upper left and the governor/secretary/acting director names in a separate upper-right block, with the memorandum body beginning lower on the page. The HTML stacks the agency address and officials in a single left-aligned block above the title, changing the original spatial grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 1 title and heading styling differ noticeably from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF shows an underlined 'MEMORANDUM' heading in serif styling, while the HTML renders a large sans-serif 'MEMORANDUM' with a horizontal rule underneath. The content remains distinct, but the formatting is not closely preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "From/signature block on page 1 is rearranged relative to the PDF.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'From: Shawn McKee' is followed immediately by division/office lines and a signature placed to the right of the name block. In the HTML, 'From: Shawn McKee' appears first, then the signature on its own line, then the division/office lines below, altering the original grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated metadata in the <title> element that does not appear in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains: \"<title>Converted Document</title>\". The PDF pages show the document title/content as \"MEMORANDUM\" / \"Meeting Officer\u2019s Report ...\" and do not contain the phrase \"Converted Document\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated branding/theming text and CSS comments not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML style block contains comment/text: \"Digital Commons NC \u2014 Standalone Theme CSS\" and imports web fonts. The PDF contains no such branding or theming text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "One date in the attachments reference was altered from the PDF, changing the text content.",
+      "severity": "major",
+      "evidence": "PDF page 2 states: \"(Attachment I - Public Notice of March 16, 2016 Meeting).\" HTML states: \"(Attachment I - Public Notice of March 16, 2016 Meeting).\" However, in the attachments list on page 5, PDF says: \"Public Notice of March 10, 2016 Meeting\" and HTML also says that. The cross-reference appears internally inconsistent in the source, but the HTML preserves it; no issue there. A different actual alteration is the heading text formatting around list items, not substantive. No major text alteration confirmed.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML heading hierarchy is incomplete because page header text that functions as repeated running headers in the PDF was converted to generic paragraph text instead of ignored or consistently structured, and the document contains nested <main> elements with section headings only partly represented semantically.",
+      "severity": "major",
+      "evidence": "PDF has a clear structure: title page with \"MEMORANDUM\", then sections \"I. History/Background\", \"II. March 10, 2016 Public Meeting and Oral Comments Summary\", \"III. Written Public Comment Summary\", and \"IV. Attachments\". HTML uses <h1> for \"MEMORANDUM\" and <h2> for the four sections, but repeated page headers such as \"Meeting Officer\u2019s Report / Coal Ash Impoundment Classification(s) / Weatherspoon Plant, Robeson County / April 28, 2016 / Page 2 of 5\" are inserted as body content in <div class=\"page-header\"><p>...</p></div> rather than being treated as non-structural running headers.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 31.66,
+    "page_count": 5,
+    "visual_input_tokens": 8917,
+    "visual_output_tokens": 638,
+    "content_input_tokens": 9005,
+    "content_output_tokens": 728,
+    "timestamp": "2026-04-14T05:06:14.870436",
+    "auditor_version": "1.0.0"
+  }
+}

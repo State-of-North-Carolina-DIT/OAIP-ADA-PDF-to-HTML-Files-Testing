@@ -1,0 +1,38 @@
+{
+  "document_id": "Ombudsman Listed by Area Agency on Aging",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C3",
+      "description": "The HTML omits Region E's phone line labeled as an extension, losing table cell data.",
+      "severity": "major",
+      "evidence": "PDF Region E shows: \"P: (828) 485-4213\" and a separate line \"P: (828) 485-4271 ext. 410\" with \"F: (828) 322-5991.\" HTML Region E shows only \"P: (828) 485-4213\", \"P: (828) 485-4271\", and \"F: (828) 322-5991\"; the \"ext. 410\" is missing.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not reflect the document structure and uses the wrong top-level title.",
+      "severity": "major",
+      "evidence": "PDF top headings are centered text: \"Division of Aging\", \"North Carolina Long Term Care Ombudsman Program\", then \"Office of the State Long Term Care Ombudsman.\" HTML uses a page header div for the first two lines and promotes only \"Office of the State Long Term Care Ombudsman\" to <h1>, which is not the document title and weakens the heading structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 17.78,
+    "page_count": 4,
+    "visual_input_tokens": 7367,
+    "visual_output_tokens": 284,
+    "content_input_tokens": 8375,
+    "content_output_tokens": 411,
+    "timestamp": "2026-04-14T05:26:53.161535",
+    "auditor_version": "1.0.0"
+  }
+}

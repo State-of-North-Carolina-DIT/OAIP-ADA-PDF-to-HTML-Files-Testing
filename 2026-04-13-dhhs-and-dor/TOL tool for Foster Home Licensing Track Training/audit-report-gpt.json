@@ -1,0 +1,134 @@
+{
+  "document_id": "TOL tool for Foster Home Licensing Track Training",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "State seal/logo and top-right division branding are missing from the HTML.",
+      "severity": "major",
+      "evidence": "On page 1, the PDF shows the NC state seal and 'NC Department of Health and Human Services' branding at top left and 'Division of Social Services' at top right. The HTML only shows the department logo block and omits the top-right division branding and seal-style graphic treatment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title hierarchy and centering are not fully preserved.",
+      "severity": "minor",
+      "evidence": "The PDF centers the document title and subtitle prominently, while the HTML left-aligns them and presents a less distinct hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Prominent seal/branding graphic is missing from the HTML header.",
+      "severity": "major",
+      "evidence": "On page 2, the PDF includes the NC state seal and styled department header area; the HTML shows only a simplified department logo area without the seal graphic.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Blue-filled table headers and signature cells are restyled as plain/light table rows.",
+      "severity": "minor",
+      "evidence": "The PDF uses bold white-on-blue header bars for prompts like 'Social Worker Goals', 'Supervisor Goals', and signature labels; the HTML preserves the text but renders them as plain table rows with reduced visual distinction.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Page header branding graphic is missing from the HTML.",
+      "severity": "major",
+      "evidence": "On page 3, the PDF contains the department header styling and seal/logo treatment; the HTML uses a simplified text header and lacks the seal graphic.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section title styling and blue table emphasis are reduced in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF presents 'Part B' and 'Foster Home Licensing Reflections' with stronger blue emphasis and visually bold numbered cells; the HTML keeps the structure but uses flatter styling, making headings and numbered response rows less distinct.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Header graphics and division branding are simplified or missing in the HTML.",
+      "severity": "major",
+      "evidence": "On page 4, the PDF shows the seal/logo block and division branding in the header region; the HTML omits the seal graphic and uses only simplified logo text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Blue banner styling for the summary/reflection table is not preserved.",
+      "severity": "minor",
+      "evidence": "The PDF uses a dark blue header row and blue numbered cells for action items 1-5, while the HTML renders these as plain table rows and cells with minimal emphasis.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Department seal/header graphics are missing from the HTML.",
+      "severity": "major",
+      "evidence": "On page 5, the PDF shows the department header with seal/logo styling; the HTML removes this graphic treatment and displays only the content title and table.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Visual emphasis of section headers, numbered cells, and signature blocks is weakened in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses blue-filled header and signature cells and strong section styling for 'Part D'; the HTML preserves content order and table structure but renders these elements in plain/light table styling.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated table headers that do not appear in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML adds header rows such as \"Prompt | Input\" on Part A tables and \"Item | Response\" on Parts B-D. In the PDF, these forms are presented as unlabeled two-column tables with no such header text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated HTML comments describing table columns.",
+      "severity": "critical",
+      "evidence": "HTML contains comments like \"<!-- COLUMNS: Prompt | Input -->\" and \"<!-- COLUMNS: Item | Response -->\". These statements are not present anywhere in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table structure was altered by inserting new header rows and explicit column labels not present in the source form.",
+      "severity": "major",
+      "evidence": "For Part A, the PDF begins directly with fields such as \"Date of pre-training meeting with supervisor and social worker:\" and \"Name of Track Training attending:\". The HTML wraps the content in a table with added thead headers \"Prompt\" and \"Input\". The same occurs in Parts B-D with added \"Item\" and \"Response\" headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not fully reflect the PDF because some banner/header text was elevated to repeated page-header blocks rather than preserved as document structure, and the section heading level treatment is inconsistent with the source styling.",
+      "severity": "major",
+      "evidence": "The PDF uses page banner text such as \"NC DEPARTMENT OF HEALTH AND HUMAN SERVICES\" and logo/header branding as page furniture, while the substantive sections are \"Instructions,\" \"Part A,\" \"Part B,\" \"Part C,\" and \"Part D.\" In HTML, these are split across repeated <header> blocks and section headings use h1/h2/h3, which is mostly acceptable but not a precise structural match.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 7,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 39.18,
+    "page_count": 5,
+    "visual_input_tokens": 9037,
+    "visual_output_tokens": 1192,
+    "content_input_tokens": 9211,
+    "content_output_tokens": 619,
+    "timestamp": "2026-04-14T05:30:11.477893",
+    "auditor_version": "1.0.0"
+  }
+}

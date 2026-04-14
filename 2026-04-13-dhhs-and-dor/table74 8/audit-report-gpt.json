@@ -1,0 +1,46 @@
+{
+  "document_id": "table74 8",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Table title formatting is altered in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "In the PDF, the title appears as a compact centered table caption in uppercase directly above the table. In the HTML, the same title is enlarged, left-aligned, broken across multiple lines, and separated by a horizontal rule, making it visually distinct from the original presentation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/branding text not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML <style> contains comment/text and identifiers such as \"Digital Commons NC \u2014 Standalone Theme CSS\", font imports, and CSS variables like \"--nc-font\", \"--nc-navy\", \"--nc-blue\". These are not part of the PDF page content, which is a plain scanned table headed \"TABLE 74. COUNTY-WIDE TAX LEVY COMPONENTS EXPRESSED AS A PERCENTAGE BY TYPE OF PROPERTY BY COUNTY, FISCAL YEAR 2014-2015\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "A table header unit is incorrect in the HTML: the final column on the right half is marked with dollars instead of percent.",
+      "severity": "major",
+      "evidence": "In the PDF, both left and right table groups label the last column as \"Public Service Company Property:\" with percentages shown in the cells. In the HTML header comment/thead, the last right-side column is \"Public Service Company Property [$]\", while the actual values are percentages such as \"2.26%\", \"5.07%\", and \"2.86%\".",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 15.26,
+    "page_count": 1,
+    "visual_input_tokens": 2940,
+    "visual_output_tokens": 212,
+    "content_input_tokens": 11606,
+    "content_output_tokens": 411,
+    "timestamp": "2026-04-14T05:38:24.317917",
+    "auditor_version": "1.0.0"
+  }
+}

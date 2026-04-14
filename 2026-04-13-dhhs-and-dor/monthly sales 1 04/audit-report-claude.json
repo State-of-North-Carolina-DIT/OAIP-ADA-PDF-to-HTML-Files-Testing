@@ -1,0 +1,118 @@
+{
+  "document_id": "monthly sales 1 04",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Table 1 in the PDF is rendered as a two-column layout (counties side by side), but the HTML renders it as a single-column list, losing the side-by-side structure.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows counties in two columns (e.g., Alamance/Macon on same row). HTML page 2 shows all counties in a single-column table with left and right county data stacked sequentially.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 2 (Cities) in the PDF is a two-column layout with cities side by side, but HTML renders it as a single long column table.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows city data in two parallel columns (e.g., Albemarle and Kings Mountain on the same row). HTML shows all cities listed sequentially in one column.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 3 (Types of Businesses) in the PDF is a two-column layout, but HTML renders it as a single-column sequential list, significantly changing the visual structure.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows business types in two parallel columns. HTML renders them sequentially in a single column, making the table much longer.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Table headers and title formatting differs - PDF uses centered bold titles with underlined column headers, HTML uses different styling conventions.",
+      "severity": "minor",
+      "evidence": "PDF shows 'TABLE 1. STATE SALES AND USE TAX...' as centered bold text with 'January 2004 Report' in a different color. HTML uses standard heading styles.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Currency formatting with dollar signs and alignment differs between PDF and HTML in table cells.",
+      "severity": "minor",
+      "evidence": "PDF shows '$' symbols aligned at column start with right-aligned numbers. HTML shows '$' inline with numbers (e.g., '$ 4,677,786' vs '$4,677,786').",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footnotes at bottom of pages are present in both but styled differently; the bold disclaimer paragraph formatting is less prominent in HTML.",
+      "severity": "minor",
+      "evidence": "PDF has bold paragraph about 'Monthly sales and use tax reports' clearly separated. HTML has similar text but formatting emphasis varies.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "In Table 3 HTML rendering, the reading order of business types changes from side-by-side comparison to sequential, altering how a reader would naturally compare related categories.",
+      "severity": "minor",
+      "evidence": "PDF allows reading across columns (e.g., Apparel Group next to Lumber & Building Material Group). HTML forces reading all left-column items before right-column items.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 2 has numerous swapped Collections/Retail Sales values for cities in the right-hand column. The PDF's two-column layout was misread, causing Collections and Retail Sales values to be transposed for many cities.",
+      "severity": "major",
+      "evidence": "PDF shows Lenoir: Collections=$909,078, Retail Sales=$33,688,886. HTML shows Lenoir: Collections=909,078, Retail Sales=33,688,886 (correct). But PDF shows Lenoir city as Collections=33,688,886 and Retail Sales=909,078 on page 2 \u2014 actually the PDF page 2 shows 'Lenoir 33,688,886 909,078' which is itself confusing. The HTML for Lenoir shows Collections=909,078, Sales=33,688,886. Checking Mt. Airy: PDF page 2 shows 'Mt. Airy 52,403,322 1,384,142' but HTML shows Mt. Airy Collections=1,384,142, Sales=52,403,322. The HTML corrected what appears to be a layout issue, but multiple cities show swapped values compared to the raw PDF text. For example, New Bern: PDF text shows '70,034,969 2,117,521' but HTML shows Collections=2,117,521, Sales=70,034,969. Oak Island: PDF shows '233,003 9,177' but HTML shows Collections=9,177, Sales=233,003. Wilmington: PDF shows '284,163,379 8,440,161' but HTML shows Collections=8,440,161, Sales=284,163,379. Winston-Salem: PDF shows '388,099,582 10,899,076' but HTML shows Collections=10,899,076, Sales=388,099,582.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Several cities in Table 2 right column have swapped Gross Collections and Gross Retail Sales values compared to the PDF source text as extracted. The PDF page 2 appears to have a formatting issue where for right-column cities, the larger number appears first (which would be Retail Sales) but is listed under Collections column.",
+      "severity": "major",
+      "evidence": "Lewisville: PDF shows '2,612,718 59,975' \u2014 HTML shows Collections=59,975, Sales=2,612,718. Newton: PDF shows '11,237,793 270,553' \u2014 HTML shows Collections=270,553, Sales=11,237,793. Oxford: PDF shows '16,543,245 422,532' \u2014 HTML shows Collections=422,532, Sales=16,543,245. Rockingham: PDF shows '24,729,524 824,849' \u2014 HTML shows Collections=824,849, Sales=24,729,524. Selma: PDF shows '7,188,889 244,663' \u2014 HTML shows Collections=244,663, Sales=7,188,889. Siler City: PDF shows '14,810,076 439,403' \u2014 HTML shows Collections=439,403, Sales=14,810,076. Smithfield: PDF shows '47,701,969 1,464,125' \u2014 HTML shows Collections=1,464,125, Sales=47,701,969. Wake Forest: PDF shows '25,068,836 821,000' \u2014 HTML shows Collections=821,000, Sales=25,068,836. Waynesville: PDF shows '36,410,937 1,041,044' \u2014 HTML shows Collections=1,041,044, Sales=36,410,937. Williamston: PDF shows '15,164,868 451,413' \u2014 HTML shows Collections=451,413, Sales=15,164,868. Summerfield: PDF shows '2,377,320 52,217' \u2014 HTML shows Collections=52,217, Sales=2,377,320. Trinity: PDF shows '234,646 9,687' \u2014 HTML shows Collections=9,687, Sales=234,646.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple nested <main> elements are used in the HTML, which is invalid structure. The document also uses an h1 for the overall title and h2 for table titles, but the heading hierarchy is acceptable for document structure.",
+      "severity": "major",
+      "evidence": "The HTML has a top-level <main> wrapping everything, then additional <main> elements for each table section. While not a heading hierarchy issue per se, it creates structural problems.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer notes (asterisk explanations and the monthly comparability disclaimer) are repeated three times \u2014 once after each table \u2014 which matches the PDF's per-page repetition but creates redundancy in a single HTML document.",
+      "severity": "minor",
+      "evidence": "The footnotes about gross collections, retail sales, and the October 2001 tax rate change appear after Table 1, Table 2, and Table 3 in the HTML, matching the PDF's page-by-page layout.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "No images exist in the PDF or HTML, so this check is not applicable.",
+      "severity": "minor",
+      "evidence": "N/A",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 6,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 53.94,
+    "page_count": 3,
+    "visual_input_tokens": 7790,
+    "visual_output_tokens": 1159,
+    "content_input_tokens": 28706,
+    "content_output_tokens": 1538,
+    "timestamp": "2026-04-14T05:34:44.376545",
+    "auditor_version": "1.0.0"
+  }
+}

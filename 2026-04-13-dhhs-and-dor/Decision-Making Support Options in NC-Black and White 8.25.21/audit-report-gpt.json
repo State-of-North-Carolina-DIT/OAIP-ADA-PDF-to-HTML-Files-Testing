@@ -1,0 +1,70 @@
+{
+  "document_id": "Decision-Making Support Options in NC-Black and White 8.25.21",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column card-style layout was converted into a single-column linear layout.",
+      "severity": "major",
+      "evidence": "On page 1, the PDF shows each decision-making option in a left-side labeled panel with corresponding bullet text in a right-side panel. The HTML presents the same content as a vertical sequence of headings and bullets, removing the side-by-side structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading styling and visual hierarchy are reduced in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses large white text inside dark rounded rectangles for section labels, making categories highly distinct. The HTML uses plain text headings with less visual separation, though the headings and bullets remain readable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Section banner boxes and grouped resource containers are flattened in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF groups each resource category inside bordered horizontal containers with dark title bars. The HTML keeps the categories and bullets in order but removes the boxed grouping structure.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold and underlined hyperlink styling from the PDF is not preserved in the HTML.",
+      "severity": "major",
+      "evidence": "On page 2, many resource names are visibly bolded and underlined in the PDF to indicate hyperlinks, and the footer explicitly states that bolded/underlined items are hyperlinks. In the HTML, these items appear as plain bullet text without the same visual emphasis.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Hyperlinks present in the PDF are not preserved as hyperlinks in the HTML; the HTML retains only plain text labels for linked resources.",
+      "severity": "critical",
+      "evidence": "PDF note: \"All bolded and underlined items are hyperlinks to websites to locate agencies and gather information.\" Examples in PDF appear as linked items such as \"Autism Society of NC,\" \"Secretary of State Forms,\" and \"Find your local Social Security Office.\" In HTML, these appear only as plain list items with no anchor tags, e.g., \"<li>Autism Society of NC</li>\", \"<li>Secretary of State Forms</li>\", and \"<li>Find your local Social Security Office</li>\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure because the HTML uses two h1 elements, whereas the PDF has a single document title and a secondary section title.",
+      "severity": "major",
+      "evidence": "PDF top title: \"Decision-Making Support Options in North Carolina\" and later section title: \"Additional Resources to Learn More About...\" In HTML both are encoded as h1: \"<h1>Decision-Making Support Options in North Carolina</h1>\" and \"<h1>Additional Resources to Learn More About\u2026</h1>\".",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 26.18,
+    "page_count": 2,
+    "visual_input_tokens": 4673,
+    "visual_output_tokens": 574,
+    "content_input_tokens": 4887,
+    "content_output_tokens": 442,
+    "timestamp": "2026-04-14T05:21:15.911204",
+    "auditor_version": "1.0.0"
+  }
+}

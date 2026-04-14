@@ -1,0 +1,110 @@
+{
+  "document_id": "EI 22 2001",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The letterhead layout differs slightly - the seal/logo is positioned differently in the HTML version (top-left vs centered in PDF), and the department name layout is restructured with a horizontal rule separator.",
+      "severity": "minor",
+      "evidence": "PDF: Seal centered at top with department name centered below. HTML: Seal top-left with department name below a horizontal rule.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Re:' subject line formatting differs slightly - in the PDF it appears right-aligned/centered, in the HTML it appears more centered.",
+      "severity": "minor",
+      "evidence": "PDF: 'Re: WORK FIRST APPLICANT SURVEY NOVEMBER/DECEMBER 2001' right-justified. HTML: Same text centered.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The footer 'An Equal Opportunity/Affirmative Action Employer' appears at the bottom of page 1 in the PDF but is repositioned in the HTML to appear between pages as a separator.",
+      "severity": "minor",
+      "evidence": "PDF: Footer at very bottom of page 1. HTML: Appears as a separator between page content sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the survey form table, the PDF has simple numeric column headers (1, 2, 3...10) while the HTML has full text column headers ('APPLICANTS 1', 'APPLICANTS 2'...)",
+      "severity": "major",
+      "evidence": "PDF: Column headers are just numbers 1-10. HTML: Column headers say 'APPLICANTS 1' through 'APPLICANTS 10'.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF survey form, 'SINGLE PARENT', '2 PARENT CASE', and 'CHILD ONLY' are in bold italic, while in the HTML they appear in regular (non-italic) text.",
+      "severity": "minor",
+      "evidence": "PDF: These three categories are in bold italic font. HTML: They appear in regular weight text without italic styling.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The survey table in the PDF fits on one page, while in the HTML it is split across two visible sections (pages 6 and 8).",
+      "severity": "minor",
+      "evidence": "PDF page 5: Complete table on one page. HTML: Table split with first portion showing through 'SEASONAL JOB ENDED' and remaining rows on subsequent section.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The '*OTHER REASON' footnote instruction appears at the bottom of the survey page in the PDF but is separated to its own page/section in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Footnote appears below the table on the same page. HTML: Appears as a separate section.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The hyperlink on 'helpful information. Pleas' incorrectly wraps text that should not be a link. The phrase 'helpful information. Please contact Mr. Johnson' is plain text in the PDF but is partially wrapped in an anchor tag linking to Walt.Johnson@ncmail.net.",
+      "severity": "major",
+      "evidence": "HTML has: <a href=\"mailto:Walt.Johnson@ncmail.net\">helpful information. Pleas</a>e contact Mr. Johnson \u2014 this text is not a hyperlink in the PDF; only the email address Walt.Johnson@ncmail.net is a link.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has two nested <main> elements which is semantically incorrect, and the heading hierarchy is questionable. 'Division of Social Services' is rendered as h2, which is acceptable, but the survey title 'WORK FIRST APPLICANT SURVEY-NOVEMBER/DECEMBER 2001' is also rendered as h2 rather than h3, creating a flat hierarchy when it should be subordinate.",
+      "severity": "major",
+      "evidence": "Both 'Division of Social Services' and 'WORK FIRST APPLICANT SURVEY-NOVEMBER/DECEMBER 2001' are h2 elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The document contains two nested <main> elements, causing the entire content to be structurally duplicated in semantic terms, though visually it renders once.",
+      "severity": "minor",
+      "evidence": "HTML source: <main>\\n        <main> \u2014 two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF contains the typo 'child only child only cases' (duplicated phrase), which is faithfully preserved in the HTML. This is not an error in conversion but is noted for completeness \u2014 the HTML accurately reproduces the PDF's text.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'eight child only child only cases was noted.'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 45.81,
+    "page_count": 4,
+    "visual_input_tokens": 13028,
+    "visual_output_tokens": 1249,
+    "content_input_tokens": 13222,
+    "content_output_tokens": 722,
+    "timestamp": "2026-04-14T05:22:05.030897",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "document_id": "EI 05 2002",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout is simplified and some top-of-page elements are repositioned in the HTML.",
+      "severity": "minor",
+      "evidence": "In the PDF, the seal is centered at the top and the governor/director/secretary and phone details are split left/right beneath the header block. In the HTML, the seal moves to the upper left, a horizontal rule is added, and the left/right header metadata is consolidated into a left-aligned block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling and alignment differ in the header and title area.",
+      "severity": "minor",
+      "evidence": "The PDF uses centered serif headings with the 'Re:' block aligned to the right of the date area, while the HTML uses sans-serif text, larger centered agency title, and places the 'Re:' lines left-aligned under the date. Bold emphasis on subject lines and 'Program Integrity Supervisors' is preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML introduces fabricated/misattributed contact information by changing the placement and association of the director name and phone number.",
+      "severity": "critical",
+      "evidence": "PDF header shows left block: \"Michael F. Easley, Governor\\nDirector\\nCarmen Hooker Odom, Secretary\" and right block: \"Pheon E. Beal,\\n(919) 733-3055\". HTML rewrites this as \"Michael F. Easley, Governor<br>Pheon E. Beal, Director<br>Carmen Hooker Odom, Secretary<br>(919) 733-3055\", explicitly asserting that Pheon E. Beal is the Director, which is not stated in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure and uses multiple top-level headings for letterhead rather than the actual document subject.",
+      "severity": "major",
+      "evidence": "HTML uses \"<h1>North Carolina Department of Health and Human Services</h1>\" and \"<h2>Division of Social Services</h2>\" while the actual subject line in the PDF is \"Re: 2002 DOR and TOP Collection Fees / 2002 DOR Interest Rate\". The PDF is a letter with centered letterhead, not a sectioned document headed by those elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Text accuracy issue in the sender/contact block: the HTML changes the meaning of the source by assigning an office title not clearly present in the PDF.",
+      "severity": "major",
+      "evidence": "PDF presents the lines separately and ambiguously: left side includes \"Director\" on its own line, while right side has \"Pheon E. Beal,\" and the phone number. HTML converts this into the explicit phrase \"Pheon E. Beal, Director\", which is a substantive alteration of the text rather than a formatting normalization.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 22.75,
+    "page_count": 1,
+    "visual_input_tokens": 2453,
+    "visual_output_tokens": 352,
+    "content_input_tokens": 3087,
+    "content_output_tokens": 603,
+    "timestamp": "2026-04-14T05:21:38.662379",
+    "auditor_version": "1.0.0"
+  }
+}

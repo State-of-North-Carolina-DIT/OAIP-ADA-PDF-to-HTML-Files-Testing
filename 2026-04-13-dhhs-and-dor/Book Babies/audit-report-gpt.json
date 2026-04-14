@@ -1,0 +1,78 @@
+{
+  "document_id": "Book Babies",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The HTML does not preserve the original mixed-width layout and relative image/text grouping.",
+      "severity": "major",
+      "evidence": "In the PDF, the first section places the family reading image to the right of the 'WHAT IS BOOK BABIES?' text, and the 'HOW BOOK BABIES WORKS' section places the second image to the right of the heading and near the text block. In the HTML, both sections are converted to a single-column flow with images stacked above the text, changing the page structure and whitespace grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Images are present but repositioned relative to adjacent text.",
+      "severity": "minor",
+      "evidence": "The PDF shows the first photo aligned to the right of the introductory paragraph and the second photo aligned on the right side of the 'HOW BOOK BABIES WORKS' section. In the HTML, the first image appears below the section heading and before the paragraph, and the second image is placed below the heading on the left side before the text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading styling and emphasis are not fully preserved.",
+      "severity": "minor",
+      "evidence": "The PDF uses strong visual emphasis with large blue display text for the main title, colored emphasis within headings such as 'BOOK BABIES', and italic styling in the subtitle and organization description. The HTML keeps the content but reduces the distinctiveness of these formatting cues with plainer black headings and less visual emphasis.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Mission statement text in the ABOUT BOOK HARVEST section is materially altered, changing meaning and grammar.",
+      "severity": "major",
+      "evidence": "PDF: \"Book Harvest\u2019s mission is to provide books every child, support for every parent, and literacy for every community.\" HTML: \"Book Harvest's mission is to provide books every child, support for every parent, and literacy for every community.\" The PDF appears to read \"books for every child,\" while the HTML omits \"for,\" producing a malformed phrase and altering the exact text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Phone number in the footer is inaccurate in link target versus visible text.",
+      "severity": "major",
+      "evidence": "PDF footer: \"(252) 497-BOOK\". HTML footer shows visible text \"(252) 497-BOOK\" but hyperlink target is \"tel:2524972665\". The mnemonic BOOK corresponds to 2665, but the PDF only presents the branded number, not the numeric tel URI; the generated target encodes a number not explicitly shown in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "A new clickable telephone hyperlink was fabricated in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF footer presents plain text: \"(252) 497-BOOK\". HTML adds a hyperlink: \"<a href=\"tel:2524972665\">(252) 497-BOOK</a>\". The tel: link target does not appear in the PDF and was introduced during conversion.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is inconsistent: document title is repeated within a page-header wrapper and the structure uses nested <main> elements with section headings that do not fully reflect the visual layout.",
+      "severity": "major",
+      "evidence": "HTML contains an outer <main> and then a second nested <main>. It uses h1 \"BOOK BABIES\", h2 subtitle, h2 section heads, and h3 \"ABOUT BOOK HARVEST\". While broadly close, the nesting and level use do not cleanly mirror the single-page brochure structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 28.29,
+    "page_count": 1,
+    "visual_input_tokens": 3026,
+    "visual_output_tokens": 494,
+    "content_input_tokens": 3357,
+    "content_output_tokens": 619,
+    "timestamp": "2026-04-14T05:17:26.040498",
+    "auditor_version": "1.0.0"
+  }
+}

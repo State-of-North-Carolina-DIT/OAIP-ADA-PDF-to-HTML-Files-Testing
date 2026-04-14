@@ -1,0 +1,38 @@
+{
+  "document_id": "DAAS_AS_03_2023- The Division of Aging & Adult Services (DAAS)- Special Assistance- In Home (SAIH) Interagency Referral Form- DRAFT.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Loss of horizontal alignment and column structure for form fields.",
+      "severity": "major",
+      "evidence": "In the PDF, fields like 'Case Name:' and 'Client Phone #' are horizontally separated on the left and right sides of the page. In the HTML, they are collapsed together onto a single line ('Case Name: Client Phone #'). This occurs throughout the document, including the 'Client Address' line and within the Application/Recertification sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Fillable blank lines (underlines) are partially missing.",
+      "severity": "minor",
+      "evidence": "In the PDF, the text reads 'SAIH Certification Period: ______ to ______'. In the HTML, it renders as 'SAIH Certification Period: to Enhanced rate?'.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 36.15,
+    "page_count": 1,
+    "visual_input_tokens": 2910,
+    "visual_output_tokens": 337,
+    "content_input_tokens": 3093,
+    "content_output_tokens": 137,
+    "timestamp": "2026-04-14T05:20:52.090544",
+    "auditor_version": "1.0.0"
+  }
+}

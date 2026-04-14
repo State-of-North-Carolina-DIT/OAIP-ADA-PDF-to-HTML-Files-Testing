@@ -1,0 +1,21 @@
+{
+  "document_id": "CWS_55_2022a1",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 31.37,
+    "page_count": 2,
+    "visual_input_tokens": 5096,
+    "visual_output_tokens": 183,
+    "content_input_tokens": 3365,
+    "content_output_tokens": 139,
+    "timestamp": "2026-04-14T05:18:28.941260",
+    "auditor_version": "1.0.0"
+  }
+}

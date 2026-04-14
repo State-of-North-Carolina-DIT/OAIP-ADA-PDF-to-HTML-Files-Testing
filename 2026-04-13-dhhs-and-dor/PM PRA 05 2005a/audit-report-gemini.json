@@ -1,0 +1,21 @@
+{
+  "document_id": "PM PRA 05 2005a",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 94.07,
+    "page_count": 5,
+    "visual_input_tokens": 11593,
+    "visual_output_tokens": 293,
+    "content_input_tokens": 28474,
+    "content_output_tokens": 155,
+    "timestamp": "2026-04-14T05:28:12.208810",
+    "auditor_version": "1.0.0"
+  }
+}

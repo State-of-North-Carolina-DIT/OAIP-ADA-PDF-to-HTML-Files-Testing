@@ -1,0 +1,102 @@
+{
+  "document_id": "202506-OE-SPARS-SUPRT-C-Youth-Reassessment-Tool-1",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "SAMHSA logo appears in a slightly different position and style in HTML compared to PDF",
+      "severity": "minor",
+      "evidence": "PDF shows the SAMHSA logo in the upper right corner with specific styling; HTML shows it top-left with slightly different rendering",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Cover page layout differs - PDF has centered title within a bordered box, HTML renders it without the border box",
+      "severity": "minor",
+      "evidence": "PDF shows content within a dark blue bordered rectangle; HTML shows content without this decorative border",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title color styling differs slightly between PDF and HTML",
+      "severity": "minor",
+      "evidence": "PDF title 'Substance Abuse and Mental Health Services Administration (SAMHSA) Unified Performance Reporting Tool (SUPRT) - C' appears in dark teal/black; HTML renders similarly but with slightly different weight/styling",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The consent section box border styling differs",
+      "severity": "minor",
+      "evidence": "PDF shows CLIENT CONSENT section within a bordered box with OMB info at top; HTML shows it without the box border as a flowing page",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Public reporting burden notice box styling differs",
+      "severity": "minor",
+      "evidence": "PDF shows the public reporting burden text in a bordered box at bottom of page; HTML shows it in a light gray rounded box",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Section A header styling differs - PDF has light blue shaded header bar, HTML has light gray shaded header bar",
+      "severity": "minor",
+      "evidence": "PDF: 'A. SOCIAL DRIVERS OF HEALTH' in a light blue shaded bar; HTML: same text in a light gray shaded bar",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Question numbering format slightly differs in indentation and alignment",
+      "severity": "minor",
+      "evidence": "PDF shows 'A1.' with specific left-aligned indentation; HTML shows 'A1.' with slightly different spacing but same content structure",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Office use only section box border styling differs",
+      "severity": "minor",
+      "evidence": "PDF has the record management section in a bordered box; HTML displays without the border box but content is intact",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in the HTML. The document has two nested <main> tags, which is semantically incorrect but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> inside <main>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The OMB number and expiration date appear multiple times in the HTML, mirroring the PDF's repeated header/footer pattern. This is acceptable as it reflects the source document's structure.",
+      "severity": "minor",
+      "evidence": "OMB No. 0930-0400 / Expires: 01/31/2028 appears on the cover page rendering and again in the consent section, matching the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 10,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.44,
+    "page_count": 4,
+    "visual_input_tokens": 11952,
+    "visual_output_tokens": 1027,
+    "content_input_tokens": 12315,
+    "content_output_tokens": 435,
+    "timestamp": "2026-04-14T05:13:36.439578",
+    "auditor_version": "1.0.0"
+  }
+}

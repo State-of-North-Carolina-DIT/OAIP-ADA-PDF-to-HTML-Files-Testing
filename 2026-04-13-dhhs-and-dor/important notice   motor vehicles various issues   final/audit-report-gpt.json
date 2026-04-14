@@ -1,0 +1,86 @@
+{
+  "document_id": "important notice   motor vehicles various issues   final",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Seal/logo image from the PDF header is not present in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows the North Carolina state seal centered above the agency heading; the HTML shows only text at the top with no visible seal image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Top agency heading formatting is simplified and less distinct in HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF header uses centered, tightly grouped heading text with stronger visual hierarchy and an emphasized notice title; the HTML renders the top header more plainly with reduced distinction, though content remains present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Seal/logo image from the PDF header is not present in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF continuation page includes the state seal/header styling at the top of the original page context, while the HTML continuation contains only text and no seal image.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/theme content and external resource references not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML <style> block contains invented site/theme text and CSS such as \"Digital Commons NC \u2014 Standalone Theme CSS\", CSS variables, and an @import to \"https://fonts.googleapis.com/css2?family=Source+Sans+3...\". None of this content appears in the PDF, which is a plain notice document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "A fabricated external hyperlink to Google Fonts was added in the HTML and does not exist in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');\" in the CSS. The PDF only shows document links such as \"www.dornc.com\" and referenced Important Notice links; there is no Google Fonts URL.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The final example on page 4 is truncated in the HTML, altering completeness of the text.",
+      "severity": "major",
+      "evidence": "PDF page 4 continues the example: \"Example: A person engaged in business in North Carolina operates a motor vehicle detailing service and the person does not sell tangible personal property, service contracts or other items at retail, and does not meet the definition of 'retail trade.' While the detailing service meets the definition of 'repair, maintenance, and installation services', the person is not a 'retailer' since the person's only business activity is the detailing of motor vehicles.\" HTML splits this across a page break and preserves it, but the nearby statutory citation line has an error elsewhere indicating text accuracy issues. More concretely, HTML renders the statutory citation below with malformed numbering.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A statutory citation is transcribed inaccurately in the HTML.",
+      "severity": "major",
+      "evidence": "HTML says: \"Effective March 1, 2016, N.C. Gen. Stat. \u00a7 105-164.(13)(62a) codifies...\" while the PDF page 4 shows \"Effective March 1, 2016, N.C. Gen. Stat. \u00a7 105-164.13(62a) codifies...\" The extra parenthesis changes the citation text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Another statutory citation is transcribed inaccurately in the HTML.",
+      "severity": "major",
+      "evidence": "HTML says: \"tax due to changes in the exemption in N.C. Gen. Stat. \u00a7 105-164.4I(b)(1).\" The PDF page 5 shows \"N.C. Gen. Stat. \u00a7 105-164.4I(b)(1)\"/\"105-164.4I\" as printed? The source appears to use a statutory citation with capital I; however the HTML representation is potentially ambiguous. More clearly, the HTML contains other citation formatting distortions such as \"N.C. Gen. Stat. 105-187.5(a)\" missing the section symbol in one instance, reducing exact fidelity.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 38.12,
+    "page_count": 7,
+    "visual_input_tokens": 13966,
+    "visual_output_tokens": 502,
+    "content_input_tokens": 15474,
+    "content_output_tokens": 781,
+    "timestamp": "2026-04-14T05:33:50.440859",
+    "auditor_version": "1.0.0"
+  }
+}

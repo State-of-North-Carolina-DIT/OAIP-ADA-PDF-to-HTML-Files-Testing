@@ -1,0 +1,30 @@
+{
+  "document_id": "b202a 11 17 web instructions v2 final",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Multi-line table cells split across multiple rows",
+      "severity": "major",
+      "evidence": "In the PDF, multi-line descriptions like 'Assistant Accountants...' (Code 430) and 'Real Estate...' (Code 451) are contained within single logical cells. In the HTML, these descriptions are split across multiple '<tr>' rows, breaking the logical structure and associating fragments of the description with unrelated codes on the right side of the table.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 45.0,
+    "page_count": 1,
+    "visual_input_tokens": 2910,
+    "visual_output_tokens": 262,
+    "content_input_tokens": 4314,
+    "content_output_tokens": 155,
+    "timestamp": "2026-04-14T05:31:18.893409",
+    "auditor_version": "1.0.0"
+  }
+}

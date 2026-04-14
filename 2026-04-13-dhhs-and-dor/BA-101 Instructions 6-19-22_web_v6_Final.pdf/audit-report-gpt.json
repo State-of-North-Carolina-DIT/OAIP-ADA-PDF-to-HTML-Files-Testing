@@ -1,0 +1,30 @@
+{
+  "document_id": "BA-101 Instructions 6-19-22_web_v6_Final.pdf",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Header branding and title styling are simplified in HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NCDOR logo block at top left with a compact multi-line title arrangement and a vertical divider; HTML page 1 renders plain text labels and a simpler stacked title without the same branded header structure.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 11.05,
+    "page_count": 2,
+    "visual_input_tokens": 5057,
+    "visual_output_tokens": 215,
+    "content_input_tokens": 6016,
+    "content_output_tokens": 145,
+    "timestamp": "2026-04-14T05:16:22.081048",
+    "auditor_version": "1.0.0"
+  }
+}

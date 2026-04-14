@@ -1,0 +1,94 @@
+{
+  "document_id": "CWS 03 2018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal/logo at the top of page 1 in the PDF is missing from the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has a circular state seal image centered at the top. HTML page 1 has no such image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout with officials' names positioned on opposite sides is changed to a left-aligned stacked layout in the HTML.",
+      "severity": "major",
+      "evidence": "PDF has 'ROY COOPER / GOVERNOR' on the left and 'MANDY COHEN, MD, MPH / SECRETARY' and 'WAYNE E. BLACK / DIRECTOR' on the right. HTML stacks all of these on the left side.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The department name styling differs between PDF and HTML. PDF uses centered decorative serif font; HTML uses left-aligned bold sans-serif heading.",
+      "severity": "minor",
+      "evidence": "PDF: centered 'DEPARTMENT OF HEALTH AND HUMAN SERVICES / DIVISION OF SOCIAL SERVICES / CHILD WELFARE SERVICES' in serif. HTML: left-aligned bold heading for department name, with division and child welfare as separate styled elements.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer contact information present at bottom of PDF page 1 is repositioned to only appear at the end of the HTML document (page 4 equivalent).",
+      "severity": "minor",
+      "evidence": "PDF page 1 bottom has WWW.NCDHHS.GOV, phone, fax, location, mailing address. HTML page 1 does not show this footer.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The numbered list uses different formatting - PDF uses indented numbers with periods; HTML uses a similar but slightly different list style.",
+      "severity": "minor",
+      "evidence": "Both versions contain the same 9 steps in the same order with consistent content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image of Lisa T. Cauley appears in both versions but may differ slightly in rendering.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show the handwritten signature above 'Lisa T. Cauley / Deputy Director'.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a nested <main> element inside the outer <main>, and the heading hierarchy is problematic. The department name is rendered as h1, division as h2, and 'Child Welfare Services' as h3 in the header, but then 'Required Actions' is also h3 in the body. The document structure uses h1-h3 just for the letterhead header block, which is not ideal but not a content loss issue.",
+      "severity": "major",
+      "evidence": "Header contains h1 'DEPARTMENT OF HEALTH AND HUMAN SERVICES', h2 'DIVISION OF SOCIAL SERVICES', h3 'CHILD WELFARE SERVICES'. Body contains h3 'Required Actions'. The letterhead hierarchy is debatable but no content is lost.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML preserves the original typo 'pentalties' from the PDF, which is correct behavior (faithful reproduction). No meaning-altering text changes detected.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML contain: 'Financial pentalties can impact LINKS funding and services.'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer content appears both at the top of the page (in the page-header div) and at the bottom (in the footer), but the footer contact information (WWW.NCDHHS.GOV, TEL, FAX, LOCATION, MAILING ADDRESS) only appears once in the footer section. However, the page-header div is styled as a header which is acceptable consolidation of letterhead info.",
+      "severity": "minor",
+      "evidence": "Footer content appears once in the HTML footer section, matching the PDF's footer/letterhead format.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 39.04,
+    "page_count": 2,
+    "visual_input_tokens": 6802,
+    "visual_output_tokens": 1052,
+    "content_input_tokens": 7620,
+    "content_output_tokens": 677,
+    "timestamp": "2026-04-14T05:18:02.387425",
+    "auditor_version": "1.0.0"
+  }
+}

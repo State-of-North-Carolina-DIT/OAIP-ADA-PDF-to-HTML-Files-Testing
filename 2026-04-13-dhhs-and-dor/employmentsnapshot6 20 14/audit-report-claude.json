@@ -1,0 +1,118 @@
+{
+  "document_id": "employmentsnapshot6 20 14",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 has a two-column layout in the PDF where text content and tables are placed side-by-side, but the HTML renders everything in a single-column layout.",
+      "severity": "major",
+      "evidence": "In the PDF, bullet-pointed text paragraphs appear on the left with Table 1, Table 2, and Table 3 on the right. In the HTML, all content flows sequentially in a single column with text blocks first, then tables below them.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 also has a two-column layout in the PDF (text on left, Table 4 on right) that is collapsed to a single column in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows bullet points on the left side with Table 4 on the right. HTML renders all text first, then the table below.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Department of Health and Human Services logo and the NC-TOPPS Snapshot header banner are present in the HTML but rendered differently from the PDF.",
+      "severity": "minor",
+      "evidence": "PDF has the logo and styled banner at the top of each page. HTML includes a similar header image but only once at the top, not repeated for page 2.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Tables are structurally preserved with correct row/column counts and data, but styling differs from the PDF.",
+      "severity": "minor",
+      "evidence": "All four tables (Tables 1-4) contain the same data, same row/column structure, and same headers. The visual styling (borders, shading) differs but data integrity is maintained.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The document title 'EMPLOYMENT AMONG ADULT CONSUMERS' uses a different font style in the HTML compared to the PDF's decorative all-caps heading.",
+      "severity": "minor",
+      "evidence": "PDF shows the title in a decorative/stylized font. HTML shows it as a standard bold heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is slightly altered due to single-column conversion; text blocks that were meant to be read alongside their adjacent tables now appear separated from them.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'Table 2 contains information on living arrangements...' text is adjacent to Table 2. In HTML, the text appears first and the table follows after all related bullet points.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The Definitions section heading formatting differs slightly between PDF and HTML.",
+      "severity": "minor",
+      "evidence": "PDF uses bold small-caps 'DEFINITIONS:' while HTML uses a standard bold heading style.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 3 mislabels the two abuse subsections. In the PDF, the first subsection is 'Frequency of Abuse in Past Three Months' (referring to abusing others) and the second is 'Frequency of Being Abused in Past Three Months' (referring to being abused). The body text in the HTML describes the first subsection's 95.1% as 'experiencing no abuse' (being abused), but the PDF text says 'Around 95% of full-time employees report experiencing no abuse' referring to the 'Frequency of Abuse' section. However, looking more carefully, the PDF text itself is somewhat ambiguous; the table data values match correctly between PDF and HTML. No actual data error in the table cells.",
+      "severity": "major",
+      "evidence": "All cell values in Table 3 match the PDF. This finding is withdrawn on closer inspection.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Table titles are rendered as h2 headings, but the DEFINITIONS and REFERENCES sections are also h2. The hierarchy is acceptable as there is only one h1 and all major sections are h2, so no levels are skipped. However, table captions being h2 is a minor structural choice rather than an error.",
+      "severity": "minor",
+      "evidence": "h1: EMPLOYMENT AMONG ADULT CONSUMERS; h2: Table 1, Table 2, Table 3, Table 4, DEFINITIONS, REFERENCES",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header block (logo image, organization name, NC-TOPPS SNAPSHOT title) is duplicated \u2014 once for page 1 and once for page 2. While the PDF has these on both pages, the HTML wraps both pages in a single document with an outer <main> tag, and repeating the full header within the body creates structural duplication. Additionally, there are nested <main> elements (outer <main> from the template, plus two inner <main> elements for page content), which is invalid HTML structure.",
+      "severity": "major",
+      "evidence": "Two <div class='page-header'> blocks and three <main> elements in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The BLS URL has the '#' character encoded as '%23' in the href attribute, though the visible link text shows it correctly. This could cause the link to not resolve properly.",
+      "severity": "minor",
+      "evidence": "HTML href: 'http://www.bls.gov/cps/cps_htgm.htm%23nilf' vs PDF: 'http://www.bls.gov/cps/cps_htgm.htm#nilf'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the bullet point about suicidal thoughts, the HTML says 'increases from 9% among the employed' while the PDF says 'increases from 9% among the employed'. Both match. However, the text 'Experiencing suicidal thoughts \"a few times\" increases from 9%' \u2014 the PDF table shows 8.7% for full-time employed. The text rounds to 9%, which matches the PDF narrative text exactly.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'Experiencing suicidal thoughts \"a few times\" increases from 9% among the employed to about 19% among the unemployed.'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 47.36,
+    "page_count": 2,
+    "visual_input_tokens": 5448,
+    "visual_output_tokens": 1028,
+    "content_input_tokens": 13137,
+    "content_output_tokens": 1070,
+    "timestamp": "2026-04-14T05:32:27.642050",
+    "auditor_version": "1.0.0"
+  }
+}

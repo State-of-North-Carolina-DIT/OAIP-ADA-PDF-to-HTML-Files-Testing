@@ -1,0 +1,86 @@
+{
+  "document_id": "gas1207dc.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The form layout with inline fields (Legal Name, Account Number, Schedule Type, Product Type, Month, Year) arranged horizontally in a grid-like structure in the PDF is converted to a vertical stacked list in the HTML, losing the compact form layout.",
+      "severity": "major",
+      "evidence": "PDF shows Legal Name field, Account Number, Schedule Type, Product Type, Month, and Year arranged in a single horizontal band with boxes. HTML renders these as separate labeled lines stacked vertically.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The table column header for column (4) is split into two separate sub-columns in the PDF (Original Dest. Term. or City, St. and Revised Dest. Term. or City, St.) with a shared (4) header. The HTML renders these as two distinct columns each labeled (4), which is acceptable but loses the visual grouping under a single (4) header.",
+      "severity": "minor",
+      "evidence": "PDF shows a single (4) header spanning both Original Dest and Revised Dest columns. HTML shows two separate column headers each starting with (4).",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The fillable grid boxes for Legal Name and Account Number fields present in the PDF are absent in the HTML. These are form input indicators but their absence doesn't lose data content.",
+      "severity": "minor",
+      "evidence": "PDF shows individual character boxes for Legal Name (30 characters) and Account Number. HTML shows only the label text without any box indicators.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The TOTAL row in the PDF has a shaded/grey cell in the Billed Gallons column area indicating a total field. The HTML has the TOTAL label but no visual shading for the total cell.",
+      "severity": "minor",
+      "evidence": "PDF shows grey shading in the Billed Gallons cell of the TOTAL row. HTML shows no shading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Column numbering error: both 'Original Dest.' and 'Revised Dest.' columns are labeled as (4) in the HTML table header, but in the PDF the column numbers are (4) for Original Dest. and the Revised Dest. column appears to share column (4) as a sub-column. While the PDF does show both under (4), the HTML renders them as two separate columns both labeled '(4)', which is faithful to the source but worth noting. However, the TOTAL row placement is incorrect \u2014 in the PDF, TOTAL appears aligned under the 'Document Number' column area (column 9), but in the HTML it is placed in the 8th table cell which corresponds to column (9) Document Number. This is actually correct.",
+      "severity": "major",
+      "evidence": "PDF shows column (4) spanning both Original Dest. and Revised Dest. HTML creates two separate columns both labeled (4).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy issue: 'Refiner' is marked as h1 and 'Schedule of State Diversion Corrections' is marked as h2, but in the PDF 'Refiner' appears as a subtitle/descriptor above the main title 'Schedule of State Diversion Corrections'. Additionally, 'Product Type' section heading is rendered as h3 which skips from the structure. The document also has nested <main> elements which is invalid HTML.",
+      "severity": "major",
+      "evidence": "PDF: 'Refiner' appears above 'Schedule of State Diversion Corrections' as part of the form title. HTML: <h1>Refiner</h1> <h2>Schedule of State Diversion Corrections</h2>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds a colon after 'Legal Name (First 30 Characters) (USE CAPITAL LETTERS FOR YOUR NAME)' which does not appear in the PDF. Similarly, colons are added after 'Account Number', 'Schedule Type', 'Product Type', 'Month', and 'Year' labels.",
+      "severity": "minor",
+      "evidence": "PDF: 'Legal Name (First 30 Characters) (USE CAPITAL LETTERS FOR YOUR NAME)' with no colon. HTML: '<strong>Legal Name <em>(First 30 Characters) (USE CAPITAL LETTERS FOR YOUR NAME)</em>:</strong>' with colon added.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The italicization of '(First 30 Characters) (USE CAPITAL LETTERS FOR YOUR NAME)' is not present in the PDF \u2014 the PDF shows this text in the same style as the rest of the label, not italicized.",
+      "severity": "minor",
+      "evidence": "PDF: plain text. HTML: wrapped in <em> tags.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 37.19,
+    "page_count": 1,
+    "visual_input_tokens": 3802,
+    "visual_output_tokens": 716,
+    "content_input_tokens": 5225,
+    "content_output_tokens": 914,
+    "timestamp": "2026-04-14T05:33:14.511398",
+    "auditor_version": "1.0.0"
+  }
+}

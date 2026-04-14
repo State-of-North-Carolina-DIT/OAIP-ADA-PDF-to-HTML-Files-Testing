@@ -1,0 +1,30 @@
+{
+  "document_id": "EFS FNSEP 30 2012",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "UNKNOWN",
+      "description": "",
+      "severity": "minor",
+      "evidence": "",
+      "page": null,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 19.32,
+    "page_count": 2,
+    "visual_input_tokens": 5072,
+    "visual_output_tokens": 597,
+    "content_input_tokens": 4431,
+    "content_output_tokens": 169,
+    "timestamp": "2026-04-14T05:21:11.411198",
+    "auditor_version": "1.0.0"
+  }
+}

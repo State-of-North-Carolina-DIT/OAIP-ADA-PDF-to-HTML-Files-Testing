@@ -1,0 +1,142 @@
+{
+  "document_id": "newsletter march 2009",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column newsletter layout is collapsed into a single vertical flow.",
+      "severity": "major",
+      "evidence": "PDF page 1 has main article content in a large left column and an MRS Meetings sidebar on the right. HTML page 1 renders everything as one single column, losing the distinct sidebar structure and spatial grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order does not match the original visual sequence.",
+      "severity": "major",
+      "evidence": "On PDF page 1, the issue list and article begin in the left column while the MRS Meetings content is isolated in the right sidebar. In HTML page 1, the MRS Meetings block appears before the issue list and article text, altering the sequence a sighted reader would encounter.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Graphic is present but repositioned due to layout collapse.",
+      "severity": "minor",
+      "evidence": "The PDSA cycle diagram on PDF page 1 sits at the lower right of the main article column. In HTML page 1 it appears lower in the flow as a centered inline image rather than anchored beside the text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Sidebar and main content columns are merged into a single-column layout.",
+      "severity": "major",
+      "evidence": "PDF page 2 has a left sidebar containing Training Dates and publication/contact information, with continuation text and the legislation article in the main right column. HTML page 2 linearizes all content into one column, eliminating the side-by-side structure.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs from the source due to sidebar content being interleaved into the main flow.",
+      "severity": "major",
+      "evidence": "In PDF page 2, sidebar Training Dates/publication details are visually separate from the main article continuation and legislation content. In HTML page 2, the sidebar text is read first and then the main article continuation appears later, changing the original left-right reading experience.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Original two-column page with article and training sidebar is reduced to one column.",
+      "severity": "major",
+      "evidence": "PDF page 3 places the Recognizing and Honoring Differences article in the left/main column and Training Dates in a right sidebar. HTML page 3 stacks Training Dates above the article in a single column, losing the original structure.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Visual reading sequence is altered by moving the sidebar content ahead of the article.",
+      "severity": "major",
+      "evidence": "On PDF page 3, the article headline and body are the dominant left-column content, while the Training Dates are a separate right sidebar. In HTML page 3, Training Dates are presented first, then the article follows, reversing the visual emphasis and order.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Author photo is present but shifted from its original placement.",
+      "severity": "minor",
+      "evidence": "PDF page 3 places the small portrait near the upper right of the article text block. HTML page 3 keeps the image but moves it lower and left within the linearized article flow.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column continuation page is linearized into a single-column document.",
+      "severity": "major",
+      "evidence": "PDF page 4 has Training Dates in a left sidebar and the continuation of the Recognizing and Honoring Differences article in the main right column. HTML page 4 stacks Training Dates first and then the article continuation below, removing the columnar separation.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs because sidebar information precedes article continuation.",
+      "severity": "major",
+      "evidence": "In PDF page 4, a reader sees the article continuation as the primary right-column content alongside a sidebar. In HTML page 4, Training Dates come first and the article continuation follows later, changing the page's original reading flow.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Callout quote formatting is not preserved.",
+      "severity": "minor",
+      "evidence": "PDF page 4 contains a distinct red italic pull quote in the right margin area of the article. HTML page 4 renders this as a normal indented paragraph/blockquote within the text flow, reducing visual distinction.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML omits a sentence fragment at the page break in the 'Plan-Do-Study-Act Cycles' section, changing the text flow and losing meaning.",
+      "severity": "major",
+      "evidence": "PDF page 1 ends: '...where the consequences are minimized before'; PDF page 2 continues: 'a change is rolled out to an entire agency, jurisdiction, or system.' HTML page 2 begins with 'a change is rolled out to an entire agency, jurisdiction, or system.' but is missing the linking phrase 'before [it is/they are] rolled out', resulting in a broken sentence.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML has a substantive wording error in the legislation section, altering the meaning of the original text about federal fiscal years.",
+      "severity": "major",
+      "evidence": "PDF page 2 bullet: 'Extending & expanding adoption incentives thru federal fiscal year (FFY) 2013'. HTML: 'Extending & expanding adoption incentives thru federal fiscal year (FFY) 2013' preserves this, but another bullet in the PDF reads '...to age 21 beginning in age 21 beginning in FFY 2011' due to print layout; HTML normalizes it to '...to age 21 beginning in FFY 2011.' This appears acceptable. However, the final Children's Bureau URL in HTML is incorrect: HTML gives 'http://www.acf.hhs.gov/programs/cb/laws_policies/cblaws/safe2008draft.htm' while the PDF shows 'http://www.acf.hhs.gov/programs/cb/laws_policies/cblaws/safe2008draft.htm>' with line breaks and punctuation. The more substantive text issue is elsewhere on page 4: PDF says 'another African America woman'; HTML also says 'another African America woman', matching the source. Primary major text-loss issue remains the broken page-break sentence.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "Several URLs are preserved only as plain text rather than hyperlinks, so link preservation is incomplete.",
+      "severity": "major",
+      "evidence": "PDF contains URLs such as 'www.ncdhhs.gov/dss/mrs', 'http://www.ncswLearn.org', 'http://www.casey.org/Resources/Projects/BSC/', and multiple ACF/HHS links. HTML reproduces them as plain text inside paragraphs/list items rather than clickable <a> links.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses multiple <main> elements and repeats top-level sectioning in a way that does not accurately reflect a clean heading hierarchy for the document.",
+      "severity": "major",
+      "evidence": "HTML has an outer <main>, then additional nested <main> blocks for each page/section. Heading levels also reuse <h2> for many unrelated page sidebars ('MRS Meetings', 'Training Dates', article titles) rather than a consistent document hierarchy. While text labels match the PDF, the structural hierarchy is not clean.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 12,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 43.44,
+    "page_count": 4,
+    "visual_input_tokens": 9427,
+    "visual_output_tokens": 1351,
+    "content_input_tokens": 9425,
+    "content_output_tokens": 826,
+    "timestamp": "2026-04-14T05:35:30.132549",
+    "auditor_version": "1.0.0"
+  }
+}

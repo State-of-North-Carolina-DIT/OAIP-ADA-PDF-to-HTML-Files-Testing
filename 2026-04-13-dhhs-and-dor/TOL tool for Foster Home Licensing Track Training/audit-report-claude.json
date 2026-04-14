@@ -1,0 +1,174 @@
+{
+  "document_id": "TOL tool for Foster Home Licensing Track Training",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC DHHS logo/seal appears in the HTML header but is rendered differently - shown as a smaller element within a dark banner bar rather than the larger standalone seal with adjacent text as in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NC state seal prominently with 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES' text beside it. HTML page 1 shows a smaller version within a dark header bar.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Division of Social Services' text appears in the upper right of the PDF page 1 as a prominent label but is rendered as smaller header text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF has 'Division of Social Services' as a bold blue header element in the upper right. HTML shows it as smaller text in the page header area.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Instructions' heading in the PDF is styled in blue/teal color, while in the HTML it appears as a plain black heading.",
+      "severity": "minor",
+      "evidence": "PDF: 'Instructions' is in blue/teal color. HTML: 'Instructions' appears as a standard black heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part A table styling differs - PDF uses blue header bars for section labels (Social Worker Goals, Supervisor Goals, Planning) while HTML uses a simpler table with alternating row shading.",
+      "severity": "minor",
+      "evidence": "PDF has distinct blue banner rows for 'Social Worker Goals', 'Supervisor Goals', 'Planning', 'Worker Signature', 'Supervisor Signature'. HTML renders these as plain text rows in a simple table.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In Part A, the prompt text in the PDF is italicized (e.g., 'What do you hope to get out of Track Training?') while in the HTML it appears as regular text.",
+      "severity": "minor",
+      "evidence": "PDF shows italicized prompt questions. HTML shows the same text without italic formatting.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part A table in PDF has the prompts and input areas as distinct visual zones with blue section headers, while the HTML converts this into a two-column 'Prompt/Input' table format. The structure and data are preserved but visual organization differs.",
+      "severity": "minor",
+      "evidence": "PDF uses blue banners and italic prompts with blank input areas below. HTML uses a structured Prompt/Input column table.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part B table in PDF uses blue header bar for 'Foster Home Licensing Track' section and numbered blue cells for takeaways/questions. HTML uses a simpler Item/Response table format.",
+      "severity": "minor",
+      "evidence": "PDF has blue-styled section header and numbered blue cells. HTML has a clean two-column table.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In Part B, the PDF uses bold italic formatting for emphasis words like 'most helpful', 'most challenging', 'top three takeaways', 'top three remaining questions'. The HTML renders these without the bold/italic emphasis.",
+      "severity": "minor",
+      "evidence": "PDF: 'most helpful' in bold italic. HTML: 'most helpful' in plain text without bold/italic.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Part C page in the PDF includes the NC DHHS logo and seal at the top, while the HTML version shows it in the persistent header banner.",
+      "severity": "minor",
+      "evidence": "PDF has the state seal and department name prominently at top of page 4. HTML has it in the global header.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part C table structure is preserved but the PDF uses blue header for 'Summary Reflections' and italic prompt text, while HTML uses a plain Item/Response table.",
+      "severity": "minor",
+      "evidence": "PDF: Blue 'Summary Reflections' header bar with italic instructions. HTML: Plain text rows in table.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In Part C, the PDF uses italic text for prompts like 'What resources or supports will you request...' and 'What barriers or pitfalls...'. HTML renders as plain text.",
+      "severity": "minor",
+      "evidence": "PDF: Italic prompt text. HTML: Regular weight text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part D table in PDF uses blue header bars and blue numbered cells with bold italic emphasis text, while HTML uses a clean Item/Response table format.",
+      "severity": "minor",
+      "evidence": "PDF: Blue 'Date of post-training debrief' header, blue numbered cells, bold italic 'top three things you learned'. HTML: Simple table rows.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In Part D, the PDF uses bold italic for emphasis phrases like 'top three things you learned', 'top three remaining questions'. HTML renders without this formatting emphasis.",
+      "severity": "minor",
+      "evidence": "PDF: 'top three things you learned' in bold italic. HTML: plain text.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Tables in the HTML have fabricated column headers ('Prompt'/'Input', 'Item'/'Response') that do not exist in the PDF. The PDF forms are single-column structured layouts with section headers and fields, not two-column tables with labeled headers.",
+      "severity": "major",
+      "evidence": "HTML Part A table has <th>Prompt</th><th>Input</th>; HTML Parts B, C, D tables have <th>Item</th><th>Response</th>. The PDF has no such column headers - it uses blue banner rows and form fields without table column headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Tables contain numerous empty duplicate rows that do not correspond to distinct content in the PDF. The HTML inserts blank spacer rows (empty td cells in both columns) after many prompt rows, which inflates the table structure beyond what the PDF contains.",
+      "severity": "major",
+      "evidence": "For example, in Part A, after 'What do you hope to get out of Track Training?...' there is a row with two empty cells. Similar empty rows appear after most prompts across all tables. These represent blank answer spaces in the PDF form but are rendered as separate empty table rows, creating structural noise.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In Part A, 'Social Worker Goals' is a section header in the PDF (blue banner), and the question beneath it is a sub-prompt. In the HTML, they are rendered as two separate table rows, making 'Social Worker Goals' appear as a standalone prompt rather than a section heading. Same issue with 'Supervisor Goals' and 'Planning'.",
+      "severity": "major",
+      "evidence": "PDF shows 'Social Worker Goals' as a blue banner header with italic question text below. HTML renders them as separate <td> rows in a flat table structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title is split across two lines in the h1 using a <br> tag, combining the document title and subtitle. This is acceptable but the hierarchy could be noted: 'Transfer of Learning Tool (ToL)' could be considered a subtitle.",
+      "severity": "minor",
+      "evidence": "HTML: <h1>North Carolina Foster Home Licensing Track Training<br>Transfer of Learning Tool (ToL)</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header/logo appears twice in the HTML - once at the very top and once before Part C, matching the PDF where the full logo appears on pages 1 and 4. This is acceptable as it mirrors the source document.",
+      "severity": "minor",
+      "evidence": "Two <img> tags with alt text referencing 'NC Department of Health and Human Services, Division of Social Services logo'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The table column headers 'Prompt', 'Input', 'Item', and 'Response' are fabricated content not present anywhere in the source PDF. These are invented labels added by the conversion process.",
+      "severity": "critical",
+      "evidence": "PDF forms have no column headers. HTML tables add: <th>Prompt</th><th>Input</th> in Part A, and <th>Item</th><th>Response</th> in Parts B, C, and D.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 15,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 60.83,
+    "page_count": 5,
+    "visual_input_tokens": 15489,
+    "visual_output_tokens": 1875,
+    "content_input_tokens": 14473,
+    "content_output_tokens": 1044,
+    "timestamp": "2026-04-14T05:30:27.322447",
+    "auditor_version": "1.0.0"
+  }
+}

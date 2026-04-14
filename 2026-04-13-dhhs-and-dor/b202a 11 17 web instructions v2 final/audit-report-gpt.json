@@ -1,0 +1,46 @@
+{
+  "document_id": "b202a 11 17 web instructions v2 final",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column license code/tax listing in the PDF is flattened into a single wide table in the HTML, changing the page\u2019s visual structure.",
+      "severity": "major",
+      "evidence": "In the PDF, the code/license/tax list is presented as two side-by-side grouped columns, each with its own Code Number / License Description / Tax headers. In the HTML, this content appears as one continuous six-column table spanning the page.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table data integrity issue: the tax value for code 451 (Real Estate) is missing in the HTML table.",
+      "severity": "major",
+      "evidence": "PDF table shows code 451 'Real Estate (Only one license required if engaged in multiple real estate activities)' with tax '$50.00'. HTML splits the description across multiple rows and leaves the Tax cells blank for code 451.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Text accuracy issue in the table: omission of the $50.00 tax for the Real Estate entry changes the meaning of the licensing information.",
+      "severity": "major",
+      "evidence": "In the PDF, the right-hand table lists '451 Real Estate ... $50.00'. In the HTML, the corresponding rows for '451' and its continuation lines contain no tax amount.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 14.76,
+    "page_count": 1,
+    "visual_input_tokens": 3170,
+    "visual_output_tokens": 254,
+    "content_input_tokens": 4758,
+    "content_output_tokens": 326,
+    "timestamp": "2026-04-14T05:31:01.870115",
+    "auditor_version": "1.0.0"
+  }
+}

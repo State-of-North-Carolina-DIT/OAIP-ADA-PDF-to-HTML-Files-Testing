@@ -1,0 +1,62 @@
+{
+  "document_id": "employmentsnapshot6 20 14",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column layout was converted to a single column.",
+      "severity": "major",
+      "evidence": "The original PDF features a two-column layout for the main content, placing descriptive text on the left and tables on the right. The HTML renders all of this content sequentially in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Complex table structures (merged cells and spanning rows) are flattened or broken.",
+      "severity": "major",
+      "evidence": "In Tables 1, 2, and 3, top-level headers that span multiple columns in the PDF are concatenated into individual column headers in the HTML. Additionally, in Table 3, section dividing rows that span the entire width of the table (e.g., 'Frequency of Abuse in Past Three Months') are placed only in the first cell of the row in the HTML, leaving the remaining cells blank.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout was converted to a single column.",
+      "severity": "major",
+      "evidence": "The top section of the original PDF features a two-column layout with text on the left and Table 4 on the right. The HTML renders this sequentially in a single column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Complex table structures (merged cells and spanning rows) are flattened or broken.",
+      "severity": "major",
+      "evidence": "In Table 4, the top-level header spanning multiple columns in the PDF is concatenated into individual column headers in the HTML. Furthermore, section dividing rows that span the entire width of the table (e.g., 'Frequency of Suicidal Thoughts') are placed only in the first cell of the row in the HTML, leaving the remaining cells blank.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The hyperlink for the Bureau of Labor Statistics contains an incorrectly URL-encoded fragment identifier in the href attribute ('%23' instead of '#').",
+      "severity": "minor",
+      "evidence": "PDF text: 'http://www.bls.gov/cps/cps_htgm.htm#nilf.' | HTML href: '<a href=\"http://www.bls.gov/cps/cps_htgm.htm%23nilf\">'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 83.03,
+    "page_count": 2,
+    "visual_input_tokens": 5122,
+    "visual_output_tokens": 659,
+    "content_input_tokens": 7170,
+    "content_output_tokens": 290,
+    "timestamp": "2026-04-14T05:32:50.842455",
+    "auditor_version": "1.0.0"
+  }
+}

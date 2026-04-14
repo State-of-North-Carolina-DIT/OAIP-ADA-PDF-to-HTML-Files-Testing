@@ -1,0 +1,150 @@
+{
+  "document_id": "D403 8",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 PDF has a complex multi-column layout with form fields, checkboxes on the right side, and the 'Important' box inline. The HTML renders this as a single-column linear layout, losing the side-by-side arrangement of checkboxes and form fields.",
+      "severity": "major",
+      "evidence": "PDF shows checkboxes (Initial Return, Amended Return, etc.) in a right column alongside the name/address fields. HTML lists them as bullet points below the address fields in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part 1 table in HTML uses a two-column structure (Line Description / Amount) which functionally preserves the data, but the PDF has line numbers and amounts with specific circle indicators and arrow symbols laid out as a form grid.",
+      "severity": "minor",
+      "evidence": "PDF has a structured form with line numbers, arrows, circles, and amount fields. HTML renders as a clean two-column table with the same data.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The filled circle example graphic shown in the PDF for negative amounts is referenced but not visually rendered the same way in HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows a filled black circle as an example. HTML uses a Unicode bullet character \u25cf.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The barcode/scanline visible in the PDF form is absent in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows a barcode pattern in the left margin area. HTML shows a block character placeholder.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part 2 apportionment table in PDF has a clear 4-data-column structure (Within NC Beginning/Ending, Total Everywhere Beginning/Ending) with a separate Factor column. HTML preserves this as a 5-column table which is functionally equivalent.",
+      "severity": "minor",
+      "evidence": "PDF has nested column headers '1. Within North Carolina' and '2. Total Everywhere' each with (a) and (b) sub-columns. HTML table has flat column headers matching this structure.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 content from PDF (Part 2 apportionment table only) is split across two HTML pages, with the bottom of Part 1 (lines 11-20) appearing on the HTML's second page rendering as well, creating a different content grouping than the PDF.",
+      "severity": "major",
+      "evidence": "PDF Page 2 contains only Part 2. HTML page 2 rendering shows the end of Part 1 (lines 11-20) followed by the start of Part 2.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part 3 table in PDF has three partner columns side by side with sections A, B, C marked. HTML preserves the same table structure with Partner 1, 2, 3 columns.",
+      "severity": "minor",
+      "evidence": "Both versions show the same 20-line item table with 3 partner columns. Section markers [A], [B], [C] are preserved in HTML.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 in PDF has section labels A, B, C in boxed markers on the left margin. HTML uses inline bracketed text [A], [B], [C].",
+      "severity": "minor",
+      "evidence": "PDF shows boxed letters A, B, C as section markers. HTML shows [A], [B], [C] inline with text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part 4 bonus depreciation line 8 has sub-items 8a-8d in a horizontal layout in PDF. HTML renders them in a more linear format within the table cell.",
+      "severity": "minor",
+      "evidence": "PDF shows 8a. 2008, 8b. 2009, 8c. 2010, 8d. 2011 in a horizontal row with individual input fields. HTML shows them inline in a single cell.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Tax Rate Schedule in PDF is presented as a bordered standalone table. HTML presents it as a separate table with the same data structure preserved.",
+      "severity": "minor",
+      "evidence": "Both show the three tax brackets ($0-$12,750, $12,750-$60,000, $60,000+) with corresponding tax calculations.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The signature block and certification text formatting differs - PDF has side-by-side signature areas for Managing Partner and Preparer. HTML renders them linearly.",
+      "severity": "minor",
+      "evidence": "PDF shows two signature blocks side by side. HTML shows them stacked vertically.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Part 2 Apportionment table structure is inaccurate. Lines 6, 7, 8, 11 in the PDF have fewer columns (they consolidate beginning/ending into a single value per column), but the HTML presents them all with 4 data columns uniformly. Specifically, Lines 6 and 7 should each show only one value per column (Within NC and Total Everywhere), not separate beginning/ending period values. The Factor column also only applies to Lines 8, 11, 12, 13, 14, 15 but the HTML places 'Factor' as a cell value in the row for Line 7 rather than as a column header.",
+      "severity": "major",
+      "evidence": "PDF shows Line 7 'Rented property' row leading into a 'Factor' column header. HTML places 'Factor' as a table cell value in the last column of the Line 7 row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The heading hierarchy has issues. There are two nested <main> elements and the document title '2012 Partnership Income Tax Return' is under an h1, but 'North Carolina Department of Revenue' is an h2 which is a subtitle, not a true section. More importantly, the headings skip from h3 to h4 for 'Additions to Income', 'Deductions from Income', and 'Tax Rate Schedule' subsections within Part 4, while Parts 1-3 use h3. This creates an inconsistent hierarchy.",
+      "severity": "major",
+      "evidence": "HTML uses h3 for 'Part 1. Computation...', 'Part 2. Apportionment...', 'Part 3.', 'Part 4. North Carolina Adjustments...' but then h4 for 'Additions to Income', 'Deductions from Income', 'Tax Rate Schedule'. The PDF treats these as sub-sections of Part 4, so h4 is actually appropriate here - this is borderline acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header information (D-403, Web, 11-12, Legal Name, Federal Employer ID Number) is repeated multiple times as page headers throughout the HTML, mimicking the PDF's per-page headers. While this matches the PDF, the consolidation expected in HTML conversion means these repetitions add clutter.",
+      "severity": "minor",
+      "evidence": "Page header blocks appear before Part 2, Part 3, and Part 4 sections, each containing 'D-403 Web 11-12' and field placeholders.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the barcode image is 'Vertical barcode' which is a reasonable description, but the image in the PDF appears to be a standard form barcode/identifier code. The alt text is acceptable but generic.",
+      "severity": "minor",
+      "evidence": "HTML: alt=\"Vertical barcode\". PDF shows a vertical barcode on the left side of the Part 1 computation section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two nested <main> elements which is invalid HTML structure, though this is a structural/markup issue rather than a content fidelity issue.",
+      "severity": "minor",
+      "evidence": "The template wraps content in <main> and then the content itself also has a <main> tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 12,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 61.96,
+    "page_count": 4,
+    "visual_input_tokens": 13036,
+    "visual_output_tokens": 1714,
+    "content_input_tokens": 16980,
+    "content_output_tokens": 1067,
+    "timestamp": "2026-04-14T05:20:15.944939",
+    "auditor_version": "1.0.0"
+  }
+}

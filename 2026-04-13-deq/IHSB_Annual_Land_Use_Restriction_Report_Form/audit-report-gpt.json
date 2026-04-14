@@ -1,0 +1,70 @@
+{
+  "document_id": "IHSB_Annual_Land_Use_Restriction_Report_Form",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Checkbox formatting is not preserved consistently in the checklist section.",
+      "severity": "minor",
+      "evidence": "In the PDF, the checklist uses inline 'YES  NA (not applicable)' indicators before each statement without visible square boxes. In the HTML, each item is rendered with square checkbox symbols, and some lines show duplicated boxes, changing the visual form styling though not the content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading typography and emphasis differ from the source.",
+      "severity": "minor",
+      "evidence": "The PDF shows the main branch title and form title with different font weight/size treatment and centered logo grouping; the HTML uses a larger sans-serif title style with a horizontal rule, making headings visually different though still distinct.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Logo placement and scale differ from the source.",
+      "severity": "minor",
+      "evidence": "In the PDF, the DEQ logo is centered near the top above the title block. In the HTML, the logo is smaller and positioned at the top-left, altering the visual placement but not losing the image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML injects checkbox symbols into list items that are not present as text in the PDF, creating fabricated visible content.",
+      "severity": "critical",
+      "evidence": "PDF shows the prompt \"YES  NA (not applicable). Check all that apply:\" followed by plain statements with no checkbox glyphs preceding each line. HTML adds symbols such as \"\u2610 All restrictions in the recorded Declaration...\" and for several items \"\u2610 \u2610 All posted signs...\", \"\u2610 \u2610 The contact information...\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The first compliance item loses the implied YES/NA response structure present in the PDF and is rendered with only one checkbox in HTML, while other applicable items show two checkboxes, making the form logic inconsistent.",
+      "severity": "major",
+      "evidence": "PDF presents a YES/NA selection convention applying to the checklist items under the heading \"YES NA (not applicable). Check all that apply:\". HTML renders the first item as \"\u2610 All restrictions in the recorded Declaration...\" but renders later items as \"\u2610 \u2610 All posted signs...\" and \"\u2610 \u2610 The contact information...\", altering the form semantics.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy in the HTML does not accurately reflect the document title structure from the PDF and introduces multiple top-level headings.",
+      "severity": "major",
+      "evidence": "PDF visually centers the logo above the title text \"Inactive Hazardous Sites Branch\" and subtitle \"Annual Report Form for Perpetual Land-Use Restrictions\" without a separate page-title hierarchy requiring multiple title levels. HTML uses <h1> for \"Inactive Hazardous Sites Branch\", <h2> for \"Annual Report Form for Perpetual Land-Use Restrictions\", and later <h3> for \"Property Owner Certification Statement\", which overstates heading structure and makes the branch name the sole document title.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 23.09,
+    "page_count": 1,
+    "visual_input_tokens": 2632,
+    "visual_output_tokens": 328,
+    "content_input_tokens": 3322,
+    "content_output_tokens": 564,
+    "timestamp": "2026-04-14T04:57:26.550688",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "document_id": "Bertie Budget Estimates SFY2025.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/import content not present in the PDF, including a Google Fonts URL and standalone theme CSS.",
+      "severity": "critical",
+      "evidence": "HTML head contains '@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')' and comments 'Digital Commons NC \u2014 Standalone Theme CSS'. The PDF pages only show the budget estimate document content and do not contain any URL, CSS, or theme text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure: the county title is repeated as multiple h1 elements, and section headings from the PDF are not encoded as heading tags.",
+      "severity": "major",
+      "evidence": "HTML uses '<h1>Bertie County</h1>' three times, once in each page header. PDF shows 'Bertie County' as page title on each page, while section titles such as '1. Public Assistance Programs', '2. Public Assistance Administration', and '3. Services Programs' are major structural headings but are only table text in HTML, not headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page header content is duplicated across the HTML for each page instead of being consolidated, creating repeated title metadata.",
+      "severity": "major",
+      "evidence": "HTML repeats 'G.S. 108A-88 -- Determination of State/County Financial Participation', 'County Budget Estimates -- State Fiscal Year 2024-2025', 'Issued February 14, 2024', and '<h1>Bertie County</h1>' three separate times. In the PDF, these appear once per page as page headers, not as repeated body content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 18.7,
+    "page_count": 3,
+    "visual_input_tokens": 8196,
+    "visual_output_tokens": 239,
+    "content_input_tokens": 12064,
+    "content_output_tokens": 533,
+    "timestamp": "2026-04-14T05:16:57.746618",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "document_id": "2016 d403tc partnership tax credit summary traditional",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a two-column layout for lines 1-16 where descriptions are on the left and amount fields with line numbers are on the right side. The HTML converts this into a single-column table format, fundamentally changing the visual layout.",
+      "severity": "major",
+      "evidence": "PDF shows a form layout with line descriptions on the left and numbered amount boxes on the right in a side-by-side arrangement. HTML renders this as a table with rows containing 'Line Number', 'Description', and 'Amount' columns.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The HTML renders the form fields as a structured table with explicit column headers (Line Number, Description, Amount) which do not exist in the PDF. The PDF uses a form-style layout with fill-in boxes.",
+      "severity": "minor",
+      "evidence": "PDF has no table headers - it's a form with numbered lines and blank entry fields. HTML adds 'Line Number', 'Description', and 'Amount' column headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo in the PDF header is replaced with plain text 'NCDOR' in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF shows the NCDOR stylized logo with 'Web 7-16' underneath. HTML shows plain text 'NCDOR' with 'Web' and '7-16' below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The form title 'D-403TC' and '2016 Partnership Tax Credit Summary' appear in different styling and positioning in HTML versus PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows the title in a bordered header section with large bold text next to the logo. HTML shows it as plain text headings without the bordered section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Part headers (Part 2, Part 3, Part 4) in the PDF are visually distinct section dividers within the form. In the HTML they appear as rows within the table.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Part 2. Tax Credits Subject to 50% of Tax Limit' as a bold section header spanning the form width. HTML embeds these as table rows.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The reading order is preserved - all content items appear in the same sequence in both versions.",
+      "severity": "minor",
+      "evidence": "Lines 1-16 and all part headers appear in the same order in both PDF and HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken. 'NCDOR' is rendered as h1 (the document title should be D-403TC / 2016 Partnership Tax Credit Summary), and the actual form title is h2. Additionally, the heading hierarchy skips from the document structure perspective.",
+      "severity": "major",
+      "evidence": "HTML has <h1>NCDOR</h1> followed by <h2>D-403TC<br>2016 Partnership Tax Credit Summary</h2>. The PDF shows 'D-403TC 2016 Partnership Tax Credit Summary' as the document title with NCDOR being the agency logo/branding.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Part headings (Part 2, Part 3, Part 4) are embedded within table rows rather than being proper headings, losing the document's structural hierarchy.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'Part 2. Tax Credits Subject to 50% of Tax Limit', 'Part 3. Total of Credits Applied to Current Year', and 'Part 4.' are section headings. In the HTML they appear as table rows with no heading tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML merges what are structurally separate sections/tables in the PDF into a single large table. The PDF has distinct parts (Part 1 lines 1-10, Part 2 line 11, Part 3 line 12, Part 4 lines 13-16) which are visually and structurally separate sections, but the HTML combines them all into one table.",
+      "severity": "minor",
+      "evidence": "PDF shows Part 1 (lines 1-10), Part 2 (line 11), Part 3 (line 12), and Part 4 (lines 13-16) as distinct sections. HTML has one continuous table with Part headers as rows within the table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element inside another <main> element, causing structural duplication of the main content wrapper.",
+      "severity": "major",
+      "evidence": "HTML has <body><main>...<main>...</main></main></body> - two nested <main> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the barcode image says 'Barcode 7110506016' which appears to be a reasonable interpretation of the barcode visible in the PDF, though the exact number is difficult to verify with certainty.",
+      "severity": "minor",
+      "evidence": "HTML: alt='Barcode 7110506016'. PDF shows a barcode with number 7110506016 visible.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The Part 1 heading is not explicitly present in the HTML. The PDF implies Part 1 for lines 1-10 (the form structure references 'Part 1, Line 1 through Line 4' in Part 4's instructions).",
+      "severity": "minor",
+      "evidence": "PDF Part 4 instructions reference 'a tax credit on Part 1, Line 1 through Line 4'. No 'Part 1' heading appears in the HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 44.07,
+    "page_count": 1,
+    "visual_input_tokens": 3610,
+    "visual_output_tokens": 909,
+    "content_input_tokens": 6280,
+    "content_output_tokens": 1044,
+    "timestamp": "2026-04-14T05:13:01.757891",
+    "auditor_version": "1.0.0"
+  }
+}

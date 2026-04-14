@@ -1,0 +1,118 @@
+{
+  "document_id": "table38 0",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Some table values/percentages are replaced by placeholder characters in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows numeric values in all visible cells, while the HTML has '####' or similar placeholder symbols in a few year-over-year percentage cells (e.g., near Jackson and Greene rows). The table remains readable overall, but formatting/content display is slightly degraded.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "A full-page table is converted into plain text rather than a structured table.",
+      "severity": "major",
+      "evidence": "On page 5, the PDF displays a continued multi-column county table with aligned rows and columns. The HTML renders the same content largely as running text lines with years and values stacked, losing tabular grid structure and clear cell boundaries.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Overall page layout is not preserved because the tabular section collapses into a text block.",
+      "severity": "major",
+      "evidence": "On page 5, the PDF has a table followed by two charts in a clear structured layout. In the HTML, after the table content, the notes and chart labels/data appear as a long single-column text block before the charts, disrupting the original visual grouping.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text formatting and heading/data distinction break down in the HTML for the narrative notes and chart text.",
+      "severity": "major",
+      "evidence": "On page 5, the PDF has clearly separated explanatory paragraphs and chart titles. The HTML shows years, totals, percentages, and labels as loose text lines with placeholder characters, making headings and associated data less visually distinct.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order becomes confusing due to the table and chart-related content being flattened into text.",
+      "severity": "major",
+      "evidence": "On page 5, a sighted reader of the PDF would encounter the continued table, notes, then Figure 38.1 and Figure 38.2. In the HTML, the sequence includes flattened numeric lines and chart labels intermixed as text before/around the figures, making the flow harder to follow.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated content not present in the PDF: a full standalone HTML/CSS theme wrapper and imported Google Fonts styling.",
+      "severity": "critical",
+      "evidence": "HTML contains text/code such as \"Converted Document\", \"Digital Commons NC \u2014 Standalone Theme CSS\", and \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\". None of this appears in the PDF pages, which only show the table title, tabular data, notes, and figures.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table structure is incomplete: the first PDF table page is split awkwardly in HTML, and the initial county block through Jackson is placed under a heading labeled \"TABLE 38. - Continued\" rather than preserving the original first-page table structure.",
+      "severity": "major",
+      "evidence": "PDF page 1 heading reads \"TABLE 38. STATE SALES AND USE TAX: GROSS RETAIL SALES REPORTED BY COUNTY [G.S. 105 ARTICLE 5]\" and contains counties Alamance through Jackson. HTML starts with an h1 matching the title but then immediately places the first actual data table under an h2 \"TABLE 38. - Continued\" instead of preserving the original first-page table as such.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "At least one table row contains an extra empty cell, indicating column-count inconsistency and table integrity issues.",
+      "severity": "major",
+      "evidence": "In the HTML row for Macon (1989-1997 table), after the final value \"6.3%\" there is an additional empty <td></td>. The PDF row ends with the 97/96 percentage and does not show an extra blank column.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Some table values appear corrupted or replaced with placeholder hashes in HTML where the PDF has numeric values or where the placeholder handling is inconsistent, reducing data fidelity.",
+      "severity": "major",
+      "evidence": "Examples in HTML include Greene row with \"######\" in the early % change table, Camden 2003-2004 row ending with \"######\", and multiple rows such as Jones, Caswell, Gates, Swain, Tyrrell, etc. The PDF image also shows some overflow/hash marks in places, but HTML does not systematically preserve whether a value is truly unreadable versus simply copied as placeholders, making cell fidelity unreliable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document structure and uses repeated h2 headings for continued pages while nesting a second <main> element inside <main>.",
+      "severity": "major",
+      "evidence": "HTML has one h1 for the document title, then repeated h2 headings \"TABLE 38. - Continued\" and \"TABLE 38 . - Continued\" across sections. It also contains nested <main> elements. The PDF is a continuous multi-page table and figure sequence, not a hierarchy of separate h2 sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML duplicates content values by re-listing the 1996-1997 column in both the first and second tables, creating overlap not clearly separated as distinct page continuations.",
+      "severity": "major",
+      "evidence": "The first HTML table ends with a \"1996-1997 [$1,000s]\" column. The second HTML table begins again with \"1996-1997 [$1,000s]\" as its first column for the later-year continuation. In the PDF this repetition is part of separate continued pages with distinct year blocks, but in HTML the overlap is presented as two consecutive full tables, increasing duplication risk and ambiguity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Figure/chart content was not faithfully preserved as structured figures; instead, much of it was flattened into disconnected paragraphs with missing visual relationships and some unreadable placeholders.",
+      "severity": "major",
+      "evidence": "PDF page 5 shows Figure 38.1 and Figure 38.2 as actual charts with titles, axes, and plotted data. HTML reduces them to loose paragraphs such as \"1990 1991 1992...\", \"$0\", \"$20\", ..., and \"64,691,006,000 ########## ...\" / \"-0.67% -1.01% 3.25% ... ###### 4.26% 5.60%\", losing the chart structure and introducing unreadable text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 10,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 58.28,
+    "page_count": 5,
+    "visual_input_tokens": 10532,
+    "visual_output_tokens": 841,
+    "content_input_tokens": 42711,
+    "content_output_tokens": 1149,
+    "timestamp": "2026-04-14T05:38:09.052601",
+    "auditor_version": "1.0.0"
+  }
+}

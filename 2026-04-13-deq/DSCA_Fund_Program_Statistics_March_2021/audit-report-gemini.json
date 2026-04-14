@@ -1,0 +1,21 @@
+{
+  "document_id": "DSCA_Fund_Program_Statistics_March_2021",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 30.89,
+    "page_count": 1,
+    "visual_input_tokens": 2890,
+    "visual_output_tokens": 128,
+    "content_input_tokens": 3849,
+    "content_output_tokens": 147,
+    "timestamp": "2026-04-14T04:56:15.545600",
+    "auditor_version": "1.0.0"
+  }
+}

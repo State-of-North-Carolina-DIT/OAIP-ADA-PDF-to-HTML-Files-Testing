@@ -1,0 +1,46 @@
+{
+  "document_id": "table38 0",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Charts are completely missing and rendered as disconnected text strings.",
+      "severity": "critical",
+      "evidence": "On the PDF, there are two distinct charts (Figure 38.1 line chart and Figure 38.2 bar chart). In the HTML, these graphical elements are entirely absent. Instead, the HTML displays a list of disconnected text labels extracted from the charts (like axis values '$0', '$20', years '1990 1991', etc.) as plain text paragraphs, completely losing the visual data representation.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Missing charts from the final page",
+      "severity": "major",
+      "evidence": "The PDF contains two line graphs on page 5 ('Figure 38.1' and 'Figure 38.2'). These are completely missing as visual elements (<img> tags) in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Garbage text artifacts replacing charts",
+      "severity": "major",
+      "evidence": "Instead of representing the charts appropriately, the HTML dumps raw, unformatted OCR data and artifact characters from the chart data layer into standard paragraph tags. Example: '<p>64,691,006,000 ########## ########## ########## ########## ########## ########## ########## ########## ###### ###### ###### ###### ###### ######</p>' and '<p>-0.67% -1.01% 3.25% 7.72% 9.55% 10.97% 12.43% 15.10% 4.20% 8.13% 1.77% 2.87% ###### 4.26% 5.60%</p>'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 54.38,
+    "page_count": 5,
+    "visual_input_tokens": 11618,
+    "visual_output_tokens": 410,
+    "content_input_tokens": 39311,
+    "content_output_tokens": 461,
+    "timestamp": "2026-04-14T05:37:36.305144",
+    "auditor_version": "1.0.0"
+  }
+}

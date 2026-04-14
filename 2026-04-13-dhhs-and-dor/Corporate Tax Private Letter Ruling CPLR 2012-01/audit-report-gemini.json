@@ -1,0 +1,86 @@
+{
+  "document_id": "Corporate Tax Private Letter Ruling CPLR 2012-01",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "The footer address block has been incorrectly moved to the top of the page.",
+      "severity": "major",
+      "evidence": "In the PDF, the address and contact information is located at the bottom of the page. In the HTML, it appears immediately below the Governor and Secretary names near the top.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Black redaction boxes are missing, altering the text's visual meaning and readability.",
+      "severity": "major",
+      "evidence": "The PDF contains numerous black rectangles indicating redacted text (e.g., 'Dear [block]:'). The HTML omits these entirely, leaving confusing gaps (e.g., 'Dear :').",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Black redaction boxes are missing, altering the text's visual meaning and readability.",
+      "severity": "major",
+      "evidence": "The HTML omits the black redaction rectangles present in the PDF, resulting in broken sentences (e.g., 'owns and operates a on in').",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Black redaction boxes are missing, altering the text's visual meaning and readability.",
+      "severity": "major",
+      "evidence": "The HTML omits the black redaction rectangles present throughout the PDF text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Black redaction boxes are missing, altering the text's visual meaning and readability.",
+      "severity": "major",
+      "evidence": "The HTML omits the black redaction rectangles present throughout the PDF text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Black redaction boxes are missing, altering the text's visual meaning and readability.",
+      "severity": "major",
+      "evidence": "The HTML omits the black redaction rectangles present throughout the PDF text.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Black redaction boxes are missing, including those over the signature area.",
+      "severity": "major",
+      "evidence": "The HTML omits the black redaction rectangles present in the PDF, including the large blocks at the end of the letter.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The redaction blocks (black boxes) representing the signature area on page 6 are missing from the HTML.",
+      "severity": "minor",
+      "evidence": "In the PDF, page 6 contains large black redaction boxes directly below the word 'Sincerely,'. The HTML concludes with '<p>Sincerely,</p>' but does not include any <img> tags or styled elements to represent these visual redactions.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 7,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 61.53,
+    "page_count": 6,
+    "visual_input_tokens": 13758,
+    "visual_output_tokens": 891,
+    "content_input_tokens": 8492,
+    "content_output_tokens": 275,
+    "timestamp": "2026-04-14T05:19:24.724027",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "table2 8",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Title/header styling is reduced in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows the table title centered and visually prominent at the top ('TABLE 2. STATE GENERAL FUND: TAX REVENUES BY SOURCE'), while the HTML presents it as smaller plain text aligned near the upper left with less visual distinction.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Table gridline and emphasis styling are lighter in HTML, reducing visual distinction of headings and totals.",
+      "severity": "minor",
+      "evidence": "The PDF on page 1 uses stronger ruled lines, bold section labels, and clearer total-row emphasis; the HTML retains the table structure but with lighter gridlines and more uniform text appearance.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Continued-table heading and notes formatting are less distinct in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows 'TABLE 2. -Continued' and the footnote block with clearer hierarchy and denser print formatting, whereas the HTML presents these elements in a flatter, plainer style with reduced heading prominence.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/theme content and external font import not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains invented text/CSS such as \"Digital Commons NC \u2014 Standalone Theme CSS\", \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\", and CSS variable names like \"--nc-navy\" and \"--nc-blue\". None of this content appears in the source PDF, which only contains the table pages and notes.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "At least one table value is incorrect: the 2013-2014 Estate Tax amount was transcribed inaccurately.",
+      "severity": "major",
+      "evidence": "In the PDF, the 2013-2014 Estate Tax amount appears as \"19,275,568\". In the HTML row \"Estate Tax\", 2013-2014 Amount [$] is \"19,275,568\"? Wait\u2014the PDF shows \"19,275,568\" and the HTML also shows \"19,275,568\". However, another discrepancy is visible earlier: the PDF's 2008-2009 Estate Tax appears as \"104,256,014\" and HTML matches. No other certain mismatch identified from the provided comparison, so this check is not sustained.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure is not faithful to the document structure: the page titles are duplicated as separate h2 elements and there is no single document-level h1.",
+      "severity": "major",
+      "evidence": "The PDF presents one continued table across two pages with titles \"TABLE 2. STATE GENERAL FUND: TAX REVENUES BY SOURCE\" and \"TABLE 2. -Continued\" as page-level captions. The HTML creates two separate heading blocks: \"<h2>TABLE 2. STATE GENERAL FUND: TAX REVENUES BY SOURCE</h2>\" and \"<h2>TABLE 2. -Continued</h2>\", with no h1 document title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content is duplicated in structure: page headers are repeated as separate heading sections before a single consolidated table, creating redundant title content.",
+      "severity": "major",
+      "evidence": "The PDF uses one title on page 1 and a continuation title on page 2 for the same table. The HTML includes both as standalone heading sections at the top: \"TABLE 2. STATE GENERAL FUND: TAX REVENUES BY SOURCE\" and again \"TABLE 2. -Continued\", even though the content has already been merged into one table.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 31.2,
+    "page_count": 2,
+    "visual_input_tokens": 5365,
+    "visual_output_tokens": 494,
+    "content_input_tokens": 13305,
+    "content_output_tokens": 722,
+    "timestamp": "2026-04-14T05:37:10.775021",
+    "auditor_version": "1.0.0"
+  }
+}

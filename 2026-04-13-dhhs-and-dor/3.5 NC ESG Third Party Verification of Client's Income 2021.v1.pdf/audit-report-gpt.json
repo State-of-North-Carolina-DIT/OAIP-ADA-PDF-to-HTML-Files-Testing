@@ -1,0 +1,38 @@
+{
+  "document_id": "3.5 NC ESG Third Party Verification of Client's Income 2021.v1.pdf",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Top contact fields are reflowed from a two-column arrangement into a more linear layout.",
+      "severity": "minor",
+      "evidence": "In the PDF, the 'Please return this form to' area places Name & Title/Address/Email on the left and Phone/Fax on the right. In the HTML, Phone and Fax are pulled inline with the left-side fields rather than maintained as a distinct right-side block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Checkbox option formatting in the benefit income section is changed to a bulleted list with inline square symbols.",
+      "severity": "minor",
+      "evidence": "The PDF presents the 'CHECK ONE' options in multiple aligned columns with checkbox symbols. The HTML renders them as a vertical bulleted list, with checkbox glyphs appearing inline before each item.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 12.4,
+    "page_count": 1,
+    "visual_input_tokens": 2752,
+    "visual_output_tokens": 333,
+    "content_input_tokens": 3305,
+    "content_output_tokens": 131,
+    "timestamp": "2026-04-14T05:14:06.246409",
+    "auditor_version": "1.0.0"
+  }
+}

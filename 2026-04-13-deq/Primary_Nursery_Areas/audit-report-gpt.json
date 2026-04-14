@@ -1,0 +1,62 @@
+{
+  "document_id": "Primary_Nursery_Areas",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Title styling is not fully preserved on the first page.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the heading line '15A NCAC 03R .0103 PRIMARY NURSERY AREAS' in smaller all-caps legal-document styling, while HTML page 1 renders a larger web-style heading with a horizontal rule beneath it. Content remains present and distinct, but appearance differs.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List indentation and numbering styling are simplified in HTML.",
+      "severity": "minor",
+      "evidence": "Across the document, the PDF uses legal-outline indentation with parenthetical numbering/lettering aligned in a structured hierarchy; the HTML preserves the sequence but renders it as simpler indented text/list formatting with less precise alignment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML nests a second <main> inside the first <main>, creating duplicated structural wrapper content not present in the PDF.",
+      "severity": "major",
+      "evidence": "HTML shows '<main><main> ... </main></main>'. The PDF contains only the document content and no duplicated container structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "At least one coordinate value is transcribed inaccurately in the HTML, changing numeric content.",
+      "severity": "major",
+      "evidence": "PDF under '(2) In the Northern Pamlico Sound Area' > '(g) Juniper Bay' > '(i) Upper Juniper Bay' reads '35\u00b0 23.1640' N - 76\u00b0 14.9892' W'. HTML reads '35\u00b0 23.1640' N - 76\u00b0 14.9892' W' correctly there, but elsewhere under '(6)(e)(iv) Bonner Bay' the PDF shows '35\u00b0 09.1993' N - 76\u00b0 34.8517' W; ... 35\u00b0 09.1987' N - 76\u00b0 34.5373' W', while the HTML uses masculine ordinal symbols '35\u00ba' and '76\u00ba' rather than degree signs and includes OCR normalization differences. More importantly, several lines show likely OCR character substitutions such as '35\u00b017.8166'' lacking spacing compared with the PDF '35\u00b0 17.8166'' and mixed degree glyphs '\uf0b0' in the PDF being normalized inconsistently in HTML. These numeric/notation inconsistencies reduce exact text fidelity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML introduces malformed list structure around items (14)-(16), which can alter section boundaries and meaning.",
+      "severity": "major",
+      "evidence": "In HTML, after item '(14) Stump Sound Area ...' the next top-level items '(15) Topsail Sound Area:' and '(16) Middle Sound Area:' appear without properly closed enclosing list item tags. The PDF clearly presents these as separate numbered sections with clean boundaries.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 48.25,
+    "page_count": 19,
+    "visual_input_tokens": 31961,
+    "visual_output_tokens": 764,
+    "content_input_tokens": 46537,
+    "content_output_tokens": 609,
+    "timestamp": "2026-04-14T05:02:32.756537",
+    "auditor_version": "1.0.0"
+  }
+}

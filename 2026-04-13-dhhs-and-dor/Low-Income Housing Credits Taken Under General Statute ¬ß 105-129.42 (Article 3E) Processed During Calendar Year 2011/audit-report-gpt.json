@@ -1,0 +1,54 @@
+{
+  "document_id": "Low-Income Housing Credits Taken Under General Statute \u00ac\u00df 105-129.42 (Article 3E) Processed During Calendar Year 2011",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated publisher/theme markup text and external resource references not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains title \"Converted Document\", CSS comment \"Digital Commons NC \u2014 Standalone Theme CSS\", and @import URL \"https://fonts.googleapis.com/css2?family=Source+Sans+3...\" plus CSS variable names like \"--nc-font\". None of this appears anywhere in the PDF pages shown, which only contain the report content from the North Carolina Department of Revenue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "A significant block of content from page 3 is missing in the HTML: the continuation rows for the 'High-Income City or County (13 taxpayers)' section are not present under the page-3 header and are instead merged into page 2's table structure.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows six taxpayer rows under the repeated header: \"Poyner Spring Housing Assoc., LLC\", \"Southside Revitalization Phase I, LP\", \"TBLF Hampton Pointe, LLC\", \"Union Station, LP\", \"Water Garden Park, LLC\", and \"Westinghouse Apartments, LLC\", followed by \"Total 33,380,067\". In HTML, the page-3 section after the repeated header contains only \"Sources: Policy Analysis and Statistics Division, North Carolina Department of Revenue; North Carolina Housing Finance Agency\" and omits the table block entirely.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table pagination/structure is inaccurate: the second statutory table spans pages 2 and 3 in the PDF, but the HTML collapses all rows into a single table on page 2 and leaves page 3 without its table content.",
+      "severity": "major",
+      "evidence": "PDF page 2 ends the 'High-Income City or County' list at \"New Boulevard, LLC\"; PDF page 3 continues the same table with six more rows and the total. HTML places all 13 high-income taxpayer rows plus the total into one table before the \"Page 2 of 3\" footer, then starts page 3 with no table. While values are preserved, page-level table structure does not match the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken and repeated across pages. The HTML uses multiple h1 elements and repeats a full h1-h4 stack for each page instead of a single document title with subordinate repeated page headers treated as non-heading content.",
+      "severity": "major",
+      "evidence": "HTML contains three separate \"<h1>North Carolina Department of Revenue</h1>\" blocks, each followed by h2/h3/h4 on each page section. The PDF visually repeats page headers due to pagination, but this does not imply three top-level document titles.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 23.58,
+    "page_count": 3,
+    "visual_input_tokens": 6120,
+    "visual_output_tokens": 229,
+    "content_input_tokens": 7302,
+    "content_output_tokens": 668,
+    "timestamp": "2026-04-14T05:25:44.604209",
+    "auditor_version": "1.0.0"
+  }
+}

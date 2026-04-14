@@ -1,0 +1,110 @@
+{
+  "document_id": "AV-21 Pipeline Companies Annual Report for Ad Valorem Tax Valuation",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Title and heading emphasis is reduced on the first page.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'PIPELINE COMPANIES' is a very large bold centered title and the affirmation heading/instructions have stronger visual emphasis; in the HTML these are rendered with noticeably smaller, lighter typography, reducing heading distinction though content remains present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Lower-page spacing and grouping around the affirmation/signature block differ from the source.",
+      "severity": "minor",
+      "evidence": "The PDF keeps the yellow signature note, signature/date lines, and important notice tightly grouped in a compact lower-page layout; in the HTML the same content is spread with larger vertical gaps and partially pushed into the next screenshot segment, altering whitespace grouping but not section order.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Schedule A table row labeling is repeated instead of visually merged by category.",
+      "severity": "minor",
+      "evidence": "In the PDF, category labels such as 'Stock', 'Long Term Debt', and others appear as grouped/merged cells spanning multiple rows in the first column; in the HTML these labels are repeated on individual rows. Column structure is preserved, but the visual merged-cell structure is not.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Schedule A heading hierarchy is softened in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses larger centered serif headings for 'PIPELINE COMPANIES' and 'SUMMARY OF STOCK AND DEBT'; the HTML presents these headings in smaller sans-serif text, making the section hierarchy less prominent.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 3 headings and schedule labels have reduced typographic distinction.",
+      "severity": "minor",
+      "evidence": "The PDF shows bold centered serif titles for 'PIPELINE COMPANIES', 'INTERSTATE APPORTIONMENT FACTORS', and 'ALLOCATION FACTORS'; the HTML uses smaller lighter text, preserving content and order but weakening formatting contrast.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The statutory callout box and additional information section lose some visual emphasis.",
+      "severity": "minor",
+      "evidence": "On the PDF, the boxed statutory definition and 'ADDITIONAL INFORMATION' heading are more prominently styled; in the HTML the box remains present but with lighter typography and less emphasis, while content remains intact.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 5 schedule titles and subheads are less visually prominent in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses strong centered headings for 'LEASED PROPERTY' and 'PROPERTY OWNED BY REPORTING FIRM AND LEASED TO OTHERS'; the HTML retains both tables and labels but renders headings with lighter/smaller typography.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Schedule A table structure and row labels do not faithfully match the PDF. The HTML converts visually merged category labels into repeated row entries, which changes the row structure and introduces duplicated labels not present as separate rows in the source.",
+      "severity": "major",
+      "evidence": "In the PDF Schedule A, category labels such as \"Stock,\" \"Long Term Debt,\" \"Bank Notes and Other Short Term Obligations,\" \"Other Debt,\" \"Equipment Obligations,\" and \"Account Receivable\" appear as grouped labels spanning multiple blank rows. In the HTML, these are rendered as many separate rows, e.g. repeated `<tr><td>Stock</td>...`, repeated `Long Term Debt`, repeated `Bank Notes and Other Short Term Obligations`, etc.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content is significantly duplicated in Schedule A because grouped labels from the PDF are repeated across multiple table rows in the HTML.",
+      "severity": "major",
+      "evidence": "HTML contains multiple identical rows for the same issue labels: nine rows beginning with \"Stock\", eight with \"Long Term Debt\", six with \"Bank Notes and Other Short Term Obligations\", several with \"Other Debt\", multiple with \"Equipment Obligations\", and multiple with \"Account Receivable\". In the PDF, these labels appear once each as section labels for grouped blank rows rather than repeated content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not cleanly mapped to the document structure. Multiple major section titles are all rendered as h2/h3 repeatedly across pages, and there are nested <main> elements, making the structure less faithful and semantically inconsistent.",
+      "severity": "major",
+      "evidence": "HTML uses one `h1` for \"2021\", then repeated `h2`/`h3` blocks for page titles such as \"PIPELINE COMPANIES\", \"SUMMARY OF STOCK AND DEBT\", \"INTERSTATE APPORTIONMENT FACTORS\", etc. The document also contains `<main>` nested inside another `<main>`, which is structurally invalid and suggests heading/section hierarchy was not cleanly preserved.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There is a small text accuracy error in Schedule C where 'original cost' is transcribed as 'origin cost'.",
+      "severity": "minor",
+      "evidence": "PDF Schedule C item 2 reads: \"Attach a schedule showing the original cost from Line 1 above...\" HTML reads: \"Attach a schedule showing the origin cost from Line 1 above...\"",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 34.17,
+    "page_count": 5,
+    "visual_input_tokens": 10772,
+    "visual_output_tokens": 1025,
+    "content_input_tokens": 12384,
+    "content_output_tokens": 730,
+    "timestamp": "2026-04-14T05:15:30.619985",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "CWS_66_2024a1",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Color-based emphasis and hyperlink styling from the PDF are not preserved in the HTML.",
+      "severity": "major",
+      "evidence": "In the PDF, key updates and the footnote are highlighted in red, and referenced manuals/forms appear as blue underlined links. In the HTML, all text is rendered in standard dark text without the red emphasis or link-like styling, reducing the visual distinction of updated or referenced content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML introduces fabricated hyperlink targets and removes the original URLs from linked text.",
+      "severity": "critical",
+      "evidence": "In the PDF, visible link texts are full URLs such as \"Permanency Planning Manual\", \"DSS-5801 Unlicensed Kinship Form - Facility ID Request\", and \"Appendix 2, Child Placement and Payment System Manual\" shown as blue underlined references. In the HTML, these appear only as plain text with no href values preserved, while the surrounding template/CSS adds an imported Google Fonts URL \"https://fonts.googleapis.com/...\" that is not part of the source PDF content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "Hyperlinks present in the PDF are not preserved in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows linked references in blue/underlined text: \"Permanency Planning Manual\", \"DSS-5801 Unlicensed Kinship Form - Facility ID Request form\", and \"Appendix 2, Child Placement and Payment System Manual.\" In the HTML, these are rendered as plain text inside list items with no anchor tags or href attributes.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Text formatting and emphasis that conveys distinctions in the source PDF is lost, including red emphasis and underlining of references.",
+      "severity": "major",
+      "evidence": "PDF emphasizes the added clause in red: \"and, if applicable, any half siblings of the child(ren) regardless of their relationship to the kinship care provider.\" It also renders codes 72 and 88 and the explanatory footnote in red. HTML converts all of this to plain black text, losing the visual distinction of updates and exceptions.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 17.78,
+    "page_count": 1,
+    "visual_input_tokens": 2429,
+    "visual_output_tokens": 209,
+    "content_input_tokens": 3330,
+    "content_output_tokens": 517,
+    "timestamp": "2026-04-14T05:18:35.327227",
+    "auditor_version": "1.0.0"
+  }
+}

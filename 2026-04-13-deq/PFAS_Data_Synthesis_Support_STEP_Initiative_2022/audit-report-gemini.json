@@ -1,0 +1,21 @@
+{
+  "document_id": "PFAS_Data_Synthesis_Support_STEP_Initiative_2022",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 60.69,
+    "page_count": 3,
+    "visual_input_tokens": 7254,
+    "visual_output_tokens": 227,
+    "content_input_tokens": 4438,
+    "content_output_tokens": 154,
+    "timestamp": "2026-04-14T05:01:28.480940",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "document_id": "Kimberly Park II, LLC, et al",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The original PDF header layout places STATE OF NORTH CAROLINA / COUNTY OF WAKE on the left and BEFORE THE PROPERTY TAX COMMISSION / SITTING AS THE / STATE BOARD OF EQUALIZATION AND REVIEW on the right in a side-by-side arrangement. The HTML renders this as a table, which is acceptable but visually different from the original centered/side-by-side text layout.",
+      "severity": "minor",
+      "evidence": "PDF: Left-right text arrangement. HTML: Rendered as a structured table with cell borders.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The official seal/stamp of the North Carolina Property Tax Commission and the Chairman's signature are missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 6 shows the Commission seal image and Robert C. Hunter's handwritten signature. HTML page 6 shows only text 'Robert C. Hunter, Chairman' without the seal or signature image.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The ATTEST signature of Stephen W. Pelfrey is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF page 6 shows a handwritten signature above 'Stephen W. Pelfrey, Commission Secretary'. HTML shows only the text.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The word 'Comission' appears in both PDF and HTML - this is a typo in the original preserved in the HTML, which is correct behavior. No issue here, but noting that on page 6 the signature block layout differs - the HTML renders it as a table rather than free-form text.",
+      "severity": "minor",
+      "evidence": "PDF: Free-form signature block layout. HTML: Table-based layout for signature block.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The income approach table on page 5 is correctly reproduced in the HTML with all data intact, though styling differs slightly.",
+      "severity": "minor",
+      "evidence": "PDF table has $ signs in cells with dollar-sign column alignment. HTML shows values like '$1,309,667' as formatted text. All values match.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 headings used. 'FINAL DECISION' is the first h1, but other major section headings also appear as h2, which is acceptable. However, the document has nested <main> elements, which is structurally invalid HTML but not a content fidelity issue.",
+      "severity": "major",
+      "evidence": "The HTML has <h1>FINAL DECISION</h1> as the primary h1, which matches the PDF. The heading hierarchy h1 -> h2 is consistent.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Each page of the PDF is embedded as a full-page image AND also transcribed as text/HTML content. This means all content appears twice in the HTML \u2014 once as an image and once as structured text.",
+      "severity": "major",
+      "evidence": "Six <figure><img> elements show embedded page images (alt text: 'Page 1 of the Final Decision document' through 'Page 6...'), while the full text content of each page is also present as HTML paragraphs, tables, and lists.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for images is generic and not descriptive of actual content. All six images have nearly identical alt text patterns.",
+      "severity": "minor",
+      "evidence": "Alt texts are 'Page 1 of the Final Decision document', 'Page 2 of the Final Decision document', etc. These are generic identifiers rather than descriptive of the content shown.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The case identification table at the top of page 1 is rendered as a table in the HTML, which is a reasonable structural interpretation of the layout. The data values are all accurate.",
+      "severity": "minor",
+      "evidence": "All case numbers (18 PTC 0029, 18 PTC 0025, 18 PTC 0026) and party names match the PDF. The financial data table on page 5 is also accurately reproduced with correct values.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF refers to 'Comission Member Penny' (with a typo \u2014 single 'm'), and the HTML preserves this typo, which is correct fidelity behavior.",
+      "severity": "minor",
+      "evidence": "PDF page 6: 'Comission Member Penny dissents without separate opinion.' HTML: 'Comission Member Penny dissents without separate opinion.'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 43.33,
+    "page_count": 6,
+    "visual_input_tokens": 19172,
+    "visual_output_tokens": 943,
+    "content_input_tokens": 15497,
+    "content_output_tokens": 854,
+    "timestamp": "2026-04-14T05:25:46.669599",
+    "auditor_version": "1.0.0"
+  }
+}

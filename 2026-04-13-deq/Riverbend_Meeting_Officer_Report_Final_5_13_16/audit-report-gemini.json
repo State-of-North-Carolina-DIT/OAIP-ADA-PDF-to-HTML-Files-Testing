@@ -1,0 +1,54 @@
+{
+  "document_id": "Riverbend_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Alignment of the memo header block is lost.",
+      "severity": "minor",
+      "evidence": "In the PDF, the contents of the 'To', 'From', and 'Subject' fields are vertically aligned to form a distinct column. In the HTML, they are rendered as standard left-aligned text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Outline list indentation is missing.",
+      "severity": "minor",
+      "evidence": "The Roman numeral list (I, II, III, IV) in the PDF is indented from the left margin. In the HTML, it is left-aligned with the body text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underline formatting is lost on list item lead-in text.",
+      "severity": "minor",
+      "evidence": "In the PDF, the lead-in phrases for bulleted items (e.g., 'Beneficial Reuse Areas') are both bold and underlined. In the HTML, they are only bolded.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underline formatting is lost on list item lead-in text.",
+      "severity": "minor",
+      "evidence": "In the PDF, the lead-in phrases for bulleted items (e.g., 'Environmental Justice') are both bold and underlined. In the HTML, they are only bolded.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 48.12,
+    "page_count": 5,
+    "visual_input_tokens": 11643,
+    "visual_output_tokens": 630,
+    "content_input_tokens": 7038,
+    "content_output_tokens": 144,
+    "timestamp": "2026-04-14T05:03:19.203912",
+    "auditor_version": "1.0.0"
+  }
+}

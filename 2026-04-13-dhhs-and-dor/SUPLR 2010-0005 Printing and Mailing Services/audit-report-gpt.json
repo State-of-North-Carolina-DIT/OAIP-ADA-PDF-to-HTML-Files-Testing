@@ -1,0 +1,86 @@
+{
+  "document_id": "SUPLR 2010-0005 Printing and Mailing Services",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Redacted recipient/address blocks and signature blocks are missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "On page 1, the PDF shows black redaction bars for the recipient address, attention line, salutation name, and account/FEIN values; the HTML omits these visible blocks entirely. On page 2, the PDF shows redacted blocks near the top-left and signature/cc areas; the HTML removes these visible graphic elements.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Some visible placeholder/redaction content is skipped in the HTML reading sequence.",
+      "severity": "minor",
+      "evidence": "The PDF visually presents redacted blocks before and within the salutation and address areas, while the HTML jumps directly to labels such as 'Attention:', 'Dear :', 'Account ID:', and 'FEIN:' without the visible redacted content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Visible redacted elements and signature-area blocks from the PDF are not preserved in the HTML.",
+      "severity": "major",
+      "evidence": "On page 2, the PDF includes a redacted block in the page header area, a redacted signature/name block above the title, and a redacted cc name; the HTML shows only plain text labels and titles without these visible blacked-out elements.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading flow differs slightly because redacted visible content is omitted.",
+      "severity": "minor",
+      "evidence": "The PDF's closing/signature and cc sections include visible redacted blocks that occupy positions in the sequence; the HTML presents 'Very truly yours,' the title, and 'cc:' content without those intervening visible elements.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Street address in the footer is inaccurate in the HTML.",
+      "severity": "major",
+      "evidence": "PDF footer page 1 reads: \"501 North Wilmington Street, Raleigh, North Carolina 27640\". HTML footer reads: \"501 North Wilmington Street, Raleigh, North Carolina 27640\"? No issue there. However, HTML omits the ZIP+4 used in the PDF: PDF shows \"501 North Wilmington Street Raleigh, North Carolina 27640\" and \"P.O. Box 871 Raleigh, North Carolina 27602-0871\" while HTML changes punctuation/lineation. The substantive address content is preserved, so no major issue should be flagged here.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Recipient/address block and several redacted fields are not faithfully preserved in structure and content.",
+      "severity": "major",
+      "evidence": "PDF page 1 contains a multi-line recipient mailing block shown as black redaction bars, plus \"Attention:\" followed by a redacted name, and right-aligned \"Account ID:\" and \"FEIN:\" each followed by redacted values. HTML reduces these to empty text: \"Account ID:<br>FEIN:\" and \"Attention: \" and \"Dear :\" without preserving the presence of redacted content. This loses visible content placeholders present in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Quoted sentence about company locations is materially truncated in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows: \"You advise that your firm is 'a statement rendering company, with locations in [redacted] and [redacted]....'\" HTML renders: \"You advise that your firm is \u201ca statement rendering company, with locations in and \u2026.\u201d\" The HTML drops the existence of redacted location text between \"in\" and \"and,\" altering the quoted text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not reflect the document structure; a letterhead title is encoded as an h1 though the document has no true section heading structure.",
+      "severity": "major",
+      "evidence": "HTML uses a single <h1> for \"North Carolina Department of Revenue\". In the PDF this is letterhead/agency name, not a document title heading. The actual subject line is \"Re: Private Letter Ruling Request,\" which is not marked as a heading in HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 6,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 26.75,
+    "page_count": 2,
+    "visual_input_tokens": 3979,
+    "visual_output_tokens": 620,
+    "content_input_tokens": 4514,
+    "content_output_tokens": 693,
+    "timestamp": "2026-04-14T05:29:02.194290",
+    "auditor_version": "1.0.0"
+  }
+}

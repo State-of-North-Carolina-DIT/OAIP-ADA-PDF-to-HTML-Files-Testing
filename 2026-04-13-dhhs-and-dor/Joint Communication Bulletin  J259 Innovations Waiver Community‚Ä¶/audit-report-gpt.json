@@ -1,0 +1,94 @@
+{
+  "document_id": "Joint Communication Bulletin  J259 Innovations Waiver Community\u201a\u00c4\u00b6",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Top header/footer content is reordered relative to the main body.",
+      "severity": "major",
+      "evidence": "On page 1 of the PDF, the state seal appears at the top, then the department title, then the left/right division address blocks, then the bulletin title and body. In the HTML, after the title line, the website/employer footer line is inserted near the top before the division address blocks, changing the visual reading sequence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Header layout is not fully preserved.",
+      "severity": "minor",
+      "evidence": "The PDF page 1 shows the seal centered above the title and the two division blocks tightly aligned beneath the governor/secretary names. In the HTML, the seal shifts to the upper left, a horizontal rule is introduced, and the spacing/grouping of header elements is changed, though the two-column division content remains present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling and emphasis differ in the metadata section.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses a more formal document style with the Date/To/From/Subject labels integrated into the layout; in the HTML these labels are more prominently bolded and the line wrapping differs. This does not change meaning but alters visual hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Graphic/logo placement differs from the source.",
+      "severity": "minor",
+      "evidence": "The PDF page 1 has the North Carolina seal centered at the top of the page. In the HTML, the seal appears smaller and positioned at the upper left rather than centered.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Numbered list formatting is weakened.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF presents the two scenarios as a clearly formatted numbered list with indented items. In the HTML, the items appear with less indentation and tighter integration into the paragraph flow, reducing list distinctness though still readable.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Visible URL text was changed from the PDF's www-form URLs to https URLs in one case, and plain text URLs/emails from the PDF were converted into hyperlinks in HTML. The destinations appear faithful, but link presentation is not an exact match.",
+      "severity": "major",
+      "evidence": "PDF footer shows: \"www.ncdhhs.gov \u00b7 www.ncdhhs.gov/mhddsas/ \u00b7 www.ncdhhs.gov/dma/\" and body shows \"https://www.ncdhhs.gov/divisions/mhddsas/joint-communication-bulletins\" plus \"deborah.goda@dhhs.nc.gov\". HTML renders footer URLs as clickable links with href=\"http://www.ncdhhs.gov/\", href=\"http://www.ncdhhs.gov/mhddsas/\", href=\"http://www.ncdhhs.gov/dma/\" and converts the bulletin URL/email into linked/inline text. This is not fabricated, but presentation differs.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not fully faithful to document structure. The bulletin title is represented as an h2 under an h1 department title, whereas the PDF visually presents the department name as letterhead and the bulletin title as the central document heading.",
+      "severity": "major",
+      "evidence": "PDF top center: \"North Carolina Department of Health and Human Services\" appears as letterhead; main document heading: \"LME-MCO Communication Bulletin #J259 ( Revised)\". HTML uses <h1>North Carolina Department of Health and Human Services</h1> and <h2 style=\"text-align: center;\">LME-MCO Communication Bulletin #J259 ( Revised)</h2>, which may invert the primary heading emphasis.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Footer content is duplicated more than necessary in the HTML due to separate page-footer blocks plus nested main structure, causing repeated website/employer text.",
+      "severity": "major",
+      "evidence": "PDF contains footer once per page, naturally repeated across the two pages. HTML includes one page-footer near the top after the header and another page-footer inside the content body before the second-page text. The repeated text is: \"www.ncdhhs.gov \u2219 www.ncdhhs.gov/mhddsas/ \u2219 www.ncdhhs.gov/dma/ / An Equal Opportunity / Affirmative Action Employer\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Several text details were altered or normalized in ways that slightly change exact wording/formatting, including spacing around punctuation and omission of the parenthetical note introducing the numbered scenarios.",
+      "severity": "major",
+      "evidence": "PDF says: \"...provide the supervision needed to , maximize his or her self-sufficiency, increase self-determination...\" and includes \"outside of the following two scenarios:\" immediately followed by numbered items. HTML has the same sentence but with altered line-break hyphenation and formatting such as \"self- sufficiency\" and \"self- determination\". HTML also restructures this portion into a paragraph plus <ol>, which is acceptable structurally, but exact text spacing/hyphenation is not preserved.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 33.27,
+    "page_count": 2,
+    "visual_input_tokens": 4027,
+    "visual_output_tokens": 689,
+    "content_input_tokens": 4670,
+    "content_output_tokens": 871,
+    "timestamp": "2026-04-14T05:25:12.417779",
+    "auditor_version": "1.0.0"
+  }
+}

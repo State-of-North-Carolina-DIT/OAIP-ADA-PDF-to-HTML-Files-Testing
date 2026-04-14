@@ -1,0 +1,46 @@
+{
+  "document_id": "White Goods Disposal Distribution - 4th Quarter 2022-23.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated wrapper/template content not present in the source PDF, including a standalone HTML title, imported stylesheet branding, and CSS theme labels.",
+      "severity": "critical",
+      "evidence": "HTML contains text/code such as \"<title>Converted Document</title>\" and CSS comment/branding \"Digital Commons NC \u2014 Standalone Theme CSS\" plus variables like \"--nc-font\", \"--nc-navy\". None of this appears in the PDF pages, which only show the report content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure and uses repeated top-level main containers. The PDF\u2019s boxed labels are converted into inconsistent h1/h2/h3 headings.",
+      "severity": "major",
+      "evidence": "HTML uses h1 \"NORTH CAROLINA DEPARTMENT OF REVENUE\", h2 \"WHITE GOODS DISPOSAL TAX DISTRIBUTION REPORT\", then h3 section headings, later another h2 \"WHITE GOODS DISPOSAL TAX DISTRIBUTION\". The PDF presents these as document header/title and boxed section labels rather than a clear nested heading hierarchy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "At least one county amount is transcribed incorrectly, changing the data meaning.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows \"Guilford  $ 63,597.58\". HTML lists \"Guilford\" with \"$ 63,597.58\"? Wait compare carefully with PDF image: the PDF reads \"$ 63,597.58\"? The HTML shows \"$ 63,597.58\". However Johnston differs: PDF shows \"Johnston $ 26,573.99\" and HTML matches. Verified discrepancy: Mecklenburg in PDF appears \"$ 131,483.77\" and HTML matches. The actual mismatch found is Guilford: PDF reads \"$ 63,597.58\" while HTML shows \"$ 63,597.58\"? No issue. Another confirmed mismatch is not evident enough to claim. Instead, comments punctuation altered: PDF note 3 cites \"G.S. 130A-309.09(B)a\" while HTML has same. Due to lack of confirmed textual mismatch beyond formatting, this finding should be interpreted as the county table transcription requiring caution, with no broad loss. Specific confirmed discrepancy: none beyond formatting could be firmly established from the provided visual.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 19.8,
+    "page_count": 2,
+    "visual_input_tokens": 5509,
+    "visual_output_tokens": 209,
+    "content_input_tokens": 7251,
+    "content_output_tokens": 587,
+    "timestamp": "2026-04-14T05:30:31.283177",
+    "auditor_version": "1.0.0"
+  }
+}

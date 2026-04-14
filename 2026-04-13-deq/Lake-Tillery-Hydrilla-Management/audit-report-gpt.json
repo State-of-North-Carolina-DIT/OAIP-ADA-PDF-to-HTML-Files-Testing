@@ -1,0 +1,254 @@
+{
+  "document_id": "Lake-Tillery-Hydrilla-Management",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Full-slide visual layout is not preserved on the title page.",
+      "severity": "major",
+      "evidence": "PDF page 1 uses a single composed title slide with a wide top banner image, centered/right-aligned title metadata, and a bottom city image band. HTML page 1 converts this into a document-style page with the slide embedded as an image followed by separately extracted title/date/author text, changing the overall structure and whitespace grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on the title page is altered by duplication of the slide image and extracted text.",
+      "severity": "major",
+      "evidence": "In the PDF, the reader encounters the title slide once. In the HTML, the full slide appears as an image and then the same title/date/author content appears again below, creating a different top-to-bottom sequence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column slide layout is collapsed into a single-column sequence.",
+      "severity": "major",
+      "evidence": "PDF page 2 places bullet text on the left and a lake photo on the right. HTML page 2 shows the image first, then logo, then the heading and bullet list below, losing the side-by-side structure.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Image placement differs substantially from the source slide.",
+      "severity": "major",
+      "evidence": "On PDF page 2, the lake photo is positioned to the right of the text block. In HTML, the same photo is moved above the text and separated by a logo, changing the visual relationship between image and bullets.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading flow differs from the original left-to-right slide composition.",
+      "severity": "major",
+      "evidence": "PDF page 2 is read as heading and bullets with adjacent supporting photo. HTML page 2 presents image/logo first and then text, so a sighted user encounters content in a different sequence.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Complex table slide is linearized into separate tables within a document page.",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows a single slide with a large left table and a smaller right table aligned side-by-side. HTML page 3 preserves both tables but stacks/places them in a document flow rather than the original slide composition.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Chart slide layout is not preserved.",
+      "severity": "major",
+      "evidence": "PDF page 4 presents a single slide with a large centered line chart and title. HTML page 4 shows the chart embedded within a scrolling document layout, followed by repeated section heading/logo content, rather than preserving the standalone slide structure.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order around the chart slide is altered by repeated/extracted content.",
+      "severity": "major",
+      "evidence": "In the PDF, page 4 contains the chart slide only. In HTML, after the chart image the page continues with additional extracted heading/logo text before the next section, changing the sequence a user reads.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column slide layout is collapsed into a single-column document layout.",
+      "severity": "major",
+      "evidence": "PDF page 5 places bulleted management text on the left and a treatment map on the right. HTML page 5 presents the same material as a text section with the map below/aside in a document flow rather than preserving the side-by-side slide structure.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Subsection flow is slightly altered by document-style extraction.",
+      "severity": "minor",
+      "evidence": "PDF page 5 is a single balanced slide. HTML page 5 repeats the section heading and presents bullets followed by image in a web-document sequence, slightly changing how the content is encountered.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Map comparison slide layout is not preserved.",
+      "severity": "major",
+      "evidence": "PDF page 6 has left-side bullets and two side-by-side treatment maps on the right. HTML page 6 reflows content into a vertical document format with the maps embedded below the heading area, losing the original spatial grouping.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Map panels are present but their placement relative to the bullets changes.",
+      "severity": "minor",
+      "evidence": "In PDF page 6, the two maps are visually paired next to the bulleted text. In HTML, they appear lower in the page within the document flow, weakening the intended side-by-side comparison context.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Text-and-photo split layout is collapsed.",
+      "severity": "major",
+      "evidence": "PDF page 7 shows explanatory bullets on the left and a large photo of collected vegetation on the right. HTML page 7 presents the slide in a document layout, with the section extracted below and not preserving the original split-page arrangement.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order shifts from side-by-side slide to stacked document content.",
+      "severity": "minor",
+      "evidence": "PDF page 7 allows simultaneous viewing of bullets and photo. HTML page 7 sequences them vertically as part of a web page, altering the visual flow though all content remains present.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Full-image slide is embedded within document flow rather than preserved as a standalone slide layout.",
+      "severity": "major",
+      "evidence": "PDF page 8 is dominated by one large map image. HTML page 8 shows the map as part of a scrolling page with surrounding extracted elements/logos from adjacent content, changing the standalone structure.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-image comparison slide layout is not preserved.",
+      "severity": "major",
+      "evidence": "PDF page 9 shows two large images side-by-side: a colorized map on the left and a sonar screenshot on the right. HTML page 9 separates these into a vertical document flow, showing one image and then the other lower on the page.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Side-by-side image comparison is lost.",
+      "severity": "major",
+      "evidence": "On PDF page 9, both graphics are adjacent for direct comparison. In HTML, they are no longer presented together in the same visual band, reducing comparability and changing placement.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs because paired images are no longer encountered together.",
+      "severity": "major",
+      "evidence": "PDF page 9 presents both graphics at once. HTML page 9 causes a sighted user to encounter one image first and the other later while scrolling, altering the original flow.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-map slide layout is not preserved.",
+      "severity": "major",
+      "evidence": "PDF page 10 places two large maps side-by-side across the slide. HTML page 10 shows these within a vertical scrolling page with only partial view of the pair, changing the structure and visual grouping.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Map comparison presentation is degraded by reflow.",
+      "severity": "major",
+      "evidence": "In the PDF, both maps on page 10 are displayed together for comparison. In the HTML, the maps appear lower in the page and are not preserved in the same balanced side-by-side presentation, reducing immediate legibility/comparison.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Resource slide is converted to a simpler text page with altered spacing and alignment.",
+      "severity": "minor",
+      "evidence": "PDF page 11 is a centered slide with large 'Additional Resources' title and three bullet links. HTML page 11 preserves the list content but renders it as a left-aligned document section with different spacing.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading styling and overall text presentation are simplified on the resources page.",
+      "severity": "minor",
+      "evidence": "PDF page 11 uses a large stylized blue italic title and spacious slide formatting. HTML page 11 uses a standard section heading and conventional web list styling, reducing visual distinction though content remains intact.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Question slide layout is simplified into a document-style section.",
+      "severity": "minor",
+      "evidence": "PDF page 12 centers a large 'Questions?' title with contact details below. HTML page 12 presents this as a standard left-aligned section with bullets/links and less whitespace.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Centered title styling and contact presentation are not fully preserved.",
+      "severity": "minor",
+      "evidence": "PDF page 12 emphasizes 'Questions?' in very large centered blue italic text, with centered contact details. HTML page 12 uses more conventional section styling and left-aligned contact information.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Text transcription error changes the wording of a bullet on page 2.",
+      "severity": "major",
+      "evidence": "PDF slide 2 bullet reads: \"First time it was reported in they Yadkin \u2013 Pee Dee River basin.\" HTML reproduces the same text: \"First time it was reported in they Yadkin \u2013 Pee Dee River basin.\" This appears to be a source typo preserved rather than an HTML error, so not a fidelity issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The large history table on page 3 appears to have at least one site name transcribed incorrectly.",
+      "severity": "major",
+      "evidence": "PDF table row label appears as \"Richmond Creek\" on slide 3 and the HTML uses \"Richmond Creek\". However, slide 5 map legend refers to \"Richland Creek (Emerald Shores)\", suggesting possible inconsistency in source naming. Because the PDF itself is mixed, table fidelity cannot be confirmed as a clean exact match.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "One hyperlink text/target is not preserved cleanly; the long AWCP vegetation survey reports URL is split across two anchor elements in HTML.",
+      "severity": "major",
+      "evidence": "PDF slide 11 shows one continuous URL for \"AWCP vegetation survey reports\". HTML renders it as two linked segments: first anchor text \"https://www.deq.nc.gov/about/divisions/water-resources/water-\" and second anchor text \"planning/water-supply-planning/aquatic-weed-control-program#Tab-Projects-1905\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Several content-heavy slides with no visible heading in the PDF are represented as sections without headings in HTML, weakening structural hierarchy.",
+      "severity": "major",
+      "evidence": "PDF slides 8, 9, and 10 are image/map-driven pages without clear section titles. HTML creates <section> blocks for them but no h2/h3 headings, while other pages use h2. This is a structural inconsistency rather than content loss.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text is generic or interpretive rather than strictly descriptive.",
+      "severity": "minor",
+      "evidence": "Examples in HTML include \"Composite of map showing hydrilla locations and header image\" and \"Header and line chart showing Hydrilla acres from 2006 to 2023.\" These are helpful but somewhat interpretive. No clearly fabricated image descriptions were found.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 20,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 81.92,
+    "page_count": 12,
+    "visual_input_tokens": 24603,
+    "visual_output_tokens": 2223,
+    "content_input_tokens": 21703,
+    "content_output_tokens": 724,
+    "timestamp": "2026-04-14T04:59:43.600659",
+    "auditor_version": "1.0.0"
+  }
+}

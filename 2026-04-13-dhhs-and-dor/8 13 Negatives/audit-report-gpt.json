@@ -1,0 +1,46 @@
+{
+  "document_id": "8 13 Negatives",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/branding text and a Google Fonts URL that do not appear in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains text such as \"Digital Commons NC \u2014 Standalone Theme CSS\", CSS variables like \"--nc-navy\", \"--nc-blue\", and an import URL \"https://fonts.googleapis.com/...\". The PDF pages only show the report title \"FNS NEGATIVE CASE PAYMENT ACCURACY RATES\" with the table; no branding/CSS text or URLs are visible in the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table data integrity issue in the STATE AGENCY row: the accuracy rate value is missing in HTML.",
+      "severity": "major",
+      "evidence": "PDF bottom summary row shows \"STATE AGENCY 91  91  22.14%\" with 22.14% under ACCURACY RATE and the ERROR RATE cell blank. HTML row is rendered as \"<td></td><td>STATE AGENCY</td><td>91</td><td></td><td>91</td><td></td><td>22.14%</td>\", placing 22.14% under ERROR RATE and leaving ACCURACY RATE blank.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "HTML structure contains invalid/nested main landmarks and uses only a single h1 while the PDF is a simple title-plus-table layout; the structural markup does not cleanly reflect the document organization.",
+      "severity": "major",
+      "evidence": "HTML contains \"<main>...<div class=\\\"page-header\\\">...<h1>FNS NEGATIVE CASE PAYMENT ACCURACY RATES</h1>... </div><main><table>...\" with a nested <main>. The PDF shows one report title and then the table across pages, without a nested section structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 18.88,
+    "page_count": 3,
+    "visual_input_tokens": 6882,
+    "visual_output_tokens": 217,
+    "content_input_tokens": 11384,
+    "content_output_tokens": 581,
+    "timestamp": "2026-04-14T05:15:11.046836",
+    "auditor_version": "1.0.0"
+  }
+}

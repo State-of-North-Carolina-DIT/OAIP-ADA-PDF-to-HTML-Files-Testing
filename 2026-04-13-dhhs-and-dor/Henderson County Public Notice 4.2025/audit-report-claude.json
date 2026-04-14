@@ -1,0 +1,70 @@
+{
+  "document_id": "Henderson County Public Notice 4.2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout differs: PDF has a two-column header with officials listed on the right side alongside the logo/department name on the left, while HTML stacks everything vertically in a single column.",
+      "severity": "minor",
+      "evidence": "PDF: Logo and department name on left, officials (Governor, Secretary, etc.) listed on right. HTML: Officials listed below the logo and department name in a single-column layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The date 'April 1, 2025' loses its distinctive blue color styling in the HTML version, appearing in black instead.",
+      "severity": "minor",
+      "evidence": "PDF: 'April 1, 2025' is displayed in blue. HTML: 'April 1, 2025' appears in black.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'PUBLIC NOTICE' text loses its red/colored styling in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: 'PUBLIC NOTICE' is displayed in red/colored text. HTML: 'PUBLIC NOTICE' appears in black.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The main title 'Nomination Period for Henderson County Board of Social Services' appears smaller/less prominent in the HTML compared to the large bold text in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: Title is very large and bold, dominating the page. HTML: Title is present but in a smaller, less prominent heading style.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header and footer content from the PDF is duplicated in the HTML. The department name, division, commission, location, mailing address, phone/fax, and equal opportunity statement appear in both the <header> section and the <footer> section, and the main body content also repeats the contact block structure. The header information (Governor, Secretary, Division Directors, Chair) appears once in the header which is appropriate, but the institutional footer block is essentially a duplication of the header's department identification.",
+      "severity": "major",
+      "evidence": "Both <header> and <footer> contain 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES', 'DIVISION OF SOCIAL SERVICES', 'SOCIAL SERVICES COMMISSION', location/mailing address, and TEL/FAX numbers. This is acceptable as it mirrors the PDF's own header/footer structure on the single page.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements, which is invalid HTML structure. The outer <main> wraps everything including header and footer, and an inner <main> contains the body content. This is a structural issue but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "Outer <main> in <body>, inner <main> after </header>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 27.23,
+    "page_count": 1,
+    "visual_input_tokens": 3817,
+    "visual_output_tokens": 644,
+    "content_input_tokens": 4906,
+    "content_output_tokens": 578,
+    "timestamp": "2026-04-14T05:23:46.626065",
+    "auditor_version": "1.0.0"
+  }
+}

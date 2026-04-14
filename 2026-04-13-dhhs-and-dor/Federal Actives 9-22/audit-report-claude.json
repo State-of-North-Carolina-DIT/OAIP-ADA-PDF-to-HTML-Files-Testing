@@ -1,0 +1,86 @@
+{
+  "document_id": "Federal Actives 9-22",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a compact table layout with colored header row and alternating row styling, while the HTML renders as a more spacious table with significantly more vertical spacing between rows.",
+      "severity": "minor",
+      "evidence": "PDF shows a dense table fitting all 53+ rows on one page; HTML spreads the same content over a much longer scrollable page with generous row padding.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The colored header row styling differs - PDF has green/blue colored text in headers while HTML uses plain dark text headers.",
+      "severity": "minor",
+      "evidence": "PDF header row has green 'State' text, blue 'Official Fiscal Year 2019' and red 'Fiscal Year 2022 Cumulative' text; HTML headers are styled in muted dark text without the same color coding.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "North Carolina row is highlighted in red/bold in the PDF but appears as a regular row in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows 'North Carolina' row (rank 39) with red text highlighting; HTML shows it as a normal row without special formatting.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "USDA logo appears in both versions but styling differs slightly - PDF has it with a green line underneath, HTML has a similar but simpler rendering.",
+      "severity": "minor",
+      "evidence": "Both show USDA logo at top left with 'United States Department of Agriculture' text; minor visual styling differences.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "The state name 'District of Columbia' is truncated to 'District of' in the HTML, matching the PDF's truncated display but missing the full name.",
+      "severity": "minor",
+      "evidence": "PDF shows 'District of' (truncated in the table cell), HTML also shows 'District of'. Both are truncated identically.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header area includes the USDA branding and 'United States Department of Agriculture' text, and then the full table content appears within a nested <main> element, but there is no actual content duplication of table data.",
+      "severity": "minor",
+      "evidence": "The HTML has two <main> elements nested, which is a structural issue but does not cause content duplication.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Oklahoma's Official Fiscal Year 2019 Payment Error Rate is listed as 8.09 in the HTML but the PDF shows 8.09. Wait - checking again: PDF shows 8.09 for Oklahoma. HTML shows 8.09. Actually these match. Let me recheck all values more carefully.",
+      "severity": "major",
+      "evidence": "After careful re-examination, all 53 state/territory rows plus the U.S. Total row have matching values across all four data columns between the PDF and HTML. No data integrity issues found.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The USDA logo image has alt text 'USDA logo' which is reasonable and accurate for the USDA seal/logo shown in the PDF header.",
+      "severity": "minor",
+      "evidence": "HTML: <img src='[embedded-image-removed]' alt='USDA logo'>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.4,
+    "page_count": 1,
+    "visual_input_tokens": 3330,
+    "visual_output_tokens": 700,
+    "content_input_tokens": 8043,
+    "content_output_tokens": 683,
+    "timestamp": "2026-04-14T05:22:31.806360",
+    "auditor_version": "1.0.0"
+  }
+}

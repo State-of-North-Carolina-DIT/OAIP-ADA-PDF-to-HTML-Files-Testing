@@ -1,0 +1,102 @@
+{
+  "document_id": "SL 2017-57, Section 11C.6.(d) North Carolina Child Support Incentives",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Title page text alignment differs - PDF has centered bold text while HTML has left-aligned text for most elements",
+      "severity": "minor",
+      "evidence": "PDF: All title page text is centered. HTML: 'Report to', committee names, 'By', department name, and date are left-aligned instead of centered.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Title page layout substantially changed - PDF has centered layout with large seal, HTML has left-aligned layout with smaller seal",
+      "severity": "major",
+      "evidence": "PDF: Full-page centered title layout with large state seal. HTML: Left-aligned text, smaller seal image, and the 'Background' heading already appears at the bottom of page 1.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Background section heading appears on the title page in HTML but is on a separate page in PDF",
+      "severity": "minor",
+      "evidence": "PDF: Title page is standalone, Background starts on page 2. HTML: 'Background' heading appears at bottom of page 1.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings styling differs - PDF uses underlined bold headings with gray background bars, HTML uses larger plain bold headings without background bars",
+      "severity": "minor",
+      "evidence": "PDF: 'Retained federal incentives', 'Incentives Methodology', 'Incentives Guide' have underlined text with gray background highlight. HTML: Same headings rendered as larger bold text without underline or background.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table styling differs but data is preserved correctly",
+      "severity": "minor",
+      "evidence": "PDF: Table has gray header row with borders. HTML: Table has alternating row styling with different visual treatment but same data and structure (7 rows \u00d7 3 columns).",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Implementation Plan heading styling differs from PDF",
+      "severity": "minor",
+      "evidence": "PDF: 'Implementation Plan' has underlined bold text with gray background bar. HTML: Plain large bold heading without background or underline.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Sub-bullet list indentation differs between PDF and HTML for text alert categories",
+      "severity": "minor",
+      "evidence": "PDF: Sub-items under text alerts use circle bullets with deeper indentation. HTML: Sub-items use open circles but with slightly different indentation levels.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has nested <main> elements. The outer <main> wraps everything, and there's an inner <main> element that contains the actual content. This is invalid HTML structure but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping another <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The subtitle 'Session Law 2017-57, SECTION 11C.6.(d)' is rendered as an h2 in the HTML, but in the PDF it is part of the title/cover page, not a separate section heading. More importantly, the section headings 'Retained federal incentives', 'Incentives Methodology', 'Incentives Guide', and 'Implementation Plan' are all rendered as h2 alongside the subtitle, which conflates the cover page subtitle with document section headings at the same level.",
+      "severity": "major",
+      "evidence": "PDF cover page: 'Session Law 2017-57, SECTION 11C.6.(d)' is a subtitle. HTML: <h2>Session Law 2017-57, SECTION 11C.6.(d)</h2> at the same level as <h2>Background</h2>, <h2>Retained federal incentives</h2>, etc.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The cover page content (title, report recipients, author, date) appears both in the <header> section and repeated in the <main> content area, causing duplication of the title and metadata.",
+      "severity": "minor",
+      "evidence": "HTML <header> has <h1>North Carolina Child Support Incentives \u2013 Proposed Plan</h1> and <h2>Session Law 2017-57...</h2>. Then inside <main>, the same information appears again as <figure>, <p>Report to</p>, <p>Joint Legislative Oversight Committee...</p>, <p>May 1, 2023</p>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 43.36,
+    "page_count": 6,
+    "visual_input_tokens": 17102,
+    "visual_output_tokens": 1122,
+    "content_input_tokens": 17758,
+    "content_output_tokens": 746,
+    "timestamp": "2026-04-14T05:28:55.566812",
+    "auditor_version": "1.0.0"
+  }
+}

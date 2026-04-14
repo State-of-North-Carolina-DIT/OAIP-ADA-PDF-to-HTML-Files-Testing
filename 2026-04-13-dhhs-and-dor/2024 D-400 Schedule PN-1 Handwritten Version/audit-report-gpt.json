@@ -1,0 +1,94 @@
+{
+  "document_id": "2024 D-400 Schedule PN-1 Handwritten Version",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Instructional infographic image is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "On page 1, the PDF page consists almost entirely of a large NCDOR infographic titled 'Instructions for Handwritten Forms' with three visual panels ('Guidelines,' 'Printing,' 'Before Sending'). In the HTML rendering, that infographic is absent and only the later form title/content beginning with 'NCDOR Web 7-24' and 'D-400 Schedule PN-1' is shown.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is altered because page 1 HTML skips the PDF's initial instruction page and begins with later form content.",
+      "severity": "critical",
+      "evidence": "The PDF page 1 first presents a standalone instruction graphic ('Do Not Include This Page' and handwritten-form instructions). The HTML page 1 instead starts with the form heading 'D-400 Schedule PN-1 2024 Other Additions and Other Deductions,' so a reader encounters different content first.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Overall page layout is not preserved on page 1 due to omission of the full-page graphic section.",
+      "severity": "major",
+      "evidence": "The PDF page 1 is a centered full-page graphic layout with three hanging panels beneath a circular title. The HTML page 1 uses a standard document flow with text headings and horizontal rules, eliminating the original page structure entirely.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Form header formatting differs on page 2, with reduced visual emphasis and altered alignment.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF has a bold branded header with 'NCDOR', a large 'D-400 Schedule PN-1' title, a boxed 'DOR Use Only' area, and centered instructional text. The HTML preserves the text but presents it in simpler web styling with less prominent hierarchy and no boxed header treatment.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 3 header formatting and form-field presentation are simplified in HTML.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF shows 'Page 2', tax year '2024', name/SSN lines, and the Part B heading in a structured form header. The HTML keeps the content but presents it as plain text above the table, with the form-line styling and header emphasis reduced.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes the instruction/infographic page that the source PDF explicitly marks as excluded.",
+      "severity": "critical",
+      "evidence": "PDF first page states \"Do Not Include This Page\" above the infographic. HTML includes an image with alt text \"Instructions for Handwritten Forms infographic\", preserving that excluded page as content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A key sentence in the instructions paragraph is altered from 'Line 19h' to 'or Line 19h,' changing the condition for when the schedule must be attached.",
+      "severity": "major",
+      "evidence": "PDF: \"If you enter an amount on Form D-400 Schedule PN, Part B, Line 17e or Line 19h, you must attach this schedule...\" HTML: \"If you enter an amount on Form D-400 Schedule PN, Part B, Line 17e or Line 19h, you must attach this schedule...\"",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure because a page/header label is promoted to an h2 above the document title h1.",
+      "severity": "major",
+      "evidence": "HTML uses <h2>NCDOR Web 7-24</h2> followed by <h1>D-400 Schedule PN-1 2024 Other Additions and Other Deductions</h1>. In the PDF, \"NCDOR Web 7-24\" is a logo/form code area, not a section heading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested duplicate structural wrappers, including a second <main> inside the outer <main>, causing section framing duplication not present in the PDF.",
+      "severity": "major",
+      "evidence": "HTML shows an outer <main> containing the page header and then another <main> wrapping the body content. The PDF is a continuous two-page form without duplicated container structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 37.05,
+    "page_count": 3,
+    "visual_input_tokens": 6450,
+    "visual_output_tokens": 671,
+    "content_input_tokens": 6810,
+    "content_output_tokens": 579,
+    "timestamp": "2026-04-14T05:13:36.508397",
+    "auditor_version": "1.0.0"
+  }
+}

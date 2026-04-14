@@ -1,0 +1,86 @@
+{
+  "document_id": "b202a 11 17 web instructions v2 final",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a two-column layout for the license code table, with codes 427-443 on the left and codes 444-569 on the right. The HTML renders this as a single wide table with all columns visible, but the two-column structure is preserved with Code Number, License Description, Tax on the left and Code Number, License Description, Tax on the right within the same table.",
+      "severity": "major",
+      "evidence": "PDF shows a compact two-column table layout. HTML renders it as a wider single table but maintains the left/right code number pairing structure. The data mapping is preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo in the PDF header is replaced with plain text 'NCDOR' in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF shows the NC DOR logo with stylized text and graphic elements. HTML shows plain text 'NCDOR'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The bold italic formatting of 'Use a separate form for each profession and each business location' is rendered differently in HTML - it appears as bold italic underlined text rather than just bold italic.",
+      "severity": "minor",
+      "evidence": "PDF: bold italic text. HTML: bold italic underlined text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The overall single-page PDF layout is split into a longer scrolling format in HTML, but the content sections and their ordering are maintained.",
+      "severity": "minor",
+      "evidence": "PDF fits on one page with tighter spacing. HTML has more vertical spacing between sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The entire document content is duplicated. The HTML contains the full document content twice - once in a format matching page 1 of the PDF and again matching page 2, which are actually the same content presented in two layouts. The HTML renders both versions, resulting in all sections (General Information, table, Tax Year, Name and Tax Identification Number, Due Date, Change of Name or Address, Questions) appearing twice.",
+      "severity": "major",
+      "evidence": "The HTML has a <header> block followed by a <main> block, both containing the complete General Information paragraph, the license table, Tax Year, Name and Tax Identification Number, Due Date, Change of Name or Address, and Questions sections. The PDF pages 1 and 2 contain the same content in different layouts (page 1 appears to be a text-only version, page 2 has the NCDOR logo header), but the HTML should have consolidated this into a single rendering.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. There is a <main> inside another <main>, which is semantically incorrect.",
+      "severity": "major",
+      "evidence": "The outer <body> contains <main> which contains another <main> element with the actual content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Real Estate license (code 451) is missing its tax amount in the HTML table. In the PDF, while no explicit dollar amount is shown next to code 451, the entry is consistent. The HTML leaves the tax cell empty, which matches the PDF's presentation where no specific tax amount is listed for Real Estate.",
+      "severity": "minor",
+      "evidence": "Code 451 Real Estate has no tax amount in both PDF and HTML - this is actually consistent.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL www.dornc.com appears in the HTML as bold text but is not rendered as a clickable hyperlink. The PDF references it as a website URL.",
+      "severity": "minor",
+      "evidence": "HTML: '<strong>www.dornc.com</strong>' - not wrapped in an <a> tag. PDF states: 'available on the Department's website, www.dornc.com'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 32.29,
+    "page_count": 1,
+    "visual_input_tokens": 3666,
+    "visual_output_tokens": 628,
+    "content_input_tokens": 7282,
+    "content_output_tokens": 802,
+    "timestamp": "2026-04-14T05:31:15.485041",
+    "auditor_version": "1.0.0"
+  }
+}

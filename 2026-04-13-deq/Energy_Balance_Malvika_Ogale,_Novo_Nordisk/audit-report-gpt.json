@@ -1,0 +1,310 @@
+{
+  "document_id": "Energy_Balance_Malvika_Ogale,_Novo_Nordisk",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Multi-panel infographic layout collapsed into a linear single-column flow.",
+      "severity": "major",
+      "evidence": "PDF page 2 uses a left text block with a right-side grid of stat tiles and images; HTML page 2 presents the same content as stacked text followed by images and labels, losing the original side-by-side grouping.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Infographic graphics on the right are not preserved as an integrated visual composition.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows a cohesive grid with colored tiles, icons, and labeled photos; HTML page 2 breaks this into separate image fragments and text lines, reducing visual integrity.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Strong visual hierarchy of the infographic is lost.",
+      "severity": "major",
+      "evidence": "PDF page 2 emphasizes key metrics (50%, 290.4, 80, 52, 45.2) in large tile typography; HTML page 2 converts these into ordinary text lines, weakening distinction between headline stats and body content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading sequence of the infographic is altered.",
+      "severity": "minor",
+      "evidence": "PDF page 2 guides reading from left summary text into right-hand tiles and photos; HTML page 2 reads through all text first, then the image block and captions separately.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column/global map layout collapsed into a single-column text-first layout.",
+      "severity": "major",
+      "evidence": "PDF page 3 places large title and location lists on the left with a world map and '80 countries with affiliates' callout on the right; HTML page 3 shows the map first and then the text as a vertical list, changing structure.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs substantially from the source layout.",
+      "severity": "major",
+      "evidence": "In PDF page 3 a reader sees the title and location details before/alongside the world map and 80-country callout; in HTML page 3 the map appears before the descriptive content.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Promotional tile mosaic layout collapsed into standard stacked content.",
+      "severity": "major",
+      "evidence": "PDF page 4 has a left narrative panel and a right grid of tiles/images; HTML page 4 renders heading and paragraphs first, then the grid below as a conventional block.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Tile-based graphic composition is not maintained.",
+      "severity": "minor",
+      "evidence": "PDF page 4 presents statistics and photos as a tightly arranged mosaic; HTML page 4 includes the same visuals but as a flattened block, losing intended spatial relationships.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Image-and-bullets split layout collapsed into linear layout.",
+      "severity": "major",
+      "evidence": "PDF page 5 places a tall left image column beside right-side bullets and bottom metrics; HTML page 5 stacks images above the bullets and metrics.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Visual reading flow changes because images are encountered before adjacent explanatory bullets.",
+      "severity": "minor",
+      "evidence": "PDF page 5 supports side-by-side reading of photos with bullets; HTML page 5 requires top-to-bottom reading with images first, then text.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Four-quadrant 'must-win battles' layout collapsed into list-plus-image flow.",
+      "severity": "major",
+      "evidence": "PDF page 6 surrounds a central globe illustration with four numbered battle statements in separate positions; HTML page 6 shows the illustration first and then a numbered vertical list.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Central infographic lost its spatial relationships.",
+      "severity": "major",
+      "evidence": "PDF page 6 uses the positions of #1-#4 around the globe to convey four parallel priorities; HTML page 6 preserves only a standalone image plus text list, not the original visual structure.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Parallel content becomes sequential.",
+      "severity": "minor",
+      "evidence": "PDF page 6 presents four battle statements simultaneously around the graphic; HTML page 6 forces sequential reading as a numbered list beneath the image.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Split-panel target slide collapsed into a single-column section.",
+      "severity": "major",
+      "evidence": "PDF page 7 has a large illustration on the left and a distinct right target panel with three image bullets; HTML page 7 turns this into a heading followed by vertically stacked target images and captions.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Right-side target panel no longer appears as a coherent grouped panel.",
+      "severity": "minor",
+      "evidence": "PDF page 7 groups the three targets in a dedicated shaded right column; HTML page 7 separates them into individual items in the normal document flow.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Three-column circular strategy layout collapsed to single-column content.",
+      "severity": "major",
+      "evidence": "PDF page 8 has introductory text on the left and three circular image categories spread horizontally; HTML page 8 stacks text and images vertically.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Parallel category comparison changes to sequential reading.",
+      "severity": "minor",
+      "evidence": "PDF page 8 invites comparing Circular supply, Circular company, and Circular products side by side; HTML page 8 presents them one after another.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Diagrammatic mapping strategy layout not preserved in HTML flow.",
+      "severity": "major",
+      "evidence": "PDF page 10 shows external/internal data on the left feeding arrows into a structured block diagram on the right; HTML page 10 converts the diagram into lists and inline labels rather than maintaining the composed layout.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Core block diagram is effectively reduced to text, losing visual clarity.",
+      "severity": "major",
+      "evidence": "PDF page 10 contains a site-usage diagram with nested boxes and M/U measured/unmeasured markers; HTML page 10 shows textual lines such as 'Building Usage | ...' and 'M U | M U ...' instead of an intact diagram.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Diagram labeling and hierarchy are weakened by text-only rendering.",
+      "severity": "major",
+      "evidence": "PDF page 10 uses box size and placement to distinguish Site Usage, Building Usage, Process Usage, and Other Usage; HTML page 10 renders them as plain text blocks with much less structural distinction.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Text-and-chart side-by-side layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF page 11 places bullets on the left and a pie chart with legend on the right; HTML page 11 presents bullets first and the chart later below.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Chart is no longer encountered adjacent to the explanatory bullets.",
+      "severity": "minor",
+      "evidence": "PDF page 11 allows simultaneous reading of the mapping goals and baseline electricity chart; HTML page 11 separates them vertically.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Process flow slide reduced to a simplified single-column representation.",
+      "severity": "major",
+      "evidence": "PDF page 13 places a bullet list on the left and a large detailed process-flow graphic on the right; HTML page 13 presents heading and bullets followed by extracted legend/data text, not the original balanced layout.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Water process-flow diagram loses legibility and functional visual structure.",
+      "severity": "major",
+      "evidence": "PDF page 13 contains a detailed labeled flow diagram with colored paths and nodes; HTML page 13 largely converts this into a list of legend items and values, making the process relationships hard to interpret visually.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Visual process understanding is replaced by sequential text reading.",
+      "severity": "minor",
+      "evidence": "PDF page 13 communicates process relationships through the diagram; HTML page 13 requires reading extracted items line by line.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Benefits text and two charts originally arranged side-by-side are collapsed into vertical flow.",
+      "severity": "major",
+      "evidence": "PDF page 14 shows bullets on the left, a treemap lower center-left, and a stacked bar chart on the right; HTML page 14 stacks bullets, treemap, and chart one below another.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Comparative chart reading flow changes.",
+      "severity": "minor",
+      "evidence": "PDF page 14 supports simultaneous comparison between the treemap and bar chart; HTML page 14 presents them sequentially.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column example slide collapsed to vertical sections.",
+      "severity": "major",
+      "evidence": "PDF page 17 presents Inactivation Skid Optimization on the left and Distillation Optimization on the right; HTML page 17 stacks the two sections one after another.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Side-by-side comparison of project examples is lost.",
+      "severity": "minor",
+      "evidence": "PDF page 17 allows both project examples to be compared in parallel; HTML page 17 forces sequential reading.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column water savings examples layout collapsed into single-column flow.",
+      "severity": "major",
+      "evidence": "PDF page 18 places Filter backwash reduction on the left and Conductivity Setpoint Changes on the right; HTML page 18 stacks them vertically.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Parallel comparison between the two water-saving examples is lost.",
+      "severity": "minor",
+      "evidence": "PDF page 18 shows both examples at once; HTML page 18 makes the reader scroll through them sequentially.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated CSS/theme and branding content that is not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains invented text such as \"Digital Commons NC \u2014 Standalone Theme CSS\", CSS variables like \"--nc-font\", \"--nc-navy\", and an @import for Google Fonts. None of this appears anywhere in the PDF slides.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML fabricates image alt text descriptions that add specific interpretations and details not verifiable from the PDF text layer.",
+      "severity": "critical",
+      "evidence": "Examples in HTML include alt text like \"Illustration of a globe surrounded by symbols representing the four must-win battles: medical devices, people, wind turbines, and recycling\" and \"Complex flow diagram mapping out natural gas and steam usage, plant steam, and condensate recovery systems.\" These descriptive phrases are not textual content in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not semantically accurate for a slide deck and uses multiple h1 elements, contrary to a coherent single-document structure.",
+      "severity": "major",
+      "evidence": "HTML assigns nearly every slide title as <h1>, e.g., \"Energy and Water at Novo Nordisk\", \"Novo Nordisk at a glance\", \"Our global presence\", \"Goal - Mapping\", etc. The instructions specify only one h1 is acceptable as the document title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some slide text contains transcription inaccuracies, omissions, or normalization that changes exact wording.",
+      "severity": "major",
+      "evidence": "On the PDF first slide the logo text appears as \"UIORDINARY DRIVES CHANGE\" in the image, while HTML omits this entirely. On slide 6 the PDF shows \"must -win\" with spacing artifacts, and HTML normalizes to \"must-win\". On slide 4 the PDF wording \"and now...Virginia!\" appears in HTML as \"and now\u2026Virginia!\"; minor normalization is acceptable, but across the deck several exact textual forms from the slides are not preserved verbatim.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Some meaningful visual/text blocks from slides are reduced to simplified text lists, losing structure and layout-specific content organization.",
+      "severity": "major",
+      "evidence": "For the \"Mapping Strategy \u2013 Energy and Water\" slide, the PDF contains a structured block diagram with nested labeled boxes for site/building/process/other usage and measured/unmeasured segments. HTML reduces this to plain paragraphs: \"Building Usage | Building Usage | Building Usage\" and \"Process Usage | Other Usage...\" which preserves labels but loses the structural relationships shown in the original diagram.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 23,
+  "minor_count": 11,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 84.72,
+    "page_count": 19,
+    "visual_input_tokens": 38098,
+    "visual_output_tokens": 2600,
+    "content_input_tokens": 30431,
+    "content_output_tokens": 762,
+    "timestamp": "2026-04-14T04:57:49.078215",
+    "auditor_version": "1.0.0"
+  }
+}

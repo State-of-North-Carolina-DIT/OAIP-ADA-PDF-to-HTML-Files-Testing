@@ -1,0 +1,102 @@
+{
+  "document_id": "3rd and 4th Quarter 2016 Gas-1201ME Motor Fuels Claim for Refund Special Mobile Equipment",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Top form layout is not preserved; the original multi-field form and right-side option panels are flattened into a single vertical flow.",
+      "severity": "major",
+      "evidence": "On page 1 of the PDF, the legal/trade/address/contact fields are arranged in structured horizontal form rows, with a distinct right-hand sidebar containing 'Fill in applicable circles,' FEIN/SSN, and refund quarter options. In the HTML, these elements are presented as a single-column list with the sidebar content moved below the main fields.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The upper form grid is not maintained as a structured table/form layout.",
+      "severity": "major",
+      "evidence": "The PDF uses bordered form boxes and aligned cells for address, county, city/state/zip, and phone/fax fields. In the HTML, these are rendered as standalone labels without the corresponding visual grid or aligned entry structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Form controls and line-fill styling are not visually preserved.",
+      "severity": "minor",
+      "evidence": "The PDF shows circles for selectable options, underlines/boxes for FEIN/SSN, and explicit blank entry lines. The HTML converts these to bullet lists and plain text such as '-99', reducing the distinct form-like formatting.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order changes in the header/form area due to relocation of the right-side panels.",
+      "severity": "major",
+      "evidence": "In the PDF, a sighted reader sees the option circles, FEIN/SSN, and refund quarter controls alongside the identification fields at the top right. In the HTML, these appear later, after the vehicle-count line, altering the original visual sequence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 content is merged into a continuous single-column page, losing the original page-level structure and placement of the lower signature/mail/questions block.",
+      "severity": "major",
+      "evidence": "The PDF page 2 begins with instructions only. In the HTML, the top of the corresponding view starts with carryover content from the prior page including 'Signature,' certification text, and the mail/questions table before the instructional text, changing the structural layout.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is disrupted on page 2 because content from the prior page appears before the instruction section.",
+      "severity": "major",
+      "evidence": "The PDF page 2 starts directly with 'Page 2, Gas-1201ME, Web, 6-16' and statutory/instructional text. The HTML shows 'Signature,' certification, due-date statement, and the MAIL TO/QUESTIONS table ahead of that text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The main form layout was converted into tables that do not preserve the original row/column structure and omit key blank-form field formatting and placement details.",
+      "severity": "major",
+      "evidence": "PDF page 1 has a non-tabular form with positioned fields, including a right sidebar for 'Fill in applicable circles', 'FEIN or SSN', and 'Refund for Quarter Ending', plus entry lines for amounts. HTML converts this into two generic tables with columns 'Line Description | Line Number | Motor Fuel that includes N.C. road tax' and 'Line Description | Line Number | Amount', which changes the original structure and loses the visual association of labels to fillable fields.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document structure; the document title is split across h1 and h2, and page-header text is incorrectly promoted to h1.",
+      "severity": "major",
+      "evidence": "HTML uses '<h1>NCDOR</h1>' and '<h2>GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment</h2>'. In the PDF, 'GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment' is the main title, while 'NCDOR' is a logo/branding element, not the document title. Additional structural headings such as 'Fill in applicable circles:' are rendered as h3 though they are sidebar labels rather than section headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content from page 1 is partially duplicated on page 2 in a way that repeats the same line labels and section titles rather than representing distinct content only once.",
+      "severity": "major",
+      "evidence": "HTML includes 'Part 1. Gallonage Accountability' and the seven line items in the first-page table, then page 2 repeats 'Part 1 - Gallonage Accountability' followed by 'Line 1 ...' through 'Line 7 ...' and again 'Part 2 - Computation of Refund' with Lines 8-10. While page 2 in the PDF contains instructions, the HTML repetition makes the document appear duplicative rather than clearly distinguishing form fields from instructions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some text was altered or simplified in ways that lose form-specific meaning and formatting fidelity.",
+      "severity": "major",
+      "evidence": "PDF sidebar says 'Fill in applicable circles:' with actual circles; HTML turns this into a plain unordered list, losing the control semantics. PDF shows 'Motor Fuel that includes N.C. road tax' as a boxed label aligned to numeric entry lines; HTML places it as a table column header. PDF has the certification line 'I certify that, to the best of my knowledge, this claim is accurate and complete.' directly tied to signature/title/date fields; HTML collapses these into a single paragraph, reducing form fidelity.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 9,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 46.38,
+    "page_count": 2,
+    "visual_input_tokens": 5193,
+    "visual_output_tokens": 856,
+    "content_input_tokens": 5878,
+    "content_output_tokens": 687,
+    "timestamp": "2026-04-14T05:14:56.453212",
+    "auditor_version": "1.0.0"
+  }
+}

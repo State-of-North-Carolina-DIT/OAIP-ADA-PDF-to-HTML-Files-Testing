@@ -1,0 +1,30 @@
+{
+  "document_id": "2nd qtr 2017 gas 1278 ifta fuel tax rates",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Missing branding logo in header.",
+      "severity": "minor",
+      "evidence": "The NCDOR logo in the top left of the PDF is missing in the HTML, which only displays the plain text 'NCDOR'.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 52.07,
+    "page_count": 2,
+    "visual_input_tokens": 5096,
+    "visual_output_tokens": 242,
+    "content_input_tokens": 10612,
+    "content_output_tokens": 146,
+    "timestamp": "2026-04-14T05:14:28.512449",
+    "auditor_version": "1.0.0"
+  }
+}

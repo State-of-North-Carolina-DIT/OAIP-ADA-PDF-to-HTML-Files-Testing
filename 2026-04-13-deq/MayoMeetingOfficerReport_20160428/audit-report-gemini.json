@@ -1,0 +1,46 @@
+{
+  "document_id": "MayoMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Hidden digital signature metadata from the PDF is rendered as visible body text in the HTML, disrupting the document's natural reading flow.",
+      "severity": "major",
+      "evidence": "In the PDF on page 1, the 'Subject' line immediately follows the 'From' block. In the HTML, a large block of text starting with 'Digitally signed by Elizabeth S Werner...' is injected between them.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "A decorative footer graphic is significantly misrendered, creating a massive disruptive block in the HTML.",
+      "severity": "major",
+      "evidence": "The thin blue decorative line at the bottom of PDF page 1 is rendered at the top of HTML page 2 as a very thick, prominent green and blue rectangle that takes up significant vertical space.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underline formatting is lost on bolded list item headings.",
+      "severity": "minor",
+      "evidence": "In the PDF, list headings such as 'Excavation' and 'Groundwater Assessments' are styled with both bold and underline. In the HTML, the underline is missing.",
+      "page": 3,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 85.29,
+    "page_count": 5,
+    "visual_input_tokens": 11658,
+    "visual_output_tokens": 596,
+    "content_input_tokens": 7253,
+    "content_output_tokens": 157,
+    "timestamp": "2026-04-14T05:01:23.566695",
+    "auditor_version": "1.0.0"
+  }
+}

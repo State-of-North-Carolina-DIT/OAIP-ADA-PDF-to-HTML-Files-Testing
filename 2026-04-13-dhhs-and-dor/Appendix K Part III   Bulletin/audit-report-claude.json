@@ -1,0 +1,46 @@
+{
+  "document_id": "Appendix K Part III   Bulletin",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The 'Contact' heading in the PDF is bold and smaller, while in the HTML it appears as a larger heading style",
+      "severity": "minor",
+      "evidence": "PDF shows 'Contact' in bold body-sized text; HTML renders it as a larger section heading",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The horizontal rule/separator line under the title is not present in the PDF but appears in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF has no horizontal line separating title from body text; HTML has a dark horizontal rule after the title",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> tags, which is a structural duplication of the wrapper element, though it does not result in duplicated visible content.",
+      "severity": "minor",
+      "evidence": "HTML has <main> nested inside another <main> element.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 15.52,
+    "page_count": 1,
+    "visual_input_tokens": 3635,
+    "visual_output_tokens": 337,
+    "content_input_tokens": 4124,
+    "content_output_tokens": 292,
+    "timestamp": "2026-04-14T05:15:31.278157",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "Web_Meeting_Etiquette_PDF",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 content is scaled differently with reduced surrounding whitespace and a tighter top margin in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF page shows the title and guest etiquette content centered within wider margins and more open whitespace. The HTML places the same section higher and larger on the page, reducing whitespace, though the single-column structure is preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling differs on page 1, with larger and heavier heading treatment in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF title and subsection heading are smaller and lighter, while the HTML renders them noticeably larger/bolder with an added horizontal rule under the main title. Lists remain properly formatted.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 section starts at a different vertical position and uses tighter spacing in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF begins page 2 with the 'SCC Member and Presenter Etiquette' heading and content placed lower with more whitespace. In the HTML, the visible content starts higher and fills the page more densely, but the section order and grouping remain intact.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Formatting emphasis is slightly altered on page 2.",
+      "severity": "minor",
+      "evidence": "The PDF shows the section heading and emphasized text such as 'Alternatively:' and 'Everyone' with distinct styling; the HTML preserves the emphasis but with somewhat different weight/size and line spacing. The bullet structure remains correct.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 15.09,
+    "page_count": 2,
+    "visual_input_tokens": 4219,
+    "visual_output_tokens": 447,
+    "content_input_tokens": 4308,
+    "content_output_tokens": 143,
+    "timestamp": "2026-04-14T05:06:12.537118",
+    "auditor_version": "1.0.0"
+  }
+}

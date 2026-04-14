@@ -1,0 +1,38 @@
+{
+  "document_id": "Southside_Park_Stream_Sediment_Assessment",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The complex spatial layout of the original map document is not preserved, resulting in a single-column linear layout.",
+      "severity": "major",
+      "evidence": "The PDF features a multi-region layout with a central map overlaid with data tables, a title block occupying the right margin, and notes in the bottom left corner. The HTML renders all extracted text elements (titles, metadata, legend, tables, notes) sequentially in a single column below or above the main map image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text color formatting conveying potential meaning is lost in the extracted tables.",
+      "severity": "minor",
+      "evidence": "In the PDF, the text 'RES HI: 1.7' within the callout box for SD-5 is colored red, which may indicate an exceedance or special status. In the HTML's extracted table for SD-5, this text is rendered in the default black color.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 54.35,
+    "page_count": 1,
+    "visual_input_tokens": 2862,
+    "visual_output_tokens": 375,
+    "content_input_tokens": 4231,
+    "content_output_tokens": 141,
+    "timestamp": "2026-04-14T05:05:43.214500",
+    "auditor_version": "1.0.0"
+  }
+}

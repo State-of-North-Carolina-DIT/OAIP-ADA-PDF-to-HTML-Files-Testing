@@ -1,0 +1,94 @@
+{
+  "document_id": "EFS FNSEP 30 2012",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The RE: line positioning differs - in the PDF it is right-aligned/centered on the right side, while in the HTML it appears left-aligned",
+      "severity": "minor",
+      "evidence": "PDF shows 'RE: Aligned Certification Periods...' positioned toward the right side of the page; HTML shows it left-aligned",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Attention:' label and its content formatting differs slightly - in PDF 'Attention:' is on the same line with indented content, in HTML it appears as a separate label with content below",
+      "severity": "minor",
+      "evidence": "PDF has 'Attention:' followed by tabbed/indented text on same line; HTML has 'Attention:' as part of the bold text block",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The signature block layout differs - PDF has signatures arranged in a specific two-column layout with more spacing, HTML approximates this but with slightly different positioning",
+      "severity": "minor",
+      "evidence": "PDF shows signatures with specific spacing and alignment; HTML renders them in a similar two-column arrangement but with slightly different visual treatment",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Ron Byrd's signature in the HTML appears to have a highlighted/background box around it that is not present in the PDF",
+      "severity": "minor",
+      "evidence": "PDF shows Ron Byrd's signature as a plain handwritten signature; HTML shows it with what appears to be a dark background rectangle",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Dean Simpson's signature in the HTML appears to have a visible border/box around it that is not present in the PDF original",
+      "severity": "minor",
+      "evidence": "PDF shows Dean Simpson's signature without a border; HTML shows it with a visible rectangular border",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses h1 for the department name but lacks any sub-headings (h2, h3, etc.) for structural elements like the RE line, attention line, or the positive potential section. While not a broken hierarchy, the flat structure doesn't fully reflect the document's organization.",
+      "severity": "minor",
+      "evidence": "Only one h1 exists: 'North Carolina Department of Health and Human Services'. The RE line, bullet section headers, and signature block have no heading tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements, with an outer <main> wrapping the entire content and an inner <main> wrapping the letter body. This is an HTML structural issue but does not cause content duplication.",
+      "severity": "major",
+      "evidence": "HTML has <main> at the top level and another <main> nested inside after the <header> block.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The link to www.ncwss.com is preserved and accurate. The HTML renders it with an http:// prefix which is a reasonable normalization.",
+      "severity": "minor",
+      "evidence": "PDF: 'www.ncwss.com' \u2014 HTML: '<a href=\"http://www.ncwss.com/\">www.ncwss.com</a>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for images is reasonable and descriptive, correctly identifying signatures and the state seal.",
+      "severity": "minor",
+      "evidence": "Alt texts: 'North Carolina State Seal', 'Signature of Dean Simpson', 'Signature of Carolyn McClanahan', 'Signature of Chris Urso', 'Signature of Ron Byrd'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 31.34,
+    "page_count": 2,
+    "visual_input_tokens": 6864,
+    "visual_output_tokens": 735,
+    "content_input_tokens": 7928,
+    "content_output_tokens": 692,
+    "timestamp": "2026-04-14T05:21:24.346306",
+    "auditor_version": "1.0.0"
+  }
+}

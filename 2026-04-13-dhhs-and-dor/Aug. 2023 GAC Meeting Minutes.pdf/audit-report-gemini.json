@@ -1,0 +1,38 @@
+{
+  "document_id": "Aug. 2023 GAC Meeting Minutes.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Information originally presented in two-column format is now rendered as a single column.",
+      "severity": "major",
+      "evidence": "On the PDF, 'Attendees:', 'Call to Order and Introductions', 'Workforce Solution', 'GAC Happy Hour/Mentorship Program', 'AT Expo \u2013 October 5th, 2023', 'Stephen E Sallee Committee', and 'Announcements/updates' appear on the left, with corresponding names on the right. In the HTML, this layout is lost, and the names are appended to the left-hand text, often separated by a long dash.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Information originally presented in two-column format is now rendered as a single column.",
+      "severity": "major",
+      "evidence": "On the PDF, 'AT Expo \u2013 October 5th, 2023', 'Stephen E Sallee Committee', and 'Announcements/updates' appear on the left, with corresponding names on the right. In the HTML, this layout is lost, and the names are appended to the left-hand text, often separated by a long dash.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 27.58,
+    "page_count": 3,
+    "visual_input_tokens": 7254,
+    "visual_output_tokens": 459,
+    "content_input_tokens": 5234,
+    "content_output_tokens": 155,
+    "timestamp": "2026-04-14T05:15:58.196632",
+    "auditor_version": "1.0.0"
+  }
+}

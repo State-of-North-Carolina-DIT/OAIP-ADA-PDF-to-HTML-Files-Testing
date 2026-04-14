@@ -1,0 +1,78 @@
+{
+  "document_id": "federal error rate active cases 11 08",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two side-by-side table sections in the PDF are rendered as a single vertical flow in the HTML.",
+      "severity": "major",
+      "evidence": "The PDF page presents two distinct columns separated by a dark vertical divider, each with its own report date and table. The HTML stacks the first table and second table one below the other, removing the side-by-side page structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs from the original visual flow because the right-side table is moved below the left-side table.",
+      "severity": "major",
+      "evidence": "In the PDF, a sighted reader sees both left and right table sections at the same time across the page. In the HTML, the user must read the entire left table before reaching the right table, changing the original visual sequence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling and emphasis are reduced in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses stronger color coding, bold colored headings, and distinct visual emphasis for labels such as report dates and column headings. The HTML renders these with simpler monochrome styling, making headings and emphasis less visually distinct.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "A prominent vertical divider graphic from the PDF is not preserved in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF contains a dark vertical bar separating the two table regions. The HTML omits this graphic entirely, contributing to loss of the original visual grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The right-hand table header was transcribed inaccurately. The PDF shows the FY 2008 period as 'Oct - Sep 2' (or visually 'Oct - Sep /2' without a slash preceding the 2 in the displayed label context), but the HTML renders it as 'FY 2008 Cumulative Oct - Sep /2', introducing a slash artifact into the header text.",
+      "severity": "major",
+      "evidence": "PDF right table header reads 'FY 2008 Cumulative Oct - Sep 2' visually; HTML header is '<th>FY 2008 Cumulative Oct - Sep /2</th>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "A stray character was introduced into the first state cell of the right-hand table.",
+      "severity": "major",
+      "evidence": "PDF first row in right table shows state 'MAINE'; HTML renders '<td>&lt; MAINE</td>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is imperfect: the HTML uses an h1 followed immediately by an h2 for the subtitle, while the source is a visual title plus subtitle layout rather than a clear semantic section hierarchy. Also, nested <main> elements are used, which is structurally improper HTML.",
+      "severity": "major",
+      "evidence": "HTML contains '<h1>Active Reported Payment Error Rates</h1><h2>STATE-REPORTED SUMMARY DATA</h2>' and a second nested '<main>' inside the outer '<main>'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 22.73,
+    "page_count": 1,
+    "visual_input_tokens": 2495,
+    "visual_output_tokens": 521,
+    "content_input_tokens": 7299,
+    "content_output_tokens": 430,
+    "timestamp": "2026-04-14T05:32:36.173316",
+    "auditor_version": "1.0.0"
+  }
+}

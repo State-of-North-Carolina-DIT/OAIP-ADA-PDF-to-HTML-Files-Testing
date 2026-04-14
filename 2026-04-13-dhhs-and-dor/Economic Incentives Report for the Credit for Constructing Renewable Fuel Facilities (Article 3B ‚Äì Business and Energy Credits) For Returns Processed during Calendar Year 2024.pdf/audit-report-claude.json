@@ -1,0 +1,46 @@
+{
+  "document_id": "Economic Incentives Report for the Credit for Constructing Renewable Fuel Facilities (Article 3B \u201a\u00c4\u00ec Business and Energy Credits) For Returns Processed during Calendar Year 2024.pdf",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The title in the HTML is rendered much larger and spans multiple lines with more vertical space compared to the PDF's more compact heading.",
+      "severity": "minor",
+      "evidence": "PDF: Title is in a moderate-sized font on two lines. HTML: Title is significantly larger, spanning three lines with a horizontal rule beneath.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The table in the HTML has visible cell borders and alternating row shading, whereas the PDF table uses only horizontal rules with no cell borders or shading. However, the data, structure, and row/column counts are identical.",
+      "severity": "minor",
+      "evidence": "PDF: Simple table with horizontal lines only. HTML: Bordered table with alternating gray row backgrounds. Both have 7 rows (5 taxpayers + header + total) and 2 columns with identical data.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The column headers in the HTML table appear bold, matching the PDF, but the 'Taxpayer Name' and 'Credits Taken ($)' headers in the HTML are styled differently (bold with background shading).",
+      "severity": "minor",
+      "evidence": "PDF: Headers are plain with underline. HTML: Headers have bold text with gray background shading.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 18.7,
+    "page_count": 1,
+    "visual_input_tokens": 3746,
+    "visual_output_tokens": 533,
+    "content_input_tokens": 4383,
+    "content_output_tokens": 208,
+    "timestamp": "2026-04-14T05:21:57.359319",
+    "auditor_version": "1.0.0"
+  }
+}

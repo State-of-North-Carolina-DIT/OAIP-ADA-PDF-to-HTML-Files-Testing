@@ -1,0 +1,134 @@
+{
+  "document_id": "Gas-1200 web_2-16-22_Sept-Dec_v1_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The infographic page with icons and visual elements (Guidelines, Printing, Before Sending sections) is rendered as a static image in the HTML rather than being decomposed, but the image is present. However, all the decorative icons (book, printer, envelope, document icons) within the instruction sections are missing from the text-based rendering below the image.",
+      "severity": "critical",
+      "evidence": "PDF page 1 has a rich infographic with icons for guidelines, printing, and before sending. The HTML shows the infographic as an embedded image but then repeats the content as plain text below without any icons.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The infographic layout with three distinct visual columns/sections (Guidelines, Printing, Before Sending) arranged around a central circle is collapsed into a linear sequential layout in the HTML text portion.",
+      "severity": "major",
+      "evidence": "PDF shows three rounded-rectangle sections arranged side by side with a central circle titled 'Instructions For Handwritten Forms'. HTML renders this as sequential headings and bullet lists.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The GAS-1200 form layout with side-by-side fields is collapsed into a single-column layout in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows Location and County fields side by side, City/State/Zip Code on the same row, 'Fill in applicable circles' and 'FEIN or SSN' in the right column alongside the address fields. HTML renders all fields sequentially in a single column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Gallonage Accountability section is rendered as a table in the HTML, which is functionally correct, but the values column shows entries like '1. .0' instead of just having empty fields with '.0' pre-printed.",
+      "severity": "minor",
+      "evidence": "PDF shows blank entry fields with '.0' at the right edge. HTML shows '1. .0', '2. .0' etc. in the data column, which is slightly confusing but preserves the information.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo on the GAS-1200 form is not rendered in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF page 2 has the NCDOR logo in the top-left corner. HTML page has no logo image.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The 'Refund for Quarter Ending' and 'Type of organization claiming refund' sections that appear as a right-side column in the PDF are rendered sequentially in the HTML, losing the side-by-side relationship with the main form fields.",
+      "severity": "major",
+      "evidence": "PDF shows these sections in a column to the right of the main form body. HTML renders them sequentially after address fields.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The radio buttons/circles in 'Fill in applicable circles' and 'Refund for Quarter Ending' are rendered as bullet points in the HTML instead of selectable circles.",
+      "severity": "minor",
+      "evidence": "PDF shows empty circles (radio buttons) for selection. HTML shows bullet point lists.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The mailing address and contact information at the bottom of the form is right-aligned in the HTML instead of being in the structured box layout shown in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 'MAIL TO' and 'QUESTIONS' sections side by side in a bordered area. HTML shows them right-aligned sequentially.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 elements used. The HTML has 'Instructions For Handwritten Forms' as h1, then 'NCDOR' as h1 within the page-header div. Only one h1 should be used as the document title.",
+      "severity": "major",
+      "evidence": "HTML contains <h1>Instructions For Handwritten Forms</h1> and <h1>NCDOR</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken. The GAS-1200 form title is placed as h2 under a div with h1 'NCDOR', but then Part 1 and Part 2 are also h2, making them siblings of the form title rather than children. Additionally, 'Fill in applicable circles' and other subsections use h3 which creates inconsistent hierarchy.",
+      "severity": "major",
+      "evidence": "h2 'GAS-1200...' is sibling to h2 'Part 1. Gallonage Accountability' and h2 'Part 2. Computation of Refund'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page 1 content (Instructions for Handwritten Forms) is duplicated - it appears both as raw text in a structured HTML section AND as an embedded image with the same content described in alt text. The infographic content is rendered both as the image and as the text sections below it.",
+      "severity": "major",
+      "evidence": "The HTML has <img alt='Infographic with instructions for handwritten forms'> followed by full text sections for Guidelines, Printing, and Before Sending that duplicate the same infographic content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF says 'Do not submit photocopies of returns.' but the HTML omits the word 'submit' in the text extraction on page 1 header area, showing 'ocopies of returns' though the structured section below correctly states 'Do not submit photocopies of returns.'",
+      "severity": "minor",
+      "evidence": "PDF page 1 text extraction shows garbled 'ocopies of returns' but this appears to be OCR artifact in the source; the HTML structured version is correct.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses nested <main> elements, which is invalid HTML structure. There's an outer <main> from the template wrapper and inner <main> elements for each page's content.",
+      "severity": "major",
+      "evidence": "HTML has <body><main> wrapping everything, then additional <main> elements inside for page content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Part 1 heading in the PDF reads 'Part 1. Gallonage Accountability -' with the note about tax-paid motor fuel as a continuation. The HTML separates the disclaimer text from the heading into a standalone paragraph before the heading.",
+      "severity": "minor",
+      "evidence": "PDF: 'Part 1. Gallonage Accountability - This claim applies to tax-paid motor fuel...' HTML: paragraph with disclaimer text appears before <h2>Part 1. Gallonage Accountability -</h2>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 7,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 50.32,
+    "page_count": 2,
+    "visual_input_tokens": 6680,
+    "visual_output_tokens": 1253,
+    "content_input_tokens": 7818,
+    "content_output_tokens": 1036,
+    "timestamp": "2026-04-14T05:22:57.411611",
+    "auditor_version": "1.0.0"
+  }
+}

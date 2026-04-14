@@ -1,0 +1,46 @@
+{
+  "document_id": "20 years of Newborn Hearing Screening Infographic_1.24.20.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The infographic layout is not preserved; the HTML converts a highly structured visual poster into a linear single-column document.",
+      "severity": "major",
+      "evidence": "In the PDF, the content is arranged as an integrated infographic with headline banner, three top milestones, large left-side numeric callouts, and right-side chart panels. In the HTML, this is flattened into a title, embedded image, then separate text blocks and bullet points below, losing the original spatial grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The infographic image is present but reduced and embedded as a smaller figure within the page rather than serving as the primary full-page content.",
+      "severity": "minor",
+      "evidence": "The PDF page is essentially the infographic itself occupying the full page. In the HTML, the infographic appears as a smaller centered image with substantial surrounding whitespace and duplicated text beneath it.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling and emphasis from the infographic are only partially preserved in the HTML text rendition.",
+      "severity": "minor",
+      "evidence": "The PDF uses large colorful numerals, bold callouts, and visually distinct sections within the poster. The HTML reproduces the wording but as mostly plain text with standard headings and bullets, reducing visual distinction between key statistics and supporting text.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 17.3,
+    "page_count": 1,
+    "visual_input_tokens": 3050,
+    "visual_output_tokens": 446,
+    "content_input_tokens": 3102,
+    "content_output_tokens": 139,
+    "timestamp": "2026-04-14T05:11:42.062145",
+    "auditor_version": "1.0.0"
+  }
+}

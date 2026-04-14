@@ -1,0 +1,78 @@
+{
+  "document_id": "Lake-Tillery-Hydrilla-Management",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Slide text is duplicated within the layout.",
+      "severity": "major",
+      "evidence": "HTML page 1 displays a visual rendering of the title slide, followed immediately by a plain HTML text duplication of the same content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is broken by out-of-sequence table placement.",
+      "severity": "major",
+      "evidence": "HTML page 2 renders the 'Number of TGC stocked' table from PDF page 3 before the main content of slide 3.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Side-by-side table layout is collapsed.",
+      "severity": "major",
+      "evidence": "PDF page 3 displays two tables side-by-side; HTML renders them as separate, sequential tables.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table content is duplicated.",
+      "severity": "major",
+      "evidence": "The 'Number of TGC stocked' table appears on HTML page 5 despite already being rendered on HTML page 2.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed to single column.",
+      "severity": "major",
+      "evidence": "PDF page 5 displays text on the left and a map on the right; HTML page 6 stacks the text vertically above the map.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Side-by-side image layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF page 9 displays two sonar images side-by-side; HTML renders them stacked vertically across pages 10 and 11.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Side-by-side image layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF page 10 displays two maps side-by-side; HTML page 11 renders them stacked vertically.",
+      "page": 11,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 7,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 156.29,
+    "page_count": 12,
+    "visual_input_tokens": 26964,
+    "visual_output_tokens": 1067,
+    "content_input_tokens": 12857,
+    "content_output_tokens": 170,
+    "timestamp": "2026-04-14T05:00:40.200598",
+    "auditor_version": "1.0.0"
+  }
+}

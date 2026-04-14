@@ -1,0 +1,118 @@
+{
+  "document_id": "lincoln 2017 18",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a clear multi-column tabular layout with headers (ESTIMATED RESOURCES and ESTIMATED PERCENT) spanning columns. The HTML renders this as a flat single table without the grouped header structure, losing the visual distinction between the resource columns and percent columns.",
+      "severity": "major",
+      "evidence": "PDF shows 'ESTIMATED RESOURCES' spanning Total/Federal/State/County and 'ESTIMATED PERCENT' spanning Federal/State/County as grouped headers. HTML has all columns at the same level without spanning headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF uses hierarchical section formatting with indented line items under bold section headers (A. Division of Social Services, B. Division of Aging, etc.). The HTML flattens this hierarchy into a single-level table.",
+      "severity": "major",
+      "evidence": "PDF shows indented numbered items under bold section headers with visual hierarchy. HTML shows all rows at the same indentation level in the table.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The HTML table for page 1 data is missing the State column value for several rows where the PDF shows 0. The data appears present but the State column in the ESTIMATED RESOURCES is rendered without explicit headers matching the PDF's dual-row header structure.",
+      "severity": "minor",
+      "evidence": "PDF has dual-row headers (ESTIMATED RESOURCES / Total Federal State County). HTML has single-row headers (Estimated Resources - Total, Estimated Resources - Federal, etc.).",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headers like '1. Public Assistance Programs', 'A. Division of Social Services', 'Total Cost For' are bold and visually prominent in the PDF but appear as regular table rows in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Bold standalone headers with horizontal rules. HTML: Same text appears as table row entries without strong visual distinction.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Same layout flattening issue continues on page 2 - the hierarchical structure with sections (2. Public Assistance Administration, 3. Services Programs) and subsections is collapsed into a flat table.",
+      "severity": "major",
+      "evidence": "PDF shows distinct sections with bold headers, horizontal rules, and indented items. HTML shows all as table rows.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Total Cost rows in the PDF are visually distinct summary rows with bold formatting and horizontal rules. In the HTML they appear as regular table rows.",
+      "severity": "minor",
+      "evidence": "PDF: 'Total Cost For 1. Public Assistance Programs' with bold text and rule lines. HTML: Regular table row.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 continues the same layout flattening. The Grand Total row formatting is especially prominent in the PDF but less distinct in the HTML.",
+      "severity": "major",
+      "evidence": "PDF: 'Grand Total All Programs and Administration' in bold with heavy rules. HTML: Regular table row.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Grand Total All Programs and Administration' row in the PDF uses bold formatting to distinguish it as the final summary. The HTML preserves the text but with less visual emphasis.",
+      "severity": "minor",
+      "evidence": "PDF: Bold grand total row. HTML: Regular weight text in table.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading hierarchy exists in the HTML. The document has no h1, h2, h3, etc. tags. All content is placed within a single table without any heading structure to reflect the document's organization (sections like 'Public Assistance Programs', 'Public Assistance Administration', 'Services Programs', etc.).",
+      "severity": "major",
+      "evidence": "The PDF has clear section structure: '1. Public Assistance Programs', '2. Public Assistance Administration', '3. Services Programs' with sub-sections A through D. The HTML places all of these as table rows with no heading tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page headers are duplicated three times in the HTML header section, once for each page of the PDF. These repeated headers contain the same information (document title, fiscal year, issue date, county name) and should have been consolidated.",
+      "severity": "major",
+      "evidence": "Three separate <div class='page-header'> blocks each contain 'G.S. 108A-88 -- Determination of State/County Financial Participation', 'County Budget Estimates -- State Fiscal Year 2017-2018', 'Issued February 15, 2017', and 'Lincoln County'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Note that the totals may be off due to rounding.' text appears as table rows three times, which matches the PDF (once per section total), so this is actually correct.",
+      "severity": "minor",
+      "evidence": "Appears after Total Cost For sections in both PDF and HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The initial NC CORELS section at the top of the document is included but its context as a standalone pre-section (before '1. Public Assistance Programs') is preserved correctly. No data integrity issues found in the main table data.",
+      "severity": "minor",
+      "evidence": "All 54 line items plus totals and grand total match the PDF values.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 6,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 43.4,
+    "page_count": 3,
+    "visual_input_tokens": 8966,
+    "visual_output_tokens": 1179,
+    "content_input_tokens": 17466,
+    "content_output_tokens": 704,
+    "timestamp": "2026-04-14T05:34:01.577677",
+    "auditor_version": "1.0.0"
+  }
+}

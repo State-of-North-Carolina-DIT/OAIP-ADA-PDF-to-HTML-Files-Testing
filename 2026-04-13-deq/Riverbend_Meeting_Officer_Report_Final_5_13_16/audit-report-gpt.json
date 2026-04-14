@@ -1,0 +1,46 @@
+{
+  "document_id": "Riverbend_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Header logo appearance differs noticeably from the source.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows a larger NC Water Resources logo with green/blue styling and accompanying text beneath it, while the HTML shows a smaller, darker logo variant in the upper-left corner.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header typography and alignment are simplified in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF presents right-aligned official names and titles with more formal spacing and italicized role labels; the HTML keeps the same content but with different font, spacing, and lighter visual hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document structure. The PDF presents section titles as numbered body headings, but the HTML promotes all major sections to h2 without preserving the memo-style hierarchy, and the title/header area is restructured into semantic headings not clearly present as such in the PDF.",
+      "severity": "major",
+      "evidence": "PDF shows underlined title \"MEMORANDUM\" and section labels in body text such as \"I. History/Background\", \"II. March 1, 2016 Public Meeting and Oral Comments Summary\", \"III. Written Public Comment Summary\", and \"IV. Attachments\". HTML uses <h1>\"MEMORANDUM\"</h1> and <h2> for each numbered section, while the addressee/subject block remains plain paragraphs.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 20.25,
+    "page_count": 5,
+    "visual_input_tokens": 9277,
+    "visual_output_tokens": 477,
+    "content_input_tokens": 8896,
+    "content_output_tokens": 348,
+    "timestamp": "2026-04-14T05:02:58.133309",
+    "auditor_version": "1.0.0"
+  }
+}

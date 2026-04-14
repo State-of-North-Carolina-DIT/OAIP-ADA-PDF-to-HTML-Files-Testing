@@ -1,0 +1,62 @@
+{
+  "document_id": "Gas-1201ME Web 11-17-20_Sept-Dec_v2_Final.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Garbled OCR text is present below the infographic image.",
+      "severity": "major",
+      "evidence": "The HTML includes non-sensical character strings (e.g., '.;t\u00ael', '\u00b7:====:====m=u:') interspersed with text extracted from the visual elements of the PDF page.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Multi-column layout at the top of the form is flattened into a single column.",
+      "severity": "major",
+      "evidence": "In the PDF, applicant address details are on the left while form control boxes (FEIN, Quarter Ending) are on the right. In the HTML, these are rendered sequentially in a single vertical column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Three-column layout at the bottom of the page is flattened into a single column.",
+      "severity": "major",
+      "evidence": "The 'For Office Use Only', 'MAIL TO:', and 'QUESTIONS:' sections are positioned side-by-side in the PDF but stacked vertically in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo is missing from the top of the form.",
+      "severity": "minor",
+      "evidence": "The visual NCDOR logo graphic present in the top-left of the PDF is absent in the HTML, though text is extracted.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple <h1> tags are present in the HTML, violating the rule that only one <h1> is acceptable as the document title.",
+      "severity": "major",
+      "evidence": "The HTML contains '<h1>Instructions For Handwritten Forms</h1>' and later '<h1>NCDOR GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment</h1>'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 62.97,
+    "page_count": 2,
+    "visual_input_tokens": 5096,
+    "visual_output_tokens": 537,
+    "content_input_tokens": 4441,
+    "content_output_tokens": 250,
+    "timestamp": "2026-04-14T05:23:26.958133",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "table1a 2012stats",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table structure is not fully preserved; cell boundaries and alignments are degraded in the HTML rendering.",
+      "severity": "major",
+      "evidence": "The PDF shows a tightly ruled multi-column statistical table with clearly grouped headers and aligned numeric columns. In the HTML, the same table appears much lighter and visually fragmented, with weaker grid definition and several columns/headers appearing less distinctly grouped, making row/column relationships harder to follow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text formatting and hierarchy are only partially preserved.",
+      "severity": "minor",
+      "evidence": "The PDF title, subtitle, and dense table headers use stronger typographic hierarchy and compact alignment. In the HTML, fonts appear lighter/smaller relative to the table, header emphasis is reduced, and the visual distinction between heading levels and dense tabular labels is less clear.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/theme content that is not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML <style> contains: \"Digital Commons NC \u2014 Standalone Theme CSS\", Google Fonts import, and variables such as \"--nc-font\", \"--nc-navy\", \"--nc-blue\", \"--nc-link\". None of this styling/text appears in the PDF image, which only shows the table page content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds an AI-generated structural comment enumerating table columns that is not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML includes comment: \"<!-- COLUMNS: Income Level | Number of Returns Filed: Tax Liability | ... -->\". The PDF shows only the printed table and headings, with no such explanatory comment.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "At least one numeric table value in the HTML does not match the PDF.",
+      "severity": "major",
+      "evidence": "In the PDF, the first row under \"No Taxable Income\" shows Federal AGI as \"6,205,905\" in the count column area and the AGI amount appears as \"6,452,143,831\"; however the HTML row begins with an empty tax-liability cell and then \"620,905\" for no-tax-liability. The PDF visually shows \"620,905\" as the count, but the row alignment and omission of the first count cell in HTML indicate structural mismatch for this row. More importantly, in the TOTAL row for FAGI Level B, the PDF rightmost effective tax rate appears \"3.10%\" while the HTML gives \"3.35%\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is only partially faithful to the source because the PDF presents a single table title line with a subheading line, while the HTML wraps them as h1 and h2 inside duplicated nested <main> structure.",
+      "severity": "major",
+      "evidence": "PDF top lines read: \"TABLE 1A. TAX YEAR 2012 INDIVIDUAL INCOME TAX CALCULATION BY INCOME LEVEL BY DEDUCTION TYPE\" and beneath it \"ALL RETURNS: STANDARD DEDUCTION\". HTML uses <h1> and <h2>, which is acceptable, but also contains nested <main> elements and additional page-theme structure not reflecting the PDF's simple document structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There is a substantive text/value discrepancy in the final effective tax rate in the second TOTAL row.",
+      "severity": "major",
+      "evidence": "HTML final TOTAL row under FAGI Level B ends with effective tax rate \"3.35%\". In the PDF image, the same final cell appears as \"3.10%\".",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 27.28,
+    "page_count": 1,
+    "visual_input_tokens": 2896,
+    "visual_output_tokens": 348,
+    "content_input_tokens": 15352,
+    "content_output_tokens": 785,
+    "timestamp": "2026-04-14T05:36:41.926795",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "document_id": "table74 8",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The original PDF table has a dense, compact two-panel layout (left counties and right counties side by side in a single wide table), while the HTML conversion renders it as a much more vertically spaced layout with significant row spacing, losing the compact dense presentation.",
+      "severity": "major",
+      "evidence": "PDF shows all ~80 county rows tightly packed in a single page with minimal vertical spacing. HTML spreads rows with large gaps between each county row, making the table much longer vertically.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The table structure is preserved with correct columns and data, but the column headers in the HTML are simplified compared to the PDF's multi-line stacked headers.",
+      "severity": "minor",
+      "evidence": "PDF headers show 'Property/Classified/at Present/Use/Value/[%]' stacked vertically in a single column header cell. HTML shows similar stacked text but with slightly different formatting. Data content appears intact.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title formatting differs - PDF shows it as a single-line table caption in smaller text, while HTML renders it as a large bold multi-line heading.",
+      "severity": "minor",
+      "evidence": "PDF: 'TABLE 74. COUNTY-WIDE TAX LEVY COMPONENTS EXPRESSED AS A PERCENTAGE BY TYPE OF PROPERTY BY COUNTY, FISCAL YEAR 2014-2015' in one line as table title. HTML: Same text broken into multiple lines as a large bold heading above the table.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'All counties' summary row and footnotes are preserved in the HTML but appear with more spacing separation from the main table.",
+      "severity": "minor",
+      "evidence": "PDF shows 'All counties' row immediately after Jackson row with footnotes below. HTML shows the same but with more vertical space.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The last column header for the right-side counties is labeled [$] instead of [%] in the HTML, matching an apparent error in the PDF's header row. However, this is consistent with the source, so it reflects the PDF accurately. No issue here upon further review.",
+      "severity": "major",
+      "evidence": "PDF header shows '[$]' for the last column on the right side, and HTML matches this.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There are nested <main> elements in the HTML \u2014 the outer <main> from the body wrapper and an inner <main> for the content. This is invalid HTML structure but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main>...<main>...</main></main></body>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML table contains the complete data from the PDF table with no content duplication detected. However, the PDF actually contains TWO representations of the same table \u2014 one with percentage values and another duplicate rendering below it. The HTML correctly includes only one table, which is appropriate since the PDF appears to show the same data repeated (likely a rendering artifact).",
+      "severity": "major",
+      "evidence": "PDF shows the table data twice on the page; HTML correctly includes it once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 'All counties' summary row is missing its left-side columns. In the PDF, the 'All counties' row appears at the bottom spanning across as a summary. The HTML places it only on the right side with empty cells on the left, which matches the PDF layout where 'All counties' appears after Jackson (the last left-side county) on the right side. This is actually correct.",
+      "severity": "major",
+      "evidence": "PDF: 'All counties 1.51% 80.77% 82.29% 7.48% 7.38% 14.86% 2.86%' appears on the right side. HTML matches this placement.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.99,
+    "page_count": 1,
+    "visual_input_tokens": 3834,
+    "visual_output_tokens": 822,
+    "content_input_tokens": 18491,
+    "content_output_tokens": 743,
+    "timestamp": "2026-04-14T05:38:47.852940",
+    "auditor_version": "1.0.0"
+  }
+}

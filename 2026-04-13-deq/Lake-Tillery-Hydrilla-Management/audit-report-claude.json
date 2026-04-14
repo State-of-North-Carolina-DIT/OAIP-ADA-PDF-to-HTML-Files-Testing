@@ -1,0 +1,126 @@
+{
+  "document_id": "Lake-Tillery-Hydrilla-Management",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Slide 3 (History of Hydrilla at Lake Tillery) has a two-column layout with a site-by-year table on the left and a TGC stocking table on the right. In the HTML, these are rendered as sequential single-column elements, losing the side-by-side layout.",
+      "severity": "major",
+      "evidence": "PDF shows the site table and TGC table side-by-side on one slide. HTML renders them as stacked tables in a single column.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 5 (Hydrilla Management in 2023) has a two-column layout with bullet points on the left and a map on the right. HTML renders this as a single column with map below text.",
+      "severity": "major",
+      "evidence": "PDF shows text and map side-by-side. HTML shows them stacked vertically.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 (Proposed Management Activities for 2024) has a three-panel layout with text on left, two maps on right. HTML loses the side-by-side arrangement.",
+      "severity": "major",
+      "evidence": "PDF shows text alongside two treatment area maps. HTML stacks them vertically.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 7 (Fall Vegetation Surveys) has text on left and a photo on right in a two-column layout. HTML renders them sequentially.",
+      "severity": "major",
+      "evidence": "PDF shows bullet points alongside rake toss photo. HTML stacks text above image.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 9 shows Biobase heatmap and SONAR screen side-by-side. HTML stacks them vertically.",
+      "severity": "major",
+      "evidence": "PDF has two images side-by-side. HTML shows them stacked.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 10 shows two maps side-by-side (Hydrilla coverage map and Hydrilla density rating map). HTML renders them stacked.",
+      "severity": "major",
+      "evidence": "PDF has two aerial maps with legends side-by-side. HTML places them sequentially.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Slide 2 lake photo is present in both but appears smaller/repositioned in the HTML relative to the bullet points.",
+      "severity": "minor",
+      "evidence": "PDF has photo taking up right half of slide. HTML shows it below text but still present.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Slide titles in the PDF use italic serif font styling (e.g., 'History of Hydrilla at Lake Tillery' in italic). HTML renders them as bold sans-serif headings, losing the italic styling.",
+      "severity": "minor",
+      "evidence": "PDF titles are in italic calligraphic/serif style. HTML uses standard bold heading style.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The site-by-year table on slide 3 uses green-shaded rows for alternating sites in the PDF. HTML uses plain alternating styles but data content and structure are preserved.",
+      "severity": "minor",
+      "evidence": "PDF has green-highlighted site name rows. HTML has neutral styling but same data.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Fabricated URL for the AWCP Website link. The HTML contains a long URL with extra text that does not appear in the PDF.",
+      "severity": "critical",
+      "evidence": "PDF page 11 shows 'AWCP Website (Aquatic Weed Control Program | NC DEQ)' with no full URL specified beyond the anchor text. The HTML fabricates a full URL: 'https://www.deq.nc.gov/about/divisions/water-resources/water-planning/water-supply-planning/aquatic-weed-control-program#:%7E:text=Purpose%20The%20purpose%20of%20the%20Aquatic%20Weed%20Control...' which includes Google-style text fragment parameters not present in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h2 headings share the same text 'History of Hydrilla at Lake Tillery' across different sections (pages 2, 3, 4), which is faithful to the PDF. However, the document has nested <main> elements (a <main> inside a <main>), which is an HTML structural issue.",
+      "severity": "major",
+      "evidence": "The HTML has <main> nested inside another <main>, though this is a structural markup issue rather than a heading hierarchy problem.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page 12 Questions section uses both a bullet character (\u2022) and list-style bullets redundantly.",
+      "severity": "minor",
+      "evidence": "HTML has '<li>\u2022 Drew Gay</li>' with list-style-type: none, so there's no actual visual duplication, but the bullet character is manually added which mirrors the PDF format. This is a very minor formatting concern.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are reasonable inferences but cannot be fully verified against actual image content. Most are appropriately descriptive.",
+      "severity": "minor",
+      "evidence": "Alt text like 'Background photo of a lighthouse at sunset', 'Photo of Swift Island boat ramp', 'Background image showing water treatment workers' - these appear to match the PDF context descriptions but are AI-generated descriptions. The page 3 alt text says 'water treatment workers' for what appears to be a background image; the actual content may differ.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 7,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 60.14,
+    "page_count": 12,
+    "visual_input_tokens": 36872,
+    "visual_output_tokens": 1515,
+    "content_input_tokens": 28948,
+    "content_output_tokens": 798,
+    "timestamp": "2026-04-14T04:59:21.604500",
+    "auditor_version": "1.0.0"
+  }
+}

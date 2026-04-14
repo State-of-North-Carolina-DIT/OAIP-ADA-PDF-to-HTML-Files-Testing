@@ -1,0 +1,94 @@
+{
+  "document_id": "Corporate Tax Private Letter Ruling CPLR 2012-01",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "State seal/logo is rendered in a noticeably different style and placement.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows a small circular state seal centered above the agency name. The HTML shows a black square logo positioned at the upper left, changing the visual presentation though the document identity remains clear.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Letterhead formatting is not preserved closely.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF places the Governor and Secretary names near the top left/right around the centered header, with the date below. The HTML reorganizes the header into a large centered title with a horizontal rule and moves address block and names into a different arrangement.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Indented quoted contract language loses some visual structure.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF presents quoted contract text as an indented block with preserved line breaks. The HTML retains the text but flattens spacing and indentation, making the quote structure less distinct.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Quoted monitoring statement loses block-quote emphasis.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF shows the quoted mercury-limit statement as a clearly indented block. In the HTML it appears as regular paragraph text with reduced visual separation.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Enumerated statutory list formatting is weakened.",
+      "severity": "minor",
+      "evidence": "On page 5, the PDF shows statute items a, b, c and subitems 1, 2, 3 with strong indentation and list hierarchy. The HTML preserves the content but with looser, less distinct list styling, reducing clarity slightly.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML drops or corrupts substantial portions of redacted text and punctuation, producing malformed sentences and inaccurate quotation text.",
+      "severity": "major",
+      "evidence": "PDF page 1 block quote reads in part with redactions but preserves sentence structure; HTML renders: \"will allow to discharge to ]\u2019s wastewater treatment system.\" introducing a stray bracket not visible in the PDF. PDF page 4 states the NOV concerned violations found in a quoted redacted phrase; HTML renders: \"violations concerning \u201cdischarge limitations and/or monitoring requirements found in .\u201d\" which is truncated and malformed. Multiple places in HTML omit visible punctuation/word fragments present in the PDF, e.g. page 1/2 contract language and page 3 issue statement.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Some significant text blocks are incomplete or cut off, especially across page transitions and in heavily redacted factual sections.",
+      "severity": "major",
+      "evidence": "PDF page 2 ends with a sentence continuing onto page 3 about daily samples taken from the channel downstream of the primary clarifier; HTML page 2 ends with \"daily samples were taken from the channel downstream of the primary clarifier (\" and page 3 resumes with \") and at point of discharge to .\" losing the redacted identifiers and making the sentence incomplete. Similar incompleteness appears in the page 5 statutory list item (c), where HTML embeds page footer/header inside the list and disrupts the sentence flow.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure in the HTML does not reflect the document's section hierarchy; major section labels are plain paragraphs instead of headings.",
+      "severity": "major",
+      "evidence": "HTML uses only one true heading, \"<h1>North Carolina Department of Revenue</h1>\". PDF contains clear section titles such as \"The statement of facts submitted for the Department\u2019s consideration is as follows:\", \"Issue:\", and \"Department's Response:\". In HTML these appear only as bold paragraphs rather than h2/h3 elements, so the structural hierarchy is not preserved.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page header/footer content is redundantly repeated throughout the HTML.",
+      "severity": "minor",
+      "evidence": "The HTML repeats \"CPLR 2012-01\" and date/page lines as multiple <div class=\"page-header\"> blocks between sections. While these correspond to PDF running headers, they create repeated content in the HTML body that is not semantically necessary.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 33.91,
+    "page_count": 6,
+    "visual_input_tokens": 11427,
+    "visual_output_tokens": 616,
+    "content_input_tokens": 10437,
+    "content_output_tokens": 704,
+    "timestamp": "2026-04-14T05:19:02.847292",
+    "auditor_version": "1.0.0"
+  }
+}

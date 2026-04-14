@@ -1,0 +1,38 @@
+{
+  "document_id": "table12 7",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Hierarchical table headers with merged cells were flattened.",
+      "severity": "minor",
+      "evidence": "In the PDF, header cells for the years (e.g., '1997-1998') span across two sub-columns ('Collection amount' and '% of total'). The HTML conversion removes these merged cells (colspan) and instead concatenates the text into single, verbose column headers like 'Fiscal Year 1997-1998 Collection amount [$]'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Significant loss of inline text formatting (bold and underline) in the footnote section.",
+      "severity": "major",
+      "evidence": "The PDF's footnote text at the bottom of the page relies heavily on bolding and underlining to emphasize dates (e.g., 'May 1, 1999', 'September 1, 2009') and sub-headings (e.g., '+Department of Commerce transfer (\u00a7 105-113.81A):'). All of this inline formatting has been stripped in the HTML rendering, presenting it as plain text.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 67.93,
+    "page_count": 2,
+    "visual_input_tokens": 5096,
+    "visual_output_tokens": 489,
+    "content_input_tokens": 11265,
+    "content_output_tokens": 150,
+    "timestamp": "2026-04-14T05:36:38.058166",
+    "auditor_version": "1.0.0"
+  }
+}

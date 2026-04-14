@@ -1,0 +1,102 @@
+{
+  "document_id": "OST 02 2015a4",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "The table header row in the HTML uses a different visual style - the gray background shading on header rows is lighter/absent compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows distinct gray shading on header row and insurance type column; HTML has lighter or no shading on these cells.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The downward arrow symbol (\u21d3) under 'TYPE' in the header is rendered as a small square/box character in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows 'TYPE \u21d3' with a clear downward arrow; HTML shows 'TYPE \u25a1' or similar placeholder.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "On the continued page (page 2), the HTML splits the content across what appears to be multiple separate visual sections rather than maintaining it as a single cohesive continued table. The 'WHOLE LIFE with Dividend Additions to Face Value' row appears to be partially cut off at the bottom of one view and continued in another.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows a complete table with all participating whole life rows visible in one table. HTML appears to break this across page boundaries with a partial row visible at top of the last HTML page.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Some bold/underline formatting differences in the INCOME column for 'DO NOT count paid out dividends as income' - underline styling on certain words differs slightly.",
+      "severity": "minor",
+      "evidence": "PDF shows underlined text for 'Do not count' and 'paid out dividends as income'; HTML uses bold instead of underline in some places.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The 'HANDOUT 4' label and 'Revised 061115' footer positioning differs - these are acceptable header/footer differences.",
+      "severity": "minor",
+      "evidence": "PDF has 'HANDOUT 4' in top right and 'Revised 061115' at bottom left; HTML omits or repositions these.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The \u2264 and > mathematical symbols in the BURIAL EXCLUSION column appear correctly in both versions.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show FV \u2264 $10,000 and FV > $10,000 correctly.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF has two separate tables (one on page 1 for Term Life and Whole Life General, and one on page 2 for Participating Whole Life subtypes), but the HTML merges them into a single table. While all rows are present, the second table's distinct header row ('PARTICIPATING WHOLE LIFE:') is lost as a separate table header.",
+      "severity": "major",
+      "evidence": "PDF page 2 has a separate table titled 'INSURANCE MAZE (CONTINUED)' with its own header row 'PARTICIPATING WHOLE LIFE: | FACE VALUE | CASH VALUE | DIVIDENDS | INCOME | BURIAL EXCLUSION'. In the HTML, these rows are appended to the first table without a sub-header or section break.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements, which is structurally invalid but does not affect content fidelity. The heading hierarchy is acceptable with a single h1 for the document title.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> inside another <main> wrapper.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the 'Whole Life with Dividend Additions to Cash Value' row, the FACE VALUE cell in HTML adds bold styling ('Use original face value at') that differs slightly from the PDF which only bolds 'original face value'. This is a minor formatting difference, not a data issue.",
+      "severity": "minor",
+      "evidence": "PDF: 'Use original face value at policy issuance.' HTML: '<strong>Use original face value at</strong> policy issuance.'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the 'Whole Life with Dividend Accumulations left to earn interest' row, the HTML bolds 'Accumulations left to earn interest' differently than the PDF. The PDF shows 'Dividend Accumulations left to earn interest' with 'Accumulations' underlined and 'left to earn interest' in regular text, while the HTML does not preserve the underlining distinction.",
+      "severity": "minor",
+      "evidence": "PDF uses underline for emphasis on certain words in this row; HTML does not replicate underline formatting.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 42.97,
+    "page_count": 2,
+    "visual_input_tokens": 6868,
+    "visual_output_tokens": 935,
+    "content_input_tokens": 8380,
+    "content_output_tokens": 787,
+    "timestamp": "2026-04-14T05:26:53.124530",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "document_id": "federal error rate active cases 11 08",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a two-table side-by-side layout (left table: State-Reported Summary Data with State/FY2009 Cumulative Oct-Nov/Rank columns; right table: State/FY2008 Cumulative Oct-Sep/2/FY2009 Cumulative Oct-Nov/Change columns). The HTML renders these as a single-column stacked layout, destroying the two-column structure.",
+      "severity": "critical",
+      "evidence": "PDF shows two tables placed side-by-side on the page. HTML shows one table (left side data) followed sequentially by the second table (right side data), all in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Color-coding/highlighting of rows is lost in the HTML. The PDF uses yellow, green, and other colored backgrounds for rows to convey meaning (e.g., ranking tiers or performance categories). The HTML renders all rows with plain/alternating white-gray styling.",
+      "severity": "major",
+      "evidence": "PDF rows for states like FLORIDA, DELAWARE, NORTH CAROLINA etc. have bright yellow/green background highlighting. HTML rows have no such color differentiation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold formatting on state names and header text appears simplified in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF shows bold state names and colored header rows. HTML shows plain text styling for most content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The right-side table's column headers differ. The PDF shows 'FY 2008 Cumulative Oct - Sep /2' and 'FY 2009 Cumulative Oct - Nov' and 'Change' as distinct columns. The HTML merges the header into 'FY 2009 Cumulative Oct - Nov' which loses the FY2008 reference column header clarity.",
+      "severity": "major",
+      "evidence": "PDF right table has clearly labeled FY 2008 and FY 2009 column headers. HTML second table header shows 'FY 2009 Cumulative Oct - Nov' for the combined column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The '<' symbol/arrow indicator between the two tables pointing to MAINE in the PDF is not present in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows a '<' marker between the left and right tables next to MAINE. HTML has no such indicator.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "The first row in the second table has '< MAINE' instead of 'MAINE'. The '<' symbol in the PDF appears to be a visual indicator/arrow between the two tables, not part of the state name.",
+      "severity": "minor",
+      "evidence": "HTML: '<td>&lt; MAINE</td>' \u2014 PDF shows '<' as a separator between the left and right table sections, with 'MAINE' as the state name in the right table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses h1 for the main title and h2 for 'STATE-REPORTED SUMMARY DATA', which is acceptable. However, 'STATE-REPORTED SUMMARY DATA' in the PDF appears as a label/subtitle rather than a full section heading. The hierarchy is not broken but the placement inside page-header div groups it oddly.",
+      "severity": "minor",
+      "evidence": "PDF: 'STATE-REPORTED SUMMARY DATA' appears as a subtitle/label. HTML: '<h2>STATE-REPORTED SUMMARY DATA</h2>' inside page-header div.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> elements \u2014 an outer <main> from the template and an inner <main> in the content. This is a structural issue but does not cause content duplication.",
+      "severity": "minor",
+      "evidence": "HTML contains '<main>' at the template level and another '<main>' inside the content body.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 32.24,
+    "page_count": 1,
+    "visual_input_tokens": 2882,
+    "visual_output_tokens": 853,
+    "content_input_tokens": 10689,
+    "content_output_tokens": 581,
+    "timestamp": "2026-04-14T05:32:37.318080",
+    "auditor_version": "1.0.0"
+  }
+}

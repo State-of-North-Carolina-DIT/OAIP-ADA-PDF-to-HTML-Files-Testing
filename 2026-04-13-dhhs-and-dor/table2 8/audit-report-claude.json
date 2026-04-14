@@ -1,0 +1,118 @@
+{
+  "document_id": "table2 8",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The HTML conversion renders the table as a wide horizontal layout spanning many fiscal years across columns, whereas the PDF presents data in separate grouped tables (1999-2000 through 2003-2004, then 2004-2005 through 2008-2009). The HTML merges all years into one extremely wide table.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a table with 5 fiscal year column groups (1999-2000 to 2003-2004). HTML page 2 shows all fiscal years from 1999-2000 through 2013-2014 in a single wide table requiring extensive horizontal scrolling.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The PDF presents three distinct tables on separate pages (fiscal years grouped as 1999-2004, 2004-2009, and 2009-2014), but the HTML merges them into one continuous wide table, altering the table structure.",
+      "severity": "major",
+      "evidence": "PDF pages 1, 2, and 3 each contain separate table segments. HTML combines all into one table spanning pages 2-4.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The table title 'TABLE 2. STATE GENERAL FUND: TAX REVENUES BY SOURCE' appears correctly in both PDF and HTML, but the HTML adds a 'TABLE 2. -Continued' label that was present in the PDF's subsequent pages.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has the title, page 3 has 'TABLE 2. -Continued'. HTML page 1 shows the title, consistent with the PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Row spacing and grouping of 'Income Taxes:' section header differs slightly - in PDF it's a clear sub-header row, in HTML it appears as a row in the table but formatting is simplified.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Income Taxes:' as a distinct label row with no data. HTML preserves the row but with less visual distinction.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Footnote markers (*, **, ***, +, ++) are preserved in the HTML but the footnote text formatting at the bottom of the document uses a different layout than the PDF's dense paragraph format.",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows footnotes in a compact multi-paragraph format. HTML pages 4-5 show footnotes with more spacing between sections.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The reading order is generally preserved, with sources of revenue listed in the same order and footnotes appearing after the tables.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML present Estate Tax first, followed by other tax categories, ending with Total General Fund Revenue, then footnotes.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Fiscal Year' header row that spans across columns in the PDF is handled differently in HTML - it appears as a separate row rather than a spanning header.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Fiscal Year' as a centered spanning header. HTML renders it inline with the table structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF contains data for 15 fiscal years split across two pages (1999-2000 through 2013-2014), but the HTML merges them all into a single table with 31 columns. While this is a structural choice, the critical issue is that the 2008-2009 column data in the PDF (page 1, rightmost partial column) has truncated values in the source (e.g., '128,479', '41,615', '43,732', etc.) but the HTML presents full values like '128,479,443', '41,615,694', '43,732,769'. These full values appear in the second rendering of the same PDF page (the lower half shows 2003-2004 columns with those full amounts), so the HTML correctly maps 2003-2004 data. However, the column labeled '2008-2009' in the HTML shows values like '104,256,014', '37,515,608', '227,056,891' etc. which are actually the truncated rightmost column values from page 1's lower table section. These values cannot be fully verified from the PDF since they are cut off.",
+      "severity": "major",
+      "evidence": "PDF page 1 right column headers are truncated showing partial year '2003' and '200' with truncated amounts. HTML presents these as complete '2003-2004' and '2008-2009' columns with full values.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has no h1 element. It uses two h2 elements inside page-header divs for what are essentially table titles. Additionally, there is no proper heading hierarchy - just two h2 elements with no h1 parent.",
+      "severity": "major",
+      "evidence": "HTML contains '<h2>TABLE 2. STATE GENERAL FUND: TAX REVENUES BY SOURCE</h2>' and '<h2>TABLE 2. -Continued</h2>' but no h1 element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has two nested <main> elements, which is invalid HTML structure. The outer <main> wraps the inner content, and there's an inner <main> containing the actual table and footnotes.",
+      "severity": "minor",
+      "evidence": "HTML structure shows '<body><main>...<main>...<table>...</table></main></main></body>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML table merges what are two separate table sections in the PDF (page 1 upper: 1999-2004, page 1 lower: 2004-2009, page 2: 2009-2014) into a single wide table. While this consolidation is reasonable, it makes it extremely difficult to verify the truncated rightmost columns from each PDF section. The 2008-2009 values in the HTML appear to be inferred/reconstructed from truncated PDF data.",
+      "severity": "major",
+      "evidence": "PDF page 1 bottom-right column header shows '200' (truncated '2008-2009') with truncated amounts like '104,256', '37,515', '227,056', '651,938', '9,470,172', '835,544', '10,305,717', '4,677,947', '228,458', '12,291', '183', '466,601', '34,240', '32,865', '6'. HTML shows full amounts: 104,256,014, 37,515,608, 227,056,891, etc.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor footnote text difference: The PDF footnote for Real Estate Conveyance Tax references 'refer to Table 3' in parentheses, which the HTML renders as '(refer to Table 3)'. This is accurately preserved.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML contain the reference to Table 3.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 53.47,
+    "page_count": 2,
+    "visual_input_tokens": 6904,
+    "visual_output_tokens": 1230,
+    "content_input_tokens": 21319,
+    "content_output_tokens": 1229,
+    "timestamp": "2026-04-14T05:37:31.528786",
+    "auditor_version": "1.0.0"
+  }
+}

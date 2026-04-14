@@ -1,0 +1,86 @@
+{
+  "document_id": "EI 22 2001",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "State seal/logo is repositioned and reduced in prominence.",
+      "severity": "minor",
+      "evidence": "On page 1 of the PDF, the seal is centered at the top above the department heading. In the HTML, the seal appears as a small image at the upper left, separated from the centered heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header text formatting and alignment are altered.",
+      "severity": "minor",
+      "evidence": "The PDF page 1 header uses centered title blocks with side-aligned official names and a bold centered subject line. The HTML keeps the content but uses different spacing and lighter/smaller styling for address and side names, reducing the visual distinction of the original letterhead.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 2 continuation marker is repositioned within the flow.",
+      "severity": "minor",
+      "evidence": "In the PDF, page 2 begins with 'Dear County Director Letter / October 22, 2001 / Page 2' at the top of the new page before the continuation text. In the HTML, this continuation marker appears mid-flow after the first page text and employer line, which slightly changes the visual reading sequence.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature image styling differs from the PDF.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows a handwritten signature on a plain white background. The HTML includes the signature as a dark rectangular image, making it visually heavier and less similar to the source appearance.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The survey table structure in HTML does not faithfully match the PDF. The PDF uses a merged header with applicant numbers 1\u201310 in a separate top row and \"APPLICANTS\" centered above them, while the HTML collapses this into repeated column labels \"APPLICANTS 1\" through \"APPLICANTS 10\". This changes the table layout and loses the original multi-row header structure.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows a table header with left cell \"CHARACTERISTICS/ CAUSAL FACTORS\", a centered label \"APPLICANTS\", and separate numbered columns \"1 2 3 4 5 6 7 8 9 10\". HTML table header is rendered as one row: \"CHARACTERISTICS/CAUSAL FACTORS\", \"APPLICANTS 1\", \"APPLICANTS 2\", ... \"APPLICANTS 10\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The email link text is corrupted by wrapping/linking errors, causing visible linked text that does not match the PDF wording.",
+      "severity": "major",
+      "evidence": "PDF page 2 reads: \"We sincerely appreciate your willingness to help us collect this most helpful information. Please contact Mr. Johnson...\" HTML renders: \"We sincerely appreciate your willingness to help us collect this most <a href=\"mailto:Walt.Johnson@ncmail.net\">helpful information. Pleas</a>e contact Mr. Johnson...\" The anchor text incorrectly includes \"Pleas\" and splits the word \"Please\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure. The HTML uses multiple high-level headings for letterhead elements and the survey title, resulting in more than one top-level/major heading and a structure that does not reflect the source document's organization.",
+      "severity": "major",
+      "evidence": "HTML uses <h1>\"North Carolina Department of Health and Human Services\"</h1>, <h2>\"Division of Social Services\"</h2>, and later another <h2>\"WORK FIRST APPLICANT SURVEY-NOVEMBER/DECEMBER 2001\"</h2>. In the PDF, these are document letterhead/title elements rather than a nested section hierarchy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There is a significant text accuracy error in the contact sentence on page 2 caused by malformed hyperlink insertion, altering the visible sentence text.",
+      "severity": "major",
+      "evidence": "PDF: \"We sincerely appreciate your willingness to help us collect this most helpful information. Please contact Mr. Johnson by phone...\" HTML: \"We sincerely appreciate your willingness to help us collect this most helpful information. Pleas e contact Mr. Johnson by phone...\" with \"Pleas\" incorrectly embedded in the preceding link and the word \"Please\" split.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 30.36,
+    "page_count": 4,
+    "visual_input_tokens": 8371,
+    "visual_output_tokens": 505,
+    "content_input_tokens": 8718,
+    "content_output_tokens": 809,
+    "timestamp": "2026-04-14T05:21:54.709127",
+    "auditor_version": "1.0.0"
+  }
+}

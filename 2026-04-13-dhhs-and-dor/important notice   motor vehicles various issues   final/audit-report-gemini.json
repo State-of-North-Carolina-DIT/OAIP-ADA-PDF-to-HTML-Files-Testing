@@ -1,0 +1,38 @@
+{
+  "document_id": "important notice   motor vehicles various issues   final",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Loss of inline text emphasis (bolding)",
+      "severity": "minor",
+      "evidence": "Inline terms that are bolded for emphasis in the PDF (e.g., '\u201csales price,\u201d' in the last paragraph on Page 1) are rendered as standard, unbolded text in the HTML. This minor loss of text formatting occurs throughout the document.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of paragraph italicization",
+      "severity": "minor",
+      "evidence": "The final disclaimer paragraph at the bottom of the page ('To the extent that there is any change...') is completely italicized in the PDF. The HTML renders this paragraph using standard, non-italicized text.",
+      "page": 7,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 54.64,
+    "page_count": 7,
+    "visual_input_tokens": 15870,
+    "visual_output_tokens": 562,
+    "content_input_tokens": 13298,
+    "content_output_tokens": 151,
+    "timestamp": "2026-04-14T05:33:52.252597",
+    "auditor_version": "1.0.0"
+  }
+}

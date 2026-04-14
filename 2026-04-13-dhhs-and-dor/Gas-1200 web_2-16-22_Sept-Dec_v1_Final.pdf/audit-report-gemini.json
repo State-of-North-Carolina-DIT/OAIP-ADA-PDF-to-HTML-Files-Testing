@@ -1,0 +1,46 @@
+{
+  "document_id": "Gas-1200 web_2-16-22_Sept-Dec_v1_Final.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Multi-column form layout and side-by-side elements are flattened into a single column.",
+      "severity": "major",
+      "evidence": "On PDF page 2, the top section uses a distinct two-column layout (contact fields on the left, option boxes on the right), side-by-side fields (e.g., City, State, Zip Code), and a three-column footer. The HTML renders all of these sections sequentially in a single vertical column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Logo graphic is missing from the form header.",
+      "severity": "minor",
+      "evidence": "PDF page 2 features an NCDOR logo graphic in the top-left corner. The HTML conversion omits this image, rendering only the text 'NCDOR' at the beginning of the form content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 tags are used in the document.",
+      "severity": "minor",
+      "evidence": "The HTML contains '<h1>Instructions For Handwritten Forms</h1>' and later '<h1>NCDOR</h1>'. Only one h1 should be used as the main document title.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 63.44,
+    "page_count": 2,
+    "visual_input_tokens": 5068,
+    "visual_output_tokens": 397,
+    "content_input_tokens": 4344,
+    "content_output_tokens": 238,
+    "timestamp": "2026-04-14T05:23:08.473041",
+    "auditor_version": "1.0.0"
+  }
+}

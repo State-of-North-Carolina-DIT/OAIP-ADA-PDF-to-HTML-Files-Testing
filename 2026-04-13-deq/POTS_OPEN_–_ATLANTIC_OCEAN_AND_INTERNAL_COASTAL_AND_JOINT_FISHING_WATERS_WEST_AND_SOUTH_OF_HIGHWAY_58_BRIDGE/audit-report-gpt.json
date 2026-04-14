@@ -1,0 +1,54 @@
+{
+  "document_id": "POTS_OPEN_\u2013_ATLANTIC_OCEAN_AND_INTERNAL_COASTAL_AND_JOINT_FISHING_WATERS_WEST_AND_SOUTH_OF_HIGHWAY_58_BRIDGE",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Official seal/logo is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "On page 1, the PDF shows the North Carolina Marine Fisheries circular seal at the top left. In the HTML version, that graphic is absent, leaving only text content and header names.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "A key word is misspelled in the prohibition sentence, changing text accuracy.",
+      "severity": "major",
+      "evidence": "PDF: \"IT SHALL BE UNLAWFUL TO USE POTS, EXCEPT IN AREAS DESCRIBED BELOW:\". HTML: \"IT SHALL BE UNLAWFULLTO USE POTS, EXCEPT IN AREAS DESCRIBED BELOW:\"",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure does not reflect the document hierarchy. Major section titles from the proclamation are encoded mostly as paragraphs and list items rather than headings.",
+      "severity": "major",
+      "evidence": "PDF has clear section-style titles such as \"RE: POTS OPEN \u2013 ATLANTIC OCEAN AND INTERNAL COASTAL AND JOINT FISHING WATERS WEST AND SOUTH OF HIGHWAY 58 BRIDGE\" and \"GENERAL INFORMATION\" plus county headings. HTML uses only one actual heading element, h1 \"PROCLAMATION\"; the rest are represented as <p><strong><u>...</u></strong></p> or list items.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text is generic or not fully accurate for the actual images.",
+      "severity": "minor",
+      "evidence": "HTML first image alt: \"North Carolina Marine Fisheries and State Seal logos\" while the PDF header image includes the North Carolina Marine Fisheries logo and the right-side official names/text block rather than simply \"State Seal logos.\" Other images use generic alt text such as \"Page footer graphic.\"",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 20.99,
+    "page_count": 3,
+    "visual_input_tokens": 7098,
+    "visual_output_tokens": 314,
+    "content_input_tokens": 7887,
+    "content_output_tokens": 493,
+    "timestamp": "2026-04-14T05:01:25.630369",
+    "auditor_version": "1.0.0"
+  }
+}

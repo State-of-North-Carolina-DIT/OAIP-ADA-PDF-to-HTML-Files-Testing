@@ -1,0 +1,118 @@
+{
+  "document_id": "09 16 Actives",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The HTML converts the dense tabular layout into a more spaced-out table with significantly more vertical whitespace between rows, spreading content across more visual space than the original PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows compact rows fitting ~37 counties on one page; HTML shows the same data but with much larger row spacing, requiring more scrolling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title 'FNS ACTIVE CASE ERROR RATES' and subtitle 'Oct 15 - Sept 16' have slightly different formatting in the HTML compared to the PDF centered bold header.",
+      "severity": "minor",
+      "evidence": "PDF shows centered bold title with subtitle on same line; HTML shows left-aligned title and subtitle on separate lines.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table header row formatting differs slightly - the PDF has a more compact multi-line header with borders while the HTML has a cleaner styled header.",
+      "severity": "minor",
+      "evidence": "PDF headers have visible cell borders and compact wrapping; HTML headers have more spacing and lighter styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The STATE summary row at the bottom of the table is bold in the PDF but the bold emphasis appears preserved in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows bold 'STATE' row; HTML also shows bold STATE row.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "STATE AGENCY row is missing the # CORR CASE value. The PDF shows no explicit # CORR CASE value for STATE AGENCY but does show # COMP CASES = 3. The HTML correctly shows 3 for # COMP CASES but leaves # CORR CASE blank, which is consistent with the PDF.",
+      "severity": "major",
+      "evidence": "PDF STATE AGENCY row: 3 $963 [blank corr case] 1 $106 2 $197 3 $303 31.46% 68.54%. HTML matches this. No issue upon closer inspection.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Alleghany (CO #3) row: PDF shows '0 $0' for # COMP CASES and TOTAL ISSUE. The HTML leaves these cells empty instead of showing 0 and $0.",
+      "severity": "major",
+      "evidence": "PDF: '3 ALLEGHANY 0 $0'. HTML: '<td>3</td><td>ALLEGHANY</td><td></td><td></td>...' - missing the 0 and $0 values for COMP CASES and TOTAL ISSUE.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Avery (CO #6) row: PDF shows '0 $0' for # COMP CASES and TOTAL ISSUE. The HTML leaves these cells empty.",
+      "severity": "major",
+      "evidence": "PDF: '6 AVERY 0 $0'. HTML has empty cells for COMP CASES and TOTAL ISSUE.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Polk (CO #75) row: PDF shows '0 $0' for # COMP CASES and TOTAL ISSUE. The HTML leaves these cells empty.",
+      "severity": "major",
+      "evidence": "PDF: '75 POLK 0 $0'. HTML has empty cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Tyrrell (CO #89) row: PDF shows '0 $0' for # COMP CASES and TOTAL ISSUE. The HTML leaves these cells empty.",
+      "severity": "major",
+      "evidence": "PDF: '89 TYRRELL 0 $0'. HTML has empty cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Yadkin (CO #99) row: PDF shows '0 $0' for # COMP CASES and TOTAL ISSUE. The HTML leaves these cells empty.",
+      "severity": "major",
+      "evidence": "PDF: '99 YADKIN 0 $0'. HTML has empty cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a nested <main> inside <main>, and uses <h2> as the top-level heading for 'FNS ACTIVE CASE ERROR RATES' inside a header div. There is no <h1> used as the document title. The heading hierarchy is not well-structured.",
+      "severity": "major",
+      "evidence": "HTML uses <h2>FNS ACTIVE CASE ERROR RATES</h2> inside a page-header div, with no h1 present. Document has nested <main> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element which creates a structural duplication of the main content wrapper, though the actual table content is not duplicated.",
+      "severity": "minor",
+      "evidence": "HTML structure: <body><main>...<main>...<table>...</table></main></main></body>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 7,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 40.64,
+    "page_count": 3,
+    "visual_input_tokens": 9962,
+    "visual_output_tokens": 686,
+    "content_input_tokens": 25254,
+    "content_output_tokens": 1176,
+    "timestamp": "2026-04-14T05:11:33.858396",
+    "auditor_version": "1.0.0"
+  }
+}

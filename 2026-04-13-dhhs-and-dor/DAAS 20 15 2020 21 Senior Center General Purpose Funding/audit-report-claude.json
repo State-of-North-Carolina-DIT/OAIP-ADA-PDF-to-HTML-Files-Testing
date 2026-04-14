@@ -1,0 +1,134 @@
+{
+  "document_id": "DAAS 20 15 2020 21 Senior Center General Purpose Funding",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC state seal/logo appears slightly different in rendering between PDF and HTML but is present in both.",
+      "severity": "minor",
+      "evidence": "PDF shows the Great Seal of North Carolina with detailed rendering; HTML shows the same seal but with slightly different sizing/quality.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The signature placement differs between PDF and HTML. In the PDF, the signature appears inline next to the FROM/DATE fields, while in the HTML it appears as a separate block below the FROM line.",
+      "severity": "minor",
+      "evidence": "PDF: signature overlaps FROM and DATE lines. HTML: signature is a standalone image block between FROM and DATE.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The funding breakout table in the PDF is rendered as inline text with column alignment, while the HTML renders it as a proper bordered table with header row.",
+      "severity": "minor",
+      "evidence": "PDF: 'Senior Center General Purpose  $1,265,316  $421,772  $1,687,088' aligned with column headers. HTML: formal table with borders and separate header row.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The allocation distribution table at bottom of page 1 in PDF is partially shown, while in HTML it extends to show more rows across pages.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows only Noncertified Centers row. HTML page 2 shows complete table with all three center types.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The allocation distribution per center table in the PDF uses simple text alignment while the HTML uses a properly structured bordered table.",
+      "severity": "minor",
+      "evidence": "PDF: text-based alignment for Noncertified/Merit/Excellence rows. HTML: bordered table with clear rows and columns.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Centers of Excellence table numbering skips from 53 to 55 in both the PDF and HTML versions, with number 54 appearing to be labeled as 55 for Shamrock Senior Center. This is consistent between both versions.",
+      "severity": "minor",
+      "evidence": "PDF page 3: Numbers go 53, 55, 55. HTML: Numbers go 53, 54, 55 - the HTML actually corrects the numbering.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the PDF, the Centers of Excellence table has a numbering error where number 54 is skipped and two entries are labeled 55. The HTML corrects this to 53, 54, 55, changing the original document content.",
+      "severity": "major",
+      "evidence": "PDF: entries numbered 53 (Levine Senior Center), 55 (Shamrock Senior Center), 55 (Tyvola Senior Center). HTML: entries numbered 53, 54, 55 respectively.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer information (NC DHHS address, phone, fax) present at bottom of each PDF page is removed in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF pages show footer with location, mailing address, website, phone/fax. HTML omits these footers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page numbers shown at bottom of PDF pages (2, 3, 4, 5) are not present in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows page numbers centered at bottom. HTML has no page numbers.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Regional Funding table in PDF uses simple bordered table, HTML renders same data in a styled table with alternating row shading.",
+      "severity": "minor",
+      "evidence": "Both contain identical data for regions A through R plus TOTAL, with same dollar amounts.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Centers of Excellence table in the PDF has a numbering error: it lists number 53, then 55, then 55 (skipping 54). The HTML corrects the first 55 to 54, which is a content alteration from the source PDF.",
+      "severity": "major",
+      "evidence": "PDF page 3 lists: 53 Mecklenburg Levine Senior Center, 55 Mecklenburg Shamrock Senior Center, 55 Mecklenburg Tyvola Senior Center. HTML changes the first 55 to 54.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements. The document header area is inside one <main>, and there is another <main> inside it. Also, the '2020-2021 General Purpose Funding by Region' section uses an h2, which is reasonable but the PDF presents it as a centered title on a separate page rather than a subsection.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping the whole content, then another <main> element inside it after the header.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header/footer content (NC Department of Health and Human Services address block) appears both in the header section and is part of the original PDF letterhead. This is a minor duplication issue from including the letterhead as a header element.",
+      "severity": "minor",
+      "evidence": "The header block with location, mailing address, and contact info appears once in the HTML header section, matching the PDF letterhead.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text variation: PDF says 'Lenoir COA/George T. Skimmer Center' but the original PDF page 1 text version says 'George T. Skimmer Center' - this appears consistent. However, comparing the PDF carefully, the name 'Skimmer' appears in both the PDF and HTML, so this is consistent (though it may be a typo for 'Skinner' in the original).",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'Lenoir COA/George T. Skimmer Center' - no discrepancy.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 12,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 49.4,
+    "page_count": 5,
+    "visual_input_tokens": 16114,
+    "visual_output_tokens": 1425,
+    "content_input_tokens": 20469,
+    "content_output_tokens": 771,
+    "timestamp": "2026-04-14T05:20:14.125263",
+    "auditor_version": "1.0.0"
+  }
+}

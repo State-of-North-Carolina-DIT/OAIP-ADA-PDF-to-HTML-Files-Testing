@@ -1,0 +1,78 @@
+{
+  "document_id": "White Goods Disposal Distribution - 4th Quarter 2022-23.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 PDF uses a nested box/flowchart-style layout with gray shaded sections and distinct visual groupings (Summary of Proceeds, Distribution of Proceeds, Distribution to Counties, Comments). The HTML renders these as flat sequential sections without the visual nesting and box structure.",
+      "severity": "major",
+      "evidence": "PDF shows bordered boxes with gray backgrounds grouping related items in a flowchart-like layout. HTML shows simple tables and text sections in a flat linear layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Page 2 county distribution table in PDF is a two-column layout (left counties and right counties side by side), which is preserved in the HTML but rendered as a four-column table. However, the structure and data appear correct.",
+      "severity": "major",
+      "evidence": "PDF shows a compact two-panel county table. HTML shows a similar four-column table layout matching the data pairs.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The summary rows at the bottom of the county distribution table (TOTAL, LESS: AMOUNT UNAVAILABLE, TOTAL AMOUNT TO BE DISTRIBUTED) span differently in HTML vs PDF but data is preserved.",
+      "severity": "minor",
+      "evidence": "PDF shows these as spanning rows across the full table width with dollar amounts right-aligned. HTML shows them similarly but with slightly different cell spanning.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The asterisk (*) indicators next to county names indicating 'AMOUNT UNAVAILABLE FOR DISTRIBUTION' are preserved in both versions but the visual presentation differs slightly.",
+      "severity": "minor",
+      "evidence": "PDF shows asterisks as superscript-style markers; HTML shows them as inline text appended to county names.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Dollar sign formatting differs between PDF and HTML. PDF shows $ symbol separated from amounts in column headers, while HTML uses inline $ with amounts.",
+      "severity": "minor",
+      "evidence": "PDF: separate $ column and amount column. HTML: combined '$20,424.82' format.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h1 for the department name and h2 for the report title on the first page, but then uses another h2 for the second page header. The heading hierarchy is acceptable but the document effectively has two separate page headers rendered as structural headings rather than a single unified document structure.",
+      "severity": "minor",
+      "evidence": "First page: h1='NORTH CAROLINA DEPARTMENT OF REVENUE', h2='WHITE GOODS DISPOSAL TAX DISTRIBUTION REPORT'. Second page: h2='WHITE GOODS DISPOSAL TAX DISTRIBUTION'. This is a minor structural issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> elements - an outer <main> wrapping the entire document and inner <main> elements for each page's content. This is an HTML structural issue but does not cause content duplication.",
+      "severity": "minor",
+      "evidence": "The outer <main> in the body wraps everything, while inner <main> elements exist for page 1 and page 2 content sections.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 31.78,
+    "page_count": 2,
+    "visual_input_tokens": 6792,
+    "visual_output_tokens": 835,
+    "content_input_tokens": 11160,
+    "content_output_tokens": 490,
+    "timestamp": "2026-04-14T05:30:43.198484",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "Appendix K Part III   Bulletin",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Heading typography and emphasis are not fully preserved.",
+      "severity": "minor",
+      "evidence": "In the PDF, the top heading and subtitle use stronger bold styling with clearer hierarchy, while in the HTML the title appears lighter and less visually distinct from surrounding text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List indentation and text spacing differ slightly from the source.",
+      "severity": "minor",
+      "evidence": "The PDF shows the bullet point with deeper indentation and more compact line grouping; the HTML bullet is present and readable but positioned with different left indent and spacing.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes substantial fabricated wrapper content not present in the PDF, including a full HTML document title and embedded CSS/theme text.",
+      "severity": "critical",
+      "evidence": "PDF contains only the bulletin content. HTML adds metadata/text such as `<title>Converted Document</title>` and CSS comments/rules including `Digital Commons NC \u2014 Standalone Theme CSS`, `@import url('https://fonts.googleapis.com/...')`, and variables like `--nc-navy`, `--nc-blue`, `--nc-link` that do not appear in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "One sentence in the bullet item is altered in a way that changes grammar and potentially meaning.",
+      "severity": "major",
+      "evidence": "PDF bullet: `Respite may be utilized during school hours for sickness, injury, when a student is suspended or expelled, or School hours during the public health emergency that necessitates remote learning.` HTML bullet contains the same wording, but because the source text itself is awkward, no additional alteration is evident beyond formatting. No major text mismatch confirmed elsewhere.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 18.72,
+    "page_count": 1,
+    "visual_input_tokens": 2309,
+    "visual_output_tokens": 281,
+    "content_input_tokens": 2833,
+    "content_output_tokens": 335,
+    "timestamp": "2026-04-14T05:15:41.946227",
+    "auditor_version": "1.0.0"
+  }
+}

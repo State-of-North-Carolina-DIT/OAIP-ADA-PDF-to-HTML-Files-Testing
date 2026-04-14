@@ -1,0 +1,150 @@
+{
+  "document_id": "WeatherspoonMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The header layout in the PDF has the NC logo on the left and official names (Pat McCrory, Donald R. Van Der Vaart, Michael Scott) right-aligned. In the HTML, the official names are left-aligned below the contact information rather than right-aligned.",
+      "severity": "minor",
+      "evidence": "PDF: Names and titles are right-aligned in the upper right corner. HTML: Names and titles appear left-aligned below the address block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The From field layout differs slightly. In the PDF, the signature appears inline next to Division of Waste Management. In the HTML, the signature appears below the From line and above the Division info.",
+      "severity": "minor",
+      "evidence": "PDF: Signature is to the right of 'Division of Waste Management'. HTML: Signature is between 'From: Shawn McKee' and 'Division of Waste Management'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer information appears at the top of the HTML page 1 instead of at the bottom as in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: Footer with address and phone at bottom of page. HTML: Same info appears at the top, below the logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The MEMORANDUM heading in the PDF is underlined and bold. In the HTML, it appears as a large bold heading with a horizontal rule beneath it rather than underlined text.",
+      "severity": "minor",
+      "evidence": "PDF: 'MEMORANDUM' with underline. HTML: 'MEMORANDUM' as large heading with separator line below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The outline list uses Roman numerals with different formatting. In the PDF, items are indented with Roman numerals followed by periods. The HTML uses a similar structure but with slightly different visual styling.",
+      "severity": "minor",
+      "evidence": "PDF: Indented Roman numeral list. HTML: Similar list but with standard HTML list rendering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page header information (Meeting Officer's Report, Coal Ash Impoundment Classification(s), etc.) appears at top-right in the PDF but is displayed as a left-aligned block in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Right-aligned header block. HTML: Left-aligned header block.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading 'I. History/Background' uses bold formatting in the PDF. In the HTML it appears as a larger heading style, which is an acceptable semantic difference.",
+      "severity": "minor",
+      "evidence": "PDF: Bold section heading. HTML: Larger heading font.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The page header metadata block appears before the section content in the HTML, matching the PDF's running header position.",
+      "severity": "minor",
+      "evidence": "Both maintain the same reading order for content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF, the bullet point topic headings (Dam Safety, Excavation, etc.) are bold and underlined. In the HTML, they appear as bold only without underlines.",
+      "severity": "minor",
+      "evidence": "PDF: Bold underlined headings like 'Dam Safety', 'Excavation'. HTML: Bold headings without underlines.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF, the bullet point topic headings in the Written Public Comment Summary section (Dam Safety, Ash recycling and reuse, etc.) are bold and underlined. In the HTML, they appear as bold only without underlines.",
+      "severity": "minor",
+      "evidence": "PDF: Bold underlined headings. HTML: Bold headings without underlines.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF page 5, the bullet point topic headings (Private Well Issues, Risk Classification, Surface Water, American Indian Input) are bold and underlined. In the HTML, they appear as bold only.",
+      "severity": "minor",
+      "evidence": "PDF: Bold underlined headings. HTML: Bold headings without underlines.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Attachments list in the PDF uses centered Roman numeral alignment. The HTML renders it as a standard list.",
+      "severity": "minor",
+      "evidence": "PDF: Centered/indented Roman numeral list with tab-aligned descriptions. HTML: Standard list formatting.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in HTML. The document has a <main> inside the outer <main>, which is invalid HTML structure, though it does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The outer <body> contains <main>, and inside it there is another <main> element wrapping the document content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The memorandum header content (date, To, From, Subject, and introductory paragraphs) appears duplicated. The header section contains the full memo details, and then the <main> section repeats all the same content again.",
+      "severity": "major",
+      "evidence": "The header block contains 'April 28, 2016', 'To: Secretary Donald R. van der Vaart', 'From: Shawn McKee', the subject line, and introductory paragraph. These are then fully repeated in the <main> section below. The PDF only has these once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The alt text 'Decorative bottom border' for the third image is a reasonable guess but may not accurately describe the actual image content in the PDF footer area.",
+      "severity": "minor",
+      "evidence": "HTML: <img alt='Decorative bottom border' style='width: 654.4pt'> \u2014 The PDF shows a footer/border element that could be described various ways.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The page header reference to the public meeting attachment says 'March 16, 2016' in the PDF text on page 2, matching the source, but the actual meeting was March 10, 2016. This is faithfully reproduced from the source, so no error in conversion.",
+      "severity": "minor",
+      "evidence": "PDF page 2: 'Attachment I - Public Notice of March 16, 2016 Meeting' \u2014 HTML matches. Note: the PDF itself may contain an error since the meeting was March 10.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 15,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 46.56,
+    "page_count": 5,
+    "visual_input_tokens": 14934,
+    "visual_output_tokens": 1579,
+    "content_input_tokens": 15566,
+    "content_output_tokens": 724,
+    "timestamp": "2026-04-14T05:06:28.217020",
+    "auditor_version": "1.0.0"
+  }
+}

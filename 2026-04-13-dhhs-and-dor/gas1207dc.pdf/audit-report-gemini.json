@@ -1,0 +1,38 @@
+{
+  "document_id": "gas1207dc.pdf",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Form header layout altered from horizontal to vertical.",
+      "severity": "minor",
+      "evidence": "In the PDF, the form fields for Legal Name, Account Number, etc., are arranged horizontally in segmented boxes. In the HTML, these are listed vertically as text labels.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table header hierarchy is flattened.",
+      "severity": "minor",
+      "evidence": "In the PDF, the column header '(4)' spans across two sub-columns ('Original Dest...' and 'Revised Dest...'). In the HTML, this spanning header is removed, and '(4)' is duplicated in two separate, independent column headers.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 42.2,
+    "page_count": 1,
+    "visual_input_tokens": 2890,
+    "visual_output_tokens": 326,
+    "content_input_tokens": 3330,
+    "content_output_tokens": 136,
+    "timestamp": "2026-04-14T05:33:18.370254",
+    "auditor_version": "1.0.0"
+  }
+}

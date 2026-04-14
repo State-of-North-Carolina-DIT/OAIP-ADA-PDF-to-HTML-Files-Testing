@@ -1,0 +1,70 @@
+{
+  "document_id": "Washington County Public Notice 6.17.2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The header layout differs between PDF and HTML. The PDF has a two-column header with the seal/logo on the left and officials' names on the right, while the HTML stacks the department info and officials' names vertically.",
+      "severity": "minor",
+      "evidence": "PDF: Logo and NC DHHS text on left, officials (Josh Stein, Devdutta Sangvai, etc.) on right in a side-by-side layout. HTML: Logo and department name at top, then department/division/commission text below, then officials listed vertically beneath.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The date 'June 17, 2025' and 'PUBLIC NOTICE' heading lose their distinctive color formatting in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: 'June 17, 2025' is in blue/gold color and 'PUBLIC NOTICE' is in red/blue. HTML: 'June 17, 2025' appears in black text, 'PUBLIC NOTICE' appears in plain black text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title 'Nomination Period for Washington County Board of Social Services' is significantly smaller and less prominent in the HTML compared to the large bold heading in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: Large bold heading spanning multiple lines. HTML: Smaller text, appears as sub-headings rather than a dominant title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML version includes the 'Social Services Commission' sub-header text under the department name in the header area, which in the PDF was part of the left-column header block but less prominently separated.",
+      "severity": "minor",
+      "evidence": "PDF: 'Division of Social Services' and 'Social Services Commission' appear under the logo. HTML: Same text appears but with different visual hierarchy as separate lines under the bold department heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The date 'June 17, 2025' is marked as h1 (the document title), while 'PUBLIC NOTICE' is h2 and the actual subject heading is h3. The document's logical title is 'PUBLIC NOTICE - Nomination Period for Washington County Board of Social Services', not the date. Additionally, the heading hierarchy makes the date the primary heading, which misrepresents the document structure.",
+      "severity": "major",
+      "evidence": "HTML: <h1>June 17, 2025</h1>, <h2>PUBLIC NOTICE</h2>, <h3>Nomination Period for Washington County Board of Social Services</h3>. In the PDF, 'PUBLIC NOTICE' and 'Nomination Period for Washington County Board of Social Services' are the prominent titles.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header and footer content is duplicated. The department name, division, commission name, address, phone, fax, and equal opportunity statement appear in both the page-header div and the page-footer div, duplicating the letterhead/footer information that appears once in the source document's header area and once in the footer area. While the PDF does have both a header and footer with similar institutional info, the HTML also has a nested <main> element creating structural duplication.",
+      "severity": "major",
+      "evidence": "HTML contains two <main> elements (one wrapping the outer structure, one nested inside), which is invalid HTML and creates structural confusion.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.35,
+    "page_count": 1,
+    "visual_input_tokens": 3830,
+    "visual_output_tokens": 708,
+    "content_input_tokens": 4917,
+    "content_output_tokens": 565,
+    "timestamp": "2026-04-14T05:30:11.417008",
+    "auditor_version": "1.0.0"
+  }
+}

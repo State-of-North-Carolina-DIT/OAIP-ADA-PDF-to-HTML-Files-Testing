@@ -1,0 +1,54 @@
+{
+  "document_id": "D403 8",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column header layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "The top section of the PDF has a distinct right-hand column for 'Federal Employer ID Number' and a box for 'Fill in all applicable circles'. In the HTML, these elements are rendered sequentially below the left-hand address fields.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Barcode image is distorted.",
+      "severity": "minor",
+      "evidence": "The vertical barcode located in the center of the PDF form on page 1 is rendered as a small, distorted horizontal graphic in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout in signature block collapsed into a single column.",
+      "severity": "major",
+      "evidence": "The signature section at the bottom of the PDF features side-by-side areas for 'Signature of Managing Partner' and 'Signature of Preparer'. The HTML renders these elements sequentially in a single column format.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Horizontal layout of sub-fields is lost.",
+      "severity": "minor",
+      "evidence": "On line 8 of the Deductions from Income section, sub-fields 8a, 8b, 8c, and 8d are arranged horizontally across the page in the PDF. In the HTML, they are concatenated into a single text block within a single table cell.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 83.94,
+    "page_count": 4,
+    "visual_input_tokens": 9436,
+    "visual_output_tokens": 724,
+    "content_input_tokens": 8555,
+    "content_output_tokens": 153,
+    "timestamp": "2026-04-14T05:20:26.790251",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "document_id": "Kimberly Park II, LLC, et al",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Essential graphics and signatures are missing.",
+      "severity": "critical",
+      "evidence": "On page 6, the PDF contains a circular state seal and two handwritten signatures (Robert C. Hunter and Stephen W. Pelfrey). The HTML conversion replaces this entire section with a text-only table, completely omitting the image elements.",
+      "page": 6,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 108.38,
+    "page_count": 6,
+    "visual_input_tokens": 13944,
+    "visual_output_tokens": 446,
+    "content_input_tokens": 8637,
+    "content_output_tokens": 142,
+    "timestamp": "2026-04-14T05:26:38.137785",
+    "auditor_version": "1.0.0"
+  }
+}

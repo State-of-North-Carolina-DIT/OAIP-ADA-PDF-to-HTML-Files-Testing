@@ -1,0 +1,94 @@
+{
+  "document_id": "table48 5",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Overall page layout is not preserved; the HTML reflows the page into a long single-column stream and separates content that is side-by-side in the PDF.",
+      "severity": "major",
+      "evidence": "In the PDF, the table appears at top left with the explanatory tax-rate paragraph to its right, followed by a large chart below. In the HTML, the paragraph is moved below the table, content is stacked vertically, and large whitespace appears with chart fragments dispersed down the page.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table structure is degraded and not fully visually intact.",
+      "severity": "major",
+      "evidence": "The PDF shows a compact multi-column table with grouped headers and aligned numeric values. In the HTML, the table is narrower with weakened header grouping, reduced visual alignment, and some columns/labels appear cramped, making the original table structure harder to interpret.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Chart/graphic rendering is broken and fragmented in the HTML.",
+      "severity": "critical",
+      "evidence": "The PDF contains one complete, legible combined bar-and-line chart under the table. In the HTML, the chart appears first as a tiny thumbnail, then as separate cropped fragments (including isolated axis/legend/bar portions) placed farther down the page, losing integrity and legibility.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text formatting and hierarchy are only partially preserved.",
+      "severity": "minor",
+      "evidence": "The PDF title and figure caption are clearly integrated with the table/chart layout. In the HTML, the title remains, but figure captioning and associated labels are split across the page, and some tabular headers/text lose the strong visual grouping present in the PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs from the PDF due to moved explanatory text and fragmented chart content.",
+      "severity": "major",
+      "evidence": "A reader of the PDF encounters the table and adjacent explanatory note together, then the full chart. In the HTML, the explanatory note comes after the table, followed by chart thumbnails/fragments and repeated labels farther down, disrupting the original visual sequence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML table omits the dash placeholder in one cell, changing the table content for fiscal year 2007-08 under 'OSBM Civil Penalty & Forfeiture Fund'.",
+      "severity": "major",
+      "evidence": "In the PDF table, row '2007-08' shows a dash '-' under 'OSBM Civil Penalty & Forfeiture Fund'. In the HTML table, the same cell is empty: '<td></td>' represented effectively by a blank value between collection fees and collection cost columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy in HTML does not match the PDF structure. The figure caption and tax-rate sidebar/note are promoted to section headings, which misrepresents document structure.",
+      "severity": "major",
+      "evidence": "PDF presents 'TABLE 48. FREIGHT CAR LINES TAX COLLECTIONS' as the table title, 'Freight car lines tax rate and base:' as a side note, and 'Figure 48.1 Freight Car Lines Tax Net Collections to General Fund and % Change' as a figure caption. HTML uses '<h1>TABLE 48. FREIGHT CAR LINES TAX COLLECTIONS</h1>' and '<h2>Freight car lines tax rate and base:</h2>', while the figure caption appears as plain paragraph text rather than structured captioning.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Chart content is significantly duplicated in HTML: data already present in the table is repeated again as extracted chart text, and the figure caption appears multiple times.",
+      "severity": "major",
+      "evidence": "HTML includes the full table values once in the table and then repeats them in a later '<div>' as lines such as '1996 422,026 -3.15%' through '2010 345,414 88.27%'. The caption 'Figure 48.1 Freight Car Lines Tax Net Collections to General Fund and % Change' also appears more than once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The extracted chart text contains malformed and concatenated text that reduces fidelity and clarity.",
+      "severity": "major",
+      "evidence": "HTML includes garbled text not cleanly reflecting the PDF figure, e.g., 'Fiscal year endCollections to% Change' and '1996 422 026 3 15% $600 100%'. In the PDF, these appear as separate axis labels, legend items, and values within the chart, not as merged phrases.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 7,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 32.56,
+    "page_count": 1,
+    "visual_input_tokens": 2495,
+    "visual_output_tokens": 539,
+    "content_input_tokens": 4855,
+    "content_output_tokens": 702,
+    "timestamp": "2026-04-14T05:38:08.865000",
+    "auditor_version": "1.0.0"
+  }
+}

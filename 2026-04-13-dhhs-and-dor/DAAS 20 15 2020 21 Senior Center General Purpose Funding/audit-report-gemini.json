@@ -1,0 +1,30 @@
+{
+  "document_id": "DAAS 20 15 2020 21 Senior Center General Purpose Funding",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C8",
+      "description": "Auto-correction of a numbering typo in the 'Centers of Excellence' table.",
+      "severity": "minor",
+      "evidence": "In the PDF (page 3), the numbering skips 54 and repeats 55: '53 Mecklenburg...', '55 Mecklenburg Shamrock...', '55 Mecklenburg Tyvola...'. The generated HTML corrected the sequence to: '53', '54', '55'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 51.85,
+    "page_count": 5,
+    "visual_input_tokens": 11548,
+    "visual_output_tokens": 309,
+    "content_input_tokens": 9880,
+    "content_output_tokens": 276,
+    "timestamp": "2026-04-14T05:20:12.721508",
+    "auditor_version": "1.0.0"
+  }
+}

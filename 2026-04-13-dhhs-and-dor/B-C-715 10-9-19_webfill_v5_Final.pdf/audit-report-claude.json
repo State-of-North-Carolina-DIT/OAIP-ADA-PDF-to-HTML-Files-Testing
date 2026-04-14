@@ -1,0 +1,118 @@
+{
+  "document_id": "B-C-715 10-9-19_webfill_v5_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF page 1 has a complex form layout with distinct left and right sections (form fields on the left, identifier fields like FEIN/SSN, NCDOR ID, ABC Permit Number on the right). The HTML collapses this into a single-column linear list, losing the two-column form structure entirely.",
+      "severity": "critical",
+      "evidence": "PDF shows a structured form with fields arranged in a grid pattern with right-side identifier boxes. HTML renders all field labels as a simple vertical list without any spatial relationship.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo present in the PDF header is missing from the HTML rendering.",
+      "severity": "minor",
+      "evidence": "PDF shows 'NCDOR' logo in upper left corner. HTML shows only the text 'NCDOR' without the logo graphic.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The main data table on page 1 (Invoice Date, Invoice Number, Names and Addresses, Malt Beverage) and its summary rows (Gallons Sold, Total Gallons Sold, Late Filing Penalty) are not rendered as a visible table in the HTML page 2 rendering. They appear only as a simple table in the HTML page 4.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a bordered table with 4 columns. The HTML page 2 shows only field labels as a list, and the table content appears later on page 4.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The reading order in the HTML differs from the PDF. The HTML page 2 presents form field labels, then the HTML page 4 combines the data table from page 1 with summary rows and footer text. The signature line, certification text, mailing address, and contact info appear after the table rather than being clearly separated as on the PDF page 1.",
+      "severity": "major",
+      "evidence": "PDF has the form header section, then the table, then summary rows, then signature line, then instructions at the bottom of page 1. HTML splits this across pages 2 and 4 with different ordering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Fill in circle if applicable' options (Amended Report, No Transactions) are rendered as bullet points in HTML instead of empty circles/radio buttons as shown in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows open circles (\u25cb) next to 'Amended Report' and 'No Transactions'. HTML shows bullet points (\u2022).",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 of the PDF has a header with Legal Name and NCDOR ID fields. The HTML rendering includes this as a text line but loses the form field layout.",
+      "severity": "minor",
+      "evidence": "PDF page 2 header shows 'Page 2, B-C-715, Web-Fill, 10-19 Legal Name ___ NCDOR ID ___'. HTML shows same text but without field lines.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The continuation table on page 2 of the PDF is structurally preserved in the HTML (page 3/4), maintaining the same 4-column structure.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show Invoice Date, Invoice Number, Names and Addresses, Malt Beverage columns.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The table structure conflates form fields, summary rows, and penalty lines into data rows of a single table, misrepresenting the original document structure. In the PDF, 'Gallons Sold (From Page 2)', 'Total Gallons Sold', and 'Late Filing Penalty' are separate summary/calculation fields below the invoice table, not table data rows. Additionally, the Page 2 continuation table's summary row ('Gallons Sold') is merged into the same table as Page 1 content.",
+      "severity": "major",
+      "evidence": "HTML places 'Gallons Sold (From Page 2)', 'Total Gallons Sold', '1. Late Filing Penalty', and Page 2's 'Gallons Sold' all as <tr> rows inside the same <tbody>. In the PDF, these are distinct form sections: the invoice detail table is separate from the summary fields and the penalty line.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements (one wrapping and one inside) which is invalid HTML structure. There is only one h1 which is acceptable, but no sub-headings (h2, h3) are used for distinct sections like the form header information, the table caption area, the signature section, or the instructions section. The document's logical sections lack heading hierarchy.",
+      "severity": "major",
+      "evidence": "HTML has <main> inside <body> and another <main> inside the first <main>. Sections like the signature block, instructions, and Page 2 header use <section> and <div> without any heading elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Page 2 is largely collapsed. The PDF has a full continuation table on Page 2 with its own header row (Invoice Date, Invoice Number, Names and Addresses, Malt Beverage) and a summary line. In the HTML, Page 2's content is reduced to a single page-header div and one row merged into the Page 1 table, losing the distinct page 2 table structure.",
+      "severity": "major",
+      "evidence": "PDF Page 2 has a full table header and separate 'Gallons Sold' summary field. HTML has only: <div class='page-header'><p>Page 2, B-C-715, Web-Fill, 10-19 Legal Name NCDOR ID</p><p>(continued from Page 1)</p></div> and one row in the combined table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The instructions text and mailing address appear both in the header-area text content and again in a section at the bottom, which mirrors the PDF layout (instructions appear at the bottom of Page 1). However, the 'Gallons Sold' concept appears in three places in the HTML table (From Page 2, Total Gallons Sold, and Page 2's Gallons Sold), which matches the PDF but the merging into one table makes it appear duplicative.",
+      "severity": "minor",
+      "evidence": "Three rows in the HTML table reference 'Gallons Sold' variations, matching PDF but confusingly merged into one table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL www.ncdor.gov is mentioned in the text but not rendered as a hyperlink in the HTML. The PDF references it as a URL. This is a minor omission rather than fabrication.",
+      "severity": "minor",
+      "evidence": "PDF: 'electronic payment methods are available through our website at www.ncdor.gov.' HTML: plain text 'www.ncdor.gov' without <a> tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 52.17,
+    "page_count": 2,
+    "visual_input_tokens": 6284,
+    "visual_output_tokens": 1161,
+    "content_input_tokens": 6728,
+    "content_output_tokens": 1119,
+    "timestamp": "2026-04-14T05:16:50.269645",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "document_id": "Book Babies",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a two-column layout for the 'What is Book Babies?' section (text on left, image on right) and for the 'How Book Babies Works' section (text on left, image on right). The HTML renders both as single-column layouts with images stacked above the text.",
+      "severity": "major",
+      "evidence": "PDF: 'What is Book Babies?' has text left and mother-baby reading photo right, side by side. HTML: Image appears above the text block. Same pattern for 'How Book Babies Works' section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Images are present and correctly identified but repositioned from side-by-side with text to above-text placement due to layout change.",
+      "severity": "minor",
+      "evidence": "PDF: Images are inline with text in a two-column arrangement. HTML: Images are placed above their respective text paragraphs.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The decorative/stylized heading fonts used in the PDF (e.g., 'WHAT IS BOOK BABIES?', 'WHY BOOK BABIES MATTERS', 'HOW BOOK BABIES WORKS') lose their distinctive stylized appearance with blue coloring and shadow/3D effects in the HTML, rendered as plain bold headings.",
+      "severity": "minor",
+      "evidence": "PDF: Headings have blue stylized text with embossed/shadow effects. HTML: Headings are plain bold black text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'ABOUT BOOK HARVEST' section text in the PDF is italicized, while in the HTML it appears as regular (non-italic) text.",
+      "severity": "minor",
+      "evidence": "PDF: About Book Harvest body text is in italics. HTML: Same text is in regular weight, non-italic.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is preserved in terms of section sequence, but within sections the image-text relationship shifts due to layout collapse.",
+      "severity": "minor",
+      "evidence": "PDF: Reader sees text and image simultaneously side-by-side. HTML: Reader sees image first, then text below it.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "A telephone link was added to the footer phone number that was not a hyperlink in the source PDF.",
+      "severity": "minor",
+      "evidence": "HTML contains <a href=\"tel:2524972665\">(252) 497-BOOK</a> while the PDF simply displays the phone number as text. This is a reasonable enhancement, not fabrication.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two nested <main> elements and the heading hierarchy has issues. 'BOOK BABIES' is h1 and 'Co-creating a Home Literacy Environment from Birth, with Parents' is h2, but the subtitle is more of a tagline than a section heading. Additionally, 'ABOUT BOOK HARVEST' is rendered as h3 while the other sections use h2, which is acceptable given its subordinate role, but the duplicate <main> tags are a structural issue.",
+      "severity": "major",
+      "evidence": "HTML has <main> wrapping everything, then another <main> inside it. The heading levels: h1='BOOK BABIES', h2='Co-creating...', h2='WHAT IS BOOK BABIES?', h2='WHY BOOK BABIES MATTERS', h2='HOW BOOK BABIES WORKS', h3='ABOUT BOOK HARVEST'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the banner image is somewhat generic and may not accurately describe the actual content, which appears to be a colorful striped banner with large 'BOOK BABIES' text and the Book Babies/Book Harvest logo.",
+      "severity": "minor",
+      "evidence": "Alt text: 'Decorative banner with Book Babies logo' \u2014 this is reasonably accurate but could be more descriptive.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The title 'BOOK BABIES' appears both in the h1 element and is part of the banner image alt text, but this reflects the actual PDF layout where the title appears prominently, so this is not a significant duplication issue.",
+      "severity": "minor",
+      "evidence": "h1 says 'BOOK BABIES' and the image alt text references 'Book Babies logo'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.08,
+    "page_count": 1,
+    "visual_input_tokens": 3834,
+    "visual_output_tokens": 800,
+    "content_input_tokens": 5002,
+    "content_output_tokens": 748,
+    "timestamp": "2026-04-14T05:17:23.347210",
+    "auditor_version": "1.0.0"
+  }
+}

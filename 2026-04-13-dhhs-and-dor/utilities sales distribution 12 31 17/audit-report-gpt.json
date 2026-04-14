@@ -1,0 +1,54 @@
+{
+  "document_id": "utilities sales distribution 12 31 17",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Page title/header formatting is less distinct in the HTML than in the PDF.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows a centered, bold report title with clearer hierarchy and spacing, while the HTML presents the same header text with reduced visual emphasis and looser structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated site/theme code and an invented document wrapper not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains text/code such as \"Digital Commons NC \u2014 Standalone Theme CSS\", \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\", and CSS variables like \"--nc-navy\" and \"--nc-blue\". None of this appears anywhere in the PDF, which is only a scanned/tabular report.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure is not faithfully represented in semantic HTML headings.",
+      "severity": "major",
+      "evidence": "The PDF has visible title/header text: \"Utilities Sales Distribution\", \"Gas, Power, Telecommunications, and Video Programming\", \"Distribution Report for Qtr 10/01/2017 - 12/31/2017\", and \"Distribution Date March 15, 2018\". In the HTML these appear only as plain paragraphs inside `<div class=\"page-header\">` rather than as structured headings (`h1`/`h2` etc.).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer content is duplicated in a way that does not reflect the original per-page placement.",
+      "severity": "minor",
+      "evidence": "The PDF shows one footer per page (e.g., \"Page 1 of 11\", \"Page 2 of 11\", etc., each on its respective page). The HTML appends eleven separate `<div class=\"page-footer\">` blocks consecutively at the end of the document, rather than preserving them in page context.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 34.98,
+    "page_count": 11,
+    "visual_input_tokens": 23391,
+    "visual_output_tokens": 403,
+    "content_input_tokens": 56259,
+    "content_output_tokens": 515,
+    "timestamp": "2026-04-14T05:38:59.294560",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "document_id": "Lake-Tillery-Aquatic-Plant-Reporting",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Duke Energy logo missing from the bottom of the title page.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the Duke Energy logo at the bottom; it is absent in the HTML rendering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Complex multi-column layout of logos and screenshots collapsed into a disorganized single column.",
+      "severity": "major",
+      "evidence": "PDF page 2 displays logos in a grid and screenshots side-by-side. The HTML renders these in a linear, vertical sequence.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Several partner logos are distorted, have incorrect black backgrounds, or appear as broken image boxes.",
+      "severity": "major",
+      "evidence": "Logos for Belmont and Charlotte Water on HTML page 2 have black backgrounds or appear as broken boxes with artifacts, unlike the clear logos in the PDF.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order of logos and screenshots is jumbled.",
+      "severity": "major",
+      "evidence": "The DEQ logo is at the top left of PDF page 2, but appears at the very end of the logo sequence in the HTML. The NC DEQ screenshot is also displaced.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "PDF page 4 places a form screenshot on the left and text on the right. The HTML stacks the form above the text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of text highlighting.",
+      "severity": "major",
+      "evidence": "The phrase 'Photo of plant for ID' is highlighted in bright green on PDF page 4, but appears as plain, unhighlighted text in the HTML.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Image collage layout and grouped borders lost.",
+      "severity": "major",
+      "evidence": "PDF page 5 features a left group of images with a green border and a right 2x2 collage with a red border. The HTML stacks all images vertically and loses the grouping borders and collage arrangement.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "PDF page 6 has text on the left and a poster image on the right. The HTML stacks the text above the poster.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of prominent text sizing for contact information.",
+      "severity": "major",
+      "evidence": "Email addresses on PDF page 6 are displayed in a very large, prominent font. In the HTML, they are rendered at a much smaller size, similar to standard body text.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Missing significant text content from page 3 of the source PDF.",
+      "severity": "critical",
+      "evidence": "The PDF's 3rd page contains several paragraphs below the screenshot, starting with 'A key aspect of being a good environmental steward...' and a section titled 'Aquatic Plants in our Reservoirs' followed by two more paragraphs. All of this text is completely absent from the generated HTML section for page 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Duplicated structural tag in the HTML.",
+      "severity": "minor",
+      "evidence": "The HTML content wraps the sections in two nested `<main>` tags instead of a single wrapper (e.g., `<main>\\n        <main>\\n    <section>`).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 8,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 107.85,
+    "page_count": 6,
+    "visual_input_tokens": 13620,
+    "visual_output_tokens": 1102,
+    "content_input_tokens": 6629,
+    "content_output_tokens": 348,
+    "timestamp": "2026-04-14T04:59:36.930512",
+    "auditor_version": "1.0.0"
+  }
+}

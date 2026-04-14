@@ -1,0 +1,38 @@
+{
+  "document_id": "Henderson County Public Notice 4.2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout flattened into a single column.",
+      "severity": "major",
+      "evidence": "The PDF features a distinct two-column header with the agency logo and name on the left and a list of officials on the right, separated by a vertical yellow line. The HTML conversion stacks all of this information vertically into a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of visual emphasis and formatting in main titles.",
+      "severity": "major",
+      "evidence": "In the PDF, the text 'PUBLIC NOTICE' is prominent, colored red, and larger than surrounding text. The main subject 'Nomination Period for Henderson County Board of Social Services' is in a very large, bold font. The HTML renders all of these elements in a standard black font with reduced sizing and no bold weight, losing the intended visual hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 29.49,
+    "page_count": 1,
+    "visual_input_tokens": 2902,
+    "visual_output_tokens": 340,
+    "content_input_tokens": 3170,
+    "content_output_tokens": 134,
+    "timestamp": "2026-04-14T05:23:45.343896",
+    "auditor_version": "1.0.0"
+  }
+}

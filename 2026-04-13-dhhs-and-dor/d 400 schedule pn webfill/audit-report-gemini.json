@@ -1,0 +1,78 @@
+{
+  "document_id": "d 400 schedule pn webfill",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed to a single column",
+      "severity": "major",
+      "evidence": "In Part A, the 'Taxpayer is' and 'Spouse is' sections are side-by-side in the PDF, but are rendered sequentially in a single column in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Barcode image is misplaced",
+      "severity": "major",
+      "evidence": "The barcode for Part B is located alongside lines 5-12 in the PDF, but is placed above the entire table in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table headers are incorrectly generated and duplicated",
+      "severity": "critical",
+      "evidence": "In the HTML table for the continuation of Part B, the header rows incorrectly duplicate the text 'Nonresidents (continued)' and 'North Carolina Adjustments' across multiple columns, failing to preserve the PDF's header structure.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page header text is out of reading order",
+      "severity": "major",
+      "evidence": "Text from the top of the PDF page ('Page 2', 'D-400 Sch. PN...', 'Tax Year 2018', etc.) is rendered in the HTML after the Part B table and barcode, rather than at the top of the page content.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Barcode image is misplaced",
+      "severity": "major",
+      "evidence": "The barcode is located alongside lines 19a-20 in the PDF, but is placed below the Part B table in the HTML.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple <h1> tags found in the document, violating the single <h1> rule.",
+      "severity": "minor",
+      "evidence": "The HTML contains both `<h1>Instructions for Web Fill-In Forms</h1>` and `<h1>D-400 Schedule PN 2018 Part-Year Resident and Nonresident Schedule</h1>`.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Section headers inside the Part B table are duplicated across multiple cells instead of utilizing colspans.",
+      "severity": "minor",
+      "evidence": "The HTML contains table rows with repeated text such as `<tr><td>Part B. Allocation of Income for Part-Year Residents and Nonresidents (continued)</td><td>Part B. Allocation of Income...</td>...</tr>` and `<tr><td>North Carolina Adjustments</td><td>North Carolina Adjustments</td>...</tr>`.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 80.67,
+    "page_count": 3,
+    "visual_input_tokens": 7314,
+    "visual_output_tokens": 695,
+    "content_input_tokens": 6260,
+    "content_output_tokens": 382,
+    "timestamp": "2026-04-14T05:32:13.446553",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "document_id": "SUPLR 2012-0022 Sales of Medical Items and Instructional Materials",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "State seal/logo is repositioned and reduced in prominence in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1 of the PDF, the circular seal is centered above the department heading; in the HTML it appears smaller and shifted toward the upper left above the heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header formatting is altered, with the main title left-aligned and restyled.",
+      "severity": "minor",
+      "evidence": "The PDF shows 'North Carolina Department of Revenue' centered near the top with governor/secretary names flanking it; the HTML renders the title left-aligned with a horizontal rule beneath and the side names stacked on the left.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Top-of-page layout is simplified and redistributed in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF page 1 uses a centered letterhead structure with left and right header blocks and broad whitespace; the HTML consolidates these into a more linear single-column arrangement, though the main body content remains intact.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated theme/CSS content and metadata not present in the PDF, including branding text and external font import.",
+      "severity": "critical",
+      "evidence": "HTML head contains text such as \"Digital Commons NC \u2014 Standalone Theme CSS\", CSS variables like \"--nc-navy\", and \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\". None of this content appears anywhere in the PDF pages.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure does not reflect the source document structure; the body content is mostly a letter with no semantic headings, but the HTML promotes the agency name to an h1.",
+      "severity": "major",
+      "evidence": "HTML uses \"<h1>North Carolina Department of Revenue</h1>\" as a document title. In the PDF, this appears as letterhead text centered under the seal, not a section heading or title for the ruling body text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Image alt text is acceptable but slightly interpretive rather than purely literal.",
+      "severity": "minor",
+      "evidence": "HTML image uses alt=\"North Carolina state seal\". The PDF shows the state seal graphic at the top center. This is broadly accurate, though the exact wording is added by the converter.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 21.46,
+    "page_count": 3,
+    "visual_input_tokens": 5985,
+    "visual_output_tokens": 515,
+    "content_input_tokens": 6640,
+    "content_output_tokens": 477,
+    "timestamp": "2026-04-14T05:29:22.600404",
+    "auditor_version": "1.0.0"
+  }
+}

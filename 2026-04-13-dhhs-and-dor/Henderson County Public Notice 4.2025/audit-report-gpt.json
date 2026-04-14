@@ -1,0 +1,70 @@
+{
+  "document_id": "Henderson County Public Notice 4.2025",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout is simplified and reorganized in the HTML compared with the PDF.",
+      "severity": "minor",
+      "evidence": "In the PDF, the top area has the seal/logo on the left, department name beside it, a vertical divider, and leadership names arranged in a separate right-side block. In the HTML, the same content is stacked into a left-aligned single header block without the original two-part horizontal arrangement.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title styling and emphasis differ noticeably in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF emphasizes the date in blue, 'PUBLIC NOTICE' in red, and the main title in larger bold black text. In the HTML, these headings appear in a more uniform dark text style with reduced visual distinction and different weight/color treatment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Logo/graphic placement and scale differ from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF shows a larger state seal and department branding occupying a broader top-left area with adjacent text. In the HTML, the logo is smaller and the branding is condensed into a narrower left-aligned header block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated boilerplate metadata not present in the PDF, including a generic HTML title and imported standalone theme/CSS wrapper text.",
+      "severity": "critical",
+      "evidence": "HTML adds '<title>Converted Document</title>' and CSS comments 'Digital Commons NC \u2014 Standalone Theme CSS' plus style scaffolding not present as document content in the PDF. The PDF is a public notice and does not display 'Converted Document' or 'Digital Commons NC \u2014 Standalone Theme CSS'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the visual/title structure of the PDF. The main notice title and subtitle are split into h1 and h2, and the h1 combines date and notice label rather than a single document title.",
+      "severity": "major",
+      "evidence": "PDF visually shows centered lines: 'April 1, 2025', 'PUBLIC NOTICE', then 'Nomination Period for Henderson County Board of Social Services'. HTML encodes '<h1 style=\"text-align: center;\">April 1, 2025<br>PUBLIC NOTICE</h1>' and '<h2 style=\"text-align: center;\">Nomination Period for<br>Henderson County<br>Board of Social Services</h2>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A substantive text error changes an official\u2019s title in the header: 'Commission' in the PDF became 'Chair' in the HTML.",
+      "severity": "major",
+      "evidence": "PDF header lists 'DREW T. PLEDGER \u2022 Commission'. HTML lists '<strong>DREW T. PLEDGER</strong> \u2022 Chair'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 23.69,
+    "page_count": 1,
+    "visual_input_tokens": 2608,
+    "visual_output_tokens": 440,
+    "content_input_tokens": 3298,
+    "content_output_tokens": 443,
+    "timestamp": "2026-04-14T05:23:50.644806",
+    "auditor_version": "1.0.0"
+  }
+}

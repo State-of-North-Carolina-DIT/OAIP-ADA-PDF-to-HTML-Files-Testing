@@ -1,0 +1,102 @@
+{
+  "document_id": "CWS_33_2022",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The header layout is significantly different. The PDF has a two-column header with the NC DHHS logo/text on the left and Governor/Secretary/Assistant Secretary info on the right. The HTML renders these as stacked elements.",
+      "severity": "major",
+      "evidence": "PDF: Logo and department name on left, officials' names on right in same row. HTML: Logo and department name on top, officials listed below in a stacked layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The REQUIRED ACTION checkboxes in the HTML use Unicode checkbox symbols instead of visual box graphics, but the information is preserved.",
+      "severity": "minor",
+      "evidence": "PDF: Visual checkbox graphics with X mark in 'Time Sensitive'. HTML: Unicode \u2610 and \u2612 symbols.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The footer in the PDF appears at the bottom of page 1 with centered department info, location, mailing address, and contact details. The HTML moves this footer content to after the page 2 content area.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has the full footer. HTML page 1 rendering does not show the footer at the same position but it appears later.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 content in HTML continues from page 1 as a continuous flow without clear page break separation, but the content and reading order is preserved.",
+      "severity": "minor",
+      "evidence": "PDF has clear page break between pages. HTML flows continuously.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The signature in the HTML appears slightly different in style/placement compared to the PDF, but is still present as a cursive rendering of 'Tammy Shook'.",
+      "severity": "minor",
+      "evidence": "PDF: Signature centered right. HTML: Signature left-aligned.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The Cc: list formatting differs slightly. In the PDF, 'Cc:' is a label followed by indented names. In the HTML, names are listed without the same indentation style.",
+      "severity": "minor",
+      "evidence": "PDF: 'Cc:' label with indented list. HTML: 'Cc:' followed by names with less visual indentation.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading hierarchy is used in the HTML. The document lacks any h1, h2, h3, etc. tags. All structural elements like the subject line, purpose, and section titles are rendered as bold paragraphs rather than semantic headings.",
+      "severity": "major",
+      "evidence": "The PDF has clear structural elements like 'SUBJECT: RETURNING TO THE NC CHILD WELFARE WORKFORCE' and 'PURPOSE: TO PROVIDE AN ALTERNATIVE TO PRE-SERVICE TRAINING FOR RETURNING NC CHILD WELFARE STAFF' but the HTML uses only <p><strong> tags instead of heading elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page 1 footer content is duplicated. It appears both as a page-footer div within the main content and also as part of the page-header div structure at the top of the document, repeating the department name, address, phone, fax, and equal opportunity statement.",
+      "severity": "major",
+      "evidence": "The header div contains 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES' and the page-footer div within the content repeats 'NC DEPARTMENT OF HEALTH AND HUMAN SERVICES \u2022 DIVISION OF SOCIAL SERVICES' along with full address, phone, and fax information. This is acceptable consolidation of header/footer, but the footer appears mid-content between page 1 and page 2 content rather than being removed or placed only at the end.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The opening quotation mark before 'This resource is a Pre-Service alternative' is preserved from the PDF but appears to be an erroneous/orphan quote mark in the source. The HTML faithfully reproduces this, so this is not an HTML error but is noted for completeness.",
+      "severity": "minor",
+      "evidence": "PDF: '\"This resource is a Pre-Service alternative for county agencies...' HTML: '\"This resource is a Pre-Service alternative for county agencies...'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The italicized formatting of the module title 'Returning to the North Carolina Child Welfare Workforce' on page 2 is not preserved in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows the title in italics: 'Returning to the North Carolina Child Welfare Workforce'. HTML renders it as plain text within quotes without italic formatting.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 37.64,
+    "page_count": 2,
+    "visual_input_tokens": 6506,
+    "visual_output_tokens": 902,
+    "content_input_tokens": 7308,
+    "content_output_tokens": 805,
+    "timestamp": "2026-04-14T05:18:23.197391",
+    "auditor_version": "1.0.0"
+  }
+}

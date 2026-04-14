@@ -1,0 +1,30 @@
+{
+  "document_id": "Low-Income Housing Credits Taken Under General Statute \u00ac\u00df 105-129.42 (Article 3E) Processed During Calendar Year 2011",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeating page headers were moved to the end of the document instead of being removed.",
+      "severity": "minor",
+      "evidence": "The header block from the top of PDF page 3 ('North Carolina Department of Revenue', 'Low-Income Housing Credits', etc.) appears at the very bottom of the HTML output on page 3, after the table and just before the source notes, creating a disconnected heading.",
+      "page": 3,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 59.52,
+    "page_count": 3,
+    "visual_input_tokens": 7320,
+    "visual_output_tokens": 343,
+    "content_input_tokens": 5803,
+    "content_output_tokens": 166,
+    "timestamp": "2026-04-14T05:26:11.593815",
+    "auditor_version": "1.0.0"
+  }
+}

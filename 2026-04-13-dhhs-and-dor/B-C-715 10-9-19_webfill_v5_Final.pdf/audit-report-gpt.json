@@ -1,0 +1,118 @@
+{
+  "document_id": "B-C-715 10-9-19_webfill_v5_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 layout is not preserved; the structured form layout is converted into a largely linear text flow.",
+      "severity": "major",
+      "evidence": "The PDF page has a multi-section form with a left form area, a stacked right-side information panel, and a large bordered reporting table below. In the HTML, these elements are presented as a single-column text list with large gaps, and the right-side boxed panel is no longer visually separated or aligned beside the left form fields.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The main reporting table on Page 1 is not visually intact.",
+      "severity": "major",
+      "evidence": "In the PDF, the 'Number of Gallons of Malt Beverage Sold In North Carolina During Month' section is a large bordered table with four distinct column headers and a contained footer area for totals and penalty. In the HTML, the table content is partially detached and shown as text/table fragments lower on the page, losing the original integrated table structure and spatial relationships.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Some text styling and form emphasis on Page 1 are weakened.",
+      "severity": "minor",
+      "evidence": "The PDF uses boxed labels, strong heading hierarchy, and inline parenthetical instructions with distinct placement. The HTML keeps the text but reduces the visual distinction of form fields and instructional text, making headings and field groupings less clear.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on Page 1 is disrupted by separating table/footer content from the form structure.",
+      "severity": "major",
+      "evidence": "In the PDF, a reader sees the title, form fields, right-side status panel, then the main table and signature/footer content in a coherent visual order. In the HTML, the form labels are listed first, while table/footer material appears later as a separate fragment, making the flow differ from the source layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Page 2 table is not fully preserved in the HTML conversion.",
+      "severity": "major",
+      "evidence": "The PDF page is dominated by one large bordered continuation table with four headers and a bottom 'Gallons Sold' note inside the table area. In the HTML, continuation content from Page 2 is merged into a smaller table on the prior HTML page view, while the separate HTML page shown contains mostly footer text rather than the large continuation table.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 2 reading order/content placement differs from the PDF because continuation table content is intermingled with Page 1 content.",
+      "severity": "major",
+      "evidence": "The PDF Page 2 starts with 'Page 2' header and immediately presents the continuation table. In the HTML, table rows including 'Gallons Sold (Add the total amount...)' appear before the footer text on the earlier view, and the later HTML page contains footer and repeated continuation markers, altering the sequence a user encounters.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 2 heading/header formatting is reduced.",
+      "severity": "minor",
+      "evidence": "The PDF has a compact line with 'Page 2', form number, legal name line, and NCDOR ID line above the table. The HTML reduces this to inline footer/header text near the bottom area without equivalent prominence or placement.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds fabricated text not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML header includes \"PRINT CLEAR\". The PDF pages shown do not contain any visible \"PRINT CLEAR\" text anywhere on the form.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The page 2 continuation table structure is largely omitted from the HTML; page 2 is reduced to a header note without the full repeated table block.",
+      "severity": "major",
+      "evidence": "PDF page 2 contains a full page headed \"Number of Gallons of Malt Beverage Sold In North Carolina During Month (continued from Page 1)\" with the repeated column headers and bottom \"Gallons Sold\" line. HTML only includes a page-header with \"Page 2, B-C-715, Web-Fill, 10-19 Legal Name NCDOR ID\" and \"(continued from Page 1)\" but does not reproduce the second-page table as a separate section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table data and structure from the PDF are merged incorrectly: page 1 and page 2 summary/footer items are combined into one HTML table body, which changes the table layout and row semantics.",
+      "severity": "major",
+      "evidence": "PDF page 1 table has a large blank reporting grid followed below the grid by summary lines: \"Gallons Sold (From Page 2)\", \"Total Gallons Sold ...\", and \"1. Late Filing Penalty ...\". PDF page 2 has a separate continuation grid with its own bottom \"Gallons Sold ...\" line. HTML places all of these as four tbody rows in one single table, including both page 1 and page 2 summary text together: \"Gallons Sold (From Page 2)\", \"Total Gallons Sold...\", \"1. Late Filing Penalty...\", and \"Gallons Sold (Add the total amount of gallons reported on this page and enter the sum here and on Page 1)\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure in the HTML does not reflect the document structure well; only a single h1 is used and major repeated section titles/table titles from page 2 are not represented as headings.",
+      "severity": "major",
+      "evidence": "HTML uses one h1: \"B-C-715 Malt Beverage Shipping Report Nonresident Vendor or Resident Brewery\" and no additional h2/h3 headings for major blocks such as the recurring page 2 section title \"Number of Gallons of Malt Beverage Sold In North Carolina During Month (continued from Page 1)\". In the PDF, this repeated title functions as a prominent section heading on page 2.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some text is altered or flattened in a way that loses layout meaning and field relationships.",
+      "severity": "major",
+      "evidence": "PDF separates fields visually as \"City\", \"State\", \"Zip Code\" and \"Name of Contact Person\" with \"State of Domicile\" positioned separately. HTML compresses these into plain text lines: \"City State Zip Code\" and \"Name of Contact Person State of Domicile\". The PDF also shows page 1 continuation note as a small footer \"(continued on Page 2)\", while HTML presents it as a standalone paragraph.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 9,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 40.85,
+    "page_count": 2,
+    "visual_input_tokens": 4075,
+    "visual_output_tokens": 986,
+    "content_input_tokens": 4348,
+    "content_output_tokens": 899,
+    "timestamp": "2026-04-14T05:16:39.049911",
+    "auditor_version": "1.0.0"
+  }
+}

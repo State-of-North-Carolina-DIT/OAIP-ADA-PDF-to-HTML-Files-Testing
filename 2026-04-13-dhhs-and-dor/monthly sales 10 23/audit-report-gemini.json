@@ -1,0 +1,46 @@
+{
+  "document_id": "monthly sales 10 23",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table rows are incorrectly split based on text line breaks.",
+      "severity": "major",
+      "evidence": "In Table 1, the single logical entry 'Motor Vehicle Lease (Short-Term) and Subscription' is split across two separate HTML table rows, breaking the semantic grouping of the item and its associated data.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table row structure is broken due to cell content being split across multiple rows, causing severe horizontal misalignment.",
+      "severity": "major",
+      "evidence": "In Table 2, pervasive issues occur where multi-line entries (e.g., the 'Combined General Rate - 7%' block, '714 Laundries, dry cleaners, etc.') are split into separate table rows for each line of text. Because the left and right halves of the table have different numbers of line breaks, this completely desyncs the rows horizontally, associating unrelated data visually on the same line.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of visual hierarchy in table lists.",
+      "severity": "minor",
+      "evidence": "Sub-items in Table 2 (e.g., '001 Manufactured homes') have lost their visual indentation relative to their bolded group headers ('3% and 4.75% Tax Group'), flattening the visual structure of the categories.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 112.87,
+    "page_count": 2,
+    "visual_input_tokens": 5012,
+    "visual_output_tokens": 558,
+    "content_input_tokens": 12148,
+    "content_output_tokens": 155,
+    "timestamp": "2026-04-14T05:35:47.432786",
+    "auditor_version": "1.0.0"
+  }
+}

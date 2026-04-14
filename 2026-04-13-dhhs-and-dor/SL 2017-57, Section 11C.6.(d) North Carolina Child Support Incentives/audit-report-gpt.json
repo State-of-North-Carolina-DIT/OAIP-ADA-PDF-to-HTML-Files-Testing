@@ -1,0 +1,46 @@
+{
+  "document_id": "SL 2017-57, Section 11C.6.(d) North Carolina Child Support Incentives",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated text in the CSS/theme wrapper that does not come from the PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains invented metadata/styling text such as \"Digital Commons NC \u2014 Standalone Theme CSS\", CSS variables like \"--nc-font\", \"--nc-navy\", and a Google Fonts import. None of this appears in the source PDF pages, which only contain the report content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML nests a second <main> inside the first <main>, creating duplicated structural wrapper content not present in the PDF.",
+      "severity": "major",
+      "evidence": "HTML shows both \"<main>\" wrapping the document and another inner \"<main>\" around the body content. The PDF has a single linear document structure with no duplicated wrapper sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A sentence in the ACTS modernization bullet list is mistranscribed, producing a grammatically broken and meaning-altered statement.",
+      "severity": "major",
+      "evidence": "PDF page 4 bullet reads: \"Completed the to-be business process analysis using a human-centered approach. This method will allow NCCSS to re-imagine the child support experience in order to uncover opportunities for process and policy improvements that guide technology decisions. Conduct the Completed to-be system analysis.\" HTML reproduces this as a single bullet and then also adds a separate bullet \"Completed the to-be system analysis.\" The phrasing \"Conduct the Completed to-be system analysis\" is clearly erroneous and alters the text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 21.52,
+    "page_count": 6,
+    "visual_input_tokens": 10995,
+    "visual_output_tokens": 298,
+    "content_input_tokens": 10284,
+    "content_output_tokens": 495,
+    "timestamp": "2026-04-14T05:28:35.898614",
+    "auditor_version": "1.0.0"
+  }
+}

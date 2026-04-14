@@ -1,0 +1,102 @@
+{
+  "document_id": "table12 7",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF presents data in a compact, dense tabular format across the full page width. The HTML conversion spreads the table into a much more vertically expanded layout with significantly more whitespace between rows, changing the overall page structure substantially.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows the entire first table (1997-2002) fitting on one page. HTML spreads this same content across much more vertical space with larger row heights.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table header structure differs slightly - PDF uses inline column headers (Collection/amount/[$]) while HTML uses multi-line header cells with 'Fiscal Year XXXX Collection amount [$]' format, but data content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF headers show 'Collection', 'amount', '[$]' as separate sub-rows under year headers. HTML combines these into single header cells like 'Fiscal Year 1997-1998 Collection amount [$]'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Same header formatting difference applies to the second table (2002-2007) on page 2.",
+      "severity": "minor",
+      "evidence": "PDF shows compact column headers vs HTML's expanded multi-line header format.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 in PDF contains the continuation table (2007-2012+) plus extensive footnotes all on one page. The HTML splits this into significantly more vertical space.",
+      "severity": "major",
+      "evidence": "PDF page 3 has table and all footnotes fitting in a single dense page. HTML spreads these across much more space.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Footnote text formatting differs - PDF has underlined dates (e.g., 'May 1, 1999', 'September 1, 2009') while HTML also appears to preserve underlining but with slightly different text flow.",
+      "severity": "minor",
+      "evidence": "PDF footnotes use underlined dates like 'May 1, 1999'. HTML appears to preserve this formatting.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 2011-2012+ column header in HTML shows '2011-2012+' correctly matching the PDF, data integrity preserved.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show the '+' notation on the final fiscal year column.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses nested <main> elements - one in the body and one inside it. The subtitle '[\u00a7 105 ARTICLE 2C.]' is rendered as h2 which is acceptable but could be considered part of the h1 title rather than a separate section heading.",
+      "severity": "minor",
+      "evidence": "HTML has <h1>TABLE 12. NET ALCOHOLIC BEVERAGE TAX COLLECTIONS BY TYPE</h1> followed by <h2>[\u00a7 105 ARTICLE 2C.]</h2>. In the PDF, this is a subtitle under the main title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF page 1 shows partial data for fiscal year 2001-2002 in the first table, with some values cut off at the right edge. The HTML includes full 2001-2002 values. While many match the visible portions, some values in the PDF are truncated and cannot be fully verified. However, the values that are visible appear consistent.",
+      "severity": "major",
+      "evidence": "PDF shows truncated columns for 2001-2002 (e.g., Beer excise shows '88' truncated, HTML shows '88,631,573'). The HTML values appear to be correctly extrapolated from the visible data in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "For fiscal year 2001-2002, the local distribution allocations cell shows '-' in the HTML, but the PDF shows no dash - it appears to be blank or the value is not visible due to column truncation. The special reserve fund for 2001-2002 shows 26,690,051 in both the PDF and HTML, which is consistent with the footnote.",
+      "severity": "major",
+      "evidence": "HTML: Local distribution allocations 2001-2002 = '-', '-'. The PDF's 2001-2002 column is partially cut off but the footnote confirms the $26,690,051 was transferred to special reserve fund instead of distributed locally.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains two nested <main> elements, which is invalid HTML structure but does not cause content duplication.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping the entire body content, then another <main> inside it wrapping the tables and footnotes.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 41.0,
+    "page_count": 2,
+    "visual_input_tokens": 6344,
+    "visual_output_tokens": 995,
+    "content_input_tokens": 18529,
+    "content_output_tokens": 834,
+    "timestamp": "2026-04-14T05:36:20.688314",
+    "auditor_version": "1.0.0"
+  }
+}

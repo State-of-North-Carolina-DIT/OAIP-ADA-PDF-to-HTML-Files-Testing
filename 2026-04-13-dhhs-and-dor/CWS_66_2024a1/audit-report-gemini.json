@@ -1,0 +1,30 @@
+{
+  "document_id": "CWS_66_2024a1",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Loss of text color used for emphasis",
+      "severity": "minor",
+      "evidence": "In the PDF, specific text in list item 1a, table rows 72 and 88, and the paragraph below the table are colored red. In the HTML, this text is rendered in standard black/dark gray, losing the visual highlighting.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 24.13,
+    "page_count": 1,
+    "visual_input_tokens": 2890,
+    "visual_output_tokens": 231,
+    "content_input_tokens": 3046,
+    "content_output_tokens": 140,
+    "timestamp": "2026-04-14T05:18:34.957217",
+    "auditor_version": "1.0.0"
+  }
+}

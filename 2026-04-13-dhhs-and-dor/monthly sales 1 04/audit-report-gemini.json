@@ -1,0 +1,62 @@
+{
+  "document_id": "monthly sales 1 04",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Multi-line cell split across rows",
+      "severity": "minor",
+      "evidence": "In Table 1 (bottom right), the single entry 'Utility services, satellite, & liquor' is split across two separate HTML table rows rather than being contained in one cell.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table row misalignment and fragmented data records",
+      "severity": "major",
+      "evidence": "In Table 3, multi-line category names (e.g., '009 Farm, mill...') are split into multiple HTML table rows. Because the left and right column groups wrap text differently, forcing them into a single HTML row grid misaligns the left-side items relative to the right-side items.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of bold formatting on hierarchical headings",
+      "severity": "major",
+      "evidence": "In Table 3, group headings like 'Apparel Group - 4.5%' and 'Automotive Group - 4.5%' are bold in the PDF to denote hierarchy. This bold styling is missing in the HTML, flattening the visual structure.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table row misalignment and fragmented data records",
+      "severity": "major",
+      "evidence": "In the continuation of Table 3, multi-line entries (e.g., '306 Restaurants...', '708 Hotels, motels...') are split into multiple rows. This breaks the vertical alignment between the independent left and right halves of the table, pairing unrelated data cells on the same HTML row.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of bold formatting on hierarchical headings",
+      "severity": "major",
+      "evidence": "In the continuation of Table 3, headings like 'Food Group - 4.5%' and 'Furniture Group - 4.5%' have lost their bold styling in the HTML.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 316.3,
+    "page_count": 3,
+    "visual_input_tokens": 7278,
+    "visual_output_tokens": 849,
+    "content_input_tokens": 16877,
+    "content_output_tokens": 172,
+    "timestamp": "2026-04-14T05:39:02.880829",
+    "auditor_version": "1.0.0"
+  }
+}

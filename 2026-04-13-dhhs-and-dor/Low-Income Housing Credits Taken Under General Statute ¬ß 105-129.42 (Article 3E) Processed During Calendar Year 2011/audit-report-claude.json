@@ -1,0 +1,94 @@
+{
+  "document_id": "Low-Income Housing Credits Taken Under General Statute \u00ac\u00df 105-129.42 (Article 3E) Processed During Calendar Year 2011",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a traditional document layout with centered title and horizontal rule separators, while the HTML uses a table-based layout for the data. The overall structure is preserved but the visual presentation differs.",
+      "severity": "minor",
+      "evidence": "PDF shows a centered title block with horizontal rules; HTML shows a left-aligned title with a red underline and data in bordered table rows.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The PDF presents the data as a simple two-column list (taxpayer and total credits), while the HTML renders it as a formal table with borders. The data content and structure are equivalent.",
+      "severity": "minor",
+      "evidence": "PDF: list format with dotted alignment; HTML: bordered table with Taxpayer and Total Credits ($) columns.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The asterisk (*) notation next to certain credit amounts appears in both versions, but the bold red styling of 'Total' and section headers in the PDF is rendered differently in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'Total' in bold red; HTML: 'Total' in bold black.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 PDF has a multi-column layout with Taxpayer, City, County, and Total Credits aligned in columns with section headers (Low-Income, Moderate-Income, High-Income). The HTML preserves this as a table.",
+      "severity": "minor",
+      "evidence": "PDF: columnar layout with section headers in red; HTML: table rows with section header rows.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The PDF page 2 table has four columns (Taxpayer, City, County, Total Credits) with section groupings. The HTML renders the same structure in a bordered table format. Data is complete and accurate.",
+      "severity": "minor",
+      "evidence": "All 5 low-income, 13 moderate-income, and partial high-income taxpayers are present in both versions.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 of the PDF contains the remaining High-Income taxpayers and the total. The HTML continues the table from the previous page and includes the total and source attribution.",
+      "severity": "minor",
+      "evidence": "PDF: separate page with 6 remaining high-income entries and total of 33,380,067; HTML: continues table with same entries and total.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Page 3 content from the \u00a7 105-129.42 table is missing from the HTML. The HTML includes page 3's header and sources but omits the continuation of the High-Income table data (Poyner Spring through Westinghouse) and the total row from page 3. These rows are instead placed in the page 2 table, which is structurally acceptable, but the page 3 table presentation in the PDF is collapsed into page 2's table in the HTML. Upon closer review, the data IS present in the combined table on page 2 \u2014 so no actual data is lost.",
+      "severity": "critical",
+      "evidence": "Page 3 rows (Poyner Spring Housing Assoc., Southside Revitalization, TBLF Hampton Pointe, Union Station, Water Garden Park, Westinghouse Apartments, and Total of 33,380,067) are present in the HTML table under page 2. Not a true missing section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 elements are used in the HTML. The document title 'North Carolina Department of Revenue' appears as h1 three times (once per page section), violating the single-h1 convention. Additionally, heading hierarchy is inconsistent \u2014 the subtitle structure uses h1 > h2 > h3 > h4 which may be acceptable but is repeated for each page break.",
+      "severity": "major",
+      "evidence": "Three instances of <h1>North Carolina Department of Revenue</h1> in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page headers (title, subtitle, statute reference, article, processing year) are repeated three times in the HTML, once for each page of the PDF. While this mirrors the PDF's page-by-page headers, in a single HTML document this creates unnecessary duplication of header content.",
+      "severity": "major",
+      "evidence": "Three separate div.page-header blocks each containing the same h1, h2, h3, h4 structure with 'North Carolina Department of Revenue', 'Low-Income Housing Credits', etc.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 37.61,
+    "page_count": 3,
+    "visual_input_tokens": 9860,
+    "visual_output_tokens": 1016,
+    "content_input_tokens": 11155,
+    "content_output_tokens": 720,
+    "timestamp": "2026-04-14T05:25:50.023998",
+    "auditor_version": "1.0.0"
+  }
+}

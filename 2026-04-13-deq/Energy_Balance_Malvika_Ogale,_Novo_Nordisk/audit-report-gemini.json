@@ -1,0 +1,198 @@
+{
+  "document_id": "Energy_Balance_Malvika_Ogale,_Novo_Nordisk",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Layout alignment lost.",
+      "severity": "major",
+      "evidence": "PDF content is bottom-aligned, HTML is top-left.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Main logo graphic missing.",
+      "severity": "major",
+      "evidence": "PDF shows a bull logo, HTML has no graphic.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column grid layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF has a 2-column grid, HTML is a single column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Images merged and icons missing.",
+      "severity": "major",
+      "evidence": "PDF has separate images and icons (globe, microscope), HTML merges photos into one block and misses icons.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Multi-column layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF has multi-column lists and a colored box, HTML renders them as a single plain text column.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order shifted.",
+      "severity": "minor",
+      "evidence": "Map image appears after the lists in HTML, but above them in the PDF.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed and items merged.",
+      "severity": "major",
+      "evidence": "PDF has text beside a grid of items, HTML has text above a single merged image of the grid.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF has images on the left and text on the right, HTML is a single column.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Images moved to bottom.",
+      "severity": "major",
+      "evidence": "Images originally alongside text in the PDF are placed at the end of the HTML page.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Visual diagram layout lost.",
+      "severity": "major",
+      "evidence": "PDF shows numbered items positioned around a globe, HTML renders them as a linear list.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order reversed.",
+      "severity": "critical",
+      "evidence": "HTML places the graphic and numbered list before the main heading and intro text.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Thematic graphic missing.",
+      "severity": "major",
+      "evidence": "Large line-art graphic of a wind turbine and buildings present in PDF is missing in HTML.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Graphics and icons missing.",
+      "severity": "major",
+      "evidence": "Line-art graphic on the left and small icons on the circular images in the PDF are absent in HTML.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Hierarchical diagram rendered as text.",
+      "severity": "critical",
+      "evidence": "PDF shows a block diagram with boxes and arrows, HTML renders this as a flat sequence of text labels.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF places text alongside a pie chart, HTML places text above the pie chart.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Process flow diagram missing.",
+      "severity": "critical",
+      "evidence": "PDF features a complex Sankey diagram, HTML only shows a linear list of text labels extracted from it.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF places text next to charts, HTML places text above the charts.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF uses a grid layout for text and images, HTML renders everything in a single column.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Small graphic missing.",
+      "severity": "minor",
+      "evidence": "Icon present in the bottom right of the PDF is missing in HTML.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF has a side-by-side comparison, HTML stacks them vertically.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed.",
+      "severity": "major",
+      "evidence": "PDF has a side-by-side layout, HTML stacks sections vertically.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Large thematic graphic missing.",
+      "severity": "major",
+      "evidence": "PDF has a large line-art graphic, HTML only has the text.",
+      "page": 19,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 17,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 104.19,
+    "page_count": 19,
+    "visual_input_tokens": 42299,
+    "visual_output_tokens": 2293,
+    "content_input_tokens": 17361,
+    "content_output_tokens": 182,
+    "timestamp": "2026-04-14T04:58:03.908873",
+    "auditor_version": "1.0.0"
+  }
+}

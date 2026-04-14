@@ -1,0 +1,54 @@
+{
+  "document_id": "PM REM 03 2010",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header information layout differs slightly.",
+      "severity": "minor",
+      "evidence": "In the PDF, the Governor, Date, and Director info are laid out in a single horizontal row. In the HTML, the Date is placed on a new line below the Governor and Director info.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Alignment of the 'ATTENTION' block differs.",
+      "severity": "minor",
+      "evidence": "In the PDF, the list of roles is aligned in a block to the right of the 'ATTENTION:' label. In the HTML, the roles are listed on new lines below the label.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Seal image placement differs.",
+      "severity": "minor",
+      "evidence": "The state seal is centered at the top of the PDF page, but it is left-aligned in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature image colors are inverted.",
+      "severity": "major",
+      "evidence": "The signature image in the HTML is rendered as white text on a black background, whereas the PDF shows black text on a white/transparent background.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 69.4,
+    "page_count": 2,
+    "visual_input_tokens": 5088,
+    "visual_output_tokens": 507,
+    "content_input_tokens": 4267,
+    "content_output_tokens": 144,
+    "timestamp": "2026-04-14T05:28:06.446135",
+    "auditor_version": "1.0.0"
+  }
+}

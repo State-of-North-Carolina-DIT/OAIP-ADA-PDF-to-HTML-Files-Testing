@@ -1,0 +1,62 @@
+{
+  "document_id": "DAAS AS 01 2020 VA Standing Written Requests for Patient Information",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Header seal/logo graphic is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "On page 1, the PDF shows the NC Department of Health and Human Services seal and branded header graphic at the top left. In the HTML, the text header remains but the circular seal/logo image is absent.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Top header layout is simplified and spacing/grouping differs from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF page 1 has a branded header block with left-aligned logo/title and right-aligned officials separated by a vertical gold line. The HTML presents the same content in a flatter stacked layout with less distinct grouping and altered whitespace.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "HTML does not use heading elements to represent the document\u2019s section structure; all section titles are plain paragraphs instead of a coherent heading hierarchy.",
+      "severity": "major",
+      "evidence": "PDF has clear section-like labels: \"DEAR COUNTY DIRECTOR OF SOCIAL SERVICES\", \"ATTENTION: ADULT/CHILD SERVICES SUPERVISORS AND PROGRAM MANAGERS\", \"SUBJECT: VA Standing Written Requests for Patient Information\", and \"REQUIRED ACTION:\". In HTML these appear as <p><strong>... rather than h1-h6 elements; the only heading-related styling is CSS for h1-h4, but no actual heading tags are used.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Department header/footer content from page 1 is duplicated and repositioned in HTML, appearing both in the top page-header block and effectively again within the document flow via nested main/page-header structure, creating structural duplication not present in the source layout.",
+      "severity": "major",
+      "evidence": "PDF shows the agency masthead once at the top of page 1 and the agency footer once at the bottom of page 1. HTML includes a top <div class=\"page-header\"> containing both masthead and footer text (\"NC DEPARTMENT OF HEALTH AND HUMAN SERVICES \u2022 DIVISION OF AGING AND ADULT SERVICES ... AN EQUAL OPPORTUNITY / AFFIRMATIVE ACTION EMPLOYER\"), rather than keeping footer separate; also a second <div class=\"page-header\"><p>2</p></div> is inserted mid-document, indicating repeated page-header usage and duplicated structural framing.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There are text transcription errors that alter exact wording/codes from the PDF.",
+      "severity": "major",
+      "evidence": "PDF says \"DEAR COUNTY DIRECTOR OF SOCIAL SERVICES\"; HTML says \"DEAR COUNY DIRECTOR OF SOCIAL SERVICES\" (missing \"T\"). PDF final code line reads \"CWS-01-2020\"; HTML reads \"CWS-01-202\" (missing trailing zero).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 19.31,
+    "page_count": 2,
+    "visual_input_tokens": 4075,
+    "visual_output_tokens": 372,
+    "content_input_tokens": 4876,
+    "content_output_tokens": 520,
+    "timestamp": "2026-04-14T05:20:33.439033",
+    "auditor_version": "1.0.0"
+  }
+}

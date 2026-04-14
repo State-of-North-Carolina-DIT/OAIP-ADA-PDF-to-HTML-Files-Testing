@@ -1,0 +1,30 @@
+{
+  "document_id": "Primary_Nursery_Areas",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse visual fidelity response as JSON",
+      "severity": "major",
+      "evidence": "{\n  \"findings\": [\n    {\n      \"check_id\": \"V4\",\n      \"severity\": \"minor\",\n      \"description\": \"Encoding error with degree symbols in specific coordinates\",\n      \"evidence\": \"In the PDF on page 1, the coordinates under 'Dough Creek' are written with degree symbols (e.g., '35\u00b0 54.7103''). In the HTML, these specific degree symbols are rendered as missing character blocks (e.g., '35\u0002 54.7103''). Note that other degree symbols on the same page rendered correctly.\",\n      \"page\": 1\n    },\n    {\n  ",
+      "page": null,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 87.68,
+    "page_count": 19,
+    "visual_input_tokens": 42337,
+    "visual_output_tokens": 845,
+    "content_input_tokens": 43549,
+    "content_output_tokens": 175,
+    "timestamp": "2026-04-14T05:02:56.164380",
+    "auditor_version": "1.0.0"
+  }
+}

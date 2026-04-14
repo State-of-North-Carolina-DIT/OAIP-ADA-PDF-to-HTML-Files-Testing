@@ -1,0 +1,126 @@
+{
+  "document_id": "Gas-1201ME Web 11-17-20_Sept-Dec_v2_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The infographic layout with three rounded pill-shaped sections (Guidelines, Printing, Before Sending) arranged around a central circle is completely lost. The HTML renders it as a flat, linear text layout.",
+      "severity": "critical",
+      "evidence": "PDF shows a visually structured infographic with three vertical pill/oval sections arranged side by side with a central circle. HTML shows a simple image followed by plain text in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The infographic is included as a full image in the HTML, and then the text content is also extracted below it, creating duplication.",
+      "severity": "minor",
+      "evidence": "PDF has one infographic. HTML shows the infographic image AND all its text content repeated below as plain text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The OCR/text extraction below the infographic image contains garbled/corrupted text artifacts.",
+      "severity": "major",
+      "evidence": "HTML shows strings like ',1 t*l', '..............', '\u2022.=====.=====m=u;', '::::\u2022', '\u00b7=!!!!::!!\u2022', 'c; ;1', '..\u2026.(8)' which are not present in the original PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The GAS-1201ME form layout with side-by-side fields is collapsed into a single-column list in the HTML. The original has a complex form layout with fields arranged in multiple columns.",
+      "severity": "major",
+      "evidence": "PDF shows fields like Street Address and County side by side, City/State/Zip in a row, and 'Fill in applicable circles' box on the right. HTML lists all fields vertically in a single column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part 1 Gallonage Accountability is rendered as a proper table in HTML, which reasonably represents the form structure. Part 2 is also rendered as a table. These are acceptable conversions.",
+      "severity": "minor",
+      "evidence": "PDF shows numbered lines with fill-in blanks; HTML shows structured tables with Line Number, Description, and value columns.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo at the top of the GAS-1201ME form is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF shows the NCDOR logo in the top-left corner of the form. HTML has no logo image.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The form title 'GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment' is reduced to just a heading at the bottom of page 1 text, losing its prominent positioning as the form header.",
+      "severity": "major",
+      "evidence": "PDF shows 'GAS-1201ME' prominently at the top of the form page. In the HTML, the form title appears as a heading 'NCDOR GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment' at the transition between pages.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The 'Fill in applicable circles' section and FEIN/SSN and Refund for Quarter Ending sections were in the right column of the form but are now placed sequentially after all the left-column fields, changing the reading flow.",
+      "severity": "major",
+      "evidence": "PDF has these sections positioned to the right of the name/address fields. HTML places them after all address fields in a linear sequence.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page 1 content is duplicated - appears both as an image with alt text and then again as fully rendered text sections (Guidelines, Printing, Before Sending). The infographic content from page 1 is reproduced twice in the HTML.",
+      "severity": "major",
+      "evidence": "The image has alt text describing the infographic, then the same content appears again as structured sections with headings 'Guidelines', 'Printing', 'Before Sending' with all the same text repeated.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The 'Before Sending' section has garbled text. The PDF says 'Do not submit photocopies of returns' but the HTML says 'ocopies of returns.' - missing the first part of the sentence.",
+      "severity": "major",
+      "evidence": "PDF: 'Do not submit photocopies of returns. Submit originals only.' HTML: 'ocopies of returns. Submit originals only.'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 elements exist in the HTML. There is an h1 for 'Instructions For Handwritten Forms' and another h1 for 'NCDOR GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment'. Additionally, nested <main> tags are used improperly.",
+      "severity": "major",
+      "evidence": "HTML contains: <h1>Instructions For Handwritten Forms</h1> and <h1>NCDOR GAS-1201ME Motor Fuels Claim for Refund Special Mobile Equipment</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "OCR artifacts and garbled text from the infographic page are included as literal text in the HTML, which are not meaningful content.",
+      "severity": "minor",
+      "evidence": "HTML includes: ',1 t\u00aeI', '\u2022\u00b7====-====m=u:', '::::\u2022\u2022', '\u00b7\u00b7=!!!:::!:\u2022', '\u00b7-\u00b7 -', 'c; ;1', ',,___(8)' \u2014 these are OCR noise from the infographic, not actual document content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The NCDOR header text is garbled in the HTML rendering of page 1.",
+      "severity": "minor",
+      "evidence": "HTML: 'CAROLINA NC \u2022 DEPARTMENT D(i) R I OF REVENUE NORTH' \u2014 should represent the NCDOR logo/header for North Carolina Department of Revenue.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 7,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 47.59,
+    "page_count": 2,
+    "visual_input_tokens": 6344,
+    "visual_output_tokens": 1241,
+    "content_input_tokens": 7928,
+    "content_output_tokens": 869,
+    "timestamp": "2026-04-14T05:23:19.399448",
+    "auditor_version": "1.0.0"
+  }
+}

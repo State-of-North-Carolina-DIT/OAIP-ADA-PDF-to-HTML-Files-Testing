@@ -1,0 +1,54 @@
+{
+  "document_id": "Jackson.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C3",
+      "description": "A key table row value is incorrect for the total of Public Assistance Administration: the HTML omits the county amount by 1.",
+      "severity": "major",
+      "evidence": "PDF page 2, row 'Total Cost For 2. Public Assistance Administration' shows County = 901,717. HTML shows 'Total Cost For 2. Public Assistance Administration' with County = 901,716.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The same numeric transcription error changes the reported total for one summary row, affecting text accuracy.",
+      "severity": "major",
+      "evidence": "PDF page 2 summary row reads '2,575,239  1,673,522  0  901,717'. HTML reads '2,575,239  1,673,522  0  901,716'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithfully represented. Major section titles from the PDF are embedded as bold table cells instead of semantic headings, so the document structure is flattened.",
+      "severity": "major",
+      "evidence": "PDF has visible section headings such as 'A. Division of Social Services', '1. Public Assistance Programs', '2. Public Assistance Administration', and '3. Services Programs'. HTML uses only one semantic heading '<h1>Jackson County</h1>'; the rest appear inside table cells as '<strong>...'</strong> rather than h2/h3/etc.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page header/footer content is duplicated in the HTML footer, creating repeated document metadata that does not reflect the PDF's reading flow.",
+      "severity": "major",
+      "evidence": "HTML footer repeats blocks for 'Page 2 of 3' and 'Page 3 of 3' along with repeated lines 'G.S. 108A-88 -- Determination of State/County Financial Participation', 'County Budget Estimates -- State Fiscal Year 2022-2023', 'Issued February 14, 2022', and 'Jackson County'. In the PDF these appear once per page as headers/footers, not as a consolidated repeated footer section after the main content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 21.36,
+    "page_count": 3,
+    "visual_input_tokens": 8388,
+    "visual_output_tokens": 248,
+    "content_input_tokens": 11494,
+    "content_output_tokens": 645,
+    "timestamp": "2026-04-14T05:24:39.143199",
+    "auditor_version": "1.0.0"
+  }
+}

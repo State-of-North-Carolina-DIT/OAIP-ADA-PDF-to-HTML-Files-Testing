@@ -1,0 +1,86 @@
+{
+  "document_id": "SUPLR 2010-0005 Printing and Mailing Services",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The header layout differs: PDF has the seal centered above the department name with Governor/Secretary names flanking, while HTML has the seal left-aligned with the department name centered below and Governor/Secretary names on opposite sides separated by a horizontal rule.",
+      "severity": "minor",
+      "evidence": "PDF: seal centered, department name centered below, names flanking. HTML: seal left-aligned, department name large and centered, horizontal rule separator added.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Account ID and FEIN fields in the PDF are right-aligned with redacted values; in the HTML they appear right-aligned but without the redacted black bars, just labels with no values.",
+      "severity": "minor",
+      "evidence": "PDF: 'Account ID: [redacted]' and 'FEIN: [redacted]' with black bars. HTML: 'Account ID:' and 'FEIN:' with no values shown.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The redacted (blacked-out) portions throughout the document are not reproduced in the HTML. While these are redactions rather than content, the visual representation differs.",
+      "severity": "minor",
+      "evidence": "PDF shows black bars over recipient address, attention line, salutation name, and location names. HTML shows these fields as blank/empty.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer contact information appears at the bottom of page 1 in the PDF but is rendered at the top of the second HTML page as a header/continuation.",
+      "severity": "minor",
+      "evidence": "PDF page 1: footer with phone, fax, address, website at bottom. HTML page 2: same contact info appears at top.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The closing signature block in the HTML lacks the redacted name that appears in the PDF above 'Administration Officer'.",
+      "severity": "minor",
+      "evidence": "PDF: black redaction bar above 'Administration Officer'. HTML: just 'Administration Officer' with no redaction indicator.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'cc:' line in the HTML omits the redacted name before 'Director \u2013 Sales and Use Tax Division', while the PDF shows a redacted bar.",
+      "severity": "minor",
+      "evidence": "PDF: 'cc: [redacted], Director \u2013 Sales and Use Tax Division'. HTML: 'cc: , Director \u2013 Sales and Use Tax Division'.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses h1 for 'North Carolina Department of Revenue' which is reasonable as a document title, but the HTML has nested <main> elements (three <main> tags), which is structurally invalid. There are no other heading levels used in the HTML despite the document having identifiable sub-sections (e.g., 'Re: Private Letter Ruling Request').",
+      "severity": "major",
+      "evidence": "HTML contains three <main> elements nested/sequential. No h2 or lower headings are used for any content sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The SUPLR 2010-0005 identifier appears in the page header div at the top and again in the page 2 header section, which mirrors the PDF's per-page headers. This is acceptable as it reflects the original document's formatting.",
+      "severity": "minor",
+      "evidence": "SUPLR 2010-0005 appears in first page-header div and in the page 2 header div, matching PDF pages.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.25,
+    "page_count": 2,
+    "visual_input_tokens": 6506,
+    "visual_output_tokens": 947,
+    "content_input_tokens": 7103,
+    "content_output_tokens": 515,
+    "timestamp": "2026-04-14T05:29:05.818506",
+    "auditor_version": "1.0.0"
+  }
+}

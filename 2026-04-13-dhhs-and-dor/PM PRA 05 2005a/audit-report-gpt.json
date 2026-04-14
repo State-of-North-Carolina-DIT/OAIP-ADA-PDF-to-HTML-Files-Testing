@@ -1,0 +1,54 @@
+{
+  "document_id": "PM PRA 05 2005a",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/theme content and branding not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains CSS comments/text such as \"Digital Commons NC \u2014 Standalone Theme CSS\", font imports, and variables like \"--nc-navy\", \"--nc-blue\", and \"--nc-link\". The PDF pages only show the title \"APPLICATION TIME STANDARDS 2006\" and the date table, with no Digital Commons branding or theme text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML merges the multi-page table into one continuous table and drops many rows from the PDF, causing table data loss.",
+      "severity": "major",
+      "evidence": "The PDF spans 5 pages of date rows beginning on page 1 with \"01/01/06 ... 02/10/06\" and continuing through page 5 to \"12/26/06\". In the HTML, after row \"02/09/06 ... 03/21/06 ... 09/21/06\", it jumps directly to \"03/22/06 ... 05/01/06\", omitting the PDF rows for 02/10/06 through 03/21/06. Similar gaps appear later: after \"04/30/06 ... 06/09/06 ... 12/09/06\" it jumps to \"06/10/06 ... 07/20/06\", omitting 05/01/06 through 06/09/06; after \"07/19/06 ... 08/28/06\" it jumps to \"08/29/06 ... 10/08/06\", omitting 07/20/06 through 08/28/06; after \"10/07/06 ... 11/16/06\" it jumps to \"11/17/06 ... 12/27/06\", omitting 10/08/06 through 11/16/06.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Text/data accuracy is compromised because large ranges of dates from the source table are missing in the HTML.",
+      "severity": "major",
+      "evidence": "The PDF page sequence shows continuous daily entries across the year, but the HTML skips entire date ranges, e.g., PDF page 2 starts with rows around \"03/22/06\" while page 1 should have ended at \"03/21/06\"; PDF page 3 starts with \"06/10/06\" while HTML lacks the intermediate rows from \"05/01/06\" to \"06/09/06\". These omissions change the meaning and completeness of the reference table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Some content appears duplicated or structurally repeated unnecessarily in the HTML wrapper.",
+      "severity": "major",
+      "evidence": "The HTML contains nested main elements: one outer \"<main>\" wrapping a header, then another inner \"<main>\" around the table. While the PDF has a simple single-page layout repeated across pages, the HTML introduces redundant structural wrappers not reflected in the source.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 25.38,
+    "page_count": 5,
+    "visual_input_tokens": 11132,
+    "visual_output_tokens": 240,
+    "content_input_tokens": 31096,
+    "content_output_tokens": 826,
+    "timestamp": "2026-04-14T05:27:18.543517",
+    "auditor_version": "1.0.0"
+  }
+}

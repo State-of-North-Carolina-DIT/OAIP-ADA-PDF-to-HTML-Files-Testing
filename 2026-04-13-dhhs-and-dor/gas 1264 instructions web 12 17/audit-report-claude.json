@@ -1,0 +1,110 @@
+{
+  "document_id": "gas 1264 instructions web 12 17",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NCDOR logo in the HTML version appears slightly different in styling/rendering compared to the PDF version",
+      "severity": "minor",
+      "evidence": "PDF shows NCDOR logo with 'Web 12-17' beneath it in a more compact header layout; HTML shows the logo with 'Web' and '12-17' as separate lines below it",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout differs - PDF has the title and logo side by side with a vertical bar separator, HTML stacks them vertically",
+      "severity": "minor",
+      "evidence": "PDF: NCDOR logo | GAS-1264 Instructions title side by side. HTML: Logo on top, title below with horizontal rule separator",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List item formatting differs slightly - PDF uses indented numbered list with periods, HTML uses a different numbering style",
+      "severity": "minor",
+      "evidence": "PDF: '1.' with tab indent. HTML: '1.' with standard list formatting",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Line-by-line instructions use different dash styles for line labels",
+      "severity": "minor",
+      "evidence": "PDF uses 'Line 1 - Beginning physical inventory' with bold formatting; HTML uses 'Line 1 - Beginning physical inventory' similarly but dash style differs slightly",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The numbered/lettered sub-items under Line 18 Administrative Discount use slightly different formatting",
+      "severity": "minor",
+      "evidence": "PDF uses indented numbered list with sub-letters a), b), c); HTML preserves the same structure with minor style differences",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The column instructions section for disbursement schedules has slightly different spacing between column definitions",
+      "severity": "minor",
+      "evidence": "PDF shows Column 3 Mode transport types in a tabular inline layout (J=Truck, R=Rail, etc.); HTML shows them in a similar but slightly reformatted layout",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The MAIL TO and QUESTIONS sections at the bottom of the last page maintain the two-column layout in both versions",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show the mailing address on the left and contact information on the right",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a nested <main> element inside another <main> element, which is invalid HTML structure. The header and footer are also placed inside the outer <main>. However, the heading hierarchy itself is reasonable: h1 for the title, h2 for major sections, h3 for sub-sections, and h4 for line-by-line items.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> wrapping a <header>, another <main>, and <footer>. This is a structural HTML issue but does not affect content fidelity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The PDF references www.ncdor.gov as hyperlinks in multiple places, but the HTML renders them as bold text rather than actual clickable hyperlinks (<a> tags).",
+      "severity": "minor",
+      "evidence": "PDF: 'the rates should be verified on the Department's website at www.ncdor.gov' appears as a link. HTML: rendered as <strong>www.ncdor.gov</strong> without an <a> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The receipts schedule column instructions reference 'Columns 5 & 6: Seller' in the PDF, but the HTML renders this as 'Columns 5 & 6: Seller' correctly. However, the disbursement column instructions skip Column 5 in the PDF (going from Column 4 to Columns 6 & 7), and the HTML correctly reflects this.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML correctly show the column numbering differences between receipt and disbursement schedules.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Schedule 8 instruction references 'Part, 2, Line 19' in the PDF (with an extra comma), and the HTML faithfully reproduces this typo from the source document.",
+      "severity": "minor",
+      "evidence": "PDF: 'should be included on Part, 2, Line 19 of the GAS-1264 return.' HTML: 'should be included on Part, 2, Line 19 of the GAS-1264 return.'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 11,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 44.28,
+    "page_count": 7,
+    "visual_input_tokens": 22254,
+    "visual_output_tokens": 1153,
+    "content_input_tokens": 27027,
+    "content_output_tokens": 771,
+    "timestamp": "2026-04-14T05:33:03.079586",
+    "auditor_version": "1.0.0"
+  }
+}

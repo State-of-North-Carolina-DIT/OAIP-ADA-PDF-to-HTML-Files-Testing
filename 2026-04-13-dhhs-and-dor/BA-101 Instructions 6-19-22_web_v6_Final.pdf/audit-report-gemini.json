@@ -1,0 +1,30 @@
+{
+  "document_id": "BA-101 Instructions 6-19-22_web_v6_Final.pdf",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "PDF page header text is included inline within the HTML content flow.",
+      "severity": "minor",
+      "evidence": "The header text 'Page 2, B-A-101 Instructions, Web, 7-22' appears in the HTML between the 'Manufacturer's Option' and 'Modified Risk Tobacco Products' definitions, slightly interrupting the reading sequence.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 56.08,
+    "page_count": 2,
+    "visual_input_tokens": 5072,
+    "visual_output_tokens": 298,
+    "content_input_tokens": 5480,
+    "content_output_tokens": 155,
+    "timestamp": "2026-04-14T05:16:58.423707",
+    "auditor_version": "1.0.0"
+  }
+}

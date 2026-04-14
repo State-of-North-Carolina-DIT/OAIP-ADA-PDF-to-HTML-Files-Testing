@@ -1,0 +1,142 @@
+{
+  "document_id": "AV-21 Pipeline Companies Annual Report for Ad Valorem Tax Valuation",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The year '2021' in the PDF is displayed as a large, prominent centered heading with heavy weight, while in the HTML it appears as a left-aligned heading that is less visually prominent.",
+      "severity": "minor",
+      "evidence": "PDF: '2021' is centered, large bold text at top. HTML: '2021' is left-aligned, smaller heading with a red underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The department address block is centered in the PDF but left-aligned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'NORTH CAROLINA DEPARTMENT OF REVENUE' block is centered. HTML: same block is left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'PIPELINE COMPANIES' title is rendered much larger and bolder in the PDF than in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: Very large bold centered title. HTML: Smaller left-aligned heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The form fields box in the PDF has a visible border/frame, while the HTML version also has a bordered box but with slightly different visual treatment.",
+      "severity": "minor",
+      "evidence": "PDF: Clear rectangular border around company info section. HTML: Similar border present but styling differs slightly.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Schedule A table in the PDF has the ISSUE categories (Stock, Long Term Debt, etc.) as row labels on the left spanning multiple rows visually, while the HTML repeats the category labels for each individual row.",
+      "severity": "minor",
+      "evidence": "PDF: 'Stock' label appears once spanning multiple blank rows. HTML: 'Stock' is repeated on each of 9 separate rows, 'Long Term Debt' repeated on 8 rows, etc.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The number of rows in the Schedule A table differs slightly between PDF and HTML for some categories (Bank Notes has more rows labeled in HTML).",
+      "severity": "minor",
+      "evidence": "PDF: Bank Notes section has ~4 blank rows. HTML: Bank Notes and Other Short Term Obligations has 5 labeled rows.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Schedule B and Schedule C appear on the same page in the PDF but are split across page boundaries in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 3: Contains Schedule B (two tables) and Schedule C (allocation factors). HTML: Same content present but paginated differently.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Schedule B tables in PDF have more empty rows than the HTML version, but all column headers and the SYSTEM TOTAL rows with 100% values are preserved.",
+      "severity": "minor",
+      "evidence": "PDF: ~10 blank state rows per table. HTML: ~5 blank rows per table. Data structure is the same.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Schedule D table in PDF has more blank rows for data entry than the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: ~25+ blank rows in the property table. HTML: ~3-4 visible blank rows.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Schedule E and Schedule F both appear on the same page in the PDF. In the HTML they are also on the same logical page but with fewer blank rows.",
+      "severity": "minor",
+      "evidence": "PDF page 5: Schedule E has ~15 blank rows, Schedule F has ~7 blank rows. HTML: fewer blank rows in both.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Schedule A table in HTML has artificially duplicated row labels. The PDF shows a single table with category sections (Stock, Long Term Debt, Bank Notes and Other Short Term Obligations, Other Debt, Equipment Obligations, Account Receivable, Total) each with multiple blank rows beneath them. The HTML repeats the category label in every row (e.g., 'Stock' appears 9 times, 'Long Term Debt' 8 times) instead of having one label row per category followed by blank rows.",
+      "severity": "major",
+      "evidence": "PDF shows 'Stock' as a single left-side label for a group of blank rows. HTML has 9 separate <tr> rows each with <td>Stock</td>. Similarly for other categories.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 elements and broken heading hierarchy. The HTML has 'h1' used for '2021' in the page header, then multiple h2 elements for department name, 'PIPELINE COMPANIES', and subsequent schedule titles. The heading hierarchy is inconsistent - h2 is used for both the department address block and for schedule titles like 'PIPELINE COMPANIES' on subsequent pages. Some sections jump from h2 to h3 inconsistently.",
+      "severity": "major",
+      "evidence": "HTML has <h1>2021</h1> followed by <h2>PIPELINE COMPANIES</h2> on Page 1, then again <h2>PIPELINE COMPANIES</h2> repeated on pages 2, 3, 4, and 5. Multiple h1-equivalent usages across pages.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> tags create invalid HTML structure. There is an outer <main> wrapping the entire document, and then additional <main> elements are used within each page section.",
+      "severity": "major",
+      "evidence": "The outer template has <main>...</main> in the body, and then additional <main> elements appear for page content sections, creating nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The content from Page 1 appears to have structural elements listed twice - once in the page-header div and once implicitly through the form fields. The AFFIRMATION section text and the IMPORTANT section text each appear once which is correct, but the page header div redundantly includes some structural information.",
+      "severity": "minor",
+      "evidence": "The page-header div at the top contains Form AV-21, Rev 1-21, 2021, department info, and PIPELINE COMPANIES heading, which is appropriate header content and not true duplication.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Schedule C item 2, the HTML says 'origin cost' matching the PDF text, but the PDF page header text says 'origin cost' as well (appears to be a typo in the original for 'original cost'). This is faithful to the source.",
+      "severity": "minor",
+      "evidence": "PDF: 'Attach a schedule showing the origin cost from Line 1 above'. HTML matches this text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 12,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 54.39,
+    "page_count": 5,
+    "visual_input_tokens": 16114,
+    "visual_output_tokens": 1426,
+    "content_input_tokens": 17734,
+    "content_output_tokens": 995,
+    "timestamp": "2026-04-14T05:15:50.776451",
+    "auditor_version": "1.0.0"
+  }
+}

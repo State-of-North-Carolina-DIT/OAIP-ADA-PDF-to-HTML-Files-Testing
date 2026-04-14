@@ -1,0 +1,30 @@
+{
+  "document_id": "10 12 Fed Actives",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column table layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "The PDF displays two distinct tables side-by-side. The HTML rendering stacks the second table below the first one, losing the horizontal layout.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 31.54,
+    "page_count": 1,
+    "visual_input_tokens": 2888,
+    "visual_output_tokens": 189,
+    "content_input_tokens": 5957,
+    "content_output_tokens": 135,
+    "timestamp": "2026-04-14T05:11:24.760966",
+    "auditor_version": "1.0.0"
+  }
+}

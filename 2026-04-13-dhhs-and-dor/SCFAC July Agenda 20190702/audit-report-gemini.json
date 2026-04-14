@@ -1,0 +1,30 @@
+{
+  "document_id": "SCFAC July Agenda 20190702",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Merged table cell rendered as split cells.",
+      "severity": "minor",
+      "evidence": "In the PDF, the row containing 'Kate Barrow [Contact Person]...' spans both columns of the location/call-in information block. In the HTML table, this text is confined to the left cell, and an empty right cell is present.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 44.68,
+    "page_count": 1,
+    "visual_input_tokens": 2902,
+    "visual_output_tokens": 218,
+    "content_input_tokens": 3235,
+    "content_output_tokens": 167,
+    "timestamp": "2026-04-14T05:28:32.567718",
+    "auditor_version": "1.0.0"
+  }
+}

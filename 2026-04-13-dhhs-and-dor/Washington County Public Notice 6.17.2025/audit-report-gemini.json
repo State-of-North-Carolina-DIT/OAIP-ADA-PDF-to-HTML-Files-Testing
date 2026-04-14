@@ -1,0 +1,38 @@
+{
+  "document_id": "Washington County Public Notice 6.17.2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "The PDF header features a two-column layout with department information on the left and a list of officials on the right. The HTML renders all header content sequentially in a single left-aligned column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Significant loss of text formatting in headings.",
+      "severity": "major",
+      "evidence": "The PDF features distinct heading styles: a large blue date, a large red 'PUBLIC NOTICE', and a large bold black title. The HTML renders these elements in a much smaller, uniform size and black color, losing the visual hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 30.35,
+    "page_count": 1,
+    "visual_input_tokens": 2902,
+    "visual_output_tokens": 298,
+    "content_input_tokens": 3179,
+    "content_output_tokens": 139,
+    "timestamp": "2026-04-14T05:30:10.729429",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "document_id": "Gas-1259_web_9-30-21_v1_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The infographic image from page 1 is missing in the HTML conversion. The HTML renders the content as structured text with bullet points instead of the visual infographic with circular/oval design elements, icons, and visual hierarchy.",
+      "severity": "critical",
+      "evidence": "PDF shows an elaborate infographic with three main sections (Guidelines, Printing, Before Sending) in stylized oval/pill shapes with icons (book, printer, envelope, documents). HTML renders this as plain text headings and bullet points.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 1 infographic's three-column layout (Guidelines left, Printing center, Before Sending right) is collapsed into a single-column sequential layout in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows three parallel sections arranged spatially around a central circle. HTML shows them stacked vertically as sequential sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 (GAS-1259 form) loses its multi-column layout for the header area. The PDF has fields arranged in a complex grid (Trade Name, Street Address/County side by side, contact fields with phone/fax, and a right-side panel with checkboxes, Account Number, and Return for Month of). The HTML renders these as a single-column sequential list.",
+      "severity": "major",
+      "evidence": "PDF: Street Address and County fields are side by side; City, State, and Zip Code are on one row; Fill in applicable circles box, Account Number, and Return for Month are in a right-side panel. HTML: All fields are listed vertically one after another.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the Part 1 table, the grayed-out cells for Dyed Diesel and Dyed Kerosene columns in certain rows (lines 1, 8 in Part 2) that indicate non-applicable fields are not visually distinguished in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows gray shading in certain cells to indicate they are not applicable. HTML shows empty cells without visual distinction.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The dollar sign ($) indicator in the Total column of line 7 appears as a standalone '$' character in the HTML rather than being positioned within the cell as shown in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows a large '$' symbol in the Total column for line 7. HTML shows '$' but in a different visual presentation.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In Part 2 Gallonage Summary, the grayed-out cells (Gasoline column for lines 8, 9, 11; Dyed Diesel and Dyed Kerosene for lines 10, 12) are not visually indicated in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF uses gray shading to indicate non-applicable cells. HTML shows all cells as empty white cells.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The signature block layout is different. PDF has Signature, Title, and Date on a single line. HTML has them stacked with Date appearing on a separate line.",
+      "severity": "major",
+      "evidence": "PDF: 'Signature: _____ Title: _____ Date: _____' on one line. HTML: Signature and Title on one line, Date on the next.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The MAIL TO and QUESTIONS sections are arranged side by side in the PDF but stacked vertically in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: MAIL TO on left, QUESTIONS on right. HTML: MAIL TO followed by QUESTIONS below.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 elements used. 'Do Not Include This Page' is h1, and 'Motor Fuel Backup Tax Return' is also h1. The document should have only one h1.",
+      "severity": "major",
+      "evidence": "HTML has <h1>Do Not Include This Page</h1> in Page 1 section and <h1>Motor Fuel Backup Tax Return</h1> in Page 2 section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken. Under the page 2 section, h2 'GAS-1259' appears before h1 'Motor Fuel Backup Tax Return', and h3 elements like 'Fill in applicable circles:', 'Account Number', 'Return for Month of' are used for form field labels rather than document sections.",
+      "severity": "major",
+      "evidence": "HTML: <h2>GAS-1259</h2> followed by <h1>Motor Fuel Backup Tax Return</h1>. Also <h3>Fill in applicable circles:</h3>, <h3>Account Number</h3>, <h3>Return for Month of</h3> used for form labels.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The nested <main> elements create structural duplication. There is an outer <main> and an inner <main> element.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> wrapping another <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In Part 1, Line 1 for 'Motor fuel road tax due', the 'Jet Fuel and AvGas' column should be shaded/greyed out (not applicable) per the PDF, but the HTML renders it as a regular empty cell indistinguishable from fillable cells. Similarly, Part 2 has several greyed-out cells for certain fuel types on certain lines that are not distinguished in HTML.",
+      "severity": "major",
+      "evidence": "PDF shows grey/shaded cells for Line 1 Jet Fuel and AvGas column, and Part 2 Lines 8-11 have various greyed columns for Gasoline, Undyed Diesel, Undyed Kerosene, and Jet Fuel and AvGas. HTML does not mark these as distinct.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "One image has empty alt text, which is not descriptive.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 432.0pt; height: auto;\">",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 6,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 48.69,
+    "page_count": 3,
+    "visual_input_tokens": 9881,
+    "visual_output_tokens": 1334,
+    "content_input_tokens": 10261,
+    "content_output_tokens": 877,
+    "timestamp": "2026-04-14T05:23:46.101773",
+    "auditor_version": "1.0.0"
+  }
+}

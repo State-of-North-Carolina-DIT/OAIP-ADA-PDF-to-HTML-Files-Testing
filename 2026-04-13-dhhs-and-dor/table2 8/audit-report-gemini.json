@@ -1,0 +1,54 @@
+{
+  "document_id": "table2 8",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table structure has been significantly altered, combining separate sections into one continuous layout and flattening hierarchical headers.",
+      "severity": "major",
+      "evidence": "The PDF presents the data in multiple distinct table sections (e.g., two sections on page 1). The HTML merges all years (1999 to 2014) into a single, extremely wide horizontal table. Additionally, the spanning column headers in the PDF (where a year spans over 'Amount' and 'Percent' columns) are flattened into single-level headers in the HTML (e.g., '1999-2000 Amount [$]').",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of text formatting and indentation in the table's first column, removing visual hierarchy.",
+      "severity": "major",
+      "evidence": "In the PDF, the 'Sources of revenue' column uses bold text (e.g., 'Income Taxes:', 'Total Tax Revenue') and indentation to indicate categories and sub-categories. The HTML rendering strips this formatting, presenting all items with uniform font weight and alignment, which obscures the hierarchical relationship of the data points.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text formatting (bolding and underlining) is missing in the footnotes section.",
+      "severity": "minor",
+      "evidence": "The PDF uses bolding and underlining to highlight key terms at the beginning of footnote paragraphs (e.g., 'Estate Tax.', 'Soft Drink Tax.', '*Real Estate Conveyance Tax.'). The HTML renders these paragraphs as plain text without the distinguishing styles.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML document skips the <h1> heading level.",
+      "severity": "minor",
+      "evidence": "The document starts directly with `<div class=\"page-header\"><h2>TABLE 2. STATE GENERAL FUND: TAX REVENUES BY SOURCE</h2></div>`, missing an initial <h1> heading for the top-level document structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 73.08,
+    "page_count": 2,
+    "visual_input_tokens": 5074,
+    "visual_output_tokens": 595,
+    "content_input_tokens": 12938,
+    "content_output_tokens": 261,
+    "timestamp": "2026-04-14T05:37:33.767398",
+    "auditor_version": "1.0.0"
+  }
+}

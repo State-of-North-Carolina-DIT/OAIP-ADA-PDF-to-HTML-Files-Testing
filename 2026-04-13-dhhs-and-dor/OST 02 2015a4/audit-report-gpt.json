@@ -1,0 +1,46 @@
+{
+  "document_id": "OST 02 2015a4",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated stylesheet/theme content and an external Google Fonts URL that do not appear in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains invented text such as \"Digital Commons NC \u2014 Standalone Theme CSS\", CSS variables, and \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...\")\". The PDF pages only show the handout content (title, table, handout label, revised date) and do not contain any CSS/theme text or URLs.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure is incomplete: the continuation page title is not represented as a heading in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 2 prominently shows the heading \"INSURANCE MAZE (CONTINUED)\". HTML uses only one heading, \"<h1>THE INSURANCE MAZE</h1>\", and does not include a corresponding heading for the continued page.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A text accuracy error changes the meaning in the burial exclusion guidance for whole life with dividend accumulations left to earn interest.",
+      "severity": "major",
+      "evidence": "PDF row \"WHOLE LIFE with Dividend Accumulations left to earn interest\" under BURIAL EXCLUSION reads: \"See \u2018Burial Exclusion\u2019 for term insurance. Treat the same.\" HTML renders: \"See \u201cBurial Exclusion\u201d for term insurance. Treat the same.\" The key word \"insurance\" is missing after \"term\", altering the referenced item.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 16.3,
+    "page_count": 2,
+    "visual_input_tokens": 4769,
+    "visual_output_tokens": 164,
+    "content_input_tokens": 5158,
+    "content_output_tokens": 417,
+    "timestamp": "2026-04-14T05:26:27.893337",
+    "auditor_version": "1.0.0"
+  }
+}

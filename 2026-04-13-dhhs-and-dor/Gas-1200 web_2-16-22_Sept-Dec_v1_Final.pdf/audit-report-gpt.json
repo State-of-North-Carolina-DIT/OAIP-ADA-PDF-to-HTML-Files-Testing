@@ -1,0 +1,78 @@
+{
+  "document_id": "Gas-1200 web_2-16-22_Sept-Dec_v1_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Introductory form layout is not preserved; the PDF's structured form with positioned fields and right-side grouped boxes is converted into a single flowing text layout.",
+      "severity": "major",
+      "evidence": "On page 2 of the PDF, the GAS-1200 form has a multi-region layout: header at top, left-aligned form fields, and stacked boxed sections on the right for circles, FEIN/SSN, refund quarter, and organization type. In the HTML, these are flattened into a vertical single-column reading layout with labels and bullets, losing the original spatial grouping.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The non-tabular form regions and lined entry areas are not preserved as structured form layout.",
+      "severity": "major",
+      "evidence": "Page 2 PDF uses boxed form fields, aligned entry lines, and grouped right-side panels. In HTML, those areas appear as plain text labels and bullet lists without the visual field structure, reducing the integrity of the original form presentation.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text formatting and emphasis are only partially preserved in the form header and labels.",
+      "severity": "minor",
+      "evidence": "The PDF shows a strongly formatted title block with logo, bold title, compact subtitle, and tightly aligned field labels. The HTML keeps the text content but with looser spacing and simpler styling, making the hierarchy less visually distinct.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The first PDF page is explicitly marked as excluded, but the HTML includes its content as part of the document.",
+      "severity": "critical",
+      "evidence": "PDF page 1 header says \"Do Not Include This Page\". HTML includes that page content in a page-header and full section: \"Do Not Include This Page\" and \"Instructions For Handwritten Forms\" with Guidelines/Printing/Before Sending.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML adds invented table headers and structural labels that are not present as text in the PDF form.",
+      "severity": "critical",
+      "evidence": "HTML table includes headers \"Line\", \"Description\", and \"Amount\" and an HTML comment \"COLUMNS: Line | Description | Motor Fuel that includes N.C. road tax\". In the PDF, Part 1 is a form layout with numbered lines and one visible boxed label \"Motor Fuel that includes N.C. road tax\"; there are no textual table headers \"Line\", \"Description\", or \"Amount\" displayed.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure and uses multiple h1 elements.",
+      "severity": "major",
+      "evidence": "HTML uses an h1 for \"Instructions For Handwritten Forms\", another h1 for \"NCDOR\", and h2 for \"GAS-1200 Motor Fuels Claim for Refund Nonprofit Organizations\". The PDF\u2019s main document title is the GAS-1200 form title; \"NCDOR\" is branding, not a top-level section heading. Multiple h1 elements break hierarchy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some form text is altered or normalized in ways that change fidelity to the source.",
+      "severity": "major",
+      "evidence": "PDF shows \"FEIN or SSN\" and separately \"OFFICE USE ONLY\" positioned in the right panel; HTML renders them as standalone paragraphs in sequence under a section. More notably, the PDF title block reads \"GAS-1200 Motor Fuels Claim for Refund Nonprofit Organizations\" with layout and branding, while HTML splits it into heading levels and adds a separate h1 \"NCDOR\". Also the printed form instruction line in PDF is \"This claim applies to tax-paid motor fuel. It does not apply to dyed diesel fuel and dyed kerosene on which sales tax was paid.\" prefixed visually after \"Part 1. Gallonage Accountability -\"; HTML moves it outside/above the heading, changing structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 25.29,
+    "page_count": 2,
+    "visual_input_tokens": 5605,
+    "visual_output_tokens": 549,
+    "content_input_tokens": 5040,
+    "content_output_tokens": 616,
+    "timestamp": "2026-04-14T05:22:47.913602",
+    "auditor_version": "1.0.0"
+  }
+}

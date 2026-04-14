@@ -1,0 +1,54 @@
+{
+  "document_id": "Stanly Budget Estimates SFY2025.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Loss of text formatting and line breaks within table cells causes text clumping.",
+      "severity": "major",
+      "evidence": "In the PDF, section headers (e.g., '1. Public Assistance Programs') are bold. Totals rows feature bold text on one line and an italicized note on the next (e.g., 'Total Cost For' followed by 'Note that the totals...'). In the HTML, all text within these cells is rendered as plain text without line breaks, resulting in run-on strings like 'Total Cost For Note that the totals may be off due to rounding.'",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of text formatting and line breaks within table cells causes text clumping.",
+      "severity": "major",
+      "evidence": "Similar to page 1, table cells containing totals and descriptive notes lose their bold/italic styling and line breaks in the HTML, merging into a single unformatted run-on string (e.g., 'Total Cost For 1. Public Assistance Programs Note that...'). Section headers also lose bolding.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of text formatting and line breaks within table cells causes text clumping.",
+      "severity": "major",
+      "evidence": "Table cells containing totals and descriptive notes lose their bold/italic styling and line breaks in the HTML, merging into a single unformatted run-on string. Section headers also lose bolding.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Grand Total' row is split into multiple rows in the HTML.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'Grand Total' and 'All Programs and Administration' are visually presented as a single row block corresponding to the final data values. The HTML splits this into two distinct rows: a row for 'Grand Total' with empty data cells, followed by a row for 'All Programs and Administration' containing the values.",
+      "page": 3,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 60.92,
+    "page_count": 3,
+    "visual_input_tokens": 7314,
+    "visual_output_tokens": 788,
+    "content_input_tokens": 9357,
+    "content_output_tokens": 154,
+    "timestamp": "2026-04-14T05:30:03.110482",
+    "auditor_version": "1.0.0"
+  }
+}

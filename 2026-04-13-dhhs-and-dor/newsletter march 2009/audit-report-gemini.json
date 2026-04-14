@@ -1,0 +1,102 @@
+{
+  "document_id": "newsletter march 2009",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Loss of multi-column layout",
+      "severity": "major",
+      "evidence": "The PDF features a multi-column layout (two main columns and a right sidebar), but the HTML renders all content in a single continuous column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Incorrect reading order due to sidebar placement",
+      "severity": "major",
+      "evidence": "In the HTML, the right sidebar content ('MRS Meetings' and 'MRS Questions?') appears before the main article ('Innovation Profile') and the 'In this Issue' section, disrupting the logical reading flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Loss of multi-column layout",
+      "severity": "major",
+      "evidence": "The PDF's two-column layout (left sidebar and main right column) is flattened into a single column in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Sidebar content interrupts main article flow",
+      "severity": "major",
+      "evidence": "The left sidebar content ('Training Dates', publishing info, etc.) appears at the very top of the HTML, interrupting the continuation of the main article ('a change is rolled out...') carried over from page 1.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Loss of multi-column layout",
+      "severity": "major",
+      "evidence": "The PDF's multi-column layout is flattened into a single column in the HTML.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Incorrect reading order due to sidebar placement",
+      "severity": "major",
+      "evidence": "The right sidebar content ('Training Dates') appears at the top of the HTML reading order, before the main article ('Recognizing and Honoring Differences').",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of distinct visual grouping for callout box",
+      "severity": "minor",
+      "evidence": "The 'Social Worker/Client Narrative' section is enclosed in a prominent rounded box in the PDF, but appears as standard flowing text in the HTML without any distinct border or background styling.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Loss of multi-column layout",
+      "severity": "major",
+      "evidence": "The PDF's two-column layout is flattened into a single column in the HTML.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Sidebar content interrupts main article flow",
+      "severity": "major",
+      "evidence": "The left sidebar content ('Training Dates') appears at the top of the HTML, interrupting the continuation of the article ('developed an anonymous survey...') from the previous page.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of pull quote styling",
+      "severity": "minor",
+      "evidence": "The pull quote ('Using the script, I can literally feel barriers melt...') is styled with red, italicized text and placed to the right in the PDF. In the HTML, it appears as indented standard text near the end of the article, losing its distinct emphasis.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 8,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 40.03,
+    "page_count": 4,
+    "visual_input_tokens": 9436,
+    "visual_output_tokens": 1143,
+    "content_input_tokens": 8238,
+    "content_output_tokens": 160,
+    "timestamp": "2026-04-14T05:35:09.615021",
+    "auditor_version": "1.0.0"
+  }
+}

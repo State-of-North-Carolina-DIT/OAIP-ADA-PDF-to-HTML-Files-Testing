@@ -1,0 +1,54 @@
+{
+  "document_id": "Richmond",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Header typography and emphasis are not fully preserved.",
+      "severity": "minor",
+      "evidence": "In the PDF, the top title block uses bold uppercase text with 'FUNDING AUTHORIZATION', 'SFY 2016-2017', and 'AUTHORIZATION #1' grouped tightly and centered. In the HTML, the title is larger but lighter in weight, and the subtitle lines are spaced farther apart, reducing the visual distinction and hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Signature/date lines and labels are reformatted, reducing alignment fidelity.",
+      "severity": "minor",
+      "evidence": "In the PDF, the signature line, division label, and date are arranged on separate aligned baselines with the date label directly beneath the date. In the HTML, 'Division of Aging & Adult Services Date' appears on one line and the accepted-by/date fields are compressed into inline text, altering the original form-like formatting.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table data mismatch: the Adult Day Care Fund row is missing the Federal Funds placeholder shown in the PDF.",
+      "severity": "major",
+      "evidence": "PDF table row for 'Adult Day Care Fund (93.667)' shows State Funds '$-', County Funds '$-', Total Funds '$-' and the Federal Funds cell appears present as a blank/placeholder cell within the table structure. HTML renders this row as '<td></td><td>$-</td><td>$-</td><td>$-</td>' after the program name, which preserves blankness but may not faithfully represent the visible placeholder formatting used elsewhere.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text formatting/spacing differences in headings and signature/date lines.",
+      "severity": "minor",
+      "evidence": "PDF heading shows 'SFY 2016- 2017' and signature/date presented on separate aligned lines with underlines. HTML uses heading tags and converts the signature/date block to text with underscores and line breaks: '____________________________________________ August 31, 2016' and 'Division of Aging & Adult Services Date'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 16.36,
+    "page_count": 1,
+    "visual_input_tokens": 2381,
+    "visual_output_tokens": 353,
+    "content_input_tokens": 3184,
+    "content_output_tokens": 333,
+    "timestamp": "2026-04-14T05:28:00.961050",
+    "auditor_version": "1.0.0"
+  }
+}

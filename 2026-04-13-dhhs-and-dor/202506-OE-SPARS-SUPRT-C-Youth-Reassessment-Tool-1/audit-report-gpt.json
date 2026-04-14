@@ -1,0 +1,62 @@
+{
+  "document_id": "202506-OE-SPARS-SUPRT-C-Youth-Reassessment-Tool-1",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Logo graphic missing from the HTML cover page.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows the SAMHSA logo in the upper-right corner; the HTML rendering does not display this logo and only shows text content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Cover-page title styling is not fully preserved.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses larger, bold blue title text and a bold blue subtitle; the HTML renders the same text in darker/black styling with less visual distinction.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The cover page present in the PDF is missing as a distinct section/page in the HTML; its contents are merged into the body rather than preserved as the first page/section.",
+      "severity": "critical",
+      "evidence": "PDF page 1 is a standalone cover with the SAMHSA logo, 'Substance Abuse and Mental Health Services Administration (SAMHSA) Unified Performance Reporting Tool (SUPRT) - C', 'YOUTH (12 TO 17) / CLIENT / REASSESSMENT FORM', and 'Version: June 2025'. In HTML, these cover elements appear at the start of the document, but there is no separate first-page section corresponding to the PDF cover; the HTML immediately continues into the next page content after an <hr>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure: multiple top-level document sections are encoded as h3 instead of maintaining a consistent hierarchy under the single h1/h2 title.",
+      "severity": "major",
+      "evidence": "HTML uses h1 for the document title and h2 for 'YOUTH (12 TO 17) / CLIENT / REASSESSMENT FORM', then uses h3 for 'CLIENT CONSENT', 'A. SOCIAL DRIVERS OF HEALTH', 'Thank you for completing this reassessment form.', and '[OFFICE USE ONLY] RECORD MANAGEMENT \u2013 YOUTH / CLIENT / REASSESSMENT'. In the PDF, these are major section headers at comparable structural level, not subordinate subsection headings beneath an h2 subtitle.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains duplicated top-level main container elements, introducing unnecessary structural duplication.",
+      "severity": "major",
+      "evidence": "HTML shows nested '<main><main> ... </main></main>'. This duplicates the primary content wrapper even though the PDF has only one continuous document structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 21.99,
+    "page_count": 4,
+    "visual_input_tokens": 7367,
+    "visual_output_tokens": 324,
+    "content_input_tokens": 7655,
+    "content_output_tokens": 555,
+    "timestamp": "2026-04-14T05:13:36.581148",
+    "auditor_version": "1.0.0"
+  }
+}

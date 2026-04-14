@@ -1,0 +1,46 @@
+{
+  "document_id": "CS 10 2002",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Header block formatting is simplified and alignment differs from the PDF.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF places governor/secretary information on the left and director/phone on the right around the centered date, while the HTML stacks these items vertically on the left under the address line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Inline label formatting is not fully preserved in the salutation block.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows 'Attention:' followed by two bold indented lines and 'Subject:' with a more tabular alignment; the HTML keeps the text but compresses spacing/alignment and presents the labels more inline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature image appearance differs noticeably from the PDF.",
+      "severity": "minor",
+      "evidence": "On page 4, the PDF shows a handwritten signature on a light background; the HTML renders it as a darker black rectangular image, though it remains in the correct section above the typed name.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 18.91,
+    "page_count": 5,
+    "visual_input_tokens": 9157,
+    "visual_output_tokens": 556,
+    "content_input_tokens": 9297,
+    "content_output_tokens": 150,
+    "timestamp": "2026-04-14T05:17:30.927667",
+    "auditor_version": "1.0.0"
+  }
+}

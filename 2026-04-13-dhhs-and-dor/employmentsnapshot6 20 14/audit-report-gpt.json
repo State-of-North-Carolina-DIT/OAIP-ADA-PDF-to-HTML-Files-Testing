@@ -1,0 +1,118 @@
+{
+  "document_id": "employmentsnapshot6 20 14",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column PDF layout was converted into a single-column HTML flow, changing the overall page structure.",
+      "severity": "major",
+      "evidence": "On page 1, the PDF places narrative text in a left column with Tables 1\u20133 arranged to the right within the same visual spread. The HTML linearizes everything into a single vertical column with tables stacked below sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs from the PDF because right-column tables are moved after left-column text blocks.",
+      "severity": "major",
+      "evidence": "In the PDF on page 1, Table 1 appears beside the introductory bullets, Table 2 beside the next section, and Table 3 beside the abuse-history discussion. In the HTML, users read all prose first and then encounter the tables sequentially lower on the page.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Header graphics/banner from the PDF are not preserved in the HTML in the same integrated way.",
+      "severity": "minor",
+      "evidence": "The PDF page 1 includes the NC-TOPPS SNAPSHOT banner and agency branding at the top of the page. In the HTML, branding appears as plain text metadata and the prominent banner graphic is absent from the content flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column PDF layout on page 2 was converted into a single-column HTML layout.",
+      "severity": "major",
+      "evidence": "The PDF on page 2 presents explanatory bullets and definitions in a left column with Table 4 in the right column. The HTML stacks the text, table, definitions, and references in one column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on page 2 differs because the table and adjacent explanatory text are no longer presented side-by-side in the original sequence.",
+      "severity": "major",
+      "evidence": "In the PDF, a reader sees the mental-health bullet points alongside Table 4. In the HTML, the bullets are followed by Table 4, then definitions and references, altering the visual reading flow.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Top banner/branding graphics are not preserved as graphics in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF page 2 includes the NC-TOPPS SNAPSHOT header banner and logos. The HTML omits these as page graphics and instead shows plain text labels above the body content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 1 contains an incorrect cell value for the Co-Occurring group in the Unemployed row.",
+      "severity": "major",
+      "evidence": "PDF Table 1 shows Unemployed / Co-Occ.: 54.6. HTML Table 1 shows Unemployed / Co-Occurring: 53.6.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 2 contains an incorrect column total in the homeless subsection for Employed Full-Time.",
+      "severity": "major",
+      "evidence": "PDF Table 2 homeless subsection, Column N row shows Employed Full-Time: 61. HTML Table 2 shows Employed Full-Time: 4,669 in the first Column N row for the overall residence section and 61 in the homeless subsection, but the employment-status column labeling is inconsistent because the PDF uses 'Not Employed' only in Table 2 while earlier tables distinguish Unemployed; this creates a structural mismatch in table interpretation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not fully faithful to the PDF structure because table captions and all-caps labels are promoted to h2 headings, and the document contains nested <main> elements.",
+      "severity": "major",
+      "evidence": "HTML uses h2 for 'Table 1. Age/Disability Group by Employment at Intake.', 'DEFINITIONS:', and 'REFERENCES:'. In the PDF these appear as table captions or section labels within body layout rather than a consistent heading hierarchy. HTML also contains an outer <main> and additional nested <main> blocks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There are multiple text transcription errors and wording changes that alter fidelity.",
+      "severity": "major",
+      "evidence": "HTML says 'such as s private home or facility' where PDF reads 'such as private home or facility'. HTML definition says 'how often have your tried to hurt yourself' where PDF reads 'how often have you tried to hurt yourself'. HTML reference 4 link text ends with an extra '?' in 'http://www.sciencedaily.com/releases/2010/10/101003081452.htm?' while the PDF shows '...081452.htm'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "A hyperlink was altered by adding an extra character not present in the PDF.",
+      "severity": "critical",
+      "evidence": "PDF References item 4 shows '(http://www.sciencedaily.com/releases/2010/10/101003081452.htm)'. HTML link text is 'http://www.sciencedaily.com/releases/2010/10/101003081452.htm?' with an added trailing question mark.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text is generic and does not fully describe the header image contents.",
+      "severity": "minor",
+      "evidence": "HTML img alt='NC-TOPPS Snapshot Header Graphics'. The PDF header image includes agency logos and issue/date text; the alt text is present but only broadly descriptive.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 8,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 33.59,
+    "page_count": 2,
+    "visual_input_tokens": 5181,
+    "visual_output_tokens": 657,
+    "content_input_tokens": 8374,
+    "content_output_tokens": 813,
+    "timestamp": "2026-04-14T05:32:18.803427",
+    "auditor_version": "1.0.0"
+  }
+}

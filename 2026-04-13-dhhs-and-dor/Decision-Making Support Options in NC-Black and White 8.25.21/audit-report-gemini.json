@@ -1,0 +1,54 @@
+{
+  "document_id": "Decision-Making Support Options in NC-Black and White 8.25.21",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column side-by-side layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "In the PDF, each section has a side-by-side layout with the category title in a block on the left and the descriptive bullet points in a block on the right. The HTML renders this as a single column top-to-bottom layout with the title as a heading above the bullet points.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of bold and underline formatting used to indicate hyperlinks.",
+      "severity": "major",
+      "evidence": "In the PDF, specific list items are bolded and underlined to indicate they are hyperlinks, which is explicitly noted in the page footer. The HTML renders these list items as standard plain text, losing the visual indicator of the links.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple <h1> tags used, violating standard heading hierarchy rules.",
+      "severity": "major",
+      "evidence": "The HTML contains two <h1> tags: '<h1>Decision-Making Support Options in North Carolina</h1>' and '<h1>Additional Resources to Learn More About\u2026</h1>'. Only one <h1> is acceptable as the document title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Loss of significant text formatting that affects document context.",
+      "severity": "minor",
+      "evidence": "In the source PDF (Page 2), resource names are bolded and underlined to indicate they are hyperlinks (e.g., 'Autism Society of NC'). The HTML removes this bold and underline styling, making the footer note ('All bolded and underlined items are hyperlinks to websites...') confusing and non-functional for the reader.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 52.43,
+    "page_count": 2,
+    "visual_input_tokens": 5084,
+    "visual_output_tokens": 393,
+    "content_input_tokens": 3468,
+    "content_output_tokens": 384,
+    "timestamp": "2026-04-14T05:21:19.217927",
+    "auditor_version": "1.0.0"
+  }
+}

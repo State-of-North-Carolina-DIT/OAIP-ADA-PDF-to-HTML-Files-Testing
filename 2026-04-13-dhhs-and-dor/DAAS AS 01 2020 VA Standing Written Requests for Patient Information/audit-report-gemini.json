@@ -1,0 +1,21 @@
+{
+  "document_id": "DAAS AS 01 2020 VA Standing Written Requests for Patient Information",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 22.14,
+    "page_count": 2,
+    "visual_input_tokens": 5088,
+    "visual_output_tokens": 145,
+    "content_input_tokens": 4369,
+    "content_output_tokens": 155,
+    "timestamp": "2026-04-14T05:20:25.496063",
+    "auditor_version": "1.0.0"
+  }
+}

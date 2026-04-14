@@ -1,0 +1,118 @@
+{
+  "document_id": "Corporate Tax Private Letter Ruling CPLR 2015-12",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Official seal/logo is present in the PDF but effectively missing or relocated in the HTML header area.",
+      "severity": "major",
+      "evidence": "On page 1, the PDF shows a centered North Carolina state seal above the department title. In the HTML, a small seal appears at the far upper left and not in the same prominent centered position, altering the visual identity of the header.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Redacted content styling is not preserved in the HTML.",
+      "severity": "major",
+      "evidence": "The PDF page 1 contains multiple black redaction bars over names and addresses in the addressee block and salutation. In the HTML these areas appear as blank spaces, removing the visible indication that content was intentionally redacted.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Header layout is simplified and spacing/grouping differs materially from the original.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF has a centered title with governor and secretary aligned left and right and significant whitespace between header elements. The HTML keeps the title and names but compresses and rearranges spacing, making the page structure less faithful though still understandable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading and salutation formatting is weakened in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF presents the subject line and salutation with clearer typographic distinction and punctuation around redacted fields. In the HTML, 'Re:' and 'Dear :' appear flatter and less polished, with some punctuation/spacing artifacts.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Redacted header text is not preserved visually on subsequent pages.",
+      "severity": "major",
+      "evidence": "On pages 2 and 3, the PDF shows black redaction bars in the upper-left header next to the date. In the HTML, those redactions are absent and only plain text such as date and page number remains, losing visible evidence of redacted content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section label formatting differs from the PDF.",
+      "severity": "minor",
+      "evidence": "On page 2, 'Department\u2019s Response:' appears italicized and visually distinct in the PDF. In the HTML it appears styled differently and with reduced visual contrast from surrounding text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Redacted header text is not preserved visually on subsequent pages.",
+      "severity": "major",
+      "evidence": "On page 3, the PDF again shows black redaction bars in the top-left header area. In the HTML, these are not shown, so the redacted nature of the source is lost.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature block/redacted signatory area is missing from the HTML.",
+      "severity": "major",
+      "evidence": "At the bottom of page 3, the PDF contains a visible signature/sign-off block with multiple black redaction bars under 'Very truly yours,'. In the HTML, the signatory block is absent, leaving only the closing text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML fabricates a website URL not present in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML includes: \"Website: www.dornc.com\". The PDF footer shows only: \"P.O. Box 871, Raleigh, North Carolina 27602-0871 / State Courier 51-71-00 / An Equal Opportunity Employer\" with no website line.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A statute citation is altered by inserting a space, changing the text of the legal reference.",
+      "severity": "major",
+      "evidence": "PDF subject line reads: \"N.C. Gen. Stat. \u00a7 105-129 .16A\"? No\u2014the PDF shows \"N.C. Gen. Stat. \u00a7 105-129 .16A\" visually as \"\u00a7 105-129 .16A\" in the scan? However elsewhere the PDF consistently shows \"\u00a7 105-129.16A\". HTML subject line contains: \"N.C. Gen. Stat. \u00a7 105-129 .16A\" with an inserted space before \".16A\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML drops punctuation and exact wording in a statutory citation within the body text.",
+      "severity": "major",
+      "evidence": "PDF first page body: \"pursuant to N.C. Gen. Stat. \u00a7 105\u2013129.l6A.\" HTML: \"pursuant to N.C. Gen. Stat. \u00a7 105\u00ac129.l6A.\" The dash/character is mistranscribed, producing a corrupted citation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML omits ordinal formatting in the ISSUE paragraph, slightly changing the text.",
+      "severity": "major",
+      "evidence": "PDF page 2 ISSUE paragraph: \"January 1st\" with superscripted \"st\". HTML renders: \"January 1st\" as plain text; this is minor formatting, but more importantly the HTML rephrases line wrapping and loses the superscript styling. No meaning change, but text fidelity is not exact.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 8,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 32.36,
+    "page_count": 3,
+    "visual_input_tokens": 5697,
+    "visual_output_tokens": 1010,
+    "content_input_tokens": 6333,
+    "content_output_tokens": 619,
+    "timestamp": "2026-04-14T05:19:13.987736",
+    "auditor_version": "1.0.0"
+  }
+}

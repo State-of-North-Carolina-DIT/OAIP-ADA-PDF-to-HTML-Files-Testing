@@ -1,0 +1,38 @@
+{
+  "document_id": "3rd and 4th Quarter 2016 Gas-1201ME Motor Fuels Claim for Refund Special Mobile Equipment",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column form layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "In the PDF on page 1, the top section has form fields (Name, Address, etc.) on the left and a secondary column on the right for 'Fill in applicable circles', 'FEIN', and 'Quarter Ending'. The HTML completely flattens this into a single continuous vertical stream of text and lists.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Agency logo image is missing.",
+      "severity": "minor",
+      "evidence": "The NCDOR graphical logo at the top left of the PDF is not present in the HTML, which instead just renders the text 'NCDOR'.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 52.02,
+    "page_count": 2,
+    "visual_input_tokens": 5074,
+    "visual_output_tokens": 387,
+    "content_input_tokens": 5149,
+    "content_output_tokens": 144,
+    "timestamp": "2026-04-14T05:14:48.717671",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "202506-OE-SPARS-SUPRT-C-Youth-Reassessment-Tool-1",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Missing logo image",
+      "severity": "minor",
+      "evidence": "The SAMHSA logo image at the top of the title page in the PDF is missing in the HTML rendering, leaving only the plain text 'Substance Abuse and Mental Health Services Administration'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Degradation of form input box formatting",
+      "severity": "minor",
+      "evidence": "In the '[OFFICE USE ONLY]' section, the individual character-entry boxes (rendered as connected underscores and pipes in the PDF, e.g., '|__|__|__|') have been improperly converted into consecutive vertical bars (e.g., '|||||||||||') in the HTML.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 52.09,
+    "page_count": 4,
+    "visual_input_tokens": 9468,
+    "visual_output_tokens": 455,
+    "content_input_tokens": 6353,
+    "content_output_tokens": 149,
+    "timestamp": "2026-04-14T05:13:53.844399",
+    "auditor_version": "1.0.0"
+  }
+}

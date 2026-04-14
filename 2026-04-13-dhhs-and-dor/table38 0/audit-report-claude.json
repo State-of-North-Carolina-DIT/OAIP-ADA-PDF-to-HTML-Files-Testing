@@ -1,0 +1,142 @@
+{
+  "document_id": "table38 0",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "The PDF table uses a dense, compact format with all counties visible on each page. The HTML conversion spaces out rows significantly with much more vertical whitespace, changing the data density and requiring many more pages to display the same content.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows ~50+ county rows in a compact table. HTML page 2 shows far fewer rows per page with large spacing between rows.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML conversion splits the single-page PDF table across multiple HTML pages due to expanded row spacing, but content and structure are preserved.",
+      "severity": "minor",
+      "evidence": "PDF page 1 contains the full first section of the table. HTML spreads this across pages 2-3.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table header row in HTML uses more descriptive multi-line headers ('Year-over-year % change') compared to PDF's compact header format ('Year-over-year % change' split across single row with 91/90, 92/91, etc.)",
+      "severity": "minor",
+      "evidence": "PDF has compact column headers like '91/90 92/91 93/92 94/93 95/94 96/95 97/96'. HTML has 'Year-over-year % change' with sub-headers '91/90' etc. in a similar structure but with more vertical space.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The '######' values (overflow indicators) appear in both PDF and HTML versions, maintaining data fidelity.",
+      "severity": "minor",
+      "evidence": "Both versions show '######' for certain cells like Jones county and Camden county.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 38.1 (line chart showing Gross Retail Sales 1989-90 Through 2003-04) is missing from the HTML conversion. Only axis labels and title text remain without the actual chart graphic.",
+      "severity": "critical",
+      "evidence": "PDF page 5 shows a complete line chart with data points and trend line. HTML page 12 shows only the title, axis labels, and dollar amounts as plain text without any chart visualization.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 38.2 (bar chart showing Gross Retail Sales % Change from Preceding Year) is missing from the HTML conversion. Only axis labels and title text remain without the actual chart graphic.",
+      "severity": "critical",
+      "evidence": "PDF page 5 shows a complete bar chart with percentage bars for each year. HTML page 12 shows only the title, axis labels, and percentage values as plain text without any chart visualization.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The continuation header 'TABLE 38. - Continued' formatting differs between PDF and HTML but content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF uses centered bold header. HTML uses left-aligned heading style.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The notes and explanatory text at the bottom of the table appear in correct reading order in HTML, matching the PDF sequence.",
+      "severity": "minor",
+      "evidence": "Both versions show footnotes about data compilation, n/a definitions, and rounding notes in the same sequence.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Duplicate <main> tags create broken HTML structure. The document has a nested <main> inside another <main>, and uses h1 for the page header followed by h2 for continuations, but the first table section header is placed inside a div with class 'page-header' using h2 while the actual document title uses h1, creating an awkward nesting.",
+      "severity": "major",
+      "evidence": "HTML has <main> wrapping <div class='page-header'><h1>TABLE 38...</h1></div><main>... with nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The two chart images (Figure 38.1 and Figure 38.2) from page 5 of the PDF are completely missing from the HTML. The HTML only contains the textual descriptions of axis labels and titles as plain paragraphs, but no <img> tags for the actual charts.",
+      "severity": "critical",
+      "evidence": "PDF page 5 contains two charts: 'Figure 38.1 Gross Retail Sales in North Carolina 1989-90 Through 2003-04' and 'Figure 38.2 Gross Retail Sales in North Carolina: % Change from Preceding Year'. HTML has no <img> tags for these charts, only text fragments like axis labels presented as separate <p> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Macon county row in the first table (1989-1997) has an empty trailing <td></td> that does not correspond to any data in the source PDF, while all other rows have exactly 15 data columns.",
+      "severity": "major",
+      "evidence": "HTML Macon row: <td>6.3%</td><td></td> \u2014 has 16 <td> elements instead of 15 like other rows.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Several '######' values from the source PDF (which are Excel column-width overflow artifacts representing actual computed percentages) are reproduced as literal '######' in the HTML rather than being resolved to actual values. While these appear in the source PDF as well, they represent data integrity issues that were carried forward.",
+      "severity": "major",
+      "evidence": "Examples: Greene 91/90 shows '######', Jones 95/94 and 96/95 show '######', Caswell 02/01 shows '######', etc. These appear identically in both PDF and HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The chart data tables on page 5 showing the statewide totals row (64,691,006,000...) and percentage change row (-0.67%, -1.01%...) are included as raw text paragraphs rather than structured data, but they are present.",
+      "severity": "minor",
+      "evidence": "HTML has <p>64,691,006,000 ########## ...</p> and <p>-0.67% -1.01% 3.25%...</p>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'n/a not applicable' and 'Detail may not add to totals due to rounding' notes appear in the HTML once between the two main tables, but in the PDF they appear at the bottom of page 2 (after the first continuation) and page 4 (after the second continuation).",
+      "severity": "minor",
+      "evidence": "PDF page 4 bottom: 'n/a not applicable / Detail may not add to totals due to rounding.' HTML places these only once between the two tables.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The McDowell 95/94 percentage in the first table shows '8.1%' in HTML but the PDF shows '8.1%' for column 95/94. However checking the exact PDF rendering for McDowell row, the values appear consistent.",
+      "severity": "minor",
+      "evidence": "McDowell row checks out as consistent between PDF and HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 4,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 61.07,
+    "page_count": 5,
+    "visual_input_tokens": 15954,
+    "visual_output_tokens": 1290,
+    "content_input_tokens": 66183,
+    "content_output_tokens": 1295,
+    "timestamp": "2026-04-14T05:37:54.796518",
+    "auditor_version": "1.0.0"
+  }
+}

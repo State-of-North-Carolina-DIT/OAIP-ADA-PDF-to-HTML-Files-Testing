@@ -1,0 +1,158 @@
+{
+  "document_id": "newsletter march 2009",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 has a two-column layout (main content left, MRS Meetings sidebar right) which is collapsed into a single column in the HTML",
+      "severity": "major",
+      "evidence": "PDF shows main article content in left column with MRS Meetings info in a distinct right sidebar; HTML renders everything in a single column with MRS Meetings appearing above the main article content",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on page 1 is altered - MRS Meetings sidebar content appears before the main Innovation Profile article in HTML",
+      "severity": "major",
+      "evidence": "PDF: Main article 'Innovation Profile: Breakthrough Series Collaborative' appears as primary content with sidebar to the right. HTML: MRS Meetings section appears first, followed by the main article",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The large MRS! header graphic/logo from the PDF is missing in the HTML",
+      "severity": "minor",
+      "evidence": "PDF has a prominent red/brown MRS! banner at top; HTML renders it as plain text 'MRS!'",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 has a two-column layout with Training Dates sidebar on left and main content on right, collapsed to single column in HTML",
+      "severity": "major",
+      "evidence": "PDF shows Training Dates in a distinct left sidebar with main article continuation and 'Important New Child Welfare Legislation' in the right column; HTML shows everything in single column",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on page 2 is significantly altered - Training Dates, publication info, and comments sections appear before the article continuation text",
+      "severity": "major",
+      "evidence": "PDF: Article continuation text appears at top right, followed by References and Important New Child Welfare Legislation. HTML: Training Dates and metadata appear first, then article content, then References, then legislation",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 has a two-column layout with main article left and Training Dates sidebar right, collapsed to single column in HTML",
+      "severity": "major",
+      "evidence": "PDF shows 'Recognizing and Honoring Differences' article in left column with Training Dates sidebar on right; HTML renders as single column",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on page 3 is altered - Training Dates appears before the Recognizing and Honoring Differences article",
+      "severity": "major",
+      "evidence": "PDF: Main article with photo appears first (left), Training Dates sidebar on right. HTML: Training Dates sections appear first, then the article",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Author photo on page 3 is present in both but appears smaller in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows Kay Kent's photo integrated with text; HTML shows the photo but at a smaller size",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 4 has a two-column layout with Training Dates sidebar on left and article continuation on right, collapsed to single column in HTML",
+      "severity": "major",
+      "evidence": "PDF shows Training Dates in left sidebar with article continuation on right; HTML renders as single column",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The italicized pull quote on page 4 is rendered differently in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows 'Using the script, I can literally feel barriers melt...' as an italicized pull quote set apart in the right margin; HTML renders it as a blockquote-style element",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The Social Worker/Client Narrative box on page 3 loses its distinctive bordered box styling",
+      "severity": "minor",
+      "evidence": "PDF shows a clearly bordered box with brown header bar; HTML renders it without the visual box distinction",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 elements used and heading hierarchy issues. The document has 'MRS!' as h1 in the header, but then uses multiple h2 elements for sidebar 'Training Dates' sections that repeat across pages, and the 'Social Worker/Client Narrative' boxed section is marked as h2 when it should be h3 or lower since it's a subsection within the 'Recognizing and Honoring Differences' article.",
+      "severity": "major",
+      "evidence": "HTML has h1 for 'MRS!', then h2 for 'MRS Meetings', 'Innovation Profile: Breakthrough Series Collaborative', 'Training Dates' (repeated 3 times), 'Important New Child Welfare Legislation', 'Recognizing and Honoring Differences' (repeated twice), and 'Social Worker/Client Narrative'. The 'Social Worker/Client Narrative' is a boxed inset within the article, not a peer-level section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple <main> elements used in the HTML, which is structurally invalid. There are at least 5 <main> tags, some nested.",
+      "severity": "major",
+      "evidence": "The HTML contains nested and repeated <main> elements throughout the document, which breaks semantic structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "URLs from the PDF are rendered as plain text rather than as hyperlinks in the HTML. While the URL text content is preserved, none of the URLs are wrapped in <a> tags.",
+      "severity": "major",
+      "evidence": "PDF contains multiple hyperlinks (casey.org, hunter.cuny.edu, acf.hhs.gov, etc.) that are rendered as plain text with angle brackets in the HTML, e.g., '&lt;http://www.casey.org/Resources/Projects/BSC/&gt;' instead of clickable links.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The pull quote 'Using the script, I can literally feel barriers melt and doors of communication open. Families are empowered by the fact that I care enough to ask.' appears in the main text on page 4 and is also rendered as a separate blockquote element, creating duplication. While the PDF does feature this as both a pull quote and inline text, the HTML places the blockquote after the paragraph that already contains the same words.",
+      "severity": "minor",
+      "evidence": "The paragraph ending with '...truly want to understand them better.' contains the quote inline, and then a <blockquote> repeats it immediately after.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the PDSA cycle diagram is detailed and accurate. Alt text for the portrait photo is generic but acceptable.",
+      "severity": "minor",
+      "evidence": "PDSA image alt='Diagram of the Plan-Do-Study-Act (PDSA) cycle including Generation of a Good Idea, Small Tests Of Change, Analyzing What Works, and Adjust and Do Again' - accurate. Portrait alt='Portrait of Kay Kent' - acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The nested <figure> within <figure> for images is structurally odd but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML shows <figure><figure><img ...></figure></figure> pattern for both images.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 10,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 55.31,
+    "page_count": 4,
+    "visual_input_tokens": 13036,
+    "visual_output_tokens": 1427,
+    "content_input_tokens": 16425,
+    "content_output_tokens": 1081,
+    "timestamp": "2026-04-14T05:35:39.688244",
+    "auditor_version": "1.0.0"
+  }
+}

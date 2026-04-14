@@ -1,0 +1,38 @@
+{
+  "document_id": "Joint Communication Bulletin  J259 Innovations Waiver Community\u201a\u00c4\u00b6",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Footer text improperly ordered within header block",
+      "severity": "major",
+      "evidence": "In the HTML, the footer text containing website URLs and 'Equal Opportunity' statement is placed between the Governor/Secretary names and the Division contact addresses, interrupting the logical flow of the header section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text inserted into body content reading order",
+      "severity": "major",
+      "evidence": "The footer text from the bottom of page 1 in the PDF is inserted inline between body paragraphs in the HTML, disrupting the continuous reading flow of the document's main content.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 58.36,
+    "page_count": 2,
+    "visual_input_tokens": 5088,
+    "visual_output_tokens": 371,
+    "content_input_tokens": 4219,
+    "content_output_tokens": 142,
+    "timestamp": "2026-04-14T05:25:21.024779",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "document_id": "gas 1264 instructions web 12 17",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/theme metadata and external font import not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains invented content such as `<title>Converted Document</title>`, CSS comments `/* Digital Commons NC \u2014 Standalone Theme CSS */`, and `@import url('https://fonts.googleapis.com/...')`. These do not appear anywhere in the PDF pages, which only contain the form instructions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is inconsistent and skips levels in multiple places.",
+      "severity": "major",
+      "evidence": "HTML uses `h2` for `General Instructions`, then `h3` for `Part 1 - Fuel Accountability`, then jumps to `h4` for line items such as `Line 1 - Beginning physical inventory`. Later sections repeat irregular patterns (`h3` for `Schedule of Receipts`, `h4` for `Schedule 1 - Gallons Received Tax-Paid`). While the PDF visually distinguishes headings, the HTML structure is not a clean semantic hierarchy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "At least one sentence appears textually altered from the PDF, changing a line reference and likely introducing an accuracy error.",
+      "severity": "major",
+      "evidence": "In the PDF under Line 18, step 1 reads: `If Line 8 equals zero, calculate the administrative discount by multiplying Line 29 by .001, then multiply by the applicable road and inspection tax rates...` The HTML reproduces this, but this appears inconsistent with the line logic around Line 8/Line 7 comparisons and may reflect OCR/conversion ambiguity. More concretely, the HTML includes punctuation anomalies such as `not to exceed a total of $8,000., or,` in Line 18(3)(b), indicating text corruption from conversion.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 29.97,
+    "page_count": 7,
+    "visual_input_tokens": 14638,
+    "visual_output_tokens": 379,
+    "content_input_tokens": 15151,
+    "content_output_tokens": 577,
+    "timestamp": "2026-04-14T05:32:57.616194",
+    "auditor_version": "1.0.0"
+  }
+}

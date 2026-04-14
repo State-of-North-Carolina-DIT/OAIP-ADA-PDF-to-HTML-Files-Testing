@@ -1,0 +1,110 @@
+{
+  "document_id": "Corporate Tax Private Letter Ruling CPLR 2015-12",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The HTML version moves the footer information (P.O. Box, State Courier, Website, Equal Opportunity Employer) from the bottom of the page to near the top, below the header, fundamentally changing the layout.",
+      "severity": "major",
+      "evidence": "PDF page 1: footer info at bottom. HTML page 1: footer info appears near top of page, between the Governor/Secretary line and the date.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The recipient address block is omitted in the HTML version, though this is redacted content.",
+      "severity": "minor",
+      "evidence": "PDF shows redacted address block between date and Re: line. HTML omits this entirely.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal is positioned differently in HTML - appears in upper left rather than centered as in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: seal is centered at top. HTML: seal is left-aligned at top.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'ISSUE:' heading in the HTML appears bold/formatted differently than in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: 'ISSUE:' appears in regular text. HTML: 'ISSUE:' appears in bold.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Department's Response:' text formatting differs slightly - both versions show italic but the HTML version appears consistent with the PDF.",
+      "severity": "minor",
+      "evidence": "Both show italic formatting for 'Department's Response:' - minor rendering differences.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page headers with redacted name, date, and page numbers are rendered differently in the HTML as simple text lines with a horizontal rule separator.",
+      "severity": "minor",
+      "evidence": "PDF: header shows redacted name, date, page number in compact format. HTML: shows CPLR 2015-12, date, and page number as separate lines with divider.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. The document has a <main> inside a <main>, which is semantically incorrect.",
+      "severity": "major",
+      "evidence": "The HTML has an outer <main> from the body-level wrapper and an inner <main> element containing the letter content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Incorrect statute reference: HTML uses '\u00a7 105-269.15' but the PDF states '\u00a7 105-269.15'. While the text matches, the actual PDF text on page 2 reads 'N.C. Gen. Stat. \u00a7 105-269.15' which appears correct in both. However, the original PDF page 1 has '\u00a7 105\u00ac129.l6A' (with a soft hyphen/not sign and lowercase L), and the HTML preserves this OCR artifact inconsistently - sometimes as '105-129.l6A' and sometimes as '105-129.16A'.",
+      "severity": "major",
+      "evidence": "PDF page 1: '\u00a7 105\u00ac129.l6A' (with \u00ac character). HTML first paragraph: '\u00a7 105\u00ac129.l6A' (preserves it). But this is an OCR artifact in the source PDF itself, not an HTML error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page headers (CPLR 2015-12, date, page numbers) from pages 2 and 3 are embedded inline within the document body rather than being removed or consolidated, creating minor visual duplication alongside the top-of-document header.",
+      "severity": "minor",
+      "evidence": "The page-header divs for 'CPLR 2015-12' appear at the top of the document AND inline for pages 2 and 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The footer information (P.O. Box 871, Raleigh, etc.) that appears at the bottom of page 1 in the PDF is rendered only once in the header area of the HTML but is absent from subsequent pages. This is acceptable reformatting for a multi-page document.",
+      "severity": "minor",
+      "evidence": "PDF footer on each page vs. HTML center-aligned block at top only.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The website URL www.dornc.com appears in the HTML as plain text, matching the PDF. No links are fabricated and no hyperlinks are broken.",
+      "severity": "minor",
+      "evidence": "PDF: 'Website: www.dornc.com' \u2014 HTML: 'Website: www.dornc.com' (plain text, no hyperlink)",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 41.38,
+    "page_count": 3,
+    "visual_input_tokens": 9155,
+    "visual_output_tokens": 891,
+    "content_input_tokens": 10660,
+    "content_output_tokens": 905,
+    "timestamp": "2026-04-14T05:19:16.709853",
+    "auditor_version": "1.0.0"
+  }
+}

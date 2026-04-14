@@ -1,0 +1,78 @@
+{
+  "document_id": "PM PRA 05 2005a",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "HTML table rows have noticeably more vertical spacing/padding between rows compared to the compact PDF table layout",
+      "severity": "minor",
+      "evidence": "PDF shows tightly packed rows fitting ~40+ rows per page; HTML shows rows with more whitespace, fitting fewer rows per visible area",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "HTML table rows have noticeably more vertical spacing/padding between rows compared to the compact PDF table layout",
+      "severity": "minor",
+      "evidence": "PDF shows tightly packed rows; HTML shows expanded row spacing throughout",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "HTML table rows have noticeably more vertical spacing/padding between rows compared to the compact PDF table layout",
+      "severity": "minor",
+      "evidence": "PDF shows tightly packed rows; HTML shows expanded row spacing throughout",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "HTML table rows have noticeably more vertical spacing/padding between rows compared to the compact PDF table layout",
+      "severity": "minor",
+      "evidence": "PDF shows tightly packed rows; HTML shows expanded row spacing throughout",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "HTML table rows have noticeably more vertical spacing/padding between rows compared to the compact PDF table layout",
+      "severity": "minor",
+      "evidence": "PDF shows tightly packed rows; HTML shows expanded row spacing throughout",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title 'APPLICATION TIME STANDARDS 2006' styling differs slightly - HTML uses a left-aligned heading with underline separator vs PDF centered bold title",
+      "severity": "minor",
+      "evidence": "PDF: centered bold title; HTML: left-aligned heading with horizontal rule underneath",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse content fidelity response as JSON",
+      "severity": "major",
+      "evidence": "\n\nI'll analyze the PDF source and HTML conversion systematically.\n\nThe PDF contains a large lookup table spanning 5 pages titled \"APPLICATION TIME STANDARDS 2006\" with columns: DATE, 13, 45, 60, 90, 6mo. The table is presented in two side-by-side blocks per page.\n\nLet me check the key areas:\n\n**Structure Check:** The PDF has the table split across pages with two column groups per page (DATE/13/45/60/90/6mo repeated twice). The HTML consolidates this into a single table with 12 columns.\n\n**Spot-c",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 54.76,
+    "page_count": 5,
+    "visual_input_tokens": 15924,
+    "visual_output_tokens": 1062,
+    "content_input_tokens": 46493,
+    "content_output_tokens": 1388,
+    "timestamp": "2026-04-14T05:27:47.883066",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "document_id": "6-22 Federal CAPERs",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a compact multi-column table layout with regional groupings separated by whitespace, while the HTML renders as a full-width single-row-per-state table without visual grouping separators between regions.",
+      "severity": "minor",
+      "evidence": "PDF groups states by region (New England, Mid-Atlantic, Southeast, etc.) with blank row separators. HTML renders all rows uniformly without these regional spacing breaks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table structure is preserved with correct row/column counts and data, but the regional grouping whitespace rows present in the PDF are absent in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF has visible blank rows between state groupings (e.g., after Virgin Islands, after West Virginia, after Tennessee, etc.). HTML table has no such separators.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "USDA logo is present in both versions but styled differently - PDF shows the full USDA seal with green banner, HTML shows a smaller simplified version.",
+      "severity": "minor",
+      "evidence": "PDF: Full-color USDA seal with 'United States Department of Agriculture' banner. HTML: Smaller grayscale/simplified USDA logo with text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Column headers have slightly different wording/formatting between PDF and HTML.",
+      "severity": "minor",
+      "evidence": "PDF header: 'Official Fiscal Year 2019 CAPER' | HTML header: 'Official Fiscal Year 2019 CAPER'. PDF: 'Fiscal Year 2019 Cumulative October through June' | HTML: 'Fiscal Year 2019 Cumulative October through June'. Formatting is similar but PDF uses centered bold headers while HTML uses left-aligned headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Footnotes at bottom have slightly different formatting but same content.",
+      "severity": "minor",
+      "evidence": "PDF: footnotes appear at bottom of the table area with specific formatting. HTML: footnotes appear at the very bottom in smaller text, right-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Nested <main> elements in HTML - structural duplication",
+      "severity": "minor",
+      "evidence": "The HTML contains two nested <main> tags, which is invalid HTML structure but does not affect content fidelity.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 23.66,
+    "page_count": 1,
+    "visual_input_tokens": 3330,
+    "visual_output_tokens": 814,
+    "content_input_tokens": 6587,
+    "content_output_tokens": 257,
+    "timestamp": "2026-04-14T05:14:52.170842",
+    "auditor_version": "1.0.0"
+  }
+}

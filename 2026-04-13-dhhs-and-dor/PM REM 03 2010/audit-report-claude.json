@@ -1,0 +1,86 @@
+{
+  "document_id": "PM REM 03 2010",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The ATTENTION section in the PDF is formatted as a single indented block after 'ATTENTION:', while in the HTML each line is a separate bold paragraph without the indented alignment relative to the ATTENTION label.",
+      "severity": "minor",
+      "evidence": "PDF: 'ATTENTION:' label with indented block of four lines to the right. HTML: 'ATTENTION:' on its own line, followed by four separate bold lines left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout with Governor/Secretary on the left and Director/phone on the right is preserved but the horizontal rule separator present in the HTML version is not in the PDF (PDF uses the department name as centered text without a rule).",
+      "severity": "minor",
+      "evidence": "HTML has a horizontal rule under the department name; PDF does not have this explicit rule.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The SUBJECT line in the PDF has bold formatting for both the label and the content, while the HTML shows 'SUBJECT:' in bold and the rest in regular weight.",
+      "severity": "minor",
+      "evidence": "PDF: 'SUBJECT: Services Information System (SIS) ID Number Merge Reports' appears fully bold. HTML: Only 'SUBJECT:' is bold, the rest is normal text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The bullet point content for DHRSYA SYA515 is cut off at the bottom of PDF page 1 and continues on page 2, whereas in the HTML page 2 it appears as a complete block.",
+      "severity": "minor",
+      "evidence": "PDF page 1 ends mid-paragraph for the first bullet; HTML page 2 shows the complete bullet content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'in the same County' text in the PDF has underlining for emphasis, while in the HTML it appears without underline formatting.",
+      "severity": "minor",
+      "evidence": "PDF page 2: 'in the same County' is underlined. HTML page 2: same text lacks underline.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h2 for 'Division of Social Services' directly under the h1, which is acceptable, but the document has nested <main> elements (a <main> inside another <main>), which is invalid HTML structure. More importantly, the heading hierarchy doesn't accurately reflect the document structure - 'Division of Social Services' is a subtitle, not a separate section heading.",
+      "severity": "major",
+      "evidence": "HTML has <h1>North Carolina Department of Health and Human Services</h1> followed by <h2>Division of Social Services</h2>. In the PDF, 'Division of Social Services' is part of the letterhead, not a section heading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The HTML contains a hyperlink to the referenced Dear County Director Letter. While the PDF does appear to contain a hyperlink for this reference, the exact URL cannot be fully verified from the PDF rendering. The link text matches the PDF content.",
+      "severity": "minor",
+      "evidence": "HTML: <a href=\"http://www.ncdhhs.gov/dss/dcdl/performancemanagement/PM-REM-13-2009.pdf\">Dear County Director Letter No PM-REM-13-2009</a>. PDF shows 'Dear County Director Letter No PM-REM-13-2009' as a hyperlink.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header 'Services Information System (SIS) ID Number Merge Reports / Page 2' is included inline in the HTML content. This is a page continuation header from the PDF and its inclusion is not an error per se, but it breaks up the bulleted list unnaturally - the first bullet point's text is split before and after this header.",
+      "severity": "minor",
+      "evidence": "In the PDF, the first bullet point continues from page 1 to page 2. In the HTML, the page header div is inserted between the introductory text and the <ul> list, but the first bullet's complete text is preserved within the list.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 34.85,
+    "page_count": 2,
+    "visual_input_tokens": 6654,
+    "visual_output_tokens": 813,
+    "content_input_tokens": 7735,
+    "content_output_tokens": 747,
+    "timestamp": "2026-04-14T05:27:44.597957",
+    "auditor_version": "1.0.0"
+  }
+}

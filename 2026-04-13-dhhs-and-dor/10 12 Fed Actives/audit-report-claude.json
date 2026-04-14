@@ -1,0 +1,86 @@
+{
+  "document_id": "10 12 Fed Actives",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF page 1 has a clear two-panel side-by-side layout (left table: State-Reported Summary Data with FY 2013 Cumulative Oct and Rank; right table: sorted by Change with FY 2012 Cumulative Oct-Sep/2, FY 2013 Cumulative Oct, and Change columns). The HTML converts this into a single-column sequential layout, losing the side-by-side presentation.",
+      "severity": "critical",
+      "evidence": "PDF shows two distinct tables side by side separated by a diagonal shading pattern. HTML renders the left table first as a simple single-column table, then the right table below it, also single-column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The diagonal yellow/green gradient shading pattern between the two tables in the PDF is absent in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF has a decorative diagonal striped pattern separating the two table panels. HTML has no such graphic element.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The right-side table in the PDF has colored row highlighting (green/yellow gradient backgrounds and a '<' marker for Wyoming) that conveys visual emphasis. The HTML table lacks these row color indicators and the '<' marker.",
+      "severity": "major",
+      "evidence": "PDF right table shows rows with green-to-yellow gradient backgrounds and a '<' symbol next to WYOMING. HTML table has no colored rows and no '<' marker.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The left table in the PDF uses colored/highlighted row backgrounds (green gradient) for states, which is absent in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF left table rows have green-shaded backgrounds. HTML left table has plain white/no background rows.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The bottom '0.00' value that appears at the bottom-right of the PDF page is present in the HTML but appears separated from its context.",
+      "severity": "minor",
+      "evidence": "PDF shows '0.00' at bottom right of the page. HTML shows '0.00' at the bottom of the second table section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs. In the PDF, a reader would see both tables simultaneously side-by-side, with the left table showing rank-ordered states and the right table showing change-ordered states. In the HTML, the left table content appears first (all 53 rows), then the right table content follows sequentially.",
+      "severity": "major",
+      "evidence": "PDF: side-by-side tables allow parallel comparison. HTML: sequential presentation forces linear reading of left table then right table.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in the HTML. The document has two <main> tags, one nested inside the other, which is invalid HTML structure.",
+      "severity": "minor",
+      "evidence": "The HTML has <body><main>...<main>...</main></main></body> with two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Report Run Date: March 14, 2013' appears twice in the HTML, once for each section. In the PDF, both dates appear as headers for the two side-by-side tables on the same page, so this is an acceptable representation of the source layout.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Report Run Date: March 14, 2013' twice (once for each table panel). HTML reproduces this faithfully.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.24,
+    "page_count": 1,
+    "visual_input_tokens": 2916,
+    "visual_output_tokens": 942,
+    "content_input_tokens": 10692,
+    "content_output_tokens": 454,
+    "timestamp": "2026-04-14T05:11:26.463429",
+    "auditor_version": "1.0.0"
+  }
+}

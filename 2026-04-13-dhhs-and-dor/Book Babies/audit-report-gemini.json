@@ -1,0 +1,38 @@
+{
+  "document_id": "Book Babies",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column layout rendered as single column",
+      "severity": "major",
+      "evidence": "In the PDF, the 'WHAT IS BOOK BABIES?' and 'HOW BOOK BABIES WORKS' sections feature text on the left and an image on the right in a two-column layout. The HTML renders these as a single column with the image placed above the text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Header image is severely cropped",
+      "severity": "major",
+      "evidence": "The main 'BOOK BABIES' graphic at the top of the HTML version is vertically cropped, cutting off the bottom half of the letters, whereas the PDF displays the entire graphic clearly.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 31.6,
+    "page_count": 1,
+    "visual_input_tokens": 2891,
+    "visual_output_tokens": 307,
+    "content_input_tokens": 3167,
+    "content_output_tokens": 154,
+    "timestamp": "2026-04-14T05:17:12.012529",
+    "auditor_version": "1.0.0"
+  }
+}

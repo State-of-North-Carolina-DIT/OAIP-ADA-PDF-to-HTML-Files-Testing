@@ -1,0 +1,46 @@
+{
+  "document_id": "2014NCSSBG",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Attachment source list formatting changed from plain lines to bulleted list.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF attachment lists funding sources as plain left-aligned lines, while the HTML renders them as bullet points. The content and order appear preserved, but the visual formatting differs.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy in the HTML does not accurately reflect the document structure and uses multiple h1 elements where the PDF presents section titles rather than multiple document titles.",
+      "severity": "major",
+      "evidence": "HTML uses <h1>Part A. Expenditures and Provision Method</h1> and later another <h1>Part B. Recipients</h1>. It also uses <h2>SOCIAL SERVICES BLOCK GRANT (SSBG) POST-EXPENDITURE REPORT</h2> followed by <h3>North Carolina Annual Report of Services Funded with SSBG, SFY 2014</h3>. In the PDF, these are page/section titles, not a hierarchy with multiple top-level document titles.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There is a text accuracy error in the report period field; the HTML changes the start year from 07/13 to 07/13 while the PDF appears to show 07/13 to 06/14 as printed, but the generated field formatting is potentially inaccurate and nonstandard compared with the source form's exact presentation.",
+      "severity": "major",
+      "evidence": "HTML states: 'REPORT PERIOD: 07/13 to 06/14'. The PDF top-right field also reads 'REPORT PERIOD: 07/13 to 06/14', but the HTML normalizes the layout and may not preserve the exact form-field presentation. No stronger substantive text discrepancy was confirmed elsewhere.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 24.09,
+    "page_count": 3,
+    "visual_input_tokens": 7848,
+    "visual_output_tokens": 298,
+    "content_input_tokens": 10618,
+    "content_output_tokens": 485,
+    "timestamp": "2026-04-14T05:12:00.400017",
+    "auditor_version": "1.0.0"
+  }
+}

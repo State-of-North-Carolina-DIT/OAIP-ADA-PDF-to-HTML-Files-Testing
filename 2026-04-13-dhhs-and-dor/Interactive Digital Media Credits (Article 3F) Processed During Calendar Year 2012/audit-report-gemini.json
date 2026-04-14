@@ -1,0 +1,38 @@
+{
+  "document_id": "Interactive Digital Media Credits (Article 3F) Processed During Calendar Year 2012",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Alignment of main headings is not preserved.",
+      "severity": "minor",
+      "evidence": "In the PDF, the four lines of the title block (starting with 'North Carolina Department of Revenue') are center-aligned. In the HTML, they are left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of bold formatting on procedural notes label.",
+      "severity": "minor",
+      "evidence": "In the PDF, the text 'Procedural Notes:' at the bottom is bolded. In the HTML, it is rendered in regular font weight.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 36.03,
+    "page_count": 1,
+    "visual_input_tokens": 2866,
+    "visual_output_tokens": 286,
+    "content_input_tokens": 3268,
+    "content_output_tokens": 150,
+    "timestamp": "2026-04-14T05:24:22.660420",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "CWS_33_2022",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Header logo/seal graphic is not preserved in the same visual form on page 1.",
+      "severity": "minor",
+      "evidence": "In the PDF, page 1 shows the NC state seal and department logo prominently at the top left with adjacent official names on the right. In the HTML, the header is simplified/reflowed and the seal graphic is not clearly preserved in the same placement/appearance.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Required Action checkbox styling is degraded in the HTML on page 1.",
+      "severity": "minor",
+      "evidence": "The PDF shows three labeled checkboxes with the 'Time Sensitive' box visibly checked using a boxed X. In the HTML, the line appears as inline symbols/text with reduced visual distinction, making the checkbox presentation less clear.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML does not use semantic heading tags to reflect the document structure; all section titles are plain paragraphs with bold text instead of h1-h6 elements.",
+      "severity": "major",
+      "evidence": "PDF has clear structural headings such as 'DEAR COUNTY DIRECTORS OF SOCIAL SERVICES', 'ATTENTION: ...', 'SUBJECT: RETURNING TO THE NC CHILD WELFARE WORKFORCE', and 'PURPOSE: ...'. In HTML these appear as '<p><strong>DEAR COUNTY DIRECTORS OF SOCIAL SERVICES</strong></p>' etc., while no actual h1-h6 tags are used in the body content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There is a punctuation/quotation error in one paragraph that alters the text fidelity from the PDF.",
+      "severity": "major",
+      "evidence": "PDF reads: 'This resource is a Pre-Service alternative for county agencies who hire staff meeting these criteria and has been developed for county child welfare agencies to use at their own discretion.' HTML reads: '\u201cThis resource is a Pre-Service alternative for county agencies who hire staff meeting these criteria and has been developed for county child welfare agencies to use at their own discretion.' The HTML introduces an extra opening quotation mark before 'This resource' and does not close it properly.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 23.42,
+    "page_count": 2,
+    "visual_input_tokens": 3979,
+    "visual_output_tokens": 390,
+    "content_input_tokens": 4609,
+    "content_output_tokens": 451,
+    "timestamp": "2026-04-14T05:18:10.830617",
+    "auditor_version": "1.0.0"
+  }
+}

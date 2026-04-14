@@ -1,0 +1,78 @@
+{
+  "document_id": "2016 d403tc partnership tax credit summary traditional",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Overall page layout is not preserved due to a large misplaced whitespace block between the header fields and the main table.",
+      "severity": "major",
+      "evidence": "In the PDF, the barcode sits within the main form area and the line-item content begins immediately below the header section. In the HTML, a tall blank area appears after the header fields, pushing the main table far downward and disrupting the original section grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Barcode graphic is significantly misplaced relative to the surrounding content.",
+      "severity": "major",
+      "evidence": "In the PDF, the barcode is embedded inside the body of Part 1 alongside the numbered lines. In the HTML, the barcode appears isolated on the left in a large empty region above the table, detached from the corresponding section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Top identification fields are converted into a simplified table that does not fully match the original form-field structure.",
+      "severity": "minor",
+      "evidence": "The PDF shows two fillable header fields with form-style input lines for Legal Name and Federal Employer ID Number. The HTML renders them as a basic two-column table row with empty cells, which changes the visual structure though the labels remain present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Form-style alignment and field presentation are not fully preserved.",
+      "severity": "minor",
+      "evidence": "The PDF uses right-aligned numeric entry lines with arrow markers and tightly aligned form rows. The HTML replaces these with generic table cells and .00 values, reducing the distinct form formatting, though headings and emphasis are mostly retained.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF's integrated form layout/table structure is not faithfully preserved in HTML. The source has one large bordered form with line numbers, descriptions, right-aligned entry fields, section dividers, and a barcode embedded within the form area; the HTML splits this into multiple separate tables and a standalone figure, changing row/column structure and placement.",
+      "severity": "major",
+      "evidence": "PDF: a single continuous form area contains header fields, lines 1-16, section headers for Parts 2-4, and a vertical barcode positioned between description and amount fields. HTML: uses one 2-column table for 'Legal Name / Federal Employer ID Number', then a separate <figure> for the barcode, then a separate 3-column table with 'Line Number | Description | Amount'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not an accurate reflection of the document structure. The form title is split into separate headings, and there are multiple top-level structural containers. The true document title is 'D-403TC 2016 Partnership Tax Credit Summary', but HTML uses h1 for 'NCDOR' and h2 for the title.",
+      "severity": "major",
+      "evidence": "PDF top matter presents 'NCDOR', form number 'D-403TC', and title '2016 Partnership Tax Credit Summary' as a unified header block. HTML: '<h1>NCDOR</h1>' followed by '<h2>D-403TC<br>2016 Partnership Tax Credit Summary</h2>'. Also contains nested <main> elements, reflecting structure inconsistently.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The image alt text is only partially descriptive and omits that the image is a barcode graphic; it gives the number but not the image type/orientation.",
+      "severity": "minor",
+      "evidence": "HTML image uses alt='Barcode 7110506016'. PDF shows a vertical barcode with human-readable number beside it. Alt text is not fabricated, but only minimally descriptive.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 26.28,
+    "page_count": 1,
+    "visual_input_tokens": 3218,
+    "visual_output_tokens": 442,
+    "content_input_tokens": 4177,
+    "content_output_tokens": 601,
+    "timestamp": "2026-04-14T05:12:45.458039",
+    "auditor_version": "1.0.0"
+  }
+}

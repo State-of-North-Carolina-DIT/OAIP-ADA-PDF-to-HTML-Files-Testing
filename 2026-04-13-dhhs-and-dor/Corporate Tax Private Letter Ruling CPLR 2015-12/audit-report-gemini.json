@@ -1,0 +1,46 @@
+{
+  "document_id": "Corporate Tax Private Letter Ruling CPLR 2015-12",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Missing redaction graphics",
+      "severity": "critical",
+      "evidence": "The PDF contains multiple prominent black redaction blocks indicating an address block, a 'Re:' subject line, a 'Dear:' salutation, and inline client names. In the HTML, these graphical blocks are completely missing, resulting in awkward text gaps such as 'Dear :'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing header redaction graphic",
+      "severity": "major",
+      "evidence": "The PDF features a black redaction block at the top left of the header area, preceding the date. This graphical block is entirely absent in the HTML rendering.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing signature redaction graphics",
+      "severity": "critical",
+      "evidence": "The PDF contains a cluster of black redaction rectangles at the bottom right, serving as a placeholder for the signature and sender details. The HTML completely omits these graphics, ending the document abruptly after 'Very truly yours,'.",
+      "page": 3,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 83.27,
+    "page_count": 3,
+    "visual_input_tokens": 7278,
+    "visual_output_tokens": 533,
+    "content_input_tokens": 5519,
+    "content_output_tokens": 146,
+    "timestamp": "2026-04-14T05:19:58.227495",
+    "auditor_version": "1.0.0"
+  }
+}

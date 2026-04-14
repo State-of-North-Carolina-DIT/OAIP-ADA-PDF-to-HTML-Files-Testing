@@ -1,0 +1,70 @@
+{
+  "document_id": "2016 IB-43 Self-Insured Workers\u201a\u00c4\u00f4 Compensation Corporation Gross Premium Tax Return Instructions",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Indented subitems under Line 3 are less distinctly formatted in HTML.",
+      "severity": "minor",
+      "evidence": "In the PDF on page 1, items 'a. Guaranty Fund' and 'b. CD-425/NC-478' are clearly indented as subpoints beneath Line 3. In the HTML they appear with reduced visual indentation and tighter wrapping, though still readable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Penalty subsections lose some of the original hanging-indent/list styling.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows 'a. Failure to File Penalty', 'b. Failure to Pay Penalty', and 'c. Other Penalties' with strong indentation and list structure. The HTML preserves the content and order but with flatter spacing and less pronounced list formatting.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Penalty subsections on the insurance regulatory charge portion have reduced list indentation in HTML.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF uses indented lettered subitems under Line 18(a). The HTML keeps the same text and sequence but visually compresses the list hierarchy.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/content metadata not present in the PDF, including a standalone theme label and external font import.",
+      "severity": "critical",
+      "evidence": "HTML contains comment text \"Digital Commons NC \u2014 Standalone Theme CSS\" and `@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')` in the `<style>` block. These do not appear anywhere in the source PDF, which contains only the tax instruction content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document structure; multiple title lines are all encoded as h2 and a lower-level heading appears without an intermediate level for line items.",
+      "severity": "major",
+      "evidence": "PDF title block is a centered multi-line title: \"2016 / North Carolina / Self-Insured Workers\u2019 Compensation Corporation / Gross Premium Tax Return Instructions.\" HTML encodes this as one `<h1>` (2016) followed by three separate `<h2>` elements. Also, \"Calculation Example:\" appears as `<h3>` under Part 5 while line-item labels (e.g., \"Line 1 \u2013 Adjusted Taxable Premiums\") are plain paragraphs rather than subordinate headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There are notable text accuracy differences in the calculation example table formatting and labels compared with the PDF.",
+      "severity": "major",
+      "evidence": "In the PDF table, the taxable percentage header is split as \"Taxable Percentage (00.00000%)\" and amounts appear as \"$ 3,063.42\" and \"$21,400.02\" with the exact spacing/layout shown in the original. In HTML, the header is normalized into one line and spacing/placement is altered; additionally the summary labels are placed in the first column rather than right-aligned across merged cells as visually presented in the PDF. While values are preserved, the table text/layout is not a faithful structural match.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 28.93,
+    "page_count": 5,
+    "visual_input_tokens": 9037,
+    "visual_output_tokens": 594,
+    "content_input_tokens": 9703,
+    "content_output_tokens": 585,
+    "timestamp": "2026-04-14T05:12:28.541732",
+    "auditor_version": "1.0.0"
+  }
+}

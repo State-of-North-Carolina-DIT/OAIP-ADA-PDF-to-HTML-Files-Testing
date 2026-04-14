@@ -1,0 +1,38 @@
+{
+  "document_id": "Economic Incentives Report for the Credit for Constructing Renewable Fuel Facilities (Article 3B \u201a\u00c4\u00ec Business and Energy Credits) For Returns Processed during Calendar Year 2024.pdf",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Main title formatting is more prominent and wrapped differently in the HTML, altering the visual hierarchy slightly.",
+      "severity": "minor",
+      "evidence": "In the PDF, the title is smaller and compact across fewer lines; in the HTML, it is significantly larger, bolder, and spans more lines, making it visually more dominant than in the source.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Notes list formatting differs, with looser spacing/indentation in HTML.",
+      "severity": "minor",
+      "evidence": "The PDF shows a compact numbered notes list with tighter line spacing and wrapped text aligned under each number; the HTML renders the notes with more spacing and slightly different indentation, though still as a numbered list.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 10.27,
+    "page_count": 1,
+    "visual_input_tokens": 2357,
+    "visual_output_tokens": 249,
+    "content_input_tokens": 3055,
+    "content_output_tokens": 164,
+    "timestamp": "2026-04-14T05:22:04.979038",
+    "auditor_version": "1.0.0"
+  }
+}

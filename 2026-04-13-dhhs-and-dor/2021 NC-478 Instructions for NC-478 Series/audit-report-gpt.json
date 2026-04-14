@@ -1,0 +1,78 @@
+{
+  "document_id": "2021 NC-478 Instructions for NC-478 Series",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column page layout in the PDF was converted into a single-column HTML layout.",
+      "severity": "major",
+      "evidence": "The PDF places content in two side-by-side columns, with 'Other Credits Subject to the 50% of Tax Limit' and 'When to File' in the right column while earlier sections remain in the left column. The HTML presents all sections in one continuous vertical column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs because the HTML linearizes the right-column content after the left-column content instead of reflecting the original side-by-side flow.",
+      "severity": "major",
+      "evidence": "In the PDF, a reader encounters left-column sections alongside right-column sections on the same page. In the HTML, 'Other Credits Subject to the 50% of Tax Limit' and 'When to File' are moved to appear only after all left-column material, changing the visual reading sequence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header styling and title presentation differ noticeably from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF has a prominent top banner with logo, large centered title styling, and a large year at top right. The HTML reduces this to a simpler text header line without the same visual hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated metadata and styling-related content not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains added title and metadata such as \"<title>Converted Document</title>\", CSS comments \"Digital Commons NC \u2014 Standalone Theme CSS\", and imported font/style declarations. These do not appear in the PDF, which only shows the document content headed \"NC-478 Series Instructions\" and \"2021\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML invents semantic page wrapper text structure not present in the PDF, including a synthetic page header block.",
+      "severity": "critical",
+      "evidence": "HTML adds a structured block: \"<div class=\\\"page-header\\\"><h1>NC-478 Series Instructions 2021</h1><p>NCDOR Web 1-22</p></div>\". In the PDF, these elements appear visually as separate page design elements: logo \"NCDOR\", title \"NC-478 Series Instructions\", date \"2021\", and \"Web 1-22\" near the logo, not as a single combined header sentence.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is imperfect and does not fully reflect the PDF structure; some emphasized subheads were elevated to headings and formatting was altered.",
+      "severity": "major",
+      "evidence": "The PDF uses shaded section bars for \"Purpose of the NC-478 Series\", \"General Instructions\", and \"When to File\", with inline bold/italic labels like \"Article 3A Credits - Tax Incentives for New and Expanding Businesses\". HTML converts these to h2/h3 headings and underlined emphasis: \"<h3>Article 3A Credits -<br><em><u>Tax Incentives for New and Expanding Businesses</u></em></h3>\". This is structurally interpretive rather than a direct reflection of the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML omits visible branding text from the PDF header, reducing textual fidelity.",
+      "severity": "major",
+      "evidence": "The PDF visibly includes the logo text \"NCDOR\" at top left and the large year \"2021\" at top right as distinct page elements. HTML preserves \"2021\" only inside the combined h1 \"NC-478 Series Instructions 2021\" and does not preserve the separate visible \"NCDOR\" branding text at all.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 36.55,
+    "page_count": 1,
+    "visual_input_tokens": 3170,
+    "visual_output_tokens": 452,
+    "content_input_tokens": 3700,
+    "content_output_tokens": 702,
+    "timestamp": "2026-04-14T05:13:14.593025",
+    "auditor_version": "1.0.0"
+  }
+}

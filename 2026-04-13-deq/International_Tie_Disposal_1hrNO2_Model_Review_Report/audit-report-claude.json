@@ -1,0 +1,102 @@
+{
+  "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The TO/FROM/THROUGH/SUBJECT labels in the memo header are rendered differently - PDF uses a tabular layout with labels left-aligned and values indented, HTML uses bold labels with values on separate lines rather than aligned columns.",
+      "severity": "minor",
+      "evidence": "PDF shows 'TO:', 'FROM:', 'THROUGH:', 'SUBJECT:' as left-aligned labels with values tabbed/indented to align. HTML shows them as bold labels with values flowing after or below without the same columnar alignment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The SUBJECT block details (Facility ID, Permit Application ID, Hamlet NC / Richmond County) lose their specific indentation and layout in HTML compared to PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Hamlet, NC' and 'Richmond County' on the same line with spacing between them. HTML shows them concatenated as 'Hamlet, NC Richmond County' on one line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 styling differs but structure is preserved. The table contains the same data with correct row/column counts.",
+      "severity": "minor",
+      "evidence": "PDF shows a bordered table with distinct header styling. HTML shows a simpler table layout but same 1 data row with all 6 columns intact.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The footnotes (1) and (2) below Table 1 are rendered with slightly different formatting - superscript 'th' appears differently.",
+      "severity": "minor",
+      "evidence": "PDF shows superscript 'th' in '8th' and '98th'. HTML also shows superscript but with slightly different visual weight.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table A1 in the HTML is rendered as a full-width responsive table instead of a centered fixed-width table as in the PDF, but data integrity is maintained.",
+      "severity": "minor",
+      "evidence": "PDF shows compact centered table. HTML shows wider table spanning more of the page width with more spacing between rows.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 of the PDF is mostly blank with just the compliance disclaimer and cc line. The HTML consolidates this content closer to the preceding content on page 2.",
+      "severity": "minor",
+      "evidence": "PDF has 'This compliance demonstration assumes...' and 'cc: Tom Anderson' on a separate mostly-blank page. HTML places this immediately after Table 1 footnotes.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table A1 continues across multiple pages in both versions. The HTML version shows each row with more vertical spacing but contains the same data for all 62 kilns plus ENVRTO and ENVRCO sources.",
+      "severity": "minor",
+      "evidence": "All kilns K1-K62, ENVRTO, and ENVRCO are present in both versions with matching parameter values.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table A2 emission rates table is split differently across pages but contains the same data in both versions for all 64 sources.",
+      "severity": "minor",
+      "evidence": "Both versions show K1-K62 at 0.38 lb/hr NO2, ENVRTO at 54.90 lb/hr, and ENVRCO at 0.92 lb/hr.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading hierarchy exists in the HTML. The document has no h1, h2, or any heading tags. The memo title, section labels (MEMORANDUM, Table 1, Table A1, Table A2), and structural elements are all rendered as plain paragraphs or styled text rather than semantic headings.",
+      "severity": "major",
+      "evidence": "The document title 'DIVISION OF AIR QUALITY' and 'MEMORANDUM' are rendered as <p> tags with styling rather than heading elements. 'Table 1.', 'Table A1.', 'Table A2.' are also in <p> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested duplicate <main> tags, which creates a structural duplication of the entire document wrapper, though the content itself is not repeated.",
+      "severity": "major",
+      "evidence": "HTML contains '<main>' immediately inside another '<main>' element: '<body><main><main>...</main></main></body>'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 46.53,
+    "page_count": 7,
+    "visual_input_tokens": 22058,
+    "visual_output_tokens": 1477,
+    "content_input_tokens": 29879,
+    "content_output_tokens": 505,
+    "timestamp": "2026-04-14T04:58:21.682334",
+    "auditor_version": "1.0.0"
+  }
+}

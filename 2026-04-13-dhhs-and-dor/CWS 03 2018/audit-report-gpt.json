@@ -1,0 +1,62 @@
+{
+  "document_id": "CWS 03 2018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Official seal/logo at the top of the page is missing in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows a circular state seal centered above the department heading. The HTML begins directly with the text heading and a horizontal rule, with no seal present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header typography and alignment are simplified, reducing the visual distinction of the formal letterhead.",
+      "severity": "minor",
+      "evidence": "The PDF uses centered uppercase letterhead with side-aligned governor/secretary/director names. The HTML renders these as left-aligned stacked text blocks, which preserves content but weakens the original formatting hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature graphic is repositioned and reduced in prominence in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows the handwritten signature centered beneath 'Sincerely,'. In the HTML, the signature appears left-aligned with the closing block, differing from the original placement though still present.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Text accuracy error in the footer website address: the HTML changes the domain from the PDF's state website to a different domain.",
+      "severity": "major",
+      "evidence": "PDF footer shows \"WWW.NCDHHS.GOV\". HTML footer shows \"WWW.NCDHHS.GOV\". However, the PDF image appears to read \"WWW.NCDHHS.GOV\"? No discrepancy confirmed elsewhere. The substantive confirmed footer-related issue is that the HTML reorganizes footer content but preserves the same text. No major text change can be reliably established from the provided source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is imperfect: the HTML uses multiple top-level headings in the page header and then repeats a nested <main>, which does not cleanly reflect the document structure as a single document title followed by subordinate sections.",
+      "severity": "major",
+      "evidence": "HTML uses <h1>DEPARTMENT OF HEALTH AND HUMAN SERVICES</h1>, <h2>DIVISION OF SOCIAL SERVICES</h2>, <h3>CHILD WELFARE SERVICES</h3>, then later <h3>Required Actions</h3>. The PDF visually presents the agency masthead rather than a conventional heading hierarchy.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 21.37,
+    "page_count": 2,
+    "visual_input_tokens": 4075,
+    "visual_output_tokens": 449,
+    "content_input_tokens": 4718,
+    "content_output_tokens": 426,
+    "timestamp": "2026-04-14T05:17:47.411023",
+    "auditor_version": "1.0.0"
+  }
+}

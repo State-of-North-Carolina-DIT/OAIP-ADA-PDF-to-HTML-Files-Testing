@@ -1,0 +1,110 @@
+{
+  "document_id": "Bertie Budget Estimates SFY2025.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a clear two-section layout with grouped headers (e.g., 'ESTIMATED RESOURCES' spanning Federal/State/County and 'ESTIMATED PERCENT' spanning Federal/State/County). The HTML renders this as a flat table without the spanning header groupings.",
+      "severity": "major",
+      "evidence": "PDF shows 'ESTIMATED RESOURCES' and 'ESTIMATED PERCENT' as grouped column headers above Federal/State/County. HTML shows all columns at the same level without these grouping headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The HTML table structure preserves data correctly but loses the hierarchical indentation that distinguishes section headers (A. Division of Social Services) from line items (01 Work First Family Assistance, etc.).",
+      "severity": "minor",
+      "evidence": "PDF clearly indents line items under section headers with visual hierarchy. HTML presents all rows at similar indentation levels in the table.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headers like 'A. Division of Social Services', 'B. Division of Aging and Adult Services', 'C. Division of Child and Family Well Being' lose their bold formatting distinction in the HTML table compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows these as bold, visually distinct section headers. HTML shows them as bold in some cases but the visual weight and formatting hierarchy is less distinct.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Same layout issue as page 1 - the grouped column headers 'ESTIMATED RESOURCES' and 'ESTIMATED PERCENT' are not preserved in the HTML.",
+      "severity": "major",
+      "evidence": "PDF has two-tier column headers; HTML has flat single-tier headers.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Total Cost For 1. Public Assistance Programs' and 'Total Cost For 2. Public Assistance Administration' summary rows lose their visual distinction as totals in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows these as bold summary rows with clear visual separation. HTML presents them similarly to other rows.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Same grouped header layout issue as previous pages.",
+      "severity": "major",
+      "evidence": "PDF has two-tier column headers; HTML has flat single-tier headers.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Grand Total All Programs and Administration' row formatting is preserved as bold in HTML but the visual weight and emphasis is slightly reduced compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows this as a prominently bold, visually separated grand total row. HTML preserves bold but with less visual distinction.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 headings used. The HTML uses h1 for 'Bertie County' three times (once per page header div), violating the single h1 rule and creating a broken heading hierarchy.",
+      "severity": "major",
+      "evidence": "Three <h1>Bertie County</h1> elements appear in the HTML, one in each page-header div.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading hierarchy below h1. Section titles like '1. Public Assistance Programs', '2. Public Assistance Administration', '3. Services Programs', and division headings (A-E) are rendered as bold text within table cells rather than as proper headings (h2, h3, etc.).",
+      "severity": "major",
+      "evidence": "In the PDF, these are clearly structural section headings. In the HTML, they appear as <strong> text inside <td> elements with no h2/h3/h4 tags used anywhere in the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page headers (document title, fiscal year, date, page number) are repeated three times in the HTML, once for each original PDF page. While this mirrors the PDF's per-page headers, in an HTML context this creates content duplication.",
+      "severity": "minor",
+      "evidence": "Three identical page-header divs containing 'G.S. 108A-88 -- Determination of State/County Financial Participation', 'County Budget Estimates -- State Fiscal Year 2024-2025', 'Issued February 14, 2024' appear in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The initial section before '1. Public Assistance Programs' in the PDF has a 'Total Cost For' row but the label in the PDF does not specify what it is a total for (it appears to be an unnamed top-level total for NC CORELS). The HTML faithfully reproduces this but the structure is slightly ambiguous - this is consistent with the source.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Total Cost For' with a note about rounding, HTML shows the same.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 42.4,
+    "page_count": 3,
+    "visual_input_tokens": 8294,
+    "visual_output_tokens": 1057,
+    "content_input_tokens": 18379,
+    "content_output_tokens": 789,
+    "timestamp": "2026-04-14T05:17:20.879634",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "document_id": "Marshall_Meeting_Officer_Final_5_13_16",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout on the first page is simplified and repositioned.",
+      "severity": "minor",
+      "evidence": "In the PDF, the NC logo sits at upper left with agency text beneath it and the governor/secretary/director names are aligned at upper right with substantial whitespace. In the HTML, the logo is smaller and the header block is more compressed, with a horizontal rule added under the memorandum title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Memo metadata block is converted into a bordered table rather than the original aligned text layout.",
+      "severity": "minor",
+      "evidence": "The PDF presents To/From/Subject as left-aligned label-value text without visible cell borders. The HTML renders this content inside a visible multi-row table with borders and shaded cells. Content and structure are preserved, but the visual table treatment differs.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Typography and emphasis styling differ slightly from the source.",
+      "severity": "minor",
+      "evidence": "The PDF uses serif body text and underlined memorandum heading; the HTML uses sans-serif text and heavier heading styling. Lists and section headings remain distinct, but the exact font and emphasis appearance are not preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Logo appearance differs from the source on the first page.",
+      "severity": "minor",
+      "evidence": "The PDF shows a larger NC Water Resources logo with the associated text clearly beneath it. In the HTML, the logo is smaller and darker, with a somewhat different rendered appearance, though it remains present and correctly positioned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading and body typography are visually restyled.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF uses serif body text with bold roman-numeral heading styling. The HTML uses larger sans-serif section headings and more modern list styling. The hierarchy is preserved, but the formatting differs noticeably.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bulleted topic list styling differs from the source.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF uses serif text with underlined bold topic labels in bullets. The HTML preserves bullets and topic labels but renders them in sans-serif with different weight and spacing.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section and bullet formatting are restyled on the written comment summary page.",
+      "severity": "minor",
+      "evidence": "On page 4, the PDF uses serif text and tighter bullet formatting; the HTML uses sans-serif text, larger heading style, and different spacing. Content remains intact and readable.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Continuation page preserves content but not original text styling.",
+      "severity": "minor",
+      "evidence": "On page 5, the PDF uses serif body text and compact bullets; the HTML uses sans-serif text and looser spacing. Topic labels remain visually distinct and reading order is preserved.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Attachment list formatting differs from the source.",
+      "severity": "minor",
+      "evidence": "On page 6, the PDF presents the attachment section in serif type with a numbered list layout. The HTML preserves the numbered list and heading but uses larger sans-serif heading/body text and different spacing.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated metadata and styling content not present in the PDF, including a new HTML title and imported theme CSS text.",
+      "severity": "critical",
+      "evidence": "HTML contains '<title>Converted Document</title>' and CSS text such as 'Digital Commons NC \u2014 Standalone Theme CSS' and '@import url(...)', which do not appear anywhere in the PDF pages.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML duplicates the main container element, creating nested <main> blocks that repeat structural wrapper content unnecessarily.",
+      "severity": "major",
+      "evidence": "HTML begins with '<main><main>' and closes with matching nested '</main>' tags. The PDF has only one document body structure and no duplicated wrapper/content container.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There are text inaccuracies and OCR/conversion errors that alter wording from the PDF.",
+      "severity": "major",
+      "evidence": "PDF page 5 reads 'Most of the citizen comments requested that Duke excavate the ash and place it in safe, dry, lined storage away from waterways.' HTML reads 'place it safe, dry, lined storage away from waterways' (missing 'in'). PDF reads 'Several citizens was concerned...' HTML reads 'Several citizen was concerned...'. PDF page 4/5 continuation shows a margin mark not part of text; HTML introduces page-footer blocks inside list items, interrupting sentence flow.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is mostly correct, but section headings are all rendered as h2 beneath a single h1 title, while the PDF uses Roman numeral section labels without a strong nested heading hierarchy. This is acceptable but slightly artificial.",
+      "severity": "minor",
+      "evidence": "HTML uses one h1 for 'MEMORANDUM' and h2 elements for 'I. History/Background', 'II. March 29, 2016 Public Meeting and Oral Comments Summary', 'III. Written Public Comment Summary', and 'IV. Attachments'. PDF visually presents these as section heads, but not explicitly in HTML heading semantics.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Image alt text is partially adequate for the logo, but one decorative/footer image has empty alt text and the stripped embedded images prevent fuller verification.",
+      "severity": "minor",
+      "evidence": "HTML includes alt='North Carolina Department of Environmental Quality Water Resources logo' for the logo image, which appears accurate. Another image has alt='' for the footer bar image.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 11,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 38.71,
+    "page_count": 6,
+    "visual_input_tokens": 10995,
+    "visual_output_tokens": 1174,
+    "content_input_tokens": 11094,
+    "content_output_tokens": 701,
+    "timestamp": "2026-04-14T05:00:23.313563",
+    "auditor_version": "1.0.0"
+  }
+}

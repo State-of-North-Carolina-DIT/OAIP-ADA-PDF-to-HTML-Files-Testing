@@ -1,0 +1,126 @@
+{
+  "document_id": "2016 IB-43 Self-Insured Workers\u201a\u00c4\u00f4 Compensation Corporation Gross Premium Tax Return Instructions",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The title '2016' in the PDF is in a large bold serif font, centered prominently. In the HTML it appears as a heading but with different styling (sans-serif, with a red underline rule).",
+      "severity": "minor",
+      "evidence": "PDF: Large bold centered '2016' in serif font. HTML: '2016' in sans-serif with horizontal rule underneath.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "In the PDF, Line 3 sub-items (a, b) are indented under Line 3 heading. The HTML preserves this but with slightly different indentation levels.",
+      "severity": "minor",
+      "evidence": "PDF: Indented sub-items under 'Line 3 \u2013 Tax Credits'. HTML: Similar structure but less visually indented.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The PDF uses en-dashes (\u2013) in section headings like 'Line 1 \u2013 Adjusted Taxable Premiums' while the HTML appears to use regular dashes.",
+      "severity": "minor",
+      "evidence": "PDF: em/en-dashes in headings. HTML: similar dashes, minor typographic difference.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Part 1 heading in the PDF is underlined and bold with specific formatting. The HTML renders it differently as a larger heading without underline.",
+      "severity": "minor",
+      "evidence": "PDF: 'Part 1 \u2013 Computation of Gross Premium Tax' underlined and bold. HTML: Larger heading, no underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Line 13 uses 'Part 1, Line 2' reference. In both PDF and HTML this is present but the PDF uses an em-dash style vs HTML uses an en-dash style.",
+      "severity": "minor",
+      "evidence": "Minor typographic difference in dash usage.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF page 3 contains Part 2 content starting from Line 17 through Part 3 and beginning of Part 4. The HTML splits this across pages differently but all content is present.",
+      "severity": "minor",
+      "evidence": "PDF page 3 has Lines 17-22, Part 3, Part 4 beginning. HTML has same content split across pages 3-4.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The calculation example table on page 5 (PDF) is accurately reproduced in HTML page 5 with correct data, structure, and values. Minor visual styling differences in table borders.",
+      "severity": "minor",
+      "evidence": "PDF: Traditional table with thin borders. HTML: Table with slightly different border styling but same data.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Note:' text in italics for Job Class codes 0908 and 0913 is preserved in the HTML with italic formatting.",
+      "severity": "minor",
+      "evidence": "PDF: Italicized note text. HTML: Similarly italicized.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML heading hierarchy is broken. The document title '2016' is h1, followed by 'North Carolina', 'Self-Insured Workers' Compensation Corporation', and 'Gross Premium Tax Return Instructions' all as h2. Then Part headings are also h2. The title components should be consolidated, and the year alone as h1 is not ideal. More critically, 'North Carolina' and 'Self-Insured Workers' Compensation Corporation' are separate h2 headings when they are subtitle elements of the document title in the PDF.",
+      "severity": "major",
+      "evidence": "PDF has a single title block: '2016 North Carolina Self-Insured Workers' Compensation Corporation Gross Premium Tax Return Instructions'. HTML splits this into <h1>2016</h1> <h2>North Carolina</h2> <h2>Self-Insured Workers' Compensation Corporation</h2> <h2>Gross Premium Tax Return Instructions</h2>, making the Part-level headings the same level as title components.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The PDF contains URLs (http://www.dornc.com/downloads/insurance.html and www.dornc.com) that appear as clickable hyperlinks in the PDF but are rendered as plain text in the HTML, not as anchor tags.",
+      "severity": "minor",
+      "evidence": "PDF page 2: 'www.dornc.com' is a hyperlink. PDF page 4: 'http://www.dornc.com/downloads/insurance.html' appears multiple times as hyperlinks. HTML renders these as plain text without <a> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The calculation example table in the HTML includes two empty rows between the data rows and the summary rows, which do not appear as distinct empty rows in the PDF table. This is a minor structural difference but does not lose data.",
+      "severity": "minor",
+      "evidence": "HTML has two <tr> elements with all empty <td> cells between the 'Farm: Field Crops & Drivers' row and the 'Total Taxable Premiums' row. The PDF table shows a visual gap but not explicit empty rows.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the calculation example table, the summary rows ('Total Taxable Premiums', 'Approved Experience Modification Factor', 'Total Adjusted Taxable Premiums') span the label across the first column only, while in the PDF these labels are right-aligned spanning multiple columns. The data values are correct.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Total Taxable Premiums' right-aligned spanning columns before the value column. HTML places the label in the first column with empty cells for remaining columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside the outer <main>, which is a structural duplication of the main landmark element.",
+      "severity": "minor",
+      "evidence": "HTML source shows <main> at the top level containing content, and another <main> tag after the header section. This is an HTML structure issue, not content duplication.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 12,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 48.0,
+    "page_count": 5,
+    "visual_input_tokens": 15489,
+    "visual_output_tokens": 1210,
+    "content_input_tokens": 16693,
+    "content_output_tokens": 990,
+    "timestamp": "2026-04-14T05:12:38.041243",
+    "auditor_version": "1.0.0"
+  }
+}

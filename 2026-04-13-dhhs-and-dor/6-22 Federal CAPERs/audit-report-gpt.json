@@ -1,0 +1,62 @@
+{
+  "document_id": "6-22 Federal CAPERs",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Header/logo area is not preserved in the same visual form.",
+      "severity": "minor",
+      "evidence": "The PDF shows the USDA logo and department name as a compact graphic/header block near the top left. The HTML shows a smaller logo/header treatment with extra text placement and a horizontal rule, changing the appearance and placement of the graphic area.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title and header formatting differ noticeably from the PDF.",
+      "severity": "minor",
+      "evidence": "In the PDF, the title is smaller and centered above the table. In the HTML, the title is larger, left-aligned, and separated by a thick horizontal rule, altering the original emphasis and alignment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML introduces fabricated wrapper and styling content not present in the PDF, including a synthetic HTML title and extensive CSS/theme text.",
+      "severity": "critical",
+      "evidence": "HTML contains '<title>Converted Document</title>' and CSS comments/text such as 'Digital Commons NC \u2014 Standalone Theme CSS', font imports, and style rules. None of this textual content appears in the PDF image, which only shows the USDA logo/header, title, table, and footnotes.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds a 'page-header' line duplicating and restructuring the agency identification beyond the PDF layout.",
+      "severity": "critical",
+      "evidence": "PDF header visually shows the USDA logo with 'United States Department of Agriculture' as part of the header area. HTML separately includes '<p>United States Department of Agriculture</p>' under a figure plus additional wrapper labels like 'page-header'/'page-footer' that are not in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML title omits the footnote marker '/1' from the source document title.",
+      "severity": "major",
+      "evidence": "PDF title: 'Reported Case and Procedural Error Rates /1'. HTML h1: 'Reported Case and Procedural Error Rates /1' is correct, but the document metadata title is 'Converted Document', which is inaccurate relative to the source title.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 16.9,
+    "page_count": 1,
+    "visual_input_tokens": 3254,
+    "visual_output_tokens": 328,
+    "content_input_tokens": 5316,
+    "content_output_tokens": 384,
+    "timestamp": "2026-04-14T05:14:56.386621",
+    "auditor_version": "1.0.0"
+  }
+}

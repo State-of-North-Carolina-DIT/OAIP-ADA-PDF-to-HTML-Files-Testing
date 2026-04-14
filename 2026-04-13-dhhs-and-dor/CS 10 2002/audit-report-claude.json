@@ -1,0 +1,134 @@
+{
+  "document_id": "CS 10 2002",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a centered header layout with the state seal centered and department name centered below it, while the HTML has the seal left-aligned and the department name left-aligned.",
+      "severity": "minor",
+      "evidence": "PDF: State seal and department title are centered. HTML: State seal is left-aligned, department title is left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF has Governor/Secretary on the left and Director/phone on the right in a two-column header layout. The HTML presents these sequentially in a single column.",
+      "severity": "minor",
+      "evidence": "PDF: 'Michael F. Easley, Governor' left, 'Pheon E. Beal, Director' right. HTML: Both are listed sequentially on the left.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The italicized text in the PDF for the parenthetical about Program Code 'Z' is rendered without italics in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: '(The claim for FFP is made by entering Program Code \"Z\" on the day sheet...' is in italics. HTML: Same text appears without italic formatting.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined text in PDF for 'unlicensed relative while the State was in the process of licensing the relative's home' is not underlined in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: text is underlined. HTML: text appears as regular text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined emphasis on 'not' in 'could not be claimed' is preserved in both versions but the underline on 'until September 30, 2002' in the PDF is not visually underlined in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'until September 30, 2002' is underlined. HTML: appears as normal text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italicized text for the parenthetical about Program Code 'Z' on page 2 is not clearly italicized in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: '(i.e. cannot enter Program Code \"Z\"...' in italics. HTML: same text without italic formatting.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The bold and underlined statement 'absent effective, preventive services, the plan would be removal from the home' has bold in HTML but underline is not shown.",
+      "severity": "minor",
+      "evidence": "PDF: text is bold and underlined. HTML: text is bold but not underlined.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italicized parenthetical about Day Sheet purposes on page 3 is not italicized in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: '(For Day Sheet purposes, the worker would continue to use program Code Z with Service Code 109)' in italics. HTML: appears as regular text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underline on 'at the time that the trial home visit is initially ordered' is not preserved in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: text is underlined. HTML: text appears underlined - actually appears preserved.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image in the HTML is less legible/different in appearance compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: Cursive signature 'Charles C. Ha-' is relatively clear. HTML: Signature appears as a darker, less legible block.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The closing section layout (Sincerely, signature, name/title, cc list) is left-aligned in the HTML whereas in the PDF the signature block is center-right aligned.",
+      "severity": "minor",
+      "evidence": "PDF: 'Sincerely' and signature are indented/centered-right. HTML: left-aligned.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The table on page 5 is structurally correct with 3 rows and 3 columns preserved. The first column header cell in the PDF is blank, and in the HTML it appears as a shaded header row which is acceptable.",
+      "severity": "minor",
+      "evidence": "PDF: 3x3 table with blank top-left cell. HTML: Same structure with styled header row.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h1 for the department name/division header and h2 for the attachment table title, which is reasonable. However, there is a nested <main> element inside the outer <main>, which is a structural HTML issue but not a heading hierarchy problem per se.",
+      "severity": "minor",
+      "evidence": "The HTML has <main> wrapping the whole document and another <main> inside it. This is a structural issue but does not affect content fidelity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the PDF, the trial home visit documentation language is both underlined and bold: 'absent effective, preventive services, the plan would be removal from the home'. In the HTML, it is rendered only as bold (<strong>) without underlining, though the PDF clearly shows it underlined and bold.",
+      "severity": "minor",
+      "evidence": "PDF: underlined and bold text. HTML: <strong>absent effective, preventive services, the plan would be removal from the home</strong> \u2014 missing underline formatting. The document explicitly states 'The specific language underlined in bold type above should be used' making the underline formatting substantively meaningful.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 14,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 44.41,
+    "page_count": 5,
+    "visual_input_tokens": 14564,
+    "visual_output_tokens": 1572,
+    "content_input_tokens": 16034,
+    "content_output_tokens": 503,
+    "timestamp": "2026-04-14T05:17:45.558307",
+    "auditor_version": "1.0.0"
+  }
+}

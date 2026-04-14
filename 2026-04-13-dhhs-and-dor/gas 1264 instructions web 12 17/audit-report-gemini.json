@@ -1,0 +1,21 @@
+{
+  "document_id": "gas 1264 instructions web 12 17",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 62.42,
+    "page_count": 7,
+    "visual_input_tokens": 15884,
+    "visual_output_tokens": 351,
+    "content_input_tokens": 12420,
+    "content_output_tokens": 162,
+    "timestamp": "2026-04-14T05:33:18.174988",
+    "auditor_version": "1.0.0"
+  }
+}

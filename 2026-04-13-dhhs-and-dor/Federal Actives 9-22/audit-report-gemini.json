@@ -1,0 +1,30 @@
+{
+  "document_id": "Federal Actives 9-22",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Loss of text alignment and text styling within the table.",
+      "severity": "minor",
+      "evidence": "In the PDF, table data cells are center-aligned, bolded, and use specific font colors (red/green). A single row (North Carolina) is also highlighted in yellow. In the HTML conversion, the table data is rendered as unstyled, left-aligned, plain black text.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 46.8,
+    "page_count": 1,
+    "visual_input_tokens": 2893,
+    "visual_output_tokens": 257,
+    "content_input_tokens": 4823,
+    "content_output_tokens": 141,
+    "timestamp": "2026-04-14T05:22:44.162367",
+    "auditor_version": "1.0.0"
+  }
+}

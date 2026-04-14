@@ -1,0 +1,94 @@
+{
+  "document_id": "DAAS_AS_03_2023- The Division of Aging & Adult Services (DAAS)- Special Assistance- In Home (SAIH) Interagency Referral Form- DRAFT.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses distinct bordered sections/boxes to group the IMC-SAIH Application, IMC-SAIH Recertification, IMC-SAIH Change, and Adult Services sections. The HTML renders these as flat, unboxed content losing the visual grouping structure.",
+      "severity": "major",
+      "evidence": "PDF shows clearly bordered rectangular sections with blue/gray borders around form fields. HTML shows the same content but without visible section borders, making it harder to distinguish between form sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF has a two-part layout with fields arranged side-by-side (e.g., Case Name and Client Phone # on the same line, Client Address and Client Medicaid ID# on the same line). The HTML collapses these into a single column or concatenated text.",
+      "severity": "major",
+      "evidence": "PDF: 'Case Name:' on left, 'Client Phone #' on right of same line. HTML: 'Case Name: Client Phone #' appears as a single concatenated line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings in the PDF are styled in blue/colored text (e.g., 'IMC \u2013 SAIH Application', 'SAIH Application #', 'SAIH Application Date:'). The HTML renders these as plain black headings.",
+      "severity": "minor",
+      "evidence": "PDF: Blue colored section headers. HTML: Black text headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The 'To:' line with checkboxes for 'Adult Services Case Manager' and 'Income Maintenance Caseworker (IMC)' is laid out differently. PDF has them spaced across the line with clear checkbox positioning, HTML concatenates them.",
+      "severity": "minor",
+      "evidence": "PDF: Two distinct checkbox options with spatial separation. HTML: 'To: \u25a1 Adult Services Case Manager \u25a1 Income Maintenance Caseworker (IMC)' as single line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Form fields within the bordered sections in the PDF have blank lines/underscores for data entry that are partially lost or reduced in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF shows explicit fill-in blanks with underscores (e.g., 'RSDI $_______'). HTML preserves the underscores but the visual spacing and alignment of form fields is reduced.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The dark blue/navy divider bars separating the Income Maintenance section from the Adult Services section are absent in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF has thick dark blue horizontal bars as section dividers. HTML has no equivalent visual dividers (only thin gray lines).",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Section headers are rendered as h2 elements but contain combined label text that conflates what are separate fields in the PDF, making the heading hierarchy misleading. Additionally, 'IMC \u2013 SAIH Application SAIH Application # SAIH Application Date:' is presented as a single h2 heading, whereas in the PDF these are separate labeled fields on a single line, not a unified section heading.",
+      "severity": "major",
+      "evidence": "HTML: <h2>IMC \u2013 SAIH Application SAIH Application # SAIH Application Date:</h2>. PDF shows 'IMC \u2013 SAIH Application' as a section header with 'SAIH Application #' and 'SAIH Application Date:' as separate fillable fields on the same line.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements. The outer <main> wraps all content, and there is a second <main> element inside it containing the form body. This is a structural duplication issue.",
+      "severity": "major",
+      "evidence": "HTML has <main> as a direct child of <body>, and then another <main> element nested inside it after the <header> block.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The top-left label 'Adult Services' that appears above the form title in the PDF is not present in the HTML output.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Adult Services' above the title 'The DAAS-SAIH PROGRAM INTERAGENCY REFERRAL FORM'. The HTML only has the title as h1.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 34.69,
+    "page_count": 1,
+    "visual_input_tokens": 3826,
+    "visual_output_tokens": 961,
+    "content_input_tokens": 5033,
+    "content_output_tokens": 610,
+    "timestamp": "2026-04-14T05:20:58.604811",
+    "auditor_version": "1.0.0"
+  }
+}

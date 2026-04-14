@@ -1,0 +1,166 @@
+{
+  "document_id": "d 400 schedule pn webfill",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The instruction page's four-column layout (Getting Started, Guidelines, Printing, Before Mailing) is collapsed into a single-column flow in the HTML",
+      "severity": "major",
+      "evidence": "PDF shows four distinct vertical columns side by side; HTML renders them as sequential sections stacked vertically",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Decorative circular section headers and instructional icons are not reproduced in HTML, but text content is preserved",
+      "severity": "minor",
+      "evidence": "PDF has circular header badges, folder icons, printer icons, crossed-out images; HTML uses plain text headings and bullet points",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Part A Residency Status two-column layout (Taxpayer vs Spouse) is collapsed to a single column in HTML",
+      "severity": "major",
+      "evidence": "PDF shows Taxpayer is and Spouse is side by side in two distinct columns within the Part A box; HTML lists them sequentially as bullet lists",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part B table structure changed: PDF has two data columns (Column A, Column B) with line numbers embedded in headers; HTML adds an extra 'Line Number' column making it a 4-column table instead of the original 3-column layout",
+      "severity": "major",
+      "evidence": "PDF table: Total Income description | Column A | Column B. HTML table: Total Income | Line Number | Column A | Column B",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Part A residency options shown as radio button circles in PDF are rendered as plain bullet list items in HTML",
+      "severity": "minor",
+      "evidence": "PDF: circle radio buttons for Full-Year Resident, Nonresident, Part-Year Resident; HTML: bullet points",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Barcode is present in HTML but repositioned relative to the table content compared to the PDF",
+      "severity": "minor",
+      "evidence": "PDF has barcode integrated within the left margin of the table rows; HTML shows barcode as a separate image above the table",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 of the form (Part B continued with North Carolina Adjustments and Part C) is split across HTML rendering with Part C separated significantly from Part B",
+      "severity": "major",
+      "evidence": "PDF shows Part B continued and Part C on the same page; HTML has a large gap with metadata (Page 2, D-400 Sch. PN, Tax Year 2018, etc.) inserted between them",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part B continued table in HTML adds an extra column for line descriptions, making it 4 columns instead of the PDF's 3-column layout (description | Column A | Column B)",
+      "severity": "major",
+      "evidence": "PDF: description text with line number on same row | Column A | Column B. HTML: North Carolina Adjustments | North Carolina Adjustments | Column A | Column B (duplicated header columns)",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Part C table restructured from a horizontal layout with arrows to a simple 3-column table (Description, Line Number, Value)",
+      "severity": "minor",
+      "evidence": "PDF shows lines 22-24 with arrow indicators and values at right; HTML shows a clean tabular format",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Column A and Column B pink/red header shading from PDF is not preserved in HTML",
+      "severity": "minor",
+      "evidence": "PDF has pink/red background on Column A and Column B headers; HTML has plain white/default styling",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 elements exist in the HTML. The document has 'Instructions for Web Fill-In Forms' as one h1 and 'D-400 Schedule PN 2018 Part-Year Resident and Nonresident Schedule' as another h1. Only one h1 should be used as the document title.",
+      "severity": "major",
+      "evidence": "HTML contains: <h1>Instructions for Web Fill-In Forms</h1> and <h1>D-400 Schedule PN 2018 Part-Year Resident and Nonresident Schedule</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements \u2014 there is a <main> inside a <main>, which is invalid HTML structure.",
+      "severity": "major",
+      "evidence": "The outer <main> wraps the entire content, and another <main> element is opened inside it containing the form sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Part B table in the HTML incorrectly merges Pages 1 and 2 content into a single table. The transition from Part B (Lines 1-16) to the continued Part B (Lines 17-21) is handled by inserting section header rows directly into the table body, which misrepresents the document structure. The continuation header row spans all columns with repeated text.",
+      "severity": "major",
+      "evidence": "HTML has a row: <tr><td>Part B. Allocation of Income for Part-Year Residents and Nonresidents (continued)</td><td>Part B. Allocation...</td><td>Part B. Allocation...</td><td>Part B. Allocation...</td></tr> \u2014 this is repeated across all 4 columns as if it were data. Similarly, 'North Carolina Adjustments' appears as a data row with repeated text across columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Part B continuation table (Lines 17-21) has different Column A header text than the main Part B table. In the PDF, Column A for Lines 17-21 reads 'Enter the amount from Form D-400 Schedule S' whereas for Lines 1-16 it reads 'Total Income from all sources'. The HTML merges these into a single table, losing the distinct column header change.",
+      "severity": "major",
+      "evidence": "PDF Page 3 shows Column A header as 'Enter the amount from Form D-400 Schedule S' for lines 17-21. HTML attempts to show this within a data row rather than as a proper sub-table header.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes inline parenthetical annotations like '(TAX X)' and '(Enter Whole U.S. Dollars Only 99,999.00 X, 99999.00 Check)' and '(PRINT)' within list items under the Guidelines and Printing sections. These are attempts to describe visual elements from the infographic but are presented as textual content that doesn't literally exist in the PDF as written text.",
+      "severity": "minor",
+      "evidence": "HTML: '<li>Do not handwrite any information (TAX X)</li>' \u2014 the PDF infographic shows a tax form image with an X mark overlay, but doesn't contain the literal text '(TAX X)'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content from Page 2 of the PDF (the D-400 Schedule PN form description, Part A, and Part B header text) is partially duplicated. The introductory text about part-year residents and the Schedule PN attachment warning appear both in the textual content above the form and are also present in a page-header div, essentially showing them twice.",
+      "severity": "major",
+      "evidence": "The HTML contains the text 'If you complete Schedule PN, you MUST attach the schedule to Form D-400...' and 'A part-year resident or a nonresident who receives income from N.C. sources must complete this form...' in the page-header div, and these same texts also come from the PDF's form content on page 2.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Part C table in the HTML has 3 columns (Description, Line Number, Value) but the PDF shows Lines 22 and 23 with arrow markers (\u25ba) and a single value field, while Line 24 has its value in a separate column position. The HTML simplifies this into a uniform 3-column structure which is a reasonable representation.",
+      "severity": "minor",
+      "evidence": "PDF shows Lines 22-23 with \u25ba markers and Line 24 in a slightly different layout; HTML normalizes to 3 equal columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the barcodes describes them as 'Barcode 7020904020' and 'Barcode 7021004020' which is reasonably accurate based on the barcode numbers visible in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows vertical barcodes with numbers; HTML alt text: 'Barcode 7020904020' and 'Barcode 7021004020'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 10,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 63.2,
+    "page_count": 3,
+    "visual_input_tokens": 9470,
+    "visual_output_tokens": 1323,
+    "content_input_tokens": 11547,
+    "content_output_tokens": 1556,
+    "timestamp": "2026-04-14T05:32:05.073956",
+    "auditor_version": "1.0.0"
+  }
+}

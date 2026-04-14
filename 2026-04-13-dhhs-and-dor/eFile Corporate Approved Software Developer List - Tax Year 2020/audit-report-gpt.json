@@ -1,0 +1,21 @@
+{
+  "document_id": "eFile Corporate Approved Software Developer List - Tax Year 2020",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 8.92,
+    "page_count": 2,
+    "visual_input_tokens": 4027,
+    "visual_output_tokens": 177,
+    "content_input_tokens": 4989,
+    "content_output_tokens": 100,
+    "timestamp": "2026-04-14T05:31:27.812357",
+    "auditor_version": "1.0.0"
+  }
+}

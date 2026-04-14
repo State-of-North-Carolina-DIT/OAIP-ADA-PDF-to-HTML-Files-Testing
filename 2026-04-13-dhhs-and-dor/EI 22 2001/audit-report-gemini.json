@@ -1,0 +1,46 @@
+{
+  "document_id": "EI 22 2001",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Document header alignment and styling differences.",
+      "severity": "minor",
+      "evidence": "In the PDF, the state seal logo and 'North Carolina Department of Health and Human Services' text are centered at the top of the page. In the HTML, they are left-aligned, and a horizontal dividing line has been added below the department name.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table header merged cell split and structure flattened.",
+      "severity": "minor",
+      "evidence": "In the PDF table, the 'APPLICANTS' header spans 10 columns across a sub-row of numbered cells (1-10). In the HTML, this has been flattened into a single row of individual headers ('APPLICANTS 1', 'APPLICANTS 2', etc.), splitting the original merged cell.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "An errant hyperlink was applied to regular body text.",
+      "severity": "minor",
+      "evidence": "In the HTML, the text 'helpful information. Pleas' is wrapped in a mailto link: '<a href=\"mailto:Walt.Johnson@ncmail.net\">helpful information. Pleas</a>e contact Mr. Johnson...'. In the PDF, this is plain text and only the actual email address is intended to be a link.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 66.2,
+    "page_count": 4,
+    "visual_input_tokens": 9484,
+    "visual_output_tokens": 491,
+    "content_input_tokens": 6635,
+    "content_output_tokens": 281,
+    "timestamp": "2026-04-14T05:22:23.986825",
+    "auditor_version": "1.0.0"
+  }
+}

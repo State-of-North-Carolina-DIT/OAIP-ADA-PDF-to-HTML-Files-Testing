@@ -1,0 +1,126 @@
+{
+  "document_id": "SUPLR 2012-0022 Sales of Medical Items and Instructional Materials",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a formal letterhead layout with Governor and Secretary names flanking the header, centered department name and seal. The HTML converts this to a left-aligned stacked layout, losing the two-column header positioning.",
+      "severity": "major",
+      "evidence": "PDF: 'Beverly Eaves Perdue / Governor' on left, 'David W. Hoyle / Secretary' on right. HTML: Both are stacked on the left side.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Account ID and Federal ID fields are right-aligned in the PDF but appear left-aligned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows Account ID and Federal ID right-justified. HTML shows them left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The department name 'North Carolina Department of Revenue' appears as a large heading in the HTML, styled differently from the PDF's centered header text.",
+      "severity": "minor",
+      "evidence": "PDF: centered serif text in header. HTML: large bold heading, left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer contact information is centered in the PDF but right-aligned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Phone, Fax, P.O. Box, Website centered at bottom. HTML: Same info right-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 header with page number and SUPLR reference number positioning differs slightly but content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF: 'Page 2' left, 'SUPLR 2012-0022' right. HTML: Similar layout maintained.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The list of medical device products and the bulleted/sub-bulleted items maintain the same reading order in both versions.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML present the same list items in the same sequence.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List indentation for sub-items (circle bullets) varies slightly between PDF and HTML but the hierarchy is preserved.",
+      "severity": "minor",
+      "evidence": "PDF uses indented circle bullets for sub-items. HTML uses circle list-style markers similarly.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 maintains the same general layout and content flow between PDF and HTML.",
+      "severity": "minor",
+      "evidence": "Both versions show the same lettered list items (b, c) and concluding paragraphs in the same order.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in the HTML. The document has an outer <main> and an inner <main>, which is invalid HTML structure but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main>...<main>...</main></main></body> with two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The first page's product list at the bottom is partially represented. The PDF shows three redacted bullet items before the page break, and the HTML shows three corresponding redacted items. However, the PDF's first item on page 1 appears to include 'Introducers for needles' as a separate line that is actually the first item continued on page 2, which the HTML handles correctly by placing it in the page 2 list.",
+      "severity": "minor",
+      "evidence": "PDF page 1 bottom shows redacted product list items; HTML represents them as three bulleted items with redaction blocks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer contact information (Phone, Fax, P.O. Box, Website) appears only once in the HTML (after page 1 content), which is acceptable consolidation of repeated page footers from the PDF.",
+      "severity": "minor",
+      "evidence": "PDF has footer on each page; HTML consolidates to one instance.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The link to www.dornc.com is preserved and points to http://www.dornc.com/ which matches the PDF's referenced URL. No fabricated links found.",
+      "severity": "minor",
+      "evidence": "PDF: 'Website: www.dornc.com' -> HTML: '<a href=\"http://www.dornc.com/\">www.dornc.com</a>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor formatting difference: PDF shows 'deformity' in the definition of prosthetic device subdivision (a) as 'Prevents or corrects a physical or malfunction' which appears identical in both PDF and HTML. No meaning change.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'Prevents or corrects a physical or malfunction.'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 12,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 44.81,
+    "page_count": 3,
+    "visual_input_tokens": 9914,
+    "visual_output_tokens": 1013,
+    "content_input_tokens": 10958,
+    "content_output_tokens": 880,
+    "timestamp": "2026-04-14T05:29:40.377255",
+    "auditor_version": "1.0.0"
+  }
+}

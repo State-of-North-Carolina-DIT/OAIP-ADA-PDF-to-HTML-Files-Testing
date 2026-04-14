@@ -1,0 +1,118 @@
+{
+  "document_id": "Kimberly Park II, LLC, et al",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Caption/header block layout is not preserved.",
+      "severity": "major",
+      "evidence": "The PDF presents the case caption in a two-column legal-document layout with parties on the left and tribunal/case numbers on the right. The HTML converts this into a grid/table-like block and then continues in a single flowing column, changing the original page structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading and caption styling differs from the source.",
+      "severity": "minor",
+      "evidence": "In the PDF, the caption uses centered/column-aligned legal formatting with distinct bolded party names and a prominent centered 'FINAL DECISION' heading. In the HTML, the same content is restyled with modern web typography and a horizontal rule, reducing the original legal-document visual hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footnote placement changes the reading flow slightly.",
+      "severity": "minor",
+      "evidence": "On the PDF, the footnote appears at the bottom of the page tied to the body text. In the HTML, the footnote is presented inline between section content and the page marker, which slightly alters the visual reading sequence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Content is duplicated, disrupting the reading order.",
+      "severity": "major",
+      "evidence": "The PDF page presents the continuation of 'STATEMENT OF THE CASE' followed by 'ANALYSIS AND ISSUES' once. The HTML shows the page image-like content and then repeats the same prose again below in reflowed text, causing a sighted user to encounter the same material twice.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Duplicated findings text disrupts the visual flow.",
+      "severity": "major",
+      "evidence": "The PDF page contains the findings section once. The HTML first shows the page content and then repeats the section heading and numbered findings again below, creating a duplicate reading path not present in the source.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Duplicated findings text disrupts the visual flow.",
+      "severity": "major",
+      "evidence": "The PDF page contains findings 8\u201313 once. The HTML shows the same content in an image-like rendering and then repeats the numbered items below as reflowed text, causing redundant sequential reading.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Valuation table styling is altered though structure is preserved.",
+      "severity": "minor",
+      "evidence": "The PDF contains a compact bordered table embedded within the findings section. The HTML reproduces it as a wider web-styled table with different spacing and header presentation; data appears intact, but the visual table presentation is materially different.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page content is duplicated, affecting reading order.",
+      "severity": "major",
+      "evidence": "The PDF page shows findings 14\u201317, the valuation table, and the conclusions heading once. The HTML presents the same content first in page-form and then again as reflowed HTML, leading to repeated content in sequence.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Seal/signature block is converted into text/table form rather than preserved as a graphic-like block.",
+      "severity": "minor",
+      "evidence": "The PDF includes the commission seal and handwritten signatures arranged as an official signature block. In the HTML, these are largely replaced by text in a table/grid, so the original graphic appearance and placement are not preserved.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Final order content is duplicated, altering reading order.",
+      "severity": "major",
+      "evidence": "The PDF presents the final numbered points, WHEREFORE clause, valuations, and signature block once. The HTML repeats the same substantive text beneath the page-form content, so a user reading top-to-bottom would encounter duplicate final-order content.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated publisher/theme content not present in the PDF, including a generated HTML title, imported web font URL, and branding comments/CSS labels.",
+      "severity": "critical",
+      "evidence": "HTML contains '<title>Converted Document</title>', CSS comment 'Digital Commons NC \u2014 Standalone Theme CSS', and '@import url(\"https://fonts.googleapis.com/...')'. None of this publisher/theme/title content appears in the PDF pages, which begin with 'STATE OF NORTH CAROLINA' / 'BEFORE THE PROPERTY TAX COMMISSION'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There is a text accuracy error in the signature/concurrence block: 'Commission' is misspelled in HTML.",
+      "severity": "major",
+      "evidence": "PDF page 6 reads 'Commission Member Penny dissents without separate opinion.' HTML reads 'Comission Member Penny dissents without separate<br>opinion.'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 7,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 35.29,
+    "page_count": 6,
+    "visual_input_tokens": 13941,
+    "visual_output_tokens": 1268,
+    "content_input_tokens": 10908,
+    "content_output_tokens": 351,
+    "timestamp": "2026-04-14T05:25:43.280536",
+    "auditor_version": "1.0.0"
+  }
+}

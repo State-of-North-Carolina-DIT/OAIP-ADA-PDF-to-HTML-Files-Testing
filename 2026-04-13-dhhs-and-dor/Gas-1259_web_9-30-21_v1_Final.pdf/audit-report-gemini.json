@@ -1,0 +1,86 @@
+{
+  "document_id": "Gas-1259_web_9-30-21_v1_Final.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Redundant content alters reading flow.",
+      "severity": "major",
+      "evidence": "The PDF contains an infographic. The HTML displays the infographic and then extracts and repeats all of its text content sequentially below it, forcing a sighted user to read the same information twice.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Form layout flattened into a single column.",
+      "severity": "critical",
+      "evidence": "In the PDF, the top half of the page features a structured layout with form fields (Name, Address) and boxed sections (Account Number, Return for Month) arranged side-by-side. The HTML flattens this entirely into a single vertical column of text labels, losing the visual structure of a form.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Radio buttons converted to bulleted list.",
+      "severity": "minor",
+      "evidence": "The 'Fill in applicable circles:' section in the PDF uses open circles (radio buttons) for selection. The HTML renders these options as a standard bulleted list.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Loss of functional table cell shading.",
+      "severity": "major",
+      "evidence": "The 'Part 1 - Computation of Tax' table in the PDF uses gray shading in a specific cell (Jet Fuel and AvGas) to indicate that data should not be entered there. The HTML table lacks this shading, losing a critical functional visual cue.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Loss of functional table cell shading.",
+      "severity": "major",
+      "evidence": "The 'Part 2 - Gallonage Summary' table in the PDF heavily utilizes gray shading in various cells to indicate where data entry is not applicable. The HTML table removes all background shading, making all cells appear editable and losing functional context.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column footer layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "At the bottom of the PDF, the 'MAIL TO:' address block and the 'QUESTIONS:' contact block are placed side-by-side in two distinct columns. In the HTML, they are stacked vertically in a single column.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Signature line layout distorted.",
+      "severity": "minor",
+      "evidence": "The PDF places the 'Signature:', 'Title:', and 'Date:' fields aligned horizontally on a single baseline. The HTML wraps these elements awkwardly across multiple lines.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document contains multiple <h1> tags and has an inverted heading hierarchy in one section.",
+      "severity": "major",
+      "evidence": "Page 1 uses `<h1>Do Not Include This Page</h1>`, while Page 2 uses another `<h1>Motor Fuel Backup Tax Return</h1>`. Additionally, on Page 2, `<h2>GAS-1259</h2>` precedes the `<h1>` tag, breaking the logical heading hierarchy.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 75.85,
+    "page_count": 3,
+    "visual_input_tokens": 7254,
+    "visual_output_tokens": 954,
+    "content_input_tokens": 5363,
+    "content_output_tokens": 282,
+    "timestamp": "2026-04-14T05:24:03.760667",
+    "auditor_version": "1.0.0"
+  }
+}

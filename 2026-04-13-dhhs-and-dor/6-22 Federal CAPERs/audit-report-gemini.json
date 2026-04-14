@@ -1,0 +1,21 @@
+{
+  "document_id": "6-22 Federal CAPERs",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 28.33,
+    "page_count": 1,
+    "visual_input_tokens": 2912,
+    "visual_output_tokens": 107,
+    "content_input_tokens": 4633,
+    "content_output_tokens": 158,
+    "timestamp": "2026-04-14T05:14:46.102600",
+    "auditor_version": "1.0.0"
+  }
+}

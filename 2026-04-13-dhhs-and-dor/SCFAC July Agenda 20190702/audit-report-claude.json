@@ -1,0 +1,94 @@
+{
+  "document_id": "SCFAC July Agenda 20190702",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a single unified table with location details and call-in details side by side in the header area, while the HTML separates these into a distinct 'Location Details' / 'Call-In Details' table and then a separate agenda table below, changing the visual structure.",
+      "severity": "major",
+      "evidence": "PDF: Location and call-in info are within the same bordered table as the rest of the agenda header. HTML: They are in a separate table with 'Location Details' and 'Call-In Details' column headers, followed by a separate 'Time' / 'Agenda Item' table.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The PDF agenda is presented as a single table with time slots and descriptions in a unified format. The HTML splits this into two separate tables (location/call-in details table and agenda items table), but the data content and structure are preserved.",
+      "severity": "minor",
+      "evidence": "PDF: One large table encompassing everything. HTML: Two tables but same data preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Some italic formatting from the PDF is not preserved in the HTML for presenter names and titles.",
+      "severity": "minor",
+      "evidence": "PDF: 'Benita Purcell and Mark Fuhrmann' is in italics, 'Consent Agenda' is in italics, presenter titles like 'JD, Acting Assistant Director for Systems Performance' are in italics. HTML: These appear in regular (non-italic) text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The main title in the PDF is centered and bold within the table, while the HTML renders it as a large heading at the top of the page outside any table structure.",
+      "severity": "minor",
+      "evidence": "PDF: 'State Consumer & Family Advisory Committee AGENDA* July 10, 2019 | Time: 9:00 am \u2013 3:00 pm' centered in table header. HTML: Title as a large heading, 'AGENDA*' as a separate bold line, date as smaller underlined text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined formatting on 'CALL-IN #' and 'ACCESS CODE' in the PDF header is preserved in the HTML as bold text, maintaining emphasis but through different styling.",
+      "severity": "minor",
+      "evidence": "PDF: 'CALL-IN #:' and 'ACCESS CODE:' are underlined and bold. HTML: They appear bold without underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML adds column headers 'Location Details' and 'Call-In Details' for the location/call-in table, and 'Time' and 'Agenda Item' for the agenda table. These headers do not appear in the PDF but serve as structural aids.",
+      "severity": "minor",
+      "evidence": "PDF has no explicit column headers for the location/call-in info block or the agenda table. HTML introduces <th>Location Details</th>, <th>Call-In Details</th>, <th>Time</th>, <th>Agenda Item</th>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The contact person info is placed in the location/call-in table as a separate row spanning incorrectly. In the PDF, 'Kate Barrow [Contact Person] (919) 621-1116' appears aligned with the call-in details section, but in the HTML it's placed in the left column of a new row with an empty right cell.",
+      "severity": "minor",
+      "evidence": "PDF shows Kate Barrow contact info aligned right/under call-in details. HTML places it in <td> under Location Details column.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h2 for 'AGENDA*' which is acceptable, but the document title 'State Consumer & Family Advisory Committee' is set as h1 and 'AGENDA*' as h2, which is a reasonable representation of the document structure.",
+      "severity": "minor",
+      "evidence": "PDF title block: 'State Consumer & Family Advisory Committee AGENDA*'. HTML: <h1>State Consumer & Family Advisory Committee</h1><h2>AGENDA*</h2>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> tags (two levels), which is a structural duplication but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> inside <body> which contains another <main> inside it.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 36.87,
+    "page_count": 1,
+    "visual_input_tokens": 3816,
+    "visual_output_tokens": 865,
+    "content_input_tokens": 5172,
+    "content_output_tokens": 713,
+    "timestamp": "2026-04-14T05:28:35.444580",
+    "auditor_version": "1.0.0"
+  }
+}

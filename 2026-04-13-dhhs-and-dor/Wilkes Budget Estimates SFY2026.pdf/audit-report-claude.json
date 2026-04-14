@@ -1,0 +1,102 @@
+{
+  "document_id": "Wilkes Budget Estimates SFY2026.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a clear multi-column layout with distinct 'ESTIMATED RESOURCES' and 'ESTIMATED PERCENT' groupings with sub-headers (Total, Federal, State, County | Federal, State, County). The HTML converts this into a flat table with individual column headers, losing the grouped header structure.",
+      "severity": "major",
+      "evidence": "PDF shows 'ESTIMATED RESOURCES' spanning Total/Federal/State/County and 'ESTIMATED PERCENT' spanning Federal/State/County as grouped headers. HTML shows flat individual column headers without the grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The HTML table loses the hierarchical indentation that distinguishes section headers (e.g., 'A. Division of Social Services') from line items (e.g., '01 Work First Family Assistance'). In the PDF, line items are clearly indented under their section headers.",
+      "severity": "minor",
+      "evidence": "PDF shows indented line items under section headers like 'A. Division of Social Services'. HTML renders all rows at the same level without visual indentation hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headers like '1. Public Assistance Programs', 'A. Division of Social Services', and 'B. Division of Aging and Adult Services' appear as bold in the PDF with larger or distinct formatting, but in the HTML they appear as regular table rows without the same visual distinction.",
+      "severity": "minor",
+      "evidence": "PDF: '1. Public Assistance Programs' appears as a bold standalone heading. HTML: rendered as a table row with bold text but without the spatial separation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Same grouped header structure issue as page 1 - the 'ESTIMATED RESOURCES' and 'ESTIMATED PERCENT' grouped column headers are flattened in the HTML.",
+      "severity": "major",
+      "evidence": "PDF has two-level header grouping. HTML has flat single-level headers.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The italic note 'Note that the totals may be off due to rounding.' loses its italic formatting distinction in the HTML rendering.",
+      "severity": "minor",
+      "evidence": "PDF shows the note in italics. HTML shows it without italic styling.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Same grouped header structure issue as previous pages.",
+      "severity": "major",
+      "evidence": "PDF has two-level header grouping for ESTIMATED RESOURCES and ESTIMATED PERCENT. HTML has flat headers.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Wilkes Grand Total' and 'All Programs and Administration' final summary row formatting is less visually distinct in the HTML compared to the bold/emphasized presentation in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Wilkes Grand Total / All Programs and Administration' as a prominently formatted summary line. HTML shows it as a regular bold table row.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page headers are embedded as rows within the data table for pages 2 and 3, creating spurious data rows that do not belong in the table structure.",
+      "severity": "major",
+      "evidence": "Two table rows contain full page header blocks (e.g., 'G.S. 108A-88 - Determination of State/County Financial Participation... Page 2 of 3' and 'Page 3 of 3') inserted as <td> content within the data table. These are page break artifacts, not data rows. Additionally, 'Wilkes County' appears as a separate header row after each page header, duplicating the county name that already appears at the top.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has no h1 heading for the document title, and no heading hierarchy at all. The document title and section headings are only rendered within table cells using <strong> tags or within the page-header div, rather than as proper HTML headings (h1-h6).",
+      "severity": "major",
+      "evidence": "The document title 'G.S. 108A-88 - Determination of State/County Financial Participation' appears only inside a <div class='page-header'> paragraph. Section headings like '1. Public Assistance Programs', '2. Public Assistance Administration', '3. Services Programs' appear only as bold text in table cells. No h1, h2, h3, etc. tags are used in the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements, which is invalid HTML structure.",
+      "severity": "minor",
+      "evidence": "There is an outer <main> in the body and an inner <main> wrapping the table, creating invalid nesting.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 37.94,
+    "page_count": 3,
+    "visual_input_tokens": 8294,
+    "visual_output_tokens": 1073,
+    "content_input_tokens": 18455,
+    "content_output_tokens": 658,
+    "timestamp": "2026-04-14T05:31:07.020634",
+    "auditor_version": "1.0.0"
+  }
+}

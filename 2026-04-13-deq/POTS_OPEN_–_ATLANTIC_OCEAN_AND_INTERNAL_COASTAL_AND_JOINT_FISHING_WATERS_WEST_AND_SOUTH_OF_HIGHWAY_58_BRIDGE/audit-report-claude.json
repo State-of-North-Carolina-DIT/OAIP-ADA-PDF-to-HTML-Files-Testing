@@ -1,0 +1,110 @@
+{
+  "document_id": "POTS_OPEN_\u2013_ATLANTIC_OCEAN_AND_INTERNAL_COASTAL_AND_JOINT_FISHING_WATERS_WEST_AND_SOUTH_OF_HIGHWAY_58_BRIDGE",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina Marine Fisheries logo/seal appears in the PDF but is not visible in the HTML rendering on page 1.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NC Marine Fisheries circular logo with fish in upper left. HTML page 1 also shows a logo but it appears slightly different in rendering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout with ROY COOPER/Governor, ELIZABETH S. BISER/Secretary, KATHY B. RAWLS/Director and PT-2-2024 is aligned differently in HTML vs PDF.",
+      "severity": "minor",
+      "evidence": "PDF has these right-aligned in a stacked format. HTML preserves the information but the layout positioning differs slightly.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 of the HTML rendering includes a large blank area and repeats header/footer elements mid-page, with the second page's content appearing to start partway through.",
+      "severity": "major",
+      "evidence": "PDF page 2 starts with continuation items D through J under Onslow County, then Pender County, New Hanover County, and Brunswick County. HTML page 2 shows extensive blank space and a repeated header before the content continues.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Roman numeral formatting differs between PDF and HTML versions.",
+      "severity": "minor",
+      "evidence": "PDF uses indented Roman numerals (I., II., III., etc.) with specific indentation. HTML uses a slightly different indentation scheme but content is preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 HTML rendering shows duplicated footer/header elements between the PDF content sections.",
+      "severity": "minor",
+      "evidence": "HTML page 3 shows 'State of North Carolina | Division of Marine Fisheries' footer text repeated, then proclamation header repeated before the General Information section continues.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The signature rendering differs between PDF and HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows a handwritten-style signature inline with 'By:' text. HTML shows 'By:' followed by a separate signature rendering below.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated hyperlink URLs that do not appear in the source PDF",
+      "severity": "critical",
+      "evidence": "The HTML contains specific URLs such as 'https://ncdenr.maps.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=671ea4b8ffc0456fa64b3d02d16e31fa' for the NCDMF Interactive Map, 'https://deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/fisheries-management-proclamations#currentprocs' for 'latest proclamation', and 'https://files.nc.gov/deq/documents/2023-12/PT-1-2024%20Amend%20Crabpot%20Restrictions.pdf?VersionId=Heo3U_yvo9FJRZHcBP28ktcORB3PGqCy' for PT-1-2024. The PDF shows these as hyperlinked text ('NCDMF Interactive Map', 'latest proclamation', 'PT-1-2024') but the actual full URLs are not visible in the PDF text. These URLs may be embedded hyperlinks in the PDF, so this could be extraction rather than fabrication, but the specific long URLs cannot be verified from the PDF text alone.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Flat heading hierarchy - only h1 used, no h2/h3 for major sections",
+      "severity": "major",
+      "evidence": "The document has clear hierarchical sections (I through X with subsections A-G etc.) but the HTML uses only an h1 for 'PROCLAMATION' and relies entirely on bold/underline formatting and ordered lists for structure. Major sections like 'CARTERET COUNTY/ONSLOW COUNTY', 'ONSLOW COUNTY', 'PENDER COUNTY', 'NEW HANOVER COUNTY', 'BRUNSWICK COUNTY', and 'GENERAL INFORMATION' could benefit from heading elements, though this mirrors the PDF's own formatting approach.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Typo from source PDF preserved: 'UNLAWFULLTO' instead of 'UNLAWFUL TO'",
+      "severity": "minor",
+      "evidence": "Both the PDF and HTML contain 'IT SHALL BE UNLAWFULLTO USE POTS' - this is faithful to the source but notable as the original typo is preserved.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for header image is somewhat generic but reasonable",
+      "severity": "minor",
+      "evidence": "The header image has alt='North Carolina Marine Fisheries and State Seal logos' which is a reasonable description. Footer images have alt='Page footer graphic' which is generic but acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer content repeated multiple times within the HTML",
+      "severity": "minor",
+      "evidence": "The footer text 'State of North Carolina | Division of Marine Fisheries | 3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557 | 252-515-5500' appears three times in the HTML, corresponding to the three pages of the PDF. This is acceptable as it mirrors the source document's per-page footer.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 48.81,
+    "page_count": 3,
+    "visual_input_tokens": 9950,
+    "visual_output_tokens": 928,
+    "content_input_tokens": 13303,
+    "content_output_tokens": 1099,
+    "timestamp": "2026-04-14T05:01:45.507621",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "document_id": "table1a 2012stats",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 66.29,
+    "page_count": 1,
+    "visual_input_tokens": 2914,
+    "visual_output_tokens": 136,
+    "content_input_tokens": 15923,
+    "content_output_tokens": 154,
+    "timestamp": "2026-04-14T05:36:53.727083",
+    "auditor_version": "1.0.0"
+  }
+}

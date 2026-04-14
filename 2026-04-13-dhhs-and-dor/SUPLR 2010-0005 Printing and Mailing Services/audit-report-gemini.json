@@ -1,0 +1,46 @@
+{
+  "document_id": "SUPLR 2010-0005 Printing and Mailing Services",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Missing redaction graphics",
+      "severity": "major",
+      "evidence": "Black rectangular redaction boxes present in the PDF (e.g., the recipient address block, 'Attention:' line, 'Dear' line, and within the body text) are completely missing in the HTML rendering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Image alignment changed",
+      "severity": "minor",
+      "evidence": "The state seal is centered at the top of the page in the PDF, but left-aligned above the Governor's name in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing redaction graphics",
+      "severity": "major",
+      "evidence": "Black rectangular redaction boxes are missing in the HTML for the top header block, signature block, and 'cc:' line.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 45.07,
+    "page_count": 2,
+    "visual_input_tokens": 5090,
+    "visual_output_tokens": 402,
+    "content_input_tokens": 4013,
+    "content_output_tokens": 153,
+    "timestamp": "2026-04-14T05:29:01.140922",
+    "auditor_version": "1.0.0"
+  }
+}

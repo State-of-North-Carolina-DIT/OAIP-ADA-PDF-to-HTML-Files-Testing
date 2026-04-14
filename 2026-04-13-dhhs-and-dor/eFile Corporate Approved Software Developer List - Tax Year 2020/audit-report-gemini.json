@@ -1,0 +1,21 @@
+{
+  "document_id": "eFile Corporate Approved Software Developer List - Tax Year 2020",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 37.45,
+    "page_count": 2,
+    "visual_input_tokens": 5088,
+    "visual_output_tokens": 157,
+    "content_input_tokens": 4160,
+    "content_output_tokens": 152,
+    "timestamp": "2026-04-14T05:31:52.936434",
+    "auditor_version": "1.0.0"
+  }
+}

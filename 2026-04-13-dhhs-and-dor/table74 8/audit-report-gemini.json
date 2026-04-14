@@ -1,0 +1,38 @@
+{
+  "document_id": "table74 8",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Loss of hierarchical table headers",
+      "severity": "major",
+      "evidence": "The PDF features merged header cells (e.g., 'Taxable Real Property:', 'Taxable Personal Property:') that span multiple sub-columns. The HTML splits these merged cells and flattens the hierarchy by concatenating the parent header text into each individual sub-column header.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of bold text formatting in table headers",
+      "severity": "minor",
+      "evidence": "Column headers in the PDF are visually bolded, but rendered as regular weight text in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 51.97,
+    "page_count": 1,
+    "visual_input_tokens": 2891,
+    "visual_output_tokens": 294,
+    "content_input_tokens": 10553,
+    "content_output_tokens": 137,
+    "timestamp": "2026-04-14T05:38:46.769968",
+    "auditor_version": "1.0.0"
+  }
+}

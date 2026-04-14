@@ -1,0 +1,70 @@
+{
+  "document_id": "PFAS_Data_Synthesis_Support_STEP_Initiative_2022",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The title in the HTML is rendered as a much larger heading spanning two lines, whereas in the PDF it appears as a single underlined line of moderate size.",
+      "severity": "minor",
+      "evidence": "PDF: 'PFAS Data Synthesis Support Initiative 2022 - Raleigh, North Carolina.' appears as a single centered underlined line. HTML: Same text is rendered as a large bold heading spanning two lines.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings in the HTML lack the underline decoration present in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: 'ABOUT OUR AGENCY', 'ABOUT THE DIVISION' are bold and underlined. HTML: These headings are bold and underlined, matching the PDF style.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "A horizontal rule/divider line appears in the HTML after the title that is not present in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: No horizontal rule after the title. HTML: A red/dark horizontal rule appears between the title and 'ABOUT OUR AGENCY' section.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Desired Major' bullet point is listed under MAJOR DUTIES in both versions, but in the PDF it appears as a regular bullet, while in the HTML it also appears as a regular bullet - consistent.",
+      "severity": "minor",
+      "evidence": "Both versions treat this consistently.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title is rendered as h1 but the section headings (ABOUT OUR AGENCY, ABOUT THE DIVISION, JOB DESCRIPTION, MAJOR DUTIES, POSITION QUALIFICATIONS, MANAGEMENT DESIRED QUALIFICATIONS, SPECIAL NOTES, APPLICATION INSTRUCTIONS) are all rendered as h2. This is acceptable and matches the PDF structure, but there is a nested <main> inside <main> which is a structural HTML issue, not a content fidelity issue.",
+      "severity": "minor",
+      "evidence": "HTML has <main> nested inside another <main>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The email address DEQInternships@ncdenr.gov appears in the PDF as a hyperlink (mailto link) in the application instructions and questions sections. In the HTML, the first instance is plain text and the last instance is underlined text but neither is an actual hyperlink (<a> tag). The PDF shows these as clickable links.",
+      "severity": "minor",
+      "evidence": "PDF: 'Send resume and cover letter to DEQInternships@ncdenr.gov' (hyperlinked), 'DEQInternships@ncdenr.gov' (hyperlinked at bottom). HTML: first instance is plain text, last instance is '<u>DEQInternships@ncdenr.gov</u>' without <a> tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.12,
+    "page_count": 3,
+    "visual_input_tokens": 8711,
+    "visual_output_tokens": 796,
+    "content_input_tokens": 8825,
+    "content_output_tokens": 539,
+    "timestamp": "2026-04-14T05:01:04.635961",
+    "auditor_version": "1.0.0"
+  }
+}

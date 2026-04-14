@@ -1,0 +1,78 @@
+{
+  "document_id": "Richmond",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The HTML renders the title elements (FUNDING AUTHORIZATION, SFY 2016-2017, AUTHORIZATION #1) as separate sections with a horizontal rule, whereas the PDF groups them as a single centered block. The overall structure is preserved but the visual grouping differs slightly.",
+      "severity": "minor",
+      "evidence": "PDF: Three lines centered together as a unified title block. HTML: Title split with a horizontal rule separator between 'FUNDING AUTHORIZATION' and 'SFY 2016-2017'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The signature area and date layout differs. In the PDF, the signature and date are on the same line with the date right-aligned. In the HTML, the date appears inline after the signature line.",
+      "severity": "minor",
+      "evidence": "PDF: Signature line on left, 'August 31, 2016' and 'Date' right-aligned. HTML: Date appears after the signature line text in a more linear flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'County: __RICHMOND__' line uses bold formatting in the HTML for 'County:' and 'RICHMOND' which matches the PDF, but the underline fill after RICHMOND is shorter in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'County: __RICHMOND____________________________'. HTML: 'County: __RICHMOND_________________________'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image/handwriting appears identical in both versions and is correctly placed above the Division of Aging & Adult Services line.",
+      "severity": "minor",
+      "evidence": "Both versions show the same cursive signature 'Suzanne P. Merrill'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken: h1 \u2192 h2 \u2192 h3 used for what is essentially a single multi-line title block. 'SFY 2016-2017' and 'AUTHORIZATION #1' are not subsections but part of the same title. More importantly, heading levels skip context \u2014 the document doesn't have true subsections warranting h2 and h3.",
+      "severity": "major",
+      "evidence": "HTML uses <h1>FUNDING AUTHORIZATION</h1>, <h2>SFY 2016- 2017</h2>, <h3>AUTHORIZATION #1</h3>. In the PDF these are all part of the same centered title block, not a hierarchical structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested duplicate <main> tags, which while not content duplication per se, is a structural error that could cause rendering issues.",
+      "severity": "major",
+      "evidence": "HTML has <main> containing another <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the signature image identifies the signer as 'Suzanne P. Merrill'. While this appears to be a reasonable reading of the handwritten signature, verification from the PDF alone is uncertain since the name is only present as a signature image.",
+      "severity": "minor",
+      "evidence": "alt=\"Signature of Suzanne P. Merrill\" \u2014 the PDF shows a handwritten signature but no typed name to confirm.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.78,
+    "page_count": 1,
+    "visual_input_tokens": 3783,
+    "visual_output_tokens": 697,
+    "content_input_tokens": 4515,
+    "content_output_tokens": 597,
+    "timestamp": "2026-04-14T05:28:14.380301",
+    "auditor_version": "1.0.0"
+  }
+}

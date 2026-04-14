@@ -1,0 +1,62 @@
+{
+  "document_id": "Wilkes Budget Estimates SFY2026.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Section heading text differs in HTML for one subsection.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows the subsection heading as 'B. Division of Aging and Adult Services' while the HTML renders it as 'B. Division of Aging and Adult Services' in the table body on later pages but on page 1 the corresponding heading appears as 'B. Division of Aging and Adult Services'/'State/County Special Assistance for Adults' structure with slightly altered visual emphasis; formatting is close but not fully consistent with the PDF's bold section presentation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated content not present in the PDF: an external Google Fonts URL and standalone document title text in the HTML head.",
+      "severity": "critical",
+      "evidence": "HTML contains \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\" and \"<title>Converted Document</title>\". The PDF pages only show the document text beginning with \"G.S. 108A-88 - Determination of State/County Financial Participation\" and contain no Google Fonts URL or \"Converted Document\" title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table row labels are not fully faithful in at least one case; the HTML changes the item code formatting for one row.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows row \"NC CORELS\" without a numeric prefix under \"A. Division of Social Services.\" HTML reproduces it as \"NC CORELS\" correctly, but several numbered items are normalized into a single merged first column header \"County/Program\" rather than preserving the original two-tier visual grouping and exact table structure. This is a structural transformation of the table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML does not use heading tags to reflect the document hierarchy; section headings are embedded as table cells or paragraph text instead of semantic h1-h6 structure.",
+      "severity": "major",
+      "evidence": "PDF has clear hierarchical section titles such as \"1. Public Assistance Programs,\" \"2. Public Assistance Administration,\" and \"3. Services Programs.\" HTML uses no h1-h6 elements in the body for these; headings appear inside table cells like \"<td><strong>1. Public Assistance Programs</strong></td>\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page header content is duplicated inside the main table body for pages 2 and 3, creating repeated content where the PDF only has page-level headers.",
+      "severity": "major",
+      "evidence": "HTML inserts rows containing repeated page header blocks: \"G.S. 108A-88 - Determination of State/County Financial Participation ... Page 2 of 3\" and similarly for page 3 inside table rows. In the PDF these are page headers, not table rows or data entries.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 21.49,
+    "page_count": 3,
+    "visual_input_tokens": 8196,
+    "visual_output_tokens": 300,
+    "content_input_tokens": 12004,
+    "content_output_tokens": 664,
+    "timestamp": "2026-04-14T05:30:52.773708",
+    "auditor_version": "1.0.0"
+  }
+}

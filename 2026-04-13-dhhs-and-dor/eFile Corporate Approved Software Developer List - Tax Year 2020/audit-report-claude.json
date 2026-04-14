@@ -1,0 +1,86 @@
+{
+  "document_id": "eFile Corporate Approved Software Developer List - Tax Year 2020",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Table header row styling differs - PDF uses black background with white text, HTML uses plain styling with no background shading",
+      "severity": "minor",
+      "evidence": "PDF: Black/dark header row with white text for column headers. HTML: Plain white/light background with dark text for headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title text formatting differs slightly - PDF has centered bold title, HTML has left-aligned title",
+      "severity": "minor",
+      "evidence": "PDF: Title is centered on page. HTML: Title appears left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Alternating row shading in PDF table not reproduced in HTML",
+      "severity": "minor",
+      "evidence": "PDF: Alternating grey/white row backgrounds. HTML: Uniform white background for all rows.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Alternating row shading in PDF table not reproduced in HTML",
+      "severity": "minor",
+      "evidence": "PDF: Alternating grey/white row backgrounds. HTML: Uniform white background for all rows.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment in table cells differs - PDF has center-aligned text in most columns, HTML has left-aligned text",
+      "severity": "minor",
+      "evidence": "PDF: Software Provider, Software Product Name, Support Payments columns are center-aligned. HTML: All columns appear left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment in table cells differs - PDF has center-aligned text, HTML has left-aligned text",
+      "severity": "minor",
+      "evidence": "PDF: Table data is center-aligned. HTML: Table data is left-aligned.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "URLs in the HTML are rendered as plain text rather than as clickable hyperlinks. The PDF contains hyperlinks for URLs like https://www.wolterskluwer.com, sales@crosslinktax.com, sales@drakesoftware.com, www.hrblock.com, and jeff.russo@taxtechnologies.com, but the HTML does not wrap them in <a> tags.",
+      "severity": "minor",
+      "evidence": "For example, 'https://www.wolterskluwer.com' and 'sales@crosslinktax.com' appear as plain text in <td> cells rather than as hyperlinks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains duplicate nested <main> elements, which while not causing visible content duplication, is a structural error with two <main> tags nested inside each other.",
+      "severity": "major",
+      "evidence": "The HTML has <main> wrapping another <main> element: '<body><main><main>...</main></main></body>'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 24.76,
+    "page_count": 2,
+    "visual_input_tokens": 6432,
+    "visual_output_tokens": 749,
+    "content_input_tokens": 7520,
+    "content_output_tokens": 485,
+    "timestamp": "2026-04-14T05:31:40.280141",
+    "auditor_version": "1.0.0"
+  }
+}

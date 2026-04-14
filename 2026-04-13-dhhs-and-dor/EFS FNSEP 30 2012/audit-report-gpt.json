@@ -1,0 +1,62 @@
+{
+  "document_id": "EFS FNSEP 30 2012",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Header seal/logo is repositioned and resized in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows the state seal centered above the department title, while the HTML places a smaller seal/logo at the top left with a horizontal rule under the title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header typography and alignment are not fully preserved.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses a centered serif title/header block with the date and subject arranged in a formal letter layout; the HTML uses sans-serif styling and simplifies the subject/date alignment, though the content remains clear.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature images differ in visual treatment from the PDF.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows handwritten signatures on the page background, while the HTML renders some signatures inside black rectangular boxes and others with different sizing/placement.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Signature block formatting is only partially preserved.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF presents a more formal, evenly spaced signature layout; the HTML keeps the same names and titles in roughly the same reading sequence but with altered spacing and visual emphasis.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "One official code/identifier is inaccurate in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows \"EFS-FNSEP-30-2012 (DSS)\" near Dean Simpson's signature. HTML shows \"EFS-FNSEP-30-2012 (DSS)\"? Wait comparison indicates the PDF actually reads \"EFS-FNS-EP-30-2012 (DSS)\" with hyphenation/spacing visible as \"EFS-FNSEP-30-2012 (DSS)\" in the image; however the more clearly legible discrepancy is at the top salutation area? No other textual mismatches were evident. The HTML largely matches the PDF verbatim, but this identifier appears potentially normalized/condensed and should be reviewed against the source typography.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 19.18,
+    "page_count": 2,
+    "visual_input_tokens": 4171,
+    "visual_output_tokens": 514,
+    "content_input_tokens": 4947,
+    "content_output_tokens": 334,
+    "timestamp": "2026-04-14T05:21:17.783727",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "document_id": "2016 IB-43 Self-Insured Workers\u201a\u00c4\u00f4 Compensation Corporation Gross Premium Tax Return Instructions",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C4",
+      "description": "Hyperlink properties were lost during conversion.",
+      "severity": "minor",
+      "evidence": "In the PDF on pages 2, 3, and 4, URLs such as 'www.dornc.com' and 'http://www.dornc.com/downloads/insurance.html' are active, clickable hyperlinks (blue and underlined). In the HTML, the URL text is preserved accurately, but the actual <a> tags are missing, rendering them as plain text rather than clickable links.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 35.62,
+    "page_count": 5,
+    "visual_input_tokens": 11658,
+    "visual_output_tokens": 275,
+    "content_input_tokens": 7985,
+    "content_output_tokens": 300,
+    "timestamp": "2026-04-14T05:12:17.683839",
+    "auditor_version": "1.0.0"
+  }
+}

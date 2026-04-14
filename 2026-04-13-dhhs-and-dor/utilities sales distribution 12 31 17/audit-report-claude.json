@@ -1,0 +1,94 @@
+{
+  "document_id": "utilities sales distribution 12 31 17",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a multi-column table layout with clear column headers and aligned data. The HTML converts this to a simplified table structure where the Prefix column and City/County column are merged/stacked, losing the distinct columnar presentation.",
+      "severity": "major",
+      "evidence": "PDF shows 'Prefix' and 'City/County' as separate, clearly aligned columns. HTML shows them stacked (e.g., 'County of' on one line, 'Alamance' below it) within the same cell.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The HTML table loses the dollar sign ($) prefix formatting on many currency columns and converts dash/empty values inconsistently. The 'Sales Tax on Piped Natural Gas' column values that are shown as '-' in the PDF are rendered as '$ -' in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows clean '$' with amounts or '-' for empty. HTML shows '$ -' or '$\u00b7' for empty values.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The header section formatting differs - the PDF has a formal title block with 'Utilities Sales Distribution', distribution report header, date range, and distribution date clearly formatted. The HTML presents these as plain text without the same visual hierarchy.",
+      "severity": "minor",
+      "evidence": "PDF has underlined title 'Utilities Sales Distribution' and bold headers. HTML shows plain text headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Currency values in HTML sometimes show slight formatting differences but the actual numerical data appears to match across all pages.",
+      "severity": "minor",
+      "evidence": "Values like $47,895.38 in PDF match $47,895.38 in HTML for Alamance County.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Same layout issue persists on all subsequent pages - the Prefix and City/County columns are combined in the HTML rendering, changing the table from 6 effective columns to a different visual structure.",
+      "severity": "major",
+      "evidence": "All pages show 'Town of' and city name stacked vertically in HTML vs side-by-side in PDF columns.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is preserved - data flows in the same city/county sequence from top to bottom in both PDF and HTML across all pages.",
+      "severity": "minor",
+      "evidence": "Page 2 starts with Elizabethtown in both PDF and HTML, followed by the same sequence of cities.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading hierarchy exists in the HTML. The document has no h1, h2, or any heading tags. The title and report header information are placed in a div with class 'page-header' as plain paragraphs rather than proper heading elements.",
+      "severity": "major",
+      "evidence": "The PDF title 'Utilities Sales Distribution / Gas, Power, Telecommunications, and Video Programming' and 'Distribution Report for Qtr 10/01/2017 - 12/31/2017' are rendered as <p> tags inside a <div class='page-header'> instead of heading elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer elements are repeated 11 times at the bottom of the HTML despite all content being in a single table. These footers from individual PDF pages are redundant in the consolidated HTML format.",
+      "severity": "minor",
+      "evidence": "11 separate <div class='page-footer'> elements appear at the bottom: 'Page 1 of 11' through 'Page 11 of 11'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Spot-checked numerous rows across all 11 pages and data values match the PDF. The total row matches: $3,214,158.82 / $71,087,034.03 / $11,491,006.01 / $18,466,503.41 / $104,258,702.27. Row count appears complete.",
+      "severity": "minor",
+      "evidence": "TOTALS row and individual entries like City of Charlotte ($483,190.23 / $9,456,570.76 / $1,698,855.61 / $1,871,907.08 / $13,510,523.68) match PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 44.83,
+    "page_count": 11,
+    "visual_input_tokens": 25910,
+    "visual_output_tokens": 1167,
+    "content_input_tokens": 94648,
+    "content_output_tokens": 584,
+    "timestamp": "2026-04-14T05:39:03.420484",
+    "auditor_version": "1.0.0"
+  }
+}

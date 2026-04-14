@@ -1,0 +1,70 @@
+{
+  "document_id": "Washington County Public Notice 6.17.2025",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Top header layout is materially altered from a two-block horizontal arrangement to a stacked single-column layout.",
+      "severity": "major",
+      "evidence": "In the PDF, the seal and department name appear at upper left, separated by a vertical gold rule from the officials list on the upper right. In the HTML, the officials list is moved below the department block, creating a single-column header and changing the visual grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "A prominent vertical separator graphic in the header is missing and header graphics are repositioned.",
+      "severity": "major",
+      "evidence": "The PDF shows a gold vertical divider between the left logo/title block and the right officials block. In the HTML, this divider is absent and the entire header composition is rearranged.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Main notice title formatting is substantially weakened, reducing heading hierarchy.",
+      "severity": "major",
+      "evidence": "In the PDF, 'PUBLIC NOTICE' is large and red, and the 'Nomination Period for Washington County Board of Social Services' heading is bold, large, and visually dominant. In the HTML, 'PUBLIC NOTICE' is smaller and plain dark text, and the main heading is reduced in size and split into several centered lines with less emphasis.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes a fabricated role/title for Carla West that does not match the PDF.",
+      "severity": "critical",
+      "evidence": "PDF header lists: \"CARLA WEST \u2022 Division Director, Economic Services\". HTML lists: \"CARLA WEST \u2022 Division Director, Human Services\".",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not ideal: the document title/date is marked as h1, followed by h2 and h3, but the main notice title is split across lower-level headings rather than using a clearer single top-level title structure.",
+      "severity": "major",
+      "evidence": "HTML uses \"<h1>June 17, 2025</h1>\", then \"<h2>PUBLIC NOTICE</h2>\", then \"<h3>Nomination Period for Washington County Board of Social Services</h3>\". In the PDF, these are visually stacked title elements, with the substantive notice title being the main content heading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains duplicated main container structure, which can lead to repeated landmark semantics and structural duplication.",
+      "severity": "major",
+      "evidence": "HTML has an outer \"<main>\" wrapping the entire content and then another nested \"<main>\" around the body content. While visible text is not repeated, the primary document landmark is duplicated in structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 25.97,
+    "page_count": 1,
+    "visual_input_tokens": 2608,
+    "visual_output_tokens": 449,
+    "content_input_tokens": 3304,
+    "content_output_tokens": 386,
+    "timestamp": "2026-04-14T05:30:29.079503",
+    "auditor_version": "1.0.0"
+  }
+}

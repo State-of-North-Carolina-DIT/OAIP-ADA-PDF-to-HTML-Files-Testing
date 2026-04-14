@@ -1,0 +1,86 @@
+{
+  "document_id": "8 13 Negatives",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "The yellow/highlighted row styling from the PDF table is not preserved in the HTML table",
+      "severity": "minor",
+      "evidence": "PDF shows alternating yellow-highlighted rows in the table; HTML renders rows with plain white/grey alternating style",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Table header formatting differs slightly - PDF uses a compact multi-line header with # symbol on separate line, HTML uses single-line headers",
+      "severity": "minor",
+      "evidence": "PDF header shows '#' on one line and 'COMP' on next line; HTML shows '# COMP CASES' as a single header",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML table rows have significantly more vertical spacing than the PDF, making the table much taller",
+      "severity": "minor",
+      "evidence": "PDF fits rows 1-37 compactly on one page; HTML spreads the same rows across much more vertical space requiring more scrolling",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The yellow/highlighted row styling from the PDF table is not preserved in the HTML table on page 2",
+      "severity": "minor",
+      "evidence": "PDF shows alternating yellow-highlighted rows; HTML renders plain styling",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The yellow/highlighted row styling from the PDF table is not preserved in the HTML table on page 3",
+      "severity": "minor",
+      "evidence": "PDF shows alternating yellow-highlighted rows; HTML renders plain styling",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The STATE total row in the PDF is bold and visually distinct; the HTML preserves the bold formatting",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show STATE row in bold - this is correctly preserved",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "STATE AGENCY row in PDF has no accuracy rate value but shows 22.14% error rate; HTML matches this correctly",
+      "severity": "minor",
+      "evidence": "Both versions show STATE AGENCY with 91 comp cases, 91 invalid cases, blank accuracy rate, and 22.14% error rate",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in HTML. The document has a <main> inside another <main>, which is invalid HTML structure, though it does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping the page-header div, then another <main> wrapping the table.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 27.04,
+    "page_count": 3,
+    "visual_input_tokens": 9920,
+    "visual_output_tokens": 958,
+    "content_input_tokens": 16954,
+    "content_output_tokens": 329,
+    "timestamp": "2026-04-14T05:15:15.757206",
+    "auditor_version": "1.0.0"
+  }
+}

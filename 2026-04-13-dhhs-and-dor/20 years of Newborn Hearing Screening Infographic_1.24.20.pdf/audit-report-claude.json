@@ -1,0 +1,86 @@
+{
+  "document_id": "20 years of Newborn Hearing Screening Infographic_1.24.20.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The infographic's visual layout is completely lost. The PDF presents a single cohesive infographic with structured sections arranged spatially (1-3-6 timeline, baby illustration, donut charts, baby icons for age comparison). The HTML renders all of this as a linearized, plain-text listing of data points below a single embedded image of the infographic.",
+      "severity": "critical",
+      "evidence": "PDF: Single infographic page with all content integrated visually. HTML: The infographic image is shown, then all its content is repeated as plain text blocks below it, resulting in duplicated content and a completely different layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Content is duplicated - the infographic image is shown AND all its textual content is repeated as plain text below it, which would confuse a reader who sees the same information twice in different formats.",
+      "severity": "major",
+      "evidence": "PDF: Content appears once in infographic form. HTML: Content appears first as the infographic image, then again as extracted text (bullet points, headings, statistics) below the image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The colorful, styled typography of the infographic (colored numbers like '~2.5 MILLION' in green, '~4,000' in orange, percentage donut charts) is reduced to plain unstyled text in the repeated content below the image.",
+      "severity": "major",
+      "evidence": "PDF: Rich colored typography with visual hierarchy. HTML: Plain black text with basic heading styles for the repeated content below the infographic image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The infographic image itself is present and appears intact in the HTML, preserving the visual content. However, the logos at the bottom (NC Public Health, NCPH) are only barely visible.",
+      "severity": "minor",
+      "evidence": "PDF: Logos clearly visible at bottom left. HTML: Logos referenced in text as 'NCPH North Carolina Public Health' but not as clear visual elements.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two nested <main> elements, and '2000' and '2020' are rendered as h2 headings when they are contextual year labels in the PDF header, not standalone section headings. The heading hierarchy is broken with multiple h2s used for data points like '~2.5 MILLION', '~4,000', '% OF BABIES SCREENED', and 'AVERAGE AGE OF IDENTIFYING HEARING LOSS' that are not traditional document sections.",
+      "severity": "major",
+      "evidence": "HTML contains <h2>2000</h2> and <h2>2020</h2> as separate headings above and below the h1 title. Additionally, <h2>~2.5 MILLION</h2>, <h2>~4,000</h2>, <h2>% OF BABIES SCREENED</h2>, <h2>AVERAGE AGE OF IDENTIFYING HEARING LOSS</h2> are all h2 level, which doesn't reflect a meaningful document hierarchy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains two nested <main> elements, which is invalid HTML structure and results in content being structurally duplicated/misplaced.",
+      "severity": "major",
+      "evidence": "The outer <main> from the template wraps an inner <main> element that contains the actual content sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The alt text on the image references 'charts' which is slightly imprecise (the PDF shows donut/ring progress indicators and illustrated comparisons, not traditional charts), but this is a reasonable description and not fabrication.",
+      "severity": "minor",
+      "evidence": "alt='Infographic detailing 20 years of newborn hearing screening in North Carolina, featuring illustrations of babies and charts'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The bold '1 month of age', '3 months of age', and '6 months of age' formatting from the PDF is not fully preserved in the HTML list items - the milestone numbers (1, 3, 6) are bolded but the age references within the text are not.",
+      "severity": "minor",
+      "evidence": "PDF shows '1 month of age', '3 months of age', '6 months of age' in bold. HTML uses <strong>1</strong>, <strong>3</strong>, <strong>6</strong> but the 'month of age' portions are not bolded.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 36.31,
+    "page_count": 1,
+    "visual_input_tokens": 3778,
+    "visual_output_tokens": 726,
+    "content_input_tokens": 4105,
+    "content_output_tokens": 872,
+    "timestamp": "2026-04-14T05:11:59.612092",
+    "auditor_version": "1.0.0"
+  }
+}

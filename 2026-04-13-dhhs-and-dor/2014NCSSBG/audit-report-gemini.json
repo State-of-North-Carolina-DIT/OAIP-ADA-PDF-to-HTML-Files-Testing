@@ -1,0 +1,30 @@
+{
+  "document_id": "2014NCSSBG",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C5",
+      "description": "Multiple <h1> tags are used in the document, whereas only one <h1> is expected for the document title.",
+      "severity": "minor",
+      "evidence": "The HTML contains both <h1>Part A. Expenditures and Provision Method</h1> and <h1>Part B. Recipients</h1>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 60.15,
+    "page_count": 3,
+    "visual_input_tokens": 7326,
+    "visual_output_tokens": 272,
+    "content_input_tokens": 8670,
+    "content_output_tokens": 233,
+    "timestamp": "2026-04-14T05:12:26.610258",
+    "auditor_version": "1.0.0"
+  }
+}

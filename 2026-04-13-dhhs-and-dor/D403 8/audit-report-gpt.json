@@ -1,0 +1,102 @@
+{
+  "document_id": "D403 8",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Overall form layout on page 1 is not preserved; the original multi-zone tax form is converted into a largely linear document with key fields reorganized.",
+      "severity": "major",
+      "evidence": "PDF page 1 has a dense form layout with top header blocks, right-side checkbox panel, inline entry fields, and a two-column-style line/amount presentation. HTML page 1 presents these as a single flowing page with stacked text and later tabular rows, changing the visual grouping and whitespace structure substantially.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Barcode/graphic element is not preserved in appearance on page 1.",
+      "severity": "minor",
+      "evidence": "PDF page 1 contains a prominent vertical barcode near the center of Part 1. HTML page 1 shows only a small dark barcode-like mark, losing the original size, placement, and legibility.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 apportionment worksheet layout is simplified and the original boxed two-panel worksheet structure is not preserved.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows a structured worksheet with two large side-by-side column groups ('Within North Carolina' and 'Total Everywhere') inside a bordered form. HTML page 2 uses a plain table and linear page flow, losing the original boxed worksheet arrangement and spacing cues.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 partner-entry form layout is not preserved; side-by-side partner panels are transformed into a standard table.",
+      "severity": "major",
+      "evidence": "PDF page 3 has three distinct vertical partner boxes (Partner 1, Partner 2, Partner 3) with grouped sections A/B/C. HTML page 3 converts this into a flat table with partner columns, removing the boxed form-panel structure and visual grouping.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section hierarchy and emphasis on page 3 are reduced compared with the original form.",
+      "severity": "minor",
+      "evidence": "PDF page 3 uses strong boxed headers and section labels A, B, and C with tight form-style emphasis. HTML page 3 retains the text but with less visual distinction and weaker separation between instructional text and entry regions.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 4 form layout and signature area are reorganized into linear sections and tables, losing the original integrated form structure.",
+      "severity": "major",
+      "evidence": "PDF page 4 presents Part 4, the tax rate schedule, and the certification/signature block as coordinated boxed form regions with right-aligned amount fields. HTML page 4 renders these as stacked tables and plain text fields, substantially changing the page structure and whitespace grouping.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Part 2 table structure is not faithfully preserved; the PDF uses grouped headers and separate factor/result boxes, while the HTML collapses these into a simplified 5-column table and places labels like 'Factor' and '%' as cell contents.",
+      "severity": "major",
+      "evidence": "PDF Page 2 shows grouped headers '1. Within North Carolina' and '2. Total Everywhere' with subcolumns '(a) Beginning Period' and '(b) Ending Period', plus separate right-side factor/result boxes for Lines 7-15. HTML represents this as a single table with columns 'Line Item | 1. Within North Carolina - (a) Beginning Period | ... | 2. Total Everywhere - (b) Ending Period' and inserts 'Factor' or '%' into the final cell of several rows.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Part 3 form layout is materially altered from the PDF; section markers A/B/C and partner-entry boxes are flattened into a simple table, which loses original row grouping and form-field structure.",
+      "severity": "major",
+      "evidence": "PDF Page 3 presents 'Part 3' with boxed sections A, B, and C along the left margin and separate form boxes for Partner 1, Partner 2, and Partner 3. HTML converts this to one standard table headed 'Item Description | Partner 1 | Partner 2 | Partner 3' and encodes section markers as text such as '[A] 1. Identifying Number' and '[B] 9. Guaranteed payments...'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken: the document uses multiple h4 headings directly under h3 without a consistent structural representation of page/part hierarchy, and page headers are embedded as generic div text rather than headings.",
+      "severity": "major",
+      "evidence": "HTML uses '<h1>2012 Partnership Income Tax Return</h1>', then '<h2>North Carolina Department of Revenue</h2>', then multiple '<h3>' for 'Part 1', 'Part 2', 'Part 3', 'Part 4', followed by '<h4>Additions to Income</h4>', '<h4>Deductions from Income</h4>', and '<h4>Tax Rate Schedule</h4>'. The PDF's page-level labels and part structure are visually distinct and not cleanly mapped to heading levels.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Some text was altered or normalized in ways that change exact form wording and notation, including checkbox/circle semantics and punctuation/wording in instructions.",
+      "severity": "major",
+      "evidence": "PDF uses explicit selectable circles in the right panel such as 'Initial Return', 'Amended Return', etc., and negative-number circles beside lines; HTML renders these as plain list items and inline symbols like '\u25ef'. PDF wording includes 'Entity is Partnership', 'Entity is LLC', 'Entity has Nonresidenat Owners' and line formatting tied to form controls, while HTML converts these to prose/list format and rewrites some instructions, e.g., 'If amount on Line 1, 3, 5, 7, 8, or 9 is negative, fill in circle. Example: \u26ab'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 8,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 46.64,
+    "page_count": 4,
+    "visual_input_tokens": 9427,
+    "visual_output_tokens": 783,
+    "content_input_tokens": 10569,
+    "content_output_tokens": 868,
+    "timestamp": "2026-04-14T05:20:03.352700",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Header logos/seal and signature image are missing from the HTML conversion.",
+      "severity": "major",
+      "evidence": "The PDF page shows the NC state seal and agency header at the top and a handwritten signature image above 'Kevin Hart'; the HTML page renders only text and omits these graphics.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Footer agency logo graphic is missing from the HTML conversion.",
+      "severity": "major",
+      "evidence": "The PDF page includes a DEQ logo and footer branding at the bottom; the HTML shows footer text only, without the logo graphic.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Cover-page layout spacing is compressed in HTML.",
+      "severity": "minor",
+      "evidence": "The PDF cover page uses large vertical whitespace separating the centered title, right-aligned authority/due date, and receiving/submitting entity blocks; the HTML presents the same content in a more continuous top-to-bottom flow with reduced whitespace grouping.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Cover-page alignment differs from the PDF.",
+      "severity": "minor",
+      "evidence": "In the PDF, the title is centered and the statutory authority/due date block is positioned to the right; in the HTML these elements are left-aligned within the normal reading column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The HTML omits the full tabular content of page 1's 'Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022' and replaces it with an image placeholder, causing a significant loss of source text/data.",
+      "severity": "critical",
+      "evidence": "PDF page 3 contains a full table titled 'Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022 G.S. 143-215.73F' with rows such as '7/14/2021 | 7956 Ocean Isle Beach | Ocean Isle | $420.00 | Channel Maintenance' and many subsequent entries through a total of '$9,543,427.32'. HTML only includes '<figure><img ... alt=\"Table of Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022\"></figure>' with no extracted table text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table data integrity is broken for the dredging annual report table because the PDF table is not represented as structured HTML table data at all.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows a 5-column table with headers 'Date | Project | Cooperator | Amount | Project Type' and dozens of rows. HTML has no corresponding <table> for this content; it is only an image placeholder.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The final 'Project / Cooperators' table is incomplete in HTML; additional rows present in the PDF are missing due to truncation at the bottom of page 8.",
+      "severity": "major",
+      "evidence": "PDF page 10 shows the purple 'Project | Cooperators' table continuing beyond the visible rows, including entries after 'Mountain Island Reservoir'. HTML includes only 5 rows: 'Eno River', 'Jordan Lake - Folkners Branch', 'Lake Gaston', 'Lake Norman', and 'Mountain Island Reservoir', indicating the continuation of the table was not captured.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is inaccurate: the document title is marked as an h2 instead of a single top-level h1, and the HTML uses multiple h2s without a top-level heading.",
+      "severity": "major",
+      "evidence": "HTML begins main content with '<h2>Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed</h2>' followed by '<h2>Intro</h2>' and '<h2>North Carolina Aquatic Weed Control Program - Funds Expended During the Fiscal Year</h2>'. The PDF visually presents the report title as the primary title on page 2.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A substantive text error changes the statutory citation wording from 'Statutes' to 'Statues'.",
+      "severity": "major",
+      "evidence": "PDF page 3 intro reads: 'NC General Statutes 143-215.73F(f) requires the Department of Environmental Quality...' HTML reads: 'NC General Statues 143-215.73F(f) requires the Department of Environmental Quality...'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML title line is truncated and omits the final word 'Fund'.",
+      "severity": "major",
+      "evidence": "PDF page 2 title reads: 'Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed'. The correspondence letter on page 1 and surrounding context make clear the report name is for the 'Shallow Draft Navigation Channel Dredging and Aquatic Weed Fund'. HTML heading is '<h2>Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed</h2>', missing 'Fund'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The due date is incorrect in HTML.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows 'Due Date: Oct. 1, 2021'. The cover letter on page 1 is dated 'October 1, 2022' and states the attached report covers FY 2021-2022. HTML preserves 'Due Date: Oct. 1, 2021', which appears inconsistent with the actual report submission date shown in the PDF package and may reflect a carryover issue from the source; however it matches the printed page-2 value and is not an HTML-only fabrication. No issue should be assigned here.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 8,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 42.99,
+    "page_count": 10,
+    "visual_input_tokens": 17867,
+    "visual_output_tokens": 831,
+    "content_input_tokens": 21028,
+    "content_output_tokens": 1148,
+    "timestamp": "2026-04-14T05:04:48.861330",
+    "auditor_version": "1.0.0"
+  }
+}

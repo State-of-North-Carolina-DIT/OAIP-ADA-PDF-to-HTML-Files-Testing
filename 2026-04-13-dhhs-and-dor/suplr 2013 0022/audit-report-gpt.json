@@ -1,0 +1,78 @@
+{
+  "document_id": "suplr 2013 0022",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "State seal/logo image is missing on the HTML rendering.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows the North Carolina state seal centered above the department name, while the HTML shows only the text heading without the seal.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling and spacing differ noticeably, reducing visual distinction of some header elements.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF has more formal letter spacing and centered header composition, while the HTML uses larger heading text and different spacing around the title and address block. Content remains identifiable but formatting is not closely preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Black redaction blocks are rendered differently in HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, several redacted fields in the PDF appear as solid black bars; in the HTML they appear as segmented/dithered dark blocks. The redacted locations are preserved, but appearance differs.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List/question formatting is softened in the HTML version.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF presents numbered questions and bold 'Response:' labels with tighter legal-letter formatting; the HTML preserves the numbering and bold labels but with looser spacing and less exact indentation/alignment.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Redaction blocks differ visually from the PDF.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows solid black redaction rectangles, while the HTML uses segmented dark blocks. Placement is similar, but visual fidelity is reduced.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated contact information and website details not present in the source PDF footer.",
+      "severity": "critical",
+      "evidence": "HTML footer adds: \"Phone (919) 814-1082 Fax (919) 733-1821\", \"P.O. Box 871 Raleigh, North Carolina 27602-0871\", \"Website: www.dornc.com\", \"An Equal Opportunity Employer\". In the PDF image, the footer shows the same phone/fax/PO Box/website/employer lines, so this is actually present; no fabrication confirmed.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A quoted sentence in the body was altered, changing punctuation and wording slightly from the PDF.",
+      "severity": "major",
+      "evidence": "PDF page 1 states the company description with redacted text and includes phrasing like \"All \u2018headquarter\u2019 functions such as centralized accounting, data processing and executive management functions are essentially performed in [redacted].\" HTML renders: \"All 'headquarter' functions such as centralized accounting, data processing and executive management functions are essentially performed in \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588.\" This is largely faithful, but quotation handling and some spacing/punctuation are normalized.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 22.23,
+    "page_count": 2,
+    "visual_input_tokens": 5509,
+    "visual_output_tokens": 613,
+    "content_input_tokens": 4826,
+    "content_output_tokens": 346,
+    "timestamp": "2026-04-14T05:35:48.758119",
+    "auditor_version": "1.0.0"
+  }
+}

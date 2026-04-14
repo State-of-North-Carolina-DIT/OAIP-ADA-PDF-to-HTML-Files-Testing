@@ -1,0 +1,78 @@
+{
+  "document_id": "CWS_55_2022a1",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The CQI cycle diagram is present in both versions but appears smaller in the HTML rendering compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows a larger CQI cycle diagram centered on the page; HTML shows the same diagram but scaled down.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Time range formatting uses en-dash in HTML vs em-dash style in PDF",
+      "severity": "minor",
+      "evidence": "PDF uses '10:00 \u2013 10:20:' with longer dash; HTML uses '10:00 \u2013 10:20:' with slightly different dash character. Minor typographic difference.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The horizontal rule/line under the title in the HTML version is not present in the PDF.",
+      "severity": "minor",
+      "evidence": "HTML has a blue horizontal line separating the title from the content; PDF has no such line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 1 of PDF contains content through '11:45 \u2013 12:15: Report out from Break Outs' while the HTML page 1 cuts off earlier, with remaining content flowing to page 2.",
+      "severity": "minor",
+      "evidence": "PDF page 1 ends at '11:45 \u2013 12:15' section; HTML page 1 ends partway through the '10:00 \u2013 10:20' section with the rest continuing on HTML page 2.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The time block headers in the HTML use slightly less prominent bold formatting but are still distinguishable as headings.",
+      "severity": "minor",
+      "evidence": "PDF shows '10:40 \u2013 11:15: Identify the Problem:' with larger bold text; HTML shows similar bold text but at a smaller relative size.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The gap between '12:15' (Report out from Break Outs) and '12:30' (Working Lunch) sections spans a page break in the PDF but flows continuously in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF has page break between pages 1 and 2 separating these sections; HTML flows them continuously on page 2.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element inside another <main> element, which is a structural duplication of the wrapper element, though no content is duplicated.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping another <main> - this is a structural issue but does not cause content duplication.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 25.17,
+    "page_count": 2,
+    "visual_input_tokens": 5470,
+    "visual_output_tokens": 897,
+    "content_input_tokens": 5968,
+    "content_output_tokens": 294,
+    "timestamp": "2026-04-14T05:18:27.557317",
+    "auditor_version": "1.0.0"
+  }
+}

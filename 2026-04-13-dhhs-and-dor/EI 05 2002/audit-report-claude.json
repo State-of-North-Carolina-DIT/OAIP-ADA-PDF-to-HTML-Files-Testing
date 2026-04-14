@@ -1,0 +1,62 @@
+{
+  "document_id": "EI 05 2002",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout differs: PDF has a centered two-line department title with address info below, while HTML separates department name and division name with a horizontal rule between them. Officials' names are laid out differently (side-by-side in PDF vs. stacked in HTML).",
+      "severity": "minor",
+      "evidence": "PDF: 'North Carolina Department of Health and Human Services / Division of Social Services' as one centered block with Governor/Director names flanking left and right. HTML: Department name centered with horizontal rule, then Division name, then address, then officials listed vertically on the left.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'Re:' subject line formatting differs slightly. In the PDF it appears as bold right-aligned text, while in HTML it appears as bold left-aligned underlined text.",
+      "severity": "minor",
+      "evidence": "PDF: 'Re: 2002 DOR and TOP Collection Fees / 2002 DOR Interest Rate' right-aligned, bold, no underline. HTML: Same text left-aligned, bold, underlined.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The reference code 'EI-5-2002' formatting is preserved as bold in both versions, consistent.",
+      "severity": "minor",
+      "evidence": "Both show EI-5-2002 in bold.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses both h1 and h2 for the department header, but the document title and division name are both part of the letterhead, not a true heading hierarchy. More importantly, the h2 'Division of Social Services' appears under h1 which is acceptable, but the nested <main> elements create structural issues.",
+      "severity": "major",
+      "evidence": "HTML has <h1> for 'North Carolina Department of Health and Human Services' and <h2> for 'Division of Social Services'. These are letterhead elements in the PDF, not document sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements - there is an outer <main> from the body template and an inner <main> within the content, which is an HTML structural error but does not duplicate visible content.",
+      "severity": "minor",
+      "evidence": "Outer: <body><main> wrapping everything. Inner: another <main> tag after the page-header div.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 26.03,
+    "page_count": 1,
+    "visual_input_tokens": 3806,
+    "visual_output_tokens": 563,
+    "content_input_tokens": 4482,
+    "content_output_tokens": 473,
+    "timestamp": "2026-04-14T05:21:37.444018",
+    "auditor_version": "1.0.0"
+  }
+}

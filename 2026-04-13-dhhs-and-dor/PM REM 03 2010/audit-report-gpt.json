@@ -1,0 +1,86 @@
+{
+  "document_id": "PM REM 03 2010",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout is simplified and repositioned in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF places the seal centered above the department title with governor/secretary on the left and director/phone on the right around the date block. The HTML moves the seal to the upper left, inserts a horizontal rule, and restructures the header spacing.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling and alignment differ in the header and subject block.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses centered title blocks and distinct bold label formatting for ATTENTION and SUBJECT. The HTML preserves emphasis but uses different font sizing/weight and more condensed alignment, making the header visually different though still understandable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bulleted list styling is lighter and less visually separated in the HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows two bold bullet items with strong indentation and separation. The HTML keeps bullets and bold labels but the spacing and indentation are reduced, making the list less distinct visually.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature graphic appearance differs from the PDF.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF shows a handwritten signature directly on the page, while the HTML displays a darker rectangular signature image with reversed contrast, though it remains in the correct location above the signer's name.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML includes a fabricated hyperlink URL not present in the PDF.",
+      "severity": "critical",
+      "evidence": "PDF shows the text \"Dear County Director Letter No PM-REM-13-2009\" as underlined/linked text, but no visible URL is present in the document image. HTML adds href=\"http://www.ncdhhs.gov/dss/dcdl/performancemanagement/PM-REM-13-2009.pdf\", which cannot be verified from the PDF content and therefore constitutes added factual metadata.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Page 2 heading is misplaced into the middle of the document, disrupting document flow.",
+      "severity": "major",
+      "evidence": "PDF page 2 begins with heading \"Services Information System (SIS) ID Number Merge Reports Page 2\" and continues the sentence from page 1: \"ID for these individuals in SIS, CPPS...\" HTML inserts a page-header block with \"Services Information System (SIS) ID Number Merge Reports Page 2\" before the bullet list, causing page 2 header content to appear before text that actually belongs to the end of the first bullet.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document structure and uses multiple top-level headings.",
+      "severity": "major",
+      "evidence": "HTML uses <h1>\"North Carolina Department of Health and Human Services\"</h1> and <h2>\"Division of Social Services\"</h2>, but the PDF is a letterhead rather than a document with a formal heading hierarchy. The actual subject/title \"Services Information System (SIS) ID Number Merge Reports\" is not represented as a heading. Also, there are two nested <main> elements, further weakening structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content from the first bullet is split and effectively interrupted by a duplicated page header inserted in the wrong place.",
+      "severity": "major",
+      "evidence": "PDF page 1 bullet ends with \"The Target ID will now be the only\" and page 2 continues \"ID for these individuals in SIS, CPPS...\" HTML places a page-header block between these two parts inside the list context, creating an artificial interruption and repetition of page-level header content within body content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 26.05,
+    "page_count": 2,
+    "visual_input_tokens": 4027,
+    "visual_output_tokens": 563,
+    "content_input_tokens": 4824,
+    "content_output_tokens": 685,
+    "timestamp": "2026-04-14T05:27:44.595448",
+    "auditor_version": "1.0.0"
+  }
+}

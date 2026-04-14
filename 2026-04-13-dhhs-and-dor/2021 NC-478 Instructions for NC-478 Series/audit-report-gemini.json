@@ -1,0 +1,38 @@
+{
+  "document_id": "2021 NC-478 Instructions for NC-478 Series",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column layout collapsed into a single column.",
+      "severity": "major",
+      "evidence": "The source PDF displays the content in two distinct vertical columns. The HTML rendering has collapsed this structure into a single continuous column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing header logo.",
+      "severity": "major",
+      "evidence": "The NCDOR logo located in the top left corner of the PDF is absent in the HTML version.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 36.39,
+    "page_count": 1,
+    "visual_input_tokens": 2910,
+    "visual_output_tokens": 263,
+    "content_input_tokens": 3430,
+    "content_output_tokens": 141,
+    "timestamp": "2026-04-14T05:13:03.002713",
+    "auditor_version": "1.0.0"
+  }
+}

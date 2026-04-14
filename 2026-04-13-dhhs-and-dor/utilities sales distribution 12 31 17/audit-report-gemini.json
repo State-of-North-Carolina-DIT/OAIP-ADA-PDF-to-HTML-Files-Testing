@@ -1,0 +1,38 @@
+{
+  "document_id": "utilities sales distribution 12 31 17",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout collapsed, merging left and right aligned elements.",
+      "severity": "major",
+      "evidence": "In the PDF, 'Distribution Report for' and 'Distribution Date' are separated horizontally on opposite sides of the page. The HTML concatenates them into a single line: 'Distribution Report for Distribution Date'. The quarterly date and report date on the next line suffer the same incorrect merging.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of visual hierarchy in headings and text alignment in tables.",
+      "severity": "minor",
+      "evidence": "The main document titles ('Utilities Sales Distribution') lost bolding and center-alignment. Additionally, currency and numerical values in the table are right-aligned in the PDF but default to left-alignment in the HTML across the entire document.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 62.69,
+    "page_count": 11,
+    "visual_input_tokens": 24622,
+    "visual_output_tokens": 705,
+    "content_input_tokens": 50647,
+    "content_output_tokens": 156,
+    "timestamp": "2026-04-14T05:39:19.183671",
+    "auditor_version": "1.0.0"
+  }
+}

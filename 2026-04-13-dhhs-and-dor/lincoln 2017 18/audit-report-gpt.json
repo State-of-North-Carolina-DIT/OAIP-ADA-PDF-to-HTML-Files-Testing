@@ -1,0 +1,54 @@
+{
+  "document_id": "lincoln 2017 18",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated styling/import content not present in the PDF, including a Google Fonts import and a standalone theme stylesheet.",
+      "severity": "critical",
+      "evidence": "HTML <style> contains '@import url(\"https://fonts.googleapis.com/css2?family=Source+Sans+3...\")' and comment 'Digital Commons NC \u2014 Standalone Theme CSS'. The PDF pages only show the report content and do not contain any stylesheet text, URLs, or the phrase 'Digital Commons NC'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML does not use semantic heading tags to represent the document structure; the PDF's title and section hierarchy are flattened into paragraphs and table rows instead of h1-h6.",
+      "severity": "major",
+      "evidence": "PDF has clear structural headings such as 'Lincoln County', '1. Public Assistance Programs', '2. Public Assistance Administration', and '3. Services Programs'. HTML uses <p> inside repeated '.page-header' blocks and plain <td> rows in a table; there are no actual h1-h6 elements for these headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page header content is duplicated in the HTML for all three pages instead of being consolidated or represented once.",
+      "severity": "major",
+      "evidence": "HTML header contains three repeated '.page-header' blocks, each repeating 'G.S. 108A-88 -- Determination of State/County Financial Participation', 'County Budget Estimates -- State Fiscal Year 2017-2018', 'Issued February 15, 2017', and 'Lincoln County' for Pages 1, 2, and 3. In the PDF, these are page headers appearing once per page, not intended as repeated body content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "At least one program name is textually altered from the PDF, changing the county name in the label.",
+      "severity": "major",
+      "evidence": "PDF row 15 reads 'Haywood Electrical - Helping Each Member Cope'. HTML row 15 reads 'Haywood Electrical - Helping Each Member Cope' as well? However the PDF image appears to show 'Haywood Electrical - Helping Each Member Cope' under Lincoln County, which is unusual but present. A clearer alteration is row 22: PDF shows 'Food/Nutrition Services Program Administration' while HTML shows the same; no issue there. Another visible punctuation normalization exists in row 16 where PDF uses 'Wake Electric Membership Corp. \u2013 W.E. Roundup' and HTML also uses that wording. Overall table text largely matches, but the heading structure conversion causes loss of document semantics and presentation.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 28.21,
+    "page_count": 3,
+    "visual_input_tokens": 8772,
+    "visual_output_tokens": 254,
+    "content_input_tokens": 11269,
+    "content_output_tokens": 735,
+    "timestamp": "2026-04-14T05:33:46.577660",
+    "auditor_version": "1.0.0"
+  }
+}

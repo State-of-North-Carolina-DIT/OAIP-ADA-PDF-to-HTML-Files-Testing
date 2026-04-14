@@ -1,0 +1,62 @@
+{
+  "document_id": "Aug. 2023 GAC Meeting Minutes.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Header typography and emphasis are not fully preserved.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF title block uses centered serif text with the date and time italicized/bolded in a compact stacked layout. The HTML renders the same content in a different sans-serif style with different emphasis and a horizontal rule, reducing fidelity of heading formatting though meaning remains clear.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading alignment/style differs from the source.",
+      "severity": "minor",
+      "evidence": "On page 1, PDF section labels such as 'Call to Order and Introductions' with presenter names appear in a two-part line with wider spacing; the HTML combines them with an em dash and different font weight/size. Content is present but formatting is simplified.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading styling differs from the source formatting.",
+      "severity": "minor",
+      "evidence": "On page 2, headings such as 'AT Expo \u2013 October 5th, 2023', 'Stephen E Sallee Committee', and 'Announcements/updates' appear in the PDF with separated left/right alignment and serif styling, while the HTML renders them inline with em dashes and sans-serif styling. Structure remains understandable.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Several hyperlinks/linked phrases from the PDF were not faithfully preserved as actual URLs or equivalent explicit link text in the HTML.",
+      "severity": "major",
+      "evidence": "PDF includes explicit linked references such as \"Meeting Registration - Zoom (zoomgov.com)\", \"Walk & Roll Together Gaston - DRNC (disabilityrightsnc.org)\", \"Assistive Technology Loans | Self-Help Credit Union\", and \"NCATP Grant Advisory Council Stephen E Sallee (office.com)\". HTML preserves these only as plain text labels without the corresponding explicit destination domains/URLs in some cases, reducing link fidelity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A few small text inaccuracies/normalizations are present, though they do not materially change meaning.",
+      "severity": "minor",
+      "evidence": "PDF attendee list shows \"Tara Muller\" while body text under member updates appears as \"Tara Mueller shared...\"; HTML uses \"Tara Mueller shared...\". PDF heading line reads \"Workforce Solution\" and HTML uses the same, but body contains minor wording/grammar normalization such as \"also have apprenticeships available\" retained, while other punctuation and apostrophe forms are normalized (e.g., curly quotes/HTML entities).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 21.94,
+    "page_count": 3,
+    "visual_input_tokens": 5985,
+    "visual_output_tokens": 400,
+    "content_input_tokens": 6262,
+    "content_output_tokens": 420,
+    "timestamp": "2026-04-14T05:16:03.885394",
+    "auditor_version": "1.0.0"
+  }
+}
