@@ -14,6 +14,7 @@ docs/                             # GitHub Pages comparison tool (NOT LFS-tracke
   index.html                      # App shell — topbar, sidebar, 3-column layout
   app.js                          # All logic — GitHub API, PDF.js rendering, audit display
   styles.css                      # DIT "First in Flight" dark theme
+  digitalcommons-theme.css        # Canonical stylesheet injected into HTML preview iframes
   ncdit-white-logo.png            # NC DIT branding
 2026-04-13-deq/                   # DEQ agency batch (100 documents)
   <document-folder>/
@@ -24,7 +25,7 @@ docs/                             # GitHub Pages comparison tool (NOT LFS-tracke
     audit-report-claude.json      # Claude audit of new conversion
     audit-report-gpt.json         # GPT audit of new conversion
     audit-report-gemini.json      # Gemini audit of new conversion
-2026-04-13-dhhs-and-dor/          # Placeholder for DHHS/DOR batch (empty)
+2026-04-13-dhhs-and-dor/          # DHHS/DOR agency batch (new conversions only, no old pipeline)
 ```
 
 ## Git LFS
@@ -51,9 +52,13 @@ A single-page app served via GitHub Pages. No build step, no dependencies to ins
 
 3. **On folder select** (`loadSubdirFiles`): Fetches all files for that folder in parallel — both HTML conversions, the PDF URL, and all audit JSONs. LFS files are handled transparently: `fetchTextFile` tries `raw.githubusercontent.com` first, and if it gets an LFS pointer (starts with `version https://git-lfs.github.com`), falls back to `media.githubusercontent.com/media/`.
 
-4. **Layout**: Three resizable and collapsible columns — Old HTML | New HTML | PDF. Each column has a chevron toggle to collapse/expand it. The Old HTML column auto-collapses when the selected document has no `old-converted.html`. Each HTML column has a `</>` toggle for raw HTML view (with base64 data URI truncation). Below each HTML column is a draggable audit panel. The new HTML audit panel has Claude/GPT/Gemini provider tabs. The sidebar is also collapsible.
+4. **Layout**: Three resizable and collapsible columns — Old HTML | New HTML | PDF. Each column has a chevron toggle to collapse/expand it. The Old HTML column auto-collapses when the selected document has no `old-converted.html`. Each HTML column has a "Show HTML </>" toggle for raw HTML view (with base64 data URI truncation). Below each HTML column is a draggable audit panel. The new HTML audit panel has Claude/GPT/Gemini provider tabs. The sidebar is also collapsible.
 
-5. **PDF rendering**: Uses pdf.js (CDN, v3.11.174). Renders all pages into canvases with fit-to-width, zoom in/out, and page navigation.
+5. **HTML theming**: On load, fetches `digitalcommons-theme.css` and caches it. When rendering HTML in iframes, the `applyTheme()` helper strips any embedded `<style>` tags from the source HTML and injects the canonical stylesheet. This ensures both old and new conversions render with the same consistent Digital Commons NC theme. The raw HTML toggle still shows the original unmodified source.
+
+6. **Audit display**: Defect counts (critical/major/minor) are recounted from the actual findings array rather than trusting pre-computed JSON metadata fields, which can be inaccurate in old audits. Findings are numbered (1., 2., 3., ...) for easy reference.
+
+7. **PDF rendering**: Uses pdf.js (CDN, v3.11.174). Renders all pages into canvases with fit-to-width, zoom in/out, and page navigation.
 
 ### Key config in `app.js`
 
