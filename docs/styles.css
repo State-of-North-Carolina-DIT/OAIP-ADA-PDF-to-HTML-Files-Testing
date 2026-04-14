@@ -170,7 +170,7 @@ input{font-family:var(--font)}
 .col-badge.new{background:var(--green-sub);color:var(--green)}
 .col-badge.pdf{background:rgba(56,146,225,.12);color:var(--secondary)}
 .col-label{font-size:11px;color:var(--text-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
-.conv-col-body{flex:1;overflow:hidden;position:relative;background:var(--bg-0)}
+.conv-col-body{flex:1 1 0px;overflow:hidden;position:relative;background:var(--bg-0);min-height:0}
 .conv-col-body iframe{width:100%;height:100%;border:none;background:#fff}
 .conv-col-body pre.raw-html{
   width:100%;height:100%;margin:0;padding:10px;overflow:auto;
@@ -189,10 +189,10 @@ input{font-family:var(--font)}
 /* PDF body */
 .pdf-body{
   padding:10px;display:flex;flex-direction:column;align-items:center;gap:12px;
-  overflow-y:auto;background:var(--primary-dark);
+  overflow:auto;background:var(--primary-dark);
 }
-.pdf-page-wrap{position:relative;flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,.5);border-radius:2px;max-width:100%}
-.pdf-page-wrap canvas{display:block;max-width:100%}
+.pdf-page-wrap{position:relative;flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,.5);border-radius:2px}
+.pdf-page-wrap canvas{display:block}
 .pdf-controls{
   display:flex;align-items:center;gap:6px;padding:4px 10px;
   background:var(--bg-2);border-bottom:1px solid var(--border);flex-shrink:0;
@@ -225,10 +225,10 @@ input{font-family:var(--font)}
 
 /* ── Audit Panels (below HTML in each column) ── */
 .audit-panel-wrap{
-  display:flex;flex-direction:column;height:40%;min-height:80px;flex-shrink:0;
+  display:flex;flex-direction:column;flex:0 0 40%;min-height:80px;
 }
 .audit-panel{
-  flex:1;overflow-y:auto;
+  flex:1 1 0px;overflow-y:auto;min-height:0;
   background:var(--bg-1);
   padding:8px 10px;
 }
@@ -241,24 +241,24 @@ input{font-family:var(--font)}
 
 /* Compact audit items for inline panels */
 .audit-inline-section{margin-bottom:8px}
-.audit-inline-hdr{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text-3);margin-bottom:4px;display:flex;align-items:center;gap:6px}
-.audit-inline-hdr svg{width:12px;height:12px;color:var(--secondary)}
-.audit-routing{display:inline-block;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:600}
+.audit-inline-hdr{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text-3);margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.audit-inline-hdr svg{width:14px;height:14px;color:var(--secondary)}
+.audit-routing{display:inline-block;padding:2px 8px;border-radius:4px;font-size:14px;font-weight:600}
 .audit-defects{display:flex;gap:10px;flex-wrap:wrap}
-.audit-defect{font-size:12px;color:var(--text-2)}
+.audit-defect{font-size:14px;color:var(--text-2)}
 .audit-defect .d-count{font-weight:700;color:var(--text-1);margin-right:2px}
 .audit-defect .d-count.crit{color:var(--red)}
 .audit-defect .d-count.major{color:var(--yellow)}
 .audit-finding{
-  font-size:11px;color:var(--text-2);padding:4px 8px;margin-bottom:3px;
-  background:var(--bg-0);border-radius:4px;line-height:1.4;
+  font-size:13px;color:var(--text-2);padding:6px 10px;margin-bottom:4px;
+  background:var(--bg-0);border-radius:4px;line-height:1.5;
 }
 .audit-finding .f-num{color:var(--text-3);font-weight:600;margin-right:2px;min-width:18px;display:inline-block}
 .audit-finding .f-sev{font-weight:700;margin-right:4px}
 .audit-finding .f-sev.crit{color:var(--red)}
 .audit-finding .f-sev.major{color:var(--yellow)}
 .audit-finding .f-sev.minor{color:var(--text-3)}
-.audit-empty{font-size:11px;color:var(--text-3);font-style:italic}
+.audit-empty{font-size:13px;color:var(--text-3);font-style:italic}
 
 /* Audit Cards (keep for JSON toggles) */
 .audit-card{
@@ -368,9 +368,13 @@ input{font-family:var(--font)}
 
 /* ── Scrollbars ── */
 ::-webkit-scrollbar{width:6px;height:6px}
-::-webkit-scrollbar-track{background:transparent}
-::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
-::-webkit-scrollbar-thumb:hover{background:var(--text-3)}
+::-webkit-scrollbar-track{background:var(--bg-1)}
+::-webkit-scrollbar-thumb{background:var(--text-3);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--text-2)}
+
+/* ── PDF drag-to-pan ── */
+.pdf-body.grabbing .pdf-page-wrap{cursor:grabbing}
+.pdf-body.grabbable .pdf-page-wrap{cursor:grab}
 
 /* ── No-file notice ── */
 .no-file{display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-3);font-size:13px;font-style:italic}

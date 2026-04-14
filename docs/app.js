@@ -460,21 +460,31 @@ async function renderAllPages() {
   body.replaceChildren();
   p.wrappers = [];
 
+  const dpr = window.devicePixelRatio || 1;
+  const page1 = await p.doc.getPage(1);
+  const targetWidth = page1.getViewport({ scale: p.scale }).width;
+
   for (let i = 1; i <= p.doc.numPages; i++) {
     const page = await p.doc.getPage(i);
-    const vp = page.getViewport({ scale: p.scale });
+    const baseVp = page.getViewport({ scale: 1 });
+    const pageScale = targetWidth / baseVp.width;
+    const vp = page.getViewport({ scale: pageScale });
     const wrap = document.createElement('div');
     wrap.className = 'pdf-page-wrap';
     wrap.dataset.page = i;
     wrap.style.width = vp.width + 'px';
     wrap.style.height = vp.height + 'px';
     const canvas = document.createElement('canvas');
-    canvas.width = vp.width;
-    canvas.height = vp.height;
+    canvas.width = Math.floor(vp.width * dpr);
+    canvas.height = Math.floor(vp.height * dpr);
+    canvas.style.width = vp.width + 'px';
+    canvas.style.height = vp.height + 'px';
+    const ctx = canvas.getContext('2d');
+    ctx.scale(dpr, dpr);
     wrap.appendChild(canvas);
     body.appendChild(wrap);
     p.wrappers.push(wrap);
-    page.render({ canvasContext: canvas.getContext('2d'), viewport: vp });
+    page.render({ canvasContext: ctx, viewport: vp });
   }
 
   if (scrollRatio > 0) {
@@ -517,6 +527,35 @@ function initPdfControls() {
   $('.pdf-zm-out').onclick = () => { if (!S.pdf) return; S.pdf.fitWidth = false; S.pdf.scale = Math.max(0.3, S.pdf.scale - 0.25); renderAllPages(); };
   $('.pdf-fit').onclick = () => { if (!S.pdf) return; S.pdf.fitWidth = true; renderAllPages(); };
   $('#pdfBody').addEventListener('scroll', updatePdfControls);
+  initPdfDragPan();
+}
+
+function initPdfDragPan() {
+  const body = $('#pdfBody');
+  body.classList.add('grabbable');
+  let dragging = false, startX, startY, scrollL, scrollT;
+  body.addEventListener('mousedown', e => {
+    if (e.button !== 0) return;
+    const rect = body.getBoundingClientRect();
+    const onScrollbarX = e.clientY > rect.bottom - 6;
+    const onScrollbarY = e.clientX > rect.right - 6;
+    if (onScrollbarX || onScrollbarY) return;
+    dragging = true;
+    startX = e.clientX; startY = e.clientY;
+    scrollL = body.scrollLeft; scrollT = body.scrollTop;
+    body.classList.replace('grabbable', 'grabbing');
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    body.scrollLeft = scrollL - (e.clientX - startX);
+    body.scrollTop = scrollT - (e.clientY - startY);
+  });
+  document.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false;
+    body.classList.replace('grabbing', 'grabbable');
+  });
 }
 
 // ================================================================
@@ -901,8 +940,8 @@ function setupHResize(handle, topEl, bottomEl) {
       lastY = e.clientY;
       const topH = topEl.getBoundingClientRect().height;
       const botH = bottomEl.getBoundingClientRect().height;
-      const newTop = Math.max(60, topH + dy);
-      const newBot = Math.max(60, botH - dy);
+      const newTop = Math.max(80, topH + dy);
+      const newBot = Math.max(80, botH - dy);
       topEl.style.flex = '0 0 ' + newTop + 'px';
       bottomEl.style.height = newBot + 'px';
     };
