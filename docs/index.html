@@ -20,6 +20,8 @@
       <h1>ADA Conversion Comparison</h1>
     </div>
     <div class="topbar-actions">
+      <label for="batchSelect" class="batch-label">Batch:</label>
+      <select id="batchSelect" aria-label="Select document batch"></select>
       <span id="repoInfo" aria-live="polite"></span>
     </div>
   </header>
@@ -40,6 +42,7 @@
         <div class="sidebar-top-row">
           <span class="sidebar-label">Documents</span>
           <span class="sidebar-count" id="sidebarCount">0</span>
+          <button class="collapse-toggle" id="sidebarCollapseBtn" aria-expanded="true" title="Collapse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
         </div>
         <input type="search" id="sidebarSearch" placeholder="Filter folders..." aria-label="Filter folders">
       </div>
@@ -53,17 +56,18 @@
       <div class="conv-cols">
         <!-- Old HTML + Old Audit Column -->
         <div class="conv-col" id="oldHtmlCol">
-          <div class="conv-col-hdr"><span class="col-badge old">OLD</span><span class="col-label">old-converted.html</span><button class="html-toggle" id="oldHtmlToggle" title="Toggle raw HTML">&lt;/&gt;</button></div>
+          <div class="conv-col-hdr"><button class="collapse-toggle" id="oldColCollapseBtn" aria-expanded="true" title="Collapse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button><span class="col-badge old">OLD</span><span class="col-label">old-converted.html</span><button class="html-toggle" id="oldHtmlToggle" title="Toggle raw HTML">Show HTML &lt;/&gt;</button></div>
           <div class="conv-col-body" id="oldHtmlBody"><div class="no-file">Select a document</div></div>
           <div class="rh-h" id="oldAuditHandle"></div>
           <div class="audit-panel" id="oldAuditPanel"></div>
         </div>
-        <div class="rh-v col-handle" data-left="oldHtmlCol" data-right="newHtmlCol"></div>
+        <div class="rh-v col-handle" id="oldColHandle" data-left="oldHtmlCol" data-right="newHtmlCol"></div>
         <!-- New HTML + New Audit Column -->
         <div class="conv-col" id="newHtmlCol">
           <div class="conv-col-hdr">
+            <button class="collapse-toggle" id="newColCollapseBtn" aria-expanded="true" title="Collapse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
             <span class="col-badge new">NEW</span><span class="col-label">converted.html</span>
-            <button class="html-toggle" id="newHtmlToggle" title="Toggle raw HTML">&lt;/&gt;</button>
+            <button class="html-toggle" id="newHtmlToggle" title="Toggle raw HTML">Show HTML &lt;/&gt;</button>
           </div>
           <div class="conv-col-body" id="newHtmlBody"><div class="no-file">Select a document</div></div>
           <div class="rh-h" id="newAuditHandle"></div>
@@ -76,10 +80,10 @@
             <div class="audit-panel" id="newAuditPanel"></div>
           </div>
         </div>
-        <div class="rh-v col-handle" data-left="newHtmlCol" data-right="pdfCol"></div>
+        <div class="rh-v col-handle" id="newColHandle" data-left="newHtmlCol" data-right="pdfCol"></div>
         <!-- PDF Column -->
         <div class="conv-col" id="pdfCol">
-          <div class="conv-col-hdr"><span class="col-badge pdf">PDF</span><span class="col-label">source.pdf</span></div>
+          <div class="conv-col-hdr"><span class="col-badge pdf">PDF</span><span class="col-label">source.pdf</span><button class="collapse-toggle" id="pdfColCollapseBtn" aria-expanded="true" title="Collapse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button></div>
           <div class="pdf-controls" id="pdfControls">
             <button class="pdf-prev" title="Previous page" aria-label="Previous page">&#8592;</button>
             <span class="pg-info" id="pdfPageInfo">-</span>

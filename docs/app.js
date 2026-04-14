@@ -4,22 +4,28 @@
 const REPO_OWNER = 'State-of-North-Carolina-DIT';
 const REPO_NAME = 'OAIP-ADA-PDF-to-HTML-Files-Testing';
 const REPO_BRANCH = 'main';
-const BASE_PATH = '2026-04-13';
 
 const GITHUB_API = 'https://api.github.com';
 const GITHUB_RAW = 'https://raw.githubusercontent.com';
 const GITHUB_MEDIA = 'https://media.githubusercontent.com/media';
 const LFS_SIGNATURE = 'version https://git-lfs.github.com';
 
+// Canonical stylesheet injected into HTML preview iframes
+let DC_STYLESHEET = '';
+
 // ================================================================
 // State
 // ================================================================
 const S = {
+  batches: [],       // list of top-level batch directory names
+  basePath: null,    // currently selected batch
+  treeData: null,    // cached full git tree
   subdirs: [],
   selected: null,
   activeProvider: 'claude',
   cache: {},
   pdf: null,
+  collapsed: { sidebar: false, oldCol: false, newCol: false, pdfCol: false },
 };
 
 const $ = s => document.querySelector(s);
@@ -101,50 +107,89 @@ async function resolvePdfUrl(filePath) {
 // Load from GitHub (uses Git Trees API — single call for full tree)
 // ================================================================
 async function loadRepo() {
-  $('#repoInfo').textContent = `${REPO_OWNER}/${REPO_NAME} / ${BASE_PATH}`;
-
   try {
+    // Load canonical stylesheet for HTML previews
+    try {
+      const cssResp = await fetch('digitalcommons-theme.css');
+      if (cssResp.ok) DC_STYLESHEET = await cssResp.text();
+    } catch {}
+
     // Get full tree in one API call (avoids per-directory listing)
     const treeUrl = `${GITHUB_API}/repos/${REPO_OWNER}/${REPO_NAME}/git/trees/${REPO_BRANCH}?recursive=1`;
     const resp = await fetch(treeUrl);
     if (!resp.ok) throw new Error(`GitHub API ${resp.status}: ${resp.statusText}`);
-    const treeData = await resp.json();
+    S.treeData = await resp.json();
 
-    // Build file index: { subdirName: Set of filenames }
-    const prefix = BASE_PATH + '/';
-    const fileIndex = {};
-    const subdirNames = new Set();
-
-    for (const item of treeData.tree) {
-      if (!item.path.startsWith(prefix)) continue;
-      const rel = item.path.slice(prefix.length); // e.g. "folderName/converted.html"
-      const parts = rel.split('/');
-      if (parts.length === 1 && item.type === 'tree') {
-        subdirNames.add(parts[0]);
-      } else if (parts.length === 2 && item.type === 'blob') {
-        const [dir, file] = parts;
-        if (!fileIndex[dir]) fileIndex[dir] = new Set();
-        fileIndex[dir].add(file);
+    // Discover batch directories: top-level dirs matching YYYY-MM-DD pattern
+    const batchPattern = /^\d{4}-\d{2}-\d{2}-/;
+    const batchSet = new Set();
+    for (const item of S.treeData.tree) {
+      if (item.type !== 'tree') continue;
+      const parts = item.path.split('/');
+      if (parts.length === 1 && batchPattern.test(parts[0])) {
+        batchSet.add(parts[0]);
       }
     }
+    S.batches = [...batchSet].sort();
 
-    S.fileIndex = fileIndex;
-    S.subdirs = [...subdirNames]
-      .sort((a, b) => a.localeCompare(b))
-      .map(name => ({ name, path: `${BASE_PATH}/${name}` }));
+    if (S.batches.length === 0) throw new Error('No batch directories found');
 
-    S.cache = {};
-    S.selected = null;
+    // Populate the dropdown
+    const sel = $('#batchSelect');
+    sel.replaceChildren();
+    for (const b of S.batches) {
+      sel.appendChild(el('option', { value: b, textContent: b }));
+    }
+    // Default to first batch
+    sel.value = S.batches[0];
+    loadBatch(S.batches[0]);
 
     $('#welcome').classList.add('hidden');
     $('#workspace').classList.add('active');
-    renderSidebar();
-    if (S.subdirs.length > 0) selectSubdir(S.subdirs[0].name);
   } catch (e) {
     const welcome = $('#welcome');
     welcome.replaceChildren();
     welcome.appendChild(el('div', { className: 'error-banner', style: 'max-width:500px' }, 'Failed to load repo: ' + e.message));
   }
+}
+
+function loadBatch(batchName) {
+  S.basePath = batchName;
+  S.cache = {};
+  S.selected = null;
+  $('#repoInfo').textContent = `${REPO_OWNER}/${REPO_NAME}`;
+
+  // Build file index from cached tree
+  const prefix = batchName + '/';
+  const fileIndex = {};
+  const subdirNames = new Set();
+
+  for (const item of S.treeData.tree) {
+    if (!item.path.startsWith(prefix)) continue;
+    const rel = item.path.slice(prefix.length);
+    const parts = rel.split('/');
+    if (parts.length === 1 && item.type === 'tree') {
+      subdirNames.add(parts[0]);
+    } else if (parts.length === 2 && item.type === 'blob') {
+      const [dir, file] = parts;
+      if (!fileIndex[dir]) fileIndex[dir] = new Set();
+      fileIndex[dir].add(file);
+    }
+  }
+
+  S.fileIndex = fileIndex;
+  S.subdirs = [...subdirNames]
+    .sort((a, b) => a.localeCompare(b))
+    .map(name => ({ name, path: `${batchName}/${name}` }));
+
+  renderSidebar();
+  // Reset content panels
+  renderHtmlPanel('oldHtmlBody', null, 'Select a document');
+  renderHtmlPanel('newHtmlBody', null, 'Select a document');
+  renderPdf(null);
+  renderAuditInline($('#oldAuditPanel'), null, false);
+  renderAuditInline($('#newAuditPanel'), null, true);
+  if (S.subdirs.length > 0) selectSubdir(S.subdirs[0].name);
 }
 
 async function loadSubdirFiles(name) {
@@ -241,6 +286,11 @@ async function selectSubdir(name) {
   try {
     const data = await loadSubdirFiles(name);
     if (!data) throw new Error('Could not read folder');
+
+    // Auto-collapse old column if no old HTML exists, expand if it does
+    const hasOld = !!data.oldHtml;
+    setCollapsed('oldCol', !hasOld);
+
     renderConversionsView(data);
   } catch (e) {
     const banner = el('div', { className: 'error-banner' }, e.message);
@@ -287,6 +337,15 @@ function renderConversionsView(data) {
   renderNewAuditPanel(data);
 }
 
+function applyTheme(html) {
+  if (!DC_STYLESHEET || !html) return html;
+  const stripped = html.replace(/<style[\s\S]*?<\/style>/gi, '');
+  if (stripped.includes('</head>')) {
+    return stripped.replace('</head>', '<style>' + DC_STYLESHEET + '</style></head>');
+  }
+  return '<style>' + DC_STYLESHEET + '</style>' + stripped;
+}
+
 function renderHtmlPanel(containerId, html, emptyMsg) {
   const container = document.getElementById(containerId);
   container.replaceChildren();
@@ -297,7 +356,7 @@ function renderHtmlPanel(containerId, html, emptyMsg) {
   const iframe = document.createElement('iframe');
   iframe.sandbox = 'allow-same-origin allow-scripts';
   iframe.title = containerId.includes('old') ? 'Old HTML conversion' : 'New HTML conversion';
-  iframe.srcdoc = html;
+  iframe.srcdoc = applyTheme(html);
   container.appendChild(iframe);
 }
 
@@ -347,7 +406,7 @@ function toggleHtmlRaw(containerId, toggleBtn) {
     const iframe = document.createElement('iframe');
     iframe.sandbox = 'allow-same-origin allow-scripts';
     iframe.title = containerId.includes('old') ? 'Old HTML conversion' : 'New HTML conversion';
-    iframe.srcdoc = panel.html;
+    iframe.srcdoc = applyTheme(panel.html);
     container.appendChild(iframe);
     iframe.addEventListener('load', () => {
       const doc = iframe.contentDocument?.documentElement;
@@ -514,20 +573,24 @@ function renderAuditInline(container, audit, isNew) {
   defHdr.insertAdjacentHTML('beforeend', iconAlert());
   defHdr.appendChild(document.createTextNode(' Defects'));
   defSec.appendChild(defHdr);
+  // Count severities from actual findings (JSON metadata counts can be wrong)
+  const findings = audit._raw?.findings || audit.concerns || [];
+  let crit = 0, major = 0, minor = 0;
+  for (const f of findings) {
+    const sev = typeof f === 'string' ? null : (f.severity || '');
+    if (sev === 'critical') crit++;
+    else if (sev === 'major') major++;
+    else if (sev === 'minor') minor++;
+  }
+  const total = crit + major + minor;
+
   const defRow = el('div', { className: 'audit-defects' });
-  const total = audit.total_defects ?? ((audit.total_critical || 0) + (audit.total_major || 0) + (audit.total_minor || 0));
-  const crit = audit.total_critical ?? 0;
-  const major = audit.total_major ?? 0;
-  const minor = audit.total_minor ?? 0;
   defRow.appendChild(buildDefectBadge('Total', total, ''));
   defRow.appendChild(buildDefectBadge('Critical', crit, 'crit'));
   defRow.appendChild(buildDefectBadge('Major', major, 'major'));
   defRow.appendChild(buildDefectBadge('Minor', minor, 'minor'));
   defSec.appendChild(defRow);
   container.appendChild(defSec);
-
-  // Findings
-  const findings = audit._raw?.findings || audit.concerns || [];
   if (findings.length > 0) {
     const findSec = el('div', { className: 'audit-inline-section' });
     const findHdr = document.createElement('div');
@@ -535,11 +598,14 @@ function renderAuditInline(container, audit, isNew) {
     findHdr.insertAdjacentHTML('beforeend', iconFlag());
     findHdr.appendChild(document.createTextNode(' Findings (' + findings.length + ')'));
     findSec.appendChild(findHdr);
-    for (const f of findings) {
+    for (let i = 0; i < findings.length; i++) {
+      const f = findings[i];
       const item = document.createElement('div');
       item.className = 'audit-finding';
+      const num = el('span', { className: 'f-num' }, String(i + 1) + '.');
+      item.appendChild(num);
       if (typeof f === 'string') {
-        item.textContent = f;
+        item.appendChild(document.createTextNode(' ' + f));
       } else {
         const sev = el('span', { className: 'f-sev ' + (f.severity || '') }, '[' + (f.severity || '?') + ']');
         item.appendChild(sev);
@@ -863,12 +929,72 @@ function showContentLoading(show) {
 }
 
 // ================================================================
+// Collapse / Expand Panels
+// ================================================================
+function makeChevronPath(direction) {
+  const ns = 'http://www.w3.org/2000/svg';
+  const path = document.createElementNS(ns, 'path');
+  path.setAttribute('d', direction === 'left' ? 'M15 18l-6-6 6-6' : 'M9 18l6-6-6-6');
+  return path;
+}
+
+function setCollapsed(panelKey, collapsed) {
+  S.collapsed[panelKey] = collapsed;
+  const elMap = {
+    sidebar: '#sidebar',
+    oldCol: '#oldHtmlCol',
+    newCol: '#newHtmlCol',
+    pdfCol: '#pdfCol',
+  };
+  const handleMap = {
+    sidebar: '#sidebarHandle',
+    oldCol: '#oldColHandle',
+    newCol: '#newColHandle',
+    pdfCol: null,
+  };
+  const target = $(elMap[panelKey]);
+  const handle = handleMap[panelKey] ? $(handleMap[panelKey]) : null;
+  if (!target) return;
+
+  target.classList.toggle('collapsed', collapsed);
+  if (handle) handle.classList.toggle('hidden', collapsed);
+
+  // Update toggle button icon
+  const btn = target.querySelector('.collapse-toggle');
+  if (btn) {
+    btn.setAttribute('aria-expanded', String(!collapsed));
+    btn.title = collapsed ? 'Expand' : 'Collapse';
+    const svg = btn.querySelector('svg');
+    if (svg) {
+      const isLeft = panelKey !== 'pdfCol';
+      svg.replaceChildren(makeChevronPath(
+        collapsed ? (isLeft ? 'right' : 'left') : (isLeft ? 'left' : 'right')
+      ));
+    }
+  }
+
+  // Refit PDF if needed
+  if (S.pdf?.fitWidth) setTimeout(renderAllPages, 80);
+}
+
+function toggleCollapse(panelKey) {
+  setCollapsed(panelKey, !S.collapsed[panelKey]);
+}
+
+// ================================================================
 // Event Listeners
 // ================================================================
 $('#sidebarSearch').addEventListener('input', renderSidebar);
+$('#batchSelect').addEventListener('change', (e) => loadBatch(e.target.value));
 $$('.ptab').forEach(t => t.addEventListener('click', () => switchProvider(t.dataset.provider)));
 $('#oldHtmlToggle').addEventListener('click', () => toggleHtmlRaw('oldHtmlBody', $('#oldHtmlToggle')));
 $('#newHtmlToggle').addEventListener('click', () => toggleHtmlRaw('newHtmlBody', $('#newHtmlToggle')));
+
+// Collapse toggles
+$('#sidebarCollapseBtn').addEventListener('click', () => toggleCollapse('sidebar'));
+$('#oldColCollapseBtn').addEventListener('click', () => toggleCollapse('oldCol'));
+$('#newColCollapseBtn').addEventListener('click', () => toggleCollapse('newCol'));
+$('#pdfColCollapseBtn').addEventListener('click', () => toggleCollapse('pdfCol'));
 
 // ================================================================
 // Init

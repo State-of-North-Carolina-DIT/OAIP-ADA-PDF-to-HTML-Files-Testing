@@ -45,13 +45,15 @@ A single-page app served via GitHub Pages. No build step, no dependencies to ins
 
 ### How it works
 
-1. **On load** (`loadRepo` in `app.js`): Fetches the full Git tree via `GET /repos/.../git/trees/main?recursive=1` in a single API call. Filters entries matching the `BASE_PATH` prefix to build a sidebar of document folders.
+1. **On load** (`loadRepo` in `app.js`): Fetches the full Git tree via `GET /repos/.../git/trees/main?recursive=1` in a single API call. Discovers all top-level directories matching `YYYY-MM-DD-*` and populates the batch dropdown. Loads the first batch automatically.
 
-2. **On folder select** (`loadSubdirFiles`): Fetches all files for that folder in parallel — both HTML conversions, the PDF URL, and all audit JSONs. LFS files are handled transparently: `fetchTextFile` tries `raw.githubusercontent.com` first, and if it gets an LFS pointer (starts with `version https://git-lfs.github.com`), falls back to `media.githubusercontent.com/media/`.
+2. **On batch select**: Filters the cached tree for the selected batch directory, builds the sidebar of document folders. No additional API call needed.
 
-3. **Layout**: Three resizable columns — Old HTML | New HTML | PDF. Each HTML column has a `</>` toggle for raw HTML view (with base64 data URI truncation). Below each HTML column is a draggable audit panel. The new HTML audit panel has Claude/GPT/Gemini provider tabs.
+3. **On folder select** (`loadSubdirFiles`): Fetches all files for that folder in parallel — both HTML conversions, the PDF URL, and all audit JSONs. LFS files are handled transparently: `fetchTextFile` tries `raw.githubusercontent.com` first, and if it gets an LFS pointer (starts with `version https://git-lfs.github.com`), falls back to `media.githubusercontent.com/media/`.
 
-4. **PDF rendering**: Uses pdf.js (CDN, v3.11.174). Renders all pages into canvases with fit-to-width, zoom in/out, and page navigation.
+4. **Layout**: Three resizable and collapsible columns — Old HTML | New HTML | PDF. Each column has a chevron toggle to collapse/expand it. The Old HTML column auto-collapses when the selected document has no `old-converted.html`. Each HTML column has a `</>` toggle for raw HTML view (with base64 data URI truncation). Below each HTML column is a draggable audit panel. The new HTML audit panel has Claude/GPT/Gemini provider tabs. The sidebar is also collapsible.
+
+5. **PDF rendering**: Uses pdf.js (CDN, v3.11.174). Renders all pages into canvases with fit-to-width, zoom in/out, and page navigation.
 
 ### Key config in `app.js`
 
@@ -59,10 +61,9 @@ A single-page app served via GitHub Pages. No build step, no dependencies to ins
 const REPO_OWNER = 'State-of-North-Carolina-DIT';
 const REPO_NAME  = 'OAIP-ADA-PDF-to-HTML-Files-Testing';
 const REPO_BRANCH = 'main';
-const BASE_PATH  = '2026-04-13';  // Which date batch to load
 ```
 
-To point the tool at a different batch, change `BASE_PATH`. The value should match the prefix of the dated directories (e.g., if a new batch is added as `2026-05-01-agency/`, set `BASE_PATH = '2026-05-01'` — it matches all directories starting with that prefix).
+Batch directories are discovered automatically from the repo tree — any top-level directory matching `YYYY-MM-DD-*` appears in the dropdown. No config change needed when adding new batches.
 
 ### Styling
 
@@ -71,9 +72,8 @@ Uses the DIT "First in Flight" dark theme. Colors and typography are defined as 
 ## Adding New Document Batches
 
 1. Create a directory at the repo root following the naming convention: `YYYY-MM-DD-agency/`
-2. Inside, create one subfolder per document containing: `source.pdf`, `converted.html`, `old-converted.html`, and any audit JSON files (`audit-report-claude.json`, `audit-report-gpt.json`, `audit-report-gemini.json`, `old-audit.json`)
-3. Update `BASE_PATH` in `docs/app.js` if the new batch should be the default view
-4. Commit and push — LFS will handle the large HTML/PDF files automatically
+2. Inside, create one subfolder per document containing: `source.pdf`, `converted.html`, and optionally `old-converted.html` and any audit JSON files (`audit-report-claude.json`, `audit-report-gpt.json`, `audit-report-gemini.json`, `old-audit.json`)
+3. Commit and push — LFS will handle the large HTML/PDF files automatically. The new batch will appear in the dropdown automatically.
 
 ## GitHub Pages
 

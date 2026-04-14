@@ -1,0 +1,286 @@
+/*
+ * Digital Commons NC — Standalone Theme CSS
+ * -------------------------------------------
+ * Mimics the look of https://digitalcommons.nc.gov
+ * for use with pipeline-generated HTML output.
+ *
+ * The pipeline outputs simple semantic HTML: headings, paragraphs,
+ * tables, lists, images, plus a few classes:
+ *   .page-header, .page-footer, .page-break
+ *
+ * This CSS applies the NC Digital Commons visual style to that markup.
+ */
+
+/* ── Fonts ─────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* ── Design tokens ─────────────────────────────────────────────────── */
+:root {
+  --nc-font:        "Source Sans 3", "Source Sans Pro", sans-serif;
+  --nc-navy:        #092940;
+  --nc-blue:        #3b75a9;
+  --nc-blue-hover:  #0a58ca;
+  --nc-link:        #0d6efd;
+  --nc-orange:      #bd5b00;
+  --nc-text:        #212529;
+  --nc-text-light:  #6c757d;
+  --nc-bg:          #fff;
+  --nc-bg-light:    #f8f9fa;
+  --nc-border:      #dee2e6;
+  --nc-border-dark: #e5e5e5;
+  --nc-footer-bg:   #000;
+  --nc-radius:      0.25rem;
+  --nc-max-width:   960px;
+}
+
+/* ── Reset & base ──────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--nc-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--nc-text);
+  background: var(--nc-bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Page wrapper ──────────────────────────────────────────────────── */
+main, body > *:not(header):not(footer):not(nav) {
+  max-width: var(--nc-max-width);
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+}
+
+/* ── Typography ────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--nc-font);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 1.5em;
+  margin-bottom: 0.5rem;
+  color: var(--nc-text);
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem;  }
+h4 { font-size: 1.3rem;  }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem;    }
+
+h1:first-child,
+h1:first-of-type {
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--nc-navy);
+}
+
+p {
+  margin: 0.75em 0;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+/* ── Links ─────────────────────────────────────────────────────────── */
+a {
+  color: var(--nc-link);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--nc-blue-hover);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6b3fa0;
+}
+
+/* ── Lists ─────────────────────────────────────────────────────────── */
+ul, ol {
+  margin: 0.75em 0;
+  padding-left: 1.75em;
+}
+
+li {
+  margin-bottom: 0.3em;
+  line-height: 1.6;
+}
+
+li > ul, li > ol {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+}
+
+/* ── Tables ────────────────────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.25em 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  border: 1px solid var(--nc-border);
+  padding: 0.6em 0.85em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--nc-bg-light);
+  font-weight: 600;
+  color: var(--nc-text);
+}
+
+tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+caption {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.4em;
+  text-align: left;
+  caption-side: top;
+  color: var(--nc-text);
+}
+
+/* ── Images & figures ──────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--nc-radius);
+}
+
+figure {
+  margin: 1.25em 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--nc-text-light);
+  margin-top: 0.4em;
+}
+
+/* ── Blockquote ────────────────────────────────────────────────────── */
+blockquote {
+  border-left: 4px solid var(--nc-blue);
+  margin: 1.25em 0;
+  padding: 0.75em 1.25em;
+  background: var(--nc-bg-light);
+  color: var(--nc-text);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Code ──────────────────────────────────────────────────────────── */
+code, pre {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875em;
+}
+
+pre {
+  background: var(--nc-bg-light);
+  border: 1px solid var(--nc-border);
+  border-radius: var(--nc-radius);
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* ── Horizontal rule ───────────────────────────────────────────────── */
+hr {
+  border: 0;
+  border-top: 1px solid var(--nc-border-dark);
+  margin: 1.5em 0;
+}
+
+/* ── Pipeline-specific classes ─────────────────────────────────────── */
+.page-header {
+  font-size: 0.85rem;
+  color: var(--nc-text-light);
+  margin: 0.3em 0;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--nc-border);
+}
+
+.page-footer {
+  font-size: 0.85rem;
+  color: var(--nc-text-light);
+  margin: 0.3em 0;
+  padding-top: 0.3em;
+  text-align: right;
+}
+
+.page-break {
+  border: 0;
+  border-top: 2px dashed var(--nc-border-dark);
+  margin: 2em 0;
+}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  main, body > *:not(header):not(footer):not(nav) {
+    padding: 1rem;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.4em 0.5em;
+  }
+}
+
+/* ── Print ─────────────────────────────────────────────────────────── */
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .page-break {
+    page-break-before: always;
+    border: 0;
+    margin: 0;
+  }
+
+  .page-header, .page-footer {
+    color: #666;
+  }
+}

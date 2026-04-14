@@ -56,6 +56,14 @@ input{font-family:var(--font)}
 #topbar h1{font-size:15px;font-weight:700;color:var(--text-1);white-space:nowrap;letter-spacing:.2px}
 .topbar-actions{display:flex;align-items:center;gap:12px;margin-left:auto}
 #repoInfo{font-size:12px;color:var(--text-3);max-width:600px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.batch-label{font-size:12px;color:var(--text-2);font-weight:600;white-space:nowrap}
+#batchSelect{
+  padding:4px 8px;border:1px solid var(--border);border-radius:var(--radius);
+  background:var(--bg-3);color:var(--text-1);font-size:12px;font-family:var(--font);
+  cursor:pointer;outline:none;max-width:260px;
+}
+#batchSelect:focus{border-color:var(--secondary)}
+#batchSelect option{background:var(--bg-2);color:var(--text-1)}
 
 /* ── Workspace ── */
 #workspace{flex:1;display:none;overflow:hidden}
@@ -107,6 +115,45 @@ input{font-family:var(--font)}
 }
 .rh-v:hover,.rh-v.active{background:var(--secondary)}
 .rh-v::after{content:'';position:absolute;top:0;bottom:0;left:-4px;right:-4px}
+.rh-v.hidden,.rh-h.hidden{display:none}
+
+/* ── Collapse Toggle ── */
+.collapse-toggle{
+  display:flex;align-items:center;justify-content:center;
+  width:20px;height:20px;border:1px solid var(--border);border-radius:var(--radius);
+  background:transparent;color:var(--text-3);flex-shrink:0;
+  transition:all var(--tr);padding:0;
+}
+.collapse-toggle:hover{color:var(--text-1);border-color:var(--secondary);background:var(--bg-3)}
+.collapse-toggle svg{width:14px;height:14px}
+
+/* ── Collapsed States ── */
+#sidebar.collapsed{
+  width:36px!important;min-width:36px;max-width:36px;overflow:hidden;
+}
+#sidebar.collapsed .sidebar-header{padding:8px 6px}
+#sidebar.collapsed .sidebar-top-row{justify-content:center}
+#sidebar.collapsed .sidebar-label,
+#sidebar.collapsed .sidebar-count,
+#sidebar.collapsed #sidebarSearch,
+#sidebar.collapsed #sidebarList{display:none}
+
+.conv-col.collapsed{
+  flex:0 0 32px!important;min-width:32px;max-width:32px;overflow:hidden;
+}
+.conv-col.collapsed .conv-col-hdr{
+  writing-mode:vertical-lr;text-orientation:mixed;
+  padding:8px 4px;gap:6px;min-height:0;justify-content:flex-start;
+  height:100%;
+}
+.conv-col.collapsed .conv-col-body,
+.conv-col.collapsed .rh-h,
+.conv-col.collapsed .audit-panel,
+.conv-col.collapsed .audit-panel-wrap,
+.conv-col.collapsed .pdf-controls,
+.conv-col.collapsed .html-toggle{display:none}
+.conv-col.collapsed .col-label{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;writing-mode:vertical-lr}
+.conv-col.collapsed .collapse-toggle{writing-mode:horizontal-tb}
 
 /* ── Conversions View ── */
 .conv-cols{display:flex;flex:1;overflow:hidden}
@@ -206,6 +253,7 @@ input{font-family:var(--font)}
   font-size:11px;color:var(--text-2);padding:4px 8px;margin-bottom:3px;
   background:var(--bg-0);border-radius:4px;line-height:1.4;
 }
+.audit-finding .f-num{color:var(--text-3);font-weight:600;margin-right:2px;min-width:18px;display:inline-block}
 .audit-finding .f-sev{font-weight:700;margin-right:4px}
 .audit-finding .f-sev.crit{color:var(--red)}
 .audit-finding .f-sev.major{color:var(--yellow)}
