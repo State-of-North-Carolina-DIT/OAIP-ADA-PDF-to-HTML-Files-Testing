@@ -188,10 +188,10 @@ input{font-family:var(--font)}
 
 /* PDF body */
 .pdf-body{
-  padding:10px;display:flex;flex-direction:column;align-items:center;gap:12px;
+  padding:10px;display:flex;flex-direction:column;gap:12px;
   overflow:auto;background:var(--primary-dark);
 }
-.pdf-page-wrap{position:relative;flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,.5);border-radius:2px}
+.pdf-page-wrap{position:relative;flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,.5);border-radius:2px;margin:0 auto}
 .pdf-page-wrap canvas{display:block}
 .pdf-controls{
   display:flex;align-items:center;gap:6px;padding:4px 10px;
