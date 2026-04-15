@@ -203,6 +203,10 @@ function loadBatch(batchName) {
   renderPdf(null);
   renderAuditPanel('old', {});
   renderAuditPanel('new', {});
+  // Reset doc nav
+  $('#topbarDocName').textContent = '';
+  $('#prevDocBtn').disabled = true;
+  $('#nextDocBtn').disabled = true;
   // Default doc from URL ?doc= parameter, or first subdir
   const urlDoc = new URLSearchParams(window.location.search).get('doc');
   const startDoc = urlDoc && S.subdirs.some(d => d.name === urlDoc) ? urlDoc : (S.subdirs[0]?.name ?? null);
@@ -320,6 +324,12 @@ async function selectSubdir(name) {
   S.selected = name;
   updateUrlParams({ doc: name });
 
+  // Auto-collapse sidebar to maximize content real estate
+  setCollapsed('sidebar', true);
+
+  // Update topbar doc name and prev/next button states
+  updateDocNav();
+
   $$('.sb-item').forEach(el => {
     const isActive = el.dataset.name === name;
     el.classList.toggle('active', isActive);
@@ -344,6 +354,24 @@ async function selectSubdir(name) {
     body.replaceChildren(banner);
   } finally {
     showContentLoading(false);
+  }
+}
+
+function updateDocNav() {
+  const nameEl = $('#topbarDocName');
+  const prevBtn = $('#prevDocBtn');
+  const nextBtn = $('#nextDocBtn');
+  nameEl.textContent = S.selected || '';
+  const idx = S.subdirs.findIndex(d => d.name === S.selected);
+  prevBtn.disabled = idx <= 0;
+  nextBtn.disabled = idx < 0 || idx >= S.subdirs.length - 1;
+}
+
+function navigateDoc(delta) {
+  const idx = S.subdirs.findIndex(d => d.name === S.selected);
+  const newIdx = idx + delta;
+  if (newIdx >= 0 && newIdx < S.subdirs.length) {
+    selectSubdir(S.subdirs[newIdx].name);
   }
 }
 
@@ -1121,6 +1149,13 @@ $('#sidebarCollapseBtn').addEventListener('click', () => toggleCollapse('sidebar
 $('#oldColCollapseBtn').addEventListener('click', () => toggleCollapse('oldCol'));
 $('#newColCollapseBtn').addEventListener('click', () => toggleCollapse('newCol'));
 $('#pdfColCollapseBtn').addEventListener('click', () => toggleCollapse('pdfCol'));
+
+// Doc navigation (prev/next)
+$('#prevDocBtn').addEventListener('click', () => navigateDoc(-1));
+$('#nextDocBtn').addEventListener('click', () => navigateDoc(1));
+
+// Click collapsed sidebar label to expand
+$('#sidebarCollapsedLabel').addEventListener('click', () => setCollapsed('sidebar', false));
 
 // ================================================================
 // Init

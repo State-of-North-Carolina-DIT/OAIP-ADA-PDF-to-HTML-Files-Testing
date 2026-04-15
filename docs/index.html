@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADA Conversion Comparison Tool</title>
+  <link rel="icon" href="https://it.nc.gov/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -16,6 +17,11 @@
     <div class="topbar-brand">
       <img src="ncdit-white-logo.png" alt="NC DIT Logo" class="topbar-logo">
       <h1>ADA Conversion Comparison</h1>
+    </div>
+    <div class="topbar-doc-nav">
+      <button class="doc-nav-btn" id="prevDocBtn" title="Previous document" aria-label="Previous document"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <span class="topbar-doc-name" id="topbarDocName"></span>
+      <button class="doc-nav-btn" id="nextDocBtn" title="Next document" aria-label="Next document"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
     </div>
     <div class="topbar-actions">
       <label for="batchSelect" class="batch-label">Batch:</label>
@@ -35,6 +41,7 @@
   <div id="workspace">
     <!-- Sidebar -->
     <aside id="sidebar" aria-label="Document folders">
+      <div class="sidebar-collapsed-label" id="sidebarCollapsedLabel">Documents</div>
       <div class="sidebar-header">
         <div class="sidebar-top-row">
           <span class="sidebar-label">Documents</span>

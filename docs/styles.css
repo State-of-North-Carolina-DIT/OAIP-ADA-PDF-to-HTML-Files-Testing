@@ -54,7 +54,23 @@ input{font-family:var(--font)}
 .topbar-brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .topbar-logo{height:28px;width:auto}
 #topbar h1{font-size:15px;font-weight:700;color:var(--text-1);white-space:nowrap;letter-spacing:.2px}
-.topbar-actions{display:flex;align-items:center;gap:12px;margin-left:auto}
+.topbar-actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
+
+/* ── Top Bar Doc Navigation ── */
+.topbar-doc-nav{display:flex;align-items:center;gap:6px;margin-left:auto;margin-right:auto;overflow:hidden}
+.topbar-doc-name{
+  font-size:13px;color:var(--text-1);font-weight:600;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;max-width:360px;
+}
+.doc-nav-btn{
+  display:flex;align-items:center;justify-content:center;
+  width:24px;height:24px;border:1px solid var(--border);border-radius:var(--radius);
+  background:transparent;color:var(--text-3);flex-shrink:0;
+  transition:all var(--tr);padding:0;
+}
+.doc-nav-btn:hover:not(:disabled){color:var(--text-1);border-color:var(--secondary);background:var(--bg-3)}
+.doc-nav-btn:disabled{opacity:.3;cursor:default}
+.doc-nav-btn svg{width:14px;height:14px}
 
 .batch-label{font-size:12px;color:var(--text-2);font-weight:600;white-space:nowrap}
 #batchSelect{
@@ -131,6 +147,17 @@ input{font-family:var(--font)}
 #sidebar.collapsed{
   width:36px!important;min-width:36px;max-width:36px;overflow:hidden;
 }
+/* Collapsed sidebar vertical label */
+.sidebar-collapsed-label{display:none}
+#sidebar.collapsed .sidebar-collapsed-label{
+  display:flex;align-items:center;justify-content:center;
+  writing-mode:vertical-lr;text-orientation:mixed;
+  font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;
+  color:var(--text-3);cursor:pointer;
+  flex:1;padding:8px 0;user-select:none;
+  transition:color var(--tr);
+}
+#sidebar.collapsed .sidebar-collapsed-label:hover{color:var(--text-1)}
 #sidebar.collapsed .sidebar-header{padding:8px 6px}
 #sidebar.collapsed .sidebar-top-row{justify-content:center}
 #sidebar.collapsed .sidebar-label,
