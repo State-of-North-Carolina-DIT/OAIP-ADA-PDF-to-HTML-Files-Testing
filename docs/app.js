@@ -25,6 +25,7 @@ const S = {
   activeOldProvider: null,
   activeNewProvider: null,
   cache: {},
+  pdfBlobUrl: null,
   collapsed: { sidebar: false, oldCol: false, newCol: false, pdfCol: false },
 };
 
@@ -459,7 +460,7 @@ function toggleHtmlRaw(containerId, toggleBtn) {
 // ================================================================
 // PDF Rendering (native browser PDF viewer via iframe)
 // ================================================================
-function renderPdf(pdfUrl) {
+async function renderPdf(pdfUrl) {
   const body = $('#pdfBody');
   body.replaceChildren();
   if (!pdfUrl) {
@@ -467,11 +468,26 @@ function renderPdf(pdfUrl) {
     return;
   }
 
-  const iframe = document.createElement('iframe');
-  iframe.src = pdfUrl;
-  iframe.title = 'Source PDF';
-  iframe.className = 'pdf-iframe';
-  body.appendChild(iframe);
+  try {
+    // Revoke previous blob URL to avoid memory leaks
+    if (S.pdfBlobUrl) { URL.revokeObjectURL(S.pdfBlobUrl); S.pdfBlobUrl = null; }
+
+    // Fetch as blob so we control the MIME type — GitHub's raw URLs
+    // serve Content-Disposition: attachment which triggers a download.
+    const resp = await fetch(pdfUrl);
+    if (!resp.ok) throw new Error('Failed to fetch PDF');
+    const blob = new Blob([await resp.arrayBuffer()], { type: 'application/pdf' });
+    const blobUrl = URL.createObjectURL(blob);
+    S.pdfBlobUrl = blobUrl;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = blobUrl;
+    iframe.title = 'Source PDF';
+    iframe.className = 'pdf-iframe';
+    body.appendChild(iframe);
+  } catch {
+    body.replaceChildren(el('div', { className: 'no-file' }, 'Failed to load PDF'));
+  }
 }
 
 // ================================================================
