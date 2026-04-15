@@ -7,45 +7,47 @@ NC License No.: C-3500 and C-295
 
 ## Chemours Fayetteville Works
 
-Prepared for
+*Prepared for*
 
 **The Chemours Company FC, LLC**
 22828 NC Highway 87
 Fayetteville, NC 28306
 
-Prepared by
+*Prepared by*
 
 Geosyntec Consultants of NC, PC
 2501 Blue Ridge Road, Suite 430
 Raleigh, NC 27607
 
+[[IMAGE_1_1|Professional Engineer Seal of Adrienne D. Nemura, signed and dated 8/31/2020]]
+
 Project Number TR0795
 
 August 2020
 
-[[IMAGE_1_1|North Carolina Professional Engineer Seal for Adrienne D. Nemura, signed August 31, 2020]]
-
 ## TABLE OF CONTENTS
 
-- 1 INTRODUCTION ................................................................................................ 1
-- 2 OUTFALL 002 AND RIVER INTAKE SAMPLING ......................................... 2
-  - 2.1 Outfall 002 Sample Types........................................................................... 2
-  - 2.2 River Intake Samples................................................................................... 2
-  - 2.3 Consent Order Addendum Sampling Requirements ................................... 2
-  - 2.4 Flow Measurement Methods....................................................................... 3
-- 3 PFAS MASS LOADING CALCULATION METHODOLOGY ........................ 4
-  - 3.1 Total Mass Load Calculation Methodology ................................................ 4
-  - 3.2 Loading at Outfall 002................................................................................. 5
-  - 3.3 Loading from River Water Intake ............................................................... 5
-  - 3.4 Concentrations at Outfall 002...................................................................... 6
-  - 3.5 Concentrations in Site River Water Intake .................................................. 7
-  - 3.6 Potential Adjustments.................................................................................. 8
+1 INTRODUCTION ................................................................................................ 1
 
-## LIST OF TABLES
+2 OUTFALL 002 AND RIVER INTAKE SAMPLING ......................................... 2
+2.1 Outfall 002 Sample Types........................................................................... 2
+2.2 River Intake Samples................................................................................... 2
+2.3 Consent Order Addendum Sampling Requirements ................................... 2
+2.4 Flow Measurement Methods....................................................................... 3
+
+3 PFAS MASS LOADING CALCULATION METHODOLOGY ........................ 4
+3.1 Total Mass Load Calculation Methodology ................................................ 4
+3.2 Loading at Outfall 002................................................................................. 5
+3.3 Loading from River Water Intake ............................................................... 5
+3.4 Concentrations at Outfall 002...................................................................... 6
+3.5 Concentrations in Site River Water Intake .................................................. 7
+3.6 Potential Adjustments.................................................................................. 8
+
+**LIST OF TABLES**
 
 Table 1: PFAS Analytical Methods and Analyte List
 
-## LIST OF FIGURES
+**LIST OF FIGURES**
 
 Figure 1: Outfall 002 Sampling Locations
 Figure 2: Flowchart for Determining the Concentrations for Loading at Outfall 002
@@ -89,8 +91,8 @@ The site draws water from the Cape Fear River which at the River Water intake al
 
 The CO Addendum requirements for the PFAS sampling program at Outfall 002, as detailed in Paragraph 1(c)(i) of the CO Addendum, are as follows:
 
-1. Outfall 002 Trendline:
-   1. Starting no later than August 31, 2020, Chemours shall, each week for at least twelve consecutive weeks, take a 24-hour composite sample from Outfall 002 and analyze for the PFAS listed in Attachment C to the Consent Order. Chemours shall also conduct 24-hour composite sampling within 24 hours of any rain event predicted two days before with at least a 70% likelihood to be of 1 inch or greater over a 24-hour period. Chemours shall record the flow through Outfall 002 for each sampling event.
+c. Outfall 002 Trendline:
+    i. Starting no later than August 31, 2020, Chemours shall, each week for at least twelve consecutive weeks, take a 24-hour composite sample from Outfall 002 and analyze for the PFAS listed in Attachment C to the Consent Order. Chemours shall also conduct 24-hour composite sampling within 24 hours of any rain event predicted two days before with at least a 70% likelihood to be of 1 inch or greater over a 24-hour period. Chemours shall record the flow through Outfall 002 for each sampling event.
 
 To fulfill these requirements, 24-hr composite samples will be collected weekly for at least twelve weeks, in addition to within 24 hours of a rain event that meets the criteria specified in the CO Addendum. Samples will be sent to an approved external laboratory for analysis. The PFAS analyte list to be used (Table 1) includes all Consent Order Attachment C PFAS.
 
@@ -108,71 +110,57 @@ The calculations presented here are suitable for evaluating the mass loads of an
 
 This sub-section describes the methodology for calculating PFAS mass loading over a given time period. The mass loads over the given time intervals will be summed, as shown in Equation 1 below:
 
-**Equation 1: Total Mass Loading at Outfall 002**
+*Equation 1: Total Mass Loading at Outfall 002*
 
-*MOF002* = ∑ *mOF002,n* - *mintake,n*
+M_OF002 = ∑ (n=1 to N) m_OF002,n - m_intake,n
 
 where,
 
-- *MOF002* = is the total PFAS mass load at Outfall 002 for a given number of time periods "N", as mass per time, typically pounds per day, that originated from the Site conveyance network;
-- *mOF002,n* = is the total PFAS mass load at Outfall 002 for a given time interval "n" (mass per time), calculated by summing (or subdividing) the appropriate values of *mOF002,j*;
-- *n* = represents individual time intervals in a time period to assess mass loading at Outfall 002;
-- *N* = is the total number of time intervals in a time period to assess mass loading at Outfall 002; and
-- *mintake,n* = is the total PFAS mass load in river water from the intake for a given time interval "n" (mass per time), calculated by summing (or subdividing) the appropriate values of *mintake,k*.
+- M_OF002 = is the total PFAS mass load at Outfall 002 for a given number of time periods "N", as mass per time, typically pounds per day, that originated from the Site conveyance network;
+- m_OF002,n = is the total PFAS mass load at Outfall 002 for a given time interval "n" (mass per time), calculated by summing (or subdividing) the appropriate values of m_OF002,j;
+- n = represents individual time intervals in a time period to assess mass loading at Outfall 002;
+- N = is the total number of time intervals in a time period to assess mass loading at Outfall 002; and
+- m_intake,n = is the total PFAS mass load in river water from the intake for a given time interval "n" (mass per time), calculated by summing (or subdividing) the appropriate values of m_intake,k.
 
 ### 3.2 Loading at Outfall 002
 
 Measured and estimated concentrations, as well as measured flows at Outfall 002, are used to calculate mass loading at Outfall 002, as shown in Equation 2 below:
 
-**Equation 2: Outfall 002 Mass Loading**
+*Equation 2: Outfall 002 Mass Loading*
 
-*mOF002,j* = *COF002,j* × *QOF002,j* × *F*
-= ∑ *cOF002,j,i* × *QOF002,j* × *F*
+m_OF002,j = C_OF002,j × Q_OF002,j × F
+= ∑ (i=1 to I) C_OF002,j,i × Q_OF002,j × F
 
 where,
 
-*mOF002* = is the total PFAS mass load at Outfall 002 as measured in mass for a given time interval, "j";
-
-*j* = is time interval (represents either full 3.5-day composite period, portion of the 3.5-day composite period, 24-hr composite period, or time interval of data gap [i.e., no composite sample collection], described further in Section 3.4);
-
-*COF002,j* = is the measured or estimated total PFAS concentration at Outfall 002 for a given time interval, "j" (described further in Section 3.4);
-
-*QOF002,j* = is the total measured flow at Outfall 002 in a given time interval "j"; and
-
-*F* = is a conversion factor (to convert from concentrations in ng/L multiplied by flow in gallons per time unit to load in pounds per time unit)
-
-*cOF002,j,i* = is the measured or estimated concentration of the i-th PFAS compound based on samples collected from Outfall 002;
-
-*i* = represents each of the PFAS compounds being evaluated; and
-
-*I* = represents total number of PFAS compounds included in the summation of total PFAS concentrations.
+- m_OF002 = is the total PFAS mass load at Outfall 002 as measured in mass for a given time interval, "j";
+- j = is time interval (represents either full 3.5-day composite period, portion of the 3.5-day composite period, 24-hr composite period, or time interval of data gap [i.e., no composite sample collection], described further in Section 3.4);
+- C_OF002,j = is the measured or estimated total PFAS concentration at Outfall 002 for a given time interval, "j" (described further in Section 3.4);
+- Q_OF002,j = is the total measured flow at Outfall 002 in a given time interval "j"; and
+- F = is a conversion factor (to convert from concentrations in ng/L multiplied by flow in gallons per time unit to load in pounds per time unit)
+- C_OF002,j,i = is the measured or estimated concentration of the i^th^ PFAS compound based on samples collected from Outfall 002;
+- i = represents each of the PFAS compounds being evaluated; and
+- I = represents total number of PFAS compounds included in the summation of total PFAS concentrations.
 
 ### 3.3 Loading from River Water Intake
 
 Measured and estimated concentrations, as well as measured flows from river water at the intake, are used to calculate mass loading in river water at the intake, as shown in Equation 3 below:
 
-**Equation 3: River Intake Mass Loading**
+*Equation 3: River Intake Mass Loading*
 
-*mintake,k* = *Cintake,k* × *Qintake,k* × *F*
-= ∑ *cintake,k,i* × *Qintake,k* × *F*
+m_intake,k = C_intake,k × Q_intake,k × F
+= ∑ (i=1 to I) C_intake,k,i × Q_intake,k × F
 
 where,
 
-*mintake,k* = is the total PFAS mass load in the river water at the intake as measured in mass for a given time interval, "k";
-
-*k* = is time interval for calculating the mass loading represents either the 24-hr composite period, or time interval of data gap [i.e., no composite sample collection], described further in Section 3.5);
-
-*Cintake,k* = is the measured or estimated total PFAS concentration in the river water at the intake for a given time interval, "k" (described further in Section 3.5);
-
-*Qintake,k* = is the total measured flow at the intake in a given time interval "k";
-
-*F* = is a conversion factor (to convert from concentrations in ng/L multiplied by flow in gallons per time unit to load in pounds per time unit);
-
-*cintake,k,i* = is the measured or estimated concentration of the i-th PFAS compound based on samples collected from the river water at the intake;
-
-*i* = represents each of the PFAS compounds being evaluated; and
-
-*I* = represents total number of PFAS compounds included in the summation of total PFAS concentrations.
+- m_intake,k = is the total PFAS mass load in the river water at the intake as measured in mass for a given time interval, "k";
+- k = is time interval for calculating the mass loading represents either the 24-hr composite period, or time interval of data gap [i.e., no composite sample collection], described further in Section 3.5);
+- C_intake,k = is the measured or estimated total PFAS concentration in the river water at the intake for a given time interval, "k" (described further in Section 3.5);
+- Q_intake,k = is the total measured flow at the intake in a given time interval "k";
+- F = is a conversion factor (to convert from concentrations in ng/L multiplied by flow in gallons per time unit to load in pounds per time unit);
+- C_intake,k,i = is the measured or estimated concentration of the i^th^ PFAS compound based on samples collected from the river water at the intake;
+- i = represents each of the PFAS compounds being evaluated; and
+- I = represents total number of PFAS compounds included in the summation of total PFAS concentrations.
 
 ### 3.4 Concentrations at Outfall 002
 
@@ -198,8 +186,9 @@ The calculation methodologies described in this section have been outlined based
 
 ## TABLES
 
-## TABLE 1: PFAS ANALYTICAL METHODS AND ANALYTE LIST
-### Chemours Fayetteville Works, North Carolina
+**TABLE 1**
+**PFAS ANALYTICAL METHODS AND ANALYTE LIST**
+**Chemours Fayetteville Works, North Carolina**
 
 | Analytical Method | Common Name | Chemical Name | CASN | Chemical Formula |
 | --- | --- | --- | --- | --- |
@@ -216,7 +205,7 @@ The calculation methodologies described in this section have been outlined based
 | Table 3+ Lab SOP | Hydro-PS Acid (Formerly PFESA-BP2) | Ethanesulfonic acid, 2-[1-[difluoro(1,2,2,2-tetrafluoroethoxy)methyl]-1,2,2,2-tetrafluoroethoxy]-1,1,2,2-tetrafluoro- (Formerly PFESA-BP2) | 749836-20-2 | C7H2F14O5S |
 | Table 3+ Lab SOP | PFHpA* | Perfluoroheptanoic acid | 375-85-9 | C7HF13O2 |
 
-Notes:
+*Notes:*
 * - HFPO-DA and PFHpA are also analyzed by EPA Method 537 Mod.
 EPA - Environmental Protection Agency
 PFAS - Per- and Polyfluoroalkyl substances
@@ -224,29 +213,35 @@ SOP - Standard Operating Procedure
 
 ## FIGURES
 
-## Figure 1: Outfall 002 Sampling Locations
+[[IMAGE_15_0|Map showing Outfall 002 Sampling Locations at Chemours Fayetteville Works]]
+**Legend**
+Sampling Location
+River Water Intake at Facility
+24-hr Composite and Continuous Flow
+3.5-day Composite
+Outfall 002 Sampling Locations
+Chemours Fayetteville Works, North Carolina
+Figure 1
 
-[[IMAGE_15_0|Map showing River Water Intake at Facility, 24-hr Composite and Continuous Flow, and 3.5-day Composite sampling locations]]
-
-https://projectsitesb.geosyntec.com/5/FWConsentOrder/Shared Documents/12 - Outfall 002 Reductions/2020 Misc Tasks/OF 002 Mass Loading/Tables and Figures/[Tables and Figures.xlsx]Figure 1
-
-## Figure 2: Flowchart for Determining the Concentration for Loading at Outfall 002
-
+**Flowchart for Determining the Concentration for Loading at Outfall 002**
+Chemours Fayetteville Works, North Carolina
 - Was a 24-hr composite sample collected?
-  - YES: Use 24-hr composite sample concentration*
-    - *For the 24-hr time period
-  - NO: Was a 3.5-day composite sample collected?
-    - YES: Was a 24-hr composite sample also collected (within the 3.5-day time period)?
-      - YES: Use 24-hr composite sample concentration during the 24-hr period and use the 3.5-day composite sample concentration for the remaining portion of the 3.5-day period
-      - NO: Use 3.5-day composite sample concentration**
-        - **For the 3.5-day time period
-    - NO: Was the time period wet (>0.2 in. rain in preceding 72 hrs)?
-      - YES: Use 60-day rolling average wet concentration
-      - NO: Use 60-day rolling average dry concentration
+  - YES -> Use 24-hr composite sample concentration*
+  - NO -> Was a 3.5-day composite sample collected?
+    - YES -> Was a 24-hr composite sample also collected (within the 3.5-day time period)?
+      - YES -> Use 24-hr composite sample concentration during the 24-hr period and use the 3.5-day composite sample concentration for the remaining portion of the 3.5-day period
+      - NO -> Use 3.5-day composite sample concentration**
+    - NO -> Was the time period wet (>0.2 in. rain in preceding 72 hrs)?
+      - YES -> Use 60-day rolling average wet concentration
+      - NO -> Use 60-day rolling average dry concentration
+*For the 24-hr time period
+**For the 3.5-day time period
+Figure 2
 
-## Figure 3: Flowchart for Determining the Concentration for Loading at the River Water Intake
-
+**Flowchart for Determining the Concentration for Loading at the River Water Intake**
+Chemours Fayetteville Works, North Carolina
 - Was a 24-hr composite sample collected?
-  - YES: Use 24-hr composite sample concentration*
-    - *For the 24-hr time period
-  - NO: Use 60-day rolling average dry concentration
+  - YES -> Use 24-hr composite sample concentration*
+  - NO -> Use 60-day rolling average dry concentration
+*For the 24-hr time period
+Figure 3

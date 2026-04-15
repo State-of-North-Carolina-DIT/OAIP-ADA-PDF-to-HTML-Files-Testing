@@ -1,17 +1,13 @@
 [[IMAGE_1_1|North Carolina Department of Environmental Quality logo]]
 
-State of North Carolina | Environmental Quality | Water Resources  
-1611 Mail service Center | Raleigh, North Carolina 27699-1611  
-919 707 9000
+PAT MCCRORY
+*Governor*
 
-PAT MCCRORY  
-Governor
+DONALD R. VAN DER VAART
+*Secretary*
 
-DONALD R. VAN DER VAART  
-Secretary
-
-S. JAY ZIMMERMAN  
-Director
+S. JAY ZIMMERMAN
+*Director*
 
 # MEMORANDUM
 
@@ -19,13 +15,15 @@ April 22, 2016
 
 To: Secretary Donald R. van der Vaart 
 
-From: Sherri Knight  
+From:  
+Sherri Knight  
 Division of Water Resources  
-Winston-Salem Regional Office
+Winston-Salem Regional Office  
 
-Subject: Meeting Officer’s Report and Recommendations  
+Subject:  
+Meeting Officer’s Report and Recommendations  
 Coal Ash Impoundment Classification(s)  
-Dan River Combined Cycle Station
+Dan River Combined Cycle Station  
 
 On March 1, 2016, I served as meeting officer for a public meeting held at Eden Town Hall in Eden, NC. The purpose of the public meeting was to allow the public to comment on the proposed risk classification for coal combustion residuals impoundments at the Dan River Combined Cycle Station.
 
@@ -33,21 +31,25 @@ In addition to listening to oral comments at the public meeting, I have reviewed
 
 This report has been prepared using the following outline: 
 
-1. History/Background
-1. March 1, 2016 Public Meeting and Oral Comments Summary
-1. Written Public Comments Summary
-1. Attachments
+I. History/Background
+II. March 1, 2016 Public Meeting and Oral Comments Summary
+III. Written Public Comments Summary
+IV. Attachments
 
-[[IMAGE_1_0|]]
+State of North Carolina | Environmental Quality | Water Resources  
+1611 Mail service Center | Raleigh, North Carolina 27699-1611  
+919 707 9000  
+
+[[IMAGE_1_0|Green and blue gradient footer bar]]
 
 ## I. History/Background
 
 Under the historic Coal Ash Management Act (CAMA) of 2014, all coal ash impoundments in North Carolina are required to be closed. The deadlines for closure depend on the classification of each impoundment as low, intermediate, or high. CAMA requires the Department of Environmental Quality, or DEQ, to make available to the public the initial draft proposed classifications no later than Dec. 31, 2015. These draft proposed classifications are based on the information available to the department as of December 2015. They are of critical importance because of the environmental impact and closure costs associated with each classification. Impoundments classified as intermediate or high must be excavated at a potential cost of up to $10 billion for all impoundments, while environmentally protective, less costly options are available for low priority impoundments. Closure costs could be passed on to the ratepayer. It is also important to note that these are not the final proposed classifications. After the release of the draft proposed classifications, CAMA requires the following process: 
 
 - DEQ must make available a written declaration that provides the documentation to support the draft proposed classifications within 30 days, which will be made available on the DEQ website. The written declaration will provide the technical and scientific background data and analyses and describe in detail how each impoundment was evaluated.
-- DEQ will publish a summary of the declaration weekly for three consecutive weeks in a newspaper in each county where a coal ash facility is located. 
-- The declaration will be provided to each local health director and made available in a library in each county where a coal ash facility is located. 
-- The summary of the declaration will be provided to each person who makes a request. 
+- DEQ will publish a summary of the declaration weekly for three consecutive weeks in a newspaper in each county where a coal ash facility is located.
+- The declaration will be provided to each local health director and made available in a library in each county where a coal ash facility is located.
+- The summary of the declaration will be provided to each person who makes a request.
 - A public meeting will be held in each county where a coal ash facility is located.
 - Following completion of the public meetings and the submission of comments, the department will consider the comments and develop final proposed classifications.
 
@@ -59,34 +61,34 @@ Approximately 45 people attended the public hearing, including staff members of 
 
 Four individuals registered before the meeting to make comments. Speakers were given five minutes for initial presentations and additional time was provided after everyone that registered to speak was finished. The list of speakers is included as Attachment II. The following is a summary of oral comments received at the public meeting summarized by topic (in no particular order): 
 
-- Environmental Justice – One speaker was from Lee County representing Lee County NAACP and voiced his concerns regarding the removal of ash to Lee County as the disposal area has low income, minority and older populations.
-- Risk Classification – A citizen commented about the nine factors listed in CAMA and asked how DEQ combined these nine factors into three criteria (dam safety, groundwater, and surface water). Another citizen suggested that all sites should be high-risk.
-- Not Applicable – A Duke representative gave an update of the Dan River Combined Cycle Station and the on-going ash removal. There were other concerns about the general workings of the Department and distrust of Governor McCrory.
+- **Environmental Justice** – One speaker was from Lee County representing Lee County NAACP and voiced his concerns regarding the removal of ash to Lee County as the disposal area has low income, minority and older populations.
+- **Risk Classification** – A citizen commented about the nine factors listed in CAMA and asked how DEQ combined these nine factors into three criteria (dam safety, groundwater, and surface water). Another citizen suggested that all sites should be high-risk.
+- **Not Applicable** – A Duke representative gave an update of the Dan River Combined Cycle Station and the on-going ash removal. There were other concerns about the general workings of the Department and distrust of Governor McCrory.
 
 ## III. Written Public Comment Summary
 
 In addition to the public meeting, DEQ received written comments during the public comment period. DEQ received one comment hand-submitted during the public meeting, two letters sent via United States Postal Service mail, and 193 comments received via email. The following is a summary of the written comments received during the comment period (in no particular order):
 
-- Beneficial Reuse – A member of the National Ash Management Advisory Board presented information that suggests that the aggressive closure schedules preclude the pursuit of beneficial reuse opportunities. 
-- Costs – Requests were made that Duke not pass on their cost to the consumers.
-- Environmental Justice – A research assistant at Duke University submitted their report on the impact of the coal ash ponds on low-income and communities of color, as well as cumulative impacts from nearby emitting facilities. A representative from the Southern Alliance for Clean Energy provided a petition that asks that Duke Energy be required to remove all of the coal ash at each of its 14 power plants sites to dry, lined storage away from our waterways and groundwater, and from our most vulnerable communities such as low-income communities or communities of color.
-- Excavation – The National Ash Management Advisory Board suggested other alternatives to excavation such as capping-in-place, monitored natural attenuation, slurry cutoff walls, in-place stabilization/fixation, pumping wells, permeable reactive barriers and volume reduction of impounded ash through escalation of beneficial use. They also suggested that the additional risk imposed by excavating and transporting ash from one location to another can exceed the potential risk posed by leaving the ash in place. Citizens commented that they would like to see ash removed and stored in dry, lined storage areas away from waterways.
-- Groundwater Assessments – The National Ash Management Advisory Board stated that licensed engineers and geologists, with support from health and environmental risk assessors, have determined that there is no imminent hazard and that those same professionals have determined that existing conditions at these sites do not present a substantial likelihood that death, serious illness, severe personal injury, or a substantial endangerment to health, property, or the environment will occur.
-- Landfills – Citizens encouraged Duke to avoid trucking the ash to landfills in other communities and want Duke to store the ash on Duke’s property or away from other communities. A suggestion was given that Duke should research storage options that provide better long-term solutions than lined landfills; favoring those that reuse coal ash or fully encapsulate the ash above ground with a more permanent barrier than a synthetic liner.
-- Private Well Issues – A representative from the Southern Alliance for Clean Energy stated that no one should have to question the safety of their drinking water. 
-- Risk Classification – All citizen comments supported the high-risk classification for the site. The National Ash Management Advisory Board stated that it may be appropriate for legislation to define the initiation of closure activities, but it should not stipulate a prescriptive approach with specific completion dates. Duke supplied a massive report for consideration in the risk classification for all of their sites. 
-- Not Applicable – A citizen was upset and believes that Duke is being allowed to run all over this State. Another comment suggested that Duke should invest in renewable energy and move away from coal and natural gas.
+- **Beneficial Reuse** – A member of the National Ash Management Advisory Board presented information that suggests that the aggressive closure schedules preclude the pursuit of beneficial reuse opportunities.
+- **Costs** – Requests were made that Duke not pass on their cost to the consumers.
+- **Environmental Justice** – A research assistant at Duke University submitted their report on the impact of the coal ash ponds on low-income and communities of color, as well as cumulative impacts from nearby emitting facilities. A representative from the Southern Alliance for Clean Energy provided a petition that asks that Duke Energy be required to remove all of the coal ash at each of its 14 power plants sites to dry, lined storage away from our waterways and groundwater, and from our most vulnerable communities such as low-income communities or communities of color.
+- **Excavation** – The National Ash Management Advisory Board suggested other alternatives to excavation such as capping-in-place, monitored natural attenuation, slurry cutoff walls, in-place stabilization/fixation, pumping wells, permeable reactive barriers and volume reduction of impounded ash through escalation of beneficial use. They also suggested that the additional risk imposed by excavating and transporting ash from one location to another can exceed the potential risk posed by leaving the ash in place. Citizens commented that they would like to see ash removed and stored in dry, lined storage areas away from waterways.
+- **Groundwater Assessments** – The National Ash Management Advisory Board stated that licensed engineers and geologists, with support from health and environmental risk assessors, have determined that there is no imminent hazard and that those same professionals have determined that existing conditions at these sites do not present a substantial likelihood that death, serious illness, severe personal injury, or a substantial endangerment to health, property, or the environment will occur.
+- **Landfills** – Citizens encouraged Duke to avoid trucking the ash to landfills in other communities and want Duke to store the ash on Duke’s property or away from other communities. A suggestion was given that Duke should research storage options that provide better long-term solutions than lined landfills; favoring those that reuse coal ash or fully encapsulate the ash above ground with a more permanent barrier than a synthetic liner.
+- **Private Well Issues** – A representative from the Southern Alliance for Clean Energy stated that no one should have to question the safety of their drinking water.
+- **Risk Classification** – All citizen comments supported the high-risk classification for the site. The National Ash Management Advisory Board stated that it may be appropriate for legislation to define the initiation of closure activities, but it should not stipulate a prescriptive approach with specific completion dates. Duke supplied a massive report for consideration in the risk classification for all of their sites.
+- **Not Applicable** – A citizen was upset and believes that Duke is being allowed to run all over this State. Another comment suggested that Duke should invest in renewable energy and move away from coal and natural gas.
 
 ## IV. Attachments
 
 1. Public Notice of March 1, 2016 Meeting
-1. Public Meeting Sign-in Forms
-1. Public Meeting Speaker List
-1. Audio File of Public Meeting
-1. Written Public Comments Received
-1. Supporting documentation received during public hearing
-1. Emails
-1. Meeting Notes
-1. Public Comment Summary Spreadsheet
-1. Meeting Agenda
-1. Presentation
+2. Public Meeting Sign-in Forms
+3. Public Meeting Speaker List
+4. Audio File of Public Meeting
+5. Written Public Comments Received
+6. Supporting documentation received during public hearing
+7. Emails
+8. Meeting Notes
+9. Public Comment Summary Spreadsheet
+10. Meeting Agenda
+11. Presentation

@@ -1,17 +1,16 @@
-[[IMAGE_1_0|NC Waste Management Environmental Quality logo]]
-
-PAT MCCRORY  
-Governor
-
-DONALD R. VAN DER VAART  
-Secretary
-
-MICHAEL SCOTT  
-Acting Director
-
+[[IMAGE_1_0|North Carolina Department of Environmental Quality and Waste Management logo]]
 State of North Carolina | Environmental Quality | Waste Management  
 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646  
-919 707 8200
+919 707 8200  
+
+PAT MCCRORY  
+Governor  
+
+DONALD R. VAN DER VAART  
+Secretary  
+
+MICHAEL SCOTT  
+Acting Director  
 
 # MEMORANDUM
 
@@ -31,12 +30,12 @@ On March 10, 2016, I served as meeting officer for a public meeting held at Robe
 
 This report has been prepared using the following outline:
 
-1. History/Background
-1. March 10, 2016 Public Meeting and Oral Comments Summary
-1. Written Public Comments Summary
-1. Attachments
+I. History/Background
+II. March 10, 2016 Public Meeting and Oral Comments Summary
+III. Written Public Comments Summary
+IV. Attachments
 
-[[IMAGE_1_1|]]
+[[IMAGE_1_1|Blue decorative footer line]]
 
 ## I. History/Background
 
@@ -63,8 +62,8 @@ Nine individuals registered before the meeting to make comments; ten individuals
 - **Excavation** – Speakers requested that full excavation occur as quickly as possible.
 - **Groundwater Assessments** – The speakers expressed concern over extensive groundwater contamination in the area. One residential well has received a do-not-drink order. Concerns were expressed about possible data gaps in groundwater data.
 - **Health Issues** – Speakers expressed concerns about their own personal health issues and/or health issues of others in the area.
-- **Farmland and Livestock** – Citizens expressed concern about impacts to adjacent farmland and impacts to the health of livestock. Concern was expressed that farmland has been made "toxic" by overflowing cooling pond and flooding. A speaker expressed concerns that the health of his cattle has been adversely affected, and that yield has been hurt by ash blowing over fields and backed up waterways.
-- **Risk Classification** – Comments supported the removal of the ash from the site. Some speakers supported the high-risk classification for the site and some requested that the classification be changed to high-risk.
+- **Farmland and Livestock** – Citizens expressed concern about impacts to adjacent farmland and impacts to the health of livestock. Concern was expressed that farmland has been made “toxic” by overflowing cooling pond and flooding. A speaker expressed concerns that the health of his cattle has been adversely affected, and that yield has been hurt by ash blowing over fields and backed up waterways.
+- **Risk Classification** –Comments supported the removal of the ash from the site. Some speakers supported the high-risk classification for the site and some requested that the classification be changed to high-risk.
 - **Surface Water** – Multiple speakers commented on the importance of the Lumber River to the community as a cultural and natural resource. Speakers expressed concern that the river has been significantly impacted by coal ash from the Weatherspoon Plant. Concerns about fish health and impacts to land adjacent to the river from flooding were also expressed.
 - **Other** – A Duke representative spoke about the current status of clean-up at the Weatherspoon Plant. Duke Energy plans to remove the coal ash from the Weatherspoon Plant and move it to a structural fill storage facility.
 
@@ -73,30 +72,30 @@ Nine individuals registered before the meeting to make comments; ten individuals
 In addition to the public meeting, DEQ received written comments during the public comment period. DEQ received 2 comments that were hand-submitted during the public meeting and one letter from a speaker was sent later via United States Postal Service mail. There were 223 comments received via email. The following is a summary of the written comments received during the comment period (in no particular order):
 
 - **Dam Safety** – Because of the 2001 structural breach of the dam resulting in an unauthorized release of wastewater into the Lumber River, commenters were concerned about future dam breaches. Concerns were expressed about impacts on the Lumber River if the dam were to fail.
-- **Ash recycling and reuse** - Several commenters requested that efforts be made to recycle the ash in cement products.
+- **Ash recycling and reuse**- Several commenters requested that efforts be made to recycle the ash in cement products.
 - **Beneficial Reuse Areas** – A member of the National Ash Management Advisory Board presented information that suggests that the aggressive closure schedules preclude the pursuit of beneficial reuse opportunities.
 - **Costs** – Requests were made that Duke not pass on their cost to the consumers.
 - **Environmental Justice** – A research assistant at Duke University submitted their report on the impact of the coal ash ponds on low-income and communities of color, as well as cumulative impacts from nearby emitting facilities.
 - **Excavation** – The National Ash Management Advisory Board suggested other alternatives to excavation such as capping-in-place, monitored natural attenuation, slurry cutoff walls, in-place stabilization/fixation, pumping wells, permeable reactive barriers and volume reduction of impounded ash through escalation of beneficial use. They also suggested that the additional risk imposed by excavating and transporting ash from one location to another can exceed the potential risk posed by leaving the ash in place. Other commenters requested that full excavation occur as quickly as possible.
 - **Groundwater Assessments** – Comments pointed out the fact that harmful pollutants have been detected in groundwater wells around the coal ash ponds. The National Ash Management Advisory Board stated that licensed engineers and geologists, with support from health and environmental risk assessors, have determined that there is no imminent hazard and that those same professionals have determined that existing conditions at these sites do not present a substantial likelihood that death, serious illness, severe personal injury, or a substantial endangerment to health, property, or the environment will occur.
-- **Landfills** – Citizens encouraged Duke to avoid trucking the ash to landfills in other communities and want Duke to store the ash on Duke's property or away from other communities. Suggestions were also made that Duke should continue to research alternative storage options that will provide a permanent solution for coal ash storage which fully encapsulates it with a more permanent barrier than a synthetic liner.
+- **Landfills** – Citizens encouraged Duke to avoid trucking the ash to landfills in other communities and want Duke to store the ash on Duke’s property or away from other communities. Suggestions were also made that Duke should continue to research alternative storage options that will provide a permanent solution for coal ash storage which fully encapsulates it with a more permanent barrier than a synthetic liner.
 - **Private Well Issues** – It was stated that no one should have to question the safety of their drinking water.
 - **Risk Classification** – Many citizen comments supported the intermediate-risk classification for the site but would prefer a high-risk designation. The National Ash Management Advisory Board stated that it may be appropriate for legislation to define the initiation of closure activities, but it should not stipulate a prescriptive approach with specific completion dates.
-- **Surface Water** – Many comments were concerned about seeps and leaks from the site flowing into the Lumber River which commenters consider to be a vital community resource. Additionally, comments noted that "about 138,000 people" are downstream from the Weatherspoon Plant.
-- **American Indian Input (Lumbee Tribe)** – A professor from NC State University was concerned about the date of the public hearing corresponding with "the quarterly meeting of the NC Commission of Indian Affairs (NC Department of Administration), which is held concurrently with the Unity Conference". The comment stated that NCDEQ should reach out to the Lumbee Tribe's leadership for input.
+- **Surface Water** – Many comments were concerned about seeps and leaks from the site flowing into the Lumber River which commenters consider to be a vital community resource. Additionally, comments noted that “about 138,000 people” are downstream from the Weatherspoon Plant.
+- **American Indian Input (Lumbee Tribe)** – A professor from NC State University was concerned about the date of the public hearing corresponding with “the quarterly meeting of the NC Commission of Indian Affairs (NC Department of Administration), which is held concurrently with the Unity Conference”. The comment stated that NCDEQ should reach out to the Lumbee Tribe’s leadership for input.
 
 Note: The majority of the emails received appear to have been electronically generated with most messages being one of 2 form letters repeated.
 
 ## IV. Attachments
 
-1. Public Notice of March 10, 2016 Meeting
-1. Public Meeting Sign-in Forms
-1. Public Meeting Speaker List
-1. Audio File of Public Meeting
-1. Written Public Comments Received
-1. Supporting documentation received during public hearing
-1. Meeting Notes
-1. Public Comment Summary Spreadsheet
-1. File of Public Meeting
+I. Public Notice of March 10, 2016 Meeting
+II. Public Meeting Sign-in Forms
+III. Public Meeting Speaker List
+IV. Audio File of Public Meeting
+V. Written Public Comments Received
+VI. Supporting documentation received during public hearing
+VII. Meeting Notes
+VIII. Public Comment Summary Spreadsheet
+IX. File of Public Meeting
 
 Note: The email record is available from OITS.

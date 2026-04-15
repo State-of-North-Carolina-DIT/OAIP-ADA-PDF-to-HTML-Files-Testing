@@ -1,22 +1,21 @@
 # 2023 Lake Gaston Vegetation Survey Report
-March 2024
+*March 2024*
 
-**Prepared By:**
-North Carolina State University
+*Prepared By:*
+**North Carolina State University**
 Dr. Rob Richardson, Professor and Extension Specialist
 Jessica R. Baumann, Extension Associate
 Aquatic Plant Management Program
 Raleigh, NC 27607
 
-**Submitted To:**
-Lake Gaston Weed Control Council
+*Submitted To:*
+**Lake Gaston Weed Control Council**
 Littleton, NC 27850
 
-[[IMAGE_1_1|Lake Gaston vegetation map and photo composite]]
-[[IMAGE_1_2|Detail photo of vegetation]]
-[[IMAGE_1_0|NC State University logo]]
+[[IMAGE_1_1|Lake Gaston composite maps and photos]]
 
-Aquatic Plant Management Program
+[[IMAGE_1_0|NC State University logo]]
+[[IMAGE_1_2|Aquatic Plant Management Program logo]]
 
 ## Introduction
 
@@ -26,7 +25,7 @@ Lake Gaston’s aquatic vegetation community is surveyed on an annual basis to e
 
 Currently, there are two problematic aquatic species found in Lake Gaston; the noxious submersed weed, hydrilla, and the nuisance alga, lyngbya. Both of these species require continued monitoring for management direction. Hydrilla, a federally listed invasive species, has been successfully managed within the system for almost a decade. However, hydrilla produces reproductive structures (turions and tubers) that have the potential to lay dormant for up to 7 years before germination (Nawrocki et al. 2016). Lake Gaston has also been infested with lyngbya, a native and nuisance cyanobacterium, that was first identified in the mid 1990’s. Lyngbya is a mat-forming, filamentous alga that grows in the benthic environment, but proliferates upward through the water column during the warmer summer months. The presence of lyngbya results in negative impacts for both the surrounding aquatic ecosystem and for stakeholders that can no longer utilize the affected shoreline areas. 
 
-Management response to both problematic species has been extensive at Lake Gaston. In 2012, hydrilla was reported to cover over 1,500 acres of Lake Gaston’s shoreline. An integrated management program using a combination of chemical and biological (grass carp) control methods has greatly reduced the level of hydrilla infestation. In 2012, approximately 230 acres of lyngbya were reported within Lake Gaston and to date, the infestation has continued to increase >1,000 acres. Yearly monitoring of both species is critical for continued management success.
+Management response to both problematic species has been extensive at Lake Gaston. In 2012, hydrilla was reported to cover over 1,500 acres of Lake Gaston’s shoreline. An integrated management program using a combination of chemical and biological (grass carp) control methods has greatly reduced the level of hydrilla infestation. In 2012, approximately 230 acres of lyngbya were reported within Lake Gaston and to date, the infestation has continued to increase >1,000 acres. Yearly monitoring of both species is critical for continued management success. 
 
 ## Methods
 
@@ -60,13 +59,13 @@ Hydrilla was located throughout Lake Gaston (Figure 6) and an increase in overal
 
 ### Lyngbya
 
-In 2023, lyngbya represented 13% of the total aquatic plant community, was present at 21% of total sites surveyed, and was estimated to cover 1,134 to 1,377 acres along the shoreline of Lake Gaston (Table 1; Figure 9). A range of acreage was determined for 2023 due to an increase in growth displayed by cladophora (Cladophra sp.), a common native species of filamentous green algae that can be distinguished microscopically from lyngbya but is almost impossible to distinguish from visual observation alone in-field. However, cladophora does not produce the robust benthic mats displayed by lyngbya and therefore will have the highest likelihood of misidentification when compared to lyngbya that has minimal growth density (trace). To acknowledge this potential misidentification and lyngbya acreage estimate variability (243 ac), two methods were used for acreage calculations: where 1) the dataset included all sites where lyngbya was identified as present (higher estimate) and 2) the dataset excluded all sites in which lyngbya growth was identified as trace (lower estimate). 
+In 2023, lyngbya represented 13% of the total aquatic plant community, was present at 21% of total sites surveyed, and was estimated to cover 1,134 to 1,377 acres along the shoreline of Lake Gaston (Table 1; Figure 9). A range of acreage was determined for 2023 due to an increase in growth displayed by cladophora (*Cladophra* sp.), a common native species of filamentous green algae that can be distinguished microscopically from lyngbya but is almost impossible to distinguish from visual observation alone in-field. However, cladophora does not produce the robust benthic mats displayed by lyngbya and therefore will have the highest likelihood of misidentification when compared to lyngbya that has minimal growth density (trace). To acknowledge this potential misidentification and lyngbya acreage estimate variability (243 ac), two methods were used for acreage calculations: where 1) the dataset included all sites where lyngbya was identified as present (higher estimate) and 2) the dataset excluded all sites in which lyngbya growth was identified as trace (lower estimate). 
 
 Since 2020, lyngbya has become the second most prevalent species found in Lake Gaston and has displayed a steady overall increase in total acreage since 2014 (Figure 9). Lyngbya forms thick filamentous mats along the bottom of the lake and therefore the annual survey also collects data to determine the density of those benthic mats at each survey site. Sites that contain lyngbya were incrementally ranked from 1 to 4, with trace detection and low mat density represented as a [1], moderate mat density represented as a [2 or 3], and gear saturation due to high mat densities represented as a [4] (Figure 10). A rank of [0] was provided to sites where visual surveys indicated surface mats were present, but environmental conditions prevented a rake from being tossed. Lyngbya sites that contained benthic mats at trace densities represented a large proportion of the survey (33%), however sites that contained benthic mats with moderate to high density levels represent the majority (44 and 22%, respectively). Lyngbya distribution has continued to spread throughout Lake Gaston resulting in few areas that were completely void of this noxious species.
 
 ### Eel Grass
 
-Eel grass, Valiseneria neotropicalis, is a native and beneficial submersed species that has displayed increased distribution and abundance at Lake Gaston (Figure 11). In 2023, eel grass represented 2% of the total aquatic plant community, was present at 3% of total survey sites, and was estimated to cover 130 acres of shoreline (Table 1; Figure 11). Eel grass is primarily found in the lower, eastern section of the lake and was noted to be dense at many sites within the Jimmie’s Creek area (Figure 12). Samples of eel grass were collected from Lake Gaston in 2023 and their genetics were analyzed by the Thum Lab at Montana State University. The results of that study concluded that the samples were classified as a native species of eel grass, V. neotropicalis, and were closely related to other eel grass samples collected from populations in North Carolina, South Carolina and Florida (R. Thum, personal communication). 
+Eel grass, *Valiseneria neotropicalis*, is a native and beneficial submersed species that has displayed increased distribution and abundance at Lake Gaston (Figure 11). In 2023, eel grass represented 2% of the total aquatic plant community, was present at 3% of total survey sites, and was estimated to cover 130 acres of shoreline (Table 1; Figure 11). Eel grass is primarily found in the lower, eastern section of the lake and was noted to be dense at many sites within the Jimmie’s Creek area (Figure 12). Samples of eel grass were collected from Lake Gaston in 2023 and their genetics were analyzed by the Thum Lab at Montana State University. The results of that study concluded that the samples were classified as a native species of eel grass, *V. neotropicalis*, and were closely related to other eel grass samples collected from populations in North Carolina, South Carolina and Florida (R. Thum, personal communication). 
 
 ## Conclusion and Management Implications
 
@@ -76,92 +75,85 @@ Eel grass, Valiseneria neotropicalis, is a native and beneficial submersed speci
 ## Conclusion and Management Implications (con’t)
 
 - Currently, there is an active management program directed towards lyngbya within Lake Gaston, with treatment efforts targeting 376 acres throughout the system. The success of this treatment program could potentially be reflected in the stability of reported lyngbya acreage from 2021 to 2023. However, distribution of lyngbya is still widespread throughout the whole system and displays dense growth in many areas. 
-- The eel grass population continues to increase in distribution and abundance at Lake Gaston. Although it has been confirmed to be the native V. neotropicalis, continued monitoring and sample collection is recommended and will be valuable for any future management decisions.
+- The eel grass population continues to increase in distribution and abundance at Lake Gaston. Although it has been confirmed to be the native *V. neotropicalis*, continued monitoring and sample collection is recommended and will be valuable for any future management decisions.
 - Continued yearly surveying of Lake Gaston’s aquatic plant community is recommended to monitor growth and distribution in both native and beneficial communities, as well as, nuisance, noxious, and additional potentially harmful species.
 
 ## References
+
 Nawrocki JJ, Richardson RJ, Hoyle ST. 2016. Monoecious hydrilla tuber dynamics following various management regimes on four North Carolina reservoirs. Journal of Aquatic Plant Management. 54: 12 – 19. 
 
-Table 1. The abundance and diversity of the aquatic plant community as reported during the 2023 shoreline vegetation survey at Lake Gaston, NC/VA.
+**Table 1.** The abundance and diversity of the aquatic plant community as reported during the 2023 shoreline vegetation survey at Lake Gaston, NC/VA.
 
-| Category/Species | # of Total Sites | % of Total Sites | % of Total Vegetation | % of Total Vegetation (2022) |
+**LAKE GASTON AQUATIC PLANT COMMUNITY - 2023**
+
+| | # of Total Sites | % of Total Sites | % of Total Vegetation | % of Total Vegetation (2022) |
 |---|---|---|---|---|
-| **SURVEYED SITES** | 6,186 | | | |
-| **VEGETATED SURVEY SITES** | 5,086 | 82 | | 75 |
-| **Emergent** | | | | |
-| **AMERICAN LOTUS** | 101 | 2 | 1 | 1 |
-| **ARROWHEAD** | 346 | 6 | 4 | 4 |
-| **CATTAIL / CUTGRASS** | 499 | 8 | 5 | 5 |
-| **PICKERELWEED** | 255 | 4 | 3 | 4 |
-| **RUSH** | 395 | 6 | 4 | 5 |
-| **SPATTERDOCK** | 300 | 5 | 3 | 3 |
-| **WATER WILLOW** | 3,758 | 61 | 39 | 47 |
-| **TOTAL EMERGENT SPECIES** | 5,654 | 91 | 63 | 70 |
-| **Submersed** | | | | |
-| **EEL GRASS** | 212 | 3 | 2 | 2 |
-| **EGERIA / ELODEA** | 16 | 0 | 0 | 0 |
-| **COONTAIL** | 101 | 2 | 1 | 0 |
-| **NAIAD** | 155 | 3 | 2 | 0 |
-| **HYDRILLA** | 431 | 7 | 4 | 1 |
-| **PONDWEED** | 93 | 2 | 1 | 0 |
-| **WATERMILFOIL** | 18 | 0 | 0 | 0 |
-| **TOTAL SUBMERSED SPECIES** | 1,026 | 17 | 9 | 5 |
-| **Floating Leaf** | | | | |
-| **WHITE WATERLILY** | 208 | 3 | 2 | 2 |
-| **WATERSHIELD** | 183 | 3 | 2 | 1 |
-| **TOTAL FLOATING LEAF SPECIES** | 391 | 6 | 5 | 3 |
-| **Algae** | | | | |
-| **CHARA / NITELLA** | 1,301 | 21 | 13 | 4 |
-| **COMPSOPOGON** | 21 | 0 | 0 | 1 |
-| **LYNGBYA** | 1,295 | 21 | 13 | 17 |
-| **TOTAL ALGAE SPECIES** | 2,617 | 42 | 23 | 22 |
+| SURVEYED SITES | 6,186 | | | |
+| VEGETATED SURVEY SITES | 5,086 | 82 | | 75 |
+| *Emergent* | | | | |
+| AMERICAN LOTUS | 101 | 2 | 1 | 1 |
+| ARROWHEAD | 346 | 6 | 4 | 4 |
+| CATTAIL / CUTGRASS | 499 | 8 | 5 | 5 |
+| PICKERELWEED | 255 | 4 | 3 | 4 |
+| RUSH | 395 | 6 | 4 | 5 |
+| SPATTERDOCK | 300 | 5 | 3 | 3 |
+| WATER WILLOW | 3,758 | 61 | 39 | 47 |
+| *TOTAL EMERGENT SPECIES* | 5,654 | 91 | 63 | 70 |
+| *Submersed* | | | | |
+| EEL GRASS | 212 | 3 | 2 | 2 |
+| EGERIA / ELODEA | 16 | 0 | 0 | 0 |
+| COONTAIL | 101 | 2 | 1 | 0 |
+| NAIAD | 155 | 3 | 2 | 0 |
+| HYDRILLA | 431 | 7 | 4 | 1 |
+| PONDWEED | 93 | 2 | 1 | 0 |
+| WATERMILFOIL | 18 | 0 | 0 | 0 |
+| *TOTAL SUBMERSED SPECIES* | 1,026 | 17 | 9 | 5 |
+| *Floating Leaf* | | | | |
+| WHITE WATERLILY | 208 | 3 | 2 | 2 |
+| WATERSHIELD | 183 | 3 | 2 | 1 |
+| *TOTAL FLOATING LEAF SPECIES* | 391 | 6 | 5 | 3 |
+| *Algae* | | | | |
+| CHARA / NITELLA | 1,301 | 21 | 13 | 4 |
+| COMPSOPOGON | 21 | 0 | 0 | 1 |
+| LYNGBYA | 1,295 | 21 | 13 | 17 |
+| *TOTAL ALGAE SPECIES* | 2,617 | 42 | 23 | 22 |
 
-Table 2. Hydrilla tuber bank densities (tuber / m2) calculated on a yearly basis for 18 creeks throughout Lake Gaston, NC/VA. Average density estimates for each creek are shown for the initial survey (2012) and the last five surveys that were conducted (2019-2023). Results for the 2023 survey season that are represented in italics indicate sites in which the hydrilla population has fallen below detectable levels and therefore are not sampled on a regular basis. 
+**Table 2.** Hydrilla tuber bank densities (tuber / m2) calculated on a yearly basis for 18 creeks throughout Lake Gaston, NC/VA. Average density estimates for each creek are shown for the initial survey (2012) and the last five surveys that were conducted (2019-2023). Results for the 2023 survey season that are represented in italics indicate sites in which the hydrilla population has fallen below detectable levels and therefore are not sampled on a regular basis. 
 
-| Creek | Years Since Last Tuber Detection | Starting Bank Density (2012) | 2019 | 2020 | 2021 | 2022 | 2023 |
+**LAKE GASTON HYDRILLA TUBER BANK ESTIMATES**
+
+| | Years Since Last Tuber Detection | Starting Bank Density (2012) | 2019 | 2020 | 2021 | 2022 | 2023 |
 |---|---|---|---|---|---|---|---|
-| **East of Easton’s Ferry Bridge** | | | | | | | |
-| **Jimmies Creek** | 0 | 36.41 | 0 | 0 | 0 | 0.82 | 12.33 |
-| **Timberline Shores** | 5 | 3.08 | 0 | 0 | 0 | 0 | n/a |
-| **Cold Springs Branch** | 4 | 34.95 | .82 | 0 | 0 | 0 | n/a |
-| **Lakeview** | 9 | 124.37 | 0 | 0 | 0 | 0 | n/a |
-| **Lizard Creek** | 0 | N/A | 18.91 | 0 | 24.39 | 53.72 | 15.90 |
-| **Big Stone House** | 0 | 31.25 | 0 | 0 | 0 | 0 | 7.40 |
-| **Pretty Creek** | 7 | 38.72 | 0 | 0 | 0 | 0 | n/a |
-| **Poe Creek** | 4 | 125.4 | 0.82 | 0 | 0 | 0 | n/a |
-| **Woodland Hurst** | 5 | 135.67 | 0 | 0 | 0 | 0 | 0 |
-| **Sledge Creek** | 1 | 8.22 | 0 | 0.82 | 0 | 2.47 | n/a |
-| **Hamlin** | 4 | 446.08 | 14.8 | 0 | 0 | 0 | 0 |
-| **West of Easton’s Ferry Bridge** | | | | | | | |
-| **Hubquarter** | 3 | 292.73 | 1.64 | 1.64 | 0 | 0 | 0 |
-| **Lyons Creek** | 4 | 293.96 | 7.4 | 0 | 0 | 0 | 0 |
-| **Poplar Creek** | 0 | 89.63 | 0.82 | 8.22 | 0 | 0 | 31.52 |
-| **Hawtree** | 0 | 38.03 | 37 | 6.58 | 4.93 | 22.61 | 84.28 |
-| **Smith Creek** | 0 | 8.22 | 0 | 0 | 0 | 3.70 | 0.62 |
-| **Flats** | 5 | 119.23 | 0 | 0 | 0 | 0 | n/a |
-| **Cottons Creek** | 0 | 217.9 | 115.11 | 42.48 | 0 | 5.76 | 13.16 |
+| *East of Easton’s Ferry Bridge* | | | | | | | |
+| Jimmies Creek | 0 | 36.41 | 0 | 0 | 0 | 0.82 | 12.33 |
+| Timberline Shores | 5 | 3.08 | 0 | 0 | 0 | 0 | *n/a* |
+| Cold Springs Branch | 4 | 34.95 | .82 | 0 | 0 | 0 | *n/a* |
+| Lakeview | 9 | 124.37 | 0 | 0 | 0 | 0 | *n/a* |
+| Lizard Creek | 0 | *N/A* | 18.91 | 0 | 24.39 | 53.72 | 15.90 |
+| Big Stone House | 0 | 31.25 | 0 | 0 | 0 | 0 | 7.40 |
+| Pretty Creek | 7 | 38.72 | 0 | 0 | 0 | 0 | *n/a* |
+| Poe Creek | 4 | 125.4 | 0.82 | 0 | 0 | 0 | *n/a* |
+| Woodland Hurst | 5 | 135.67 | 0 | 0 | 0 | 0 | 0 |
+| Sledge Creek | 1 | 8.22 | 0 | 0.82 | 0 | 2.47 | *n/a* |
+| Hamlin | 4 | 446.08 | 14.8 | 0 | 0 | 0 | 0 |
+| *West of Easton’s Ferry Bridge* | | | | | | | |
+| Hubquarter | 3 | 292.73 | 1.64 | 1.64 | 0 | 0 | 0 |
+| Lyons Creek | 4 | 293.96 | 7.4 | 0 | 0 | 0 | 0 |
+| Poplar Creek | 0 | 89.63 | 0.82 | 8.22 | 0 | 0 | 31.52 |
+| Hawtree | 0 | 38.03 | 37 | 6.58 | 4.93 | 22.61 | 84.28 |
+| Smith Creek | 0 | 8.22 | 0 | 0 | 0 | 3.70 | 0.62 |
+| Flats | 5 | 119.23 | 0 | 0 | 0 | 0 | *n/a* |
+| Cottons Creek | 0 | 217.9 | 115.11 | 42.48 | 0 | 5.76 | 13.16 |
 
 Total Number of Survey Sites - By Year
-5775
-6564
-5378
-5714
-6178
-6503
-5006
-6041
-5368
-4938
-5954
-6311
-0
-1000
-2000
-3000
-4000
-5000
-6000
 7000
+6000
+5000
+4000
+3000
+2000
+1000
+0
 2012
 2013
 2014
@@ -174,127 +166,162 @@ Total Number of Survey Sites - By Year
 2021
 2022
 2023
+6564
+5775
+5378
+5714
+6178
+6503
+5006
+6041
+5368
+4938
+5954
+6311
 Number of Survey Sites
 
-Figure 1. Bar graph representing total sites surveyed during yearly vegetation surveys conducted on Lake Gaston, NC/VA between 2012 and 2023.
+**Figure 1.** Bar graph representing total sites surveyed during yearly vegetation surveys conducted on Lake Gaston, NC/VA between 2012 and 2023.
 
 Lake Gaston Aquatic Plant Community - 2023
-0
-5
-10
-15
-20
-25
-30
-35
-40
 45
+40
+35
+30
+25
+20
+15
+10
+5
+0
+Emergent
+Submergent
+Floating
+Algae
 % Total Vegetation
-Emergent Submergent Floating Algae
+American Lotus
+Arrowhead
+Cattail / Cutgrass
+Pickerelweed
+Rush
+Spatterdock
+Water Willow
+Eel Grass
+Egeria / Elodea
+Coontail
+Naiad
+Hydrilla
+Pondweed
+Watermilfoil
+White Water Lily
+Watershield
+Chara / Nitella
+Compsopogon
+Lyngbya
 
-Figure 2. Bar graph representing the overall aquatic plant community of Lake Gaston, NC/VA in 2023. Overall, the community is represented by emergent (58%), submersed (11%), floating leaf (4%), and algae (27%) species.
+**Figure 2.** Bar graph representing the overall aquatic plant community of Lake Gaston, NC/VA in 2023. Overall, the community is represented by emergent (58%), submersed (11%), floating leaf (4%), and algae (27%) species.
 
-[[IMAGE_11_0|Map of Lake Gaston showing Water Willow present]]
+[[IMAGE_11_0|Map of water willow presence in Lake Gaston 2023]]
 
-Figure 3. Map indicating sites where water willow was present during the shoreline vegetation survey of Lake Gaston, NC/VA in 2023. Water willow was the most prevalent species found in 2023.
+**Figure 3.** Map indicating sites where water willow was present during the shoreline vegetation survey of Lake Gaston, NC/VA in 2023. Water willow was the most prevalent species found in 2023.
 
-[[IMAGE_12_0|Map of Lake Gaston showing Lyngbya present]]
+[[IMAGE_12_0|Map of lyngbya presence in Lake Gaston 2023]]
 
-Figure 4. Map indicating sites where lyngbya was present during the shoreline vegetation survey of Lake Gaston, NC/VA in 2023. Lyngbya is a native species, but is considered to be at noxious levels within the system. Lyngbya was the second most prevalent species found in 2023.
+**Figure 4.** Map indicating sites where lyngbya was present during the shoreline vegetation survey of Lake Gaston, NC/VA in 2023. Lyngbya is a native species, but is considered to be at noxious levels within the system. Lyngbya was the second most prevalent species found in 2023.
 
-[[IMAGE_13_0|Map of Lake Gaston showing Chara present]]
+[[IMAGE_13_0|Map of chara/nitella presence in Lake Gaston 2023]]
 
-Figure 5. Map indicating sites where chara/nitella was present during the shoreline vegetation survey of Lake Gaston, NC/VA in 2023. Chara/nitella is a native species and was one of the third most prevalent species found in 2023.
+**Figure 5.** Map indicating sites where chara/nitella was present during the shoreline vegetation survey of Lake Gaston, NC/VA in 2023. Chara/nitella is a native species and was one of the third most prevalent species found in 2023.
 
-[[IMAGE_14_0|Map of Lake Gaston showing Hydrilla present]]
+[[IMAGE_14_0|Map of hydrilla presence in Lake Gaston 2023]]
 
-Figure 6. Map indicating sites where hydrilla was present during the shoreline vegetation survey of Lake Gaston, NC/VA in 2023. Hydrilla is a federally noxious weed species and was the most prevalent submersed species found in 2023.
+**Figure 6.** Map indicating sites where hydrilla was present during the shoreline vegetation survey of Lake Gaston, NC/VA in 2023. Hydrilla is a federally noxious weed species and was the most prevalent submersed species found in 2023.
 
 Lake Gaston Hydrilla
-0
-10
-20
-30
-40
-50
-60
-70
-0
-200
-400
-600
-800
-1000
-1200
-1400
-1600
 1800
+1600
+1400
+1200
+1000
+800
+600
+400
+200
+0
 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
-Percent of Rake Tosses
 Acres
+70
+60
+50
+40
+30
+20
+10
+0
+Percent of Rake Tosses
 Acres
 Rake Tosses
 
-Figure 7. Estimated standing acreage (bars) and percent occurrence in the vegetation survey (line) of hydrilla in Lake Gaston, NC/VA between 2012 and 2023.
+**Figure 7.** Estimated standing acreage (bars) and percent occurrence in the vegetation survey (line) of hydrilla in Lake Gaston, NC/VA between 2012 and 2023.
 
-[[IMAGE_16_0|Map showing hydrilla distribution and biovolume densities in upper Poplar Creek]]
+[[IMAGE_16_0|Map of hydrilla distribution and biovolume densities in upper Poplar Creek 2023]]
 
-Figure 8. Map showing hydrilla distribution and biovolume densities in upper Poplar Creek during the 2023 survey. Interpolated biovolume estimates of submerged aquatic vegetation are displayed using cool (blue) colors to represent low biovolume and warm (red) colors to represent high biovolume. It should be noted that shallow depths can result in false-positive biovolume estimates.
+**Figure 8.** Map showing hydrilla distribution and biovolume densities in upper Poplar Creek during the 2023 survey. Interpolated biovolume estimates of submerged aquatic vegetation are displayed using cool (blue) colors to represent low biovolume and warm (red) colors to represent high biovolume. It should be noted that shallow depths can result in false-positive biovolume estimates.
 
 Lake Gaston Lyngbya
-0
-5
-10
-15
-20
-25
-0
-200
-400
-600
-800
-1000
-1200
-1400
 1600
+1400
+1200
+1000
+800
+600
+400
+200
+0
 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+Acres
+Acres
+25
+20
+15
+10
+5
+0
 Percent of Rake Tosses
-Acres
-Acres
 
-Figure 9. Estimated standing acreage (bars) and percent occurrence in the vegetation survey (line) of lyngbya in Lake Gaston, NC/VA between 2012 and 2023.
+**Figure 9.** Estimated standing acreage (bars) and percent occurrence in the vegetation survey (line) of lyngbya in Lake Gaston, NC/VA between 2012 and 2023.
 
-[[IMAGE_18_0|Map indicating the site rankings for locations that contained lyngbya]]
+[[IMAGE_18_0|Map of lyngbya site rankings and mat densities in Lake Gaston 2023]]
 
-Figure 10. Map indicating the site rankings for locations that contained lyngbya during the shoreline vegetation survey of Lake Gaston, NC/VA 2023. Survey sites are incrementally ranked with 1 (green dots) representing trace detection and low mat growth density, 2/3 (orange dots) representing sparse to moderate growth density, and 4 (red dots) representing gear saturation due to high mat growth densities. Yellow dots indicate areas where surface mats were detected, however mat density was not sampled.
+**Figure 10.** Map indicating the site rankings for locations that contained lyngbya during the shoreline vegetation survey of Lake Gaston, NC/VA 2023. Survey sites are incrementally ranked with 1 (green dots) representing trace detection and low mat growth density, 2/3 (orange dots) representing sparse to moderate growth density, and 4 (red dots) representing gear saturation due to high mat growth densities. Yellow dots indicate areas where surface mats were detected, however mat density was not sampled.
 
 Lake Gaston Eel Grass
-0.0
-0.5
-1.0
-1.5
-2.0
-2.5
-3.0
-3.5
-4.0
-4.5
-5.0
-0
-20
-40
-60
-80
-100
-120
 140
+120
+100
+80
+60
+40
+20
+0
 2019 2020 2021 2022 2023
-Percent Survey Sites
 Acres
-Acres % Sites
+Acres
+% Sites
+5.0
+4.5
+4.0
+3.5
+3.0
+2.5
+2.0
+1.5
+1.0
+0.5
+0.0
+Percent Survey Sites
 
-Figure 11. Estimated standing acreage (bars) and percent occurrence in the vegetation survey (line) of eel grass in Lake Gaston, NC/VA between 2019 and 2023.
+**Figure 11.** Estimated standing acreage (bars) and percent occurrence in the vegetation survey (line) of eel grass in Lake Gaston, NC/VA between 2019 and 2023.
 
-[[IMAGE_20_0|Map showing eel grass distribution and biovolume densities in Jimmies Creek]]
+[[IMAGE_20_0|Map of eel grass distribution and biovolume densities in Jimmie’s Creek 2023]]
 
-Figure 12. Map showing eel grass distribution and biovolume densities in the Jimmie’s Creek area during the 2023 survey. Interpolated biovolume estimates of submerged aquatic vegetation are displayed using cool (blue) colors to represent low biovolume and warm (red) colors to represent high biovolume. It should be noted that shallow depths can result in false-positive biovolume estimates.
+**Figure 12.** Map showing eel grass distribution and biovolume densities in the Jimmie’s Creek area during the 2023 survey. Interpolated biovolume estimates of submerged aquatic vegetation are displayed using cool (blue) colors to represent low biovolume and warm (red) colors to represent high biovolume. It should be noted that shallow depths can result in false-positive biovolume estimates.

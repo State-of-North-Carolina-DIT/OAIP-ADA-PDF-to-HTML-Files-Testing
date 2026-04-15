@@ -1,18 +1,18 @@
 # Notice of Issuance of Mining Permit
 
-[[IMAGE_1_0|North Carolina state seal]]
-
 ROY COOPER  
-Governor  
+*Governor*
 
 MICHAEL S. REGAN  
-Secretary  
+*Secretary*
 
 BRIAN WRENN  
-Director  
+*Director*
+
+[[IMAGE_1_1|North Carolina State Seal]]
 
 NORTH CAROLINA  
-Environmental Quality  
+*Environmental Quality*
 
 December 15, 2020
 
@@ -32,11 +32,11 @@ Enclosures
 
 cc: Ms. Tamera Eplin, PE
 
+[[IMAGE_1_0|Department of Environmental Quality logo]]
+
 North Carolina Department of Environmental Quality | Division of Energy, Mineral and Land Resources  
 512 North Salisbury Street | 1612 Mail Service Center | Raleigh, North Carolina 27699-1612  
 919.707.9200
-
-[[IMAGE_2_0|Signed notice of issuance]]
 
 ## NOTICE OF ISSUANCE OF MINING PERMIT
 
@@ -50,7 +50,7 @@ If you file a contested case petition, it must be in writing and in the form pre
 
 Any questions about filing a petition may be directed to the Clerk of the Office of Administrative Hearings by telephoning (919) 431-3000.
 
-You must serve the Department of Environmental Quality by mailing a copy of the petition to Mr. Bill Lane, Registered Agent and General Counsel, Department of Environment and Natural Resources, 1601 Mail Service Center, Raleigh, NC 27699-1601.
+You must serve the **Department of Environmental Quality** by mailing a copy of the petition to Mr. Bill Lane, Registered Agent and General Counsel, Department of Environment and Natural Resources, 1601 Mail Service Center, Raleigh, NC 27699-1601.
 
 Brian Wrenn,  
 Director  

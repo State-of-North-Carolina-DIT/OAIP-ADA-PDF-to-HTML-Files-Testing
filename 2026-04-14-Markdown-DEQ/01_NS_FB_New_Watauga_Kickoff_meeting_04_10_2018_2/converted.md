@@ -1,18 +1,19 @@
-[[IMAGE_1_0|Background showing coastal and city scenes with NC logo]]
+[[IMAGE_1_0|Background landscape with lighthouse, city skyline, and NC DEQ logo]]
 
-# River Basin Water Resources Plan/Hydrologic Model Development Process
+# River Basin Water Resources Plan/ Hydrologic Model Development Process
 
-Neela Sarwar
-NCDEQ - DWR
+Neela Sarwar  
+NCDEQ - DWR  
 April 10, 2018
 
-Department of Environmental Quality
+*Department of Environmental Quality*
 
 ## Why Need River Basin Plans
 
-[[IMAGE_2_0|Collage of water uses including fishing, hydroelectric dams, agriculture, and recreation]]
+[[IMAGE_2_0|Collage of water resources, dams, fishing, pipelines, agriculture, city skyline, and nuclear power plant]]
 
-Water Resources Plans support
+**Water Resources Plans support**
+
 - Sustainable management
 - Reliable, quantitative methods for planning
 - Objective management and regulatory decision making
@@ -28,73 +29,84 @@ Water Resources Plans support
 
 ## Process Components
 
-[[IMAGE_4_0|Flowchart of Process Components]]
+[[IMAGE_4_0|Flowchart showing Hydrologic Model and Water Use components leading to River Basin Water Resources Plan]]
+
+DWR Division of Water Resources
 
 - Hydrologic Model -> River Basin Water Resources Plan
-- Model Inputs:
-  - Historical Flows
-  - Operation Guidelines
-  - Water Use
-    - Local Water Supply Plans
-    - Self-supplied Industry
-    - Agriculture
-    - Other Registered Withdrawers
-- Evaluation Criteria
+- Historical Flows
+- Operation Guidelines
+- Water Use -> Evaluation Criteria
+- Local Water Supply Plans
+- Self-supplied Industry
+- Agriculture
+- Other Registered Withdrawers
 
-## Process Components: Historical Flows
+## Historical Flows
+
+[[IMAGE_5_1|Graph showing Daily Averaged Streamflow (cfs) over more than 75 years for Haw River]]
 
 More than 75 years Stream Flow
 
-[[IMAGE_5_1|Graph showing daily averaged streamflow for Haw River at Haw River, NC from 1935 to 2002]]
+NCDWR
 
-## Process Components: Operations Guidelines
+Station 02096500 - HAW RIVER AT HAW RIVER, NC --- Daily Averaged Streamflow (cfs)  
+Daily flows less than or equal to zero are set to 0.01 cfs.
+
+## Operations Guidelines
 
 - Quantity and timing of specific flows
-  - Aquatic habitats
-  - Water quality protection
-  - Intake coverage
-  - Recreation
+    - Aquatic habitats
+    - Water quality protection
+    - ✓ Intake coverage
+    - Recreation
 - Reservoir water level limits and timing
-  - Structural limits
-  - Aquatic habitat protection
-  - Intake coverage
-  - Boat ramp access
-  - Authorized purposes and storage allocations
+    - Structural limits
+    - Aquatic habitat protection
+    - ✓ Intake coverage
+    - Boat ramp access
+    - Authorized purposes and storage allocations
 
-[[IMAGE_6_1|Water recreation and dam infrastructure photos]]
-[[IMAGE_6_2|Dam intake photo]]
-[[IMAGE_6_3|Fish photo]]
+[[IMAGE_6_1|Photos of water recreation, dam, and nuclear plant]]
+[[IMAGE_6_2|Photo of aquatic habitat]]
+[[IMAGE_6_3|Photo of a fish]]
 
-## Process Components: Water Use
+## Water Use
 
 - Water Withdrawal Registrations
-  - Agriculture > 1,000,000 gallons per day
-  - Non-agriculture > 100,000 gallons per day
+    - Agriculture > 1,000,000 gallons per day
+    - Non-agriculture > 100,000 gallons per day
 - Local Water Supply Plans
-  - Local Government Water Systems
-  - Other Large Community Water Systems 
+    - Local Government Water Systems
+    - Other Large Community Water Systems
 
-## Process Components: Water Use
+## Water Use
 
-[[IMAGE_8_1|Map of water use locations across Haywood, Buncombe, Transylvania, and Henderson counties]]
+[[IMAGE_8_1|Map showing process components water use across Haywood, Buncombe, Henderson, and Transylvania counties]]
 
-## Process Components: Water Use
+HAYWOOD, BUNCOMBE, HENDERSON, TRANSYLVANIA
+
+NORTH FORK RESERVOIR, Montreat, Black Mountain, Woodfin, Biltmore Forest, Hendersonville, Laurel Park, Saluda, Brevard, Maggie Valley SD, Junaluska, Canton, THANS CREEK, CAMBELL'S CREEK, Clyde, PIGEON RIVER, Waynesville, ALLENS CREEK RESERVOIR, NO FORK-MILLS RIVER, MILLS RIVER, BRADLEY CREEK.
+
+## Water Use
 
 Seasonal Use Pattern / Avg Annual Demands
 
-[[IMAGE_9_2|Bar chart of Water Use Pattern showing Monthly Average Use versus Annual Average Use]]
+[[IMAGE_9_2|Bar chart showing Water Use Pattern: Monthly Average Use vs Annual Average Use]]
 
 50 yr Projected Demands
 
-[[IMAGE_9_3|Line chart of 2006 Supply and Demand Projections showing Supply remaining constant and Demands increasing from 2006 to 2050]]
+[[IMAGE_9_3|Line graph showing 50 yr Projected Demands: 2006 Supply and Demand Projections]]
 
-## Process Components: Hydrologic Model
+## Hydrologic Model
 
-[[IMAGE_10_2|Broad River Basin Schematic map showing locations across McDowell, Rutherford, Cleveland, Buncombe, Henderson, Polk, and Cherokee counties]]
+[[IMAGE_10_2|Schematic map of the Broad River Basin]]
 
-## Process Components: Hydrologic Model
+BROAD RIVER BASIN SCHEMATIC
 
-### Major Assumptions
+Buncombe, McDowell, Rutherford, Polk, Henderson, Upper Broad, Cherokee, Cleveland, Lincoln, Gaston.
+
+## Hydrologic Model: Major Assumptions
 
 - Future withdrawals will come from current intake locations
 - Future wastewater discharges will be same percent of withdrawals at the same locations
@@ -102,68 +114,58 @@ Seasonal Use Pattern / Avg Annual Demands
 - Future flows will be within the range of flows in the historical record
 - Local utilities are the best judges of future system growth
 
-## Process Components: Evaluation Criteria
+## Evaluation Criteria
 
-How often?
+[[IMAGE_12_0|Collage of drought impacts, dead fish, low reservoir levels, and a tap with a cork in it]]
+
+How often?  
 What’s the chance?
 
-[[IMAGE_12_0|Collage of images showing dried river beds, dead fish, a dripping faucet with a cork, and a closed boat ramp during low water]]
-
-## Process Components: Evaluation Criteria
+## Evaluation Criteria
 
 - Reservoir Water Levels
 
-[[IMAGE_13_2|Line chart showing Boating Impacts on Jordan Lake (June - September) comparing 2003, 2030, and 2050 Demands]]
+[[IMAGE_13_2|Line graph showing Boating Impacts on Jordan Lake for June - September]]
 
-## Process Components: Evaluation Criteria
+## Evaluation Criteria
 
 - Stream Flows
 
-[[IMAGE_14_2|Line chart showing Lock and Dam #3 Flow Duration under different demand scenarios]]
+[[IMAGE_14_2|Line graph showing Lock and Dam #3 Flow Duration]]
 
-## Process Components: Evaluation Criteria
+## Evaluation Criteria
 
 - Flow Regime Changes
 
-Stream Condition Middle Deep River (Node 280)
+Stream Condition Middle Deep River (Node 280)  
 June - November
 
-0.0%
-5.0%
-10.0%
-15.0%
-20.0%
-25.0%
-30.0%
-35.0%
+% of Days at Flow Level  
+0.0%, 5.0%, 10.0%, 15.0%, 20.0%, 25.0%, 30.0%, 35.0%
 
-Unimpaired
-2003 Demands
-2030 Demands
-2050 Demands
+Unimpaired, 2003 Demands, 2030 Demands, 2050 Demands
 
-% of Days at Flow Level
+- < 10% of QAA*
+- 10 - 20% of QAA
+- 20 - 30% of QAA
+- 30 - 40% of QAA
+- 40 - 50% of QAA
+- 50 - 60% of QAA
+- 60 - 100% of QAA
+- 100 - 200% of QAA
+- >200 of QAA
 
-< 10% of QAA*
-10 - 20% of QAA
-20 - 30% of QAA
-30 - 40% of QAA
-40 - 50% of QAA
-50 - 60% of QAA
-60 - 100% of QAA
-100 - 200% of QAA
->200 of QAA
-
-## Process Components: Evaluation Criteria
+## Evaluation Criteria
 
 - Water Supply Deficits
 
 Table 4-3: Water Supply Demand & Deficits Predicted by the Neuse River Basin Hydrologic Model, 2050 Scenario
 
-[[IMAGE_16_1|Table background graphic for Water Supply Demand and Deficits]]
+[[IMAGE_16_1|Table showing Water Supply Demand & Deficits Predicted by the Neuse River Basin Hydrologic Model, 2050 Scenario]]
 
-| Model Scenario / Water Systems | 2050 Average Demand (mgd) | 2050 Average Deficit (mgd) | Longest Deficit Period (Days) | Years Demand Not Fully Met Out of 78 |
+| Model Scenario | 2050 Average Demand (mgd) | 2050 Average Deficit (mgd) | Longest Deficit Period (Days) | Years Demand Not Fully Met Out of 78 |
 |---|---|---|---|---|
+| **Water Systems** | | | | |
 | Orange-Alamance | 0.21 | 0.14 | 30 | 2 |
 | Hillsborough | 2.76 | 1.84 | 30 | 2 |
 | Piedmont Minerals | 0.25 | 0.16 | 30 | 2 |
@@ -171,21 +173,17 @@ Table 4-3: Water Supply Demand & Deficits Predicted by the Neuse River Basin Hyd
 | Durham | 40.92 | 29.13 | 60 | 5 |
 | SGWASA | 10.01 | 8.7 | 79 | 14 |
 
-Longest Deficit (Days) = The greatest number of consecutive days over the entire 78 year record that the full water supply demand may not be met.
-Years Demand Not Met = The number of years out of a total of 78 annual flow patterns that the full water supply demand may not be met.
-Systems in Red are those for which a deficit is predicted in any scenario seven or more years out of the 78 year record.
+**Longest Deficit (Days)** = The greatest number of consecutive days over the entire 78 year record that the full water supply demand may not be met.  
+**Years Demand Not Met** = The number of years out of a total of 78 annual flow patterns that the full water supply demand may not be met.  
+**Systems in Red** are those for which a deficit is predicted in any scenario seven or more years out of the 78 year record.
 
-## Process Components: Evaluation Criteria
-
-### 3 Critical Questions – Evaluation Criteria
+## 3 Critical Questions – Evaluation Criteria
 
 - What is the answer to each of the evaluation questions?
 - Are there areas where there may be problems meeting expected demands?
 - When can we expect to have shortages and how can we adapt when there is a shortage?
 
-## Process Components: Evaluation Criteria
-
-### Identify Potential Risks :
+## Identify Potential Risks :
 
 - Would a reasonable reduction in demands avoid the identified problems?
 - Could an alternative source meet expected demands?
@@ -194,56 +192,50 @@ Systems in Red are those for which a deficit is predicted in any scenario seven 
 
 ## Project Organization
 
-- Data Collection
-  HDR
-- Data, Model Evaluation & Plan Development
-  NCDWR
-- Model Development
-  HydroLogics
+- Data Collection (HDR)
+- Model Development (HydroLogics)
+- Data, Model Evaluation & Plan Development (NCDWR)
 
 ## Model Development Tasks and Your Participations
 
-- Task 1- Inflow Data Development 
-  - Historic Data Collection
-  - Impairment Data
-- Task 2 - OASIS Application Development
+- Task 1- Inflow Data Development
+    - Historic Data Collection
+    - Impairment Data
+- *Task 2 - OASIS Application Development*
 - Task 3 - Organize and Conduct Meetings
-  - Coordinate with stakeholders
-  - Meetings
-- Task 4 – Deliverables
-- Task 5 - Training and Installation 
-  - Model on DWR’s server 
-  - Access with account for users
-
-[[IMAGE_20_2|]]
-[[IMAGE_20_3|]]
+    - Coordinate with stakeholders
+    - Meetings
+- *Task 4 – Deliverables*
+- Task 5 - Training and Installation
+    - Model on DWR’s server
+    - Access with account for users
 
 ## Project Participants
 
 - List of General Stakeholders
-  - Municipal and Community water users
-  - Industrial and Agricultural users
-  - Other users
-  - NGOs
-  - River Keepers
-  - Agencies
-  - Institutions
+    - Municipal and Community water users
+    - Industrial and Agricultural users
+    - Other users
+    - NGOs
+    - River Keepers
+    - Agencies
+    - Institutions
 
 ## Project Contacts
 
-- Basin Webpages
+- Basin Webpages  
   [https://www.ncwater.org/Data_and_Modeling](https://www.ncwater.org/Data_and_Modeling)
 - Contacts at NCDWR
-  - E-mail to staff for questions or concerns
-  - [dwr-french-broad-staff@lists.ncmail.net](mailto:dwr-french-broad-staff@lists.ncmail.net)
-  - [dwr-new-watauga-staff@lists.ncmail.net](mailto:dwr-new-watauga-staff@lists.ncmail.net)
+    - E-mail to staff for questions or concerns
+    - [dwr-french-broad-staff@lists.ncmail.net](mailto:dwr-french-broad-staff@lists.ncmail.net)
+    - [dwr-new-watauga-staff@lists.ncmail.net](mailto:dwr-new-watauga-staff@lists.ncmail.net)
 - E-mail list serve Subscriptions for Stakeholders
-  - [https://lists.ncmail.net/mailman/listinfo/dwr-french-broad-model](https://lists.ncmail.net/mailman/listinfo/dwr-french-broad-model)
-  - [https://lists.ncmail.net/mailman/listinfo/dwr-new-watauga-model](https://lists.ncmail.net/mailman/listinfo/dwr-new-watauga-model)
-- Model Development Project Lead at DWR
-  Neelufa Sarwar, 
-  Water Resources Engineer
-  [neelufa.sarwar@ncdenr.gov](mailto:neelufa.sarwar@ncdenr.gov)
+    - [https://lists.ncmail.net/mailman/listinfo/dwr-french-broad-model](https://lists.ncmail.net/mailman/listinfo/dwr-french-broad-model)
+    - [https://lists.ncmail.net/mailman/listinfo/dwr-new-watauga-model](https://lists.ncmail.net/mailman/listinfo/dwr-new-watauga-model)
+- Model Development Project Lead at DWR  
+  Neelufa Sarwar,  
+  Water Resources Engineer  
+  [neelufa.sarwar@ncdenr.gov](mailto:neelufa.sarwar@ncdenr.gov)  
   (919) 707-9028
 
 [[IMAGE_23_2|NC Water Resources Environmental Quality logo]]

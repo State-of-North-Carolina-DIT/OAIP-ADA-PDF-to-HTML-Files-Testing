@@ -1,54 +1,53 @@
 JOSH STEIN  
-Governor
+*Governor*  
 
 D. REID WILSON  
-Secretary
+*Secretary*  
 
 SUSHMA MASEMORE  
-Deputy Secretary for Environment
+*Deputy Secretary for Environment*  
 
 NORTH CAROLINA  
-Environmental Quality
+**Environmental Quality**  
 
 # Secretaries’ Science Advisory Board
-
 April 2, 2025  
 Public Meeting  
 Archdale Ground Floor Hearing Room  
 10:00 am  
-Agenda
+Agenda  
 
-1. Call to Order
+I. **Call to Order**
 
-1. Review and Approve Agenda
+II. **Review and Approve Agenda**
 
-1. Ethics Statement
+III. **Ethics Statement**
 
-1. Approval of Meeting Minutes for December 6, 2024
+IV. **Approval of Meeting Minutes for December 6, 2024**
 
-1. DEQ / DHHS updates 
+V. **DEQ / DHHS updates**
 
 *Action Item:*
 
-1. 1,4-Dioxane HHRA Report Review Request – The Board will discuss DEQ’s request from the 
-   December 2024 meeting to provide a review of the completed HHRA report that was completed in 
-   accordance with Session Law 2023-137: 9(a). 
+VI. **1,4-Dioxane HHRA Report Review Request** – *The Board will discuss DEQ’s request from the*  
+    *December 2024 meeting to provide a review of the completed HHRA report that was completed in*  
+    *accordance with Session Law 2023-137: 9(a).*
 
 *Informational Items:*
 
-1. DEQ Secretary D. Reid Wilson– The DEQ Secretary will address the Science Advisory Board. 
+VII. **DEQ Secretary D. Reid Wilson**– The DEQ Secretary will address the Science Advisory Board.
 
-Lunch – 12:30pm estimated.
+**Lunch** – *12:30pm estimated.*
 
-1. PFMOAA Toxicity Review Update – Recurring follow-up on the recommendation the Board made 
-   in 2022 for PFMOAA.
+VIII. **PFMOAA Toxicity Review Update** – *Recurring follow-up on the recommendation the Board made*  
+      *in 2022 for PFMOAA.*
 
-1. Chemours Consent Order toxicity study status update– Dr. Frannie Nilsen will present updated 
-   information regarding the Consent Order toxicity studies. 
+IX. **Chemours Consent Order toxicity study status update**– *Dr. Frannie Nilsen will present updated*  
+    *information regarding the Consent Order toxicity studies.*
 
-1. Public Forum
+X. **Public Forum**
 
-1. Adjourn – 3:00pm estimated.
+XI. **Adjourn** – *3:00pm estimated.*
 
 ## WebEx Meeting Information:
 
@@ -69,7 +68,7 @@ Attendee password (for members of the public): NCDEQ
 
 ### Join by phone:
 
-Join by phone:   
-1-415-655-0003 US Toll, 
+Join by phone:  
+1-415-655-0003 US Toll,  
 
 Access code: 243 537 31319

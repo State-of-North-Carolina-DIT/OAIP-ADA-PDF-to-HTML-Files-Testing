@@ -1,4 +1,4 @@
-# North Carolina Southern Flounder (Paralichthys lethostigma) Fishery Management Plan Amendment 2
+# North Carolina Southern Flounder (*Paralichthys lethostigma*) Fishery Management Plan Amendment 2
 
 By
 North Carolina Division of Marine Fisheries
@@ -53,7 +53,7 @@ Manage the southern flounder fishery to achieve a self-sustaining population tha
 3. Use biological, environmental, habitat, fishery, social, and economic data needed to effectively monitor and manage the southern flounder fishery and its ecosystem impacts.
 4. Promote stewardship of the resource through increased public awareness and interjurisdictional cooperation throughout the species’ range regarding the status and management of the southern flounder fishery, including practices that minimize bycatch and discard mortality.
 
-### Stock Assessment
+### Stock Assessment 
 
 The biological unit stock for southern flounder inhabiting U.S. South Atlantic coastal waters includes waters of North Carolina, South Carolina, Georgia, and the east coast of Florida, and is based on multiple tagging studies (Ross et al. 1982; Monaghan 1996; Schwartz 1997; Craig and Rice 2008), genetic studies (Anderson and Karel 2012; Wang et al. 2015), and an otolith morphology study (Midway et al. 2014), all of which provide evidence of a single unit stock occurring from North Carolina through the east coast of Florida. Based on this life history information, a multi-state cooperative group performed a stock assessment to determine the status of southern flounder in U.S. South Atlantic waters.
 
@@ -128,7 +128,7 @@ Reducing discards is extremely important for rebuilding the stock and meeting th
 
 MRIP harvest data was analyzed by two-week intervals to identify appropriate recreational southern flounder fishing seasons. The recreational fishery peaks in mid-summer so to maximize opportunity and minimize discards harvest should be allowed to occur within a defined window between May and October. A large portion of the recreational harvest occurs in July, so the length of a season will be significantly reduced if that month is included in any selected season. Delaying harvest until August will maximize season length while still overlapping a portion of the peak harvest period.
 
-### Establish Seasonal Closures by Area for the Commercial Fishery
+### Establish Seasonal Closures by Area for the Commercial Fishery 
 
 North Carolina commercial harvest accounts for 38.3% of total coast-wide removals (71.8% of total North Carolina removals in 2017) (Figure 3; Figure 19). Dead discards are a minor component of the removals and accounted for 0.2% of North Carolina total commercial removals in 2017. To meet the required reductions in total removals, the NCDMF recommends separating the commercial southern flounder fishery into three management areas as described above and reducing the 2017 removals associated within each area by the necessary reduction. Total removals in pounds are comprised of the landings plus estimates of dead discards from the commercial gill net fishery.
 
@@ -136,7 +136,7 @@ Flounder landings reported through the NCTTP are not broken out by species. To d
 
 Once the level of allowable removals by area was calculated, commercial removals that occurred from non-targeted flounder gear such as fyke nets, crab pots, and trawls were compiled. These “other gears” removals comprise approximately 0.6% of the overall total commercial removals. To minimize regulatory burden on the “other gear” fisheries, their removals were set at the 2017 level and subtracted from the allowable harvest prior to computing the allocation for targeted commercial fisheries of gill net, pound net and gig (Table 4). Daily harvest values were then summed across various time periods and averaged across a 10-year period to identify dates the fishery could operate and provide the best chance to not exceed the identified level of catch. To maximize opportunity and maintain the fishery during periods when southern flounder are the target species, a start date of Sept. 15 was selected for each area. However, additional options are available (Tables 5, 6, and 7) and will be further considered after review of committees and public comment. To meet the required reductions, it is necessary to remove gears (e.g., anchored large mesh gill nets, flounder pound nets, and large mesh RGCL gill nets) from the water during closed seasons in internal waters where southern flounder discards are likely to occur. Potential exceptions can be allowed for commercial large mesh gill net fisheries that target American and hickory shad and catfish species if these fisheries are only allowed to operate during times of the year and locations where bycatch of southern flounder is unlikely. Any additional discards created during closed periods will negatively impact expected reductions. It is important to note that any selected open season does not take precedent over gill net regulations necessary to maintain compliance through incidental take permits for sea turtles and Atlantic sturgeon, therefore the seasons for gill nets may not be open for the times identified herein if allowable takes for endangered species are reached.
 
-### Establish Seasonal Closures by Area for the Commercial Fishery to Reduce F to the Overfishing Threshold
+### Establish Seasonal Closures by Area for the Commercial Fishery to Reduce *F* to the Overfishing Threshold
 
 A 31% reduction in total removals is necessary to reduce fishing mortality to the threshold and end overfishing within the required two-year time period. **This does not rebuild the stock to end the overfished status.** The 31% reduction in total removals allows for 965,326 pounds of allowable commercial removals of which 8,416 pounds will be available for non-targeted “other” gears (Table 4). This reduction gives the northern area allowable removals of 224,250 pounds, the central area allowable removals of 480,473 pounds, and the southern area allowable removals of 252,187 pounds (Table 4). With a Sept. 15 start date the northern area will meet their removal level on average by Oct. 26, the central area by Nov. 11, and the southern area by Nov. 25 (Table 5; Figure 21). 
 
@@ -158,7 +158,7 @@ North Carolina recreational harvest accounts for 21.1% of the total recreational
 
 Once the level of harvest for each reduction value was identified, catch from the MRIP was analyzed by two-week increments (the finest level of detail available) and summed to determine seasonal dates the fishery could operate while meeting the necessary reduction. When the recreational fishery is closed, recreational harvest of flounder in both internal and ocean waters will be unlawful as all flounder species (southern, summer, Gulf, etc.) are currently managed collectively in North Carolina.
 
-### Establish Seasonal Closure for the Recreational Fishery to Reduce F to the Overfishing Threshold
+### Establish Seasonal Closure for the Recreational Fishery to Reduce *F* to the Overfishing Threshold
 
 A reduction of 31% in total removals is necessary to reduce fishing mortality to the threshold and end overfishing within the required two-year time period. **This does not rebuild the stock to end the overfished status.** This equates to a total allowable removal of 337,219 pounds from the recreational hook-and-line fishery. Based on available harvest information seasonal dates that most closely meet the necessary reduction were identified as June 1 through Sept. 15 (Table 6). 
 
@@ -201,13 +201,13 @@ These potential additional strategies include items carried over from Amendment 
 The following management measures from Amendment 1 and Supplement A to Amendment 1 are incorporated into Amendment 2 upon its adoption.
 
 - From the Southern Flounder FMP Amendment 1:
-  - Management measures including limiting the number of fishing days per week and the amount of yardage allowed for large mesh gill nets in various areas of the state;
-  - A minimum distance (area dependent) between gill net and pound net sets, per NCMFC Rule 15A NCAC 03J .0103 (d); and
-  - A recreational minimum size limit of 15 inches TL.
+    - Management measures including limiting the number of fishing days per week and the amount of yardage allowed for large mesh gill nets in various areas of the state;
+    - A minimum distance (area dependent) between gill net and pound net sets, per NCMFC Rule 15A NCAC 03J .0103 (d); and
+    - A recreational minimum size limit of 15 inches TL.
 - From Supplement A to the Southern Flounder FMP Amendment 1, as modified by the Aug. 17, 2017 settlement agreement:
-  - A commercial minimum size limit of 15 inches TL;
-  - A minimum mesh size of 6.0-ISM to harvest southern flounder from a gill net; and
-  - A minimum mesh size of 5.75-ISM for pound net escape panels. 
+    - A commercial minimum size limit of 15 inches TL;
+    - A minimum mesh size of 6.0-ISM to harvest southern flounder from a gill net; and
+    - A minimum mesh size of 5.75-ISM for pound net escape panels. 
 
 Additionally, the recreational bag limit of no more than four flounder per person per day will be maintained in Amendment 2. This bag limit is required through the N.C. Fishery Management Plan for Interjurisdictional Fisheries to maintain compliance with the ASMFC Summer Flounder, Scup, and Black Sea Bass FMP Addendum XXVIII. It is important to note, the December commercial closure period from Amendment 1 will no longer be in effect, as it will be encompassed by any seasonal closure periods implemented by the adoption of Amendment 2.
 
@@ -237,11 +237,11 @@ Pursuant to NCMFC Rule 15A NCAC 03J .0103 the Fisheries Director may, by proclam
 
 ### Gear Changes
 
-#### Gill Nets 
+Gill Nets 
 
 Pursuant to NCMFC Rule 15A NCAC 03J .0103 the Fisheries Director may, by proclamation, specify the net number and length for setting gill nets. Per proclamation it is unlawful to use large mesh gill nets more than 2,000 yards in length in Management Units A, B and C, and more than 1,000 yards in length in Management Units D1, D2 and E. Table 10 provides the average yards of large mesh gill nets fished by Management Unit for 2016-2017. These values were calculated from observer trips and responses from fishermen during fish house sampling. One recommendation to help ensure required reductions are achieved could be to further reduce the maximum yardage allowed, which could prevent fishermen from increasing the total length of large mesh gill nets set to offset the proposed shortened seasons.
 
-#### Pound Nets
+Pound Nets
 
 The use of puncturing devices (including fish picks, gaffs, gigs, and spears) could be prohibited when removing undersized flounder from a pound net. This would minimize additional discards to the total removals.
 
@@ -249,7 +249,7 @@ The use of puncturing devices (including fish picks, gaffs, gigs, and spears) co
 
 North Carolina General Statute 113-182.1(b)(1) stipulates fishery management plans will include information about the social and economic impact of the fishery to the state. Despite the negative connotation of the term “impact”, it includes benefits of the fishery as well as costs. The socio-economic information presented is about the current fishery and is not intended to be used to predict potential impacts from management changes. However, this and other information pertaining to fishery management plans is included to help inform decision-makers regarding the long-term viability of the state’s commercially and recreationally significant species or fisheries.
 
-IMPLAN economic impact modeling software is used to generate an input-output model of economic impacts associated with recreational southern flounder fishing (IMPLAN Group, LLC. 2013. IMPLAN System, Version 3.1.1001.2. Huntersville, NC. [www.implan.com](http://www.implan.com/)) Input-output modelling and analysis provide a means to examine inter-industry relationships within an economy and relationships between businesses and final consumers. IMPLAN is a regional input-output modeling system consisting of regional data bases and trade flow data. IMPLAN is used by several state agencies, universities and federal agencies, including the U.S. Forest Service, National Oceanic and Atmospheric Administration (NOAA) Fisheries, the U.S. Army Corps of Engineers, the National Park Service, and the Bureau of Land Management. Expenditure estimates are input into the appropriate industry sector and the model generates estimates for three types of impacts: employment, income, and output. Output is the gross sales impact from businesses within the economic region affected by an activity. Labor income impacts include personal income (wages and salaries) and proprietors generated as a result of the economic activity in a target area. Employment impacts are the estimated jobs generated from said economic activity.
+IMPLAN economic impact modeling software is used to generate an input-output model of economic impacts associated with recreational southern flounder fishing (IMPLAN Group, LLC. 2013. IMPLAN System, Version 3.1.1001.2. Huntersville, NC. [www.implan.com](http://www.implan.com/).) Input-output modelling and analysis provide a means to examine inter-industry relationships within an economy and relationships between businesses and final consumers. IMPLAN is a regional input-output modeling system consisting of regional data bases and trade flow data. IMPLAN is used by several state agencies, universities and federal agencies, including the U.S. Forest Service, National Oceanic and Atmospheric Administration (NOAA) Fisheries, the U.S. Army Corps of Engineers, the National Park Service, and the Bureau of Land Management. Expenditure estimates are input into the appropriate industry sector and the model generates estimates for three types of impacts: employment, income, and output. Output is the gross sales impact from businesses within the economic region affected by an activity. Labor income impacts include personal income (wages and salaries) and proprietors generated as a result of the economic activity in a target area. Employment impacts are the estimated jobs generated from said economic activity.
 
 Quantifying the potential economic impacts to the commercial and recreational fisheries has several uncertainties discussed below, and the commercial and recreational impact estimates cannot be directly compared due to how they are calculated. For a detailed explanation of the methodology used to estimate the economic impacts please refer to the NCDMF’s License and Statistics Section Annual Report (NCDMF 2018b). Each model is estimated using the best available data to capture economic activity in each sector. However, the data and the activity being captured in each sector are not the same. The commercial fishing sector is a predefined industry in IMPLAN that can be custom tailored based on NCTTP data. It is a straightforward impact assessment because it is a single industry demand change based on the ex-vessel value of landings. IMPLAN’s multipliers and inter-industry transactional data are well defined for this industry. The recreational sector does not have a defined single industry within IMPLAN. Recreational angling economic activity is measured through expenditures in a variety of industries. Angler trip expenditures (fuel, bait, ice, food, lodging, etc.) occur across a variety of industries. The recreational impact model in its nature is of larger magnitude than the commercial aspect because it is describing spending changes in a greater variety of industries. Commercial fishing is driven by inter-industry (indirect) transactions, where recreational fishing is driven by induced household spending. Typically, induced impact magnitudes are higher by nature especially in rural areas because of the natural way industries are located. Household demand for lower order goods can be met with relative ease in rural areas but inputs are typically imported.
 
@@ -275,21 +275,21 @@ An additional component to this complex jurisdictional situation is how requirem
 
 ### Current Regulations by State
 
-#### North Carolina
+North Carolina
 
 North Carolina’s commercial flounder fishery is subject to a 15-inch TL minimum size limit in internal waters and a 14-inch TL minimum size limit in ocean waters. There is a statewide closure in internal waters from Dec. 1 through Dec. 30. All flounder pound nets are required to use escapement panels of at least 5.75-ISM. In internal waters, the use of gill nets with a stretch mesh length less than 6.0 inches is prohibited for harvesting flounder. In all estuarine areas (except Pamlico, Pungo, Bay, and Neuse rivers and the Albemarle Sound Management Area), use of large mesh gill nets is limited to four nights per week and 2,000 yards, except south of Shackleford Banks and south of the Highway 58 Bridge to the South Carolina border; this gear is allowed five nights per week with a maximum of 1,000 yards. All other areas are limited to 2,000 yards of large mesh gill net. Additionally, the gill net fishery is subject to closures and other gear restrictions by Management Unit based on interactions with sea turtles and Atlantic sturgeon, which are managed through incidental take permits issued by NOAA Fisheries under the Endangered Species Act. In crab trawls, a minimum tailbag mesh size of 4-ISM is required in western Pamlico Sound to minimize bycatch of undersized southern flounder.
 
 Current regulations for the recreational flounder fishery include a 15-inch TL minimum size limit in internal and ocean waters, a four-fish per person per day daily creel limit, and no closed season.
 
-#### South Carolina
+South Carolina
 
 Regulations for the South Carolina flounder fishery in 2017 (*Paralichthys* spp.) include a 15-inch TL minimum size limit and a 10 flounder per person per day bag limit, not to exceed 20 flounder per boat per day. Bag limit and minimum size limits are applicable to both hook-and-line and gig fisheries in the state. It is unlawful to gig flounder in saltwater during daylight hours (excluding spearfishing). Commercial gill netting for flounder is only permitted in the Little River Inlet, a small estuary in the north of the state (no more than one hundred yards in length with a mesh size no smaller than 3.0-ISM and up to 5.5-ISM; must be attended within 500 feet).
 
-#### Georgia
+Georgia
 
 Current regulations for the commercial and recreational flounder fishery in Georgia include a 12-inch TL minimum size limit and a 15-fish daily bag limit. Gill nets are prohibited except for landing shad.
 
-#### Florida
+Florida
 
 Current regulations for the commercial and recreational flounder fishery in Florida include a 12-inch TL minimum size limit, daily recreational bag limit of 10 fish, and harvest is limited to the use of hook-and-line, cast net, beach seine, and gigs.
 
@@ -306,92 +306,103 @@ The following positive and negative impacts apply to all options; specific impac
 - + No rule changes required
 - - Decreased harvest may result in economic loss to the fishery
 
-### Commercial Fishery
+Commercial Fishery
 
-1. Establish Seasonal Closures by Area for the Commercial Fishery to Reduce F to the Overfishing Threshold (31% reduction)
-   - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements
-   - + Season allows for equitability among gears 
-   - - Possible increase in effort due to shortened season creating a “derby fishery”
-   - - Will not meet the reduction in the commercial fishery needed to achieve a level of SSB for sustainable harvest within the 10-year time period, failing to meet statutory requirements
-2. Establish Seasonal Closures by Area for the Commercial Fishery to Reduce F and Allow the SSB to Rebuild to the Threshold (52% reduction)
-   - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements
-   - + Projected to meet the reduction for the commercial fishery needed to achieve a level of SSB equal to or greater than the threshold, per statutory requirements
-   - + Season allows for equitability among gears 
-   - - Possible increase in effort due to shortened season creating a “derby fishery”
-3. Establish Seasonal Closures by Area for the Commercial Fishery to Increase SSB between the Threshold and Target (62% reduction)
-   - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements
-   - + Projected to meet the reduction for the commercial fishery needed to achieve a level of SSB between the threshold and target, per statutory requirements
-   - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
-   - + Season allows for equitability among gears 
-   - - Possible increase in effort due to shortened season creating a “derby fishery”
-4. Establish Seasonal Closures by Area for the Commercial Fishery to Reduce F and Allow the SSB to Rebuild to the Target (72% reduction)
-   - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements
-   - + Projected to meet the reduction for the commercial fishery needed to achieve a level of SSB equal to the target, per statutory requirements
-   - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
-   - + Season allows for equitability among gears 
-   - - Possible increase in effort due to shortened season creating a “derby fishery”
-5. Establish a Partial Moratorium for the Commercial and Recreational Fisheries
-   - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements 
-   - + Projected to meet the reduction for the commercial fishery needed to achieve a level of SSB equal to the target, per statutory requirements
-   - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
-   - + Prioritizes stock rebuilding
-   - - Discards due to incidental catch when targeting other species
+A. Establish Seasonal Closures by Area for the Commercial Fishery to Reduce *F* to the Overfishing Threshold (31% reduction)
+    - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements
+    - + Season allows for equitability among gears 
+    - - Possible increase in effort due to shortened season creating a “derby fishery”
+    - - Will not meet the reduction in the commercial fishery needed to achieve a level of SSB for sustainable harvest within the 10-year time period, failing to meet statutory requirements
 
-### Recreational Fishery
+B. Establish Seasonal Closures by Area for the Commercial Fishery to Reduce *F* and Allow the SSB to Rebuild to the Threshold (52% reduction)
+    - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements
+    - + Projected to meet the reduction for the commercial fishery needed to achieve a level of SSB equal to or greater than the threshold, per statutory requirements
+    - + Season allows for equitability among gears 
+    - - Possible increase in effort due to shortened season creating a “derby fishery”
 
-1. Establish a Seasonal Closure for the Recreational Fishery to reduce F to the Overfishing Threshold (31% reduction)
-   - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements
-   - - Will not meet the reduction in the recreational fishery needed to achieve a level of SSB for sustainable harvest within the 10-year time period, failing to meet statutory requirements
-   - - Discards due to incidental catch when targeting other species
-2. Establish a Seasonal Closure for the Recreational Fishery to Reduce F and Allow the SSB to Rebuild to the Threshold (52% reduction)
-   - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements 
-   - + Projected to meet the reduction for the recreational fishery needed to achieve a level of SSB equal to or greater than the threshold, per statutory requirements
-   - - Discards due to incidental catch when targeting other species
-3. Establish a Seasonal Closure for the Recreational Fishery to Increase SSB between the Threshold and Target (62% reduction)
-   - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements 
-   - + Projected to meet the reduction for the recreational fishery needed to achieve a level of SSB between the threshold and target, per statutory requirements
-   - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
-   - - Discards due to incidental catch when targeting other species
-4. Establish a Seasonal closure for the Recreational Fishery to Reduce F and Allow the SSB to Rebuild to the Target (72% reduction)
-   - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements 
-   - + Projected to meet the reduction for the recreational fishery needed to achieve a level of SSB equal to the target, per statutory requirements
-   - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
-   - - Discards due to incidental catch when targeting other species
-5. Establish a Partial Moratorium for the Commercial and Recreational Fisheries
-   - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements 
-   - + Projected to meet the reduction for the recreational fishery needed to achieve a level of SSB equal to the target, per statutory requirements
-   - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
-   - + Prioritizes stock rebuilding
-   - - Discards due to incidental catch when targeting other species
+C. Establish Seasonal Closures by Area for the Commercial Fishery to Increase SSB between the Threshold and Target (62% reduction)
+    - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements
+    - + Projected to meet the reduction for the commercial fishery needed to achieve a level of SSB between the threshold and target, per statutory requirements
+    - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
+    - + Season allows for equitability among gears 
+    - - Possible increase in effort due to shortened season creating a “derby fishery”
 
-### Additional Management Options: Non-Quantifiable Harvest Restrictions
+D. Establish Seasonal Closures by Area for the Commercial Fishery to Reduce *F* and Allow the SSB to Rebuild to the Target (72% reduction)
+    - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements
+    - + Projected to meet the reduction for the commercial fishery needed to achieve a level of SSB equal to the target, per statutory requirements
+    - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
+    - + Season allows for equitability among gears 
+    - - Possible increase in effort due to shortened season creating a “derby fishery”
 
-1. Trip Limits
-   1. Limiting numbers per trip for the commercial gig fishery
-   2. Limiting pounds per trip for the commercial pound net fishery
-   - + May ensure required reductions are achieved and alleviate concerns of a “derby fishery” 
-   - - Some fisheries impacted more than others
-   - - Potential issue with enforceability for large volume pound net fishery
-2. Limiting Days per Week Allowed in the Neuse, Tar/Pamlico Rivers and the Albemarle Sound Areas that have Previously been Exempt
-   - + May ensure required reductions are achieved
-   - + Reduce gear in the water
-   - + Consistency between harvest days across areas of the state
-   - + Limit the amount of potential discards
-   - - Some regions impacted more than others
-3. Limiting Fishing Times Allowed in the Neuse, Tar/Pamlico Rivers and the Albemarle Sound Areas that have Previously been Exempt
-   - + May ensure required reductions are achieved
-   - + Reduce gear in the water
-   - + Consistency between soak times across areas of the state
-   - + Limit the amount of potential discards 
-   - - Some regions impacted more than others
-4. Gear Modifications
-   1. Prohibiting the use of picks, gaffs, gigs, and spears when removing flounder from pound nets
-   2. Reducing the maximum yardage allowed in the large mesh gill net fishery
-   - + May ensure required reductions are achieved
-   - + Reduce gear in the water
-   - + Prevent expansion of gear
-   - + Limit the amount of potential discards 
-   - - Some regions impacted more than others
+E. Establish a Partial Moratorium for the Commercial and Recreational Fisheries
+    - + Projected to meet the reduction needed for the commercial fishery to end overfishing, per statutory requirements 
+    - + Projected to meet the reduction for the commercial fishery needed to achieve a level of SSB equal to the target, per statutory requirements
+    - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
+    - + Prioritizes stock rebuilding
+    - - Discards due to incidental catch when targeting other species
+
+Recreational Fishery
+
+A. Establish a Seasonal Closure for the Recreational Fishery to reduce *F* to the Overfishing Threshold (31% reduction)
+    - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements
+    - - Will not meet the reduction in the recreational fishery needed to achieve a level of SSB for sustainable harvest within the 10-year time period, failing to meet statutory requirements
+    - - Discards due to incidental catch when targeting other species
+
+B. Establish a Seasonal Closure for the Recreational Fishery to Reduce *F* and Allow the SSB to Rebuild to the Threshold (52% reduction)
+    - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements 
+    - + Projected to meet the reduction for the recreational fishery needed to achieve a level of SSB equal to or greater than the threshold, per statutory requirements
+    - - Discards due to incidental catch when targeting other species
+
+C. Establish a Seasonal Closure for the Recreational Fishery to Increase SSB between the Threshold and Target (62% reduction)
+    - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements 
+    - + Projected to meet the reduction for the recreational fishery needed to achieve a level of SSB between the threshold and target, per statutory requirements
+    - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
+    - - Discards due to incidental catch when targeting other species
+
+D. Establish a Seasonal closure for the Recreational Fishery to Reduce *F* and Allow the SSB to Rebuild to the Target (72% reduction)
+    - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements 
+    - + Projected to meet the reduction for the recreational fishery needed to achieve a level of SSB equal to the target, per statutory requirements
+    - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
+    - - Discards due to incidental catch when targeting other species
+
+E. Establish a Partial Moratorium for the Commercial and Recreational Fisheries
+    - + Projected to meet the reduction needed for the recreational fishery to end overfishing, per statutory requirements 
+    - + Projected to meet the reduction for the recreational fishery needed to achieve a level of SSB equal to the target, per statutory requirements
+    - + Projections show rebuilding occurring more quickly than the minimum reduction and this increases the probability of reaching the threshold
+    - + Prioritizes stock rebuilding
+    - - Discards due to incidental catch when targeting other species
+
+Additional Management Options: Non-Quantifiable Harvest Restrictions
+
+A. Trip Limits
+    i. Limiting numbers per trip for the commercial gig fishery
+    ii. Limiting pounds per trip for the commercial pound net fishery
+    - + May ensure required reductions are achieved and alleviate concerns of a “derby fishery” 
+    - - Some fisheries impacted more than others
+    - - Potential issue with enforceability for large volume pound net fishery
+
+B. Limiting Days per Week Allowed in the Neuse, Tar/Pamlico Rivers and the Albemarle Sound Areas that have Previously been Exempt
+    - + May ensure required reductions are achieved
+    - + Reduce gear in the water
+    - + Consistency between harvest days across areas of the state
+    - + Limit the amount of potential discards
+    - - Some regions impacted more than others
+
+C. Limiting Fishing Times Allowed in the Neuse, Tar/Pamlico Rivers and the Albemarle Sound Areas that have Previously been Exempt
+    - + May ensure required reductions are achieved
+    - + Reduce gear in the water
+    - + Consistency between soak times across areas of the state
+    - + Limit the amount of potential discards 
+    - - Some regions impacted more than others
+
+D. Gear Modifications
+    i. Prohibiting the use of picks, gaffs, gigs, and spears when removing flounder from pound nets
+    ii. Reducing the maximum yardage allowed in the large mesh gill net fishery
+    - + May ensure required reductions are achieved
+    - + Reduce gear in the water
+    - + Prevent expansion of gear
+    - + Limit the amount of potential discards 
+    - - Some regions impacted more than others
 
 ## VIII. RECOMMENDATION
 
@@ -402,13 +413,13 @@ The following positive and negative impacts apply to all options; specific impac
 Under the NCDMF recommendation, the following management measures from Amendment 1 and Supplement A to Amendment 1 will be incorporated into Amendment 2 management upon its adoption.
 
 - From the Southern Flounder FMP Amendment 1:
-  - Management measures limiting the number of fishing days per week and the amount of yardage allowed for large mesh gill nets in various areas of the state;
-  - A minimum distance (area dependent) between gill net and pound net sets, per NCMFC Rule 15A NCAC 03J .0103 (d); and
-  - A recreational minimum size limit of 15 inches TL.
+    - Management measures limiting the number of fishing days per week and the amount of yardage allowed for large mesh gill nets in various areas of the state;
+    - A minimum distance (area dependent) between gill net and pound net sets, per NCMFC Rule 15A NCAC 03J .0103 (d); and
+    - A recreational minimum size limit of 15 inches TL.
 - From Supplement A to the Southern Flounder FMP Amendment 1, as modified by the Aug. 17, 2017 settlement agreement:
-  - A commercial minimum size limit of 15 inches TL;
-  - A minimum mesh size of 6.0-ISM to harvest southern flounder from a gill net; and
-  - A minimum mesh size of 5.75-ISM stretched mesh for pound net escape panels. 
+    - A commercial minimum size limit of 15 inches TL;
+    - A minimum mesh size of 6.0-ISM to harvest southern flounder from a gill net; and
+    - A minimum mesh size of 5.75-ISM stretched mesh for pound net escape panels. 
 
 Additionally, the recreational bag limit of no more than four flounder per person per day will be maintained in Amendment 2. This bag limit is required through the N.C. FMP for Interjurisdictional Fisheries to maintain compliance with the ASMFC Summer Flounder, Scup, and Black Sea Bass FMP Addendum XXVIII. It is important to note that the December commercial closure period from Amendment 1 will no longer in effect, as it will be encompassed by the seasonal closure periods implemented by the adoption of Amendment 2.
 
@@ -424,16 +435,16 @@ Implementation of the management strategy recommended in Amendment 2 is deemed c
 
 Management measures to implement the strategy from Amendment 2 include:
 - The commercial harvest season will close by proclamation immediately following the August 2019 MFC meeting, the division will establish three commercial southern flounder management areas with open flounder harvest seasons during 2019 as follows: 
-  - Northern – Sept. 15 through Oct. 13;
-  - Central – Sept. 15 through Oct. 17; and
-  - Southern – Sept. 15 through Nov. 2.
+    - Northern – Sept. 15 through Oct. 13;
+    - Central – Sept. 15 through Oct. 17; and
+    - Southern – Sept. 15 through Nov. 2.
   Note: Monitoring, reporting, and closure requirements identified through the NCDMF’s sea turtle and Atlantic sturgeon incidental take permits will remain in effect and may impact dates identified.
 - The recreational hook-and-line and gig flounder harvest season will close by proclamation immediately following the August 2019 MFC meeting and will not re-open until the identified season in 2020.
 - Upon the closure of the recreational hook-and-line flounder harvest season, the RCGL large mesh gill net flounder harvest season will also close as the recreational and commercial seasons must both be open to allow this gear.
 - Beginning in 2020, continue use of the three commercial southern flounder management areas with open flounder harvest seasons as follows:
-  - Northern – Sept. 15 through Oct. 6;
-  - Central – Sept. 15 through Oct. 11; and
-  - Southern – Sept. 15 through Oct. 20.
+    - Northern – Sept. 15 through Oct. 6;
+    - Central – Sept. 15 through Oct. 11; and
+    - Southern – Sept. 15 through Oct. 20.
   Note: Monitoring, reporting, and closure requirements identified through the NCDMF’s sea turtle and Atlantic sturgeon incidental take permits will remain in effect and may impact dates identified.
 - Allow an Aug. 16 through Sept. 30 recreational hook-and-line and gig fishery; 
 - Allow RCGL large mesh gill nets to operate from Sept. 15 through Sept. 30.
@@ -464,13 +475,13 @@ Harvest of southern flounder has already been occurring during 2019 and the seas
 
 The Southern Flounder FMP Advisory Committee recommends that starting Jan. 1, 2019 a 52% reduction (*F*=0.34) be adopted with the following changes for the commercial fishery, calculated for the Northern, Central, and Southern areas:
 - 40% reduction for the pound net fishery, with a start date of Sept. 15:
-  - Northern – Sept. 15 through Oct. 28;
-  - Central – Sept. 15 through Nov. 2; and
-  - Southern – Sept. 15 through Nov. 3.
+    - Northern – Sept. 15 through Oct. 28;
+    - Central – Sept. 15 through Nov. 2; and
+    - Southern – Sept. 15 through Nov. 3.
 - 40% reduction for the gig fishery, with a start date of April 1:
-  - Northern – April 1 through Oct. 24;
-  - Central – April 1 through Nov. 11; and
-  - Southern – April 1 through Aug. 25.
+    - Northern – April 1 through Oct. 24;
+    - Central – April 1 through Nov. 11; and
+    - Southern – April 1 through Aug. 25.
 - For the large mesh gill net fishery, a reduction to make up the difference to yield a 52% reduction for the commercial fishery overall, with a start date of Sept. 15, recognizing that the NCDMF proposal for the RCGL large mesh gill net season of Sept. 15-Sept. 30 may be changed by this final percent reduction.
 
 The percent reduction for the large mesh gill net fishery, based on the Southern Flounder FMP Advisory Committee recommendation, would be approximately 71% compared to the 2017 removals. This reduction to the large mesh gill net fishery is equal to 162,770 pounds in total removals. A start date of Sept. 15 results in the following seasons:
@@ -502,7 +513,7 @@ The Finfish Advisory Committee met on June 3, 2019 and recommended a reduced har
 
 At the Aug. 23, 2019 Marine Fisheries Commission business meeting, the commission passed a motion to adopt Amendment 2 to the Southern Flounder Fishery Management Plan as proposed by NCDMF while allowing for seasonal flexibility in the commercial and recreational sectors to be determined by proclamation issued by the director of the Division of Marine Fisheries as long as the 62% harvest reductions in 2019 and the 72% harvest reductions for 2020 onward are met. The commission also passed a motion asking the director of NCDMF to consider a proclamation that would allow for the for-hire charter captains to possess four flounder per vessel per day when the recreational season is closed. An additional motion was passed by the NCMFC to ask the DMF director to consider an exemption to Rule 15A NCAC 03J.0501(b)(2) for existing flounder pound net sets. 
 
-#### FMP Implementation
+### FMP Implementation
 
 On Aug. 28, 2019 the NCDMF issued proclamations closing the commercial estuarine fishery and certain ocean gears (FF-31-2019) and the recreational fishery in internal and ocean waters (FF-32-2019). Proclamation FF-34-2019 was issued Sept. 12, 2019 opening the commercial estuarine fishery for the fall 2019 season. Using the flexibility allowed by the NCMFC, the season dates deviated slightly from the Sept. 15 start date as proposed above; the northern area season started Sept. 15, but the seasons for the central and southern fishing areas will start Oct. 1. After careful consideration and looking at available data, the director of NCDMF did not issue a proclamation to create a special season for the for-hire industry outside of the recreational closure for 2019. The motion requesting an exemption for flounder pound net sets was handled through NCDMF policy. Additional proclamations will be issued to address changes in soak times and yardage restrictions prior to each flounder management unit opening, and to address the opening of the 2020 recreational and commercial seasons.
 
@@ -567,7 +578,7 @@ Wang, V.H., M.A. McCartney, and F.S. Scharf. 2015. Population genetic structure 
 
 ## X. TABLES
 
-**Table 1. Number of Commercial Trips and Participants that landed southern flounder by gear, 2008-2017.**
+Table 1. Number of Commercial Trips and Participants that landed southern flounder by gear, 2008-2017.
 
 | Year | Trips Gear Gigs | Trips Gear Gill Net | Trips Gear Other | Trips Gear Pound Net | Participants Gear Gigs | Participants Gear Gill Net | Participants Gear Other | Participants Gear Pound Net |
 |---|---|---|---|---|---|---|---|---|
@@ -585,7 +596,7 @@ Wang, V.H., M.A. McCartney, and F.S. Scharf. 2015. Population genetic structure 
 
 Note: Participants often participate using multiple gears and fish multiple gears per trip, individuals and trips may be duplicated across gears.
 
-**Table 2. Top five ranked species that are reported targeted in the North Carolina recreational hook-and-line fishery, 1981-2017. Top rank for each year is in bold. (Source: Marine Recreational Information Program).**
+Table 2. Top five ranked species that are reported targeted in the North Carolina **recreational hook-and-line fishery**, 1981-2017. Top rank for each year is in **bold**. (Source: Marine Recreational Information Program).
 
 | Species | Trip Year 1981 | Trip Year 1982 | Trip Year 1983 | Trip Year 1984 | Trip Year 1985 | Trip Year 1986 | Trip Year 1987 | Trip Year 1988 | Trip Year 1989 | Trip Year 1990 | Trip Year 1991 | Trip Year 1992 | Trip Year 1993 | Trip Year 1994 | Trip Year 1995 | Trip Year 1996 | Trip Year 1997 | Trip Year 1998 | Trip Year 1999 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -603,11 +614,11 @@ Note: Participants often participate using multiple gears and fish multiple gear
 | Spanish Mackerel | 3 | 4 | 2 | 2 | 2 | 4 | 5 | 5 | 5 | 4 | 4 | 5 | 5 | 5 | 4 | 5 | 5 | 5 |
 | Spotted Seatrout | 5 | 5 | 5 | 5 | 5 | 3 | 2 | 3 | 3 | 2 | 3 | 2 | **1** | 2 | 2 | 2 | 2 | 2 |
 
-**Table 3.** Management action taken as a result of Amendment 1 and Supplement A to the Southern Flounder Fishery Management Plan.
+Table 3. Management action taken as a result of Amendment 1 and Supplement A to the Southern Flounder Fishery Management Plan.
 
 | MANAGEMENT STRATEGY | OUTCOME | Source Document |
 |---|---|---|
-| Commercial: Accept management measures to reduce protected species interactions as the management strategy for achieving sustainable harvest in the commercial southern flounder fishery. <br><br>Recreational: Increase the minimum size limit to 15 inches and decrease the creel limit to six fish-20.2% harvest reduction | Commercial: No Action Required; Specific minimum measures for the flounder gill net fishery are provided in Issue Paper 10.1.1 (Amendment 1, page 129).<br><br>Recreational: Proclamation FF-29-2011 (refer to Supplement A to the 2005 FMP) | Amendment 1 |
+| Commercial: Accept management measures to reduce protected species interactions as the management strategy for achieving sustainable harvest in the commercial southern flounder fishery.<br><br>Recreational: Increase the minimum size limit to 15 inches and decrease the creel limit to six fish-20.2% harvest reduction | Commercial: No Action Required; Specific minimum measures for the flounder gill net fishery are provided in Issue Paper 10.1.1 (Amendment 1, page 129).<br><br>Recreational: Proclamation FF-29-2011 (refer to Supplement A to the 2005 FMP) | Amendment 1 |
 | Status quo and address research recommendations | No Action Required | Amendment 1 |
 | Status quo (implement mediation and proclamation authority to address user conflicts with large mesh gill nets) | No Action Required | Amendment 1 |
 | Status quo (minimum distance (area dependent) between pound nets and gill nets; per rule 15A NCAC 03J .0103 (d)) | No Action Required | Amendment 1 |
@@ -617,36 +628,36 @@ Note: Participants often participate using multiple gears and fish multiple gear
 | - Request funding for state observer program<br>- Apply for Incidental Take Permit for large mesh gill net fishery<br>- Continue gear development research to minimize protected species interactions | No Action Required | Amendment 1 |
 | Status quo minimum mesh size for escape panels (5.5-inch stretched mesh) and recommend further research on 5.75-inch stretched mesh escape panels | No Action Required | Amendment 1 |
 | Status quo minimum mesh size (5.5-inch stretched mesh) | No Action Required | Amendment 1 |
-| Increase minimum mesh size to harvest southern flounder to 6.0- inch stretched mesh<br>Increase minimum size limit for commercial fisheries to 15 inches | Proclamation FF-3-2016 (refer to Supplement A to Amendment 1 of the 2005 FMP) | Supplement A to Amendment 1 |
-| Increase minimum mesh size for escape panels to 5.75-inch stretched mesh | Proclamation M-34-2015 (refer to Supplement A to Amendment 1 of the 2005 FMP) | Supplement A to Amendment 1 |
-| Reduce daily bag limit for recreational harvest of southern flounder from 6 fish to 4 fish | Proclamation FF-4-2017 (refer to Addendum XXVIII to ASMFC Summer Flounder, Scup, Black seabass FMP) | Addendum XXVIII to the Summer Flounder, Scup, Black seabass FMP |
+| Increase minimum mesh size to harvest southern flounder to 6.0- inch stretched mesh<br>Increase minimum size limit for commercial fisheries to 15 inches | Proclamation FF-3-2016<br>(refer to Supplement A to Amendment 1 of the 2005 FMP) | Supplement A to Amendment 1 |
+| Increase minimum mesh size for escape panels to 5.75-inch stretched mesh | Proclamation M-34-2015<br>(refer to Supplement A to Amendment 1 of the 2005 FMP) | Supplement A to Amendment 1 |
+| Reduce daily bag limit for recreational harvest of southern flounder from 6 fish to 4 fish | Proclamation FF-4-2017<br>(refer to Addendum XXVIII to ASMFC Summer Flounder, Scup, Black seabass FMP) | Addendum XXVIII to the Summer Flounder, Scup, Black seabass FMP |
 
-**Table 4.** Southern Flounder Amendment 2 total allowable removals (observed harvest and dead discards) in pounds by management area to meet the necessary reductions for the overfishing threshold and SSB threshold and target **of the commercial fishery** in 2019 compared to the 2017 harvest and dead discards.
+Table 4. Southern Flounder Amendment 2 total allowable removals (observed harvest and dead discards) in pounds by management area to meet the necessary reductions for the overfishing threshold and SSB threshold and target **of the commercial fishery** in 2019 compared to the 2017 harvest and dead discards.
 
 | Reduction | Management Area | 2017 Landings Value | Dead Discards | 2017 Total Catch | After Reduction | "Other" Gear Allocation | Gill Net, Pound Net, Gig Allocation |
 |---|---|---|---|---|---|---|---|
-| Overfishing Threshold 31% | Northern | 324,779 | 1,014 | 325,793 | 224,797 | 547 | 224,250 |
-| Overfishing Threshold 31% | Central | 700,258 | 2,203 | 702,461 | 484,698 | 3,644 | 480,473 |
-| Overfishing Threshold 31% | Southern | 369,580 | 1,190 | 370,770 | 255,831 | 4,225 | 252,187 |
-| Overfishing Threshold 31% | Total | 1,394,617 | 4,407 | 1,399,024 | 965,326 | 8,416 | 956,910 |
-| SSB Threshold 52% | Northern | 324,779 | 1,014 | 325,793 | 156,381 | 547 | 155,834 |
-| SSB Threshold 52% | Central | 700,258 | 2,203 | 702,461 | 337,181 | 3,644 | 332,956 |
-| SSB Threshold 52% | Southern | 369,580 | 1,190 | 370,770 | 177,969 | 4,225 | 174,325 |
-| SSB Threshold 52% | Total | 1,394,617 | 4,407 | 1,399,024 | 671,531 | 8,416 | 663,115 |
+| Overfishing Threshold (31%) | Northern | 324,779 | 1,014 | 325,793 | 224,797 | 547 | 224,250 |
+| Overfishing Threshold (31%) | Central | 700,258 | 2,203 | 702,461 | 484,698 | 3,644 | 480,473 |
+| Overfishing Threshold (31%) | Southern | 369,580 | 1,190 | 370,770 | 255,831 | 4,225 | 252,187 |
+| Overfishing Threshold (31%) | Total | 1,394,617 | 4,407 | 1,399,024 | 965,326 | 8,416 | 956,910 |
+| SSB Threshold (52%) | Northern | 324,779 | 1,014 | 325,793 | 156,381 | 547 | 155,834 |
+| SSB Threshold (52%) | Central | 700,258 | 2,203 | 702,461 | 337,181 | 3,644 | 332,956 |
+| SSB Threshold (52%) | Southern | 369,580 | 1,190 | 370,770 | 177,969 | 4,225 | 174,325 |
+| SSB Threshold (52%) | Total | 1,394,617 | 4,407 | 1,399,024 | 671,531 | 8,416 | 663,115 |
 | 62% | Northern | 324,779 | 1,014 | 325,793 | 123,802 | 547 | 123,255 |
 | 62% | Central | 700,258 | 2,203 | 702,461 | 266,935 | 3,644 | 262,710 |
 | 62% | Southern | 369,580 | 1,190 | 370,770 | 140,892 | 4,225 | 137,248 |
 | 62% | Total | 1,394,617 | 4,407 | 1,399,024 | 531,629 | 8,416 | 523,213 |
-| SSB Target 72% | Northern | 324,779 | 1,014 | 325,793 | 91,222 | 547 | 90,675 |
-| SSB Target 72% | Central | 700,258 | 2,203 | 702,461 | 196,689 | 3,644 | 192,464 |
-| SSB Target 72% | Southern | 369,580 | 1,190 | 370,770 | 103,815 | 4,225 | 100,171 |
-| SSB Target 72% | Total | 1,394,617 | 4,407 | 1,399,024 | 391,726 | 8,416 | 383,310 |
+| SSB Target (72%) | Northern | 324,779 | 1,014 | 325,793 | 91,222 | 547 | 90,675 |
+| SSB Target (72%) | Central | 700,258 | 2,203 | 702,461 | 196,689 | 3,644 | 192,464 |
+| SSB Target (72%) | Southern | 369,580 | 1,190 | 370,770 | 103,815 | 4,225 | 100,171 |
+| SSB Target (72%) | Total | 1,394,617 | 4,407 | 1,399,024 | 391,726 | 8,416 | 383,310 |
 
 *Other gear included gear that catch southern flounder incidentally. These gears include, but aren’t limited to, crab post, trawls, peeler post, fyke nets, channel nets, and seines.
 
-**Table 5.** Southern Flounder Amendment 2 dates of fishery opening (formatted in **bold** font) and associated closure dates by management area necessary to meet the reductions in total removals (observed harvest and dead discards) to the overfishing threshold and SSB threshold and target **for the commercial fishery** in 2019.
+Table 5. Southern Flounder Amendment 2 dates of fishery opening (formatted in **bold** font) and associated closure dates by management area necessary to meet the reductions in total removals (observed harvest and dead discards) to the overfishing threshold and SSB threshold and target **for the commercial fishery** in 2019.
 
-| Reduction | Management Area | Season Start Date 1-Jan Season End Date | Season Start Date 1-Feb Season End Date | Season Start Date 1-Mar Season End Date | Season Start Date 1-Apr Season End Date | Season Start Date 1-May Season End Date | Season Start Date 1-Jun Season End Date | Season Start Date 1-Jul Season End Date |
+| Reduction | Management Area | Season Start Date 1-Jan | Season Start Date 1-Feb | Season Start Date 1-Mar | Season Start Date 1-Apr | Season Start Date 1-May | Season Start Date 1-Jun | Season Start Date 1-Jul |
 |---|---|---|---|---|---|---|---|---|
 | Overfishing Threshold 31% | Northern | 30-Sep | 30-Sep | 30-Sep | 1-Oct | 4-Oct | 7-Oct | 11-Oct |
 | Overfishing Threshold 31% | Central | 23-Oct | 23-Oct | 24-Oct | 24-Oct | 25-Oct | 26-Oct | 28-Oct |
@@ -669,7 +680,7 @@ Note: Monitoring, reporting, and closure requirements identified through the NCD
 
 Table 5. Continued
 
-| Reduction | Management Area | Season Start Date 1-Aug Season End Date | Season Start Date 1-Sep Season End Date | Season Start Date 15-Sep Season End Date | Season Start Date 1-Oct Season End Date | Season Start Date Jan. 1, mid-year closure, re-open Sept. 1 Season End Date | Season Start Date Jan. 1, mid-year closure, re-open Sept. 15 Season End Date |
+| Reduction | Management Area | Season Start Date 1-Aug | Season Start Date 1-Sep | Season Start Date 15-Sep | Season Start Date 1-Oct | Season Start Date Jan. 1, mid-year closure, re-open Sept. 1 | Season Start Date Jan. 1, mid-year closure, re-open Sept. 15 |
 |---|---|---|---|---|---|---|---|
 | Overfishing Threshold 31% | Northern | 14-Oct | 18-Oct | 26-Oct | 11-Nov | 15-Oct | 22-Oct |
 | Overfishing Threshold 31% | Central | 2-Nov | 7-Nov | 11-Nov | 21-Nov | 4-Nov | 7-Nov |
@@ -690,7 +701,7 @@ Table 5. Continued
 
 Note: Monitoring, reporting, and closure requirements identified through the NCDMF’s sea turtle and Atlantic sturgeon Incidental Take Permits will remain in effect and may impact dates identified in this table.
 
-**Table 6.** Southern Flounder Amendment 2 seasons needed to meet the necessary reduction in total removals (observed harvest and dead discards) for the overfishing threshold and SSB threshold and target of **the NC recreational hook-and-line fishery** in 2019.
+Table 6. Southern Flounder Amendment 2 seasons needed to meet the necessary reduction in total removals (observed harvest and dead discards) for the overfishing threshold and SSB threshold and target of **the NC recreational hook-and-line fishery** in 2019.
 
 | | Percent Reduction | Total removals (lbs) |
 |---|---|---|
@@ -728,7 +739,7 @@ Note: Monitoring, reporting, and closure requirements identified through the NCD
 | Aug 1 - Oct 30 | 49% | 249,887 |
 | Jul 16 -Oct 30 | 40% | 294,894 |
 
-**Table 7.** Southern Flounder Amendment 2 seasons needed to meet the necessary reduction in total removals (observed harvest and dead discards) for the overfishing threshold and SSB threshold and target of **the NC recreational gig fishery** in 2019.
+Table 7. Southern Flounder Amendment 2 seasons needed to meet the necessary reduction in total removals (observed harvest and dead discards) for the overfishing threshold and SSB threshold and target of **the NC recreational gig fishery** in 2019.
 
 | | % Reduction | Total removals (lbs) |
 |---|---|---|
@@ -765,7 +776,7 @@ Note: Monitoring, reporting, and closure requirements identified through the NCD
 | Aug 1 - Sept 30 | 80% | 11,219 |
 | Aug 16 - Sept 30 | 84% | 9,110 |
 
-**Table 8.** Southern Flounder Amendment 2 trip limit options (in pounds) **for the commercial pound net fishery**, including the number, % of trips, and % of harvest within each trip limit option for each management area, September through November 2008-2017.
+Table 8. Southern Flounder Amendment 2 trip limit options (in pounds) **for the commercial pound net fishery**, including the number, % of trips, and % of harvest within each trip limit option for each management area, September through November 2008-2017.
 
 | Pounds Per Trip | Northern Number of Trips | Northern % of Trips | Northern % of Harvest | Central Number of Trips | Central % of Trips | Central % of Harvest |
 |---|---|---|---|---|---|---|
@@ -795,7 +806,7 @@ Note: Monitoring, reporting, and closure requirements identified through the NCD
 | 4,001+ | 9 | 0.3% | 4.4% | 134 | 1.0% | 12.3% |
 | Average Pounds Per Trip | 344 | | | 475 | | |
 
-**Table 9.** Southern Flounder Amendment 2 trip limit options (in number of fish) **for the commercial gig fishery**, including the number, % of trips, and % of harvest within each trip limit option for each management area, 2008-2017.
+Table 9. Southern Flounder Amendment 2 trip limit options (in number of fish) **for the commercial gig fishery**, including the number, % of trips, and % of harvest within each trip limit option for each management area, 2008-2017.
 
 | Number of Fish | Equivalent pounds | Northern Number of Trips | Northern % of Trips | Northern % of Harvest | Central Number of Trips | Central % of Trips | Central % of Harvest |
 |---|---|---|---|---|---|---|---|
@@ -823,32 +834,32 @@ Note: Monitoring, reporting, and closure requirements identified through the NCD
 
 *used an average of 2.56 pounds per fish (2008-2017 average)
 
-**Table 10.** Average yards of large mesh gill net fished per trip by ITP Management Unit and season during 2016 and 2017.
+Table 10. Average yards of large mesh gill net fished per trip by ITP Management Unit and season during 2016 and 2017.
 
 | Management Unit | Season | Average Yards |
 |---|---|---|
 | A | December-February | N/A |
-| | March-May | 1,464 |
-| | June-August | 1,424 |
-| | September-November | 1,590 |
+| A | March-May | 1,464 |
+| A | June-August | 1,424 |
+| A | September-November | 1,590 |
 | B | December-February | N/A |
-| | March-May | 1,000 |
-| | June-August | 921 |
-| | September-November | 1,007 |
+| B | March-May | 1,000 |
+| B | June-August | 921 |
+| B | September-November | 1,007 |
 | C | December-February | 425 |
-| | March-May | 951 |
-| | June-August | 1,042 |
-| | September-November | 964 |
+| C | March-May | 951 |
+| C | June-August | 1,042 |
+| C | September-November | 964 |
 | D | December-February | 600 |
-| | March-May | 936 |
-| | June-August | 971 |
-| | September-November | 951 |
+| D | March-May | 936 |
+| D | June-August | 971 |
+| D | September-November | 951 |
 | E | December-February | 525 |
-| | March-May | 586 |
-| | June-August | 638 |
-| | September-November | 669 |
+| E | March-May | 586 |
+| E | June-August | 638 |
+| E | September-November | 669 |
 
-**Table 11.** Economic impacts associated with **commercial southern flounder fishing** in North Carolina, 2009-2017.
+Table 11. Economic impacts associated with **commercial southern flounder fishing** in North Carolina, 2009-2017.
 
 | Year | Participants1 | Pounds1 | Ex-Vessel Value1 | Economic Impacts Jobs2,3 | Economic Impacts Income Impacts (thousands of dollars)3 | Economic Impacts Output Impacts (thousands of dollars)3,4 |
 |---|---|---|---|---|---|---|
@@ -870,7 +881,7 @@ Note: Monitoring, reporting, and closure requirements identified through the NCD
 
 *4 Represents sales impacts*
 
-**Table 12.** Economic impacts associated with **recreational southern flounder fishing** in North Carolina from 2009-2017.
+Table 12. Economic impacts associated with **recreational southern flounder fishing** in North Carolina from 2009-2017. 
 
 | Year | Trips1 | Estimated Expenditures (thousands of dollars)2 | Economic Impacts Jobs3,4 | Economic Impacts Income Impacts (thousands of dollars)4 | Economic Impacts Output Impacts (thousands of dollars)4 |
 |---|---|---|---|---|---|
@@ -892,66 +903,66 @@ Note: Monitoring, reporting, and closure requirements identified through the NCD
 
 *4 Economic impacts calculated using the NCDMF coastal recreational fishing economic impact model and IMPLAN economic impact modeling software. Economic impact estimates are for the state economy of North Carolina.*
 
-**Table 13.** Draft NCDMF and Advisory Committee recommendations for public comment in draft Amendment 2 of the Southern Flounder FMP. Recommendations will be provided by the MFC Regional and Standing Committees and public from June 2019.
+Table 13. Draft NCDMF and Advisory Committee recommendations for public comment in draft Amendment 2 of the Southern Flounder FMP. Recommendations will be provided by the MFC Regional and Standing Committees and public from June 2019. 
 
 | Issue | NCDMF | Southern Flounder Advisory Committee | MFC Committees | Public Comment |
 |---|---|---|---|---|
-| Sustainable harvest in the commercial fishery | Establish seasonal closures by area for the commercial fishery to reduce F and increase SSB to rebuild between the threshold and the target in 2019 (Option C, 62% reduction) and establish seasonal closures by area for the commercial fishery to reduce F and allow the SSB to rebuild to the target beginning in 2020 (Option D, 72% reduction). | The Southern Flounder Advisory Committee recommends that starting Jan. 1, 2019 a 52% reduction be adopted (Option B) and implemented through seasonal closures by area and major gear type with the following changes for the commercial fishery, calculated for the Northern, Central, and Southern areas:<br><br>-40% reduction to the pound net fishery<br><br>-40% reduction to the gig fishery<br><br>71% reduction to the gill net fishery (to make the total reduction to the commercial fishery equal 52%) | Southern – No recommendation<br><br>Northern – Supports NCDMF recommendation (Option C in 2019, Option D beginning in 2020), in addition ask the MFC to consider dividing up the allowable fishing days for gill netting amongst allowable fishing months for a given area due to Sea Turtle ITP.<br><br>Finfish – A reduced harvest of 52%, not to exceed 52% until Amendment 3 is completed (Option B). The committee also requested the Southern Flounder AC look at a moratorium on all southern flounder harvest from Nov. 1, 2019 to Sept 1, 2022. | Mail – 11 letters received all oppose draft Amendment 2.<br><br>Online – 91 of 241 respondents supported draft Amendment 2. Of those that indicated support of draft Amendment 2 Option C (62% reduction) was the most selected option for 2019 and option D (72% reduction) was the most selected option for 2020.<br><br>Public Comment – Thirteen total comments, 3 (23%) in favor of and 10 (77%) oppose draft Amendment 2. |
-| Sustainable harvest non-quantifiable harvest restrictions in the commercial fishery | NCDMF recommends expanding the commercial gill net management measures by reducing to single overnight soaks where nets may be set no sooner than one hour before sunset and must be retrieved no later than one hour after sunrise the next morning in the Neuse, Tar/Pamlico rivers and the Albemarle Sound areas that have previously been exempt;<br><br>Reduce the maximum yardage allowed in the commercial anchored large mesh gill net fishery by 25% for each Management Unit; allowing a maximum of 1,500-yards in Management Units A, B, and C, and 750-yards in Management Units D and E;<br><br>Prohibit the use of any method of retrieving live flounder from pound nets that cause injury to released fish (no picks, gigs, spears, etc.). | As of Jan. 1, 2020, implement a 1,500-yard limit for large mesh gill nets in Management Unit A, a 1,000-yard limit for large mesh gill nets in Management Units B and C, and 750-yard limit for large mesh gill nets in Management Units D and E.<br><br>Prohibit the use of any method of retrieving live flounder from pound nets that cause injury to released fish (no picks, gigs, spears, etc.). | Southern – No recommendation<br><br>Northern – No recommendation<br><br>Finfish – No recommendation | Mail – No respondents commented on this item.<br><br>Online – 183 of 193 responses supported one or more additional non-quantifiable management measures.<br><br>Public Comment – No respondents commented on this item. |
-| Sustainable harvest in the recreational fishery | Establish seasonal closures by area for the recreational fishery to reduce F and increase SSB to rebuild between the threshold and the target in 2019 (Option C, 62% reduction) and establish seasonal closures by area for the recreational fishery to reduce F and allow the SSB to rebuild to the target beginning in 2020 (Option D, 72% reduction).<br><br>The Recreational Commercial Gear License fishery, for large mesh gill nets, will operate during the dates where the recreational and commercial seasons overlap. | The Southern Flounder Advisory Committee recommends that starting Jan. 1, 2019 a 52% reduction be adopted (Option B) and implemented through seasonal closures for the recreational hook-and-line and gig fisheries. The recreational gig fishery will follow the same season as the hook-and-line season.<br><br>The Recreational Commercial Gear License large-mesh gill net season the same as NCDMF | Southern – No recommendation<br><br>Northern – Supports NCDMF recommendation (Option C in 2019, Option D beginning in 2020).<br><br>Finfish – A reduced harvest of 52%, not to exceed 52% until Amendment 3 is completed (Option B). The committee also recommended that the MFC ask the Secretary of DEQ to allow the Director of DMF to go out of compliance with ASMFC Summer Flounder Plan and adopt a 12-inch size limit and a 4-fish bag limit for southern flounder in North Carolina waters. The committee also requested the Southern Flounder AC look at a moratorium on all southern flounder harvest from Nov. 1, 2019 to Sept 1, 2022 | Mail – No respondents commented on this item.<br><br>Online – 91 of 241 respondents supported draft Amendment 2. Option C (62% reduction) was the most selected option for 2019 and option D (72% reduction) was the most selected option for 2020.<br><br>Public Comment - No respondents commented on this item. |
-| Sustainable harvest, management carried forward and Amendment 3 | Current management measures, including size limits, the recreational bag limit, minimum mesh size for gill nets and the pound net escape panels, the number gill net fishing days and amount of yardage allowed in various areas of the state, and minimum distance requirements between gill net and pound nets, will be carried forward in Amendment 2.<br><br>Amendment 3 will continue to be developed with more robust management strategies. | Supports NCDMF recommendation that Amendment 3 will continue to be developed with more robust management strategies | Southern – No recommendation<br><br>Northern – Supports NCDMF recommendation<br><br>Finfish – Supports NCDMF recommendation | Mail – No respondents commented on this item.<br><br>Online – N/A<br><br>Public Comment - No respondents commented on this item. |
+| Sustainable harvest in the commercial fishery | Establish seasonal closures by area for the commercial fishery to reduce F and increase SSB to rebuild between the threshold and the target in 2019 (Option C, 62% reduction) and establish seasonal closures by area for the commercial fishery to reduce F and allow the SSB to rebuild to the target beginning in 2020 (Option D, 72% reduction). | The Southern Flounder Advisory Committee recommends that starting Jan. 1, 2019 a 52% reduction be adopted (Option B) and implemented through seasonal closures by area and major gear type with the following changes for the commercial fishery, calculated for the Northern, Central, and Southern areas:<br><br>-40% reduction to the pound net fishery<br><br>-40% reduction to the gig fishery<br><br>71% reduction to the gill net fishery (to make the total reduction to the commercial fishery equal 52%) | **Southern** – No recommendation<br><br>**Northern** – Supports NCDMF recommendation (Option C in 2019, Option D beginning in 2020), in addition ask the MFC to consider dividing up the allowable fishing days for gill netting amongst allowable fishing months for a given area due to Sea Turtle ITP.<br><br>**Finfish** – A reduced harvest of 52%, not to exceed 52% until Amendment 3 is completed (Option B). The committee also requested the Southern Flounder AC look at a moratorium on all southern flounder harvest from Nov. 1, 2019 to Sept 1, 2022. | **Mail** – 11 letters received all oppose draft Amendment 2.<br><br>**Online** – 91 of 241 respondents supported draft Amendment 2. Of those that indicated support of draft Amendment 2 Option C (62% reduction) was the most selected option for 2019 and option D (72% reduction) was the most selected option for 2020.<br><br>**Public Comment** – Thirteen total comments, 3 (23%) in favor of and 10 (77%) oppose draft Amendment 2. |
+| Sustainable harvest non-quantifiable harvest restrictions in the commercial fishery | NCDMF recommends expanding the commercial gill net management measures by reducing to single overnight soaks where nets may be set no sooner than one hour before sunset and must be retrieved no later than one hour after sunrise the next morning in the Neuse, Tar/Pamlico rivers and the Albemarle Sound areas that have previously been exempt;<br><br>Reduce the maximum yardage allowed in the commercial anchored large mesh gill net fishery by 25% for each Management Unit; allowing a maximum of 1,500-yards in Management Units A, B, and C, and 750-yards in Management Units D and E;<br><br>Prohibit the use of any method of retrieving live flounder from pound nets that cause injury to released fish (no picks, gigs, spears, etc.). | As of Jan. 1, 2020, implement a 1,500-yard limit for large mesh gill nets in Management Unit A, a 1,000-yard limit for large mesh gill nets in Management Units B and C, and 750-yard limit for large mesh gill nets in Management Units D and E.<br><br>Prohibit the use of any method of retrieving live flounder from pound nets that cause injury to released fish (no picks, gigs, spears, etc.). | **Southern** – No recommendation<br><br>**Northern** – No recommendation<br><br>**Finfish** – No recommendation | **Mail** – No respondents commented on this item.<br><br>**Online** – 183 of 193 responses supported one or more additional non-quantifiable management measures.<br><br>**Public Comment** – No respondents commented on this item. |
+| Sustainable harvest in the recreational fishery | Establish seasonal closures by area for the recreational fishery to reduce F and increase SSB to rebuild between the threshold and the target in 2019 (Option C, 62% reduction) and establish seasonal closures by area for the recreational fishery to reduce F and allow the SSB to rebuild to the target beginning in 2020 (Option D, 72% reduction).<br><br>The Recreational Commercial Gear License fishery, for large mesh gill nets, will operate during the dates where the recreational and commercial seasons overlap. | The Southern Flounder Advisory Committee recommends that starting Jan. 1, 2019 a 52% reduction be adopted (Option B) and implemented through seasonal closures for the recreational hook-and-line and gig fisheries. The recreational gig fishery will follow the same season as the hook-and-line season.<br><br>The Recreational Commercial Gear License large-mesh gill net season the same as NCDMF | **Southern** – No recommendation<br><br>**Northern** – Supports NCDMF recommendation (Option C in 2019, Option D beginning in 2020).<br><br>**Finfish** – A reduced harvest of 52%, not to exceed 52% until Amendment 3 is completed (Option B). The committee also recommended that the MFC ask the Secretary of DEQ to allow the Director of DMF to go out of compliance with ASMFC Summer Flounder Plan and adopt a 12-inch size limit and a 4-fish bag limit for southern flounder in North Carolina waters. The committee also requested the Southern Flounder AC look at a moratorium on all southern flounder harvest from Nov. 1, 2019 to Sept 1, 2022 | **Mail** – No respondents commented on this item.<br><br>**Online** – 91 of 241 respondents supported draft Amendment 2. Option C (62% reduction) was the most selected option for 2019 and option D (72% reduction) was the most selected option for 2020.<br><br>**Public Comment** - No respondents commented on this item. |
+| Sustainable harvest, management carried forward and Amendment 3 | Current management measures, including size limits, the recreational bag limit, minimum mesh size for gill nets and the pound net escape panels, the number gill net fishing days and amount of yardage allowed in various areas of the state, and minimum distance requirements between gill net and pound nets, will be carried forward in Amendment 2.<br><br>Amendment 3 will continue to be developed with more robust management strategies. | Supports NCDMF recommendation that Amendment 3 will continue to be developed with more robust management strategies | **Southern** – No recommendation<br><br>**Northern** – Supports NCDMF recommendation<br><br>**Finfish** – Supports NCDMF recommendation | **Mail** – No respondents commented on this item.<br><br>**Online** – N/A<br><br>**Public Comment** - No respondents commented on this item. |
 
 ## XI. FIGURES
 
-[[IMAGE_50_0|Pie chart showing contribution (pounds) to the North Carolina southern flounder commercial fishery total removals by gear, 2008-2017: Gill Net 53%, Pound Net 38%, Gig 7%, Other Gears 2%.]]
+[[IMAGE_50_0|Pie chart showing contribution to North Carolina southern flounder commercial fishery total removals by gear, 2008-2017]]
 
 **Figure 1.** Contribution (pounds) to the North Carolina southern flounder commercial fishery total removals (observed landings and dead discards) by gear, 2008-2017. (Source: North Carolina Trip Ticket Program and North Carolina Estuarine Gill Net Observer Program).
 
-[[IMAGE_51_1|Pie chart showing average contribution to U.S. South Atlantic coast southern flounder commercial and recreational removals in pounds by state, 2008-2017]]
+[[IMAGE_51_0|Pie chart showing average contribution to U.S. South Atlantic coast southern flounder commercial and recreational removals]]
 
 **Figure 2.** Average contribution to U.S. South Atlantic coast southern flounder commercial landings (pounds) by state, 1978-2017. (Source: NOAA Fisheries Annual Commercial Landing Statistics and North Carolina Trip Ticket Program).
 
-[[IMAGE_51_0|Bar chart showing North Carolina annual southern flounder commercial harvest (pounds), 1950-2017]]
+[[IMAGE_51_1|Bar chart showing North Carolina annual southern flounder commercial harvest, 1950-2017]]
 
 **Figure 3.** Average contribution to U.S. South Atlantic coast southern flounder commercial and recreational removals (observed harvest and dead discards) in pounds by state, 2008-2017. (Source: NOAA Fisheries Annual Commercial Landing Statistics, North Carolina Trip Ticket Program and the Marine Recreational Information Program).
 
-[[IMAGE_52_1|Pie chart showing average contribution to U.S. South Atlantic coast southern flounder recreational removals by state, 1981-2017]]
+[[IMAGE_52_0|Pie chart showing average contribution to U.S. South Atlantic coast southern flounder recreational removals]]
 
 **Figure 4.** North Carolina annual southern flounder commercial harvest (pounds), 1950-2017. (Source: North Carolina Trip Ticket Program). 
 
-[[IMAGE_52_0|Line graph showing recreational hook-and-line trips targeting flounder species in North Carolina, 1981-2017]]
+[[IMAGE_52_1|Line graph showing number of recreational hook-and-line trips targeting flounder species in North Carolina, 1981-2017]]
 
 **Figure 5.** Average contribution to U.S. South Atlantic coast southern flounder recreational removals (observed harvest and dead discards; in pounds) by state, 1981-2017. (Source: Marine Recreational Information Program).
 
-[[IMAGE_53_1|Line graph showing average percent of recreational harvest of hook-and-line caught southern flounder in North Carolina by two-month wave, 1981-2017]]
+[[IMAGE_53_0|Line graph showing average percent of recreational harvest of hook-and-line caught southern flounder in North Carolina by two-month wave]]
 
 **Figure 6.** Recreational hook-and-line trips targeting flounder species in North Carolina, 1981-2017. (Source: Marine Recreational Information Program, targeted trips identified by angler interviews)
 
-[[IMAGE_53_0|Bar chart showing average commercial southern flounder landings (pounds) by month in North Carolina, 2008-2017]]
+[[IMAGE_53_1|Bar chart showing average commercial southern flounder landings by month in North Carolina, 2008-2017]]
 
 **Figure 7.** Average percent of recreational harvest (numbers of fish) of hook-and-line caught southern flounder in North Carolina by two-month wave, 1981-2017. (Source: Marine Recreational Information Program).
 
-[[IMAGE_54_1|Line graph showing recreational hook-and-line harvested pounds of southern flounder estimated through MRIP for North Carolina through Florida, 1981-2017]]
+[[IMAGE_54_0|Line graph showing recreational hook-and-line harvested pounds of southern flounder estimated through MRIP]]
 
 **Figure 8.** Average commercial southern flounder landings (pounds) by month in North Carolina, 2008-2017. (Source: North Carolina Trip Ticket Program).
 
-[[IMAGE_54_0|Line graph showing the ratio of released southern flounder compared to harvested southern flounder by number from recreational hook-and-line caught fish for North Carolina through Florida, 1981-2017]]
+[[IMAGE_54_1|Line graph showing the ratio of released southern flounder compared to harvested southern flounder]]
 
 **Figure 9.** Recreational hook-and-line harvested pounds of southern flounder estimated through MRIP for North Carolina through Florida, 1981-2017. (Source: Marine Recreational Information Program).
 
-[[IMAGE_55_0|Line graph showing predicted number of recruits from the base run of the ASAP model, 1989-2017]]
+[[IMAGE_55_0|Line graph showing estimated fishing mortality rates compared to established reference points, 1989-2017]]
 
 **Figure 10.** The ratio of released southern flounder compared to harvested southern flounder by number from recreational hook-and-line caught fish for North Carolina through Florida, 1981-2017. (Source: Marine Recreational Information Program).
 
-[[IMAGE_56_0|Line graph showing projections of SSB related to fishing at a level to end overfishing in the required two-year time period]]
-
 **Figure 11.** Predicted number of recruits (in thousands of fish) from the base run of the ASAP model, 1989-2017.
+
+[[IMAGE_56_0|Line graph showing estimated spawning stock biomass compared to established reference points, 1989-2017]]
 
 **Figure 12.** Estimated fishing mortality rates (numbers-weighted, ages 2–4) compared to established reference points, 1989–2017. (Source: Flowers et al. 2019).
 
 **Figure 13.** Estimated spawning stock biomass compared to established reference points, 1989–2017. (Source: Flowers et al. 2019).
 
-**Figure 14.** Projections of SSB related to fishing at a level to end overfishing in the required two-year time period. Fishing at Fthreshold equates to a 31% reduction in total removals, while Fishing at Ftarget equates to a 51% reduction in total removals. (Note: SSB does not rebuild within required 10-year time period; Source: Flowers et al. 2019).
+**Figure 14.** Projections of SSB related to fishing at a level to end overfishing in the required two-year time period. Fishing at *F*threshold equates to a 31% reduction in total removals, while Fishing at *F*target equates to a 51% reduction in total removals. (Note: SSB does not rebuild within required 10-year time period; Source: Flowers et al. 2019).
 
 **Figure 15.** Predicted future spawning stock biomass (metric tons) assuming fishing at recent levels (*F*2017=0.91) and continuing decline in recruitment. (Source: Flowers et al. 2019).
 
@@ -961,11 +972,11 @@ Note: Monitoring, reporting, and closure requirements identified through the NCD
 
 **Figure 18.** Predicted future spawning stock biomass (metric tons) assuming the fishing mortality value (*F*= 0.26; 62% reduction in total removals) necessary to reach between the SSBTarget and SSBThreshold by 2028.
 
-[[IMAGE_59_0|Pie chart showing breakdown of the total removals in percent of pounds for the commercial and recreational fisheries in North Carolina, 2017]]
+[[IMAGE_59_0|Pie chart showing breakdown of the total removals for the commercial and recreational fisheries in North Carolina, 2017]]
 
 **Figure 19.** Breakdown of the total removals (observed harvest and dead discards) in % of pounds for the commercial and recreational (hook-and-line and gig) fisheries in North Carolina, 2017. (Source: North Carolina Trip Ticket Program and Marine Recreational Information Program).
 
-[[IMAGE_60_0|Map showing Southern Flounder Amendment 2 management areas for the commercial fishery, 2019]]
+[[IMAGE_60_0|Map of Southern Flounder Amendment 2 management areas for the commercial fishery, 2019]]
 
 **Figure 20.** Southern Flounder Amendment 2 management areas for the commercial fishery, 2019.
 

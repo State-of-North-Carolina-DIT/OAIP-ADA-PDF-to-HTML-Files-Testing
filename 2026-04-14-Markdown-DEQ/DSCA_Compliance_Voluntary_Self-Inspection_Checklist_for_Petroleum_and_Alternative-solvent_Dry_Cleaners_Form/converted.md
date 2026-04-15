@@ -1,13 +1,14 @@
 # DRY-CLEANING SOLVENT CLEANUP ACT (DSCA)
+
 ## Voluntary Self-inspection Checklist for Petroleum and Alternative-solvent Dry Cleaners
 
-**Please submit this checklist by the end of January each year to assist staff with prioritization of inspections.**
+***Please submit this checklist by the end of January each year to assist staff with prioritization of inspections.***
 
 The required Minimum Management Practices (MMPs) rule can be found at: [https://deq.nc.gov/about/divisions/waste-management/superfund-section/special-remediation-branch/compliance-unit#regulations](https://deq.nc.gov/about/divisions/waste-management/superfund-section/special-remediation-branch/compliance-unit#regulations)
 
 **Please initial and sign below to acknowledge that** _____________________________________________ (facility name) **is complying with the required minimum management practices (MMPs).**
 
-| Initials | Minimum Management Practices (MMPs) |
+| **Initials** | **Minimum Management Practices (MMPs)** |
 |---|---|
 | | At no time has dry-cleaning solvent, wastes containing dry-cleaning solvent, or water containing dry-cleaning solvent been discharged onto land or into waters of the State, sanitary sewers, storm drains, floor drains, septic systems, dumpsters, boilers, or cooling-towers. |
 | | All invoices generated as a result of the disposal of all dry-cleaning solvent waste are available for review. |
@@ -19,24 +20,24 @@ The required Minimum Management Practices (MMPs) rule can be found at: [https://
 | | My facility maintains an emergency response plan that is in compliance with federal, state and local requirements. |
 | | Underground storage tanks are not used for solvents or waste. |
 
-DATE ___________________ SIGNATURE: _________________________________________
+**DATE** ___________________ **SIGNATURE:** _________________________________________
 
-PRINTED NAME: _________________________________________
+[[IMAGE_1_0|NC Environmental Quality Waste Management Logo]]
 
-TITLE or POSITION: _________________________________________
+**PRINTED NAME:** _________________________________________
 
-[[IMAGE_1_0|NC Waste Management Environmental Quality logo]]
+**TITLE or POSITION:** _________________________________________
 
-FACILITY ADDRESS: _________________________________________
+**FACILITY ADDRESS:** _________________________________________
 
-FACILITY CITY & ZIP: _________________________________________
+**FACILITY CITY & ZIP:** _________________________________________
 
-FACILITY PHONE: _________________________________________
+**FACILITY PHONE:** _________________________________________
 
-EMAIL: _________________________________________
+**EMAIL:** _________________________________________
 
 Email to your inspector or Mail to: NC DEQ / DWM-DSCA, Attention: *(insert inspector name)*  
 1646 Mail Service Center, Raleigh NC 27699-1646
 
 The DSCA inspector map can be found at this address: https://deq.nc.gov/media/20408/download  
-Questions? Contact your county's DSCA compliance inspector for assistance and understanding.
+Questions? Contact your county’s DSCA compliance inspector for assistance and understanding.

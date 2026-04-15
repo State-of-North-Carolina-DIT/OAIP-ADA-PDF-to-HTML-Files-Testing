@@ -1,1883 +1,3086 @@
-# STOCK OVERVIEW REPORT
+# TELECONFERENCE VIA WEBEX
+## AUGUST 20-21, 2020
+
+[[IMAGE_1_0|North Carolina Marine Fisheries Commission Quarterly Business Meeting cover art]]
+
+## TABLE OF CONTENTS
+
+**AGENDA** ....................................................................................................... 1
+**DRAFT 2020 MAY MFC BUSINESS MEETING MINUTES** ................ 4
+**CHAIRMAN’S REPORT** .......................................................................... 15
+LETTERS ...................................................................................................... 16
+*Gill Nets* .................................................................................................. 17
+*Special Management Zones* .................................................................... 20
+*Marine Fisheries Commission AC*.......................................................... 24
+ETHICS TRAINING AND STATEMENT OF ECONOMIC INTEREST REMINDER... 44
+2020 MFC MEETING SCHEDULE.................................................................... 48
+2021 MFC MEETING SCHEDULE.................................................................... 49
+COMMISSION COMMITTEE ASSIGNMENTS ................................................... 50
+COMMITTEE REPORTS................................................................................. 52
+*Commercial Resource Fund Committee* ................................................. 53
+**DIRECTOR’S REPORT**............................................................................ 62
+ATLANTIC STATES MARINE FISHERIES COMMISSION INFORMATION........... 63
+MID-ATLANTIC FISHERY MANAGEMENT COUNCIL INFORMATION.............. 66
+SOUTH ATLANTIC FISHERY MANAGEMENT COUNCIL INFORMATION .......... 74
+HIGHLY MIGRATORY SPECIES MEMORANDUM ........................................... 90
+PROTECTED RESOURCES ............................................................................. 92
+*Incidental Take Permit Updates* ............................................................. 94
+LANDINGS UPDATE ................................................................................... 108
+*Red Drum* .............................................................................................. 109
+*Southern Flounder* ................................................................................ 110
+RULES SUSPENSION UPDATE MEMORANDUM ........................................... 112
+**COASTAL HABITAT PROTECTION PLAN UPDATE**.................... 114
+COASTAL HABITAT PROTECTION PLAN MEMORANDUM ........................... 115
+COASTAL HABITAT PROTECTION PLAN STEERING COMMITTEE MINUTES. 118
+**STOCK OVERVIEW REPORT** ............................................................. 123
+STOCK OVERVIEW REPORT MEMORANDUM.............................................. 124
+**FISHERY MANAGEMENT PLANS** ..................................................... 126
+FISHERY MANAGEMENT PLAN UPDATE MEMORANDUM........................... 127
+FISHERY MANAGEMENT PLAN UPDATE SUMMARY................................... 129
+FIVE-YEAR FMP REVIEW SCHEDULE ....................................................... 132
+BAY SCALLOP FISHERY MANAGEMENT PLAN UPDATE MEMORANDUM.... 134
+KINGFISHES FISHERY MANAGEMENT PLAN UPDATE MEMORANDUM ....... 152
+**SCFL ELIGIBILITY** ...............................................................................**174**
+STANDARD COMMERCIAL FISHING LICENSE ELIGIBILITY MEMORANDUM 175
+ELIGIBILITY POOL COMMISSION REPORT FOR 2020-2021......................... 177
+**RULEMAKING**........................................................................................ 184
+RULEMAKING UPDATE MEMORANDUM...................................................... 185
+RULEMAKING PACKAGE A ........................................................................ 191
+RULEMAKING PACKAGE B ........................................................................ 203
+
+## AGENDA
+Teleconference via WebEx
+August 20 - 21, 2020
+
+*N.C.G.S. 138A-15(e) mandates at the beginning of any meeting of a board, the chair shall remind all members of their duty to avoid conflicts of interest under Chapter 138. The chair also shall inquire as to whether there is any known conflict of interest with respect to any matters coming before the board at that time.*
+
+*N.C.G.S. 143B-289.54.(g)(2) states a member of the Marine Fisheries Commission shall not vote on any issue before the Commission that would have a "significant and predictable effect" on the member's financial interest. For purposes of this subdivision, "significant and predictable effect" means there is or may be a close causal link between the decision of the Commission and an expected disproportionate financial benefit to the member that is shared only by a minority of persons within the same industry sector or gear group. A member of the Commission shall also abstain from voting on any petition submitted by an advocacy group of which the member is an officer or sits as a member of the advocacy group's board of directors. A member of the Commission shall not use the member's official position as a member of the Commission to secure any special privilege or exemption of substantial value for any person. No member of the Commission shall, by the member's conduct, create an appearance that any person could improperly influence the member in the performance of the member's official duties.*
+
+*Commissioners having questions about a conflict of interest or appearance of conflict should consult with counsel to the Marine Fisheries Commission or the secretary’s ethics liaison. Upon discovering a conflict, the commissioner should inform the chair of the commission in accordance with N.C.G.S. 138A-15(e).*
+
+**Thursday, August 20th**
+
+**9:00 a.m.** Welcome – Lara Klibansky 
+Call to Order* 
+Review Ethics Evaluations for New Commissioners
+Conflict of Interest Reminder 
+Roll Call
+**Approval of Agenda \*\*** 
+**Approval of Meeting Minutes\*\***
+
+**9:40 a.m.** Chairman’s Report
+Letters and Online Comments
+Ethics Training and Statement of Economic Interest Reminder 
+2020 Meeting Schedule 
+2021 Proposed Meeting Schedule 
+Commission Committee Assignments 
+**Elect Vice Chair\*\***
+Presentation on MFC Powers and Duties – Shawn Maier
+**Shellfish Lease Regulation – Director Steve Murphey\*\*** 
+**Special Management Zones in State Waters – Steve Poland, Jordan Byrum\*\*** 
+
+**11:30 a.m.** Committee Reports
+- Joint Meeting of the MFC Commercial Resources Fund Committee and the Funding Committee for the N. C. Commercial Fishing Resource Fund
+
+**11:35 a.m.** Break
+
+**Thursday, August 20th continued…** 
+
+**11:45 a.m.** Director’s Report – Director Steve Murphey
+*Reports and updates on recent Division of Marine Fisheries activities* 
+- Legislative Update
+- Division of Marine Fisheries Quarterly Update
+    - COVID-19 Impacts
+- Updates on Issues from Commissioners:
+    - Gill Net Workgroup
+    - Recreational Hook and Line Modification Workgroup
+    - Repacking of Foreign Crabmeat Issue Paper
+- Informational Materials:
+    - Atlantic States Marine Fisheries Commission
+    - Mid-Atlantic Fishery Management Council Update
+    - South Atlantic Fishery Management Council Update
+    - Highly Migratory Species
+    - Protected Resources Update
+        - Observer Program
+        - Incidental Take Permit Updates
+    - Landings Updates
+    - Rules Suspension Update
+
+**12:45 a.m.** Lunch Break
+
+**1:45 p.m.** 2021 Coastal Habitat Protection Plan Update – Anne Deaton, Jimmy Johnson
 
-[[IMAGE_126_0|]]
+**2:30 p.m.** CHPP Steering Committee Update – Commissioner Martin Posey
 
-## ROY COOPER
-Governor
-## MICHAEL S. REGAN
-Secretary
-## STEPHEN W. MURPHEY
-Director
+**3:00 p.m.** Stock Overview Report – Lee Paramore
 
-July 31, 2020
+**3:30 p.m.** Break
 
-**MEMORANDUM**
+**3:40 p.m.** Fishery Management Plans
+- 2019 Fishery Management Plan Review – Catherine Blum
+- Bay Scallop Fishery Management Plan Update – Jeff Dobbs, Jason Rock
+    - **Vote on final approval\*\***
+- Kingfishes Fishery Management Plan Update – Kevin Brown, Jason Rock
+    - **Vote on final approval\*\***
+- Five-Year FMP Review Schedule – Catherine Blum
+    - **Vote on approval of five-year schedule\*\***
 
-**TO:** N.C. Marine Fisheries Commission
+**Friday, August 21st**
 
-**FROM:** Lee Paramore, Biological Review Team Chair
+**9:00 a.m.** Standard Commercial Fishing License Eligibility Report – Capt. Garland Yopp, Stephanie McInerny 
+- **Vote to set annual temporary cap on the number of licenses in the Eligibility Pool\*\***
 
-**SUBJECT:** 2020 Species Stock Overview Report
+**9:15 a.m.** Rulemaking Update – Catherine Blum
+- 2020-2021 Annual Rulemaking Cycle Update
+- “Package A” - Coastal Recreational Waters Monitoring, Evaluation, and Notification
+- “Package B”- Periodic Review and Expiration of Existing Rules, per G.S. 150B-21.3A
+    - **Vote on rule readoption for the following MFC rules in 15A NCAC 18A - Sanitation:**
+        - **Classification of Shellfish Growing Waters and Laboratory Procedures (14 rules)\*\***
+        - **Rules with minor changes relating to standards for commercial shellfish sanitation and processing procedures (21 rules)\*\***
+    - **Vote on rule readoption for MFC rules in 15A NCAC 03 – Marine Fisheries**
+        - **Shellfish Lease User Conflicts, per S.L. 2019-37 (3 rules)\*\***
+        - **General Regulations: Joint (9 rules)\*\***
+        - **Shrimp FMP Amendment 1 Special Secondary Nursery Areas (2 rules)**
+    - **Vote on the following proposed rules and associated fiscal analysis for Notice of Text for Rulemaking**
+        - **Oyster Sanctuaries (1 rule)\*\***
 
-**Issue**
-To inform the N.C. Marine Fisheries Commission of the 2020 Species Stock Overview Report (based on 2019 data).
+**10:15 a.m.** Issues from Commissioners 
 
-**Findings**
-- The Division of Marine Fisheries 2020 Species Stock Overview Report summarizes available information by species stock to determine the overall condition of North Carolina’s fishery resources. It is available on the division website at [http://portal.ncdenr.org/web/mf/stock-overview](http://portal.ncdenr.org/web/mf/stock-overview).
-- The report provides information for each species stock based on data through 2019.
-- To better inform the public on management responsibility, the report continues to partition the 14 species or species groups solely managed by North Carolina from the 23 species or species groups where management is deferred to other principal entities, including the Atlantic States Marine Fisheries Commission, the South Atlantic Fishery Management Council, and the Mid-Atlantic Fishery Management Council.
-- The online report provides a short summary on recent changes to each state managed species or species group while also providing a direct link to the more comprehensive and informative annual Fishery Management Plan Review for each one.
-- For each species stock where a peer-reviewed stock assessment is available, assignment of stock status is made based on the overfishing and overfished/depleted state of that species stock. For species stocks without overfished/overfishing determinations, all pertinent information on trends and management of the species stock is provided.
+**10:45 a.m.** Meeting Assignments and Preview of Agenda Items for August Meeting – Lara Klibansky 
 
-**Overview**
-The Division of Marine Fisheries 2020 Species Stock Overview Report was released to the public via the division website on July 22, 2020. The report links the public directly to the Fishery Management Plan Review for each species stock. The Fishery Management Plan Review provides a comprehensive look at trends in catch and biological data. The division continues to aid the public’s understanding of management of these species by partitioning the 14 species or species groups managed solely by North Carolina from the other 23 species or species groups where management is deferred to the Atlantic States Marine Fisheries Commission, the South Atlantic Fishery Management Council, and the Mid-Atlantic Fishery Management Council.
+**11:00 a.m.** **Adjourn**
 
-Highlights from this year’s stock overview for state managed species include:
-- **Estuarine Striped Bass** – Amendment 2 to the N. C. Estuarine Striped Bass Fishery Management Plan is being jointly developed with the N.C. Wildlife Resources Commission, and results from a peer-reviewed benchmark stock assessment utilizing data through 2017 are expected in 2020.
-- **Shrimp** – Additional gear restrictions were implemented in 2019 as part of the Shrimp Fishery Management Plan Amendment 1 to reduce bycatch in all shrimp trawls (except skimmer trawls) in the Pamlico Sound and portions of the Pamlico, Bay and Neuse rivers. Development of Amendment 2 is underway.
-- **Southern Flounder** – The 2019 stock assessment of southern flounder in the south Atlantic indicated that the stock is overfished and overfishing is occurring. Amendment 2 to the Southern Flounder Fishery Management Plan was approved in August 2019 resulting in commercial and recreational season closures, as well as other management measures, to reduce harvest and end overfishing. Development of Amendment 3 is underway.
-- **Spotted Seatrout** – Recreational and commercial landings in 2019 increased compared to the previous years, but there is no indication that the stock is at risk. The 2014 stock assessment indicated that the spotted seatrout stock in North Carolina and Virginia was not overfished and that overfishing was not occurring in the terminal year (2012). A benchmark stock assessment for spotted seatrout is underway in 2020 coinciding with the scheduled fishery management plan review, and it will incorporate data through 2019.
-- **Blue Crab** – Results of the 2018 benchmark stock assessment indicate the blue crab stock is overfished and overfishing is occurring. The assessment passed peer review and the model was accepted for use in management. Amendment 3 to the Blue Crab Fishery Management Plan was approved in February 2020, and management measures were implemented to address the overfished status and end overfishing.
+[[IMAGE_7_0|]]
+[[IMAGE_7_1|]]
+[[IMAGE_7_2|]]
 
-**Action Needed**
-For informational purposes only, **no action is needed**.
+## Marine Fisheries Commission Business Meeting Minutes
+## Virtual Meeting via WebEx
+## May 14, 2020
 
-# FISHERY MANAGEMENT PLANS
+Due to COVID-19, the commission held a one-day business meeting via WebEx webinar on May 14. Members of the public submitted public comment online or via U.S. mail. To view the public comment, go to:
+[https://files.nc.gov/ncdeq/051420-mfc-meeting/03-ChairmanReportPackage.pdf](https://files.nc.gov/ncdeq/051420-mfc-meeting/03-ChairmanReportPackage.pdf)
 
-[[IMAGE_129_0|]]
+The briefing book, presentations and audio from this meeting can be found at 
+[http://portal.ncdenr.org/web/mf/05-2020-briefing-book](http://portal.ncdenr.org/web/mf/05-2020-briefing-book). 
 
-- 2019 FMP REVIEW
-- BAY SCALLOP FMP UPDATE
-- KINGFISHES FMP UPDATE
-- FIVE-YEAR FMP REVIEW SCHEDULE
+Actions and motions from the meeting are listed in **bolded** type. 
 
-## ROY COOPER
-Governor
-## MICHAEL S. REGAN
-Secretary
-## STEPHEN W. MURPHEY
-Director
+**BUSINESS MEETING - MOTIONS AND ACTIONS**
 
-July 31, 2020
+**May 14** 
 
-**MEMORANDUM**
+Chairman Rob Bizzell convened the Marine Fisheries Commission business meeting at 9:10 a.m. on May 14 and reminded commissioners of their conflict of interest and ethics requirements.
 
-**TO:** N.C. Marine Fisheries Commission
+The following commission members were in attendance: Rob Bizzell-Chairman, Mike Blanton, Doug Cross, Tom Hendrickson, James Kornegay, Robert McNeill, Dr. Martin Posey Tom Roller and Sam Romano. 
 
-**FROM:** Catherine Blum, Fishery Management Plan and Rulemaking Coordinator
-Fisheries Management Section
+**Motion by Martin Posey to approve the agenda. Seconded by Doug Cross.** 
 
-**SUBJECT:** Fishery Management Plan Update and Schedule Review
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | X | | |
+| Doug Cross | X | | |
+| Tom Hendrickson | X | | |
+| James Kornegay | X | | |
+| Robert McNeill | X | | |
+| Dr. Martin Posey | X | | |
+| Tom Roller | X | | |
+| Sam Romano | X | | |
+| Chairman Rob Bizzell | X | | |
 
-**Issue**
-Update the N.C. Marine Fisheries Commission on the status of ongoing North Carolina fishery management plans.
+**Motion carries unanimously.** 
 
-**Overview**
-*2019 Fishery Management Plan Review*
-The briefing materials include a separate publication entitled “[2019 Fishery Management Plan Review](http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33789156&name=DLFE-143144.pdf).” This document is a compilation of annual updates about state-managed, federally-managed, and Atlantic States Marine Fisheries Commission-managed species for which there are fishery management plans for North Carolina. The updates are based on data through the previous calendar year. Staff provides the document to the commission annually at its August business meeting. It is a useful resource document, especially as a means of providing fishery management plan schedule recommendations based on the latest data. The document also provides a comprehensive list of research recommendations for all fishery management plans.
+**Motion by Pete Kornegay to approve the minutes of the February 2020 meeting. Second by Doug Cross.** 
 
-The 2019 Fishery Management Plan Review is an invaluable reference document for information about the latest status of fisheries occurring in North Carolina. The document is organized into two primary sections: state-managed species and interstate-managed species, including species managed by the Atlantic States Marine Fisheries Commission and federal fishery management councils. The latter section is further divided into species with and without North Carolina indices. If a species has a North Carolina index, it means North Carolina data were used by the federal management councils or the Atlantic States Marine Fisheries Commission in their respective plans.
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | X | | |
+| Doug Cross | X | | |
+| Tom Hendrickson | X | | |
+| James Kornegay | X | | |
+| Robert McNeill | X | | |
+| Dr. Martin Posey | X | | |
+| Tom Roller | X | | |
+| Sam Romano | X | | |
+| Chairman Rob Bizzell | X | | |
 
-Each update in the Fishery Management Plan Review contains information about the:
-- History of the plan;
-- Management unit;
-- Goal and objectives;
-- Status of the stock;
-- Status of the fishery, including current regulations and commercial and recreational landings;
-- Monitoring program data, including fishery-dependent and fishery-independent data;
-- Management strategy;
-- Management and research needs; and
-- Recommendation on the timing for the next review of state plans.
+**Motion carries unanimously.** 
 
-*Five-year Fishery Management Plan Review Schedule*
-As stated above, the annual updates for the state-managed species include a recommendation on the timing for the next review of state fishery management plans. These recommendations inform the draft “N.C. Fishery Management Plan Review Schedule (July 2020-June 2025)” presented for the commission’s consideration and preliminary approval. The schedule reflects the status of the individual plans in regards to the statutorily mandated plan reviews. Per N.C. General Statute 113-182.1(d), each plan shall be reviewed at least once every five years. Upon the commission’s approval, the schedule will be forwarded to the secretary of the Department of Environmental Quality for final approval, per G.S. 113-182.1(d).
+**Chairman’s Report**
+Chairman Bizzell stated that the Chairman’s Report is in the briefing book for review and he gave an update at a commissioner’s request on the N.C. Wildlife Resources Commission and N.C. Marine Fisheries Commission Joint Committee on Delineation of Fishing Waters. He stated that the joint meeting is still on recess and that WRC asked Division of Marine Fisheries staff for some data on commercial fishing efforts, landings, etc. in joint waters. 
 
-The schedule is introduced by a short summary of the status of the fishery management plans. This is a document staff provides to the commission annually at its August business meeting. The document provides background information on the authority and process for fishery management plans, a description of recent changes to the fishery management plan process, as well as the status of each individual plan. Prior to the commission’s vote on the five-year schedule, staff leads for the Bay Scallop Fishery Management Plan and the Kingfishes Fishery Management Plan will provide updates to the commission and request the commission’s approval of the annual update to complete the scheduled review of each plan. Supporting information for each plan is included in the briefing materials.
+**Director’s Report**
+Director Murphey gave an update on gill net actions and progress. He outlined recent regulations changes in the fishery related to the Flounder FMP and the recently issued small-mesh gill net proclamation in March. The director also gave an update on the progress of the division’s gill net working group and the expected timeline for progress on the rulemaking process. Commissioner Blanton described the the winter/spring menhaden fishery in Management Unit B and requested the division consider an exception for this fishery as part of the larger gill net discussion. Commissioner Cross commented on the hot spot issue, specifically encouraging cooperation between user groups. 
+Director Murphey also discussed the impacts on the division from the COVID-19 pandemic, which are significant. In addition, he reviewed the CARES Act and the related federal assistance programs. He also provided the commission with an update on the Hurricane Florence Federal Fishery Disaster. 
 
-**Action Needed**
-At its August 2020 business meeting the commission is scheduled to vote on preliminary approval of the “N.C. Fishery Management Plan Review Schedule (July 2020-June 2025)”.
+Steve Poland, the Division’s Executive Assistant for Councils, presented the Recreational Hook and Line Information Paper requested by the commission. 
 
-## Annual Fishery Management Plan Update
-**N.C. Division of Marine Fisheries and Marine Fisheries Commission**
-**July 31, 2020**
+To view the presentation, go to: 
+[http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142892.pdf](http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142892.pdf)
 
-**Authority and Process**
-The Fisheries Reform Act of 1997 and its subsequent amendments established the requirement to create fishery management plans (FMPs) for all of North Carolina’s commercially and recreationally significant species or fisheries. The contents of the plans are specified, advisory committees are required, and reviews by the Department of Environmental Quality secretary, Joint Legislative Oversight Committee on Agriculture and Natural and Economic Resources, Joint Legislative Commission on Governmental Operations, and legislative Fiscal Research Division are mandated.
+Chairman Bizzell stated that regarding trolling, circle hooks are required at any tournament that targets highly migratory species using natural bait. 
 
-All initial FMPs identified on the priority list have been developed. Annually, the division reviews all state FMPs, as well as all federally-managed and Atlantic States Marine Fisheries Commission (ASMFC)-managed species for which there are FMPs for North Carolina. Upon review, amendment of a state plan is required when changes to management strategies are necessary. An information update for a plan, which includes changes in factual and background data only, may be completed if there are no management changes.
+Commissioner Cross stated that each species will require a different size hook and he recommends the recreational seats on the commission work on some guidelines. He also recommended a fishery management plan to get the hook sizes established. He commented that there is a lot of money on the recreational side, manufacturers of hooks and bait. He would encourage a timetable for manufacturers and anglers. 
 
-At the MFC 's August 2019 business meeting, staff first provided an update on changes being implemented designed to achieve efficiencies in the FMP process. Changes include the timing of the steps in initial development of draft FMPs, how the division works with the FMP advisory committee and how the committee operates, and what the FMP documents look like. Before the initial development of a draft FMP, a scoping period is held to notice the public the review of the FMP is underway, inform the public of the stock status (if applicable), solicit input from the public on the list of potential management strategies to be developed, and recruit advisers to serve on the FMP advisory committee. These changes are being incorporated beginning with Amendment 3 to the Southern Flounder FMP and Amendment 2 to the Shrimp FMP.
+Commissioner Posey stated that early on in the presentation Steve mentioned that ASMFC had adopted requirements for circle hooks for striped bass and sharks and that we had to be in compliance by July. Does the commission need to take further action to be in compliance? Steve answered no, Director Murphey would issue a proclamation before the July 1 deadline. 
 
-**Status of State FMPs**
-The review of six of 13 state plans is currently underway. These plans are the Southern Flounder, Shrimp, Estuarine Striped Bass, and Spotted Seatrout FMPs. Review of the Striped Mullet and N.C. FMP for Interjurisdictional Fisheries is just beginning.
+Commission Kornegay stated that he has extensive experience with circle hooks and striped bass on the Roanoke River. He stated that it took 2-3 years to convince the anglers up there that circle hooks are the way to go. Now, however, probably a majority of the fishermen are using circle hooks because they see the benefits for striped bass. They started an education program and were able to distribute circle hooks to the fishermen that were donated by Eagle Claw and Mustad. 
 
-Amendment 2 to the **Southern Flounder FMP** began with a coast-wide (North Carolina to the east coast of Florida) stock assessment for Southern Flounder that determined the stock is overfished (stock size is too small) and overfishing (excessive fishing mortality) is occurring. Reductions in total removals of southern flounder are required by state law to achieve a sustainable harvest, end overfishing within two years and recover the stock from an overfished condition within 10 years. At its August 2019 business meeting the MFC approved Amendment 2 to the Southern Flounder FMP. Upon adoption, Amendment 2 authorized the division to immediately begin development of Amendment 3 where more comprehensive management strategies and measures are being developed based on the results of the 2019 coast-wide stock assessment.
+Commissioner Romano stated that he was concerned that it was a bit broad sweeping and suggested the motion state that it is species specific. Chairman Bizzell answered that these types of things can be focused on during the rulemaking process. 
 
-Development of Amendment 3 is underway and may augment management with more comprehensive strategies, but will not restart the rebuilding timeframe identified through Amendment 2. Consistent with the recent changes to the FMP process, a scoping document outlining potential management strategies for Amendment 3 was drafted and a scoping period for Amendment 3 was held in December 2019. The MFC received a summary of the public input from the scoping period at its February 2020 meeting, provided input to the division on management strategies, and approved the goal and objectives for Amendment 3. The division is considering input from the scoping period and the MFC and is drafting Amendment 3. The division plans to work with the Southern Flounder FMP AC to further develop draft Amendment 3 later this year. Amendment 3 is expected to be completed in 2021.
+Commissioner Roller mentioned that he uses a jig head for live bait because there is less deep-hooking. Circle hooks have really taken over at the tackle shops; not seeing many j-hooks anymore. 
 
-The division is continuing with the development of the **Shrimp FMP** Amendment 2, which began in 2019. Consistent with the recent changes to the FMP process, a scoping document outlining potential management strategies for Amendment 2 was drafted and a scoping period for Amendment 2 was held in January 2020. The MFC received a summary of the public input from the scoping period at its February 2020 meeting, provided input to the division on management strategies, and approved the goal and objectives for Amendment 2. The division is considering input from the scoping period and the MFC and is drafting Amendment 2. An advisory committee for the FMP will be appointed later in 2020. The division plans to work with the FMP AC to further develop draft Amendment 2 later this year.
+Commissioner Blanton stated that regarding commercial trotlines, he is unsure that if using a barbless hook would be conducive to trying to cull out some of these catfish. Would like to explore deeper into trotline in the commercial aspect. Secondly, being a bass fisherman, he doesn’t use circle hooks when he fishes with soft plastic. We need to be careful when we go about implementing something like this.
 
-The division is continuing with the development of the **Estuarine Striped Bass FMP** Amendment 2, which is being jointly developed with the N.C. Wildlife Resources Commission. Results from a peer-reviewed benchmark stock assessment utilizing data through 2017 are expected in 2020. Consistent with the recent changes to the FMP process, a scoping document outlining potential management strategies for Amendment 2 will be drafted and a scoping period for Amendment 2 will tentatively be held in November 2020.
+Commission Hendrickson had a couple of observations; when staff develops the issue paper, take a species by species view to determine what makes the most sense. We can develop the issue paper and evaluate it based on species to figure out how to make something that will work for the fishermen and resource. Regarding bending down barbs on treble hooks, is the intent as the commission to ask staff to say that ever barb on every treble in the water needs to be bent down? 
 
-A benchmark stock assessment for the **Spotted Seatrout FMP** is underway coinciding with the scheduled FMP review. The prior stock assessment from 2014 indicated the stock is not overfished and is not experiencing overfishing. The division decided to include data through 2019 in the stock assessment to be more reflective of recent fishing activity.
+**Motion by Pete Kornegay that the Division develop an issue paper for rule making to require the use of barbless non-offset circle hooks when hook size relates to 2/0 or larger while using natural bait. In addition, barbs on treble hooks must be bent down. Seconded by Tom Roller.** 
 
-Amendment 1 to the **Striped Mullet FMP** was approved in November 2015. Review of the FMP is just beginning; a benchmark stock assessment will be undertaken. The 2013 stock assessment indicated overfishing was not occurring, but it could not determine the overfished status. Though commercial landings and abundance from independent indices in 2017 were near historic lows, an update of the 2013 stock assessment model with data through 2017 indicated overfishing is not occurring. The striped mullet commercial fishery primarily targets mature females during the fall when they are migrating to the ocean to spawn, which could lead to poor recruitment. Review of 2019 commercial landings indicated neither the maximum (2.76 million pounds) nor minimum (1.13 million pounds) triggers had been exceeded.
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | X | | |
+| Doug Cross | X | | |
+| Tom Hendrickson | X | | |
+| James Kornegay | X | | |
+| Robert McNeill | X | | |
+| Dr. Martin Posey | X | | |
+| Tom Roller | X | | |
+| Sam Romano | | | X |
+| Chairman Rob Bizzell | X | | |
 
-The N.C. **FMP for Interjurisdictional Fisheries** Information Update was approved in November 2015. No change in management strategies was necessary, so the plan was updated with the most current factual and background data. The goal of the FMP for Interjurisdictional Fisheries is to adopt FMPs, consistent with N.C. law, approved by the federal Councils or the ASMFC by reference and implement corresponding fishery regulations in North Carolina to provide compliance or compatibility with approved FMPs and amendments, now and in the future. The review of this plan is just beginning.
+**Motion carries 8-0 with one abstention.** 
 
-The N.C. **River Herring FMP** Amendment 2 was adopted by the MFC in 2015. An Atlantic coast-wide stock assessment update for river herring was completed in August 2017, with data through 2015, by the ASMFC. Results indicate river herring remain depleted and at near historic lows on a coast-wide basis¹. The division recommends the next review of the River Herring FMP begin in 2021, one year later than originally planned. This will provide additional time to submit to the ASMFC an updated N.C. Sustainable FMP for River Herring and evaluate the need to preserve both a state and ASMFC river herring plan, the potential for achieving efficiencies by addressing any redundancy in management, and the possibility of retiring the state FMP while continuing to manage river herring via the N.C. FMP for Interjurisdictional Fisheries and the ASMFC’s Interstate FMP for Shad and River Herring.
+Director Murphey pointed to the locations of ASMFC, SAFMC, etc. Chairman Bizzell commented that the tarpon rule received 10 letters of objection it so it will be reviewed by the legislature. He said letters can come from anyone even out of state residents and he is opposed to that.
 
-The **Hard Clam FMP** Amendment 2 and the **Eastern Oyster FMP** Amendment 4 were approved in February 2017 and the implementing rules became effective May 1, 2017. Stock assessments cannot be conducted due to limited data; therefore, population size and the rate of removals from each population are unknown. For the Hard Clam FMP, harvest fluctuates, often in response to changes in demand, improved harvesting methods, and increases in polluted shellfish area closures. For the Oyster FMP, commercial landings from public bottom have been variable, and landings from private bottom in the past few years have increased significantly due to more interest in aquaculture. Work is underway with N.C. State University and the Nature Conservancy to develop methodologies to determine stock status for eastern oysters. The next review of both FMPs will begin in 2022.
+**Fishery Management Plan Update** 
+Catherine Blum, the division’s Fishery Management Plan Coordinator, gave the commission a presentation on the status of North Carolina’s ongoing fishery management plans. 
 
-The management program currently in place for the N.C. **Red Drum FMP** has resulted in a stock that has met ongoing management targets. Therefore, at its August 2017 business meeting, the MFC approved the division recommendation for the 2016 annual FMP update to fulfill the scheduled review of the N.C. Red Drum FMP. All management strategies that have led to management targets being met will be maintained as outlined in both the state FMP and the ASMFC FMP. Stock conditions will be monitored and reported through each subsequent annual FMP update and the MFC will continue to receive the FMP review schedule annually. The next scheduled review of this plan will begin in 2022.
+To view the presentation, go to: 
+[http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142891.pdf](http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142891.pdf)
 
-The division is continuing to implement Amendment 3 to the **Blue Crab FMP**, which was adopted by the MFC in February 2020 to address the overfished status and end overfishing. Results of the 2018 benchmark stock assessment indicate the blue crab stock is overfished and overfishing is occurring. An update to the 2018 benchmark stock assessment will begin no sooner than 2023 and will include data through the previous year. The next scheduled review of this plan will begin in 2025.
+**Blue Crab Fishery Management Plan Amendment 3**
+Joe Facendola and Corrin Flora, division staff leads for the Blue Crab FMP gave the commission a presentation on the proposed Diamondback Terrapin Management Areas. 
 
-The division recommends the 2020 annual FMP update fulfill the scheduled review of the **Bay Scallop FMP**. Bay scallop abundances have remained at historically low levels since the last scheduled review. This has not allowed a commercial or recreational harvest season to be opened, thus no stricter changes in management can be enacted. All management strategies that have been in place will be maintained as outlined in the state FMP. Stock conditions will be monitored and reported through each subsequent annual FMP update and the MFC will continue to receive the FMP review schedule annually. The next scheduled review of this plan will begin in 2025.
+To view the presentation, go to: 
+[http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142896.pdf](http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142896.pdf)
 
-The division recommends the 2020 annual FMP update fulfill the scheduled review of the **Kingfishes FMP**. The management program currently in place for kingfishes has resulted in a stock that has met ongoing management targets. All management strategies that have been in place will be maintained as outlined in the state FMP. Stock conditions will be monitored and reported through each subsequent annual FMP update and the MFC will continue to receive the FMP review schedule annually. The next scheduled review of this plan will begin in 2025.
+Commissioner Romano read a statement: 
+“Diamondback Terrapins have been harvested for food since the 1800s. Winston Churchill called Diamondback Terrapin soup his favorite delicacy. Only in 2016 did New Jersey restrict harvest.
+If Terrapins reach sexual maturity in a couple of years, the North Carolina population should have seen a distinct rebound as harvest was restricted decades ago. There are many less crabbers and thus many less interactions, yet perceived scarcity still exists. After harvest has been restricted and crabbing pressure decline, coastal population in development has exploded. So, why is it that our number one concern with Diamondback Terrapins is the crabber’s impact when this inverse relation exists? Contrary to belief, no long-term populations study has ever been achieved. 
 
-___
-¹ Atlantic States Marine Fisheries Commission (ASMFC). 2017. River herring stock assessment update, Volume II. 682 pp.
+Most experts will tell you that little is known about the actual numbers of Diamondback Terrapins in any area of North Carolina. Any important species that we manage should have an in-depth study and includes assessment of age sex, spawning stock, biomass and protection before rulemaking is taken. The science that we have in the proposed DTMAs is citizens taking Kayak trips and counting Terrapins by head count. We should be relying on sound science, not perceived scarcity, Diamond Terrapins range from Cape Cod to Florida keys and throughout the Gulf, they're even found on Bermuda, and they're found not to be introduced by humans. There are only a few states have any mandates and they don't produce nearly the volume of crabs in North Carolina does. So, why are we in NC putting burden on specific crabbers when these populations are found all over with very little restrictions in place. Raccoons and foxes are said to have significant impact on Diamondback Terrapin populations. One study in New Jersey found a direct correlation between raccoon populations and Diamondback Terrapin populations. Both of these DTMAs have significant thriving raccoon and fox populations. Coastal development, predation, habitat loss and water quality have all contributed to the perceived scarcity of Terrapins. 
 
-## DRAFT DOCUMENT – SUBJECT TO CHANGE
-**DRAFT N.C. FISHERY MANAGEMENT PLAN REVIEW SCHEDULE (July 2020 – June 2025)**
-**Revised July 31, 2020**
+Why is it that crab modification action leads our conservation efforts. Terrapins are dimorphic and the males are much smaller than the females. Traditional pots with cull rings, allow the smallest Terrapins, predominantly males, to escape. The crab pot entrances restrict all the large Terrapins, females only. Only a specific size Terrapin, that means smaller than the entrance and larger than the cull ring, can actually be caught. Is this specific-sized Terrapin mortality enough to crash the population? Do we have an understanding of population breakdown between males and females in any area of North Carolina? The bycatch reduction design shows very little imagination and is composed of a plastic square that fits in each of the four entrances to the trap. Crabbers are rightfully protective of the entrances of any trap as it is the ultimate determinant of what you'll catch. Viable, valuable and sustainable seafood, such as stone crabs and welch and most fish are completely eliminated by this design. Although claims have been made that crab catch will not be affected, this runs completely contrary to fisherman intuition. These are the exact people that design traps over generations and squares aren't generally found in nature. The square piece of plastic has to be installed in four locations of your crab pot leading to increased costs by ways of materials and labor. And they're only certain times and places that these traps will actually be in interactions zones. The rest of the year, they will only be limiting catch and creating useless burden. Is this our best action? Distance from shoreline, specific areas and seasonal closures all add to the myriad of enforcement difficulties towards marine patrol. Why waste their valuable time with these, with these offices on tricky labors enforcement of boundaries that could be better spent. What is the end game to these regulations? Certainly, it will not end in the proposed DTMA boundaries. If you're a crabber elsewhere, you may not think you'll be affected. However, it is easy to conclude that these rules will serve as precedent for implementation throughout the state. The blue crab fishery is extremely important, and any rulemaking, no matter the size of impact, should be made with extreme caution. Proposed DTMAs are a couple thousand acres compared to millions in NC and beyond, which means very little impact to any Terrapin populations. The proposed DTMAs correspond with national heritage sites and coastal research reserves, which have little to do with Diamondback Terrapin migration dynamics, or sound science. Only a few dedicated, time tested crabbers work these areas and they will be put on the chopping block. These private crabbers supply crabs almost exclusively for local Wilmington in greater North Carolina markets. Is this fair? Is this effective?
 
-| SPECIES (Date of Last Action) | 2020-2021 | 2021-2022 | 2022-2023 | 2023-2024 | 2024-2025 |
-| --- | --- | --- | --- | --- | --- |
-| **SOUTHERN FLOUNDER (8/19) †*** | | | | | |
-| **SHRIMP (2/15) †** | | | | | |
-| **ESTUARINE STRIPED BASS (5/13) **** | | | | | |
-| **SPOTTED SEATROUT (2/12) ***** | | | | | |
-| **INTERJURISDICTIONAL (11/15)** | | | | | |
-| **STRIPED MULLET (11/15)** | | | | | |
-| **RIVER HERRING (2/15) ****** | | | | | |
-| **HARD CLAM (2/17)** | | | | | |
-| **OYSTER (2/17)** | | | | | |
-| **RED DRUM (8/17)** | | | | | |
-| **BLUE CRAB (2/20)** | | | | | |
-| **BAY SCALLOP (8/20) ‡** | | | | | |
-| **KINGFISHES (8/20) ‡** | | | | | |
+You can easily find Diamondback Terrapins available for sale online for about two hundred dollars per terrapin. This suggests that breeding programs exist. If we're so worried about populations of Terrapins, why don't we discuss population enhancement? How many mortalities do we think occur? How large of a breeding program would we have to do to completely offset this loss? Many have sited the avoid listing from the Monterey Bay Aquarium as a reason for action. Pressures from NGOs should never enter our conversation about the actions of the state.
+This is an extremely dangerous precedent to set. This group based in California has never done any study of North Carolina it has not committed to do anything if we take action.
+Our job is to assess science not the political or economic undertones. I'm one of the few crabbers that this will affect.
 
-† The schedule assumes no rulemaking is required to implement the amendment.
-‡ The management program currently in place has resulted in a stock that has met ongoing management targets (kingfishes) or the species is impacted by factors beyond fishing mortality (bay scallop); therefore, the 2020 annual fishery management plan update based on data through 2019 will fulfill the scheduled review.
-* Adoption of Amendment 2 included the immediate development of Amendment 3 to implement more comprehensive, long-term management measures based on the 2019 coast-wide stock assessment update that indicated the stock is overfished and overfishing is occurring.
-** The stock assessment process that began in 2017 for the Central Southern Management Area stocks and the Albemarle Sound-Roanoke River Management Area stock is nearing completion. Supplement A to the Estuarine Striped Bass Fishery Management Plan was developed and adopted during 2018-2019.
-*** A 2015 stock assessment indicated the spotted seatrout stock in North Carolina and Virginia was not overfished and overfishing was not occurring in the terminal year (2012) of the assessment. Due to staff workload for the review of other plans occurring in 2017 and since the stock was at a viable level and removals were considered sustainable for the long-term benefit of the stock, the next review of the plan was moved to 2019. Additionally, the division decided to include data through 2019 in the stock assessment to be more reflective of recent fishing activity. The stock assessment process is underway.
-**** The schedule reflects a one-year delay to provide additional time to submit an updated N.C. Sustainable Fishery Management Plan for River Herring to the Atlantic States Marine Fisheries Commission (ASMFC) and to evaluate the need to preserve both a state and ASMFC river herring plan.
+I'm a graduate of UNCW, with the degree in environmental studies. It has been extremely important to me since I began my business to work with researchers as a way of bridging the gap between science and industry. We began to work with UNCW master students twelve years ago and we help them procure bait and wire for research on their Terrapins. At the end of their research, they call us to apologize when they found out their findings were being used to pursue regulation they didn't agree with. The next thing we knew, we are in the room with fellow crabbers and were asked to circle hotspots, but we're giving no explanation of what they would be used for. Many veterans of the seafood industry had warned us that working with the scientific community would only lead to harsh regulation, regardless of our good relationships with the researchers. The erosion of trust between fisherman, researchers and policymakers threatens to undermine all the good decisions the community expects from us. 
 
-# BAY SCALLOP FISHERY MANAGEMENT PLAN
+We began to work with Larry Bolton, the crab pot maker, and Sammy Corbett, modifying entrances by way of number of meshes. Traditional pots have about fifteen mesh or more circumference at the entrance to the pot. By limiting the amount of meshes at the entrance, the resulting funnel is smaller. Because the entrances remain smooth without any barriers, crab catch is retained, regardless of size of opening. Our design actually makes the initial entrance smaller than the BRD would do. I have personally used this design all spring in Diamonback Terrapin interactions zones and have yet to catch one. 
 
-[[IMAGE_136_0|]]
+I am voluntarily switching all my shallow water traps to this design, not only to eliminate Diamondback Terrapin interaction, but also to increase my crab catch. I've done my best to push my design and to involve researchers and by doing my own testing. The Commercial Fishing Resource Fund Committee that I serve on received a proposal for research on these designs. I abstained from voting since I was advised that I was too significantly involved. However, I can't be paid for any contribution of time or equipment and I've already spent thousands of dollars and participate in daily self-driven experimentation. 
 
-## ROY COOPER
-Governor
-## MICHAEL S. REGAN
-Secretary
-## STEPHEN W. MURPHEY
-Director
+There are much larger concerning elements to this issue. The first being that a private organization based in California that has never done any study of terrapins in NC is influencing matters of our state by pressuring large corporate grocers to stop buying NC crab meat. North Carolina should settle its own matters and come to its own conclusions by way of sound researching experimentation. 
 
-July 31, 2020
+Secondly, our state has shown a little interest, creativity, or initiative towards a better way of handling this issue. Instead of additional research, they have only focused on regulation and boundaries instead of trying to understand Diamondback Terrapins better.
 
-**MEMORANDUM**
+Lastly, it seems absolutely absurd to me that at the time in the near future, when we will see decreases in the available protein and food security issues, this is what seems most important. My brother, my partners, and I create a business that feeds North Carolinians primarily off our local crab. That's how we started. We need commercial fishing expertise more than ever, but we can send you to slowly have away at their ability to earn a living wage and we all suffer when we can't get to seafood that is in our backyards. 
 
-**TO:** N.C. Marine Fisheries Commission
+So, with that, I would like to make a motion. I'd like to make it verbally and that motion is to reject the DTMA boundaries and to use the States resources to enhance data collection and experimentation to better understand Diamondback Terrapin population, behavior and his relation to crab pot designs throughout the state.” 
 
-**FROM:** Jeffrey Dobbs, Bay Scallop Fishery Management Plan Lead
+There was significant discussion on this issue, largely led by Commissioner Romano. Following the discussion Commissioner Romano made the following motion: 
 
-**SUBJECT:** N.C. Bay Scallop Fishery Management Plan Scheduled Review
+**Motion by Sam Romano to reject the DTMA boundaries and use the state’s resources to enhance data collection and experimentation to better understand Diamondback Terrapin population behavior and its relation to crab pot designs throughout the state. Seconded by Doug Cross.** 
 
-**Issue**
-Review of the N.C. Bay Scallop Fishery Management Plan (FMP) is scheduled to begin this year. The division requests the N.C. Marine Fisheries Commission (MFC) approve the 2020 Bay Scallop FMP annual update to fulfill the scheduled review of the Bay Scallop FMP.
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | | | X |
+| Doug Cross | X | | |
+| Tom Hendrickson | | X | |
+| James Kornegay | | X | |
+| Robert McNeill | | X | |
+| Dr. Martin Posey | | X | |
+| Tom Roller | | X | |
+| Sam Romano | X | | |
+| Chairman Rob Bizzell | | X | |
 
-**Findings**
-Bay scallops are a short-lived species sensitive to environmental change and may experience high levels of predation, which can heavily impact the population. The sensitivity of the bay scallop population to environmental change is exemplified by the red tide event of late autumn 1987 and early 1988 that significantly reduced the population, and from which the population has not fully recovered. Relative abundance, or number of bay scallops, is monitored by the Division of Marine Fisheries (DMF) via a fishery-independent sampling program. The program monitors sites in Back, Bogue, Core and Pamlico Sounds during the months of January, April, July, and October. Open seasons may only occur from the last Monday in January through April 1 (at a maximum) to ensure spawning is complete and the economic yield is at an optimum.
+**Motion fails 2-7 with one abstention.**
 
-There are insufficient data to conduct a traditional stock assessment for bay scallop, so management decisions are instead based on annual relative abundance in comparison to the pre-red tide relative abundance. The current management strategy for the bay scallop fishery is to allow limited harvest by proclamation when relative abundance targets are met. Progressive triggers are defined in the current management strategy and allow for increased harvest if relative abundance is higher. Bay scallop relative abundances have remained at historically low levels since the last scheduled review in 2015. The continuing low relative abundances have not allowed a commercial or recreational harvest season to be opened, thus no stricter changes in management can be enacted. In the [2020 Bay Scallop FMP annual update](http://portal.ncdenr.org/c/document_library/get_file?uuid=1f18562d-281f-45c5-928c-f81a6301648c&groupId=38337) the DMF has identified research needs and updated the list of research recommendations needed moving forward.
+**Motion by Sam Romano to accept the DTMA boundaries but reject the requirement for traditional BRDs. Seconded by Doug Cross.** 
 
-**Action Needed**
-At its August 2020 business meeting the MFC is scheduled to vote on approval of the 2020 Bay Scallop FMP annual update to complete the scheduled review of the N.C. Bay Scallop FMP.
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | | | X |
+| Doug Cross | X | | |
+| Tom Hendrickson | | X | |
+| James Kornegay | | X | |
+| Robert McNeill | | X | |
+| Dr. Martin Posey | | X | |
+| Tom Roller | | X | |
+| Sam Romano | X | | |
+| Chairman Rob Bizzell | | X | |
 
-**Recommendation**
-The division recommends the 2020 Bay Scallop FMP annual update serve as the scheduled review of the North Carolina Bay Scallop FMP. All management strategies that have been in place will be maintained as outlined in the state FMP, including the continued monitoring of the bay scallop relative abundance as described above. Stock conditions will continue to be monitored and reported through each subsequent annual FMP update and the MFC will continue to receive the FMP review schedule annually.
+**Motion fails 2-6 with one abstention.**
 
-The full documents are provided for review in the briefing materials and are linked below:
+**Motion by Tom Roller to approve the DTMAs as presented by staff, including the adjusted boundaries. Seconded by Robert McNeill.**
 
-N. C. Bay Scallop Fishery Management Plan Update (2020)
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | | | X |
+| Doug Cross | | X | |
+| Tom Hendrickson | X | | |
+| James Kornegay | X | | |
+| Robert McNeill | X | | |
+| Dr. Martin Posey | X | | |
+| Tom Roller | X | | |
+| Sam Romano | | X | |
+| Chairman Rob Bizzell | X | | |
 
-N. C. Bay Scallop Fishery Management Plan Amendment 2 (2015)
+**Motion carries 6-2 with one abstention.** 
 
-STATE-MANAGED SPECIES – BAY SCALLOP
-FISHERY MANAGEMENT PLAN UPDATE
-BAY SCALLOP
-AUGUST 2020
+**Repacking of Foreign Crab Meat in North Carolina** 
+Shannon Jenkins, Section Chief and Shawn Nelson, Inspections Program Supervisor, Shellfish Sanitation and Recreational Water Quality Section, presented the Repackaging Foreign Crab Meat in North Carolina information paper requested by the commission. 
 
-**STATUS OF THE FISHERY MANAGEMENT PLAN**
+To view the presentation, go to: 
+[http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142894.pdf](http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142894.pdf)
 
-**Fishery Management Plan History**
-Original FMP Adoption: November 2007
-Amendments: Amendment 1 – November 2010
-Amendment 2 – February 2015
-Revisions: None
-Supplements: None
-Information Updates: None
-Schedule Changes: July 2005 – Began the original FMP a year earlier than planned due to concerns of limited abundance
-August 2020 – This update satisfies the formal review of Amendment 2 to the North Carolina Bay Scallop Fishery Management Plan. The next scheduled formal review will begin July 2025.
-Next Benchmark Review: July 2025
+Commissioner Cross thanked Shannon for his presentation and gave an industry overview of crab meat packaging. He stated that repackaging imported crab meat into a domestic labeled container for resale is designed to defraud the customer. The firms that do this have a huge economic advantage, an unfair advantage over the crab houses who are left because it depresses the domestic crab price.
 
-The N.C. Bay Scallop Fishery Management Plan (FMP) was adopted in November 2007. The FMP implemented prohibited take from 2006 to 2008 until an independent sampling indicator was established for re-opening in 2009. Amendment 1 of the Bay Scallop FMP was finalized in November 2010 to provide more flexibility (Adaptive Management) to open the fisheries as the bay scallop population recovers. Target indices were established from fishery independent data collected before a red tide (toxic dinoflagellate) event of late autumn 1987 and early 1988 in Core, Back, and Bogue sounds that decimated the fishery. A separate sampling indicator for re-opening was developed in 2009 for Pamlico Sound. Amendment 2, adopted in February 2015, continues to use the abundance thresholds for opening the harvest season and defining the harvest levels for all areas, except areas south of Bogue Sound. Areas south of Bogue Sound will not be managed with a specific abundance opening level, but will be opened or remain closed based on North Carolina Division of Marine Fisheries (NCDMF) evaluation of sampling results in this region. Expanded sampling is to occur in all areas including areas south of Bogue Sound and improving the reliability of the data for the recreational scallop harvest. For private culture and enhancement, the current management strategy is to modify rules for bottom culture and aquaculture operations to be consistent with rules for other shellfish species. The Shellfish Research Hatchery in Wilmington, N.C. will establish a pilot program to distribute cultured bay scallop seed on private bottom, and depending on the results potentially expand the pilot program to include enhancement for public bottom.
+Most of the commission agreed the labeling is inadequate. Commissioner Romano brought up unintended consequences of not allowing people to repack bulk purchased crab meat if it is labeled well. This will disadvantage lots of people, who are doing the right thing. 
 
-**Management Unit**
+There was discussion about rulemaking versus statutory change. 
 
-Includes the bay scallop (_Argopecten irradians_) and its fisheries in all waters of coastal North Carolina.
+**Motion by Doug Cross to make it illegal to repack any imported crab meat in North Carolina into another container for resale in the State of North Carolina through the rulemaking process. Seconded by Tom Hendrickson.**
 
-**Goal and Objectives**
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | X | | |
+| Doug Cross | X | | |
+| Tom Hendrickson | X | | |
+| James Kornegay | X | | |
+| Robert McNeill | X | | |
+| Dr. Martin Posey | X | | |
+| Tom Roller | X | | |
+| Sam Romano | X | | |
+| Chairman Rob Bizzell | X | | |
 
-The goal of the North Carolina Bay Scallop Fishery Management Plan is to implement a management strategy that restores the stock, maintains sustainable harvest, maximizes the social and economic value, and considers the needs of all user groups. To achieve this goal, it is recommended that the following objectives be met:
+**Motion passes unanimously.**
 
-1. Develop an objective management program that restores and maintains sustainable harvest.
-2. Promote the protection, restoration, and enhancement of habitats and water quality necessary for enhancing the fishery resource.
-3. Identify, enhance, and initiate studies to increase our understanding of bay scallop biology, predator/prey relationships, and population dynamics in North Carolina.
-4. Investigate methods for protecting and enhancing the spawning stock.
-5. Investigate methods and implications of bay scallop aquaculture.
-6. Address social and economic concerns of all user groups.
-7. Promote public awareness regarding the status and management of the North Carolina bay scallop stock.
+**Rulemaking Update**
+Catherine Blum, the division’s Rulemaking Coordinator, provided the commission with a presentation on the 2019/2020 and 2020/2021 rulemaking cycles, 2020/2021 rulemaking cycle and notice of text for seven rules proposed for readoption or readoption through repeal in 15A NCAC 18A .3400. 
 
-**STATUS OF THE STOCK**
+To view the presentation, go to: 
+[http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142895.pdf](http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142895.pdf)
 
-**Life History**
+**Motion by Martin Posey to approve notice of text and the corresponding fiscal analysis for the re-adoption of seven MFC rules in 15A NCAC 18A .3400 (Coastal Recreational Waters Monitoring, Evaluation, and Notification), per G.S. 150B-21.3A. Seconded by Doug Cross.** 
 
-Bay scallops are estuarine-dependent mollusks found in grass beds. Bay scallops are hermaphroditic (contain both sex cells) bivalves and mature and spawn in a year (Brousseau 2005). Their lifespan is only 12-26 months. In North Carolina, bay scallops spawn predominantly from August through January and again in March through May (Gutsell 1930). The larvae go through several swimming stages before attaching to a suitable substrate such as seagrass. Upon reaching a size of approximately 1 inch (20-30 mm), bay scallops drop to the bottom. Although other benthic structures can be used for attachment, bay scallops use seagrass beds almost exclusively, and are therefore highly dependent on this habitat for successful recruitment (Thayer and Stuart 1974). Bay scallops are filter feeders and feed on benthic diatoms (Davis and Marshall 1961). Predators of the bay scallop include cownose rays, blue crabs, starfish, whelks, and sea birds.
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | X | | |
+| Doug Cross | X | | |
+| Tom Hendrickson | X | | |
+| James Kornegay | X | | |
+| Robert McNeill | X | | |
+| Dr. Martin Posey | X | | |
+| Tom Roller | X | | |
+| Sam Romano | X | | |
+| Chairman Rob Bizzell | X | | |
 
-**Stock Status**
+**Motion passes unanimously.**
 
-There are insufficient data to conduct a traditional stock assessment for bay scallop in North Carolina. Bay scallop in North Carolina are a species of concern because of population declines, caused by previous red tide events and the additive impacts from environmental factors and predation. Annual commercial landings of bay scallops show large fluctuations through time and are presumed to be driven by changing climate conditions (i.e., winter freezes, high freshwater runoff), predation, and red tide. Bay scallops are vulnerable to overharvest because of the multiple factors affecting their survival.
+**Rule Suspensions**
 
-**Stock Assessment**
+Kathy Rawls, the division’s Fisheries Management Section Chief, gave a presentation to the commission on new rule suspensions that have occurred since the Nov. 2019 meeting. Due to inclement weather, the votes on rule suspensions were delayed until the May 2020 meeting. 
 
-Fishery independent data on bay scallop have been collected by the NCDMF since 1975, and consistently collected since 1998 to evaluate recruitment into the population and recruitment into the fishery for the current fishing season. Analyses of these data have demonstrated trends between NCDMF fishery independent data and landings data from the following year. The long term landings data (1972-2005) most likely reflected population abundance because harvest was allowed to continue until scallop densities reached levels below those that make the fishing economically viable (Peterson and Summerson 1992). However, during 2006 and after the implementation of the 2007 Bay Scallop FMP, a prohibited take on harvest went into effect to rebuild the stock and until a standardized catch per unit effort measure could be determined (NCDMF 2007). Therefore, using landings data is no longer an effective tool to indicate population size.
+To view the presentation, go to: 
+[http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142893.pdf](http://portal.ncdenr.org/c/document_library/get_file?p_l_id=1169848&folderId=33653918&name=DLFE-142893.pdf)
 
-Data on bay scallop abundance from fishery independent sampling are evaluated annually and standardized bay scallop population level indicators were first established as progressive triggers for opening the harvest season in Amendment 1 of the Bay Scallop FMP in 2010 (NCDMF 2010). These triggers are based on NCDMF sampling that occurred between the pre-red tide months of October and December in 1984 and 1985 for Back, Bogue, and Core sounds and in post-red tide January 2009 in Pamlico Sound (Table 1). These triggers allow for flexibility to open the fisheries as the bay scallop population recovers and determines harvest limits based on 50 percent, 75 percent, and 125 percent of the natural log of the Catch Per Unit Effort (lnCPUE) target (Tables 2 and 3).
+**Motion by Martin Posey to approve the continued suspension of the following MFC Rules:** 
+- **15A NCAC 03M .0511 Bluefish**
+- **15A NCAC 03J .0103 (h) Gill Nets, Seines, Identification, Restrictions**
+- **15A NCAC 03R .0110 (4)(5) Crab Spawning Sanctuaries; 03L .0201 (a)(b) Crab Harvest Restrictions; and 03L .0203 (a) Crab Dredging; 03J .0301 (g)(h) Pots**
 
-Fishery independent data shows most samples have small or zero catch, while only a few samples exhibit large catches producing a lognormal distribution, which is usual for most fishery independent data. Each sample is averaged to get the estimated mean lnCPUE and standard deviation for the October-December time period for all areas to produce indices of abundance.
+**Motion seconded by Tom Hendrickson.**
 
-Trends in the past 10 years show bay scallop abundance is very low in all regions, which is also reflected in landings when harvest is opened (Figures 1, 2, and 3). Since the inception of the harvest opening index of abundance, the season has only opened during three years in specific regions, and at the lowest allowed harvest levels. Two of the three open harvest seasons saw very little catch (Figure 4). Expanding the sampling coverage or number of stations in all areas is recommended in Amendment 2 of the FMP to improve estimates of bay scallop abundance. As bay scallop abundances expand and retract from year to year, broader sampling coverage of these areas will help identify more precisely what is happening to the population before entering the harvest season.
+| Roll Call Vote | | | |
+| :--- | :--- | :--- | :--- |
+| Commissioner | Aye | Nay | Abstain |
+| Mike Blanton | X | | |
+| Doug Cross | X | | |
+| Tom Hendrickson | X | | |
+| James Kornegay | X | | |
+| Robert McNeill | X | | |
+| Dr. Martin Posey | X | | |
+| Tom Roller | X | | |
+| Sam Romano | X | | |
+| Chairman Rob Bizzell | X | | |
 
-**STATUS OF THE FISHERY**
+**Motion carries unanimously.** 
 
-**Current Regulations**
+**Issues from Commissioners**
 
-The season can only occur from the last Monday in January through April 1st and there is no minimum size limit for both the commercial and recreational user groups. Specific trip limits, number of days to harvest, and specific gear allowances are implemented within the open season. Both the opening of the season and the harvest restrictions within the open season are based on NCDMF fishery independent sampling abundance levels determining the levels of harvest (NCDMF 2015). There was no open harvest season for bay scallops in 2019 because abundance levels were too low to meet the threshold for opening the season.
+Commissioner Romano would like to discuss the guidelines on rules; corresponding effect on the industry, the Commission’s collective value system. How does economic impact and how many fishermen we will lose come into play when a rule is put in place? It is something he has brought up in the past. New Jersey poaches, but is also on the Monterey Bay Aquariums “good choice” list. It is worrisome that the out-of-state private organizations like Monterey Bay Aquarium isn’t properly vetting. He would like to see this on the agenda. Chairman Bizzell stated the, preamble of the Fisheries Reform Act; primary charge is to protect the resource. 
 
-**Commercial Landings**
+Commissioner Cross mentioned the Executive Order on Promoting American Seafood Competitiveness and Economic Growth. 
 
-Bay scallop abundance and harvest have widely fluctuated since landings have been recorded (MacKenzie 2008). Landings are closely linked to weather and other environmental factors. Landings ranged from a peak of approximately 1.4 million pounds of meats in 1928 when North Carolina led the nation in scallop production, to a low of zero landings in 2005 even though there was an open harvest season. Landings have been virtually non-existent since 2005.
+Commissioner McNeill asked if there is any data or research on the need to have hook modifications and if so, he would like to see it. He would support circle hooks for certain species, but there needs to be some exclusions for artificial lures.
 
-The red tide (toxic dinoflagellate) event of late autumn 1987 and early 1988 caused mortality to approximately 21 percent of the adult bay scallops in Bogue and Back sounds and reduced recruitment of juvenile bay scallops the following spring to only two percent of normal (the mean of the previous three red tide-free years) (Summerson and Peterson 1990). This event has had lasting impacts to the bay scallop fishery and repopulation of the Bogue, Back, and Core sound regions has not fully occurred. Landings in recent years have been extremely low due to the failure of bay scallop stocks to recover after the red tide event, fishing pressure, and predation.
+Commissioner Posey gave an update on the most recent CHPP Steering Committee meeting where Division staff presented the habitat section of the Blue Crab FMP Amendment 3. 
 
-A prohibited take on harvest occurred from 2006 to 2008 through the 2005 FMP (NCDMF 2007). Amendment 1 initiated abundance estimates to determine opening the fishery and at what levels harvest would occur based on the abundance estimates by region (NCDMF 2010). An open harvest commercial and recreational harvest season occurred in Core and Pamlico sounds in 2009, and in Pamlico Sound in 2010 (less than 500 pounds of meat were landed commercially) (Figure 4). Bogue Sound and all areas south of Bogue Sound were opened to harvest to the NC/SC state line in internal waters in 2014 (less than 1,500 pounds of meat were landed commercially) (Figure 4).
+Lara Klibansky reviewed the meeting assignments and previewed the Aug MFC business meeting agenda.
 
-**Recreational Landings**
+The meeting adjourned at approximately 2:51 p.m. 
 
-The state’s recreational shellfish survey has recently added a question about bay scallop harvest, but no open season has occurred since the question’s introduction. Due to this, no estimation of recreational harvest can be made.
+[[IMAGE_18_0|]]
 
-**MONITORING PROGRAM DATA**
+## CHAIRMAN’S REPORT
 
-**Fishery-Dependent Monitoring**
+LETTERS
+ETHICS TRAINING & SEI REMINDER
+2020 MEETING SCHEDULE
+2021 PROPOSED MEETING SCHEDULE
+COMMISSION COMMITTEE ASSIGNMENTS
 
-There are no fishery dependent sampling programs that collect information on the commercial or recreational fisheries for bay scallops.
+[[IMAGE_19_0|]]
 
-**Fishery-Independent Monitoring**
+## LETTERS
 
-Independent sampling of bay scallops for fisheries management information has been conducted since 1975, and has varied from monthly examinations at 20 stations to seasonal monitoring at fewer locations.
+GILL NETS
+SPECIAL MANAGEMENT ZONES
+MFC AC
 
-Currently sampling occurs four times a year in Pamlico, Core, Back, and Bogue sounds and areas south of Bogue Sound during the second or third week of the month in January, April, July, and October. Standardized sampling occurs in Pamlico Sound using a meter-square (m²) quadrat and a bay scallop dredge is towed in Core, Back, and Bogue sounds, and areas south of Bogue Sound. A fixed set of eight stations are towed three times for two minutes with a scallop dredge in Core, Back, and Bogue sounds and additional stations are also sampled three times for two minutes where scallops have historically been found. A set of three fixed stations, two in New River and one in Topsail Sound, are towed three times for two minutes with a scallop dredge beginning in 2009 in areas south of Bogue Sound. Sampling also occurs at five fixed stations and five non-core stations off Hatteras Island. Bay scallops are collected with a rake or by hand for 10 m² samples within the station in Pamlico Sound. The PVC 1m² quadrat is randomly placed 10 separate times within the area. Catch per unit effort (CPUE) is defined as the number of bay scallops (juvenile and adult combined) per one-minute tow if a dredge is used or per quadrat. Additional stations (non-fixed) are sampled in most areas dependent on bay scallop abundance at the given time of year. The natural log (ln) of the catch per unit effort (lnCPUE), measured as the number of bay scallops per minute (dredges) and number of bay scallops per meter squared (quadrat), is taken to avoid bias towards occasional large catches. A constant of 0.1 was added to all catches so that tows/quadrats with zero catches can be included in the estimates of the mean. All tows/quadrats taken at a station are averaged to get a single value for each station and are referred to as a sample. Each sample is averaged to get the estimated mean lnCPUE and standard deviation for the October-December time period for all areas to produce indices of abundance (Figures 1 and 2). Trends in the past 10 years show bay scallop abundance is very low in all regions which is reflected in the limited open areas to harvest in the past decade (Table 4; Figure 1).
+[[IMAGE_20_0|]]
 
-**MANAGEMENT STRATEGY**
+## GILL NETS
 
-The current management strategy for the bay scallop fisheries is to allow the NCDMF Director to open a region to limited bay scallop harvest when sampling indicates bay scallop abundance is at 50 percent of the natural logarithm of the Catch Per Unit Effort (lnCPUE) level it was in 1984-1985 in the main harvest areas (Core, Bogue and Back sounds) (Table1). A separate sampling indicator for re-opening was developed in 2009 for Pamlico Sound (Table 1). Trip limits and fishing days will progressively increase if sampling shows bay scallop abundance is at 75 percent or 125 percent of 1984-85 lnCPUE levels (Tables 2 and 3). The open season may only occur from the last Monday in January through April 1 to ensure spawning is complete and the economic yield is at an optimum for fishermen. See Table 5 for current management strategies and the status on the implementation of each.
+From: Klibansky, Lara
+To: Gillikin, Dana
+Subject: FW: [External] Please stop gill netting
+Date: Monday, July 27, 2020 2:39:18 PM
 
-**RESEARCH NEEDS**
+Lara K. J. Klibansky
+Marine Fisheries Commission Liaison
+Executive Assistant for Councils and Commissions
+NC Division of Marine Fisheries
+Department of Environmental Quality
 
-The list below is presented in order as it appears in Amendment 2 of the Bay Scallop FMP and the section or issue paper they come from is identified. Prioritization of each research recommendation is designated either a HIGH, MEDIUM, or LOW standing. A low ranking does not infer a lack of importance but is either already being addressed by others or provides limited information for aiding in management decisions. A high ranking indicates there is a substantial need, which may be time sensitive in nature, to provide information to help with management decisions.
+[[IMAGE_21_0|North Carolina Department of Environmental Quality logo]]
 
-Proper management of the bay scallop resource cannot occur until some of these research needs are met, the research recommendations include:
+252 808 8021   office (direct)
+252 515 6020   mobile
+252 726 7021   main
 
-- Develop better methods to quantify the population including the means to have more precise measures of spatial and temporal variability both within and between sound scales- HIGH
-- Identify viable stock enhancement techniques- HIGH
-- Continue to identify strategic coastal habitats that will enhance protection of bay scallops and accelerate mapping of all shell bottom in North Carolina- MEDIUM
-- Develop surveys of recruitment and spat settlement and identify critical areas for these- MEDIUM
-- Identify role water quality and nutrient loading has in failed recruitment and develop methods for improvement- MEDIUM
-
-**FISHERY MANAGEMENT PLAN RECOMMENDATION**
-
-Bay scallop abundances have remained at historically low levels since the last benchmark review. This has not allowed a commercial or recreational harvest season to be opened, thus no stricter changes in management can be enacted. Consequently, the division recommends the 2020 annual FMP update serve as the scheduled review of the North Carolina Bay Scallop FMP. All management strategies that have been in place will be maintained as outlined in the state FMP. Stock conditions will be monitored and reported through each subsequent annual FMP update and the Marine Fisheries Commission will continue to receive the FMP review schedule annually. The next scheduled review of this plan will begin in July 2025.
-
-**LITERATURE CITED**
-
-- Brousseau, D. J. 2005. Effects of Mortality and Harvesting on Inshore Bivalve Populations Trends. In: R. Buchsbaum, J. Pederson, W. E. Robinson (eds). The Decline of Fisheries Resources in New England: Evaluating the Impact of Overfishing, Contamination, and Habitat Degradation. Massacussetts Institute of Technology Sea Grant College Program, Cambridge, MA, MITSG 05-5: 97-118.
-- Davis, R. L. and N. Marshall. 1961. The feeding of the bay scallop, Aequipecten irradians. Proceeedings of the National Shellfisheries Association. 52: 25-29.
-- Gutsell, J. S. 1930. Natural history of the bay scallop. United States Department of Commerce. Bureau of Fisheries. Washington, D. C. 1100. 569-630.
-- MacKenzie Jr., C. L. 2008. History of the bay scallop, _Argopectin irradiens_, Massachusetts through North Carolina: its biology and the history of its habitat and fisheries. In: Bay Scallops in eastern North America: Part I. Marine Fisheries Review. 70(3-4): 6-79.
-- NCDMF (North Carolina Division of Marine Fisheries). 2007. North Carolina Bay Scallop Fishery Management Plan. North Carolina Department of Environment and Natural Resources. North Carolina Division of Marine Fisheries. Morehead City, NC. 198 pp.
-- NCDMF. 2010. North Carolina Bay Scallop Fishery Management Plan Amendment 1. North Carolina Department of Environment and Natural Resources. North Carolina Division of Marine Fisheries. Morehead City, NC. 20 pp.
-- NCDMF. 2015. North Carolina Bay Scallop Fishery Management Plan Amendment 2. North Carolina Department of Environment and Natural Resources. North Carolina Division of Marine Fisheries. Morehead City, NC. 179 pp.
-- Peterson, C. H. and H. C. Summerson. 1992. Basin-scale coherence of population dynamics of an exploited marine invertebrate, the bay scallop: implications of recruitment limitation. Marine Ecology Progress Series. 90: 257-272.
-- Summerson, H. C. and C. H. Peterson. 1990. Recruitment failure of the bay scallop, _Argopecten irradians concentricus_, during the first red tide, _Ptychodiscus brevis_, outbreak recorded in North Carolina. Estuaries. 13(3): 322-331.
-- Thayer, G. W., and H. H. Stuart. 1974. The bay scallop makes its bed of eelgrass. U.S. Department of Commerce. National Marine Fisheries Service. Atlantic Estuarine Fisheries Center, Beaufort, NC. 16 p.
-
-**TABLES**
-
-Table 1. Target and progressive triggers based on the lnCPUE (natural log of the number of bay scallops per 1-minute tow) for the October – December 1984-1985 period for Back, Bogue, and Core sounds. Target and progressive triggers based on the lnCPUE (natural log of the number of bay scallops per meter squared) for Pamlico Sound based on sampling in January 2009.
-
-| | Pamlico Sound | Core Sound | Back Sound | Bogue Sound |
-| --- | --- | --- | --- | --- |
-| Target lnCPUE | -0.18 | 1.72 | 2.02 | 2.33 |
-| Progressive trigger 50% | -0.27 | 0.86 | 1.01 | 1.17 |
-| Progressive trigger 75% | -0.23 | 1.29 | 1.52 | 1.75 |
-| Progressive trigger | -0.14 | 2.15 | 2.53 | 2.91 |
-
-Table 2. Adaptive management measures for opening the bay scallop commercial fishery as the selected management strategy of the Marine Fisheries Commission. The harvest levels are based on progressive triggers derived from the lnCPUE1984-1985 (Oct-Dec) target indicators for Core, Bogue and Back sounds and the lnCPUE Jan 2009 target indicator for Pamlico Sound.
-
-| Progressive triggers and target | Trip limit | Days open in the week | Allowed gears | Season |
-| --- | --- | --- | --- | --- |
-| Less than 50% of target | No allowed harvest | | | |
-| 50% or greater of target but less than 75% of target | 5 bushels per person per day not to exceed 10 bushels per fishing operation | Mon and Wed | By hand, hand rakes, hand tongs, dip net, and scoops | Last Monday in January to April 1st |
-| 75% or greater of target but less than 125% of target | 10 bushels per person per day not to exceed 20 bushels per fishing operation | Mon, Tues, Wed, and Thur | By hand, hand rakes, hand tongs, dip net, and scoops | Last Monday in January to April 1st |
-| | 10 bushels per person per day not to exceed 20 bushels per fishing operation | Mon and Wed | Bay scallop dredges as described by rule 15A NCAC 03K .0503 | Delay opening until first full week in March after hand harvest removes scallops from shallow waters to April 1st |
-| 125% or greater of target | 15 bushels per person per day not to exceed 30 bushels per fishing operation | Mon, Tues, Wed, and Thur | By hand, hand rakes, hand tongs, dip net, and scoops | Last Monday in January to April 1st |
-| | 15 bushels per person per day not to exceed 30 bushels per fishing operation | Mon and Wed | Bay scallop dredges as described by rule 15A NCAC 03K .0503 | Delay opening until the third full week in February after hand harvest removes scallops from shallow waters to April 1st |
-
-Table 3. Adaptive management measures for opening the bay scallop recreational fishery as the selected management strategy by the Marine Fisheries Commission. The harvest levels are based on progressive triggers derived from the lnCPUE1984-1985 (Oct-Dec) target indicators for Core, Bogue and Back sounds and the lnCPUE Jan 2009 target indicator for Pamlico Sound.
-
-| Progressive triggers and target | Trip limit | Days open in week | Allowed gears | Season |
-| --- | --- | --- | --- | --- |
-| Less than 50% of target | No allowed harvest | | | |
-| 50% or greater of target | 1/2 bushel per person per day not to exceed 1 bushel per recreational fishing operation | Seven days a week | By hand, hand rakes, hand tongs, dip net, and scoops | Last Monday in January to April 1st |
-
-Table 4. Fishery Independent sampling annual lnCPUE and standard error. Pamlico Sound sampling is conducted in January with a 1m² quadrat, all other areas are sampled in October with a scallop dredge.
-
-| | Pamlico Sound | Pamlico Sound | Core Sound | Core Sound | Back Sound | Back Sound | Bogue Sound | Bogue Sound | South | South |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Year | LnCPUE | Standard Error | lnCPUE | Standard Error | lnCPUE | Standard Error | lnCPUE | Standard Error | lnCPUE | Standard Error |
-| 2006 | | | -2.30 | 0.00 | -1.54 | 0.50 | -1.02 | 0.34 | | |
-| 2007 | | | -1.24 | 0.50 | -2.00 | 0.30 | -1.57 | 0.34 | | |
-| 2008 | | | 2.94 | 0.35 | -1.41 | 0.40 | 1.21 | 0.57 | | |
-| 2009 | -0.18 | 0.79 | -1.01 | 0.42 | -1.31 | 0.45 | 1.34 | 0.27 | 0.94 | 0.75 |
-| 2010 | 0.32 | 0.67 | -0.54 | 0.39 | -1.10 | 0.54 | -1.12 | 0.54 | -2.30 | 0.00 |
-| 2011 | -1.99 | 0.13 | -0.63 | 0.57 | 0.83 | 0.26 | 0.38 | 0.34 | -1.77 | 0.37 |
-| 2012 | -1.66 | 0.26 | -1.71 | 0.38 | -0.56 | 0.78 | 1.18 | 0.25 | -0.91 | 0.36 |
-| 2013 | -1.21 | 0.11 | -2.30 | 0.00 | -2.30 | 0.00 | -0.41 | 0.71 | -1.19 | 0.42 |
-| 2014 | -1.54 | 0.31 | -2.00 | 0.30 | -1.01 | 0.42 | -2.00 | 0.20 | -1.64 | 0.34 |
-| 2015 | -1.86 | 0.39 | -2.14 | 0.16 | -2.06 | 0.16 | -1.80 | 0.19 | -1.69 | 0.16 |
-| 2016 | -2.29 | 0.01 | -1.93 | 0.25 | -1.94 | 0.19 | -1.87 | 0.16 | -2.00 | 0.20 |
-| 2017 | -2.30 | 0.00 | -2.18 | 0.12 | -1.55 | 0.25 | -1.97 | 0.14 | -0.75 | 0.26 |
-| 2018 | -2.21 | 0.08 | -1.61 | 0.75 | -2.10 | 0.46 | -2.30 | 0.00 | -2.30 | 0.00 |
-| 2019 | -2.26 | 0.24 | -1.79 | 0.16 | -2.30 | 0.00 | -1.79 | 0.11 | -2.21 | 0.09 |
-| 2020 | -2.26 | 0.24 | | | | | | | | |
-
-Table 5. Summary of the management strategies and their implementation status from Amendment 2 of the Bay Scallop Fishery Management Plan.
-
-| Management Strategy | Implementation Status |
-| --- | --- |
-| ENVIRONMENTAL CONCERNS | |
-| Status quo (manage fishing gear based on scallop densities) | No action required |
-| Continue to support CHPP recommendations that enhance protection of existing bay scallop habitat | No action required; Already support the CHPP |
-| Support programs that enhance bay scallop habitat by planting sea grass or other suitable settlement substrate | No action required; Already support the CHPP |
-| Identify and designate SHAs that will enhance protection of the bay scallop | Ongoing through CHPP implementation plan |
-| Remap and monitor SAV coverage in North Carolina to assess distribution and change over time. | Ongoing through CHPP implementation plan |
-| Restore coastal wetlands to compensate for previous losses and enhance water quality conditions for the bay scallop | Ongoing through CHPP implementation plan |
-| Work with CRC to revise shoreline stabilization rules to adequately protect riparian wetlands and shallow water habitat and significantly reduce the rate of shoreline hardening | Ongoing through CHPP implementation plan |
-| Develop and implement a comprehensive coastal marina and dock management plan and policy to minimize impacts to SAV and other fish habitats | Ongoing through CHPP implementation plan |
-| Evaluate dock criteria siting and construction to determine if existing requirements are adequate for SAV survival and growth, and modify if necessary | Ongoing through CHPP implementation plan |
-| Assess the distribution, concentration, and threat of heavy metals and other toxic contaminants in freshwater and estuarine sediments and identify the areas of greatest concern to focus water quality improvement efforts | Ongoing through CHPP implementation plan |
-| Shallow areas where trawling is currently allowed should be re-examined to determine if additional restrictions are necessary | Ongoing through CHPP implementation plan |
-| Accelerate and complete mapping of all shell bottom in coastal North Carolina | Ongoing through CHPP implementation plan |
-| Improve methods to reduce sediment and nutrient pollution from construction sites, agriculture, and forestry | Ongoing through CHPP implementation plan |
-| Reduce impervious surfaces and increase on-site infiltration of storm water through voluntary or regulatory measures | Ongoing through CHPP implementation plan |
-| Provide more incentives for low-impact development | Ongoing through CHPP implementation plan |
-| Aggressively reduce point source pollution from wastewater through improved inspections of wastewater treatment facilities, improved maintenance of collection infrastructure, and establishment of additional incentives to local governments for wastewater treatment plant upgrading | Ongoing through CHPP implementation plan |
-| Aggressively reduce point and non-point nutrient and sediment loading in estuarine waters, to levels that will sustain SAV habitat, using regulatory and non-regulatory actions | Ongoing through CHPP implementation plan |
-| ENVIRONMENTAL CONCERNS | |
-| Provide proper disposal of unwanted drugs, reduce insecticide and heavy metal run-off, and develop technologies to treat wastewater for antibiotics and hormones | Ongoing through CHPP implementation plan |
-| Discourage use of detergents in coastal waters, especially detergents with antimicrobial components | Ongoing through CHPP implementation plan |
-| INSUFFICIENT DATA | |
-| Support improving the reliability of the data for the recreational scallop harvest | Incomplete |
-| MANAGEMENT | |
-| Eliminate the August 1 through September 15 season open period in rule | Rule change required to 15A NCAC 03K .0501; Rule change completed on May 1, 2015 |
-| Expand sampling in all regions and manage harvest conditionally in areas south of Bogue Sound until adequate sampling can determine a harvest trigger for management. | Existing authority |
-| Continue current progressive triggers with adaptive harvest levels in all areas, except areas south of Bogue Sound, and modify harvest management measures as shown in Table 12.7 and Table 12.8 in the issue paper. And continue to improve the statistical rigor of the abundance index. | Existing proclamation authority |
-| Keep dredges at the 75% trigger harvest level in Table 12.7 | Existing proclamation authority |
-| Modify the daily commercial harvest possession limit in Rule 15A NCAC 03K .0501 to a quantity of no more than 15 standard U.S. bushels per person per day not to exceed 30 standard U.S. bushels in any combined commercial fishing operation per day to be consistent with the adaptive management measures trip limits. | Requires rule change to rule 15A NCAC 03K .0501; Rule change completed on May 1, 2015 |
-| Exempt bay scallop harvest from leases from the regular season and harvest limits | Requires rule change to rules 15A NCAC 03K .0111, 03K .0206, 03K .0303, 03K .0501, 03K .0502, 03K .0507, 03K .0508, 03O .0501; Rule changes completed on May 1, 2015 |
-| Support an exemption from G.S. 113-168.4 (b) (3) when the sale is to lease or Aquaculture Operations permit holders for further rearing | Requires statutory change to G.S. 113-168.4; NCDMF will take this suggested change to legislators at the next short session. |
-| STOCK ENHANCEMENT | |
-| Establish a pilot program with the Shellfish Research Hatchery to distribute cultured seed on private bottoms | Will need to start communicating with Shellfish Hatchery staff and interested private culturists interested in establishing this pilot work |
-| Contingent on results to distribute seed on private bottom, expand the pilot program to include public bottom | Dependent on results from previous management strategy. |
-
-**FIGURES**
-
-[[IMAGE_150_0|]]
-Figure 1. The mean number of bay scallops (lnCPUE)(bay scallops/minute) for Back, Bogue, and Core sounds during the October-December sampling time period and average lnCPUE (target) for the 1984-1985 period showing progressive triggers at 50 percent, 75 percent, and 125 percent of the target. Year indicates the sampling year which is used to determine the harvest season for the next calendar year.
-
-[[IMAGE_151_0|]]
-Figure 2. The mean number of bay scallops, lnCPUE (ln(bay scallops/m²)), for Pamlico Sound during the January sampling time period and target for the January 2009 period showing progressive triggers at 50 percent, 75 percent, and 125 percent of the target. Year indicates the sampling year which is used to determine the harvest season for the same calendar year.
-
-[[IMAGE_152_0|]]
-Figure 3. The mean number of bay scallops (lnCPUE)(bay scallops/minute) for areas south of Bogue Sound in October, 2009-2019. Target opening estimates and progressive triggers are not defined for this region until sampling is expanded and a longer time series is established.
-
-[[IMAGE_153_0|]]
-Figure 4. Bay scallop landings (pounds of meat) in North Carolina, 1994-2019. Landings occurred in 2010 and 2013 but are not evident in the figure due to the scale required to show the range of landings for the time series.
-
-# KINGFISHES FISHERY MANAGEMENT PLAN
-
-[[IMAGE_154_0|]]
-
-## ROY COOPER
-Governor
-## MICHAEL S. REGAN
-Secretary
-## STEPHEN W. MURPHEY
-Director
-
-July 31, 2020
-
-**MEMORANDUM**
-
-**TO:** N.C. Marine Fisheries Commission
-
-**FROM:** Kevin Brown, Kingfishes Fishery Management Plan Lead
-
-**SUBJECT:** N.C. Kingfishes Fishery Management Plan Scheduled Review
-
-**Issue**
-Review of the N.C. Kingfishes Fishery Management Plan (FMP) is scheduled to begin this year. The division requests the N.C. Marine Fisheries Commission (MFC) approve the 2020 Kingfishes FMP annual update to fulfill the scheduled review of the Kingfishes FMP.
-
-**Findings**
-The Kingfishes FMP includes the three species of kingfishes, southern (_Menticirrhus americanus_), Gulf (_M. littoralis_), and northern (_M. saxatilis_) found in the coastal fishing waters of North Carolina. However, because of its predominance, southern kingfish is used as the indicator species for this assemblage. A state-specific stock assessment could not be conducted, primarily because the North Carolina management unit does not encompass the entire stock range for any of the three species of kingfishes. A regional stock assessment approach is recommended as the most appropriate mechanism for determining the stock status and the long-term viability of these stocks.
-
-Kingfishes in North Carolina are monitored through fisheries-independent and fisheries-dependent data collection programs. Fisheries-independent data are collected through several ongoing survey programs, including the Division of Marine Fisheries’ (DMF) Pamlico Sound Survey and Independent Gill Net Survey, and the regional Southeast Area Monitoring and Assessment Program-South Atlantic (SEAMAP-SA) Coastal Survey. Fisheries-dependent data are collected in the form of landings. The DMF collects commercial landings data through the Trip Ticket Program, while the recreational harvest of kingfishes are estimated from the Marine Recreational Information Program (MRIP).
-
-The 2007 Kingfishes FMP selected the use of trend analysis with management triggers as the management strategy to monitor the viability of the kingfish stocks in North Carolina. During the 2015 review of the Kingfishes FMP the best available data and techniques used for the trend analysis and management triggers were refined and modified to better assess population trends. The trend analysis incorporates management triggers to alert DMF and MFC to the potential need for management action based on stock conditions. The activation of any two management triggers (regardless of trigger category) two years in a row warrants further evaluation of the data and potential management action.
-
-The analysis is updated each year and all trends relative to management triggers are provided as part of the annual FMP update.
-
-The management program currently in place for kingfishes has resulted in a stock that has met ongoing management targets. Table 1 below shows the occurrences of management trigger activation since 2007. While individual triggers have been activated over the years, the activation of two triggers two years in a row has not occurred. For a more thorough description of the management triggers and the management strategy overall, please refer to the full 2020 Kingfishes FMP Update included in your briefing materials.
-
-**Action Needed**
-At its August 2020 business meeting the MFC is scheduled to vote on approval of the 2020 Kingfishes FMP Update to complete the scheduled review of the Kingfishes FMP.
-
-**Recommendation**
-The division recommends the 2020 annual FMP update serve as the scheduled review of the North Carolina Kingfishes FMP. All management strategies outlined in the state FMP will remain in place. Stock conditions will continue to be monitored and reported through the annual FMP update for consideration by the MFC. If approved, the next scheduled review of this plan will begin in July 2025.
-
-Table 1. Management trigger activation is indicated by a black dot (●). Shaded headers indicate the trigger type, non-shaded headers identify the data source(s) for the trigger. The combination of the two identify a single trigger for a total of seven triggers. The activation of any two management triggers (regardless of trigger category) two years in a row warrants further evaluation of the data and potential management action.
-
-| | Proportion of Adults Mature (≥L50) | Proportion of Adults Mature (≥L50) | Proportion of Adults Mature (≥L50) | Young-of-Year Index | Young-of-Year Index | Adult Index | Relative F |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| | Pamlico Sound Survey | Independent Gill Net Survey | SEAMAP | Pamlico Sound Survey | SEAMAP | SEAMAP | Trip Ticket Program, MRIP, SEAMAP |
-| Year | | | | | | | |
-| 2007 | ● | | | | | ● | |
-| 2008 | | | | | ● | ● | |
-| 2009 | | | | | ● | | ● |
-| 2010 | | | | ● | | | |
-| 2011 | | | | | | | |
-| 2012 | | | ● | | ● | | |
-| 2013 | | | | | | | |
-| 2014 | | | | | | | |
-| 2015 | | | | | | | |
-| 2016 | ● | | ● | ● | | | |
-| 2017 | | | | ● | | ● | |
-| 2018 | | | | | ● | | |
-| 2019 | | | | | ● | | |
-
-STATE-MANAGED SPECIES – KINGFISHES
-FISHERY MANAGEMENT PLAN UPDATE
-KINGFISHES
-AUGUST 2020
-
-**STATUS OF THE FISHERY MANAGEMENT PLAN**
-
-**Fishery Management Plan History**
-Original FMP Adoption: November 2007
-Amendments: None
-Revisions: None
-Supplements: None
-Information Updates: November 2015
-Schedule Changes: August 2020 – This update satisfies the formal review of the North Carolina Kingfish Fishery Management Plan. The next scheduled formal review will begin July 2025.
-Next Benchmark Review: July 2025
-
-The original 2007 Kingfish Fishery Management Plan (FMP) developed management strategies that ensure a long-term sustainable harvest for recreational and commercial fisheries of North Carolina. The plan established the use of trend analysis and management triggers to monitor the viability of the stock. The N.C. Marine Fisheries Commission (NCMFC) also approved a rule which included proclamation authority for the North Carolina Division of Marine Fisheries (NCDMF) director the flexibility to impose restrictions on season, areas, quantity, means and methods, or size of kingfish (NCMFC Rule 15A NCAC 03M .0518), if needed. An Information Update was completed for the Kingfish FMP in November of 2015. The best available data and techniques used for the trend analysis and management triggers were refined and modified to better assess population trends as part of this FMP Information Update.
-
-**Management Unit**
-
-The North Carolina Kingfish FMP includes the three species of kingfishes (southern _Menticirrhus americanus_, Gulf _M. littoralis_, and northern _M. saxatlis_) in all coastal fishing waters of North Carolina. Southern kingfish is designated as the indicator species for this assemblage. The management unit identified in this plan does not encompass the entire unit stock range for any of the three species of kingfishes inhabiting North Carolina. This is the primary reason a quantified state-specific stock assessment could not be conducted and further, why a regional stock assessment approach is recommended as the most appropriate mechanism for determining the stock status and the long-term viability of this stock (NCDMF 2007).
-
-**Goal and Objectives**
-
-The goal of the 2007 Kingfish Fishery Management Plan is to determine the health of the stocks and ensure the long-term sustainability of the kingfish stocks in North Carolina (NCDMF 2007). To achieve this goal, it is recommended that the following objectives be met:
-
-1. Develop an objective management program that provides conservation of the resource and sustainable harvest in the fishery.
-2. Ensure that the spawning stock is of sufficient capacity to prevent recruitment overfishing.
-3. Address socio-economic concerns of all user groups.
-4. Restore, improve, and protect critical habitats that affect growth, survival, and reproduction of the North Carolina stock of kingfishes.
-5. Evaluate, enhance, and initiate studies to increase our understanding of kingfishes' biology and population dynamics in North Carolina.
-6. Promote public awareness regarding the status and management of the North Carolina kingfishes stock.
-
-**STATUS OF THE STOCK**
-
-**Life History**
-
-Three species of kingfishes occur in North Carolina: southern (_Menticirrhus americanus_), Gulf (_M. littoralis_), and northern kingfishes (_M. saxatilis_). Kingfish refers to a single species while kingfishes refers to multiple species. Kingfishes are demersal (live near and feed on the bottom) members of the drum family. Southern kingfish is the most abundant kingfish species from North Carolina to the east coast of Florida and Gulf of Mexico with a range extending as far as Cape May, New Jersey southward to Buenos Aires, Argentina. Northern kingfish is the most abundant kingfish species from Massachusetts to North Carolina, with a range extending from the Gulf of Maine into the Gulf of Mexico. Gulf kingfish is the most abundant kingfish species in the surf zone south of Cape Hatteras, North Carolina, and has a range extending from Virginia to Rio Grande, Brazil. The northern and southern kingfishes prefer mud or sand-mud bottom types while Gulf kingfish prefer the sandy bottoms of the surf zone. Kingfishes move from estuarine and nearshore ocean waters to deeper offshore waters as water temperature cools. Spawning takes place in the ocean from April to October. The kingfishes have several regional names including sea mullet, king whiting, king croaker, sea mink, roundhead, hard head, whiting, hake, Carolina whiting, and Virginia mullet.
-
-**Stock Status**
-
-The stocks of kingfish is unassessed, thus overfishing/overfished status cannot be determined. However, results from the 2019 trend analysis suggests there are no concerns with the stock and no need for management at this time. A coast-wide stock assessment is a high research priority that needs to be addressed before biological reference points relative to overfished and overfishing can be determined.
-
-**Stock Assessment**
-
-The 2007 Kingfish FMP selected the use of trend analysis with management triggers as the management strategy to monitor the viability of the kingfish stocks in North Carolina (NCDMF 2007). During the review of the 2007 Kingfish FMP as part of the 2015 FMP Information Update, best available data and techniques used for the trend analysis and management triggers were refined and modified to better assess population trends. The trend analysis incorporates management triggers to alert NCDMF and NCMFC to the potential need for management action based on stock conditions. The activation of any two management triggers (regardless of trigger category) two years in a row warrants further evaluation of the data and potential management action. The analysis is updated each year and all trends relative to management triggers are provided as part of this annual update. Current management triggers are based on fishery independent indices of abundance for Young-of-Year (YOY), adult fish, the proportion of catch greater than size at 50% maturity (L₅₀) and a relative fishing mortality index. YOY fish includes new fish that enter the population that year. L₅₀ is the length at which 50% of the adult population is sexually mature and ready to spawn.
-
-A formal quantitative stock assessment is not available for kingfishes in North Carolina; therefore, no determination can be made relative to an overfishing or overfished status. Prior attempts at a stock assessment during the 2007 FMP development were not successful, primarily due to limited data. From these prior attempts, all reviewers noted a lack of migration (mixing) data to determine the movement patterns of kingfishes along North Carolina and the entire Atlantic coast. A regional (multi-state) stock assessment approach is likely needed to best determine the stock status for kingfishes along the Atlantic coast including North Carolina. In 2008 and 2014, Atlantic States Marine Fisheries Commission (ASMFC) South Atlantic Board met to consider regional management by reviewing data on kingfishes. However, due to no major concerns with kingfish stocks, it was decided no further action was necessary. As a result, kingfishes management in North Carolina continues to fall solely within the framework of the state FMP process.
-
-**STATUS OF THE FISHERY**
-
-**Current Regulations**
-
-For shrimp or crab trawls, there is a three-hundred-pound trip limit for kingfishes south of Bogue Inlet from December 1 through March 31 (NCMFC Rule 15A NCAC 03J .0202 (5)). No other harvest limits are in place specific to kingfishes in any other fisheries.
-
-**Commercial Landings**
-
-Commercial landings for kingfishes include southern, northern, and Gulf kingfishes combined. Landings have fluctuated historically but have been on an increasing trend since 2011. In 2019, landings (702,234 lbs) increased 58 percent from 2018 (Figure 1). Most kingfishes landed are from the ocean gill net fishery. The average landings from 2010 to 2019 were 719,992 pounds. Harvest of kingfishes is seasonal with peak landings in April and November. Peaks in landings coincide with seasonal movements of kingfishes along the Atlantic coast.
-
-**Recreational Landings**
-
-Recreational landings of kingfishes are estimated from the Marine Recreational Information Program (MRIP). Recreational estimates across all years have been updated and are now based on the Marine Recreational Information Program (MRIP) new Fishing Effort Survey-based calibrated estimates. For more information on MRIP see [https://www.fisheries.noaa.gov/topic/recreational-fishing-data](https://www.fisheries.noaa.gov/topic/recreational-fishing-data).
-
-Recreational landings for kingfish include southern, northern, and Gulf kingfishes. Total recreational landings had been on an increasing trend from 1983 – 2014. In 2015, 2016 and 2017, recreational landings declined, with 2017 having the lowest landings (267,234 lbs) since 1999. In 2019 recreational landings (881,104 lbs) increased 54% from 2018 (Figure 1). Most kingfishes are landed from the ocean and the majority of the fish are caught from man-made structures, such as piers, jetties, or bridges, or from beaches. A smaller portion of kingfishes are caught in estuarine waters of the state and the majority of those fish are harvested by anglers fishing from private vessels. Recreational harvest of kingfishes is also seasonal with most fish harvested during the spring and the fall, and lowest during the summer. Most of the recreational catch consists of kingfish from 8 to 12 inches (Figure 12).
-
-**MONITORING PROGRAM DATA**
-
-**Fishery-Dependent Monitoring**
-
-Kingfishes are sampled from a variety of commercial fishery surveys, including the estuarine long haul, ocean trawl, pound net, ocean gill net, estuarine gill net and ocean beach seine fisheries in N.C. A total of 30,771 kingfishes were measured from 2010 to 2019 (26,060 southern, 2,596 northern and 2,115 Gulf; Table 1; Figure 9). Mean length for southern kingfish ranged from 11.4 to 12.1 inches, with a minimum of 6.5 inches and a maximum of 24.8 inches. Mean length for northern kingfish ranged from 12.1 to 13.9 inches, with a minimum of 7.8 inches and a maximum of 17.7 inches. Mean length for Gulf kingfish ranged from 12.2 to 13.2 inches with a minimum of 6.1 inches and a maximum of 18.3 inches.
-
-Recreational lengths are collected as part of Marine Recreational Informational Program (MRIP) by recreational port agents. A total of 7,029 kingfishes were measured from 2010 to 2019 (5,016southern, 213 northern and 1,800 Gulf; Table 2). Mean length for southern kingfish ranged from 10.4 to 11.7 inches, with a minimum of 6.1 inches and a maximum of 19.9 inches. Mean length for northern kingfish ranged from 9.2 to 13.2 inches, with a minimum of 6.2 inches and a maximum of 16.0 inches. Mean length for Gulf kingfish ranged from 10.4 to 12.1 inches, with a minimum of 5.9 inches and a maximum of 18.2 inches. The length composition and modal length of kingfish caught in the commercial fishery has been stable from 1989 to 2019 (Figure 11).
-
-**Fishery-Independent Monitoring**
-
-Fishery-independent data are collected through the NCDMF Pamlico Sound Survey (Program 195), the Southeast Area Monitoring and Assessment Program – South Atlantic (SEAMAP-SA) Coastal Survey and the NCDMF Independent Gill Net Survey (Program 915). The Pamlico Sound Survey catches the most kingfishes of any of the NCDMF fishery independent sampling programs, and the majority of those are southern kingfishes. This survey has been running uninterrupted since 1987. From 1991 to present, the Pamlico Sound Survey has been conducted during the middle two weeks in June and September. The stations sampled are randomly selected from strata based upon depth and geographic location. Tow duration is 20 minutes at 2.5 knots using the R/V Carolina Coast pulling double rigged demersal mongoose trawls. The sample area covers all of Pamlico Sound and its bays, as well as Croatan Sound up to the Highway 64 Bridge, the Pamlico River up to Blounts Bay, the Pungo River up to Smith Creek, and the Neuse River up to Upper Broad Creek. However, most kingfish are caught in Pamlico Sound proper, and very few from the Neuse, Pamlico, and Pungo rivers. The September portion of the Pamlico Sound Survey is used to calculate a YOY index of relative abundance because there are more southern kingfish collected in the fall, and more YOY are present in the catch at this time. The relative index derived from Programs 195 survey was calculated using a stratified generalized linear model (GLM) approach. The Program 195 YOY relative abundance index peaked in 2009, but has been on a decreasing trend since 2013, and remained low in 2018 (Figure 2; Table 4).
-
-The Southeast Area Monitoring and Assessment Program-South Atlantic (SEAMAP-SA) Coastal Survey is conducted by the South Carolina Department of Natural Resources-Marine Resources Division, and provides long-term fishery independent data on the distribution and relative abundance of coastal species (Cowen and Zimney 2016). SEAMAP-SA Coastal Survey cruises are conducted each year in spring (mid-April to the end of May), summer (mid-July to mid-August), and fall (the first of October to mid-November). The summer portion of SEAMAP-SA Coastal Survey is used to calculate an adult index of abundance and the fall portion of SEAMAP-SA Coastal Survey is used as a young of year index of abundance. The indices derived from the SEAMAP-SA Coastal Survey were computed using standard (non-stratified) GLMs. After a peak in 2012, the SEAMAP-SA Coastal Survey adult index of relative abundance has been on a declining trend, which continued in 2018 (Figure 3; Table 4). The YOY index of relative abundance increased to well above the average in 2015 and has since returned to approximately the average in 2018 (Figure 4; Table 4). 2019 SEAMAP data is currently unavailable.
-
-The Independent Gill Net Survey is designed to characterize the size and age distribution for key estuarine species in Pamlico Sound and its major river tributaries. Sampling began in Pamlico Sound in 2001 and was expanded to the current sampling area (including tributaries) in 2003. Gill net sets are determined using a random stratified survey design, based on area and water depth. The L₅₀ management trigger is based on a conservative proportion of adults in the population. This is the length at which 50 percent of the population is mature. For southern kingfish, this is 8.25 inches (210 mm) in total length. One of the data sources for this management trigger comes from the Independent Gill Net Survey and has been stable () over the time series, ranging from 0.947% to 1.00% (Figure 5).
-
-Table 3 summarizes the age data for kingfishes (southern, northern, and Gulf), collected from 2010 through 2019. The majority of kingfish age samples came from Independent Gill Net Survey (Program 915), followed by the commercial ocean gill net fishery. Southern kingfish ages ranged from 0 to 7 years old. Northern kingfish ages ranged from 0 to 4 years old. Gulf kingfish ages ranged from 0 to 6 years old. The modal age has ranged from 1 to 3 years for southern, Gulf, and northern kingfishes.
-
-**MANAGEMENT STRATEGY**
-
-The 2007 Kingfish FMP selected the use of trend analysis and management triggers as the management strategy to monitor the viability of the southern kingfish stock in North Carolina (NCDMF 2007). A second management strategy promotes work to enhance public information and education. The trend analysis and management triggers are updated annually, and results are presented to the NCMFC as part of the annual FMP Update. The trend analysis incorporates triggers to alert managers to the potential need for management action based on stock conditions. The activation of any two management triggers two years in a row (regardless of category) warrants further data evaluation and potential management action. The NCMFC will be notified should this criterion be met. The Pamlico Sound Survey, the Independent Gill Net Survey and the SEAMAP-SA Coastal Survey data are currently used for management triggers for kingfishes in North Carolina.
-
-The L₅₀ management trigger is based on a conservative proportion of adults in the population. This is the length at which 50 percent of the population is mature. For southern kingfish, this is 8.25 inches (210 mm) in total length. Data sources for this management trigger come from three fisheries-independent surveys: the summer component of the SEAMAP-SA Coastal Survey, the July-September component of independent gill net survey, and the June component of the Pamlico Sound Survey.
-
-Relative _F_ is a simple method for estimating trends in _F_ (Sinclair 1998). It is estimated as harvest (commercial landings plus recreational harvest) divided by a fisheries-independent index of relative abundance. Here, harvest (commercial landings plus recreational harvest) was divided by the SEAMAP-SA Coastal Survey spring index (Onslow, Raleigh, and Long bays, inner—shallow—strata) of relative abundance, given that the majority of harvest occurs in the spring.
-
-The kingfish management triggers are summarized as follows:
-
-<u>Biological Monitoring</u>
-Proportion of adults ≥ length at 50 percent maturity (L₅₀) for NCDMF Program 195 June (Figure 6)
-Proportion of adults ≥ L₅₀ for NCDMF Program 915 (Figure 5)
-Proportion of adults ≥ L₅₀ for SEAMAP-SA Coastal Survey summer (Figure 7)
-→ If the proportion of adults ≥ L₅₀ falls below 2/3 of the average proportion of adults ≥ L₅₀ for the time series, then the trigger will be considered tripped.
-
-<u>Fisheries-Independent Surveys—Juvenile and Adult</u>
-NCDMF Program 195 September index of YOY relative abundance (Figure 2)
-SEAMAP-SA Coastal Survey summer index of adult relative abundance (Figure 3)
-SEAMAP-SA Coastal Survey fall index of YOY relative abundance (Figure 4)
-→ If a fisheries-independent survey falls below 2/3 of the average abundance for the time series (through 2017), then the trigger will be considered tripped.
-
-<u>Other</u>
-Relative fishing mortality rate (_F_) (Figure 8)
-→ If relative _F_ rises above the average +1/3 of relative _F_ for the time series (through 2017), the trigger will be considered tripped.
-
-A summary of the various management triggers by year is provided in Table 4. Bold values indicate years when a particular management trigger was activated. In 2019, one management trigger was activated and only one trigger (the YOY index from the fall portion of SEAMAP Survey) was below the management trigger threshold.
-
-**RESEARCH NEEDS**
-
-The division reviewed and prioritized the research recommendations during the 2015 FMP Information Update (NCDMF 2015). The prioritization of each research recommendation is designated as a high, medium, or low priority. A low ranking does not infer a lack of importance but is either already being addressed by others or provides limited information for aiding in management decisions. A high ranking indicates there is a substantial need, which may be time sensitive in nature, to provide information to help with management decisions. Proper management of the kingfishes resource cannot occur until some of these research needs are met. The research recommendations include:
-
-- Conduct a coast-wide stock assessment of southern kingfish along the Atlantic Coast including estimation of biological reference points for sustainable harvest – HIGH (No action)
-- Validate YOY and adult indices used in trend analysis – HIGH (UNCW has conducted seine surveys in the ocean to determine trends for all three species)
-- Develop a fisheries-independent survey in the ocean for juvenile and adult kingfishes – HIGH (No action)
-- Collect observer data from commercial fishing operations to estimate at-sea species composition of the catch, discard rates, and lengths – HIGH (NCDMF has observers collecting data at sea for the shrimp fishery, flounder gill net fishery and other fisheries)
-- Improve recreational data collection, particularly the species composition of discards, discard rates and associated biological data – HIGH (Steps have been taken to improve sampling in recreational fisheries, including a carcass collection program)
-- Improve dependent commercial data collection of more sample sizes for life history information – MEDIUM (NCDMF ageing study collects kingfish for life history data)
-- Evaluate and potentially expand the NCDMF fishery-independent gill net survey to provide data on species composition, abundance trends, and population age structure by including additional areas of North Carolina’s estuarine and nearshore ocean waters – MEDIUM (No action)
-- Continue bycatch reduction device studies in the shrimp trawl fishery to decrease bycatch – MEDIUM (Ongoing research through NCDMF and various federal agencies)
-- Determine stock structure using genetics of kingfishes along North Carolina and the Atlantic Coast – LOW (Grant approved for UNCW and NCDMF to use genetic markers to delineate the population structure)
-- Develop tagging study to estimate natural and fishing mortality, to investigate stock structure, and to understand movement patterns – HIGH (No action)
-- Collect histological data to develop maturity schedule with priority to southern kingfish – HIGH (NCDMF currently collecting histology samples in order to validate and update maturity schedules)
-- Conduct an age validation study with priority to southern kingfish – HIGH (No action)
-- Conduct study to estimate fecundity with priority to southern kingfish – MEDIUM (No action)
-- Conduct study to identify spawning areas with priority for southern kingfish – MEDIUM (No action)
-- Sample inlets and river plumes to determine the importance of these areas for kingfishes and other estuarine-dependent species – LOW (Sampling in the nearshore ocean through N.C. Adult Fishery Independent Survey was initiated in 2008 but discontinued in 2015. Gill net sampling in Cape Fear, New, Neuse, Pamlico, and Pungo rivers continues)
-- Determine the effects of beach re-nourishment on kingfishes and their prey – LOW (Grant approved for UNCW to investigate effects of beach renourishment)
-- Conduct a study to investigate how tidal stages and time of day influence feeding in kingfishes – LOW (No action)
-- Increase the sample size of surveyed participants in the commercial kingfish fishery to better determine specific business characteristics and the economics of working in the fishery – LOW (NCDMF conducted a study of CRFL holders in 2009/2010)
-- Update information on the participants in the recreational kingfish fishery – LOW (Socioeconomic study was conducted by NCDMF on piers)
-
-**FISHERY MANAGEMENT PLAN RECOMMENDATION**
-
-The management program currently in place for kingfishes has resulted in a stock that has met ongoing management targets. Consequently, the division recommends the 2020 annual FMP update serve as the scheduled review of the North Carolina Kingfishes FMP. All management strategies that have been in place will be maintained as outlined in the state FMP. Stock conditions will be monitored and reported through each subsequent annual FMP update and the Marine Fisheries Commission will continue to receive the FMP review schedule annually. The next scheduled review of this plan will begin in July 2025.
-
-**LITERATURE CITED**
-
-- Cowen, J. and A.B. Zimney. 2016. Results of Trawling Efforts in the Coastal Habitat of the South Atlantic Bight, 2015. South Carolina Department of Natural Resources. Marine Resources Division. Charleston, South Carolina. 104 pp.
-- NCDMF (North Carolina Division of Marine Fisheries). 2007. North Carolina Fishery Management Plan, Kingfishes. North Carolina Department of Environment and Natural Resources. North Carolina Division of Marine Fisheries. Morehead City, North Carolina. 235 pp.
-- NCDMF. 2015. North Carolina Fishery Management Plan Information Update, Kingfishes. North Carolina Department of Environment and Natural Resources. North Carolina Division of Marine Fisheries. Morehead City, North Carolina. 196 pp.
-- Sinclair, A.F. 1998. Estimating trends in fishing mortality at age and length directly from research survey and commercial catch data. Canadian Journal of Fisheries and Aquatic Sciences. 55(5):1248–1263.
-
-**TABLES**
-
-Table 1. Summary of length data (total length, inches) sampled from the kingfish commercial fishery, 2010 - 2019.
-
-| | | Southern Kingfish | | |
-| --- | --- | --- | --- | --- |
-| Year | Mean Length | Minimum Length | Maximum Length | Total Number Measured |
-| 2010 | 11.6 | 6.7 | 22.0 | 2,466 |
-| 2011 | 11.7 | 8.1 | 18.1 | 2,102 |
-| 2012 | 11.5 | 7.0 | 17.0 | 2,947 |
-| 2013 | 12.1 | 6.5 | 16.1 | 1,390 |
-| 2014 | 11.9 | 8.3 | 20.9 | 2,880 |
-| 2015 | 11.9 | 7.7 | 15.8 | 3,286 |
-| 2016 | 12.0 | 7.1 | 17.2 | 3,107 |
-| 2017 | 11.6 | 7.9 | 16.1 | 2,504 |
-| 2018 | 11.4 | 6.8 | 16.1 | 1,264 |
-| 2019 | 11.4 | 8.0 | 24.8 | 4,114 |
-| | | Northern Kingfish | | |
-| Year | Mean Length | Minimum Length | Maximum Length | Total Number Measured |
-| 2010 | 12.6 | 9.0 | 16.0 | 189 |
-| 2011 | 12.7 | 8.6 | 17.0 | 275 |
-| 2012 | 12.8 | 7.8 | 17.5 | 370 |
-| 2013 | 13.1 | 8.6 | 16.0 | 815 |
-| 2014 | 13.4 | 9.5 | 16.7 | 216 |
-| 2015 | 12.7 | 10.0 | 16.6 | 100 |
-| 2016 | 12.4 | 8.8 | 17.0 | 227 |
-| 2017 | 13.3 | 9.8 | 17.4 | 177 |
-| 2018 | 13.9 | 9.7 | 17.7 | 64 |
-| 2019 | 12.1 | 8.1 | 16.1 | 163 |
-| | | Gulf Kingfish | | |
-| Year | Mean Length | Minimum Length | Maximum Length | Total Number Measured |
-| 2010 | 12.5 | 10.2 | 16.2 | 136 |
-| 2011 | 13.2 | 6.1 | 17.9 | 314 |
-| 2012 | 12.6 | 9.2 | 16.0 | 151 |
-| 2013 | 12.9 | 8.3 | 17.4 | 470 |
-| 2014 | 12.2 | 8.6 | 15.5 | 182 |
-| 2015 | 12.7 | 9.2 | 16.3 | 168 |
-| 2016 | 12.4 | 8.1 | 18.3 | 193 |
-| 2017 | 12.3 | 9.4 | 16.7 | 257 |
-| 2018 | 12.5 | 9.0 | 18.0 | 161 |
-| 2019 | 12.6 | 10.3 | 16.9 | 83 |
-
-Table 2. Summary of length data (fork length, inches) sampled from the kingfish recreational fishery, 2010 - 2019.
-
-| | | Southern Kingfish | | |
-| --- | --- | --- | --- | --- |
-| Year | Mean Length | Minimum Length | Maximum Length | Total Number Measured |
-| 2010 | 11.2 | 6.3 | 16.3 | 968 |
-| 2011 | 11.0 | 7.2 | 16.5 | 583 |
-| 2012 | 10.9 | 6.1 | 16.1 | 828 |
-| 2013 | 10.4 | 6.1 | 15.8 | 370 |
-| 2014 | 11.7 | 7.8 | 19.9 | 383 |
-| 2015 | 10.7 | 6.4 | 18.7 | 258 |
-| 2016 | 11.2 | 7.8 | 16.5 | 490 |
-| 2017 | 11.0 | 7.8 | 15.4 | 472 |
-| 2018 | 11.5 | 7.8 | 15.2 | 290 |
-| 2019 | 10.9 | 6.3 | 15.7 | 374 |
-| | | Northern Kingfish | | |
-| Year | Mean Length | Minimum Length | Maximum Length | Total Number Measured |
-| 2010 | 11.1 | 8.7 | 15.4 | 20 |
-| 2011 | 12.2 | 7.1 | 16.0 | 70 |
-| 2012 | 11.3 | 8.3 | 15.1 | 58 |
-| 2013 | 10.9 | 6.2 | 14.8 | 26 |
-| 2014 | 11.2 | 9.3 | 13.5 | 2 |
-| 2015 | 10.9 | 8.5 | 14.1 | 7 |
-| 2016 | 10.8 | 7.9 | 11.8 | 3 |
-| 2017 | 13.2 | 9.8 | 14.4 | 24 |
-| 2018 | 9.2 | 6.4 | 13.1 | 2 |
-| 2019 | 10.9 | 10.9 | 10.9 | 1 |
-| | | Gulf Kingfish | | |
-| Year | Mean Length | Minimum Length | Maximum Length | Total Number Measured |
-| 2010 | 10.8 | 5.9 | 18.2 | 363 |
-| 2011 | 11.9 | 7.5 | 16.9 | 223 |
-| 2012 | 10.4 | 6.4 | 17.2 | 406 |
-| 2013 | 10.4 | 6.0 | 17.2 | 180 |
-| 2014 | 11.5 | 6.5 | 17.2 | 203 |
-| 2015 | 11.3 | 8.5 | 16.0 | 63 |
-| 2016 | 10.7 | 6.9 | 14.1 | 81 |
-| 2017 | 12.1 | 7.5 | 15.8 | 126 |
-| 2018 | 11.6 | 6.5 | 17.0 | 83 |
-| 2019 | 11.1 | 6.2 | 15.0 | 72 |
-
-Table 3. Kingfish age data collected from all sources (commercial and recreational fisheries and fishery independent sampling programs) combined, 2010 - 2019.
-
-| | | Southern Kingfish | | |
-| --- | --- | --- | --- | --- |
-| Year | Modal Age | Minimum Age | Maximum Age | Total Number Aged |
-| 2010 | 2 | 1 | 5 | 163 |
-| 2011 | 2 | 0 | 6 | 243 |
-| 2012 | 1 | 1 | 6 | 228 |
-| 2013 | 2 | 1 | 5 | 298 |
-| 2014 | 3 | 0 | 5 | 269 |
-| 2015 | 2 | 0 | 5 | 353 |
-| 2016 | 1 | 0 | 7 | 530 |
-| 2017 | 2 | 0 | 6 | 413 |
-| 2018 | 1 | 0 | 7 | 308 |
-| 2019 | 2 | 1 | 7 | 386 |
-| | | Northern Kingfish | | |
-| Year | Modal Age | Minimum Age | Maximum Age | Total Number Aged |
-| 2010 | 2 | 1 | 3 | 4 |
-| 2011 | 2 | 0 | 4 | 115 |
-| 2012 | 1 | 0 | 3 | 17 |
-| 2013 | 2 | 1 | 3 | 26 |
-| 2014 | 2 | 2 | 2 | 1 |
-| 2015 | 2 | 0 | 2 | 40 |
-| 2016 | 1 | 1 | 4 | 49 |
-| 2017 | 2 | 1 | 3 | 13 |
-| 2018 | 3 | 3 | 3 | 1 |
-| 2019 | - | - | - | 0 |
-| | | Gulf Kingfish | | |
-| Year | Modal Age | Minimum Age | Maximum Age | Total Number Aged |
-| 2010 | 3 | 3 | 3 | 1 |
-| 2011 | 2 | 1 | 6 | 28 |
-| 2012 | 1 | 0 | 4 | 98 |
-| 2013 | 1 | 1 | 4 | 44 |
-| 2014 | 2 | 1 | 4 | 38 |
-| 2015 | 2 | 0 | 4 | 78 |
-| 2016 | 1 | 0 | 5 | 116 |
-| 2017 | 2 | 0 | 5 | 167 |
-| 2018 | 2 | 0 | 6 | 95 |
-| 2019 | 1 | 0 | 6 | 183 |
-
-Table 4. Summary of management trigger organized by category. Bold indicates values that activate a trigger.
-
-| | BIOLOGICAL MONITORING | BIOLOGICAL MONITORING | BIOLOGICAL MONITORING | FISHERIES-INDEPENDENT SURVEYS | FISHERIES-INDEPENDENT SURVEYS | FISHERIES-INDEPENDENT SURVEYS | OTHER |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| | Proportion of Adults >= L50 | Proportion of Adults >= L50 | Proportion of Adults >= L50 | YOY Indices | YOY Indices | Adult Index | Relative _F_ |
-| Year | Program 195 June | Program 915 July-September | SEAMAP Summer | Program 195 September | SEAMAP Fall | SEAMAP Summer | Relative _F_ |
-| 1987 | 0.611 | | | **0.73** | | | |
-| 1988 | 0.450 | | | **0.97** | | | |
-| 1989 | **0.300** | | 0.585 | **1.41** | 65.4 | **19.7** | 10,608 |
-| 1990 | 0.563 | | 0.463 | **2.55** | 48.9 | 45.3 | **60,847** |
-| 1991 | 0.667 | | 0.894 | **3.94** | **36.9** | 64.6 | 16,169 |
-| 1992 | 0.429 | | 0.622 | **1.88** | **26.7** | 53.7 | 15,390 |
-| 1993 | 0.543 | | 0.456 | **0.10** | **14.4** | 40.6 | **40,051** |
-| 1994 | 0.794 | | 0.917 | 4.44 | 42.4 | **9.00** | **60,212** |
-| 1995 | 0.440 | | 0.486 | **7.03** | **18.0** | **15.2** | 24,635 |
-| 1996 | 0.872 | | 0.780 | **0.34** | **34.5** | **10.9** | **28,013** |
-| 1997 | 0.589 | | **0.373** | **0.41** | **20.7** | 27.4 | 9,453 |
-| 1998 | 1.000 | | 0.769 | **0.22** | **35.8** | **12.1** | 6,625 |
-| 1999 | 0.920 | | 0.608 | **4.05** | 40.1 | 75.4 | 16,282 |
-| 2000 | 0.733 | | 0.929 | 9.32 | **32.2** | **19.8** | **58,890** |
-| 2001 | 0.660 | 0.983 | **0.303** | 4.33 | **27.3** | 40.3 | 22,634 |
-| 2002 | 0.704 | 0.978 | 0.882 | 5.98 | 47.1 | **25.4** | 17,928 |
-| 2003 | 0.872 | 0.978 | 0.645 | 6.36 | **18.7** | 31.3 | 4,538 |
-| 2004 | 0.513 | 0.971 | **0.284** | **3.27** | 58.8 | 80.9 | 4,724 |
-| 2005 | 0.594 | 0.971 | 0.666 | **2.20** | **34.5** | 42.2 | 8,541 |
-| 2006 | 0.541 | 0.980 | 0.423 | 21.22 | **33.1** | 51.7 | 11,901 |
-| 2007 | **0.343** | 0.976 | 0.521 | 7.89 | 52.9 | **18.4** | 24,465 |
-| 2008 | 0.488 | 0.978 | 0.577 | 10.98 | **33.9** | **9.61** | 21,221 |
-| 2009 | 0.586 | 1.000 | 0.389 | 35.84 | **15.3** | 37.5 | **33,226** |
-| 2010 | 0.529 | 0.983 | 0.786 | **1.79** | 38.9 | 27.9 | 15,217 |
-| 2011 | 0.432 | 1.000 | 0.507 | 17.08 | 95.5 | 34.2 | 20,457 |
-| 2012 | 0.511 | 1.000 | **0.368** | 4.73 | **31.0** | 100 | 5,365 |
-| 2013 | 0.659 | 0.947 | 0.558 | 16.09 | 48.5 | 61.8 | 6,715 |
-| 2014 | 0.422 | 0.982 | 0.548 | 7.04 | 71.4 | 68.5 | 19,818 |
-| 2015 | 0.534 | 0.981 | 0.550 | 8.13 | 557 | 56.5 | 9,208 |
-| 2016 | **0.358** | 0.950 | **0.345** | **2.17** | 79.8 | 61.0 | 2,698 |
-| 2017 | 0.503 | 0.958 | 0.684 | **3.99** | 49.2 | **23.9** | 1,946 |
-| 2018 | 0.639 | 1.000 | 0.404 | 6.16 | **34.3** | 32.1 | 4,294 |
-| 2019 | 0.525 | 0.971 | 0.447 | 7.42 | **36.9** | 70.3 | 4,565 |
-| Threshold | <0.390 | <0.652 | <0.382 | <4.24 | <38.3 | <27.3 | >25,231 |
-| Total Years | 33 | 19 | 31 | 33 | 31 | 31 | 31 |
-| Years Trigger Activated | 3 | 0 | 5 | 17 | 16 | 10 | 6 |
-
-Table 5. Summary of the N.C. Marine Fisheries Commission management strategies and their implementation status for the 2007 Kingfish Fishery Management Plan.
-
-| Management Strategy | Implementation Status |
-| --- | --- |
-| **Fisheries Management** | |
-| The proposed management strategy for kingfishes in North Carolina is to 1) maintain a sustainable harvest of kingfishes over the long-term and 2) promote public education. The first strategy will be accomplished by developing management triggers based on the biology of kingfishes, landings of kingfishes, independent surveys, and requesting a stock assessment of kingfishes be conducted by Atlantic States Marine Fisheries Commission (ASMFC). The second strategy will be accomplished by the NCDMF working to enhance public information and education. | Accomplished |
-| Recommend ASMFC conduct a coastwide stock assessment on sea mullet. | ASMFC determined a stock assessment for the kingfishes was not necessary due to the positive trends in SEAMAP southern kingfish CPUE. |
-| Endorse additional research to reduce bycatch in the shrimp trawl fishery, primarily shrimp trawl characterization studies involving at-sea observers and investigations into fish excluder devices with a higher success rate for reducing the harvest and retention of kingfish in shrimp trawls. | Ongoing |
-| Implement rule giving NCDMF director proclamation authority to manage kingfish. | Accomplished. Rule 15A NCAC 3M .0518 in effect since October 1, 2008 |
-| **Habitat and Water Quality** | |
-| The NCDCM should continue promoting the use of shoreline stabilization alternatives that maintain or enhance fish habitat. That includes using oyster cultch or limestone marl in constructing the sills (granite sills do not attract oyster larvae). | Endorsed through the Coastal Habitat Protection Plan (CHPP) |
-| To ensure protection of kingfish nursery areas, fish-friendly alternatives to vertical stabilization should be required around primary and secondary nursery areas. | Endorsed through the CHPP |
-| The location and designation of nursery habitats should be continued and expanded by the NCDMF. | Endorsed through the CHPP |
-| No trawl areas and mechanical harvest prohibited areas should be expanded to include recovery/restoration areas for subtidal oyster beds and SAV. | Endorsed through the CHPP |
-| Expansion and coordination of habitat monitoring efforts is needed to acquire data for modeling the location of potential recovery/restoration sites for oysters and SAV. | Endorsed through the CHPP |
-| Any proposed stabilization project threatening the passage of kingfish larvae through coastal inlets should be avoided. | Endorsed through the CHPP |
-| All coastal-draining river basins should be considered for NSW classification because they all deliver excess nutrients to coastal waters, regardless of flushing rate. | Endorsed through the CHPP |
-| Efforts to implement phase II stormwater rules must be continued. | Endorsed through the CHPP |
-| The EEP process should be extended to other development projects. | Endorsed through the CHPP |
-| Reduce sediment and nutrient loading by addressing multiple sources, including: improvement and continuation of urban and agricultural BMPs, more stringent sediment controls on construction projects, and implementation of additional buffers along coastal waters. | Endorsed through the CHPP |
-
-**FIGURES**
-
-[[IMAGE_171_0|]]
-Figure 1. Commercial and recreational landings of kingfishes (southern, northern, and Gulf combined), 1972 - 2019.
-
-[[IMAGE_171_1|]]
-Figure 2. Annual index of relative YOY abundance for southern kingfish derived from the September component of the NCDMF Program 195 survey (excluding strata from the Neuse, Pamlico, and Pungo rivers), 1987– 2019. Dotted line represents 2/3 of the average of the time series.
-
-[[IMAGE_172_0|]]
-Figure 3. Annual index of relative adult abundance for southern kingfish derived from the summer component of the SEAMAP-SA Coastal Survey (Onslow, Raleigh, and Long bays, inner—shallow—strata), 1989– 2018, 2019 data is not available. Dotted line represents 2/3 of the average of the time series.
-
-[[IMAGE_172_1|]]
-Figure 4. Annual index of relative YOY abundance for southern kingfish derived from the fall component of the SEAMAP-SA Coastal Survey (Onslow, Raleigh, and Long bays, inner—shallow—strata), 1989–2018, 2019 data is not available. Dotted line represents 2/3 of the average of the time series.
-
-[[IMAGE_173_0|]]
-Figure 5. Annual proportion of adults (southern kingfish) greater than or equal to the length at 50% maturity occurring in the July through September component of the NCDMF Program 915 survey (Pamlico Sound, deep strata only), 2001–2019. Dotted line represents 2/3 of the average of the time series.
-
-[[IMAGE_173_1|]]
-Figure 6. Annual proportion of adults (southern kingfish) greater than or equal to the length at 50% maturity occurring in the June component of the NCDMF Program 195 survey (excluding strata from the Neuse, Pamlico, and Pungo rivers), 1987–2019. Dotted line represents 2/3 of the average of the time series.
-
-[[IMAGE_174_0|]]
-Figure 7. Annual proportion of adults (southern kingfish) greater than or equal to the length at 50% maturity occurring in the summer component of the SEAMAP-SA Coastal Survey (Onslow, Raleigh, and Long bays, inner—shallow—strata), 1989–2019. Dotted line represents 2/3 of the average of the time series.
-
-[[IMAGE_174_1|]]
-Figure 8. Relative _F_, as estimated as harvest (commercial and recreational) divided by the SEAMAP-SA Coastal Survey spring index (Onslow, Raleigh, and Long bays, inner—shallow—strata) of relative abundance, 1989-2019. Dotted line represents 2/3 of the average of the time series.
-
-[[IMAGE_175_0|]]
-Figure 9. Kingfish total length at age based on all samples collected, 1997 - 2019. Blue circles represent the mean size at a given age while the grey squares represent the minimum and maximum observed for each age.
-
-[[IMAGE_175_1|]]
-Figure 10. Commercial total length and recreational fork length frequency distribution of Kingfish harvested in 2019.
-
-[[IMAGE_176_0|]]
-Figure 11. Commercial total length frequency of Kingfish harvested, 1989-2019. Bubble represents the proportion of fish at length.
-
-[[IMAGE_176_1|]]
-Figure 12. Recreational fork length frequency of Kingfish harvested, 1981-2019. Bubble represents the proportion of fish at length.
-
-# STANDARD COMMERCIAL FISHING LICENSE ELIGIBILITY
-
-[[IMAGE_177_0|]]
-
-## ROY COOPER
-Governor
-## MICHAEL S. REGAN
-Secretary
-## STEPHEN W. MURPHEY
-Director
-
-July 31, 2020
-
-**MEMORANDUM**
-
-**TO:** N.C. Marine Fisheries Commission
-
-**FROM:** Captain Garland Yopp, Marine Patrol, Eligibility Board Chair
-
-**SUBJECT:** Standard Commercial Fishing License Eligibility Pool Determination
-
-**Issue**
-Determine number of licenses available to the Standard Commercial Fishing License (SCFL) Eligibility Pool.
-
-**Overview**
-An individual who does not hold a Standard Commercial Fishing License but wants to purchase a license through the Division of Marine Fisheries can apply to receive the license through the Eligibility Pool process. The application goes before a board which determines if the applicant is qualified based on criteria set out in rule. The number of licenses available in this pool is set annually by the commission.
-
-Session Law 1998-225, Section 4.24(f) states that “the number of SCFLs in the pool of available SCFLs in license years beginning with the 2000-01 license year is the temporary cap less the number of SCFLs that were issued and renewed during the previous license year.” The temporary cap was set at the number of valid Endorsements to Sell as of June 30, 1999 (8,396 licenses), plus an extra 500 licenses to be included in the Eligibility Pool (8,896 total licenses).
-
-For the 2020-2021 license year, the number of licenses available through the Eligibility Board is 3,064. This number accounts for licenses issued in the 2019-2020 license year and the number of approvals from the Eligibility Board from 2019-2020 that still have the option to purchase a license before June 30, 2021. Individuals approved in the fall (September/October) must purchase their license by June 30 of the same license year, but those approved in the spring (March) have until June 30 of the following license year to purchase their license.
-
-Session Law 1998-225, Section 4.24(f) also states “the Commission may increase or decrease the number of SCFLs that are issued from the pool of available SCFLs. The Commission may increase the number of SCFLs that are issued from the pool of available SCFLs up to the temporary cap. The Commission may decrease the number of SCFLs that are issued from the pool of available SCFLs but may not refuse to renew a SCFL that is issued during the previous license year and that has not been suspended or revoked. The Commission shall increase or decrease the number of SCFLs that are issued to reflect its determination as to the effort that the fishery can support, based on the best available scientific evidence.”
-
-From July 1, 2019 to June 30, 2020, the Board received 52 applications and approved 41. This was a 46% increase in applications received compared to FY2019. So far, there are 7 pending applications for review at the fall Eligibility Board meeting. The deadline for renewing commercial licenses for FY2020 was extended to July 31, 2020 due to COVID-19 so the numbers in this memo may not represent all SCFLs that will be renewed for FY2020. Therefore, the total number of licenses available in the Eligibility Pool may be lower than the number presented.
-
-Over the past three years, the commission has voted to make the number of available licenses in the Eligibility Pool different from the total number of licenses left in the cap. Below is a summary of the licenses made available to the pool by the commission over the last 10 years (Table 1).
-
-Table 1. Number of licenses available and number of licenses approved by the commission in the SCFL Eligibility Pool, FY2011–2021.
-
-| License Year (FY) | Number of Licenses Available | Number of Licenses Approved by MFC |
-| --- | --- | --- |
-| 2010–2011 | 1,420 | 1,420 |
-| 2011–2012 | 1,375 | 1,375 |
-| 2012–2013 | 1,358 | 1,358 |
-| 2013–2014 | 1,368 | 1,368 |
-| 2014–2015 | 1,257 | 1,257 |
-| 2015–2016 | 1,238 | 1,238 |
-| 2016–2017* | 2,417 | 100 |
-| 2017–2018 | 2,592 | 1,500 |
-| 2018–2019 | 2,723 | 500 |
-| 2019–2020 | 2,973 | 500 |
-| 2020–2021 | 3,064 | TBD |
-
-*Calculation to determine number of available licenses changed
-
-In summary, there are 3,064 licenses available to the Eligibility Pool for the 2020–2021 license year. The commission needs to determine the number of licenses it wants to place in the pool for the upcoming year.
-
-**Action Needed**
-A vote by the commission is needed to set the number of available licenses in the Eligibility Pool.
-
-## Eligibility Pool
-**Commission Report for 2020–2021**
-**August 20, 2020**
-
-**How the Pool Number is Determined:**
-
-Session Law 1998-225, Section 4.24(f).
-
-(f) Adjustment of Number of SCFLs. The number of SCFLs in the pool of available SCFLs in license years beginning with the 2000–01 license year is the temporary cap less the number of SCFLs that were issued and renewed during the previous license year. . .
-
-**Role of the Marine Fisheries Commission:**
-
-Session Law 1998-225, Section 4.24(f).
-
-(f). . . The Commission may increase or decrease the number of SCFLs that are issued from the pool of available SCFLs. The Commission may increase the number of SCFLs that are issued from the pool of available SCFLs up to the temporary cap. The Commission may decrease the number of SCFLs that are issued from the pool of available SCFLs but may not refuse to renew a SCFL that is issued during the previous license year and that has not been suspended or revoked. The Commission shall increase or decrease the number of SCFLs that are issued to reflect its determination as to the effort that the fishery can support, based on the best available scientific evidence.
-
-**Temporary Cap:**
-
-The maximum number of SCFLs that can be issued is the number of valid Endorsements to Sell as of June 30, 1999 plus 500 for the first eligibility pool, for a total of 8,896.
-
-**Eligibility Board Pool Determination 2020–2021:**
-
-There are 3,064 SCFLs available through the Eligibility Board for the 2020–2021 license year.
-
-**Attachments:**
-
-2020–2021 Eligibility Pool Determination Calculations
-
-FY2020 License Sales Report
-
-Summary of Licenses Available and Temporary Cap as Approved by the Commission
-
-Eligibility Board Meeting Summaries
-
-Eligibility Board Open Files
-
-## Eligibility Pool Determination Calculations
-**For**
-**2020–2021 License Year**
-
-Below is the current calculation used to determine the number of licenses available in the Eligibility Pool. Corrections were made to this calculation in August 2016 to prevent licenses already existing in the cap from being double counted and removed from the number of licenses remaining.
-
-Licenses removed from the cap in this calculation include the number of SCFLs and RSCFLs issued and renewed in the 2019–2020 license year as well as any Eligibility Board approvals from the spring meeting. Those approved by the Eligibility Board in the spring have until the following license year to purchase their SCFL. These licenses are subtracted from the pool because they represent potential licenses available for purchase.
-
-**Current calculation:**
-
-<u>Total Number of SCFLs Available in 2020–2021 License Year</u> (Data run date: 7/9/2020)
-
-1) Total original SCFLs available (Cap)…………………………………………………….. 8,896
-2) Less total number of SCFLs issued and renewed in 2019–2020………………………... – 5,823
-3) Total number of SCFLs available in the pool for 2020–2021…………………………...... 3,073
-4) Less total number of 2019–2020 approvals through Eligibility Pool not yet issued¹ ………..... -9
-5) Total SCFLs available for the 2020–2021 license year……………………………… 3,064
-
-¹ Individuals approved in the spring (March 2020) have until June 30 of the following license year (2021) to purchase their SCFL.
-
-## North Carolina Division of Marine Fisheries
-**Commercial Licenses Sold by License Type**
-**FY2020 License Year**
-**Data Run Date: 7/9/2020**
-
-| | |
-| --- | --- |
-| **Blanket For-Hire Captain's Coastal Recreational Fishing License:** | 131 |
-| **Blanket For-Hire Vessel Coastal Recreational Fishing License:** | 597 |
-| **Commercial Fishing Vessel Registration:** | 6,506 |
-| **Fish Dealer License:** | 672 |
-| **Land or Sell License:** | 134 |
-| **License to Land Flounder from Atlantic Ocean:** | 157 |
-| **NC Resident Shellfish License without SCFL:** | 571 |
-| **Non-Blanket For-Hire Vessel License:** | 106 |
-| **Ocean Pier License:** | 20 |
-| **Recreational Fishing Tournament License:** | 26 |
-| **Retired Standard Commercial Fishing License:** | 1,402 |
-| **Standard Commercial Fishing License:** | 4,421 |
-| **TOTAL LICENSES FOR ALL LICENSE TYPES:** | 14,743 |
-
-| | |
-| --- | --- |
-| 4,421 | SCFL |
-| + 1,402 | RSCFL |
-| 5,823 | Total Number of SCFLs issued for FY2020 |
-
-**Licenses Available from the Eligibility Pool – Annual Summary**
-
-| License Year | Number of Licenses Available | Number of Licenses Approved by MFC |
-| --- | --- | --- |
-| 1999–2000 | 500 | N/A |
-| 2000–2001 | 1,314 | 1,314 |
-| 2001–2002 | 1,423 | 1,423 |
-| 2002–2003 | 1,458 | 1,458 |
-| 2003–2004 | 1,421 | 1,421 |
-| 2004–2005 | 1,423 | 1,423 |
-| 2005–2006 | 1,536 | 1,536 |
-| 2006–2007 | 1,596 | 1,596 |
-| 2007–2008 | 1,562 | 1,562 |
-| 2008–2009 | 1,557 | 1,557 |
-| 2009–2010 | 1,507 | 1,507 |
-| 2010–2011 | 1,420 | 1,420 |
-| 2011–2012 | 1,375 | 1,375 |
-| 2012–2013 | 1,358 | 1,358 |
-| 2013–2014 | 1,368 | 1,368 |
-| 2014–2015 | 1,257 | 1,257 |
-| 2015–2016 | 1,238 | 1,238 |
-| 2016–2017* | 2,417 | 100 |
-| 2017–2018 | 2,592 | 1,500 |
-| 2018–2019 | 2,723 | 500 |
-| 2019–2020 | 2,973 | 500 |
-| 2020–2021 | 3,064 | TBD |
-
-*Calculation to determine number of available licenses changed
-
-**Licenses Approved and Denied by the Eligibility Pool Board – Annual Summary**
-
-| License Year | Approved | Denied |
-| --- | --- | --- |
-| 1999–2000 | 166 | 133 |
-| 2000–2001 | 110 | 75 |
-| 2001–2002 | 46 | 37 |
-| 2002–2003 | 38 | 23 |
-| 2003–2004 | 56 | 11 |
-| 2004–2005 | 35 | 13 |
-| 2005–2006 | 31 | 9 |
-| 2006–2007 | 32 | 4 |
-| 2007–2008 | 49 | 7 |
-| 2008–2009 | 83 | 5 |
-| 2009–2010 | 109 | 11 |
-| 2010–2011 | 63 | 2 |
-| 2011–2012 | 68 | 17 |
-| 2012–2013 | 99 | 9 |
-| 2013–2014 | 96 | 14 |
-| 2014–2015 | 61 | 13 |
-| 2015–2016 | 45 | 6 |
-| 2016–2017 | 32 | 6 |
-| 2017–2018 | 84 | 13 |
-| 2018–2019 | 28 | 6 |
-| 2019–2020 | 41 | 10 |
-| **Totals** | **1,372** | **424** |
-
-**Eligibility Pool Board Meeting Summary**
-
-| HEARING DATE | APPRVLS | DENIALS | TABLED ** | TOTAL REVIEWED | INCOMP. *** | NON-RESIDENTS TABLED | NON-RESIDENTS APPRV'D | NON-RESIDENTS DENIED |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 5/5/1999 | 2 | 0 | 2 | 4 | | 0 | 0 | 0 |
-| 5/19/1999 | 5 | 0 | 1 | 6 | | 0 | 1 | 0 |
-| 6/17/1999 | 2 | 5 | 3 | 10 | | 0 | 0 | 0 |
-| **7/1/98–6/30/99** | **9** | **5** | **6** | **20** | | **0** | **1** | **0** |
-| 7/7/1999 | 12 | 10 | 0 | 22 | | 0 | 3 | 0 |
-| 7/8/1999 | 23 | 25 | 0 | 48 | | 0 | 7 | 0 |
-| 07/15/1999 MFC | N/A | N/A | N/A | N/A | | N/A | N/A | N/A |
-| 8/11/1999 | 18 | 20 | 4 | 42 | | 0 | 3 | 0 |
-| 8/27/1999 | 17 | 33 | 0 | 50 | | 0 | 0 | 1 |
-| 09/09/1999 MFC | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| 9/29/1999 | 18 | 11 | 1 | 30 | | 0 | 0 | 0 |
-| 11/3/1999 | 13 | 12 | 4 | 29 | | 1 | 2 | 0 |
-| 11/08/1999 MFC | N/A | N/A | N/A | N/A | | N/A | N/A | N/A |
-| 1/26/2000 | 9 | 5 | 5 | 19 | | 1 | 1 | 0 |
-| 02/18/2000 MFC | N/A | N/A | N/A | N/A | | N/A | N/A | N/A |
-| 4/19/2000 | 19 | 6 | 8 | 33 | | 2 | 1 | 0 |
-| 5/18/2000 | 18 | 3 | 9 | 30 | | 2 | 0 | 1 |
-| 6/7/2000 | 10 | 3 | 2 | 15 | | 1 | 0 | 0 |
-| **7/1/99–6/30/00** | **157** | **128** | **33** | **318** | | **7** | **17** | **2** |
-| 7/12/2000 | 11 | 1 | 4 | 16 | | 0 | 2 | 0 |
-| 7/21/2000 MFC | N/A | N/A | N/A | N/A | | N/A | N/A | N/A |
-| 9/20/2000 | 24 | 15 | 7 | 46 | | 0 | 1 | 0 |
-| 10/27/2000 | 16 | 8 | 3 | 27 | | 0 | 1 | 0 |
-| 12/1/2000 | 5 | 16 | 2 | 23 | | 0 | 0 | 0 |
-| 1/24/2001 | 10 | 14 | 3 | 27 | | 0 | 0 | 2 |
-| 3/9/2001 | 12 | 12 | 8 | 32 | | 0 | 0 | 0 |
-| 4/4/2001 | 32 | 9 | 1 | 42 | | 0 | 0 | 1 |
-| **7/1/00–6/30/01** | **110** | **75** | **28** | **213** | | **0** | **4** | **3** |
-| 7/26/2001 | 18 | 10 | 2 | 30 | | 1 | 3 | 0 |
-| 08/21/2002 MFC | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| 11/14/2002 | 12 | 15 | 3 | 30 | | 0 | 2 | 1 |
-| 2/21/2002 | 16 | 12 | 2 | 30 | | 0 | 1 | 0 |
-| **7/1/01–6/30/02** | **46** | **37** | **7** | **90** | | **1** | **6** | **1** |
-| 9/11/2002 | 28 | 14 | 6 | 48 | | 1 | 2 | 0 |
-| 08/19/2003 MFC | N/A | N/A | N/A | N/A | | N/A | N/A | N/A |
-| 3/5/2003 | 10 | 9 | 1 | 20 | | 0 | 2 | 0 |
-| **7/1/02–6/30/03** | **38** | **23** | **7** | **68** | | **1** | **4** | **0** |
-| 08/19/2003 MFC | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| 7/9/2003 | 16 | 3 | 1 | 20 | | 0 | 2 | 0 |
-| 11/4/2003 | 17 | 2 | 0 | 19 | | 0 | 3 | 0 |
-| 3/19/2004 | 22 | 6 | 0 | 28 | | 0 | 2 | 0 |
-| 6/22/2004 | 1 | 0 | 0 | 1 | | 0 | 0 | 0 |
-| **7/1/03–6/30/04** | **56** | **11** | **1** | **68** | | **0** | **7** | **0** |
-| 11/1/2004 | 22 | 4 | 1 | 27 | | 0 | 0 | 0 |
-| 2/28/2005 | 11 | 2 | 0 | 13 | | 0 | 0 | 1 |
-| 4/18/2005 | 2 | 7 | 0 | 9 | | 0 | 0 | 0 |
-| **7/1/04–6/30/05** | **35** | **13** | **1** | **49** | | **0** | **0** | **1** |
-| 9/27/2005 | 17 | 7 | 1 | 25 | | 0 | 1 | 0 |
-| 3/15/2006 | 14 | 2 | 2 | 18 | | 0 | 1 | 0 |
-| **7/1/05–6/30/06** | **31** | **9** | **3** | **43** | | **0** | **2** | **0** |
-| **HEARING DATE** | **APPRVLS** | **DENIALS** | **TABLED \*\*** | **TOTAL REVIEWED** | **INCOMP. \*\*\*** | **NON-RESIDENTS TABLED** | **NON-RESIDENTS APPRV'D** | **NON-RESIDENTS DENIED** |
-| 10/4/2006 | 16 | 3 | 2 | 21 | | 0 | 1 | 0 |
-| 3/14/2007 | 16 | 1 | 2 | 19 | | 0 | 1 | 0 |
-| **7/1/06–6/30/07** | **32** | **4** | **4** | **40** | | **0** | **2** | **0** |
-| 9/10/2007 | 26 | 2 | 4 | 32 | | 0 | 0 | 0 |
-| 3/19/2008 | 23 | 5 | 3 | 31 | | 0 | 0 | 0 |
-| **7/1/07–6/30/08** | **49** | **7** | **7** | **63** | | **0** | **0** | **0** |
-| 9/30/2008 | 39 | 0 | 3 | 42 | | 0 | 4 | 0 |
-| 3/24/2009 | 44 | 5 | 1 | 50 | | 0 | 3 | 0 |
-| **7/1/08–6/30/09** | **83** | **5** | **4** | **92** | | **0** | **7** | **0** |
-| 10/6/2009 | 52 | 6 | 1 | 59 | | 0 | 2 | 1 |
-| 3/10/2010 | 36 | 2 | 1 | 39 | | 0 | 1 | 0 |
-| 6/2/2010 | 21 | 3 | 0 | 24 | | 0 | 0 | 0 |
-| **7/1/09–6/30/10** | **109** | **11** | **2** | **122** | | **0** | **3** | **1** |
-| 9/21/2010 | 40 | 2 | 1 | 43 | | 0 | 2 | 0 |
-| 3/24/2011 | 23 | 0 | 0 | 23 | | 0 | 4 | 0 |
-| **7/1/10–6/30/11** | **63** | **2** | **1** | **66** | | **0** | **6** | **0** |
-| 10/4/2011 | 39 | 7 | 0 | 46 | | 0 | 2 | 0 |
-| 3/15/2012 | 28 | 10 | 0 | 38 | | 0 | 2 | 0 |
-| 1/13/2012 | 1 | 0 | 0 | 1 | | 0 | 0 | 0 |
-| **7/1/11–6/30/12** | **68** | **17** | **0** | **85** | | **0** | **4** | **0** |
-| 9/12/2012 | 53 | 7 | 3 | 63 | | 0 | 1 | 1 |
-| 3/19/2013 | 46 | 2 | 4 | 52 | | 0 | 2 | 0 |
-| **7/1/12–6/30/13** | **99** | **9** | **7** | **115** | | **0** | **3** | **1** |
-| 9/18/2013 | 56 | 7 | 0 | 63 | | 0 | 2 | 0 |
-| 3/19/2014 | 40 | 7 | 1 | 48 | | 0 | 0 | 0 |
-| **7/1/13–6/30/14** | **96** | **14** | **1** | **111** | | **0** | **2** | **0** |
-| 9/17/2014 | 32 | 9 | 0 | 41 | | 0 | 1 | 0 |
-| 3/18/2015 | 25 | 3 | 5 | 33 | | 1 | 0 | 0 |
-| 5/12/2015 | 4 | 1 | 0 | 5 | | 0 | 1 | 0 |
-| **7/1/14–6/30/15** | **61** | **13** | **5** | **79** | | **1** | **1** | **0** |
-| 10/21/2015 | 16 | 4 | 1 | 21 | | 0 | 3 | 0 |
-| 3/23/2016 | 29 | 2 | 2 | 33 | | 0 | 0 | 0 |
-| **7/1/15–6/30/16** | **45** | **6** | **3** | **54** | | **0** | **3** | **0** |
-| 9/28/2016 | 17 | 3 | 2 | 22 | | 0 | 0 | 0 |
-| 3/16/2017 | 15 | 3 | 0 | 18 | | 0 | 0 | 0 |
-| **7/1/16–6/30/17** | **32** | **6** | **2** | **40** | | **0** | **0** | **0** |
-| 9/28/2017 | 44 | 9 | 0 | 53 | | 0 | 1 | 0 |
-| 11/1/2017 | 11 | 3 | 0 | 14 | | 0 | 1 | 0 |
-| 3/28/2018 | 29 | 1 | 0 | 30 | | 0 | 3 | 0 |
-| **7/1/17–6/30/18** | **84** | **13** | **0** | **97** | | **0** | **5** | **0** |
-| 10/30/2018 | 15 | 5 | 0 | 22* | | 0 | 1 | 1 |
-| 4/11/2019 | 13 | 1 | 0 | 14 | | 0 | 1 | 0 |
-| **7/1/18–6/30/19** | **28** | **6** | **0** | **36** | | **0** | **2** | **1** |
-| 9/24/2019 | 25 | 6 | 1 | 32 | | 0 | 1 | 1 |
-| 3/26/2020 | 16 | 4 | 0 | 20 | | 0 | 2 | 0 |
-| **7/1/19–6/30/20** | **41** | **10** | **1** | **52** | | **0** | **3** | **1** |
-| **TOTALS ALL** | **1,372** | **424** | **123** | **1,921** | **10** | **82** | **11** |
-
-*Two applications were withdrawn.
-**TABLED files are presented again at the next Board meeting for a final decision of approval or denial and are then accounted for in the Approved or Denied categories. TOTAL REVIEWED does not equal total approved or denied because some files are reviewed in multiple meetings (tabled, etc.).
-
-**Standard Commercial Fishing License Eligibility Pool Office**
-**Summary of Open Files beginning July 1, 2020**
-
-| File Description | Total Number of Files |
-| --- | --- |
-| To be researched/ready for the next board meeting | 7 |
-| New/being processed | 0 |
-| Pending responses to letters mailed requesting more information | 0 |
-| Incomplete – no response to letters | 0 |
-| **Total Open/Pending Applications** | **7** |
-
-# RULEMAKING UPDATE
-
-[[IMAGE_187_0|]]
-
-- 2020-2021 RULEMAKING UPDATE MEMO
-- RULEMAKING PACKAGE A
-- RULEMAKING PACKAGE B
-
-## ROY COOPER
-Governor
-## MICHAEL S. REGAN
-Secretary
-## STEPHEN W. MURPHEY
-Director
-
-July 31, 2020
-
-**MEMORANDUM**
-
-**TO:** N.C. Marine Fisheries Commission
-
-**FROM:** Catherine Blum, Fishery Management Plan and Rulemaking Coordinator
-Fisheries Management Section
-
-**SUBJECT:** Rulemaking Update
-
-**Issues**
-Update the N.C. Marine Fisheries Commission (MFC) on the status of the 2020-2021 annual rulemaking cycle, including rulemaking in support of the Periodic Review and Expiration of Existing Rules per G.S. 150B-21.3A, and request the MFC vote on approval to begin the rule readoption and amendment process for rules in “Package B”.
-
-**Findings**
-- Periodic Review and Readoption of Rules – Requirements
-  - North Carolina G.S. 150B-21.3A, adopted in 2013, requires state agencies to review existing rules every 10 years in accordance with a prescribed process that includes rule readoption.
-    - 15A NCAC 18A – Sanitation: On Jan. 16, 2020, the Rules Review Commission (RRC) approved the readoption schedule of June 30, 2024 for 164 MFC rules.
-    - 15A NCAC 03 – Marine Fisheries: On June 14, 2018, the RRC approved the readoption schedule of June 30, 2022 for 172 MFC rules.
-  - The MFC must readopt these rules by these deadlines or the rules will expire and be removed from the N.C. Administrative Code.
-- Periodic Review and Readoption of Rules – Rule Readoptions for August MFC Meeting
-  - 15A NCAC 18A – Sanitation
-    - Classification of Shellfish Growing Waters and Laboratory Procedures (14 rules)
-    - Rules with minor changes relating to standards for commercial shellfish sanitation and processing procedures (21 rules)
-  - 15A NCAC 03 – Marine Fisheries
-    - Shellfish Lease User Conflicts, per Session Law 2019-37 (3 rules)
-    - General Regulations: Joint (9 rules)
-    - Shrimp Fishery Management Plan Amendment 1 Special Secondary Nursery Areas (2 rules; 1 readoption and 1 amendment)
-- Rule Amendments for August MFC Meeting
-  - 15A NCAC 03R .0117, Oyster Sanctuaries (1 rule)
-
-**Recommendation**
-Staff recommends the MFC vote on approval to begin the rule readoption and amendment process for the 50 listed rules. For more information, please refer to the [Rulemaking](http://portal.ncdenr.org/web/mf/mfc-proposed-rules) section of the briefing materials.
-
-**2020-2021 Annual Rulemaking Cycle Update**
-
-<u>“Package A”</u>
-
-*Coastal Recreational Waters Monitoring, Evaluation, and Notification*
-
-At its May 2020 business meeting, the MFC approved Notice of Text for readoption of the seven rules in 15A NCAC 18A .3400, Coastal Recreational Waters Monitoring, Evaluation, and Notification. These rules were adopted in 2004 and need updating to bring the Recreational Water Quality Program into compliance with new Environmental Protection Agency criteria and standards released in 2014 and to be more efficient as a program in protecting public health. The purpose of the program is to protect public health by monitoring recreational coastal waters and to notify the public when samples collected exceed the safe swimming standard. The new guidance is recommending the same bacterial threshold for all swimming locations regardless of usage category. These bacteriological limits will create efficiencies for how the division issues public notifications when samples collected exceed the safe swimming standard.
-
-On Aug. 3, 2020 the proposed rules were published in the _N.C. Register_. The rules have an intended effective date of April 1, 2021, which coincides with the start of the 2021 recreational swimming season, creating a smooth transition. The MFC is accepting public comments on the proposed rules from Aug. 3 through 5 p.m. Oct. 2, 2020. Public comments on the proposed rules may be submitted by an online form available at http://portal.ncdenr.org/web/mf/mfc-proposed-rules (click on April 1, 2021 package) or by U.S. mail to division Rules Coordinator Catherine Blum, P.O. Box 769, Morehead City, NC 28557. Comments submitted by email will not be accepted. An online public hearing will also be held via WebEx on Aug. 26, 2020 at 6 p.m. Details about the hearing and about how to register to speak at the hearing are also available on the website, as are the proposed rules and the corresponding fiscal analysis. The MFC will receive an update on the public comments at its November 2020 business meeting.
-
-For more information, please refer to the materials for “Package A” in the Rulemaking section of the briefing materials, including a table showing the timing of the steps in the process and the Aug. 3 news release and _N.C. Register_ publication of the proposed rules.
-
-<u>“Package B”</u>
-
-*Periodic Review and Expiration of Existing Rules – Rule Readoptions for August MFC Meeting*
-
-At its August 2020 business meeting, the MFC is scheduled to vote on approval to begin the rule readoption and amendment process for 49 rules. A summary of the proposed rules is provided here. Please refer to the materials for “Package B” in the [Rulemaking](http://portal.ncdenr.org/web/mf/mfc-proposed-rules) section of the briefing materials, including a table showing the timing of the steps in the process and the fiscal analysis of each of the six issues described below. The proposed rules are appended to each respective fiscal analysis. The intended effective date of the rule package is May 1, 2021. Rules with an asterisk (*) are subject to legislative review pursuant to Session Law 2019-198 and G.S. 14-4.1, Legislative review of regulatory crimes, and thus are expected to have a delayed effective date. The MFC may request a group of related rules to become effective at the same time per G.S. 150B-21.3.
-
-CLASSIFICATION OF SHELLFISH GROWING WATERS AND LABORATORY PROCEDURES
-(15A NCAC 18A .0431, .0704, .0901-.0910, .0913, .0914)
-The MFC is scheduled to vote on proposed amendments to readopt and repeal through readoption 14 rules in 15A NCAC 18A pursuant to the requirements of G.S. 150B-21.3A. Additionally, proposed amendments will conform the rules with minimum standards for the National Shellfish Sanitation Program Guide for the Control of Molluscan Shellfish. North Carolina must meet these minimum standards in order for N.C. shellfish to be sold through interstate commerce. Additional amendments update rule language to be more concise, consistent, and homogenized. Rule language is also proposed to formalize the use of conditionally approved shellfish areas to increase the overall flow of shellfish from the state; the use of conditional areas has been in place in North Carolina for over 20 years. In short, none of the proposed rule changes lead to any substantive changes in the ongoing operations of the Division, but rather conform language to these practices and requirements.
-
-RULES WITH MINOR CHANGES RELATING TO STANDARDS FOR COMMERCIAL SHELLFISH SANITATION AND PROCESSING PROCEDURES
-(15A NCAC 18A .0140-.0143, .0146, .0150, .0154, .0155, .0159, .0160, .0163, .0167, .0169-.0172, .0179, .0180, .0188-.0190)
-The MFC is scheduled to vote on proposed amendments to readopt 21 rules in 15A NCAC 18A pursuant to the requirements of G.S. 150B-21.3A. The rules relate to standards for commercial shellfish sanitation and processing procedures. Of these, 13 rules have minor changes proposed, such as updates to punctuation, agency names, capitalization, acronym introduction, and a missing degree symbol for a temperature provided; the changes conform the rules to current standards for rulemaking. The remaining eight rules are proposed for readoption with no changes.
-
-SHELLFISH LEASE USER CONFLICTS, PER SESSION LAW 2019-37
-(15A NCAC 03O .0201, .0202, .0204*)
-The MFC is scheduled to vote on proposed amendments to readopt three rules in 15A NCAC 03 pursuant to the requirements of G.S. 150B-21.3A. Additionally, Session Law 2019-37 was passed with the explicit goal of providing increased support to the state’s shellfish aquaculture industry. Central to this was the goal of understanding user conflict issues of shellfish leasing and amending state regulations based on these findings. Section 9 of the law required the North Carolina Department of Environmental Quality, division, and MFC to study how to reduce user conflict related to shellfish cultivation leases, and to adopt rules and reform internal operating procedures consistent with the findings of the study.
-
-Proposed rule amendments are based on the results of the study and aim to reduce user conflict issues while supporting a productive shellfish aquaculture industry. Specifically, the amendments proposed would increase setback limits from developed shorelines for new shellfish leases, limit the allowable number of corners for demarcating shellfish leases to simplify polygon shape, set new criteria for shellfish lease stakes and signage to alleviate navigation concerns, and initiate a new leaseholder training program that emphasizes user conflict reduction strategies.
-
-GENERAL REGULATIONS: JOINT
-(15A NCAC 03Q .0101-.0109; [.0107*])
-The MFC is scheduled to vote on proposed amendments to readopt nine rules in 15A NCAC 03 pursuant to the requirements of G.S. 150B-21.3A. The proposed readoptions do not contain any changes to the rules. In accordance with G.S. 113-132, these nine rules, subtitled “Jurisdiction of Agencies: Classification of Waters” were originally adopted jointly by the MFC and the N.C. Wildlife Resources Commission (WRC). As a result, each agency must approve readoption of the rules. The WRC has not taken action on these rules.
-
-SHRIMP FISHERY MANAGEMENT PLAN AMENDMENT 1 SPECIAL SECONDARY NURSERY AREAS
-(15A NCAC 03R .0104, .0105)
-The MFC is scheduled to vote on proposed amendments to readopt one rule (.0105) pursuant to the requirements of G.S. 150B-21.3A and amend one rule (.0104) in 15A NCAC 03. In February 2015, the Shrimp Fishery Management Plan Amendment 1 and its rules were adopted by the MFC. One of the final management measures to implement after adoption of Amendment 1 was to evaluate changing the designation of nine Special Secondary Nursery Areas (SSNAs) that have not been opened to trawling since at least 2004 to permanent Secondary Nursery Areas (SNAs). The evaluation was undertaken and shows these nine sites have all been functioning as SNAs for nearly 30 years. None of these sites has been open for trawling since 1991 at the latest, except for one site (Newport River), which was opened by proclamation in 2004. At its February 2020 business meeting, the MFC voted to select its preferred management option for this management measure, which was to change the designation of all nine proposed SSNAs to SNAs. These changes would convert 8,670 acres of current SSNA waters to SNAs, making them subject to all standard SNA gill net attendance requirements under 03R .0112(b)(1).
-
-The two practical differences between SNAs and SSNAs relates to trawling and small mesh gill net attendance. In SNAs, it is unlawful to use trawl nets for any purpose, but since none of the proposed SSNAs have been opened to trawling since at least 2004, the only impactful management change is the new requirements related to small mesh gill net attendance in all but one of these waters. (Scranton Creek would see no changes in its small mesh gill net attendance requirements.) Please refer to Appendix III of the fiscal analysis for associated tables and figures for the nine areas that shows the gill net attendance requirements that would be in place once the rule changes become effective. The fiscal analysis can be found in the [Rulemaking](http://portal.ncdenr.org/web/mf/mfc-proposed-rules) section of the briefing materials.
-
-*Rule Amendments for August MFC Meeting*
-
-OYSTER SANCTUARIES
-(15A NCAC 03R .0117)
-At its August 2020 business meeting, the MFC is scheduled to vote to amend one rule in 15A NCAC 03. Rule amendments are proposed to add the boundaries of the five most recently developed oyster sanctuaries (i.e., Long Shoal, Little Creek, Pea Island, Raccoon Island, and Swan Island) and update boundaries for three existing sanctuaries (i.e., Neuse River, West Bluff, and Gibbs Shoal). Boundaries delineating the area for two existing sanctuaries (i.e., Ocracoke and Clam Shoal) are proposed to be removed from rule as they no longer function as biologically productive oyster sanctuaries. The term “sanctuary” refers to reefs protected from oyster harvest in MFC rule or by proclamation issued by the Fisheries Director under the authority of MFC rule.
-
-The Blue Ribbon Advisory Council on Oysters (BRACO) made the first recommendations concerning the establishment of oyster sanctuaries in North Carolina in 1995. The BRACO recommended the state provide selected areas where wild oyster stocks can adapt to present water quality and disease conditions without being subjected to the additional stress of habitat disturbance and oyster harvest. In addition to providing a sanctuary for oysters, these areas would also provide good nursery habitat for other species, increasing their abundance for commercial and recreational fishing. The protected oysters would also provide for increased water filtration reducing turbidity and excess nutrients in the estuary. As part of the recommendation, oyster sanctuaries would be closed to taking of shellfish (i.e., oysters, clams, mussels, and scallops) and to bottom disturbing activities such as trawling, long hauling, and dredging for an indefinite period.¹
-
-While the growing interest in oyster and other shellfish products has promoted sanctuary networks, continuing evidence of the additive environmental benefits mentioned by BRACO has also helped drive industry growth. Specifically, oyster reefs, even those artificially built as sanctuaries, provide a suite of ecosystem services to the surrounding water body, which are defined as the tangible benefits that humans gain from different natural environments. In the case of oyster sanctuaries, the primary ecosystem services benefits that can be measured, as discussed above, are increased output for recreational and commercial fishing of other species through habitat enhancement, improvement of water quality, primarily from nitrogen removal, and shoreline protection due to the energy-capturing potential of oyster reefs.
-
-In all, these direct and indirect benefits that come from constructing sanctuary reefs have been recognized by the state of North Carolina, both in statute and by appropriations. Firstly, the N.C. General Assembly recognized the continued importance of oyster sanctuaries in the 2014 and 2015 legislative sessions: Session Law 2014-120, Section 44 as amended by Session Law 2015-241, Section 14.9, which established the Senator Jean Preston Oyster Sanctuary Network. This was done “to enhance shellfish habitats within the Albemarle and Pamlico Sounds and their tributaries to benefit fisheries, water quality, and the economy. This will be achieved through the establishment of a network of oyster sanctuaries, harvestable enhancement sites, and coordinated support for the development of shellfish aquaculture.” While this demonstrates the state’s commitment to these sites, it is the state-appropriated spending that has already occurred which signals this long-term investment.
-
-For these reef sites to serve their intended management function as oyster broodstock sanctuaries, harvest protections needed to be applied. As part of the 2008 Oyster Fishery Management Plan Amendment 2, the MFC moved the protection of sanctuaries from proclamation into rules 15A NCAC 03K .0209 and 03R .0117, Oyster Sanctuaries, the former placing restrictions on fishing activities within defined oyster sanctuaries and the latter defining in rule the specific location of each oyster sanctuary using coordinate points. While some sites are currently protected by rule, it is proposed to add the five most recently developed sites, currently protected by proclamation authority, to the existing permanent rule delineating the sanctuary boundaries. The division recommends moving long-standing proclamations into rule once variable conditions have stabilized, to aid in the clarity of regulations for the public. Boundaries delineating the area for two existing sanctuaries (i.e., Ocracoke and Clam Shoal) are proposed to be removed from rule as they no longer function as biologically productive oyster sanctuaries.
-
-In an ongoing effort to review oyster sanctuary boundaries post-construction, the division discovered through side-scan imagery that three of the 10 currently defined sanctuaries in rule (i.e., Neuse River, Gibbs, Shoal, and West Bluff) have material slightly outside of their permitted boundaries. This is likely due to construction error or slight movement during material settlement. To prevent this error from occurring during future development, the division intends to establish a 100-foot buffer of no development for reef construction. The no-development buffer is intended to protect against deployment error and possible material transport over time. The division’s Oyster Sanctuary Program has updated the boundary coordinates for these sites to incorporate any material that was found outside of the original depicted sanctuary perimeters. Revisions have already been made to existing reef site permits (state and federal) and now need to be updated in rule for consistency. Proposed rule changes for the Neuse River, Gibbs, Shoal, and West Bluff sanctuaries would delineate all reef site area intended for oyster sanctuary purposes so that protections provided by 15A NCAC 03K .0209 and 03R .0117 may be accurately applied. In addition, accurately delineated boundaries would help safeguard boaters navigating the area.
-
-Today, the division maintains and manages 15 oyster sanctuaries in the network, 10 protected in the oyster sanctuary rules and five currently protected via proclamation. The sanctuaries are in Pamlico Sound and its tributaries encompassing 4.59 – 60.30 acres each, totaling 395.44 acres, with over 205,000 tons of material deployed for oyster habitat. This includes the five new sanctuary sites that are proposed to be added to this rule, which have already had material deployed and reefs constructed. Please refer to Appendix III of the fiscal analysis for tables and figures providing oyster sanctuary names, locations, spatial extents, and development. The fiscal analysis can be found in the [Rulemaking](http://portal.ncdenr.org/web/mf/mfc-proposed-rules) section of the briefing materials.
-
-**Background Information**
-*Periodic Review and Expiration of Existing Rules per G.S. 150B-21.3A*
-Session Law 2013-413, the Regulatory Reform Act of 2013, implemented requirements known as the “Periodic Review and Expiration of Existing Rules.” These requirements are codified in a new section of Article 2A of Chapter 150B of the General Statutes in G.S. 150B-21.3A. Under the requirements, each agency is responsible for conducting a review of all its rules at least once every 10 years in accordance with a prescribed process.
-
-The review has two parts. The first is a report phase, which has concluded, followed by the readoption of rules. An evaluation of the rules under the authority of the MFC was undertaken in two lots (see Figure 1.) The MFC has 211 rules in Chapter 03 (Marine Fisheries), of which 172 are subject to readoption, and 164 rules in Chapter 18, Subchapter 18A (Sanitation) that are also subject to readoption. The MFC is the body with the authority for the approval steps prescribed in the process.
-
-| Rules | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Chapter 03<br>(172 rules) | Report | 41 Rules Readopted | 2 Rules Readopted | 13 Rules Proposed | Rule Readoption (116) | 6/30/22 deadline | | |
-| Subchapter 18A<br>(164 rules) | | | Report | 42 Rules Proposed | Rule Readoption (122) | | | 6/30/24 deadline |
-
-Figure 1. Marine Fisheries Commission rule readoption schedule to comply with G.S. 150B-21.3A, Periodic Review and Expiration of Existing Rules.
-
-**Action Needed**
-The MFC is scheduled to begin the rule readoption and amendment process for the 50 rules in “Package B”.
-
-___
-¹ Frankenberg, D. 1995. North Carolina Blue Ribbon Advisory Council on Oysters. Final Report on Studies and Recommendations. North Carolina Department of Environment, Health, and Natural Resources. Raleigh, NC.
-
-# RULEMAKING UPDATE
-
-[[IMAGE_194_0|]]
-
-- 2020-2021 ANNUAL RULEMAKING CYCLE TABLE
-- AUGUST 3 NEWS RELEASE
-- NC REGISTER PUBLICATION OF PROPOSED RULES
-
-# PACKAGE A
-
-## N.C. Marine Fisheries Commission
-## 2020-2021 Annual Rulemaking Cycle
-## Package A
-
-August 2020
-
-| Time of Year | Action |
-| --- | --- |
-| February-April 2020 | Fiscal analysis of rules prepared by DMF staff and approved by Office of State Budget and Management |
-| May 2020 | MFC approves Notice of Text for Rulemaking |
-| August 2020 | Publication of proposed rules in the _North Carolina Register_ |
-| August-October 2020 | Public comment period held |
-| Aug. 26, 2020 | Public hearing held via WebEx |
-| November 2020 | MFC considers approval of permanent rules |
-| January 2021 | Rules reviewed by Office of Administrative Hearings/Rules Review Commission |
-| April 1, 2021 | Proposed effective date of rules |
-| April 1, 2021 | Rulebook supplement available online |
-| April 15, 2021 | Commercial license sales begin |
-
-## ROY COOPER
-Governor
-## MICHAEL S. REGAN
-Secretary
-## STEPHEN W. MURPHEY
-Director
-
-Release: Immediate
-Date: Aug. 3, 2020
-Contact: [Patricia Smith](mailto:Tricia.Smith@ncdenr.gov)
-Phone: 252-726-7021
-
-**MEDIA ADVISORY: Public hearing scheduled for comment on coastal recreational water quality rules**
-
-**MOREHEAD CITY** – The N.C. Marine Fisheries Commission is accepting public comment on proposed amendments and re-adoption of seven rules under a state-mandated periodic review schedule. The rules pertain to coastal recreational water quality monitoring to protect the public health of swimmers.
-
-A public hearing will be held by web conference on Aug. 26 at 6 p.m. The public may join the meeting online; however, those who wish to speak during the hearing must register by noon Aug. 26.
-
-Members of the public also may submit written comments through an online form or through the mail to N.C. Marine Fisheries Commission Recreational Water Quality Rules Comments, P.O Box 769, Morehead City, N.C. 28557. Comments must be posted online or be received by the Division of Marine Fisheries by 5 p.m. Oct. 2, 2020.
-
-Links to the public hearing registration form and online comment form, as well as text of the proposed rules and links to join the meeting, can be found on the N.C. Marine Fisheries Commission’s [Proposed Rules Page](http://portal.ncdenr.org/web/mf/mfc-proposed-rules-links2).
-
-Up for re-adoption are marine fisheries rules in 15A NCAC 18A .3400. Rules .3401, .3402, .3403, and .3405 contain the primary proposed changes that will:
-- Update biological standards so they align with new federal performance criteria.
-- Ensure equal protection for swimmers by requiring the same bacteriological threshold triggers public health advisories for all swimming locations, regardless of usage frequency.
-- Modify the public notification process to reduce delays and confusion, without generating an increased frequency of swimming advisories for the public.
-
-Other proposed changes are technical in nature; two rules are proposed for repeal because they duplicate requirements.
-
-The proposed rule changes will be presented to the Marine Fisheries Commission for final approval in November 2020 and have an intended effective date of April 1, 2021.
-
-For questions about the Marine Fisheries Commission rulemaking process, email [Catherine Blum](mailto:Catherine.Blum@ncdenr.gov), rules coordinator for the N.C. Division of Marine Fisheries. For questions about the proposed changes to the N.C. Recreational Water Quality Program rules, email [Erin Bryan-Millush](mailto:Erin%20Bryan-Millush), with the division’s Recreational Water Quality Program, or call her at 252-808-8153.
-
-| | |
-| --- | --- |
-| **Event Title:** | Marine Fisheries Commission Public Hearing for Proposed Rules |
-| **Date and Time:** | Aug. 26, 2020 at 6 p.m. |
-| **WebEx Link:** | [https://ncdenrits.webex.com/ncdenrits/onstage/g.php?MTID=ea8608d0638d06136715b7a10b3dce68a](https://ncdenrits.webex.com/ncdenrits/onstage/g.php?MTID=ea8608d0638d06136715b7a10b3dce68a) |
-| **Password:** | 1234 |
-| **Event Number:** | 161 720 5186 |
-
-###
-
-**Website:** http://www.ncdenr.gov
-**Facebook:** http://www.facebook.com/ncdeq
-**Twitter:** http://twitter.com/NCDEQ
-**RSS Feed:** http://portal.ncdenr.org/web/opa/news-releases-rss
-1601 Mail Service Center, Raleigh, NC 27699-1601
-
-[[IMAGE_197_0|]]
-
-# NORTH CAROLINA REGISTER
-**VOLUME 35 • ISSUE 03 • Pages 154 – 312**
-**August 3, 2020**
-
-**I. EXECUTIVE ORDERS**
-Executive Order No. 147-149......................................................................... 154 – 170
-**II. PROPOSED RULES**
-**Labor, Department of**
-Department...................................................................................................... 171 – 174
-**Environmental Quality, Department of**
-Marine Fisheries Commission........................................................................ 174 – 178
-**III. APPROVED RULES**........................................................................................ 179 – 297
-**Administration, Department of**
-Department
-**Agriculture and Consumer Services, Department of**
-Pesticide Board
-**Health and Human Services, Department of**
-Medical Care Commission
-Department
-Public Health, Commission for
-State Registrar
-**Insurance, Department of**
-Department
-**Justice, Department of**
-Criminal Justice Education and Training Standards Commission
-Sheriffs' Education and Training Standards Commission
-**Public Safety, Department of**
-Private Protective Services Board
-**Environmental Quality, Department of**
-Coastal Resources Commission
-Environmental Management Commission
-Wildlife Resources Commission
-**Occupational Licensing Boards and Commissions**
-Auctioneer Licensing Board
-Barber Examiners, Board of
-Engineers and Surveyors, Board of Examiners for
-Massage and Bodywork Therapy, Board of
-Real Estate Commission
-**State Human Resources Commission**
-Commission
-**IV. RULES REVIEW COMMISSION**................................................................. 298 – 308
-**V. CONTESTED CASE DECISIONS**
-Index to ALJ Decisions................................................................................... 309 – 312
-
-## Contact List for Rulemaking Questions or Concerns
-For questions or concerns regarding the Administrative Procedure Act or any of its components, consult with the agencies below. The bolded headings are typical issues which the given agency can address but are not inclusive.
-
-**Rule Notices, Filings, Register, Deadlines, Copies of Proposed Rules, etc.**
-Office of Administrative Hearings
-Rules Division
-1711 New Hope Church Road 984-236-1850
-Raleigh, North Carolina 27609 984-236-1947 FAX
-
-contact: Molly Masich, Codifier of Rules molly.masich@oah.nc.gov 984-236-1934
-Dana McGhee, Publications Coordinator dana.mcghee@oah.nc.gov 984-236-1937
-Lindsay Silvester, Editorial Assistant lindsay.silvester@oah.nc.gov 984-236-1938
-Cathy Matthews-Thayer, Editorial Assistant cathy.thayer@oah.nc.gov 984-236-1901
-
-**Rule Review and Legal Issues**
-Rules Review Commission
-1711 New Hope Church Road 984-236-1850
-Raleigh, North Carolina 27609 984-236-1947 FAX
-
-contact: Amber Cronk May, Commission Counsel amber.may@oah.nc.gov 984-236-1936
-Amanda Reeder, Commission Counsel amanda.reeder@oah.nc.gov 984-236-1939
-Ashley Snyder, Commission Counsel ashley.snyder@oah.nc.gov 984-236-1941
-Karlene Turrentine, Commission Counsel karlene.turrentine@oah.nc.gov 984-236-1948
-Alexander Burgos, Paralegal alexander.burgos@oah.nc.gov 984-236-1940
-Julie Brincefield, Administrative Assistant julie.brincefield@oah.nc.gov 984-236-1935
-
-**Fiscal Notes & Economic Analysis**
-Office of State Budget and Management
-116 West Jones Street
-Raleigh, North Carolina 27603-8005
-Contact: Carrie Hollis, Economic Analyst osbmruleanalysis@osbm.nc.gov 984-236-0689
-
-NC Association of County Commissioners
-215 North Dawson Street 919-715-2893
-Raleigh, North Carolina 27603
-contact: Amy Bason amy.bason@ncacc.org
-
-NC League of Municipalities 919-715-4000
-150 Fayetteville Street, Suite 300
-Raleigh, North Carolina 27601
-contact: Sarah Collins scollins@nclm.org
-
-**Legislative Process Concerning Rulemaking**
-545 Legislative Office Building
-300 North Salisbury Street 919-733-2578
-Raleigh, North Carolina 27611 919-715-5460 FAX
-
-Jason Moran-Bates, Staff Attorney
-Jeremy Ray, Staff Attorney
-
-# NORTH CAROLINA REGISTER
-Publication Schedule for January 2020 – December 2020
-
-| FILING DEADLINES | FILING DEADLINES | NOTICE OF TEXT | NOTICE OF TEXT | PERMANENT RULE | PERMANENT RULE | TEMPORARY RULES |
-| --- | --- | --- | --- | --- | --- | --- |
-| Volume & issue number | Issue date | Last day for filing | Earliest date for public hearing | End of required comment Period | Deadline to submit to RRC for review at next meeting | RRC Meeting Date | Earliest Eff. Date of Permanent Rule | 270th day from publication in the Register |
-| 34:13 | 01/02/20 | 12/06/19 | 01/17/20 | 03/02/20 | 03/20/20 | 04/16/20 | 05/01/20 | 09/28/20 |
-| 34:14 | 01/15/20 | 12/19/19 | 01/30/20 | 03/16/20 | 03/20/20 | 04/16/20 | 05/01/20 | 10/11/20 |
-| 34:15 | 02/03/20 | 01/10/20 | 02/18/20 | 04/03/20 | 04/20/20 | 05/21/20 | 06/01/20 | 10/30/20 |
-| 34:16 | 02/17/20 | 01/27/20 | 03/03/20 | 04/17/20 | 04/20/20 | 05/21/20 | 06/01/20 | 11/13/20 |
-| 34:17 | 03/02/20 | 02/10/20 | 03/17/20 | 05/01/20 | 05/20/20 | 06/18/20 | 07/01/20 | 11/27/20 |
-| 34:18 | 03/16/20 | 02/24/20 | 03/31/20 | 05/15/20 | 05/20/20 | 06/18/20 | 07/01/20 | 12/11/20 |
-| 34:19 | 04/01/20 | 03/11/20 | 04/16/20 | 06/01/20 | 06/22/20 | 07/16/20 | 08/01/20 | 12/27/20 |
-| 34:20 | 04/15/20 | 03/24/20 | 04/30/20 | 06/15/20 | 06/22/20 | 07/16/20 | 08/01/20 | 01/10/21 |
-| 34:21 | 05/01/20 | 04/09/20 | 05/16/20 | 06/30/20 | 07/20/20 | 08/20/20 | 09/01/20 | 01/26/21 |
-| 34:22 | 05/15/20 | 04/24/20 | 05/30/20 | 07/14/20 | 07/20/20 | 08/20/20 | 09/01/20 | 02/09/21 |
-| 34:23 | 06/01/20 | 05/08/20 | 06/16/20 | 07/31/20 | 08/20/20 | 09/17/20 | 10/01/20 | 02/26/21 |
-| 34:24 | 06/15/20 | 05/22/20 | 06/30/20 | 08/14/20 | 08/20/20 | 09/17/20 | 10/01/20 | 03/12/21 |
-| 35:01 | 07/01/20 | 06/10/20 | 07/16/20 | 08/31/20 | 09/21/20 | 10/15/20 | 11/01/20 | 03/28/21 |
-| 35:02 | 07/15/20 | 06/23/20 | 07/30/20 | 09/14/20 | 09/21/20 | 10/15/20 | 11/01/20 | 04/11/21 |
-| 35:03 | 08/03/20 | 07/13/20 | 08/18/20 | 10/02/20 | 10/20/20 | 11/19/20 | 12/01/20 | 04/30/21 |
-| 35:04 | 08/17/20 | 07/27/20 | 09/01/20 | 10/16/20 | 10/20/20 | 11/19/20 | 12/01/20 | 05/14/21 |
-| 35:05 | 09/01/20 | 08/11/20 | 09/16/20 | 11/02/20 | 11/20/20 | 12/17/20 | 01/01/21 | 05/29/21 |
-| 35:06 | 09/15/20 | 08/24/20 | 09/30/20 | 11/16/20 | 11/20/20 | 12/17/20 | 01/01/21 | 06/12/21 |
-| 35:07 | 10/01/20 | 09/10/20 | 10/16/20 | 11/30/20 | 12/21/20 | 01/21/21 | 02/01/21 | 06/28/21 |
-| 35:08 | 10/15/20 | 09/24/20 | 10/30/20 | 12/14/20 | 12/21/20 | 01/21/21 | 02/01/21 | 07/12/21 |
-| 35:09 | 11/02/20 | 10/12/20 | 11/17/20 | 01/04/21 | 01/20/21 | 02/18/21 | 03/01/21 | 07/30/21 |
-| 35:10 | 11/16/20 | 10/23/20 | 12/01/20 | 01/15/21 | 01/20/21 | 02/18/21 | 03/01/21 | 08/13/21 |
-| 35:11 | 12/01/20 | 11/05/20 | 12/16/20 | 02/01/21 | 02/22/21 | 03/18/21 | 04/01/21 | 08/28/21 |
-| 35:12 | 12/15/20 | 11/20/20 | 12/30/20 | 02/15/21 | 02/22/21 | 03/18/21 | 04/01/21 | 09/11/21 |
-
-This document is prepared by the Office of Administrative Hearings as a public service and is not to be deemed binding or controlling.
-
-## EXPLANATION OF THE PUBLICATION SCHEDULE
-This Publication Schedule is prepared by the Office of Administrative Hearings as a public service and the computation of time periods are not to be deemed binding or controlling. Time is computed according to 26 NCAC 2C .0302 and the Rules of Civil Procedure, Rule 6.
-
-**GENERAL**
-The North Carolina Register shall be published twice a month and contains the following information submitted for publication by a state agency:
-1. temporary rules;
-2. text of proposed rules;
-3. text of permanent rules approved by the Rules Review Commission;
-4. emergency rules
-5. Executive Orders of the Governor;
-6. final decision letters from the U.S. Attorney General concerning changes in laws affecting voting in a jurisdiction subject of Section 5 of the Voting Rights Act of 1965, as required by G.S. 120-30.9H; and
-7. other information the Codifier of Rules determines to be helpful to the public.
-
-**COMPUTING TIME**: In computing time in the schedule, the day of publication of the North Carolina Register is not included. The last day of the period so computed is included, unless it is a Saturday, Sunday, or State holiday, in which event the period runs until the preceding day which is not a Saturday, Sunday, or State holiday.
-
-**FILING DEADLINES**
-**ISSUE DATE**: The Register is published on the first and fifteen of each month if the first or fifteenth of the month is not a Saturday, Sunday, or State holiday for employees mandated by the State Personnel Commission. If the first or fifteenth of any month is a Saturday, Sunday, or a holiday for State employees, the North Carolina Register issue for that day will be published on the day of that month after the first or fifteenth that is not a Saturday, Sunday, or holiday for State employees.
-
-**LAST DAY FOR FILING**: The last day for filing for any issue is 15 days before the issue date excluding Saturdays, Sundays, and holidays for State employees.
-
-**NOTICE OF TEXT**
-**EARLIEST DATE FOR PUBLIC HEARING**: The hearing date shall be at least 15 days after the date a notice of the hearing is published.
-
-**END OF REQUIRED COMMENT PERIOD**
-An agency shall accept comments on the text of a proposed rule for at least 60 days after the text is published or until the date of any public hearings held on the proposed rule, whichever is longer.
-
-**DEADLINE TO SUBMIT TO THE RULES REVIEW COMMISSION**: The Commission shall review a rule submitted to it on or before the twentieth of a month by the last day of the next month.
-
-(1) Inflatables $100.00 Annually
-(2) ~~Rock Walls~~ <u>Walls, portable</u> $100.00 Annually
-(3) Kiddie Rides (48 inch maximum height restriction) ~~$45.00~~ <u>$100.00</u> Every setup, except in permanent parks, which shall be inspected annually
-(4) Go Karts ~~$35.00~~ <u>$50.00</u> Every setup, except in permanent parks, which shall be inspected annually
-<u>(5)</u> <u>Go Kart Tracks</u> <u>$100.00</u> <u>Every setup, except in permanent parks, which shall be inspected annually</u>
-~~(5)~~<u>(6)</u> Major Rides (any ride not otherwise listed herein) ~~and Water Slides~~ ~~$90.00~~ <u>$100.00</u> Every setup, except permanent parks, which shall be inspected annually
-~~(6)~~<u>(7)</u> Roller <u>Coasters</u> ~~Coasters, other than mobile or portable roller coasters~~ $250.00 Annually
-<u>(8)</u> <u>Simulators, portable</u> <u>$100.00</u> <u>Every setup</u>
-<u>(9)</u> <u>Simulators, stationary</u> <u>$100.00</u> <u>Annually</u>
-<u>(10)</u> <u>Trains, small fixed track</u> <u>$100.00</u> <u>Annually</u>
-<u>(11)</u> <u>Waterslides</u> <u>$150.00</u> <u>Annually</u>
-
-_Authority G.S. 95-107; 95-111.4(19)._
-
-**13 NCAC 15 .0704 SPECIAL AMUSEMENT DEVICE INSPECTION FEE**
-(a) In the event that an inspection is scheduled and the amusement device operator or owner fails to have all amusement devices scheduled for inspection ready for inspection, any follow up inspection visits requested by the operator or owner shall be charged at two hundred fifty dollars ($250.00) per amusement device, notwithstanding the provisions of 13 NCAC 15 .0703.
-(b) All inspections conducted outside normal business hours for the North Carolina Department of Labor (~~7:00~~ <u>8:00</u> a.m. to ~~6:00 7:00~~ p.m. Monday through Friday, exclusive of State government holidays) shall be charged at the rate of two hundred fifty dollars ($250.00) per inspection, plus the amusement device inspection fee, notwithstanding the provisions of 13 NCAC 15 .0703, however, in no instance may the total fee assessed exceed an aggregate of two hundred fifty dollars ($250.00) for each device inspected.
-
-_Authority G.S. 95-107; 95-111.4(19)._
-
-**13 NCAC 15 .0705 PASSENGER TRAMWAY INSPECTION FEE SCHEDULE**
-Inspection fees for <u>all</u> passenger tramway devices shall be ~~as follows:~~ <u>$137.00.</u>
-~~Equipment Unit Fee~~
-~~(1) Gondolas, Chairlifts, and Inclined Railroads $137~~
-~~(2) J- or T-Bars and Conveyors $62~~
-~~(3) Rope Tows $31~~
-
-_Authority G.S. 95-120(9)._
-
-**TITLE 15A – DEPARTMENT OF ENVIRONMENTAL QUALITY**
-
-_**Notice** is hereby given in accordance with G.S. 150B-21.3A(c)(2)g. that the Marine Fisheries Commission intends to readopt with substantive changes the rules cited as 15A NCAC 18A .3401-.3405 and repeal through readoption the rules cited as 15A NCAC 18A .3406, and .3407._
-
-**Link to agency website pursuant to G.S. 150B-19.1(c):** http://portal.ncdenr.org/web/mf/mfc-proposed-rules
-
-**Proposed Effective Date:** _April 1, 2021_
-
-**Public Hearing:**
-**Date:** _August 26, 2020_
-**Time:** _6:00 p.m._
-**Location:** _In an abundance of caution and to address protective measures to help prevent the spread of COVID-19, this public hearing will be held by webinar. WebEx Events meeting link: https://ncdenrits.webex.com/ncdenrits/onstage/g.php?MTID=ea8608d0638d06136715b7a10b3dce68a_
-_Event number: 161 720 5186 Event password: 1234_
-
-**Reason for Proposed Action:** _The agency proposes five rules for readoption and two rules for repeal through readoption in accordance with G.S. 150B-21.3A for the Periodic Review and Expiration of Existing Rules. This is the first package of rules in 15A NCAC 18A for readoption over a four-year period. As part of the readoption process the agency is proposing changes to comply with the U.S. Environmental Protection Agency (EPA) performance criteria released in 2014. The program follows guidance set forth by the EPA in accordance with the Beach Environmental Assessment Coastal Health Act (BEACH Act). The new guidance will increase efficiency in protecting public health and is recommending the same bacterial threshold for all swimming locations regardless of usage category. These bacteriological limits will impact how the agency issues public notifications when samples collected exceed the safe swimming standard._
-
-**Comments may be submitted to:** _Catherine Blum, P.O. BOX 769, Morehead City, NC 28557; Written comments may also be submitted via an online form available at http://portal.ncdenr.org/web/mf/mfc-proposed-rules._
-
-**Comment period ends:** _October 2, 2020_
-
-**Procedure for Subjecting a Proposed Rule to Legislative Review:** If an objection is not resolved prior to the adoption of the rule, a person may also submit written objections to the Rules Review Commission after the adoption of the Rule. If the Rules Review Commission receives written and signed objections after the adoption of the Rule in accordance with G.S. 150B-21.3(b2) from 10 or more persons clearly requesting review by the legislature and the Rules Review Commission approves the rule, the rule will become effective as provided in G.S. 150B-21.3(b1). The Commission will receive written objections until 5:00 p.m. on the day following the day the Commission approves the rule. The Commission will receive those objections by mail, delivery service, hand delivery, or facsimile transmission. If you have any further questions concerning the submission of objections to the Commission, please call a Commission staff attorney at 919-431-3000.
-
-**Fiscal impact. Does any rule or combination of rules in this notice create an economic impact? Check all that apply.**
-[ ] **State funds affected**
-[ ] **Local funds affected**
-[ ] **Substantial economic impact (>= $1,000,000)**
-[x] **Approved by OSBM**
-[ ] **No fiscal note required**
-
-**CHAPTER 18 - ENVIRONMENTAL HEALTH**
-
-**SUBCHAPTER 18A - SANITATION**
-
-**SECTION .3400 - COASTAL RECREATIONAL WATERS MONITORING, EVALUATION, AND NOTIFICATION**
-
-**15A NCAC 18A .3401 DEFINITIONS**
-The following definitions shall apply ~~throughout~~ <u>to</u> Section ~~18A .3400 of this Subchapter:~~
-~~(1)~~ <u>(1) "Division" means the Division of Marine Fisheries or its authorized agent.</u>
-~~(1)~~<u>(2)</u> "Enterococcus" means a gram positive coccoid-shaped bacteria that is found in the intestinal tracts of warm-blooded animals that include Enterococcus faecalis, Enterococcus faecium, Enterococcus avium, and Enterococcus gallinarium.
-~~(2)~~<u>(3)</u> "Geometric mean" means the mean of "n" positive numbers obtained by taking the ~~"n"th~~ <u>"nᵗʰ"</u> root of the product of the numbers with at least five samples collected within a ~~30 day~~ <u>30-day</u> period.
-<u>(4) "Pending swimming advisory" means a notification to the public that recommends no primary contact with the water in a specific swimming area when bacteriological limits are exceeded but, does not close a swimming area to the public. A pending swimming advisory shall include a public notification via social media release to notify the public of the risks of swimming in the area. A pending swimming advisory is followed by a resample that will determine if a swimming advisory will be issued.</u>
-~~(3)~~<u>(5)</u> "Point source discharge" means the discharge of liquids through a pipe, drain, ~~ditch~~ <u>ditch,</u> or other conveyance into a swimming area.
-~~(4)~~<u>(6)</u> "Primary contact" means an activity in water in which a person's head is partially or completely submerged.
-<u>(7) "Resample" means a water sample that is collected after the results of the initial water sample collected are processed and the results are analyzed.</u>
-~~(5)~~<u>(8)</u> "Storm water discharge" means any natural or manmade conveyance of rainwater or the resultant runoff into <u>coastal</u> recreational waters.
-~~(6)~~<u>(9)</u> "Swimming advisory" means a notification to the public that recommends no primary contact with the water in a specific <u>swimming</u> area ~~for public health reasons~~ when <u>bacteriological limits are exceeded,</u> but does not close a swimming area to the public. A swimming advisory shall include a sign posted at the site of the advisory and a ~~press release~~ <u>public notification via social media and news release</u> to notify the public of the risks of swimming in the area.
-~~(7) "Swimming alert" means a notification to the public by media contact including a press release to warn the public of risks of swimming in an area that exceeds bacteriological swimming area levels.~~
-~~(8)~~<u>(10)</u> "Swimming area" means a coastal recreation area that is used for primary contact located within waters classified by the Division of Water ~~Quality~~ <u>Resources</u> as ~~SA, SB, or SC.~~ <u>SC, SA, or SB as set forth in 15A NCAC 02B .0220-.0222, and is hereby incorporated by reference including subsequent amendments and editions.</u>
-~~(9)~~<u>(11)</u> "Swimming season" means from April 1 through October 31 of each year.
-~~(10)~~<u>(12)</u> "Tier I swimming area" means a swimming area used daily during the swimming season, ~~including any public access swimming area and any other swimming area where people use the water for primary contact, including all oceanfront beaches.~~ <u>beaches that are monitored by the Division.</u>
-~~(11)~~<u>(13)</u> "Tier II swimming area" means a swimming area used ~~an average of three days a week~~ <u>that is not used daily</u> during the swimming season.
-~~(12) "Tier III swimming area" means a swimming area used an average of four days a month during the swimming season.~~
-~~(13)~~<u>(14)</u> "Winter season" means from November 1 through March 31 of each year.
-
-_Authority G.S. 130A-233.1; 113-134; 113-182; 113-221.3; 143B-289.52._
-
-**15A NCAC 18A .3402 BACTERIOLOGICAL LIMITS FOR SWIMMING AREAS**
-(a) The enterococcus level in a Tier I swimming area shall not equal or exceed either:
-1. ~~A~~ <u>a</u> geometric mean of 35 enterococci per 100 ~~milliliter~~ <u>milliliters</u> of ~~water,~~ <u>water;</u> ~~that includes a minimum of at least five samples collected within 30 days;~~ or
-2. ~~A~~ <u>a</u> single sample of 104 enterococci per 100 ~~milliliter~~ <u>milliliters</u> of water.
-(b) The enterococcus level in a Tier II swimming area shall not equal or exceed a single sample of ~~276~~ <u>104</u> enterococci per 100 ~~milliliter~~ <u>milliliters</u> of water.
-~~(c) The enterococcus level in a Tier III swimming area shall not exceed two consecutive samples of 500 enterococci per 100 milliliter of water.~~
-
-_Authority G.S. 130A-233.1; 113-134; 113-182; 113-221.3; 143B-289.52._
-
-**15A NCAC 18A .3403 PUBLIC NOTICE OF INCREASED HEALTH RISKS IN SWIMMING AREAS**
-(a) Tier I Swimming areas:
-~~(1) A swimming advisory shall be issued by the Division when samples of water from a swimming area exceeds a geometric mean of 35 enterococci per 100 milliliter during the swimming season.~~
-~~(2) A swimming alert shall be issued by the Division when a single sample of water from a swimming area exceeds 104 enterococci per 100 milliliter and does not exceed 500 enterococci per 100 milliliter during the swimming season.~~
-~~(3) A swimming advisory shall be issued by the Division when a sample of water from a swimming area exceeds a single sample of 500 enterococci per 100 milliliter during the swimming season.~~
-~~(4) A swimming advisory shall be issued by the Division when at least two of three concurrent water samples collected at a swimming area exceeds 104 enterococci per 100 milliliter during the swimming season.~~
-<u>(1) A pending swimming advisory shall be issued by the Division of Marine Fisheries if a water sample from a swimming area is equal to or exceeds the bacteriological limit set forth in Rule .3402(a)(2) of this Section, during the swimming season.</u>
-<u>(2) A swimming advisory shall be issued by the Division if either of the following standards are exceeded during the swimming season:</u>
-<u>(A) Both the initial water sample and resample collected from a swimming area is equal to or exceeds the bacteriological limit set forth in Rule .3402(a)(2) of this Section; or</u>
-<u>(B) The most recent five water samples collected within a 30-day period from a swimming area is equal to or exceeds the bacteriological limit set forth in Rule .3402(a)(1) of this Section.</u>
-(b) Tier II swimming areas:
-~~(1) A swimming alert shall be issued by the Division when a single sample of water from a swimming area exceeds 276 enterococci per 100 milliliter and does not exceed 500 enterococci per 100 milliliter during the swimming season.~~
-<u>(1) A pending swimming advisory shall be issued by the Division if a water sample from a swimming area is equal to or exceeds the bacteriological limit set forth in Rule .3402(a)(2) of this Section during the swimming season.</u>
-<u>(2) A swimming advisory shall be issued by the Division ~~when a single sample~~ if both the initial water sample and resample collected ~~of water~~ from a swimming area is equal to or exceeds ~~500 enterococci per 100 milliliter~~ the bacteriological limit set forth in Rule .3402(a)(2) of this Section during the swimming season.</u>
-~~(c) A Tier III swimming area with a water sample result of 500 enterococci per 100 milliliter or higher on the first sample shall be resampled the following day. If the laboratory results of the second sample exceed 500 enterococci per 100 milliliter a swimming advisory shall be issued by the Division.~~
-~~(d)~~<u>(c)</u> Signs posted pursuant to this Section shall be placed or erected in open view where the public may see the ~~sign(s)~~ <u>sign</u> prior to entering the water.
-~~(e)~~<u>(d)</u> Signs shall ~~convey~~ <u>state</u> the following:
-ATTENTION: SWIMMING IN THIS AREA IS NOT RECOMMENDED. BACTERIA TESTING INDICATES LEVELS OF CONTAMINATION THAT MAY BE HAZARDOUS TO YOUR HEALTH. THIS ADVISORY AFFECTS WATERS WITHIN 200' OF THIS SIGN. OFFICE OF THE STATE HEALTH DIRECTOR.
-
-_Authority G.S. 130A-233.1; 113-134; 113-182; 113-221.3; 143B-289.52._
-
-**15A NCAC 18A .3404 SWIMMING ADVISORIES FOR POINT SOURCE DISCHARGES INTO SWIMMING AREAS**
-(a) A wastewater treatment plant that discharges into swimming waters shall be posted by the ~~Division~~ <u>Division of Marine Fisheries</u> with at least one sign until the discharge is removed. The ~~sign(s)~~ <u>sign</u> for a wastewater treatment plant discharge shall ~~convey~~ <u>state</u> the following:
-~~ATTENTION: THESE WATERS MAY BE CONTAMINATED BY HUMAN OR ANIMAL WASTE. SWIMMING IS NOT ADVISED IN THESE WATERS BECAUSE OF THE INCREASED RISK OF ILLNESS. OFFICE OF THE STATE HEALTH DIRECTOR.~~
-<u>WARNING! SEWAGE TREATMENT EFFLUENT DISCHARGE SITE. SWIMMING IS NOT ADVISED IN THESE WATERS BECAUSE OF THE INCREASED RISK OF ILLNESS. OFFICE OF THE STATE HEALTH DIRECTOR.</u>
-<u>(b) A swimming advisory shall be issued by the Division and at least one sign shall be posted at the public access to swimming waters that have been impacted by a wastewater system failure. The sign for waters impacted by a wastewater spill shall state the following:</u>
-<u>WARNING! WASTEWATER SPILL. SWIMMING IS NOT ADVISED IN THESE WATERS BECAUSE OF THE INCREASED RISK OF ILLNESS. OFFICE OF THE STATE HEALTH DIRECTOR.</u>
-~~(b)~~<u>(c)</u> A swimming advisory shall be issued by the Division and at least ~~two signs~~ <u>one sign</u> shall be posted at a storm drain or storm water discharge that is ~~actively~~ discharging into a ~~Tier 1~~ swimming area. ~~Signs~~ <u>A sign</u> shall be placed to advise the public as they enter the area impacted by the ~~drain.~~ <u>storm drain or storm water discharge. For dry weather discharges,</u> ~~The signs~~ <u>the sign for a storm drain or storm water discharge</u> shall ~~convey~~ <u>state</u> the following:
-~~SWIMMING IS NOT RECOMMENDED BETWEEN SIGNS. WATERS MAY BE CONTAMINATED BY DISCHARGE FROM PIPE. OFFICE OF THE STATE HEALTH DIRECTOR.~~
-<u>WARNING! STORM WATER DISCHARGE AREA. SWIMMING WITHIN 200 YARDS OF THIS SIGN MAY INCREASE THE RISKS OF WATERBORNE ILLNESS. OFFICE OF THE STATE HEALTH DIRECTOR.</u>
-<u>For wet weather discharges, the sign shall state the following:</u>
-<u>WARNING! STORM WATER DISCHARGE AREA. WATERS MAY BE CONTAMINATED BY DISCHARGE FROM PIPE. SWIMMING IS NOT RECOMMENDED WITHIN 200 YARDS OF THIS SIGN DURING ACTIVE DISCHARGE. FOR MORE INFORMATION, CALL 252-726-6827. OFFICE OF THE STATE HEALTH DIRECTOR.</u>
-~~(c)~~<u>(d)</u> A swimming advisory shall be issued by the Division and at least two signs shall be posted at a storm drain where flood waters are being pumped into a swimming area. ~~The signs shall remain posted for at least 24 hours after the pumping of flood waters has ceased.~~ The signs shall ~~convey~~ <u>state</u> the following:
-SWIMMING IS NOT RECOMMENDED BETWEEN SIGNS. WATERS MAY BE CONTAMINATED BY DISCHARGE FROM PIPE. OFFICE OF THE STATE HEALTH DIRECTOR.
-~~(d)~~<u>(e)</u> A swimming advisory shall be issued by the Division and at least two signs shall be posted at an area receiving dredge material on a swimming beach ~~when~~ <u>if</u> the dredge material is being pumped from an area closed to shellfish harvesting. The signs shall ~~convey~~ <u>state</u> the following:
-SWIMMING IS NOT RECOMMENDED BETWEEN SIGNS. WATERS MAY BE CONTAMINATED BY DISCHARGE FROM PIPE. OFFICE OF THE STATE HEALTH DIRECTOR.
-
-_Authority G.S. 130A-233.1; 113-134; 113-182; 113-221.3; 143B-289.52._
-
-**15A NCAC 18A .3405 RESCINDING A ~~PENDING SWIMMING ADVISORY OR~~ SWIMMING ~~ALERT~~ ADVISORY**
-<u>(a) A pending swimming advisory shall be rescinded by the Division of Marine Fisheries via social media release when the resample collected meets the bacteriological limit set forth in Rule .3402(a)(2) of this Section.</u>
-~~(a)~~<u>(b)</u> A Tier I swimming area advisory shall be rescinded <u>by the Division via social media and news release, including the removal of signs,</u> when ~~two consecutive weekly water samples and the geometric mean meet the bacteriological limits in Rule 18A .3402(a) of this Section. A swimming alert shall be rescinded within 24 hours of compliance with Rule 18A .3402(a)(2) of this Section.~~ <u>both of the following conditions are met:</u>
-<u>(1) The geometric mean has met the bacteriological limit set forth in Rule .3402(a)(1) of this Section.</u>
-<u>(2) Two consecutive weekly water samples meet the bacteriological limit set forth in Rule .3402(a)(2) of this Section.</u>
-~~(b)~~<u>(c)</u> A Tier II ~~or Tier III~~ swimming area advisory ~~or alert~~ shall be rescinded <u>by the Division via social media and news release, including the removal of signs,</u> after water samples meet the ~~bacteriological standard in Rule 18A .3402(b) or (c) of this Section.~~ <u>limit set forth in Rule .3402(b) of this Section.</u>
-~~(c)~~<u>(d)</u> A swimming advisory resulting from a ~~point source~~ flood water discharge or the discharge of dredge material shall be rescinded <u>by the Division via social media and news release</u> 24 hours after the discharge has ~~ceased.~~ <u>ceased, to allow for tidal dispersion.</u>
-<u>(e) A swimming advisory resulting from a wastewater system failure shall be rescinded by the Division via social media and news release, including the removal of signs, when failure has been corrected and water samples collected meet the bacteriological limit set forth in Rule .3402(a)(2) of this Section.</u>
-~~(d) When a swimming advisory or alert has been rescinded, the Division shall issue a press release to announce the lifting of the advisory or the alert and the sign(s) shall be removed immediately by the Division.~~
-
-_Authority G.S. 130A-233.1; 113-134; 113-182; 113-221.3; 143B-289.52._
-
-**15A NCAC 18A .3406 DESTRUCTION OF SIGNS**
-~~A person shall not mutilate, deface, pull down, destroy, hide, or steal any sign posted pursuant to this Section.~~
-
-_Authority G.S. 130A-233.1._
-
-**15A NCAC 18A .3407 APPLICABILITY OF RULES**
-~~The rules of this Section shall apply to all marine recreational waters in coastal North Carolina.~~
-
-_Authority G.S. 130A-233.1._
-
-# RULEMAKING UPDATE
-# PACKAGE B
-
-[[IMAGE_206_0|]]
-
-- 2020-2021 ANNUAL RULEMAKING CYCLE TABLE
-- FISCAL IMPACT ANALYSIS OF PROPOSED RULE AMENDMENTS FOR CLASSIFICATION OF SHELLFISH GROWING WATERS
-- RULE IMPACT ANALYSIS FOR READOPTION OF 15 A NCAC 18 A RULE PACKAGE
-- FISCAL IMPACT ANALYSIS OF PROPOSED RULE AMENDMENTS TO SHELLFISH LEASING REGULATIONS
-- RULE IMPACT ANALYSIS FOR READOPTION OF 15 A NCAC 30Q.0100
-- FISCAL IMPACT ANALYSIS OF PROPOSED SPECIAL SECONDARY NURSERY AREAS
-- FISCAL IMPACT ANALYSIS OF PROPOSED OYSTER SANCTUARY RULE AMENDMENTS
-
-## N.C. Marine Fisheries Commission
-## 2020-2021 Annual Rulemaking Cycle
-## Package B
-
-August 2020
-
-| Time of Year | Action |
-| --- | --- |
-| February-July 2020 | Fiscal analysis of rules prepared by DMF staff and approved by Office of State Budget and Management |
-| August 2020 | MFC approves Notice of Text for Rulemaking |
-| October 2020 | Publication of proposed rules in the _North Carolina Register_ |
-| October-December 2020 | Public comment period held |
-| October 2020 | Public hearing held (details to be determined) |
-| February 2021 | MFC considers approval of permanent rules |
-| April 2021 | Rules reviewed by Office of Administrative Hearings/Rules Review Commission |
-| April 15, 2021 | Commercial license sales begin |
-| May 1, 2021 or TBD | Proposed effective date of rules; some rules are subject to legislative review per S.L. 2019-198 and G.S. 14-4.1. |
-| May 1, 2021 | Rulebook supplement available online |
-
-**Fiscal Impact Analysis of Proposed Rule Amendments for Classification of Shellfish Growing Waters**
-
-**Rule Amendments:** 15A NCAC 18A .0431, .0704, .0901-.0910, .0913, .0914
-
-**Name of Commission:** N.C. Marine Fisheries Commission
-
-**Agency Contact:** David Dietz, Fisheries Economics Program Manager
-N.C. Division of Marine Fisheries
+P.O. Box 769
 3441 Arendell Street
 Morehead City, NC 28557
-919-707-8573
-David.Dietz@ncdenr.gov
 
-**Impact Summary:** State government: Yes
-Local government: No
-Federal government: No
-Substantial impact: No
+*Email correspondence to and from this address is subject to the*
+*North Carolina Public Records Law and may be disclosed to third parties*
 
-**Authority:**
-<u>North Carolina General Statutes</u>
-G.S. 113-134. Rules.
-G.S. 113-182. Regulation of fishing and fisheries.
-G.S. 113-221.2. Additional rules to establish sanitation requirements for scallops, shellfish, and crustacea; permits and permit fees authorized.
-G.S 143B-289.52. Marine Fisheries Commission - powers and duties.
-G.S. 150B-21.3A Periodic review and expiration of existing rules.
+---
+**From:** Bizzell, Rob <r.bizzell.mfc@ncdenr.gov>
+**Sent:** Monday, July 27, 2020 2:38 PM
+**To:** Klibansky, Lara <Lara.Klibansky@ncdenr.gov>
+**Subject:** Fwd: [External] Please stop gill netting
 
-**Necessity:** General Statute 150B-21.3A requires state agencies to review their existing rules every 10 years to determine which rules are still necessary, and to either readopt or repeal each rule as appropriate. The proposed amendments readopt and repeal through readoption 14 rules in 15A NCAC 18A pursuant to this requirement. Additionally, proposed amendments to rules will comply with minimum standards for the National Shellfish Sanitation Program (NSSP) Guide for the Control of Molluscan Shellfish (Guide). North Carolina must meet these minimum standards in order for N.C. shellfish to be able to be sold through interstate commerce.
+Get [Outlook for iOS](https://aka.ms/o0ukef)
 
-**I. Summary**
-Proposed amendments seek to conform a variety of shellfish sanitation regulations with existing federal standards in order to maintain interstate commerce, as well as update rule language to be more concise, consistent, and homogenized (see Appendix I). Rule language is also proposed to formalize the use of conditionally approved shellfish areas to increase the overall flow of shellfish from the state; the use of conditional areas has been in place in North Carolina for over 20 years. In short, none of the proposed rule changes lead to any substantive changes in the ongoing operations of the Division, but rather conform language to these practices and requirements. This will lead to a small flow of benefits to the state due to increased efficiencies, with no costs incurred as all action will fold into ongoing activities.
+For the books
 
-Overall, the proposed readoptions do not result in a significant economic impact to the regulated community, state government, or other parties; no new costs to enforcement are estimated from these proposed rule changes as well.
+**From:** Tina Roberts
+**Sent:** Monday, July 27, 2020 2:31 PM
+**To:** Bizzell, Rob
+**Subject:** [External] Please stop gill netting
 
-**II. Introduction and Purpose of Rule Changes**
-Session Law 2011-145 abolished the Division of Environmental Health and transferred the Shellfish Sanitation and Recreational Water Quality section to the Division of Marine Fisheries under a Type I transfer. As a result, G.S. 130A-230 was repealed and the authority for rulemaking for the sanitation requirements for harvesting, processing and handling of scallops, shellfish and crustacea was transferred to the Marine Fisheries Commission, which is now contained in G.S. 113-221.2.
+**CAUTION:** External email. Do not click links or open attachments unless you verify. Send all suspicious email as an attachment to [report.spam@nc.gov](mailto:report.spam@nc.gov)
 
-The purpose of the Marine Fisheries Commission (MFC) is to manage, restore, develop, cultivate, conserve, protect, and regulate the marine and estuarine resources within its jurisdiction, as described in G.S. 113-132, including commercial and recreational fisheries resources (Chapter 143B, Article 7, Part 5D). For the protection of public health, the MFC is also required to adopt rules establishing sanitation requirements for the harvesting, processing, and handling of scallops, shellfish, and crustacea of in-state origin. The rules of the MFC may also regulate scallops, shellfish, and crustacea shipped into North Carolina (G.S. 113-221.2).
+Myself along with several friends enjoy fishing whenever we can get out on the water. But, we
+are unhappy with gill netting in our great state of North Carolina. We have seen that gill nets
+kill almost everything that swims into the net, including birds, turtles, dolphins, etc... Just
+think about how many gill nets are used and how many discards are killed. Me and my friends
+are recreational anglers but we love this earth and want future generation to love it too. How
+we manage our fisheries needs to change. Lets take the first steps together and ban gill nets.
 
-North Carolina is part of the NSSP, which is a federal/state cooperative program designed to “promote and improve the sanitation of shellfish (oysters, clams, mussels, and scallops) moving in interstate commerce”. Division of Marine Fisheries staff work together with representatives from other states, the federal government, and industry through the Interstate Shellfish Sanitation Conference to develop guidelines for all state shellfish programs that are summarized in the Guide. By adopting the proposed rule amendments, North Carolina would maintain full compliance with federal minimum standards included in this Guide and would maintain full eligibility of the sale of shellfish products through interstate commerce.
+respectfully,
 
-Since **15A NCAC 18A .0704 and .0914** were originally adopted, the national requirements for laboratories or laboratory methods used to support state shellfish sanitation programs have changed significantly. These changes have been made in order to assure that shellfish sanitation laboratories across the country will meet consistent minimum quality standards, and that they are using laboratory methods that have been specifically evaluated for appropriate use within the program. The amended language included in these rules will bring North Carolina standards into agreement with those national standards. Additionally, a number of new laboratory methods have been approved for use within the program since these rules were originally adopted, so these modifications will provide the State with additional flexibility to adapt the laboratory testing program as necessary in order to best continue to meet national requirements.
+Tina Roberts
 
-The next rule with proposed changes is **15A NCAC 18A .0902**, which sets requirements for classification of shellfish growing waters. Within the 15A NCAC 18A .0900 rules, the terms “shellfish growing waters” and “shellfish growing areas” are sometimes used interchangeably. However, these terms have different definitions. Specifically, “shellfish growing waters” are defined in Rule 15A NCAC 18A .0901 as “waters which support or could support shellfish life”, while “shellfish growing areas” are units of management that have been created by the Division.
+[[IMAGE_23_0|]]
 
-As currently written, .0902 could be interpreted to mean that each “growing area” could only include one classification type, which is not the case. The proposed changes to this rule are intended to clear up this confusion by eliminating the interchangeable use of those terms within this rule, and to only use the term “shellfish growing waters” instead. Shellfish growing areas are addressed more directly in Rule 15A NCAC 18A .0903.
+## SPECIAL MANAGEMENT ZONES
 
-The Division maintains maps of these classifications in multiple different locations, so a specific reference location is not provided in the rule. Public facing maps showing which areas are open or closed to harvest are available on the Division website or can be provided in paper form from the office. More detailed maps showing all classification types are maintained internally on web maps and in GIS, and are available to the public through the DEQ Online GIS Data Portal.
+[[IMAGE_24_0|North Carolina Marine Fisheries logo]]
 
-Proposed amendments to **15A NCAC 18A .0903** attempt to ensure that the Sanitary Survey requirements in North Carolina meet the minimum standards laid out in the Guide, and it also seeks to provide additional detail and clarity versus what was originally put into rule. Specifically, proposed changes:
-1) Clarify that the Sanitary Survey Report is a written document.
-2) Clarify that the sanitary surveys need to be completed _at least_ every three years (can be done more frequently), and that they are required for any growing area not fully classified as Prohibited. Also, the language from Rule 15A NCAC .0910 (proposed for repeal) is encompassed to indicate what is required to change a classification.
-3) Update the language on what needs to be included in the Sanitary Survey Report, and update the bacteriological water quality sampling requirements to reflect the national standards.
-4) Add the requirement that an annual evaluation be completed for each growing area each year when that growing area is not evaluated with a Sanitary Survey, and specify the required contents of the annual evaluations.
+ROY COOPER
+*Governor*
 
-When **15A NCAC 18A .0904** was originally adopted, it was written to conform to the standards included in the version of the Guide that was in effect at that time. The Guide has undergone several revisions since that time in order to reflect the best available science, however, and the standards that .0904 describe are no longer “considered sufficient to protect public health when shellfish are taken from growing areas waters adversely affected by known meteorological or hydrological events that occur intermittently and are shown to degrade water quality” (National Shellfish Sanitation Program Guide for the Control of Molluscan Shellfish – 2017 Revision – Guidance Documents, Chapter 2, pg. 252).
+MICHAEL S. REGAN
+*Secretary*
 
-The current standards, based on a statistical method described as the estimated 90ᵗʰ percentile, “will protect against the potential public health problems that may result when shellfish are consumed from growing waters that are adversely affected by intermittent pollution events…” (National Shellfish Sanitation Program Guide for the Control of Molluscan Shellfish – 2017 Revision – Guidance Documents, Chapter 2, pg. 252). The amended rule as presented here describes the current minimum standards necessary for classifying a shellfish growing area as approved for harvest, and will bring North Carolina standards into agreement with the national requirements.
+STEPHEN W. MURPHEY
+*Director*
 
-Additionally, the original .0904 rule was written when only one type of laboratory testing method for measuring fecal coliform bacteria in shellfish growing waters had been approved for use by the national program, and the language of the rule was tailored specifically towards the standards associated with that lab method. Since that time, additional lab methods have been developed and approved for use within the program, and this amended rule is written to include the standards associated with results generated by these different lab methods. The ability to classify shellfishing waters using results generated by these additional methods will provide the North Carolina program with additional flexibility to adapt the laboratory testing program as necessary in order to best continue to meet national requirements.
+March 1, 2019
 
-The next rule with proposed changes is **15A NCAC 18A .0905**, which sets requirements for conditionally approved waters. The conditionally approved classification was added to the Guide to “offer the Authority an alternative to placing the area in the…prohibited classification year round when, during certain times of the year or under certain conditions, the shellstock from the growing area may be safely harvested” (National Shellfish Sanitation Program Guide for the Control of Molluscan Shellfish – 2017 Revision – Guidance Documents, Chapter 2, pg. 233). “Use of the conditionally approved…classification by the Authority is optional” (National Shellfish Sanitation Program Guide for the Control of Molluscan Shellfish – 2017 Revision – Guidance Documents, Chapter 2, pg. 233), but when used, provides harvesters with access to a shellfish resource that would otherwise be completely unavailable for harvest. As it is optional for the Division to work within the conditional classification, there is no federal requirement to initiate the program. However, once action is taken by the Division, there are minimum federal standards defined in 15A NCAC 18A .0905, such as monitoring and surveys, necessary to maintain in order to remain compliant and participate in shellfish harvest from conditional waters.
+Gregg Waugh
+Executive Director
+South Atlantic Fisheries Management Council
+4055 Faber Place Drive, Suite 201
+North Charleston, SC 29405
 
-Use of the conditionally approved classification also requires extra work on the part of the Division, however, as management plans need to be developed and extra sampling needs to occur in order to meet the requirements of the plan. For example, in an area that is conditionally approved with a management plan based off of the impacts from rainfall/storm water runoff, staff must first conduct a study to determine the amount of rainfall that will cause bacteria levels in that area to exceed the standards for safe harvest. Staff must then monitor rainfall totals in that area on a daily basis to see if the threshold established by the study has been exceeded, and when it is, they must issue a proclamation temporarily closing that area to harvest. Once the area has been temporarily closed, staff must then follow up with direct sampling of select stations within the growing area to determine when bacteria levels have once again begun to meet the standards for safe harvest. Only then can another proclamation be issued, reopening the area to harvest.
+Dear Gregg,
 
-The proposed amendments to (a)(1) and (a)(2) of this rule seek to more clearly define the conditions necessary for an area to be classified as conditionally approved. It is important to retain the “known and predictable” language in this part of the rule because if the conditions when these areas will meet approved waters classification criteria are not both “known” and “predictable”, then it will be impossible to develop the required management plan for that area. Because of the extra workload associated with use of the conditionally approved classification, the agency is cautious in proposing amendments so as to not put in place requirements to use the classification anywhere that the criteria spelled out in (a)(1) and (a)(2) are met. Subparagraphs (a)(3) and (a)(4) were added to provide flexibility to the agency so if there is not harvestable resource in an area or if the staffing necessary to properly meet the requirements of a management plan is not available, to instead use only the Approved and Prohibited classifications for a Growing Area.
+North Carolina has one of the most extensive artificial reef programs in the country consisting of 68
+estuarine, nearshore and ocean reefs, and sanctuaries. Of these, the North Carolina Artificial Reef
+Program maintains 30 artificial reef sites in the Exclusive Economic Zone (EEZ) off the coast of North
+Carolina. Nearshore and ocean reef sites are located from one-half mile to 38 miles from shore and are
+situated so they can be reached from every maintained inlet in the state. This proximity creates an
+opportunity for high exploitation of the fishery resources aggregated by these reefs.
 
-The proposed amendments to paragraph (b) of this rule aim to combine the contents of old paragraphs (c) and (d) into one place and to more clearly state that a written management plan must be developed for all conditionally approved areas that defines the conditions under which a conditionally approved area may be open to harvest. Newly developed paragraph (c) adds in the requirement that each plan be re-evaluated on an annual basis, and that a written report summarizing the findings of those re-evaluations must be prepared. The added or restated requirements in paragraphs (b) and (c) of this rule are both necessary to ensure that North Carolina meets the minimum national standards for any state using the conditionally approved classification.
+The first Fishery Management Plan for Snapper and Grouper in the South Atlantic recognized the
+potential negative impacts on the relative abundance of fish by “exceptional gears” in and around these
+sites. The plan established a mechanism by which states could request special management zones with
+specific gear restriction around their artificial reefs in the EEZ to mitigate the negative affects highly
+efficient gears could have on the aggregated resource. Gears that could be considered exceptional
+commonly used in the EEZ off of North Carolina include black seabass pots, sink nets, and bandit gear.
+The catch per unit effort of these gears are high and have the potential to remove large amounts of
+aggregated snapper and grouper species from these sites, disproportionately affecting access to other
+anglers.
 
-Additionally, the agency name was updated to the Division of Marine Fisheries throughout the rule. This rule was originally written when the Shellfish Sanitation Section was part of the Division of Environmental Health, and had to make recommendations to the Division of Marine Fisheries when areas should be closed or opened to harvest. In 2011, the Division of Environmental Health was abolished by the legislature and the Shellfish Sanitation Section was moved to the Division of Marine Fisheries. Any language reflective of the original separation of the two divisions has been struck from this amended rule and all sections have been revised to indicate that all requirements and authority described in this rule apply to the Division of Marine Fisheries alone.
+To ensure equitable access to the fishery resource around these reefs to all user groups, the North Carolina
+Division of Marine Fisheries requests that the South Atlantic Fishery Management council designate 30
+artificial reefs within the EEZ off of North Carolina as Special Management Zones. Gear restrictions in
+the zones should include the prohibition of fishing with any gear other than handline, rod and reel, and
+spearfishing gear. Additionally, the Division requests that the harvest and possession of snapper and
+grouper with spearfishing gear be limited to the recreational bag limits for those species.
 
-The next rule with proposed changes is **15A NCAC 18A .0906**, which sets requirements for restricted areas. The restricted classification is another optional classification type included in the Guide that may be used to indicate that an area is only suitable for harvest if the shellfish taken from those waters are then subjected to additional treatment that will render them safe for human consumption. Specifically, “this option may be used when the sanitary survey for the growing area indicates that the levels of fecal material or poisonous or deleterious substances in the growing area are such that additional treatment through depuration or relay can render the shellstock safe for human consumption” (National Shellfish Sanitation Program Guide for the Control of Molluscan Shellfish – 2017 Revision – Guidance Documents, Chapter 2, pg. 234). The proposed amendments to paragraph (a) of this rule are intended to eliminate vague language and to update the requirements that need to be met in order to classify an area as restricted so that they match the requirements included in the Guide.
+The Division believes designating artificial reefs as Special Management Zones with the preceding
+restrictions will increase opportunities for anglers by reducing the potential impact restricted gears can
+have on the relative abundance of snapper and grouper species. By limiting allowable gears to handline,
+rod and reel, and spearfishing gear, fishery removals will be moderated and allow for greater access by
+anglers if increasing effort occurs. Additionally, limiting spearfishing gear to the lower recreational limits
+of snapper grouper species may mitigate some of the biological concerns for the resource that arise when
+species with complex and social life histories are selectively harvested. Numerous snapper and grouper
+species have reproductive strategies that include complex social structures predicated on large individuals
 
-Rule references have been updated in paragraphs (b) and (c) of this rule. When this rule was originally written, the Shellfish Sanitation Section was part of the Division of Environmental Health, and had a distinct set of rules and requirements for relay and depuration from what was included in the Division of Marine Fisheries rules. In 2011, the Division of Environmental Health was abolished and the Shellfish Sanitation Section was moved to the Division of Marine Fisheries, so the proposed rule changes reflect the fact that current Division of Marine Fisheries requirements for relay and depuration are included in separate sections of rules.
+State of North Carolina | Division of Marine Fisheries
+3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557
+252-726-7021
 
-Paragraph (d) of this rule has been added to include specific bacteriological standards from the Guide that need to be met in order for any shellfish growing waters to be classified as restricted and used as a source of shellstock for depuration. These standards were not included in the original text of the rule, and have not been necessary so far, as North Carolina does not currently have any permitted depuration facilities. However, the agency wants to take this opportunity to include these standards so that the rules accurately reflect the national requirements in case anyone does decide to pursue a permit to operate a depuration plant in the future.
+controlling reproduction by out competing others for spawning and maintaining harems. If numerous
+large individuals within a group are removed, it may take considerable time for the social group to
+restructure affecting reproductive success. Spearfishing gear has the potential to selectively remove large
+individuals from a reef and by limiting removals to the recreational limits lessons the chance that the
+complex community structure on the site is affected.
 
-Rules **15A NCAC 18A .0907, .0908, and .0909** address related requirements. This set of rules is intended to define the requirements surrounding shellfish growing waters that are classified as prohibited. During review of the rules it was determined that the requirements contained in .0908 were redundant with and better suited for inclusion in Rule .0907, so .0908 is proposed for repeal.
+A restriction on gear types may also benefit certain species listed and protected under the Endangered
+Species Act of 1973 (ESA). As part of the federal permitting process for reef construction, The National
+Oceanic and Atmospheric Administration Protected Resources Division (NOAA PRD) provides
+consultation on potential impacts to ESA listed species in North Carolina. NOAA PRD has raised derelict
+fishing gear as a point of particular concern for many species, highlighting the possibility of entanglement
+or entrapment. In recent consultations, the Division has been asked to detail its plans for mitigating these
+impacts presented by artificial reefs. By limiting allowable gears at artificial reef sites, dereliction of gear
+may become less likely and less frequent, therefore minimizing possible impacts to ESA listed species.
+The proposed restrictions support the Division’s mission of reef enhancement for the benefit of many
+target species, including snapper and grouper.
 
-The proposed amendments to Rule .0907 are intended to ensure that the language used in the rules to define when an area must be prohibited will match the national requirements as described in the Guide. The proposed amendments to Rule .0909 are designed to more clearly define how prohibited buffer zones will be established and to more comprehensively include all instances where a buffer zone is necessary, including the reference to Rule .0911 (marinas) that was not included in the original rule text.
+Thank you for consideration of this request. To facilitate moving forward with review and expected
+regulatory amendment development, attached are corner coordinates and artificial reef site names for
+thirty artificial reefs located in the EEZ off of North Carolina. The Division would also request that
+during the review and development of Council actions that there be three public hearings in North
+Carolina to receive input on the proposed designation. Please do not hesitate to contact the Division
+should you need additional information or clarification.
 
-The proposed amendments to **15A NCAC 18A .0913** update the process for making a closure due to a public health emergency to better reflect the current structure of the Division of Marine Fisheries, as previously described for rules .0905 and .0906.
+We look forward to assisting in the fulfilment of this request.
 
-Proposed amendments to Rule **15A NCAC 18A .0901** update definitions to conform with proposed changes to the other rules in 15A NCAC 18A .0900.
+Sincerely,
 
-Rule **15A NCAC 18A .0431** is proposed for repeal through readoption. The rule is redundant with 15A NCAC .0904. For Rule **15A NCAC 18A .0908**, the agency determined that the requirements contained in .0908 were redundant with and better suited for inclusion in Rule 15A NCAC 18A .0907, so .0908 is proposed for repeal through readoption. Finally, Rule **15A NCAC 18A .0910** is also proposed for repeal through readoption, with the requirements of the rule being added to Rule 15A NCAC 18A .0903 instead, for improved clarity and organization.
+Stephen W. Murphey, Director
 
-**III. Fiscal Impact Analysis**
-While these proposed rule amendments lead to substantive changes to a variety of shellfish sanitation and harvest requirements, the new actions do not actually result in significant changes to the operations of the Division or the supply of shellfish products within or outside of North Carolina. Rather, the overarching effect of these proposed rule amendments is to conform rule language with updated state practices and federal requirements in order to remain compliant and continue participating in interstate commerce. Because of this, the fiscal impacts overall from these proposed rule amendments are low, only resulting in a variety of benefits to the state in terms of heightened efficiency.
+SM/sp/jp
 
-**Summary of Potential Benefits**
-The primary and most substantial benefit from the proposed rule amendments is the shift in rule language to conform with the current federal minimum standards for shellfish harvest and sale. While the Division has already been following these standards and complying in practice, North Carolina rule language had not yet been updated to match these standards. By approving the proposed rule amendments, the state will reduce inefficiencies in terms of meeting federal requirements for interstate commerce, and will be able to maintain shellfish trade without the need to reconcile different state and federal standards. While this benefit is not expected to be significant, it does provide a small gain to the state as the interstate trade of shellfish becomes more streamlined.
+State of North Carolina | Division of Marine Fisheries
+3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557
+252-726-7021
 
-Beyond the efficiencies gained from adopting federal minimum requirements, the proposed rule changes also look to conform, consolidate, and re-define much of the rule language around shellfish sanitation. The primary benefit to the state will be from a reduced time-cost of administration, as much of the proposed rule language is now more concise and homogenized. By streamlining rule language and generating more concrete definitions for many common practices within shellfish sanitation, the Division will be able to conduct this business more efficiently, generating a small economic benefit to the state over time. With this, the repeal of rules that contain duplicative language leads to a small administrative benefit to the state as well, as rule language is now more concise, more efficient, and no longer at risk to contradict itself in the future if any additional rule changes are proposed.
+Appendix
 
-Additionally, the proposed updated rule language around access to sanitation testing will generate more economic benefits to the state moving forward. The proposed language would grant the Division a more flexible range of options for water and shellfish testing, which creates a faster, more efficient monitoring program. While these options have been available to Division staff, they have not been written in rule. By formalizing this more flexible approach, the proposed rule changes would guarantee a more efficient and dynamic workflow for monitoring, resulting in a small flow of economic benefit to the state moving forward.
+**Table A1.** Artificial reef sites in the EEZ off of the coast of North Carolina. Reef sites are the area within the boundary delineated by the corresponding four corner coordinates.
 
-Lastly, the proposed rule language surrounding conditionally approved waters also reflects an ongoing management practice of the division that would generate future benefits to the state by formalizing into rule. The inclusion of the proposed language around conditionally approved shellfish areas allows the Division to increase the overall flow of shellfish products to market by allowing access to at-risk harvest sites when environmental conditions allow. This practice has been allowed within the state since the 1990’s, and harvesters have been extracting shellfish from these sites as permitted since that time. Therefore, while there is no expected increase in overall shellfish supply by codifying the proposed rule language around conditional sites, putting the practice in rule will again generate a more efficient process for approving harvest from these areas. By formalizing the usage of conditional shellfish sites long-term, a more stable market and supply chain for shellfish from these areas can be established, leading to a small flow of economic benefits to the state.
+| Artificial Reef Site Name | North-West corner | | North-East corner | | South-East corner | | South-West corner | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | Lat. | Long. | Lat. | Long. | Lat. | Long. | Lat. | Long. |
+| **AR-130** | 36°0'N | 75°32.09'W | 36°0.43'N | 75°31.49'W | 35°59.94'N | 75°31.51'W | 35°59.95'N | 75°32.11'W |
+| **AR-140** | 35°57'N | 75°32.07'W | 35°56.98'N | 75°31.47'W | 35°56.48'N | 75°31.49'W | 35°56.5'N | 75°32.1'W |
+| **AR-145** | 35°54.27'N | 75°24.18'W | 35°54.26'N | 75°23.57'W | 35°53.76'N | 75°23.59'W | 35°53.78'N | 75°24.2'W |
+| **AR-220** | 35°8.63'N | 75°41.21'W | 35°8.6'N | 75°40.01'W | 35°7.61'N | 75°40.05'W | 35°7.64'N | 75°41.26'W |
+| **AR-225** | 35°7.02'N | 75°39.61'W | 35°7.01'N | 75°39.01'W | 35°6.51'N | 75°39.03'W | 35°6.53'N | 75°39.63'W |
+| **AR-230** | 35°6.39'N | 75°43.22'W | 35°6.37'N | 75°42.62'W | 35°5.88'N | 75°42.64'W | 35°5.89'N | 75°43.24'W |
+| **AR-250** | 34°57.15'N | 75°55.15'W | 34°57.14'N | 75°54.55'W | 34°56.65'N | 75°54.57'W | 34°56.66'N | 75°55.17'W |
+| **AR-255** | 34°55.74'N | 75°58.2'W | 34°55.72'N | 75°57.6'W | 34°55.23'N | 75°57.62'W | 34°55.24'N | 75°58.22'W |
+| **AR-285** | 34°33.64'N | 76°26.64'W | 34°33.62'N | 76°26.04'W | 34°33.13'N | 76°26.06'W | 34°33.14'N | 76°26.66'W |
+| **AR-300** | 34°18.77'N | 76°24.42'W | 34°18.76'N | 76°23.83'W | 34°18.26'N | 76°23.84'W | 34°18.28'N | 76°24.44'W |
+| **AR-302** | 34°10.52'N | 76°13.99'W | 34°10.51'N | 76°13.4'W | 34°10.01'N | 76°13.41'W | 34°10.02'N | 76°14.01'W |
+| **AR-305** | 34°16.94'N | 76°38.94'W | 34°16.92'N | 76°38.35'W | 34°16.43'N | 76°38.36'W | 34°16.44'N | 76°38.96'W |
+| **AR-330** | 34°34.14'N | 76°51.85'W | 34°34.12'N | 76°50.66'W | 34°33.13'N | 76°50.68'W | 34°33.15'N | 76°51.88'W |
+| **AR-340** | 34°34.57'N | 76°58.64'W | 34°34.56'N | 76°58.04'W | 34°34.07'N | 76°58.05'W | 34°34.08'N | 76°58.65'W |
+| **AR-345** | 34°32.55'N | 76°58.76'W | 34°32.54'N | 76°58.16'W | 34°32.05'N | 76°58.17'W | 34°32.06'N | 76°58.77'W |
+| **AR-355** | 34°21.43'N | 77°20.29'W | 34°21.43'N | 77°19.7'W | 34°20.93'N | 77°19.71'W | 34°20.94'N | 77°20.3'W |
+| **AR-362** | 34°15.97'N | 77°30.71'W | 34°15.96'N | 77°30.12'W | 34°15.47'N | 77°30.13'W | 34°15.47'N | 77°30.72'W |
+| **AR-366** | 34°13.2'N | 77°25.54'W | 34°13.19'N | 77°24.95'W | 34°12.7'N | 77°24.96'W | 34°12.71'N | 77°25.55'W |
+| **AR-368** | 34°9.82'N | 77°26.13'W | 34°9.81'N | 77°25.53'W | 34°9.32'N | 77°25.54'W | 34°9.32'N | 77°26.13'W |
+| **AR-372** | 34°6.52'N | 77°45.21'W | 34°6.52'N | 77°44.61'W | 34°6.02'N | 77°44.62'W | 34°6.03'N | 77°45.21'W |
+| **AR-376** | 34°3.53'N | 77°39.93'W | 34°3.53'N | 77°39.33'W | 34°3.03'N | 77°39.34'W | 34°3.04'N | 77°39.93'W |
+| **AR-382** | 33°58.83'N | 77°41.46'W | 33°58.82'N | 77°40.87'W | 33°58.33'N | 77°40.88'W | 33°58.34'N | 77°41.47'W |
+| **AR-386** | 33°57.77'N | 77°33.69'W | 33°57.76'N | 77°33.1'W | 33°57.27'N | 77°33.11'W | 33°57.27'N | 77°33.7'W |
+| **AR-400** | 33°29.55'N | 77°35.55'W | 33°29.55'N | 77°34.96'W | 33°29.05'N | 77°34.97'W | 33°29.06'N | 77°35.56'W |
+| **AR-420** | 33°51.3'N | 78°7'W | 33°51.3'N | 78°6.41'W | 33°50.8'N | 78°6.42'W | 33°50.8'N | 78°7.01'W |
+| **AR-440** | 33°50.05'N | 78°13.38'W | 33°50.05'N | 78°12.78'W | 33°49.55'N | 78°12.79'W | 33°49.55'N | 78°13.38'W |
+| **AR-445** | 33°45.03'N | 78°14.39'W | 33°45.03'N | 78°13.8'W | 33°44.53'N | 78°13.81'W | 33°44.54'N | 78°14.4'W |
+| **AR-455** | 33°47.28'N | 78°18.18'W | 33°47.28'N | 78°17.58'W | 33°46.78'N | 78°17.59'W | 33°46.79'N | 78°18.18'W |
+| **AR-460** | 33°50.34'N | 78°22.32'W | 33°50.33'N | 78°21.72'W | 33°49.84'N | 78°21.73'W | 33°49.84'N | 78°22.32'W |
+| **AR-465** | 33°23.67'N | 78°11.34'W | 33°23.67'N | 78°10.75'W | 33°23.17'N | 78°10.76'W | 33°23.18'N | 78°11.35'W |
 
-**Summary of Potential Costs**
-As discussed, all of the proposed rule changes in this fiscal note aim to formalize the language and requirements of actions already being conducted by the Division. While some of these proposed changes aim to homogenize language and definitions, others aim to conform monitoring requirements and procedures with federal standards. If the Division were not already meeting all of the criteria laid out in these proposed rule changes, a flow of costs to the state would occur immediately as the Division works to implement all of the new practices. However, as no structural changes to Division practices would occur under the proposed rule changes, no costs to the state are anticipated.
+State of North Carolina | Division of Marine Fisheries
+3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557
+252-726-7021
 
-With this, while the proposed rule changes to conditional shellfish areas do require the addition of formalized language into management plans, this language has already been prepared through ongoing work with these sites. No additional costs to the state will be incurred as the management language of conditional areas has already been included in the Sanitary Survey Reports developed by the Division as part of ongoing work functions. It is also important to note that from a federal perspective the conditional shellfish area program is a completely optional undertaking in order to increase a state’s flow of shellfish products. Therefore, there are no additional costs to maintain, initiate, or terminate the program at the federal level. The only costs come from maintaining the minimum monitoring requirements outlined in 15A NCAC 18A .0905, which occur as part of the Division’s ongoing monitoring activities and therefore generate no new costs to the state.
+[[IMAGE_27_0|]]
+[[IMAGE_27_1|]]
+[[IMAGE_27_2|]]
+[[IMAGE_27_3|]]
 
-Lastly, as all of these proposed activities are already occurring, and occur as part of ongoing work of the Division’s Shellfish Sanitation program, there are no additional costs to enforcement expected.
+## MFC ADVISORY COMMITTEES
 
-**Appendix I Proposed Rule Changes:**
+[[IMAGE_28_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
 
-15A NCAC 18A .0431 is proposed for repeal through readoption as follows:
+**COMMISSIONERS**
 
-**15A NCAC 18A .0431 STANDARDS FOR AN APPROVED SHELLFISH GROWING AREA**
-~~In order that an area be approved for shellfish harvesting for direct market purposes the following criteria must be satisfied as indicated by sanitary survey:~~
-~~(1) the shoreline survey has indicated that there is no significant point source contamination;~~
-~~(2) the area is not so contaminated with fecal material that consumption of the shellfish might be hazardous;~~
-~~(3) the area is not so contaminated with radionuclides or industrial wastes that consumption of the shellfish might be hazardous; and~~
-~~(4) the median fecal coliform Most Probable Number (MPN) or the geometric mean MPN of water shall not exceed 14 per 100 milliliters, and not more than 10 percent of the samples shall exceed a fecal coliform MPN of 43 per 100 milliliters (per five tube decimal dilution) in those portions of areas most probably exposed to fecal contamination during most unfavorable hydrographic conditions.~~
+**ROY COOPER**
+**Governor**
 
-_History Note: Authority G.S. 130A-230;_
-_Eff. February 1, 1987;_
-_Repealed Eff. May 1, 2021._
+**MICHAEL S. REGAN**
+**Secretary**
 
-15A NCAC 18A .0704 is proposed for readoption with substantive changes as follows:
+**ROB BIZZELL**
+**Chairman**
 
-**15A NCAC 18A .0704 LABORATORY PROCEDURES**
-(a) ~~The laboratory and the laboratory operator shall be approved by the Division.~~ <u>All laboratory analyses used to evaluate the effectiveness of the depuration process shall be performed by a laboratory found to conform or provisionally conform to the requirements established under the National Shellfish Sanitation Program (NSSP), as determined by a Food and Drug Administration (FDA) Shellfish Laboratory Evaluation Officer or by an FDA certified State Shellfish Laboratory Evaluation Officer.</u>
-(b) ~~The laboratory shall conduct routine bacterial examinations of process water and shellfish, and special examinations when necessary or required in accordance with Rule. 0706 of this Subchapter.~~
-~~(c)~~<u>(b)</u> ~~Bacterial examinations of shellfish and sea water shall be made in accordance with "Recommended Procedures for Examination of Sea Water and Shellfish", American Public Health Association, Inc., which is adopted by reference in accordance with G.S. 150B-14(c), or other methods approved by the Division. A copy of this publication is available for inspection at the Shellfish Sanitation Office, Marine Fisheries Building, Arendell Street, Morehead City, North Carolina 28557.~~<u>All methods for the analysis of depuration process water and shellfish that are used to evaluate the effectiveness of the depuration process shall be cited in the latest approved edition of the NSSP Guide for the Control of Molluscan Shellfish, Section IV: Guidance Documents, subsection Approved NSSP Laboratory Tests or validated for use by the NSSP under the Constitution, Bylaws and Procedures of the Interstate Shellfish Sanitation Conference. If there is an immediate or ongoing critical need for a method and no method approved for use within the NSSP exists, the following may be used:</u>
-<u>(1) a validated Association of Analytical Communities, Bacteriological Analysis Manual, or Environmental Protection Agency method; or</u>
-<u>(2) an Emergency Use Method as set forth in the latest approved edition of the NSSP Guide for the Control of Molluscan Shellfish.</u>
-<u>(c) The laboratory shall conduct examinations of depuration process water and shellfish and conduct special examinations if necessary or required, in accordance with Rules .0706-.0709 of this Section.</u>
-(d) ~~All other physical, chemical, or biological tests shall be conducted according to "Standard Methods for the Examination of Water and Waste Water", prepared and published by American Public Health Association, American Water Works Association, and Water Pollution Control Federation, which is adopted by reference in accordance with G.S. 150B-14(c), or other methods approved by the Division. A copy of this publication is available for inspection at the Shellfish Sanitation Office, Fisheries Building, Arendell Street, Morehead City, North Carolina 28557.~~
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
 
-_History Note: Authority G.S. 130A-230; 113-134; 113-182; 113-221.2; 143B-289.52;_
-_Eff. February 1, 1987;_
-_Amended Eff. September 1, 1991; September 1, 1990;_
-_Readopted Eff. May 1, 2021._
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
 
-15A NCAC 18A .0901 is proposed for readoption with substantive changes as follows:
+June 3, 2020 
 
-**15A NCAC 18A .0901 DEFINITIONS**
-The following definitions shall apply throughout this Section.
-(1) ~~"Approved area"~~<u>"Approved"</u> means ~~an area~~ <u>shellfish growing waters</u> determined suitable for the harvesting of shellfish for direct market purposes.
-(2) "Closed-system marina" means a marina constructed in canals, basins, tributaries or any other area with restricted tidal flow.
-<u>(3) "Colony forming unit" means an estimate of the number of viable bacteria cells in a sample as determined by a plate count.</u>
-~~(3)~~<u>(4)</u> "Commercial marina" means ~~marinas~~ <u>a marina</u> that ~~offer~~ <u>offers</u> one or more of the following services: fuel, transient dockage, haul-out facilities, or repair services.
-~~(4)~~<u>(5)</u> "Conditionally ~~approved area"~~ <u>approved"</u> means ~~an area~~ <u>shellfish growing waters that are</u> subject to predictable intermittent pollution <u>but</u> that may be used for harvesting shellfish for direct market purposes when management plan criteria are met.
-~~(5) "Depuration" means mechanical purification or the removal of adulteration from live shellstock by any artificially controlled method.~~
-(6) "Division" means the Division of ~~Environmental Health~~ <u>Marine Fisheries</u> or its authorized agent.
-<u>(7) "Estimated 90ᵗʰ percentile" means a statistic that measures the variability in a sample set that shall be calculated by:</u>
-<u>(a) calculating the arithmetic mean and standard deviation of the sample result logarithms (base 10);</u>
-<u>(b) multiplying the standard deviation in Sub-Item (a) of this Item by 1.28;</u>
-<u>(c) adding the product from Sub-Item (b) of this Item to the arithmetic mean; and</u>
-<u>(d) taking the antilog (base 10) of the results from Sub-Item (c) of this Item to determine the estimated 90ᵗʰ percentile.</u>
-~~(7)~~<u>(8)</u> "Fecal coliform" means bacteria of the coliform group ~~which~~ <u>that</u> will produce gas from lactose in a multiple tube procedure liquid medium (EC or A-1) within 24 plus or minus two hours at 44.5°C plus or minus 0.2°C in a water bath.
-<u>(9) "Geometric mean" means the antilog (base 10
+Jamie Winslow
+
+Dear Ms. Winslow: 
+
+I am pleased to welcome you as a member of the Northern Regional Advisory Committee, which makes recommendations to the N.C. Marine Fisheries Commission. 
+
+The committee is comprised of 11 members representing the scientific, recreational, commercial, and conservation communities. Meetings usually last two or three hours, and are scheduled only when the commission refers an issue to the committee. Also, please be aware that advisers are required to attend at least 75 percent of the meetings of their committee.
+
+Please find an orientation package enclosed. If you have any questions concerning your orientation to the advisory committee process, feel free to contact Dana Gillikin at [Dana.Gillikin@ncdenr.gov](mailto:Dana.Gillikin@ncdenr.gov) or 252-808-8022. 
+
+Speaking for the Marine Fisheries Commission, I want to thank you for your interest in managing our state’s resources. I look forward to seeing you at a meeting in the near future. 
+
+Sincerely,
+
+[[IMAGE_28_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_29_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+James Rochelle, Jr. 
+
+Dear Mr. Rochelle: 
+
+I am pleased to welcome you as a member of the Southern Regional Advisory Committee, which makes recommendations to the N.C. Marine Fisheries Commission. 
+
+The committee is comprised of 11 members representing the scientific, recreational, commercial, and conservation communities. Meetings usually last two or three hours, and are scheduled only when the commission refers an issue to the committee. Also, please be aware that advisers are required to attend at least 75 percent of the meetings of their committee.
+
+Please find an orientation package enclosed. If you have any questions concerning your orientation to the advisory committee process, feel free to contact Dana Gillikin at [Dana.Gillikin@ncdenr.gov](mailto:Dana.Gillikin@ncdenr.gov) or 252-808-8022. 
+
+Speaking for the Marine Fisheries Commission, I want to thank you for your interest in managing our state’s resources. I look forward to seeing you at a meeting in the near future. 
+
+Sincerely,
+
+[[IMAGE_29_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_30_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Brian Atwell
+
+Dear Mr. Atwell:
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_30_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_31_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Charles Jake Griffin
+
+Dear Mr. Griffin: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information.
+
+Again, thank you for your interest in the conservation of our state’s resources.
+
+Sincerely,
+
+[[IMAGE_31_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_32_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+David Benson 
+
+Dear Mr.Benson: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information.
+
+Again, thank you for your interest in the conservation of our state’s resources.
+
+Sincerely,
+
+[[IMAGE_32_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_33_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+David Lindsey 
+
+Dear Mr. Lindsey: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_33_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_34_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+David Timpy 
+
+Dear Mr.Timpy: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_34_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_35_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Felton Thompson 
+
+Dear Mr. Thompson: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information.
+
+Again, thank you for your interest in the conservation of our state’s resources.
+
+Sincerely,
+
+[[IMAGE_35_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_36_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Gregory Biggs 
+
+Dear Mr. Biggs: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_36_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_37_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+James Dale Hall
+
+Dear Mr. Hall: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_37_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_38_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Jeffrey Melton
+
+Dear Mr. Melton: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_38_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_39_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+July 1, 2020 
+
+Jerry Clontz 
+
+Dear Mr. Clontz: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_39_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_40_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Kenneth Seigler
+
+Dear Mr. Seigler: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_40_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_41_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Randall Proctor 
+
+Dear Mr. Proctor: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information. 
+
+Again, thank you for your interest in the conservation of our state’s resources. 
+
+Sincerely,
+
+[[IMAGE_41_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission 
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_42_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Richard Johnson 
+
+Dear Mr. Johnson: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information.
+
+Again, thank you for your interest in the conservation of our state’s resources.
+
+Sincerely,
+
+[[IMAGE_42_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_43_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 4, 2020 
+
+Ruth King 
+
+Dear Ms. King: 
+
+Your term on the Southern Regional Advisory Committee has expired and I would like to take this time to thank you for your service to the state of North Carolina. I encourage you to continue attending committee meetings as a member of the public. 
+
+Again, thank you for sacrificing your time and providing your valuable input to help the Marine Fisheries Commission effectively manage the marine resources of our state. 
+
+Sincerely,
+
+[[IMAGE_43_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_44_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Timothy Feifs
+
+Dear Mr. Feifs: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information.
+
+Again, thank you for your interest in the conservation of our state’s resources.
+
+Sincerely,
+
+[[IMAGE_44_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_45_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+June 3, 2020 
+
+Zacharie Hennard
+
+Dear Mr. Hennard: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information.
+
+Again, thank you for your interest in the conservation of our state’s resources.
+
+Sincerely,
+
+[[IMAGE_45_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_46_0|North Carolina Marine Fisheries Commission logo]]
+**NORTH CAROLINA MARINE FISHERIES COMMISSION**
+**DEPARTMENT OF ENVIRONMENTAL QUALITY**
+
+**COMMISSIONERS**
+
+**ROY COOPER**
+**Governor**
+
+**MICHAEL S. REGAN**
+**Secretary**
+
+**ROB BIZZELL**
+**Chairman**
+
+**MIKE BLANTON**
+**Elizabeth City**
+**DOUG CROSS**
+**Grantsboro**
+**TOM HENDRICKSON**
+**Zebulon**
+**PETE KORNEGAY**
+**Camden**
+
+**DR. MARTIN POSEY**
+**Wilmington**
+**ROBERT McNEILL**
+**Wilmington**
+**TOM ROLLER**
+**Beaufort**
+**SAM ROMANO**
+**Wilmington**
+
+July 31, 2020 
+
+Ward Elis
+
+Dear Mr. Elis: 
+
+Thank you for your application to serve as an adviser to the N.C. Marine Fisheries Commission. Unfortunately, I am unable to appoint you to the committee at this time; however, please do not be discouraged from participating in the process as a member of the public. Your input is invaluable, and I encourage you to attend the committee meetings.
+
+Please visit the Division of Marine Fisheries website at [www.ncfisheries.net](http://www.ncfisheries.net/) for meeting schedules, proclamations, fisheries hot topics, and various fishing information. You may also contact Dana Gillikin at 252-808-8022 for meeting information.
+
+Again, thank you for your interest in the conservation of our state’s resources.
+
+Sincerely,
+
+[[IMAGE_46_1|W. Robert Bizzell signature]]
+
+W. Robert Bizzell, Chairman
+N.C. Marine Fisheries Commission
+
+WB/dg
+
+cc: Marine Fisheries Commission
+Lara Klibansky
+
+**P.O. Box 769, Morehead City, NC 28557-0769**
+**[www.ncfisheries.net](http://www.ncfisheries.net/)**
+
+[[IMAGE_47_0|State Board of Elections & Ethics Enforcement Logo]]
+
+*Mailing Address:*
+P.O. Box 27255
+Raleigh, NC 27611-7255
+
+Phone: (919) 814-0700
+Fax: (919) 715-0135
+
+## Ethics & Lobbying Education
+
+The following information applies to public servants, legislators, legislative employees, and ethics liaisons. For information on lobbying education and awareness presentations for lobbyists and lobbyist principals. 
+
+**Mandatory Education.** The N.C. State Board of Elections and Ethics Enforcement provides mandatory ethics and lobbying education for *public servants*, *legislators*, *legislative employees* and *ethics liaisons*. Topics covered include:
+
+- Filing a Statement of Economic Interest (“SEI”)
+- Monitoring and avoiding conflicts of interest
+- The gift ban and its exceptions
+- Prohibition on use of public position for private gain
+- Lobbying and how it affects individuals covered by the State Government Ethics Act
+
+Ethics education is the primary way individuals subject to the State Government Ethics Act are made aware of their public duties and responsibilities as well as the consequences for violating the ethics laws.
+
+## Who Must Participate
+
+- **Public Servants & Ethics Liaisons.** All public servants and ethics liaisons are required to attend a Commission-approved basic ethics and lobbying education presentation within six (6) months of the person's election appointment, or employment and attend a refresher presentation at least every two (2) years thereafter.
+- **Legislators & Legislative Employees.** The Commission, jointly with the Legislative Ethics Committee, makes mandatory ethics education and lobbying presentations to all legislators within two (2) months of the legislator assuming his or her office. Legislative employees must also participate in ethics education within three (3) months of employment and attend a refresher at least every two (2) years.
+- **Education Presentations & Schedule.** Ethics and lobbying education presentations for public servants and ethics liaisons are offered [online](https://www.ethicscommission.nc.gov/education/eduOnline.aspx) and [live at Raleigh-only and distance education sites](https://www.ethicscommission.nc.gov/education/Schedule.aspx). Completing an online presentation or attending a live session meets either the basic or refresher mandatory education requirements. Visit [https://www.ncsbe.gov/Ethics/Education](https://www.ncsbe.gov/Ethics/Education) to access online and live training options.
+
+  Ethics education for **legislators** is conducted in live sessions. Legislative employees may participate in ethics education online through the General Assembly.
+
+- **Consequences for Failure to Attend.** Failure to attend an ethics and lobbying education presentation is a violation of the State Government Ethics Act and may result in the individual being recommended for removal from his or her public position or disciplined in his or her State job.
+
+## Contact Information
+
+**For education related questions, contact:**
+NC State Board of Elections and Ethics Enforcement
+**Phone:** (919) 814-3600
+**E-mail:** [Education.Ethics@doa.nc.gov](mailto:SVC_DOA.Registration.Ethics)
+
+*430 N. Salisbury Street ▪ Raleigh, NC 27603*
+
+**2020 STATEMENT OF ECONOMIC INTEREST REMINDERS:**
+
+Completed SEIs must be filed on or before April 15, 2020. If you have already filed a 2020 SEI, do not refile. The forms and instructions can be found at [https://ethics.ncsbe.gov/sei/blankForm.aspx](https://ethics.ncsbe.gov/sei/blankForm.aspx). 
+
+If you filed a 2019 SEI ***and*** you have had ***no changes*** since your 2019 filing, you may file a 2020 SEI No Change Form, located on the website. 
+
+**You must file a 2020 Long Form if any of the following apply to you:** 
+
+a. You filed a 2019 SEI ***but*** you have had changes since your 2019 filing;
+b. You did not file a 2019 SEI; or
+c. You are a first-time filer or have been appointed to a new or additional position/board.
+
+This year, the State Board of Elections and Ethics Enforcement will roll out a new electronic process for filing SEIs. That electronic filing option will be available in **early February**. 
+
+You are encouraged to file your SEI electronically. However, if you want to file your SEIs before the updated electronic version is available, hard copies are available for filing now at the link above. 
+
+New commissioners will need to file a 2020 SEI; however, if you have not had any changes since you last filed, you can use the No Change Form, which is fairly easy to complete. 
+
+Please file by April 15th to avoid fines and other penalties. 
+
+**SEI HELPFUL TIPS**
+
+**1. PUBLIC RECORDS.** The State Board of Elections and Ethics Enforcement (State Board) is required to collect and maintain disclosures from certain persons covered by the State Elections and Ethics Enforcement Act Government Ethics Act (Elections and Ethics Act). By law, the information requested is public record and available to the public upon request. As public records, Statements of Economic Interest (SEI) are available on the Commission’s website. Personal contact information, however, is not.
+
+**2. CONTACT INFORMATION PAGE.** The Contact Information page, which includes your personal contact information, will not be available on the Commission’s website, but is a public **record.**
+
+**3. CHILDREN’S INITIALS.** Only list minor children’s INITIALS on the SEI. List each child’s full legal name on the Confidential Unemancipated Children’s Form. If you are filing electronically, the form will be generated at the end of the SEI from the information that you provided on your electronic SEI. The Confidential Form is not a public record, and the State Board will not make it available to the public.
+
+**4. READ EACH QUESTION CAREFULLY.** Read each question carefully and pay close attention to the time periods in each question as they do vary.
+
+**5. ANSWER EACH QUESTION.** It is important to answer each question, including all applicable subparts. Even if your answer is "no" or "not applicable," make certain you answer each question. Many of the questions have "yes" and "no" boxes to check for your convenience. Incomplete SEIs may cause delays and negatively impact your public service on a covered board or as an employee.
+
+**6. WHY ARE YOU FILING.** You must list the complete name of the state board or state agency employer for which you are filing the SEI. Without this information, your SEI may be delayed and negatively impact your public service on a covered board or as an employee.
+
+**7. HOW TO FILE.** The State Board strongly recommends electronical on-line filing as it is secure, allows easy information updates, and gives you access to your electronic SEIs previously filed. Filing your SEI on-line is easy, quick, convenient, and reduces the chance of reporting errors. Getting started is easy. Follow the simple steps to create your own account and get access today: https://EFILE.ncsbe.gov/ To file a paper version of the SEI, you must provide the State Board with a signed, original SEI form. Each SEI includes an "affirmation" and is a legally binding document. Faxed or emailed copies of your SEI CANNOT be accepted.
+
+SEI Helpful Tips, continued 
+
+**8. INCOME.** List each source of income as requested on the SEI. The actual dollar amount is not required. Be sure to list your employer as a source of income in Question # 6 of the SEI.
+
+**9. READ CAREFULLY.** Read each question carefully, as the Elections and Ethics Act requires that you disclose your financial holdings and obligations, personal property, and real property and may also include your knowledge of the holdings of both your immediate family and your extended family. “Immediate family” and “extended family” are defined terms in the Elections and Ethics Act, and those definitions are included with this document.
+
+**10. REFLECT.** Think carefully about WHY you are filing, and whether it has any relationship to your position. Does your board or commission license or regulate you? For many of the boards, a subject matter expert like a licensee is needed. Answering “yes” does not prohibit your service on the board, and your perspective is valued.
+
+**11. MAKE A COPY.** Make a copy of the SEI for your own records, and make a note in your calendar when you submit it, whether on-line or by mail or hand delivery. When you successfully submit your SEI electronically on-line, the final screen will provide a confirmation number and will be proof that you have satisfied your filing obligation. Please print the **confirmation screen for your records.**
+
+**12. ETHICS LIAISON.** Contact your Ethics Liaison to assist you in your obligations under the Elections and Ethics Act. Your Ethics Liaison is good source of information about how to fill out your SEI.
+
+**13. ON-LINE HELP.** The State Board has on-line resources to answer questions you may have about your SEI. For more information, please visit the State Board website which has education offerings.
+
+**14. DEFINITIONS.** As noted above, certain terms are defined in the Elections and Ethics Act (“immediate family”). These definitions may be helpful to you in completing your SEI. A complete list of all definitions used in the Elections and Ethics Act is available on the State Board’s website, under “Ethics”. Some of the more common ones are attached to this document.
+
+**15. YOUR INTERNET BROWSER.** Consider using Internet Explorer or Chrome to submit your SEI. Some users have had trouble using other browsers. 16. WE ARE HERE TO HELP YOU. In addition to on-line resources and written materials, the State Board has expert staff ready to answer any questions you might have and assist you in completing and filing your SEI. Do not hesitate to contact us at [sei@ncsbee.gov](mailto:sei@ncsbee.gov) (919) 814-3600.
+
+## 2020 Meeting Planning Calendar
+
+| Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | 1 | 2 | 3 | 4 | | | | | | | 1 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| 5 | 6 | 7 | 8 | 9 | 10 | 11 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
+| 12 | 13 | 14 | 15 | 16 | 17 | 18 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 15 | 16 | 17 | 18 | 19 | 20 | 21 |
+| 19 | 20 | 21 | 22 | 23 | 24 | 25 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 22 | 23 | 24 | 25 | 26 | 27 | 28 |
+| 26 | 27 | 28 | 29 | 30 | 31 | | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 29 | 30 | 31 | | | | |
+| | | | | | | | | | | | | | | | | | | | | |
+
+| Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | 1 | 2 | 3 | 4 | | | | | | 1 | 2 | | 1 | 2 | 3 | 4 | 5 | 6 |
+| 5 | 6 | 7 | 8 | 9 | 10 | 11 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+| 12 | 13 | 14 | 15 | 16 | 17 | 18 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+| 19 | 20 | 21 | 22 | 23 | 24 | 25 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
+| 26 | 27 | 28 | 29 | 30 | | | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 28 | 29 | 30 | | | | |
+| | | | | | | | 31 | | | | | | | | | | | | | |
+
+| Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | 1 | 2 | 3 | 4 | | | | | | | 1 | | | 1 | 2 | 3 | 4 | 5 |
+| 5 | 6 | 7 | 8 | 9 | 10 | 11 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+| 12 | 13 | 14 | 15 | 16 | 17 | 18 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
+| 19 | 20 | 21 | 22 | 23 | 24 | 25 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 20 | 21 | 22 | 23 | 24 | 25 | 26 |
+| 26 | 27 | 28 | 29 | 30 | 31 | | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 27 | 28 | 29 | 30 | | | |
+| | | | | | | | 30 | 31 | | | | | | | | | | | | |
+
+| Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | 1 | 2 | 3 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | | | 1 | 2 | 3 | 4 | 5 |
+| 4 | 5 | 6 | 7 | 8 | 9 | 10 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
+| 18 | 19 | 20 | 21 | 22 | 23 | 24 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 20 | 21 | 22 | 23 | 24 | 25 | 26 |
+| 25 | 26 | 27 | 28 | 29 | 30 | 31 | 29 | 30 | | | | | | 27 | 28 | 29 | 30 | | | |
+| | | | | | | | | | | | | | | | | | | | | |
+
+- MFC
+- ASMFC
+- SAFMC
+- MAFMC
+- ASMFC/MAFMC Joint Meeting
+- Southern Regional AC
+- Northern Regional AC
+- Finfish AC
+- Habitat and Water Quality AC
+- Shellfish/Crustacean AC
+- State Holiday
+
+## 2021 Meeting Planning Calendar
+
+| Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | 1 | 2 | | 1 | 2 | 3 | 4 | 5 | 6 | | 1 | 2 | 3 | 4 | 5 | 6 |
+| 3 | 4 | 5 | 6 | 7 | 8 | 9 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+| 10 | 11 | 12 | 13 | 14 | 15 | 16 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+| 17 | 18 | 19 | 20 | 21 | 22 | 23 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
+| 24 | 25 | 26 | 27 | 28 | 29 | 30 | 28 | | | | | | | 28 | 29 | 30 | 31 | | | |
+| 31 | | | | | | | | | | | | | | | | | | | | |
+
+| Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | 1 | 2 | 3 | | | | | | | 1 | | | 1 | 2 | 3 | 4 | 5 |
+| 4 | 5 | 6 | 7 | 8 | 9 | 10 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
+| 18 | 19 | 20 | 21 | 22 | 23 | 24 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 20 | 21 | 22 | 23 | 24 | 25 | 26 |
+| 25 | 26 | 27 | 28 | 29 | 30 | | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 27 | 28 | 29 | 30 | | | |
+| | | | | | | | 30 | 31 | | | | | | | | | | | | |
+
+| Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | 1 | 2 | 3 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | | | | 1 | 2 | 3 | 4 |
+| 4 | 5 | 6 | 7 | 8 | 9 | 10 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+| 11 | 12 | 13 | 14 | 15 | 16 | 17 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 12 | 13 | 14 | 15 | 16 | 17 | 18 |
+| 18 | 19 | 20 | 21 | 22 | 23 | 24 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+| 25 | 26 | 27 | 28 | 29 | 30 | 31 | 29 | 30 | 31 | | | | | 26 | 27 | 28 | 29 | 30 | | |
+
+| Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa | Su | Mo | Tu | We | Th | Fr | Sa |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | 1 | 2 | | 1 | 2 | 3 | 4 | 5 | 6 | | | | 1 | 2 | 3 | 4 |
+| 3 | 4 | 5 | 6 | 7 | 8 | 9 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+| 10 | 11 | 12 | 13 | 14 | 15 | 16 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 12 | 13 | 14 | 15 | 16 | 17 | 18 |
+| 17 | 18 | 19 | 20 | 21 | 22 | 23 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+| 24 | 25 | 26 | 27 | 28 | 29 | 30 | 28 | 29 | 30 | | | | | 26 | 27 | 28 | 29 | 30 | 31 | |
+| 31 | | | | | | | | | | | | | | | | | | | | |
+
+- MFC
+- ASMFC
+- SAFMC
+- MAFMC
+- ASMFC/MAFMC Joint Meeting
+- Southern Regional AC
+- Northern Regional AC
+- Finfish AC
+- Habitat and Water Quality AC
+- Shellfish/Crustacean AC
+- State Holiday
+
+**2020 Committee Assignments for Marine Fisheries Commissioners**
+**08/05/2020** 
+
+**FINFISH ADVISORY COMMITTEE**
+*Statutorily required standing committee comprised of commissioners and advisers that considers matters related to finfish.*
+**Commissioners:** Tom Roller – chair, Sam Romano – vice chair 
+**DMF Staff Lead:** Lee Paramore - [lee.paramore@ncdenr.gov](mailto:lee.paramore@ncdenr.gov) 
+**Meeting Frequency:** Can meet quarterly, depending on assignments from MFC 
+
+**HABITAT AND WATER QUALITY ADVISORY COMMITTEE & COASTAL HABITAT PROTECTION PLAN STEERING COMMITTEE** 
+*Statutorily required standing committee comprised of commissioners and advisers that considers matters concerning habitat and water quality that may affect coastal fisheries resources.* 
+**Commissioners:** Pete Kornegay – chair, Dr. Martin Posey – vice chair 
+**DMF Staff Lead:** Anne Deaton - [anne.deaton@ncdenr.gov](mailto:anne.deaton@ncdenr.gov)
+**Meeting Frequency:** Committee can meet quarterly, depending on assignments from MFC. CHPP Steering Committee can meet a couple of times a year.
+
+**SHELLFISH/CRUSTACEAN ADVISORY COMMITTEE**
+*Statutorily required standing committee comprised of commissioners and advisers that considers matters concerning oysters, clams, scallops and other molluscan shellfish, shrimp and crabs.*
+**Commissioners:** Sam Romano – chair, Pete Kornegay – co-vice chair, Dr. Martin Posey – co-vice chair
+**DMF Staff Lead:** Tina Moore - [tina.moore@ncdenr.gov](mailto:tina.moore@ncdenr.gov)
+**Meeting Frequency:** Can meet quarterly, depending on assignments from MFC 
+
+**CONSERVATION FUND COMMITTEE** 
+*Committee comprised of commissioners that makes recommendations to the MFC for administering funds to be used for marine and estuarine resources management, including education about the importance of conservation.* 
+**Commissioners:** Sam Romano - chair, Tom Hendrickson and Robert McNeill
+**DMF Staff Lead:** Randy Gregory - [randy.gregory@ncdenr.gov](mailto:randy.gregory@ncdenr.gov)
+**Meeting Frequency:** Meets as needed
+
+**LAW ENFORCEMENT AND CIVIL PENALTY COMMITTEE** 
+*Statutorily required committee comprised of commissioners that makes final agency decisions on civil penalty remission requests.* 
+**Commissioners:** Rob Bizzell - chair, Doug Cross and Tom Hendrickson 
+**DMF Staff Lead:** Col. Carter Witten – [carter.witten@ncdenr.gov](mailto:carter.witten@ncdenr.gov)
+**Meeting Frequency:** Meets as needed
+
+**COASTAL RECREATIONAL FISHING LICENSE ADVISORY COMMITTEE**
+*Committee consisting of the three recreational seats and the science seat to provide the DMF advice on the projects and grants issued using Coastal Recreational Fishing License trust funds.*
+**Commissioners:** Pete Kornegay – chair, Rob Bizzell, Tom Roller, and Robert McNeill 
+**DMF Staff Lead:** Jamie Botinovch - [jamie.botinovch@ncdenr.gov](mailto:jamie.botinovch@ncdenr.gov)
+**Meeting Frequency:** Meets as needed
+
+**NOMINATING COMMITTEE**
+*Committee comprised of commissioners that makes recommendations to the MFC on at-large and obligatory nominees for the Mid- and South Atlantic Fishery Management Councils.* 
+**Commissioners:** Robert McNeill – chair, Pete Kornegay, Tom Roller and Mike Blanton 
+**DMF Staff Lead:** Chris Batsavage - [chris.batsavage@ncdenr.gov](mailto:chris.batsavage@ncdenr.gov)
+**Meeting Frequency:** Typically meets once a year
+
+**STANDARD COMMERCIAL FISHING LICENSE ELIGIBILITY BOARD**
+*Statutorily required three-person board consisting of DEQ, DMF and MFC designees who apply eligibility criteria to determine whether an applicant is eligible for a SCFL.* 
+**Commission Designee:** Mike Blanton 
+**DMF Staff Lead:** Marine Patrol Capt. Garland Yopp – [garland.yopp@ncdenr.gov](mailto:garland.yopp@ncdenr.gov)
+**Meeting Frequency:** Meets two to three times a year, could need to meet more often depending on volume of applications 
+
+**N.C. COMMERCIAL FISHING RESOURCE FUND COMMITTEE**
+*Committee comprised of commissioners that the commission has given authority to make funding decisions on projects to develop and support sustainable commercial fishing in the state.*
+**Commissioners:** Doug Cross – chair, Mike Blanton and Sam Romano 
+**DMF Staff Lead:** William Brantley – [william.brantley@ncdenr.gov](mailto:william.brantley@ncdenr.gov)
+**Meeting Frequency:** Meets two to three times a year
+
+**WRC/MFC JOINT COMMITTEE ON DELINEATION OF FISHING WATERS**
+*Committee formed to help integrate the work of the two commissions as they fulfill their statutory responsibilities to jointly determine the boundaries that define North Carolina’s Inland, Coastal and Joint Fishing Waters as the agencies go through a statutorily defined periodic review of existing rules.*
+**MFC Commissioners:** Rob Bizzell, Dr. Martin Posey and Pete Kornegay
+**DMF Staff Lead:** Anne Deaton - [anne.deaton@ncdenr.gov](mailto:anne.deaton@ncdenr.gov)
+**Meeting Frequency:** Meets as needed
+
+**SHELLFISH CULTIVATION LEASE REVIEW COMMITTEE** 
+*Three-member committee formed to hear appeals of decisions of the Secretary regarding shellfish cultivation leases issued under G.S. 113-202.*
+**MFC Commissioners:** Rob Bizzell
+**DMF Staff Lead:** Jacob Boyd – [jacob.boyd@ncdenr.gov](mailto:jacob.boyd@ncdenr.gov)
+**Meeting Frequency:** Meets as needed
+
+**COASTAL HABITAT PROTECTION PLAN STEERING COMMITTEE**
+*The CHPP Steering Committee, which consists of two commissioners from the Marine Fisheries, Coastal Management and Environmental Management commissions reviews and approves the plan, recommendations, and implementation actions.* 
+**MFC Commissioners:** Dr. Martin Posey, Pete Kornegay 
+**DMF Staff Lead:** Anne Deaton – [anne.deaton@ncdenr.gov](mailto:anne.deaton@ncdenr.gov)
+**Meeting Frequency:** Meets as needed
+
+[[IMAGE_55_0|]]
+
+## COMMITTEE REPORTS
+
+[[IMAGE_56_0|NC Marine Fisheries logo]]
+
+ROY COOPER
+*Governor*
+
+MICHAEL S. REGAN
+*Secretary*
+
+STEPHEN W. MURPHEY
+*Director*
+
+June 31, 2020 
+
+**MEMORANDUM**
+
+**TO:** N.C. Marine Fisheries Commission
+
+**FROM:** William Brantley, Grants Program Manager, Administrative and Maintenance Services Section
+
+**SUBJECT:** Commercial Fishing Resource Fund Committee Meeting
+
+**Issue**
+The N.C. Commercial Fishing Resource Funding Committee met jointly with the N.C. Marine Fisheries Commission Commercial Fishing Resource Fund Committee at 2 p.m. on Wednesday, June 3, 2020 by webinar to review and vote on objectives to include in a request for proposals (RFP) document. 
+
+**Findings**
+The joint committees reviewed and approved two RFP’s for publication, a comprehensive RFP and a public relations RFP. 
+
+1. **Comprehensive Request for Proposals** – This request for proposal is for several targeted research projects pertaining to blue catfish ecology and gear development; diamondback terrapin bycatch reduction devices; shrimp trawl bycatch reduction devices; water quality improvements; and the economic impact of the H-2B Visa program on the state’s seafood industry.
+2. **Public Relations Campaign** – This request for proposal is to continue a campaign to educate the public about North Carolina’s sustainable commercial fishing industry and about commercial fishermen participation in research and measures the industry has taken to reduce its environmental impact.
+
+The committees requested an additional statement of work from the current public relations vendor to extend the current project six months. Future RFP objectives were also discussed, and will be voted on at a later date.
+
+The RFP application is published and available on the DMF webpage. Applications are due by 5 p.m. on July 15, 2020.
+
+**Action Needed.** 
+For informational purposes only, **no action is needed at this time.**
+
+For more information, please refer to the Draft CFRF Meeting Minutes in this briefing book. 
+
+**MEMORANDUM**
+
+TO: N.C. Marine Fisheries Commission Commercial Resource Fund Committee and the Funding Committee for the N.C. Commercial Fishing Resource Fund 
+
+FROM: William Brantley, Grants Program Manager
+Division of Marine Fisheries, NCDEQ
+
+DATE: June 8, 2020 
+
+SUBJECT: MFC Commercial Resource Fund Committee and Funding Committee for the N.C. Commercial Fishing Resource Fund Meeting Minutes
+
+The MFC Commercial Resource Fund Committee and the Funding Committee for the N.C. Commercial Fishing Resource Fund met at 2 p.m. on Wednesday, June 3, 2020 through Webex. The following attended: 
+
+MFC Commercial Resource Fund Committee: Chairman Doug Cross, Sam Romano, Mike Blanton 
+
+Funding Committee for the N.C. Commercial Fishing Resource Fund Members: Chairman Ernest Doshier, Glenn Skinner, Steve Weeks, Gilbert Baccus, Britton Shackleford, and Doug Todd 
+
+Absent: N/A
+
+Public Comment: Public comment was received through webpage and US mail 
+
+**APPROVAL OF AGENDA AND MINUTES**
+William Brantley welcomed the Committee members and public to the Joint Meeting of the MFC Commercial Resource Fund Committee and the Funding Committee for the N.C. Commercial Fishing Resource Fund. 
+
+Chairman Ernest Doshier called the meeting to order for the Funding Committee for the N.C. Commercial Fishing Resource Fund and inquired to any conflicts of interest. Chairman Doug Cross called the meeting to order for the MFC Commercial Resource Fund Committee and inquired to any conflicts of interest. Brantley conducted a roll call, all members were present. 
+
+Brantley briefed the committees on points from Session Law 2020-3 and read into the minute’s options for the committees to consider as they seek to approve a funding schedule for projects from the Fund. Brantley also noted that public comment had been received prior to the meeting and copies had been sent to members. The meeting agenda was then reviewed. 
+
+**Mike Blanton made a motion to approve the agenda with a second by Sam Romano. Motion passed unanimously through roll call vote.** 
+
+**Glenn Skinner made a motion to approve the agenda. Gilbert Baccus seconded the motion. Motion passed unanimously through roll call vote.** 
+
+Minutes from the January 14, 2020 MFC Commercial Resource Fund (CRF) Committee meeting and the Funding Committee for the N.C. Commercial Fishing Resource Fund were reviewed. 
+
+**Blanton made a motion to approve the minutes, with a second from Romano. Motion passed unanimously through roll call vote.** 
+
+**Skinner made a motion to approve the minutes with these changes. Baccus seconded the motion. Motion passed unanimously through roll call vote.** 
+
+**CFRF REQUEST FOR PROPOSALS (RFP) REVIEW**
+**Public Relations Campaign**
+Chairman Cross asked for members to discuss a continuation of the CFRF Public Relations (PR) campaign by asking the vendor to provide a revised statement of work. Skinner led the discussion among members and asked for committee member input. Chairman Cross recommended the requested statement of work remain within the boundaries of the current contract’s scope. Brantley stated that DMF would seek approval from the Department of Environmental Quality for contract approval. 
+
+**Motion by Glenn Skinner to request a proposal and statement of work for a 6-month extension of the current contract with 50% of the budget from 2020 under the current guidelines. Seconded by Steve Weeks. Motion passed unanimously through roll call vote.** 
+
+**Motion by Mike Blanton to request a proposal and statement of work for a 6-month extension of the current contract with 50% of the budget from 2020 under the current guidelines. Seconded by Sam Romano. Motion passed unanimously through roll call vote.** 
+
+Chairman Cross then called on Skinner to discuss asking the Division to draft a separate RFP just for the CFRF PR project. Brantley asked for the committees to define terms for funding and renewal processes. Blanton discussed annual funding limits for the project. 
+
+**Motion by Glen Skinner to request a proposal for a public relations campaign and allocate up to $400,000 annually with an option for CFRF committees to renew for one additional year. Seconded by Doug Todd. Motion passed unanimously through roll call vote.** 
+
+**Motion by Sam Romano to request a proposal for a public relations campaign and allocate up to $400,000 annually with an option for CFRF committees to renew for one additional year. Seconded by Mike Blanton. Motion passed unanimously through roll call vote.** 
+
+**Diamondback Terrapin Research**
+Chairman Cross opened discussion regarding diamondback terrapin research, a topic that was also heavily discussed at the May 2020 MFC meeting. This objective would be included in the comprehensive RFP the Division drafted. Romano stated that putting out the RFP would open the door to anyone that is interested in conducting the research, some of which is already underway. 
+
+**Motion by Glenn Skinner to approve the Target Species Diamondback Terrapin objective. Seconded by Steve Weeks. Motion passed unanimously through roll call vote.** 
+
+**Motion by Mike Blanton to approve the Target Species Diamondback Terrapin objective. Seconded by Sam Romano. Motion passed unanimously through roll call vote.** 
+
+**Blue Catfish Invasiveness** 
+Blanton issued concerns regarding blue catfish due to their implications in North Carolina’s waters. Romano asked Blanton to define potential goals from this research. Blanton stated that regulatory issues can hamper targeting the species. Chairman Cross and Blanton discussed reviewing opportunities or novel suggestions that would allow effort to target the catfish. 
+
+**Motion by Mike Blanton to approve the Target Blue Catfish Objective as written. Seconded by Sam Romano. Motion passed unanimously through roll call vote.** 
+
+**Motion by Gilbert Baccus to approve the Target Blue Catfish Objective as written. Seconded by Glenn Skinner. Motion passed with the following members voting Aye: Ernie Doshier, Doug Todd, Glenn Skinner, Steve Weeks, Gilbert Baccus. Britton Shackleford lost connection to the Webex meeting was not able to vote.** 
+
+**Shrimp Bycatch Reduction**
+Chairman Cross stated this was an effort to continuously develop and evaluating bycatch reduction devices. Romano inquired about adding research into this objective to study bottom productivity and trawling. Chairman Cross asked to discuss bottom productivity research later in the meeting for objectives in a future RFP. Brantley stated that the intent of this drafted objective was an effort to capture an approved motion made by Skinner at the January meeting in order to address bycatch efforts by smaller vessels.
+
+**Motion by Sam Romano to approve the Target Species Shrimp and/or Bycatch. Seconded by Mike Blanton. Motion passed unanimously through roll call vote.** 
+
+**Motion by Glenn Skinner to approve the Target Species Shrimp and/or Bycatch. Seconded by Steve Weeks. Motion passed unanimously through roll call vote.** 
+
+**Water Quality** 
+Blanton stated that degraded water quality and blue catfish could have linkages, and may have a connection in the Albemarle Sound. Water quality issues effect all user groups. Chairman Cross suggested adding blue catfish into the list of concerns drafted within the objective. Blanton stated that he had seen water quality degradation in the Albemarle Sound, and would be interested in seeing if there was a nexus to nutrient loading and blue catfish populations. 
+
+**Motion by Mike Blanton to approve the objective target water quality, adding under the list of concerns that blue catfish interact with water quality. Seconded by Sam Romano. Motion passed unanimously through roll call vote.** 
+
+**Motion by Glenn Skinner to approve the objective target water quality, adding under the list of concerns that blue catfish interact with water quality. Seconded by Gilbert Baccus. Motion passed unanimously through roll call vote.** 
+
+**Economics – H2B Visa Program** 
+Chairman Cross discussed this objective to review the State’s H2B visa program for the State’s commercial fishing and seafood industry. Shackleford asked for clarification on this objective, and Cross stated that this study would be a vital stepping stone for discussion on the importance of the H2B Visa program in the future.
+
+**Motion by Mike Blanton to approve Target Economics Objective, to investigate the importance of the H2B Visa program for seasonal foreign workers for the state’s commercial seafood industry. Second by Sam Romano. Motion passed unanimously through roll call vote.** 
+
+**Motion by Steve Weeks to approve Target Economics Objective, to investigate the importance of the H2B Visa program for seasonal foreign workers for the state’s commercial seafood industry. Seconded by Glenn Skinner. Motion passed unanimously through roll call vote.** 
+
+**Future RFP Objectives**
+**Ecological Impacts and Area Towed** 
+Chairman Cross opened the floor for future RFP objectives. He asked members to consider a motion to review a determination of actual acreage towed by shrimp trawlers in NC. Skinner stated that acreage may be difficult to determine and may need to narrow the scope to the open bottom. Romano asked for the bottom impact and scope of the current shrimp trawl fishery to be added in. Weeks discussed previous scientific studies that reviewed ecological impacts of the trawl fishery. Shackleford asked about including joint waters. 
+
+**Motion by Sam Romano to request proposals that determine the actual percentage of open bottom towed by shrimp trawlers in North Carolina and the ecological impacts of shrimp trawling in North Carolina internal waters. Seconded by Mike Blanton. Motion passed unanimously through roll call vote.** 
+
+**Motion by Doug Todd to request proposals that determine the actual percentage of open bottom towed by shrimp trawlers in North Carolina and the ecological impacts of shrimp trawling in North Carolina internal waters. Seconded by Glenn Skinner. Motion passed unanimously through roll call vote.** 
+
+**Bycatch Discards**
+Chairman Cross stated that he wanted discussion to view the impacts of bycatch discards, from both recreational and commercial sectors. Blanton agreed with the need and stated this would be a robust study. Skinner inquired as to what types of discard should be included, and should this be quantitative or ecological. Interest was shown in how discards interact with productivity of the ecosystems. 
+
+**Motion by Sam Romano to request proposals for analysis of dead discards throughout the commercial and recreational fisheries and their impacts on the ecosystem. Seconded by Mike Blanton. Motion passed unanimously through roll call vote.** 
+
+Weeks expressed concern on the verbiage of dead discards only, and this may need to be expanded to include all discards. Brantley stated that the objective in the RFP could be worded to include different types of discards, and the committees would have the opportunity to review this objective for final approval before publishing. 
+
+**Motion by Glenn Skinner to request proposals for analysis of dead discards throughout the commercial and recreational fisheries and their impacts on the ecosystem. Seconded by Britton Shackleford. Motion passed unanimously through roll call vote.** 
+
+**Marine Debris / Crab Pot Cleanup** 
+Blanton asked about issuing a RFP for a crab pot cleanup program and was hoping this program would have been funded through appropriations. Blanton asked that under consideration of the history of the program, how could the committees consider the option for funding. Brantley encouraged the committees to consider the guidelines of their Administrative Procedures for Funding, and issue the request through a RFP. 
+
+**Motion by Mike Blanton to request a proposal for a marine debris/crab pot cleanup. Seconded by Sam Romano. Motion passed unanimously through roll call vote.** 
+
+**Motion by Glenn Skinner to request a proposal for a marine debris/crab pot cleanup. Seconded by Gilbert Baccus. Motion passed unanimously through roll call vote.** 
+
+**Non-Profit Establishment**
+Romano stated concern that the Fund could be taken from the Committees through legislation, and asked for discussion for a request for proposals for the creation of a non-profit that could receive funding from the CFRF. Discussion centered around having a potential non-profit funded that could assist the commercial fishing industry through an emergency fund. Weeks questioned if this would be within the parameters of statute. Brantley suggested that this may not be within the purview of the Administrative Procedures, MOU, and Strategic Plan. Romano stated the efficiencies that this program could provide to the industry in emergent situations. Chairman Cross and Romano suggested that they could seek counsel on moving forward. 
+
+**NC Department of Agriculture Proposal**
+Skinner inquired as to if the committees could request a direct proposal from the N.C. Department of Agriculture as it does with the Division of Marine Fisheries, or if that would need to occur through a RFP. Brantley stated that he could ask for guidance from the Department of Environmental Quality, however if Skinner would like to make the motion, he could follow up after it was voted on. 
+
+**Motion by Glenn Skinner to request a proposal from the N.C. Department of Agriculture to expand the state’s seafood marketing program. Second by Steve Weeks. Motion passed unanimously through roll call vote.** 
+
+**Motion by Sam Romano to request a proposal from the N.C. Department of Agriculture to expand the state’s seafood marketing program. Second by Mike Blanton. Motion passed unanimously through roll call vote.** 
+
+**Other Issues**
+Chairman Cross and Chairman Doshier both stated that they felt additional meetings should be considered. Both Chairmen stated that the virtual meeting could make it easy to meet more often. Brantley stated that the Chairmen could call a meeting at their convenience. 
+
+**Adjournment**
+**Motion by Doug Todd to adjourn. Second by Gilbert Baccus. Motion passed unanimously through roll call vote.** 
+
+**Motion by Mike Blanton to adjourn. Second by Sam Romano. Motion passed unanimously through roll call vote.** 
+
+**Meeting adjourned at 4:52 p.m.**
+
+WB
+
+**N.C. Commercial Fishing Resource Funding Committee**
+**N.C. Marine Fisheries Commission Commercial Fishing Resource Fund Committee**
+**June 3, 2020 Meeting Online Comments**
+
+| Submitted | Name: | City: | State: | Please type your comments in the box below. |
+| --- | --- | --- | --- | --- |
+| 06/01/2020 - 4:31pm | Matt Huth | Wanchese | North Carolina | I am in support of using the Commercial Fishing Resource Fund to support the NC Coastal Federation's Lost Fishing Gear Recovery Project. As a commercial fisherman, I feel this would be an excellent way to administer funds, that benefits habitat, water quality and puts fisherman to work. Hope this project is being considered. |
+| 06/01/2020 - 4:28pm | Micah Daniels | Wanchese | North Carolina | I am in support of using the Commercial Fishing Resource Fund to support the NC Coastal Federation's Lost Fishing Gear Recovery Project. I serve on the federation's advisory committee, and understand that a proposal has been submitted and is under consideration. |
+| 06/01/2020 - 4:25pm | Sara Hallas | Manteo | North Carolina | Would like to request review of the N.C. Coastal Federation's Lost Fishing Gear Recovery Project proposal that was tabled from the January meeting. Thank you for considering this request. |
+| 05/28/2020 - 10:22am | Joel Norris | Sneads Ferry | North Carolina | I thought the closing of New River from trawling might would have been a eye opener for everyone. I’ve been a commercial shrimper for 25 years and I’ve seen what happens when bottom gets closedown in N.C. I remember when 50-75 boats could go up New River and do good fishing now a half a dozen skimmers can’t make a living up there. N.C. doesn’t have the tide that states around us have so sediment covers the bottom and everything dies. There have been studies that prove that this a lot more living sea life in trawled bottom then nontrawled bottom. It’s hard enough to make a living now. If any bottom is taken away from us we will probably be put out of business. Half of my living comes from pamlico sound and the ready off the beaches of Topsail. The places we trawl now is the only bottom the beach we can drag due to rocks. I keep hearing people say go outside 3 miles but there is no bottom off there that we can work. We’ve done everything that has been asked off us to reduce by catch and we done it and it has helped a lot. Now I hear that from us dragging the bottom it is releasing pollutants and that is what is killing fish. That is the dumbest thing I’ve ever heard. This isn’t about bycatch its about some people be greedy and wanting the waters to themselves. Closing any trawling in N.C. will be the worst thing that could be done. So please don’t take our way of making a living away from us because of some greedy people. Cause there is scientific studies proving we aren’t hurting only helping. Thanks for your time |
+| 05/28/2020 - 6:23am | Chris McCaffity | Morehead City | NC | Please use some of our license fees to set up an official website where we can purchase our commercial license without having to rely on snail mail or visiting a crowded office. The website should include a forum to discuss how our Commercial Fishing Resource Funds will be used and vote on different options. We should use modern technology to promote social distancing while giving all license holders a voice and vote. |
+| 05/27/2020 - 12:44pm | James Hargrove | Wilmington | NC | A good use of remaining funds would be to implement shellfish sanctuaries and the addition of shell material in tidal creeks around populated city centers. These creeks are the gateway to our sounds and where pollution is most concentrated before entering our waterways. Removing shellfish from these areas is counterproductive to the states water quality initiative and adding to the existing shell stock in these areas would increase their productivity and filtration capacity, thus sustaining a miraid of commercial fishing activities in the waters surrounding these creeks. |
+
+[[IMAGE_65_0|]]
+
+## DIRECTOR’S REPORTS
+
+ASMFC
+MAFMC
+SAFMC
+HMS
+PROTECTED RESOURCES UPDATE
+RULES SUSPENSION UPDATE
+LANDINGS UPDATE
+
+[[IMAGE_66_0|]]
+
+## ASMFC
+
+ASMFC SUMMER SUMMARY WILL BE ADDED AS SUPPLEMENTAL MATERIAL PRIOR TO THE AUGUST MEETING
+
+[[IMAGE_68_0|]]
+
+## MAFMC
+
+[[IMAGE_69_0|Mid-Atlantic Fishery Management Council logo]]
+
+**PRESS RELEASE**
+
+FOR IMMEDIATE RELEASE
+July 20, 2020
+
+PRESS CONTACT: Mary Sabo
+(302) 518-1143
+
+800 N State St., Suite 201, Dover, DE 19901
+Phone (302) 674-2331 * FAX (302) 674-5399 
+www.mafmc.org PR20_10
+
+**Council Approves Changes to Management of *Illex* Fishery**
+
+Last week the Mid-Atlantic Fishery Management Council approved an amendment that proposes modifications to the permitting and management of the *Illex* squid fishery. These changes are intended to both reduce excess capacity in the fishery and mitigate the rapid use of the quota seen in recent years. The amendment also revises the goals and objectives of the Mackerel, Squid, Butterfish (MSB) Fishery Management Plan (FMP). After considerable discussion and consideration of public comments, the Council selected preferred alternatives and adopted the amendment for Secretarial review and implementation. Below are summaries of the issues and the Council’s preferred alternatives. 
+
+***Illex* Permitting** 
+In June 2017, the Council considered, but did not adopt, revisions to *Illex* squid permits as part of Amendment 20 to the MSB FMP. Since then, effort and landings have substantially increased, and the fishery closed early in 2017-2019 after harvesting the *Illex* squid quota. Given recent fishery performance, the Council initiated this amendment to evaluate whether permitted access to the *Illex* fishery should be modified based on present and historical participation, and/or other considerations. The amendment considered a range of permitting alternatives, including various time periods and thresholds for permit re-qualification and options for a tiered permitting system. 
+
+During last week’s meeting, the Council reviewed analyses and public comments and heard additional public testimony from fishery participants both in favor of, and opposed to, potential changes to *Illex* permitting. The Council ultimately voted to implement a tiered permitting system. The proposed tiers, qualification criteria, and trip limits are described in the table below.
+
+| | **Qualification Criteria** | **Trip Limit** |
+| --- | --- | --- |
+| **Tier 1** | *Either:* <br> - Landed at least 500,000 pounds in one year between 1997 and 2013 <br> OR <br> - Purchased and installed a refrigerated seawater system, plate freezing system, or blast freezer between January 1, 2012 and August 2, 2013 and landed a minimum of 200,000 pounds of Illex in the 2013 fishing year | None |
+| **Tier 2** | - Landed at least 100,000 pounds in one year between 1997 and 2018 | 62,000 pounds |
+| **Tier 3** | - Landed at least 50,000 pounds in one year between 1997 and 2018 | 20,000 pounds |
+
+Under this tiered permitting system, of the 75 current limited access moratorium permits, it is estimated that 35 would qualify for Tier 1, 13 would qualify for Tier 2, 2 would qualify for Tier 3, and 25 would not qualify for any Tier. The Council acknowledged that this action would have positive and negative economic consequences for some fishery participants but ultimately concluded that the selected alternative best balanced the needs of historic participants, present participants, and dependent fishing communities. 
+
+***Other Illex Management Measures*** 
+The Council also voted to require that Tier 1 permit holders obtain a baseline measurement of their vessel fish hold volume. These permit holders would then be subject to a 10% upgrade restriction. This measure is intended to help freeze the footprint of the fishery and avoid additional over-capitalization. The amendment would also clarify that daily catch reporting of *Illex* is required via Vessel Monitoring Systems (VMS) for vessels with limited access *Illex* permits.
+
+***Next Steps and Additional Information*** 
+The Council will submit this amendment to the Secretary of Commerce for approval and implementation. Updates will be posted on the Council’s website at [http://www.mafmc.org/actions/illex-permitting-msb-goals-amendment](http://www.mafmc.org/actions/illex-permitting-msb-goals-amendment). For additional information about this action, contact Jason Didden at [jdidden@mafmc.org](mailto:jdidden@mafmc.org) or (302) 526-5254. 
+
+[[IMAGE_71_0|Mid-Atlantic Fishery Management Council logo]]
+**June 2020 Council Meeting Report**
+
+The following summary highlights actions taken and issues considered at the Mid-Atlantic Fishery Management Council’s meeting June 16-18, 2020. This meeting was conducted by webinar due to the ongoing COVID-19 pandemic. Presentations, briefing materials, and webinar recordings are available at [http://www.mafmc.org/briefing/june-2020](http://www.mafmc.org/briefing/june-2020). 
+
+During this meeting, the Council:
+- Reviewed scoping comments and provided input on draft alternatives for the Black Sea Bass Commercial State Allocation Amendment*
+- Received preliminary results of an updated summer flounder commercial/recreational allocation model*
+- Provided input on the range of alternatives to be considered in the Summer Flounder, Scup, and Black Sea Bass Commercial/Recreational Allocation Amendment*
+- Reviewed a draft outline of topics under consideration through the Recreational Reform Initiative and directed staff to determine which items could be addressed through a framework/addendum and which would require an amendment*
+- Revised the range of alternatives to be considered in the Bluefish Allocation and Rebuilding Amendment and directed the Fishery Management Action Team to incorporate alternatives that would allow states to have a minimum default allocation*
+- Adopted *Illex* squid specifications for 2021, including an Acceptable Biological Catch of 30,000 metric tons and a quota of 28,644 metric tons, and recommended additional measures to help avoid overages
+- Received four presentations on habitat-related updates and activities within the region
+- Reviewed a report on commercial landings of unmanaged species from Maine through North Carolina and commercial landings of the species managed through the Council’s Unmanaged Forage Omnibus Amendment
+- Approved changes to the Overfishing Limit Coefficient of Variation guidance document as recommended by the Scientific and Statistical Committee
+- Received an update on planning for a Research Set-Aside Workshop and discussed the feasibility of holding an in-person workshop in the fall
+- Directed staff to draft a letter expressing concern about the redeployment of observers and at-sea monitors on fishing vessels beginning July 1 during the ongoing COVID-19 pandemic
+- Reviewed several hybrid meeting options and agreed to continue meeting via webinar for the near term to minimize the risk of exposure to COVID-19
+- Reviewed Executive Order 13921 on Promoting American Seafood Competitiveness and Economic Growth and briefly discussed next steps for developing a response
+
+*\* Items denoted with an asterisk (\*) were undertaken during joint meetings with the Atlantic States Marine Fisheries Commission’s Summer Flounder, Scup, and Black Sea Bass Management Board and Bluefish Management Board.*
+
+**Black Sea Bass Commercial State Allocation Amendment**
+The Council met jointly with the Atlantic States Marine Fisheries Commission’s (ASMFC) Summer Flounder, Scup, and Black Sea Bass Management Board (Board) to review scoping comments and draft management alternatives for a joint amendment and addendum which will consider changes to the allocations of the black sea bass commercial quota among states. This action will also consider whether these allocations should be added to the Council’s fishery management plan (FMP) or if they should remain only in the Commission’s FMP. The Council and Board agreed to remove hybrid approaches from further consideration in this action. They also modified the range of sub-options considered under the trigger approach and added an alternative to consider federal in-season closures when the coastwide quota plus an additional buffer is projected to be reached. The appropriate buffer will be further considered during the next joint meeting. They agreed to continue development of all other management approaches presented. The Council and Board will consider approval of a final range of management alternatives and a draft document for public comment during a joint meeting in August, which would allow public hearings to take place in the fall. 
+
+**Summer Flounder Commercial/Recreational Allocation Study Model Update**
+The Council and Board received preliminary results of an updated economic model, developed by Dr. Kurt Schnier (University of California, Merced) and Dr. Rob Hicks (College of William & Mary), to evaluate the allocation of total allowable landings between the commercial and recreational summer flounder fisheries. The model, first developed in 2016, was updated to include revised Marine Recreational Information Program (MRIP) data as well as revised commercial data through 2018. The model evaluates the marginal economic benefits of various allocation levels to the commercial and recreational sectors. A final report on the update is still in development, but preliminary results suggest that changes in allocations between sectors in either direction could potentially be supported due to the large overlap of uncertainty bounds for the marginal willingness to pay for each sector. The model developers found that it is likely, but not statistically significant, that increasing the recreational allocation from the current 40% allocation of landings would increase overall benefits from the fisheries. The Council and Board will consider the final results when developing and analyzing potential summer flounder allocation changes through the Summer Flounder, Scup, and Black Sea Bass Commercial/Recreational Allocation Amendment.
+
+**Summer Flounder, Scup, and Black Sea Bass Commercial/Recreational Allocation Amendment** 
+The Council and Board reviewed recommendations from the Fishery Management Action Team (FMAT) on the range of alternatives to be considered in the Summer Flounder, Scup, and Black Sea Bass Commercial/Recreational Allocation Amendment. This amendment will review and potentially modify the allocations of total allowable catch or landings between the commercial and recreational sectors for summer flounder, scup, and black sea bass. The Council and Board agreed to move forward with the FMAT’s recommendation for a refined range of management alternatives. Approaches retained for further consideration include:
+
+- Updating existing base years with revised data
+- Options for revised base years
+- An alternative that aims to maintain approximately status quo harvest by sector from 2018-2019 under the current ABCs
+- Approaches with different allocations above and below a specified trigger
+- Options for averaging several different allocation options
+- Recreational sector separation between the for-hire and private/shore recreational modes
+- Allocation transfers
+- Options for future allocation changes to be made through a framework or addendum process.
+
+The Council and Board expect to approve a final range of alternatives during a joint meeting in August. Additional information regarding the amendment process and timeline is available at: [https://www.mafmc.org/actions/sfsbsb-allocation-amendment](https://www.mafmc.org/actions/sfsbsb-allocation-amendment). 
+
+The Council and Board agreed that three of the issues removed from this amendment warrant further consideration through a separate process. These items are briefly described below. 
+
+- **"Harvest control rule" based approaches:** This conceptual approach was submitted by six recreational organizations during the scoping process. After reviewing a number of concerns raised by the FMAT, including possible inconsistency with Magnuson-Stevens Act requirements as currently configured, the Council and Board agreed that the concepts in this proposal would be more appropriate to explore through a separate action such as the Recreational Reform Initiative (see the following section).
+- **Recreational accountability alternatives:** The Council and Board agreed that recreational accountability could be addressed within the other management alternatives being considered and that major changes to the system of accountability measures are beyond current scope of this action.
+- **Recreational catch accounting alternatives:** The Council and Board agreed that this is an important issue, especially in terms of reducing uncertainty in the recreational data, but concluded that it falls outside the scope of this allocation action. It was also noted that recreational catch accounting may be more appropriate to pursue for all recreationally managed species, including those under other FMPs, outside of this amendment.
+
+After discussing how to best address these issues, the Council and Board agreed to consider initiating a joint action by the end of 2020 to consider recreational accountability and catch accounting. As described below, some of these topics may be addressed through a management action associated with the Recreational Reform Initiative. 
+
+**Recreational Reform Initiative**
+The Council and Board reviewed a draft outline of topics under consideration through the Recreational Reform Initiative. This initiative addresses summer flounder, scup, black sea bass, and bluefish, all of which are managed jointly by the Council and Commission. After considering the topics currently under consideration in this initiative, as well as items removed from further consideration through the Summer Flounder, Scup, and Black Sea Bass Commercial/Recreational Allocation Amendment (see above), the Council and Board tasked staff with determining which items could be addressed through a joint framework/addendum and which changes would require an amendment. The Council and Board plan to further consider all potential recreational management approaches discussed through this action to date and will consider initiating a joint management action to address priority topics before the end of 2020. 
+
+**Bluefish Allocation and Rebuilding Amendment**
+The Council met jointly with the ASMFC’s Bluefish Management Board to review recommendations from the FMAT on the range of alternatives to be considered in the Bluefish Allocation and Rebuilding Amendment. The Council and Board voted to remove several alternatives which would use the Northeast Fishery Science Center’s recreational discard estimation method for developing allocations. The Council and Board also requested that the FMAT include a new set of alternatives to explore the ability for states to have a minimum default allocation. The following issues will continue to be further developed and will be presented to the Council and Board at a joint meeting in August:
+
+- Fishery management plan goals and objectives
+- Recreational/commercial sector allocations
+- Commercial allocations to the states (including minimum default allocations)
+- Regional commercial quotas
+- Commercial state-to-state quota transfers
+- Recreational/commercial sector transfers
+- Rebuilding plan
+- Sector specific management uncertainty
+- Recreational sector separation between the for-hire and private/shore recreational modes
+- *De minimis* provision to relieve states from having to adopt fishery regulations
+
+The Council and Board expect to approve a final range of alternatives at the joint December meeting, with the goal of submitting the final environmental assessment to NOAA fisheries by September 2021 (which is within the rebuilding timeline). For more detailed information regarding the amendment process and timeline visit https://www.mafmc.org/actions/bluefish-allocation-amendment.
+
+***Illex* 2020-2021 Specifications**
+The Council adopted 2021 *Illex* squid specifications of a 30,000 MT (66.1 million pounds) Acceptable Biological Catch (ABC) and a 28,644 MT (63.1 million pounds) quota (the lower quota accounts for discards). This represents a 15% increase. The Council also adopted a 48-hour *Illex* reporting requirement for dealers after July 15 until a directed fishery closure, and a lowered directed fishery closure threshold of 94%, both to help avoid overages in 2021. The Council also requested NOAA Fisheries use its in-season adjustment authority to raise the 2020 quota in the same manner and will request that dealers voluntarily report 2020 *Illex* landings within 48-hours. Improved projection approaches by NOAA Fisheries will also help avoid overages in 2020 and 2021. 
+
+**Update on Habitat Activities**
+The Council received presentations on two projects occurring within the region that support work related to the Councils habitat and ecosystem priorities as identified in its Strategic Plan. Victoria Kentner (NOAA Fisheries Northeast Fisheries Science Center) and Chris Haak (NOAA Fisheries NEFSC/Monmouth University) presented on the Northeast Regional Habitat Assessment and Emily Farr (NOAA Fisheries) presented on the recently completed Northeast Habitat Climate Vulnerability Assessment. In addition, NOAA Fisheries Habitat Conservation Division Staff (Karen Green and Sue Tuxbury) provided the Council with a bi-annual update on projects of interest occurring in the Northeast region. This update included topics such as the status of offshore wind development projects, oil and gas exploratory surveys, and noted the new Presidential Executive Order as it relates to aquaculture. Finally, the Executive Director of the Responsible Offshore Science Alliance, Lyndie Hice-Dunton, provided the Council with an update on their work to date. 
+
+**Unmanaged Landings Update**
+The Council reviewed a report on commercial landings from Maine through North Carolina of species that are not managed at the state or federal level, as well as commercial landings of the species managed through the Council’s Unmanaged Forage Omnibus Amendment as Ecosystem Components. The goal of this report is to look for signs of developing unmanaged commercial fisheries in the northeast region. The Council agreed that this report did not show any noteworthy increases in unmanaged commercial landings, or landings of Ecosystem Component species, over the past 5 years. They agreed that this report is useful and will continue to receive annual updates of this information. 
+
+**Committee Reports**
+***SSC Report***
+Dr. Paul Rago, SSC chair, provided a summary of the SSC’s meeting on May 12-13, 2020. Dr. Michael Wilberg, University of Maryland, was elected vice-chair of the SSC and replaces Dr. Tom Miller who served as SSC vice-chair for over 10 years. The SSC also reviewed and made suggested revisions of the Overfishing Limit (OFL) Coefficient of Variation (CV) guidance document that was initially approved by the Council in 2019. This document is used by the SSC when considering scientific uncertainty when making ABC recommendations. The changes made to the document help clarify and provide additional rationale when evaluating nine different decision criteria used to determine the appropriate OFL CV. The Council approved the revised OFL CV guidance document with the suggested revisions from the SSC.
+
+***Research Steering Committee***
+The Council reviewed a summary of the Research Steering Committee's meeting on April 28 to discuss redevelopment of the RSA program and a possible workshop later this fall. Following the committee report, the Council discussed the feasibility of holding an in-person workshop this fall given the continued health risks associated with COVID-19. After some discussion, the Council tasked staff to continuing exploring venues and dates that may be able to accommodate an in-person workshop. If an in-person workshop is not feasible this fall due to social distancing protocols, the Council recommended waiting to host the workshop until 2021. A decision on whether to postpone will be made by Council/Committee leadership within the next few months.
+
+**Other Business**
+***Redeployment of Observers and At-Sea Monitors on July 1***
+The Council received an update from the NOAA Fisheries Greater Atlantic Regional Fisheries Office (GARFO) on plans to redeploy observers and at-sea monitors on July 1 for vessels with Greater Atlantic Region fishing permits. Observer requirements have been waived since March 20 due to the COVID-19 pandemic. Council members and members of the public voiced concern that this action will threaten the health of fishing crews as well as observers. It was noted that the risk of transmission is particularly high given the close quarters on most vessels and the transience of observers who travel around the region. The Council tasked staff with writing a letter to communicate these concerns. This letter was sent on June 23 and is available at [https://www.mafmc.org/correspondence](https://www.mafmc.org/correspondence). 
+
+***2020 Meeting Planning***
+The Council discussed how and when to resume in-person meetings and considered several options for holding “hybrid” meetings, which could allow a combination of in-person and remote participation. Given the continued public health risk posed by COVID-19, the Council plans to continue meeting via webinar for the near future.
+
+***Executive Order on Promoting American Seafood Competitiveness and Economic Growth***
+Last month, the President signed Executive Order 13921 on Promoting American Seafood Competitiveness and Economic Growth and tasked the regional fishery management councils with developing prioritized lists of recommended actions to reduce burdens on domestic fishing and to increase production within sustainable fisheries. The Council briefly discussed next steps for generating a list of recommendations. Council staff will be circulating feedback forms for Council members and members of the public within the coming weeks.
+
+**Next Meeting**
+The next meeting of the full Council will be held via webinar on **July 16, 2020**. The purpose of this meeting is to take final action on the Mackerel, Squid, Butterfish FMP Goals/Objectives and *Illex* Permits Amendment. Details will be posted at: [https://www.mafmc.org/council-events/2020/july16-council-meeting-webinar](https://www.mafmc.org/council-events/2020/july16-council-meeting-webinar). A complete list of upcoming meetings can be found at [https://www.mafmc.org/council-events](https://www.mafmc.org/council-events). 
+
+[[IMAGE_76_0|]]
+
+## SAFMC
+
+[[IMAGE_77_0|South Atlantic Fishery Management Council logo]]
+
+## *News Release* 
+
+FOR IMMEDIATE RELEASE
+June 12, 2020 
+
+CONTACT: Kim Iverson 
+Public Information Officer 
+Toll Free: 866/SAFMC-10 or 843/571-4366 
+Kim.Iverson@safmc.net 
+
+**Council Addresses Broad Range of Federal Fisheries Issues During Meeting Week**
+*Best fishing practices; new stock assessments for King Mackerel, Red Porgy, and Greater Amberjack,* 
+*Special Management Zones; and COVID-19 impacts top the agenda* 
+
+Members of the South Atlantic Fishery Management Council held their quarterly June meeting this week via webinar due to COVID-19 and public health concerns. The meeting, originally scheduled to take place in Key West, Florida, began with a discussion of best fishing practices, emphasizing the Council’s outreach campaign and new resources for fishermen now available from the Council’s website. Information includes proper handling techniques, identifying signs of barotrauma, how-to videos demonstrating effectiveness of descending devices, and an online tutorial. Links to state-level resources for the region are also available through the new webpage. Council members have consistently supported the use of best practices to help improve survival of released fish. In September 2019, the Council approved Snapper Grouper Regulatory Amendment 29 requiring descending devices be onboard and readily available when fishing for snapper grouper species and other measures promoting best practices. NOAA Fisheries announced the Final Rule for Regulatory Amendment 29 earlier today, implementing the best fishing practice measures effective July 15, 2020. 
+
+NOAA Fisheries recently announced the opening of the Red Snapper season for both recreational and commercial fishermen, with a recreational season scheduled for the weekend of July 10, 11, 12, and the following Friday, July 17, 2020. “We encourage fishermen to take advantage of instructional videos and other best fishing practices information available online prior to the opening of this year’s Red Snapper season,” explained Council Chair, Jessica McCawley. During the Council meeting state agency representatives provided updates on sampling efforts planned for the recreational opening, including carcass collections and dockside sampling, dependent upon restrictions in place for COVID-19. 
+
+**COVID-19 Impacts** 
+The Council discussed the impacts of COVID-19 on fisheries and fishing communities after receiving input from its advisory panels, updates from state agencies, and public comment, most noting the detrimental effects on fishing-related businesses including for-hire and commercial fishermen. There was much discussion about the economic importance of the Red Snapper fishery and the benefit of additional fishing days. However, under the mandates of Magnuson-Stevens Act, the Council must adhere to the current annual catch limit and cannot simply add additional fishing days. The Council agreed to send a letter to the Secretary of Commerce addressing Red Snapper concerns and the effects of the pandemic, as well as expressing their willingness to work with NOAA Fisheries to expand access to the fishery. 
+
+In an effort to help mitigate some of the negative impacts of COVID-19, the Council will request that NOAA Fisheries take emergency action to increase the federal recreational bag limit for Atlantic King Mackerel to 4 fish per person/day off east Florida through the Mid-Atlantic and request emergency action to increase the 
+
+*(Continued)*
+
+federal commercial trip limit for Vermilion Snapper to 1,500 pounds gutted weight. If approved, the emergency actions would be effective for 180 days and could be extended for an additional 185 days. It is anticipated the new regulations could be implemented within the next three months. The Council will consider requesting emergency action during its September meeting to allow the carry-over of unused annual catch limits from 2020 into 2021 after reviewing additional analyses. 
+
+**Stock Assessments** 
+There was good news regarding Atlantic King Mackerel and Greater Amberjack stocks following recent assessments that found neither stock overfished nor undergoing overfishing. Council members received the results of recent stock assessments from NOAA Fisheries Southeast Fisheries Science Center and recommendations from its Scientific and Statistical Committee during this week’s meeting. Harvest has remained relatively consistent and both the King Mackerel and Greater Amberjack stocks have benefited from strong recruitment years (lots of fish born within the year). The Council will develop amendments to adjust catch levels and allocations as needed based on the recent assessments and recommendations. 
+
+The Red Porgy stock continues to face challenges. Despite a rebuilding plan being in place for almost 3 decades, the stock assessment finds Red Porgy remains overfished and is undergoing overfishing, with chronically low recruitment. The Council will begin work on an amendment to end overfishing and address rebuilding the stock. 
+
+**Special Management Zones** 
+The Council approved the designation of specified artificial reefs in federal waters off the North Carolina and South Carolina coasts as Special Management Zones, addressing concerns from members of the Council’s Law Enforcement Advisory Panel regarding how the circular shape of areas complicates enforcement. At the states’ request, the Council approved Snapper Grouper Regulatory Amendment 34 that would designate 30 artificial reef sites off of North Carolina and 4 sites off of South Carolina as Special Management Zones. The designations would limit fishing gear types when targeting snapper grouper species and restrict harvest by spear to recreational bag limits for the SMZs in North Carolina. In South Carolina, the harvest of snapper grouper species in the designated SMZs would be limited to recreational bag limits. The amendment must be approved by the Secretary of Commerce before implementation. 
+
+**Other Business** 
+Council members continued to develop management actions for Dolphin and Wahoo through draft Amendment 10 to the Dolphin Wahoo Fishery Management Plan. The Council received fishing level recommendations for both species from its Scientific and Statistical Committee using recalibrated recreational fishing effort estimates from NOAA Fisheries’ Marine Recreational Information Program. The new catch levels will be included in the amendment as the Council considers management actions that include modifications to accountability measures, allocations, and current vessel limits for Dolphin. The Council received numerous public comments from recreational fishermen and for-hire captains in South Florida and the Florida Keys expressing concerns about the decline of the Dolphin fishery in their area. 
+
+Additional information about this week’s meeting, including a Story Map highlighting actions, Committee Reports, and Summary Motions are available from the Council’s website at: https://safmc.net/june-2020-council-meeting-details/. The next meeting of the Council is scheduled for September 14-18, 2020 in Charleston, South Carolina. 
+
+**The South Atlantic Fishery Management Council, one of eight regional councils, conserves and manages fish stocks from three to 200 miles offshore of North Carolina, South Carolina, Georgia and east Florida.**
+
+**South Atlantic Fishery Management Council**
+**SUMMARY OF APPROVED COUNCIL MOTIONS**
+June 8-11, 2020 
+
+This is a summary of the motions approved by the Council. Motions addressing actions and alternatives for FMP amendments are followed by text showing the result of the approved motion. Complete details on motions and other committee recommendations are provided in the Committee Reports available on the SAFMC website. 
+
+**Information & Education Committee** 
+
+MOTION 1: CHANGE THE NAME OF THE INFORMATION & EDUCATION COMMITTEE TO THE OUTREACH & COMMUNICATIONS COMMITTEE.
+APPROVED BY COUNCIL.
+
+MOTION 2: CHANGE THE NAME OF THE INFORMATION AND EDUCATION ADVISORY PANELO TO THE OUTREACH AND COMMUNICATIOS ADVISORY PANEL.
+APPROVED BY COUNCIL
+
+**Dolphin Wahoo Committee** 
+
+MOTION 1: APPROVE THE IPT’S SUGGESTED EDITS TO ACTION 1 IN AMENDMENT 10. 
+Action 1. Revise total annual catch limit for dolphin to reflect the updated acceptable biological catch level. 
+Alternative 1 (No Action). The total annual catch limit for dolphin is set equal to the current acceptable biological catch level. The current total annual catch limit for dolphin is 15,344,846 pounds whole weight. 
+Alternative 2. The total annual catch limit for dolphin is equal to the updated acceptable biological catch level.
+Alternative 3. The total annual catch limit for dolphin is equal to 95% of the updated acceptable biological catch level.
+Alternative 4. The total annual catch limit for dolphin is equal to 90% of the updated acceptable biological catch level.
+APPROVED BY COUNCIL
+
+MOTION 2: APPROVE THE IPT’S SUGGESTED EDITS TO ACTION 2 IN AMENDMENT 10. 
+Action 2. Revise total annual catch limit for wahoo to reflect the updated acceptable biological catch level. 
+Alternative 1 (No Action). The total annual catch limit for wahoo is set equal to the acceptable biological catch level. The current total annual catch limit for wahoo is 1,794,960 pounds whole weight. 
+Alternative 2. The total annual catch limit for wahoo is equal to the updated acceptable biological catch level.
+Alternative 3. The total annual catch limit for wahoo is equal to 95% of the updated acceptable biological catch level.
+Alternative 4. The total annual catch limit for wahoo is equal to 90% of the updated acceptable biological catch level.
+APPROVED BY COUNCIL
+
+MOTION 3: APPROVE ACTION 3 AND THE PROPOSED RANGE OF ALTERNATIVES FOR CONSIDERATION IN AMENDMENT 10 WITH ASSOCIATED DIRECTION TO STAFF.
+Action 3. Revise sector allocations and sector annual catch limits for dolphin. 
+Alternative 1 (No Action). The recreational sector allocation for dolphin is 90% of the total annual catch limit. The commercial sector allocation for dolphin is 10% of the total annual catch limit. This is based on the total catch between 2008 and 2012 as reported in 2014 and does not incorporate recreational landings from Monroe County, Florida. 
+Alternative 2. Allocate 93.95% of the total annual catch limit for dolphin to the recreational sector. Allocate 6.05% of the total annual catch limit for dolphin to the commercial sector. This is based on the total catch between 2008 and 2012 as reported in 2019 and does incorporate recreational landings from Monroe County, Florida. 
+Alternative 6. Allocate 93.75% of the total annual catch limit for dolphin to the recreational sector. Allocate 6.25% of the total annual catch limit for dolphin to the commercial sector. This is based on maintaining the current commercial annual catch limit of 1,534,485 pounds whole weight and allocating the remaining total annual catch limit to the recreational sector. 
+APPROVED BY COUNCIL
+
+MOTION 4: APPROVE ACTION 4 AND THE PROPOSED RANGE OF ALTERNATIVES FOR CONSIDERATION IN AMENDMENT 10 WITH INCLUSION OF DIRECTION TO STAFF.
+Action 4. Revise sector allocations and sector annual catch limits for wahoo. 
+Alternative 1 (No Action). The recreational sector allocation for wahoo is 96.07% of the total annual catch limit. The commercial sector allocation for wahoo is 3.93% of the total annual catch limit. This is based on the following formula for each sector using landings data as reported in 2013 and does not incorporate recreational landings from Monroe County, Florida. 
+Sector apportionment = (50% * average of long-term catch (pounds whole weight)) + (50% * average of recent catch (pounds whole weight)). 
+Long-term catch = 1999 through 2008; Recent catch = 2006 through 2008 
+Alternative 2. Allocate 97.45% of the total annual catch limit for wahoo to the recreational sector. Allocate 2.55% of the total annual catch limit for wahoo to the commercial sector. This is based on the following formula for each sector using landings data as reported in 2019 and does incorporate recreational landings from Monroe County, Florida. 
+Sector apportionment = (50% * average of long-term catch (pounds whole weight)) + (50% * average of recent catch (pounds whole weight)). 
+Long-term catch = 1999 through 2008; Recent catch = 2006 through 2008 
+Alternative 5. Allocate 97.56% of the total annual catch limit for wahoo to the recreational sector. Allocate 2.44% of the total annual catch limit for wahoo to the commercial sector. This is based on maintaining the current commercial annual catch limit of 70,542 pounds whole weight and allocating the remaining total annual catch limit to the recreational sector.
+APPROVED BY COUNCIL
+
+MOTION 5: REMOVE ACTIONS 5, 6, AND 7 FROM AMENDMENT 10.
+APPROVED BY COUNCIL
+
+MOTION 6: REMOVE ALTERNATIVES 2 THROUGH 5 IN PROPOSED ACTION 8 AND ADD AN ALTERNATIVE THAT WOULD REFLECT THE CURRENT AM BUT REMOVE THE POST SEASON ACCOUNTABILITY MEASURE THAT INCLUDES A PAYBACK. 
+Proposed Action 8. Revise the commercial accountability measures for dolphin. 
+Alternative 1 (No Action). The current commercial accountability measure includes an in-season closure to take place if the commercial annual catch limit is met or projected to be met. If the commercial annual catch limit is exceeded, it will be reduced by the amount of the commercial overage in the following fishing year only if the species is overfished and the total annual catch limit is exceeded.
+APPROVED BY COUNCIL
+
+MOTION 7: SPLIT ACTION 9 INTO TWO ACTIONS, ONE FOR THE AM TRIGGER AND THE OTHER FOR THE POST-SEASON AM. ALTERNATIVE 4 AND ITS SUB-ALTERNATIVES BECOME THE ACTION FOR THE TRIGGER. ALTERNTIVE 5 BECOMES THE ACTION FOR THE POST-SEASON AM, AND TO ALTERNATIVE 5, ADD SUB-ALTERNATIVES THAT WOULD REDUCE THE RECREATIONAL BAG LIMIT AND REDUCE THE RECREATIONAL VESSEL LIMIT.
+Action 9. Revise the recreational accountability measures for dolphin . 
+Alternative 1 (No action). If recreational landings exceed the recreational annual catch limit, then during the following fishing year, recreational landings will be monitored for persistence in increased landings. If the recreational annual catch limit is exceeded, it will be reduced by the amount of the recreational overage in the following fishing year and the recreational season will be reduced by the amount necessary to ensure that recreational landings do not exceed the reduced annual catch limit only if the species is overfished and the total annual catch limit is exceeded. However, the recreational annual catch limit and length of the recreational season will not be reduced if the Regional Administrator determines, using the best available science, that it is not necessary.
+Alternative 4. Only implement post season accountability measures if:
+Sub-alternative 4a. The recreational annual catch limits are constant and the 3-year geometric mean of landings exceed the recreational sector annual catch limit. If in any year the recreational sector annual catch limit is changed, the moving multi-year geometric mean of landings will start over. 
+Sub-alternative 4b. The recreational annual catch limits are constant and the summed total of the most recent past three years of recreational landings exceeds the sum of the past three years recreational sector annual catch limits.
+Sub-alternative 4c. The recreational annual catch limits are constant and recreational landings exceed the recreational sector annual catch limit in two of the previous three fishing years or exceeds the total acceptable biological catch in any one year.
+Sub-alternative 4d. The total (commercial and recreational combined) annual catch limit is exceeded.
+Alternative 5. If the post-season accountability measure is triggered, reduce the length of the following recreational fishing season by the amount necessary to prevent the annual catch limit from being exceeded in the following year.
+APPROVED BY COUNCIL
+
+MOTION 8: SPLIT ACTION 10 INTO TWO ACTIONS, ONE FOR THE AM TRIGGER AND THE OTHER FOR THE POST-SEASON AM. ALTERNATIVE 2 AND ITS SUB-ALTERNATIVES BECOME THE ACTION FOR THE TRIGGER. ALTERNATIVES 3 AND 4 BECOME THE ACTION FOR THE POST-SEASON AM. ADD TO THE NEW ACTION ALTERNATIVES THAT WOULD ESTABLISH A VESSEL LIMIT AND A REDUCED BAG LIMIT.
+Alternatives that would establish a vessel limit and a reduced bag limit.
+Action 10. Revise the recreational accountability measures for wahoo. 
+Alternative 1 (No action). If recreational landings exceed the recreational annual catch limit, then during the following fishing year recreational landings will be monitored for persistence in increased landings. If the recreational annual catch limit is exceeded, it will be reduced by the amount of the recreational overage in the following fishing only if the species is overfished and the total annual catch limit is exceeded. However, the recreational annual catch limit will not be reduced if the Regional Administrator determines, using the best available science, that it is not necessary. 
+Alternative 2. Only specify post-season accountability measures if:
+Sub-alternative 2a. The recreational annual catch limits are constant and the 3-year geometric mean of landings exceed the recreational sector annual catch limit. If in any year the recreational sector annual catch limit is changed, the moving multi-year geometric mean of landings will start over. 
+Sub-alternative 2b. The recreational annual catch limits are constant and the summed total of the most recent past three years of recreational landings exceeds the sum of the past three years recreational sector annual catch limits.
+Sub-alternative 2c. The recreational annual catch limits are constant and recreational landings exceed the recreational sector annual catch limit in two of the previous three fishing years or exceeds the total acceptable biological catch in any one year.
+Sub-alternative 2d. The total (commercial and recreational combined) annual catch limit is exceeded.
+Alternative 3. If the post-season accountability measure is triggered, reduce the recreational sector annual catch limit by the amount of the overage in the following fishing season. 
+Alternative 4. If the post-season accountability measure is triggered, reduce the length of the following recreational fishing season by the amount necessary to prevent the annual catch limit from being exceeded in the following year.
+APPROVED BY COUNCIL
+
+MOTION 9: APPROVE THE IPT’S SUGGESTED EDITS TO ACTION 13 IN AMENDMENT 10. 
+Action 13. Reduce the recreational vessel limit for dolphin. 
+Alternative 1 (No Action). The recreational daily bag limit is 10 dolphin per person, not to exceed 60 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+Alternative 2. The recreational daily bag limit is 10 dolphin per person, not to exceed: 
+Sub-alternative 2a. 40 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+Sub-alternative 2b. 42 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+Sub-alternative 2c. 48 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+Sub-alternative 2d. 54 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+Alternative 3. In Florida only, the recreational daily bag limit is 10 dolphin per person, not to exceed: 
+Sub-alternative 3a. 40 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+Sub-alternative 3b. 42 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+Sub-alternative 3c. 48 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+Sub-alternative 3d. 54 dolphin per vessel, whichever is less, except on board a headboat where the limit is 10 dolphin per paying passenger. 
+APPROVED BY COUNCIL
+
+MOTION 10: ADD AN ALTERNATIVE THAT WOULD REMOVE PELAGIC LONGLINE GEAR AS AN ALLOWABLE GEAR IN THE DOLPHIN WAHOO FISHERY UNLESS YOU HOLD A HMS LIMITED ENTRY PERMIT. 
+APPROVED BY COUNCIL
+
+MOTION 11: MOVE PROPOSED ACTION 14 AND PROPOSED ACTION 15, ALONG WITH THE NEW ALTERANTIVE TO A NEW AMENDMENT THAT WILL BE DISCUSSED IN MARCH 2021. 
+Proposed Action 14. Establish a permit endorsement requirement for dolphin and wahoo when using pelagic longline gear. 
+Alternative 1 (No Action). Currently there is no permit endorsement required to use pelagic longline gear in the Dolphin Wahoo fishery. Do not establish permit endorsement requirement for vessels issued an Atlantic Dolphin/Wahoo Commercial Permit to use pelagic longline gear.
+Alternative 2. In order to use pelagic longline gear onboard a vessel, require a longline endorsement to the Atlantic Dolphin/Wahoo Commercial Permit. 
+Proposed Action 15. Modify gear, bait, and training requirements in the commercial longline fishery for dolphin and wahoo to align with Highly Migratory Species requirements. 
+Sub-action 15A: Protected species handling and release training requirements for dolphin and wahoo when using pelagic longline gear. 
+Alternative 1A (No Action). The owner or operator of a vessel for which an Atlantic Dolphin/Wahoo Commercial Permit has been issued and that has on board a pelagic longline must post inside the wheelhouse the sea turtle handling and release guidelines. Such owner or operator must also comply with the sea turtle bycatch mitigation measures, including gear requirements and sea turtle handling requirements, as specified in 50 C.F.R. §635.21(c)(5)(i) and (ii). These requirements are a reference to the Highly Migratory Species regulations for pelagic longlines. Currently there are no protected species handling and release training requirements to use pelagic longline gear in the Dolphin Wahoo fishery. Do not establish protected species handling and release training requirements for vessels issued an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement to use pelagic longline gear. 
+Alternative 2A. In order to use pelagic longline gear on board a vessel, require a valid Safe Handling, Release, and Identification Workshop certificate on board for both the owner and operator of a vessel issued an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement.
+Alternative 3A. In order to use pelagic longline gear on board a vessel, require a valid Safe Handling, Release, and Identification Workshop certificate be supplied when renewing an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement. 
+Sub-action 15B: Rigging and deployment requirements for dolphin and wahoo when using pelagic longline gear. 
+Alternative 1B (No Action). Currently there are no rigging or deployment requirements to use pelagic longline gear in the Dolphin Wahoo fishery. Do not establish requirements for rigging or deployment of pelagic longline gear on board vessels issued an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement. 
+Alternative 2B. If the total length of any gangion plus the length of any floatline is less than 100 meters, then the length of all gangions must be at least 10 percent longer than the length of the floatlines on board vessels issued an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement.
+Alternative 3B. Cannot deploy a pelagic longline that exceeds 20 nautical miles in length in the Mid-Atlantic Bight as defined at 50 CFR §635.2 on board vessels issued an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement.
+Sub-action 15C: Hook requirements for dolphin and wahoo when using pelagic longline gear.
+Alternative 1C (No Action). Currently there are no hook requirements to use pelagic longline gear in the Dolphin Wahoo fishery. Do not establish hook requirements on board vessels with an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement when using pelagic longline gear.
+Alternative 2C. Vessels with an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement must possess and/or use only corrodible (i.e., non-stainless steel) circle hooks when using pelagic longline gear. 
+Alternative 3C. Vessels with an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement must possess and/or use only 18/0 or larger corrodible (i.e., non-stainless steel) circle hooks with an offset not to exceed 10 degrees, and/or 16/0 or larger non-offset corrodible circle hooks when using pelagic longline gear. 
+Alternative 4C. Vessels with an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement must possess and/or use only 12/0 or larger non-offset circle hooks when using pelagic longline gear. 
+Alternative 5C. Vessels with an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement must possess and/or use only 14/0 or larger non-offset circle hooks when using pelagic longline gear. 
+Alternative 6C. Vessels with an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement must possess and/or use only 16/0 or larger non-offset circle hooks when using pelagic longline gear. 
+Sub-action 15D: Bait requirements for dolphin and wahoo when using pelagic longline gear.
+Alternative 1D (No Action). Currently there are no bait requirements to use pelagic longline gear in the Dolphin Wahoo fishery. Do not establish bait requirements on board vessels with an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement when using pelagic longline gear.
+Alternative 2D. Require the use of whole finfish and/or squid as bait on board vessels that are issued an Atlantic Dolphin/Wahoo Commercial Permit and/or endorsement when using pelagic longline gear.
+APPROVED BY COUNCIL
+
+*Motions 12-14 apply to Amendment 12: Adding Bullet and Frigate Mackerel to the FMP as Ecosystem Component Species.* 
+
+MOTION 12: APPROVE THE IPT’S SUGGESTED PURPOSE AND NEED STATEMENT. 
+The purpose and need is to add bullet mackerel and frigate mackerel to the Fishery Management Plan for the Dolphin Wahoo Fishery of the Atlantic as ecosystem component (EC) species to acknowledge their ecological role as forage fish.
+APPROVED BY COUNCIL
+
+MOTION 13: APPROVE THE IPT’S SUGGESTED EDITS TO THE OPTIONS.
+Option (No Action). There are no ecosystem component species in the Dolphin Wahoo Fishery Management Plan of the Atlantic. 
+Preferred Option 2. Add bullet mackerel and frigate mackerel to the Dolphin Wahoo Fishery Management Plan of the Atlantic and designate the two mackerel species as ecosystem component species.
+APPROVED BY COUNCIL
+
+MOTION 14: APPROVE DOLPHIN WAHOO AMENDMENT 12 FOR PUBLIC HEARINGS TO BE HELD AT THE SEPTEMBER MEETING WITH COMMENTS BROUGHT BACK AT THE SEPTEMBER COUNCIL MEETING WITH THE INTENT OF A VOTE ON FORMAL APPROVAL OF THE AMENDMENT.
+APPROVED BY COUNCIL
+
+MOTION 15: ADD TWO MEMBERS TO THE DOLPHIN WAHOO AP THAT ARE REPRESENTATIVES OF THE MID-ATLANTIC AND THAT WE WOULD ENCOURAGE A COMMERCIAL AND RECREATIONAL MEMBER.
+APPROVED BY COUNCIL
+
+MOTION 16: APPROVE THE FOLLOWING TIMING AND TASKS:
+- Continue work on Amendment 10 for review at the September 2020 meeting.
+- Continue work on Amendment 12 for review at the September 2020 meeting with the intent of holding public hearings and potentially voting on formal approval of the amendment.
+- Work with Mid-Atlantic Council staff to identify two new Dolphin Wahoo AP members from the Mid-Atlantic region.
+- Work on developing a new Dolphin Wahoo Amendment that focuses on proposed Actions 14 and 15 in Amendment 10.
+APPROVED BY COUNCIL
+
+**SNAPPER GROUPER COMMITTEE** 
+
+MOTION 1: DIRECT STAFF TO BRING BACK AN OPTIONS PAPER TO THE SEPTEMBER MEETING INCLUDING SECTOR ALLOCATIONS FOR GREATER AMBERJACK AND CATCH LEVEL ADJUSTMENTS BASED ON SSC RECOMMENDATIONS AND THE LATEST ASSESSMENT. 
+APPROVED BY COUNCIL
+
+MOTION 2: ACCEPT THE IPT’S SUGGESTED EDITS TO ACTION 2 IN REGULATORY AMENDMENT 34. 
+Alternative 1 (No Action). There are currently 28 artificial reef sites in the exclusive economic zone off South Carolina designated as special management zones. The allowable gear for the snapper grouper fishery management plan for the commercial and recreational sectors are handline, rod and reel, spear (excluding powerheads), bandit gear, pot, and longline (the last two are commercial sector only). Do not designate additional artificial reef sites as special management zones or implement new restrictions on fishing gear used to harvest snapper grouper species from artificial reef sites in the exclusive economic zone off South Carolina. 
+Preferred Alternative 2. Designate four additional artificial reef sites in the exclusive economic zone off South Carolina as special management zones. Within the special management zones, harvest of snapper grouper species would only be allowed with handline, rod and reel, and spear (excluding powerheads). All harvest would be limited to the applicable recreational bag limit.
+Alternative 3. Designate four additional artificial reef sites in the exclusive economic zone off South Carolina as special management zones. Within the special management zones, harvest of snapper grouper species would only be allowed with handline, rod and reel, and spear (excluding powerheads). All harvest by spear would be limited to the applicable recreational bag limit.
+APPROVED BY COUNCIL
+
+MOTION 3: APPROVE SNAPPER GROUPER REGULATORY AMENDMENT 34 FOR FORMAL SECRETARIAL REVIEW AND DEEM THE CODIFIED TEXT AS NECESSARY AND APPROPRIATE. GIVE STAFF EDITORIAL LICENSE TO MAKE ANY NECESSARY EDITORIAL CHANGES TO THE DOCUMENT/CODIFIED TEXT AND GIVE THE COUNCIL CHAIR AUTHORITY TO APPROVE THE REVISIONS AND RE-DEEM THE CODIFIED TEXT.
+APPROVED BY COUNCIL 
+
+MOTION 4: DIRECT STAFF TO BEGIN WORK ON A PLAN AMENDMENT TO END OVERFISHING, TO ADDRESS REBUILDING AND ALLOCATIONS, ETC. FOR RED PORGY FOR REVIEW AT THE SEPTEMBER 2020 MEETING.
+APPROVED BY COUNCIL
+
+MOTION 5: DIRECT STAFF TO DO THE FOLLOWING:
+- Initiate a plan amendment to address modifications to management of Greater Amberjack in response to the results of the new assessment. Prepare an options paper for the September meeting.
+- Initiate development of a plan amendment to address overfishing, rebuilding of Red Porgy and other management modifications. Bring an options paper to the Council in September.
+APPROVED BY COUNCIL
+
+**SEDAR COMMITTEE**
+
+MOTION 1: CONVENE A WORKING GROUP INCLUDING SSC REPRESENTATIVES TO MEET VIA WEBINAR OR IN-PERSON, AS NEEDED TO REVIEW MODEL DEVELOPMENT RELATIVE TO TERMS OF REFERENCE 1 THROUGH 4. 
+APPROVED BY COUNCIL
+
+MOTION 2: APPROVE RED SNAPPER SEDAR 73 TERMS OF REFERENCE AS MODIFIED.
+APPROVED BY COUNCIL
+
+MOTION 3: APPROVE THE SOUTH ATLANTIC SELECTIVITY WORKGROUP STATEMENT OF WORK. 
+APPROVED BY COUNCIL 
+
+MOTION 4: APPROVE BLACK SEA BASS STOCK ASSESSMENT TERMS OF REFERENCE AS MODIFIED.
+MOTION 5: APPROVE SOUTH ATLANTIC SPANISH MACKEREL TERMS OF REFERENCE AS MODIFIED.
+APPROVED BY COUNCIL
+
+MOTION 6: DIRECT STAFF TO COMPLETE THE FOLLOWING TASK:
+- Work with FWRI to convene a Selectivity Workgroup in the fall so that the report will be available by November 16, 2020 for SEDAR 73 and other upcoming South Atlantic stock assessments.
+APPROVED BY COUNCIL
+
+**Mackerel Cobia Committee** 
+
+MOTION 1: DIRECT STAFF TO BRING BACK AN OPTIONS PAPER TO THE SEPTEMBER MEETING INCLUDING CONSIDERATION OF SECTOR ALLOCATIONS AND CATCH LEVEL ADJUSTMENTS BASED ON SSC RECOMMENDATIONS AND THE RECENT STOCK ASSESSMENT UPDATE.
+APPROVED BY COUNCIL
+
+MOTION 2: ADOPT THE FOLLOWING TIMING AND TASKS:
+- Prepare an options paper considering sector allocations and catch level adjustments based on SSC recommendations and the updated SEDAR 38 assessment for review at the September 2020 Council meeting.
+APPROVED BY COUNCIL
+
+**Executive Committee** 
+
+MOTION 1: APPROVE THE INTERNAL RESEARCH FUNDING AND PROJECT SELECTION PROCESS AS MODIFIED.
+APPROVED BY COUNCIL
+
+MOTION 2: APPROVE THE STAFF PERFORMANCE EVALAUTION PROCESS AS MODIFIED.
+APPROVED BY COUNCIL
+
+MOTION 3: MOVE TO APPROVE THE FOLLOWING TIMING and TASKS: 
+- Plan an Executive Committee meeting, via webinar prior to the September Council Meeting, to discuss Council FMP priorities and workload management.
+APPROVED BY COUNCIL
+
+**SSC Selection Committee** 
+
+MOTION 1: REAPPOINT ALL 6 SSC MEMBERS WHO HAVE REAPPLIED FOR THE SSC (Scott Crosson, Eric Johnson, Anne Lange, Amy Schueller, Tracy Yandle, and Fred Scharf). 
+APPROVED BY COUNCIL
+
+MOTION 2: APPOINT DR. JIE CAO TO THE SSC.
+APPROVED BY COUNCIL 
+
+MOTION 3: REAPPOINT ALL 6 MEMBERS WHO HAVE REAPPLIED FOR THE SEP (Scott Crosson, Chris Dumas, Jason Murray, Kurt Schnier, John Whitehead, and Tracy Yandle). 
+APPROVED BY COUNCIL
+
+MOTION 4: APPOINT ANDREW ROPICKI TO THE SEP.
+APPROVED BY COUNCIL
+
+MOTION 5: APPOINT DAVID DIETZ AND ADAM STEMLE TO THE SEP.
+APPROVED BY COUNCIL
+
+MOTION 6: APPOINT DR. WALTER BUBLEY TO THE DESIGNATED SC SEAT ON THE SSC.
+APPROVED BY COUNCIL
+
+MOTION 7: ADOPT THE FOLLOWING TIMING AND TASK(S): 
+- Draft and send letters to all the SSC and SEP members that were reappointed for another term.
+- Draft and send a letter to Dr. Jie Cao announcing his appoint to the SSC for a 3-year term.
+- Draft and send letters to David Dietz, Adam Stemle, and Andrew Ropicki announcing their appointments to the SEP for 5-year terms.
+- Draft and send letters to all the other applicants who applied for positions on the SSC and the SEP but were not appointed, thanking them for their applications.
+- Draft and send letters recognizing the contributions of Marcel Reichert and Rob Ahrens to the SSC.
+- Consider adding another seat to the SSC at the September Council meeting, evaluating the need of the SSC for any additional expertise.
+- Draft and send a letter to Dr. Walter Bubley announcing his appoint to the SSC for a 3-year term.
+APPROVED BY COUNCIL
+
+**Full Council**
+
+MOTION 1: MOVE TO SUBMIT A LETTER TO THE SECRETARY ADDRESSING RED SNAPPER CONCERNS AND PANDEMIC EFFECTS. ITEMS TO ADDRESS INCLUDE:
+- Descending devices effects
+- Thanks for approving (*Snapper Grouper FMP*) Amendment 29
+- Importance of Assessment getting approved on time
+- Importance of Red Snapper to the fishery
+- Importance to address pandemic impacts
+- Willingness to work with NMFS to maximize harvest and access
+- Consider aggregate impacts of abundance, best practices, COVID impacts
+APPROVED BY COUNCIL
+
+MOTION 3: MOVE TO DIRECT STAFF TO PREPARE AN EMERGENCY ACTION REQUEST TO INCREASE THE ATLANTIC RECREATIONAL KING MACKEREL POSSESSION LIMIT TO 4 PER PERSON COASTWIDE. 
+APPROVED BY COUNCIL
+
+MOTION 4: MOVE TO DIRECT STAFF TO PREPARE AN EMERGENCY ACTION REQUEST TO INCREASE THE VERMILION SNAPPER COMMERCIAL TRIP LIMIT TO 1500 POUNDS GW FOR 180 DAYS. 
+APPROVED BY COUNCIL
+
+MOTION 5: MOVE TO DIRECT STAFF TO BRING AN EMERGENCY ACTION REQUEST FOR CONSIDERATION IN SEPTEMBER TO ALLOW CARRY-OVER OF UNUSED 2020 ACL INTO 2021. 
+APPROVED BY COUNCIL
+
+MOTION 6: MOVE TO SEND A LETTER IN SUPPORT OF THE BLACK SEA BASS EFP.
+APPROVED BY COUNCIL
+
+MOTION 7: SOUTH ATLANTIC COUNCIL DOES NOT INTEND TO MANAGE SUMMER, SOUTHERN, FRINGE, OR GULF FLOUNDER SPECIES IN FEDERAL WATERS OFF FLORIDA AND WRITE A LETTER TO THE FWC AND NOAA OF THE INTENTION.
+APPROVED BY COUNCIL
+
+[[IMAGE_92_0|]]
+
+## HMS
+
+[[IMAGE_93_0|NC Marine Fisheries logo]]
+
+ROY COOPER
+*Governor*
+
+MICHAEL S. REGAN
+*Secretary*
+
+STEPHEN W. MURPHEY
+*Director*
+
+July 31, 2020
+
+**MEMORANDUM**
+
+**TO:** N.C. Marine Fisheries Commission
+
+**FROM:** Randy Gregory, Fisheries Biologist
+Fisheries Management Section
+
+**SUBJECT:** Highly Migratory Species Update
+
+**Issue**
+Highly Migratory Species activity update. 
+
+**Overview**
+The Highly Migratory Species Advisory Panel met on May 19, 2020 via conference call/webinar. The Advisory Panel discussed Highly Migratory Species fishery management plan objectives, draft Amendment 13 to consider options for modifications to bluefin tuna management, retention limits for swordfish, and efforts to collect data to quantify and help mitigate the problems with shark depredation. 
+
+**Swordfish** 
+The National Oceanic and Atmospheric Administration (NOAA) Fisheries is adjusting the Swordfish General Commercial permit retention limits in the Northwest Atlantic region (North Carolina is included in this region). Effective July 1 through December 31, 2020, the default retention limit of three swordfish per vessel is increased to six per vessel per day. These limit changes should provide additional harvest opportunities, while not exceeding the available U.S. North Atlantic swordfish quota, and to collect data for stock monitoring purposes.
+
+**Sharks** 
+On June 19, 2020, the NOAA Fisheries increased the retention limit for non-sandbar commercial aggregated large coastal sharks and hammerhead shark management groups in the Atlantic region from 36 to 55 large coastal sharks per vessel per trip through December 31, 2020 unless another adjustment or fishery closure is announced in the Federal Register. In mid-June, approximately 83 percent of the non-sandbar commercial aggregated large coastal shark quota remained and approximately 64 percent of the hammerhead shark quota remains available. The NOAA Fisheries increased the retention limit to promote the use of available quota. 
+
+**Action Needed**
+For informational purposes only, **no action is needed at this time.**
+
+State of North Carolina | Division of Marine Fisheries
+3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557
+252-726-7021
+
+[[IMAGE_94_0|]]
+
+## PROTECTED RESOURCES UPDATE
+
+[[IMAGE_94_1|]]
+[[IMAGE_94_2|]]
+[[IMAGE_94_3|]]
+
+[[IMAGE_97_0|NC Marine Fisheries logo]]
+
+John McConnaughey
+Protected Species Biologist
+North Carolina Division of Marine Fisheries
+
+June 30, 2020
+**TABLE OF CONTENTS**
+
+**List of Tables** ................................................................................................................................. 3
+**List of Figures**................................................................................................................................ 4
+**Summary**........................................................................................................................................ 5
+**Tables** ............................................................................................................................................. 7
+**Figures**.......................................................................................................................................... 11
+
+**LIST OF TABLES**
+
+Table 1. For large mesh gill nets, estimated percent observer coverage calculated from observer trips (> 4 inch) and estimated fishing trips from the Trip Ticket Program (> 5 inch) by management unit for spring 2020 (March - May). Estimated fishing trips were calculated as the 5-yr average from 2015-2019 and do not account for reduced fishing effort due to the COVID-19 pandemic…………………..……………….……..………7
+
+Table 2. For small mesh gill nets, estimated percent observer coverage calculated from observer trips (< 4 inch) and estimated fishing trips from the Trip Ticket Program (< 5 inch) by management unit for spring 2020 (March - May). Estimated fishing trips were calculated as the 5-yr average from 2015-2019 and do not account for reduced fishing effort due to the COVID-19 pandemic.…………………………………………...….....7
+
+Table 3. Openings and closings of management units by date and regulation change from the spring 2020 season (March - May) for anchored large and small mesh gill nets for ITP Year 2020. .…………………………………………...…................................................8
+
+Table 4. Citations written by Marine Patrol for anchored large and small mesh gill nets by date and violation code during the spring 2020 season (March - May) for ITP Year 2020.....9 
+
+Table 5. Notice of Violations (NOV) written by Marine Patrol for anchored large and small mesh gill nets by date and violation code during the spring 2020 season (March - May) for ITP Year 2020..……………………………………………………………..…….....9
+
+Table 6. Categories and descriptions of fishermen responses for the Observer Program's contact logs used for analysis…………………………………………………………………..10
+
+**LIST OF FIGURES**
+
+Figure 1. Map for proclamation M-4-2020. See Table 1 for full proclamation description ….. 11
+Figure 2. Map for proclamation M-5-2020. See Table 1 for full proclamation description ….. 12
+Figure 3. Map for proclamation M-9-2020. See Table 1 for full proclamation description ….. 13 
+Figure 4. Map for proclamation M-10-2020. See Table 1 for full proclamation description ….14
+
+**SUMMARY**
+
+The 2020 spring season for anchored large and small mesh gill nets in North Carolina was March 1, 2020 through May 31, 2020 for Incidental Take Permit (ITP) Year 2020 (September 1, 2019 – August 31, 2020) as defined in ITP No. 16230. At the beginning of the 2020 spring season the COVID-19 pandemic was just starting to seriously affect the United States. On March 20, 2020, National Marine Fisheries Service (NMFS) waived the requirement for boats fishing in federally managed fisheries to carry observers or at sea monitors due to concerns about the transmission of COVID -19. The NMFS extended this waiver to the North Carolina Division of Marine Fisheries (NCDMF) Observer Program on March 23, 2020; the waiver was in place throughout the spring season. 
+
+Due to the impending quarantines, the NCDMF Observer Program’s last observer trip occurred on March 18, 2020. Marine Patrol (MP) continued field activities and managed to observe some gill net trips. Reports from other Division staff indicated that fishing effort had decreased due to COVID-19. As a result, the number of gill net trips observed by MP were low compared to the efforts made to find and observe fishing effort. Data are not yet available for actual number of reported fishing trips. As a result, observer coverage estimates based on the previous five-year average do not account for reduced fishing effort due to the COVID-19 pandemic. As a result, estimates of observer coverage are likely to be biased low. Overall observer coverage during spring 2020 was 1.2% of the large-mesh gill-net fishery and 1.1% of the small-mesh gill-net fishery (Tables 1-2)
+
+There were no observed or reported incidental takes of sea turtles during the 2020 spring season. Because of the lack of fishing effort and federal waiver for observer coverage, some tables included in past reports are not provided in this spring seasonal report and other tables will be incomplete. 
+
+Seasonal gill net openings and closings continued even though all indications were that fishing effort was low. A list of relevant proclamations is provided in Table 3. Maps to accompany certain proclamations are provided in Figures 1 – 4.
+
+During spring 2020, Marine Patrol made 405 attempts to find gill net effort for alternative platform observations. Prior to the March 23rd waiver, Marine Patrol made 77 attempts to find gill net effort and were successful 25 times for a success rate of 32%. After the March 23rd waiver 284 attempts were made with 19 successful observations for a 7% success rate. These comparisons reinforce information that suggested fishing effort was low and therefore observer coverage rates based on the 5-year average would be biased low. During the course of Marine Patrol efforts to observe gill net fishing effort there were 12 citations issued (Table 4). 
+
+As per the ITP, the division established a permit in September 2014 to register all fishermen participating in the anchored large and small mesh gill net fisheries (Estuarine Gill Net Permit – EGNP). This multifaceted permit allows the division to closely monitor for compliance with the permit system already in place. As of May 31, 2020, there had been 2,457 EGNPs issued for Fiscal Year (FY) 20 (July 1, 2019 - June 30, 2020). Permits are renewed on an annual basis, based on the fiscal year for licenses. During the 2020 spring season there was one Notice of Violations (NOV) written for violations of the EGNP (Table 5).
+
+During the 2020 spring season, observers employed various ways to contact fishermen to set up trips (i.e., alternative platform trips, calling the fisherman, waiting at boat ramps) before the waiver was provided. Observed logged 76 phone calls to fishermen with only one call successfully setting up an observable trip (Table 6). For the other 75 calls, the fisherman said they were not fishing or no contact was made. 
+
+**TABLES**
+
+Table 1. For large mesh gill nets, estimated percent observer coverage calculated from observer trips (> 4 inch) and estimated fishing trips from the Trip Ticket Program (> 5 inch) by management unit for spring 2020 (March - May). Estimated fishing trips were calculated as the 5-yr average from 2015-2019 and do not account for reduced fishing effort due to the COVID-19 pandemic.
+
+| Management Unit 1 | Estimated Fishing Trips | Observed Trips | Percent Coverage |
+| --- | --- | --- | --- |
+| A | 1,662 | 35 | 2.1 |
+| B | 301 | 0 | 0.0 |
+| C | 795 | 0 | 0.0 |
+| D12 | 2 | closed | closed |
+| D2 | 80 | 0 | 0.0 |
+| E | 279 | 1 | 0.4 |
+| Total | 3,119 | 36 | 1.2 |
+
+1 Table 1 contains all of the openings and closings for each management unit
+2 D1 closed to large mesh for entire 2019 spring season
+
+Table 2. For small mesh gill nets, estimated percent observer coverage calculated from observer trips (< 4 inch) and estimated fishing trips from the Trip Ticket Program (< 5 inch) by management unit for spring 2020 (March - May). Estimated fishing trips were calculated as the 5-yr average from 2015-2019 and do not account for reduced fishing effort due to the COVID-19 pandemic.
+
+| Management Unit 1 | Estimated Fishing Trips | Observed Trips | Percent Coverage |
+| --- | --- | --- | --- |
+| A | 743 | 2 | 0.3 |
+| B | 1,347 | 11 | 0.8 |
+| C | 197 | 4 | 2.0 |
+| D1 | 32 | 1 | 3.1 |
+| D2 | 29 | 1 | 3.4 |
+| E | 126 | 7 | 5.6 |
+| Total | 2,474 | 26 | 1.1 |
+
+1 Table 1 contains all of the openings and closings for each management unit
+
+Table 3. Openings and closings of management units by date and regulation change from the spring 2020 season (March - May) for anchored large and small mesh gill nets for ITP Year 2020.
+
+| Year | Date(s) | Regulation change |
+| --- | --- | --- |
+| 2020 | March 2 | This proclamation opens a portion of Management Unit A to the use of floating gill nets configured for harvesting American shad by removing vertical height restrictions for all gill nets with stretched mesh lengths of 5 ¼ through 6 ½ inches. (M-3-2020) |
+| 2020 | March 25 | This proclamation supersedes Proclamation M-3-2020 dated February 28, 2020. In Management Unit A, it removes gill nets configured for harvesting American shad. It maintains restrictions on the use of fixed, stationary, or unattended gill nets and allows the use of run-around, strike, drop, and trammel gill nets and with a stretched mesh length of 5 ½ inches through 6 ½ inches in portions of Management Unit A. (M-5-2020) |
+| 2020 | April 15 | This proclamation maintains closures in all other management units south of Management Unit A and closes Management Unit C to the use of gill nets with a stretched mesh length of 4 inches through 6 ½ inches (except as described in Section II.; coincides with the commercial shad fishery closure) in accordance with Amendment 2 to the N.C. Southern Flounder Fishery Management Plan. (M-6-2020) |
+| 2020 | April 20 | This proclamation implements yardage and time setting restrictions for gill nets with a stretched mesh length less than 4 inches and attendance restrictions for gill nets with a stretched mesh length less than 5 inches in the Internal Coastal Waters of the state, south of Management Unit A. Yardage limit increases will be considered for the May-October Spanish mackerel drift gill net fishery. Those increases will be implemented by proclamation at a later time. (M-4-2020) |
+| 2020 | May 1 | This proclamation implements attendance requirements for gill nets with a stretched mesh length less than 4 inches in Subunit B.1. (M-9-2020) |
+| 2020 | May 1 | This proclamation implements small mesh gill net attendance requirements. It maintains restrictions on the use of run-around, strike, drop, and trammel gill nets and with a stretched mesh length of 5 ½ inches through 6 ½ inches in portions of Management Unit A. (M-10-2020) |
+| 2020 | May 8 | This proclamation increases yardage limits for the commercial Spanish mackerel drift gill net fishery in Management Unit B. (M-11-2020) |
+
+Table 4. Citations written by Marine Patrol for anchored large and small mesh gill nets by date and violation code during the spring 2020 season (March - May) for ITP Year 2020.
+
+| Date | Code | Description |
+| --- | --- | --- |
+| 4/03/2020 | NETG01 | Leave gill net in coastal waters unattended |
+| 4/03/2020 | NETG03 | Using gill net with improper buoys or identification |
+| 4/03/2020 | NETG01 | Leave gill net in coastal waters unattended |
+| 4/03/2020 | NETG03 | Using gill net with improper buoys or identification |
+| 4/07/2020 | NETG22 | Improperly set gill net |
+| 4/11/2020 | NETG30 | Leave RCGL gill net unattended |
+| 4/23/2020 | NETG01 | Leave gill net in coastal waters unattended |
+| 4/23/2020 | NETG06 | Gill net causing hazard to navigation |
+| 5/03/2020 | NETG04 | Leave gill net in waters when could not be legally fished |
+| 5/10/2020 | NETG02 | Using gill net without buoys or identification |
+| 5/10/2020 | NETG37 | Leave small mesh gill nets unattended |
+| 5/26/2020 | NETG01 | Leave gill net in coastal waters unattended |
+
+Table 5. Notice of Violations (NOV) written by Marine Patrol for anchored large and small mesh gill nets by date and violation code during the spring 2020 season (March - May) for ITP Year 2020.
+
+| Date | Code | Description |
+| --- | --- | --- |
+| 3/30/2020 | EGNP99 | Failure to comply with statute(s), rule(s), and/or proclamation(s) |
+
+Table 6. Categories and descriptions of fishermen responses for the Observer Program's contact logs.
+
+| Categories | Category description |
+| --- | --- |
+| 1 | Left message with someone else |
+| 2 | Not fishing general |
+| 3 | Fishing other gear |
+| 4 | Not fishing because of weather |
+| 5 | Not fishing because of boat issues |
+| 6 | Not fishing because of medical issues |
+| 7 | Booked trip |
+| 8 | Hung up, got angry, trip refusal |
+| 9 | Call back later time/date |
+| 10 | Saw in person |
+| 11 | Disconnected |
+| 12 | Wrong number |
+| 13 | No answer |
+| 14 | No answer, left voicemail |
+| 15 | Not fishing because of natural disaster (e.g., hurricane) |
+
+**FIGURES**
+
+Figure 1. Map for proclamation M-4-2020. See Table 1 for full proclamation description.
+[[IMAGE_107_0|Map for proclamation M-4-2020]]
+
+Figure 2. Map for proclamation M-5-2020. See Table 1 for full proclamation description.
+[[IMAGE_108_0|Map for proclamation M-5-2020]]
+
+Figure 3. Map for proclamation M-9-2020. See Table 1 for full proclamation description.
+[[IMAGE_109_0|Map for proclamation M-9-2020]]
+
+Figure 4. Map for proclamation M-10-2020. See Table 1 for full proclamation description.
+[[IMAGE_110_0|Map for proclamation M-10-2020]]
+
+[[IMAGE_111_0|]]
+[[IMAGE_111_1|]]
+
+[[IMAGE_114_0|]]
+[[IMAGE_114_1|]]
+[[IMAGE_114_2|]]
+[[IMAGE_114_3|]]
+[[IMAGE_114_4|]]
+
+## COASTAL HABITAT PROTECTION PLAN UPDATE
+
+[[IMAGE_115_0|NC Marine Fisheries logo]]
+
+ROY COOPER
+*Governor*
+
+MICHAEL S. REGAN
+*Secretary*
+
+STEPHEN W. MURPHEY
+*Director*
+
+July 31, 2020 
+
+**MEMORANDUM**
+
+**TO:** N.C. Marine Fisheries Commission
+
+**FROM:** Anne Deaton, Habitat Program Manager
+Habitat and Enhancement Section
+
+**SUBJECT:** 2021 Coastal Habitat Protection Plan Amendment Update
+
+**Issue**
+Update the Marine Fisheries Commission (MFC) on the status of the ongoing amendment to the North Carolina 2021 Coastal Habitat Protection Plan
+
+**Overview**
+At the MFC 's November 2019 business meeting, staff provided an update on the 2021 Coastal Habitat Protection Plan Amendment. A timeline for completing the amendment and the five selected priority issues were reviewed. Currently, the interagency CHPP Team has completed two informational chapters, two issue papers and continue work on the three remaining issue papers. The completed sections were reviewed and approved by the CHPP Steering Committee in May and July 2020. The issue papers that are currently underway will be reviewed by the CHPP Steering Committee in the fall. In November 2020, all three commissions (N. C. Environmental Management Commission, Coastal Resources Commission and MFC) will be provided the entire draft amendment for review with recommended actions. In addition, staff will be asking for approval to take the draft out for public comment. To review the full CHPP source document please follow this link: 
+[2016 Coastal Habitat Protection Plan](http://portal.ncdenr.org/web/mf/habitat/chpp/07-2020-chpp)
+
+As was described during the November 2019 update, the 2016 CHPP document will continue to serve as the source document for the 2020 amendment. 
+
+Listed below are the five issue papers described above, their completion status and a brief summary of each.
+
+*Submerged Aquatic Vegetation (SAV) Protection and Restoration with Focus on Water Quality Improvements – **Complete*** 
+The issue paper Submerged Aquatic Vegetation Protection and Restoration, with Focus on Water Quality Improvements was selected because of the high ecological value of SAV, the trend of declining SAV nationally and in North Carolina, and because reduced water clarity, associated with increased nutrient and sediment loading, is recognized as the most significant factor limiting SAV distribution and causing habitat loss. Therefore, any water quality improvements for SAV are also expected to reduce pollutant loading in general, reducing algal blooms, fish kills, and bacteria contamination associated with shellfish harvest closures. 
+
+In March 2020, a joint workshop entitled Clean Waters and SAV: Making the Connection, was held by DMF, Albemarle-Pamlico National Estuarine Partnership (APNEP), and The Pew Charitable Trust to gather input from and collaborate with a broad group of SAV and water quality experts. This included scientists from Chesapeake Bay and Tampa Bay, where they have successfully restored SAV by focusing on water quality improvements. 
+
+The maximum quantified known historic extent of SAV in NC is 191,155 acres, based on a composite of mapping events ranging from 1981 to 2015. The majority of this occurs behind the Outer Banks from Manteo through Ocracoke. The high salinity grass community appears to be in better condition than the low salinity grass community, although change assessments by APNEP detected losses in both areas. In high salinity waters from Manteo to Bogue Inlet, SAV losses between 2007 and 2013 ranged from 2.7 to 10.4%. In low salinity waters, SAV loss between the historic extent and that reported in 2014 to 2017 sonar surveys ranged from 52% in Albemarle Sound to 97% in Tar-Pamlico River. The proposed strategy for protecting and restoring SAV will include setting SAV acreage goals, and associated water quality criteria, such as chlorophyll *a* levels and nutrient loading needed to achieve the required light penetration. The CHPP team will work with Division of Water Resources’ (DWR) Nutrient Criteria Development Program (NCDP) to develop revised nutrient criteria that will enable SAV to survive in its historical range. Other recommended actions will involve needed research, monitoring, outreach, and improved collaboration. Additional background and recommended actions will be presented in November. 
+
+*Environmental Rule Compliance to Protect Habitat and Water Quality* - ***Complete***
+Improving compliance of environmental rules through inspections and enforcement represents a way to reduce habitat and water quality impacts without creating new rules. The Environmental Rule Compliance to Protect Habitat and Water Quality issue paper reviews data on current and past compliance with environmental rules, particularly those related to wetlands, buffers, and sedimentation control under the authority of Environmental Management, Sedimentation Control, and Coastal Resources commissions. Existing rules allow low thresholds of non-coastal (Section 401) wetland impacts from individual projects to be authorized, although they can be substantial on a cumulative basis. From 2014 to 2019, approximately 1,400 acres of wetland impacts were authorized under Section 401 water quality certifications within the CHPP region. In comparison, during the same time period, 2,156 acres of unauthorized impacts were documented. Studies have shown that having dedicated positions for compliance inspections and enforcement activities greatly reduces non-compliance. The percent compliance was 14 to 46% higher when DWR had compliance positions (2007 to 2011) compared to when they did not (2014 to 2019). The increased compliance, even with as little as one compliance position per agency office, was considered a highly effective deterrent method if the potential penalty is adequate. While additional compliance positions were established around 2006 in DWR and Division of Coastal Management (DCM), a 34% DEQ budget cut since 2008 has resulted in a loss of over 350 positions, including these compliance positions.
+
+*Reducing Inflow and Infiltration Associated with Wastewater Infrastructure to Improve Coastal Water Quality – **In Progress***
+Inflow and infiltration are problems associated with central wastewater treatment plant infrastructure that can lead to water quality degradation. Collection pipes are particularly vulnerable to deterioration and failures associated with inflow and infiltration (I&I) in low-lying coastal areas where they may actually be sitting in the ground water. Inflow refers to the entry of stormwater into the sewage collection system during storm events, usually from an improper connection or open manhole or wastewater cleanout. Infiltration refers to the movement of groundwater into the sewer pipe system through cracks and joints. Together, these two processes overload the collection system, which is often the cause of wet weather Sanitary Sewer Overflows (SSOs) where failure of the collection system can result in large volumes of untreated sewage entering surface waters. Water quality ramifications of such spills include high bacteria levels elevated nutrient levels, depressed dissolved oxygen levels, and increased potential for algal blooms due to nutrient loading at chronic SSO locations. Inadequate maintenance of the wastewater collection system resulting in sewer overflows can financially impact the community through fines and effect on tourism, recreation, and fishing industries. However, adequate maintenance of the collection system is also costly. The I&I issue paper will cover potential solutions to this water quality issue.
+
+*Wetland Protection and Enhancement with a Focus on Nature-Based Methods – **In Progress***
+In the 2016 CHPP, encouraging use of living shorelines was a priority issue, as a strategy to restore wetlands while reducing shoreline erosion. Significant progress was made on research and regulatory improvements related to living shorelines to facilitate greater use of this alternative method of shoreline stabilization. Living shorelines, as well as other methods to protect and restore wetlands continues to be a priority due to multiple anthropogenic stressors and an increasing rate of sea level rise. In the 2021 plan, the Wetland Protection and Enhancement with a Focus on Nature-Based Methods issue paper will discuss collaboration with NC Coastal Federation and APNEP regarding living shorelines and explore other wetland conservation and restoration strategies. There is growing science that coastal wetlands in NC are not keeping up with sea level rise. Without focused and strategic efforts to offset these losses, fish populations are likely to be impacted, and water quality degraded, which could also impact SAV and oyster reefs. To gather additional input from scientists and managers, the CHPP Team will hold a series of three virtual technical meetings in August on three different wetland topics: 1) mapping and monitoring, 2) threats and conservation, and 3) restoration and living shorelines. The input will aid in completion of the issue paper. 
+
+*Habitat Monitoring to Assess Status and Regulatory Effectiveness – **In Progress***
+The last issue paper will summarize the status of coastal habitats and include long-term monitoring strategies with particular attention to the coastal habitats not covered by the Submerged Aquatic Vegetation Protection and Restoration, with Focus on Water Quality Improvements and Wetland Protection and Enhancement with a Focus on Nature-Based Methods issue papers Establishing standardized monitoring programs for coastal habitats is critical for understanding the state of the habitats, whether existing management is adequate or additional management measures are needed. Since the 2016 CHPP, progress has been made to establish enhanced coastwide monitoring of oyster and SAV habitat. Specific monitoring recommendations will be identified in the issue paper. Additional funding will likely be needed to fully implement. 
+
+**Action Needed**
+For informational purposes only, **no action is needed at this time.**
+
+[[IMAGE_116_0|NC Marine Fisheries logo]]
+
+[[IMAGE_117_0|NC Marine Fisheries logo]]
+
+ROY COOPER
+*Governor*
+
+MICHAEL S. REGAN
+*Secretary*
+
+**MEMORANDUM**
+
+TO: Coastal Resources Commission 
+Environmental Management Commission 
+Marine Fisheries Commission
+Coastal Habitat Protection Plan Steering Committee
+
+FROM: Jimmy Johnson 
+Albemarle-Pamlico National Estuary Partnership
+Anne Deaton 
+Division of Marine Fisheries 
+
+DATE: June 1, 2020 
+
+SUBJECT: Coastal Habitat Protection Plan Steering Committee Meeting 
+
+The Coastal Habitat Protection Plan Steering Committee met via webinar at 9:00 a.m. Monday, May 11, 2020. The following attended: 
+
+Advisers: Martin Posey, Pete Kornegay, Bob Emory, Larry Baldwin, David Anderson, Yvonne Bailey
+
+DMF Staff: Brandi Salmon, Dan Zapf, Anne Markwith, Zan Batchelder, Katy West, Anne Deaton, Casey Knight, Alan Bianchi, Corrin Flora, Kimberly Harding, Ger Hardin, Chris Stewart, Morgan Klein, Kacee Zinn, Jimmy Harrison, Nico Craig, Bryan Hall 
+APNEP Staff: Bill Crowell, Jimmy Johnson, Trish Murphey, Tim Ellis
+DCM Staff: Curt Weychert, Mike Lopazanski, Daniel Govoni, Braxton Davis 
+DEACS Staff: Lyn Hardison 
+DWR Staff: Anthony Scarborough, Jeff Manning, Adriene Weaver, Bridget Shelton 
+DEMLR Staff: Samir Dumpor
+NCDA&CS: Eric Pare (S&W), Alan Coats (FS)
+Public: Natalie Snider (EDF), Paul Cough (EPA & APNEP), Pat Donovan-Brandenburg (City of Jacksonville), Ruth Driscoll-Lovejoy (Pew Charitable Trust), Sara Hallas (NCCF), Joseph Gordon (Pew Charitable Trust), Leda Cunningham (Pew Charitable Trust), Michael Flynn (NCCF), Chris Ballie (ECU), David Glenn (NOAA, H&WQ Committee), Barry Nash (NCSU), Steve Yuhasz (Shellfish Cultivation Lease Review Committee), Tolar Nolley (OCVA), aewilliams4 (unknown screen name/no chat box id) 
+
+**WELCOME AND INTRODUCTIONS**
+Jimmy Johnson, serving as chair, called the meeting to order. He welcomed everyone on the webinar and asked them to provide a name, who they represent and their favorite fish, in the chat box, in order to get a list of attendees. He also shared thoughts on the role steering committee members play as liaisons to their commissions. He shared some key messages provided by Leda Cunningham with PEW. He will be emailing them out soon. 
+
+**APPROVAL OF AGENDA AND 10/15/19 MEETING MINUTES** 
+Both the agenda and meeting minutes were approved by consensus. 
+
+**UPDATED TIMELINE FOR CHPP REVISION** 
+Anne Deaton, DMF provided an update on the timeline for the 2021 CHPP. The CHPP Source document will not change. Today we will go over different chapters of the 2021 CHPP. 
+
+**REVIEW CHPP IMPLEMENTATION PROGRESS CHAPTER**
+
+Deaton presented a brief overview of implementation progress on the 2016 CHPP priorities. 
+
+Oyster Restoration. The extent of oyster sanctuary construction, cultch planting, monitoring and research to improve future restoration was reviewed. Oyster restoration will not be a CHPP priority in the 2021 CHPP but it does not mean it is not an ongoing priority. Oysters are an important habitat and there has been a lot of progress made to restore and enhance oyster in North Carolina. She discussed DMF partnering with others on the N.C. Oyster Steering Committee which has resulted in great success. The N.C. Coastal Federation (NCCF) serves as the lead organization for the steering committee and the production of the Oyster Restoration and Protection Plan: A Blueprint for Action, that is updated on five year cycles. The 2015-2020 Blueprint summarizes work being done in North Carolina related to oysters, and builds on progress accomplished through the 1995 Blue Ribbon Advisory Council for Oysters and the CHPP. Many of the goals in the Blueprint closely align to recommendations and implementation actions of the CHPP. There are several CHPP Team members and other DMF staff that actively participate in development and implementation of the Oyster Blueprint.
+
+Living Shorelines. This has also been a successful implementation priority of the CHPP. There are now general permits available for marsh sills through DCM. Since March of 2017 there have been 14 applications for marsh sill development. Research has been completed on the performance and resiliency of living shorelines. There have been nine living workshops through the coastal training program on living shorelines and there is now a NC Living Shoreline Steering Committee to further advance this method of shoreline stabilization. She also described an online living shorelines application by The Nature Conservancy and NOAA that help identify where more natural techniques could be successfully applied. 
+
+Sedimentation. There has been some progress related to reducing sedimentation in tidal creeks. She described two study projects that assessed rates and sources of sedimentation in multiple tidal creeks. There has also been considerable research on innovative methods to control sediment and stormwater, and several Watershed Restoration Plans have been developed for coastal communities. Deaton explained how the revised stormwater rules in 2016 led to an updated Stormwater Design Manual with more focus on infiltration on site and additional options. She also mentioned there is still a continued need to encourage expanded use of stormwater Best Management Practices (BMPs) and low impact development (LID) as well as improving the effectiveness of sediment and erosion control programs. The latter requires additional funding for compliance monitoring, training, equipment, and outreach. 
+
+Development of Habitat Metrics. Monitoring standards, drone technology and the use of side scan sonar have been incorporated into monitoring shallow subtidal and intertidal oysters. The Albemarle-Pamlico National Estuary Partnership (APNEP) Submerged Aquatic Vegetation (SAV) Partnership has developed monitoring protocols for low and high salinity SAV. Some wetland monitoring has been done through DWR and NERRs Sentinel Site program. Strategic Habitat Area (SHA) validation has been completed in the White Oak River Basin (Core Sound through Topsail Sound). 
+
+Other implementation progress has been made in outreach, and removing or modifying obstructions to anadromous fish passage. 
+
+Discussion by the committee included sedimentation of tidal creeks and whether there were any natural processes that could restore creek depth. The group discussed how flushing of creeks via storms, wind, could have a restoration effect over time. The group also discussed how sentinel sites were selected based on certain criteria.
+
+**REVIEW CHPP CLIMATE CHANGE AND RESILIENCY CHAPTER**
+Casey Knight, DMF presented the new chapter on climate change. She provided some background on the governor’s Executive Order 80 which directs all cabinet agencies to integrate climate adaptation and resiliency planning into their policies, programs, and operations. Several working groups were formed and resulted in the development of the Climate Science Report and the Natural Working Lands Report which were then incorporated into the NC Risk Assessment and Resiliency Plan. The 2016 CHPP provided valuable information during this process and many of the goals and recommendations were aligned with this plan. These reports should be out soon. She also reported the various finding of these reports in regard to sea level rise and rising temperatures. Coastal resilience to climate change is broken down into two parts; community resilience and ecosystem resilience. Most coastal habitats will be impacted by climate change in the future. The 2021 CHPP will examine these threats and recommend actions that will benefit both coastal habitats while providing community and ecological resilience. 
+
+**REVIEW CHPP ENVIRONMENTAL RULE COMPLIANCE ISSUE PAPER**
+Anthony Scarbraugh, DWR presented the priority issue paper on environmental rule compliance. Historically, emphasis has been on the permitting of impacts to wetland and surface water of the North Carolina. Staff time is dominated by permit processing deadlines and so compliance and enforcement lag because of time priorities and funding limitations. It is difficult to estimate wetland loss due to non-compliance but the extent could be significant. Less than one percent of permitted sites is checked for compliance. There is a need for a more balanced approach between permitting and compliance efforts. He noted that having dedicated compliance positions serves as a deterrent for potential violators, with an analogy to police presence on highways and speeding. Two studies conducted in North Carolina found less than 50% compliance with Sediment and Erosion Control site plans. He provided a history of wetland loss along with the ecosystem and industry job value and recreational benefits that comes with the protection of wetlands and surface waters. Scarbraugh described numerous permits and the accompanying permit agencies and some typical non-compliance examples, often related to silt fencing, inadequate ground cover establishment, ditching and filling of wetlands or small streams. He reported that the rate of DWR’s compliance for complaint inspections has fallen from 68.2% in 2011 to 22.5% in 2019. The rate of compliance from routine inspections dropped from 82% in 2011 to 69% in 2019. Over the last six fiscal years, DWR reported unauthorized jurisdictional wetland impacts exceeded authorized impacts by margin of 1.54:1. He then presented possible solutions to the compliance issue such as additional staffing, funding, the creation of a watch list and developing a cooperative effort with river keepers, NGOs, and citizens on reporting violations. 
+
+Deaton suggested the committee review these solutions and they could have further discussions at the next meeting to finalize recommendations. The committee felt this was a compelling presentation. Other members asked about any cooperation from local governments. 
+
+**PUBLIC COMMENT**
+No Public Comment 
+
+**UPDATE ON CHPP SAV AND WATER QUALITY ISSUE PAPER**
+Trish Murphey, APNEP gave the committee an update on the priority issue paper on SAV with the focus on water quality. This paper has been the subject of a collaboration of several state and federal agency staff as well as NGOs. She provided information on a recent SAV technical workshop held in Raleigh that will provide information for the paper. This workshop brought together managers, scientists, and NGOs to learn and discuss the connection of water quality to SAV. There were

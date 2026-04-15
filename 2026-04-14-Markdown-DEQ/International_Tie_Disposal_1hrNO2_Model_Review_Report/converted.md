@@ -4,15 +4,14 @@ March 31, 2021
 
 ## MEMORANDUM
 
-TO: Jeffrey Cole, Environmental Engineer, FRO  
+**TO:** Jeffrey Cole, Environmental Engineer, FRO  
 Heather Carter, Regional Supervisor, FRO
 
-FROM: Matthew Porter, Meteorologist, AQAB
+**FROM:** Matthew Porter, Meteorologist, AQAB
 
-THROUGH: Tom Anderson, AQAB Supervisor, AQAB
+**THROUGH:** Tom Anderson, AQAB Supervisor, AQAB
 
-SUBJECT: Review of 1-hour NO2 NAAQS Dispersion Modeling Analysis for International  
-Tie Disposal, LLC  
+**SUBJECT:** Review of 1-hour NO2 NAAQS Dispersion Modeling Analysis for International Tie Disposal, LLC  
 Facility ID: 7700101  
 Permit Application ID: 7700101.20A – GREEN - 300  
 Hamlet, NC Richmond County
@@ -23,8 +22,8 @@ ITD modeled NOX emissions from 62 biochar kilns evenly spaced (5x12 grid formati
 
 Table 1 summarizes the results of the 1-hour NO2 NAAQS modeling demonstration based on the worst-case permit allowable emission limits proposed for ITD and Enviva.
 
-**Table 1.**  
-**1-hour NO2 Impacts from ITD and Enviva Permit Allowable Emissions**  
+**Table 1.**
+**1-hour NO2 Impacts from ITD and Enviva Permit Allowable Emissions**
 **International Tie Disposal, LLC, Hamlet, NC**
 
 | Pollutant | Averaging Period | Model Concentration(1) | Background Concentration(2) | Total Concentration | NAAQS | % of NAAQS |

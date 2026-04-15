@@ -1,5 +1,5 @@
-# Division of Marine Fisheries CRFL Funding Data Delivery Specifications
-
+# Division of Marine Fisheries
+CRFL Funding Data Delivery Specifications
 January 2012
 
 ## Purpose:
@@ -8,7 +8,8 @@ The purpose of this document is to specify minimum content and procedures for su
 
 ## Background:
 
-The approved procedures for funding from the North Carolina Marine Resources Fund and the North Carolina Marine Resources Endowment Fund specifies that each project shall “provide a written plan describing how all data, analyses, models, etc. generated from the project will be made available to the DMF. The plan shall include the format in which data will be submitted. It also specifies, “goal of the final project report is to disseminate findings, results and end products of projects. A percentage of the final payment may be withheld until the applicant satisfactorily meets all approved project objectives and modifications, including submission of reports and delivery of data. Failure to deliver data to the division in a format with appropriate documentation to be used by the scientific community at the time completion of the final report shall automatically require repayment to the fund(s).” A condition of the CRFL grant contract award states the grant’s data delivery shall adhere to the specifications contained within this document.  
+The approved procedures for funding from the North Carolina Marine Resources Fund and the North Carolina Marine Resources Endowment Fund specifies that each project shall “provide a written plan describing how all data, analyses, models, etc. generated from the project will be made available to the DMF. The plan shall include the format in which data will be submitted. It also specifies, “goal of the final project report is to disseminate findings, results and end products of projects. A percentage of the final payment may be withheld until the applicant satisfactorily meets all approved project objectives and modifications, including submission of reports and delivery of data. Failure to deliver data to the division in a format with appropriate documentation to be used by the scientific community at the time completion of the final report shall automatically require repayment to the fund(s).” A condition of the CRFL grant contract award states the grant’s data delivery shall adhere to the specifications contained within this document.
+
 The report and data will receive technical review from the contract technical monitor.
 
 CRFL funding proposals, reports, and research data are subject to the N. C. Public Records Act (N.C.G.S. § 132-1 et seq).
@@ -87,7 +88,7 @@ freq,leng
 0111328, 140, 1, 6, 12, 0004300700, 25.4, . , 15, 430, 8835430401, 0, 3, 1, 257,  
 0111329, 140, 1, 8, 8, 0004300700, 28.5, . , 17, 430, 8835020301, 0, 11, 1, 223,  
 0111329, 140, 1, 8, 8, 0004300700, 28.5, . , 17, 430, 8835020301, 0, 11, 1, 268,  
-0111329, 140, 1, 8, 8, 0004300700, 28.5, . , 17, 430, 8835020301, 0, 11, 1, 220,  
+0111329, 140, 1, 8, 8, 0004300700, 28.5, . , 17, 430, 8835020301, 0, 11, 1, 220,
 
 ## Appendix B. Example Description of data relationships
 
@@ -105,8 +106,6 @@ The hierarchical set of 128 byte ASCII (text) records that make up the Database 
 | Record Type 5 | Individual Fish Age Data |
 | Record Type 9 | Individual Fish Tag Recapture Data |
 
-From a record structure perspective, Record Type 1 points to Record Type 2. Record Type 2 points to Record Type 3 and Record Type 3 points to Record Type 4. Record Type 8 is logically an extension of Record Type 1 and similarly Record Types 5 and 9 are extensions of Record Type 4.
-
 Environmental Data  
 Record Type 1  
 Gear Data  
@@ -120,6 +119,8 @@ Record Type 4 Tag Recapture Data
 Record Type 9  
 Age Data  
 Record Type 5  
+
+From a record structure perspective, Record Type 1 points to Record Type 2. Record Type 2 points to Record Type 3 and Record Type 3 points to Record Type 4. Record Type 8 is logically an extension of Record Type 1 and similarly Record Types 5 and 9 are extensions of Record Type 4.
 
 The relationship between records is established with key fields that exist within the record. The control (key) information is the combination of fields that is unique to a collection and the records contained in that collection. It is these fields that enable several records from a collection to be linked. Information contained on a given record type applies to all following records in the hierarchy. Key fields for the database record type take the form shown below.
 
@@ -155,24 +156,24 @@ Tag Recapture Records, record type 9, contain data for every tagged individual t
 | | 39-48 | Starting Location | N/A | N/A | M | See Appendix B1 of the coding manual. |
 | | 54-57 | Time Gear Ended Fishing | Hours & Minutes | 0-2400 | M | Time gear ended fishing. |
 | | 58-61 | Duration | Minutes | 1-99 | M | Time span of sampling period. |
-| | 62-64 | Gear # 1 | N/A | 421, 430, 434 | M | 421 = Floatline<br>430 = Bottomline<br>434 = Trolling |
-| | 65-68 | Gear Parameter #1 | Feet | N/A | M | 421 = Depth of Hooks<br>434 = Depth of Hooks |
-| I | 69-72 | Gear Parameter #2 | N/A | 1, 2, 3, 4 | M . | Lines fished:<br>float line = 1 or 2 if gear = 421<br>bottom fishing = 1,2,3,or 4 if gear = 430<br>trolling = 1 or 2 if gear = 434 |
+| | 62-64 | Gear # 1 | N/A | 421, 430, 434 | M | 421 = Floatline, 430 = Bottomline, 434 = Trolling |
+| | 65-68 | Gear Parameter #1 | Feet | N/A | M | 421 = Depth of Hooks, 434 = Depth of Hooks |
+| I | 69-72 | Gear Parameter #2 | N/A | 1, 2, 3, 4 | M . | Lines fished: float line = 1 or 2 if gear = 421, bottom fishing = 1,2,3,or 4 if gear = 430, trolling = 1 or 2 if gear = 434 |
 | | 73-76 | Gear Parameter #3 | N/A | 2 | M | Mandatory if gear 430 = 2 |
-| | 80 | Bottom Composition | N/A | 1-9 | M | Type of material:<br>A = Dome J = Reef Balls<br>B = Cube K = Old Can<br>Units<br>C = Pipe L = New Can<br>Units<br>D = Train Car M = Natural<br>Rock<br>E = Concrete Rubble<br>F = Tires<br>G = Vessel < 100'<br>H = Vessel > 100'<br>I = Other |
+| | 80 | Bottom Composition | N/A | 1-9 | M | Type of material: A = Dome, B = Cube Units, C = Pipe Units, D = Train Car Rock, E = Concrete Rubble, F = Tires, G = Vessel < 100', H = Vessel > 100', I = Other, J = Reef Balls, K = Old Can, L = New Can, M = Natural |
 | | 82-84 | Depth | Meters | N/A | M | Coded with an assumed decimal. |
 | I | 85-87 | Air Temperature | EC | 0-40 | D | |
-| | 88-90 | Surface Temperature | ☐C | 0-40 | M | |
-| | 91-93 | Bottom Temperature | ☐C | 0-40 | D | |
+| | 88-90 | Surface Temperature | °C | 0-40 | M | |
+| | 91-93 | Bottom Temperature | °C | 0-40 | D | |
 | | 94-96 | Surface Salinity | N/A | 000-450 | D | |
 | | 97-99 | Bottom Salinity | N/A | 000-450 | D | |
 | | 100-103 | Variable Field # 1 | Minutes | 0000-2400 | M | Time gear began fishing |
 | | 104-106 | Surface D.O. | N/A | 000-150 | D | |
 | | 107-109 | Bottom D.O. | N/A | 000-150 | D | |
-| | 112 | Weather Element | N/A | 1-9 | D | 1. clear skies<br>2. one-quarter cover (25%)<br>3. one-half cover (50%)<br>4. three-quarter cover (75%)<br>5. one hundred percent cover<br>6. haze<br>7. fog<br>8. precipitation<br>9. snow |
-| | 117 | Wind Direction | N/A | 1-8 | D | 1 = N, 2 = NE, 3 = E<br>4 = SE, 5 = S, 6 = SW<br>7 = W, 8 = NW |
+| | 112 | Weather Element | N/A | 1-9 | D | 1. clear skies, 2. one-quarter cover (25%), 3. one-half cover (50%), 4. three-quarter cover (75%), 5. one hundred percent cover, 6. haze, 7. fog, 8. precipitation, 9. snow |
+| | 117 | Wind Direction | N/A | 1-8 | D | 1 = N, 2 = NE, 3 = E, 4 = SE, 5 = S, 6 = SW, 7 = W, 8 = NW |
 | | 118-119 | Wind Speed | Knots | 0-50 | D | Wind speed |
 | | 120 | Current Direction | | | D | |
 | I | 121-122 | Current Speed | Knots | 00-15 | D | |
 | | 123 | Water Level | N/A | A-Z | D | See Appendix E - Sea State in manual. |
-| | 126-127 | Number of Replicates | N/A | N/A | M | Must correspond to total number of Record Type II☐s. |
+| | 126-127 | Number of Replicates | N/A | N/A | M | Must correspond to total number of Record Type IIs. |

@@ -1,6 +1,4 @@
-# Coastal Recreational Fishing License
-
-## Sales Update
+# Coastal Recreational Fishing License Sales Update
 
 [[IMAGE_1_0|NC Coastal Recreational Fishing License logo]]
 
@@ -11,16 +9,16 @@ Date of Release: January 31, 2014
 | Revenue or Expense | Item | FY2007-2010 | FY2011 | FY2012 | FY2013 | FY2014 | Total to Date |
 |---|---|---|---|---|---|---|---|
 | Gross Revenue | CRFL Only (Annual and 10-day) | $ 15,080,055 | $ 4,304,585 | $ 4,183,310 | $ 4,035,390 | $ 2,589,875 | $ 30,193,215 |
-| Gross Revenue | Unified CRFL (Annual) | $ 2,695,835 | $ 998,250 | $ 1,034,025 | $ 1,052,481 | $ 781,950 | $ 6,562,541 |
-| Gross Revenue | Blanket For Hire CRFL | $ 666,320 | $ 178,689 | $ 152,475 | $ 143,900 | $ 36,140 | $ 1,177,524 |
-| Gross Revenue | Blanket Ocean Fishing Pier CRFL | $ 211,689 | $ 53,456 | $ 48,136 | $ 53,560 | $ 5,940 | $ 372,781 |
-| Gross Revenue | Block of Ten-Day CRFL | $ 1,580 | $ 750 | $ 750 | $ 300 | $ - | $ 3,380 |
-| Gross Revenue | Interest | $ 695,922 | $ 122,003 | $ 84,135 | $ 50,282 | $ 28,411 | $ 980,752 |
-| Gross Revenue | Sales Commission | $ 51,415 | $ 15,014 | $ 14,883 | $ 15,890 | $ 8,640 | $ 105,841 |
-| Gross Revenue | Subtotal (Gross) | $ 19,402,816 | $ 5,672,747 | $ 5,517,714 | $ 5,351,803 | $ 3,650,112 | $ 39,595,191 |
+| | Unified CRFL (Annual) | $ 2,695,835 | $ 998,250 | $ 1,034,025 | $ 1,052,481 | $ 781,950 | $ 6,562,541 |
+| | Blanket For Hire CRFL | $ 666,320 | $ 178,689 | $ 152,475 | $ 143,900 | $ 36,140 | $ 1,177,524 |
+| | Blanket Ocean Fishing Pier CRFL | $ 211,689 | $ 53,456 | $ 48,136 | $ 53,560 | $ 5,940 | $ 372,781 |
+| | Block of Ten-Day CRFL | $ 1,580 | $ 750 | $ 750 | $ 300 | $ - | $ 3,380 |
+| | Interest | $ 695,922 | $ 122,003 | $ 84,135 | $ 50,282 | $ 28,411 | $ 980,752 |
+| | Sales Commission | $ 51,415 | $ 15,014 | $ 14,883 | $ 15,890 | $ 8,640 | $ 105,841 |
+| | Subtotal (Gross) | $ 19,402,816 | $ 5,672,747 | $ 5,517,714 | $ 5,351,803 | $ 3,650,112 | $ 39,595,191 |
 | Expense | Agent Commission | $ 1,127,616 | $ 335,608 | $ 325,722 | $ 331,381 | $ 206,149 | $ 2,326,476 |
-| Expense | Transaction Fee | $ 2,695,610 | $ 822,752 | $ 813,108 | $ 712,073 | $ 500,094 | $ 5,543,636 |
-| Expense | Subtotal (Expense) | $ (3,823,226) | $ (1,158,360) | $ (1,138,830) | $ (1,043,454) | $ (706,243) | $ (7,870,113) |
+| | Transaction Fee | $ 2,695,610 | $ 822,752 | $ 813,108 | $ 712,073 | $ 500,094 | $ 5,543,636 |
+| | Subtotal (Expense) | $ (3,823,226) | $ (1,158,360) | $ (1,138,830) | $ (1,043,454) | $ (706,243) | $ (7,870,113) |
 | Total Net | | $ 15,579,590 | $ 4,514,387 | $ 4,378,884 | $ 4,308,349 | $ 2,943,868 | $ 31,725,078 |
 
 ## Marine Resources Endowment Fund Balance
@@ -28,16 +26,16 @@ Date of Release: January 31, 2014
 | Revenue or Expense | Item | FY2007-2010 | FY2011 | FY2012 | FY2013 | FY2014 | Total to Date |
 |---|---|---|---|---|---|---|---|
 | Gross Revenue | Lifetime CRFL | $ 1,135,370 | $ 187,630 | $ 179,810 | $ 189,665 | $ 106,905 | $ 1,799,380 |
-| Gross Revenue | Unified Lifetime CRFL | $ 1,900,950 | $ 491,630 | $ 522,360 | $ 588,250 | $ 413,425 | $ 3,916,615 |
-| Gross Revenue | Subtotal (Gross) | $ 3,036,320 | $ 679,260 | $ 702,170 | $ 777,915 | $ 520,330 | $ 5,715,995 |
+| | Unified Lifetime CRFL | $ 1,900,950 | $ 491,630 | $ 522,360 | $ 588,250 | $ 413,425 | $ 3,916,615 |
+| | Subtotal (Gross) | $ 3,036,320 | $ 679,260 | $ 702,170 | $ 777,915 | $ 520,330 | $ 5,715,995 |
 | Expense | Agent Commission | $ 182,354 | $ 40,870 | $ 42,224 | $ 46,792 | $ 29,543 | $ 341,782 |
-| Expense | Transaction Fee | $ 180,108 | $ 36,710 | $ 39,072 | $ 38,602 | $ 24,988 | $ 319,479 |
-| Expense | Subtotal (Expense) | $ (362,462) | $ (77,580) | $ (81,296) | $ (85,393) | $ (54,531) | $ (661,261) |
-| Non Capital Gifts | | $ - | | | | $ - | |
+| | Transaction Fee | $ 180,108 | $ 36,710 | $ 39,072 | $ 38,602 | $ 24,988 | $ 319,479 |
+| | Subtotal (Expense) | $ (362,462) | $ (77,580) | $ (81,296) | $ (85,393) | $ (54,531) | $ (661,261) |
+| Non Capital Gifts | | $ - | | | | | $ - |
 | Interest | From Sales and WRC Transfers | $ 441,293 | $ 71,424 | $ 55,521 | $ 37,257 | $ 22,529 | $ 628,024 |
 | Subtotal Net | | $ 3,115,151 | $ 673,104 | $ 676,395 | $ 729,779 | $ 488,328 | $ 5,682,758 |
-| Transfers from WRC March 2006-2010 | 5 transfers of $680,000 each | | | | | $ 3,400,000 | |
-| Total Net | | | | | | $ 9,082,758 | |
+| | Transfers from WRC March 2006-2010 | 5 transfers of $680,000 each | | | | | $ 3,400,000 |
+| Total Net | | | | | | | $ 9,082,758 |
 
 Note: Includes revenue generated from licenses sold through the Wildlife Resources Commission ALVIN system and the Division of Marine Fisheries FIN system.
 
@@ -58,9 +56,7 @@ Note: Includes revenue generated from licenses sold through the Wildlife Resourc
 | CRFL Funded Projects FY2013 - 14 | $ 2,433,435 |
 | Total | $ 7,719,150 |
 
-## SUMMARY
-
-| Summary Item | Amount |
+| SUMMARY | |
 |---|---|
 | Net Revenue from Marine Resources Fund | $ 31,725,078 |
 | Spent Funds from Approved FY 13 Obligations | $ (4,091,363) |
@@ -101,7 +97,7 @@ Note: Includes revenue generated from licenses sold through the Wildlife Resourc
 | Resident Totally Disabled Lifetime Sportsman/CRFL | 406 | 381 | 411 | 457 | 15 |
 | Youth Lifetime CRFL | 60 | 43 | 47 | 53 | 1 |
 | Youth Lifetime Unified Sportsman/CRFL | 356 | 371 | 433 | 549 | 34 |
-| Total | 453,519 | 439,246 | 460,297 | 480,004 | 4,218 |
+| **Total** | **453,519** | **439,246** | **460,297** | **480,004** | **4,218** |
 
 ## Number of Coastal Recreational Fishing Licenses sold by North Carolina county of sale (location where license sales agent resides), excluding blanket Coastal Recreational Fishing licenses, by calendar year.
 
@@ -480,7 +476,7 @@ Note: Includes revenue generated from licenses sold through the Wildlife Resourc
 | UNITED ARAB EMIRATES | 5 | 24 | 0 | | 0 | | 1 | 70 | 0 | |
 | UNITED KINGDOM | 82 | 3 | 79 | 3 | 88 | 4 | 84 | 4 | 0 | |
 | UNITED STATES | 452,476 | 1 | 438,228 | 1 | 458,858 | 1 | 478,656 | 1 | 4,205 | 1 |
-| UNITED STATES MINOR OUTLY | 1 | 65 | 0 | | 0 | | 0 | | 0 | |
+| UNITED STATES MINOR OUTL | 1 | 65 | 0 | | 0 | | 0 | | 0 | |
 | UNKNOWN | 12 | 9 | 8 | 15 | 256 | 3 | 151 | 3 | 10 | 2 |
 | URUGUAY | 0 | | 0 | | 2 | 47 | 1 | 71 | 0 | |
 | VENEZUELA | 2 | 46 | 0 | | 5 | 22 | 0 | | 0 | |
@@ -492,37 +488,58 @@ Note: Includes revenue generated from licenses sold through the Wildlife Resourc
 
 ## Number of For Hire Blanket Coastal Recreational Fishing Licenses sold by type and vessel size, by calendar year.
 
+### 2007
 | For Hire Blanket Type | 0 to 18 Feet | > 18 to 38 Feet | > 38 to 50 Feet | > 50 Feet | Total Sold | % Sold |
 |---|---|---|---|---|---|---|
-| **2007** | | | | | | |
 | 6 or fewer passengers | 20 | 408 | 147 | 147 | 722 | 90% |
 | More than 6 passengers | 0 | 9 | 37 | 38 | 84 | 10% |
 | Total | 20 | 417 | 184 | 185 | 806 | 100% |
-| **2008** | | | | | | |
+
+### 2008
+| For Hire Blanket Type | 0 to 18 Feet | > 18 to 38 Feet | > 38 to 50 Feet | > 50 Feet | Total Sold | % Sold |
+|---|---|---|---|---|---|---|
 | 6 or fewer passengers | 19 | 336 | 103 | 105 | 563 | 90% |
 | More than 6 passengers | 0 | 6 | 26 | 28 | 60 | 10% |
 | Total | 19 | 342 | 129 | 133 | 623 | 100% |
-| **2009** | | | | | | |
+
+### 2009
+| For Hire Blanket Type | 0 to 18 Feet | > 18 to 38 Feet | > 38 to 50 Feet | > 50 Feet | Total Sold | % Sold |
+|---|---|---|---|---|---|---|
 | 6 or fewer passengers | 15 | 337 | 95 | 114 | 561 | 91% |
 | More than 6 passengers | 0 | 6 | 22 | 30 | 58 | 9% |
 | Total | 15 | 343 | 117 | 144 | 619 | 100% |
-| **2010** | | | | | | |
+
+### 2010
+| For Hire Blanket Type | 0 to 18 Feet | > 18 to 38 Feet | > 38 to 50 Feet | > 50 Feet | Total Sold | % Sold |
+|---|---|---|---|---|---|---|
 | 6 or fewer passengers | 17 | 354 | 100 | 135 | 606 | 91% |
 | More than 6 passengers | 0 | 6 | 24 | 29 | 59 | 9% |
 | Total | 17 | 360 | 124 | 164 | 665 | 100% |
-| **2011** | | | | | | |
+
+### 2011
+| For Hire Blanket Type | 0 to 18 Feet | > 18 to 38 Feet | > 38 to 50 Feet | > 50 Feet | Total Sold | % Sold |
+|---|---|---|---|---|---|---|
 | 6 or fewer passengers | 18 | 352 | 93 | 117 | 580 | 92% |
 | More than 6 passengers | 0 | 4 | 21 | 28 | 53 | 8% |
 | Total | 18 | 356 | 114 | 145 | 633 | 100% |
-| **2012** | | | | | | |
+
+### 2012
+| For Hire Blanket Type | 0 to 18 Feet | > 18 to 38 Feet | > 38 to 50 Feet | > 50 Feet | Total Sold | % Sold |
+|---|---|---|---|---|---|---|
 | 6 or fewer passengers | 19 | 323 | 86 | 102 | 530 | 92% |
 | More than 6 passengers | 0 | 6 | 15 | 27 | 48 | 8% |
 | Total | 19 | 329 | 101 | 129 | 578 | 100% |
-| **2013** | | | | | | |
+
+### 2013
+| For Hire Blanket Type | 0 to 18 Feet | > 18 to 38 Feet | > 38 to 50 Feet | > 50 Feet | Total Sold | % Sold |
+|---|---|---|---|---|---|---|
 | 6 or fewer passengers | 18 | 320 | 65 | 105 | 508 | 93% |
 | More than 6 passengers | 0 | 3 | 9 | 26 | 38 | 7% |
 | Total | 18 | 323 | 74 | 131 | 546 | 100% |
-| **2014** | | | | | | |
+
+### 2014
+| For Hire Blanket Type | 0 to 18 Feet | > 18 to 38 Feet | > 38 to 50 Feet | > 50 Feet | Total Sold | % Sold |
+|---|---|---|---|---|---|---|
 | 6 or fewer passengers | 0 | 2 | 0 | 0 | 2 | 100% |
 | Total | 0 | 2 | 0 | 0 | 2 | 100% |
 

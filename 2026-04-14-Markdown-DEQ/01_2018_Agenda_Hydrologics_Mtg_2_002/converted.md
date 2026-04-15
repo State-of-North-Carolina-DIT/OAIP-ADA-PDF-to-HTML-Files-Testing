@@ -1,6 +1,4 @@
-# New and Watauga Hydrologic Model
-
-## Stakeholder Meeting #2
+# New and Watauga Hydrologic Model Stakeholder Meeting #2
 
 Watauga Blue Ridge Energy  
 2491 U.S. Hwy 421, Boone, NC 28607  

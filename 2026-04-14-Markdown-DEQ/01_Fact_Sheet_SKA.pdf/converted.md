@@ -1,4 +1,4 @@
-# FACT SHEET DRAFT PERMIT RENEWAL
+# FACT SHEET - DRAFT PERMIT RENEWAL
 
 Safety-Kleen Archdale  
 6182 Old Mendenhall Road  
@@ -31,4 +31,4 @@ Raleigh, NC 27699-1646
 
 All comments received during the public comment period or at the public hearing will be considered in the final permit decision and remedy selection. Comments received after the public comment period end date will not be considered. When a final permit decision is made to either issue or deny the permit and accept the final remedy selection, notice will be given to the applicant and to each person who submitted written comments or requested notice of the final decision.
 
-Anyone desiring additional information may contact Caroline Bari at (919) 707-8325, caroline.bari@ deq.nc.gov or the address listed above.
+Anyone desiring additional information may contact Caroline Bari at (919) 707-8325, caroline.bari@deq.nc.gov or the address listed above.

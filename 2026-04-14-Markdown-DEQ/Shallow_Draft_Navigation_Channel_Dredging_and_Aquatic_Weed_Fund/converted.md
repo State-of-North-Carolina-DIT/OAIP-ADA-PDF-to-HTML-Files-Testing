@@ -1,64 +1,65 @@
-[[IMAGE_1_0|State of North Carolina seal and DEQ logo]]
+[[IMAGE_1_0|North Carolina state seal and letterhead]]
 
-# Report on the "Shallow Draft Navigation Channel Dredging and Aquatic Weed Fund"
+ROY COOPER
+Governor
 
-ROY COOPER  
-Governor  
-ELIZABETH S. BISER  
-Secretary  
-RICHARD E. ROGERS, JR.  
-Director  
+ELIZABETH S. BISER
+Secretary
 
-NORTH CAROLINA  
-Environmental Quality  
+RICHARD E. ROGERS, JR.
+Director
 
-October 1, 2022  
+October 1, 2022
 
-Joint Legislative Oversight Committee on Agriculture and Natural and Economic Resources  
-16 W. Jones Street  
-Raleigh, North Carolina 27601  
+Joint Legislative Oversight Committee on Agriculture and Natural and Economic Resources
+16 W. Jones Street 
+Raleigh, North Carolina 27601
 
-Re: Report on the “Shallow Draft Navigation Channel Dredging and Aquatic Weed Fund”  
+Re: Report on the “Shallow Draft Navigation Channel Dredging and Aquatic Weed Fund”
 
-To Whom It May Concern:  
+To Whom It May Concern:
 
-As per §143-215.73F(f), annually the Department of Environmental Quality is required to provide a report on the projects funded from the “Shallow Draft Navigation Channel Dredging and Aquatic Weed Fund.” Attached is the report covering FY 2021-2022.  
+As per §143-215.73F(f), annually the Department of Environmental Quality is required to provide a report on the projects funded from the “Shallow Draft Navigation Channel Dredging and Aquatic Weed Fund.” Attached is the report covering FY 2021-2022. 
 
-This report was prepared by Kevin Hart with the Division of Water Resources in the Department of Environment Quality. If you have questions about this report, please contact me by email at [Kevin.Hart@ncdenr.gov](mailto:Kevin.Hart@ncdenr.gov) or by phone at 919-707-3607.  
+This report was prepared by Kevin Hart with the Division of Water Resources in the Department of Environment Quality. If you have questions about this report, please contact me by email at [Kevin.Hart@ncdenr.gov](mailto:Kevin.Hart@ncdenr.gov) or by phone at 919-707-3607.
 
-Sincerely,  
+Sincerely,
 
-Kevin Hart  
+Kevin Hart
 
-Enclosures  
+Enclosures
 
-cc: NCGA Fiscal Research  
+cc: NCGA Fiscal Research 
 
-North Carolina Department of Environmental Quality | Division of Water Resources  
-512 N. Salisbury Street | Raleigh, North Carolina 27699-1617  
-919-707-9000  
+North Carolina Department of Environmental Quality | Division of Water Resources
+512 N. Salisbury Street | Raleigh, North Carolina 27699-1617
+919-707-9000
 
-## Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed
+# Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed
 
-**Fund Statutory Authority:** G.S. 143-215.73F(f)  
+**Fund Statutory Authority:** G.S. 143-215.73F(f) 
 
-**Due Date:** Oct. 1, 2021  
+**Due Date:** Oct. 1, 2021 
 
-**Receiving Entities:**  
+**Receiving Entities:** 
 
-Joint Legislative Oversight Committee on Agriculture and Natural and Economic Resources  
+Joint Legislative Oversight Committee on Agriculture and Natural and Economic Resources 
 
-Fiscal Research Division  
+Fiscal Research Division 
 
-**Submitting Entity:**  
+**Submitting Entity:** 
 
-NC Department of Environmental Quality – Division of Water Resources  
+NC Department of Environmental Quality – Division of Water Resources
 
 ## Intro
 
 NC General Statues 143-215.73F(f) requires the Department of Environmental Quality to report annually regarding projects funded by both the Shallow Draft Navigation Channel Dredging and Aquatic Weed Funds. The following report is being submitted to fulfill this requirement and includes grant awards from each fund by project type, project location, brief project description, entity receiving the funding, and amount of funding provided.
 
-[[IMAGE_3_0|Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022 table]]
+[[IMAGE_3_0|Shallow Draft Navigation Channel Dredging Annual Report Table]]
+
+### Shallow Draft Navigation Channel Dredging Annual Report
+**FY 2021-2022**
+**G.S. 143-215.73F**
 
 | Date | Project | Cooperator | Amount | Project Type |
 |---|---|---|---|---|

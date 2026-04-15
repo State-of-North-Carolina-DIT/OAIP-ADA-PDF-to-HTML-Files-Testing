@@ -1,10 +1,10 @@
-# 15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals
+[[IMAGE_1_0|North Carolina landscape with lighthouse and city skyline]]
 
-[[IMAGE_1_0|North Carolina state seal, lighthouse, and skyline]]
+# 15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals
 
 Andrew Brooks, PE  
 State Dam Safety Engineer, Division of Energy, Mineral, and Land Resources  
-September 4, 2018
+September 4, 2018  
 
 ## DEMLR Dam Safety Rulemaking
 
@@ -12,7 +12,7 @@ September 4, 2018
 - Methodology
 - Major Components
 
-[[IMAGE_2_2|Heavy machinery on a coal ash pile]]
+[[IMAGE_2_2|Heavy machinery processing coal ash]]
 
 ## Dam Safety CCR Rulemaking Purpose
 
@@ -28,8 +28,8 @@ In developing Proposed Rule Amendments, DEMLR Staff Reviewed/Compared EPA’s Ru
 
 ## Dam Safety CCR Rulemaking Methodology
 
-- For a given Dam Safety requirement, if the existing NC Law and Administrative Code were equal to or more restrictive than EPA CCR Rule, no need to incorporate in proposed rule.
-- If the EPA CCR Rule was more restrictive, we incorporated the EPA language to supersede the existing Dam Safety Rules.
+- For a given Dam Safety requirement, if the existing NC Law and Administrative Code were **equal to or more restrictive** than EPA CCR Rule, no need to incorporate in proposed rule.
+- If the EPA CCR Rule was **more restrictive**, we incorporated the EPA language to supersede the existing Dam Safety Rules.
 - NOTE: All CCR dams required to adhere to existing NC code and the new CCR rule section.
 
 ## Major Components of Dam Safety CCR Rule
@@ -49,7 +49,7 @@ Incorporates major components of EPA CCR Rule that are different from existing R
 ### Regulatory Impact Analysis:
 
 | Category | Impact |
-| --- | --- |
+|---|---|
 | State Government: | Minimal Costs |
 | Local Government: | None |
 | Regulated Utilities: | None |
@@ -62,8 +62,7 @@ Incorporates major components of EPA CCR Rule that are different from existing R
 
 **Comments on the proposed rule should be directed to:** Andrew.brooks@ncdenr.gov
 
-Or, to:  
-Andrew Brooks, PE  
+Or, to: Andrew Brooks, PE  
 NC DEMLR  
 1612 Mail Service Center  
 Raleigh, NC 27699-1612  
@@ -71,6 +70,6 @@ Raleigh, NC 27699-1612
 **Questions about the rule can be directed to:**
 
 | Name | Email | Phone |
-| --- | --- | --- |
+|---|---|---|
 | Andrew Brooks | Andrew.brooks@ncdenr.gov | 919-707-9219 |
 | Daniel Kang | daniel.kang@ncdenr.gov | 919-707-9239 |

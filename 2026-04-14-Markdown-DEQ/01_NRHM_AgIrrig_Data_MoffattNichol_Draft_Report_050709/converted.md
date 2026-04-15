@@ -1,51 +1,50 @@
-[[IMAGE_1_0|NCDENR logo]]
-
-# NEUSE RIVER BASIN MODELING - DATA COLLECTION
-## DRAFT REPORT
+# NEUSE RIVER BASIN MODELING - DATA COLLECTION DRAFT REPORT
 
 Prepared for Hydrologics Inc.
 
 5/7/2009
 
-[[IMAGE_1_1|Moffatt & Nichol logo]]
-
 ## Table of Contents
-1. Introduction ................................................................................................................. 1
-2. Agriculture .................................................................................................................. 1
-2.1. Data Sources ....................................................................................................... 1
-2.1.1. National Agricultural Statistics Service ........................................................ 1
-2.1.2. North Carolina Agriculture Statistics ............................................................ 1
-2.1.3. Consultation with Agriculture Extension Agents ......................................... 2
-2.1.4. Consultation with Dr. Ronald Sneed ............................................................ 2
-2.1.5. Golf Course Irrigation ................................................................................... 2
-2.2. Methods............................................................................................................... 2
-2.2.1. Determining Crop Acreage and Livestock Head .......................................... 2
-2.2.2. Determining Agricultural Water Use ............................................................ 4
-2.2.3. Rainfall .......................................................................................................... 6
-2.3. Data Distribution ................................................................................................. 6
-3. Municipal and Industrial Withdrawals ........................................................................ 6
-3.1. Data Sources ....................................................................................................... 6
-3.2. Methodology ....................................................................................................... 6
-4. Municipal and Industrial Discharges .......................................................................... 7
-4.1. Data Sources ....................................................................................................... 7
-4.2. Methods............................................................................................................... 7
-5. References ................................................................................................................... 8
+
+1. Introduction
+2. Agriculture
+    2.1. Data Sources
+        2.1.1. National Agricultural Statistics Service
+        2.1.2. North Carolina Agriculture Statistics
+        2.1.3. Consultation with Agriculture Extension Agents
+        2.1.4. Consultation with Dr. Ronald Sneed
+        2.1.5. Golf Course Irrigation
+    2.2. Methods
+        2.2.1. Determining Crop Acreage and Livestock Head
+        2.2.2. Determining Agricultural Water Use
+        2.2.3. Rainfall
+    2.3. Data Distribution
+3. Municipal and Industrial Withdrawals
+    3.1. Data Sources
+    3.2. Methodology
+4. Municipal and Industrial Discharges
+    4.1. Data Sources
+    4.2. Methods
+5. References
 
 ## List of Tables
-Table 1. Summary of Neuse River Basin - Distribution by County ................................... 9
-Table 2. Basis of County Rainfall Statistics ..................................................................... 10
-Table 3. Summary of Agriculture Distribution ................................................................. 11
-Table 4. Summary Water Withdrawal Data ...................................................................... 13
-Table 5. Summary of Wastewater Discharges ................................................................. 14
+
+Table 1. Summary of Neuse River Basin - Distribution by County
+Table 2. Basis of County Rainfall Statistics
+Table 3. Summary of Agriculture Distribution
+Table 4. Summary Water Withdrawal Data
+Table 5. Summary of Wastewater Discharges
 
 ## List of Figures
-Figure 1. Neuse River Basin ............................................................................................. 17
-Figure 2. Rain Gages ......................................................................................................... 18
-Figure 3. Distribution of Agriculture ................................................................................ 19
-Figure 4. Water withdrawals ............................................................................................. 20
-Figure 5. Wastewater discharges ...................................................................................... 21
+
+Figure 1. Neuse River Basin
+Figure 2. Rain Gages
+Figure 3. Distribution of Agriculture
+Figure 4. Water withdrawals
+Figure 5. Wastewater discharges
 
 ## Introduction
+
 On behalf of North Carolina Division of Water Resources (NCDWR), Hydrologics Inc. is developing a basin-wide water use model, OASIS, for the Neuse River Basin (Figure 1). Table 1 summarizes the portion of area contained within the limits of the model domain by County.
 
 In support of the model development, Moffatt & Nichol (M&N) was tasked with gathering and processing water use and discharge data by agriculture, industrial, and municipal sources. The objective of the data collection effort was to develop a time series for water withdrawal and discharge for the past 78 years (1930-2008). Data was gathered from private industry as well as the following governmental agencies:
@@ -67,66 +66,81 @@ Methods used and sources of data acquired to develop the water use time series i
 ### 1.1. Data Sources
 
 #### 1.1.1. National Agricultural Statistics Service
+
 Approximately every 5 years, the NASS requests agriculture data from farmers and land owners. Responses to the survey yields extensive data regarding land acreage, crop type grown, livestock counts, and other information. M&N contacted the NASS to obtain all records for counties within the Neuse River basin back to 1930. Data included irrigated and non-irrigated acreage on tobacco, cotton, soybeans, corn peanuts, and head counts for livestock. Agriculture Census data was obtained for the following years: 1930, 1935, 1940, 1945, 1950, 1954, 1959, 1964, 1969, 1974, 1978, 1982, 1987, 1992, 1997, 2002, and 2007.
 
 #### 1.1.2. North Carolina Agriculture Statistics
+
 Incomplete statistics data from the NC Department of Agriculture back to 1930. The NCDA began collecting information for some crops prior to 1930, and others around 1975. Prior to 1975, only crop acreage for corn, cotton, tobacco and peanuts was available. After 1975, wheat, corn, oats, barley, sorghum, cotton, tobacco, peanuts, potatoes, and hay acreage was available. Also beginning in 1975, information regarding cattle, hogs and pigs, chickens, and turkeys is available.
 
 The NCDA Plant Division maintains a database with up-to-date information regarding container and field nurseries in the State. Included in the database is nursery type and acreage. All nurseries less than 5 acres were considered to be container nurseries.
 
 #### 1.1.3. Consultation with Agriculture Extension Agents
+
 After compiling all data, during October 2008, M&N contacted agriculture extension agents of counties within the Neuse Basin with a questionnaire requesting verification of the most up-to-date values for their county, and for an estimate of the county's distribution. For example, if the majority of the agriculture is located in the north of the county, but only the southern portion of the county is located within the basin, then less water will be allotted for agriculture. The same methodology is applied for subbasins within the county.
 
 Based on input from the extension agents, with the exception of Wake and Durham Counties, the distribution of Agriculture within the Neuse Basin was assumed to be uniform.
 
 #### 1.1.4. Consultation with Dr. Ronald Sneed
+
 Dr. Ronald Sneed, retired professor from North Carolina State University and former State extension irrigation specialist was consulted to verify that the values received and calculated were appropriate for the given locations. Dr. Sneed was able to provide insight into typical irrigation practices in use in the areas as well as to further delineate the distribution of the agriculture within each county.
 
 #### 1.1.5. Golf Course Irrigation
+
 The extent of golf courses was determined based on a combination of available geographic information for Wake and Johnston County as well as the statistics published by the USGS (USGS, 2005).
 
 ### 1.2. Methods
 
 #### 1.2.1. Determining Crop Acreage and Livestock Head
+
 Raw data was obtained from the sources listed above. Data gaps were filled using the following methods.
 
 ##### 1.2.1.1. Tobacco
+
 No significant irrigation of tobacco existed prior to 1950 and was therefore assumed to be 0. A ratio between irrigated and total acres of tobacco was computed for years where both values were known. Half of this acreage was assumed to be the percentage of irrigated tobacco in 1955. A linear interpolation between the closest years with values using the percent irrigated was done for all data gaps.
 
 ##### 1.2.1.2. Turf
+
 No significant irrigated turf producers existed prior to 1970. 1969 irrigated turf acreage was assumed to be 0. Linear interpolation was done for all missing turf acreage between 1970 and 2007.
 
 ##### 1.2.1.3. Golf Courses
-An estimate of water use for golf courses was made based on the total acreage of each course. The total rate of water irrigation was assumed to be on average 1.5 in/week during (1 Apr-31 Oct); it is assumed that rate is applied over tees, greens and fairways which comprise 40% of the total golf course area; i.e. the estimate irrigation is 0.57 in/week x (total acreage). For the remainder of the year (Nov 1 – Mar 31) is assumed that only tees and greens are irrigated; tees and greens are assumed to comprise 2.9% of total acres at 1.5in/week. Data from 2006 and 2007 provided by City of Raleigh and Johnston County was used to validate the assumptions on golf course irrigation use.
 
+An estimate of water use for golf courses was made based on the total acreage of each course. The total rate of water irrigation was assumed to be on average 1.5 in/week during (1 Apr-31 Oct); it is assumed that rate is applied over tees, greens and fairways which comprise 40% of the total golf course area; i.e. the estimate irrigation is 0.57 in/week x (total acreage). For the remainder of the year (Nov 1 – Mar 31) is assumed that only tees and greens are irrigated; tees and greens are assumed to comprise 2.9% of total acres at 1.5in/week. Data from 2006 and 2007 provided by City of Raleigh and Johnston County was used to validate the assumptions on golf course irrigation use.
 Golf course acreage in 1969 was assumed to be 35% of the total acreage in 1998. In 1930, the total acreage was assumed to be 10% of the total acreage of 2008. Linear interpolation was performed for all years in between. The water demand curve for golf courses was also adjusted for the years 1930 up to 1968.
 
 ##### 1.2.1.4. Nurseries
+
 Both field and container nursery acreage in 1969 was assumed to be 30% of the total acreage of 2002. Field nursery acreage was assumed to be 0 in 1930. Linear interpolation was done for years in between. Container nurseries began in 1960. Therefore, container nursery acreage was assumed to be 0 in 1959. NCDA database values were used for the years 2006-2008. Linear interpolation was done for all unknown values.
 
 ##### 1.2.1.5. Secondary Crops (Soybeans, Cotton, Corn, Peanuts, Irrigated Pasture and Hay)
+
 Irrigation for secondary crops was assumed to be 0 before 1976 unless otherwise noted in the Agriculture Census. Linear interpolation was performed for any unknown values.
 
 ##### 1.2.1.6. Vegetables
+
 Irrigated acreage in 1975 was assumed to be 20% of the total acreage of 2002. It was assumed to be 0 in 1950. Linear interpolation was performed for irrigated vegetable acreage in all other years where data was not available.
 
 ##### 1.2.1.7. Blueberries and Strawberries.
+
 Irrigated blueberry and strawberry acreage was assumed to be constant between 1975 and 2001 and from 2002 to 2008. Prior to 1975, it was assumed there was no irrigation on either crop.
 
 ##### 1.2.1.8. Other Fruits - Orchards
+
 Irrigated fruit acreage was assumed to be 50% of the total acreage in 2002. It was assumed to be 0 in 1950. Linear interpolation was performed for years in between.
 
 ##### 1.2.1.9. Livestock
+
 Linear interpolations were performed for years where no Census or Agricultural Statistics data exists.
 
 #### 1.2.2. Determining Agricultural Water Use
+
 The methodology for determining water use by agriculture in the basin mirrored that of the Cape Fear River Basin Model. Evapotranspiration (ET) demand for tobacco, soybeans, peanuts, cotton, and corn was estimated based on the moisture curves provided by Dr. Sneed. The plant dates (start dates) were staggered based on geographical location of the county in which they are planted. The corresponding counties fell into the following classifications: upper – Person, Orange, Durham, Granville, Wake, Franklin; middle – Johnston, Nash, Wilson; and lower – Wayne, Greene, Pitt, Lenoir, Craven, and Jones. Crop requirements for turfgrass, golf courses, nursery crops, vegetables, blueberries, strawberries, and other fruit were estimated seasonally. The general breakdown for these crops incorporated a warm and cool season with special consideration for frost/freeze protection where applicable. USGS water use daily requirements from the 1995 Water Use Report were used for livestock water use requirements, per the Cape Fear Model Report (Moffatt & Nichol, 1999).
 
 To summarize,
 
 **Table 1-1. Crop Water Requirements**
 
-| Crop | Start Date High | Start Date Mid | Start Date Low | Evapotranspiration |
+| Crop | Start Date - High | Start Date - Mid | Start Date - Low | Evapotranspiration |
 |---|---|---|---|---|
 | Tobacco | 20 May | 10 May | 30 April | By Curve |
 | Early Soybeans | 20 May | 28 May | 1 May | By Curve |
@@ -172,9 +186,11 @@ When reviewing this information, it is important to be aware of the overall hist
 The system used for determining total water use used for irrigation and watering of livestock is described in Section 2.2.1.
 
 #### 1.2.3. Rainfall
+
 Rainfall data was used in determining frequency of irrigation. As described above, a weekly irrigation amount was assigned to each crop. If the rainfall total in that week did not reach the minimum value, irrigation was used to supplement. Rainfall for 1930-2008 was gathered from the National Climactic Data Center. The location of gages is illustrated in Figure 2 and summarized in Table 2.
 
 ### 1.3. Data Distribution
+
 The distribution of Ag water use was developed based input from NC Agriculture Extension Agents from each county. The Agents were asked to verify the values and note the distribution of those crops within the county based on the model nodes. Figure 3 and Table 3 summarize the distribution of Agriculture with respect to the location of the calibration gages used in the model.
 
 The verified distributions were then applied to the water use for each county by assigning an estimated portion of the crop/livestock to the drainage area of the node. These values were then used to formulate an overall time series for historical water use.
@@ -182,6 +198,7 @@ The verified distributions were then applied to the water use for each county by
 ## 2. Municipal and Industrial Withdrawals
 
 ### 2.1. Data Sources
+
 Data was requested from multiple private and municipal entities. A significant collection effort was undertaken by Moffatt & Nichol and Hydrologics. Only entities who use more than 100,000 gallons per day were considered. Table 4 summarizes the withdrawal data compiled and the record of data available. Figure 4 illustrates the distribution of water withdrawals.
 
 Each water user was requested to provide water withdrawal data for as far back as possible. Supplemental information was provided by the Division of Water Resources, thanks to the Local Water Supply Plans submitted annually to the State.
@@ -189,6 +206,7 @@ Each water user was requested to provide water withdrawal data for as far back a
 Data was provided in several formats and time periods. The majority of the water withdrawal information was provided up through April 2008.
 
 ### 2.2. Methodology
+
 The water withdrawal data was collected into a monthly time series for input into the model. The start dates provided by the withdrawal entities was used, if available. For the City water users, back calculations were done based on the city's population data to determine the historical water withdrawals. Note that the Progress Energy and Weyerhaeuser water usage data was only available since 2004 and 1991, respectively, but water has been withdrawn from both locations prior to those dates. The most historical recorded values were considered to be constant back to the beginning of the withdrawal.
 
 The withdrawal location of each user was grouped into appropriate nodes. The time series reports as far back as 1930, if the withdrawal existed. If there was no withdrawal at that location prior to a certain year, the time series value for withdrawal is 0 up until the corresponding start month.
@@ -196,9 +214,11 @@ The withdrawal location of each user was grouped into appropriate nodes. The tim
 ## 3. Municipal and Industrial Discharges
 
 ### 3.1. Data Sources
+
 The primary source for the total municipal and industrial discharges into the basin is from the NC Division of Water Quality. All permitted discharges were compiled as identified in Table 5 and the location is illustrated in Figure 5. A file for each discharger in the basin was created. The records dated back to 1994. Additional sources include municipal waste water treatment plant records and private companies. Facilities that are currently in use, as well as closed facilities were taken into consideration.
 
 ### 3.2. Methods
+
 For municipal facilities' records were used where available. Historical records were linearly interpolated based on the city's population. To fill in any data gaps for private facilities, the earliest recorded discharges were assumed to be constant back until the facility opened.
 
 All entities that discharge greater than 100,000 gallons per day were considered. A time series of the monthly discharges along each reach was calculated using the assumed discharges from the facilities within that reach. The monthly time series was applied at the node in the model.
@@ -209,7 +229,7 @@ Extensive interpolation was performed to fill in any data gaps prior to 1994. Al
 
 Moffatt & Nichol, 1999. Data Summary and Methodology for Estimation of Water Use in Support of Development of the Cape Fear River Basin Model.
 
-North Carolina Department of Agriculture and Consumer Services, January 2009. "NCDA&CS Certified Nursery Database" http://www.agr.state.nc.us/plantindustry/NurseryBook/search.asp
+North Carolina Department of Agriculture and Consumer Services, January 2009. "NCDA&CS Certified Nursery Database" http://www.agr.state.nc.us/plantindustry/ NurseryBook/search.asp
 
 North Carolina Department of Agriculture, Agricultural Statistics Division. Water Use Studies: 2007 Central Coastal Plain. <http://www.agr.state.nc.us/stats/release/WU2007 Central.pdf>
 
@@ -352,8 +372,8 @@ USGS, 2005. http://nc.water.usgs.gov/infodata/wateruse/data/Data_Tables_2005.htm
 
 **Table 4. Summary Water Withdrawal Data**
 
-| PWSS | Plants | SW Sources | Historical Assumptions | Data Available | Projected Withdrawal Period |
-|---|---|---|---|---|---|
+| ID | PWSS | Plants | SW Sources | Historical Assumptions | Data Available | Projected Withdrawal Period |
+|---|---|---|---|---|---|---|
 | 1 | Creedmoor | Creedmoor WTP | Lake Rogers | using Creedmoor City's population data to populate the historical water withdrawls | 1992/1997/2006 data | 1935-2008 |
 | 2 | Durham | Brown WTP, Williams WTP | Lake Michie, Little River Reservoir, Eno River | using City of Durham's population data; Raw water is assumed to be 10% more than Finished water | Finished water from 1990-2008 | 1930-2008 |
 | 3 | Goldsboro | Goldsboro WTP | Neuse River, Little River Reservoir | Goldsboro City population data used. | 1997/2002 data from DWR | 1931-1973, 1974-2008 |
@@ -364,7 +384,7 @@ USGS, 2005. http://nc.water.usgs.gov/infodata/wateruse/data/Data_Tables_2005.htm
 | 8 | Smithfield | Smithfield Water Plant | Neuse River | Smithfield Town population data used. | Raw water from 1998-2008; Monthly average provided | 1918-1970 (no data available), 1998-2008 |
 | 9 | Wilson | Wiggins Mill WTP, Toisnot WTP | Wiggins Mill Reservoir, Toisnot Rservoir | Wilson City population data used. | 1997/2002 data from DWR | 1930-2008 |
 | 13 | Orange-Alamance | Orange-Alamance Water Treatment Plant | Eno River | note: in 1969, 300 customers to 3200 customers today | Daily data from 1996-2008 | 1969-2008 |
-| Industrial Users | | | | | |
+| Industrial Users | | | | | | |
 | 10 | Piedmont Minerals | | Eno River | | Daily data from 1996-2008 | 1996-2008 |
 | 11 | Progress Energy | H. F. Lee Steam Electric Plant | Neuse River | prior to 2004, assumed to be the same as 2004. | Raw Water from 2002-2007; 2002/2003 data incorrect; Monthly average provided | 1951-2008 |
 | 12 | Weyerhauser | NBCelluloseFiber Raw Water Intake | Neuse River | start Dec-1969; prior to 1991, assumed to be the same as 1991. | Raw Water from 1991-2008; Monthly average provided | 1969-2008 |
@@ -416,7 +436,7 @@ USGS, 2005. http://nc.water.usgs.gov/infodata/wateruse/data/Data_Tables_2005.htm
 | NC0080519 | Lampe & Malphrus Lumber | 10th Street Wet-Decking site | Johnston | Industrial Process & Commercial | Minor | not limited | 30402 | Buffalo Creek | | | 07/1999-11/2007 | 3/23/1992 | |
 | NC0082376 | City of Raleigh | E.M. Johnson WTP | Wake | Water Treatment Plant | Minor | not limited | 30402 | NEUSE RIVER | 35.910556 | -78.591111 | 01/1994-01/2007 | | Yes (Raleigh city population) |
 | NC0083348 | Town of Smithfield | Smithfield WTP | Johnston | WTP | Minor | 300000 | 30402 | Buffalo Creek | 35.518333 | -78.345833 | 04/1994-05/2008 | | Excluded (most of time < 0.1MGD) |
-| NC0084514 | Raleigh Durham Airport Authority | RDU International Airport-WWTP | Wake | Industrial Process & Commercial | Minor | not limited | 30402 | Brier Creek | 35.859444 | -78.807222 | 04/1995-02/2008 | 3/16/1994 | Yes |
+| NC0084514 | Raleigh Durham Airport Authority | RDU International Airport- WWTP | Wake | Industrial Process & Commercial | Minor | not limited | 30402 | Brier Creek | 35.859444 | -78.807222 | 04/1995-02/2008 | 3/16/1994 | Yes |
 | NC0084735 | Johnston County Department of Public Utilities | Johnston County WTP | Johnston | Water Treatment Plant | Minor | 4000000 | 30402 | NEUSE RIVER | 35.580556 | -78.327778 | 09/1996-04/2008 | | Yes |
 | NC0085936 | Jerry G Williams & Sons, Inc. | Wet Log Deck Storage site | Johnston | Industrial Process & Commercial | Minor | not limited | 30402 | NEUSE RIVER | 35.491111 | -78.353889 | 02/1998-12/2007 | 11/18/1997 | Yes |
 | Historical | | | | | | | | | | | | | |
@@ -445,16 +465,16 @@ Figure 1. Neuse River Basin
 
 Figure 2. Rain Gages
 
-[[IMAGE_21_2|Map of rain gages in Neuse River Basin]]
+[[IMAGE_21_2|Map showing Rain Gages in the Neuse River Basin]]
 
 Figure 3. Distribution of Agriculture
 
-[[IMAGE_22_2|Map of distribution of agriculture in Neuse River Basin]]
+[[IMAGE_22_2|Map showing Distribution of Agriculture in the Neuse River Basin]]
 
 Figure 4. Water withdrawals
 
-[[IMAGE_23_2|Map of water withdrawals in Neuse River Basin]]
+[[IMAGE_23_2|Map showing Water withdrawals in the Neuse River Basin]]
 
 Figure 5. Wastewater discharges
 
-[[IMAGE_24_2|Map of wastewater discharges in Neuse River Basin]]
+[[IMAGE_24_2|Map showing Wastewater discharges in the Neuse River Basin]]

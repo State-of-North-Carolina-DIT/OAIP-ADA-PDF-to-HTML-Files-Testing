@@ -2,9 +2,9 @@
 
 ## Aquatic Vegetation Survey
 
-Survey Conducted by:
+**Survey Conducted by:**
 
-North Carolina State University
+**North Carolina State University**
 
 ## Whole Lake Survey Results
 
@@ -26,9 +26,7 @@ Proliferating spikerush (*Eleocharis baldwinii*) was documented at 7 (3%) of the
 
 Purple bladderwort (*Utricularia purpurea*) has historically been found in White Lake but was not present during the past several years of survey. During the 2021 survey, purple bladderwort occurred at 8 (4%) of the surveyed sites in sparse quantities (Figure 8). Purple bladderwort is an important native species to the region and its presence a valuable aid to the biodiversity of White Lake’s SAV community. 
 
-Dwarf milfoil (*Myriophyllum tenellum*) was found at 28 (14%) of points in 2021 (Figure 9). It’s population has been present at 14 - 34% of surveyed points since 2017. 
-
-In 2021, the densest patches were observed on the shallow portions of the northeastern shoreline.
+Dwarf milfoil (*Myriophyllum tenellum*) was found at 28 (14%) of points in 2021 (Figure 9). It’s population has been present at 14 - 34% of surveyed points since 2017. In 2021, the densest patches were observed on the shallow portions of the northeastern shoreline.
 
 In comparison to the 2020 survey, both filamentous algae and macroalgae have increased in presence. Filamentous algae (*Spirogyra* spp.) was documented at 57 (28%) sample points in 2021 (Figure 10). Macroalgae (*Chara/Nitella* spp.) was found at 54 (27%) points in 2021 and was mainly distributed along the shoreline of the lake (Figure 11).
 
@@ -36,15 +34,15 @@ Despite the high frequency of plants observed in the lake, very few areas were f
 
 The presence of hydrilla remains a concern in White Lake, especially when considering the presence of multiple sensitive SAV species in the ecosystem. Continued monitoring and management of hydrilla should be remain a priority. Monitoring of plant populations to evaluate hydrilla management efforts will need to continue for several years to assist in returning the lake back to a more natural condition.
 
-### References: 
+### References:
 
 LeGrand, H., B. Sorrie, and T. Howard. 2022. Vascular Plants of North Carolina [Internet]. Raleigh (NC): North Carolina Biodiversity Project and North Carolina State Parks. Available from https://auth1.dpr.ncparks.gov/flora/species_account.php?id=4052
 
-[[IMAGE_6_0|Map showing 202 predetermined sample points in White Lake]]
+[[IMAGE_6_0|Map of the 202 predetermined sample points in White Lake]]
 
 **Figure 1.** The 202 predetermined sample points in White Lake.
 
-[[IMAGE_7_0|Map showing total SAV abundance recorded at each sample point during 2021 survey]]
+[[IMAGE_7_0|Map of total SAV abundance recorded at each sample point during 2021 survey]]
 
 **Figure 2.** Total SAV abundance recorded at each sample point during 2021 survey.
 
@@ -90,15 +88,9 @@ LeGrand, H., B. Sorrie, and T. Howard. 2022. Vascular Plants of North Carolina [
 
 **Figure 4.** Hydrilla (*Hydrilla verticillata*) was found at a) 1 sample point in 2021, b) 3 sample points in 2019, and c) 1 sample point in 2018. 
 
-*Note: Hydrilla was not documented in White Lake in 2020
+*Note: Hydrilla was not documented in White Lake in 2020*
 
-A
-
-2021
-
-A
-
-[[IMAGE_11_0|Map showing Tuckerman’s Pondweed locations in 2021]]
+[[IMAGE_11_0|Map showing Tuckerman's Pondweed locations in 2021]]
 
 **Figure 5.** Tuckerman’s Pondweed (*Potamogeton confervoides*) was found at 19 samples site in 2021
 
@@ -118,10 +110,8 @@ A
 
 **Figure 9.** Dwarf milfoil (*Myriophyllum tenellum*) was found at 28 sample sites in 2021
 
-A 
-
 [[IMAGE_16_0|Map showing Filamentous algae locations in 2021]]
-[[IMAGE_16_1|]]
+[[IMAGE_16_1|Icon or Logo]]
 
 **Figure 10.** Filamentous algae (*Spirogyra* spp.) was found at 57 sample sites in 2021
 
@@ -131,7 +121,7 @@ A
 
 **Figure 11.** Macroalgae (*Nitella* spp.) was found at 54 sample sites in 2021
 
-[[IMAGE_18_0|Map showing interpolated biovolume data during the 2021 survey]]
+[[IMAGE_18_0|Map showing interpolated biovolume data collected during the 2021 survey]]
 
 **Figure 12.** Interpolated biovolume data collected during the 2021 survey.
 

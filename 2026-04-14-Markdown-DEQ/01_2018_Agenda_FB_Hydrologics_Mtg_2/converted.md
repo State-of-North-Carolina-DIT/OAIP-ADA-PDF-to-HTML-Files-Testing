@@ -3,7 +3,8 @@
 ## Stakeholder Meeting #2
 
 Land of Sky Council of Governments  
-339 New Leicester Hwy, Asheville, NC 28806  
+339 New Leicester Hwy, Asheville, NC 28806
+
 October 1, 2018
 
 1:00 - 1:10 Introductions, opening remarks ........................................................ Tom Fransen, DWR

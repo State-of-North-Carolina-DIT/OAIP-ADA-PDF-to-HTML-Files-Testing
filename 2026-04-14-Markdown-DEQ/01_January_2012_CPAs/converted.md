@@ -1,7 +1,7 @@
 # DWQ January 2012 Civil Penalty Assessments
 
 | Case Number | Owner - Facility | Permit Number | County | Region | As Built Flow MGD | Report Month | Penalty Assessed | Penalty Amount | Enforcement Costs | Total Penalties | Total Cases in Previous 12 Months |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 | DV-2012-0003 | City of Brevard - Brevard Collection System | WQCS00084 | Transylvania | Asheville | | | 01/26/12 | $3,000.00 | $137.00 | $3,137.00 | 0 |
 | DV-2012-0004 | City of Brevard - Brevard Collection System | WQCS00084 | Transylvania | Asheville | | | 01/26/12 | $9,000.00 | $137.00 | $9,137.00 | 0 |
 | DV-2012-0005 | City of Brevard - Brevard Collection System | WQCS00084 | Transylvania | Asheville | | | 01/26/12 | $6,000.00 | $137.00 | $6,137.00 | 0 |

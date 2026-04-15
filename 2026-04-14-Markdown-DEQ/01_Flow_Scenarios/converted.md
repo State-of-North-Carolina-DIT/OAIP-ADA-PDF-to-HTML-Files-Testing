@@ -10,56 +10,56 @@ Chris Goudreau, N.C. Wildlife Resources Commission
 ## Instream Flow Status (pp 84-86 of IFC book)
 
 - No Protection
-  - No legal ability to keep from drying up the stream
-  - Rare in N.C., but there are examples
+    - No legal ability to keep from drying up the stream
+    - Rare in N.C., but there are examples
 - Threshold Protection (i.e., minimum flow)
-  - May be a single value (e.g., 7Q10) or have seasonal value (e.g., 20/30/40 percent of MAF)
+    - May be a single value (e.g., 7Q10) or have seasonal value (e.g., 20/30/40 percent of MAF)
 
 ## Instream Flow Status (pp 84-86 of IFC book)
 
 - Partial Ecologically-Based Protection
-  - Addresses 1-4 riverine components
-  - Most likely hydrology, biology and water quality
-  - May address intra-annual variability, but not inter-annual
+    - Addresses 1-4 riverine components
+    - Most likely hydrology, biology and water quality
+    - May address intra-annual variability, but not inter-annual
 - Comprehensive Ecologically-Based Protection
-  - Addresses all 5 riverine components (hydrology, biology, water quality, connectivity, geomorphology)
-  - Maintains intra-annual and inter-annual variability
+    - Addresses all 5 riverine components (hydrology, biology, water quality, connectivity, geomorphology)
+    - Maintains intra-annual and inter-annual variability
 - Full Protection (hands off)
 
 ## General Approaches (Richter et al. 2011)
 
 - Minimum Flow Threshold
 - Statistically-based Standard
-  - Typically partial protection, but could be comprehensive
+    - Typically partial protection, but could be comprehensive
 - Percent of Flow Standard
 
 ## Statistically-Based Standard
 
 - Flow components include:
-  - Critical low, low, high flow pulses, small floods, high floods
-  - Wet, normal, dry years
+    - Critical low, low, high flow pulses, small floods, high floods
+    - Wet, normal, dry years
 - For each, includes magnitude, duration, frequency, season
 - Tied to ecologically significant events
-  - Spawning
-  - Floodplain rejuvenation
-  - Fry/juvenile growth
-  - Migration
-  - Sediment movement
-  - Channel maintenance
+    - Spawning
+    - Floodplain rejuvenation
+    - Fry/juvenile growth
+    - Migration
+    - Sediment movement
+    - Channel maintenance
 
 ## Flow Components
 
-[[IMAGE_6_1|Graph showing discharge over time and a corresponding river channel cross-section with flow levels]]
+[[IMAGE_6_1|Flow components diagram showing a hydrograph with base flow, high flow pulses, overbank flow, and subsistence flow, alongside a river cross-section detailing water levels for water quality, flushing flow, habitat flow, channel maintenance, riparian maintenance, and valley or channel forming flow.]]
 
 ## Example – Trinity River
 
-[[IMAGE_7_1|Graph showing releases from Lewiston Dam for different water year types on the Trinity River]]
+[[IMAGE_7_1|Hydrograph chart showing releases from Lewiston Dam in cfs for different water year types: Extremely Wet, Wet, Normal, Dry, and Critically Dry.]]
 
 ## Example – Cheoah River
 
-Monthly Base Flow (cfs) Releases from Santeetlah Dam into the Cheoah River Bypassed Reach.
+[[IMAGE_8_1|Table showing Monthly Base Flow releases for Tier A and Tier B]]
 
-[[IMAGE_8_1|Table showing Monthly Base Flow Releases from Santeetlah Dam into the Cheoah River Bypassed Reach]]
+Monthly Base Flow (cfs) Releases from Santeetlah Dam into the Cheoah River Bypassed Reach.
 
 | | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -77,7 +77,7 @@ Table 2. High Flow Events – 5-year Repeating Schedule.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | January | | | | | | | | | | | | | |
 | February | 1 | 2 | 1 | 2 | 1 | 2 | 1 | 2 | 1 | 2 | 1000 | Var1 | |
-| March | 1 | 3 | 1 | 3 | 1 | 3 | 1 | 3 | 1 | 3 | 1000 | 600 2 | 300 |
+| March | 1 | 3 | 1 | 3 | 1 | 3 | 1 | 3 | 1 | 3 | 1000 | 6002 | 300 |
 | April | 2 | 5 | 3 | 6 | 2 | 5 | 2 | 5 | 3 | 6 | 1000 | 850 | 300 |
 | May | 2 | 4 | 2 | 4 | 3 | 6 | 3 | 6 | 3 | 6 | 1000 | 850 | |
 | June | 1 | 2 | 1 | 2 | | | | | 1 | 2 | 1000 | 850 | |
@@ -96,24 +96,24 @@ Table 2. High Flow Events – 5-year Repeating Schedule.
 ## Flow Regime Tied to Ecology
 
 - Sound Ecological Environment
-  - Subsistence Flows
-    - Conserve biological function
-    - Water quality tolerances
-    - Key habitat thresholds
-  - Base Flows
-    - Conserve biological diversity, habitat diversity and water quality
-    - Flow-dependent species habitat
-    - Bank storage/moisture
-    - Suitable temperatures & dissolved oxygen
-  - High Flow Pulses
-    - Provide for life history and geomorphic processes
-    - Fish spawning cues
-    - Maintain channel
-    - Sediment/nutrient transport
-  - Overbank Flows
-    - Maintain floodplain
-    - Moisture and nutrients to floodplain
-    - Riparian recruitment
+    - Subsistence Flows
+        - Conserve biological function
+            - Water quality tolerances
+            - Key habitat thresholds
+    - Base Flows
+        - Conserve biological diversity, habitat diversity and water quality
+            - Flow-dependent species habitat
+            - Bank storage/moisture
+            - Suitable temperatures & dissolved oxygen
+    - High Flow Pulses
+        - Provide for life history and geomorphic processes
+            - Fish spawning cues
+            - Maintain channel
+            - Sediment/nutrient transport
+    - Overbank Flows
+        - Maintain floodplain
+            - Moisture and nutrients to floodplain
+            - Riparian recruitment
 
 ## Percent of Flow Standard
 
@@ -125,4 +125,4 @@ Table 2. High Flow Events – 5-year Repeating Schedule.
 
 ## Flow Scenario Examples
 
-[[IMAGE_12_1|Graph showing flow scenario examples with varying calculation methods including Actual Flow, 80% of Previous Day, 80% of Weekly Average, and 20/30/40 MAF]]
+[[IMAGE_12_1|Line chart titled Flow Scenario Examples showing Actual Flow, 80% of Previous Day, 80% of Weekly Average, and 20/30/40 MAF across a full year.]]

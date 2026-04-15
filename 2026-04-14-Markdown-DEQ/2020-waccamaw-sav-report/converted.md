@@ -2,11 +2,11 @@
 
 August 26th - 27th, 2020
 
-NC Aquatic Weed Control Program 
+NC Aquatic Weed Control Program
 
 ## Introduction
 
-The North Carolina Aquatic Weed Control Program (AWCP) is conducting a monitoring program at Lake Waccamaw during the 2020 growing season to determine presence/absence of Hydrilla. This report covers the second monitoring cycle of the year. 
+The North Carolina Aquatic Weed Control Program (AWCP) is conducting a monitoring program at Lake Waccamaw during the 2020 growing season to determine presence/absence of Hydrilla. This report covers the second monitoring cycle of the year.
 
 ## Background
 
@@ -14,29 +14,29 @@ Lake Waccamaw experienced a Hydrilla infestation which expanded to ~900 acres by
 
 The monitoring program adopted by the technical advisory group in 2018 included these components: hydro-acoustic sensing, lake-bottom rake drags, rake tosses, and visual reconnaissance through snorkeling. The monitoring proposal (separate document) provides details on these components.
 
-By the end of 2019 the herbicide program had run its planned 7-year course. Beginning in 2020 the monitoring program was expanded to include the entire area (~960 acres) plus the area around the State Parks boat ramp. The technical advisory group modified the program by eliminating the lake-bottom rake drags (see 2019 reports for a description of this method) and modified the schedule such that activities would begin later into the growing season. 
+By the end of 2019 the herbicide program had run its planned 7-year course. Beginning in 2020 the monitoring program was expanded to include the entire area (~960 acres) plus the area around the State Parks boat ramp. The technical advisory group modified the program by eliminating the lake-bottom rake drags (see 2019 reports for a description of this method) and modified the schedule such that activities would begin later into the growing season.
 
 ## Results
 
-Rake tosses were conducted at pre-determined points (see Map 2 & Table 1) and conducted whenever SAV showed up on the real-time image display of the hydro-acoustic unit (Lowrance HDS). Rake tosses did not recover any plants. Mussels were recovered regularly. On a couple occasions the real-time display suggested presence of SAV; however, even targeted rake tosses recovered no plants. 
+Rake tosses were conducted at pre-determined points (see Map 2 & Table 1) and conducted whenever SAV showed up on the real-time image display of the hydro-acoustic unit (Lowrance HDS). Rake tosses did not recover any plants. Mussels were recovered regularly. On a couple occasions the real-time display suggested presence of SAV; however, even targeted rake tosses recovered no plants.
 
 Rake tosses were also conducted around the State Park boat ramp. No Hydrilla was detected.
 
-Hydro-acoustic data was collected to determine the bio-volume (BV) of SAV along the shoreline within Zone 1 & 2 to a depth of 6 feet. See Map 3 and Diagram 1. 
+Hydro-acoustic data was collected to determine the bio-volume (BV) of SAV along the shoreline within Zone 1 & 2 to a depth of 6 feet. See Map 3 and Diagram 1.
 
-Visual investigation via snorkeling and wading was conducted 8/26/20, see Map 4. Conditions were good. Water was tannic but no suspended particles. No submersed vegetation, only Narrowleaf Spatterdock (Nuphar luteum ssp. sagittifolium) was observed. Areas that were snorkeled during the previous monitoring cycle had Spatterdock with Chara (at low density) associated with it, but the areas snorkeled during this monitoring cycle had little to no Spatterdock. An additional snorkeling event was performed. This additional event was done outside of the monitoring area. At the south end of the lake a single transect was snorkeled from ~3’ depth to ~1’ depth running perpendicular to the shoreline. There was a significant amount of Lavender Bladderwort (Utricularia resupinata) observed and in some areas the density was such that it resembled carpet. Also observed were softball-sized masses/tangles of Eleocharis which were associated with fish nests and some of these tangles formed a ring just inside the edge of the fish net. 
+Visual investigation via snorkeling and wading was conducted 8/26/20, see Map 4. Conditions were good. Water was tannic but no suspended particles. No submersed vegetation, only Narrowleaf Spatterdock (*Nuphar luteum* ssp. *sagittifolium*) was observed. Areas that were snorkeled during the previous monitoring cycle had Spatterdock with Chara (at low density) associated with it, but the areas snorkeled during this monitoring cycle had little to no Spatterdock. An additional snorkeling event was performed. This additional event was done outside of the monitoring area. At the south end of the lake a single transect was snorkeled from ~3’ depth to ~1’ depth running perpendicular to the shoreline. There was a significant amount of Lavender Bladderwort (*Utricularia resupinata*) observed and in some areas the density was such that it resembled carpet. Also observed were softball-sized masses/tangles of *Eleocharis* which were associated with fish nests and some of these tangles formed a ring just inside the edge of the fish net.
 
-Narrowleaf Spatterdock remains common along the shoreline where the water does not exceed 4’ depth. 
+Narrowleaf Spatterdock remains common along the shoreline where the water does not exceed 4’ depth.
 
-Secchi depths were also recorded at different locations within Zone 1 (see Map 5 and Table 2). The average Secchi reading across the three sites was just under 3 feet. 
+Secchi depths were also recorded at different locations within Zone 1 (see Map 5 and Table 2). The average Secchi reading across the three sites was just under 3 feet.
 
 ## Summary
 
-No Hydrilla was detected. The water is darker compared to 2018 & 2019 due to increased input of tannic surface water from the surrounding swamps. Reduced light penetration is likely to be the major driver contributing to the relatively low macrophyte productivity that was observed. 
+No Hydrilla was detected. The water is darker compared to 2018 & 2019 due to increased input of tannic surface water from the surrounding swamps. Reduced light penetration is likely to be the major driver contributing to the relatively low macrophyte productivity that was observed.
 
 Map 1. Area of lake showing treatment area.
 
-[[IMAGE_3_0|Map of Lake Waccamaw showing treatment zones]]
+[[IMAGE_3_0|Map showing area of lake and treatment zones]]
 
 2013 - 2017
 Treated Zone 1 & 2
@@ -60,13 +60,7 @@ w/ herbicide
 
 Map 2. Rake sampling points. Note: Zone 2 is defined by a black line, which is difficult to see on this image.
 
-[[IMAGE_4_0|Map of Lake Waccamaw showing rake toss points for 2020 monitoring]]
-
-Legend
-Rake Toss Points
-Zone 2
-Zone 1
-Source: Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community
+[[IMAGE_4_0|Map showing rake toss sampling points]]
 
 Table 1. Longitude and Latitude values for rake toss sampling points (these are the points on Map 2).
 
@@ -113,36 +107,29 @@ Table 1. Longitude and Latitude values for rake toss sampling points (these are 
 
 Map 3. Area where Hydrilla monitoring was conducted (red polygons).
 
-[[IMAGE_6_0|Map of Lake Waccamaw showing Hydrilla monitoring areas]]
-
-Source: Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community
+[[IMAGE_6_0|Map showing area where Hydrilla monitoring was conducted with red polygons]]
 
 Map 4. Area that was inspected via snorkeling & wading (highlighted in red).
 
-[[IMAGE_7_0|Map of Lake Waccamaw showing areas inspected via snorkeling and wading]]
-
-Legend
-Snorkeled Areas
-Source: Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community
+[[IMAGE_7_0|Map of area inspected via snorkeling and wading]]
 
 Diagram 1. Biobase website screenshot collection.
 
+[[IMAGE_8_2|Biobase website screenshot for Zone 1 and 2 combined]]
+
+Zone 1 and 2 combined.
+
 [[IMAGE_8_0|Biobase website screenshot for WRC Boat Ramp]]
+
 WRC Boat Ramp
 
 [[IMAGE_8_1|Biobase website screenshot for North shoreline]]
+
 North shoreline
 
-[[IMAGE_8_2|Biobase website screenshot for Zone 1 and 2 combined]]
-Zone 1 and 2 combined.
+Map 5. Map of Secchi disk locations.
 
-Map 5. Map of Secchi disk locations. 
-
-[[IMAGE_9_0|Map of Lake Waccamaw showing Secchi disk locations]]
-
-Legend
-Secchi Depth Points
-Source: Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community
+[[IMAGE_9_0|Map showing Secchi disk locations]]
 
 Table 2. Secchi Disk locations and results.
 

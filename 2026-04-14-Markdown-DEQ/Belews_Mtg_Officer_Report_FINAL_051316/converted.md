@@ -1,16 +1,13 @@
-# MEMORANDUM
-
-Energy, Mineral & Land Resources  
-ENVIRONMENTAL QUALITY
-
-PAT McCRORY  
+PAT McCRORY
 Governor
 
-DONALD R. VAN DER VAART  
+DONALD R. VAN DER VAART
 Secretary
 
-TRACY DAVIS  
+TRACY DAVIS
 Director
+
+# MEMORANDUM
 
 May 13, 2016
 
@@ -27,10 +24,10 @@ On March 24, 2016, I served as meeting officer for a public meeting held at the 
 
 This report has been prepared using the following outline:
 
-1. History/Background
-1. March 24, 2016 Public Meeting and Oral Comments Summary
-1. Written Public Comments Summary
-1. Attachments
+I. History/Background
+II. March 24, 2016 Public Meeting and Oral Comments Summary
+III. Written Public Comments Summary
+IV. Attachments
 
 ## I. History/Background
 
@@ -77,9 +74,9 @@ The following is a summary of written comments received at the public meeting, v
 
 ## IV. Attachments
 
-1. Public Notice of March 24, 2016 Meeting
-1. Public Meeting Sign-in Forms
-1. Public Meeting Speaker List
-1. Audio File of Public Meeting
-1. Written Public Comments Received
-1. Supporting Documentation Received During Public Hearing
+I. Public Notice of March 24, 2016 Meeting
+II. Public Meeting Sign-in Forms
+III. Public Meeting Speaker List
+IV. Audio File of Public Meeting
+V. Written Public Comments Received
+VI. Supporting Documentation Received During Public Hearing

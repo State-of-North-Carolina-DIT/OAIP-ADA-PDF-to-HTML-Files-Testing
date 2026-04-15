@@ -1,17 +1,13 @@
-[[IMAGE_1_0|NC Waste Management Environmental Quality logo]]
+[[IMAGE_1_0|North Carolina Department of Environmental Quality Waste Management logo]]
 
-State of North Carolina | Environmental Quality | Waste Management  
-1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646  
-919 707 8200  
+PAT MCCRORY
+Governor
 
-PAT MCCRORY  
-Governor  
+DONALD R. VAN DER VAART
+Secretary
 
-DONALD R. VAN DER VAART  
-Secretary  
-
-MICHAEL SCOTT  
-Acting Director  
+MICHAEL SCOTT
+Acting Director
 
 # MEMORANDUM
 
@@ -19,25 +15,29 @@ April 28, 2016
 
 To: Secretary Donald R. van der Vaart
 
-From: Elizabeth S. Werner  
-Division of Waste Management  
-Raleigh Central Office  
-Digitally signed by Elizabeth S Werner  
-DN: cn=Elizabeth S Werner, o=DWM-Soild Waste, ou=NCDENR, email=elizabeth.werner@ncdenr.gov, c=US  
+From: Elizabeth S. Werner
+Division of Waste Management
+Raleigh Central Office
+Digitally signed by Elizabeth S Werner
+DN: cn=Elizabeth S Werner, o=DWM-Soild Waste, ou=NCDENR, email=elizabeth.werner@ncdenr.gov, c=US
 Date: 2016.04.28 10:23:05 -04'00'
 
-Subject: Meeting Officer’s Report  
-Coal Ash Impoundment Classification(s)  
+Subject: Meeting Officer’s Report
+Coal Ash Impoundment Classification(s)
 Roxboro Steam Electric Plant
 
 On March 16, 2016, I served as meeting officer for a public meeting held in the auditorium of the Person County Office Building in Roxboro, NC. The purpose of the public meeting was to allow the public to comment on the proposed risk classification for coal combustion residuals impoundments at the Roxboro Steam Electric Plant. This report summarizes all of the public comments related to the proposed risk classification for the Roxboro Steam Electric Plant.
 
 This report has been prepared using the following outline:
 
-1. History/Background
-1. March 16, 2016 Public Meeting and Oral Comments Summary
-1. Written Public Comments Summary
-1. Attachments
+I. History/Background
+II. March 16, 2016 Public Meeting and Oral Comments Summary
+III. Written Public Comments Summary
+IV. Attachments
+
+State of North Carolina | Environmental Quality | Waste Management
+1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646
+919 707 8200
 
 [[IMAGE_1_1|]]
 
@@ -89,14 +89,14 @@ Note: The majority of the emails received appear to have been electronically gen
 
 ## IV. Attachments
 
-1. Public Notice of March 16, 2016 Meeting
-1. Public Meeting Sign-in Forms
-1. Public Meeting Speaker List
-1. Audio File of Public Meeting
-1. Written Public Comments Received
-1. Supporting documentation received during public hearing
-1. Meeting Notes
-1. Public Comment Summary Spreadsheet
-1. File of Public Meeting
+I. Public Notice of March 16, 2016 Meeting
+II. Public Meeting Sign-in Forms
+III. Public Meeting Speaker List
+IV. Audio File of Public Meeting
+V. Written Public Comments Received
+VI. Supporting documentation received during public hearing
+VII. Meeting Notes
+VIII. Public Comment Summary Spreadsheet
+IX. File of Public Meeting
 
 Note: The email record is available from OITS.
