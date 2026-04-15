@@ -32,6 +32,16 @@ const S = {
 const $ = s => document.querySelector(s);
 const $$ = s => document.querySelectorAll(s);
 
+// Update URL query params without page reload. Pass null to remove a param.
+function updateUrlParams(params) {
+  const url = new URL(window.location);
+  for (const [k, v] of Object.entries(params)) {
+    if (v === null) url.searchParams.delete(k);
+    else url.searchParams.set(k, v);
+  }
+  history.replaceState(null, '', url);
+}
+
 // ================================================================
 // DOM builder helpers (avoid raw innerHTML for user-data sections)
 // ================================================================
@@ -160,10 +170,8 @@ function loadBatch(batchName) {
   S.basePath = batchName;
   S.cache = {};
   S.selected = null;
-  // Update URL to reflect current batch
-  const url = new URL(window.location);
-  url.searchParams.set('batch', batchName);
-  history.replaceState(null, '', url);
+  // Update URL to reflect current batch (clear doc when switching batches)
+  updateUrlParams({ batch: batchName, doc: null });
 
   // Build file index from cached tree
   const prefix = batchName + '/';
@@ -195,7 +203,10 @@ function loadBatch(batchName) {
   renderPdf(null);
   renderAuditPanel('old', {});
   renderAuditPanel('new', {});
-  if (S.subdirs.length > 0) selectSubdir(S.subdirs[0].name);
+  // Default doc from URL ?doc= parameter, or first subdir
+  const urlDoc = new URLSearchParams(window.location.search).get('doc');
+  const startDoc = urlDoc && S.subdirs.some(d => d.name === urlDoc) ? urlDoc : (S.subdirs[0]?.name ?? null);
+  if (startDoc) selectSubdir(startDoc);
 }
 
 async function loadSubdirFiles(name) {
@@ -307,6 +318,7 @@ function renderSidebar() {
 async function selectSubdir(name) {
   if (S.selected === name) return;
   S.selected = name;
+  updateUrlParams({ doc: name });
 
   $$('.sb-item').forEach(el => {
     const isActive = el.dataset.name === name;
