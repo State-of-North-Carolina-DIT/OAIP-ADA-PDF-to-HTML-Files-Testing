@@ -1,116 +1,108 @@
 {
   "document_id": "01_10_adilet_2020_5",
-  "verdict": "needs_review",
+  "verdict": "fail",
   "findings": [
     {
       "check_id": "V3",
-      "description": "The North Carolina state seal image at the top of the letter appears in the PDF but is not present in the HTML rendering.",
-      "severity": "minor",
-      "evidence": "PDF page 1 has the NC state seal centered at top; HTML page 1 omits this seal image.",
-      "page": 1,
+      "description": "The North Carolina state seal image at the top of the letter is missing in the HTML rendering",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the North Carolina state seal/logo at the top center. HTML page 2 (the corresponding content page) does not display this seal image.",
+      "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Page 2 of the HTML combines the full content of PDF page 1 (the letter) with an embedded/nested image of the same letter, plus a re-typed version of the content, creating a triple-redundant representation of the same page.",
+      "description": "The HTML conversion renders the entire multi-page document as a continuous flow with embedded images of the original PDF pages alongside the text conversion, creating a confusing dual-rendering",
       "severity": "major",
-      "evidence": "PDF page 1 is a single letter. HTML page 2 shows the letter header/officials, then an embedded image of the full letter, then re-types the letter content below the image - all on one continuous page.",
+      "evidence": "Pages 2-4 in the HTML show both an embedded image of the original PDF letter AND a text-based HTML conversion of the same content below it, effectively duplicating content",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "The HTML rendering interleaves embedded images of pages with re-typed text versions, creating a confusing doubled reading order throughout pages 2-4.",
+      "description": "The email chain reading order is confusing due to embedded image versions of the same content appearing alongside text versions",
       "severity": "major",
-      "evidence": "HTML pages 2-4 show embedded images of the PDF pages alongside re-typed text, causing content to appear twice in sequence.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "The DEQ logo/footer image at the bottom of PDF page 1 is rendered differently in HTML.",
-      "severity": "minor",
-      "evidence": "PDF has the DEQ logo with contact information at the bottom; HTML shows it in a different format but information is preserved.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The signature of David Miller on PDF page 3 is not visible in the HTML rendering of page 3.",
-      "severity": "minor",
-      "evidence": "PDF page 3 shows a handwritten signature above 'David Miller / State Mining Engineer'; HTML shows the text 'for David Miller' without a signature image.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The HTML rendering combines what are separate email chains and formal letters into a continuous flow with embedded images of the original pages alongside re-typed content, making it difficult to distinguish document boundaries.",
-      "severity": "major",
-      "evidence": "PDF pages 5-8 are distinct email chain pages; HTML pages 5-8 show both embedded images and re-typed text for the same emails.",
+      "evidence": "The HTML rendering shows embedded screenshots/images of the PDF pages interspersed with the text conversion of the same content, creating a duplicated reading experience throughout pages 5-16",
       "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Social media icons (LinkedIn, Facebook, Twitter, Instagram) from Colonial Pipeline email signatures appear differently or inconsistently between PDF and HTML.",
+      "description": "The DEQ logo at the bottom of the letter page appears but is less clear in HTML",
       "severity": "minor",
-      "evidence": "PDF shows colored social media icons in email signatures; HTML shows them as colored circles or omits them.",
-      "page": 6,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "The Colonial Pipeline Company logo appears differently in scale/placement between PDF and HTML versions of the formal letter.",
-      "severity": "minor",
-      "evidence": "PDF page 15 has the CD logo at top left; HTML renders it at different sizing but it is present.",
-      "page": 15,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Rep. Dennis Riddell's NC state seal in email signature is referenced but may not render identically.",
-      "severity": "minor",
-      "evidence": "PDF page 13 shows a small state seal image in the email signature; HTML version shows it differently.",
-      "page": 13,
+      "evidence": "PDF page 1 shows a clear DEQ logo. The HTML rendering includes the logo but at a different scale.",
+      "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "Mark Piazza's handwritten signature on the Colonial Pipeline letter is not reproduced in the HTML.",
-      "severity": "minor",
-      "evidence": "PDF page 16 shows handwritten signature above 'Mark Piazza'; HTML shows only the typed name.",
-      "page": 16,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The Attachment 1 document with detailed blasting requirements is shown both as embedded images and as re-typed text in the HTML, creating duplicated content.",
+      "description": "The signature of David Miller is missing in the HTML text conversion",
       "severity": "major",
-      "evidence": "PDF pages 17-22 show the Attachment 1 document once; HTML shows it twice - as images and as re-typed text.",
-      "page": 17,
+      "evidence": "PDF page 3 shows David Miller's handwritten signature. The HTML text version on page 4 only shows 'for David Miller' and 'State Mining Engineer' without the signature image.",
+      "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Exhibit 1A site plan drawing is low quality in the PDF but present; the HTML includes both an embedded image version and a separate rendering.",
+      "description": "Colonial Pipeline Company logo/icons in email signatures vary in rendering quality",
       "severity": "minor",
-      "evidence": "PDF page 23 has Exhibit 1A site plan; HTML shows it duplicated across pages.",
-      "page": 23,
+      "evidence": "PDF shows Colonial Pipeline social media icons and logo clearly; HTML renders them but with some variation in presentation",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined section headings in Attachment 1 lose their distinctive formatting emphasis in some HTML renderings",
+      "severity": "major",
+      "evidence": "PDF pages for Attachment 1 show clearly underlined section headings like 'Notice of Blasting Related Activities', 'Information to be Provided in Blasting Plans', etc. The HTML text rendering preserves bold/underline in some places but the visual distinction is less clear.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Mark Piazza's signature on the Colonial Pipeline letter is missing in the HTML text conversion",
+      "severity": "major",
+      "evidence": "PDF page 17 shows Mark Piazza's handwritten signature. The HTML text version does not include this signature image.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Rep. Dennis Riddell's email signature block with NC state seal is reformatted and the seal image positioning differs",
+      "severity": "major",
+      "evidence": "PDF shows the NC state seal as part of Rep. Riddell's email signature block in a specific layout. HTML renders it differently with the seal image separated from the signature text.",
+      "page": 14,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "Multiple h1 elements used and heading hierarchy is inconsistent. The document uses h1 for 'Colonial Pipeline Company' title, but also has multiple h2 and h3 elements without a clear single-document hierarchy. The first h1 should be the document title, but a second h1 appears for the Colonial Pipeline Company header.",
+      "description": "Multiple h1 elements used throughout the document. The first h1 is 'Colonial Pipeline Company' and there are additional h1-level headings. The document has inconsistent heading hierarchy with h2 and h3 mixed without clear structure.",
       "severity": "major",
-      "evidence": "HTML contains at least two h1 elements: one in the header section for Colonial Pipeline Company and one implied by the first-of-type CSS rule. Additionally, headings skip levels in places and the ATTACHMENT 1 section uses h2 then h3 without clear structure.",
+      "evidence": "HTML contains h1 for 'Colonial Pipeline Company' and also uses h1:first-of-type styling. Multiple h2 and h3 elements are used for section headings like 'ATTACHMENT 1', 'BLASTING REQUIREMENTS AND TECHNICAL CONDITIONS', 'QUARRY OPERATION REQUIREMENTS AND TECHNICAL CONDITIONS' etc.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Wehner, Judy' email header is rendered as an h2 heading, but in the PDF it is simply a name/label at the top of an email printout, not a document section heading.",
+      "severity": "major",
+      "evidence": "HTML: '<h2><u>Wehner, Judy</u></h2>' \u2014 PDF shows 'Wehner, Judy' as a header field of the email, not a section heading.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "Minor text variation in email signature block - Mark Piazza's mobile number formatting differs slightly.",
+      "description": "The formal letter on page 1 references 'GS 74-50 and 51' but the HTML renders it the same way. However, minor formatting differences exist in how the letter body is structured with blockquote vs. original indentation.",
       "severity": "minor",
-      "evidence": "PDF shows 'm. 678.763 5911' and HTML shows 'm. 678.763 5911' - this is consistent, no issue on re-check.",
+      "evidence": "This is acceptable reformatting, not a content error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML renders Rep. Dennis Riddell's name in a cursive font style which is a stylistic interpretation, but the text content 'Dennis' matches the PDF's signature block.",
+      "severity": "minor",
+      "evidence": "HTML: '<p style=\"color: #003399; font-size: large; font-family: cursive;\"><strong>Dennis</strong></p>' \u2014 PDF shows 'Dennis' in a stylized/signature font.",
       "page": null,
       "call_source": "content"
     },
@@ -118,49 +110,41 @@
       "check_id": "C6",
       "description": "Several images have empty or generic alt text that could be more descriptive.",
       "severity": "minor",
-      "evidence": "Multiple images have alt='' (empty string) on pages 5 and 6 content, and several others throughout the attachment section. The State Seal image alt text is reasonable, but some map images could have more descriptive alt text.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C1",
-      "description": "The HTML adds a blue color (#0078D7) styling note 'Thanks Brian. Colonial will provide the information to NCDEQ by noon tomorrow (eastern) as requested.' with a color attribution that isn't in the PDF, but the text itself is present in the PDF. No fabricated content detected.",
-      "severity": "minor",
-      "evidence": "The text content matches page 3 of the PDF email thread. The styling is cosmetic only.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C2",
-      "description": "No significant sections are missing. All major content sections from the 17-page PDF are represented in the HTML, including the formal letter (pages 1-2), email chain (pages 3-8), Colonial Pipeline formal letter (pages 9-10), Attachment 1 (pages 11-14), and Exhibits (pages 15-17).",
-      "severity": "minor",
-      "evidence": "All sections verified present.",
+      "evidence": "Multiple instances of alt='' for images on pages 5, 6, 11, 12, 13, 14, 15 where they appear to be decorative spacers or logos. The signature image alt text 'Signature of David Miller' is reasonable.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "Some empty/decorative image tags appear to be duplicated where the PDF had a single logo or decorative element, but these are structural artifacts of the page-by-page conversion rather than content duplication.",
+      "description": "The HTML includes multiple nested <main> elements which is structurally unusual but does not duplicate content. Each page's content appears once.",
       "severity": "minor",
-      "evidence": "Multiple img tags with empty alt text appear at the start of several main sections, corresponding to page-level decorative elements.",
+      "evidence": "HTML has approximately 12+ <main> elements nested or sequential, representing different pages.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "No significant sections are missing. All pages from the PDF (1-17) appear represented in the HTML, including the formal letter, email chain, Colonial Pipeline cover letter, Attachment 1, and Exhibits.",
+      "severity": "minor",
+      "evidence": "All major sections present: formal DEQ letter, email exchanges, Colonial Pipeline supplemental comments letter, Attachment 1 blasting requirements (Sections A-M), Quarry Operation Requirements (Sections A-B), and Exhibits 1A/1B references.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 0,
-  "major_count": 5,
-  "minor_count": 13,
+  "critical_count": 1,
+  "major_count": 8,
+  "minor_count": 7,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 78.73,
+    "duration_seconds": 245.21,
     "page_count": 17,
-    "visual_input_tokens": 53498,
-    "visual_output_tokens": 2134,
-    "content_input_tokens": 40455,
-    "content_output_tokens": 1009,
-    "timestamp": "2026-04-11T05:47:48.704441",
+    "visual_input_tokens": 53715,
+    "visual_output_tokens": 1912,
+    "content_input_tokens": 40519,
+    "content_output_tokens": 1138,
+    "timestamp": "2026-04-15T14:05:02.149285",
     "auditor_version": "1.0.0"
   }
 }

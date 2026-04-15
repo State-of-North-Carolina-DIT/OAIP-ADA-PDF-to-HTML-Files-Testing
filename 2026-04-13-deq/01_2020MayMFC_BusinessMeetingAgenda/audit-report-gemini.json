@@ -3,10 +3,10 @@
   "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V5",
-      "description": "Page headers and footers are incorrectly injected into the main content flow.",
+      "check_id": "V2",
+      "description": "Page headers and footers disrupt the table structure and content flow.",
       "severity": "major",
-      "evidence": "On HTML page 2, the footer from PDF page 1 ('* Times indicated...') is rendered at the top of the table continuation. Furthermore, the page header from PDF page 2 ('Marine Fisheries Commission Business Meeting Agenda') is injected directly inside the table cell for the 10:00 a.m. activity, immediately preceding the 'Informational Materials continued:' list.",
+      "evidence": "The schedule item for '10:00 a.m.' spans across the page break in the PDF. In the HTML, the table row is incorrectly split: page 1 footnotes are inserted above the continued row, '10:00 a.m.' is duplicated to start a new row, and the page 2 header ('Marine Fisheries Commission Business Meeting Agenda') is injected directly into the table cell alongside the continued list items.",
       "page": 2,
       "call_source": "visual"
     }
@@ -18,13 +18,13 @@
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 56.45,
+    "duration_seconds": 126.7,
     "page_count": 2,
-    "visual_input_tokens": 5072,
-    "visual_output_tokens": 332,
-    "content_input_tokens": 4483,
-    "content_output_tokens": 189,
-    "timestamp": "2026-04-11T05:51:06.168165",
+    "visual_input_tokens": 5275,
+    "visual_output_tokens": 348,
+    "content_input_tokens": 4544,
+    "content_output_tokens": 161,
+    "timestamp": "2026-04-15T14:07:27.430489",
     "auditor_version": "1.0.0"
   }
 }

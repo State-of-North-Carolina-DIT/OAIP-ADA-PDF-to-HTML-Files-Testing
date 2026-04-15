@@ -3,52 +3,100 @@
   "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V3",
-      "description": "Handwritten signatures are missing",
+      "check_id": "V1",
+      "description": "Content duplication",
       "severity": "major",
-      "evidence": "In the PDF, there are handwritten initials/signatures next to the names in the 'FROM:' field (Karen Higgins and Brian Wrenn). These are absent in the HTML version.",
+      "evidence": "The HTML rendering duplicates the page content by first displaying a visual snapshot/image of the PDF page, followed by the semantic HTML text version.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Footer logo is missing",
+      "description": "Missing signatures",
       "severity": "minor",
-      "evidence": "The PDF contains a 'One North Carolina Naturally' logo in the bottom right corner of the page. This image is not present in the HTML rendering.",
+      "evidence": "The handwritten signatures next to the names in the 'FROM' field are missing in the HTML text section.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Incorrect alignment of footer text",
-      "severity": "minor",
-      "evidence": "The contact information block in the bottom left of the PDF is rendered with right-alignment in the HTML version instead of left-alignment.",
+      "description": "Missing footer section and logo",
+      "severity": "major",
+      "evidence": "The contact information block ('Wetlands, Buffers, Stormwater...') and the 'One North Carolina Naturally' logo at the bottom of the PDF page are completely missing from the HTML text rendering.",
       "page": 1,
       "call_source": "visual"
     },
     {
+      "check_id": "V1",
+      "description": "Content duplication",
+      "severity": "major",
+      "evidence": "The HTML rendering duplicates the page content by first displaying a visual snapshot of the PDF page content, followed by the semantic HTML text version.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Content duplication",
+      "severity": "major",
+      "evidence": "The HTML rendering duplicates the page content by first displaying a visual snapshot of the PDF page content, followed by the semantic HTML text version.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Content duplication",
+      "severity": "major",
+      "evidence": "The HTML rendering duplicates the page content by first displaying a visual snapshot of the PDF page content, followed by the semantic HTML text version.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Content duplication",
+      "severity": "major",
+      "evidence": "The HTML rendering duplicates the page content by first displaying a visual snapshot of the PDF page content, followed by the semantic HTML text version.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Content duplication",
+      "severity": "major",
+      "evidence": "The HTML rendering duplicates the page content by first displaying a visual snapshot of the PDF page content, followed by the semantic HTML text version.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Content duplication",
+      "severity": "major",
+      "evidence": "The HTML rendering duplicates the page content by first displaying a visual snapshot of the PDF page content, followed by the semantic HTML text version.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
       "check_id": "V4",
-      "description": "Incorrect list item marker",
+      "description": "Incorrect list item numbering",
       "severity": "minor",
-      "evidence": "The list item continuing from the previous page begins with the marker 'i.' in the PDF. In the HTML, this has been incorrectly converted to 'ix.'.",
+      "evidence": "In the HTML text section, the list item 'i.' under section E is incorrectly rendered as 'ix.'.",
       "page": 7,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
-  "major_count": 1,
-  "minor_count": 3,
+  "major_count": 8,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 70.44,
+    "duration_seconds": 222.81,
     "page_count": 7,
-    "visual_input_tokens": 16150,
-    "visual_output_tokens": 674,
-    "content_input_tokens": 12158,
-    "content_output_tokens": 145,
-    "timestamp": "2026-04-11T05:48:08.280281",
+    "visual_input_tokens": 16353,
+    "visual_output_tokens": 1065,
+    "content_input_tokens": 12219,
+    "content_output_tokens": 162,
+    "timestamp": "2026-04-15T14:04:43.805778",
     "auditor_version": "1.0.0"
   }
 }

@@ -3,76 +3,60 @@
   "verdict": "fail",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "Full-page image of the source document is rendered alongside the extracted text, causing massive content duplication.",
+      "check_id": "V5",
+      "description": "Entire page content is duplicated.",
       "severity": "critical",
-      "evidence": "The HTML version displays a full-scale image of the entire PDF page at the top, followed by the semantic HTML text extraction of the same content.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Multi-column header layout is collapsed into a single column in the semantic text.",
-      "severity": "major",
-      "evidence": "In the HTML text section, the multi-column header (Governor names on left, Department info on right) is rendered as a single left-aligned block.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Header seal and footer logos are missing from the semantic text flow.",
-      "severity": "major",
-      "evidence": "The NC state seal at the top and the DEQ logo at the bottom are missing from the extracted HTML text version.",
+      "evidence": "The HTML contains a visually formatted version of the page content (including logos and layout) followed by a redundant, raw text-only flow of the exact same content.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Reading order is severely disrupted by an injected full-page image.",
+      "description": "Page content is duplicated.",
       "severity": "critical",
-      "evidence": "A full-page raster image of PDF Page 2 is inserted directly into the document flow, interrupting the text continuing from Page 1 and forcing the user to encounter the page content twice.",
+      "evidence": "The text content for this page, including headers and list items, appears twice in the HTML rendering, severely disrupting the reading order.",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Reading order is severely disrupted by an injected full-page image.",
+      "description": "Page content is duplicated.",
       "severity": "critical",
-      "evidence": "A full-page raster image of PDF Page 3 is inserted directly into the HTML document flow, interleaving with and interrupting the semantic text.",
+      "evidence": "The text content for this page, including the header and paragraphs, appears twice sequentially in the HTML rendering.",
       "page": 3,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Reading order is severely disrupted by an injected full-page image.",
+      "description": "Page content is duplicated and fragmented.",
       "severity": "critical",
-      "evidence": "A full-page raster image of PDF Page 4 is inserted directly into the HTML document flow, interleaving with and interrupting the semantic text.",
+      "evidence": "Text elements such as the header and footer information appear multiple times. The reading order is broken by duplicated text blocks surrounding an image block.",
       "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Missing handwritten signature in the semantic text.",
+      "description": "Text paragraphs and signature rendered as a single image.",
       "severity": "major",
-      "evidence": "The blue handwritten signature for Judith A. Wehner is present in the PDF but completely missing from the extracted HTML text section.",
+      "evidence": "The middle section of the page, containing several paragraphs of text ('As required by...' to 'Sincerely,') and the handwritten signature, is rendered as one large composite image rather than selectable text and a discrete signature image.",
       "page": 4,
       "call_source": "visual"
     }
   ],
   "critical_count": 4,
-  "major_count": 3,
+  "major_count": 1,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 93.24,
+    "duration_seconds": 109.29,
     "page_count": 4,
-    "visual_input_tokens": 9532,
-    "visual_output_tokens": 934,
-    "content_input_tokens": 6289,
-    "content_output_tokens": 169,
-    "timestamp": "2026-04-11T05:47:41.590697",
+    "visual_input_tokens": 9735,
+    "visual_output_tokens": 661,
+    "content_input_tokens": 6350,
+    "content_output_tokens": 166,
+    "timestamp": "2026-04-15T14:02:10.310401",
     "auditor_version": "1.0.0"
   }
 }

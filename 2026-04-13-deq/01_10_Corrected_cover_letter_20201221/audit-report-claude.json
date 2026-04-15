@@ -4,9 +4,9 @@
   "findings": [
     {
       "check_id": "V3",
-      "description": "The North Carolina state seal image at the top of the page is missing in the HTML version",
+      "description": "The North Carolina state seal image at the top of the letter is missing in the HTML version",
       "severity": "minor",
-      "evidence": "PDF shows the official NC state seal centered at the top of the letterhead; HTML omits this image",
+      "evidence": "PDF shows the North Carolina state seal centered at the top of the page; HTML version does not display this seal image",
       "page": 1,
       "call_source": "visual"
     },
@@ -14,15 +14,7 @@
       "check_id": "V3",
       "description": "The DEQ logo at the bottom of the page is missing in the HTML version",
       "severity": "minor",
-      "evidence": "PDF shows the DEQ logo near the footer area; HTML omits this image",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The underlined text 'Please attach this letter to the cover of your existing mining permit for future reference' appears as highlighted/colored text in HTML rather than underlined",
-      "severity": "minor",
-      "evidence": "PDF shows this sentence underlined; HTML renders it in a different color/highlight style",
+      "evidence": "PDF shows the DEQ logo near the bottom footer area; HTML version does not display this logo",
       "page": 1,
       "call_source": "visual"
     },
@@ -30,57 +22,49 @@
       "check_id": "V3",
       "description": "The handwritten signature is missing in the HTML version",
       "severity": "minor",
-      "evidence": "PDF shows David Miller's handwritten signature above the typed name; HTML only shows the typed name",
+      "evidence": "PDF shows a handwritten signature above 'David Miller, PE'; HTML version only shows the typed name without a signature image",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "The letterhead layout with Governor, Secretary, Director names positioned to the left of the seal is rendered differently in HTML - shown as stacked labels below the letter content",
+      "check_id": "V4",
+      "description": "Underlined text 'Please attach this letter to the cover of your existing mining permit for future reference' is rendered with underline styling in HTML, which is acceptable, but worth noting it is preserved",
       "severity": "minor",
-      "evidence": "PDF has ROY COOPER/Governor, MICHAEL S. REGAN/Secretary, BRIAN WRENN/Director in left column with seal centered; HTML places these as separate label blocks below the main letter body",
+      "evidence": "Both PDF and HTML show underlined text for this sentence",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "No heading structure exists in the HTML. The document has no h1, h2, or any heading elements. While this is a letter rather than a structured report, a document title as h1 would be expected for accessibility.",
+      "description": "The HTML has no h1 or any heading elements at all. The document lacks any heading structure, with all content rendered as plain paragraphs. While this is a letter and doesn't have traditional section headings, there is no document title h1 either.",
       "severity": "major",
-      "evidence": "The HTML contains no h1-h6 elements at all. The document title in <title> is 'Converted Document' which is generic.",
+      "evidence": "The HTML contains only <p> tags, <div> elements, and a <main> tag but no h1-h6 heading elements anywhere.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML contains a nested <main> element inside the outer <main>, which is a structural issue but does not cause content duplication.",
+      "description": "The HTML contains a nested <main> element inside an outer <main>, which is a structural issue but does not cause content duplication.",
       "severity": "minor",
-      "evidence": "The outer <main> wraps the entire body content, and there is another <main> element nested inside it containing the letter body.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C6",
-      "description": "The alt text for the image describes it as the full letterhead but the actual image in the PDF is the North Carolina state seal, not the entire letterhead. The letterhead text (names, titles) appears separately as text in the PDF.",
-      "severity": "minor",
-      "evidence": "Alt text: 'Official letterhead of the North Carolina Department of Environmental Quality'. The image in the PDF is the state seal/emblem only.",
+      "evidence": "The outer <main> wraps the entire body content, and an inner <main> wraps the letter body. This is invalid HTML structure but doesn't duplicate content.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 7,
+  "minor_count": 5,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 26.76,
+    "duration_seconds": 31.19,
     "page_count": 1,
-    "visual_input_tokens": 3588,
-    "visual_output_tokens": 664,
-    "content_input_tokens": 4352,
-    "content_output_tokens": 556,
-    "timestamp": "2026-04-11T05:46:05.089690",
+    "visual_input_tokens": 3805,
+    "visual_output_tokens": 540,
+    "content_input_tokens": 4416,
+    "content_output_tokens": 484,
+    "timestamp": "2026-04-15T14:00:12.789558",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,54 +1,46 @@
 {
   "document_id": "01_10_2nd_pub_not_20201215",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "HTML rendering includes a large, upside-down image artifact of the entire page preceding the text content.",
-      "severity": "critical",
-      "evidence": "The PDF displays a standard right-side-up letter. The HTML shows an inverted image of the full page at the top, followed by the extracted text rendering right-side up underneath it.",
+      "check_id": "V3",
+      "description": "Missing state seal, signature, and logo images.",
+      "severity": "major",
+      "evidence": "The PDF contains a state seal at the top, a signature for David Miller, and a DEQ logo in the footer. None of these images are present in the HTML rendering.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Missing graphics and signature images in the extracted text section.",
+      "description": "Missing signature images.",
       "severity": "major",
-      "evidence": "The NC state seal, David Miller's signature, and the DEQ footer logo are visible in the PDF but absent from the right-side-up text portion of the HTML.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "HTML rendering includes a large, upside-down image artifact of the entire page preceding the text content.",
-      "severity": "critical",
-      "evidence": "The PDF displays a standard right-side-up notice. The HTML shows an inverted image of the full page at the top, followed by the extracted text right-side up at the bottom.",
+      "evidence": "The PDF contains signature images for Brian Wrenn and Brenda Harris. These signatures are completely missing from the HTML rendering.",
       "page": 2,
       "call_source": "visual"
     },
     {
-      "check_id": "V3",
-      "description": "Missing signature images in the extracted text section.",
-      "severity": "major",
-      "evidence": "The handwritten signatures for Brian Wrenn and Brenda Harris are present in the PDF but completely missing from the HTML text content.",
-      "page": 2,
-      "call_source": "visual"
+      "check_id": "C6",
+      "description": "Generic and slightly inaccurate alt text for images.",
+      "severity": "minor",
+      "evidence": "The HTML uses 'Scanned document page 1' and 'Scanned document page 2' as alt text for the images (which correspond to the state seal and other graphical elements). This does not accurately describe the specific image content (e.g., 'North Carolina State Seal' or 'DEQ Logo').",
+      "page": null,
+      "call_source": "content"
     }
   ],
-  "critical_count": 2,
+  "critical_count": 0,
   "major_count": 2,
-  "minor_count": 0,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 50.14,
+    "duration_seconds": 76.3,
     "page_count": 2,
-    "visual_input_tokens": 5120,
-    "visual_output_tokens": 579,
-    "content_input_tokens": 3854,
-    "content_output_tokens": 150,
-    "timestamp": "2026-04-11T05:46:17.065966",
+    "visual_input_tokens": 5323,
+    "visual_output_tokens": 307,
+    "content_input_tokens": 3915,
+    "content_output_tokens": 265,
+    "timestamp": "2026-04-15T14:00:21.017608",
     "auditor_version": "1.0.0"
   }
 }

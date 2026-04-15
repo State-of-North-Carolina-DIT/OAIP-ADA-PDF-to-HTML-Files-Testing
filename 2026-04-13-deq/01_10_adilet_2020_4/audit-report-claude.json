@@ -4,123 +4,91 @@
   "findings": [
     {
       "check_id": "V3",
-      "description": "The North Carolina state seal image is missing from the HTML rendering",
+      "description": "The North Carolina state seal image/logo is missing from the HTML rendering",
       "severity": "critical",
-      "evidence": "PDF page 1 shows the NC state seal centered at the top; HTML rendering has no seal image",
+      "evidence": "PDF page 1 shows the North Carolina state seal at the top center of the letterhead. The HTML rendering does not display this image.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "The letterhead layout with officials' names on the left and seal/department name centered is not preserved in HTML",
+      "check_id": "V3",
+      "description": "The DEQ logo is missing from the HTML footer area",
       "severity": "major",
-      "evidence": "PDF has ROY COOPER/Governor, MICHAEL S. REGAN/Secretary, BRIAN WRENN/Acting Director on the left with the seal and NORTH CAROLINA/Environmental Quality centered. HTML places these as a flat list at the bottom of the page area rather than in their original positions.",
+      "evidence": "PDF page 1 shows the DEQ logo at the bottom of the page next to the department address. The HTML rendering does not display this logo.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "Underlined text formatting for 'Certified Mail' and 'Return Receipt Requested' is preserved but the visual weight differs slightly",
+      "description": "Certified Mail and Return Receipt Requested underline formatting",
       "severity": "minor",
-      "evidence": "PDF shows underlined text clearly; HTML also shows underlined text but styling is slightly different",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The footer with DEQ logo, address and phone number is rendered differently in HTML",
-      "severity": "minor",
-      "evidence": "PDF shows the footer at page bottom with DEQ logo inline; HTML shows it as a horizontal line separator with text",
+      "evidence": "PDF shows 'Certified Mail' and 'Return Receipt Requested' with underline formatting. HTML preserves the underline formatting, so this is acceptable.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "DEQ logo in footer is missing from HTML",
-      "severity": "major",
-      "evidence": "PDF page 1 footer has the DEQ logo with text; HTML has only text in the footer area",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Indentation of sub-items under item 4 (water quality parameters) differs between PDF and HTML",
-      "severity": "minor",
-      "evidence": "PDF shows parameter categories indented under item 4; HTML shows them with less indentation",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The sub-items under item 5 (A through G) have different indentation in HTML compared to PDF",
-      "severity": "minor",
-      "evidence": "PDF shows deeper indentation for A-G items; HTML shows standard list indentation",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "The signature image of Judith A. Wehner is missing from the HTML rendering",
-      "severity": "major",
-      "evidence": "PDF page 4 shows a handwritten signature above the typed name; HTML only shows 'Sincerely,' with no signature image",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The address block on page 4 has different alignment in HTML vs PDF",
-      "severity": "minor",
-      "evidence": "PDF shows the Division address block indented/centered; HTML shows it left-aligned",
+      "description": "The signature is missing from the HTML rendering on the final page",
+      "severity": "critical",
+      "evidence": "PDF page 4 shows a handwritten signature by Judith A. Wehner. The HTML rendering does not include this signature image.",
       "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "No heading hierarchy exists in the HTML. The document has no h1, h2, or any heading tags. The document title and section structure are not reflected using semantic heading elements.",
+      "description": "The HTML has no h1 or any heading elements at all. The document lacks any heading structure \u2014 there are no h1, h2, h3, etc. tags used throughout the entire document. The letter's subject line (RE:) and numbered items could benefit from heading structure, but at minimum there should be a document title as h1.",
       "severity": "major",
-      "evidence": "The HTML uses only <p>, <ol>, <li>, and <div> elements. There are no h1-h6 tags anywhere in the document. The RE: subject line, numbered items, and other structural elements lack heading markup.",
+      "evidence": "The entire HTML uses only <p>, <ol>, <li>, <div>, and <figure> elements with no heading tags whatsoever.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C6",
-      "description": "The first image alt text says 'North Carolina state seal' which is reasonable, but the signature image alt text 'Signature of Judith A. Wehner' is accurate and helpful. However, two page-break images have empty alt text.",
+      "description": "The first image has alt text 'North Carolina state seal' which is a reasonable description. The signature image has alt text 'Signature of Judith A. Wehner' which is accurate. However, two other images have empty alt text (alt=''), which is generic but not fabricated.",
       "severity": "minor",
-      "evidence": "Two <img> tags have alt=\"\" which is acceptable for decorative/page-break images.",
+      "evidence": "Two <img> tags have alt='' for what appear to be page break/background images.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "Page headers ('Certified Mail / Mr. Threatt / Page Two/Three/Four') are repeated inline within the HTML content, which is expected from page-level reproduction but creates minor duplication of header/footer content within the flow.",
+      "description": "The page headers ('Certified Mail / Mr. Threatt / Page Two/Three/Four') are repeated both inline within the content flow and as structural dividers. This is acceptable since the PDF itself contains these repeated headers on each page. No substantive content duplication found.",
       "severity": "minor",
-      "evidence": "The page headers appear as div.page-header elements interspersed within the document content, faithfully reproducing the PDF pagination headers.",
+      "evidence": "Page headers appear as <div class='page-header'> blocks matching PDF page headers.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C1",
-      "description": "The footer text shows '27699 1612' with a space, whereas the PDF shows '27699-1612' with a hyphen in one instance, and the footer on page 1 shows '27699 1612'. This is a very minor inconsistency in the footer reproduction.",
+      "description": "The HTML nests the page footer (department address/phone) inside list item 4 rather than as a separate page footer element. While this doesn't fabricate content, it structurally misattributes the footer content as part of the list item content. No fabricated text was found.",
       "severity": "minor",
-      "evidence": "PDF page 1 footer: 'Raleigh, North Carolina 27699 1612'. HTML footer: 'Raleigh, North Carolina 27699 1612'. This matches the PDF footer. On page 4 the PDF shows 'Raleigh, NC 27699-1612' with a hyphen, and the HTML also shows 'Raleigh, NC 27699-1612'. Both are accurate.",
+      "evidence": "The footer text 'North Carolina Department of Environmental Quality | Division of Energy...' appears inside the <li> for item 4, matching PDF page 1 footer text exactly.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "All sections and content from the 4-page PDF are present in the HTML. No sections are missing.",
+      "severity": "minor",
+      "evidence": "All 5 numbered items, sub-items A-G under item 5, basin-specific comments, closing paragraphs, signature block, and cc line are all present.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 1,
-  "major_count": 4,
-  "minor_count": 8,
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 5,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 40.78,
+    "duration_seconds": 52.9,
     "page_count": 4,
-    "visual_input_tokens": 13172,
-    "visual_output_tokens": 1085,
-    "content_input_tokens": 10698,
-    "content_output_tokens": 784,
-    "timestamp": "2026-04-11T05:46:57.843064",
+    "visual_input_tokens": 13389,
+    "visual_output_tokens": 625,
+    "content_input_tokens": 10762,
+    "content_output_tokens": 846,
+    "timestamp": "2026-04-15T14:01:37.153466",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,30 +1,21 @@
 {
   "document_id": "0_ManteoAmend1Certif_021209",
   "verdict": "pass",
-  "findings": [
-    {
-      "check_id": "V4",
-      "description": "Relative font size emphasis is lost.",
-      "severity": "minor",
-      "evidence": "In the PDF, the final two paragraphs ('Adopted by...' and 'Certified by...') are rendered in a significantly larger font than the preceding list text. In the HTML, these paragraphs are rendered in standard body text size, losing the visual emphasis present in the source.",
-      "page": 1,
-      "call_source": "visual"
-    }
-  ],
+  "findings": [],
   "critical_count": 0,
   "major_count": 0,
-  "minor_count": 1,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 24.82,
+    "duration_seconds": 22.79,
     "page_count": 1,
-    "visual_input_tokens": 2899,
-    "visual_output_tokens": 220,
-    "content_input_tokens": 2478,
-    "content_output_tokens": 137,
-    "timestamp": "2026-04-11T05:57:33.528021",
+    "visual_input_tokens": 3102,
+    "visual_output_tokens": 125,
+    "content_input_tokens": 2539,
+    "content_output_tokens": 120,
+    "timestamp": "2026-04-15T14:11:55.677017",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,78 +1,38 @@
 {
   "document_id": "(UPDATED)_25095_Colwick_Rd_SNI_20250925.pdf",
-  "verdict": "pass",
+  "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V4",
-      "description": "The title in the PDF is rendered in a more compact bold block, while the HTML splits it into two separate large heading lines with more spacing between them.",
-      "severity": "minor",
-      "evidence": "PDF: 'SUMMARY OF NOTICE OF / INTENT TO REDEVELOP A BROWNFIELDS PROPERTY' appears as a single centered bold block with subheadings. HTML: The title is split into two large heading elements with a horizontal rule separator before the subheadings.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The PDF uses justified text alignment for body paragraphs, while the HTML uses left-aligned text.",
-      "severity": "minor",
-      "evidence": "PDF body text is fully justified with even right margins. HTML body text is left-aligned with ragged right margins.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The URL in the PDF is rendered as a hyperlink with underline styling, while in the HTML it appears as plain text without visible hyperlink formatting.",
-      "severity": "minor",
-      "evidence": "PDF: 'https://edocs.deq.nc.gov/WasteManagement/' appears as a blue underlined hyperlink. HTML: same URL appears as plain text.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The bold underlined date 'October 1, 2025' in the PDF preserves both bold and underline, while the HTML shows it in bold only without underline.",
-      "severity": "minor",
-      "evidence": "PDF: 'October 1, 2025' is bold and underlined. HTML: 'October 1, 2025' appears bold but not underlined.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "C4",
-      "description": "The URL https://edocs.deq.nc.gov/WasteManagement/ is present in the HTML as plain text but not rendered as a clickable hyperlink, whereas in the PDF it appears as a hyperlink. Similarly, the email addresses are plain text in the HTML rather than mailto links. However, no links are fabricated.",
+      "description": "The URL for the DEQ Laserfiche database is present in the HTML but not rendered as a clickable hyperlink, whereas the PDF version shows it as a hyperlink. Similarly, the email addresses (lonnavines@cmlibrary.org, shirley.liggins@deq.nc.gov) are plain text in the HTML but appear as links in the PDF.",
       "severity": "minor",
-      "evidence": "PDF contains hyperlinked URL 'https://edocs.deq.nc.gov/WasteManagement/' and email 'shirley.liggins@deq.nc.gov'. HTML has these as plain text without anchor tags.",
+      "evidence": "PDF has clickable links for 'https://edocs.deq.nc.gov/WasteManagement/' and 'shirley.liggins@deq.nc.gov'. HTML renders these as plain text without <a> tags.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML contains nested <main> tags, which is a structural duplication of the wrapper element, though the textual content itself is not duplicated.",
-      "severity": "minor",
-      "evidence": "HTML has <main> inside <main>, though this is a structural issue rather than content duplication.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "The document title is split across two lines in the h1 using a <br> tag, combining 'SUMMARY OF NOTICE OF' and 'INTENT TO REDEVELOP A BROWNFIELDS PROPERTY'. The PDF also has two additional centered bold lines ('Brownfields Property Name: Colwick Road Property' and 'Brownfields Project Number: 25095-21-060') which could be considered subheadings but are rendered as a paragraph with <strong> tags. This is an acceptable representation of the PDF layout.",
-      "severity": "minor",
-      "evidence": "PDF has four centered bold header lines; HTML has the first two as h1 and the next two as bold paragraph text.",
+      "description": "The HTML contains nested <main> elements, which is structurally incorrect but does not cause visible content duplication. The page footer identifier '25095-21-060/Colwick Road Property/202500925' appears in the HTML footer, matching the PDF header/footer, so this is acceptable.",
+      "severity": "major",
+      "evidence": "HTML has <main> inside <main>. This is a structural issue but does not result in duplicated visible content.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 0,
-  "minor_count": 7,
+  "major_count": 1,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 32.48,
+    "duration_seconds": 28.91,
     "page_count": 1,
-    "visual_input_tokens": 3830,
-    "visual_output_tokens": 640,
-    "content_input_tokens": 5554,
-    "content_output_tokens": 625,
-    "timestamp": "2026-04-11T05:44:55.247108",
+    "visual_input_tokens": 4047,
+    "visual_output_tokens": 181,
+    "content_input_tokens": 5618,
+    "content_output_tokens": 500,
+    "timestamp": "2026-04-15T13:59:04.712956",
     "auditor_version": "1.0.0"
   }
 }

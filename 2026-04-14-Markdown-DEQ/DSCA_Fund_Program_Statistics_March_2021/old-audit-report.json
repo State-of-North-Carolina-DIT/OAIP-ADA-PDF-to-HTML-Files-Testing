@@ -1,0 +1,78 @@
+{
+  "document_id": "DSCA_Fund_Program_Statistics_March_2021",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a two-column layout for Receipts and Disbursements (FY 2020-2021 on the left, Duration of Program on the right). The HTML converts this into a single four-column table, which changes the visual grouping from side-by-side independent sections to a merged table structure.",
+      "severity": "major",
+      "evidence": "PDF shows two visually separate sections with their own headers ('Receipts:' and 'Disbursements:' appearing twice each). HTML merges them into one wide table with columns: FY 2020-2021 Category, Amount, Duration of Program Category, Amount.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Fund Balance and Encumbered in Contracts lines are presented as a simple right-aligned summary in the PDF, but rendered as a separate table in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Fund Balance as of 3/31/2021: $ 13,054,308.66' with bold formatting inline. HTML puts these into a Description/Amount table.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Dash/hyphen values for zero or empty amounts in the PDF (e.g., Rebate: $ -, Interest: $ -) are rendered as '$ -' in the HTML, which is acceptable, but the underline formatting on section headers like 'Receipts:' and 'Disbursements:' is not preserved in the HTML table.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Receipts:' and 'Disbursements:' with underline decoration. HTML shows them as plain text rows in the table without underline styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is functionally preserved. The DSCA Site Statistics section appears after the financial data in both versions, and the fund balance summary appears between them in both.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML present: financial data \u2192 fund balance summary \u2192 site statistics.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML table headers include fabricated column names not present in the PDF",
+      "severity": "minor",
+      "evidence": "The HTML adds column headers like 'FY 2020-2021 (through 3/31/21) Category', 'FY 2020-2021 (through 3/31/21) Amount', 'Description', 'Amount', 'Statistic', 'Value' which are not explicitly in the PDF but are reasonable structural labels for the table data. These are organizational headers rather than fabricated content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The category labels are duplicated across columns 1 and 3 of the main table. In the PDF, each side has its own set of line items, but the labels are identical. The HTML repeats the label text in both column 1 and column 3, which while matching the PDF layout, creates redundancy in the table structure.",
+      "severity": "major",
+      "evidence": "E.g., 'Solvent Tax Revenue:' appears in both column 1 and column 3, 'Sales Tax Revenue:' appears in both columns, etc. This mirrors the PDF's two-column layout, so this is actually faithful reproduction.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There are two nested <main> elements in the HTML, which is a structural issue but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The HTML has <main> inside <body> and another <main> inside the first <main>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.48,
+    "page_count": 1,
+    "visual_input_tokens": 3832,
+    "visual_output_tokens": 744,
+    "content_input_tokens": 6119,
+    "content_output_tokens": 627,
+    "timestamp": "2026-04-14T04:56:23.136152",
+    "auditor_version": "1.0.0"
+  }
+}

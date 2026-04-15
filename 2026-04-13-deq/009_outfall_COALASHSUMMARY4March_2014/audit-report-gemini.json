@@ -4,27 +4,35 @@
   "findings": [
     {
       "check_id": "V2",
-      "description": "Loss of complex table header structure and incorrect parsing of spanned cells.",
+      "description": "Loss of multi-row and multi-column merged cell structure at the bottom right of the table.",
       "severity": "major",
-      "evidence": "In the PDF, the table header has multiple tiers with cells spanning multiple columns (e.g., dates and report numbers spanning the value and qualifier columns). The HTML flattens this by creating explicit 'Value' and 'Qualifier' columns and concatenating all parent header text into each cell. Furthermore, the text 'no NC standards for dissolved metals', which spans multiple rows in the rightmost columns of the PDF, is split across two rows and duplicated across two columns in the HTML.",
+      "evidence": "In the PDF, the text 'no NC standards for dissolved metals' is contained within a large merged cell spanning the last two columns ('Applicable Water Quality Standard' and 'Basis for Standard') and 18 rows (starting from 'Al - Dissolved Aluminum'). In the HTML, this merged cell is split; the text 'no NC standards for' is duplicated across both columns in the first row of that section, 'dissolved metals' is duplicated across both columns in the second row, and the remaining cells are left empty.",
       "page": 1,
       "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Merged cells containing text were split and duplicated across columns and rows instead of using colspan and rowspan.",
+      "severity": "minor",
+      "evidence": "In the PDF, the text 'no NC standards for dissolved metals' spans the last two columns for the 'Al - Dissolved Aluminum' and 'As Dissolved Arsenic' rows. In the HTML, this text is split and duplicated: the 'Al' row contains '<td><em>no NC standards for</em></td>' twice, and the 'As' row contains '<td><em>dissolved metals</em></td>' twice.",
+      "page": null,
+      "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 0,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 53.32,
+    "duration_seconds": 65.79,
     "page_count": 1,
-    "visual_input_tokens": 2898,
-    "visual_output_tokens": 286,
-    "content_input_tokens": 7116,
-    "content_output_tokens": 137,
-    "timestamp": "2026-04-11T05:45:28.924486",
+    "visual_input_tokens": 3101,
+    "visual_output_tokens": 300,
+    "content_input_tokens": 7177,
+    "content_output_tokens": 299,
+    "timestamp": "2026-04-15T13:59:41.600736",
     "auditor_version": "1.0.0"
   }
 }

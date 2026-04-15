@@ -4,27 +4,43 @@
   "findings": [
     {
       "check_id": "V2",
-      "description": "Incorrect table structure with duplicated content in the vendor information section.",
+      "description": "The vendor information table contains duplicated content and incorrect structure.",
       "severity": "major",
-      "evidence": "On page 1, the PDF contains a complex form layout for vendor details. The HTML attempts to render this as a 3-column table, which forces incorrect grouping and duplicates several fields across columns (e.g., 'FEDERAL ID OR SOCIAL SECURITY NO.', 'Where will services be performed:', and 'FAX NUMBER' appear multiple times in the HTML table).",
+      "evidence": "In the HTML vendor table, the 'FEDERAL ID' is duplicated in column 3, 'Where will services be performed:' is repeated across all three columns, and the fax number is duplicated in columns 2 and 3.",
       "page": 1,
       "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "A signature image is missing and an incorrect image snippet is inserted in its place.",
+      "severity": "major",
+      "evidence": "The handwritten signature in the 'AUTHORIZED SIGNATURE' cell is missing in the HTML. Instead, an image containing a cropped snippet of the 'ACCEPTANCE OF QUOTE' section is incorrectly placed in that cell.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table cells were duplicated in the first page's vendor execution form to force a uniform 3-column grid structure.",
+      "severity": "minor",
+      "evidence": "In the HTML table for vendor information, the cells for 'FEDERAL ID OR SOCIAL SECURITY NO.', 'Where will services be performed', and 'FAX NUMBER' are repeated in both Column 2 and Column 3. The source PDF only has these fields once, spanning the available space.",
+      "page": null,
+      "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 1,
-  "minor_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 87.11,
+    "duration_seconds": 281.8,
     "page_count": 10,
-    "visual_input_tokens": 22748,
-    "visual_output_tokens": 611,
-    "content_input_tokens": 20190,
-    "content_output_tokens": 207,
-    "timestamp": "2026-04-11T05:57:28.125889",
+    "visual_input_tokens": 22951,
+    "visual_output_tokens": 574,
+    "content_input_tokens": 20251,
+    "content_output_tokens": 340,
+    "timestamp": "2026-04-15T14:15:05.165451",
     "auditor_version": "1.0.0"
   }
 }

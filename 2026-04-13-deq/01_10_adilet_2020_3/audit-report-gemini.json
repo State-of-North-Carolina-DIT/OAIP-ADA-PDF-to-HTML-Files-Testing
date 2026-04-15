@@ -1,46 +1,38 @@
 {
   "document_id": "01_10_adilet_2020_3",
-  "verdict": "needs_review",
+  "verdict": "fail",
   "findings": [
     {
       "check_id": "V5",
-      "description": "Duplicated content disrupts reading flow",
-      "severity": "major",
-      "evidence": "The HTML rendering presents a correctly formatted visual layout of the page, but then appends an unformatted, plain-text version of the entire page content at the bottom. A user reading top-to-bottom would read the letter twice.",
+      "description": "Entire page content is duplicated in the HTML rendering.",
+      "severity": "critical",
+      "evidence": "The HTML visually presents the page content first in a formatted layout (with images), and then repeats the entire text sequentially in a plain, unformatted block below it.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Duplicated content disrupts reading flow",
-      "severity": "major",
-      "evidence": "Similar to page 1, the HTML presents the visual layout followed by a plain-text dump of the page's content at the bottom.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Incorrect reading order across page boundaries in text section",
-      "severity": "minor",
-      "evidence": "In the duplicated plain-text section at the bottom of the page, the text flow begins with the footer content from Page 1 ('North Carolina Department of Environmental Quality...') before displaying the header for Page 2.",
+      "description": "Entire page content is duplicated in the HTML rendering.",
+      "severity": "critical",
+      "evidence": "Similar to page 1, the HTML visually presents the page content first in a formatted layout (with the signature image), and then repeats the entire text sequentially in a plain, unformatted block below it.",
       "page": 2,
       "call_source": "visual"
     }
   ],
-  "critical_count": 0,
-  "major_count": 2,
-  "minor_count": 1,
+  "critical_count": 2,
+  "major_count": 0,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 67.52,
+    "duration_seconds": 88.41,
     "page_count": 2,
-    "visual_input_tokens": 5120,
-    "visual_output_tokens": 488,
-    "content_input_tokens": 4055,
-    "content_output_tokens": 143,
-    "timestamp": "2026-04-11T05:47:01.948131",
+    "visual_input_tokens": 5323,
+    "visual_output_tokens": 361,
+    "content_input_tokens": 4116,
+    "content_output_tokens": 147,
+    "timestamp": "2026-04-15T14:01:24.954105",
     "auditor_version": "1.0.0"
   }
 }

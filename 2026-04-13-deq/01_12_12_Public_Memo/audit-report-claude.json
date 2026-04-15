@@ -4,123 +4,115 @@
   "findings": [
     {
       "check_id": "V3",
-      "description": "NCDENR logo/seal image missing from HTML conversion",
+      "description": "The NCDENR logo/header graphic present at the top of the PDF page is missing from the HTML rendering.",
       "severity": "critical",
-      "evidence": "PDF shows NCDENR seal/logo at top of page. HTML has no image, just text 'NCDENR'.",
+      "evidence": "PDF shows the NCDENR tree/shield logo at the top of the page. HTML has no image, only text 'NCDENR' as a heading.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "Handwritten initials/signatures not preserved in HTML",
+      "description": "Section I heading in PDF is underlined to denote it as a section heading. In HTML it uses a larger heading style but the underline formatting is different.",
       "severity": "minor",
-      "evidence": "PDF shows handwritten initials next to FROM field (Karen Higgins and Brian Wrenn signatures). HTML has plain text only.",
+      "evidence": "PDF shows 'I. Umbrella Mitigation Banking Instrument (UMBI) Template for Nutrient Offset Mitigation Banks' as underlined text. HTML renders it as a larger heading without underline.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Header layout differs - PDF has three-column header with Governor/Director/Secretary, HTML has similar but slightly different spacing",
-      "severity": "minor",
-      "evidence": "PDF has Beverly Eaves Perdue, Charles Wakild P.E., and Dee Freeman in a three-column layout. HTML preserves this but with different alignment.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "One North Carolina Naturally logo missing from HTML footer",
-      "severity": "minor",
-      "evidence": "PDF shows 'One NorthCarolina Naturally' logo at bottom right of page 1. HTML renders this as text.",
+      "description": "The PDF has a clear three-part header layout with Governor name on left, Director name center, Secretary name right. The HTML reproduces this but as a separate repeated block, creating visual duplication of the header area.",
+      "severity": "major",
+      "evidence": "PDF page 1 has one header block. HTML shows the content rendered once in the main flow, then the footer information block appears separately below.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V2",
-      "description": "Table formatting differs but data is preserved",
+      "description": "The table of Corps' Regional General Permit Numbers and DWQ General Certification Numbers is rendered with proper structure in both formats, but the HTML uses a styled table with visible grid lines whereas the PDF uses underlined headers only.",
       "severity": "minor",
-      "evidence": "PDF shows Corps' Regional General Permit Number and DWQ General Certification Number as a formatted table with underlined headers. HTML renders as a proper HTML table with different styling.",
+      "evidence": "PDF table has minimal formatting with underlined column headers. HTML table has alternating rows with borders and header styling.",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "Section headings formatting slightly different",
+      "description": "Bullet/arrow markers in the PDF (\u27a4 symbols) are converted to circle bullets in the HTML list items.",
       "severity": "minor",
-      "evidence": "PDF has underlined section headings (I. and II.), HTML uses larger heading styles without underline.",
-      "page": 1,
+      "evidence": "PDF uses arrow/triangle bullet markers (\u27a4) for list items under section C. HTML uses standard circle list markers (\u25cb).",
+      "page": 3,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Footer contact information repositioned",
+      "check_id": "V4",
+      "description": "Italicized text blocks in the PDF (permit condition language) are preserved in the HTML rendering but rendered differently - some italic passages appear as regular text.",
       "severity": "minor",
-      "evidence": "PDF has footer with address/phone/fax at bottom left. HTML consolidates this differently.",
-      "page": 1,
+      "evidence": "PDF page 3 shows several conditions in italic text (e.g., Construction Stormwater Permit section, Placement of Culverts section). HTML maintains some italic but not all.",
+      "page": 3,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "The h1 is 'NCDENR' which is derived from the letterhead logo text, not the document title. The actual document subject is in the RE: line. This is acceptable for a conversion but worth noting.",
+      "description": "The h1 heading is 'NCDENR' which is the logo text, not the document title. The actual document subject line (the RE: field) or a descriptive title would better serve as the document title. However, this is an acceptable structural decision by the converter.",
       "severity": "minor",
-      "evidence": "HTML uses <h1>NCDENR</h1>. The document is a memo with RE: subject line about UMBI Template and WQC/IWP revisions.",
+      "evidence": "HTML h1: 'NCDENR'. The document is a memo with RE: subject line.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C5",
-      "description": "There is a nested <main> inside <main>, creating invalid HTML structure, though this does not affect content fidelity.",
-      "severity": "major",
-      "evidence": "HTML has <body><main><main>...</main></main></body>",
+      "description": "There is a nested <main> inside <main>, which is a structural HTML issue but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML: <body><main><main>...</main></main></body>",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C6",
-      "description": "All seven images have generic alt text 'Scanned document page X' which is not descriptive of actual content but is not fabricated.",
+      "description": "Alt text for all 7 embedded images is generic ('Scanned document page X') rather than descriptive of actual content. This is acceptable since the images appear to be scanned page images, but more descriptive alt text would be better.",
       "severity": "minor",
-      "evidence": "All img tags use alt='Scanned document page 1' through 'Scanned document page 7'",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C8",
-      "description": "The PDF shows the last list item 'i' in the thresholds list using lowercase Roman numeral style, but the HTML switches to list-style-type: lower-roman mid-list, which is inconsistent with the ordered list type='a' used for the other items.",
-      "severity": "minor",
-      "evidence": "PDF shows items a-h then i. HTML uses <li style='list-style-type: lower-roman;'> for item i within an <ol type='a'>.",
+      "evidence": "All img tags have alt='Scanned document page X' where X is 1-7",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The entire scanned page images are included alongside the fully transcribed text content, effectively duplicating all content - once as images and once as text. While this may be intentional for the conversion format, it represents significant duplication.",
+      "description": "The full scanned page images are embedded alongside the full text transcription, effectively duplicating all content - each page appears both as an image and as fully transcribed text. This is a design choice but results in significant content duplication.",
       "severity": "major",
-      "evidence": "Seven <figure><img> tags show scanned pages while the same content is fully transcribed in HTML text.",
+      "evidence": "Each page of the PDF appears as both an <img> tag and as full HTML text content.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "Minor text normalization: PDF shows 'allthe' (run together) on page 1 and 'allthe' appears corrected to 'all the' in HTML. Also 'UMBltemplate' in PDF corrected to 'UMBI template'. These are acceptable corrections of OCR artifacts.",
+      "description": "In section E, item i, the list numbering changes from alphabetic (a-h) to roman numeral (i) in the HTML. The PDF consistently uses lowercase alphabetic lettering (a through i).",
       "severity": "minor",
-      "evidence": "PDF page 1: 'allthe parties involved' and 'UMBltemplate'; HTML: 'all the parties involved' and 'UMBI template'",
+      "evidence": "PDF: 'i. Any impacts to streams and buffers...' HTML: '<li style=\"list-style-type: lower-roman;\">Any impacts to streams and buffers...'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF text says 'All application shall address' (singular, possibly a typo in the original), while the HTML says 'All applications shall address' (plural, corrected).",
+      "severity": "minor",
+      "evidence": "PDF page 3: 'All applicationshall address stormwater management' (also missing space). HTML: 'All applications shall address stormwater management'",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 1,
   "major_count": 2,
-  "minor_count": 10,
+  "minor_count": 9,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 48.31,
+    "duration_seconds": 167.47,
     "page_count": 7,
-    "visual_input_tokens": 21862,
-    "visual_output_tokens": 816,
-    "content_input_tokens": 25699,
-    "content_output_tokens": 930,
-    "timestamp": "2026-04-11T05:47:50.263193",
+    "visual_input_tokens": 22079,
+    "visual_output_tokens": 1132,
+    "content_input_tokens": 25763,
+    "content_output_tokens": 891,
+    "timestamp": "2026-04-15T14:04:12.426514",
     "auditor_version": "1.0.0"
   }
 }

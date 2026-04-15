@@ -1,0 +1,126 @@
+{
+  "document_id": "01_Agenda_Timeline",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column opening slide layout was collapsed into a single vertical flow.",
+      "severity": "major",
+      "evidence": "PDF page 1 has a left troubleshooting panel and a separate right-side welcome/title area with callout box. HTML page 1 stacks the troubleshooting content first and then places the meeting title/date/text below, losing the side-by-side structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Right-side welcome panel/callout graphic treatment is not preserved as a cohesive section.",
+      "severity": "major",
+      "evidence": "In the PDF on page 1, the welcome title and green callout box appear together on the right half of the slide. In the HTML, this content is detached and rendered as plain text below the troubleshooting panel, with the callout box styling/placement largely lost.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Title styling and emphasis on the opening slide are significantly simplified.",
+      "severity": "minor",
+      "evidence": "PDF page 1 uses large decorative/italic title text and a prominent boxed prompt; HTML renders the title in standard heading/body styles, reducing visual distinction though the text remains present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order no longer matches the original visual flow of the opening slide.",
+      "severity": "major",
+      "evidence": "A sighted reader of PDF page 1 can take in troubleshooting and welcome sections in parallel across the page. In the HTML, all left-panel content is read before the welcome section, changing the intended sequence and grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Agenda table was converted to mostly plain text rather than preserved as a clear table.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows agenda items aligned in a two-column schedule layout by time and topic. HTML page 2 renders the agenda as loose text lines without the tabular grid/alignment seen in the source.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Agenda layout/alignment is weakened.",
+      "severity": "minor",
+      "evidence": "PDF page 2 clearly separates times in a left column and topics in a right column. HTML page 2 keeps the sequence but loses the strong structured alignment, making the schedule harder to scan.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Timeline table structure is not preserved; images are separated from the table.",
+      "severity": "major",
+      "evidence": "PDF page 3 contains a two-column timeline table with a vertical strip of related images integrated at the right side of the slide. HTML page 3 places images in a detached vertical stack above/left of the table, so the original combined layout is lost.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Overall slide composition on the timeline page is substantially altered.",
+      "severity": "major",
+      "evidence": "PDF page 3 has centered title/subtitle above a large table with images along the right edge. HTML page 3 pushes the image strip to the upper left and the table below, changing the page structure significantly.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Images are present but moved to the wrong section of the page.",
+      "severity": "major",
+      "evidence": "On PDF page 3, the five habitat images form a right-side column adjacent to the table. In HTML page 3, the images appear as a separate vertical stack before the table instead of beside it.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on the timeline page is changed by moving images before the table.",
+      "severity": "major",
+      "evidence": "In PDF page 3, a reader encounters the title and then primarily the table, with images as side accompaniment. In HTML page 3, the image strip appears before the table content, altering the content flow.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document structure. Multiple top-level titles are marked as h1, and the first content block ('AUDIO TROUBLESHOOTING') is not represented as a heading.",
+      "severity": "major",
+      "evidence": "HTML uses <h1>Welcome to the CHPP Steering Committee Meeting</h1>, <h1>Agenda</h1>, and <h1>Coastal Habitat Protection Plan</h1> plus <h2>Timeline</h2>. In the PDF, these appear as slide/page titles on separate pages, while 'AUDIO TROUBLESHOOTING' is also a prominent title but is rendered only as <p><strong>AUDIO TROUBLESHOOTING</strong></p>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A stray page number was introduced into the body text, altering content flow.",
+      "severity": "major",
+      "evidence": "HTML contains a standalone paragraph '<p>3</p>' between 'Timeline' and the images/table. In the PDF, the number 3 appears as a slide/page number at the bottom center of the third page, not as body content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Timeline table/image layout from the PDF is not faithfully preserved; the right-side image strip is separated into standalone figures above the table instead of remaining part of the page's structured content adjacent to the table.",
+      "severity": "major",
+      "evidence": "In the PDF third page, the 'Coastal Habitat Protection Plan Timeline' table is displayed with a vertical image strip on the right side of the page. In the HTML, three separate <figure><img ...></figure> elements are inserted before the table, losing the original page/table relationship.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 11,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 680.69,
+    "page_count": 3,
+    "visual_input_tokens": 6957,
+    "visual_output_tokens": 946,
+    "content_input_tokens": 6868,
+    "content_output_tokens": 544,
+    "timestamp": "2026-04-15T00:32:49.577024",
+    "auditor_version": "1.0.0"
+  }
+}

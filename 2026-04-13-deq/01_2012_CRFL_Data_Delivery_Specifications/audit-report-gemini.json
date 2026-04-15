@@ -4,35 +4,35 @@
   "findings": [
     {
       "check_id": "V3",
-      "description": "Missing data relationship diagram",
+      "description": "A hierarchical flowchart diagram is missing, and its text content is rendered as an unstructured list.",
       "severity": "critical",
-      "evidence": "The PDF contains a flowchart diagram in Appendix B showing the hierarchical relationship between Record Types (1 to 9). This diagram is completely absent in the corresponding HTML conversion.",
+      "evidence": "In the PDF (Page 4), a flowchart diagram uses boxes and connecting lines to illustrate the hierarchical relationships between different database Record Types (e.g., Record Type 1 linking to Record Type 2). In the HTML, the visual structure is entirely missing. The text from inside the diagram boxes is instead rendered as a simple vertical column, completely losing the critical relational context the diagram provided.",
       "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "C2",
-      "description": "The hierarchical flowchart diagram in Appendix B was converted into sequential text paragraphs, losing the visual structure and connecting lines, though the structural relationships are still described in the subsequent text.",
-      "severity": "minor",
-      "evidence": "PDF page 4 contains a flowchart diagram. The HTML extracts the text from the diagram's boxes into sequential <p> tags (e.g., '<p>Environmental Data<br>Record Type 1</p>') without preserving the visual tree structure.",
+      "description": "A flowchart diagram illustrating the hierarchical relationships between record types is missing from the HTML.",
+      "severity": "major",
+      "evidence": "On Page 4 of the source PDF, Appendix B contains a visual flowchart connecting the various Record Types (e.g., lines connecting 'Environmental Data Record Type 1' to 'Replicate Data Record Type 2'). The HTML completely omits this diagram (no <img> tag) and instead just dumps the text from inside the diagram boxes as disconnected paragraphs, causing a loss of the visual relationship information.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 1,
-  "major_count": 0,
-  "minor_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 91.45,
+    "duration_seconds": 96.64,
     "page_count": 10,
-    "visual_input_tokens": 22648,
-    "visual_output_tokens": 542,
-    "content_input_tokens": 14924,
-    "content_output_tokens": 293,
-    "timestamp": "2026-04-11T05:49:20.155416",
+    "visual_input_tokens": 22851,
+    "visual_output_tokens": 551,
+    "content_input_tokens": 14985,
+    "content_output_tokens": 295,
+    "timestamp": "2026-04-15T14:03:13.797453",
     "auditor_version": "1.0.0"
   }
 }

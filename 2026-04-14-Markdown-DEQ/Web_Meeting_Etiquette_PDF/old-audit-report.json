@@ -1,0 +1,54 @@
+{
+  "document_id": "Web_Meeting_Etiquette_PDF",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The title in the PDF lacks the horizontal rule/divider that appears in the HTML version beneath the main heading.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the title 'NC Sedimentation Control Commission Web Meeting Etiquette' without a divider line below it. HTML page 1 shows a red/dark horizontal rule beneath the title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML version appears to consolidate the content more compactly, with the 'SCC Member and Presenter Etiquette' section beginning at the bottom of the first HTML page, whereas in the PDF it starts on page 2.",
+      "severity": "minor",
+      "evidence": "PDF page 1 ends after the Guest/Public Attendee Etiquette section. HTML page 1 shows the beginning of 'SCC Member and Presenter Etiquette' section at the bottom.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bullet style differences: PDF uses filled circle bullets for main items and open circle 'o' for sub-items. HTML uses filled circles for main items and open circles for sub-items, which is functionally equivalent but the sub-bullet styling appears slightly different.",
+      "severity": "minor",
+      "evidence": "PDF sub-bullets use 'o' character style, HTML uses open circle list markers. Both convey the same hierarchy.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside another <main> element, which is a structural duplication of the container, though content itself is not duplicated.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> wrapping another <main> element.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 23.23,
+    "page_count": 2,
+    "visual_input_tokens": 5988,
+    "visual_output_tokens": 683,
+    "content_input_tokens": 6645,
+    "content_output_tokens": 313,
+    "timestamp": "2026-04-14T05:06:15.186819",
+    "auditor_version": "1.0.0"
+  }
+}

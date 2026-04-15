@@ -4,75 +4,51 @@
   "findings": [
     {
       "check_id": "V1",
-      "description": "The PDF has a complex annotated layout with a central sale tag surrounded by labeled callout arrows pointing to various sections, with explanatory text on both left and right margins. The HTML renders this as a flat, single-column linear document with no spatial relationship between annotations and tag content.",
+      "description": "The PDF has a structured layout with a central sale tag diagram surrounded by annotation callouts with arrows pointing to specific parts of the tag. The HTML renders everything as a flat, linear document without any of this spatial layout.",
       "severity": "critical",
-      "evidence": "PDF shows a bordered 'SALE TAG' in the center with arrows and annotations on left (e.g., 'Harvest Date; may be mo/dy/yr...', '90 Day tag retention notice') and right (e.g., 'Dealer Name, Address, & Certification Number', 'Type of shellfish...'). HTML renders all content linearly without any spatial grouping or visual indication of the annotation structure.",
+      "evidence": "PDF shows a bordered 'SALE TAG' box in the center with labeled arrows pointing from margin annotations (e.g., 'Harvest Date; may be mo/dy/yr...', '90 Day tag retention notice', etc.) to specific fields on the tag. HTML renders all content as a simple top-to-bottom text flow with no box, no arrows, and no spatial relationship between annotations and tag fields.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "The PDF contains arrows/lines connecting annotation labels to specific parts of the sale tag. These graphical elements are completely absent in the HTML.",
+      "description": "The PDF contains a detailed diagram/graphic showing a shellstock sale tag with border, arrows, and annotation callouts. This entire graphic element is missing from the HTML.",
       "severity": "major",
-      "evidence": "PDF has multiple arrow lines pointing from margin annotations to specific fields on the tag. HTML has no arrows or any visual indicators connecting explanatory text to the tag fields.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The sale tag in the PDF is visually enclosed in a bordered box, clearly distinguishing it from the surrounding annotations. In the HTML, the tag content is not visually boxed or separated from the annotation text.",
-      "severity": "major",
-      "evidence": "PDF shows a clear rectangular border around the sale tag. HTML presents the tag content and annotations as a continuous flow without visual separation.",
+      "evidence": "PDF has a bordered rectangular tag diagram with directional arrows connecting explanatory text to specific tag fields. HTML has no image, diagram, or visual representation of the tag structure.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "Italic annotations in the PDF margin notes (explanatory descriptions) are rendered in italic in the HTML, but the visual distinction between tag content and annotation content is less clear without the spatial layout.",
+      "description": "In the PDF, the annotations/explanatory notes around the tag are visually distinct from the tag content itself (positioned outside the box as callouts). In the HTML, these explanatory notes are rendered in italics inline with the tag content, but the visual distinction between 'what's on the tag' and 'what's an explanation about the tag' is reduced.",
       "severity": "minor",
-      "evidence": "PDF uses spatial separation to distinguish annotations from tag content. HTML relies only on italic formatting for annotations, which is preserved but less effective without layout context.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "The reading order differs between PDF and HTML. In the PDF, annotations on the left and right are spatially associated with specific tag fields. In the HTML, annotation descriptions are interspersed between tag fields in a top-to-bottom linear order, which changes how a reader encounters the information.",
-      "severity": "major",
-      "evidence": "PDF: A reader sees the tag as a whole with surrounding annotations. HTML: Annotation text like 'Dealer Name, Address, & Certification Number' and 'Certification Number of original shipper...' appear inline between tag fields, altering the reading experience.",
+      "evidence": "PDF clearly separates tag content (inside box) from explanatory annotations (outside box with arrows). HTML intermixes them sequentially with only italic formatting to differentiate.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "Nested <main> elements create invalid HTML structure. The outer <main> wraps everything, and an inner <main> is used for the content sections, which is semantically incorrect.",
-      "severity": "major",
-      "evidence": "HTML has <main> containing <header><h1>...</h1></header> then another <main> element inside it.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C6",
-      "description": "The PDF contains a visual diagram/example tag image with annotation arrows. No <img> tag or alt text is present in the HTML for this visual element, though the content is rendered as structured text instead.",
+      "description": "Nested <main> elements in the HTML. The outer <main> from the template wraps an inner <main> generated by the conversion, which is invalid HTML structure but does not affect content fidelity.",
       "severity": "minor",
-      "evidence": "PDF shows a bordered sale tag example with annotation callouts pointing to various fields. HTML renders this as structured text sections rather than as an image.",
+      "evidence": "HTML has <body><main>...<main>...</main>...</main></body> with two nested main elements.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 1,
-  "major_count": 4,
+  "major_count": 1,
   "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 32.48,
+    "duration_seconds": 30.41,
     "page_count": 1,
-    "visual_input_tokens": 3826,
-    "visual_output_tokens": 914,
-    "content_input_tokens": 5433,
-    "content_output_tokens": 436,
-    "timestamp": "2026-04-11T05:50:31.786617",
+    "visual_input_tokens": 4043,
+    "visual_output_tokens": 660,
+    "content_input_tokens": 5497,
+    "content_output_tokens": 355,
+    "timestamp": "2026-04-15T14:05:45.139528",
     "auditor_version": "1.0.0"
   }
 }

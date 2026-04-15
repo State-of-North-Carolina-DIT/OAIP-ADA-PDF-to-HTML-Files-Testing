@@ -3,60 +3,28 @@
   "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V2",
-      "description": "Loss of conditional table formatting",
-      "severity": "minor",
-      "evidence": "The PDF tables on this page use green, red, and grey background colors for specific cells to visually indicate data ranges (heatmap styling). The HTML conversion removes these background colors entirely, although the structural data remains intact.",
-      "page": 7,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Extraneous text artifact from image extraction",
-      "severity": "minor",
-      "evidence": "A stray character 'A' appears as a distinct paragraph below the figure caption in the HTML. This text is not part of the document body in the PDF and appears to be erroneously extracted from image labels.",
-      "page": 8,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Extraneous text artifacts from image extraction",
-      "severity": "minor",
-      "evidence": "The text strings '2021' and 'A' appear as separate paragraphs at the bottom of the HTML page. These are labels embedded within the figure in the PDF and should not be extracted into the main text flow.",
-      "page": 9,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Extraneous text artifact from image extraction",
-      "severity": "minor",
-      "evidence": "A stray character 'A' appears as a distinct paragraph below the figure caption in the HTML. This text is not present in the PDF body.",
-      "page": 14,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Significant formatting artifacts and duplicated content",
+      "check_id": "V3",
+      "description": "The HTML rendering introduces extraneous content and artifacts near Figure 10.",
       "severity": "major",
-      "evidence": "Below the main figure and its caption, the HTML erroneously includes a solid black rectangular block, a duplicate of the figure caption, and the stray text '2020'. None of these elements exist in the body text of the original PDF.",
+      "evidence": "On PDF page 15, Figure 10 displays a map with a scale and legend, followed by its caption. On HTML page 15, the map's legend is missing, a black rectangular artifact appears, and extraneous content ('2020' and a new map image) is injected below the caption, which is not present in the source PDF.",
       "page": 15,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 4,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 89.15,
+    "duration_seconds": 420.83,
     "page_count": 19,
-    "visual_input_tokens": 42394,
-    "visual_output_tokens": 1255,
-    "content_input_tokens": 16475,
-    "content_output_tokens": 149,
-    "timestamp": "2026-04-11T05:59:27.937445",
+    "visual_input_tokens": 42597,
+    "visual_output_tokens": 907,
+    "content_input_tokens": 16536,
+    "content_output_tokens": 159,
+    "timestamp": "2026-04-15T14:22:05.234839",
     "auditor_version": "1.0.0"
   }
 }

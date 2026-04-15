@@ -1,0 +1,126 @@
+{
+  "document_id": "RoxboroMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC Waste Management logo in the HTML version appears larger and positioned differently (stacked vertically with text below) compared to the PDF where it's in the upper left with officials' names to the right.",
+      "severity": "minor",
+      "evidence": "PDF: Logo top-left with PAT MCCRORY/Governor, DONALD R. VAN DER VAART/Secretary, MICHAEL SCOTT/Acting Director aligned to the right. HTML: Logo at top, then names listed below in left-aligned text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout on page 1 is significantly changed. The PDF has officials' names right-aligned opposite the logo, while the HTML stacks everything vertically left-aligned.",
+      "severity": "major",
+      "evidence": "PDF: Two-column header with logo left and officials right. HTML: Single-column layout with logo, then officials listed below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'MEMORANDUM' title loses its underline formatting in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: 'MEMORANDUM' is bold and underlined. HTML: 'MEMORANDUM' appears as a large heading without underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The digital signature block appears in the HTML but is not present in the PDF version of page 1.",
+      "severity": "minor",
+      "evidence": "PDF: No digital signature information shown. HTML: Shows 'Digitally signed by Elizabeth S Werner' with DN and date details.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The To/From/Subject fields in the PDF use tab-indented formatting, while the HTML uses a simpler layout.",
+      "severity": "minor",
+      "evidence": "PDF: Labels left-aligned with content indented to a consistent tab stop. HTML: 'To:' and 'From:' as bold labels with content inline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page header/footer information from the PDF is rendered as inline content in the HTML between pages rather than as proper headers/footers.",
+      "severity": "minor",
+      "evidence": "PDF: 'Meeting Officer's Report' header and page numbers in top-right corner. HTML: Header info appears as regular text between content sections.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading 'I. History/Background' formatting differs slightly - PDF uses bold with Roman numeral separated, HTML uses larger heading style.",
+      "severity": "minor",
+      "evidence": "PDF: 'I.' and 'History/Background' in bold regular text. HTML: Rendered as a larger heading element.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bullet point topics in the oral comments section lose their underline formatting in some cases.",
+      "severity": "minor",
+      "evidence": "PDF: Topic labels like 'Excavation', 'Groundwater Assessments' are bold and underlined. HTML: Labels appear bold but without underlines on some items.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The reading order is preserved across all pages - content flows in the same logical sequence from History/Background through Public Meeting Summary, Written Comments Summary, and Attachments.",
+      "severity": "minor",
+      "evidence": "Both versions maintain I, II, III, IV section ordering with consistent content within each section.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses 'MEMORANDUM' as the h1 title, which is acceptable, but the subsequent sections (I, II, III, IV) are rendered as h2 headings, which is appropriate. However, there is a nested <main> element inside the outer <main>, which is an HTML structural issue but not a content fidelity issue.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> nested inside another <main>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The memorandum header information (date, To, From, Subject, and introductory paragraphs) appears twice in the HTML - once in the initial section before the page footer and again after. The first instance includes the outline list, and the content from page 1 is effectively rendered twice.",
+      "severity": "major",
+      "evidence": "The opening paragraphs ('On March 16, 2016, I served as meeting officer...') and the outline (I-IV) appear first in the body, then the page footer appears, followed by the page 2 header, and the content continues. The page 1 content including the purpose paragraph and outline appears only once in the HTML body, so this is actually the consolidation of the two renderings of page 1 from the PDF (which shows page 1 twice - once as a text version and once as a scanned version). This is acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The digital signature block in the HTML includes the email 'elizabeth.werner@ncdenr.gov' which matches the PDF's digital signature information. No fabricated content detected.",
+      "severity": "minor",
+      "evidence": "PDF digital signature: 'email=elizabeth.werner@nc denr.gov' matches HTML 'email=elizabeth.werner@ncdenr.gov' (minor formatting difference in line break)",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for images is reasonable but not fully verifiable. The logo alt text 'NC Waste Management Environmental Quality logo' is a reasonable description. The footer bar alt text 'Green and blue decorative footer bar' is descriptive.",
+      "severity": "minor",
+      "evidence": "Two images with alt text: 'NC Waste Management Environmental Quality logo' and 'Green and blue decorative footer bar'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 11,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 50.25,
+    "page_count": 5,
+    "visual_input_tokens": 14749,
+    "visual_output_tokens": 1302,
+    "content_input_tokens": 15444,
+    "content_output_tokens": 841,
+    "timestamp": "2026-04-14T05:04:09.449532",
+    "auditor_version": "1.0.0"
+  }
+}

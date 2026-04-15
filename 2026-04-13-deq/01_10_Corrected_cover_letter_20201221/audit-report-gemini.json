@@ -3,36 +3,44 @@
   "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V3",
-      "description": "Missing important images",
+      "check_id": "V1",
+      "description": "Content duplication due to full-page image embedding",
       "severity": "major",
-      "evidence": "The North Carolina state seal, the signature image, and the DEQ footer logo present in the PDF are completely missing from the HTML rendering.",
+      "evidence": "The HTML rendering displays a full-page image of the entire PDF document at the top, followed by a linearized, text-only dump of the document's contents below it, resulting in a duplicated and confusing reading experience.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Letterhead layout not preserved",
+      "description": "Header multi-column layout collapsed to a single column",
       "severity": "major",
-      "evidence": "The multi-column arrangement of the letterhead in the PDF (names on the left, department name and seal in the center) is rendered as a single left-aligned stack of text in the HTML.",
+      "evidence": "In the structured text portion of the HTML, the PDF header's multi-column layout (names on the left, state seal in the center, department name on the right) is lost and rendered as a single vertical column of text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing images in the semantic text flow",
+      "severity": "major",
+      "evidence": "While present in the duplicated page image at the top, the state seal in the header, the handwritten signature for David Miller, and the DEQ logo in the footer are completely missing from the HTML's structured text flow.",
       "page": 1,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
-  "major_count": 2,
+  "major_count": 3,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 55.46,
+    "duration_seconds": 73.7,
     "page_count": 1,
-    "visual_input_tokens": 2902,
-    "visual_output_tokens": 289,
-    "content_input_tokens": 3203,
-    "content_output_tokens": 163,
-    "timestamp": "2026-04-11T05:46:29.975071",
+    "visual_input_tokens": 3105,
+    "visual_output_tokens": 443,
+    "content_input_tokens": 3264,
+    "content_output_tokens": 172,
+    "timestamp": "2026-04-15T14:00:44.250296",
     "auditor_version": "1.0.0"
   }
 }

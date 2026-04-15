@@ -1,46 +1,70 @@
 {
   "document_id": "2023-roanoke-rapids-sav-report",
-  "verdict": "pass",
+  "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V5",
-      "description": "Header and footer artifacts occasionally interrupt reading flow mid-sentence.",
-      "severity": "minor",
-      "evidence": "At the transition from page 3 to page 4, the PDF breaks a sentence ('...was water willow...'). In the HTML, the page number '2' and document title are inserted directly between these words, slightly disrupting the natural reading order.",
-      "page": 4,
+      "check_id": "V3",
+      "description": "Image duplication and misordering of figures.",
+      "severity": "major",
+      "evidence": "The HTML rendering places the map for Figure 8 before Figure 7, and the map for Slender Naiad is displayed twice on the same page.",
+      "page": 11,
       "call_source": "visual"
     },
     {
-      "check_id": "C3",
-      "description": "The HTML table structure introduces a new column header ('Scientific Name') that does not explicitly appear in the source PDF.",
-      "severity": "minor",
-      "evidence": "In the PDF, Table 1 has three header columns: 'Survey Overview', '#', and '%'. The HTML table adds a fourth header: '<th>Scientific Name</th>' to accommodate the scientific names of the species.",
-      "page": null,
-      "call_source": "content"
+      "check_id": "V5",
+      "description": "Orphaned image caption breaking reading order.",
+      "severity": "major",
+      "evidence": "The caption for Figure 8 is placed alone at the top of the HTML page, separated from its corresponding header and map.",
+      "page": 12,
+      "call_source": "visual"
     },
     {
-      "check_id": "C5",
-      "description": "The document lacks an <h1> tag, breaking the heading hierarchy by starting directly with <h2> tags.",
-      "severity": "minor",
-      "evidence": "The document title is styled using a generic div ('<div class=\"page-header\">Roanoke Rapids Lake Vegetation Survey Report</div>') and the first heading tag used in the HTML is '<h2>Introduction</h2>'.",
-      "page": null,
-      "call_source": "content"
+      "check_id": "V3",
+      "description": "Image duplication and misordering of figures.",
+      "severity": "major",
+      "evidence": "The HTML rendering places the map for Figure 10 before Figure 9, and the map for Brittle Naiad is displayed twice on the same page.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Orphaned image caption breaking reading order.",
+      "severity": "major",
+      "evidence": "The caption for Figure 10 is placed alone at the top of the HTML page, separated from its corresponding header and map.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Duplicated image block.",
+      "severity": "major",
+      "evidence": "The header and map for Slender Pondweed (Figure 11) appearing at the top of the HTML page are exact duplicates of content rendered at the bottom of the previous page.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Duplicated image block.",
+      "severity": "major",
+      "evidence": "The header, map, and caption for Water Willow (Figure 12) appearing at the top of the HTML page are exact duplicates of the content rendered on the previous page.",
+      "page": 17,
+      "call_source": "visual"
     }
   ],
   "critical_count": 0,
-  "major_count": 0,
-  "minor_count": 3,
+  "major_count": 6,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 117.75,
+    "duration_seconds": 386.82,
     "page_count": 19,
-    "visual_input_tokens": 42584,
-    "visual_output_tokens": 875,
-    "content_input_tokens": 17144,
-    "content_output_tokens": 378,
-    "timestamp": "2026-04-11T06:01:07.433552",
+    "visual_input_tokens": 42787,
+    "visual_output_tokens": 1313,
+    "content_input_tokens": 17205,
+    "content_output_tokens": 165,
+    "timestamp": "2026-04-15T14:21:50.248741",
     "auditor_version": "1.0.0"
   }
 }

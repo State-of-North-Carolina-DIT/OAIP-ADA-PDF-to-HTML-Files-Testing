@@ -1,38 +1,30 @@
 {
   "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
-  "verdict": "needs_review",
+  "verdict": "fail",
   "findings": [
     {
-      "check_id": "V4",
-      "description": "Loss of centered alignment",
-      "severity": "minor",
-      "evidence": "The PDF uses center-aligned formatting for titles, images, and body text typical of a presentation slide. The HTML conversion forces all elements to a standard left-alignment.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V3",
-      "description": "Missing diagram graphic",
-      "severity": "major",
-      "evidence": "The PDF contains a visual diagram of nested ovals demonstrating that 'River Basin Modeling' is a subset of 'Water Supply Planning'. The HTML conversion completely drops the graphic shapes, extracting only the text as separate paragraphs, which destroys the visual and semantic relationship.",
+      "description": "A diagram is missing and replaced with plain text labels.",
+      "severity": "critical",
+      "evidence": "The PDF shows a diagram with concentric circles illustrating the relationship between 'Water Supply Planning' and 'River Basin Modeling'. The HTML completely omits the graphic and only renders the text labels, losing the visual meaning.",
       "page": 9,
       "call_source": "visual"
     }
   ],
-  "critical_count": 0,
-  "major_count": 1,
-  "minor_count": 1,
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 73.99,
+    "duration_seconds": 49.94,
     "page_count": 11,
-    "visual_input_tokens": 24611,
-    "visual_output_tokens": 643,
-    "content_input_tokens": 8699,
-    "content_output_tokens": 147,
-    "timestamp": "2026-04-11T05:53:47.031064",
+    "visual_input_tokens": 24814,
+    "visual_output_tokens": 525,
+    "content_input_tokens": 8760,
+    "content_output_tokens": 148,
+    "timestamp": "2026-04-15T14:08:36.582109",
     "auditor_version": "1.0.0"
   }
 }

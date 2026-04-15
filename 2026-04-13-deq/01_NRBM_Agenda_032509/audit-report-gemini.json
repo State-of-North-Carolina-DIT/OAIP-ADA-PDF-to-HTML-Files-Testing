@@ -3,11 +3,11 @@
   "verdict": "pass",
   "findings": [
     {
-      "check_id": "V4",
-      "description": "Loss of bold text formatting in the header section.",
+      "check_id": "UNKNOWN",
+      "description": "",
       "severity": "minor",
-      "evidence": "The text 'TECHNICAL REVIEW COMMITTEE' is bold in the source PDF but rendered in a normal font weight in the HTML.",
-      "page": 1,
+      "evidence": "",
+      "page": null,
       "call_source": "visual"
     }
   ],
@@ -18,13 +18,13 @@
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 68.21,
+    "duration_seconds": 28.22,
     "page_count": 1,
-    "visual_input_tokens": 2902,
-    "visual_output_tokens": 235,
-    "content_input_tokens": 2906,
-    "content_output_tokens": 149,
-    "timestamp": "2026-04-11T05:56:01.011639",
+    "visual_input_tokens": 3105,
+    "visual_output_tokens": 138,
+    "content_input_tokens": 2967,
+    "content_output_tokens": 168,
+    "timestamp": "2026-04-15T14:09:49.677463",
     "auditor_version": "1.0.0"
   }
 }

@@ -4,59 +4,51 @@
   "findings": [
     {
       "check_id": "V1",
-      "description": "The original PDF uses a centered header layout with dotted leader lines connecting topics to speakers, while the HTML converts the agenda into a structured table format.",
-      "severity": "minor",
-      "evidence": "PDF shows a centered title block and agenda items with dotted leaders connecting topics to speakers in a free-form layout. HTML renders the same content in a formal table with Time, Topic, and Speaker columns.",
+      "description": "The original PDF uses a dotted leader line format (topic followed by dots leading to the speaker name) in a single-flow layout. The HTML converts this into a structured three-column table with borders, which is a different layout paradigm.",
+      "severity": "major",
+      "evidence": "PDF shows agenda items as lines with dotted leaders connecting topics to speakers (e.g., 'Introductions, opening remarks ........ Tom Fransen, DWR'). HTML renders this as a bordered table with Time, Topic, and Speaker columns.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V2",
-      "description": "The HTML introduces a formal table structure where the PDF had no table \u2014 but this is a reasonable semantic conversion that preserves all data and relationships correctly.",
+      "check_id": "C1",
+      "description": "The HTML table introduces column headers 'Time', 'Topic', and 'Speaker' that do not appear in the source PDF. The PDF presents the agenda as a simple list format without explicit column headers.",
       "severity": "minor",
-      "evidence": "PDF uses dotted leaders to associate topics with speakers. HTML uses a 3-column table (Time, Topic, Speaker) with all data correctly placed.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Title formatting differs: PDF has bold centered text for the title, HTML uses larger left-aligned heading style with a horizontal rule underneath.",
-      "severity": "minor",
-      "evidence": "PDF: 'New and Watauga Hydrologic Model' and 'Stakeholder Meeting #2' are bold, centered, same-size text. HTML: These appear as large left-aligned headings with a dark horizontal rule below.",
-      "page": 1,
-      "call_source": "visual"
+      "evidence": "HTML contains <th>Time</th>, <th>Topic</th>, <th>Speaker</th>. The PDF has no such labeled columns; it uses a dotted-line format to connect topics to speakers.",
+      "page": null,
+      "call_source": "content"
     },
     {
       "check_id": "C3",
-      "description": "The PDF presents the agenda as a formatted list with dotted leaders, not as a table with explicit columns. The HTML converts this into a structured table with 'Time', 'Topic', and 'Speaker' column headers. While the data is accurate, the column headers 'Time', 'Topic', and 'Speaker' are fabricated labels not present in the PDF.",
+      "description": "The PDF's agenda is not presented as a formal table but as a list with dotted leaders. The HTML reformats this into a structured table, which is an acceptable conversion choice but adds structural elements (column headers) not in the original.",
       "severity": "minor",
-      "evidence": "The PDF has no table headers. The HTML adds <th>Time</th>, <th>Topic</th>, <th>Speaker</th> which are inferred but not explicitly stated in the source.",
+      "evidence": "PDF uses dotted lines between topics and speakers in a list format; HTML converts to a 3-column table with headers.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML contains two nested <main> elements, though this is a structural HTML issue rather than content duplication. No actual content is duplicated.",
-      "severity": "major",
-      "evidence": "HTML has <main> containing another <main> element.",
+      "description": "The HTML contains nested <main> elements, which is a structural duplication of the main container element.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main><main>...</main></main></body> \u2014 two nested <main> tags.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 4,
+  "minor_count": 3,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 21.46,
+    "duration_seconds": 29.18,
     "page_count": 1,
-    "visual_input_tokens": 3635,
-    "visual_output_tokens": 537,
-    "content_input_tokens": 4267,
-    "content_output_tokens": 431,
-    "timestamp": "2026-04-11T05:49:54.874215",
+    "visual_input_tokens": 3852,
+    "visual_output_tokens": 359,
+    "content_input_tokens": 4331,
+    "content_output_tokens": 508,
+    "timestamp": "2026-04-15T14:05:12.990599",
     "auditor_version": "1.0.0"
   }
 }

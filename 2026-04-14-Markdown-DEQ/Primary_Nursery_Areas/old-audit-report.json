@@ -1,0 +1,86 @@
+{
+  "document_id": "Primary_Nursery_Areas",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The original PDF uses indented outline numbering format (1)(a)(i) with hierarchical indentation, while HTML uses a flattened list style (1. a. i.) with less visual hierarchy distinction",
+      "severity": "minor",
+      "evidence": "PDF shows (1), (a), (i), (ii) etc. with deep indentation levels; HTML shows 1., a., i., ii. with simpler indentation",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Some coordinate values in HTML appear to have encoding artifacts (special characters replacing degree symbols or spaces)",
+      "severity": "minor",
+      "evidence": "In HTML page 2, Dough Creek description shows '35\u2060 54.7103' N - 75\u2060 40.0951'' with potential Unicode characters instead of standard degree notation as in the PDF '35\u00b0 54.7103' N - 75\u00b0 40.0951' W'",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "HTML converts the deeply nested hierarchical outline structure of the regulation into a flatter visual presentation, reducing the visual distinction between nesting levels",
+      "severity": "minor",
+      "evidence": "PDF has 5+ levels of indentation with clear visual hierarchy (section numbers, letters, roman numerals, sub-letters); HTML shows the same content but with less pronounced indentation differences",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Sanders Creek coordinates in HTML section 12(c) appear to have encoding issues with special characters replacing spaces in coordinate values",
+      "severity": "minor",
+      "evidence": "HTML shows '34\u2060 42.4694' N - 76\u2060 58.3754'' with potential non-breaking space or other Unicode characters; PDF shows clean '34\u00b0 42.4694' N - 76\u00b0 58.3754' W'",
+      "page": 25,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested duplicate <main> tags in the HTML structure",
+      "severity": "minor",
+      "evidence": "The HTML contains <main> nested inside another <main> element, which is invalid HTML structure but does not affect content fidelity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Missing degree symbols in Dough Creek coordinates for the canal crossing line",
+      "severity": "minor",
+      "evidence": "PDF: '35\u00b0 54.7103' N - 75\u00b0 40.0951' W' with degree symbols. HTML: '35 54.7103' N - 75 40.0951' W' without degree symbols. This matches the source PDF text which also appears to lack degree symbols for this particular line in the original document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Missing degree symbols in Sanders Creek coordinates",
+      "severity": "minor",
+      "evidence": "PDF: '34 42.4694' N - 76 58.3754' W' and '34 42.4903' N - 76 58.1434' W'. HTML matches this - both lack degree symbols, consistent with source PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "No significant content duplication detected",
+      "severity": "minor",
+      "evidence": "The entire document content appears once in the HTML without repetition.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 67.49,
+    "page_count": 19,
+    "visual_input_tokens": 55313,
+    "visual_output_tokens": 2250,
+    "content_input_tokens": 86957,
+    "content_output_tokens": 596,
+    "timestamp": "2026-04-14T05:02:41.725163",
+    "auditor_version": "1.0.0"
+  }
+}

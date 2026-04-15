@@ -1,0 +1,78 @@
+{
+  "document_id": "Dan_River_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header layout differs - PDF has right-aligned official names/titles, HTML stacks them left-aligned below the logo",
+      "severity": "minor",
+      "evidence": "PDF: PAT MCCRORY, Governor, DONALD R. VAN DER VAART, Secretary, S. JAY ZIMMERMAN, Director are right-aligned. HTML: These are left-aligned below the logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The MEMORANDUM heading in PDF is centered and underlined, in HTML it is left-aligned and underlined with a colored rule below",
+      "severity": "minor",
+      "evidence": "PDF: centered underlined 'MEMORANDUM'. HTML: left-aligned with underline and colored horizontal rule.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer information appears between pages 1 and 2 in HTML rather than at the bottom of page 1 only",
+      "severity": "minor",
+      "evidence": "PDF: footer with State of North Carolina contact info at bottom of page 1. HTML: same info appears as a separator between page content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings I. History/Background style differs slightly - PDF uses bold with Roman numeral tab-indented format, HTML uses larger heading style",
+      "severity": "minor",
+      "evidence": "PDF: 'I. History/Background' in bold with indentation. HTML: rendered as a larger heading style.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has nested <main> elements. The outer <main> is from the template and the inner <main> is from the converted content, creating invalid HTML structure. However, the heading hierarchy itself (h1 for MEMORANDUM, h2 for sections I-IV) is reasonable.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> wrapping another <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer content (State of North Carolina | Environmental Quality | Water Resources, address, phone) appears both in the page header area and in a page-footer div within the body. This is acceptable as it mirrors the PDF's repeated footer.",
+      "severity": "minor",
+      "evidence": "Footer text appears in the HTML header block and also in a page-footer div after the outline.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image has empty alt text, which is acceptable for decorative images but the image appears to be a decorative line/bar at the footer.",
+      "severity": "minor",
+      "evidence": "Second img tag: alt=\"\" - likely a decorative footer bar, so empty alt is appropriate.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 34.55,
+    "page_count": 4,
+    "visual_input_tokens": 12248,
+    "visual_output_tokens": 774,
+    "content_input_tokens": 12876,
+    "content_output_tokens": 562,
+    "timestamp": "2026-04-14T04:56:50.100102",
+    "auditor_version": "1.0.0"
+  }
+}

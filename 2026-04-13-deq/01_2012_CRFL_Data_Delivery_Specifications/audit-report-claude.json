@@ -3,164 +3,132 @@
   "verdict": "fail",
   "findings": [
     {
-      "check_id": "V4",
-      "description": "Title formatting differs - PDF has centered title block, HTML has left-aligned title with horizontal rule separator",
-      "severity": "minor",
-      "evidence": "PDF: 'Division of Marine Fisheries / CRFL Funding Data Delivery Specifications / January 2012' centered as a block. HTML: 'Division of Marine Fisheries' as large heading with horizontal rule, subtitle and date left-aligned below.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section headings styled differently - PDF uses bold inline text, HTML uses larger heading-style formatting",
-      "severity": "minor",
-      "evidence": "PDF: 'Purpose:', 'Background:', 'Data Specifications:' in bold same-size text. HTML: These appear as larger styled headings.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V3",
-      "description": "Data relationship diagram/flowchart is completely missing from HTML",
+      "description": "The hierarchical data relationship diagram (flowchart) in Appendix B is completely missing from the HTML conversion.",
       "severity": "critical",
-      "evidence": "PDF page 4 contains a hierarchical flowchart showing relationships between Record Types (Environmental Data -> Replicate Data -> Species Data -> Individual Data -> Age Data, with Gear Data and Tag Recapture Data branches). HTML has no diagram/image at all.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Record type list formatting differs - PDF uses indented two-column layout, HTML uses a table",
-      "severity": "minor",
-      "evidence": "PDF: Record types listed with indentation and description aligned in two columns. HTML: Same data presented in a formal table with borders.",
+      "evidence": "PDF page 4 shows a flowchart diagram depicting the relationships between Record Types (Environmental Data Record Type 1 \u2192 Replicate Data Record Type 2 \u2192 Species Data Record Type 3, etc.). The HTML conversion on page 4 does not include this diagram at all.",
       "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "V2",
-      "description": "Key information fields presented differently - PDF uses spaced column layout, HTML uses bordered table",
-      "severity": "minor",
-      "evidence": "PDF: 'Format and Position of Key Information Fields' shown as aligned columns without borders. HTML: Same data in a bordered table.",
-      "page": 5,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Appendix B content and Appendix C content split differently across pages in HTML compared to PDF",
+      "description": "In Appendix B, the record type listing is presented as a formatted two-column list in the PDF but rendered as a table in the HTML. While the data is preserved, the Gear Data record type is labeled as 'Record Type 7' in the flowchart diagram of the PDF but listed as 'Record Type 8' in the text listing. The HTML conversion shows 'Gear Data Record Type 7' in the text flow section, which is inconsistent.",
       "severity": "major",
-      "evidence": "PDF has Appendix B content on pages 4-5 and Appendix C starting on page 6. HTML combines the tail of Appendix A data, all of Appendix B, and beginning of Appendix C into different page groupings.",
-      "page": 5,
+      "evidence": "PDF lists Record Type 8 as Fishing Gear Data in the text list but shows Gear Data as Record Type 7 in the diagram. HTML shows both 'Record Type 8 - Fishing Gear Data' in the table AND 'Gear Data Record Type 7' in the text below, preserving the PDF's own inconsistency.",
+      "page": 4,
       "call_source": "visual"
     },
     {
-      "check_id": "V2",
-      "description": "Appendix C data dictionary formatted differently - PDF uses spaced/aligned columns, HTML uses bordered table",
-      "severity": "minor",
-      "evidence": "PDF: Data dictionary with underlined column headers and aligned columns. HTML: Same content in bordered table cells.",
+      "check_id": "V1",
+      "description": "Appendix C data dictionary is presented in a tabular layout with aligned columns in the PDF, but the HTML version converts this to a proper HTML table. While the data is preserved, the PDF's multi-page data dictionary spanning pages 6-8 uses a non-standard layout with record type indicators appearing selectively in certain rows, and the HTML conversion handles this differently.",
+      "severity": "major",
+      "evidence": "PDF shows Rec. Type 'I' indicator appearing only on certain rows with other rows left blank in that column. HTML table shows 'I' in the Rec. Type column for most rows.",
       "page": 6,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Temperature unit symbols differ - PDF shows degree symbol properly in some places, HTML shows 'EC' or 'C' without proper degree symbols",
+      "check_id": "V2",
+      "description": "In the data dictionary (Appendix C), the Bottom Composition field's code list formatting differs. The PDF shows codes A through M with descriptions in a two-column sub-layout within the comments cell. The HTML renders these in a more compact single-column format.",
       "severity": "minor",
-      "evidence": "PDF: '\u00b0C' for Surface Temperature and Bottom Temperature. HTML: 'C' for these fields, and 'EC' for Air Temperature in both versions.",
+      "evidence": "PDF shows 'A = Dome    J = Reef Balls' side by side. HTML shows 'A = Dome, J = Reef Balls' etc. in a more compact listing format.",
       "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The Appendix B content in the HTML has the record type listing duplicated - once as a table and once as plain text listing below it, creating redundant content not present in the PDF.",
+      "severity": "major",
+      "evidence": "PDF page 4 shows the record type list once. HTML page 4 shows it first as an HTML table, then again as a text list (Environmental Data Record Type 1, Gear Data Record Type 7, etc.).",
+      "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "V2",
-      "description": "Bottom Composition codes layout differs - PDF shows two-column code listing, HTML shows single-column listing",
+      "description": "The Key Information Fields table in Appendix B has slightly different column header naming. PDF uses 'Number of bytes' and 'Position to the first' while HTML preserves these correctly.",
       "severity": "minor",
-      "evidence": "PDF: Codes A-M listed in two side-by-side columns (A-I left, J-M right). HTML: All codes listed in a single column within the table cell.",
-      "page": 7,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Number of Replicates comment has rendering issue with special character",
-      "severity": "minor",
-      "evidence": "PDF: 'Record Type II's' with proper formatting. HTML: 'Record Type IIs.' - minor character difference.",
-      "page": 8,
+      "evidence": "Both versions show the same table structure with RECORD TYPE, SEQUENCE NUMBER, REPLICATE NUMBER, SPECIES CODE, SPECIES STATUS, LINE NUMBER fields.",
+      "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "C2",
-      "description": "The hierarchical diagram from Appendix B showing the relationships between record types is not rendered as an image or visual diagram in the HTML. Instead, it is represented as plain text paragraphs listing each record type and its name, losing the visual relationship structure.",
+      "description": "The hierarchical diagram from Appendix B showing the data relationships between record types is missing from the HTML. The PDF contains a visual flowchart/diagram showing the hierarchy of Environmental Data \u2192 Replicate Data \u2192 Species Data \u2192 Individual Data \u2192 Age Data, with Gear Data extending from Record Type 1 and Tag Recapture Data extending from Record Type 4. The HTML replaces this with plain text paragraphs listing the boxes.",
       "severity": "major",
-      "evidence": "PDF page 4 contains a hierarchical flowchart diagram showing Environmental Data (Record Type 1) connecting to Gear Data (Record Type 7), Replicate Data (Record Type 2), Species Data (Record Type 3), Individual Data (Record Type 4), Tag Recapture Data (Record Type 9), and Age Data (Record Type 5). HTML renders this as sequential paragraphs rather than a diagram.",
+      "evidence": "PDF page 4 contains a hierarchical diagram with boxes and connecting lines. The HTML attempts to represent this as sequential paragraphs but loses the structural/visual relationships.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C3",
-      "description": "In the Key Information Fields table, the SPECIES CODE position is listed as '11- 12' in both the PDF and HTML, but the PDF states SPECIES CODE has 10 bytes, which means the position should span 10 characters (e.g., 11-20), not just '11-12'. However, the HTML faithfully reproduces the same values as the PDF, so this is actually a PDF-source issue faithfully reproduced.",
+      "description": "In the Key Information Fields table, the SPECIES CODE field shows position '11-12' in the HTML, but in the PDF it shows '11-12' for position but the field has 10 bytes. The position should likely be '11-20' given a 10-byte field starting at position 11. The PDF text on page 5 shows '11- 12' which appears to be a rendering issue in the source, but the HTML faithfully reproduces this apparent error.",
       "severity": "major",
-      "evidence": "PDF page 5: SPECIES CODE, 10 bytes, Position 11-12. HTML table: SPECIES CODE, 10, 11-12. Both match.",
+      "evidence": "PDF: 'SPECIES CODE 10 11- 12'; HTML: '<td>10</td><td>11- 12</td>' \u2014 This is actually faithful to the PDF text as rendered, so this is not an HTML conversion error per se.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Appendix B record types table, the PDF lists 'Record Type 8' for 'Fishing Gear Data' in the text list, but the diagram shows 'Gear Data Record Type 7'. The HTML table uses 'Record Type 8' matching the text list, but the separate paragraph text says 'Record Type 7' matching the diagram. This inconsistency exists in the source PDF itself.",
+      "severity": "minor",
+      "evidence": "PDF text list: 'Record Type 8 Fishing Gear Data'; PDF diagram: 'Gear Data Record Type 7'; HTML table: 'Record Type 8'; HTML paragraph: 'Record Type 7'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the data dictionary, the 'Bottom Composition' field limits are listed as '1-9' in the PDF but the codes shown are letters A through M, which is inconsistent. The HTML faithfully reproduces this inconsistency from the source.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show Limits as '1-9' but codes as 'A = Dome... M = Natural'",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C5",
-      "description": "The document title 'Division of Marine Fisheries' is used as h1, while the PDF also shows 'CRFL Funding Data Delivery Specifications' and 'January 2012' as part of the title block. The subtitle and date are rendered as plain paragraphs rather than as part of the heading structure. This is acceptable reformatting.",
+      "description": "The document title 'Division of Marine Fisheries' is used as h1, but the subtitle 'CRFL Funding Data Delivery Specifications' and date 'January 2012' are rendered as plain paragraphs rather than as part of the heading or a subtitle heading. This is acceptable but slightly loses the document's title structure.",
       "severity": "minor",
-      "evidence": "PDF: centered title block with 'Division of Marine Fisheries / CRFL Funding Data Delivery Specifications / January 2012'. HTML: h1 'Division of Marine Fisheries' followed by two <p> tags.",
+      "evidence": "PDF shows three centered lines as the document header; HTML uses h1 only for 'Division of Marine Fisheries'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Appendix A data is presented twice conceptually - once on page 1 as a reference in the Data Specifications, and the actual data appears in the HTML as the Appendix A section. However, the HTML header row from the data file appears both as a standalone paragraph and as part of the pre block, which mirrors the PDF layout on page 3.",
+      "severity": "minor",
+      "evidence": "HTML shows the header 'Control1, project, year...' as a paragraph and then the data rows in a pre block, matching the PDF structure.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "In Data Specification item 1, the PDF says '.cvs' (likely a typo in the original for .csv), and the HTML faithfully reproduces '.cvs'. This is accurate to the source.",
+      "description": "The PDF Data Specifications item 1 mentions '.cvs' (likely a typo for .csv in the original), and the HTML faithfully preserves this as '.cvs'.",
       "severity": "minor",
-      "evidence": "PDF: '(.txt or .cvs)'. HTML: '(.txt or .cvs)'",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C3",
-      "description": "The Record Types table in Appendix B lists 'Record Type 8' as 'Fishing Gear Data' in the text listing, but the diagram in the PDF shows 'Gear Data Record Type 7'. The HTML faithfully reproduces the text listing with Record Type 8 and also mentions Record Type 7 from the diagram. This inconsistency exists in the source PDF itself.",
-      "severity": "minor",
-      "evidence": "PDF text: 'Record Type 8 Fishing Gear Data'. PDF diagram: 'Gear Data Record Type 7'. HTML reproduces both references.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C8",
-      "description": "In the data dictionary table, the 'Mandatory (M) vs. Desired (D)' column for Gear Parameter #2 shows 'M .' in the HTML, which matches the PDF source where there appears to be a period after M.",
-      "severity": "minor",
-      "evidence": "PDF page 7: Gear Parameter #2 row shows 'M .' HTML: 'M .'",
+      "evidence": "Both PDF and HTML: 'delimited text (.txt or .cvs) file'",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C1",
-      "description": "In the data dictionary comments for 'Gear Parameter #1', the HTML adds '421 = Depth of Hooks' and '434 = Depth of Hooks' with the full word 'Hooks', while the PDF text appears truncated showing '421 = Depth of Hook' and '434 = Depth of Hook'. The 's' may be extrapolated.",
+      "description": "In the data dictionary table, some comment text appears to have been slightly expanded/completed where the PDF showed truncated text. For example, 'Date sampled (YY-MM-DD).' appears fully in the HTML while the PDF shows it partially as 'Date sampled (YY-M'. However, the full text is visible on page 7 of the PDF in the cleaner rendering.",
       "severity": "minor",
-      "evidence": "PDF page 7: '421 = Depth of Hook' and '434 = Depth of Hook' (text appears cut off). HTML: '421 = Depth of Hooks' and '434 = Depth of Hooks'",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C6",
-      "description": "The PDF contains a hierarchical diagram image in Appendix B, but no <img> tag is present in the HTML for this diagram.",
-      "severity": "minor",
-      "evidence": "PDF page 4: flowchart diagram showing record type relationships. HTML: no img tag for this diagram.",
+      "evidence": "PDF page 7 shows 'Date sampled (YY-MM-DD).' in the cleaner table rendering; HTML matches this.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 1,
-  "major_count": 3,
-  "minor_count": 14,
+  "major_count": 5,
+  "minor_count": 8,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 61.26,
+    "duration_seconds": 97.29,
     "page_count": 10,
-    "visual_input_tokens": 25404,
-    "visual_output_tokens": 1464,
-    "content_input_tokens": 30910,
-    "content_output_tokens": 1401,
-    "timestamp": "2026-04-11T05:48:51.523021",
+    "visual_input_tokens": 25621,
+    "visual_output_tokens": 1335,
+    "content_input_tokens": 30974,
+    "content_output_tokens": 1434,
+    "timestamp": "2026-04-15T14:03:47.603145",
     "auditor_version": "1.0.0"
   }
 }

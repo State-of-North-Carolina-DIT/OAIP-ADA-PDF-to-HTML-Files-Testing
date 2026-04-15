@@ -1,0 +1,102 @@
+{
+  "document_id": "Marshall_Meeting_Officer_Final_5_13_16",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "The memo header fields (To, From, Subject) are rendered as a styled table in HTML instead of plain label-value pairs as in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows simple 'To:', 'From:', 'Subject:' labels with values in a standard memo format. HTML renders these inside a bordered table with shaded rows.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Water Resources logo appears slightly different in color/rendering between PDF and HTML, but is present and correctly placed.",
+      "severity": "minor",
+      "evidence": "Both versions show the NC Water Resources Environmental Quality logo in the upper left, but the HTML version appears slightly different in color saturation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'MEMORANDUM' title has an underline in both versions but the HTML version also includes a decorative colored horizontal rule beneath it.",
+      "severity": "minor",
+      "evidence": "PDF shows underlined 'MEMORANDUM' text centered. HTML shows the same but adds a gradient-colored horizontal line below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings in HTML use larger bold sans-serif styling compared to the PDF's serif bold formatting.",
+      "severity": "minor",
+      "evidence": "PDF section headings 'I. History/Background' use serif bold font. HTML uses a larger sans-serif bold heading style.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 content flows continuously in HTML without page break, merging content from what was pages 2-3 in the PDF into continuous scrolling.",
+      "severity": "minor",
+      "evidence": "PDF has a clear page break after page 2 content. HTML flows continuously with a 'Page 2 of 6' marker but no visual break.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The bullet point content from PDF page 3 begins partway through the HTML page 3 rendering, with page number indicators preserved but no actual page breaks.",
+      "severity": "minor",
+      "evidence": "PDF clearly separates content across pages 3-4. HTML renders continuously.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined bold topic labels in bullet points (e.g., 'Air Quality', 'Beneficial Reuse') are preserved in both versions.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show underlined bold topic labels consistently.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The MEMORANDUM title is rendered as h1 but the document also has section headings rendered as h2. The h1 styling with underline is acceptable as the document title, but the nested <main> tags create a structural oddity.",
+      "severity": "minor",
+      "evidence": "HTML has <main> nested inside <main>, which is an HTML structural issue but not a content fidelity issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The memo header fields (To, From, Subject) are rendered as a table in the HTML, but in the PDF they are formatted as a standard memo header, not a table. The table has no column headers indicated by a comment '<!-- COLUMNS: Field | Value -->' which is metadata not in the PDF, but this is an implementation detail, not fabricated content.",
+      "severity": "minor",
+      "evidence": "HTML uses <table> with comment '<!-- COLUMNS: Field | Value -->' for memo fields. PDF shows standard memo formatting.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer with address information appears both at the bottom of the first page section and is also present in the PDF header area. This is acceptable as consolidation of repeated header/footer content.",
+      "severity": "minor",
+      "evidence": "Address '1611 Mail service Center | Raleigh, North Carolina 27699-1611 | 919 707 9000' appears in the page footer div in the HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 10,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 44.18,
+    "page_count": 6,
+    "visual_input_tokens": 17102,
+    "visual_output_tokens": 1179,
+    "content_input_tokens": 18929,
+    "content_output_tokens": 612,
+    "timestamp": "2026-04-14T05:00:27.786050",
+    "auditor_version": "1.0.0"
+  }
+}

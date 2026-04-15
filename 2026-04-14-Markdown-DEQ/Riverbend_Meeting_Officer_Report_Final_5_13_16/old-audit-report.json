@@ -1,0 +1,134 @@
+{
+  "document_id": "Riverbend_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The memo header fields (To, From, Subject) lose their aligned tabular layout in the HTML version, appearing as simple left-aligned text rather than the indented label-value format of the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 'To:', 'From:', 'Subject:' as left-aligned labels with values indented to a consistent column. HTML renders them as run-on lines without the same structured alignment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'MEMORANDUM' title in the PDF is underlined and centered. In the HTML it is underlined and centered but uses a thick red/colored horizontal rule beneath it that differs from the PDF's simple underline.",
+      "severity": "minor",
+      "evidence": "PDF: simple underline under 'MEMORANDUM'. HTML: heavy colored horizontal rule separator beneath the heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The outline list (I through IV) in the PDF uses Roman numerals with indented text in a structured format. The HTML preserves the same content but with slightly different indentation styling.",
+      "severity": "minor",
+      "evidence": "PDF: Roman numerals with tab-indented descriptions. HTML: Bullet-like list items with Roman numeral prefixes.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Water Resources Environmental Quality logo appears in both versions but the HTML version renders it slightly differently in size/position.",
+      "severity": "minor",
+      "evidence": "PDF: logo in upper left corner with specific sizing. HTML: logo present in upper left but with minor size difference.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading 'I. History/Background' uses a different visual weight/size in the HTML compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: bold heading in body text size. HTML: larger heading style for 'I. History/Background'.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading 'II. March 1, 2016 Public Meeting and Oral Comments Summary' appears larger in the HTML than in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: bold heading same size as body. HTML: noticeably larger heading font size.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold underlined topic labels in bullet points (e.g., 'Beneficial Reuse Areas', 'Costs') are rendered as bold only without underline in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: bold + underlined topic names in bullet points. HTML: bold topic names without visible underline.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading 'III. Written Public Comment Summary' appears larger in HTML compared to the PDF's bold body-size heading.",
+      "severity": "minor",
+      "evidence": "PDF: bold heading at body text size. HTML: larger heading style.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold underlined topic labels in written public comments section are rendered without underline in HTML.",
+      "severity": "minor",
+      "evidence": "PDF: bold + underlined labels like 'Environmental Justice', 'Excavation', etc. HTML: bold only.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section heading 'IV. Attachments' appears larger in the HTML than in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: bold heading same size as body. HTML: larger heading font size.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The MEMORANDUM title is styled as h1 with text-align center and text-decoration underline, which is reasonable, but the document also has a nested <main> element inside the outer <main>, creating invalid HTML structure. The section headings (I, II, III, IV) are correctly rendered as h2 elements.",
+      "severity": "minor",
+      "evidence": "HTML has <main> nested inside another <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page footer with the State of North Carolina address block appears in the HTML body content, but in the PDF it appears only on page 1 as a footer. The page number footers (Page 2 of 5, etc.) are also rendered inline in the HTML, which is a minor structural issue but does not duplicate substantive content.",
+      "severity": "minor",
+      "evidence": "Footer text 'State of North Carolina | Environmental Quality | Water Resources 1611 Mail service Center | Raleigh, North Carolina 27699-1611 919 707 9000' appears inline in the HTML along with page number footers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Written Public Comments Summary (Section III) bullet list is split into two separate <ul> elements with a page footer div inserted between them, effectively breaking a single continuous list into two parts. The content itself is not duplicated, but the structural break could cause confusion.",
+      "severity": "major",
+      "evidence": "First <ul> ends after 'Costs' bullet, then a page footer div 'Page 4 of 5' appears, then a second <ul> starts with 'Environmental Justice' bullet.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The oral comments section summary label is slightly misplaced. The PDF states that the summarized topics are from 'Written comments received during the public comment period' (referring to oral comments section context), whereas the HTML faithfully reproduces this text. No actual meaning change, but the PDF's own text is somewhat confusing between oral and written comments in Section II.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML state in Section II: 'Written comments received during the public comment period include the following summarized by topic' - this is faithful to the original.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 13,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 47.09,
+    "page_count": 5,
+    "visual_input_tokens": 14194,
+    "visual_output_tokens": 1345,
+    "content_input_tokens": 15030,
+    "content_output_tokens": 796,
+    "timestamp": "2026-04-14T05:03:19.848356",
+    "auditor_version": "1.0.0"
+  }
+}

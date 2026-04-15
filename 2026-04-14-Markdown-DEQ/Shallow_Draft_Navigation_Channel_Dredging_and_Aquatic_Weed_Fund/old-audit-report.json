@@ -1,0 +1,142 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image appears lower quality/different rendering in HTML but is present and correctly placed",
+      "severity": "minor",
+      "evidence": "PDF shows a clear state seal at top center; HTML shows the same seal but with slightly different rendering quality",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature image is present in both but rendered slightly differently",
+      "severity": "minor",
+      "evidence": "PDF shows handwritten signature; HTML shows same signature image preserved",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "HTML adds extra footer content at bottom of page that duplicates the DEQ logo footer information as plain text",
+      "severity": "minor",
+      "evidence": "PDF has only the DEQ logo with embedded address info; HTML has the DEQ logo footer PLUS additional plain text lines repeating 'North Carolina Department of Environmental Quality | Division of Water Resources', address, and phone number",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The report title page in HTML loses the centered title formatting distinction compared to PDF",
+      "severity": "minor",
+      "evidence": "PDF shows 'Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed' as a clearly formatted centered title with specific layout; HTML renders it similarly but as part of a flowing document",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 (title page) and page 4 (intro/letter repeat) are combined into a single continuous flow in the HTML",
+      "severity": "minor",
+      "evidence": "PDF has a distinct title/cover page (page 3) separate from the letter content repeat (page 4); HTML flows them together",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Shallow Draft Navigation Channel Dredging Annual Report table styling differs but data is intact",
+      "severity": "minor",
+      "evidence": "PDF shows table with yellow/gold header row and alternating styling; HTML shows same table with different styling but same data structure and content",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Aquatic Weed Control Program table has different styling but data is preserved",
+      "severity": "minor",
+      "evidence": "PDF shows table with tan/beige header and purple-shaded rows for 'multiple cooperators'; HTML shows same table with different color scheme but same data",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "NC Parks & Recreation row in PDF table has partially obscured text but HTML renders it clearly",
+      "severity": "minor",
+      "evidence": "PDF page 10 shows some NC Parks & Recreation text with visual overlap/obscuring; HTML renders all text clearly",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Goose Creek S.P. description shows 'herbicide purchase' in PDF but same in HTML - consistent",
+      "severity": "minor",
+      "evidence": "Both versions show the same description text for this entry",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Cooperators table at end of report has left-aligned text partially cut off in PDF but fully visible in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows 'Jordan Lake - Folkners Branch' and 'Mountain Island Reservoir' with left edge partially cut; HTML shows full text",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Shallow Draft Navigation Channel Dredging Annual Report table on page 3 of the PDF is rendered as an image in the HTML rather than as an actual HTML table, making the data inaccessible as text.",
+      "severity": "major",
+      "evidence": "PDF page 3 contains a detailed table with 42+ rows of dredging project data (dates, projects, cooperators, amounts, project types). The HTML replaces this with: <figure><img src=\"[embedded-image-removed]\" alt=\"Table of Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022\">. All data in that table (e.g., $9,543,427.32 total, individual project amounts, dates, cooperators) is lost as structured text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Due Date on the report cover page is inconsistent between the cover letter and the title page. The PDF title page says 'Due Date: Oct. 1, 2021' and the HTML faithfully reproduces this, but this appears to be an error in the source PDF itself (cover letter says October 1, 2022 and report covers FY 2021-2022). Not an HTML conversion error.",
+      "severity": "major",
+      "evidence": "PDF page 2: 'Due Date: Oct. 1, 2021'; HTML: 'Due Date: Oct. 1, 2021' \u2014 faithfully reproduced.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title on page 2 of the PDF is rendered as an h2 in the HTML rather than being distinguished from section headings. The heading hierarchy lacks a proper h1 document title; there is no h1 element at all in the HTML.",
+      "severity": "major",
+      "evidence": "HTML uses <h2>Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed</h2> and <h2>Intro</h2> and <h2>North Carolina Aquatic Weed Control Program...</h2> \u2014 all at same level with no h1.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Project Cooperators table at the bottom of page 10 is incomplete in the HTML. The Lake Gaston and Lake Norman/Mountain Island Reservoir cooperator entries are split incorrectly across rows.",
+      "severity": "major",
+      "evidence": "PDF shows: Lake Gaston cooperators as 'Halifax Co., Northampton Co., Warren Co.,' and Lake Norman as 'Lake Norman Marine Commission, Charlotte Water,' and Mountain Island Reservoir as 'Charlotte Stormwater Services and Duke Energy'. HTML splits these into separate table rows with Lake Norman showing 'Lake Norman Marine Commission, Charlotte Water, Charlotte' and Mountain Island Reservoir showing 'Stormwater Services and Duke Energy' \u2014 the cooperator text for Lake Norman and Mountain Island Reservoir is incorrectly split.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header block with DEQ contact info and official names (ROY COOPER Governor, ELIZABETH S. BISER Secretary, RICHARD E. ROGERS, JR. Director) from the letterhead is not reproduced in the HTML, though the department address and phone are included.",
+      "severity": "minor",
+      "evidence": "PDF page 1 letterhead includes 'ROY COOPER Governor', 'ELIZABETH S. BISER Secretary', 'RICHARD E. ROGERS, JR. Director'. These are absent from HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 11,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 68.19,
+    "page_count": 10,
+    "visual_input_tokens": 31324,
+    "visual_output_tokens": 1727,
+    "content_input_tokens": 34810,
+    "content_output_tokens": 1101,
+    "timestamp": "2026-04-14T05:05:12.889851",
+    "auditor_version": "1.0.0"
+  }
+}

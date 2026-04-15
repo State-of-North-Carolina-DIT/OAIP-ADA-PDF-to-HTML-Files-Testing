@@ -4,43 +4,43 @@
   "findings": [
     {
       "check_id": "V2",
-      "description": "Merged table cells were split and their text content was duplicated.",
+      "description": "Merged table cells were split in the HTML conversion, resulting in duplicated text.",
       "severity": "major",
-      "evidence": "In the PDF table, the cell 'EMC Model Approval' spans four rows, and cells in the last two rows ('Final Water Supply Plan...' and 'EMC decision...') span two columns. In the HTML, these merged cells are split into individual cells for each row/column, with the text repeated in every cell.",
+      "evidence": "In the table rows for 11/14/2013 and 9/11/2014, a single cell spans columns 2 and 3 in the PDF. In the HTML, these merged cells are split into two separate cells for each column, and the text is duplicated in both.",
       "page": 2,
       "call_source": "visual"
     },
     {
-      "check_id": "C3",
-      "description": "Table data is duplicated due to missing rowspan and colspan attributes for merged cells.",
-      "severity": "major",
-      "evidence": "In the HTML table on page 2, 'EMC Model Approval' is repeated four times across consecutive rows (1/1/2013 through 5/1/2013). Additionally, the text for dates 11/14/2013 and 9/11/2014 is duplicated across the second and third columns (e.g., 'EMC decision at the September 2014 meeting' appears twice in the same row). The source PDF displays these as single merged cells.",
+      "check_id": "C5",
+      "description": "Multiple <h1> tags are used in the document, violating the rule that only one <h1> is acceptable as the document title.",
+      "severity": "minor",
+      "evidence": "The HTML contains both <h1>Agenda</h1> on page 1 and <h1>Jordan Lake Water Supply Storage Allocation - Updated Schedule</h1> on page 2.",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C5",
-      "description": "The HTML document contains multiple <h1> tags, violating the structure guideline that only one <h1> is acceptable.",
+      "check_id": "C3",
+      "description": "Merged cells from the PDF table are represented by duplicating the cell text across multiple standard cells rather than using rowspan or colspan attributes.",
       "severity": "minor",
-      "evidence": "The HTML uses '<h1>Agenda</h1>' for the first page and '<h1>Jordan Lake Water Supply Storage Allocation - Updated Schedule</h1>' for the second page.",
+      "evidence": "In the HTML table, 'EMC Model Approval' is duplicated across four rows in column 4. Similarly, the text for the 11/14/2013 and 9/11/2014 rows is duplicated in both columns 2 and 3.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 2,
-  "minor_count": 1,
+  "major_count": 1,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 87.57,
+    "duration_seconds": 82.52,
     "page_count": 2,
-    "visual_input_tokens": 5082,
-    "visual_output_tokens": 305,
-    "content_input_tokens": 3835,
-    "content_output_tokens": 398,
-    "timestamp": "2026-04-11T05:54:52.796648",
+    "visual_input_tokens": 5275,
+    "visual_output_tokens": 303,
+    "content_input_tokens": 3896,
+    "content_output_tokens": 369,
+    "timestamp": "2026-04-15T14:09:14.331961",
     "auditor_version": "1.0.0"
   }
 }

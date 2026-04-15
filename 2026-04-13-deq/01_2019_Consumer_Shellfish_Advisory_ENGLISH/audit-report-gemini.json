@@ -1,46 +1,21 @@
 {
   "document_id": "01_2019_Consumer_Shellfish_Advisory_ENGLISH",
-  "verdict": "needs_review",
-  "findings": [
-    {
-      "check_id": "V4",
-      "description": "Advisory warning text lost bold formatting and visual scale",
-      "severity": "major",
-      "evidence": "In the PDF, the main warning paragraph starting with 'Eating raw...' is rendered in a massive, bold font to serve as a highly visible poster. In the HTML, it is rendered as standard, unbolded body text, losing its intended visual impact.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Loss of centered alignment",
-      "severity": "minor",
-      "evidence": "The PDF content is entirely center-aligned for poster visibility, whereas the HTML content is left-aligned.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Penalty notice text lost bold formatting and scale",
-      "severity": "major",
-      "evidence": "The PDF displays the 'Failure to post...' paragraph in large, bold font. The HTML conversion (which flowed this text onto the first page) renders it as standard, unbolded body text.",
-      "page": 2,
-      "call_source": "visual"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "critical_count": 0,
-  "major_count": 2,
-  "minor_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 38.93,
+    "duration_seconds": 18.58,
     "page_count": 2,
-    "visual_input_tokens": 5074,
-    "visual_output_tokens": 468,
-    "content_input_tokens": 3018,
-    "content_output_tokens": 130,
-    "timestamp": "2026-04-11T05:50:22.926364",
+    "visual_input_tokens": 5277,
+    "visual_output_tokens": 198,
+    "content_input_tokens": 3079,
+    "content_output_tokens": 147,
+    "timestamp": "2026-04-15T14:05:20.727388",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,54 +1,38 @@
 {
   "document_id": "01_Agenda_Timeline",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "V1",
-      "description": "Two-column layout is completely lost and content is duplicated/fragmented.",
-      "severity": "critical",
-      "evidence": "The PDF shows a left column for 'AUDIO TROUBLESHOOTING' and a right column with a corkboard background for 'Welcome...'. The HTML renders these as a single column, first showing image snippets of the original columns, then duplicating the text content sequentially.",
+      "description": "Loss of multi-column layout",
+      "severity": "major",
+      "evidence": "Page 1 of the PDF has a clear side-by-side layout with troubleshooting instructions on the left and meeting info on the right. The HTML renders this sequentially as a single column.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Right column containing images is lost.",
-      "severity": "major",
-      "evidence": "The PDF has a main table section and a distinct right column with a vertical stack of five images. The HTML collapses this into a single column.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V3",
-      "description": "Images from the right column are displaced and split across pages.",
-      "severity": "major",
-      "evidence": "The five images from the right column of PDF page 3 are placed sequentially in the HTML, with the first two appearing at the bottom of HTML page 2 and the remaining three at the top of HTML page 3.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Reading order of images is altered.",
-      "severity": "major",
-      "evidence": "In the PDF, the images are visually parallel to the table. In the HTML, they are placed before the 'Coastal Habitat Protection Plan' heading and table.",
-      "page": 3,
+      "description": "Decorative background image distorted",
+      "severity": "minor",
+      "evidence": "The corkboard background from the right side of PDF page 1 appears in the HTML as a broken, narrow vertical strip adjacent to the troubleshooting images.",
+      "page": 1,
       "call_source": "visual"
     }
   ],
-  "critical_count": 1,
-  "major_count": 3,
-  "minor_count": 0,
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 46.62,
+    "duration_seconds": 63.34,
     "page_count": 3,
-    "visual_input_tokens": 7338,
-    "visual_output_tokens": 584,
-    "content_input_tokens": 4742,
-    "content_output_tokens": 186,
-    "timestamp": "2026-04-11T05:51:13.040216",
+    "visual_input_tokens": 7541,
+    "visual_output_tokens": 402,
+    "content_input_tokens": 4803,
+    "content_output_tokens": 163,
+    "timestamp": "2026-04-15T14:06:36.214377",
     "auditor_version": "1.0.0"
   }
 }

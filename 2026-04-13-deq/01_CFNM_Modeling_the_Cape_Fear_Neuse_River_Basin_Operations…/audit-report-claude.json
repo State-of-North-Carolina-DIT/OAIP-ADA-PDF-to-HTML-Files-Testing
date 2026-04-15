@@ -1,190 +1,118 @@
 {
   "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
-  "verdict": "needs_review",
+  "verdict": "fail",
   "findings": [
     {
       "check_id": "V3",
-      "description": "The DRAFT watermark visible in the PDF is absent in the HTML version",
-      "severity": "minor",
-      "evidence": "PDF page 1 shows a large diagonal 'DRAFT' watermark across the page; HTML has no watermark",
+      "description": "The DRAFT watermark present in the PDF cover page is absent in the HTML, but this is decorative and acceptable. However, the HydroLogics logo on the cover page appears differently styled.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a large DRAFT watermark across the page. HTML page 1 does not show the watermark. This is acceptable as decorative.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "HydroLogics logo appears smaller/differently styled in HTML but is present",
-      "severity": "minor",
-      "evidence": "PDF has logo centered at bottom; HTML has it similarly placed but sizing differs slightly",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Table of Contents section heading underline formatting differs",
-      "severity": "minor",
-      "evidence": "PDF shows 'Section' and 'Page' with underline formatting; HTML uses a table structure instead",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V2",
-      "description": "Table of Contents rendered as a proper table in HTML vs. spaced text in PDF",
-      "severity": "minor",
-      "evidence": "PDF uses tab-stop aligned text for TOC; HTML uses a bordered table with cells - same data preserved",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Appendices section formatting differs slightly between PDF and HTML",
-      "severity": "minor",
-      "evidence": "PDF shows appendices as indented list under TOC; HTML shows them as separate paragraphs outside the table",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "DRAFT watermark absent from flow chart pages in HTML",
-      "severity": "minor",
-      "evidence": "PDF pages 10, 11, 12, 14, 15, 16 have DRAFT watermarks; HTML versions do not",
+      "description": "Flow chart diagrams for Upper Cape Fear Basin, Middle Cape Fear Basin, Deep River, Lower Cape Fear Basin, Upper Neuse Basin, Middle Neuse Basin, and Lower Neuse Basin are all missing from the HTML rendering. These are replaced with only text labels listing the node names.",
+      "severity": "major",
+      "evidence": "PDF pages 10-16 contain detailed flow chart diagrams with colored shapes (red triangles for reservoirs, blue squares for demands, yellow circles for junctions) connected by arrows showing flow, withdrawal, and WW return arcs. The HTML renders only the text labels and legend items as plain text lists without any visual diagrams.",
       "page": 10,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Flow chart diagrams are missing from HTML conversion - rendered as text-only lists",
+      "description": "The model schematic map on page 6 showing the full basin network with colored regions is missing or not rendering in the HTML.",
       "severity": "major",
-      "evidence": "PDF page 10 shows a detailed flow chart diagram with Reservoir Nodes (red triangles), Demand Nodes (blue squares), Junction Nodes (yellow circles), and connecting arcs for Upper Cape Fear Basin. HTML page shows only text labels like 'Reidsville Dam', 'Lake Brandt', 'Greensboro Demand' etc. as a plain text list without the diagram",
-      "page": 10,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Flow chart diagram for Middle Cape Fear Basin is missing from HTML",
-      "severity": "major",
-      "evidence": "PDF page 11 shows detailed flow chart with nodes and arcs; HTML shows only text labels as a list",
-      "page": 11,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Flow chart diagram for Deep River is missing from HTML",
-      "severity": "major",
-      "evidence": "PDF page 12 shows detailed flow chart with reservoir/demand/junction nodes; HTML shows only text labels",
-      "page": 12,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Flow chart diagram for Lower Cape Fear Basin is missing from HTML",
-      "severity": "major",
-      "evidence": "PDF page 13 shows flow chart with nodes, arcs, and legend; HTML shows only text labels as a list",
-      "page": 13,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Flow chart diagram for Upper Neuse Basin is missing from HTML",
-      "severity": "major",
-      "evidence": "PDF page 14 shows detailed flow chart; HTML shows only text labels and annotations as plain text",
-      "page": 14,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Flow chart diagram for Middle Neuse Basin is missing from HTML",
-      "severity": "major",
-      "evidence": "PDF page 15 shows flow chart with nodes and connecting arcs; HTML shows only text labels",
-      "page": 15,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Flow chart diagram for Lower Neuse Basin is missing from HTML",
-      "severity": "major",
-      "evidence": "PDF page 16 shows flow chart with Buckhorn Reservoir, Wilson Demand, etc.; HTML shows only text labels",
-      "page": 16,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Flow chart legend information rendered as plain text list items instead of a visual legend",
-      "severity": "major",
-      "evidence": "PDF shows colored shape legends (red triangle = Reservoir Node, blue square = Demand Node, etc.); HTML shows these as simple text lines",
-      "page": 10,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Map/schematic image of the basin model is present in HTML but may have slight sizing differences",
-      "severity": "minor",
-      "evidence": "PDF page 6 shows the full basin schematic map; HTML appears to show the same map image",
+      "evidence": "PDF page 6 shows a detailed map-based schematic with colored watershed regions (Haw, Deep, Upper Cape Fear, Upper Neuse, Contentnea, Middle Neuse, Black, Northeast Cape Fear, Lower) with nodes and arcs overlaid. The HTML shows the same map but it may be cut off or partially rendered.",
       "page": 6,
       "call_source": "visual"
     },
     {
+      "check_id": "V1",
+      "description": "Flow chart pages (10-16) lose their diagrammatic layout entirely. The structured flow chart with shapes and connections is reduced to a flat text list of node names and legend entries.",
+      "severity": "major",
+      "evidence": "PDF shows flow charts with spatial arrangement of nodes connected by arrows. HTML shows flat sequential text lists of component names like 'Reidsville Dam', 'Lake Brandt', 'Reservoir Node', 'Demand Node', etc. without any visual structure.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
       "check_id": "V4",
-      "description": "Section headings 'Static and Pattern Data', 'Timeseries Data', 'Operating Rules' formatting differs",
+      "description": "OCL file names that are italicized in the PDF are rendered as plain text in the HTML on page 9.",
       "severity": "minor",
-      "evidence": "PDF shows these as bold underlined subheadings; HTML shows them as bold text without underline",
-      "page": 7,
+      "evidence": "PDF page 9 shows italicized file names like 'main.ocl', 'filter_inflows.ocl', 'WW_returns.ocl', 'routing.ocl', etc. HTML renders these as plain text without italic formatting.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The word 'representative' which is italicized for emphasis in the PDF on page 4 is not italicized in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 4: 'we are trying to build a data set of daily flows whose variation is *representative* of history'. HTML renders it without italic emphasis.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The file name 'basedata.dss' is italicized in the PDF but rendered as plain text in the HTML on page 8.",
+      "severity": "minor",
+      "evidence": "PDF page 8 shows 'basedata.dss' in italics. HTML shows it as plain text.",
+      "page": 8,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "Flow chart titles rendered as h2 headings break the document hierarchy. These are subsection content within Section 2.2 Model Input and should not be at the same level as 'Section 2. Model Components'. The PDF presents them as figure/chart titles, not section headings.",
+      "description": "Flow chart titles are rendered as h2 headings, breaking the heading hierarchy. They should be at a lower level under Section 2 (Model Components). Additionally, the document has multiple h1-level concepts but only one actual h1, which is acceptable. However, the flowchart headings (pages 10-16) are promoted to h2 level, same as 'Section 2. Model Components', which misrepresents the document structure since they are sub-content within Section 2.2.",
       "severity": "major",
-      "evidence": "HTML uses <h2> for 'Flow Chart of Major Nodes in the Upper Cape Fear Basin', 'Flow Chart of Major Nodes in the Middle Cape Fear Basin', etc. These are chart titles within section 2.2, not peer-level sections to 'Section 2. Model Components'.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "Multiple h1 tags effectively exist. The title uses h1, but 'Section 1. Introduction' and 'Section 2. Model Components' are rendered as h2, which is acceptable. However, the flow chart titles being h2 alongside these creates a confusing flat hierarchy.",
-      "severity": "minor",
-      "evidence": "Six flow chart titles at h2 level alongside two main section headings at h2 level.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C3",
-      "description": "The Table of Contents is rendered as a table but the subsection entries (2.1, 2.2, 2.3, 2.4) lack indentation styling that the PDF shows, and '2 \u2013 Model Components' row has no page number which matches the PDF but the row appears as a peer to '1 \u2013 Introduction' without visual hierarchy.",
-      "severity": "minor",
-      "evidence": "PDF shows indented subsections 2.1-2.4 under '2 \u2013 Model Components'; HTML table has them as flat rows.",
+      "evidence": "PDF shows these as flowchart titles within the Model Input subsection. HTML renders 'Flow Chart of Major Nodes in the Upper Cape Fear Basin', etc. as <h2>, at the same level as 'Section 2. Model Components'.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "An incomplete sentence structure exists in the PDF source regarding the 58 reservoir count, and the HTML faithfully reproduces this awkward text. This is not an error in conversion.",
+      "description": "The flowchart pages (10-16) are rendered as flat paragraph lists of node/element labels rather than preserving the diagrammatic structure. While the text content is preserved, the structural relationship between elements (legends, annotations, node descriptions) is lost and presented as a simple sequence of paragraphs.",
       "severity": "minor",
-      "evidence": "Both PDF and HTML: 'There are 58 reservoir 42 actual reservoirs, 11 flood impoundments on Crabtree Creek, and five artificial storage nodes used for time-of-travel flow routing)' - missing opening parenthesis present in both.",
+      "evidence": "PDF pages 10-16 show structured flowcharts with legends, annotations, and spatial relationships. HTML renders these as sequential <p> tags like '<p>Reidsville Dam</p><p>Lake Brandt</p><p>Greensboro Demand</p>...'",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C2",
-      "description": "The flow chart diagrams on pages 10-16 are complex visual diagrams with annotations. The HTML attempts to capture the text content from these diagrams as paragraphs, but the spatial relationships, legend symbols, and flow connections inherent in the visual diagrams are lost.",
+      "check_id": "C8",
+      "description": "Minor formatting change: 'Static and Pattern Data' appears as bold text (<strong>) in the HTML rather than as an underlined subheading as it appears in the PDF. Same for 'Timeseries Data' and 'Operating Rules'. This is acceptable reformatting but worth noting.",
       "severity": "minor",
-      "evidence": "Pages 10-16 contain flowchart diagrams with nodes, arcs, and annotations. HTML renders these as sequential paragraph text, losing the diagrammatic structure.",
+      "evidence": "PDF: underlined subheadings 'Static and Pattern Data', 'Timeseries Data', 'Operating Rules'. HTML: '<p><strong>Static and Pattern Data</strong></p>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The parenthetical in the reservoir count on page 5 has a minor formatting issue - the PDF text appears to have a grammatical issue that is faithfully reproduced ('58 reservoir 42 actual reservoirs'), so this is not an HTML error but is noted.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'There are 58 reservoir 42 actual reservoirs, 11 flood impoundments on Crabtree Creek, and five artificial storage nodes used for time-of-travel flow routing)'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page footer numbers are rendered inline as div elements throughout the HTML, duplicating the page numbering that already appears in the source PDF as page footers. This is minor since they serve as structural markers.",
+      "severity": "minor",
+      "evidence": "HTML contains '<div class=\"page-footer\">1</div>', '<div class=\"page-footer\">2</div>' etc. throughout the document.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 0,
-  "major_count": 9,
-  "minor_count": 12,
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 7,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 67.62,
+    "duration_seconds": 118.62,
     "page_count": 18,
-    "visual_input_tokens": 47780,
-    "visual_output_tokens": 2199,
-    "content_input_tokens": 44539,
-    "content_output_tokens": 852,
-    "timestamp": "2026-04-11T05:51:56.005901",
+    "visual_input_tokens": 47997,
+    "visual_output_tokens": 1629,
+    "content_input_tokens": 44603,
+    "content_output_tokens": 1055,
+    "timestamp": "2026-04-15T14:07:50.582490",
     "auditor_version": "1.0.0"
   }
 }

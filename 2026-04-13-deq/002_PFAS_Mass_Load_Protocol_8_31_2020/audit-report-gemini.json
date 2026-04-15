@@ -3,52 +3,76 @@
   "verdict": "fail",
   "findings": [
     {
-      "check_id": "V3",
-      "description": "Missing professional seal and signature image.",
+      "check_id": "V4",
+      "description": "Loss of mathematical formatting in equations.",
       "severity": "major",
-      "evidence": "The PDF contains a blue professional engineer's seal and a signature on the bottom right of the page, which are entirely absent in the HTML rendering.",
-      "page": 1,
+      "evidence": "In the PDF, Equation 1 has properly formatted summation bounds ('N' above, 'n=1' below the sigma symbol). In the HTML, these are rendered inline as '\u2211Nn=1', which significantly degrades the readability and structure of the equation.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of mathematical formatting in equations.",
+      "severity": "major",
+      "evidence": "In the PDF, Equation 2 has proper summation bounds (superscript 'I', subscript 'i=1'). The HTML renders these bounds inline as '\u2211Ii=1'.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Loss of mathematical formatting in equations.",
+      "severity": "major",
+      "evidence": "In the PDF, Equation 3 has proper summation bounds (superscript 'I', subscript 'i=1'). The HTML renders these bounds inline as '\u2211Ii=1'.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Merged table cell split into multiple cells.",
+      "severity": "minor",
+      "evidence": "In the PDF, the first column of Table 1 ('Table 3+ Lab SOP') is a single vertically merged cell spanning all rows. In the HTML, this merged cell is split, and the text is repeated individually in every row.",
+      "page": 12,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Missing map image for Figure 1.",
+      "description": "Figure elements separated and rendered as extracted text.",
+      "severity": "major",
+      "evidence": "The PDF features a unified map figure containing an embedded visual legend and title block. In the HTML, the map image is present, but the graphical legend icons are missing, and text embedded within the image and title block has been extracted and appended as plain text below the image.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart graphic completely missing.",
       "severity": "critical",
-      "evidence": "The PDF displays an aerial map with labeled sampling locations for Figure 1. The HTML completely omits this image, leaving only the extracted text from the legend and caption.",
+      "evidence": "The PDF displays Figure 2 as a graphical flowchart with decision diamonds, action rectangles, and directional arrows. The HTML completely omits the graphic and only outputs the text contained within the shapes sequentially, completely destroying the structural logic and legibility of the flowchart.",
       "page": 15,
       "call_source": "visual"
     },
     {
-      "check_id": "V3",
-      "description": "Missing flowchart diagram for Figure 2.",
-      "severity": "critical",
-      "evidence": "The PDF contains a complex flowchart with logical decision diamonds and processes. The HTML entirely misses the graphic and simply lists the text from within the flowchart shapes as disjointed plain text paragraphs.",
-      "page": 16,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Missing flowchart diagram for Figure 3.",
-      "severity": "critical",
-      "evidence": "The PDF features a flowchart diagram for Figure 3. Similar to Figure 2, the HTML fails to include the graphic, presenting only the unformatted text extracted from the diagram's elements.",
-      "page": 17,
-      "call_source": "visual"
+      "check_id": "C2",
+      "description": "Missing figure images for Flowcharts (Figures 2 and 3)",
+      "severity": "major",
+      "evidence": "On Page 16 and Page 17, the PDF contains visual flowcharts ('Figure 2: Flowchart for Determining the Concentration for Loading at Outfall 002' and 'Figure 3: Flowchart for Determining the Concentration for Loading at the River Water Intake'). The HTML attempts to extract the text from these flowcharts sequentially (e.g., '<p>Was a 24-hr composite sample collected?</p><p>YES</p>') but completely omits the <img> tags for the flowcharts themselves. Without the visual lines and branching, the extracted linear text loses its logical meaning.",
+      "page": null,
+      "call_source": "content"
     }
   ],
-  "critical_count": 3,
-  "major_count": 1,
-  "minor_count": 0,
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 70.28,
+    "duration_seconds": 145.2,
     "page_count": 17,
-    "visual_input_tokens": 37766,
-    "visual_output_tokens": 1039,
-    "content_input_tokens": 19556,
-    "content_output_tokens": 153,
-    "timestamp": "2026-04-11T05:45:33.051333",
+    "visual_input_tokens": 37969,
+    "visual_output_tokens": 1263,
+    "content_input_tokens": 19617,
+    "content_output_tokens": 346,
+    "timestamp": "2026-04-15T14:01:00.995641",
     "auditor_version": "1.0.0"
   }
 }
