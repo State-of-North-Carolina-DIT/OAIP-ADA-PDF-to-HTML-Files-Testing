@@ -4,107 +4,75 @@
   "findings": [
     {
       "check_id": "V3",
-      "description": "The NC Waste Management logo in the HTML version appears slightly different in rendering but is present and correctly placed.",
+      "description": "The NC Waste Management / Environmental Quality logo appears in the HTML but the header layout with the governor, secretary, and acting director names is rendered differently as plain text blocks rather than the styled header format.",
       "severity": "minor",
-      "evidence": "PDF shows the NC logo with 'Waste Management ENVIRONMENTAL QUALITY' text beneath. HTML shows the same logo in a similar position.",
+      "evidence": "PDF shows a formal letterhead with logo on left and officials' names right-aligned in a styled header. HTML shows the same content but with different visual arrangement.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "The MEMORANDUM heading in the HTML uses a different underline style (horizontal rule) compared to the PDF's simple underline.",
+      "description": "The digital signature block appears in the HTML version but is not present in the original PDF page 1.",
       "severity": "minor",
-      "evidence": "PDF: 'MEMORANDUM' with traditional underline. HTML: 'MEMORANDUM' with a bold horizontal rule beneath it.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Digital signature information appears in the HTML version that is not visible in the PDF version's first page.",
-      "severity": "minor",
-      "evidence": "HTML shows 'Digitally signed by Elizabeth S Werner' with DN and date details. PDF page 1 does not show this digital signature metadata.",
+      "evidence": "HTML page 2 shows 'Digitally signed by Elizabeth S Werner' with DN and date information. The PDF page 1 does not show this digital signature information.",
       "page": 2,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "The HTML combines what appears as a page break continuation into a continuous scroll, showing footer and header elements inline.",
+      "check_id": "V4",
+      "description": "In the outline list, the PDF uses Roman numerals with periods as a numbered list format, while the HTML renders them similarly but with slightly different list styling.",
       "severity": "minor",
-      "evidence": "PDF has clear page breaks between pages 1 and 2. HTML shows the footer/header information inline between content sections.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The report outline numbering (I through IV) uses slightly different indentation in HTML vs PDF but content is preserved.",
-      "severity": "minor",
-      "evidence": "PDF has Roman numerals indented with tab stops. HTML renders them as a simple list with different indentation.",
+      "evidence": "PDF shows I., II., III., IV. as indented list items. HTML shows the same with 'I.', 'II.', 'III.', 'IV.' formatting preserved.",
       "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section heading 'I. History/Background' formatting differs slightly - PDF uses bold with Roman numeral separated, HTML uses a larger heading style.",
-      "severity": "minor",
-      "evidence": "PDF: 'I. History/Background' in bold with standard formatting. HTML: rendered as a larger section heading.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Bullet point topic labels in the oral comments summary use underline+bold in PDF but bold only in HTML.",
-      "severity": "minor",
-      "evidence": "PDF: 'Excavation' is underlined and bold. HTML: 'Excavation' appears bold but not underlined.",
-      "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "The HTML uses h1 for the MEMORANDUM heading, but then uses h2 for sections I, II, III, and IV. The PDF document uses a clear Roman numeral section structure (I, II, III, IV) which are all at the same level. Additionally, 'MEMORANDUM' is styled as h1 with bold and underline, which is acceptable as a document title, but the nesting of a second <main> element inside the first <main> is a structural HTML issue rather than a heading hierarchy problem per se.",
-      "severity": "major",
-      "evidence": "HTML: <h1><strong><u>MEMORANDUM</u></strong></h1> followed by <h2>I. History/Background</h2>, <h2>II. March 16, 2016 Public Meeting and Oral Comments Summary</h2>, etc. This is acceptable heading hierarchy.",
+      "description": "The document title 'MEMORANDUM' is rendered as h1 with bold and underline styling, which is acceptable. However, the main sections (I, II, III, IV) are rendered as h2 which is appropriate. No significant hierarchy issues.",
+      "severity": "minor",
+      "evidence": "h1: MEMORANDUM, h2: I. History/Background, h2: II. March 16, 2016..., h2: III. Written Public Comment Summary, h2: IV. Attachments \u2014 matches PDF structure.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML contains a nested <main> element inside the outer <main>, which creates structural duplication. The page 1 content including the memorandum header info, outline, and footer are presented, followed by repeat of the same structural content across pages. However, this reflects the page-by-page structure and the content itself is not duplicated \u2014 this is a minor structural HTML issue.",
+      "description": "The page 1 content (memorandum header, outline, and footer) appears in the HTML as part of the main content, and then the same content effectively appears again as subsequent pages are rendered. The outline (I-IV) appears in the <main> block on page 1 and then the same sections appear as full content below. Additionally, the footer text from page 1 appears both in the <header> area at the top of the document and in a page-footer div.",
       "severity": "major",
-      "evidence": "HTML has <main> wrapping everything, then another <main> element inside for page 1 content.",
+      "evidence": "The outline list (I. History/Background, II. March 16..., III. Written..., IV. Attachments) appears first in an <ol> and then each section appears again as h2 headings with full content. The footer 'State of North Carolina | Environmental Quality | Waste Management / 1646 Mail Service Center...' appears in the page-footer div. This mirrors the PDF structure across pages but creates a nested <main> inside <main> element.",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C6",
-      "description": "The second image has an empty alt text attribute, which is not descriptive. The first image has reasonable alt text.",
-      "severity": "minor",
-      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\"> for the second image (appears to be a decorative line/footer image). First image: alt=\"NC Waste Management Environmental Quality logo\" which is appropriate.",
+      "check_id": "C5",
+      "description": "There is a nested <main> element inside the outer <main> element, which is invalid HTML structure. The first page content is wrapped in a second <main> tag.",
+      "severity": "major",
+      "evidence": "The HTML has <main> in the <body>, then another <main> tag wrapping the page 1 memorandum content including the outline, creating an invalid nested structure.",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C1",
-      "description": "The digital signature details in the HTML include 'email=elizabeth.werner@ncdenr.gov' which matches the PDF's digital signature block showing 'email=elizabeth.werner@nc denr.gov'. The PDF header footer text and all substantive content matches. No fabricated content found.",
+      "check_id": "C8",
+      "description": "Minor typo in the source PDF is faithfully preserved: 'creditable' should likely be 'credible', and 'there wells' should be 'their wells' \u2014 these are present in both PDF and HTML, so no accuracy issue with the conversion itself.",
       "severity": "minor",
-      "evidence": "All text in HTML traces back to the PDF source. Verified against all sections, bullet points, statistics (207 attendees, 33 speakers, 26 registered, 643 emails, 8 hand-submitted, 287,000 people, 1500-ft boundary), proper nouns, and dates.",
+      "evidence": "PDF: 'no creditable reports' and 'test there wells' \u2014 HTML preserves these exactly.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 2,
-  "minor_count": 9,
+  "minor_count": 5,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 48.91,
+    "duration_seconds": 74.66,
     "page_count": 5,
-    "visual_input_tokens": 14564,
-    "visual_output_tokens": 1251,
-    "content_input_tokens": 15302,
-    "content_output_tokens": 874,
-    "timestamp": "2026-04-14T05:00:55.941710",
+    "visual_input_tokens": 14781,
+    "visual_output_tokens": 875,
+    "content_input_tokens": 15366,
+    "content_output_tokens": 860,
+    "timestamp": "2026-04-15T14:34:04.130418",
     "auditor_version": "1.0.0"
   }
 }

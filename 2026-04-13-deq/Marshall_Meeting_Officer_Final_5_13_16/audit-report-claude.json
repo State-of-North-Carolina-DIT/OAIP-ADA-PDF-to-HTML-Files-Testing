@@ -1,102 +1,70 @@
 {
   "document_id": "Marshall_Meeting_Officer_Final_5_13_16",
-  "verdict": "pass",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "V2",
-      "description": "The memo header fields (To, From, Subject) are rendered as a styled table in HTML instead of plain label-value pairs as in the PDF.",
-      "severity": "minor",
-      "evidence": "PDF shows simple 'To:', 'From:', 'Subject:' labels with values in a standard memo format. HTML renders these inside a bordered table with shaded rows.",
+      "description": "The memo header fields (To, From, Subject) are rendered as a structured table in the HTML but appear as simple indented text in the PDF. While the data is preserved, the HTML introduces visible table borders/structure not present in the original.",
+      "severity": "major",
+      "evidence": "PDF shows To/From/Subject as simple label-value pairs with indentation. HTML renders these in a bordered table with distinct rows and cells.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "The NC Water Resources logo appears slightly different in color/rendering between PDF and HTML, but is present and correctly placed.",
+      "description": "The NC Water Resources logo appears slightly different in cropping/rendering between PDF and HTML, though it is present and correctly positioned.",
       "severity": "minor",
-      "evidence": "Both versions show the NC Water Resources Environmental Quality logo in the upper left, but the HTML version appears slightly different in color saturation.",
+      "evidence": "PDF shows full logo with text 'Water Resources ENVIRONMENTAL QUALITY' beneath. HTML shows the same logo but with slight visual differences in rendering.",
       "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The 'MEMORANDUM' title has an underline in both versions but the HTML version also includes a decorative colored horizontal rule beneath it.",
-      "severity": "minor",
-      "evidence": "PDF shows underlined 'MEMORANDUM' text centered. HTML shows the same but adds a gradient-colored horizontal line below.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section headings in HTML use larger bold sans-serif styling compared to the PDF's serif bold formatting.",
-      "severity": "minor",
-      "evidence": "PDF section headings 'I. History/Background' use serif bold font. HTML uses a larger sans-serif bold heading style.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Page 2 content flows continuously in HTML without page break, merging content from what was pages 2-3 in the PDF into continuous scrolling.",
-      "severity": "minor",
-      "evidence": "PDF has a clear page break after page 2 content. HTML flows continuously with a 'Page 2 of 6' marker but no visual break.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The bullet point content from PDF page 3 begins partway through the HTML page 3 rendering, with page number indicators preserved but no actual page breaks.",
-      "severity": "minor",
-      "evidence": "PDF clearly separates content across pages 3-4. HTML renders continuously.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Underlined bold topic labels in bullet points (e.g., 'Air Quality', 'Beneficial Reuse') are preserved in both versions.",
-      "severity": "minor",
-      "evidence": "Both PDF and HTML show underlined bold topic labels consistently.",
-      "page": 3,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "The MEMORANDUM title is rendered as h1 but the document also has section headings rendered as h2. The h1 styling with underline is acceptable as the document title, but the nested <main> tags create a structural oddity.",
+      "description": "The document uses 'MEMORANDUM' as h1, which is acceptable as a document title, but the heading hierarchy has all major section headings (I, II, III, IV) as h2 which is correct. However, the h1 is styled with underline and center alignment matching the PDF, so this is acceptable.",
       "severity": "minor",
-      "evidence": "HTML has <main> nested inside <main>, which is an HTML structural issue but not a content fidelity issue.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C3",
-      "description": "The memo header fields (To, From, Subject) are rendered as a table in the HTML, but in the PDF they are formatted as a standard memo header, not a table. The table has no column headers indicated by a comment '<!-- COLUMNS: Field | Value -->' which is metadata not in the PDF, but this is an implementation detail, not fabricated content.",
-      "severity": "minor",
-      "evidence": "HTML uses <table> with comment '<!-- COLUMNS: Field | Value -->' for memo fields. PDF shows standard memo formatting.",
+      "evidence": "h1: 'MEMORANDUM', h2: 'I. History/Background', 'II. March 29, 2016 Public Meeting and Oral Comments Summary', 'III. Written Public Comment Summary', 'IV. Attachments'",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "Page footer with address information appears both at the bottom of the first page section and is also present in the PDF header area. This is acceptable as consolidation of repeated header/footer content.",
+      "description": "The HTML has nested <main> elements, which is a structural issue but does not cause content duplication.",
       "severity": "minor",
-      "evidence": "Address '1611 Mail service Center | Raleigh, North Carolina 27699-1611 | 919 707 9000' appears in the page footer div in the HTML.",
+      "evidence": "HTML contains <main> inside another <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The memo header (To/From/Subject) is rendered as a table in the HTML whereas in the PDF it is formatted as a simple field-value layout. The table has no visible borders styled inline with 'border: none', and cell values match the PDF content accurately. This is an acceptable structural choice.",
+      "severity": "minor",
+      "evidence": "PDF: 'To: Secretary Donald R. van der Vaart' etc. HTML: table with matching content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image has an empty alt text, which is generic rather than descriptive. The first image has appropriate alt text describing the NC DEQ Water Resources logo.",
+      "severity": "minor",
+      "evidence": "First img: alt='North Carolina Department of Environmental Quality Water Resources logo'. Second img: alt='' (empty).",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 0,
-  "minor_count": 10,
+  "major_count": 1,
+  "minor_count": 5,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 44.18,
+    "duration_seconds": 81.52,
     "page_count": 6,
-    "visual_input_tokens": 17102,
-    "visual_output_tokens": 1179,
-    "content_input_tokens": 18929,
-    "content_output_tokens": 612,
-    "timestamp": "2026-04-14T05:00:27.786050",
+    "visual_input_tokens": 17319,
+    "visual_output_tokens": 567,
+    "content_input_tokens": 18993,
+    "content_output_tokens": 700,
+    "timestamp": "2026-04-15T14:32:49.465662",
     "auditor_version": "1.0.0"
   }
 }

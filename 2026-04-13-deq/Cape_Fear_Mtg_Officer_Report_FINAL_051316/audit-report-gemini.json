@@ -3,76 +3,44 @@
   "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "Header text is duplicated and the page footer is misplaced.",
+      "check_id": "V5",
+      "description": "Scrambled reading order at the beginning of the document with duplicated text and misplaced footer elements.",
       "severity": "major",
-      "evidence": "In the HTML, the right-aligned header text (names and titles) appears twice. The page footer text and colored bar are incorrectly placed near the top of the page, between the duplicated headers and above the 'MEMORANDUM' title.",
+      "evidence": "In the HTML rendering, the right-aligned header text ('PAT McCRORY...') appears duplicated. Additionally, the page footer text ('State of North Carolina...') and a decorative colored bar are incorrectly placed above the main 'MEMORANDUM' title, completely disrupting the logical reading flow of the header section.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Page footer appears at the top of the content area.",
-      "severity": "minor",
-      "evidence": "The HTML rendering places the footer text and colored bar at the very top of the page, preceding the main 'I. History/Background' section content.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section headings lost bold formatting.",
-      "severity": "minor",
-      "evidence": "The headings 'I. History/Background' and 'II. March 10, 2016...' are bold in the PDF but rendered as standard weight text in the HTML.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Page footer interrupts the reading flow of a bulleted list.",
+      "description": "Page footer breaks the semantic continuity of a bulleted list.",
       "severity": "major",
-      "evidence": "The footer text and colored bar are incorrectly injected in the middle of a list, appearing directly between the 'Environmental' and 'Health Issues' bullet points.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section heading lost bold formatting.",
-      "severity": "minor",
-      "evidence": "The heading 'III. Written Public Comment Summary' is bold in the PDF but rendered as standard weight text in the HTML.",
+      "evidence": "In the HTML rendering, the page footer text ('State of North Carolina...') and a colored decorative bar from the bottom of the previous page are injected directly into the middle of a bulleted list, appearing between the 'Environmental' and 'Health Issues' bullet points.",
       "page": 3,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Page footer interrupts the reading flow of a bulleted list.",
+      "description": "Page footer breaks the semantic continuity of a bulleted list.",
       "severity": "major",
-      "evidence": "The footer text and colored bar are incorrectly injected in the middle of a list, appearing directly between the 'Criticism' and 'Dam Safety' bullet points.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section heading lost bold formatting.",
-      "severity": "minor",
-      "evidence": "The heading 'IV. Attachments' is bold in the PDF but rendered as standard weight text in the HTML.",
+      "evidence": "In the HTML rendering, the page footer text ('State of North Carolina...') and a colored decorative bar from the bottom of the previous page are injected inline into a bulleted list, appearing between the 'Criticism' and 'Dam Safety' bullet points.",
       "page": 4,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
   "major_count": 3,
-  "minor_count": 4,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 103.24,
+    "duration_seconds": 101.86,
     "page_count": 4,
-    "visual_input_tokens": 9532,
-    "visual_output_tokens": 861,
-    "content_input_tokens": 6279,
-    "content_output_tokens": 171,
-    "timestamp": "2026-04-11T06:04:20.064759",
+    "visual_input_tokens": 9735,
+    "visual_output_tokens": 629,
+    "content_input_tokens": 6340,
+    "content_output_tokens": 149,
+    "timestamp": "2026-04-15T14:25:26.903727",
     "auditor_version": "1.0.0"
   }
 }

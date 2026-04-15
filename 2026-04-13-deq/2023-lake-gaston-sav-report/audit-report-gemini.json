@@ -3,52 +3,52 @@
   "verdict": "fail",
   "findings": [
     {
-      "check_id": "V2",
-      "description": "Table converted to plain text",
+      "check_id": "V3",
+      "description": "Missing charts replaced by text",
       "severity": "critical",
-      "evidence": "PDF page 15 contains a bar graph. The HTML version has converted the y-axis labels and legend text into plain text.",
-      "page": 15,
+      "evidence": "In the PDF, Figure 1 and Figure 2 are bar graphs. In the HTML, these images are entirely missing. Instead, the textual labels, axis numbers, and data points from the charts have been extracted and rendered as unstructured plain text, completely losing the visual representation of the data.",
+      "page": 9,
       "call_source": "visual"
     },
     {
-      "check_id": "V2",
-      "description": "Table converted to plain text",
+      "check_id": "V3",
+      "description": "Missing chart replaced by text",
       "severity": "critical",
-      "evidence": "PDF page 16 contains a bar graph. The HTML version has converted the y-axis labels and legend text into plain text.",
+      "evidence": "Figure 7 is a combined bar and line chart in the PDF. In the HTML, the image is missing and has been replaced by a run-on sequence of numbers extracted from the chart's axes and data labels.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing chart replaced by text",
+      "severity": "critical",
+      "evidence": "Figure 9 is a combined bar and line chart in the PDF. The HTML version omits the image entirely and replaces it with unstructured text blocks of the axis numbers.",
       "page": 16,
       "call_source": "visual"
     },
     {
-      "check_id": "V2",
-      "description": "Table converted to plain text",
+      "check_id": "V3",
+      "description": "Missing chart replaced by text",
       "severity": "critical",
-      "evidence": "PDF page 18 contains a bar graph. The HTML version has converted the y-axis labels and legend text into plain text.",
+      "evidence": "Figure 11 is a combined bar and line chart in the PDF. In the HTML, the visual chart is absent, replaced by a text dump of the axis values.",
       "page": 18,
       "call_source": "visual"
-    },
-    {
-      "check_id": "C2",
-      "description": "Chart images are missing structural <img> tags.",
-      "severity": "minor",
-      "evidence": "Figures 1, 2, 7, 9, and 11 in the PDF are bar/line charts. In the HTML, these figures lack <img> tags entirely. Instead, the raw text and data points from the charts were extracted into text blocks (e.g., <div class=\"chart-data\">). While the textual data is preserved, the visual structural elements are absent.",
-      "page": null,
-      "call_source": "content"
     }
   ],
-  "critical_count": 3,
+  "critical_count": 4,
   "major_count": 0,
-  "minor_count": 1,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 48.29,
+    "duration_seconds": 461.08,
     "page_count": 20,
-    "visual_input_tokens": 44788,
-    "visual_output_tokens": 985,
-    "content_input_tokens": 21947,
-    "content_output_tokens": 292,
-    "timestamp": "2026-04-11T05:59:06.884080",
+    "visual_input_tokens": 44991,
+    "visual_output_tokens": 1195,
+    "content_input_tokens": 22008,
+    "content_output_tokens": 159,
+    "timestamp": "2026-04-15T14:22:46.244438",
     "auditor_version": "1.0.0"
   }
 }

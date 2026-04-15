@@ -4,75 +4,75 @@
   "findings": [
     {
       "check_id": "V1",
-      "description": "The PDF uses a two-column layout for Receipts and Disbursements (FY 2020-2021 on the left, Duration of Program on the right). The HTML converts this into a single four-column table, which changes the visual grouping from side-by-side independent sections to a merged table structure.",
+      "description": "The PDF uses a two-column layout for Receipts and Disbursements, with FY 2020-2021 data on the left and Duration of Program data on the right. The HTML converts this into a single four-column table, which changes the visual layout from side-by-side independent sections to a merged tabular structure.",
       "severity": "major",
-      "evidence": "PDF shows two visually separate sections with their own headers ('Receipts:' and 'Disbursements:' appearing twice each). HTML merges them into one wide table with columns: FY 2020-2021 Category, Amount, Duration of Program Category, Amount.",
+      "evidence": "PDF shows two distinct column groups (FY 2020-2021 on left, Duration of Program on right) with separate headers. HTML merges them into one table with four columns.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V2",
-      "description": "The Fund Balance and Encumbered in Contracts lines are presented as a simple right-aligned summary in the PDF, but rendered as a separate table in the HTML.",
+      "description": "In the PDF, the Receipts and Disbursements sections are visually separated with whitespace and distinct section headers with underlines. In the HTML, they are combined into a single continuous table, making the section breaks less distinct.",
       "severity": "minor",
-      "evidence": "PDF shows 'Fund Balance as of 3/31/2021: $ 13,054,308.66' with bold formatting inline. HTML puts these into a Description/Amount table.",
+      "evidence": "PDF has clear visual separation between Receipts section and Disbursements section with blank rows and underlined headers. HTML table runs them together with 'Receipts:' and 'Disbursements:' as regular rows.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Dash/hyphen values for zero or empty amounts in the PDF (e.g., Rebate: $ -, Interest: $ -) are rendered as '$ -' in the HTML, which is acceptable, but the underline formatting on section headers like 'Receipts:' and 'Disbursements:' is not preserved in the HTML table.",
+      "check_id": "V2",
+      "description": "The Fund Balance and Encumbered in Contracts summary in the PDF appears as standalone right-aligned text, while in the HTML it is rendered as a separate two-column table.",
       "severity": "minor",
-      "evidence": "PDF shows 'Receipts:' and 'Disbursements:' with underline decoration. HTML shows them as plain text rows in the table without underline styling.",
+      "evidence": "PDF shows 'Fund Balance as of 3/31/2021: $ 13,054,308.66' as formatted text. HTML renders it as a Description/Amount table.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V5",
-      "description": "Reading order is functionally preserved. The DSCA Site Statistics section appears after the financial data in both versions, and the fund balance summary appears between them in both.",
+      "check_id": "V2",
+      "description": "The DSCA Site Statistics in the PDF is presented as a simple label-value list format. The HTML converts it into a formal Statistic/Value table.",
       "severity": "minor",
-      "evidence": "Both PDF and HTML present: financial data \u2192 fund balance summary \u2192 site statistics.",
+      "evidence": "PDF shows statistics as indented text with values aligned, HTML shows a structured table with headers 'Statistic' and 'Value'.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "C1",
-      "description": "HTML table headers include fabricated column names not present in the PDF",
+      "description": "HTML adds column headers ('Description', 'Amount', 'Statistic', 'Value', 'FY 2020-2021 (through 3/31/21) Category', 'FY 2020-2021 (through 3/31/21) Amount', 'Duration of Program (through 3/31/21) Category', 'Duration of Program (through 3/31/21) Amount') that do not explicitly appear in the PDF. These are reasonable structural additions for table accessibility but are technically not in the source.",
       "severity": "minor",
-      "evidence": "The HTML adds column headers like 'FY 2020-2021 (through 3/31/21) Category', 'FY 2020-2021 (through 3/31/21) Amount', 'Description', 'Amount', 'Statistic', 'Value' which are not explicitly in the PDF but are reasonable structural labels for the table data. These are organizational headers rather than fabricated content.",
+      "evidence": "PDF has no explicit column header rows for its tables. HTML adds <th> headers like 'Statistic', 'Value', 'Description', 'Amount', etc.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The main financial table in the HTML merges FY 2020-2021 and Duration of Program data into a single 4-column table, which duplicates the category labels (e.g., 'Receipts:', 'Solvent Tax Revenue:') in both columns 1 and 3. This is an acceptable structural choice, but the original PDF presents them as two side-by-side sections with non-redundant labels.",
+      "severity": "minor",
+      "evidence": "Each row has the category name repeated in column 1 and column 3, e.g., 'Solvent Tax Revenue:' appears twice per row.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The category labels are duplicated across columns 1 and 3 of the main table. In the PDF, each side has its own set of line items, but the labels are identical. The HTML repeats the label text in both column 1 and column 3, which while matching the PDF layout, creates redundancy in the table structure.",
-      "severity": "major",
-      "evidence": "E.g., 'Solvent Tax Revenue:' appears in both column 1 and column 3, 'Sales Tax Revenue:' appears in both columns, etc. This mirrors the PDF's two-column layout, so this is actually faithful reproduction.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "There are two nested <main> elements in the HTML, which is a structural issue but does not affect content fidelity.",
+      "description": "The HTML has two nested <main> elements, which is a structural duplication in the markup, though it does not cause content duplication visible to users.",
       "severity": "minor",
-      "evidence": "The HTML has <main> inside <body> and another <main> inside the first <main>.",
+      "evidence": "HTML source contains <main> nested inside another <main>.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 2,
-  "minor_count": 5,
+  "major_count": 1,
+  "minor_count": 6,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 38.48,
+    "duration_seconds": 38.05,
     "page_count": 1,
-    "visual_input_tokens": 3832,
-    "visual_output_tokens": 744,
-    "content_input_tokens": 6119,
-    "content_output_tokens": 627,
-    "timestamp": "2026-04-14T04:56:23.136152",
+    "visual_input_tokens": 4049,
+    "visual_output_tokens": 732,
+    "content_input_tokens": 6183,
+    "content_output_tokens": 644,
+    "timestamp": "2026-04-15T14:25:53.182992",
     "auditor_version": "1.0.0"
   }
 }

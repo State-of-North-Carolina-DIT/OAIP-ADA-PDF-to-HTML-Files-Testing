@@ -3,44 +3,28 @@
   "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "The page layout is significantly altered, with header and footer images grouped inappropriately.",
+      "check_id": "V3",
+      "description": "Bottom banner image placed out of order.",
       "severity": "major",
-      "evidence": "In the PDF, there is a panoramic image at the top (header) and another at the bottom (footer) framing the central text and logo. In the HTML, these two panoramic images are stacked directly on top of each other at the beginning of the page, followed by the logo and then the text.",
+      "evidence": "In the PDF, the cityscape banner image is located at the bottom of the page below the presentation title and author text. In the HTML, this image is placed above the main presentation title text.",
       "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Loss of underline text formatting on emphasized phrases.",
-      "severity": "minor",
-      "evidence": "In the PDF, the phrases 'equal to or more restrictive' and 'more restrictive' are styled with both bold and underline. In the HTML, the underline formatting is missing, and the text is only bolded.",
-      "page": 5,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Hyperlinks have lost their visual styling.",
-      "severity": "minor",
-      "evidence": "In the PDF, the web address URL and the email addresses are styled as standard blue, underlined links. In the HTML, this text appears in the same dark grey color as the body text without underlines.",
-      "page": 8,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 2,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 95.38,
+    "duration_seconds": 96.19,
     "page_count": 8,
-    "visual_input_tokens": 18356,
-    "visual_output_tokens": 726,
-    "content_input_tokens": 7873,
-    "content_output_tokens": 165,
-    "timestamp": "2026-04-11T06:03:57.182162",
+    "visual_input_tokens": 18559,
+    "visual_output_tokens": 496,
+    "content_input_tokens": 7934,
+    "content_output_tokens": 166,
+    "timestamp": "2026-04-15T14:24:36.304072",
     "auditor_version": "1.0.0"
   }
 }

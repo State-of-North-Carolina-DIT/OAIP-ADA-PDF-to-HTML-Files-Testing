@@ -4,83 +4,75 @@
   "findings": [
     {
       "check_id": "V1",
-      "description": "The PDF is a map figure with spatial layout showing sampling locations, legends, and data callout boxes positioned geographically. The HTML renders this as a linearized sequence of text blocks and tables, completely losing the map-based spatial layout.",
+      "description": "The PDF is a single-page map figure with all data tables, legends, notes, and the map image integrated into one spatial layout. The HTML converts this into a long scrolling page with the map as a small thumbnail image at the top, followed by all textual content linearized vertically, completely losing the spatial map-based layout.",
       "severity": "critical",
-      "evidence": "PDF shows a geographic map with sample points (SW/SD-1 through SW/SD-5) positioned spatially with callout boxes. HTML converts everything to a linear top-to-bottom flow with a small thumbnail image and then separate tables for each sample point.",
+      "evidence": "PDF shows a large map with data tables (SW-1 through SW-5) positioned at their geographic sampling locations on the map. HTML shows a tiny map thumbnail followed by all data rendered as sequential HTML tables and text blocks.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "The main map image is reduced to a very small, low-resolution thumbnail in the HTML, losing all legibility of the geographic features, roads, property boundaries, and sample location markers.",
+      "description": "The map image in the HTML is rendered as a very small thumbnail that has lost nearly all legibility. The detailed geographic features, sampling locations, property boundaries, and road labels visible in the PDF are not discernible in the HTML rendering.",
       "severity": "major",
-      "evidence": "PDF has a full-page detailed map. HTML shows a tiny thumbnail at the top that is essentially unreadable.",
+      "evidence": "PDF shows a large, detailed map occupying most of the page. HTML shows a small, compressed version of the map at the top that is too small to read.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V2",
-      "description": "The data tables for each sampling location (SW-1 through SW-5) are present in the HTML and contain the correct data values, though they are rendered as separate standalone tables rather than callout boxes on the map.",
-      "severity": "minor",
-      "evidence": "PDF shows data in callout boxes (e.g., SW-2: Tetrachloroethene 6.07, Copper 4.85). HTML shows these same values in structured tables.",
+      "description": "The data tables in the PDF are positioned spatially on the map near their respective sampling locations (SW-1/DUP through SW-5), providing geographic context. In the HTML, they are rendered as separate sequential HTML tables with no spatial relationship to the map, losing the connection between data and location.",
+      "severity": "major",
+      "evidence": "PDF: Tables for SW-1, SW-2, SW-3, SW-4, SW-5 are placed at specific map coordinates. HTML: Same tables appear as a vertical sequence of standalone HTML tables below the map image.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "The reading order in HTML follows a reasonable sequence (title info, legend items, then sample data tables in order SW-1 through SW-5, then notes), which preserves the informational content even though the spatial context is lost.",
-      "severity": "minor",
-      "evidence": "PDF reading order is spatial/geographic. HTML linearizes to: header info \u2192 legend \u2192 sample tables \u2192 notes.",
+      "description": "The reading order has been altered. In the PDF, the map and its associated data tables form an integrated visual unit where the user reads data in spatial context. The HTML linearizes all content: map image first, then title block information, then legend items, then each data table sequentially, then notes, then references.",
+      "severity": "major",
+      "evidence": "PDF: Integrated map-based layout with simultaneous visual access to all elements. HTML: Linear top-to-bottom sequence starting with map thumbnail, then metadata, then tables SW-1 through SW-5 in sequence, then notes.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "Two h1 elements present due to nested <main> tags. 'SURFACE WATER ASSESSMENT' is h1 and 'SOUTHSIDE PARK LANDFILL' is h2, which is acceptable structurally, but the HTML has two <main> elements nested inside each other.",
+      "description": "Document has nested <main> elements and uses both h1 and h2 for the title block, but the hierarchy is reasonable. 'SOUTHSIDE PARK LANDFILL' is rendered as h2 under h1 'SURFACE WATER ASSESSMENT', which is acceptable given the figure layout.",
       "severity": "minor",
-      "evidence": "HTML contains <main> nested inside another <main>, and the document title 'SURFACE WATER ASSESSMENT' as h1 with 'SOUTHSIDE PARK LANDFILL' as h2. The PDF treats them both as title-level text.",
+      "evidence": "HTML has h1 'SURFACE WATER ASSESSMENT' and h2 'SOUTHSIDE PARK LANDFILL'. In the PDF, 'SURFACE WATER ASSESSMENT' is the main title and 'SOUTHSIDE PARK LANDFILL' is a subtitle/project name.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C3",
-      "description": "The 'Risk Assessment' row and CR/HI rows are placed as regular table rows rather than as a sub-header and data rows. While the data values are correct, the structure slightly misrepresents the original layout where 'Risk Assessment' was a label/header for the CR and HI values beneath it.",
+      "description": "The 'Risk Assessment' row in each table has an empty second cell, and CR/HI are presented as separate rows rather than as sub-items under 'Risk Assessment'. This is a structural choice that doesn't lose data but differs slightly from the PDF's visual grouping.",
       "severity": "minor",
-      "evidence": "In the PDF, 'Risk Assessment' is a label with CR and HI as sub-items. In the HTML tables, they appear as separate rows with empty second cells for 'Risk Assessment'.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C8",
-      "description": "The notes section states standards are '15A NCAC 2B GROUNDWATER STANDARDS' in the HTML, which matches the PDF text exactly. However, this appears to be the PDF's own text - no issue here. The drawing path footer text is accurately reproduced.",
-      "severity": "minor",
-      "evidence": "Both PDF and HTML contain identical text for notes and references.",
+      "evidence": "PDF shows 'Risk Assessment' as a header with CR and HI as sub-items. HTML shows them as separate table rows with Risk Assessment having an empty value cell.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The sample location identifiers (SW/SD-1 through SW/SD-5) appear both in the 'map-markers' section and in the legend section of the PDF. This is consistent with the PDF which shows them both on the map and in the legend, so this is an acceptable representation.",
+      "description": "Nested <main> elements - there are two <main> tags which is a minor HTML structural issue but does not affect content.",
       "severity": "minor",
-      "evidence": "SW/SD-1 through SW/SD-5 appear in the map-markers section and also referenced in legend as 'Surface Water and Sediment Sample Locations'.",
+      "evidence": "HTML contains <main> inside another <main>.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 1,
-  "major_count": 1,
-  "minor_count": 6,
+  "major_count": 3,
+  "minor_count": 3,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 38.63,
+    "duration_seconds": 85.09,
     "page_count": 1,
-    "visual_input_tokens": 3234,
-    "visual_output_tokens": 713,
-    "content_input_tokens": 6478,
-    "content_output_tokens": 793,
-    "timestamp": "2026-04-14T05:04:58.230169",
+    "visual_input_tokens": 3451,
+    "visual_output_tokens": 839,
+    "content_input_tokens": 6542,
+    "content_output_tokens": 593,
+    "timestamp": "2026-04-15T14:40:47.439218",
     "auditor_version": "1.0.0"
   }
 }

@@ -4,9 +4,9 @@
   "findings": [
     {
       "check_id": "V5",
-      "description": "Header text is duplicated and footer content is injected into the middle of the page content.",
+      "description": "Reading order is disrupted with footer elements appearing before the main title.",
       "severity": "major",
-      "evidence": "In the HTML, the top-right header text ('PAT McCRORY...') is rendered twice. Furthermore, the footer text ('State of North Carolina...') and bottom gradient bar are placed above the 'MEMORANDUM' title, severely disrupting the reading order of the first page.",
+      "evidence": "In the HTML, the page footer text ('State of North Carolina...') and the colored horizontal bar are incorrectly placed above the main document title ('MEMORANDUM'). In the PDF, these elements are located at the bottom of the page.",
       "page": 1,
       "call_source": "visual"
     }
@@ -18,13 +18,13 @@
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 72.51,
+    "duration_seconds": 105.42,
     "page_count": 5,
-    "visual_input_tokens": 11623,
-    "visual_output_tokens": 416,
-    "content_input_tokens": 7914,
-    "content_output_tokens": 160,
-    "timestamp": "2026-04-14T05:03:54.232893",
+    "visual_input_tokens": 11711,
+    "visual_output_tokens": 383,
+    "content_input_tokens": 7975,
+    "content_output_tokens": 147,
+    "timestamp": "2026-04-15T14:38:30.924883",
     "auditor_version": "1.0.0"
   }
 }

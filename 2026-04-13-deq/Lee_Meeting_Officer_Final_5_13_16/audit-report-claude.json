@@ -3,116 +3,44 @@
   "verdict": "pass",
   "findings": [
     {
-      "check_id": "V3",
-      "description": "The NC Water Resources logo is rendered slightly differently in the HTML version but is present and correctly placed.",
-      "severity": "minor",
-      "evidence": "PDF shows the logo with specific styling in the upper left; HTML shows same logo but with slightly different proportions.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The header information (PAT MCCRORY, Governor, DONALD R. VAN DER VAART, Secretary, S. JAY ZIMMERMAN, Director) is right-aligned in the PDF but left-aligned in the HTML.",
-      "severity": "minor",
-      "evidence": "PDF: Header names are right-aligned on the page. HTML: Same names appear left-aligned below the logo and address.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The PDF has a two-part layout with the logo on the left and official names on the right; the HTML renders these in a single-column stacked layout.",
-      "severity": "minor",
-      "evidence": "PDF: Logo left, names right. HTML: Logo top, address below, names below that.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The MEMORANDUM heading in the PDF is underlined; in the HTML it appears underlined as well but with a colored horizontal rule beneath it.",
-      "severity": "minor",
-      "evidence": "PDF: simple underlined text. HTML: underlined text with a red/colored rule below.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The To/From/Subject fields in the PDF use a tabular-like alignment with labels and values; the HTML renders them as flowing text with colons.",
-      "severity": "minor",
-      "evidence": "PDF: 'To:' and 'From:' are left-column labels with values indented. HTML: similar but slightly less structured.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section headings (I, II, III, IV) use Roman numerals with bold formatting in both versions, but the HTML uses larger heading styles compared to the PDF's more modest bold formatting.",
-      "severity": "minor",
-      "evidence": "PDF: 'I. History/Background' in bold regular size. HTML: Same text rendered as a larger heading element.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Bullet point category labels (Agriculture, Air Quality, etc.) appear with underlined bold formatting in the PDF but bold-only without underline in the HTML.",
-      "severity": "minor",
-      "evidence": "PDF: underlined bold labels like 'Agriculture', 'Air Quality'. HTML: bold labels without underline.",
-      "page": 5,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "In the Written Public Comment Summary section, bullet labels use underlined bold in PDF but bold-only in HTML.",
-      "severity": "minor",
-      "evidence": "PDF: 'Beneficial Reuse', 'Costs', etc. are underlined and bold. HTML: same labels are bold only.",
-      "page": 7,
-      "call_source": "visual"
-    },
-    {
       "check_id": "C5",
-      "description": "The document uses h1 for 'MEMORANDUM' title and h2 for sections I, II, III, IV. This is acceptable. However, there are multiple <main> elements in the HTML which is structurally incorrect but does not affect content fidelity.",
+      "description": "The document uses multiple <main> elements, which is structurally unusual but does not misrepresent content. The heading hierarchy uses h1 for MEMORANDUM and h2 for sections I-IV, which is acceptable. However, multiple <main> tags in a single HTML document is technically invalid HTML.",
       "severity": "minor",
-      "evidence": "HTML contains multiple <main> elements (one per page section), which is non-standard HTML but does not alter content.",
+      "evidence": "HTML contains at least 5 separate <main> elements, one per page section.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The page header information (State of North Carolina | Environmental Quality | Water Resources, address, phone, and official names) appears in both the page-header div and could be considered duplicated from the PDF's single header, but this reflects the PDF's original layout.",
+      "description": "The page header information (State of North Carolina, address, officials' names) appears in both the page-header div and is also present in the original page 1 content, but this is acceptable as it represents the letterhead which only appears once in the PDF.",
       "severity": "minor",
-      "evidence": "Header block appears once in the HTML page-header div, matching the PDF's single appearance on page 1.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C6",
-      "description": "Alt text for the logo image ('NC Water Resources Environmental Quality logo') and decorative bar ('Decorative color bar') are reasonable descriptions but are AI-generated additions not present in the PDF. These are acceptable additions.",
-      "severity": "minor",
-      "evidence": "alt='NC Water Resources Environmental Quality logo' and alt='Decorative color bar'",
+      "evidence": "The header block with PAT MCCRORY, DONALD R. VAN DER VAART, S. JAY ZIMMERMAN appears once in the HTML page-header div, matching the PDF.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "In the oral comments summary under 'Agriculture', the PDF has an em-dash style connection 'Agriculture\u2013' (no space before dash), which the HTML preserves faithfully. Minor formatting difference but text is accurate.",
+      "description": "In the Groundwater Assessments bullet under the written comments section, the last sentence is split across pages 4 and 5 of the PDF. In the HTML, this creates two separate list items - the continuation on page 5 starts as a new bullet without the bold label, which slightly disrupts readability but the text content is preserved.",
       "severity": "minor",
-      "evidence": "PDF: 'Agriculture\u2013 One citizen commented...' HTML: '<strong>Agriculture</strong>\u2013 One citizen commented...'",
+      "evidence": "PDF page 4 ends with 'One' and page 5 continues with 'comment suggested that capping the ash will not protect against seeps...'. HTML splits this into the end of one <ul> and the start of a new <ul> on the next page section.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 0,
-  "minor_count": 12,
+  "minor_count": 3,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 47.4,
+    "duration_seconds": 74.98,
     "page_count": 5,
-    "visual_input_tokens": 15489,
-    "visual_output_tokens": 1362,
-    "content_input_tokens": 16100,
-    "content_output_tokens": 683,
-    "timestamp": "2026-04-14T04:59:44.606958",
+    "visual_input_tokens": 15521,
+    "visual_output_tokens": 312,
+    "content_input_tokens": 16164,
+    "content_output_tokens": 677,
+    "timestamp": "2026-04-15T14:32:37.052365",
     "auditor_version": "1.0.0"
   }
 }

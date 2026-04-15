@@ -3,108 +3,108 @@
   "verdict": "fail",
   "findings": [
     {
-      "check_id": "V3",
-      "description": "The North Carolina Marine Fisheries logo/seal appears in the PDF but is not visible in the HTML rendering on page 1.",
-      "severity": "minor",
-      "evidence": "PDF page 1 shows the NC Marine Fisheries circular logo with fish in upper left. HTML page 1 also shows a logo but it appears slightly different in rendering.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V1",
-      "description": "The header layout with ROY COOPER/Governor, ELIZABETH S. BISER/Secretary, KATHY B. RAWLS/Director and PT-2-2024 is aligned differently in HTML vs PDF.",
-      "severity": "minor",
-      "evidence": "PDF has these right-aligned in a stacked format. HTML preserves the information but the layout positioning differs slightly.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Page 2 of the HTML rendering includes a large blank area and repeats header/footer elements mid-page, with the second page's content appearing to start partway through.",
+      "description": "Page 2 of the HTML rendering inserts a large blank space where the PDF has continuous content. The PDF page 1 content flows directly, but the HTML splits it with a repeated header/footer and excessive whitespace before continuing on a new 'page'.",
       "severity": "major",
-      "evidence": "PDF page 2 starts with continuation items D through J under Onslow County, then Pender County, New Hanover County, and Brunswick County. HTML page 2 shows extensive blank space and a repeated header before the content continues.",
+      "evidence": "PDF page 1 ends with Onslow County section C (Queens Creek). HTML page 2 shows mostly blank space with repeated letterhead before continuing to page 2 content.",
       "page": 2,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Roman numeral formatting differs between PDF and HTML versions.",
+      "check_id": "V1",
+      "description": "The Roman numeral list indentation structure in the HTML is flattened compared to the PDF. In the PDF, items I-IX have sub-items indented under county headings with clear hierarchical indentation. The HTML uses a simpler indentation scheme.",
       "severity": "minor",
-      "evidence": "PDF uses indented Roman numerals (I., II., III., etc.) with specific indentation. HTML uses a slightly different indentation scheme but content is preserved.",
+      "evidence": "PDF shows deeply nested structure with Roman numerals at left margin, county names indented, and sub-items (A, B, C...) further indented. HTML shows a flatter hierarchy.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Page 3 HTML rendering shows duplicated footer/header elements between the PDF content sections.",
+      "check_id": "V3",
+      "description": "The North Carolina Marine Fisheries logo/seal appears slightly different in rendering between PDF and HTML but is present in both.",
       "severity": "minor",
-      "evidence": "HTML page 3 shows 'State of North Carolina | Division of Marine Fisheries' footer text repeated, then proclamation header repeated before the General Information section continues.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The signature rendering differs between PDF and HTML.",
-      "severity": "minor",
-      "evidence": "PDF shows a handwritten-style signature inline with 'By:' text. HTML shows 'By:' followed by a separate signature rendering below.",
-      "page": 3,
+      "evidence": "PDF shows the seal at top-left of page 1. HTML also shows it at top-left but with slightly different sizing.",
+      "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "C1",
-      "description": "Fabricated hyperlink URLs that do not appear in the source PDF",
+      "description": "Fabricated link URL for NCDMF Interactive Map",
       "severity": "critical",
-      "evidence": "The HTML contains specific URLs such as 'https://ncdenr.maps.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=671ea4b8ffc0456fa64b3d02d16e31fa' for the NCDMF Interactive Map, 'https://deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/fisheries-management-proclamations#currentprocs' for 'latest proclamation', and 'https://files.nc.gov/deq/documents/2023-12/PT-1-2024%20Amend%20Crabpot%20Restrictions.pdf?VersionId=Heo3U_yvo9FJRZHcBP28ktcORB3PGqCy' for PT-1-2024. The PDF shows these as hyperlinked text ('NCDMF Interactive Map', 'latest proclamation', 'PT-1-2024') but the actual full URLs are not visible in the PDF text. These URLs may be embedded hyperlinks in the PDF, so this could be extraction rather than fabrication, but the specific long URLs cannot be verified from the PDF text alone.",
+      "evidence": "The PDF mentions 'visit the NCDMF Interactive Map' as a hyperlink but the HTML contains the specific URL 'https://ncdenr.maps.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=671ea4b8ffc0456fa64b3d02d16e31fa' which cannot be verified from the PDF text alone. This URL may have been extracted from the underlying PDF link data, but if fabricated it would be critical.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated link URL for PT-1-2024 proclamation",
+      "severity": "critical",
+      "evidence": "The HTML contains 'https://files.nc.gov/deq/documents/2023-12/PT-1-2024%20Amend%20Crabpot%20Restrictions.pdf?VersionId=Heo3U_yvo9FJRZHcBP28ktcORB3PGqCy' for the PT-1-2024 link. The PDF text only says 'See proclamation PT-1-2024'. This specific URL with version ID cannot be verified from the PDF text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated link URL for 'latest proclamation'",
+      "severity": "critical",
+      "evidence": "The HTML contains 'https://deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/fisheries-management-proclamations#currentprocs' for the 'latest proclamation' link. While the PDF has this as a hyperlink, the specific URL cannot be confirmed from the PDF text alone.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C5",
-      "description": "Flat heading hierarchy - only h1 used, no h2/h3 for major sections",
+      "description": "Only one heading level used - no hierarchy beyond h1",
       "severity": "major",
-      "evidence": "The document has clear hierarchical sections (I through X with subsections A-G etc.) but the HTML uses only an h1 for 'PROCLAMATION' and relies entirely on bold/underline formatting and ordered lists for structure. Major sections like 'CARTERET COUNTY/ONSLOW COUNTY', 'ONSLOW COUNTY', 'PENDER COUNTY', 'NEW HANOVER COUNTY', 'BRUNSWICK COUNTY', and 'GENERAL INFORMATION' could benefit from heading elements, though this mirrors the PDF's own formatting approach.",
+      "evidence": "The HTML uses only h1 for 'PROCLAMATION'. All section headings (Roman numeral sections like CARTERET COUNTY/ONSLOW COUNTY, ONSLOW COUNTY, PENDER COUNTY, etc.) are rendered as bold/underlined text within list items rather than as proper headings (h2, h3). While the PDF doesn't use explicit heading formatting either, the document structure with major Roman numeral sections would benefit from heading hierarchy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested main elements in HTML",
+      "severity": "minor",
+      "evidence": "The HTML contains a <main> element inside the outer <main> from the template wrapper, creating invalid nesting, though this is a structural HTML issue rather than content fidelity.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "Typo from source PDF preserved: 'UNLAWFULLTO' instead of 'UNLAWFUL TO'",
+      "description": "Typo from source preserved accurately - 'UNLAWFULLTO'",
       "severity": "minor",
-      "evidence": "Both the PDF and HTML contain 'IT SHALL BE UNLAWFULLTO USE POTS' - this is faithful to the source but notable as the original typo is preserved.",
+      "evidence": "Both PDF and HTML contain 'IT SHALL BE UNLAWFULLTO USE POTS' - the typo is faithfully reproduced, which is correct behavior.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C6",
-      "description": "Alt text for header image is somewhat generic but reasonable",
+      "description": "Alt text for header image is reasonably descriptive but not fully verifiable",
       "severity": "minor",
-      "evidence": "The header image has alt='North Carolina Marine Fisheries and State Seal logos' which is a reasonable description. Footer images have alt='Page footer graphic' which is generic but acceptable.",
+      "evidence": "The header image alt text says 'North Carolina Marine Fisheries and State Seal logos' - the PDF shows the NC Marine Fisheries seal/logo. The description appears reasonable.",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C7",
-      "description": "Page footer content repeated multiple times within the HTML",
+      "check_id": "C6",
+      "description": "Generic alt text for footer images",
       "severity": "minor",
-      "evidence": "The footer text 'State of North Carolina | Division of Marine Fisheries | 3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557 | 252-515-5500' appears three times in the HTML, corresponding to the three pages of the PDF. This is acceptable as it mirrors the source document's per-page footer.",
+      "evidence": "Footer images have alt='Page footer graphic' which is generic but acceptable since the actual footer content appears to be decorative.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 1,
+  "critical_count": 3,
   "major_count": 2,
-  "minor_count": 8,
+  "minor_count": 6,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 48.81,
+    "duration_seconds": 83.07,
     "page_count": 3,
-    "visual_input_tokens": 9950,
-    "visual_output_tokens": 928,
-    "content_input_tokens": 13303,
-    "content_output_tokens": 1099,
-    "timestamp": "2026-04-14T05:01:45.507621",
+    "visual_input_tokens": 10167,
+    "visual_output_tokens": 698,
+    "content_input_tokens": 13367,
+    "content_output_tokens": 1201,
+    "timestamp": "2026-04-15T14:35:28.486388",
     "auditor_version": "1.0.0"
   }
 }

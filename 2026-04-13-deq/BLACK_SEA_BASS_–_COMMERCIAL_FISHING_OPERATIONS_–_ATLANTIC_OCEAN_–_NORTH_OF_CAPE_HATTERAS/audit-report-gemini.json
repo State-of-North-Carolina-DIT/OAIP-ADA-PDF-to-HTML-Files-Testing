@@ -1,62 +1,62 @@
 {
   "document_id": "BLACK_SEA_BASS_\u2013_COMMERCIAL_FISHING_OPERATIONS_\u2013_ATLANTIC_OCEAN_\u2013_NORTH_OF_CAPE_HATTERAS",
-  "verdict": "needs_review",
+  "verdict": "fail",
   "findings": [
     {
       "check_id": "V1",
-      "description": "Document layout is severely disrupted by misplaced header and footer elements appearing within the main text flow.",
-      "severity": "major",
-      "evidence": "In the HTML, the address footer and duplicated header text appear before the main 'PROCLAMATION' title, creating a large unnatural gap and disrupting the reading order.",
+      "description": "Page layout is disrupted with duplicated header content and an incorrectly placed footer.",
+      "severity": "critical",
+      "evidence": "In the HTML for page 1, the right-aligned header text block ('ROY COOPER...', etc.) is rendered twice. Additionally, the page footer ('State of North Carolina | Division of Marine Fisheries...') is inserted into the middle of the upper page content, appearing before the main 'PROCLAMATION' title.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Document layout is disrupted by a misplaced footer element.",
+      "check_id": "V5",
+      "description": "Page footer text interrupts a continuous sentence across a page break.",
       "severity": "major",
-      "evidence": "In the HTML, the address footer is erroneously inserted between Section III and the subsequent paragraph.",
+      "evidence": "Paragraph III.B continues from page 1 to page 2 in the PDF ('...from' ending page 1, 'April 1...' starting page 2). In the HTML, the page footer text is inserted directly between these words, breaking the logical reading flow of the sentence.",
       "page": 2,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Document layout is disrupted by a misplaced footer element breaking a paragraph.",
+      "check_id": "V5",
+      "description": "Page footer text interrupts a URL spanning a page break.",
       "severity": "major",
-      "evidence": "In the HTML, the address footer is inserted mid-sentence, breaking the text between the end of item J and its continuation (the URL).",
+      "evidence": "A URL in section IV.J spans from page 2 to page 3 in the PDF. The HTML inserts the page footer text directly between the two halves of the URL ('...title-50/part-' and '648/subpart-i').",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Significant content duplication at the end of the document.",
+      "severity": "critical",
+      "evidence": "In the HTML rendering, the final portion of the document\u2014starting from the partial URL '648/subpart-i' through sections K, L, M, the signature block, and the date\u2014is rendered twice sequentially.",
       "page": 3,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Missing graphical signature.",
+      "description": "Signature image is missing in the duplicated ending section.",
       "severity": "major",
-      "evidence": "The graphical signature present in the PDF sign-off block is missing in the HTML, replaced by an empty line.",
+      "evidence": "While the first instance of the signature block in the HTML successfully includes the signature image, the mistakenly duplicated second instance drops the image entirely, replacing it with a blank line ('__________________').",
       "page": 3,
       "call_source": "visual"
-    },
-    {
-      "check_id": "C8",
-      "description": "Page headers and footers are inserted directly into the middle of continuous sentences at page breaks, which disrupts the text flow.",
-      "severity": "minor",
-      "evidence": "In Section III.B, the text reads '...or more than 100 pounds of black sea bass from' followed immediately by the page footer, a header image, and then the rest of the sentence 'April 1 through December 31...'. A similar interruption occurs in Section IV.J where a URL is split across the page break.",
-      "page": null,
-      "call_source": "content"
     }
   ],
-  "critical_count": 0,
-  "major_count": 4,
-  "minor_count": 1,
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 69.33,
+    "duration_seconds": 255.19,
     "page_count": 3,
-    "visual_input_tokens": 7326,
-    "visual_output_tokens": 518,
-    "content_input_tokens": 6201,
-    "content_output_tokens": 290,
-    "timestamp": "2026-04-11T06:02:13.853786",
+    "visual_input_tokens": 7529,
+    "visual_output_tokens": 793,
+    "content_input_tokens": 6262,
+    "content_output_tokens": 196,
+    "timestamp": "2026-04-15T14:25:59.821626",
     "auditor_version": "1.0.0"
   }
 }

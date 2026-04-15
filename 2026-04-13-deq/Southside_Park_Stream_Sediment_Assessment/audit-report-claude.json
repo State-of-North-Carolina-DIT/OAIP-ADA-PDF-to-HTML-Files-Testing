@@ -4,99 +4,75 @@
   "findings": [
     {
       "check_id": "V1",
-      "description": "The PDF is a single-page map/figure with data callouts positioned spatially around a map. The HTML converts this into a long vertically-scrolling page with a small map image at top followed by sequential tables, completely losing the spatial layout of the original.",
+      "description": "The PDF is a large-format map/figure with spatial data callouts, legends, and geographic features arranged in a complex spatial layout. The HTML converts this into a simple single-column linear document, losing the entire map-based spatial arrangement.",
       "severity": "critical",
-      "evidence": "PDF: Data boxes (SD-1 through SD-5) are positioned around the map at specific geographic locations. HTML: All sample data is rendered as sequential tables below the map image.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V2",
-      "description": "The SD-1/DUP-6102025-SD table in the PDF shows data inline within a callout box on the map. In the HTML it is rendered as a standalone table, which is functionally acceptable, but the 'J' qualifier flags on Benzo(a)anthracene (1.70 J) and Benzo(a)pyrene (0.868 J) are preserved, so data integrity is maintained. However, SD-2 in the PDF has columns for Arsenic, Cobalt, and Manganese only, while the HTML correctly reflects this. Risk Assessment values for SD-1 show CR and HI separately which is correctly replicated.",
-      "severity": "major",
-      "evidence": "Tables contain the same data values in both PDF and HTML, but spatial positioning context is lost.",
+      "evidence": "PDF shows a geographic map with sample location callouts (SD-1 through SD-5) positioned spatially relative to roads, parks, and property boundaries. HTML renders all content as a linear top-to-bottom text document with a small embedded map image followed by sequential tables.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "The map image in the HTML is significantly reduced in size and detail compared to the PDF. The PDF map is the primary content of the page showing detailed streets, parcels, sample locations, and stream paths. The HTML shows a small thumbnail-sized version that loses legibility of map features.",
+      "description": "The map image in the HTML is extremely small and barely legible compared to the full-page map in the PDF. The map is the primary content of this figure, and its reduction to a small thumbnail significantly impacts usability.",
       "severity": "major",
-      "evidence": "PDF: Full-page detailed map with readable labels, roads, property boundaries. HTML: Small embedded image where text labels and geographic features are difficult to read.",
+      "evidence": "PDF: Full-page detailed map showing roads, property boundaries, sample locations, and data callouts. HTML: Small embedded image that is difficult to read, with all the data callouts extracted as separate tables below.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "The title block information (SOUTHSIDE PARK LANDFILL, STREAM SEDIMENT ASSESSMENT) appears rotated vertically on the right side of the PDF but is rendered as horizontal header text in the HTML.",
+      "check_id": "V2",
+      "description": "Sample data that appeared as labeled callout boxes on the map in the PDF are rendered as separate styled tables in the HTML. The data content is preserved but the visual association with map locations is lost.",
       "severity": "minor",
-      "evidence": "PDF: Title block rotated 90 degrees on right margin. HTML: Title rendered horizontally at top of page.",
+      "evidence": "PDF: Data boxes (SD-1 through SD-5) with risk assessments positioned at specific map locations. HTML: Same data in sequential tables labeled by sample ID.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Reading order differs significantly. The PDF presents the map as the central element with data callouts arranged spatially. The HTML presents: title \u2192 map image \u2192 legend \u2192 SD-1 table \u2192 SD-2 table \u2192 SD-3 table \u2192 SD-4 table \u2192 SD-5 table \u2192 notes \u2192 references. While this is a reasonable linearization, a user loses the geographic context of which sample relates to which location.",
+      "description": "The reading order changes significantly. In the PDF, the map is the central element with data callouts positioned spatially. In the HTML, content flows as: title, map image, metadata, legend, then all sample results sequentially. The spatial context that links samples to locations is lost.",
       "severity": "major",
-      "evidence": "PDF: Reader sees map with data at specific geographic positions. HTML: Reader sees data in sequential order (SD-1 through SD-5) without spatial relationship to map locations.",
+      "evidence": "PDF presents all information simultaneously on a map figure. HTML linearizes: header info \u2192 small map \u2192 scale/date/project info \u2192 legend \u2192 SD-1 table \u2192 SD-2 table \u2192 SD-3 table \u2192 SD-4 table \u2192 SD-5 table \u2192 notes \u2192 references.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "Heading hierarchy skips from h1 to h3 without an intervening h2 in the main content sections. The h2 is used for 'SOUTHSIDE PARK LANDFILL' in the header, but the sample data sections, notes, and references use h3 directly under the main element without a parent h2.",
+      "description": "Heading hierarchy has issues: h1 is 'STREAM SEDIMENT ASSESSMENT' but the document title could be 'SOUTHSIDE PARK LANDFILL' which is rendered as h2. Additionally, the HTML has nested <main> elements (one wrapping everything, one inside the content), which is a structural issue. The heading hierarchy skips in places with h3 elements under what should logically be subsections.",
       "severity": "major",
-      "evidence": "HTML has h1 'STREAM SEDIMENT ASSESSMENT', h2 'SOUTHSIDE PARK LANDFILL' in header, then h3 'Legend', h3 'Sample Results', h3 'NOTES:', h3 'REFERENCE:' in the main body without a grouping h2.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "The HTML uses 'STREAM SEDIMENT ASSESSMENT' as the h1 document title, while in the PDF this appears as a sidebar/title block label. The actual document title could be considered 'SOUTHSIDE PARK LANDFILL'. This is a subjective structural choice and is acceptable as an AI conversion decision.",
-      "severity": "minor",
-      "evidence": "PDF title block shows both 'STREAM SEDIMENT ASSESSMENT' and 'SOUTHSIDE PARK LANDFILL' as title elements.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C1",
-      "description": "The HTML adds section headings 'Legend' and 'Sample Results' that do not appear in the source PDF. These are organizational headings added by the converter.",
-      "severity": "minor",
-      "evidence": "PDF has no 'Legend' or 'Sample Results' headings; these are inferred structural labels added in HTML.",
+      "evidence": "HTML has h1='STREAM SEDIMENT ASSESSMENT', h2='SOUTHSIDE PARK LANDFILL'. In the PDF, the document title block shows 'SOUTHSIDE PARK LANDFILL' as the project name and 'STREAM SEDIMENT ASSESSMENT' as the assessment type. Both are acceptable interpretations, but having two nested <main> elements is structurally incorrect HTML.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C3",
-      "description": "Risk Assessment rows are included within the sample data tables as regular table rows rather than being structurally separated. While all data values are correct, the 'Risk Assessment' label appears as a bold cell in the first column with an empty second column, which is a minor structural difference from the PDF's callout box formatting.",
-      "severity": "minor",
-      "evidence": "PDF shows Risk Assessment as a sub-section within each callout box; HTML embeds it as table rows with bold formatting.",
+      "description": "Risk Assessment rows are mixed into the sample data tables as regular table rows, with the 'Risk Assessment' label spanning improperly. In the PDF, Risk Assessment is a distinct sub-section beneath each sample's data. More importantly, the Risk Assessment rows use the same two-column structure but the first column contains labels like 'CR:' and 'HI:' which are not analyte names \u2014 this is structurally acceptable but the Risk Assessment header row has an empty second cell, which is a minor structural difference from the PDF's presentation.",
+      "severity": "major",
+      "evidence": "Each table includes a row '<td><strong>Risk Assessment</strong></td><td></td>' followed by CR and HI rows. This is a reasonable conversion approach.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML has a nested <main> element inside another <main> element, which is an HTML structural issue but does not cause content duplication.",
+      "description": "The HTML has nested <main> elements \u2014 the outer <main> from the template and an inner <main> within the content body, creating a duplicate structural wrapper.",
       "severity": "minor",
-      "evidence": "The outer <body> contains <main> from the template, and inside it another <main> element is opened for the content sections.",
+      "evidence": "HTML contains '<body><main>...<main>...</main>...</main></body>' with two nested main elements.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 1,
   "major_count": 4,
-  "minor_count": 5,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 45.62,
+    "duration_seconds": 92.18,
     "page_count": 1,
-    "visual_input_tokens": 3122,
-    "visual_output_tokens": 981,
-    "content_input_tokens": 7090,
-    "content_output_tokens": 881,
-    "timestamp": "2026-04-14T05:05:41.658569",
+    "visual_input_tokens": 3339,
+    "visual_output_tokens": 781,
+    "content_input_tokens": 7154,
+    "content_output_tokens": 730,
+    "timestamp": "2026-04-15T14:41:21.095589",
     "auditor_version": "1.0.0"
   }
 }

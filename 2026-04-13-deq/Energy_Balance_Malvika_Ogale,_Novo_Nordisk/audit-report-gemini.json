@@ -3,196 +3,164 @@
   "verdict": "fail",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "Layout alignment lost.",
-      "severity": "major",
-      "evidence": "PDF content is bottom-aligned, HTML is top-left.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V3",
-      "description": "Main logo graphic missing.",
+      "description": "Missing title slide graphic",
       "severity": "major",
-      "evidence": "PDF shows a bull logo, HTML has no graphic.",
+      "evidence": "The large bull line-art graphic on the right side of the title slide is completely missing from the HTML.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Two-column grid layout collapsed.",
+      "description": "Loss of two-column layout and grid",
       "severity": "major",
-      "evidence": "PDF has a 2-column grid, HTML is a single column.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Images merged and icons missing.",
-      "severity": "major",
-      "evidence": "PDF has separate images and icons (globe, microscope), HTML merges photos into one block and misses icons.",
+      "evidence": "The side-by-side layout with text on the left and a grid of statistics/images on the right is flattened into a single vertical column.",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Multi-column layout collapsed.",
+      "description": "Loss of multi-column layout",
       "severity": "major",
-      "evidence": "PDF has multi-column lists and a colored box, HTML renders them as a single plain text column.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Reading order shifted.",
-      "severity": "minor",
-      "evidence": "Map image appears after the lists in HTML, but above them in the PDF.",
+      "evidence": "The four distinct columns of text listing locations below the map are collapsed into a single column in the HTML.",
       "page": 3,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Two-column layout collapsed and items merged.",
+      "description": "Loss of two-column layout",
       "severity": "major",
-      "evidence": "PDF has text beside a grid of items, HTML has text above a single merged image of the grid.",
+      "evidence": "The side-by-side layout of text and image collage is flattened into a single vertical sequence.",
       "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Two-column layout collapsed.",
+      "description": "Loss of two-column layout",
       "severity": "major",
-      "evidence": "PDF has images on the left and text on the right, HTML is a single column.",
-      "page": 5,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Images moved to bottom.",
-      "severity": "major",
-      "evidence": "Images originally alongside text in the PDF are placed at the end of the HTML page.",
+      "evidence": "The text and image pairs are flattened from a two-column layout into a single column.",
       "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Visual diagram layout lost.",
+      "description": "Loss of two-column layout",
       "severity": "major",
-      "evidence": "PDF shows numbered items positioned around a globe, HTML renders them as a linear list.",
-      "page": 6,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Reading order reversed.",
-      "severity": "critical",
-      "evidence": "HTML places the graphic and numbered list before the main heading and intro text.",
+      "evidence": "The side-by-side layout of text and the globe graphic is flattened into a single column.",
       "page": 6,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Thematic graphic missing.",
+      "description": "Missing illustration graphic",
       "severity": "major",
-      "evidence": "Large line-art graphic of a wind turbine and buildings present in PDF is missing in HTML.",
+      "evidence": "The line art graphic depicting wind turbines and buildings at the bottom of the page is missing in the HTML.",
       "page": 7,
       "call_source": "visual"
     },
     {
-      "check_id": "V3",
-      "description": "Graphics and icons missing.",
+      "check_id": "V1",
+      "description": "Loss of three-column layout",
       "severity": "major",
-      "evidence": "Line-art graphic on the left and small icons on the circular images in the PDF are absent in HTML.",
+      "evidence": "The three circular images and their corresponding text, arranged in three columns in the PDF, are stacked vertically into a single column in the HTML.",
       "page": 8,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Hierarchical diagram rendered as text.",
+      "check_id": "V3",
+      "description": "Diagram missing and rendered as plain text",
       "severity": "critical",
-      "evidence": "PDF shows a block diagram with boxes and arrows, HTML renders this as a flat sequence of text labels.",
+      "evidence": "The 'Mapping Strategy' block diagram is missing entirely. Its textual content (e.g., 'Site Usage', 'Building Usage', 'M U') has been extracted and dumped as an unstructured text list.",
       "page": 10,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Two-column layout collapsed.",
+      "description": "Loss of two-column layout",
       "severity": "major",
-      "evidence": "PDF places text alongside a pie chart, HTML places text above the pie chart.",
+      "evidence": "The side-by-side layout of text and the pie chart is flattened into a single column.",
       "page": 11,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Process flow diagram missing.",
+      "description": "Process flow diagram missing and rendered as plain text",
       "severity": "critical",
-      "evidence": "PDF features a complex Sankey diagram, HTML only shows a linear list of text labels extracted from it.",
+      "evidence": "The 'Water Example - Process Flows' complex diagram is missing entirely. The labels from within the diagram (e.g., 'Building Utility', 'RO Reject tank') appear as a long, unstructured vertical text list, losing all context.",
       "page": 13,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Two-column layout collapsed.",
+      "description": "Loss of two-column layout",
       "severity": "major",
-      "evidence": "PDF places text next to charts, HTML places text above the charts.",
-      "page": 14,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Two-column layout collapsed.",
-      "severity": "major",
-      "evidence": "PDF uses a grid layout for text and images, HTML renders everything in a single column.",
+      "evidence": "The side-by-side placement of the photo and the line art graphic at the bottom is flattened.",
       "page": 15,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Small graphic missing.",
+      "description": "Missing decorative icon",
       "severity": "minor",
-      "evidence": "Icon present in the bottom right of the PDF is missing in HTML.",
+      "evidence": "The small bar chart with a leaf icon in the bottom right corner is missing.",
       "page": 16,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Two-column layout collapsed.",
+      "description": "Loss of two-column layout",
       "severity": "major",
-      "evidence": "PDF has a side-by-side comparison, HTML stacks them vertically.",
+      "evidence": "The two distinct columns comparing 'Inactivation Skid Optimization' and 'Distillation Optimization' are flattened into a single column.",
       "page": 17,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Two-column layout collapsed.",
+      "description": "Loss of two-column layout",
       "severity": "major",
-      "evidence": "PDF has a side-by-side layout, HTML stacks sections vertically.",
+      "evidence": "The two distinct columns comparing water savings projects are flattened into a single column.",
       "page": 18,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Large thematic graphic missing.",
+      "description": "Missing closing slide graphic",
       "severity": "major",
-      "evidence": "PDF has a large line-art graphic, HTML only has the text.",
+      "evidence": "The large continuous line art graphic illustrating a globe, medical items, and people is missing from the HTML.",
       "page": 19,
       "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text artifact inclusion on Slide 2.",
+      "severity": "minor",
+      "evidence": "HTML contains '<p>170 countries</p>' (and '170' appears again earlier) which does not appear in the visual text of the source PDF slide 2. This is likely carried over from an OCR artifact.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "Fragmented hyperlink in footnote on Slide 2.",
+      "severity": "minor",
+      "evidence": "The link 'https://companiesmarketcap.com/pharmaceuticals/largest-pharmaceutical-companies-by-market-cap/' is split across multiple adjacent <a> tags with hyphenated anchor text, though the URL destination remains accurate.",
+      "page": null,
+      "call_source": "content"
     }
   ],
-  "critical_count": 3,
-  "major_count": 17,
-  "minor_count": 2,
+  "critical_count": 2,
+  "major_count": 13,
+  "minor_count": 3,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 104.19,
+    "duration_seconds": 321.89,
     "page_count": 19,
-    "visual_input_tokens": 42299,
-    "visual_output_tokens": 2293,
-    "content_input_tokens": 17361,
-    "content_output_tokens": 182,
-    "timestamp": "2026-04-14T04:58:03.908873",
+    "visual_input_tokens": 42502,
+    "visual_output_tokens": 1978,
+    "content_input_tokens": 17422,
+    "content_output_tokens": 357,
+    "timestamp": "2026-04-15T14:31:15.076115",
     "auditor_version": "1.0.0"
   }
 }

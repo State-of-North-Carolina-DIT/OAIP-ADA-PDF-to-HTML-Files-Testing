@@ -1,30 +1,21 @@
 {
   "document_id": "Web_Meeting_Etiquette_PDF",
   "verdict": "pass",
-  "findings": [
-    {
-      "check_id": "V4",
-      "description": "Paragraph indentation within a list item is lost.",
-      "severity": "minor",
-      "evidence": "In the PDF, the paragraph starting with 'Alternatively:' is indented to visually group it with the text of the preceding bullet point. In the HTML, this paragraph is not indented and aligns with the bullet character instead.",
-      "page": 2,
-      "call_source": "visual"
-    }
-  ],
+  "findings": [],
   "critical_count": 0,
   "major_count": 0,
-  "minor_count": 1,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 33.39,
+    "duration_seconds": 28.51,
     "page_count": 2,
-    "visual_input_tokens": 5132,
-    "visual_output_tokens": 267,
-    "content_input_tokens": 3671,
-    "content_output_tokens": 132,
-    "timestamp": "2026-04-14T05:06:21.702745",
+    "visual_input_tokens": 5335,
+    "visual_output_tokens": 199,
+    "content_input_tokens": 3732,
+    "content_output_tokens": 141,
+    "timestamp": "2026-04-15T14:41:51.535637",
     "auditor_version": "1.0.0"
   }
 }

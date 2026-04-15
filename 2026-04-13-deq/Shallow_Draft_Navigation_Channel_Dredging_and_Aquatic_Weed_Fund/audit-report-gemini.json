@@ -1,62 +1,21 @@
 {
   "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
-  "verdict": "needs_review",
-  "findings": [
-    {
-      "check_id": "V1",
-      "description": "Letterhead layout collapsed",
-      "severity": "major",
-      "evidence": "In the PDF, the header contains three visually distinct columns (Governor info on left, state seal in center, Department info on right). In the HTML, these distinct semantic blocks are collapsed into a single left-aligned column stacked on top of each other, losing the formal letterhead structure.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Text alignment lost",
-      "severity": "minor",
-      "evidence": "In the PDF, the text blocks for 'Fund Statutory Authority' and 'Due Date' are right-aligned. In the HTML, they are rendered with left alignment.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V2",
-      "description": "Merged table cells split",
-      "severity": "major",
-      "evidence": "In the main data table ('Funds Expended...'), the 'Cooperator' column features a single merged cell with a purple background containing 'multiple cooperators (see below)' that spans multiple rows (starting with the 'Eno River' row). In the HTML, this merged cell has been split, and the text is repeated individually in every row of that section.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C2",
-      "description": "The handwritten signature image on page 1 was omitted from the HTML.",
-      "severity": "minor",
-      "evidence": "The PDF page 1 contains an image of Kevin Hart's signature between 'Sincerely,' and his printed name. The HTML omits this image, rendering only the text paragraphs.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "The document's heading hierarchy starts at <h2> without a top-level <h1>.",
-      "severity": "minor",
-      "evidence": "The HTML contains <h2>Annual Report on Projects Funded...</h2> and <h2>Intro</h2>, but no <h1> tag is used in the document body to establish the main title.",
-      "page": null,
-      "call_source": "content"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "critical_count": 0,
-  "major_count": 2,
-  "minor_count": 3,
+  "major_count": 0,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 107.36,
+    "duration_seconds": 137.51,
     "page_count": 10,
-    "visual_input_tokens": 22888,
-    "visual_output_tokens": 737,
-    "content_input_tokens": 15694,
-    "content_output_tokens": 337,
-    "timestamp": "2026-04-14T05:05:48.309155",
+    "visual_input_tokens": 22781,
+    "visual_output_tokens": 447,
+    "content_input_tokens": 15755,
+    "content_output_tokens": 186,
+    "timestamp": "2026-04-15T14:41:06.556178",
     "auditor_version": "1.0.0"
   }
 }

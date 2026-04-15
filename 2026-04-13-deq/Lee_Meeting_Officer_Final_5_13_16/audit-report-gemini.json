@@ -3,68 +3,68 @@
   "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "Header and footer layout is not preserved.",
+      "check_id": "V5",
+      "description": "Footer text is moved to the top of the document, interrupting the header reading sequence.",
       "severity": "major",
-      "evidence": "In the PDF, the header contains a right-aligned section with names and titles, and the footer is centered at the bottom. In the HTML, these elements are all left-aligned and stacked vertically underneath the logo at the top of the page.",
+      "evidence": "The footer text 'State of North Carolina...' from the original PDF is placed immediately after the logo in the HTML, before the remaining header information ('PAT MCCRORY Governor', etc.).",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Logo background transparency lost.",
-      "severity": "minor",
-      "evidence": "The 'NC' logo in the PDF has a white/transparent background, but it renders with a solid black background in the HTML.",
-      "page": 1,
+      "description": "A decorative footer background graphic is incorrectly inserted as inline content.",
+      "severity": "major",
+      "evidence": "The green-to-blue gradient bar from the bottom of PDF page 1 appears in the HTML between the document outline and the 'I. History/Background' heading.",
+      "page": 2,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Missing underline formatting on list item titles.",
-      "severity": "minor",
-      "evidence": "The introductory terms for each bullet point (e.g., 'Agriculture', 'Air Quality') are both bold and underlined in the PDF, but the HTML only retains the bold formatting.",
+      "check_id": "V5",
+      "description": "A page number from the original document footer is embedded inline, interrupting a sentence.",
+      "severity": "major",
+      "evidence": "The text 'Page 2 of 5' is inserted directly between the words 'Speakers were' and 'given five minutes'.",
       "page": 3,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Missing underline formatting on list item titles.",
-      "severity": "minor",
-      "evidence": "The introductory terms for each bullet point (e.g., 'Beneficial Reuse', 'Costs') are both bold and underlined in the PDF, but the HTML only retains the bold formatting.",
+      "check_id": "V5",
+      "description": "A page number from the original document footer is embedded inline between content blocks.",
+      "severity": "major",
+      "evidence": "The text 'Page 3 of 5' appears between the end of section II and the heading for section III.",
       "page": 4,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Missing underline formatting on list item titles.",
-      "severity": "minor",
-      "evidence": "The introductory terms for each bullet point (e.g., 'Health Issues', 'Private Well Issues') are both bold and underlined in the PDF, but the HTML only retains the bold formatting.",
+      "check_id": "V5",
+      "description": "A page number from the original document footer is embedded inline, interrupting a sentence.",
+      "severity": "major",
+      "evidence": "The text 'Page 4 of 5' is inserted directly between the word 'One' and the phrase 'comment suggested that...'.",
       "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "C8",
-      "description": "A single bullet point sentence is split into two separate list items across a page break boundary.",
+      "description": "A bullet point sentence is split into two separate list items due to a page break, disrupting the text flow.",
       "severity": "minor",
-      "evidence": "In the PDF, the sentence 'One comment suggested that capping the ash...' spans across pages 4 and 5 within a single bullet point. In the HTML, this is split across two list items: '<li>... around the Lee facility. One</li>' at the end of page 4, and '<li>comment suggested that capping the ash...</li>' at the start of page 5.",
+      "evidence": "In the PDF, the 'Groundwater Assessments' bullet point continues across pages 4 and 5 ('...around the Lee facility. One comment suggested...'). In the HTML, this is broken into two separate list items: `<li>...around the Lee facility. One</li>` on page 4 and `<li>comment suggested...</li>` on page 5.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 1,
-  "minor_count": 5,
+  "major_count": 5,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 73.32,
+    "duration_seconds": 120.26,
     "page_count": 5,
-    "visual_input_tokens": 11658,
-    "visual_output_tokens": 746,
-    "content_input_tokens": 7580,
-    "content_output_tokens": 295,
-    "timestamp": "2026-04-14T05:00:07.036171",
+    "visual_input_tokens": 11861,
+    "visual_output_tokens": 698,
+    "content_input_tokens": 7641,
+    "content_output_tokens": 283,
+    "timestamp": "2026-04-15T14:33:15.342734",
     "auditor_version": "1.0.0"
   }
 }

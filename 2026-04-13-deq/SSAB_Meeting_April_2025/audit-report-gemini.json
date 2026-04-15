@@ -1,54 +1,38 @@
 {
   "document_id": "SSAB_Meeting_April_2025",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "Loss of header layout structure.",
+      "check_id": "V5",
+      "description": "Incorrect reading order and duplication of header/footer elements.",
       "severity": "major",
-      "evidence": "The PDF features a structured header with left-aligned official names and a centered state seal. The HTML stacks these elements linearly and breaks the visual grouping.",
+      "evidence": "In the HTML, the footer logo and address image from the bottom of the PDF is inserted near the top of the page, above the main document title. Additionally, the header text containing the Governor and Secretary names is duplicated as plain text immediately below this misplaced footer.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Fragmented reading order with misplaced and duplicated header/footer elements.",
-      "severity": "critical",
-      "evidence": "The HTML injects the footer DEQ logo and address above the main document title, followed by an unformatted plain-text duplication of the top header text, completely disrupting the logical flow.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Loss of bold formatting on list markers.",
-      "severity": "minor",
-      "evidence": "The Roman numeral agenda items (I, II, III, etc.) are bolded in the PDF but render with regular font weight in the HTML.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Footer content interrupts the logical flow between document sections.",
+      "description": "Footer elements are improperly inserted into the main content flow.",
       "severity": "major",
-      "evidence": "A right-aligned footer text block and the DEQ logo are injected inline directly between the end of the agenda ('XI. Adjourn...') and the start of the 'WebEx Meeting Information:' heading.",
+      "evidence": "The footer text and logo image from the PDF are inserted directly above the \"WebEx Meeting Information:\" heading in the HTML, disrupting the logical reading flow between the agenda's end and the meeting details.",
       "page": 2,
       "call_source": "visual"
     }
   ],
-  "critical_count": 1,
+  "critical_count": 0,
   "major_count": 2,
-  "minor_count": 1,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 41.87,
+    "duration_seconds": 83.46,
     "page_count": 2,
-    "visual_input_tokens": 5074,
-    "visual_output_tokens": 537,
-    "content_input_tokens": 3948,
-    "content_output_tokens": 151,
-    "timestamp": "2026-04-14T05:04:05.866800",
+    "visual_input_tokens": 5277,
+    "visual_output_tokens": 404,
+    "content_input_tokens": 4009,
+    "content_output_tokens": 137,
+    "timestamp": "2026-04-15T14:39:48.916492",
     "auditor_version": "1.0.0"
   }
 }

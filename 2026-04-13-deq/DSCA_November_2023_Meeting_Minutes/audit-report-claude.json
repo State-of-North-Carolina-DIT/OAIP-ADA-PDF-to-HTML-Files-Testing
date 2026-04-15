@@ -1,70 +1,46 @@
 {
   "document_id": "DSCA_November_2023_Meeting_Minutes",
-  "verdict": "needs_review",
+  "verdict": "pass",
   "findings": [
     {
-      "check_id": "V4",
-      "description": "Roman numeral list formatting differs. PDF uses indented Roman numerals with hanging indent formatting, HTML uses a flatter list style with less indentation hierarchy.",
-      "severity": "minor",
-      "evidence": "PDF shows Roman numerals (I, II, III, IV) with significant left margin and sub-paragraphs indented further. HTML shows Roman numerals with less visual indentation distinction.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The title block formatting differs slightly - PDF has centered, bold, underlined title lines, HTML has left-aligned large heading style with a horizontal rule separator.",
-      "severity": "minor",
-      "evidence": "PDF: 'MEETING MINUTES' and date are centered and underlined. HTML: 'MEETING MINUTES' is left-aligned large text with date below and a horizontal rule.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Roman numeral list items in PDF use more structured indentation with sub-paragraphs clearly nested. HTML maintains content but with flatter visual hierarchy.",
-      "severity": "minor",
-      "evidence": "PDF Section V and VI have clear Roman numeral prefix with indented body text. HTML has similar but less pronounced indentation.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Superscript formatting for '2nd' in the next meeting date may differ slightly.",
-      "severity": "minor",
-      "evidence": "PDF shows 'May 2nd' with superscript 'nd'. HTML shows 'May 2nd' - appears to maintain superscript but rendering may vary.",
-      "page": 5,
-      "call_source": "visual"
-    },
-    {
       "check_id": "C5",
-      "description": "Nested <main> elements create invalid HTML structure. The document has a <main> inside the outer <main>, which is semantically incorrect. Additionally, the heading hierarchy uses h1 for 'MEETING MINUTES' and h2 for the program title, which is acceptable, but there is no further heading hierarchy for the Roman numeral sections (they are list items, not headings), which is a reasonable structural choice.",
-      "severity": "major",
-      "evidence": "HTML contains <main> wrapping the page, then another <main> inside it wrapping the ordered list content.",
+      "description": "Nested <main> elements in the HTML. The document has a <main> wrapper and then another <main> inside it, which is invalid HTML structure but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The outer <main> from the template wraps an inner <main> that contains the ordered list content.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C4",
-      "description": "The URL in the HTML uses hyphens in 'waste-management' matching the PDF's line-broken URL, but the PDF source shows the URL broken across lines as 'wastemanagement' (no hyphen) on one line break. The HTML version with hyphens ('waste-management') appears to be the correct rendered URL based on the full text.",
+      "description": "The URL in the case studies section is present as plain text but not rendered as a clickable hyperlink in the HTML, matching the PDF which also presents it as plain text. No fabricated links.",
       "severity": "minor",
-      "evidence": "PDF: 'https://www.deq.nc.gov/about/divisions/wastemanagement/superfund-section/dry-cleaning-solvent-cleanup-act-program/dscastakeholder-work-group-information' (broken across lines). HTML: 'https://www.deq.nc.gov/about/divisions/waste-management/superfund-section/dry-cleaning-solvent-cleanup-act-program/dsca-stakeholder-work-group-information'. The HTML added hyphens where the PDF had line breaks, which may or may not be the correct URL.",
+      "evidence": "PDF: 'https://www.deq.nc.gov/about/divisions/wastemanagement/superfund-section/dry-cleaning-solvent-cleanup-act-program/dscastakeholder-work-group-information' \u2014 HTML presents the same URL as plain text with slightly different hyphenation: 'https://www.deq.nc.gov/about/divisions/waste-management/superfund-section/dry-cleaning-solvent-cleanup-act-program/dsca-stakeholder-work-group-information'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor difference in URL formatting: the PDF shows the URL with line breaks mid-word (e.g., 'wastemanagement' and 'dscastakeholder'), while the HTML normalizes these with hyphens ('waste-management' and 'dsca-stakeholder'). This likely reflects the actual intended URL and is arguably more correct.",
+      "severity": "minor",
+      "evidence": "PDF: 'wastemanagement' / 'dscastakeholder' vs HTML: 'waste-management' / 'dsca-stakeholder'",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 1,
-  "minor_count": 5,
+  "major_count": 0,
+  "minor_count": 3,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 39.7,
+    "duration_seconds": 48.24,
     "page_count": 3,
-    "visual_input_tokens": 9044,
-    "visual_output_tokens": 824,
-    "content_input_tokens": 11016,
-    "content_output_tokens": 658,
-    "timestamp": "2026-04-14T04:56:24.355339",
+    "visual_input_tokens": 9261,
+    "visual_output_tokens": 348,
+    "content_input_tokens": 11080,
+    "content_output_tokens": 644,
+    "timestamp": "2026-04-15T14:26:15.139858",
     "auditor_version": "1.0.0"
   }
 }

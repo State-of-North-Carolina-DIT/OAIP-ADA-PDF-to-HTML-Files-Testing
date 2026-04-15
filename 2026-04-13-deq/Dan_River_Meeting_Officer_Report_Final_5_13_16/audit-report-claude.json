@@ -3,76 +3,36 @@
   "verdict": "pass",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "Header layout differs - PDF has right-aligned official names/titles, HTML stacks them left-aligned below the logo",
-      "severity": "minor",
-      "evidence": "PDF: PAT MCCRORY, Governor, DONALD R. VAN DER VAART, Secretary, S. JAY ZIMMERMAN, Director are right-aligned. HTML: These are left-aligned below the logo.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The MEMORANDUM heading in PDF is centered and underlined, in HTML it is left-aligned and underlined with a colored rule below",
-      "severity": "minor",
-      "evidence": "PDF: centered underlined 'MEMORANDUM'. HTML: left-aligned with underline and colored horizontal rule.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Footer information appears between pages 1 and 2 in HTML rather than at the bottom of page 1 only",
-      "severity": "minor",
-      "evidence": "PDF: footer with State of North Carolina contact info at bottom of page 1. HTML: same info appears as a separator between page content.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section headings I. History/Background style differs slightly - PDF uses bold with Roman numeral tab-indented format, HTML uses larger heading style",
-      "severity": "minor",
-      "evidence": "PDF: 'I. History/Background' in bold with indentation. HTML: rendered as a larger heading style.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
       "check_id": "C5",
-      "description": "The document has nested <main> elements. The outer <main> is from the template and the inner <main> is from the converted content, creating invalid HTML structure. However, the heading hierarchy itself (h1 for MEMORANDUM, h2 for sections I-IV) is reasonable.",
+      "description": "The HTML has nested <main> elements. The document title 'MEMORANDUM' is rendered as h1, while the Roman numeral sections (I-IV) are rendered as h2. This is acceptable structurally, but the nested <main> tags are invalid HTML.",
       "severity": "minor",
-      "evidence": "HTML contains <main> wrapping another <main> element.",
+      "evidence": "The outer <body> contains <main>, and inside that there is another <main> element wrapping the document content.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The footer content (State of North Carolina | Environmental Quality | Water Resources, address, phone) appears both in the page header area and in a page-footer div within the body. This is acceptable as it mirrors the PDF's repeated footer.",
+      "description": "The page footer with the state address and phone number appears both in the header area of the HTML and as a page-footer div after the outline section, mirroring how the PDF repeats it on page 1. This is a minor duplication inherited from the source format.",
       "severity": "minor",
-      "evidence": "Footer text appears in the HTML header block and also in a page-footer div after the outline.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C6",
-      "description": "The second image has empty alt text, which is acceptable for decorative images but the image appears to be a decorative line/bar at the footer.",
-      "severity": "minor",
-      "evidence": "Second img tag: alt=\"\" - likely a decorative footer bar, so empty alt is appropriate.",
+      "evidence": "Footer text 'State of North Carolina | Environmental Quality | Water Resources / 1611 Mail service Center | Raleigh, North Carolina 27699-1611 / 919 707 9000' appears in both the header and as a page-footer div.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 0,
-  "minor_count": 7,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 34.55,
+    "duration_seconds": 59.98,
     "page_count": 4,
-    "visual_input_tokens": 12248,
-    "visual_output_tokens": 774,
-    "content_input_tokens": 12876,
-    "content_output_tokens": 562,
-    "timestamp": "2026-04-14T04:56:50.100102",
+    "visual_input_tokens": 12465,
+    "visual_output_tokens": 266,
+    "content_input_tokens": 12940,
+    "content_output_tokens": 480,
+    "timestamp": "2026-04-15T14:26:52.682083",
     "auditor_version": "1.0.0"
   }
 }

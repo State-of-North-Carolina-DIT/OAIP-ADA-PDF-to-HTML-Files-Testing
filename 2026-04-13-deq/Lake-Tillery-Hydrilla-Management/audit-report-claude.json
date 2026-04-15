@@ -4,123 +4,131 @@
   "findings": [
     {
       "check_id": "V1",
-      "description": "Slide 3 (History of Hydrilla at Lake Tillery) has a two-column layout with a site-by-year table on the left and a TGC stocking table on the right. In the HTML, these are rendered as sequential single-column elements, losing the side-by-side layout.",
+      "description": "Slide 3 (History of Hydrilla at Lake Tillery) has a two-column layout in the PDF with the site-acreage table on the left and the TGC stocking table on the right. In the HTML, these are rendered as sequential single-column content, losing the side-by-side arrangement.",
       "severity": "major",
-      "evidence": "PDF shows the site table and TGC table side-by-side on one slide. HTML renders them as stacked tables in a single column.",
+      "evidence": "PDF shows two tables side by side on the same slide. HTML renders them stacked vertically.",
       "page": 3,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Slide 5 (Hydrilla Management in 2023) has a two-column layout with bullet points on the left and a map on the right. HTML renders this as a single column with map below text.",
+      "description": "Slide 5 (Hydrilla Management in 2023) has a two-column layout with bullet points on the left and an aerial map on the right. The HTML converts this to a single-column stacked layout.",
       "severity": "major",
-      "evidence": "PDF shows text and map side-by-side. HTML shows them stacked vertically.",
+      "evidence": "PDF shows text and map side by side. HTML shows text above map sequentially.",
       "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Slide 6 (Proposed Management Activities for 2024) has a three-panel layout with text on left, two maps on right. HTML loses the side-by-side arrangement.",
+      "description": "Slide 6 (Proposed Management Activities for 2024) has a three-panel layout with text on the left and two maps on the right. The HTML collapses this into a single-column layout.",
       "severity": "major",
-      "evidence": "PDF shows text alongside two treatment area maps. HTML stacks them vertically.",
+      "evidence": "PDF shows text alongside two aerial treatment maps. HTML stacks all content vertically.",
       "page": 6,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Slide 7 (Fall Vegetation Surveys) has text on left and a photo on right in a two-column layout. HTML renders them sequentially.",
+      "description": "Slide 7 (Fall Vegetation Surveys) has a two-column layout with bullet points on the left and a photo on the right. HTML renders as single column.",
       "severity": "major",
-      "evidence": "PDF shows bullet points alongside rake toss photo. HTML stacks text above image.",
+      "evidence": "PDF shows text and rake-toss photo side by side. HTML stacks them vertically.",
       "page": 7,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Slide 9 shows Biobase heatmap and SONAR screen side-by-side. HTML stacks them vertically.",
+      "description": "Slide 9 has two images side by side (Biobase heatmap on left, SONAR screenshot on right). HTML stacks them vertically.",
       "severity": "major",
-      "evidence": "PDF has two images side-by-side. HTML shows them stacked.",
+      "evidence": "PDF shows two images in a two-column arrangement. HTML shows them stacked.",
       "page": 9,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Slide 10 shows two maps side-by-side (Hydrilla coverage map and Hydrilla density rating map). HTML renders them stacked.",
+      "description": "Slide 10 has two maps side by side (Hydrilla coverage map on left, density rating map on right). HTML stacks them vertically.",
       "severity": "major",
-      "evidence": "PDF has two aerial maps with legends side-by-side. HTML places them sequentially.",
+      "evidence": "PDF shows two GIS maps in side-by-side layout. HTML renders them sequentially stacked.",
       "page": 10,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Slide 2 lake photo is present in both but appears smaller/repositioned in the HTML relative to the bullet points.",
+      "description": "Slide 2 (History of Hydrilla at Lake Tillery) - the lake/dock photograph is present in both versions but positioned differently relative to the text in the HTML.",
       "severity": "minor",
-      "evidence": "PDF has photo taking up right half of slide. HTML shows it below text but still present.",
+      "evidence": "PDF shows photo on right side of slide next to bullet points. HTML shows it below the bullet text content.",
       "page": 2,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Slide titles in the PDF use italic serif font styling (e.g., 'History of Hydrilla at Lake Tillery' in italic). HTML renders them as bold sans-serif headings, losing the italic styling.",
-      "severity": "minor",
-      "evidence": "PDF titles are in italic calligraphic/serif style. HTML uses standard bold heading style.",
-      "page": 2,
+      "check_id": "V3",
+      "description": "Slide 8 - the satellite map showing survey points across Lake Tillery appears in the PDF as a large central image, but in the HTML it appears to be cut off or only partially visible.",
+      "severity": "major",
+      "evidence": "PDF shows full lake survey point map. HTML rendering shows the map but appears truncated at the bottom.",
+      "page": 8,
       "call_source": "visual"
     },
     {
-      "check_id": "V2",
-      "description": "The site-by-year table on slide 3 uses green-shaded rows for alternating sites in the PDF. HTML uses plain alternating styles but data content and structure are preserved.",
-      "severity": "minor",
-      "evidence": "PDF has green-highlighted site name rows. HTML has neutral styling but same data.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C4",
-      "description": "Fabricated URL for the AWCP Website link. The HTML contains a long URL with extra text that does not appear in the PDF.",
+      "check_id": "C1",
+      "description": "Fabricated URL in the AWCP Website link. The HTML contains a long URL with additional text fragment that does not appear in the PDF.",
       "severity": "critical",
-      "evidence": "PDF page 11 shows 'AWCP Website (Aquatic Weed Control Program | NC DEQ)' with no full URL specified beyond the anchor text. The HTML fabricates a full URL: 'https://www.deq.nc.gov/about/divisions/water-resources/water-planning/water-supply-planning/aquatic-weed-control-program#:%7E:text=Purpose%20The%20purpose%20of%20the%20Aquatic%20Weed%20Control...' which includes Google-style text fragment parameters not present in the PDF.",
+      "evidence": "PDF shows 'AWCP Website (Aquatic Weed Control Program | NC DEQ)' with no full URL visible. HTML fabricates a full URL: 'https://www.deq.nc.gov/about/divisions/water-resources/water-planning/water-supply-planning/aquatic-weed-control-program#:%7E:text=Purpose%20The%20purpose%20of%20the%20Aquatic%20Weed%20Control...' - the fragment identifier with text highlight was not in the source PDF.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C5",
-      "description": "Multiple h2 headings share the same text 'History of Hydrilla at Lake Tillery' across different sections (pages 2, 3, 4), which is faithful to the PDF. However, the document has nested <main> elements (a <main> inside a <main>), which is an HTML structural issue.",
+      "description": "Multiple h2 headings use the same text 'History of Hydrilla at Lake Tillery' across pages 2, 3, and 4, which mirrors the PDF but may cause structural confusion. More importantly, the document title h1 is 'Hydrilla management at Lake Tillery, past and present' which is correct, but there is a nested <main> element creating a duplicated structural wrapper.",
       "severity": "major",
-      "evidence": "The HTML has <main> nested inside another <main>, though this is a structural markup issue rather than a heading hierarchy problem.",
+      "evidence": "HTML has <main> nested inside <main>, which is invalid HTML structure, though the heading text itself matches the PDF.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The page 12 Questions section uses both a bullet character (\u2022) and list-style bullets redundantly.",
+      "description": "The page header/department name 'Department of Environmental Quality' appears redundantly in the header section and is also preserved in page footer divs throughout, but this mirrors the PDF's repeated branding on each slide.",
       "severity": "minor",
-      "evidence": "HTML has '<li>\u2022 Drew Gay</li>' with list-style-type: none, so there's no actual visual duplication, but the bullet character is manually added which mirrors the PDF format. This is a very minor formatting concern.",
+      "evidence": "The header contains 'Department of Environmental Quality' and each section footer contains it as well, matching the PDF slide format.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C6",
-      "description": "Some alt text descriptions are reasonable inferences but cannot be fully verified against actual image content. Most are appropriately descriptive.",
+      "description": "Some alt text descriptions are reasonable approximations but cannot be fully verified against actual image content. The alt text for the page 1 header image describes 'a lighthouse at sunset' which appears consistent with the PDF imagery.",
       "severity": "minor",
-      "evidence": "Alt text like 'Background photo of a lighthouse at sunset', 'Photo of Swift Island boat ramp', 'Background image showing water treatment workers' - these appear to match the PDF context descriptions but are AI-generated descriptions. The page 3 alt text says 'water treatment workers' for what appears to be a background image; the actual content may differ.",
+      "evidence": "Alt text like 'Background photo of a lighthouse at sunset' for page 1, 'Photo of Swift Island boat ramp' for page 2 image - these appear reasonable given PDF context.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The AWCP Website link text in the PDF shows only 'Aquatic Weed Control Program | NC DEQ' as a hyperlink label. The HTML constructs a full URL href that includes a Google-style text fragment highlight, which was not visible in the PDF source.",
+      "severity": "minor",
+      "evidence": "PDF: 'Aquatic Weed Control Program | NC DEQ' as link text. HTML href includes '#:%7E:text=Purpose%20The%20purpose%20of%20the%20Aquatic%20Weed%20Control...' fragment not shown in PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF page 2 contains the typo 'they Yadkin' and the HTML preserves this typo faithfully, which is correct behavior.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'First time it was reported in they Yadkin \u2013 Pee Dee River basin.'",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 1,
-  "major_count": 7,
+  "major_count": 8,
   "minor_count": 5,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 60.14,
+    "duration_seconds": 591.2,
     "page_count": 12,
-    "visual_input_tokens": 36872,
-    "visual_output_tokens": 1515,
-    "content_input_tokens": 28948,
-    "content_output_tokens": 798,
-    "timestamp": "2026-04-14T04:59:21.604500",
+    "visual_input_tokens": 37089,
+    "visual_output_tokens": 1412,
+    "content_input_tokens": 29012,
+    "content_output_tokens": 1045,
+    "timestamp": "2026-04-15T14:38:14.620609",
     "auditor_version": "1.0.0"
   }
 }

@@ -4,259 +4,195 @@
   "findings": [
     {
       "check_id": "V1",
-      "description": "Title slide layout collapsed from styled cover page to plain text layout",
+      "description": "Slide 2 (Novo Nordisk at a glance) has a multi-column grid layout with statistics in colored tiles that is collapsed into a single-column linear layout in the HTML",
       "severity": "major",
-      "evidence": "PDF shows a dark blue branded cover slide with large title, subtitle, author, and date with Novo Nordisk bull logo. HTML shows plain text rendering without the branded layout structure.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Cover slide bull logo/graphic missing in HTML",
-      "severity": "minor",
-      "evidence": "PDF has a large decorative bull illustration on the right side of the cover. HTML omits this decorative graphic.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Novo Nordisk at a glance page loses its multi-column grid layout with colored tiles",
-      "severity": "major",
-      "evidence": "PDF shows a structured grid of colored tiles with key statistics (50%, 290.4 billion DKK, 80 countries, 52 billion DKK in R&D, 45.2 million people) alongside therapy area images. HTML renders this as a flat sequential list of text items.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Therapy area images (Cardiovascular, Rare Disease, Diabetes, Obesity) displayed differently",
-      "severity": "major",
-      "evidence": "PDF shows four distinct therapy area photos in a grid layout. HTML shows them merged into what appears to be a composite image, losing individual context.",
+      "evidence": "PDF shows a grid of colored tiles with statistics (50%, 290.4, 80, 52, 45.2) alongside therapy area images in a structured layout. HTML renders all content as a sequential single-column list.",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Global presence page loses its map-centric layout with information sidebar",
+      "description": "Slide 4 (Novo Nordisk Product Supply in NC & Virginia) has a mosaic/grid layout of statistics and images collapsed to single column",
       "severity": "major",
-      "evidence": "PDF shows a large world map with color-coded regions on the right, corporate info on the left, and a pink '80 countries' callout. HTML renders as a dark-background map image followed by a flat text list.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Product Supply in NC & Virginia loses its grid-based infographic layout",
-      "severity": "major",
-      "evidence": "PDF shows a complex grid of tiles with statistics ($10B, 31 years, 60+ countries), award logos, LEED certification, and images. HTML renders as sequential text with a single composite image.",
+      "evidence": "PDF shows a complex grid with tiles containing statistics (31 years, $10B, 60+, LEED Gold, $40M+) and images arranged in a mosaic. HTML renders these as a linear sequence of text items followed by a composite image.",
       "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Novo Nordisk in North Carolina page loses its two-column layout (images left, text right)",
+      "description": "Slide 5 (Novo Nordisk in North Carolina) has a two-column layout with images on the left and bullet points on the right, collapsed in HTML",
       "severity": "major",
-      "evidence": "PDF has three aerial facility photos stacked on the left with bullet points and facility stats on the right. HTML shows images stacked on top followed by bullet points below.",
+      "evidence": "PDF shows aerial facility images stacked vertically on the left with bullet points and statistics on the right. HTML places images above the text in a single column.",
       "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Four must-win battles page loses its quadrant layout with central globe graphic",
+      "description": "Slide 6 (four must-win battles) has a structured layout with numbered items around a central globe illustration, collapsed in HTML",
       "severity": "major",
-      "evidence": "PDF shows a centered globe illustration with four numbered battles (#1-#4) positioned around it. HTML renders as a flat numbered list.",
+      "evidence": "PDF shows #1-#4 positioned around a central globe graphic in a quadrant-like arrangement. HTML renders as a sequential list.",
       "page": 6,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "CO2 emissions targets page loses its side-by-side layout with targets panel",
+      "description": "Slide 7 (Must-win challenge to reduce CO2 emissions) has a two-column layout with illustration left and targets right, collapsed in HTML",
       "severity": "major",
-      "evidence": "PDF shows city illustration on left and three targets with circular images on right panel. HTML renders targets sequentially with small images.",
+      "evidence": "PDF shows city/sustainability illustration on left with three targets stacked on right (Net Zero by 2045, 100% renewable by 2030, Zero CO2 by 2030). HTML renders sequentially.",
       "page": 7,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Circular for Zero page loses its three-column layout (supply, company, products)",
+      "description": "Slide 8 (Driving change as environmentally responsible business) has a multi-column layout with three circular elements (Circular supply, company, products) collapsed in HTML",
       "severity": "major",
-      "evidence": "PDF shows three circular images with labels arranged horizontally. HTML renders them sequentially as separate sections.",
+      "evidence": "PDF shows three columns with circular images and descriptions for supply, company, and products. HTML renders as single column.",
       "page": 8,
       "call_source": "visual"
     },
     {
-      "check_id": "V5",
-      "description": "Reading order preserved but visual grouping lost on Circular for Zero Energy and Water Goals page",
-      "severity": "minor",
-      "evidence": "PDF groups Mapping and Project savings content clearly. HTML maintains the same text order but loses visual hierarchy emphasis.",
-      "page": 9,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V1",
-      "description": "Mapping Strategy hierarchical diagram rendered as flat text",
+      "description": "Slide 10 (Mapping Strategy) has a hierarchical diagram showing Site Usage > Building Usage > Process/Other Usage > M/U, rendered as flat text in HTML",
       "severity": "major",
-      "evidence": "PDF shows a structured organizational diagram with Site Usage \u2192 Building Usage \u2192 Process/Other Usage \u2192 M/U hierarchy with External/Internal data arrows. HTML renders as flat text listing.",
+      "evidence": "PDF shows a structured hierarchical box diagram with external/internal data flows. HTML renders as flat text listing: 'Building Usage | Building Usage | Building Usage' and 'M U | M U | M U'.",
       "page": 10,
       "call_source": "visual"
     },
     {
       "check_id": "V2",
-      "description": "Mapping Strategy hierarchical structure rendered as plain text instead of diagram/table",
+      "description": "The mapping strategy diagram (slide 10) is a structured hierarchical chart rendered as unstructured plain text",
       "severity": "critical",
-      "evidence": "PDF shows a visual hierarchy diagram with boxes for Site Usage, Building Usage, Process Usage, Other Usage, M (Measured) and U (Unmeasured). HTML renders as: 'Building Usage | Building Usage | Building Usage' and 'M U | M U | M U' as plain text.",
+      "evidence": "PDF shows nested boxes representing Site Usage broken into Building Usage, then Process/Other Usage, then Measured/Unmeasured categories with data flow arrows. HTML shows this as flat text strings separated by pipes.",
       "page": 10,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Goal - Mapping page loses its two-column layout (bullet points left, pie chart right)",
+      "description": "Slide 11 (Goal - Mapping) has a two-column layout with bullet points on the left and a pie chart on the right, collapsed in HTML",
       "severity": "major",
-      "evidence": "PDF shows bullet point content on the left and a baseline electricity consumption pie chart on the right. HTML renders bullet points followed by a small pie chart below, then a text listing of percentages.",
+      "evidence": "PDF shows bullet points alongside a pie chart labeled 'Baseline Electricity Consumption'. HTML renders bullets first then pie chart below with the breakdown as a text list.",
       "page": 11,
       "call_source": "visual"
     },
     {
+      "check_id": "V1",
+      "description": "Slide 13 (Water Example - Process Flows) has a two-part layout with drivers on the left and a complex Sankey/flow diagram on the right, collapsed in HTML",
+      "severity": "major",
+      "evidence": "PDF shows driver bullets alongside a detailed water flow diagram. HTML renders the drivers and all flow values as a long sequential text list.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
       "check_id": "V3",
-      "description": "Natural Gas and Steam Example process flow diagram is very small and potentially illegible in HTML",
-      "severity": "minor",
-      "evidence": "PDF shows a large detailed process flow diagram spanning the full page. HTML shows the same diagram as a smaller embedded image.",
-      "page": 12,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Water Example Process Flows page loses its two-panel layout (drivers left, Sankey diagram right)",
-      "severity": "major",
-      "evidence": "PDF shows driver bullet points on the left and a detailed water flow/Sankey diagram on the right. HTML renders drivers as text followed by the diagram below, plus extensive text data extracted from the diagram.",
-      "page": 13,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Water flow diagram data extracted as extensive plain text listing",
-      "severity": "major",
-      "evidence": "PDF presents water flow data visually in a Sankey/flow diagram. HTML extracts all numerical values as a long sequential text list (City Water 1846.2, Total industrial water 1727.6, etc.), which changes the information presentation significantly.",
+      "description": "The complex water process flow diagram on slide 13 is not properly reproduced in HTML",
+      "severity": "critical",
+      "evidence": "PDF shows a detailed Sankey-style water flow diagram with color-coded streams, measurement points, and flow values. HTML reduces this to a series of text labels and numbers without the visual flow relationships.",
       "page": 13,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Water Mapping Visualization page loses its side-by-side heat map and bar chart layout",
+      "description": "Slide 14 (Water Mapping - Visualization) has a two-column layout with heat map and bar chart side by side",
       "severity": "major",
-      "evidence": "PDF shows a treemap/heat map on the left and a stacked bar chart on the right. HTML renders them sequentially stacked vertically.",
+      "evidence": "PDF shows a tree map/heat map on the left and a stacked bar chart on the right. HTML shows them stacked vertically.",
       "page": 14,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Mapping through collaboration page layout slightly differs but content preserved",
-      "severity": "minor",
-      "evidence": "PDF has text on left with photo and decorative icons on right. HTML renders sequentially but preserves all content.",
-      "page": 15,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Goal - Project Savings page content preserved but visual chart icon repositioned",
-      "severity": "minor",
-      "evidence": "PDF shows chart icon in bottom right corner. HTML renders content sequentially without the decorative icon emphasis.",
-      "page": 16,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Energy Savings Project Examples page loses its two-column layout (Inactivation Skid left, Distillation right)",
+      "description": "Slide 17 (Energy Savings Project Examples) has a two-column layout with Inactivation Skid on left and Distillation Optimization on right",
       "severity": "major",
-      "evidence": "PDF shows two project examples side by side in columns. HTML renders them sequentially one after the other.",
+      "evidence": "PDF shows two project examples side by side in columns. HTML renders them sequentially.",
       "page": 17,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Water Savings Project Examples page loses its two-column layout (Filter backwash left, Conductivity right)",
+      "description": "Slide 18 (Water Savings Project Examples) has a two-column layout with Filter backwash on left and Conductivity Setpoint on right",
       "severity": "major",
-      "evidence": "PDF shows two water savings examples side by side. HTML renders them sequentially.",
+      "evidence": "PDF shows two project examples side by side. HTML renders them sequentially.",
       "page": 18,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Questions/closing slide loses decorative illustration layout but contact info preserved",
+      "check_id": "V3",
+      "description": "Several visualization images (heat maps, bar charts) on slide 14 are present but very small and hard to read in both versions",
       "severity": "minor",
-      "evidence": "PDF shows artistic line illustrations with centered Questions text and contact info. HTML renders as plain text with contact information.",
-      "page": 19,
+      "evidence": "PDF shows dashboard visualizations at a readable size; HTML shows them at a similar or smaller scale but they are present.",
+      "page": 14,
       "call_source": "visual"
     },
     {
-      "check_id": "V3",
-      "description": "Questions page decorative healthcare illustrations missing",
-      "severity": "minor",
-      "evidence": "PDF has elaborate connected line art illustrations (globe, people, medical devices). HTML omits these decorative elements.",
-      "page": 19,
+      "check_id": "V1",
+      "description": "Slide 3 (Our global presence) has a two-part layout with organizational details on left and a world map with statistics on right, collapsed in HTML",
+      "severity": "major",
+      "evidence": "PDF shows company details and world map side by side with a pink box showing '80 countries with affiliates'. HTML renders as sequential text with a dark map image.",
+      "page": 3,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "Multiple h1 tags used throughout the HTML document. Each page's title is rendered as h1, resulting in approximately 15+ h1 headings instead of one.",
+      "description": "Multiple h1 headings used throughout the HTML document. Nearly every page's main title is rendered as h1, resulting in approximately 15+ h1 elements instead of a single document-level h1.",
       "severity": "major",
-      "evidence": "HTML contains h1 for: 'Energy and Water at Novo Nordisk', 'Novo Nordisk at a glance', 'Our global presence', 'Novo Nordisk Product Supply in North Carolina & Virginia', 'Novo Nordisk in North Carolina', 'We are focusing on four must-win battles', 'Must-win challenge to reduce CO2 emissions', 'Driving change as an environmentally responsible business', 'Circular for Zero \u2013 Energy and Water Goals', 'Mapping Strategy \u2013 Energy and Water', 'Goal - Mapping', 'Natural Gas and Steam Example', 'Water Example \u2013 Process Flows', 'Water Mapping \u2013 Visualization', 'Mapping through collaboration', 'Goal \u2013 Project Savings', 'Energy Savings Project Examples', 'Water Savings Project Examples', 'Questions?'. Only one h1 is acceptable.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C4",
-      "description": "The source URL link is fragmented into multiple separate anchor tags in the HTML, though the destination URL content is preserved.",
-      "severity": "minor",
-      "evidence": "PDF has single link: 'https://companiesmarketcap.com/pharmaceuticals/largest-pharmaceutical-companies-by-market-cap/'. HTML splits it into 6 separate <a> tags: '-pharmaceutical', '-companies', '-by', '-market', '-cap/' etc.",
+      "evidence": "The HTML has h1 tags for: 'Energy and Water at Novo Nordisk', 'Novo Nordisk at a glance', 'Our global presence', 'Novo Nordisk Product Supply in North Carolina & Virginia', 'Novo Nordisk in North Carolina', 'We are focusing on four must-win battles', 'Must-win challenge to reduce CO2 emissions', 'Driving change as an environmentally responsible business', 'Circular for Zero \u2013 Energy and Water Goals', 'Mapping Strategy \u2013 Energy and Water', 'Goal - Mapping', 'Natural Gas and Steam Example', 'Water Example \u2013 Process Flows', 'Water Mapping \u2013 Visualization', 'Mapping through collaboration', 'Goal \u2013 Project Savings', 'Energy Savings Project Examples', 'Water Savings Project Examples', 'Questions?'",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "The number '170' appearing in the PDF as the number of countries (context: affiliates in 170 countries) is presented in the HTML as '170 countries' as a standalone line, but the PDF slide 2 shows '170' once at top without clear context and '80' as affiliates in countries. The HTML preserves both but the '170' line is somewhat ambiguous.",
+      "description": "The pie chart legend for baseline electricity consumption lists 'Est. Conv. Losses' at 6% but the PDF chart shows it at 3%, while 'Production Area 3' shows at 3% but appears to be 6% in the PDF chart.",
       "severity": "minor",
-      "evidence": "PDF page 2 shows '170' at top and 'Affiliates in 80 countries'. HTML has '<p>170 countries</p>' and '<p>Affiliates in 80 countries</p>'. The '170' in the PDF appears to be a standalone stat without clear label on the slide.",
+      "evidence": "HTML lists: '60% Utilities, 9% Production Area 2, 8% Production Area 4, 7% Production Area 1, 7% Administrative Building, 6% Est. Conv. Losses, 3% Production Area 3'. The PDF pie chart shows 3% and 7% at top, with Est. Conv. Losses appearing to correspond to 3% and Production Area 3 to 6%.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "Water process flow data on page 13 is converted to flat text paragraphs, losing the spatial/flow relationship of the Sankey-style diagram. While individual numbers are preserved, the hierarchical flow structure is not represented.",
+      "description": "Minor typo from the PDF preserved in HTML: 'produtciton' instead of 'production' in the water process flow. This is actually faithful to the source, so not an error of conversion.",
       "severity": "minor",
-      "evidence": "PDF page 13 shows a complex Sankey/flow diagram with arrows and connections between process steps. HTML renders this as a flat list of values like 'City Water 1846.2', 'GN Utility: Softened water produtciton 731.0' etc. without structural relationships.",
+      "evidence": "HTML: 'GN Utility: Softened water produtciton' \u2014 matches PDF source text.",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C8",
-      "description": "Typo from source PDF 'produtciton' is faithfully preserved in HTML, which is correct behavior.",
+      "check_id": "C1",
+      "description": "The HTML adds '170 countries' as a standalone line that doesn't clearly appear as such in the PDF. The PDF mentions '170' in relation to something else (the number appears alongside affiliates info), but '170 countries' as a standalone claim isn't clearly stated in the source.",
       "severity": "minor",
-      "evidence": "Both PDF and HTML contain 'Softened water produtciton'",
+      "evidence": "HTML: '<p>170 countries</p>' appears as standalone text. PDF page 2 shows '170' but in context of affiliates/countries the main stat is '80 countries'. The '170' in the PDF appears without clear labeling.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "Page 10 mapping strategy content includes text like 'Site Usage', 'Building Usage', 'Process Usage', 'Other Usage', 'M U' which represents a diagram structure. This is not truly duplicated content but the repetition of building/process/other usage three times reflects the three-column diagram structure from the PDF.",
+      "description": "The page header 'Novo Nordisk' or 'Novo Nordisk \u00ae' is repeated many times throughout the HTML as div elements, mirroring the PDF's repeated headers/footers on each slide. While this is a faithful reproduction, it creates redundancy.",
       "severity": "minor",
-      "evidence": "HTML: 'Building Usage | Building Usage | Building Usage' and 'Process Usage | Other Usage | Process Usage | Other Usage | Process Usage | Other Usage' and 'M U | M U | M U | M U | M U | M U'",
+      "evidence": "Multiple instances of '<div class=\"page-header\">Novo Nordisk \u00ae</div>' throughout the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL from the PDF footnote is broken into multiple separate anchor tags rather than a single link.",
+      "severity": "minor",
+      "evidence": "PDF has one URL: 'https://companiesmarketcap.com/pharmaceuticals/largest-pharmaceutical-companies-by-market-cap/'. HTML splits it into multiple <a> tags: '<a href=\"...\">1. https://companiesmarketcap.com/pharmaceuticals/largest</a> <a href=\"...\">-pharmaceutical</a> <a href=\"...\">-companies</a>...' though all point to the same destination.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 1,
-  "major_count": 17,
-  "minor_count": 12,
+  "critical_count": 2,
+  "major_count": 14,
+  "minor_count": 6,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 100.21,
+    "duration_seconds": 324.87,
     "page_count": 19,
-    "visual_input_tokens": 56529,
-    "visual_output_tokens": 3040,
-    "content_input_tokens": 41959,
-    "content_output_tokens": 1225,
-    "timestamp": "2026-04-14T04:58:03.345009",
+    "visual_input_tokens": 56746,
+    "visual_output_tokens": 2583,
+    "content_input_tokens": 42023,
+    "content_output_tokens": 1231,
+    "timestamp": "2026-04-15T14:31:24.695787",
     "auditor_version": "1.0.0"
   }
 }

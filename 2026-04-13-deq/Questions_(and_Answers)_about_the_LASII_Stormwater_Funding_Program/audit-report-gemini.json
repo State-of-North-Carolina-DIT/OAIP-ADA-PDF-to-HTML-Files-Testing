@@ -1,62 +1,30 @@
 {
   "document_id": "Questions_(and_Answers)_about_the_LASII_Stormwater_Funding_Program",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V4",
-      "description": "Missing underline text formatting.",
-      "severity": "minor",
-      "evidence": "Emphasis underlines are dropped in the HTML. For example, in the answer to Question 8 (Page 2), 'designed to retain waters within a stream channel' is underlined in the PDF but rendered as plain text in the HTML.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Page content is completely out of sequence (Swapped pages).",
-      "severity": "critical",
-      "evidence": "HTML Page 3 contains the end of Question 11 followed by Questions 12-16 (which should be on Page 4), completely skipping the beginning of Question 10 and 11.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Page content is completely out of sequence (Swapped pages).",
-      "severity": "critical",
-      "evidence": "HTML Page 4 contains the answer to Question 9 and Questions 10-11 (content from PDF Pages 2 and 3), rather than the expected sequential content for Page 4.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V5",
-      "description": "Headers, footers, and footnotes interrupt paragraph reading flow.",
-      "severity": "major",
-      "evidence": "On HTML Page 5, the footnote ('1 Levee Terms...') and the page footer ('LASII Stormwater Program... Page 4') are inserted directly into the middle of the sentence for Question 16's answer, breaking the textual flow between '...study, then' and 'only one application...'.",
-      "page": 5,
-      "call_source": "visual"
-    },
-    {
       "check_id": "C4",
-      "description": "Embedded hyperlinks from the PDF were not preserved as HTML <a> tags; the text was retained but the link functionality was lost.",
-      "severity": "minor",
-      "evidence": "Blue underlined text indicating hyperlinks in the PDF, such as 'Division's website' (Page 1), 'training video' (Page 1), '(available here)' (Page 2), and 'US Environmental Protection Agency' (Page 2), appear as plain text in the HTML without corresponding href attributes.",
+      "description": "Hyperlinks present in the source PDF have been stripped of their interactive link tags in the HTML.",
+      "severity": "major",
+      "evidence": "The PDF contains functional hyperlinks for text such as 'Division's website' and 'training video' on page 1, '(available here)' and 'US Environmental Protection Agency' on page 2, and 'Division's website' on page 5. In the HTML, these are rendered as plain text without `<a>` tags or `href` attributes.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 2,
+  "critical_count": 0,
   "major_count": 1,
-  "minor_count": 2,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 91.79,
+    "duration_seconds": 89.31,
     "page_count": 5,
-    "visual_input_tokens": 11663,
-    "visual_output_tokens": 746,
-    "content_input_tokens": 7847,
-    "content_output_tokens": 286,
-    "timestamp": "2026-04-14T05:03:17.300113",
+    "visual_input_tokens": 11866,
+    "visual_output_tokens": 305,
+    "content_input_tokens": 7908,
+    "content_output_tokens": 287,
+    "timestamp": "2026-04-15T14:36:45.501578",
     "auditor_version": "1.0.0"
   }
 }

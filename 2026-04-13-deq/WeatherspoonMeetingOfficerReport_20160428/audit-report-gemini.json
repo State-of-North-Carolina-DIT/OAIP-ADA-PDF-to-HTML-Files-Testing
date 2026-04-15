@@ -4,67 +4,43 @@
   "findings": [
     {
       "check_id": "V1",
-      "description": "Header layout changed from two columns to one.",
+      "description": "The two-column letterhead layout was collapsed into a single column.",
       "severity": "major",
-      "evidence": "In the PDF, the header contains a logo on the left and a text block (names and titles) on the right. The HTML places the text block below the logo, collapsing the layout into a single left-aligned column.",
+      "evidence": "In the PDF, the agency logo is on the left and the official names/titles are aligned on the right. In the HTML, they are stacked in a single column on the left.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Indentation lost in multi-line subject field.",
-      "severity": "minor",
-      "evidence": "The PDF aligns the second and third lines of the 'Subject:' field with the start of the text on the first line. The HTML left-aligns these continuation lines, losing the visual grouping.",
+      "check_id": "V5",
+      "description": "Footer text was moved to the top of the document, altering the reading order.",
+      "severity": "major",
+      "evidence": "The footer containing the agency's address and contact information from the bottom of the PDF page 1 is placed at the very top of the HTML page, before the memo's main content.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Decorative footer bar rendered inline within content.",
+      "check_id": "V3",
+      "description": "A decorative line is rendered incorrectly as a large graphical block.",
       "severity": "minor",
-      "evidence": "A solid dark bar, which appears to be a decorative element from the bottom of PDF page 1, is rendered as an inline block element in the middle of the text content on HTML page 2.",
+      "evidence": "The thin colored footer line from the bottom of PDF page 1 is rendered as a thick, disproportionately large colored block in the HTML (visible at the start of HTML page 2).",
       "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Loss of bold and underline formatting in list items.",
-      "severity": "minor",
-      "evidence": "The keywords at the beginning of each bullet point in Section II (e.g., 'Dam Safety', 'Excavation') are bolded and underlined in the PDF, but are rendered as plain text in the HTML.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Loss of bold and underline formatting in list items.",
-      "severity": "minor",
-      "evidence": "The keywords at the beginning of each bullet point in Section III (e.g., 'Dam Safety', 'Ash recycling and reuse') are bolded and underlined in the PDF, but are rendered as plain text in the HTML.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Loss of bold and underline formatting in list items.",
-      "severity": "minor",
-      "evidence": "The keywords at the beginning of the bullet points at the top of the page (e.g., 'Private Well Issues', 'Risk Classification') are bolded and underlined in the PDF, but are rendered as plain text in the HTML.",
-      "page": 5,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
-  "major_count": 1,
-  "minor_count": 5,
+  "major_count": 2,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 53.4,
+    "duration_seconds": 118.45,
     "page_count": 5,
-    "visual_input_tokens": 11498,
-    "visual_output_tokens": 928,
-    "content_input_tokens": 7289,
-    "content_output_tokens": 147,
-    "timestamp": "2026-04-14T05:06:33.957637",
+    "visual_input_tokens": 11701,
+    "visual_output_tokens": 580,
+    "content_input_tokens": 7350,
+    "content_output_tokens": 156,
+    "timestamp": "2026-04-15T14:43:05.004756",
     "auditor_version": "1.0.0"
   }
 }

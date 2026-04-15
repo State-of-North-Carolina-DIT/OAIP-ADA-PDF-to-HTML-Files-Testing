@@ -1,142 +1,102 @@
 {
   "document_id": "Lake-Tillery-Aquatic-Plant-Reporting",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V3",
-      "description": "Duke Energy logo and tagline at bottom of title page missing in HTML",
-      "severity": "critical",
-      "evidence": "PDF shows Duke Energy logo with 'BUILDING A SMARTER ENERGY FUTURE' tagline at bottom; HTML does not include this element",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V1",
-      "description": "Page 2 two-column layout collapsed to single column in HTML",
+      "description": "Page 2 (Our Role) has a two-column layout in the PDF with DEQ/SCDNR screenshots side by side and partner logos arranged in a multi-column grid. The HTML renders these as a single column, stacking elements vertically.",
       "severity": "major",
-      "evidence": "PDF shows NC DEQ content on left and SC DNR content on right in a two-column layout; HTML renders everything in a single column stacked vertically",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Partner logos grid layout collapsed to single column",
-      "severity": "major",
-      "evidence": "PDF shows partner logos (NC Wildlife, NC State, Duke Energy, UofSC, Catawba Riverkeeper, Charlotte Water, Storm Water, Lake James, Lake Norman, Lake Wylie, Lake Wateree, Catawba Wateree, Yadkin-Pee Dee) in a multi-column grid; HTML stacks them vertically",
+      "evidence": "PDF shows DEQ screenshot and SCDNR screenshot side-by-side in the upper portion, and partner logos in a multi-column grid below. HTML shows all content stacked vertically in a single column.",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Some partner logos appear cropped or partially visible in HTML",
+      "description": "Several partner logos on page 2 appear cropped or partially visible in the HTML version compared to the PDF.",
       "severity": "minor",
-      "evidence": "PDF shows full logos for Lake Norman Marine Commission and others; HTML shows some logos cut off (e.g., 'Lake N Marine Co' truncated)",
+      "evidence": "PDF shows complete logos for Lake Norman Marine Commission, Charlotte-Mecklenburg Storm Water, etc. in full. HTML shows some logos partially cut off (e.g., Lake Norman Marine Commission logo is cropped).",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Page 4 two-column layout collapsed - form on left, key takeaways on right in PDF",
+      "description": "Page 4 (Aquatic Plant Report) has a two-column layout in PDF with the report form on the left and key takeaways/agency logos on the right. HTML renders as single column.",
       "severity": "major",
-      "evidence": "PDF shows Aquatic Plant Report form on left side and Key takeaways bullet list on right side; HTML renders them stacked vertically",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Page 4 agency logos (DEQ and Wildlife Resources Commission) placement changed",
-      "severity": "major",
-      "evidence": "PDF shows DEQ and NC Wildlife Resources Commission logos side by side at bottom right; HTML shows them stacked vertically below the text",
+      "evidence": "PDF shows form screenshot on left, key takeaways bullet list and DEQ/WRC logos on the right side. HTML stacks these vertically.",
       "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Page 5 two-column photo layout collapsed",
+      "description": "Page 5 (How to Take a Good ID Photo) has a two-column layout with good photos (green border) on left and bad photos (red border) on right. HTML renders in single column.",
       "severity": "major",
-      "evidence": "PDF shows good ID photos (green border) on left and bad ID photos (red border) on right in two columns; HTML stacks them vertically",
-      "page": 5,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Photo border color-coding less clear in HTML",
-      "severity": "minor",
-      "evidence": "PDF clearly shows green-bordered photos (good examples) vs red-bordered photos (bad examples); HTML preserves borders but layout change reduces the visual comparison effect",
+      "evidence": "PDF shows green-bordered good examples on left, red-bordered bad examples on right in a clear side-by-side comparison. HTML stacks them vertically, losing the visual comparison effect.",
       "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Page 6 two-column layout collapsed - contact info on left, Stop Aquatic Hitchhikers poster on right",
+      "description": "Page 6 (How to Get in Touch) has a two-column layout with contact info on the left and 'Stop Aquatic Hitchhikers' poster on the right. HTML renders as single column.",
       "severity": "major",
-      "evidence": "PDF shows contact emails on left side and 'Stop Aquatic Hitchhikers' infographic on right side; HTML stacks them vertically",
-      "page": 6,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Email addresses lose their distinctive color formatting in HTML",
-      "severity": "minor",
-      "evidence": "PDF shows AquaticPlants@duke-energy.com and LakeServices@duke-energy.com in teal/cyan color; HTML renders them in plain dark text",
+      "evidence": "PDF shows contact emails on left side and Stop Aquatic Hitchhikers infographic on the right side. HTML stacks them vertically.",
       "page": 6,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "Multiple h2 headings used where the document only has one h1, but 'Key takeaways:' is rendered as h2 when it is not a section heading in the PDF - it's a label for a bullet list. This is minor. More importantly, there is a nested <main> inside <main>, which is a structural issue.",
-      "severity": "major",
-      "evidence": "HTML has <main><main>...</main></main> - duplicate main elements.",
+      "description": "The 'Key takeaways' text is rendered as an h2 heading in the HTML, but in the PDF it appears as a content label/subheading on slide 4, not a major section heading. This is a minor structural choice.",
+      "severity": "minor",
+      "evidence": "PDF slide 4: 'Key takeaways:' as bullet intro text. HTML: '<h2>Key takeaways:</h2>'",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML has a duplicate <main> wrapper - the outer <main> from the template and an inner <main> from the converted content. This is a structural duplication but does not duplicate visible content.",
-      "severity": "minor",
-      "evidence": "HTML source: <body><main><main>...</main></main></body>",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C4",
-      "description": "The PDF contains several URLs (duke-energy.com/AquaticPlants, AquaticPlants@duke-energy.com, LakeServices@duke-energy.com, www.protectyourwaters.net) but none of them are rendered as clickable hyperlinks in the HTML. They appear as plain text only.",
-      "severity": "minor",
-      "evidence": "PDF page 3: 'duke-energy.com/AquaticPlants' shown as a link. HTML: rendered as plain text '<p>duke-energy.com/AquaticPlants</p>' without an <a> tag.",
+      "description": "There are duplicate <main> tags nested inside each other, which is a structural duplication error in the HTML.",
+      "severity": "major",
+      "evidence": "HTML contains '<body><main><main>' - two nested main elements.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C2",
-      "description": "Some detailed text visible in the PDF screenshots (e.g., the NC DEQ Aquatic Weed Control Program description text, the SC DNR noxious weed laws text on page 2, and the detailed text on the Aquatic Plant Management webpage on page 3) is not transcribed in the HTML. However, this content appears within embedded screenshots/images in the PDF, not as standalone text, so its omission is expected.",
+      "description": "The PDF page 2 contains visible text from the NC DEQ Aquatic Weed Control Program website screenshot and the SC DNR Aquatic Nuisance Species Program website screenshot with specific program descriptions, purpose statements, objectives, and South Carolina state law citations. These detailed texts are not reproduced in the HTML - they are only represented via image alt text.",
       "severity": "minor",
-      "evidence": "Page 2 contains screenshots of NC DEQ and SCDNR websites with readable text about aquatic weed control programs and state laws. Page 3 contains a screenshot of the duke-energy.com website with descriptive paragraphs about aquatic plants in reservoirs.",
+      "evidence": "PDF page 2 includes text like 'The purpose of the Aquatic Weed Control Program is to provide units of local government and residents of North Carolina with resources...' and SC law references 'Title 46, Chapter 23 - South Carolina Noxious Weed Act'. None of this text appears in the HTML body.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The descriptive text from the PDF's page 3 website screenshot about aquatic plants in reservoirs and Duke Energy's management program is not included in the HTML as text content, only referenced through the image alt text.",
+      "severity": "minor",
+      "evidence": "PDF page 3 includes text like 'A key aspect of being a good environmental steward is monitoring and managing our rivers and lakes for aquatic plants and wildlife...' and 'Many invasive aquatic plants have the potential to invade Duke Energy's lakes and rivers...'",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C6",
-      "description": "Some alt texts are reasonably descriptive but a few are somewhat generic or could be more precise. The Lake James Environmental Association logo is labeled as 'Belmont North Carolina Logo' and the Gastonia logo is labeled as such but may not be accurately identifiable from the PDF. However, these are partner logos on page 2 that are small and difficult to identify precisely.",
+      "description": "Several image alt texts on page 2 are reasonable but somewhat generic or approximate, though not inaccurate. The alt text for logos and website screenshots is generally good.",
       "severity": "minor",
-      "evidence": "HTML: alt='Belmont North Carolina Logo' and alt='Gastonia Logo' for logos on page 2 that may or may not correspond to those entities.",
+      "evidence": "E.g., 'Belmont North Carolina Logo' and 'Gastonia Logo' - these appear to be logos from the PDF but their exact identity is hard to confirm from context.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 1,
-  "major_count": 7,
-  "minor_count": 7,
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 5,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 53.12,
+    "duration_seconds": 248.84,
     "page_count": 6,
-    "visual_input_tokens": 18842,
-    "visual_output_tokens": 1348,
-    "content_input_tokens": 13364,
-    "content_output_tokens": 946,
-    "timestamp": "2026-04-14T04:58:53.711058",
+    "visual_input_tokens": 19059,
+    "visual_output_tokens": 1021,
+    "content_input_tokens": 13428,
+    "content_output_tokens": 864,
+    "timestamp": "2026-04-15T14:31:27.944045",
     "auditor_version": "1.0.0"
   }
 }

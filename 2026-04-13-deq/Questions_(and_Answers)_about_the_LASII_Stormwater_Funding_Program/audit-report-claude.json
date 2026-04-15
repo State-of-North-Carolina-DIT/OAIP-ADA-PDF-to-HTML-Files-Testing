@@ -1,102 +1,62 @@
 {
   "document_id": "Questions_(and_Answers)_about_the_LASII_Stormwater_Funding_Program",
-  "verdict": "pass",
+  "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V4",
-      "description": "The 'Background' heading in the PDF is underlined and bold, while in the HTML it appears as a larger heading without underline styling.",
+      "check_id": "C1",
+      "description": "HTML adds an <hr> element between the Background section and Question 1 that is not present in the PDF. This is a formatting addition, not content fabrication, but worth noting.",
       "severity": "minor",
-      "evidence": "PDF: 'Background' is underlined and bold in smaller font. HTML: 'Background' is rendered as a larger section heading without underline.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Answer text in the PDF is indented under the question, while in the HTML the answers appear at the same margin level as the questions.",
-      "severity": "minor",
-      "evidence": "PDF: ANSWER blocks are visually indented. HTML: ANSWER blocks are flush with QUESTION blocks.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "In Question 3 answer, the PDF spells it 'ANSWSER' (typo preserved in both), but the indentation formatting differs.",
-      "severity": "minor",
-      "evidence": "PDF: indented answer block. HTML: same-level answer block.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Answer blocks on page 3 (Questions 10, 11) lose their visual indentation in the HTML compared to the PDF.",
-      "severity": "minor",
-      "evidence": "PDF: Answer text is indented under questions. HTML: Answer text is at the same left margin as question text.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Bullet list items in Question 11 answer appear with slightly different formatting but content is preserved.",
-      "severity": "minor",
-      "evidence": "PDF: bulleted list with bold 'OR'. HTML: bulleted list with bold 'OR' - content matches.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Answer blocks on page 4 lose their visual indentation in HTML.",
-      "severity": "minor",
-      "evidence": "PDF: Answers are indented. HTML: Answers are at the same margin level.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Answer blocks on page 5 lose their visual indentation in HTML.",
-      "severity": "minor",
-      "evidence": "PDF: Answers for Q17-Q20 are indented. HTML: Answers are at the same margin level as questions.",
-      "page": 5,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C5",
-      "description": "Nested <main> elements in the HTML. The HTML has two nested <main> tags, which is semantically incorrect but does not affect content fidelity.",
-      "severity": "minor",
-      "evidence": "HTML contains <body><main><main>...</main></main></body>",
+      "evidence": "Multiple <hr> tags appear in the HTML as visual separators between Q&A sections and at page boundaries. These are not content in the PDF but are structural formatting choices.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C4",
-      "description": "Several hyperlinks present in the PDF are not preserved as clickable links in the HTML. The PDF contains links to 'Division's website', 'training video', '(available here)', 'US Environmental Protection Agency', 'Levee Terms & Definitions (army.mil)', and 'Division's website' (for resolutions). The HTML does not include href attributes for most of these.",
+      "description": "Links present in the PDF are referenced in the HTML but without actual href URLs. The PDF contains hyperlinks to 'Division's website', 'training video', '(available here)', 'US Environmental Protection Agency', 'Levee Terms & Definitions (army.mil)', and 'Division's website' again. The HTML mentions these as plain text or with generic references rather than preserving the actual URLs.",
       "severity": "minor",
-      "evidence": "PDF has hyperlinks for 'Division's website', 'training video', '(available here)', 'US Environmental Protection Agency', and 'Levee Terms & Definitions (army.mil)'. HTML text mentions these but does not include clickable hyperlinks (no <a> tags with href attributes for most).",
+      "evidence": "PDF has clickable links like 'Division's website', 'training video', '(available here)', 'US Environmental Protection Agency', 'Levee Terms & Definitions (army.mil)'. The HTML removes the hyperlink functionality for most of these, rendering them as plain text references.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses h2 for 'Background' but does not use heading tags for any of the 20 Q&A items, which could be considered section-level content. However, this is an acceptable structural decision since the Q&A items are styled with bold text inline.",
+      "severity": "minor",
+      "evidence": "Only h1 (title) and h2 (Background) headings are used. Questions are marked up as bold paragraphs, which is a reasonable choice.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested duplicate <main> element, which causes the entire content to be structurally duplicated in the DOM, though it renders as a single copy visually.",
+      "severity": "major",
+      "evidence": "The HTML has '<main>' inside another '<main>' element: the outer <main> wraps the inner <main> which contains all the content.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "The typo 'ANSWSER' in Question 3's answer is faithfully preserved from the PDF, which is correct behavior. No meaning-altering text changes were found.",
+      "description": "The typo 'ANSWSER' from the original PDF (Question 3's answer) is faithfully preserved in the HTML, which is correct behavior.",
       "severity": "minor",
-      "evidence": "Both PDF and HTML show 'ANSWSER: No.' for Question 3's answer.",
+      "evidence": "PDF page 2: 'ANSWSER: No.' \u2014 HTML: '<strong>ANSWSER:</strong> No.'",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 0,
-  "minor_count": 10,
+  "major_count": 1,
+  "minor_count": 4,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 32.62,
+    "duration_seconds": 67.19,
     "page_count": 5,
-    "visual_input_tokens": 15119,
-    "visual_output_tokens": 984,
-    "content_input_tokens": 16943,
-    "content_output_tokens": 566,
-    "timestamp": "2026-04-14T05:02:31.083543",
+    "visual_input_tokens": 15151,
+    "visual_output_tokens": 304,
+    "content_input_tokens": 17007,
+    "content_output_tokens": 850,
+    "timestamp": "2026-04-15T14:36:35.676430",
     "auditor_version": "1.0.0"
   }
 }

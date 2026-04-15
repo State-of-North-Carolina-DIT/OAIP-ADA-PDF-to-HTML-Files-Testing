@@ -1,62 +1,46 @@
 {
   "document_id": "RoxboroMeetingOfficerReport_20160428",
-  "verdict": "pass",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "V1",
-      "description": "Header text alignment shift",
-      "severity": "minor",
-      "evidence": "In the PDF, the names and titles (e.g., 'PAT MCCRORY Governor') are positioned in a right-aligned block at the top of the page. In the HTML, they are left-aligned below the logo.",
+      "description": "The multi-column layout of the document header has been lost.",
+      "severity": "major",
+      "evidence": "In the PDF, the agency logo is positioned on the left, while the official names and titles (PAT MCCRORY, DONALD R. VAN DER VAART, etc.) are positioned on the right, creating a two-column header layout. The HTML collapses this into a single vertical column, placing the text directly below the logo.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Extraneous digital signature metadata rendered as visible text",
-      "severity": "minor",
-      "evidence": "The HTML includes a text block starting with 'Digitally signed by Elizabeth S Werner...' inserted between the 'From' and 'Subject' lines. This is hidden signature metadata in the PDF and not part of the visible source text.",
+      "check_id": "V5",
+      "description": "Extraneous metadata has been extracted and inserted into the visible reading order.",
+      "severity": "major",
+      "evidence": "A block of text detailing a digital signature ('Digitally signed by Elizabeth S Werner... DN: cn=... Date:...') appears in the HTML between the 'From' and 'Subject' fields. This metadata is not part of the visible text flow in the source PDF and disrupts the standard memorandum format.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V4",
-      "description": "Missing underline text formatting",
-      "severity": "minor",
-      "evidence": "The lead-in terms for the bulleted list (e.g., 'Excavation', 'Groundwater Assessments') are both bold and underlined in the PDF. In the HTML, they are bold but missing the underline formatting.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Missing underline text formatting",
-      "severity": "minor",
-      "evidence": "The lead-in terms for the bulleted list (e.g., 'Beneficial Reuse', 'Health Concerns') are both bold and underlined in the PDF. In the HTML, they are bold but missing the underline formatting.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Missing underline text formatting",
-      "severity": "minor",
-      "evidence": "The lead-in terms for the bulleted list (e.g., 'Risk Classification', 'Surface Water') are both bold and underlined in the PDF. In the HTML, they are bold but missing the underline formatting.",
-      "page": 5,
+      "check_id": "V3",
+      "description": "A decorative graphical element has been incorrectly rendered, resulting in a large visual artifact.",
+      "severity": "major",
+      "evidence": "In the HTML output corresponding to the transition from page 1 to page 2, there is a large, thick green and blue rectangular block. This appears to be a distorted, incorrectly scaled rendering of the thin decorative line found in the footer of the source PDF.",
+      "page": 2,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
-  "major_count": 0,
-  "minor_count": 5,
+  "major_count": 3,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 43.65,
+    "duration_seconds": 80.82,
     "page_count": 5,
-    "visual_input_tokens": 11658,
-    "visual_output_tokens": 791,
-    "content_input_tokens": 7312,
-    "content_output_tokens": 149,
-    "timestamp": "2026-04-14T05:04:00.946371",
+    "visual_input_tokens": 11861,
+    "visual_output_tokens": 677,
+    "content_input_tokens": 7373,
+    "content_output_tokens": 151,
+    "timestamp": "2026-04-15T14:39:34.447102",
     "auditor_version": "1.0.0"
   }
 }

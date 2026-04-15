@@ -3,36 +3,28 @@
   "verdict": "needs_review",
   "findings": [
     {
-      "check_id": "V1",
-      "description": "The complex spatial layout of the original map document is not preserved, resulting in a single-column linear layout.",
+      "check_id": "V3",
+      "description": "Visual symbols in the map legend were lost during extraction.",
       "severity": "major",
-      "evidence": "The PDF features a multi-region layout with a central map overlaid with data tables, a title block occupying the right margin, and notes in the bottom left corner. The HTML renders all extracted text elements (titles, metadata, legend, tables, notes) sequentially in a single column below or above the main map image.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Text color formatting conveying potential meaning is lost in the extracted tables.",
-      "severity": "minor",
-      "evidence": "In the PDF, the text 'RES HI: 1.7' within the callout box for SD-5 is colored red, which may indicate an exceedance or special status. In the HTML's extracted table for SD-5, this text is rendered in the default black color.",
+      "evidence": "In the PDF, the legend contains specific graphical icons (e.g., a blue diamond, colored lines, colored outlines) paired with text to identify map features. In the HTML, the legend has been extracted as a text-only unordered list, omitting the visual symbols. This makes it impossible for the reader to associate the text descriptions with the features shown on the map.",
       "page": 1,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 1,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 54.35,
+    "duration_seconds": 108.58,
     "page_count": 1,
-    "visual_input_tokens": 2862,
-    "visual_output_tokens": 375,
-    "content_input_tokens": 4231,
-    "content_output_tokens": 141,
-    "timestamp": "2026-04-14T05:05:43.214500",
+    "visual_input_tokens": 3065,
+    "visual_output_tokens": 292,
+    "content_input_tokens": 4292,
+    "content_output_tokens": 152,
+    "timestamp": "2026-04-15T14:41:23.024581",
     "auditor_version": "1.0.0"
   }
 }

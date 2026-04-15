@@ -1,38 +1,21 @@
 {
   "document_id": "IHSB_Annual_Land_Use_Restriction_Report_Form",
-  "verdict": "needs_review",
-  "findings": [
-    {
-      "check_id": "V1",
-      "description": "Inconsistent insertion of checkbox characters in form list.",
-      "severity": "major",
-      "evidence": "The source PDF relies on empty space under 'YES NA' for users to check. The HTML conversion artificially inserts checkbox characters, but does so inconsistently: some list items receive a single checkbox '[]' while others receive two '[][]'.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Header logo alignment changed.",
-      "severity": "minor",
-      "evidence": "The DEQ logo is centered in the original PDF but is left-aligned in the HTML version.",
-      "page": 1,
-      "call_source": "visual"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "critical_count": 0,
-  "major_count": 1,
-  "minor_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 48.01,
+    "duration_seconds": 38.8,
     "page_count": 1,
-    "visual_input_tokens": 2890,
-    "visual_output_tokens": 292,
-    "content_input_tokens": 3171,
-    "content_output_tokens": 143,
-    "timestamp": "2026-04-14T04:57:38.109808",
+    "visual_input_tokens": 3093,
+    "visual_output_tokens": 104,
+    "content_input_tokens": 3232,
+    "content_output_tokens": 142,
+    "timestamp": "2026-04-15T14:26:53.939752",
     "auditor_version": "1.0.0"
   }
 }

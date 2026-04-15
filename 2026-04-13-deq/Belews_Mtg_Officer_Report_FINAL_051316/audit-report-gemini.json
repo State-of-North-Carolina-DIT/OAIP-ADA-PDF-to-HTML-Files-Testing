@@ -1,46 +1,54 @@
 {
   "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
+      "check_id": "V1",
+      "description": "The right-aligned header block containing official names and titles is duplicated.",
+      "severity": "major",
+      "evidence": "In the PDF, the header block ('PAT McCRORY...', etc.) appears once at the top right. In the HTML, it appears at the top right, and is then duplicated below the injected footer elements, preceding the 'MEMORANDUM' title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
       "check_id": "V5",
-      "description": "Page footers and decorative elements are injected inline into the main content, breaking the reading order and splitting paragraphs/list items.",
-      "severity": "critical",
-      "evidence": "On HTML page 3, the text of the 'Environmental' bullet point is interrupted by the page footer text ('State of North Carolina...') and a decorative gradient bar before continuing with the rest of the sentence. This issue occurs across multiple pages.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Tabular layout of memo metadata is lost.",
+      "description": "The outline list at the bottom of the page is split, with parts appearing before and after an injected footer block.",
       "severity": "major",
-      "evidence": "On PDF page 1, the Date, To, From, and Subject fields are aligned in a structured format. In the HTML, this alignment is completely lost, and the text is rendered as a single vertical column of blocks.",
+      "evidence": "The outline list at the bottom of PDF page 1 contains four items. In the HTML, items I and II appear on page 1, while items III and IV appear at the top of page 2, separated from the rest of the list and immediately followed by injected footer elements.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Header content is duplicated and page elements are placed out of order.",
+      "check_id": "V5",
+      "description": "Document footer elements are injected into the middle of continuous text blocks, disrupting the reading order.",
       "severity": "major",
-      "evidence": "On HTML page 1, the right-aligned text block starting with 'PAT McCRORY' appears correctly at the top right, but then appears a second time further down the page, immediately following an improperly injected footer and gradient bar.",
-      "page": 1,
+      "evidence": "At the transition between pages, the footer text and gradient bar are rendered inline, breaking sentences in half. For example, between PDF pages 2 and 3, the sentence 'Comments were made alleging that wildlife...' is split, with the footer elements appearing directly between 'made' and 'alleging' in the HTML.",
+      "page": 2,
       "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Page footer text and decorative footer images are inserted directly into the middle of sentences where page breaks occurred in the original PDF.",
+      "severity": "minor",
+      "evidence": "In Section II, the 'Environmental' bullet is interrupted: 'Comments were made [FOOTER HTML] alleging that wildlife...'. A similar interruption occurs in Section III's 'Environmental' bullet: '...relying on water intakes [FOOTER HTML] downstream of the Belews Creek...'",
+      "page": null,
+      "call_source": "content"
     }
   ],
-  "critical_count": 1,
-  "major_count": 2,
-  "minor_count": 0,
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 51.23,
+    "duration_seconds": 99.81,
     "page_count": 5,
-    "visual_input_tokens": 11618,
-    "visual_output_tokens": 620,
-    "content_input_tokens": 7358,
-    "content_output_tokens": 167,
-    "timestamp": "2026-04-11T06:02:24.034773",
+    "visual_input_tokens": 11821,
+    "visual_output_tokens": 650,
+    "content_input_tokens": 7419,
+    "content_output_tokens": 270,
+    "timestamp": "2026-04-15T14:23:45.047143",
     "auditor_version": "1.0.0"
   }
 }

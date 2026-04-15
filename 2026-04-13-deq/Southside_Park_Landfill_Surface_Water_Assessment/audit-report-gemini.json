@@ -1,21 +1,30 @@
 {
   "document_id": "Southside_Park_Landfill_Surface_Water_Assessment",
   "verdict": "pass",
-  "findings": [],
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Graphical symbols missing from the extracted legend list.",
+      "severity": "minor",
+      "evidence": "In the PDF, the legend contains graphical symbols (e.g., colored lines, blue diamond) next to the descriptions. In the HTML's linear text extraction, these items are rendered as a text-only bulleted list without their corresponding symbols. However, the original full legend remains intact and visible within the main embedded map image.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
   "critical_count": 0,
   "major_count": 0,
-  "minor_count": 0,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 53.0,
+    "duration_seconds": 145.39,
     "page_count": 1,
-    "visual_input_tokens": 2862,
-    "visual_output_tokens": 139,
-    "content_input_tokens": 4031,
-    "content_output_tokens": 156,
-    "timestamp": "2026-04-14T05:05:02.448823",
+    "visual_input_tokens": 3065,
+    "visual_output_tokens": 283,
+    "content_input_tokens": 4092,
+    "content_output_tokens": 159,
+    "timestamp": "2026-04-15T14:41:47.009424",
     "auditor_version": "1.0.0"
   }
 }

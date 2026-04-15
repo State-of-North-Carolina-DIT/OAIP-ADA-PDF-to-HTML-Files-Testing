@@ -4,99 +4,107 @@
   "findings": [
     {
       "check_id": "V3",
-      "description": "The NC Energy, Mineral & Land Resources logo/graphic is present in the HTML but appears smaller and positioned differently relative to the header text.",
+      "description": "The NC Energy, Mineral & Land Resources logo/graphic is not rendered in the HTML version",
       "severity": "minor",
-      "evidence": "PDF shows the logo prominently in the upper left with header text on the right. HTML shows a similar arrangement but the logo appears as a smaller rendered version.",
+      "evidence": "PDF page 1 shows the NC state logo with 'Energy, Mineral & Land Resources / ENVIRONMENTAL QUALITY' branding in the top left. The HTML version appears to omit this logo graphic.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "The To/From/Subject fields in the HTML are rendered without the tabular indentation structure of the PDF.",
-      "severity": "minor",
-      "evidence": "PDF has clear label-value alignment with indentation for the To, From, and Subject fields. HTML renders them as sequential lines without the same structured spacing.",
+      "description": "Page 2 in PDF contains only the bottom of page 1 content (footer area) and is mostly blank, but the HTML rendering shows the full header block repeated plus the beginning of the memorandum content again, creating duplicate content",
+      "severity": "major",
+      "evidence": "PDF page 2 is essentially blank with just a footer. HTML page 2 shows the full government header (PAT McCRORY, DONALD R. VAN DER VAART, TRACY DAVIS), MEMORANDUM heading, and repeats the memo fields (To, From, Subject) and introductory paragraphs that were already on page 1.",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "The MEMORANDUM heading in the HTML has a horizontal rule underneath it, which the PDF shows as underlined text without a full-width rule.",
+      "description": "The outline list on page 1 uses Roman numerals with periods in the PDF but the HTML rendering matches this format adequately",
       "severity": "minor",
-      "evidence": "PDF: 'MEMORANDUM' is underlined centered text. HTML: 'MEMORANDUM' has a full-width horizontal rule beneath it.",
-      "page": 2,
+      "evidence": "Both versions show I. History/Background, II. March 10, 2016..., III. Written Public Comments Summary, IV. Attachments",
+      "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "The outline items (I through IV) in the HTML lack the same indented columnar alignment as the PDF.",
+      "description": "Page 4 in PDF is mostly blank (bottom of page 3 content area) but the HTML version shows it as a continuation page with full content from the History/Background section and into the Meeting and Oral Comments Summary",
+      "severity": "major",
+      "evidence": "PDF page 4 is largely empty with just footer. HTML page 4 contains substantial content including bullet points about CAMA process and the beginning of Section II.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 6 in the HTML collapses content from PDF pages 5-6, showing oral comment topics and written comment summary topics together",
       "severity": "minor",
-      "evidence": "PDF shows Roman numerals aligned with content indented to the right. HTML shows them as a simple list with less structured alignment.",
-      "page": 2,
+      "evidence": "The HTML rendering combines content across page boundaries differently than the PDF, though the content itself is preserved",
+      "page": 6,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "Bullet points in the HTML use filled circles (disc style) while the PDF uses open/hollow circles for the CAMA process list.",
+      "description": "In the Attachments section, the PDF uses Roman numerals aligned with periods (I., II., III., etc.) while the HTML version also uses Roman numerals but with slightly different list formatting",
       "severity": "minor",
-      "evidence": "PDF page 3: hollow bullet points for the CAMA process items. HTML: filled disc bullets.",
-      "page": 3,
+      "evidence": "PDF shows attachment list as formatted Roman numeral list with tab stops. HTML shows similar content but as a simpler list.",
+      "page": 7,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "The MEMORANDUM title is styled as h1 with underline and center alignment, which is acceptable. However, the section headings (I, II, III, IV) are rendered as h2 elements, which is appropriate given h1 is used for the document title. No hierarchy skip issues found.",
+      "description": "The MEMORANDUM title is styled as h1, which is acceptable, but the document outline section 'I. History/Background' uses the same heading text as the PDF. However, the outline list on page 1 uses Roman numerals I-IV which in the HTML uses <ol type='I'> but the Attachments section on page 4 also uses <ol type='I'> starting from I, which matches the PDF structure. No actual hierarchy breakage.",
       "severity": "minor",
-      "evidence": "h1: MEMORANDUM, h2: I. History/Background, h2: II. March 10, 2016 Public Meeting and Oral Comments Summary, h2: III. Written Public Comment Summary, h2: IV. Attachments",
+      "evidence": "Heading structure is reasonable: h1 for MEMORANDUM, h2 for sections I-IV. This is acceptable.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C6",
-      "description": "The first image has a reasonable alt text describing the NC DEQ logo. However, three subsequent images on pages 2-4 have empty alt text attributes (alt=\"\"), which are likely page-level decorative images or repeated headers. This is minor since the images appear to be repeated header/logo images.",
+      "description": "The first image has alt text 'NC Department of Environmental Quality Logo' which is a reasonable description of the NC logo. However, pages 2-4 have images with empty alt text (alt=''), which appear to be repeated full-page images that are likely artifacts of the conversion process rather than meaningful content images.",
       "severity": "minor",
-      "evidence": "First img: alt=\"NC Department of Environmental Quality Logo\"; Pages 2-4 imgs: alt=\"\"",
+      "evidence": "Pages 2-4: <img src='[embedded-image-removed]' alt='' style='width: 612.0pt; height: auto;'>",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML has a broken list structure where the bulleted list from the oral comments section (Section II) is split across pages 2 and 3, with a page footer div inserted inside the <ul> element between the first list item and the remaining items. Similarly, the written comments list (Section III) is split across pages 3 and 4 with a footer div and image inserted inside the <ul>. This creates malformed HTML with content interspersed incorrectly, though the actual text content is not duplicated.",
+      "description": "The HTML has a broken list structure where the bulleted list from the Oral Comments Summary (Section II) spans across pages 2 and 3, but the page footer div is inserted INSIDE the <ul> element between list items, and a second <figure> image tag is also inserted mid-list. Similarly, the Written Public Comments list (Section III) has a page footer and figure inserted mid-list between pages 3 and 4. While the content itself is not duplicated, this creates malformed HTML that breaks the semantic list structure.",
       "severity": "major",
-      "evidence": "The <ul> starting with 'Environmental:' on page 2 has a page-footer div and page 3 figure img inserted between <li> elements before closing </ul> after page 3 content. Same pattern for Section III list spanning pages 3-4.",
+      "evidence": "The <ul> starting in Section II has a <div class='page-footer'> and <figure> tag inserted between <li> elements, splitting the list across page boundaries improperly.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "The governor's name in the HTML header shows 'PAT McCrORY' with inconsistent capitalization, while the PDF shows 'PAT McCRORY'. This is a minor text accuracy issue in the header reproduction.",
+      "description": "The governor's name in the HTML header is rendered as 'PAT McCrORY' with inconsistent capitalization, whereas the PDF shows 'PAT McCRORY'.",
       "severity": "minor",
       "evidence": "PDF: 'PAT McCRORY', HTML: 'PAT McCrORY'",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C6",
-      "description": "The first image alt text says 'NC Department of Environmental Quality Logo' but the image dimensions are set to width 612pt which suggests it may be a full-page scan rather than just a logo. The alt text is somewhat inaccurate but minor.",
+      "check_id": "C5",
+      "description": "There are two nested <main> elements in the HTML, which is invalid HTML structure but does not affect content fidelity.",
       "severity": "minor",
-      "evidence": "img alt=\"NC Department of Environmental Quality Logo\" style=\"width: 612.0pt;\"",
+      "evidence": "<body><main><main>...</main></main></body>",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 1,
-  "minor_count": 9,
+  "major_count": 3,
+  "minor_count": 8,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 45.85,
+    "duration_seconds": 80.24,
     "page_count": 4,
-    "visual_input_tokens": 13036,
-    "visual_output_tokens": 1022,
-    "content_input_tokens": 12375,
-    "content_output_tokens": 978,
-    "timestamp": "2026-04-11T06:03:38.079285",
+    "visual_input_tokens": 13253,
+    "visual_output_tokens": 1148,
+    "content_input_tokens": 12439,
+    "content_output_tokens": 927,
+    "timestamp": "2026-04-15T14:25:44.590540",
     "auditor_version": "1.0.0"
   }
 }

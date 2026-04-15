@@ -4,83 +4,59 @@
   "findings": [
     {
       "check_id": "V3",
-      "description": "DEQ logo placement differs between PDF and HTML",
+      "description": "Logo placement differs between PDF and HTML. In the PDF, the DEQ logo is centered at the top of the page, while in the HTML it is left-aligned.",
       "severity": "minor",
-      "evidence": "In the PDF, the DEQ logo is centered at the top of the page. In the HTML, the logo is left-aligned at the top of the page.",
+      "evidence": "PDF: DEQ logo centered at top. HTML: DEQ logo left-aligned at top.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "Title formatting and layout differs",
-      "severity": "minor",
-      "evidence": "In the PDF, 'Inactive Hazardous Sites Branch' and 'Annual Report Form for Perpetual Land-Use Restrictions' are both bold and centered together as a heading block. In the HTML, 'Inactive Hazardous Sites Branch' is a larger standalone heading with a horizontal rule below it, and 'Annual Report Form for Perpetual Land-Use Restrictions' appears as a separate subheading below the rule.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Checklist item layout differs slightly",
-      "severity": "minor",
-      "evidence": "In the PDF, the checklist items have YES/NA column headers with indented text items below. In the HTML, checkbox squares (\u2610) are placed inline before each item. The functional content is preserved but the visual presentation of the YES/NA selection mechanism differs.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "First checklist item missing second checkbox column",
-      "severity": "minor",
-      "evidence": "In the PDF, each checklist item has both YES and NA options. In the HTML, the first item ('All restrictions in the recorded Declaration...') has only one checkbox, while items 2-5 have two checkboxes. Items 6 and 7 also have only one checkbox each.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "YES NA header formatting differs",
-      "severity": "minor",
-      "evidence": "In the PDF, 'YES' and 'NA' are underlined and bold as column headers with '(not applicable)' in italics. In the HTML, 'YES' and 'NA' are bold/underlined but '(not applicable)' is in regular italic, which is acceptable, but the column header nature is less clear.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C5",
-      "description": "The HTML uses h1 for 'Inactive Hazardous Sites Branch' and h2 for 'Annual Report Form for Perpetual Land-Use Restrictions', but in the PDF these are both part of the same document title/header. Additionally, 'Property Owner Certification Statement' is rendered as h3 in the HTML, but it is a bold section heading in the PDF at the same structural level \u2014 not a sub-section of the checklist. The hierarchy is slightly misleading but not critically broken.",
+      "description": "The checklist items in the PDF have two columns of checkboxes (YES and NA) preceding each item, but in the HTML, the first item only has one checkbox while items 2-5 have two checkboxes, and items 6-7 have only one checkbox. The checkbox structure is inconsistent and does not uniformly match the PDF's YES/NA dual-checkbox format.",
       "severity": "major",
-      "evidence": "PDF: 'Inactive Hazardous Sites Branch' and 'Annual Report Form for Perpetual Land-Use Restrictions' appear as a combined title. HTML: h1 and h2 respectively. 'Property Owner Certification Statement' is h3 in HTML but is a primary section heading in the PDF.",
+      "evidence": "PDF: Each checklist item has space for YES and NA checkboxes. HTML: Item 1 has one checkbox, items 2-5 have two checkboxes (\u25a1 \u25a1), items 6-7 have one checkbox (\u25a1). The first item about DPLUR compliance only shows one checkbox in HTML instead of two.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Inconsistent checkbox rendering across checklist items. The first item has only one checkbox symbol, while items 2-5 have two checkbox symbols. Items 6-7 have only one checkbox symbol. In the original PDF, every item has two columns (YES and NA) for checkboxes.",
+      "severity": "major",
+      "evidence": "PDF shows two checkbox columns (YES and NA) for all 7 items. HTML first item: '\u2610 All restrictions...' (one checkbox). Items 2-5: '\u2610 \u2610' (two checkboxes). Items 6-7: '\u2610' (one checkbox). The first item is missing the second checkbox, and items 6-7 are each missing one checkbox.",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C8",
-      "description": "The first checklist item is missing its YES/NA dual-checkbox structure. In the PDF, all seven items have two checkboxes (YES and NA columns). In the HTML, the first item only has one checkbox symbol (&#9744;), while items 2-5 have two checkbox symbols. Items 6 and 7 also only have one checkbox symbol each. This inconsistency misrepresents the form structure.",
-      "severity": "major",
-      "evidence": "PDF shows two columns (YES and NA) for all seven checklist items. HTML first item: '&#9744; All restrictions in the recorded Declaration...' (one checkbox). Items 2-5: '&#9744; &#9744;' (two checkboxes). Items 6-7: '&#9744;' (one checkbox each).",
+      "check_id": "C5",
+      "description": "The document title is split across h1 and h2 in the HTML. The PDF has a two-line centered title: 'Inactive Hazardous Sites Branch' and 'Annual Report Form for Perpetual Land-Use Restrictions'. The HTML uses h1 for the first line and h2 for the second, which could imply they are separate sections rather than a unified title.",
+      "severity": "minor",
+      "evidence": "HTML: '<h1>Inactive Hazardous Sites Branch</h1><h2>Annual Report Form for Perpetual Land-Use Restrictions</h2>'. PDF shows these as a single combined title block.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML contains a nested <main> element inside another <main> element, which is a structural duplication of the semantic container. The form content is wrapped in both an outer <main> and an inner <main>.",
+      "description": "The HTML has nested <main> elements \u2014 there is an outer <main> in the body and another <main> inside it. This creates structural duplication of the main content wrapper.",
       "severity": "major",
-      "evidence": "HTML: <body><main>...<main>...form content...</main></main></body> \u2014 two nested <main> tags.",
+      "evidence": "HTML structure: <body><main>...<header>...</header><main>...content...</main></main></body>. The inner <main> is redundant.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 3,
-  "minor_count": 5,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 31.95,
+    "duration_seconds": 31.86,
     "page_count": 1,
-    "visual_input_tokens": 3817,
-    "visual_output_tokens": 801,
-    "content_input_tokens": 4750,
-    "content_output_tokens": 754,
-    "timestamp": "2026-04-14T04:57:35.152140",
+    "visual_input_tokens": 4034,
+    "visual_output_tokens": 483,
+    "content_input_tokens": 4814,
+    "content_output_tokens": 670,
+    "timestamp": "2026-04-15T14:26:49.804022",
     "auditor_version": "1.0.0"
   }
 }

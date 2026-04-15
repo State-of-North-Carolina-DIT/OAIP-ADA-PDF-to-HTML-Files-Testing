@@ -3,140 +3,108 @@
   "verdict": "needs_review",
   "findings": [
     {
+      "check_id": "V3",
+      "description": "The lighthouse panoramic image and cityscape panoramic image in the HTML are smaller and stacked differently than in the PDF title slide, but both are present and in the correct section.",
+      "severity": "minor",
+      "evidence": "PDF shows two panoramic images spanning the full width as background-style elements; HTML shows them as smaller inline images stacked vertically.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
       "check_id": "V1",
-      "description": "The title slide layout is not preserved. The PDF has a centered layout with the title, author info, and date positioned between two panoramic images. The HTML renders these elements left-aligned in a single-column flow with images and text separated.",
+      "description": "The title slide layout in the PDF has the NC logo on the left with the title text and author info on the right in a side-by-side arrangement. The HTML renders everything in a single column stacked layout.",
       "severity": "major",
-      "evidence": "PDF: Title is centered in italic blue between two landscape photos with NC logo to the left. HTML: Content is left-aligned, images are smaller and stacked, title text appears below images rather than between them.",
+      "evidence": "PDF: NC logo left-aligned with title and author info to the right. HTML: NC logo above, then title text, then author info, all stacked vertically.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Images on the title page are significantly smaller in the HTML compared to the PDF, where they span the full width of the slide.",
+      "description": "The coal combustion image on slide 2 is present in both PDF and HTML but rendered at a different size in HTML.",
       "severity": "minor",
-      "evidence": "PDF: Two full-width panoramic images spanning the entire slide. HTML: Same images present but rendered at reduced width.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The title text on page 1 loses its italic styling in the HTML version.",
-      "severity": "minor",
-      "evidence": "PDF: '15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals' is in italic blue. HTML: Same text appears in bold non-italic dark font.",
-      "page": 1,
+      "evidence": "PDF shows a larger image to the right of the bullet list; HTML shows a smaller version below the bullet list.",
+      "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V1",
-      "description": "Page 2 layout changes from a side-by-side arrangement (bullet list on left, image on right) to a stacked arrangement in HTML.",
-      "severity": "minor",
-      "evidence": "PDF: Bullet points on left side, construction/coal image on right side. HTML: Bullets listed first, image below.",
+      "description": "Slide 2 has a two-region layout in the PDF (bullets on left, image on right). HTML collapses this to a single column with bullets above and image below.",
+      "severity": "major",
+      "evidence": "PDF: Purpose, Methodology, Major Components bullets on left, coal image on right. HTML: bullets stacked above the image.",
       "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The title 'DEMLR Dam Safety Rulemaking' loses its italic blue styling in the HTML.",
-      "severity": "minor",
-      "evidence": "PDF: Title in italic blue. HTML: Title in bold dark font.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Page 3 title 'Dam Safety CCR Rulemaking Purpose' loses its italic blue styling.",
-      "severity": "minor",
-      "evidence": "PDF: Italic blue title. HTML: Bold dark font title.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Page 4 title 'Dam Safety CCR Rulemaking Methodology' loses its italic blue styling.",
-      "severity": "minor",
-      "evidence": "PDF: Italic blue title. HTML: Bold dark font title.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "On page 5, the bold/underline emphasis on 'equal to or more restrictive' and 'more restrictive' is partially preserved but the underline formatting appears different.",
-      "severity": "minor",
-      "evidence": "PDF: Bold underlined text. HTML: Bold text present but underline styling may differ.",
-      "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "V2",
-      "description": "Page 7 regulatory impact analysis is rendered as a table in HTML but presented as aligned text pairs in the PDF. The data is preserved correctly.",
+      "description": "The Regulatory Impact Analysis data on slide 7 is presented as a simple list in the PDF but rendered as a proper table in the HTML. Both contain the same data and are readable.",
       "severity": "minor",
-      "evidence": "PDF: Label-value pairs in aligned columns. HTML: Formal table with headers, rows, and borders.",
+      "evidence": "PDF: label-value pairs in aligned text. HTML: structured table with Category and Impact columns.",
       "page": 7,
       "call_source": "visual"
     },
     {
       "check_id": "V2",
-      "description": "Page 8 contact information is rendered as a formatted table in HTML but was aligned text in the PDF. Data is preserved.",
+      "description": "The Questions and Answers contact information on slide 8 is presented as inline text in the PDF but rendered as a table with Name/Email/Phone columns in the HTML. Data is the same.",
       "severity": "minor",
-      "evidence": "PDF: Names, emails, and phone numbers in aligned columns. HTML: Formal table with Name/Email/Phone headers.",
+      "evidence": "PDF: Andrew Brooks and Daniel Kang contact info in text lines. HTML: structured table with Name, Email, Phone headers.",
       "page": 8,
       "call_source": "visual"
     },
     {
       "check_id": "C3",
-      "description": "The Regulatory Impact Analysis on page 7 of the PDF is presented as a simple label-value list, not a table. The HTML converts this into a formal table with headers 'Category' and 'Impact' that do not exist in the source PDF.",
+      "description": "The Regulatory Impact Analysis on page 7 is presented as a simple list of label-value pairs in the PDF, not as a formal table with headers. The HTML converts this into a table with fabricated column headers 'Category' and 'Impact' that do not appear in the source PDF.",
       "severity": "major",
-      "evidence": "PDF page 7 shows a simple two-column layout without table borders or headers. HTML adds <thead> with <th>Category</th> and <th>Impact</th> which are fabricated column headers.",
+      "evidence": "PDF page 7 shows a simple label-value layout (e.g., 'State Government: Minimal Costs'). HTML adds <thead> with <th>Category</th> and <th>Impact</th> which are not in the source.",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C1",
-      "description": "The table header labels 'Category' and 'Impact' on the Regulatory Impact Analysis table are fabricated - they do not appear in the source PDF.",
-      "severity": "minor",
-      "evidence": "PDF page 7 lists items like 'State Government: Minimal Costs' without any column headers. HTML adds 'Category' and 'Impact' as <th> elements.",
+      "check_id": "C3",
+      "description": "The contact information on page 8 is presented as aligned text in the PDF, not as a formal table. The HTML converts this into a table with fabricated column headers 'Name', 'Email', and 'Phone' that do not appear in the source PDF.",
+      "severity": "major",
+      "evidence": "PDF page 8 shows contact info as aligned text lines. HTML creates a table with <th>Name</th>, <th>Email</th>, <th>Phone</th> headers that don't exist in source.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C4",
-      "description": "The hyperlinks in the HTML on page 8 are rendered as plain text rather than clickable links. The PDF contained clickable hyperlinks for the URLs and email addresses.",
+      "description": "The hyperlinks from the PDF are preserved in text but not rendered as clickable links in the HTML. The URLs are present as plain text rather than <a> tags.",
       "severity": "minor",
-      "evidence": "PDF page 8 has clickable links for 'https://deq.nc.gov/documents/15a-ncac-02k-0224...' and email addresses. The HTML renders these as plain text without <a> tags (though the contact table does not use anchor tags either).",
+      "evidence": "PDF page 8 shows clickable links for 'https://deq.nc.gov/documents/15a-ncac-02k-0224...' and email addresses. HTML has these as plain text strings without <a href> wrappers.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C5",
-      "description": "Page 6 uses both h2 and h3, where the h3 '15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals' is actually the section subtitle/rule title that appears as bold text in the PDF, not a sub-heading under the main heading. This is a minor structural interpretation issue.",
+      "description": "Two consecutive sections (pages 6 and 7) both use the same h2 heading 'Major Components of Dam Safety CCR Rule', which is accurate to the PDF but page 7's content is primarily about Regulatory Impact Analysis, which is rendered as an h3 under that h2. This is a reasonable structural choice.",
       "severity": "minor",
-      "evidence": "PDF page 6 shows '15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals' as bold body text, not a sub-heading.",
+      "evidence": "Pages 6 and 7 of PDF both have the title 'Major Components of Dam Safety CCR Rule'. HTML correctly reflects this.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The HTML has two nested <main> elements, which is a structural duplication of the main container, though content itself is not duplicated.",
+      "description": "The HTML contains two nested <main> elements, which is a structural duplication issue in the HTML markup, though it doesn't affect content display.",
       "severity": "minor",
-      "evidence": "HTML source shows <main> containing another <main> element.",
+      "evidence": "HTML has <main> inside <body>, then another <main> inside the first <main>.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 2,
-  "minor_count": 13,
+  "major_count": 4,
+  "minor_count": 7,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 49.54,
+    "duration_seconds": 90.43,
     "page_count": 8,
-    "visual_input_tokens": 18108,
-    "visual_output_tokens": 1429,
-    "content_input_tokens": 17195,
-    "content_output_tokens": 842,
-    "timestamp": "2026-04-11T06:03:13.580112",
+    "visual_input_tokens": 18325,
+    "visual_output_tokens": 1087,
+    "content_input_tokens": 17259,
+    "content_output_tokens": 878,
+    "timestamp": "2026-04-15T14:25:08.925705",
     "auditor_version": "1.0.0"
   }
 }

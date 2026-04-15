@@ -3,108 +3,52 @@
   "verdict": "pass",
   "findings": [
     {
-      "check_id": "V3",
-      "description": "The NC Energy, Mineral & Land Resources logo/header graphic is present in both versions but the HTML version appears slightly different in sizing/positioning.",
-      "severity": "minor",
-      "evidence": "PDF shows the NC logo with 'Energy, Mineral & Land Resources' and 'ENVIRONMENTAL QUALITY' text beneath it on the left, with officials' names on the right. HTML preserves the same layout but with minor sizing differences.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The memo header fields (To, From, Subject) have slightly different formatting in HTML versus PDF.",
-      "severity": "minor",
-      "evidence": "PDF uses a more structured memo format with clear field labels and indented values. HTML renders them as separate lines without the same indentation alignment, though content is preserved.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The outline list (I through IV) has slightly different indentation and formatting in the HTML version.",
-      "severity": "minor",
-      "evidence": "PDF shows Roman numerals with tab-aligned text in a structured list format. HTML shows them with bullet-style indentation that is slightly different but still readable.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section heading 'I. History/Background' uses slightly different styling between PDF and HTML.",
-      "severity": "minor",
-      "evidence": "PDF uses bold Roman numeral with tab-separated bold heading. HTML uses a larger heading style for the same content.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section heading 'II. March 14, 2016 Public Meeting and Oral Comments Summary' uses a larger heading style in HTML compared to PDF.",
-      "severity": "minor",
-      "evidence": "PDF has a bold inline heading. HTML renders it as a larger, more prominent heading element.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Bold topic labels within bullet points are preserved but the colon usage and formatting differ slightly.",
-      "severity": "minor",
-      "evidence": "PDF shows 'Environmental:' with bold and colon formatting. HTML preserves the bold but styling is slightly different.",
-      "page": 6,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section III heading 'Written Public Comment Summary' uses a larger heading style in HTML.",
-      "severity": "minor",
-      "evidence": "PDF uses bold inline heading with Roman numeral. HTML renders as a larger standalone heading element.",
-      "page": 8,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Section IV 'Attachments' heading and the attachment list have slightly different formatting.",
-      "severity": "minor",
-      "evidence": "PDF uses Roman numerals (I through VI) with tab-aligned descriptions. HTML uses a similar numbered list but with slightly different indentation style.",
-      "page": 10,
-      "call_source": "visual"
-    },
-    {
       "check_id": "C5",
-      "description": "The document title 'MEMORANDUM' is rendered as h1, which is acceptable. However, the main section headings (I, II, III, IV) are rendered as h2, which is appropriate. No hierarchy skipping issues found. Minor note: the h1 has underline styling via <u> tag matching the PDF's underlined title.",
+      "description": "The HTML uses 'MEMORANDUM' as the h1 title, which is appropriate, but the subsequent section headings (I, II, III, IV) are rendered as h2 elements. This is acceptable, though the document structure in the PDF uses Roman numeral headings that are bold section titles rather than hierarchical sub-sections of the memorandum title.",
       "severity": "minor",
-      "evidence": "h1: MEMORANDUM, h2: I. History/Background, h2: II. March 14, 2016..., h2: III. Written Public Comment Summary, h2: IV. Attachments",
+      "evidence": "PDF: 'I. History/Background', 'II. March 14, 2016 Public Meeting and Oral Comments Summary', etc. are section headers. HTML renders them as h2, which is a reasonable structural choice.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C6",
-      "description": "Alt text on images is generic or vague rather than accurately descriptive. The first image alt text mentions 'document background' which is somewhat misleading - it appears to be the NC state logo/letterhead. Subsequent images have empty alt text.",
+      "description": "The first image has a descriptive alt text that is somewhat fabricated in specificity ('North Carolina Department of Environmental Quality document background'), while the remaining images have empty or non-descriptive alt text.",
       "severity": "minor",
-      "evidence": "First img: alt='North Carolina Department of Environmental Quality document background'; remaining images: alt=''",
+      "evidence": "HTML: alt='North Carolina Department of Environmental Quality document background' for first image; alt='' for subsequent images. The first image is the NC DEQ letterhead/logo area, so the alt text is reasonable but slightly embellished. The empty alt texts for subsequent images are for what appear to be page background images.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "There are nested <main> tags in the HTML (a <main> inside a <main>), which is a structural issue but does not cause content duplication. No actual content is duplicated.",
+      "description": "The HTML contains embedded background images (5 total) that appear to represent page-level rendering artifacts from the PDF. These are not content images from the PDF but rather full-page background captures.",
       "severity": "minor",
-      "evidence": "<body><main><main>...</main></main></body>",
+      "evidence": "HTML contains 5 <figure><img> tags with style='width: 612.0pt' that appear to be full-page background images, not content images from the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The Attachments section in the PDF lists attachments with Roman numerals I through VI, but the HTML also uses Roman numerals I through VI. However, the PDF page 2 lists them differently in the outline (I-IV for the report sections), and the attachment list on page 5 uses I-VI. The HTML correctly represents both.",
+      "severity": "minor",
+      "evidence": "PDF outline on page 1: I-IV. Attachments list on page 5: I-VI. HTML captures both correctly.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 0,
-  "minor_count": 11,
+  "minor_count": 4,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 43.46,
+    "duration_seconds": 78.46,
     "page_count": 5,
-    "visual_input_tokens": 16114,
-    "visual_output_tokens": 1226,
-    "content_input_tokens": 16347,
-    "content_output_tokens": 574,
-    "timestamp": "2026-04-14T05:03:39.625408",
+    "visual_input_tokens": 16331,
+    "visual_output_tokens": 579,
+    "content_input_tokens": 16411,
+    "content_output_tokens": 816,
+    "timestamp": "2026-04-15T14:38:50.630552",
     "auditor_version": "1.0.0"
   }
 }

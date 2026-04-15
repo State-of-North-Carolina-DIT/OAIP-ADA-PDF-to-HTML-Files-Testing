@@ -9,13 +9,13 @@
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 30.89,
+    "duration_seconds": 43.77,
     "page_count": 1,
-    "visual_input_tokens": 2890,
-    "visual_output_tokens": 128,
-    "content_input_tokens": 3849,
-    "content_output_tokens": 147,
-    "timestamp": "2026-04-14T04:56:15.545600",
+    "visual_input_tokens": 3093,
+    "visual_output_tokens": 124,
+    "content_input_tokens": 3910,
+    "content_output_tokens": 156,
+    "timestamp": "2026-04-15T14:25:52.701156",
     "auditor_version": "1.0.0"
   }
 }

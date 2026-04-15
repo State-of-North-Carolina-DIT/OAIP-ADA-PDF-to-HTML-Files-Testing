@@ -3,76 +3,60 @@
   "verdict": "needs_review",
   "findings": [
     {
+      "check_id": "V3",
+      "description": "The NC Waste Management / Environmental Quality logo appears differently positioned in the HTML. In the PDF it is in the upper left corner with proper sizing; in the HTML it appears similarly placed but the overall header layout with the officials' names on the right is reformatted.",
+      "severity": "major",
+      "evidence": "PDF: Logo top-left with PAT MCCRORY, DONALD R. VAN DER VAART, MICHAEL SCOTT aligned right. HTML: Same elements present but layout is single-column stacked rather than side-by-side.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
       "check_id": "V1",
-      "description": "The signature placement differs between PDF and HTML. In the PDF, the signature appears inline next to the From field. In the HTML, the signature appears below the From block.",
+      "description": "The memo signature placement differs. In the PDF, the signature appears inline next to the From field. In the HTML, the signature appears as a separate block below the From field information.",
       "severity": "minor",
-      "evidence": "PDF: signature is positioned to the right of the From: Ed Mussler / Green Square Central Office / Division of Waste Management block. HTML: signature appears as a separate block below the From information.",
+      "evidence": "PDF: Signature is positioned to the right of 'Green Square Central Office / Division of Waste Management'. HTML: Signature image appears as a separate block below the From section.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "The report outline list uses different formatting. PDF uses Roman numeral indentation with tab-aligned content, while HTML uses a simpler left-aligned list.",
+      "description": "In the outline list, the PDF uses Roman numerals with a tab-indented format (I., II., III., IV.) while HTML renders them with periods and slightly different formatting, though the list structure is preserved.",
       "severity": "minor",
-      "evidence": "PDF: Roman numerals I-IV with tab-indented descriptions. HTML: Similar but with less indentation structure.",
+      "evidence": "PDF: Indented Roman numeral list with clear tab stops. HTML: Roman numeral list with period-style formatting.",
       "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The oral comments summary topics use underlined bold formatting in the PDF. The HTML preserves the underline and bold but bullet style differs slightly.",
-      "severity": "minor",
-      "evidence": "PDF uses traditional bullet points with underlined bold topic headings. HTML uses disc-style bullets with underlined bold headings - functionally equivalent.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "The Attachments list in Section IV uses Roman numeral formatting with different indentation in HTML vs PDF.",
-      "severity": "minor",
-      "evidence": "PDF: Roman numerals I-IX with center-aligned numbering and tab-indented content. HTML: Roman numerals with left-aligned simpler formatting.",
-      "page": 5,
       "call_source": "visual"
     },
     {
       "check_id": "C5",
-      "description": "The document uses 'MEMORANDUM' as h1 and subsequent sections I-IV as h2, but the memo title line is styled as h1 with underline. The actual document title should arguably be the subject line or the memorandum heading. Additionally, the main content sections use multiple <main> elements which is semantically incorrect HTML but not a heading hierarchy issue per se. The heading hierarchy itself (h1 for MEMORANDUM, h2 for sections I-IV) is reasonable and consistent.",
+      "description": "The document title 'MEMORANDUM' is rendered as h1, which is acceptable. However, the main section headings (I, II, III, IV) are rendered as h2, which is correct. But the h1 uses both bold and underline inline styling rather than relying on the heading element alone \u2014 this is a stylistic choice, not a structural error. The more substantive issue is that the HTML uses multiple <main> elements, which is invalid HTML structure, but this is a structural/markup issue rather than a content fidelity issue.",
       "severity": "major",
-      "evidence": "h1: MEMORANDUM, h2: I. History/Background, h2: II. March 1, 2016 Public Meeting..., h2: III. Written Public Comment Summary, h2: IV. Attachments \u2014 this is acceptable.",
+      "evidence": "HTML has multiple <main> elements wrapping different page sections. This is an HTML validity issue but does not affect content fidelity.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The footer content from page 1 (State of North Carolina | Environmental Quality | Waste Management, address, phone number) is duplicated \u2014 it appears both in the HTML header area and again in a page-footer div. The PDF shows this as the letterhead header at the top and a footer bar at the bottom of page 1, so some duplication exists but is minor structural repetition from the original.",
-      "severity": "major",
-      "evidence": "Header: 'State of North Carolina | Environmental Quality | Waste Management 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646 919 707 8200' appears in both the outer page structure and in a page-footer div.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C6",
-      "description": "Alt text for images is reasonable. The logo alt text ('North Carolina Department of Environmental Quality Waste Management logo'), signature alt text ('Signature of Ed Mussler'), and footer bar alt text ('Blue decorative footer bar') are descriptive and appropriate. These were not present in the PDF and represent good additions.",
+      "description": "The footer text from page 1 appears both in the document header area and as a page-footer div. The PDF has this text once at the bottom of page 1, so displaying it once is sufficient. However, it also appears in the outer document wrapper at the very top of the HTML in the <head> area via the page-footer class, which is acceptable as the footer of page 1.",
       "severity": "minor",
-      "evidence": "alt='North Carolina Department of Environmental Quality Waste Management logo', alt='Signature of Ed Mussler', alt='Blue decorative footer bar'",
+      "evidence": "Footer text 'State of North Carolina | Environmental Quality | Waste Management / 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646 / 919 707 8200' appears in the header metadata AND as a page-footer div.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
   "major_count": 2,
-  "minor_count": 5,
+  "minor_count": 3,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 39.07,
+    "duration_seconds": 67.2,
     "page_count": 5,
-    "visual_input_tokens": 14749,
-    "visual_output_tokens": 797,
-    "content_input_tokens": 14989,
-    "content_output_tokens": 748,
-    "timestamp": "2026-04-14T05:05:51.959606",
+    "visual_input_tokens": 14966,
+    "visual_output_tokens": 783,
+    "content_input_tokens": 15053,
+    "content_output_tokens": 614,
+    "timestamp": "2026-04-15T14:42:03.138095",
     "auditor_version": "1.0.0"
   }
 }

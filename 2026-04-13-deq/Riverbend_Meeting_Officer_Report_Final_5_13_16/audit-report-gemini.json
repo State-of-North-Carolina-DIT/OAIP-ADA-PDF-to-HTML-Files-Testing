@@ -1,54 +1,30 @@
 {
   "document_id": "Riverbend_Meeting_Officer_Report_Final_5_13_16",
-  "verdict": "pass",
+  "verdict": "fail",
   "findings": [
     {
       "check_id": "V1",
-      "description": "Alignment of the memo header block is lost.",
-      "severity": "minor",
-      "evidence": "In the PDF, the contents of the 'To', 'From', and 'Subject' fields are vertically aligned to form a distinct column. In the HTML, they are rendered as standard left-aligned text.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Outline list indentation is missing.",
-      "severity": "minor",
-      "evidence": "The Roman numeral list (I, II, III, IV) in the PDF is indented from the left margin. In the HTML, it is left-aligned with the body text.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Underline formatting is lost on list item lead-in text.",
-      "severity": "minor",
-      "evidence": "In the PDF, the lead-in phrases for bulleted items (e.g., 'Beneficial Reuse Areas') are both bold and underlined. In the HTML, they are only bolded.",
+      "description": "A significant portion of content from the bottom half of the page is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "In the PDF, Section II concludes with bullets for 'Landfills', 'Risk Classification', 'Surface Water', and 'Not Applicable'. This is followed by the start of Section III and its first two bullets ('Beneficial Reuse Areas' and 'Costs'). All of this content is completely missing in the HTML rendering, which jumps directly from the 'Home Values' bullet to the 'Environmental Justice' bullet (which appears on page 4 in the PDF).",
       "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "Underline formatting is lost on list item lead-in text.",
-      "severity": "minor",
-      "evidence": "In the PDF, the lead-in phrases for bulleted items (e.g., 'Environmental Justice') are both bold and underlined. In the HTML, they are only bolded.",
-      "page": 4,
       "call_source": "visual"
     }
   ],
-  "critical_count": 0,
+  "critical_count": 1,
   "major_count": 0,
-  "minor_count": 4,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "gemini-3.1-pro-preview",
     "provider": "gemini",
-    "duration_seconds": 48.12,
+    "duration_seconds": 140.33,
     "page_count": 5,
-    "visual_input_tokens": 11643,
-    "visual_output_tokens": 630,
-    "content_input_tokens": 7038,
-    "content_output_tokens": 144,
-    "timestamp": "2026-04-14T05:03:19.203912",
+    "visual_input_tokens": 11846,
+    "visual_output_tokens": 439,
+    "content_input_tokens": 7099,
+    "content_output_tokens": 154,
+    "timestamp": "2026-04-15T14:38:13.626604",
     "auditor_version": "1.0.0"
   }
 }
