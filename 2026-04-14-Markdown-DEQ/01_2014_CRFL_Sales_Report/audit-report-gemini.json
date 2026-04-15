@@ -1,0 +1,150 @@
+{
+  "document_id": "01_2014_CRFL_Sales_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Missing horizontal rule in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the 'Marine Resources Fund Balance' table has a solid black horizontal line between the table header and the rest of the rows, and another at the bottom of the table. In the HTML, these lines are missing.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text formatting difference",
+      "severity": "minor",
+      "evidence": "The column headers in the PDF table on page 3 are centered, but in the HTML they are left-aligned.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 4 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 5 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 6 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 7 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 8 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 9 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 10 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 11 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 12 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 13 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 14 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 15 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text alignment difference in table",
+      "severity": "minor",
+      "evidence": "In the PDF, the numerical data in the table on page 16 is right-aligned. In the HTML, the data is left-aligned.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML document uses multiple <h1> tags for the title lines and relies on bold paragraph text for all subsequent section headings rather than semantic heading tags (<h2>, <h3>, etc.).",
+      "severity": "major",
+      "evidence": "The HTML begins with two consecutive <h1> tags: '<h1>Coastal Recreational Fishing License</h1>\\n<h1>Sales Update</h1>'. Following this, major structural sections are wrapped in paragraph and bold tags, such as '<p><strong>Marine Resources Fund Balance</strong></p>' and '<p><strong>SUMMARY</strong></p>', instead of utilizing proper heading hierarchy.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 15,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 123.65,
+    "page_count": 20,
+    "visual_input_tokens": 44511,
+    "visual_output_tokens": 1865,
+    "content_input_tokens": 43348,
+    "content_output_tokens": 317,
+    "timestamp": "2026-04-15T00:20:15.156971",
+    "auditor_version": "1.0.0"
+  }
+}

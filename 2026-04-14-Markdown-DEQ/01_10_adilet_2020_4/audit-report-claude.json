@@ -1,0 +1,150 @@
+{
+  "document_id": "01_10_adilet_2020_4",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the letter is not present in the HTML rendering.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NC state seal centered at the top. HTML page 1 does not display this seal/image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML rendering collapses the letterhead layout. The PDF has officials' names (Roy Cooper, Michael S. Regan, Brian Wrenn) on the left and the seal/state name on the right in a multi-column header. The HTML renders these as a single column at the bottom of the page rather than at the top.",
+      "severity": "major",
+      "evidence": "PDF: Officials listed top-left, seal top-center, state name top-right. HTML: Officials appear below the DEQ logo block at bottom, after the letter content from the first scanned page.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The numbered list items and sub-content on page 1 lose some indentation structure in the HTML compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows items 1-4 with consistent indentation under the RE: block. HTML renders them with slightly different indentation but content is preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo appears in the HTML rendering but is positioned differently than in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: DEQ logo at bottom of page with contact info to the right. HTML: DEQ logo appears similarly but in a slightly different layout context.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined text formatting for 'Certified Mail' and 'Return Receipt Requested' appears preserved in the HTML but with slight visual differences.",
+      "severity": "minor",
+      "evidence": "PDF shows underlined text clearly. HTML shows similar underlined text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML reading order on page 2 (combined pages) places the plain text version of the content after the scanned image version, creating duplication of content rather than showing it once.",
+      "severity": "major",
+      "evidence": "The HTML appears to render both a scanned image version and a text version of the same page content sequentially, creating redundant reading.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The sub-item formatting under item 5 (A through G) is slightly different in the HTML. The PDF uses hanging indent formatting while HTML uses a more standard list format.",
+      "severity": "minor",
+      "evidence": "PDF: Items A-G have specific indentation under item 5. HTML: Items A-G rendered as a continuous paragraph in the text version.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "On the page containing Page Three content, the HTML renders the scanned version followed by a full text duplicate, creating redundant content.",
+      "severity": "major",
+      "evidence": "PDF: Single page three with basin details. HTML: Shows the scanned page three image content followed by the same content in text form.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "On page 3, the basin-by-basin listing in the HTML text version loses its structured paragraph formatting - items A-G from page 2 are rendered as a single run-on paragraph.",
+      "severity": "major",
+      "evidence": "PDF: Each sub-item (A through G) is a separate paragraph. HTML text version: Items are merged into a continuous paragraph.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page Four content is also duplicated - scanned version followed by text version.",
+      "severity": "major",
+      "evidence": "PDF: Single page four. HTML: Both scanned and text versions appear sequentially.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of Judith A. Wehner is absent from the HTML text rendering on page 4.",
+      "severity": "minor",
+      "evidence": "PDF shows a handwritten signature above the typed name. HTML text version only shows 'Sincerely,' and typed name without the signature image.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The bold formatting of 'two (2)' on page 3/4 is preserved in the HTML.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show 'two (2)' in bold.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading hierarchy is present in the HTML. The document lacks any h1-h6 tags. The letter's subject line (RE:), numbered items, and sub-sections are not structured with headings at all.",
+      "severity": "major",
+      "evidence": "The HTML uses only <p> and <ol> tags. No h1, h2, or h3 elements exist for the document title, RE: line, or section headers like the erosion and sediment control measures section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Full-page embedded images are included alongside the full text transcription of each page, resulting in content duplication. Each page's content appears both as an image and as text.",
+      "severity": "major",
+      "evidence": "For each of pages 1-4, there is an <img> tag (e.g., alt='Scanned document page 2') followed by the full text content of that page. This means each page's content is represented twice in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for embedded page images is generic rather than descriptive.",
+      "severity": "minor",
+      "evidence": "Images have alt text like 'Scanned document page 2', 'Scanned document page 3', 'Scanned document page 4' which are generic descriptions rather than meaningful content descriptions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Sub-items under item 5 (A through G) are formatted as a continuous paragraph with line-break-like spacing rather than as a proper lettered sub-list, reducing readability but not losing content.",
+      "severity": "minor",
+      "evidence": "PDF shows items A-G as separate lettered sub-items. HTML presents them as a single paragraph block with 'A. ... B. ... C. ...' run together.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 7,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 83.44,
+    "page_count": 4,
+    "visual_input_tokens": 13175,
+    "visual_output_tokens": 1584,
+    "content_input_tokens": 10427,
+    "content_output_tokens": 693,
+    "timestamp": "2026-04-15T00:16:32.929400",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "document_id": "01_10_Corrected_cover_letter_20201221",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the page is missing in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF shows the official NC state seal centered at the top of the letterhead; HTML omits this image",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom of the page is missing in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF shows the DEQ logo near the footer area; HTML omits this image",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined text 'Please attach this letter to the cover of your existing mining permit for future reference' appears as highlighted/colored text in HTML rather than underlined",
+      "severity": "minor",
+      "evidence": "PDF shows this sentence underlined; HTML renders it in a different color/highlight style",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature is missing in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF shows David Miller's handwritten signature above the typed name; HTML only shows the typed name",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The letterhead layout with Governor, Secretary, Director names positioned to the left of the seal is rendered differently in HTML - shown as stacked labels below the letter content",
+      "severity": "minor",
+      "evidence": "PDF has ROY COOPER/Governor, MICHAEL S. REGAN/Secretary, BRIAN WRENN/Director in left column with seal centered; HTML places these as separate label blocks below the main letter body",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading structure exists in the HTML. The document has no h1, h2, or any heading elements. While this is a letter rather than a structured report, a document title as h1 would be expected for accessibility.",
+      "severity": "major",
+      "evidence": "The HTML contains no h1-h6 elements at all. The document title in <title> is 'Converted Document' which is generic.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element inside the outer <main>, which is a structural issue but does not cause content duplication.",
+      "severity": "minor",
+      "evidence": "The outer <main> wraps the entire body content, and there is another <main> element nested inside it containing the letter body.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the image describes it as the full letterhead but the actual image in the PDF is the North Carolina state seal, not the entire letterhead. The letterhead text (names, titles) appears separately as text in the PDF.",
+      "severity": "minor",
+      "evidence": "Alt text: 'Official letterhead of the North Carolina Department of Environmental Quality'. The image in the PDF is the state seal/emblem only.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 26.76,
+    "page_count": 1,
+    "visual_input_tokens": 3588,
+    "visual_output_tokens": 664,
+    "content_input_tokens": 4352,
+    "content_output_tokens": 556,
+    "timestamp": "2026-04-11T05:46:05.089690",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "document_id": "01_10_adilet_2020_3",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The letterhead layout with state officials' names on the left and state seal/logo centered is collapsed into a linear top-to-bottom arrangement in HTML, losing the side-by-side positioning.",
+      "severity": "major",
+      "evidence": "PDF shows ROY COOPER/Governor, MICHAEL S. REGAN/Secretary, S. Daniel Smith/Director on the left with the NC state seal centered and NORTH CAROLINA Environmental Quality below it. HTML renders these sequentially.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the letter appears present in both versions but rendered differently in size and positioning.",
+      "severity": "minor",
+      "evidence": "PDF has the seal centered at top with specific sizing; HTML has it but positioning differs slightly.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined formatting for 'Certified Mail' and 'Return Receipt Requested' appears preserved but the visual weight and styling differ slightly.",
+      "severity": "minor",
+      "evidence": "PDF shows clear underlined text; HTML shows underlined text but with slightly different visual treatment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The footer area with the DEQ logo and department contact information is rendered as plain text in the HTML rather than preserving the logo-alongside-text layout.",
+      "severity": "major",
+      "evidence": "PDF shows DEQ logo with contact info to the right; HTML shows the text linearly without the visual logo-text arrangement.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The indented RE: block formatting with hanging indent is slightly different in HTML but content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF shows RE: with indented content lines; HTML shows similar structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 header 'Certified Mail / Mr. Threatt / Page Two' layout is preserved in both.",
+      "severity": "minor",
+      "evidence": "Both show the same header information.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The bold formatting on 'two (2)' is preserved in the HTML version.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show 'two (2)' in bold.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature of Judith A. Wehner appears in both versions.",
+      "severity": "minor",
+      "evidence": "Both show the handwritten signature above the typed name.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The indented address block for Division of Energy, Mineral and Land Resources is slightly different in indentation but content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF shows centered/indented block; HTML shows similar content with slightly different alignment.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading hierarchy exists in the HTML. The document has no h1, h2, or any heading tags at all. The document title, RE line, and other structural elements are all rendered as plain paragraphs.",
+      "severity": "major",
+      "evidence": "The entire HTML uses only <p> and <ol>/<li> tags with no heading elements. The RE: line, letterhead info, and page markers could benefit from heading structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the second image is generic and somewhat inaccurate. It says 'Page 2 of the official letter' which describes it as an image of a page rather than describing its content.",
+      "severity": "minor",
+      "evidence": "HTML: alt=\"Page 2 of the official letter\" \u2014 This is a full-page image embed of page 2, but the alt text is generic rather than descriptive of the content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The entire document content appears twice: once as extracted text and once as embedded full-page images. Both page 1 and page 2 are embedded as images AND have their text content extracted separately, creating full document duplication.",
+      "severity": "major",
+      "evidence": "The HTML contains two <img> tags (one for page 1, one for page 2) alongside the full text extraction of both pages. The entire letter content is thus present twice.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 47.82,
+    "page_count": 2,
+    "visual_input_tokens": 6913,
+    "visual_output_tokens": 1036,
+    "content_input_tokens": 6046,
+    "content_output_tokens": 580,
+    "timestamp": "2026-04-15T00:15:43.021480",
+    "auditor_version": "1.0.0"
+  }
+}

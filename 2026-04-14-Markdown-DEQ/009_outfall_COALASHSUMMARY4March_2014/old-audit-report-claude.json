@@ -1,0 +1,110 @@
+{
+  "document_id": "009_outfall_COALASHSUMMARY4March_2014",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The compact, dense table layout in the PDF is converted to an extremely spread-out vertical layout in the HTML, with each row taking significantly more vertical space due to multi-line wrapping of parameter names and excessive padding.",
+      "severity": "major",
+      "evidence": "PDF shows a single dense table fitting all data on one page. HTML spreads the same content over a very long scrolling page with large gaps between rows.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The table column headers in the HTML are significantly different from the PDF. The PDF shows compact headers like '2/14/2014', 'AC04986', etc. with report numbers stacked. The HTML has verbose multi-line headers with full identifiers like 'AC04986 AC04986 AC04987 AC04993 Value' merged into single column headers.",
+      "severity": "major",
+      "evidence": "PDF header row shows clean date/report number groupings across columns. HTML header shows concatenated report numbers making it harder to distinguish which report number belongs to which date column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Qualifier' sub-columns (U flags) appear to be separated into their own columns in the HTML rather than being inline with the values as in the PDF, altering the visual table structure.",
+      "severity": "major",
+      "evidence": "PDF shows values like '0.4 U' or '0.50 U' within compact cells. HTML has separate 'Qualifier' columns explicitly broken out, making the table wider and differently structured.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title and header text formatting differs. PDF shows bold centered title text, while HTML shows left-aligned header text.",
+      "severity": "minor",
+      "evidence": "PDF: centered bold 'Data from Ash Release at Duke Energy Dan River Station'. HTML: left-aligned header text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The grouping/separation between the main parameters and the dissolved metals section (Al-Dissolved Aluminum through Zn-Dissolved Zinc) is less visually distinct in the HTML compared to the PDF where there is a clear blank row separator.",
+      "severity": "minor",
+      "evidence": "PDF has a visible blank row separating the two groups of parameters. HTML has some spacing but the visual distinction is less clear.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML uses italic emphasis tags for 'no NC standards for' and 'dissolved metals' annotations, and duplicates them across both the Standard and Basis columns. The PDF shows this as a single annotation spanning the standard column area for dissolved metals. This is a formatting interpretation, not fabricated content.",
+      "severity": "minor",
+      "evidence": "PDF: 'no NC standards for dissolved metals' appears once as a note. HTML: appears as <em> text in both 'Applicable Water Quality Standard' and 'Basis for Standard' columns for Al-Dissolved and As-Dissolved rows.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML table is missing the blank separator row between the total metals section and the dissolved metals section. While visually minor, structurally this blank row is present in the PDF table.",
+      "severity": "major",
+      "evidence": "HTML has an empty <tr> with 13 empty <td> elements which does represent the separator, so this is actually preserved. No issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The heading hierarchy uses h1, h2, h3 which is acceptable, but the document subtitle 'Sampling Dates and Sample ID' is rendered as an h3 heading. In the PDF, it appears as a sub-header line in the table header area rather than a standalone section heading. This is a minor structural interpretation.",
+      "severity": "major",
+      "evidence": "PDF: 'Sampling Dates and Sample ID' is part of the table header block. HTML: <h3>Sampling Dates and Sample ID</h3>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'no NC standards for' and 'dissolved metals' annotations are duplicated across two columns (Standard and Basis) for both the Al-Dissolved and As-Dissolved rows, resulting in four cells containing this note when the PDF shows it once as a spanning annotation.",
+      "severity": "minor",
+      "evidence": "HTML: Al-Dissolved row has '<em>no NC standards for</em>' in both columns 11 and 12. As-Dissolved row has '<em>dissolved metals</em>' in both columns 11 and 12.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor naming variations in parameter names: underscores removed and formatting slightly changed, but all parameter names remain identifiable and accurate.",
+      "severity": "minor",
+      "evidence": "PDF: 'Residue_Suspended', 'Residue_Total', 'Aluminum_Al'. HTML: 'Residue Suspended', 'Residue Total', 'Aluminum Al'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML table header structure does not clearly convey the multi-row header from the PDF. The PDF has sampling dates on one row and report/sample IDs on subsequent rows. The HTML combines all this into a single complex header row with concatenated text, making it harder to distinguish individual sample IDs per date.",
+      "severity": "major",
+      "evidence": "PDF header shows separate rows: '2/14/2014' then 'AC04986' then 'AC04987' then 'AC04993'. HTML: single header cell '2/14/2014 AC04986 AC04987 AC04993 Value'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 6,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 43.08,
+    "page_count": 1,
+    "visual_input_tokens": 3162,
+    "visual_output_tokens": 824,
+    "content_input_tokens": 12348,
+    "content_output_tokens": 1033,
+    "timestamp": "2026-04-11T05:45:38.326465",
+    "auditor_version": "1.0.0"
+  }
+}

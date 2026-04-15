@@ -1,0 +1,78 @@
+{
+  "document_id": "01_10_adilet_2020_3",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Header seal/logo graphics are not preserved in the HTML rendering.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF shows the North Carolina state seal at the top center and a DEQ logo near the bottom left. In the HTML, these graphics are omitted and replaced by text only.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Some text emphasis and alignment from the letterhead/header are weakened in HTML.",
+      "severity": "minor",
+      "evidence": "On page 1, the PDF uses distinct placement and styling for the left header names/titles, centered agency heading, and underlined 'Certified Mail' / 'Return Receipt Requested'. In the HTML these appear as plain linear text with reduced visual distinction.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature graphic is missing from the HTML rendering.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF contains a handwritten signature above 'Judith A. Wehner'. In the HTML, only the typed name/title remain.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Centered address block and signature block formatting are simplified in HTML.",
+      "severity": "minor",
+      "evidence": "On page 2, the PDF centers the mailing address block and signature section, while the HTML converts them into left-aligned running text, reducing visual structure but not losing content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated content in the page title and injected stylesheet/theme code that do not appear in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains '<title>Converted Document</title>' and CSS comments/text such as 'Digital Commons NC \u2014 Standalone Theme CSS' plus a Google Fonts import. The PDF is a two-page DEQ letter and does not contain this title or any stylesheet/theme text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML does not use heading elements to reflect the document structure; no h1-h6 headings are present.",
+      "severity": "major",
+      "evidence": "The PDF has clear structural elements such as the date 'January 9, 2020', subject line 'RE: Proposed Alamance Quarry and Construction Materials Quarry', and page-two continuation header 'Certified Mail / Mr. Threatt / Page Two'. In HTML, all content is placed in <p> tags with no heading hierarchy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Image alt text is generic/incomplete and does not fully describe the actual page images.",
+      "severity": "minor",
+      "evidence": "HTML alt text for page 1 is 'North Carolina Department of Environmental Quality official letterhead' and for page 2 is 'Page 2 of the official letter'. The images represent full document pages, not just a letterhead or generic page marker.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 45.3,
+    "page_count": 2,
+    "visual_input_tokens": 5006,
+    "visual_output_tokens": 537,
+    "content_input_tokens": 4345,
+    "content_output_tokens": 482,
+    "timestamp": "2026-04-15T00:15:42.500533",
+    "auditor_version": "1.0.0"
+  }
+}

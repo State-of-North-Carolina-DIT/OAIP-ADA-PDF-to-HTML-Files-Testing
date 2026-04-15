@@ -1,0 +1,54 @@
+{
+  "document_id": "01_2018_Agenda_FB_Hydrologics_Mtg_2",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Agenda content rendered as a table in HTML instead of the original list-style agenda layout.",
+      "severity": "major",
+      "evidence": "In the PDF, the agenda is presented as aligned time/topic/speaker lines with dot leaders and sub-items beneath entries. In the HTML, this same content is converted into a bordered 3-column table with header row ('Time', 'Topic', 'Speaker'), changing the visual structure substantially.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading alignment and emphasis differ from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF centers the main title block with bold hierarchy, while the HTML left-aligns the title and meeting details. The textual content is preserved, but the visual distinction and alignment are altered.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated metadata and styling text not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains '<title>Converted Document</title>', CSS comments/text such as 'Digital Commons NC \u2014 Standalone Theme CSS', '@import url(...)', and theme variable names; the PDF only shows the meeting agenda text and does not contain these words.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML does not use semantic heading elements for the document title and subtitle structure.",
+      "severity": "major",
+      "evidence": "PDF visually presents title lines 'French Broad Hydrologic Model' and 'Stakeholder Meeting #2' as headings. HTML encodes them inside a <p><strong>...</strong></p> block rather than h1/h2 elements.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 19.53,
+    "page_count": 1,
+    "visual_input_tokens": 2312,
+    "visual_output_tokens": 335,
+    "content_input_tokens": 2860,
+    "content_output_tokens": 261,
+    "timestamp": "2026-04-15T00:20:34.685134",
+    "auditor_version": "1.0.0"
+  }
+}

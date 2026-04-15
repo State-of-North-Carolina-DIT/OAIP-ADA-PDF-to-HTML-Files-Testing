@@ -1,0 +1,78 @@
+{
+  "document_id": "01_2018_Agenda_FB_Hydrologics_Mtg_2",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a centered, inline agenda format with dotted leaders connecting topics to presenters, while the HTML converts this into a formal table with three columns (Time, Topic, Presenter). The structural presentation is fundamentally different.",
+      "severity": "major",
+      "evidence": "PDF shows agenda items as lines with dotted leader characters connecting topic text to presenter names. HTML renders a bordered table with explicit column headers 'Time', 'Topic', and 'Presenter'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title formatting differs. The PDF has 'French Broad Hydrologic Model' and 'Stakeholder Meeting #2' as centered bold text of similar size. The HTML renders 'French Broad Hydrologic Model' as a much larger heading with a horizontal rule underneath, and 'Stakeholder Meeting #2' as a separate smaller heading.",
+      "severity": "minor",
+      "evidence": "PDF: Both title lines are centered bold, similar font size. HTML: 'French Broad Hydrologic Model' is significantly larger with a red/dark horizontal line separator, 'Stakeholder Meeting #2' is rendered as a distinct sub-heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The location and date information is left-aligned in the HTML but centered in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: 'Land of Sky Council of Governments', address, and date are all centered. HTML: These are left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is preserved - all content appears in the same sequence despite structural differences.",
+      "severity": "minor",
+      "evidence": "Both versions present: title, meeting number, location, date, agenda items in chronological order, closing message.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF presents the agenda as a formatted list with dotted leaders, not as a table with explicit headers. The HTML converts this into a table with fabricated column headers ('Time', 'Topic', 'Presenter') that do not appear in the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF has no table headers. The HTML adds <th>Time</th>, <th>Topic</th>, <th>Presenter</th> which are reasonable inferences but not present in the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h2 for 'Stakeholder Meeting #2', which is part of the same title block in the PDF. This is a reasonable structural choice but the PDF presents the title as a single centered block rather than a hierarchical heading structure.",
+      "severity": "minor",
+      "evidence": "PDF: 'French Broad Hydrologic Model / Stakeholder Meeting #2' as a single title block. HTML: <h1>French Broad Hydrologic Model</h1> <h2>Stakeholder Meeting #2</h2>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> elements - an outer <main> from the template and an inner <main> wrapping the table content. This is a structural duplication of the main element, though content is not duplicated.",
+      "severity": "minor",
+      "evidence": "HTML contains <main> wrapping the entire body content, then another <main> after the <header> section.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 30.49,
+    "page_count": 1,
+    "visual_input_tokens": 3635,
+    "visual_output_tokens": 684,
+    "content_input_tokens": 4203,
+    "content_output_tokens": 621,
+    "timestamp": "2026-04-11T05:49:50.647443",
+    "auditor_version": "1.0.0"
+  }
+}

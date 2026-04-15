@@ -1,0 +1,54 @@
+{
+  "document_id": "01_2019_Consumer_Shellfish_Advisory_ENGLISH",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Text formatting hierarchy is significantly reduced in the HTML.",
+      "severity": "major",
+      "evidence": "In the PDF, the page title 'CONSUMER ADVISORY' is very large and bold, and the main advisory text is centered with strong bold emphasis and italics on 'oysters, clams or mussels.' In the HTML, the heading is much smaller, the advisory body is left-aligned in regular paragraph styling, and the strong bold/centered presentation is not preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Whitespace grouping and vertical spacing differ noticeably from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF uses a large centered text block with compact grouping and a small agency line near the bottom. The HTML spreads content into separate left-aligned paragraphs with a rule under the heading and more open whitespace between sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Overall page layout is not preserved because the HTML introduces an extra blank page and redistributes page 1 content across multiple pages.",
+      "severity": "major",
+      "evidence": "The source PDF content appears on a single page. The HTML shows the advisory text on page 1, the legal notice on page 2, and then an entirely blank page 3, altering the original one-page layout and section grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading flow is slightly altered by separating related content into distinct blocks/pages.",
+      "severity": "minor",
+      "evidence": "In the PDF, the advisory message and the legal notice are part of one continuous page presentation. In the HTML, the legal warning is moved to a later page after separate agency/section lines, changing the immediate visual sequence a reader experiences.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 18.33,
+    "page_count": 2,
+    "visual_input_tokens": 3678,
+    "visual_output_tokens": 574,
+    "content_input_tokens": 3634,
+    "content_output_tokens": 155,
+    "timestamp": "2026-04-15T00:21:00.313953",
+    "auditor_version": "1.0.0"
+  }
+}

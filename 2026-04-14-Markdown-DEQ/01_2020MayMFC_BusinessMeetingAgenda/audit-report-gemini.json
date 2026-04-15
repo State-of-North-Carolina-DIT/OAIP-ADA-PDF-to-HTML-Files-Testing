@@ -1,0 +1,70 @@
+{
+  "document_id": "01_2020MayMFC_BusinessMeetingAgenda",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Footer text appears at the beginning of the reading order.",
+      "severity": "minor",
+      "evidence": "The footer note from the PDF ('* Times indicated are merely for guidance...') is rendered at the very top of the HTML page 1, before the main title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Agenda schedule layout changed from aligned columns to a single-column bulleted list.",
+      "severity": "minor",
+      "evidence": "The PDF aligns times in a left column and agenda items on the right. The HTML renders these as a single-column, nested bulleted list.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bulleted list items flattened into a single run-on paragraph.",
+      "severity": "major",
+      "evidence": "At the top of HTML Page 2, the sub-items for the 10:00 a.m. agenda entry (which appeared at the bottom of PDF Page 1) are rendered as a single continuous paragraph with asterisks acting as literal text, completely losing the list formatting.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Header and footer text injected into the middle of the main content flow.",
+      "severity": "minor",
+      "evidence": "On HTML Page 2, the document title and the footer note ('* Times indicated...') are inserted between the flattened 10:00 a.m. text block and the 'Informational Materials continued:' section.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer text from the second page is improperly injected into the content flow and duplicated twice within the HTML.",
+      "severity": "major",
+      "evidence": "The text 'Times indicated are merely for guidance. The commission will proceed through the agenda until completed. **Probable Action Items 2' appears twice in the latter half of the HTML: once immediately preceding 'Informational Materials continued:' and again at the very end of the list after '4:00 p.m. Adjourn'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Page headers and footers are interleaved directly into the main content lists, disrupting the structural flow of the agenda.",
+      "severity": "minor",
+      "evidence": "The page 2 header 'Marine Fisheries Commission Business Meeting Agenda' and its corresponding footer break the <ul> list items between the 10:00 a.m. section and the 'Informational Materials continued' subsection, making the header/footer text render as list items rather than being omitted or isolated.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 62.3,
+    "page_count": 2,
+    "visual_input_tokens": 5061,
+    "visual_output_tokens": 609,
+    "content_input_tokens": 4347,
+    "content_output_tokens": 411,
+    "timestamp": "2026-04-15T00:22:02.610418",
+    "auditor_version": "1.0.0"
+  }
+}

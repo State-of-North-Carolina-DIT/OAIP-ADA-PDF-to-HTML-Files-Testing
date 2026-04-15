@@ -1,0 +1,94 @@
+{
+  "document_id": "01_Agenda_Timeline",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Two-column cover layout was collapsed into a single vertical flow.",
+      "severity": "major",
+      "evidence": "PDF page 1 has a left troubleshooting panel and a separate right welcome/meeting panel side-by-side. In HTML, the troubleshooting content appears first, followed by the welcome heading and date below, losing the original two-column structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on the cover page no longer matches the original visual sequence.",
+      "severity": "major",
+      "evidence": "In the PDF, a viewer sees troubleshooting content and meeting title/date concurrently across two columns. In HTML, users encounter all troubleshooting text first and only later the welcome title/date and prompt, changing the visual reading flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Images from the timeline page were displaced from their original section.",
+      "severity": "major",
+      "evidence": "PDF page 3 places a vertical strip of nature images along the right side of the timeline table. In HTML, those images appear above the heading/table content instead of beside it.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Side image column on the timeline page was not preserved.",
+      "severity": "minor",
+      "evidence": "PDF page 3 uses a main table with a right-side image column. HTML keeps the table but moves the images into a separate block above the content, altering page structure though content remains present.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on the timeline page is slightly altered by moved images.",
+      "severity": "minor",
+      "evidence": "In the PDF, the title and timeline table are primary with decorative/supporting images to the right. In HTML, the images are encountered before the title and table, changing top-to-bottom reading order.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML includes fabricated image alt text that adds specific content not verifiable from the PDF text extraction and overstates image details.",
+      "severity": "critical",
+      "evidence": "HTML alt text includes: \"Egret wading in wetland\", \"Collage of coastal habitats including oyster reef, seagrass, and sandy bottom\", and \"Fish swimming over reef\". The PDF shows a vertical strip of five photos on page 3, but these exact textual descriptions do not appear in the PDF and one alt text collapses multiple images into one description.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is not faithful to the document structure: a slide title is marked as h1 while another top-level section title is marked as h2, and nested main blocks create structural inconsistency.",
+      "severity": "major",
+      "evidence": "HTML uses <h1>\"Welcome to the CHPP Steering Committee Meeting\"</h1>, then <h2>\"Agenda\"</h2>, and later <h2>\"Coastal Habitat Protection Plan\"</h2> with <h3>\"Timeline\"</h3>. The PDF is a slide deck where page titles function as parallel top-level headings, not a single-document hierarchy with one dominant title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some image alt text is inaccurate or incomplete relative to the visible images.",
+      "severity": "minor",
+      "evidence": "On page 3, the PDF shows five stacked images at right: egret, oyster/reef scene, shell on grass/seagrass, aerial water/sand scene, and fish/coral scene. HTML has only three img tags and alt text such as \"Collage of coastal habitats including oyster reef, seagrass, and sandy bottom\" and \"Fish swimming over reef\", which do not map cleanly to the individual visible images.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Image-related content was structurally altered: five distinct images in the PDF were reduced to three image elements in HTML, changing the document's non-text content representation.",
+      "severity": "major",
+      "evidence": "PDF page 3 visibly contains five separate stacked images along the right margin. HTML page 3 contains only three <img> tags inside .side-images, indicating consolidation/omission of image elements.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 42.23,
+    "page_count": 3,
+    "visual_input_tokens": 6954,
+    "visual_output_tokens": 537,
+    "content_input_tokens": 6850,
+    "content_output_tokens": 572,
+    "timestamp": "2026-04-11T05:51:19.514255",
+    "auditor_version": "1.0.0"
+  }
+}

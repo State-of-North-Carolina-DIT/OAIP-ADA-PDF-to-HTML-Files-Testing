@@ -1,0 +1,38 @@
+{
+  "document_id": "01_10_adilet_2020_3",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Entire page content is duplicated.",
+      "severity": "critical",
+      "evidence": "The HTML rendering displays the letter content twice: first with structural formatting and images (Seal, DEQ logo), and then immediately appended below as a raw, mostly unformatted text block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Entire page content is duplicated.",
+      "severity": "critical",
+      "evidence": "Similar to page 1, the HTML displays the page two content (including the signature image) and then repeats all the text from the page as an unformatted text block at the bottom.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 53.23,
+    "page_count": 2,
+    "visual_input_tokens": 5075,
+    "visual_output_tokens": 355,
+    "content_input_tokens": 3893,
+    "content_output_tokens": 214,
+    "timestamp": "2026-04-15T00:15:48.014227",
+    "auditor_version": "1.0.0"
+  }
+}

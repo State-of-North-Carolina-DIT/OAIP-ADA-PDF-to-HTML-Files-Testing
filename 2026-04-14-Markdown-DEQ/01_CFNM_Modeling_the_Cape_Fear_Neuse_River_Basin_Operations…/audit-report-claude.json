@@ -1,0 +1,166 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Draft watermark present in PDF but absent in HTML",
+      "severity": "minor",
+      "evidence": "PDF page 1 has a large diagonal 'DRAFT' watermark across the page; HTML does not show this watermark",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Title page layout simplified in HTML",
+      "severity": "minor",
+      "evidence": "PDF has centered title page with logo at bottom; HTML renders as left-aligned sequential text blocks with logo inline",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table of Contents rendered as table in HTML vs indented list in PDF",
+      "severity": "minor",
+      "evidence": "PDF shows TOC as indented text with dotted leaders; HTML renders as a structured table with rows and columns. Data is preserved correctly.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart diagrams in PDF are missing or not rendered as images in HTML",
+      "severity": "major",
+      "evidence": "PDF page 10 shows 'Flow Chart of Major Nodes in the Upper Cape Fear Basin' as a detailed diagram with colored shapes and arrows. HTML renders the content of these flow charts as plain text listing node names and labels without the visual diagram.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart of Middle Cape Fear Basin rendered as plain text instead of diagram",
+      "severity": "major",
+      "evidence": "PDF page 11 shows a detailed flow chart diagram with reservoir nodes, demand nodes, junction nodes, and connecting arcs. HTML renders this as a run-on text paragraph listing node names.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart of Deep River rendered as plain text instead of diagram",
+      "severity": "major",
+      "evidence": "PDF page 12 shows a detailed flow chart with High Point Reservoir, Siler City Reservoirs, Randleman, Ramseur etc. HTML renders as plain text paragraph.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart of Lower Cape Fear Basin rendered as plain text instead of diagram",
+      "severity": "major",
+      "evidence": "PDF page 13 shows diagram with Flow from Upstream at Lillington, Harnett Co, Dunn, Fayetteville, Glenville, Wilmington nodes. HTML renders as plain text.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart of Upper Neuse Basin rendered as plain text instead of diagram",
+      "severity": "major",
+      "evidence": "PDF page 14 shows detailed diagram with West Fork Eno Reservoir, Lake Orange, Falls Lake, Beaverdam Lake etc. HTML renders as run-on text.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart of Middle Neuse Basin rendered as plain text instead of diagram",
+      "severity": "major",
+      "evidence": "PDF page 15 shows diagram with Crabtree Creek, Lake Wheeler, Lake Benson, Swift Creek, Goldsboro nodes. HTML renders as plain text.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart of Lower Neuse Basin rendered as plain text instead of diagram",
+      "severity": "major",
+      "evidence": "PDF page 16 shows diagram with Buckhorn Reservoir, Wilson Demand, Contentnea Creek, Kinston Gage. HTML renders as plain text.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flow chart legend items mixed into body text in HTML",
+      "severity": "critical",
+      "evidence": "PDF shows distinct legend boxes with 'Reservoir Node', 'Demand Node', 'Junction Node', 'Flow Arc', 'Withdrawal Arc', 'WW Return Arc' as a separate visual legend. HTML intersperses these labels as plain text within the flow chart descriptions, making them appear as part of the content flow.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined section headers in PDF rendered differently in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows 'Static and Pattern Data', 'Timeseries Data', 'Operating Rules' with underlined bold formatting. HTML renders these as bold headings without underline.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Map schematic image appears in both PDF and HTML but with different sizing",
+      "severity": "minor",
+      "evidence": "PDF page 6 shows full-page map schematic. HTML shows the same map but it appears to be rendered at similar scale. This is acceptable.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 tags used and heading hierarchy does not properly reflect document structure. The document uses h1 for 'Table of Contents', 'Section 1. Introduction', and 'Section 2. Model Components', and also uses h2 for the flowchart titles which are not subsections of Section 2 in a hierarchical sense but rather illustrative diagrams within Section 2.2.",
+      "severity": "major",
+      "evidence": "HTML has h1 for 'Table of Contents', 'Section 1. Introduction', 'Section 2. Model Components'. The flowchart titles like 'Flow Chart of Major Nodes in the Upper Cape Fear Basin' are marked as h2, which is acceptable as sub-items but there should only be one h1.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "A grammatically broken sentence in the PDF is faithfully reproduced in the HTML, which is correct behavior. However, the sentence about 58 reservoirs appears slightly different in structure between PDF and HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'There are 58 reservoir 42 actual reservoirs, 11 flood impoundments on Crabtree Creek, and five artificial storage nodes used for time-of-travel flow routing)' \u2014 HTML reproduces this same broken text faithfully, including the missing opening parenthesis. This is not an error in conversion.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Table of Contents in the PDF is formatted as a simple list with indentation, not a formal table. The HTML converts it to a table structure, which changes the presentation but preserves all data accurately.",
+      "severity": "minor",
+      "evidence": "PDF shows TOC as indented text lines with page numbers. HTML renders it as a <table> with Section and Page columns. All entries and page numbers are preserved.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the map schematic image is reasonably descriptive but somewhat generic.",
+      "severity": "minor",
+      "evidence": "Alt text: 'Map schematic of the Cape Fear and Neuse River Basins' \u2014 this is a reasonable description of the actual image content shown on page 6 of the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The flowchart diagrams in the PDF contain structured visual information (node connections, colored symbols, spatial layout) that is reduced to flat text lists in the HTML. While all text labels and annotations are preserved, the visual relationships (arcs, connections, spatial layout) are lost.",
+      "severity": "minor",
+      "evidence": "Pages 10-16 contain detailed flowchart diagrams with colored nodes, directional arcs, and spatial relationships. The HTML preserves all text labels and annotations but loses the diagram structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 8,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 125.66,
+    "page_count": 18,
+    "visual_input_tokens": 40457,
+    "visual_output_tokens": 1856,
+    "content_input_tokens": 43576,
+    "content_output_tokens": 934,
+    "timestamp": "2026-04-15T00:24:02.035658",
+    "auditor_version": "1.0.0"
+  }
+}

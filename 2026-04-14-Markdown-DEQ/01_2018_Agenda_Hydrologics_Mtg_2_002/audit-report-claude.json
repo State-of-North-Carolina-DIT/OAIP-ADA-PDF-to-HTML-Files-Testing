@@ -1,0 +1,54 @@
+{
+  "document_id": "01_2018_Agenda_Hydrologics_Mtg_2_002",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a centered header block with title, venue, address, and date centered on the page, while the HTML renders the title as a large left-aligned heading with a horizontal rule, and the subtitle and venue info are left-aligned.",
+      "severity": "minor",
+      "evidence": "PDF: 'New and Watauga Hydrologic Model / Stakeholder Meeting #2' is centered and bold, with venue info centered below. HTML: Title is large left-aligned heading, 'Stakeholder Meeting #2' is a left-aligned subheading, venue info is left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title formatting differs: PDF has both lines as bold centered text of similar size, while HTML renders the main title much larger than the subtitle with a decorative horizontal rule separator.",
+      "severity": "minor",
+      "evidence": "PDF: 'New and Watauga Hydrologic Model' and 'Stakeholder Meeting #2' are similar-sized bold centered text. HTML: Main title is significantly larger with an underline/rule, subtitle is smaller.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The agenda items in the PDF use a two-column layout with time slots as a distinct left column and descriptions/presenters on the right, while the HTML renders time and description inline on the same line without clear columnar separation.",
+      "severity": "minor",
+      "evidence": "PDF: Time slots (e.g., '9:00 - 9:10') are in a visually separate left column with agenda items indented to the right. HTML: Time and description flow together on the same line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title and subtitle are split into h1 and h2, which is reasonable, but 'Stakeholder Meeting #2' is presented as a separate h2 heading when in the PDF it is part of the centered title block along with the main title. This is an acceptable structural interpretation, not a true hierarchy issue.",
+      "severity": "minor",
+      "evidence": "PDF: 'New and Watauga Hydrologic Model / Stakeholder Meeting #2' as a single centered title block. HTML: h1 'New and Watauga Hydrologic Model' and h2 'Stakeholder Meeting #2'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 25.8,
+    "page_count": 1,
+    "visual_input_tokens": 3638,
+    "visual_output_tokens": 611,
+    "content_input_tokens": 4011,
+    "content_output_tokens": 353,
+    "timestamp": "2026-04-15T00:20:41.985122",
+    "auditor_version": "1.0.0"
+  }
+}

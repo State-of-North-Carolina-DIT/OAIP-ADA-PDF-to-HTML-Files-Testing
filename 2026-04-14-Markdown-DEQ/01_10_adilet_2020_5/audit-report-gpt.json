@@ -1,0 +1,286 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page layout is not preserved; the original letterhead layout and centered blocks collapse into a linear single-column flow.",
+      "severity": "major",
+      "evidence": "PDF page 1 has left-aligned official names, centered seal/date, distinct address block, indented quoted paragraph, and centered mailing address block. HTML page 1 renders these as a continuous single-column text flow beneath the image, losing the original grouping and spatial structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text formatting and alignment are substantially reduced, weakening document hierarchy.",
+      "severity": "major",
+      "evidence": "On PDF page 1, items such as 'Certified Mail / Return Receipt Requested', the RE block, and the centered address are visually distinct with line breaks and alignment. In HTML, these are flattened into plain paragraphs with reduced visual distinction.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading flow is affected by duplicated content presentation.",
+      "severity": "minor",
+      "evidence": "HTML page 1 shows the rendered page image followed by extracted text of the same content, causing a reader to encounter the same material twice in sequence, unlike the PDF's single presentation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Second-page letter layout is flattened into plain text rather than preserving spacing and signature block structure.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows a compact page with header lines, large paragraph blocks, signature placement, and cc/enclosures spacing. HTML page 2 converts this into linear text, reducing the visual separation of header, body, signature, and cc sections.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Signature block and emphasis formatting are not faithfully preserved.",
+      "severity": "major",
+      "evidence": "On PDF page 2, 'Sincerely,' and the handwritten signature over David Miller's typed name form a clear signature block. In HTML this becomes plain text ('Sincerely, for David Miller State Mining Engineer') with loss of the visual signing structure and line hierarchy.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Email header structure is not preserved; multi-field metadata is flattened.",
+      "severity": "major",
+      "evidence": "PDF page 3 presents email metadata in aligned header rows (From, Sent, To, Cc, Subject, Attachments) followed by body text and a prior message block. HTML page 3 renders these headers as inline text, losing the tabular/aligned email structure.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Email formatting and message hierarchy are degraded.",
+      "severity": "major",
+      "evidence": "On PDF page 3, warning banner, sender signature, and nested email blocks are visually distinct. HTML page 3 largely turns them into paragraph text, reducing distinction between metadata, body, and quoted prior email.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order remains mostly correct but duplicated text after the image causes redundant flow.",
+      "severity": "minor",
+      "evidence": "HTML page 3 presents the screenshot-like image and then repeats the same email contents as extracted text, unlike the single-flow PDF.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Complex multi-email page layout is flattened into continuous text blocks.",
+      "severity": "major",
+      "evidence": "PDF page 4 contains stacked email messages with visual dividers, warning text, metadata blocks, and page numbering. HTML page 4 converts this into long linear text, losing the distinct segmentation of message threads.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Nested email formatting, warnings, and sender distinctions are insufficiently preserved.",
+      "severity": "major",
+      "evidence": "PDF page 4 clearly distinguishes warning text in red, metadata labels, and different senders. HTML page 4 shows these mostly as plain text, making thread boundaries less visually clear.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Structured numbered update list loses some visual structure in HTML.",
+      "severity": "major",
+      "evidence": "PDF page 5 displays a clearly formatted numbered list with bolded headings and paragraph indentation under each numbered item. HTML page 5 flattens the same content into a simpler text flow with weaker indentation and hierarchy.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold emphasis and list formatting are partially lost, reducing distinction between headings and explanatory text.",
+      "severity": "major",
+      "evidence": "On PDF page 5, numbered headings such as 'Relocation of Emergency Access Roadway' and emphasized clauses stand out strongly. In HTML page 5, the typographic emphasis is less visually distinct and list structure is less pronounced.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Continuation of threaded email correspondence is flattened and less segmented.",
+      "severity": "major",
+      "evidence": "PDF page 6 clearly separates the end of one message, a signed block, and the beginning of Rep. Riddell's message with visible email layout conventions. HTML page 6 reduces these to stacked paragraph text with weaker structural separation.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Signature block and nested message formatting are not faithfully retained.",
+      "severity": "major",
+      "evidence": "PDF page 6 shows 'Best Regards' with Mark Piazza signature block, then a new message header with warning line. HTML page 6 largely renders these as plain text, minimizing the visual distinction between signatures and message metadata.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Letter formatting and branding placement are not preserved.",
+      "severity": "major",
+      "evidence": "PDF page 7 places the Colonial Pipeline logo/header, sender details, and recipient block in a formal letter layout. HTML page 7 linearizes these elements and weakens the original spatial arrangement.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Formal letter hierarchy is diminished in the HTML conversion.",
+      "severity": "major",
+      "evidence": "On PDF page 7, company name, sender information, 'By Electronic Mail', date, address, RE line, and body paragraphs are distinctly formatted. HTML page 7 presents these mostly as plain running text with less visible hierarchy.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Attachment title page and subsequent content are merged into a simplified text flow.",
+      "severity": "major",
+      "evidence": "PDF page 8 shows the end of the letter and the start of 'ATTACHMENT 1' with centered title styling. HTML page 8 presents the same material in a flatter text layout, reducing the separation between the cover letter ending and attachment opening.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Centered attachment heading and document styling are not fully preserved.",
+      "severity": "major",
+      "evidence": "On PDF page 8, 'ATTACHMENT 1' and the subtitle lines are centered and prominent. In HTML page 8, the attachment heading is visible but with weaker centering/hierarchy and more plain-text appearance.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Attachment section formatting is flattened, reducing structured legal-document appearance.",
+      "severity": "major",
+      "evidence": "PDF page 9 uses clear subsection labeling (A, B, numbered items) with indentation. HTML page 9 renders this more like continuous text, with list nesting and section separation weakened.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Subsection/list formatting is partially lost.",
+      "severity": "major",
+      "evidence": "On PDF page 9, subsection titles such as 'Notice of Blasting Related Activities' and nested item letters a-j are clearly formatted. HTML page 9 compresses many of these into long paragraphs, reducing scannability.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Dense technical conditions page loses precise list/block layout.",
+      "severity": "major",
+      "evidence": "PDF page 10 presents separate lettered clauses C-J with consistent indentation and spacing. HTML page 10 shows the clauses as a longer linear block with less precise visual structure.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Technical clause formatting and emphasis are weakened.",
+      "severity": "major",
+      "evidence": "On PDF page 10, each clause heading (e.g., 'Scaled Distance', 'Time Delay', 'Prohibited Blasting') is distinctly separated. In HTML page 10, the headings remain but are visually less distinct, making the legal/technical structure harder to parse.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Continuation page for attachment loses structured clause layout.",
+      "severity": "major",
+      "evidence": "PDF page 11 shows clause K, L, M with numbered subpoints and precise indentation. HTML page 11 renders them as simpler blocks of text with reduced visual nesting.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Numbered subpoints under compliance section are not as clearly formatted.",
+      "severity": "major",
+      "evidence": "On PDF page 11, section M includes numbered items and lettered sub-items with clear indentation. HTML page 11 retains content but diminishes the visual hierarchy and spacing between sublevels.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Section transition to quarry operation requirements is flattened.",
+      "severity": "major",
+      "evidence": "PDF page 12 clearly separates the final numbered provisions and the new heading 'II. QUARRY OPERATION REQUIREMENTS AND TECHNICAL CONDITIONS'. HTML page 12 presents the same sequence but with much less page-level structure.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Heading prominence and clause formatting are reduced.",
+      "severity": "major",
+      "evidence": "On PDF page 12, the section heading and subsections A-B are bold and visually separated. In HTML page 12, these are present but less prominent, making the transition between sections less clear.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Exhibit title page layout is simplified, though content remains intact.",
+      "severity": "minor",
+      "evidence": "PDF page 13 contains a sparse centered title page for 'EXHIBITS 1A. AND 1B.' with large whitespace. HTML page 13 reproduces the text but in a more compact, less intentionally sparse layout.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Large exhibit image placement is altered by added extracted text before the image.",
+      "severity": "major",
+      "evidence": "PDF page 14 is dominated by the exhibit image with caption below. HTML page 14 inserts extracted text headings before the image, changing the visual balance and placement relative to surrounding content.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Exhibit image is present but appears smaller and shifted lower due to added text.",
+      "severity": "minor",
+      "evidence": "PDF page 14 shows the map occupying most of the page. HTML page 14 keeps the image but it is pushed down by repeated text and appears less dominant.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Final exhibit page layout is altered by repeated extracted caption text and reduced image prominence.",
+      "severity": "major",
+      "evidence": "PDF page 15 shows a large map excerpt centered with caption and page number. HTML page 15 adds repeated text labels above and below, altering the original sparse image-centered layout.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Final exhibit image is present but visually less prominent and separated from its original layout context.",
+      "severity": "minor",
+      "evidence": "On PDF page 15, the exhibit image is central and cleanly presented. In HTML page 15, the image is retained but surrounded by duplicated caption/page text, which changes the visual presentation.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading structure does not reflect the document hierarchy. A non-title email header was promoted to an h3, while the main document title/section titles were not represented as headings.",
+      "severity": "major",
+      "evidence": "HTML uses \"<h3>Wehner, Judy</h3>\" for an email page header, but the PDF presents this as ordinary page text/header, not a section heading. Meanwhile major titles such as \"ATTACHMENT 1\", \"BLASTING REQUIREMENTS AND TECHNICAL CONDITIONS\", and \"QUARRY OPERATION REQUIREMENTS AND TECHNICAL CONDITIONS\" are plain paragraphs in HTML rather than headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Several textual inaccuracies and OCR/conversion errors alter wording or introduce mistakes, including agency name, typos, and punctuation changes that affect fidelity.",
+      "severity": "major",
+      "evidence": "PDF page 1 body says \"Colonial Pipeline regarding blasting operations at the Alamance Aggregate Quarry,\" while HTML has \"Alamance Aggregates Quarry.\" PDF footer reads \"North Carolina Department of Environmental Quality | Division of Energy, Mineral and Land Resources\" but HTML has \"Energy, Mineral and Land Resources\". PDF page 2 says \"Please contact me at (919) 707-9220\" while page 1 footer shows \"919.707.9200\"; HTML preserves both but also includes OCR-normalized text elsewhere inconsistently. PDF email text says \"please feel free to contact Judy or me\"; HTML has \"please feel fee to contact Judy or me.\" Attachment text in PDF uses apostrophe in \"Colonial's closest pipeline\" repeatedly; HTML includes malformed wording such as \"The Scaled Distance, in units of feet/pounds\u00bd, using Colonial's closest pipeline...\" and drops some punctuation fidelity.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 28,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 431.85,
+    "page_count": 17,
+    "visual_input_tokens": 36278,
+    "visual_output_tokens": 3554,
+    "content_input_tokens": 28680,
+    "content_output_tokens": 528,
+    "timestamp": "2026-04-15T00:22:59.865113",
+    "auditor_version": "1.0.0"
+  }
+}

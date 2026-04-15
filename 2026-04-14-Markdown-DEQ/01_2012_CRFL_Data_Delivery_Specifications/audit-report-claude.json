@@ -1,0 +1,126 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Appendix A data rendered as continuous run-on text instead of structured rows",
+      "severity": "major",
+      "evidence": "PDF shows data in clearly separated rows (one record per line). HTML renders all data records as a continuous paragraph of comma-separated text with no line breaks between records.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Data relationship diagram/flowchart missing from HTML",
+      "severity": "critical",
+      "evidence": "PDF page 5 (Appendix B) contains a flowchart showing relationships between Record Types (Environmental Data \u2192 Replicate Data \u2192 Species Data \u2192 Individual Data \u2192 Age Data, with Gear Data and Tag Recapture Data branches). The HTML version has no image/diagram - instead it shows the text labels as a flat text sequence.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Key Information Fields table rendered as HTML table instead of aligned text layout",
+      "severity": "minor",
+      "evidence": "PDF shows the Format and Position of Key Information Fields as aligned columns. HTML renders this as a proper table with borders. Content is preserved but visual style differs - this is acceptable.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Appendix C data dictionary table format changed from aligned columns to bordered table",
+      "severity": "minor",
+      "evidence": "PDF uses spaced column alignment for the data dictionary. HTML uses bordered table cells. Data content is preserved.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bottom Composition codes layout changed from two-column arrangement to single listing",
+      "severity": "minor",
+      "evidence": "PDF shows material types in two columns (e.g., 'A = Dome' and 'J = Reef Balls' side by side). HTML lists them sequentially in a single column within the table cell.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 10 is blank in the PDF",
+      "severity": "minor",
+      "evidence": "PDF has a blank page 10. HTML does not include this blank page, which is acceptable.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken - there is no h1, and the document uses multiple h3 elements for the title, subtitles, and section headings without proper hierarchy. The title components ('Division of Marine Fisheries', 'CRFL Funding Data Delivery Specifications', 'January 2012') are all h3, and Appendix headings are also h3. There are no h1 or h2 elements.",
+      "severity": "major",
+      "evidence": "HTML uses <h3> for all headings: 'Division of Marine Fisheries', 'CRFL Funding Data Delivery Specifications', 'January 2012', 'Appendix A', 'Appendix B', 'Appendix C'. No h1 or h2 present.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In Appendix B's record type listing table, the HTML table has an empty header row, which doesn't match the PDF's simple list format. More importantly, the PDF's diagram shows 'Gear Data Record Type 7' in the visual hierarchy diagram but lists it as 'Record Type 8' in the text. The HTML preserves this inconsistency from the PDF but doesn't represent the diagram visually.",
+      "severity": "major",
+      "evidence": "PDF has a visual hierarchy diagram showing boxes with Record Types connected by lines. The HTML renders this as plain text: 'Environmental Data Record Type 1 Gear Data Record Type 7 Replicate Data Record Type 2...' without any visual structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The hierarchical diagram from Appendix B (showing record type relationships with boxes and connecting lines) is completely missing from the HTML. There are no img tags for this diagram, and the content is rendered as unstructured plain text.",
+      "severity": "major",
+      "evidence": "PDF page 4 contains a visual diagram showing Environmental Data -> Replicate Data -> Species Data -> Individual Data hierarchy with extensions (Gear Data, Tag Recapture Data, Age Data). HTML renders this as a plain paragraph with no structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the data dictionary table (Appendix C), the 'Rec. Type' column shows 'I' for all rows in the HTML, but in the PDF, the 'I' marking only appears on certain specific rows (not every row has the record type explicitly shown - it's implied by continuation).",
+      "severity": "minor",
+      "evidence": "HTML has 'I' in the Rec. Type column for every row. PDF shows 'I' only on specific rows (e.g., column 2-8, and later at column 69-72, 85-87), with other rows having the cell blank/implied.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The file extension '.cvs' appears in the PDF as written, and is preserved in the HTML. This is actually a typo in the original PDF (should be '.csv'), but the HTML faithfully preserves it, which is correct behavior.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'delimited text (.txt or .cvs) file' - faithful preservation of original.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the SPECIES CODE row of the Key Information Fields table, the PDF shows 'Number of bytes: 10' and 'Position: 11-12'. The position '11-12' appears to be a potential PDF source issue (10 bytes starting at position 11 would go to position 20), but the HTML faithfully reproduces this.",
+      "severity": "minor",
+      "evidence": "PDF: 'SPECIES CODE 10 11- 12'; HTML: 'SPECIES CODE 10 11- 12'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Temperature units for Surface Temperature and Bottom Temperature show as '\u2610C' (box character + C) in the HTML rather than '\u00b0C' as implied in the PDF.",
+      "severity": "minor",
+      "evidence": "HTML: '<td>\u2610C</td>'; PDF shows degree symbol C for Surface Temperature and Bottom Temperature.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 95.18,
+    "page_count": 10,
+    "visual_input_tokens": 24297,
+    "visual_output_tokens": 1123,
+    "content_input_tokens": 30416,
+    "content_output_tokens": 1272,
+    "timestamp": "2026-04-15T00:18:16.925801",
+    "auditor_version": "1.0.0"
+  }
+}

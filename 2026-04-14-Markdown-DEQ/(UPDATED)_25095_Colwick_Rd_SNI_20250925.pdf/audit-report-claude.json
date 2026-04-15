@@ -1,0 +1,62 @@
+{
+  "document_id": "(UPDATED)_25095_Colwick_Rd_SNI_20250925.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The HTML title/header is rendered as a single run-on block rather than being centered on separate lines as in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 'SUMMARY OF NOTICE OF', 'INTENT TO REDEVELOP A BROWNFIELDS PROPERTY', 'Brownfields Property Name: Colwick Road Property', and 'Brownfields Project Number: 25095-21-060' each on separate centered lines. HTML collapses the first three into one long line and puts the project number on a second line, both left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The title block in the PDF is centered and bold; in the HTML it is left-aligned and bold.",
+      "severity": "minor",
+      "evidence": "PDF: centered bold heading lines. HTML: left-aligned bold heading text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The contact address block for Bruce Nicholson is centered in the PDF but left-aligned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows the closing address block (Bruce Nicholson, Chief / Brownfields Redevelopment Section / etc.) centered on the page. HTML renders this block as left-aligned paragraphs.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has no heading elements (h1-h6) at all. The document title and section headers are rendered as bold text within paragraph tags rather than using proper heading hierarchy.",
+      "severity": "major",
+      "evidence": "The PDF has a clear document title 'SUMMARY OF NOTICE OF INTENT TO REDEVELOP A BROWNFIELDS PROPERTY' with subtitle lines, but the HTML renders these as <strong> within <p> tags rather than as <h1> or other heading elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer reference '25095-21-060/Colwick Road Property/202500925' appears at the end of the HTML as a paragraph. While this text does appear in the PDF (as a header/footer), its inclusion is acceptable but slightly redundant since it appears as document metadata.",
+      "severity": "minor",
+      "evidence": "The text '25095-21-060/Colwick Road Property/202500925' appears at the top of the PDF page as a header/footer and is reproduced at the bottom of the HTML content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.32,
+    "page_count": 1,
+    "visual_input_tokens": 3675,
+    "visual_output_tokens": 534,
+    "content_input_tokens": 5532,
+    "content_output_tokens": 471,
+    "timestamp": "2026-04-15T00:14:04.994691",
+    "auditor_version": "1.0.0"
+  }
+}

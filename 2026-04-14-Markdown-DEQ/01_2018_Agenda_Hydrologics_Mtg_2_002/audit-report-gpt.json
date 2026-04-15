@@ -1,0 +1,21 @@
+{
+  "document_id": "01_2018_Agenda_Hydrologics_Mtg_2_002",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 16.62,
+    "page_count": 1,
+    "visual_input_tokens": 2312,
+    "visual_output_tokens": 104,
+    "content_input_tokens": 2781,
+    "content_output_tokens": 111,
+    "timestamp": "2026-04-15T00:20:51.305977",
+    "auditor_version": "1.0.0"
+  }
+}

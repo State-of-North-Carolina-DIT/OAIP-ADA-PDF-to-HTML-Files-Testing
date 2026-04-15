@@ -1,0 +1,78 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Professional engineer seal and signature image is missing.",
+      "severity": "major",
+      "evidence": "The PDF title page contains a blue circular seal with a signature; this image is entirely absent in the HTML rendering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Table of Contents formatting and structure are completely lost.",
+      "severity": "major",
+      "evidence": "The PDF presents a formatted Table of Contents with right-aligned page numbers and leader dots; the HTML renders all TOC entries as a single, unformatted, run-on paragraph.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "List of Abbreviations formatting is lost.",
+      "severity": "major",
+      "evidence": "The PDF displays abbreviations in a structured two-column layout; the HTML collapses this into a single run-on paragraph.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Map image is incomplete and incorrectly rendered as extracted text.",
+      "severity": "critical",
+      "evidence": "The PDF displays a full map graphic (Figure 1) with an embedded legend and title block. The HTML rendering splits the image, heavily crops the map, and attempts to extract the labels and legend into a block of plain text, losing the spatial visual information.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart graphic is missing and replaced by a text list.",
+      "severity": "critical",
+      "evidence": "The PDF displays a visual flowchart diagram (Figure 2). The HTML rendering completely omits the diagram image and instead represents the logic as a nested bulleted text list.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart graphic is missing and replaced by a text list.",
+      "severity": "critical",
+      "evidence": "The PDF displays a visual flowchart diagram (Figure 3). The HTML rendering omits the diagram and represents it as plain text.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Inconsistent heading structure and multiple <h1> tags. The HTML uses <h1> for the main title, 'TABLES', and 'FIGURES', while failing to use semantic heading tags (<h2>, <h3>) for the actual document sections (Sections 1, 2, and 3).",
+      "severity": "minor",
+      "evidence": "HTML contains `<h1>SITE CONVEYANCE...</h1>`, `<h1>TABLES</h1>`, and `<h1>FIGURES</h1>`. However, the main body sections are formatted using bold paragraphs instead of headings, such as `<p><strong>1 INTRODUCTION</strong></p>`.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 170.24,
+    "page_count": 17,
+    "visual_input_tokens": 37769,
+    "visual_output_tokens": 1235,
+    "content_input_tokens": 19039,
+    "content_output_tokens": 319,
+    "timestamp": "2026-04-15T00:16:16.918114",
+    "auditor_version": "1.0.0"
+  }
+}

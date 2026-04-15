@@ -1,0 +1,166 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Title formatting differs - PDF has centered title block, HTML has left-aligned title with horizontal rule separator",
+      "severity": "minor",
+      "evidence": "PDF: 'Division of Marine Fisheries / CRFL Funding Data Delivery Specifications / January 2012' centered as a block. HTML: 'Division of Marine Fisheries' as large heading with horizontal rule, subtitle and date left-aligned below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings styled differently - PDF uses bold inline text, HTML uses larger heading-style formatting",
+      "severity": "minor",
+      "evidence": "PDF: 'Purpose:', 'Background:', 'Data Specifications:' in bold same-size text. HTML: These appear as larger styled headings.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Data relationship diagram/flowchart is completely missing from HTML",
+      "severity": "critical",
+      "evidence": "PDF page 4 contains a hierarchical flowchart showing relationships between Record Types (Environmental Data -> Replicate Data -> Species Data -> Individual Data -> Age Data, with Gear Data and Tag Recapture Data branches). HTML has no diagram/image at all.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Record type list formatting differs - PDF uses indented two-column layout, HTML uses a table",
+      "severity": "minor",
+      "evidence": "PDF: Record types listed with indentation and description aligned in two columns. HTML: Same data presented in a formal table with borders.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Key information fields presented differently - PDF uses spaced column layout, HTML uses bordered table",
+      "severity": "minor",
+      "evidence": "PDF: 'Format and Position of Key Information Fields' shown as aligned columns without borders. HTML: Same data in a bordered table.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Appendix B content and Appendix C content split differently across pages in HTML compared to PDF",
+      "severity": "major",
+      "evidence": "PDF has Appendix B content on pages 4-5 and Appendix C starting on page 6. HTML combines the tail of Appendix A data, all of Appendix B, and beginning of Appendix C into different page groupings.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Appendix C data dictionary formatted differently - PDF uses spaced/aligned columns, HTML uses bordered table",
+      "severity": "minor",
+      "evidence": "PDF: Data dictionary with underlined column headers and aligned columns. HTML: Same content in bordered table cells.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Temperature unit symbols differ - PDF shows degree symbol properly in some places, HTML shows 'EC' or 'C' without proper degree symbols",
+      "severity": "minor",
+      "evidence": "PDF: '\u00b0C' for Surface Temperature and Bottom Temperature. HTML: 'C' for these fields, and 'EC' for Air Temperature in both versions.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Bottom Composition codes layout differs - PDF shows two-column code listing, HTML shows single-column listing",
+      "severity": "minor",
+      "evidence": "PDF: Codes A-M listed in two side-by-side columns (A-I left, J-M right). HTML: All codes listed in a single column within the table cell.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Number of Replicates comment has rendering issue with special character",
+      "severity": "minor",
+      "evidence": "PDF: 'Record Type II's' with proper formatting. HTML: 'Record Type IIs.' - minor character difference.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The hierarchical diagram from Appendix B showing the relationships between record types is not rendered as an image or visual diagram in the HTML. Instead, it is represented as plain text paragraphs listing each record type and its name, losing the visual relationship structure.",
+      "severity": "major",
+      "evidence": "PDF page 4 contains a hierarchical flowchart diagram showing Environmental Data (Record Type 1) connecting to Gear Data (Record Type 7), Replicate Data (Record Type 2), Species Data (Record Type 3), Individual Data (Record Type 4), Tag Recapture Data (Record Type 9), and Age Data (Record Type 5). HTML renders this as sequential paragraphs rather than a diagram.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Key Information Fields table, the SPECIES CODE position is listed as '11- 12' in both the PDF and HTML, but the PDF states SPECIES CODE has 10 bytes, which means the position should span 10 characters (e.g., 11-20), not just '11-12'. However, the HTML faithfully reproduces the same values as the PDF, so this is actually a PDF-source issue faithfully reproduced.",
+      "severity": "major",
+      "evidence": "PDF page 5: SPECIES CODE, 10 bytes, Position 11-12. HTML table: SPECIES CODE, 10, 11-12. Both match.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'Division of Marine Fisheries' is used as h1, while the PDF also shows 'CRFL Funding Data Delivery Specifications' and 'January 2012' as part of the title block. The subtitle and date are rendered as plain paragraphs rather than as part of the heading structure. This is acceptable reformatting.",
+      "severity": "minor",
+      "evidence": "PDF: centered title block with 'Division of Marine Fisheries / CRFL Funding Data Delivery Specifications / January 2012'. HTML: h1 'Division of Marine Fisheries' followed by two <p> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Data Specification item 1, the PDF says '.cvs' (likely a typo in the original for .csv), and the HTML faithfully reproduces '.cvs'. This is accurate to the source.",
+      "severity": "minor",
+      "evidence": "PDF: '(.txt or .cvs)'. HTML: '(.txt or .cvs)'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Record Types table in Appendix B lists 'Record Type 8' as 'Fishing Gear Data' in the text listing, but the diagram in the PDF shows 'Gear Data Record Type 7'. The HTML faithfully reproduces the text listing with Record Type 8 and also mentions Record Type 7 from the diagram. This inconsistency exists in the source PDF itself.",
+      "severity": "minor",
+      "evidence": "PDF text: 'Record Type 8 Fishing Gear Data'. PDF diagram: 'Gear Data Record Type 7'. HTML reproduces both references.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the data dictionary table, the 'Mandatory (M) vs. Desired (D)' column for Gear Parameter #2 shows 'M .' in the HTML, which matches the PDF source where there appears to be a period after M.",
+      "severity": "minor",
+      "evidence": "PDF page 7: Gear Parameter #2 row shows 'M .' HTML: 'M .'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "In the data dictionary comments for 'Gear Parameter #1', the HTML adds '421 = Depth of Hooks' and '434 = Depth of Hooks' with the full word 'Hooks', while the PDF text appears truncated showing '421 = Depth of Hook' and '434 = Depth of Hook'. The 's' may be extrapolated.",
+      "severity": "minor",
+      "evidence": "PDF page 7: '421 = Depth of Hook' and '434 = Depth of Hook' (text appears cut off). HTML: '421 = Depth of Hooks' and '434 = Depth of Hooks'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains a hierarchical diagram image in Appendix B, but no <img> tag is present in the HTML for this diagram.",
+      "severity": "minor",
+      "evidence": "PDF page 4: flowchart diagram showing record type relationships. HTML: no img tag for this diagram.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 14,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 61.26,
+    "page_count": 10,
+    "visual_input_tokens": 25404,
+    "visual_output_tokens": 1464,
+    "content_input_tokens": 30910,
+    "content_output_tokens": 1401,
+    "timestamp": "2026-04-11T05:48:51.523021",
+    "auditor_version": "1.0.0"
+  }
+}

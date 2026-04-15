@@ -1,0 +1,222 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Top logo/header graphic is missing from the HTML.",
+      "severity": "major",
+      "evidence": "The PDF shows the NCDENR logo centered at the top of page 1, while the HTML begins with a plain text 'NCDENR' heading and no logo image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Bottom-right decorative/state branding graphic is omitted in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF includes the 'One North Carolina Naturally' graphic at the lower right of page 1; the HTML does not display this graphic.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Letterhead structure is simplified and spacing/grouping differ from the source.",
+      "severity": "minor",
+      "evidence": "The PDF uses a formal letterhead with governor/director/secretary names positioned across the top around the logo; the HTML converts this into centered text blocks with looser spacing, reducing the original header layout structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Header and section typography are altered from the source formatting.",
+      "severity": "minor",
+      "evidence": "In the PDF, the memo fields and section headings are compact and visually integrated with the letterhead; in the HTML, headings are larger and bolder, which changes emphasis though content remains present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table is not preserved as a table in the upper HTML rendering and is partially converted to paragraph text before later appearing as a table.",
+      "severity": "major",
+      "evidence": "On page 2 the PDF contains a two-column table listing Corps' Regional General Permit Numbers and DWQ General Certification Numbers. In the HTML, the content first appears as inline paragraph/list text rather than a structured table, and only later a table rendering appears further down.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is disrupted by duplicated/repeated content.",
+      "severity": "major",
+      "evidence": "The HTML for page 2 shows the closing paragraph from page 1, then page 2 content, and then repeats the same page 2 content again with a second rendering of the permit list/table, causing a user to encounter duplicated material out of sequence.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page layout is not cleanly preserved due to duplicated content blocks and mixed renderings.",
+      "severity": "major",
+      "evidence": "The PDF has a single continuous page of content. The HTML contains repeated sections and a mixture of paragraph text plus a later table version, creating a noticeably different page structure.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is disrupted by duplicate renderings of the same content.",
+      "severity": "major",
+      "evidence": "The HTML for page 3 first continues the permit list and bullets, then repeats the same page content again lower on the page, so a reader encounters duplicated text that does not match the single-flow PDF.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Overall structure is affected by repeated blocks.",
+      "severity": "major",
+      "evidence": "The PDF page 3 presents one uninterrupted set of bullets and paragraphs. The HTML shows the same material twice, changing whitespace grouping and page structure.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bullet/list styling is simplified compared with the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF uses arrow-style bullets and indented authority notes; the HTML renders them as standard bullets/paragraphs, preserving content but reducing visual distinction.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is compromised by duplicated sections.",
+      "severity": "major",
+      "evidence": "The HTML for page 4 contains the culvert-placement section and then repeats the same section again lower on the page, unlike the single sequence in the PDF.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Layout/structure differs materially because content is repeated and separated into multiple renderings.",
+      "severity": "major",
+      "evidence": "The PDF page 4 is a single block of conditions. The HTML shows one rendering followed by another repeated version of the same content, altering the visual grouping.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Indented condition text and bracketed notes lose some original visual hierarchy.",
+      "severity": "minor",
+      "evidence": "The PDF uses indentation and compact formatting to distinguish notes and subconditions; the HTML flattens some of this into more uniform paragraph text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is disrupted by repeated content blocks.",
+      "severity": "major",
+      "evidence": "The HTML for page 5 presents the mitigation and written-approval sections and then repeats the same material below, unlike the PDF's single presentation.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page structure is degraded by duplication.",
+      "severity": "major",
+      "evidence": "The PDF page 5 has one continuous set of bullet points. The HTML contains duplicate versions of the same bullets and paragraphs, changing structure and whitespace groupings.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List hierarchy and emphasized notes are less distinct in HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses nested bullets and bracketed editorial notes with tight indentation; the HTML uses simpler bullets and paragraph styling, reducing visual hierarchy.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is affected by duplication of the same content.",
+      "severity": "major",
+      "evidence": "The HTML for page 6 shows the end of one section and the GC3685/GC3821 revisions, then repeats that material again in another block lower on the page.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Layout is not faithfully preserved because repeated blocks alter the single-flow structure.",
+      "severity": "major",
+      "evidence": "The PDF page 6 contains one ordered set of subsections D and E. The HTML duplicates these subsections, producing a different visual arrangement.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Nested enumerated items are less clearly formatted.",
+      "severity": "minor",
+      "evidence": "The PDF distinguishes lettered subitems and quoted notes through indentation and compact typesetting; the HTML renders them more uniformly, making the hierarchy less visually explicit.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order is disrupted by duplicate rendering of the page content.",
+      "severity": "major",
+      "evidence": "The HTML for page 7 shows the end of item list content once in a smaller repeated block and again in the main text block below, unlike the single instance in the PDF.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page structure differs due to duplicated content sections.",
+      "severity": "major",
+      "evidence": "The PDF page 7 has one final list of revisions and the cc list. The HTML includes an additional repeated rendering above the main block, changing the overall layout.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Final bullet hierarchy and cc formatting are simplified.",
+      "severity": "minor",
+      "evidence": "The PDF uses arrow bullets and indented subpoints (a, b, c) with a compact cc block; the HTML uses standard bullets and looser spacing, reducing visual fidelity though content remains.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Multiple OCR/transcription errors alter words, citations, and meaning in the HTML compared with the PDF.",
+      "severity": "major",
+      "evidence": "Examples: PDF page 1 shows 'This notice is available electronically at http://portal.ncdenr.org/web/wq/swp/ws/401/publicnotices.' HTML has the same. But PDF footer line reads 'Phone: 919-807-6300 \\ FAX: 919-807-6494' while HTML preserves a backslash separator awkwardly. More importantly, PDF page 3 says 'supersede all other sediment and erosion control requirements,' while HTML says 'supercede'. PDF page 4 says 'crossvane' in plural context; HTML has 'crossvanes'. PDF page 6 says 'temporary debris may placed' in scan context, indicating OCR uncertainty; HTML reproduces unclear wording rather than the likely intended 'be placed'. PDF page 1 FROM line in the scan appears to include 'Unit' with punctuation and handwriting marks; HTML normalizes this, potentially losing exact text. These are not just formatting changes and include misspellings/altered legal citation text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy in the HTML does not fully reflect the source document structure; major document sections are flattened and lettered subsections are not represented as headings.",
+      "severity": "major",
+      "evidence": "HTML uses one h1 ('NCDENR') and two h2 headings for sections I and II. In the PDF, section II contains structured subsections A-E with substantive titles/blocks such as 'The US Army Corps of Engineers...' and 'The following changes, additions, or corrections...', but these are rendered only as list items in HTML rather than headings. This weakens the structural fidelity of the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page image placeholders are inserted throughout the HTML in addition to the full transcribed text, causing redundant content representation.",
+      "severity": "major",
+      "evidence": "HTML includes seven <img> elements with alt text like 'Scanned document page 1' through 'Scanned document page 7' while also fully transcribing each page's text below/around them. Although images are expected, the page images plus text transcription produce duplicated page-level content representation not present as separate parallel content in the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 17,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 62.25,
+    "page_count": 7,
+    "visual_input_tokens": 17396,
+    "visual_output_tokens": 2245,
+    "content_input_tokens": 14450,
+    "content_output_tokens": 661,
+    "timestamp": "2026-04-11T05:48:43.837342",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "NCDENR logo/seal image missing from HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF shows NCDENR seal/logo at top of page. HTML has no image, just text 'NCDENR'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Handwritten initials/signatures not preserved in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows handwritten initials next to FROM field (Karen Higgins and Brian Wrenn signatures). HTML has plain text only.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Header layout differs - PDF has three-column header with Governor/Director/Secretary, HTML has similar but slightly different spacing",
+      "severity": "minor",
+      "evidence": "PDF has Beverly Eaves Perdue, Charles Wakild P.E., and Dee Freeman in a three-column layout. HTML preserves this but with different alignment.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "One North Carolina Naturally logo missing from HTML footer",
+      "severity": "minor",
+      "evidence": "PDF shows 'One NorthCarolina Naturally' logo at bottom right of page 1. HTML renders this as text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table formatting differs but data is preserved",
+      "severity": "minor",
+      "evidence": "PDF shows Corps' Regional General Permit Number and DWQ General Certification Number as a formatted table with underlined headers. HTML renders as a proper HTML table with different styling.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings formatting slightly different",
+      "severity": "minor",
+      "evidence": "PDF has underlined section headings (I. and II.), HTML uses larger heading styles without underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Footer contact information repositioned",
+      "severity": "minor",
+      "evidence": "PDF has footer with address/phone/fax at bottom left. HTML consolidates this differently.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The h1 is 'NCDENR' which is derived from the letterhead logo text, not the document title. The actual document subject is in the RE: line. This is acceptable for a conversion but worth noting.",
+      "severity": "minor",
+      "evidence": "HTML uses <h1>NCDENR</h1>. The document is a memo with RE: subject line about UMBI Template and WQC/IWP revisions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There is a nested <main> inside <main>, creating invalid HTML structure, though this does not affect content fidelity.",
+      "severity": "major",
+      "evidence": "HTML has <body><main><main>...</main></main></body>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "All seven images have generic alt text 'Scanned document page X' which is not descriptive of actual content but is not fabricated.",
+      "severity": "minor",
+      "evidence": "All img tags use alt='Scanned document page 1' through 'Scanned document page 7'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF shows the last list item 'i' in the thresholds list using lowercase Roman numeral style, but the HTML switches to list-style-type: lower-roman mid-list, which is inconsistent with the ordered list type='a' used for the other items.",
+      "severity": "minor",
+      "evidence": "PDF shows items a-h then i. HTML uses <li style='list-style-type: lower-roman;'> for item i within an <ol type='a'>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The entire scanned page images are included alongside the fully transcribed text content, effectively duplicating all content - once as images and once as text. While this may be intentional for the conversion format, it represents significant duplication.",
+      "severity": "major",
+      "evidence": "Seven <figure><img> tags show scanned pages while the same content is fully transcribed in HTML text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text normalization: PDF shows 'allthe' (run together) on page 1 and 'allthe' appears corrected to 'all the' in HTML. Also 'UMBltemplate' in PDF corrected to 'UMBI template'. These are acceptable corrections of OCR artifacts.",
+      "severity": "minor",
+      "evidence": "PDF page 1: 'allthe parties involved' and 'UMBltemplate'; HTML: 'all the parties involved' and 'UMBI template'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 10,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 48.31,
+    "page_count": 7,
+    "visual_input_tokens": 21862,
+    "visual_output_tokens": 816,
+    "content_input_tokens": 25699,
+    "content_output_tokens": 930,
+    "timestamp": "2026-04-11T05:47:50.263193",
+    "auditor_version": "1.0.0"
+  }
+}

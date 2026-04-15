@@ -1,0 +1,30 @@
+{
+  "document_id": "01_2020MayMFC_BusinessMeetingAgenda",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Page headers and footers are incorrectly injected into the main content flow.",
+      "severity": "major",
+      "evidence": "On HTML page 2, the footer from PDF page 1 ('* Times indicated...') is rendered at the top of the table continuation. Furthermore, the page header from PDF page 2 ('Marine Fisheries Commission Business Meeting Agenda') is injected directly inside the table cell for the 10:00 a.m. activity, immediately preceding the 'Informational Materials continued:' list.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 56.45,
+    "page_count": 2,
+    "visual_input_tokens": 5072,
+    "visual_output_tokens": 332,
+    "content_input_tokens": 4483,
+    "content_output_tokens": 189,
+    "timestamp": "2026-04-11T05:51:06.168165",
+    "auditor_version": "1.0.0"
+  }
+}

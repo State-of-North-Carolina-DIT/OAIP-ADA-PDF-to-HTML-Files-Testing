@@ -1,0 +1,166 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Cover page layout is collapsed from a centered, hierarchical title-page format to a flat single-column layout without proper spacing and visual hierarchy",
+      "severity": "major",
+      "evidence": "PDF has large centered bold title block with clear separation between title, subtitle, prepared for/by sections, and seal. HTML renders everything as left-aligned sequential text blocks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Professional engineer seal/stamp is missing from the HTML cover page rendering",
+      "severity": "major",
+      "evidence": "PDF shows a North Carolina Professional Engineer seal (SEAL 038141) with DocuSigned signature. HTML version does not show this seal image on the cover page equivalent.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Table of Contents formatting is collapsed from structured indented layout to run-on text",
+      "severity": "minor",
+      "evidence": "PDF shows TOC with hierarchical indentation and dot leaders. HTML shows TOC entries running together in paragraph form.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Table of Contents loses dot leader formatting and hierarchical indentation",
+      "severity": "minor",
+      "evidence": "PDF has section numbers indented at different levels with dot leaders to page numbers. HTML presents them as continuous text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "List of Abbreviations rendered as a single run-on line instead of a structured list",
+      "severity": "minor",
+      "evidence": "PDF shows abbreviations as a formatted two-column list (abbreviation and definition). HTML shows 'CO Consent Order hr hour mL milliliter ng/L nanograms per liter PFAS per- and polyfluoroalkyl substances' as a single line.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Abbreviation list loses its tabular/list structure and becomes unreadable",
+      "severity": "major",
+      "evidence": "PDF has each abbreviation on its own line with aligned definitions. HTML has all abbreviations and definitions concatenated into one paragraph.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Mathematical equations lose proper formatting with subscripts and summation notation",
+      "severity": "minor",
+      "evidence": "PDF shows properly formatted equation with summation symbol (\u03a3), subscripts, and superscripts. HTML shows 'M_OF002 = \u03a3_n=1^N (m_OF002,n \u2212 m_intake,n)' as inline text.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 is rendered differently but data is preserved - acceptable styling difference",
+      "severity": "minor",
+      "evidence": "PDF shows a traditional bordered table. HTML shows the same data in a different table style but with same columns and rows.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 satellite map image is present in HTML but positioning relative to text differs",
+      "severity": "minor",
+      "evidence": "PDF has Figure 1 as a full standalone page. HTML includes it inline with surrounding content.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart figures (2 and 3) are rendered as structured text lists instead of visual flowchart diagrams",
+      "severity": "minor",
+      "evidence": "PDF shows Figures 2 and 3 as graphical flowcharts with decision diamonds and process boxes. HTML converts these to nested bullet-point lists describing the flowchart logic.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 2 flowchart graphic is converted to text-based representation losing visual diagram format",
+      "severity": "major",
+      "evidence": "PDF shows a detailed decision-tree flowchart with colored boxes and diamond decision nodes. HTML renders this as a textual nested list.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 3 flowchart graphic is converted to text-based representation",
+      "severity": "major",
+      "evidence": "PDF shows a flowchart diagram for river water intake concentration determination. HTML renders as a bulleted text list.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer elements from PDF pages appear inline in HTML disrupting reading flow",
+      "severity": "minor",
+      "evidence": "HTML includes 'DocuSign Envelope ID', 'Geosyntec Consultants of NC, P.C. NC License No.: C-3500 and C-295' text repeatedly between content sections, which were page headers/footers in the PDF.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two h1 elements. The document title 'SITE CONVEYANCE NETWORK AND OUTFALL 002 PFAS MASS LOADING CALCULATION PROTOCOL' is correctly an h1, but 'TABLES' and 'FIGURES' section divider pages are also rendered as h1 headings. Only one h1 should exist.",
+      "severity": "major",
+      "evidence": "HTML contains: <h1>SITE CONVEYANCE NETWORK AND OUTFALL 002 PFAS MASS LOADING CALCULATION PROTOCOL</h1>, <h1>TABLES</h1>, and <h1>FIGURES</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Section headings in the PDF use a numbered hierarchy (e.g., '1 INTRODUCTION', '2 OUTFALL 002...', '3 PFAS MASS LOADING...') but the HTML renders all of these as <strong> within <p> tags rather than proper heading elements (h2, h3). Sub-sections like 2.1, 2.2, 3.1, etc. are also rendered as bold paragraphs rather than h3 elements.",
+      "severity": "major",
+      "evidence": "PDF has structured sections '1 INTRODUCTION', '2.1 Outfall 002 Sample Types', '3.1 Total Mass Load Calculation Methodology' etc. HTML renders these as '<p><strong>1 INTRODUCTION</strong></p>', '<p><strong>2.1 Outfall 002 Sample Types</strong></p>' instead of using h2/h3 tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In Table 1, the 'Analytical Method' column shows 'Table 3+ Lab SOP' repeated for every row. In the PDF, this appears as a single merged cell spanning all rows. The data is not lost but the presentation differs from the original merged-cell layout.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Table 3+ Lab SOP' as a single entry in the Analytical Method column spanning all rows. HTML repeats it in each <td>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Several Geosyntec logo images have identical alt text 'Geosyntec Consultants logo' which is acceptable, but the aerial map image alt text 'Outfall 002 Sampling Locations Aerial Map' is reasonable. The flowchart images on pages 16-17 have been converted to textual flowchart descriptions rather than images, which is actually a good accessibility practice.",
+      "severity": "minor",
+      "evidence": "Flowcharts from Figures 2 and 3 are rendered as nested lists rather than images.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Table of Contents, the HTML preserves the dotted leaders and page numbers as plain text, which is acceptable reformatting. However, some mathematical notation in equations has been simplified from the PDF's rendered LaTeX-style formulas to plain text subscript/superscript notation.",
+      "severity": "minor",
+      "evidence": "PDF shows rendered mathematical equations with proper symbols (e.g., summation sigma, subscripts). HTML uses text like '\u03a3<sub>n=1</sub><sup>N</sup>' which preserves meaning but differs in presentation.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 7,
+  "minor_count": 11,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 144.21,
+    "page_count": 17,
+    "visual_input_tokens": 42727,
+    "visual_output_tokens": 1860,
+    "content_input_tokens": 45233,
+    "content_output_tokens": 1078,
+    "timestamp": "2026-04-15T00:15:50.888202",
+    "auditor_version": "1.0.0"
+  }
+}

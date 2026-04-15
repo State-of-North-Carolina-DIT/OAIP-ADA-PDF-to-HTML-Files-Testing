@@ -1,0 +1,174 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Header and footer layout structure lost",
+      "severity": "major",
+      "evidence": "In the PDF, the header has names on the left and the state seal centered, while the footer has side-by-side address blocks separated by a logo. In the HTML, these elements are collapsed and stacked vertically.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom, forcing the reader to encounter the information twice.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Warning text color lost",
+      "severity": "minor",
+      "evidence": "The red 'WARNING' text in the second email thread of the PDF is rendered in standard black text in the styled section of the HTML.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "List structure lost in duplicated text",
+      "severity": "major",
+      "evidence": "In the unformatted plain-text section at the bottom of the HTML, list items 'a' through 'j' under section B.1 lose their line breaks and are rendered as a single run-on paragraph.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains a styled version of the page content, followed by an unformatted plain-text dump of the same content at the bottom.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains the image and styled caption, followed by an unformatted plain-text dump of the caption text at the bottom.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page text content is duplicated",
+      "severity": "critical",
+      "evidence": "The HTML rendering contains the image and styled caption, followed by an unformatted plain-text dump of the caption text at the bottom.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Broken heading hierarchy. The document contains a single <h3> tag without any preceding <h1> or <h2> tags.",
+      "severity": "minor",
+      "evidence": "The HTML contains '<h3>Wehner, Judy</h3>' as the first and only heading tag in the document, skipping h1 and h2 levels entirely. Other logical headings (e.g., 'ATTACHMENT 1') are implemented as bolded paragraphs instead of semantic heading tags.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 15,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 308.13,
+    "page_count": 17,
+    "visual_input_tokens": 37720,
+    "visual_output_tokens": 2113,
+    "content_input_tokens": 25038,
+    "content_output_tokens": 284,
+    "timestamp": "2026-04-15T00:20:50.634384",
+    "auditor_version": "1.0.0"
+  }
+}

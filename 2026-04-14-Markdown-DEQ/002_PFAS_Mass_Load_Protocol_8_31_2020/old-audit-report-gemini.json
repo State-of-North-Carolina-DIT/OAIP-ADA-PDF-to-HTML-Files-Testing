@@ -1,0 +1,54 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Missing professional seal and signature image.",
+      "severity": "major",
+      "evidence": "The PDF contains a blue professional engineer's seal and a signature on the bottom right of the page, which are entirely absent in the HTML rendering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing map image for Figure 1.",
+      "severity": "critical",
+      "evidence": "The PDF displays an aerial map with labeled sampling locations for Figure 1. The HTML completely omits this image, leaving only the extracted text from the legend and caption.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing flowchart diagram for Figure 2.",
+      "severity": "critical",
+      "evidence": "The PDF contains a complex flowchart with logical decision diamonds and processes. The HTML entirely misses the graphic and simply lists the text from within the flowchart shapes as disjointed plain text paragraphs.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing flowchart diagram for Figure 3.",
+      "severity": "critical",
+      "evidence": "The PDF features a flowchart diagram for Figure 3. Similar to Figure 2, the HTML fails to include the graphic, presenting only the unformatted text extracted from the diagram's elements.",
+      "page": 17,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 70.28,
+    "page_count": 17,
+    "visual_input_tokens": 37766,
+    "visual_output_tokens": 1039,
+    "content_input_tokens": 19556,
+    "content_output_tokens": 153,
+    "timestamp": "2026-04-11T05:45:33.051333",
+    "auditor_version": "1.0.0"
+  }
+}

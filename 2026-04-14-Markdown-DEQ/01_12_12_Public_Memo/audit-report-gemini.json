@@ -1,0 +1,70 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Logos from the original document are missing in the HTML conversion.",
+      "severity": "major",
+      "evidence": "The PDF contains the 'NCDENR' logo at the top and the 'One North Carolina Naturally' logo at the bottom. Neither image is present in the HTML rendering.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Tabular layout in the header is flattened into sequential text.",
+      "severity": "minor",
+      "evidence": "The PDF displays the names and titles (Governor, Director, Secretary) in three distinct, horizontally aligned columns. The HTML renders these as stacked lines of text ('Beverly Eaves Perdue Governor', etc.).",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bracketed text lost line breaks, indentation, and italic formatting.",
+      "severity": "minor",
+      "evidence": "In the PDF, bracketed text like '[Authority for this condition...]' is italicized and placed on a new, indented line below its corresponding paragraph. In the HTML, it is rendered as plain text appended directly to the end of the preceding paragraph without a line break.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Ordered lists are rendered as run-on paragraphs.",
+      "severity": "major",
+      "evidence": "In the PDF, section 'D' has a lettered list (a. through g.) and section 'E' has a lettered list (a. through h.) with each item on a new line. In the HTML, these list items are merged into single, continuous paragraphs.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Sub-list and trailing contact block are rendered as run-on paragraphs/lines.",
+      "severity": "major",
+      "evidence": "In the PDF, the bullet for GC3819 contains a lettered sub-list (a, b, c) on separate lines. The HTML flattens this into a single paragraph. Additionally, the 'cc:' block at the bottom of the PDF lists names on individual lines, which the HTML flattens into one continuous string.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document lacks semantic HTML heading tags (h1-h6) to represent the document's structure, relying instead on bolded text within paragraph tags.",
+      "severity": "minor",
+      "evidence": "Section titles such as '<p><strong>I. Umbrella Mitigation Banking Instrument (UMBI) Template for Nutrient Offset Mitigation Banks</strong></p>' and '<p><strong>II. Proposed Water Quality Certification...</strong></p>' are styled with strong tags rather than appropriate <h2> tags.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 235.93,
+    "page_count": 7,
+    "visual_input_tokens": 15992,
+    "visual_output_tokens": 908,
+    "content_input_tokens": 11623,
+    "content_output_tokens": 287,
+    "timestamp": "2026-04-15T00:19:46.817855",
+    "auditor_version": "1.0.0"
+  }
+}

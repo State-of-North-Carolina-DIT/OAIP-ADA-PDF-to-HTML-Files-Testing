@@ -1,0 +1,214 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Cover page layout is not preserved.",
+      "severity": "major",
+      "evidence": "The PDF cover places the title, prepared-for/prepared-by blocks, project/date, and engineer seal/signature in a balanced report-cover arrangement with substantial whitespace. The HTML collapses this into a left-aligned linear flow and drops the seal/signature block from the visible cover layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Engineer seal/signature graphic is missing or relocated on the cover.",
+      "severity": "major",
+      "evidence": "The PDF page 1 shows a prominent blue professional engineer seal and DocuSign signature/date at lower right. The HTML cover rendering shown does not display this graphic in the corresponding location.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Table of contents layout is materially degraded.",
+      "severity": "major",
+      "evidence": "In the PDF, the TOC is centered and structured with clear line leaders and page numbers aligned at right. In the HTML, entries run together into long wrapped lines, section numbers and titles merge, and the visual grouping of TOC items is lost.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "TOC/list formatting is not preserved.",
+      "severity": "major",
+      "evidence": "The PDF uses distinct headings for TABLE OF CONTENTS, LIST OF TABLES, and LIST OF FIGURES with neatly separated entries. The HTML renders many items as run-on text with poor spacing and lost alignment, reducing readability.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading flow on the TOC page is confusing due to merged entries.",
+      "severity": "major",
+      "evidence": "A sighted reader of the HTML encounters section titles, subsection items, and page numbers in a compressed sequence that no longer matches the clearly ordered PDF TOC.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Abbreviation list formatting is lost.",
+      "severity": "major",
+      "evidence": "The PDF shows a two-column abbreviation list with abbreviations aligned separately from their definitions. The HTML collapses this into a single run-on line: 'CO Consent Order hr hour mL milliliter...' which removes the list structure.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order on the abbreviations page is impaired by flattened list structure.",
+      "severity": "major",
+      "evidence": "The PDF lets a reader pair each abbreviation with its definition row by row; the HTML presents the content as continuous text, making pairings less clear and changing visual reading flow.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Introductory section typography is simplified.",
+      "severity": "minor",
+      "evidence": "The PDF uses serif body text with stronger visual distinction for section numbering and bullets. The HTML keeps content and bullets but with simplified typography and spacing.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section 2 formatting is simplified but content remains intact.",
+      "severity": "minor",
+      "evidence": "The PDF uses underlined subsection headings and a more formal report style. The HTML retains headings and bullets but reduces typographic distinction and indentation.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section 2 continuation formatting differs from the PDF.",
+      "severity": "minor",
+      "evidence": "The PDF preserves a formal report look with underlined subsection title and paragraph blocks. The HTML shows the same content but with flatter styling and less visual separation.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section 3 introductory formula formatting is partially degraded.",
+      "severity": "minor",
+      "evidence": "The PDF presents Equation 1 with centered mathematical layout and clearly formatted variable definitions. The HTML retains the equation text but with less precise mathematical formatting.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Equation 2 formatting is weakened in HTML.",
+      "severity": "minor",
+      "evidence": "The PDF uses centered equation styling and structured variable definitions with visual hierarchy. The HTML presents the equation inline with reduced typographic clarity, though the content is still present.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Equation 3 and section heading styling are simplified.",
+      "severity": "minor",
+      "evidence": "The PDF shows Equation 3 centered with serif math notation and clear subsection transition into 3.4. The HTML keeps the sequence but with less distinct equation presentation and heading contrast.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section 3.4/3.5 text formatting is simplified.",
+      "severity": "minor",
+      "evidence": "The PDF has formal paragraph spacing and underlined subsection headings. The HTML keeps the content but uses flatter styles and less controlled whitespace.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Standalone 'TABLES' divider page layout is not preserved exactly.",
+      "severity": "minor",
+      "evidence": "The PDF shows a centered standalone section divider with large whitespace. The HTML retains the heading but integrates it into a more continuous flow with surrounding content.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 styling differs from the PDF though structure is retained.",
+      "severity": "minor",
+      "evidence": "The PDF table uses compact report styling with a merged first-column analytical method cell spanning multiple rows. The HTML reproduces the table content and columns but visually restyles it and repeats the analytical method cell on each row rather than preserving the merged cell appearance.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Standalone 'FIGURES' divider page is less faithfully represented.",
+      "severity": "minor",
+      "evidence": "The PDF shows a clean centered FIGURES title page. The HTML shows the heading but as part of a continuous scrolling layout rather than a distinct divider page.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 is followed by extracted textual labels not present in the original visual layout.",
+      "severity": "minor",
+      "evidence": "The PDF page is primarily the map figure with embedded legend/title block. The HTML shows the image but then adds extracted text such as 'Legend', 'Map Text/Labels', and figure metadata beneath it, altering the visual presentation though not losing information.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flowchart figures are represented both as images and as separate extracted text summaries.",
+      "severity": "minor",
+      "evidence": "The PDF pages 15 and 16 each present a single graphical flowchart. The HTML includes the images but also exposes the flowchart text separately beneath/after the figures, changing the visual experience though preserving content.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 3 visual presentation differs due to added extracted text.",
+      "severity": "minor",
+      "evidence": "The PDF shows only the flowchart figure on the page. The HTML includes the figure and then a textual bullet summary of the flowchart content, which alters layout but does not remove information.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated stylesheet/import content not present in the PDF source.",
+      "severity": "critical",
+      "evidence": "HTML head contains new content such as \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...')\", CSS variables like \"--nc-navy: #092940\", and theme labels \"Digital Commons NC \u2014 Standalone Theme CSS\". The PDF pages contain only document content and no CSS, font URLs, or theme metadata.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy does not accurately reflect the document structure and uses multiple h1 elements.",
+      "severity": "major",
+      "evidence": "HTML uses multiple h1 tags: \"SITE CONVEYANCE NETWORK AND OUTFALL 002 PFAS MASS LOADING CALCULATION PROTOCOL\", \"TABLES\", and \"FIGURES\". The PDF shows a document title on the cover and separate section divider pages for Tables and Figures, not multiple top-level document titles. Also, body section headings such as \"1 INTRODUCTION\" and \"2 OUTFALL 002 AND RIVER INTAKE SAMPLING\" are rendered as bold paragraphs instead of heading elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text is inaccurate or over-specific relative to the visible image content.",
+      "severity": "minor",
+      "evidence": "HTML alt text includes \"Professional Engineer Seal and Signature Adrienne D. Nemura 8/31/2020\" and \"Outfall 002 Sampling Locations Aerial Map.\" The PDF image does show a seal/signature block and a figure map, but the exact text/details in alt attributes may not be fully legible from the image alone and are more interpretive than descriptive.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "There are notable text accuracy issues in the converted table and figure text, including at least one incorrect chemical formula and possible OCR/transcription distortions.",
+      "severity": "major",
+      "evidence": "In PDF Table 1, the row for \"PFECA-G\" appears with chemical formula \"C12H9F9O3S\" in HTML, which is inconsistent with the naming pattern and may reflect OCR error; several table entries and labels show signs of transcription uncertainty. HTML also converts figure legend text to \"*   Sampling Location\" whereas the PDF legend shows a cyan dot symbol with the label \"Sampling Location,\" indicating symbol-to-text distortion.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 9,
+  "minor_count": 14,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 223.58,
+    "page_count": 17,
+    "visual_input_tokens": 31136,
+    "visual_output_tokens": 2449,
+    "content_input_tokens": 25083,
+    "content_output_tokens": 689,
+    "timestamp": "2026-04-15T00:17:10.267574",
+    "auditor_version": "1.0.0"
+  }
+}

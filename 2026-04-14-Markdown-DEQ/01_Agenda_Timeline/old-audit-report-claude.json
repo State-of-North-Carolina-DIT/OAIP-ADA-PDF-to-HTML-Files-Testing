@@ -1,0 +1,134 @@
+{
+  "document_id": "01_Agenda_Timeline",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 1 has a two-panel layout (left panel with audio troubleshooting, right panel with welcome/meeting info on a cork-textured background). The HTML renders this as a single column with audio troubleshooting on top and welcome info below.",
+      "severity": "critical",
+      "evidence": "PDF shows side-by-side layout with distinct left (light blue) and right (cork background) panels. HTML stacks them vertically in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The cork/bulletin-board textured background on the right panel of page 1 is absent in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF right panel has a cork-board texture background; HTML has a plain white background.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The welcome text on page 1 uses a distinctive decorative/script font in the PDF. The HTML renders it in a standard sans-serif heading font, losing the stylistic emphasis.",
+      "severity": "major",
+      "evidence": "PDF: 'Welcome to the CHPP Steering Committee Meeting' in ornate cursive/script font. HTML: same text in plain heading font.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The green highlighted box containing 'Say Hi in the chat box...' and 'Please mute' is not reproduced in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows a green/mint highlighted box around the chat prompt. HTML shows the text without the highlight box.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 agenda in PDF is presented as a list with time stamps and descriptions in a two-column implied layout. HTML renders it as a proper table which is functionally equivalent but structurally different.",
+      "severity": "minor",
+      "evidence": "PDF: agenda items with left-aligned times and indented descriptions. HTML: formal table with Time and Agenda Item columns.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "On page 2, the italic formatting for 'Review of Issue Papers' and 'Outside Presentations to Committee' and the time range '9:15 \u2013 10:15am' and '11:30 \u2013 12:30pm' are rendered in italic in PDF but appear as plain text in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: '9:15 \u2013 10:15am' and 'Review of Issue Papers' in italics. HTML: same text without italic styling.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Page 3 in the PDF has a vertical strip of wildlife/habitat images along the right side. In the HTML, these images appear but are placed at the top of the page above the timeline table, displacing them from their original position.",
+      "severity": "major",
+      "evidence": "PDF: images are on the right side alongside the timeline table. HTML: images are stacked vertically above the table.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 PDF has a two-element layout with the timeline table on the left and images on the right. HTML collapses this to a single column with images on top and table below.",
+      "severity": "major",
+      "evidence": "PDF: table and images side by side. HTML: images stacked above table in single column.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Page 3 title 'Coastal Habitat Protection Plan' is large and prominent with 'Timeline' in blue in the PDF. HTML renders both as headings but the blue color on 'Timeline' is not preserved.",
+      "severity": "minor",
+      "evidence": "PDF: 'Timeline' subtitle in blue. HTML: 'Timeline' in black/default color.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two nested <main> elements, and the heading hierarchy is inconsistent. 'AUDIO TROUBLESHOOTING' is rendered as h2 but appears before the h1, and the document effectively has the welcome slide title as h1 while the audio troubleshooting section heading precedes it. Also, 'Timeline' is an h3 under 'Coastal Habitat Protection Plan' (h2), which is acceptable, but the agenda 'Agenda' is h2 while 'Welcome to the CHPP Steering Committee Meeting' is h1 \u2014 this creates an unusual structure where the h1 is not the document title but rather a slide title.",
+      "severity": "major",
+      "evidence": "HTML: <h2>AUDIO TROUBLESHOOTING</h2> appears before <h1>Welcome to the CHPP Steering Committee Meeting</h1>. The h1 represents slide content rather than a document title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the side images on page 3 is somewhat speculative. The PDF shows a strip of photos on the right side. The alt text describes 'Egret wading in wetland', 'Collage of coastal habitats including oyster reef, seagrass, and sandy bottom', and 'Fish swimming over reef'. While these may be reasonable guesses, the actual images in the PDF are small thumbnails that appear to show various coastal habitat scenes. The descriptions are plausible but cannot be fully verified from the PDF rendering.",
+      "severity": "minor",
+      "evidence": "HTML alt texts: 'Egret wading in wetland', 'Collage of coastal habitats including oyster reef, seagrass, and sandy bottom', 'Fish swimming over reef'. The PDF shows a vertical strip of 4-5 small nature/habitat photos on page 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The audio troubleshooting content appears both in the figure alt text description area and as standalone HTML text, creating a mild structural duplication of the concept, though the actual text content is not literally duplicated.",
+      "severity": "minor",
+      "evidence": "HTML has <figure><img alt='Audio troubleshooting instructions and WebEx settings'> followed by a div with the full AUDIO TROUBLESHOOTING text content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The agenda table in the HTML adds column headers 'Time' and 'Agenda Item' that are not present in the PDF. The PDF presents the agenda as a simple time-description layout without explicit column headers. This is minor formatting but introduces text not in the source.",
+      "severity": "minor",
+      "evidence": "PDF page 2: Shows agenda items with times and descriptions but no 'Time' or 'Agenda Item' column headers. HTML: <th>Time</th><th>Agenda Item</th>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The table headers 'Time' and 'Agenda Item' in the agenda table are fabricated \u2014 they do not appear in the source PDF. However, they are reasonable structural additions for an HTML table conversion rather than substantive content fabrication.",
+      "severity": "minor",
+      "evidence": "PDF page 2 has no table headers; HTML adds <th>Time</th> and <th>Agenda Item</th>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 53.11,
+    "page_count": 3,
+    "visual_input_tokens": 10082,
+    "visual_output_tokens": 1339,
+    "content_input_tokens": 8986,
+    "content_output_tokens": 1089,
+    "timestamp": "2026-04-11T05:51:24.897873",
+    "auditor_version": "1.0.0"
+  }
+}

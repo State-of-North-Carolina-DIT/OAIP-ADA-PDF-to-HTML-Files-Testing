@@ -1,0 +1,102 @@
+{
+  "document_id": "01_10_Corrected_cover_letter_20201221",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The HTML converts the letter into a single continuous flow without preserving the original letterhead layout. The header area with Governor, Secretary, Director names and the state seal are rendered as plain stacked text rather than maintaining the left-column/center-seal layout.",
+      "severity": "major",
+      "evidence": "PDF has ROY COOPER/Governor and MICHAEL S. REGAN/Secretary on the left with the NC state seal centered and NORTH CAROLINA/Environmental Quality below. HTML renders these as sequential left-aligned lines without the spatial relationship.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the letterhead is missing in the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF shows the official NC state seal centered at the top of the page. HTML has no image present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom footer is missing in the HTML rendering.",
+      "severity": "minor",
+      "evidence": "PDF shows the DEQ logo at the bottom left. HTML renders the footer information as plain text only.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The Re: block formatting with indented subject details is collapsed into a single line in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Re:' followed by indented lines for quarry name, mine permit, county, and river basin on separate lines. HTML shows 'Re: Alamance Quarry and Construction Materials Quarry Mine Permit #01-10 Alamance County Cape Fear River Basin' as a single line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The recipient address block is collapsed into a single line in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows Mr. Chad Threat, Alamance Aggregates LLC, PO Box 552, Snow Camp, North Carolina 27349 on separate lines. HTML shows it as a single continuous line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature image is missing in the HTML rendering.",
+      "severity": "minor",
+      "evidence": "PDF shows a handwritten signature above 'David Miller, PE'. HTML only shows the typed name without the signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading structure exists in the HTML. The document has no h1, h2, or any heading tags. While this is a letter and not a structured report, a document title h1 would be expected for proper HTML structure.",
+      "severity": "major",
+      "evidence": "The HTML uses only <p> tags for all content with no heading elements at all.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the embedded image is generic and describes the full page rather than the actual image content (the North Carolina state seal).",
+      "severity": "minor",
+      "evidence": "Alt text says 'Full page scanned document' but the image in the PDF at that position is the North Carolina state seal/emblem.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The full-page scan image is included as an embedded image AND the text content is also reproduced as HTML text, resulting in the entire document content being effectively duplicated.",
+      "severity": "minor",
+      "evidence": "The HTML contains <img ... alt='Full page scanned document'> followed by all the text content of the letter reproduced in <p> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The italic formatting on 'Environmental Quality' is missing. In the PDF it appears as the italic counterpart under 'NORTH CAROLINA'.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Environmental Quality' in italic. HTML shows plain text: 'Environmental Quality' without <em> tags, while other italic items (Governor, Secretary, Director) are properly wrapped in <em>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 41.76,
+    "page_count": 1,
+    "visual_input_tokens": 3871,
+    "visual_output_tokens": 841,
+    "content_input_tokens": 4177,
+    "content_output_tokens": 636,
+    "timestamp": "2026-04-15T00:15:09.488806",
+    "auditor_version": "1.0.0"
+  }
+}

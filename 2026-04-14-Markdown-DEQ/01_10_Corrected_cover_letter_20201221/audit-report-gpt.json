@@ -1,0 +1,70 @@
+{
+  "document_id": "01_10_Corrected_cover_letter_20201221",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Top header layout is not preserved.",
+      "severity": "major",
+      "evidence": "In the PDF, the governor/secretary/director names appear as a left-aligned header block with the state seal and 'North Carolina Environmental Quality' centered above the letter. In the HTML, these header elements are flattened into a single vertical reading flow below the main body/footer area, losing the original spatial grouping and page-header structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Key graphics/logos are missing in the HTML rendering.",
+      "severity": "major",
+      "evidence": "The PDF shows the North Carolina state seal at the top center and the DEQ logo near the bottom. In the HTML rendering, these graphics are absent and replaced only by text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Text styling and emphasis are not fully preserved.",
+      "severity": "minor",
+      "evidence": "The PDF uses italics for titles such as 'Governor', 'Secretary', and 'Director', and bold emphasis for values like '302.03' and '86.76'. The HTML preserves some bolding in the body but loses the visual distinction of the header titles and overall typography/alignment is simplified.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order differs from the PDF's visual flow.",
+      "severity": "major",
+      "evidence": "In the PDF, a reader sees the header block and seal first, then the date, address, subject, body, signature, and footer. In the HTML, the footer contact line appears before the extracted header names, causing the order of visually encountered information to differ from the source document.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes fabricated boilerplate/theme metadata and external URL imports not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML head contains invented content such as \"Converted Document\", CSS comment \"Digital Commons NC \u2014 Standalone Theme CSS\", and \"@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3...\")\". These do not appear anywhere in the PDF letter.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML does not preserve any heading structure from the document and uses no semantic headings.",
+      "severity": "major",
+      "evidence": "The PDF has clear structural elements including the agency name, date, recipient block, subject line beginning \"Re:\", salutation, and signature block. In HTML, all content is rendered as <p> elements with no h1-h6 headings.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gpt-5.4",
+    "provider": "gpt",
+    "duration_seconds": 36.79,
+    "page_count": 1,
+    "visual_input_tokens": 3050,
+    "visual_output_tokens": 535,
+    "content_input_tokens": 3153,
+    "content_output_tokens": 358,
+    "timestamp": "2026-04-15T00:15:15.658757",
+    "auditor_version": "1.0.0"
+  }
+}

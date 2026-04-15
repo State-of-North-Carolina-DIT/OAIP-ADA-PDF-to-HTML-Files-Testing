@@ -1,0 +1,134 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The letterhead layout with Governor, Secretary, Director names on the left and the state seal/agency name centered is collapsed into a flat sequential list in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows a multi-column header with ROY COOPER/Governor, MICHAEL S. REGAN/Secretary, BRIAN WRENN/Director on the left and the NC seal with 'NORTH CAROLINA Environmental Quality' centered. HTML renders these as sequential lines without the two-column layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image in the letterhead is present in the HTML but rendered as part of the inverted/back-of-page image rather than as a standalone element.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the seal prominently at top center. HTML page 2 shows an inverted version of the full page as an image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature of David Miller is not reproduced in the HTML conversion.",
+      "severity": "major",
+      "evidence": "PDF shows a handwritten signature above 'David Miller, PE'. HTML has only the text 'Sincerely,' and 'David Miller, PE State Mining Engineer' without the signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 of the HTML includes the full back-of-page (inverted) scan image followed by a full text re-extraction of page 1 content, creating duplicate content.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows the back of page 1 (inverted text visible through paper). HTML page 2 shows the inverted image AND a complete re-transcription of the letter text below it.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 2 duplicates all content from page 1 as extracted text below the inverted scan image, disrupting reading order.",
+      "severity": "major",
+      "evidence": "HTML page 2 contains 'ROY COOPER Governor', 'MICHAEL S. REGAN Secretary', the full letter body, footer info \u2014 all repeated from page 1.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signatures of Brian Wrenn and Brenda Harris on the Notice of Issuance are not reproduced in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows handwritten signatures for Brian Wrenn (Director) and Brenda Harris. HTML page 4 has only text names without signature images.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined title 'NOTICE OF ISSUANCE OF MINING PERMIT' in the PDF is rendered as bold text without underline in HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows centered, underlined title. HTML shows 'NOTICE OF ISSUANCE OF MINING PERMIT' as a heading without underline decoration.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined phrase 'within sixty (60) days' in the PDF is not visually underlined in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 3 has 'within sixty (60) days' underlined for emphasis. HTML renders it as plain text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 4 of the HTML duplicates all content from page 3 (Notice of Issuance), presenting the inverted back-of-page image followed by a full re-extraction of the notice text.",
+      "severity": "major",
+      "evidence": "PDF page 4 shows the back of page 3 (inverted). HTML page 4 shows the inverted image plus a complete re-transcription of the Notice of Issuance content.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 4 duplicates all content from page 3 as extracted text, disrupting reading order with redundant information.",
+      "severity": "major",
+      "evidence": "HTML page 4 re-states the entire Notice of Issuance including all paragraphs, addresses, and signer information.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo in the footer of page 1 is present in PDF but not distinctly rendered in HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows the DEQ logo at bottom left with contact info. HTML includes the contact text but logo rendering is part of the page scan image only.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has no h1 heading. The 'NOTICE OF ISSUANCE OF MINING PERMIT' title is rendered as h3, skipping h1 and h2 levels. There should be an h1 as the document title.",
+      "severity": "major",
+      "evidence": "HTML uses <h3>NOTICE OF ISSUANCE OF MINING PERMIT</h3> with no h1 or h2 present in the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the two embedded images is generic ('Page 1 Scanned Document', 'Page 2 Scanned Document') rather than descriptive of the actual content. The first image likely includes the NC state seal and DEQ logo; the second is a full page scan.",
+      "severity": "minor",
+      "evidence": "alt='Page 1 Scanned Document' and alt='Page 2 Scanned Document'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The entire content of both pages is duplicated: once as embedded scanned images and again as extracted text. The full-page scanned images effectively reproduce all the text content that follows them.",
+      "severity": "major",
+      "evidence": "Page 1 content appears as <img alt='Page 1 Scanned Document'> followed by the full text of page 1. Page 2 content appears as <img alt='Page 2 Scanned Document'> followed by the full text of page 2.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 9,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 63.19,
+    "page_count": 2,
+    "visual_input_tokens": 6899,
+    "visual_output_tokens": 1553,
+    "content_input_tokens": 5902,
+    "content_output_tokens": 582,
+    "timestamp": "2026-04-15T00:15:03.514239",
+    "auditor_version": "1.0.0"
+  }
+}
