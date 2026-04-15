@@ -115,7 +115,7 @@ input{font-family:var(--font)}
 }
 .rh-v:hover,.rh-v.active{background:var(--secondary)}
 .rh-v::after{content:'';position:absolute;top:0;bottom:0;left:-4px;right:-4px}
-.rh-v.hidden,.rh-h.hidden{display:none}
+.rh-v.hidden,.rh-h.hidden,.provider-tabs.hidden{display:none}
 
 /* ── Collapse Toggle ── */
 .collapse-toggle{

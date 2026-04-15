@@ -22,7 +22,8 @@ const S = {
   treeData: null,    // cached full git tree
   subdirs: [],
   selected: null,
-  activeProvider: 'claude',
+  activeOldProvider: null,
+  activeNewProvider: null,
   cache: {},
   pdf: null,
   collapsed: { sidebar: false, oldCol: false, newCol: false, pdfCol: false },
@@ -187,8 +188,8 @@ function loadBatch(batchName) {
   renderHtmlPanel('oldHtmlBody', null, 'Select a document');
   renderHtmlPanel('newHtmlBody', null, 'Select a document');
   renderPdf(null);
-  renderAuditInline($('#oldAuditPanel'), null, false);
-  renderAuditInline($('#newAuditPanel'), null, true);
+  renderAuditPanel('old', {});
+  renderAuditPanel('new', {});
   if (S.subdirs.length > 0) selectSubdir(S.subdirs[0].name);
 }
 
@@ -204,10 +205,20 @@ async function loadSubdirFiles(name) {
   const parseJson = raw => { if (!raw) return null; try { return JSON.parse(raw); } catch { return null; } };
 
   // Fetch all in parallel
-  const [newHtml, oldHtml, oldAuditRaw, claudeRaw, gptRaw, geminiRaw] = await Promise.all([
+  const [
+    newHtml, oldHtml,
+    oldAuditRaw, oldClaudeRaw, oldGptRaw, oldGeminiRaw,
+    newSingleRaw, newClaudeRaw, newGptRaw, newGeminiRaw,
+  ] = await Promise.all([
     fileNames.has('converted.html') ? fetchTextFile(filePath('converted.html')) : null,
     fileNames.has('old-converted.html') ? fetchTextFile(filePath('old-converted.html')) : null,
+    // Old audit variants
     fileNames.has('old-audit.json') ? fetchTextFile(filePath('old-audit.json')) : null,
+    fileNames.has('old-audit-report-claude.json') ? fetchTextFile(filePath('old-audit-report-claude.json')) : null,
+    fileNames.has('old-audit-report-gpt.json') ? fetchTextFile(filePath('old-audit-report-gpt.json')) : null,
+    fileNames.has('old-audit-report-gemini.json') ? fetchTextFile(filePath('old-audit-report-gemini.json')) : null,
+    // New audit variants
+    fileNames.has('audit-report.json') ? fetchTextFile(filePath('audit-report.json')) : null,
     fileNames.has('audit-report-claude.json') ? fetchTextFile(filePath('audit-report-claude.json')) : null,
     fileNames.has('audit-report-gpt.json') ? fetchTextFile(filePath('audit-report-gpt.json')) : null,
     fileNames.has('audit-report-gemini.json') ? fetchTextFile(filePath('audit-report-gemini.json')) : null,
@@ -219,16 +230,34 @@ async function loadSubdirFiles(name) {
     pdfUrl = await resolvePdfUrl(filePath('source.pdf'));
   }
 
+  // Build old audits object: prefer multi-vendor files, fall back to single old-audit.json
+  const oldAudits = {};
+  const oldClaude = parseJson(oldClaudeRaw);
+  const oldGpt = parseJson(oldGptRaw);
+  const oldGemini = parseJson(oldGeminiRaw);
+  const oldSingle = parseJson(oldAuditRaw);
+  if (oldClaude) oldAudits.claude = oldClaude;
+  if (oldGpt) oldAudits.gpt = oldGpt;
+  if (oldGemini) oldAudits.gemini = oldGemini;
+  if (Object.keys(oldAudits).length === 0 && oldSingle) oldAudits.single = oldSingle;
+
+  // Build new audits object: prefer multi-vendor files, fall back to single audit-report.json
+  const newAudits = {};
+  const newClaude = parseJson(newClaudeRaw);
+  const newGpt = parseJson(newGptRaw);
+  const newGemini = parseJson(newGeminiRaw);
+  const newSingle = parseJson(newSingleRaw);
+  if (newClaude) newAudits.claude = newClaude;
+  if (newGpt) newAudits.gpt = newGpt;
+  if (newGemini) newAudits.gemini = newGemini;
+  if (Object.keys(newAudits).length === 0 && newSingle) newAudits.single = newSingle;
+
   const data = {
     oldHtml,
     newHtml,
     pdfUrl,
-    oldAudit: parseJson(oldAuditRaw),
-    audits: {
-      claude: parseJson(claudeRaw),
-      gpt: parseJson(gptRaw),
-      gemini: parseJson(geminiRaw),
-    },
+    oldAudits,
+    newAudits,
   };
   S.cache[name] = data;
   return data;
@@ -304,14 +333,24 @@ async function selectSubdir(name) {
 // ================================================================
 // Provider Switching
 // ================================================================
-function switchProvider(provider) {
-  S.activeProvider = provider;
-  $$('.ptab').forEach(t => {
+function switchProvider(side, provider) {
+  if (side === 'old') S.activeOldProvider = provider;
+  else S.activeNewProvider = provider;
+
+  const tabContainer = $(`#${side}ProviderTabs`);
+  tabContainer.querySelectorAll('.ptab').forEach(t => {
     const isActive = t.dataset.provider === provider;
     t.classList.toggle('active', isActive);
     t.setAttribute('aria-selected', isActive ? 'true' : 'false');
   });
-  if (S.selected && S.cache[S.selected]) renderNewAuditPanel(S.cache[S.selected]);
+
+  if (S.selected && S.cache[S.selected]) {
+    const data = S.cache[S.selected];
+    const audits = side === 'old' ? data.oldAudits : data.newAudits;
+    const panel = $(`#${side}AuditPanel`);
+    const audit = normalizeAudit(audits[provider]);
+    renderAuditInline(panel, audit);
+  }
 }
 
 // ================================================================
@@ -333,8 +372,8 @@ function renderConversionsView(data) {
   renderHtmlPanel('oldHtmlBody', data.oldHtml, 'Old conversion not available');
   renderHtmlPanel('newHtmlBody', data.newHtml, 'New conversion not available');
   renderPdf(data.pdfUrl);
-  renderOldAuditPanel(data);
-  renderNewAuditPanel(data);
+  renderAuditPanel('old', data.oldAudits);
+  renderAuditPanel('new', data.newAudits);
 }
 
 function applyTheme(html) {
@@ -587,7 +626,7 @@ function normalizeAudit(raw) {
 // ================================================================
 // Inline Audit Panel Renderers
 // ================================================================
-function renderAuditInline(container, audit, isNew) {
+function renderAuditInline(container, audit) {
   container.replaceChildren();
   if (!audit) {
     container.appendChild(el('div', { className: 'audit-empty' }, 'No audit data'));
@@ -666,13 +705,75 @@ function buildDefectBadge(label, count, cls) {
   return d;
 }
 
-function renderOldAuditPanel(data) {
-  renderAuditInline($('#oldAuditPanel'), data.oldAudit, false);
-}
+// Provider icon URLs
+const PROVIDER_ICONS = {
+  claude: { src: 'https://cdn.simpleicons.org/anthropic/d4a27c', alt: 'Claude' },
+  gpt: { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/3840px-ChatGPT_logo.svg.png', alt: 'GPT' },
+  gemini: { src: 'https://cdn.simpleicons.org/googlegemini/8b9cf7', alt: 'Gemini' },
+};
 
-function renderNewAuditPanel(data) {
-  const newA = normalizeAudit(data.audits[S.activeProvider]);
-  renderAuditInline($('#newAuditPanel'), newA, true);
+// Provider display names
+const PROVIDER_LABELS = { claude: 'Claude', gpt: 'GPT', gemini: 'Gemini', single: 'Audit' };
+
+/**
+ * Render the provider tabs and audit content for a given side ('old' or 'new').
+ * Handles any combination: 0 audits, 1 single audit, 1-3 vendor audits.
+ */
+function renderAuditPanel(side, audits) {
+  const tabContainer = $(`#${side}ProviderTabs`);
+  const panel = $(`#${side}AuditPanel`);
+  const providers = Object.keys(audits || {});
+
+  // No audits at all
+  if (providers.length === 0) {
+    tabContainer.classList.add('hidden');
+    tabContainer.replaceChildren();
+    panel.replaceChildren(el('div', { className: 'audit-empty' }, 'No audit data'));
+    if (side === 'old') S.activeOldProvider = null;
+    else S.activeNewProvider = null;
+    return;
+  }
+
+  // Single audit (no tabs needed) — either a 'single' key or just one vendor
+  if (providers.length === 1) {
+    tabContainer.classList.add('hidden');
+    tabContainer.replaceChildren();
+    const key = providers[0];
+    if (side === 'old') S.activeOldProvider = key;
+    else S.activeNewProvider = key;
+    renderAuditInline(panel, normalizeAudit(audits[key]));
+    return;
+  }
+
+  // Multi-vendor: build tabs dynamically
+  const currentActive = side === 'old' ? S.activeOldProvider : S.activeNewProvider;
+  const activeProvider = providers.includes(currentActive) ? currentActive : providers[0];
+  if (side === 'old') S.activeOldProvider = activeProvider;
+  else S.activeNewProvider = activeProvider;
+
+  tabContainer.replaceChildren();
+  tabContainer.classList.remove('hidden');
+
+  for (const prov of providers) {
+    const btn = document.createElement('button');
+    btn.className = 'ptab' + (prov === activeProvider ? ' active' : '');
+    btn.dataset.provider = prov;
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', prov === activeProvider ? 'true' : 'false');
+    const iconInfo = PROVIDER_ICONS[prov];
+    if (iconInfo) {
+      const img = document.createElement('img');
+      img.className = 'ptab-icon';
+      img.src = iconInfo.src;
+      img.alt = iconInfo.alt;
+      btn.appendChild(img);
+    }
+    btn.appendChild(document.createTextNode(PROVIDER_LABELS[prov] || prov));
+    btn.addEventListener('click', () => switchProvider(side, prov));
+    tabContainer.appendChild(btn);
+  }
+
+  renderAuditInline(panel, normalizeAudit(audits[activeProvider]));
 }
 
 // ── Card builder ──
@@ -924,8 +1025,8 @@ function drag(handle, type, onDelta) {
 // Horizontal Resize (audit panels)
 // ================================================================
 function initAuditResize() {
-  setupHResize($('#oldAuditHandle'), $('#oldHtmlBody'), $('#oldAuditPanel'));
-  setupHResize($('#newAuditHandle'), $('#newHtmlBody'), $('#newAuditPanel').parentElement);
+  setupHResize($('#oldAuditHandle'), $('#oldHtmlBody'), $('#oldAuditWrap'));
+  setupHResize($('#newAuditHandle'), $('#newHtmlBody'), $('#newAuditWrap'));
 }
 
 function setupHResize(handle, topEl, bottomEl) {
@@ -1025,7 +1126,6 @@ function toggleCollapse(panelKey) {
 // ================================================================
 $('#sidebarSearch').addEventListener('input', renderSidebar);
 $('#batchSelect').addEventListener('change', (e) => loadBatch(e.target.value));
-$$('.ptab').forEach(t => t.addEventListener('click', () => switchProvider(t.dataset.provider)));
 $('#oldHtmlToggle').addEventListener('click', () => toggleHtmlRaw('oldHtmlBody', $('#oldHtmlToggle')));
 $('#newHtmlToggle').addEventListener('click', () => toggleHtmlRaw('newHtmlBody', $('#newHtmlToggle')));
 

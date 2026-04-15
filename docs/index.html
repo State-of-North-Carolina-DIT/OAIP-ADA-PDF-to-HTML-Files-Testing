@@ -59,7 +59,10 @@
           <div class="conv-col-hdr"><button class="collapse-toggle" id="oldColCollapseBtn" aria-expanded="true" title="Collapse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button><span class="col-badge old">OLD</span><span class="col-label">old-converted.html</span><button class="html-toggle" id="oldHtmlToggle" title="Toggle raw HTML">Show HTML &lt;/&gt;</button></div>
           <div class="conv-col-body" id="oldHtmlBody"><div class="no-file">Select a document</div></div>
           <div class="rh-h" id="oldAuditHandle"></div>
-          <div class="audit-panel" id="oldAuditPanel"></div>
+          <div class="audit-panel-wrap" id="oldAuditWrap">
+            <div class="provider-tabs hidden" id="oldProviderTabs" role="tablist" aria-label="Old audit provider"></div>
+            <div class="audit-panel" id="oldAuditPanel"></div>
+          </div>
         </div>
         <div class="rh-v col-handle" id="oldColHandle" data-left="oldHtmlCol" data-right="newHtmlCol"></div>
         <!-- New HTML + New Audit Column -->
@@ -71,12 +74,8 @@
           </div>
           <div class="conv-col-body" id="newHtmlBody"><div class="no-file">Select a document</div></div>
           <div class="rh-h" id="newAuditHandle"></div>
-          <div class="audit-panel-wrap">
-            <div class="provider-tabs" id="providerTabs" role="tablist" aria-label="Audit provider">
-              <button class="ptab active" data-provider="claude" role="tab" aria-selected="true"><img class="ptab-icon" src="https://cdn.simpleicons.org/anthropic/d4a27c" alt="Claude">Claude</button>
-              <button class="ptab" data-provider="gpt" role="tab" aria-selected="false"><img class="ptab-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/3840px-ChatGPT_logo.svg.png" alt="GPT">GPT</button>
-              <button class="ptab" data-provider="gemini" role="tab" aria-selected="false"><img class="ptab-icon" src="https://cdn.simpleicons.org/googlegemini/8b9cf7" alt="Gemini">Gemini</button>
-            </div>
+          <div class="audit-panel-wrap" id="newAuditWrap">
+            <div class="provider-tabs hidden" id="newProviderTabs" role="tablist" aria-label="New audit provider"></div>
             <div class="audit-panel" id="newAuditPanel"></div>
           </div>
         </div>
