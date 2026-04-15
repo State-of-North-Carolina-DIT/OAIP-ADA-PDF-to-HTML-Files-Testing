@@ -150,7 +150,6 @@ input{font-family:var(--font)}
 .conv-col.collapsed .rh-h,
 .conv-col.collapsed .audit-panel,
 .conv-col.collapsed .audit-panel-wrap,
-.conv-col.collapsed .pdf-controls,
 .conv-col.collapsed .html-toggle{display:none}
 .conv-col.collapsed .col-label{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;writing-mode:vertical-lr}
 .conv-col.collapsed .collapse-toggle{writing-mode:horizontal-tb}
@@ -188,24 +187,11 @@ input{font-family:var(--font)}
 
 /* PDF body */
 .pdf-body{
-  padding:10px;display:flex;flex-direction:column;gap:12px;
-  overflow:auto;background:var(--primary-dark);
+  overflow:hidden;background:var(--primary-dark);
 }
-.pdf-page-wrap{position:relative;flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,.5);border-radius:2px;margin:0 auto}
-.pdf-page-wrap canvas{display:block}
-.pdf-controls{
-  display:flex;align-items:center;gap:6px;padding:4px 10px;
-  background:var(--bg-2);border-bottom:1px solid var(--border);flex-shrink:0;
+.pdf-iframe{
+  width:100%;height:100%;border:none;
 }
-.pdf-controls button{
-  display:flex;align-items:center;justify-content:center;
-  width:24px;height:24px;border:1px solid var(--border);border-radius:var(--radius);
-  background:var(--bg-3);color:var(--text-2);font-size:12px;transition:all var(--tr);
-}
-.pdf-controls button:hover:not(:disabled){border-color:var(--secondary);color:var(--text-1)}
-.pdf-controls button:disabled{opacity:.3;cursor:not-allowed}
-.pdf-controls .pg-info{font-size:11px;color:var(--text-2);min-width:50px;text-align:center}
-.pdf-controls .zm-info{font-size:10px;color:var(--text-3);margin-left:auto}
 
 /* ── Provider Tabs (above audit panel) ── */
 .provider-tabs{
@@ -371,10 +357,6 @@ input{font-family:var(--font)}
 ::-webkit-scrollbar-track{background:var(--bg-1)}
 ::-webkit-scrollbar-thumb{background:var(--text-3);border-radius:3px}
 ::-webkit-scrollbar-thumb:hover{background:var(--text-2)}
-
-/* ── PDF drag-to-pan ── */
-.pdf-body.grabbing .pdf-page-wrap{cursor:grabbing}
-.pdf-body.grabbable .pdf-page-wrap{cursor:grab}
 
 /* ── No-file notice ── */
 .no-file{display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-3);font-size:13px;font-style:italic}

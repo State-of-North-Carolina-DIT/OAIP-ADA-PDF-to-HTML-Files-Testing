@@ -25,7 +25,6 @@ const S = {
   activeOldProvider: null,
   activeNewProvider: null,
   cache: {},
-  pdf: null,
   collapsed: { sidebar: false, oldCol: false, newCol: false, pdfCol: false },
 };
 
@@ -86,7 +85,7 @@ async function fetchTextFile(filePath) {
   return text;
 }
 
-// Resolve PDF URL (check if LFS, return direct URL for pdf.js)
+// Resolve PDF URL (check if LFS, return direct URL)
 async function resolvePdfUrl(filePath) {
   const encoded = filePath.split('/').map(s => encodeURIComponent(s)).join('/');
   const raw = rawUrl(encoded);
@@ -224,7 +223,7 @@ async function loadSubdirFiles(name) {
     fileNames.has('audit-report-gemini.json') ? fetchTextFile(filePath('audit-report-gemini.json')) : null,
   ]);
 
-  // Resolve PDF URL (don't download the binary, just get the URL for pdf.js)
+  // Resolve PDF URL (don't download the binary, just get the URL for the iframe)
   let pdfUrl = null;
   if (fileNames.has('source.pdf')) {
     pdfUrl = await resolvePdfUrl(filePath('source.pdf'));
@@ -458,143 +457,21 @@ function toggleHtmlRaw(containerId, toggleBtn) {
 }
 
 // ================================================================
-// PDF Rendering (pdf.js)
+// PDF Rendering (native browser PDF viewer via iframe)
 // ================================================================
-async function renderPdf(pdfUrl) {
+function renderPdf(pdfUrl) {
   const body = $('#pdfBody');
   body.replaceChildren();
   if (!pdfUrl) {
     body.appendChild(el('div', { className: 'no-file' }, 'PDF not available'));
-    S.pdf = null;
-    updatePdfControls();
     return;
   }
 
-  try {
-    const doc = await pdfjsLib.getDocument(pdfUrl).promise;
-    S.pdf = { doc, scale: 1.5, fitWidth: true, wrappers: [] };
-    await renderAllPages();
-    updatePdfControls();
-  } catch {
-    body.replaceChildren(el('div', { className: 'no-file' }, 'Failed to load PDF'));
-    S.pdf = null;
-  }
-}
-
-async function renderAllPages() {
-  const p = S.pdf;
-  if (!p) return;
-  const body = $('#pdfBody');
-
-  if (p.fitWidth) {
-    const page1 = await p.doc.getPage(1);
-    const avail = body.clientWidth - 20;
-    if (avail > 50) {
-      const vp = page1.getViewport({ scale: 1 });
-      p.scale = Math.max(0.4, avail / vp.width);
-    }
-  }
-
-  const scrollRatio = body.scrollHeight > 0 ? body.scrollTop / body.scrollHeight : 0;
-  body.replaceChildren();
-  p.wrappers = [];
-
-  const dpr = window.devicePixelRatio || 1;
-  const page1 = await p.doc.getPage(1);
-  const targetWidth = page1.getViewport({ scale: p.scale }).width;
-
-  for (let i = 1; i <= p.doc.numPages; i++) {
-    const page = await p.doc.getPage(i);
-    const baseVp = page.getViewport({ scale: 1 });
-    const pageScale = targetWidth / baseVp.width;
-    const vp = page.getViewport({ scale: pageScale });
-    const wrap = document.createElement('div');
-    wrap.className = 'pdf-page-wrap';
-    wrap.dataset.page = i;
-    wrap.style.width = vp.width + 'px';
-    wrap.style.height = vp.height + 'px';
-    const canvas = document.createElement('canvas');
-    canvas.width = Math.floor(vp.width * dpr);
-    canvas.height = Math.floor(vp.height * dpr);
-    canvas.style.width = vp.width + 'px';
-    canvas.style.height = vp.height + 'px';
-    const ctx = canvas.getContext('2d');
-    ctx.scale(dpr, dpr);
-    wrap.appendChild(canvas);
-    body.appendChild(wrap);
-    p.wrappers.push(wrap);
-    page.render({ canvasContext: ctx, viewport: vp });
-  }
-
-  if (scrollRatio > 0) {
-    requestAnimationFrame(() => { body.scrollTop = scrollRatio * body.scrollHeight; });
-  }
-  updatePdfControls();
-}
-
-function getCurrentPage() {
-  const p = S.pdf;
-  if (!p || !p.wrappers.length) return 1;
-  const body = $('#pdfBody');
-  const mid = body.scrollTop + body.clientHeight / 3;
-  let cur = 1;
-  for (const w of p.wrappers) {
-    if (w.offsetTop <= mid) cur = +w.dataset.page;
-    else break;
-  }
-  return cur;
-}
-
-function scrollToPage(n) {
-  if (!S.pdf) return;
-  const w = S.pdf.wrappers[n - 1];
-  if (w) w.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-function updatePdfControls() {
-  const p = S.pdf;
-  const cur = p ? getCurrentPage() : 0;
-  const total = p ? p.doc.numPages : 0;
-  $('#pdfPageInfo').textContent = p ? cur + ' / ' + total : '-';
-  $('#pdfZoomInfo').textContent = p ? Math.round(p.scale * 100) + '%' : '';
-}
-
-function initPdfControls() {
-  $('.pdf-prev').onclick = () => { const c = getCurrentPage(); if (c > 1) scrollToPage(c - 1); };
-  $('.pdf-next').onclick = () => { if (!S.pdf) return; const c = getCurrentPage(); if (c < S.pdf.doc.numPages) scrollToPage(c + 1); };
-  $('.pdf-zm-in').onclick = () => { if (!S.pdf) return; S.pdf.fitWidth = false; S.pdf.scale = Math.min(4, S.pdf.scale + 0.25); renderAllPages(); };
-  $('.pdf-zm-out').onclick = () => { if (!S.pdf) return; S.pdf.fitWidth = false; S.pdf.scale = Math.max(0.3, S.pdf.scale - 0.25); renderAllPages(); };
-  $('.pdf-fit').onclick = () => { if (!S.pdf) return; S.pdf.fitWidth = true; renderAllPages(); };
-  $('#pdfBody').addEventListener('scroll', updatePdfControls);
-  initPdfDragPan();
-}
-
-function initPdfDragPan() {
-  const body = $('#pdfBody');
-  body.classList.add('grabbable');
-  let dragging = false, startX, startY, scrollL, scrollT;
-  body.addEventListener('mousedown', e => {
-    if (e.button !== 0) return;
-    const rect = body.getBoundingClientRect();
-    const onScrollbarX = e.clientY > rect.bottom - 6;
-    const onScrollbarY = e.clientX > rect.right - 6;
-    if (onScrollbarX || onScrollbarY) return;
-    dragging = true;
-    startX = e.clientX; startY = e.clientY;
-    scrollL = body.scrollLeft; scrollT = body.scrollTop;
-    body.classList.replace('grabbable', 'grabbing');
-    e.preventDefault();
-  });
-  document.addEventListener('mousemove', e => {
-    if (!dragging) return;
-    body.scrollLeft = scrollL - (e.clientX - startX);
-    body.scrollTop = scrollT - (e.clientY - startY);
-  });
-  document.addEventListener('mouseup', () => {
-    if (!dragging) return;
-    dragging = false;
-    body.classList.replace('grabbing', 'grabbable');
-  });
+  const iframe = document.createElement('iframe');
+  iframe.src = pdfUrl;
+  iframe.title = 'Source PDF';
+  iframe.className = 'pdf-iframe';
+  body.appendChild(iframe);
 }
 
 // ================================================================
@@ -1012,7 +889,6 @@ function drag(handle, type, onDelta) {
       document.body.style.cursor = '';
       document.body.style.userSelect = '';
       unlock();
-      if (S.pdf?.fitWidth) setTimeout(renderAllPages, 50);
     };
     document.addEventListener('mousemove', onMove);
     document.addEventListener('mouseup', onUp);
@@ -1113,8 +989,6 @@ function setCollapsed(panelKey, collapsed) {
     }
   }
 
-  // Refit PDF if needed
-  if (S.pdf?.fitWidth) setTimeout(renderAllPages, 80);
 }
 
 function toggleCollapse(panelKey) {
@@ -1138,7 +1012,6 @@ $('#pdfColCollapseBtn').addEventListener('click', () => toggleCollapse('pdfCol')
 // ================================================================
 // Init
 // ================================================================
-initPdfControls();
 initResize();
 initAuditResize();
 loadRepo();

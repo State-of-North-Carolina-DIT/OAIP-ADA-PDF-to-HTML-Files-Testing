@@ -8,8 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-  <script>pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
 </head>
 <body>
 <div id="app">
@@ -83,15 +81,6 @@
         <!-- PDF Column -->
         <div class="conv-col" id="pdfCol">
           <div class="conv-col-hdr"><span class="col-badge pdf">PDF</span><span class="col-label">source.pdf</span><button class="collapse-toggle" id="pdfColCollapseBtn" aria-expanded="true" title="Collapse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button></div>
-          <div class="pdf-controls" id="pdfControls">
-            <button class="pdf-prev" title="Previous page" aria-label="Previous page">&#8592;</button>
-            <span class="pg-info" id="pdfPageInfo">-</span>
-            <button class="pdf-next" title="Next page" aria-label="Next page">&#8594;</button>
-            <button class="pdf-zm-out" title="Zoom out" aria-label="Zoom out">&minus;</button>
-            <button class="pdf-zm-in" title="Zoom in" aria-label="Zoom in">+</button>
-            <button class="pdf-fit" title="Fit width" aria-label="Fit to width">Fit</button>
-            <span class="zm-info" id="pdfZoomInfo">100%</span>
-          </div>
           <div class="conv-col-body pdf-body" id="pdfBody"><div class="no-file">Select a document</div></div>
         </div>
       </div>
