@@ -422,12 +422,13 @@ function renderConversionsView(data) {
 }
 
 function applyTheme(html) {
-  if (!DC_STYLESHEET || !html) return html;
-  const stripped = html.replace(/<style[\s\S]*?<\/style>/gi, '');
+  if (!html) return html;
+  const inject = '<base target="_blank">' + (DC_STYLESHEET ? '<style>' + DC_STYLESHEET + '</style>' : '');
+  const stripped = DC_STYLESHEET ? html.replace(/<style[\s\S]*?<\/style>/gi, '') : html;
   if (stripped.includes('</head>')) {
-    return stripped.replace('</head>', '<style>' + DC_STYLESHEET + '</style></head>');
+    return stripped.replace('</head>', inject + '</head>');
   }
-  return '<style>' + DC_STYLESHEET + '</style>' + stripped;
+  return inject + stripped;
 }
 
 function renderHtmlPanel(containerId, html, emptyMsg) {
@@ -438,7 +439,7 @@ function renderHtmlPanel(containerId, html, emptyMsg) {
     return;
   }
   const iframe = document.createElement('iframe');
-  iframe.sandbox = 'allow-same-origin allow-scripts';
+  iframe.sandbox = 'allow-same-origin allow-scripts allow-popups';
   iframe.title = containerId.includes('old') ? 'Old HTML conversion' : 'New HTML conversion';
   iframe.srcdoc = applyTheme(html);
   container.appendChild(iframe);
@@ -503,7 +504,7 @@ function toggleHtmlRaw(containerId, toggleBtn) {
     });
   } else {
     const iframe = document.createElement('iframe');
-    iframe.sandbox = 'allow-same-origin allow-scripts';
+    iframe.sandbox = 'allow-same-origin allow-scripts allow-popups';
     iframe.title = containerId.includes('old') ? 'Old HTML conversion' : 'New HTML conversion';
     iframe.srcdoc = applyTheme(panel.html);
     container.appendChild(iframe);
