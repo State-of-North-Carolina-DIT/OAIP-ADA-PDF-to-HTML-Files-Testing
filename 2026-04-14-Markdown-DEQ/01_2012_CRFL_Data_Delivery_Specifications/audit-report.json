@@ -1,0 +1,110 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The hierarchical data relationship diagram (flowchart) in Appendix B is completely missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 4 shows a flowchart diagram with boxes for Environmental Data (Record Type 1), Gear Data (Record Type 7), Replicate Data (Record Type 2), Species Data (Record Type 3), Individual Data (Record Type 4), Tag Recapture Data (Record Type 9), and Age Data (Record Type 5) connected by lines showing relationships. The HTML version replaces this with a plain text list of the elements without any visual diagram.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Appendix B data relationship diagram area is rendered as a flat text list instead of preserving the hierarchical visual structure.",
+      "severity": "major",
+      "evidence": "PDF shows boxes connected by lines in a hierarchy. HTML shows plain text lines like 'Environmental Data / Record Type 1 / Gear Data / Record Type 7 / Replicate Data / Record Type 2' etc., losing the relationship structure.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Appendix B key information table loses its tabular alignment in PDF but is rendered as a proper table in HTML - however the table in the HTML version is cut off at SPECIES CODE row.",
+      "severity": "major",
+      "evidence": "PDF page 5 shows all 6 key information fields (RECORD TYPE through LINE NUMBER) in a table. The HTML on the corresponding page shows only up to SPECIES CODE, with SPECIES STATUS and LINE NUMBER appearing on the next page section.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Appendix C data dictionary table is rendered in a multi-column layout in the PDF but converted to a structured HTML table - the content spans across pages differently and the Bottom Composition field's detailed code list layout is significantly altered.",
+      "severity": "major",
+      "evidence": "PDF page 7 shows Bottom Composition codes laid out in a two-column arrangement (A=Dome, J=Reef Balls / B=Cube Units, K=Old Can etc.). HTML renders all codes in a single continuous line within one table cell.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The SPECIES CODE key field shows incorrect position in the HTML table. The PDF shows '10' bytes at position '11-12', but SPECIES CODE is 10 bytes and cannot fit in positions 11-12. However, this matches the source PDF exactly, so it is not a conversion error. No finding here - retracted.",
+      "severity": "major",
+      "evidence": "Both PDF and HTML show SPECIES CODE with 10 bytes at position 11-12.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The hierarchical diagram from Appendix B showing the data relationships between Record Types is not rendered as an image in the HTML. Instead, it is represented as plain text listing the box labels, losing the visual structure of the flowchart showing parent-child relationships between record types.",
+      "severity": "critical",
+      "evidence": "PDF page 4 contains a flowchart diagram showing boxes connected with lines (Environmental Data \u2192 Replicate Data \u2192 Species Data \u2192 Individual Data \u2192 Age Data, with Gear Data extending from Record Type 1 and Tag Recapture Data extending from Record Type 4). HTML renders this as flat text: 'Environmental Data Record Type 1 Gear Data Record Type 7 Replicate Data Record Type 2...' without any structural representation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Appendix B diagram text in the HTML, 'Record Type 7' is used for Gear Data, but the document text consistently refers to it as 'Record Type 8' for Fishing Gear Data. The PDF diagram label shows 'Record Type 7' in the diagram box but 'Record Type 8' in the text listing. The HTML preserves both, matching the source PDF's inconsistency.",
+      "severity": "major",
+      "evidence": "PDF diagram box says 'Gear Data Record Type 7' while the text listing says 'Record Type 8 Fishing Gear Data'. HTML preserves both references faithfully.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The data dictionary table in Appendix C is missing the 'field length' column that is specified in Data Specification #3 as a required element. The PDF shows column positions (Column #) which implicitly define field length, but the HTML table header shows 'Column #' not 'Field Length'. This matches the PDF, so not a conversion error - retracted.",
+      "severity": "major",
+      "evidence": "Both PDF and HTML use 'Column #' as the header.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Variable Field #1 row, the PDF shows the units as 'Minutes' but the limits as '0000-2400' which suggests hours and minutes format, not pure minutes. This inconsistency exists in the source PDF and is faithfully reproduced - not a conversion error.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show Units='Minutes' and Limits='0000-2400'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'Division of Marine Fisheries' is used as the h1, but 'CRFL Funding Data Delivery Specifications' and 'January 2012' are rendered as plain paragraph text beneath it rather than as part of the heading. In the PDF, all three lines function together as the document header/title block.",
+      "severity": "minor",
+      "evidence": "PDF shows centered three-line title block. HTML has h1 for first line only, with remaining lines in a <p> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains a flowchart/diagram image on page 4 (Appendix B) showing the hierarchical data relationships. No <img> tag is present in the HTML for this diagram.",
+      "severity": "minor",
+      "evidence": "PDF page 4 has a box-and-line diagram. HTML has no <img> tag for this content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 6,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 53.31,
+    "page_count": 10,
+    "visual_input_tokens": 25809,
+    "visual_output_tokens": 1010,
+    "content_input_tokens": 30799,
+    "content_output_tokens": 1226,
+    "timestamp": "2026-04-16T02:50:54.983332",
+    "auditor_version": "1.0.0"
+  }
+}

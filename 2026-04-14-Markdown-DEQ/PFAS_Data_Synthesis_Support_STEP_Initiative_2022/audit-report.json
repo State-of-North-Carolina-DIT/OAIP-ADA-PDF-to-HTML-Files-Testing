@@ -1,0 +1,38 @@
+{
+  "document_id": "PFAS_Data_Synthesis_Support_STEP_Initiative_2022",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Section headings in PDF are underlined (ABOUT OUR AGENCY, ABOUT THE DIVISION, etc.) but HTML renders them without underline decoration",
+      "severity": "minor",
+      "evidence": "PDF shows underlined headings like 'ABOUT OUR AGENCY', 'ABOUT THE DIVISION'; HTML shows these as bold headings without underline",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Important Dates' heading is rendered as h3 in the HTML, while the other section headings are h2. In the PDF, 'Important Dates:' appears as a bold label similar in weight to other section headers, but it is not underlined like the formal section headings. This is a reasonable structural choice and only a minor inconsistency.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Important Dates:' as bold text. HTML uses <h3> while other sections use <h2>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 20.53,
+    "page_count": 3,
+    "visual_input_tokens": 9338,
+    "visual_output_tokens": 437,
+    "content_input_tokens": 9146,
+    "content_output_tokens": 338,
+    "timestamp": "2026-04-16T02:53:45.708918",
+    "auditor_version": "1.0.0"
+  }
+}

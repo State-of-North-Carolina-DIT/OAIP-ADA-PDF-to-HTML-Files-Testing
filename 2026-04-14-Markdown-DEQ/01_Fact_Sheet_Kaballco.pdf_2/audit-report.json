@@ -1,0 +1,54 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf_2",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The contact email on page 1 of the PDF is caroline.bari@ncdenr.gov, but on page 2 the contact email is caroline.bari@deq.nc.gov. The HTML preserves both, which matches the PDF. However, the URL in the PDF includes a period as part of the sentence ending ('laserfiche.') while the HTML wraps the period into the hyperlink URL itself, which is a minor formatting issue but not fabrication.",
+      "severity": "critical",
+      "evidence": "N/A - withdrawn upon re-examination; both emails exist in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The document header 'FACT SHEET' that appears at the top of each page in the PDF is not reproduced in the HTML. This is acceptable as header/footer removal.",
+      "severity": "minor",
+      "evidence": "PDF: 'FACT SHEET' header on pages 1 and 2. HTML: not present.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL for the administrative record in the PDF does not include a trailing period as part of the URL, but the HTML anchor tag wraps the trailing period into the href and visible link text.",
+      "severity": "minor",
+      "evidence": "PDF: 'https://deq.nc.gov/about/divisions/waste-management/laserfiche.' (period is sentence punctuation). HTML: <a href=\"https://deq.nc.gov/about/divisions/waste-management/laserfiche.\">https://deq.nc.gov/about/divisions/waste-management/laserfiche.</a> (period included in URL).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses 'Draft Corrective Action Permit' as the sole h1 heading. The PDF's actual document title header is 'FACT SHEET' with 'Draft Corrective Action Permit' as a subtitle. While using the subtitle as h1 is an acceptable converter choice, the 'FACT SHEET' title is lost.",
+      "severity": "minor",
+      "evidence": "PDF: 'FACT SHEET' followed by 'Draft Corrective Action Permit'. HTML: only h1 is 'Draft Corrective Action Permit'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 22.03,
+    "page_count": 2,
+    "visual_input_tokens": 5875,
+    "visual_output_tokens": 228,
+    "content_input_tokens": 7034,
+    "content_output_tokens": 776,
+    "timestamp": "2026-04-16T02:50:35.983308",
+    "auditor_version": "1.0.0"
+  }
+}

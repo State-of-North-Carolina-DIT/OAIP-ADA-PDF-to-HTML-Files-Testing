@@ -1,0 +1,38 @@
+{
+  "document_id": "2019-white-lake-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Figure 9 caption states '30 sample points' in the HTML version, but the PDF states '40 points' in the body text. However, checking the PDF Figure 9 caption, it reads 'Dwarf milfoil was found at 30 sample points in 2018.' while the body text says 'Dwarf milfoil was found at 40 points in 2018.' This discrepancy exists in both versions and is not a conversion error.",
+      "severity": "major",
+      "evidence": "Both PDF and HTML Figure 9 caption say 30 points; body text says 40 points in both. Not a conversion issue.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse content fidelity response as JSON",
+      "severity": "major",
+      "evidence": "```json\n{\n  \"findings\": [\n    {\n      \"check_id\": \"C8\",\n      \"severity\": \"major\",\n      \"description\": \"The text mentions Dwarf milfoil was found at 40 points in 2018, but the figure caption on page 7 and Table 2 say 30 points in 2018. The body text in both PDF and HTML says 40, while the Figure 9 caption says 30. This is an inconsistency present in the source PDF itself, so not a conversion error. However, the HTML body text matches the PDF body text (40 points), so this is consistent.\",\n     ",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 41.15,
+    "page_count": 9,
+    "visual_input_tokens": 23345,
+    "visual_output_tokens": 917,
+    "content_input_tokens": 20386,
+    "content_output_tokens": 903,
+    "timestamp": "2026-04-16T02:51:38.667301",
+    "auditor_version": "1.0.0"
+  }
+}

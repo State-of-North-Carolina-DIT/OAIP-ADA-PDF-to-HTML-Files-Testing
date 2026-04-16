@@ -1,0 +1,38 @@
+{
+  "document_id": "DSCA_Compliance_Voluntary_Self-Inspection_Checklist_for_Petroleum_and_Alternative-solvent_Dry_Cleaners_Form",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The bottom section layout is significantly altered. In the PDF, the DATE/SIGNATURE fields are on one line with PRINTED NAME, TITLE, FACILITY ADDRESS, etc. arranged as labeled fields to the right of the NC logo. In the HTML, these are stacked vertically in a single column with the logo appearing as a large black rectangle above them.",
+      "severity": "major",
+      "evidence": "PDF shows a two-column layout with NC Waste Management logo on the left and labeled form fields (SIGNATURE, PRINTED NAME, TITLE or POSITION, FACILITY ADDRESS, FACILITY CITY & ZIP, FACILITY PHONE, EMAIL) arranged horizontally to the right. HTML renders everything in a single column with fields stacked vertically.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Waste Management / Environmental Quality logo is rendered as a large solid black rectangle in the HTML instead of the actual logo graphic.",
+      "severity": "major",
+      "evidence": "PDF shows the recognizable NC Waste Management Environmental Quality logo with 'NC' letters and text. HTML shows a large opaque black rectangle placeholder.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 17.72,
+    "page_count": 1,
+    "visual_input_tokens": 4201,
+    "visual_output_tokens": 477,
+    "content_input_tokens": 6026,
+    "content_output_tokens": 235,
+    "timestamp": "2026-04-16T02:52:39.926822",
+    "auditor_version": "1.0.0"
+  }
+}

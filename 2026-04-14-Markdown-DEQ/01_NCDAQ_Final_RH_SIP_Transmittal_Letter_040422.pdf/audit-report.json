@@ -1,0 +1,78 @@
+{
+  "document_id": "01_NCDAQ_Final_RH_SIP_Transmittal_Letter_040422.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the letter is missing from the HTML version.",
+      "severity": "critical",
+      "evidence": "PDF page 1 has the Great Seal of the State of North Carolina centered at the top of the page. The HTML version does not display this seal image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo in the footer of page 1 is missing from the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has a DEQ logo with the North Carolina Department of Environmental Quality branding in the footer area. The HTML renders this as plain text only.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The header/footer information from the PDF letterhead is repeated as inline content at the top of the HTML, disrupting the reading order by placing organizational metadata before the letter date and recipient.",
+      "severity": "major",
+      "evidence": "In the HTML, the names ROY COOPER/Governor, ELIZABETH S. BISER/Secretary, MICHAEL ABRACZINSKAS/Director, NORTH CAROLINA/Environmental Quality, and the full address block appear as body content before the letter date. In the PDF, these are letterhead elements that frame the document but the main reading flow starts with the date.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The italicized title of the SIP document in the letter body uses different italic rendering.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Regional Haze State Implementation Plan (SIP) for North Carolina Class I Areas for the Second Planning Period (2019 \u2013 2028)' in italics. HTML also renders it in italics, but the 'entire' on page 2 is also correctly italicized in both versions. No functional loss.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 7 in the PDF is a blank page, and the HTML renders it as an apparently blank section.",
+      "severity": "minor",
+      "evidence": "PDF page 7 is blank. HTML does not show a corresponding blank page, which is acceptable for HTML conversion.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains the North Carolina state seal image at the top of page 1 and the DEQ logo at the bottom of page 1, but no <img> tags are present in the HTML for these images.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has the state seal and DEQ logo. The HTML contains no <img> tags at all.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header/footer information (department name, address, phone number) from page 1 footer is reproduced in the body of the HTML near the top, mixed with the letterhead officials. This is a minor artifact of conversion but does not lose information.",
+      "severity": "minor",
+      "evidence": "HTML includes 'North Carolina Department of Environmental Quality | Division of Air Quality' and '217 West Jones Street | 1641 Mail Service Center | Raleigh, North Carolina 27699-1641' and '919.707.8400' as body content near the top of the document.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 36.93,
+    "page_count": 4,
+    "visual_input_tokens": 11321,
+    "visual_output_tokens": 1021,
+    "content_input_tokens": 12676,
+    "content_output_tokens": 474,
+    "timestamp": "2026-04-16T02:51:05.215525",
+    "auditor_version": "1.0.0"
+  }
+}

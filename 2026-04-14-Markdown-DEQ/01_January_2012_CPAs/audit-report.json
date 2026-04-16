@@ -1,0 +1,38 @@
+{
+  "document_id": "01_January_2012_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a compact, wide single-table layout with all data visible in a dense tabular format. The HTML converts this into a much narrower, vertically-expanded layout where each row takes significantly more vertical space due to text wrapping in the Owner-Facility column, but the content and column structure are preserved.",
+      "severity": "major",
+      "evidence": "PDF shows compact rows fitting on one page; HTML shows same columns but with significantly more vertical space per row due to narrower column widths causing text wrapping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the PDF, the Enforcement Costs column for LV-2011-0326 through LV-2011-0331 (Fuqua Parks cases) shows empty/blank cells. The HTML also shows these as empty, which is correct. However, the Total Penalties column shows values without enforcement costs being added, matching the PDF. No actual data discrepancy.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show empty Enforcement Costs for Fuqua Parks cases - this is consistent.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 20.28,
+    "page_count": 2,
+    "visual_input_tokens": 7085,
+    "visual_output_tokens": 564,
+    "content_input_tokens": 13146,
+    "content_output_tokens": 218,
+    "timestamp": "2026-04-16T02:50:43.755724",
+    "auditor_version": "1.0.0"
+  }
+}

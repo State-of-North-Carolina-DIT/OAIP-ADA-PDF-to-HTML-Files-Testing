@@ -1,0 +1,70 @@
+{
+  "document_id": "SuttonMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a clear memo layout with 'To:', 'From:', 'Subject:' fields aligned with labels on the left and values indented. The HTML renders these as simple inline text without the structured memo formatting, though the information is preserved.",
+      "severity": "major",
+      "evidence": "PDF shows structured memo format with clear label-value alignment. HTML shows 'To: Secretary Donald R. van der Vaart' as a single line without the formal memo indentation structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image in the HTML appears larger relative to surrounding content compared to the PDF, though it is present and correctly placed near the 'From' field.",
+      "severity": "minor",
+      "evidence": "PDF signature is compact next to the From field. HTML signature image is more prominent but in the correct location.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF page headers (Meeting Officer's Report, Coal Ash Impoundment Classification(s), Sutton Energy Complex, New Hanover County, date, page number) appear in the top right of each page. These are removed in HTML, which is acceptable per guidelines.",
+      "severity": "minor",
+      "evidence": "PDF has running headers on pages 2-5. HTML omits them.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer text from page 1 of the PDF is reproduced as body content in the HTML, appearing after the outline list and before Section I. This footer block (State of North Carolina | Environmental Quality | Waste Management, address, phone) already appears at the top of the document and is page-level boilerplate that should not be repeated inline.",
+      "severity": "minor",
+      "evidence": "HTML contains a second instance after the outline: 'State of North Carolina | Environmental Quality | Waste Management\\n1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646\\n919 707 8200' appearing as body text between Section outline and Section I.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'MEMORANDUM' is rendered as h1, which is acceptable, but the section headings I through IV are rendered as h2. However, the PDF header information (page headers showing 'Meeting Officer's Report / Coal Ash Impoundment Classification(s) / Sutton Energy Complex, New Hanover County') from pages 2-5 has been dropped, which is acceptable. The actual structural concern is that the Roman numeral list items under Section IV (Attachments) use ordered list type I, matching the PDF, but the numbering in the PDF attachment list uses Roman numerals I through IX while the HTML list only has 9 items in a single <ol> \u2014 this is actually correct and not a finding.",
+      "severity": "major",
+      "evidence": "N/A \u2014 on further review the heading structure is acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The third image has an empty alt text attribute, which is not descriptive. It appears to be a decorative line/separator from the PDF footer area.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 654.4pt; height: auto;\">",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 37.83,
+    "page_count": 5,
+    "visual_input_tokens": 13674,
+    "visual_output_tokens": 672,
+    "content_input_tokens": 14640,
+    "content_output_tokens": 708,
+    "timestamp": "2026-04-16T02:54:58.797171",
+    "auditor_version": "1.0.0"
+  }
+}

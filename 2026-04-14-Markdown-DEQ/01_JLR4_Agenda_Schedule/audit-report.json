@@ -1,0 +1,70 @@
+{
+  "document_id": "01_JLR4_Agenda_Schedule",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "DWR logo present in PDF footer is missing from HTML conversion",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the DWR (Division of Water Resources) logo in the bottom-left corner. HTML does not include this logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table column content incorrectly duplicated/altered in HTML for rows at 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013",
+      "severity": "major",
+      "evidence": "In the PDF, the 'Cape Fear \u2013 Neuse River Basin Hydrologic Model' column shows 'EMC Model Approval' only at the 2/1/2013 row. In the HTML, 'EMC Model Approval' is repeated across multiple rows (1/1/2013, 2/1/2013, 4/1/2013, 5/1/2013) where the PDF shows empty cells for those rows in that column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table row for 11/14/2013 has content incorrectly duplicated across columns",
+      "severity": "major",
+      "evidence": "In the PDF, the 11/14/2013 row spans across the Jordan Lake and Cape Fear columns with a single merged statement. In the HTML, the same text appears duplicated in both the 'Jordan Lake Water Supply Allocations' and 'Cape Fear River Basin Water Supply Plan' columns separately, and the Cape Fear-Neuse column is empty. The PDF shows the text spanning across columns as a single entry.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 'EMC Model Approval' entry is incorrectly duplicated across multiple rows in the HTML table. In the PDF, the 'EMC Model Approval' text appears only in the row for 2/1/2013 in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column. The HTML repeats it for 1/1/2013, 4/1/2013, and 5/1/2013 as well.",
+      "severity": "major",
+      "evidence": "PDF shows 'EMC Model Approval' only at 2/1/2013 in the Hydrologic Model column. HTML shows it at 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 11/14/2013 row in the PDF spans the Jordan Lake and Cape Fear Water Supply Plan columns together with one merged text. The HTML duplicates the text into both the 'Jordan Lake Water Supply Allocations' and 'Cape Fear River Basin Water Supply Plan' columns, but in the PDF this appears to be a merged cell spanning multiple columns, not separate entries in each.",
+      "severity": "major",
+      "evidence": "PDF: 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' appears once spanning columns. HTML duplicates it in both column 2 and column 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The page footer text 'Managing Water Resources to Support North Carolina's Future' and the DWR logo/branding are omitted from the HTML.",
+      "severity": "minor",
+      "evidence": "PDF pages contain footer text and DWR logo at bottom. HTML does not include these.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 30.52,
+    "page_count": 2,
+    "visual_input_tokens": 6171,
+    "visual_output_tokens": 657,
+    "content_input_tokens": 6662,
+    "content_output_tokens": 665,
+    "timestamp": "2026-04-16T02:50:50.273370",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "document_id": "01_2019_shellfish_sale_tag_template",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has a complex layout with a central sale tag surrounded by annotation callouts with arrows pointing to specific parts of the tag. The HTML renders everything as a flat, single-column linear flow, losing the spatial relationship between the tag content and its explanatory annotations.",
+      "severity": "critical",
+      "evidence": "PDF shows a bordered 'SALE TAG' in the center with labeled arrows pointing from margin annotations (e.g., 'Dealer Name, Address, & Certification Number', 'Harvest Date; may be mo/dy/yr...', etc.) to specific parts of the tag. HTML renders the tag content and annotations as sequential paragraphs with no visual distinction between tag content and margin annotations.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The PDF contains arrows/lines connecting annotation labels to their corresponding tag fields. These graphical elements are completely missing in the HTML.",
+      "severity": "major",
+      "evidence": "PDF has multiple arrows connecting side annotations to tag fields (e.g., arrow from 'Harvest Date; may be mo/dy/yr...' to the harvest date field on the tag). HTML has no arrows or visual connections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The bordered sale tag area in the PDF is a distinct visual element (box with border) that separates the example tag from the surrounding instructional annotations. In the HTML, there is no bordered box, making it unclear which content is the tag example and which is the explanatory annotation.",
+      "severity": "major",
+      "evidence": "PDF shows a clearly bordered rectangular tag. HTML shows a horizontal rule after the title but no box/border around the tag content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The PDF contains a visual example of a shellstock tag rendered as a bordered/boxed layout diagram with annotations pointing to specific fields. The HTML loses this entire visual structure, converting it to a flat sequence of paragraphs. While text content is preserved, the tag layout and its annotated diagram structure (which is the core purpose of the document) is lost.",
+      "severity": "major",
+      "evidence": "The PDF shows a bordered 'SALE TAG' example with annotation arrows pointing from explanatory labels to specific tag fields. The HTML renders all content as sequential paragraphs with no visual distinction between the tag content and the annotation/explanation text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The PDF is a single page that appears twice in the document (page 1 and page 2 are identical or near-identical). The HTML appears to render the content only once, which is actually appropriate deduplication. However, reviewing more carefully, the HTML contains annotation descriptions (like 'Dealer Name, Address, & Certification Number', '90 Day tag retention notice', 'Consumer Advisory Notice') interspersed with the tag content as standalone paragraphs, which mirrors the PDF's annotation labels but mixes them confusingly with the tag body text.",
+      "severity": "major",
+      "evidence": "Annotations like 'Dealer Name, Address, & Certification Number', 'Harvest Date; may be mo/dy/yr...', '90 Day tag retention notice', 'Consumer Advisory Notice', 'Notice that product must remain refrigerated' appear as regular paragraphs intermixed with the actual tag content, losing the visual distinction between tag content and explanatory annotations.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.57,
+    "page_count": 1,
+    "visual_input_tokens": 4239,
+    "visual_output_tokens": 636,
+    "content_input_tokens": 5601,
+    "content_output_tokens": 606,
+    "timestamp": "2026-04-16T02:50:32.690843",
+    "auditor_version": "1.0.0"
+  }
+}

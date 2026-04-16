@@ -1,0 +1,158 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'reservoir node' (7x); 'demand node' (7x); 'junction node' (7x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'DRAFT' watermark is a decorative element and its absence is acceptable, but the HYDROLOGICS logo/image on the cover page appears as a proper image in both versions - this is acceptable.",
+      "severity": "critical",
+      "evidence": "N/A - not a finding upon review",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The full-page model schematic map image on page 6 of the PDF is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 6 shows a large full-page map schematic of the Cape Fear and Neuse River basins with nodes, arcs, and geographic features. The HTML equivalent does not show this full map image.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Chart diagram for Upper Cape Fear Basin (page 10) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF page 10 shows a detailed flow chart with reservoir nodes (red triangles), demand nodes (blue squares), junction nodes (yellow circles), and connecting arcs. The HTML shows only text labels without the diagram.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Chart diagram for Middle Cape Fear Basin (page 11) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF page 11 shows a flow chart with nodes for Cane Creek Reservoir, OWASA Demand, Jordan Lake, Harris Lake, etc. The HTML shows only text labels without the visual diagram.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Chart diagram for Deep River (page 12) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF page 12 shows a flow chart with High Point Reservoir, Siler City Reservoirs, Randleman Reservoir, etc. The HTML shows only text labels without the visual diagram.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Chart diagram for Lower Cape Fear Basin (page 13) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF page 13 shows a flow chart with Glenville Reservoir, Fayetteville Demand, Cape Fear gages, etc. The HTML shows only text labels without the visual diagram.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Chart diagram for Upper Neuse Basin (page 14) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF page 14 shows a flow chart with West Fork Eno Reservoir, Lake Orange, Falls Lake, Durham Demand, Raleigh Demand, etc. The HTML shows only text labels without the visual diagram.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Chart diagram for Middle Neuse Basin (page 15) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF page 15 shows a flow chart with Crabtree Creek Flood Impoundments, Lake Wheeler, Lake Benson, Goldsboro Demand, etc. The HTML shows only text labels without the visual diagram.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Chart diagram for Lower Neuse Basin (page 16) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF page 16 shows a flow chart with Buckhorn Reservoir, Wilson Demand, Contentnea Creek, Neuse Kinston Gage, etc. The HTML shows only text labels without the visual diagram.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The flow chart legend items (Reservoir Node, Demand Node, Junction Node, Flow Arc, Withdrawal Arc, WW Return Arc) are rendered as plain text lists in the HTML instead of being part of the flow chart diagrams with their corresponding symbols.",
+      "severity": "major",
+      "evidence": "PDF shows these as legend entries with colored symbols (red triangles, blue squares, yellow circles, different arrow types). HTML shows them as plain text lines without any visual symbology.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The partial map image visible at the top of PDF page 7 (continuation of schematic from page 6) appears in the HTML but the full schematic map from page 6 is missing.",
+      "severity": "minor",
+      "evidence": "HTML shows a partial map at the top of the corresponding section, but the main full-page schematic from PDF page 6 is absent.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Flowchart section titles are rendered as h3 headings at the same level as main document sections (2.1 Schematic, 2.2 Model Input, etc.), breaking the hierarchy. These flowcharts are subsections within Section 2.2 Model Input and should be at a lower heading level.",
+      "severity": "major",
+      "evidence": "In the PDF, the flowcharts ('Flow Chart of Major Nodes in the Upper Cape Fear Basin', etc.) appear within the Model Input section. In the HTML, they are h3 headings at the same level as '2.1 Schematic' and '2.2 Model Input', which misrepresents the document structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF text for the reservoir count contains an incomplete/garbled sentence that the HTML reproduces literally rather than attempting to clarify, but more importantly, the HTML omits the parenthetical structure. The PDF reads 'There are 58 reservoir 42 actual reservoirs, 11 flood impoundments on Crabtree Creek, and five artificial storage nodes used for time-of-travel flow routing)' - this appears to be a PDF source error with mismatched parentheses, which the HTML faithfully reproduces.",
+      "severity": "major",
+      "evidence": "PDF: 'There are 58 reservoir 42 actual reservoirs, 11 flood impoundments on Crabtree Creek, and five artificial storage nodes used for time-of-travel flow routing)' \u2014 HTML reproduces the same text. This is a source document issue, not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Legend items from flowcharts (Reservoir Node, Demand Node, Junction Node, Flow Arc, Withdrawal Arc, WW Return Arc) are repeated as standalone paragraphs for each flowchart diagram, creating repetitive content blocks that appear as body text rather than image legend annotations.",
+      "severity": "minor",
+      "evidence": "The legend labels 'Reservoir Node', 'Demand Node', 'Junction Node', 'Flow Arc', 'Withdrawal Arc', 'WW Return Arc' appear as separate paragraphs multiple times throughout the HTML for each flowchart section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The Table of Contents is rendered as plain paragraphs rather than a structured list, losing the tabular alignment between section names and page numbers present in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF TOC shows aligned section names and page numbers. HTML renders 'Section Page' and entries like '1 \u2013 Introduction 3' as plain text paragraphs.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the flowchart text for N. Buffalo Ck, the HTML renders it as an ordered list item 'A. Buffalo Ck' instead of 'N. Buffalo Ck'.",
+      "severity": "minor",
+      "evidence": "PDF: 'N. Buffalo Ck' \u2014 HTML: '<ol type=\"A\"><li>Buffalo Ck</li></ol>'. The 'N.' was misinterpreted as a list marker.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 11,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 61.54,
+    "page_count": 18,
+    "visual_input_tokens": 46187,
+    "visual_output_tokens": 1942,
+    "content_input_tokens": 44190,
+    "content_output_tokens": 1011,
+    "timestamp": "2026-04-16T02:51:19.032208",
+    "auditor_version": "1.0.0"
+  }
+}

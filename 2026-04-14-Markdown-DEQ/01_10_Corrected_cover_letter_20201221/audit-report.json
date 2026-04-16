@@ -1,0 +1,62 @@
+{
+  "document_id": "01_10_Corrected_cover_letter_20201221",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF has the letterhead with ROY COOPER/Governor, MICHAEL S. REGAN/Secretary, BRIAN WRENN/Director positioned to the left with the state seal centered and NORTH CAROLINA/Environmental Quality below it, forming a traditional letterhead layout. The HTML renders these as a simple top-to-bottom list with the seal image below, losing the side-by-side letterhead structure.",
+      "severity": "major",
+      "evidence": "PDF: Officials listed on left side, seal centered at top. HTML: All elements stacked vertically in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image present in the PDF is missing from the HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF: Handwritten signature appears between 'Sincerely,' and 'David Miller, PE'. HTML: No signature image is present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The HTML adds a prominent heading 'Administrative Correction: Mine Permit #01-10' at the top that does not exist in the PDF document.",
+      "severity": "minor",
+      "evidence": "PDF: No such heading exists; the document begins with the letterhead. HTML: Large heading 'Administrative Correction: Mine Permit #01-10' is displayed at the top of the page.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated document title added as h1 heading that does not appear in the source PDF",
+      "severity": "critical",
+      "evidence": "The HTML contains <h1>Administrative Correction: Mine Permit #01-10</h1> which is not present anywhere in the source PDF. The PDF is a letter without a title heading. While an AI-generated title as h1 is noted as acceptable in the calibration guidelines, this is flagged for awareness as it could be confused with an official document title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The h1 heading text is fabricated - the PDF has no such title or heading structure",
+      "severity": "major",
+      "evidence": "The PDF is a standard business letter with no headings or sections. The HTML introduces 'Administrative Correction: Mine Permit #01-10' as an h1, which misrepresents the document structure by suggesting it has a formal title when it is simply a letter.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.86,
+    "page_count": 1,
+    "visual_input_tokens": 4265,
+    "visual_output_tokens": 550,
+    "content_input_tokens": 4563,
+    "content_output_tokens": 472,
+    "timestamp": "2026-04-16T02:50:23.689406",
+    "auditor_version": "1.0.0"
+  }
+}

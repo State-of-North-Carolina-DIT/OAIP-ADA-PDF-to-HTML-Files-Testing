@@ -1,0 +1,166 @@
+{
+  "document_id": "Primary_Nursery_Areas",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Hierarchical numbered list structure lost - all sub-items rendered as flat numbered lists starting with '1.' instead of using proper roman numeral (i, ii, iii) and letter (A, B, C) sub-numbering",
+      "severity": "major",
+      "evidence": "PDF shows proper hierarchical numbering like (1)(a)(i)(A)(B), (ii), etc. HTML renders all items as '1.' flat lists, losing the hierarchical distinction between levels",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The deeply nested hierarchical outline structure of the regulation is flattened in the HTML. Multi-level indentation showing the relationship between sections, subsections, and sub-subsections is lost.",
+      "severity": "major",
+      "evidence": "PDF shows clear indentation levels: (1) -> (a) -> (i) -> (A). HTML collapses these into a less structured format with inconsistent indentation and flat numbering.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "HTML comments (<!--OL_TYPE_i-->) are visible as rendered text in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF has no such markup artifacts. HTML shows '<!--OL_TYPE_i-->' as visible text before list sections.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Section (1)(b) Broad Creek content breaks out of the structured list format in HTML and appears as unformatted body text outside the list structure",
+      "severity": "major",
+      "evidence": "PDF shows (b) Broad Creek as a properly indented sub-item under (1). HTML renders it as standalone paragraph text outside the list structure.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "HTML comments <!--OL_TYPE_i--> visible as rendered text throughout the HTML document",
+      "severity": "minor",
+      "evidence": "PDF has no such artifacts. HTML displays these raw HTML comments as visible text in multiple locations.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Middletown Creek section (c) breaks out of the structured list in HTML - partially rendered as structured list item and partially as unstructured text",
+      "severity": "major",
+      "evidence": "PDF shows (c) Middletown Creek as a properly indented item under (2). HTML splits this across different formatting contexts.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Numbered sub-items under Slade Creek use flat '1.' numbering instead of proper roman numerals (i) through (vii)",
+      "severity": "major",
+      "evidence": "PDF shows (i) Upper Slade Creek, (ii) Jarvis Creek, etc. HTML shows all as '1.' items",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Sub-items under Fortescue Creek use flat '1.' numbering instead of roman numerals (i) through (viii)",
+      "severity": "major",
+      "evidence": "PDF shows (i) Headwaters, (ii) Warner Creek, etc. HTML shows all as '1.' items",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Section transitions between major areas (Pungo River Area items) lose their hierarchical structure with items like Flax Pond (c) and Battalina (d) appearing at inconsistent structural levels",
+      "severity": "major",
+      "evidence": "PDF maintains clear (a)(b)(c)(d) structure under (3). HTML breaks structure between pages.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Goose Creek sub-items lose proper roman numeral numbering throughout",
+      "severity": "major",
+      "evidence": "PDF shows (i) Hatter Creek, (ii) Upper Spring Creek with (A)(B) sub-items, (iii) Eastham Creek, etc. HTML uses flat '1.' numbering",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Broad Creek section (7)(b) sub-items rendered with flat numbering losing complex hierarchical structure",
+      "severity": "major",
+      "evidence": "PDF shows items (i) through (xii) with proper roman numerals under (b) Broad Creek. HTML renders all as '1.' flat list items.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Sanders Creek coordinates show encoding issues - degree symbols appear as special characters",
+      "severity": "major",
+      "evidence": "PDF shows clean '34\u00b0 42.4694' format. HTML shows '34\u00c2\u00b0 42.4694' or similar encoding artifacts for the degree symbol in some locations.",
+      "page": 26,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "New River section (13)(c) sub-items all rendered as flat '1.' lists instead of proper roman numerals (i) through (xv)",
+      "severity": "major",
+      "evidence": "PDF shows (i) Trap's Bay, (ii) Courthouse Bay, etc. HTML shows all as '1.' items",
+      "page": 28,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Chadwick Bay section (d) and its sub-items break out of proper list structure in HTML",
+      "severity": "major",
+      "evidence": "PDF shows (d) Chadwick Bay as a properly nested item under (13)(c). HTML renders it partially outside the structured list.",
+      "page": 29,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML completely fails to render the deeply nested hierarchical structure of the regulation. The document uses a complex nested numbered/lettered outline (1-22 at top level, a-r at second level, i-xv at third level, A-D at fourth level), but the HTML renders this as a broken mix of ordered lists, unordered lists, preformatted code blocks, and HTML comments like <!--OL_TYPE_i--> instead of proper nested list structures.",
+      "severity": "major",
+      "evidence": "The PDF has clear hierarchical structure: (1)\u2192(a)\u2192(i)\u2192(A). The HTML uses code blocks (<pre><code>) with HTML comments like <!--OL_TYPE_i--> and <!--OL_TYPE_a--> embedded as plain text, rendering the outline structure nearly unreadable and structurally broken.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In section (16)(a), the HTML changes 'Channel)' to 'Channel.' altering punctuation that affects readability of the exception clause.",
+      "severity": "major",
+      "evidence": "PDF: 'Butler's Creek (Utley's Channel) from the IWW to Nixon's Channel'. HTML: 'Butler's Creek (Utley's Channel. from the IWW to Nixon's Channel' - closing parenthesis changed to period.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML comments containing structural hints like <!--OL_TYPE_i--> and <!--OL_TYPE_a--> appear as visible text artifacts in the rendered HTML. While not fabricated content per se, they are non-PDF artifacts injected into the content stream.",
+      "severity": "minor",
+      "evidence": "Multiple instances of '<!--OL_TYPE_i-->' and '<!--OL_TYPE_a-->' appear throughout the HTML body, which do not exist in the source PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "All 22 top-level sections and their subsections appear to be present in the HTML, though the structural rendering makes verification difficult. No whole sections appear to be missing.",
+      "severity": "minor",
+      "evidence": "Sections (1) through (22) are all represented, including the History Note at the end.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 14,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 71.91,
+    "page_count": 19,
+    "visual_input_tokens": 59176,
+    "visual_output_tokens": 2083,
+    "content_input_tokens": 88633,
+    "content_output_tokens": 797,
+    "timestamp": "2026-04-16T02:55:05.105896",
+    "auditor_version": "1.0.0"
+  }
+}

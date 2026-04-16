@@ -1,0 +1,86 @@
+{
+  "document_id": "Southside_Park_Stream_Sediment_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF is a single-page map/figure with spatial data callouts positioned geographically around the map. The HTML converts this into a linear, scrollable document with a small embedded map image followed by sequential data tables, completely losing the spatial layout.",
+      "severity": "critical",
+      "evidence": "PDF shows sample location data boxes (SD-1 through SD-5) positioned around a geographic map with arrows pointing to sampling locations. HTML renders the same data as sequential tables under headings like 'SW/SD-1', 'SW/SD-2', etc., with no spatial relationship to the map.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The map image in the HTML is rendered at a very small size compared to the PDF, making it largely illegible. The map is a central element of this figure and its reduced size loses significant detail.",
+      "severity": "major",
+      "evidence": "PDF shows a large, detailed map filling most of the page with readable street names, property boundaries, and sample locations. HTML shows a small thumbnail-sized version of the same map where text labels and details are not readable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'J' qualifier flags on SD-1 data values for Benzo(a)anthracene (1.70 J) and Benzo(a)pyrene (0.868 J) are missing in the HTML table.",
+      "severity": "minor",
+      "evidence": "PDF shows '1.70 J' and '0.868 J' with the J qualifier. HTML shows '1.70 J' and '0.868 J' \u2014 actually upon closer inspection the HTML does show '1.70 J' and '0.868 J', so this may be preserved. Disregard if present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The title block information (project title, NCDEQ ID, location, scale, date, project number, figure number) that appears on the right side of the PDF is moved to the top of the HTML as a metadata table, changing the reading order significantly.",
+      "severity": "major",
+      "evidence": "PDF has the title block as a vertical sidebar on the right edge reading 'STREAM SEDIMENT ASSESSMENT / SOUTHSIDE PARK LANDFILL' etc. HTML places this as a header table at the top before the map.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses 'STREAM SEDIMENT ASSESSMENT' as the h1 document title and 'SOUTHSIDE PARK LANDFILL' as h2, but in the PDF these are both part of the title block/sidebar with 'SOUTHSIDE PARK LANDFILL' being the primary project name. Additionally, 'Sample Locations Data' is an h2 heading fabricated by the converter - this heading does not appear in the PDF.",
+      "severity": "major",
+      "evidence": "HTML: '<h2>Sample Locations Data</h2>' - this text does not appear anywhere in the PDF. The PDF simply presents the sample data boxes on the map without a 'Sample Locations Data' heading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The heading 'Sample Locations Data' and 'Map Legend' are fabricated section headings not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains '<h2>Sample Locations Data</h2>' and '<h2>Map Legend</h2>' - neither of these headings exist in the PDF. The PDF presents this information as map callout boxes and a legend without these textual headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The SD-1 sample table in the HTML uses the header 'SD-1/DUP-6102025-SD' as a column header, but in the PDF the sample identifier is 'SD-1/DUP-6102025-SD' shown as a label. This is a structural choice but acceptable. However, the tables split Risk Assessment into separate sub-tables for each sample, which is a structural change but preserves data. All numeric values appear to match the PDF.",
+      "severity": "major",
+      "evidence": "All values verified: SD-1 through SD-5 data values match the PDF source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The title block metadata (SCALE, DATE, PROJECT NUMBER, FIGURE NO.) appears twice in the HTML - once in a table near the top and again implicitly through the document structure, whereas in the PDF it appears only once in the title block.",
+      "severity": "major",
+      "evidence": "The HTML has a dedicated table with SCALE: 1\": 200', DATE: 10/28/2025, PROJECT NUMBER: 215952, FIGURE NO.: 7. In the PDF these appear once in the title block. The duplication of these values as a standalone table is minor but present.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 5,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 43.63,
+    "page_count": 1,
+    "visual_input_tokens": 3415,
+    "visual_output_tokens": 812,
+    "content_input_tokens": 7208,
+    "content_output_tokens": 866,
+    "timestamp": "2026-04-16T02:54:59.053774",
+    "auditor_version": "1.0.0"
+  }
+}

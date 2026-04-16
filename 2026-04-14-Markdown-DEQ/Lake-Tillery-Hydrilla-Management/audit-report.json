@@ -1,0 +1,126 @@
+{
+  "document_id": "Lake-Tillery-Hydrilla-Management",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Slide 3 (History of Hydrilla at Lake Tillery) has a two-panel layout with a data table on the left and a TGC stocking table on the right. In the HTML, these are rendered as sequential full-width tables rather than side-by-side, losing the original two-column layout.",
+      "severity": "major",
+      "evidence": "PDF shows the site acreage table and TGC stocking table side by side on one slide. HTML renders them as stacked full-width tables.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML inserts repeated slide header images and title banners between content sections, creating redundant content that disrupts reading flow. For example, the 'History of Hydrilla at Lake Tillery' banner and city skyline/DEQ logo images appear multiple times between page-equivalent sections.",
+      "severity": "major",
+      "evidence": "PDF has each header once per slide. HTML re-renders slide banner images and headers between converted sections, causing duplicate visual content throughout.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 5 (Hydrilla Management in 2023) has a two-column layout with bullet points on the left and a satellite map on the right. The HTML renders these sequentially rather than side-by-side.",
+      "severity": "major",
+      "evidence": "PDF shows text bullets alongside a map image. HTML stacks them vertically.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 (Proposed Management Activities for 2024) has a three-panel layout: text on the left, Lilly's Bridge map in center, Norwood map on right. HTML renders these sequentially.",
+      "severity": "major",
+      "evidence": "PDF shows three columns with text and two maps side by side. HTML stacks them vertically.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 7 (Fall Vegetation Surveys) has a two-column layout with bullet points on the left and a photo on the right. HTML renders them sequentially.",
+      "severity": "major",
+      "evidence": "PDF shows text alongside a rake toss photo. HTML stacks them vertically.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 9 has a two-panel layout with Biobase heat map on the left and SONAR screen on the right. HTML renders these sequentially.",
+      "severity": "major",
+      "evidence": "PDF shows two images side by side. HTML stacks them vertically.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 10 has a two-panel layout with Hydrilla coverage map on the left and density rating map on the right. HTML renders these sequentially.",
+      "severity": "major",
+      "evidence": "PDF shows two satellite maps side by side. HTML stacks them vertically.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On slide 8, the survey point map appears without the corresponding slide header/context in the HTML, making it harder to associate with the Fall Vegetation Surveys content.",
+      "severity": "minor",
+      "evidence": "PDF clearly shows the map within the Fall Vegetation Surveys slide context. HTML separates the map from its slide framing.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The heading 'History of Hydrilla at Lake Tillery' appears three times in the PDF (pages 2, 3, and 4) but only twice as h2 headings in the HTML. The third instance (page 4, the chart page) is missing its explicit heading, though the chart image is present.",
+      "severity": "minor",
+      "evidence": "PDF page 4 has the title 'History of Hydrilla at Lake Tillery' above the Hydrilla Acres chart. The HTML places the chart image under the second h2 'History of Hydrilla at Lake Tillery' but inserts another h2 heading after the chart for 'Hydrilla Management in 2023', which doesn't match the page ordering perfectly.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Department of Environmental Quality' text appears as a repeated artifact throughout the PDF as a footer/header on every page. It is mostly removed in the HTML but appears once as italic text near the top, which is acceptable. However, a decorative background image from the title slide is included as an image at the very top of the HTML, which duplicates the visual context already conveyed by the title.",
+      "severity": "minor",
+      "evidence": "HTML starts with an img tag with alt 'Presentation title slide background' before the h1 heading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are reasonable but somewhat generic or slightly imprecise. For example, one image is described as 'Map of Lake Tillery showing Hydrilla management areas in 2023' but the map on page 4 is actually the Hydrilla Acres line chart, not a map.",
+      "severity": "minor",
+      "evidence": "HTML has alt='Map of Lake Tillery showing Hydrilla management areas in 2023' for what appears to correspond to the chart on page 4. The actual map with treatment locations is on page 5.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The ordering of content sections is slightly rearranged. In the PDF, the 'Hydrilla Management in 2023' section (page 5) includes both text and a map on the same slide. In the HTML, the map image and the management text appear in a slightly different sequence with the Proposed Management Activities map appearing before its heading.",
+      "severity": "minor",
+      "evidence": "HTML places the map image with alt 'Maps showing proposed treatment areas for 2024...' before the h2 'Proposed Management Activities for 2024', whereas in the PDF they are on the same page.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The AWCP Website link in the HTML has an expanded URL with a fragment identifier that may not exactly match the PDF's simpler link text.",
+      "severity": "minor",
+      "evidence": "PDF shows 'AWCP Website (Aquatic Weed Control Program | NC DEQ)'. HTML href contains a long URL with ':~:text=Purpose...' fragment that isn't explicitly in the PDF source.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 7,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 65.16,
+    "page_count": 12,
+    "visual_input_tokens": 35009,
+    "visual_output_tokens": 1396,
+    "content_input_tokens": 27422,
+    "content_output_tokens": 995,
+    "timestamp": "2026-04-16T02:58:36.582975",
+    "auditor_version": "1.0.0"
+  }
+}

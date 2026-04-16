@@ -1,0 +1,174 @@
+{
+  "document_id": "DEQ_Risk_Calculator_User_Guide_(February_2024)",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The callout box text in the Introduction section is obscured/redacted in the HTML version, showing as a blank colored block instead of readable text.",
+      "severity": "major",
+      "evidence": "PDF page 8 shows a blue callout box with italic text about risk-based remediation uses. HTML shows a blank/empty colored block in the same location.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The two-column layout on the Introduction page is collapsed into a single column in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 8 has a two-column layout with an italicized sidebar on the left and main text on the right. HTML renders everything in a single column.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Callout box for 'Risk-based groundwater remedies' sidebar is missing or rendered as blank block in HTML.",
+      "severity": "major",
+      "evidence": "PDF page 11 shows a blue-bordered sidebar with italic text about risk-based groundwater remedies requiring institutional controls. HTML shows a blank colored block.",
+      "page": 23,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Callout box text about the calculator dictating data collection phases is missing/blank in HTML.",
+      "severity": "major",
+      "evidence": "PDF page 11 shows italic text callout about using calculator for vapor intrusion evaluation phases. HTML shows blank block.",
+      "page": 23,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Surface water quality callout box text is missing/blank in HTML.",
+      "severity": "major",
+      "evidence": "PDF page 11 shows italic sidebar text about surface water quality meeting 15A NCAC 02B standards. HTML shows blank block.",
+      "page": 24,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout on the Exposure Pathways page with sidebars is collapsed to single column.",
+      "severity": "major",
+      "evidence": "PDF page 11 has sidebar callout boxes alongside main text in two-column style. HTML renders as single column with blank blocks.",
+      "page": 23,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Callout box about 'When only the default parameters are used' is missing/blank in HTML.",
+      "severity": "major",
+      "evidence": "PDF page 22 shows a blue callout box with italic text about default parameters resulting in Protection of Groundwater PSRG. HTML shows a blank block.",
+      "page": 39,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The two-column layout on the Vapor Intrusion Calculators page (3.4.3) is collapsed.",
+      "severity": "major",
+      "evidence": "PDF page 19 has text flowing around a vapor intrusion diagram image and a sidebar callout about Risk Calculator not including soil to indoor air calculation. HTML renders as single column.",
+      "page": 33,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The vapor intrusion callout box about Risk Calculator not including soil to indoor air calculation is missing/blank.",
+      "severity": "major",
+      "evidence": "PDF page 19 shows a blue sidebar with italic text about the Risk Calculator not including soil to indoor air calculation. HTML shows blank block.",
+      "page": 33,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Callout box about transport equations and empirical monitoring data is missing/blank.",
+      "severity": "major",
+      "evidence": "PDF page 25 shows italic bold callout about empirical monitoring data being more reliable. HTML shows blank block.",
+      "page": 41,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Risk Calculator Cell Color Codes table loses its color indicator column visual representation.",
+      "severity": "minor",
+      "evidence": "PDF page 9 shows colored cells (yellow, orange, red, gray) as visual indicators in the left column. HTML table has a 'Color Indicator' column header but the colored cells appear blank/unstyled.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Construction Worker Scenario callout box text is missing/blank in HTML.",
+      "severity": "major",
+      "evidence": "PDF page 10 shows a blue callout box with italic text. HTML shows blank colored block.",
+      "page": 22,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The ASTM reference year differs between PDF and HTML versions of the references section.",
+      "severity": "minor",
+      "evidence": "PDF page 29 shows ASTM reference as 'E2081-11. 2000.' The HTML shows the same text. This is consistent - no actual finding.",
+      "page": 49,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The heading 'Human Health (Direct Contact) Pathway Considerations' is rendered as h4 in the HTML, but it appears as a subsection heading within section 3.3.1 in the PDF. Additionally, 'Soil', 'Sediment', 'Groundwater', 'Surface Water', 'Vapor Intrusion' are rendered as h5 headings but are sub-topics within the pathway considerations, which is acceptable structurally but creates a deeper hierarchy than the PDF suggests.",
+      "severity": "minor",
+      "evidence": "PDF shows these as bold sub-headings within section 3.3.1. HTML uses h4 for 'Human Health (Direct Contact) Pathway Considerations' and h5 for 'Soil', 'Groundwater', etc.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Color Codes table in the HTML loses the actual color indicators. The PDF shows specific colored cells (yellow for data entry, orange for non-volatile, green for Csat exceedance, grey for not required) but the HTML table's first column is empty with no color indication or description of the colors.",
+      "severity": "major",
+      "evidence": "PDF section 1.2 shows colored cell swatches with descriptions. HTML table has empty first-column cells with no color names or descriptions, just blank cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The non-volatile chemical footnote asterisk definition uses caret notation for superscript in a slightly different format but content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF: '1 x 10^-5 atm-m\u00b3/mole'. HTML: '1 x 10^-5 atm-m^3/mole'. Both convey the same meaning.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In section 3.4.3, the third bullet point describing groundwater to indoor air calculator is broken out of the bulleted list structure and preceded by a dash instead. Part of it appears after an image tag, disrupting the flow.",
+      "severity": "major",
+      "evidence": "PDF has three clean bullet points. HTML has two proper bullet points followed by an image tag, then '- For the groundwater to indoor air calculator...' as a paragraph rather than a list item.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "Several hyperlinks present in the PDF are not preserved as clickable links in the HTML, appearing as plain text instead.",
+      "severity": "minor",
+      "evidence": "PDF contains hyperlinks for 'Risk Evaluation Resources', 'USEPA Regional Screening Level (RSL) Tables', 'Technical Guidance for Risk-Based Environmental Remediation of Sites', 'Risk-Based Remediation Website', 'Risk Evaluation Equations and Calculations', 'North Carolina Division of Waste Management Vapor Intrusion Guidance document', etc. Many of these appear as plain text in the HTML without href attributes.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The callout/sidebar text about empirical monitoring data appears twice - once as a blockquote-style callout in section 3.5.2 and again restated in section 3.5.4, matching the PDF's presentation where it appears in both locations.",
+      "severity": "minor",
+      "evidence": "Both the PDF and HTML have this text in two places, so this is faithful reproduction.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 13,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 83.54,
+    "page_count": 33,
+    "visual_input_tokens": 92249,
+    "visual_output_tokens": 2533,
+    "content_input_tokens": 83352,
+    "content_output_tokens": 1081,
+    "timestamp": "2026-04-16T02:54:05.093595",
+    "auditor_version": "1.0.0"
+  }
+}

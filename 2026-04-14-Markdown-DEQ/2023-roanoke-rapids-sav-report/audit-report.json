@@ -1,0 +1,46 @@
+{
+  "document_id": "2023-roanoke-rapids-sav-report",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C8",
+      "description": "Missing closing parenthesis in sentence about eight submersed species, altering readability",
+      "severity": "minor",
+      "evidence": "PDF: '(Table 1). These included hydrilla, coontail...' HTML: '(Table 1. These included hydrilla, coontail...' - the closing parenthesis after '1' was replaced with a period, and the sentence was broken with new indentation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Missing closing parenthesis in Eurasian Watermilfoil section",
+      "severity": "minor",
+      "evidence": "PDF: 'since 1999 (Figure 14). In 2023,' HTML: 'since 1999 (Figure 14. In 2023,' - closing parenthesis replaced with period.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Tables and Figures' section heading in the PDF is rendered as h2, and the 'Roanoke Rapids' sub-heading above Table 1 is rendered as h3, which is acceptable. However, the subsection headings under Results and Discussion (Hydrilla, Brazilian Elodea, Eurasian Watermilfoil, Coontail) are rendered as h3, while 'Overall Vegetation' is also h3 - this is consistent and acceptable. No major hierarchy issue found.",
+      "severity": "minor",
+      "evidence": "N/A - on review, this is acceptable.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": "visual:too_large(19p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 20.75,
+    "page_count": 19,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 42486,
+    "content_output_tokens": 580,
+    "timestamp": "2026-04-16T02:52:32.626769",
+    "auditor_version": "1.0.0"
+  }
+}

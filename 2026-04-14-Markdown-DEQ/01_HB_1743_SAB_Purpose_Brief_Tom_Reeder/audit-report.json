@@ -1,0 +1,54 @@
+{
+  "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state flag image is significantly smaller in the HTML compared to the PDF, where it is prominently centered on the title page.",
+      "severity": "major",
+      "evidence": "In the PDF, the NC flag is a large, centered image taking up roughly the top third of the slide. In the HTML, it appears much smaller and left-aligned.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DWR logo on the contact info page is significantly smaller in the HTML rendering compared to the PDF.",
+      "severity": "major",
+      "evidence": "In the PDF, the DWR logo with 'Division of Water Resources' text is a prominent centered graphic. In the HTML, it is much smaller and left-aligned.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Venn diagram showing nested relationship between Water Supply Planning and River Basin Modeling is missing from the HTML, replaced with plain text labels.",
+      "severity": "major",
+      "evidence": "PDF shows two nested ellipses (green outer 'Water Supply Planning', orange inner 'River Basin Modeling'). HTML shows only plain text 'Water Supply Planning' and 'River Basin Modeling' with no diagram.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h2 headings share the same text 'SAB \u2013 What It Is', reflecting the original slide titles but creating a confusing heading structure in a single HTML document. Additionally, the PDF has three separate slides titled 'SAB \u2013 What It Is' with different content, which could be disambiguated.",
+      "severity": "major",
+      "evidence": "Three separate h2 headings all titled 'SAB \u2013 What It Is' appear in the HTML, corresponding to pages 6, 7, and 8 of the PDF. While technically faithful to the slide titles, in a single-document HTML context this creates ambiguous structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 25.84,
+    "page_count": 11,
+    "visual_input_tokens": 22168,
+    "visual_output_tokens": 741,
+    "content_input_tokens": 21324,
+    "content_output_tokens": 370,
+    "timestamp": "2026-04-16T02:50:47.666725",
+    "auditor_version": "1.0.0"
+  }
+}

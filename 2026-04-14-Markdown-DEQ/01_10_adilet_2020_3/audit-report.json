@@ -1,0 +1,70 @@
+{
+  "document_id": "01_10_adilet_2020_3",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The HTML conversion restructures the page layout by moving the state seal/logo and header information (ROY COOPER, MICHAEL S. REGAN, S. Daniel Smith) from a sidebar/header position to a stacked vertical layout at the top of the page, with the seal appearing below the official names rather than beside them as in the PDF.",
+      "severity": "major",
+      "evidence": "In the PDF, the official names appear on the left side with the state seal centered at the top. In the HTML, the title 'Proposed Alamance Quarry and Construction Materials Quarry' appears as a large heading at the very top, followed by the official names and then the seal below them.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML adds a large document title heading 'Proposed Alamance Quarry and Construction Materials Quarry' at the very top of the page that does not appear as a standalone title heading in the PDF. In the PDF, this text only appears as part of the RE: line.",
+      "severity": "major",
+      "evidence": "PDF page 1 begins with the state header and letterhead. HTML page 1 begins with a large 'Proposed Alamance Quarry and Construction Materials Quarry' title that is not present in the original PDF as a separate heading element.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The footer contact information from the bottom of PDF page 1 is repositioned in the HTML to appear between pages 1 and 2 content (after the DEQ logo), breaking the reading flow.",
+      "severity": "major",
+      "evidence": "In the PDF, the NC DEQ contact info (512 North Salisbury Street, etc.) appears as a footer at the bottom of page 1. In the HTML, it appears after the DEQ logo image in the middle of the converted content, between the closing paragraph and the page 2 content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer content from page 1 is included inline within the body content, creating a content artifact between the two pages of the letter.",
+      "severity": "major",
+      "evidence": "The HTML includes the DEQ logo, address block ('North Carolina Department of Environmental Quality | Division of Energy, Mineral and Land Resources...919.707.9200') between the end of page 1 content and the continuation on page 2. This is a page footer artifact that interrupts the flow of the letter.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The h1 title 'Proposed Alamance Quarry and Construction Materials Quarry' is derived from the RE: line but is not the actual document title. The document is a letter, not a report with a formal title. Additionally, there is only one heading in the entire document; no subheadings are used.",
+      "severity": "minor",
+      "evidence": "PDF RE: line reads 'Proposed Alamance Quarry and Construction Materials Quarry' \u2014 the HTML uses this as h1. While acceptable as an AI-generated title, it drops the word 'Construction' context slightly. Actually, the full RE line says 'Proposed Alamance Quarry and Construction Materials Quarry' which matches.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Certified Mail' header text appears twice \u2014 once at the top of the letter and again at the start of page 2 content, reproducing the page header from the PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 2 has 'Certified Mail / Mr. Threatt / Page Two' as a continuation header. The HTML reproduces this inline, but does not include 'Mr. Threatt' or 'Page Two' separately \u2014 instead the main body already has 'Certified Mail' at the top. The page 2 header is not separately reproduced, so this is not actually duplicated. Disregard.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.67,
+    "page_count": 2,
+    "visual_input_tokens": 7275,
+    "visual_output_tokens": 729,
+    "content_input_tokens": 6404,
+    "content_output_tokens": 687,
+    "timestamp": "2026-04-16T02:50:32.515110",
+    "auditor_version": "1.0.0"
+  }
+}

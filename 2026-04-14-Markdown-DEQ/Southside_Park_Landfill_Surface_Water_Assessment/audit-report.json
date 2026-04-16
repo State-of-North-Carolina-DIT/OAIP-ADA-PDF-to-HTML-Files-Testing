@@ -1,0 +1,78 @@
+{
+  "document_id": "Southside_Park_Landfill_Surface_Water_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF is a single-page map figure with complex spatial layout including map labels, data callouts, legend, notes, and metadata all arranged spatially around a central map. The HTML converts this into a long linear/vertical layout, fundamentally changing the spatial arrangement from a map-centric figure to a scrollable document.",
+      "severity": "critical",
+      "evidence": "PDF shows a single map figure with sample data callouts positioned geographically around the map, legend in bottom-right, notes in bottom-left, and title/metadata on the right side. HTML renders all content as a top-to-bottom linear flow: title, small map thumbnail, then map labels list, then sample data tables, then legend, then notes, then document metadata.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The map image in the HTML is rendered as a small thumbnail that loses significant legibility compared to the full-page PDF map. Details, labels, road names, and spatial relationships visible in the PDF map are not discernible in the HTML version's small image.",
+      "severity": "major",
+      "evidence": "PDF shows a large, detailed map occupying most of the page with readable road names, property boundaries, and sample locations. HTML shows a small thumbnail image where these details are not legible.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The sample data tables in the PDF are presented as compact callout boxes with the sample ID as a header, containing contaminant names and values in a two-column mini-table format. In the HTML, these are rendered as separate full-width tables, which is functionally acceptable but the Risk Assessment sub-sections within each sample are separated into distinct visual blocks rather than being part of the same callout.",
+      "severity": "major",
+      "evidence": "PDF shows e.g. 'SW-1/DUP-6102025-SD' with Copper 4.69, Lead 0.868 J, then Risk Assessment CR: 2.4E-08, HI: 0.39 all in one compact callout. HTML separates these into table rows but maintains the data correctly. The structure is preserved despite visual differences.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML adds a 'Map Labels' section listing SW/SD-1 through SW/SD-5 that doesn't appear as a discrete section in the PDF. These labels exist on the map but are not called out as a separate list.",
+      "severity": "minor",
+      "evidence": "PDF has these labels only on the map itself. HTML creates a separate 'Map Labels' section listing them explicitly before the sample data tables.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "HTML introduces fabricated section headings not present in the PDF. The PDF is a single figure/map with callout boxes and notes. The HTML adds headings like 'Map Labels', 'Sample Data', 'Legend', 'Notes & References', and 'Document Metadata' that do not exist as headings in the source document.",
+      "severity": "major",
+      "evidence": "PDF has no section headings \u2014 it is a map figure with callout boxes, a legend, and notes. HTML creates h3 headings: 'Map Labels', 'Sample Data', 'Legend', 'Notes & References', 'Document Metadata'. These are organizational labels invented by the converter.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The sample location labels (SW/SD-1 through SW/SD-5) appear redundantly under the fabricated 'Map Labels' heading, duplicating information already conveyed by the tables and the map legend.",
+      "severity": "major",
+      "evidence": "HTML has a section listing 'SW/SD-1, SW/SD-2, SW/SD-3, SW/SD-4, SW/SD-5' under 'Map Labels' heading. These are map annotation labels that are also represented in the table data and legend. In the PDF they appear only as labels on the map.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The h2 heading 'SOUTHSIDE PARK LANDFILL' is presented as if it is a subtitle in the HTML, but in the PDF it appears in the title block alongside other metadata, not as a standalone heading. This is a minor structural reinterpretation rather than content fabrication.",
+      "severity": "minor",
+      "evidence": "PDF title block contains 'SOUTHSIDE PARK LANDFILL' as part of the figure metadata. HTML elevates it to an h2 heading.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.98,
+    "page_count": 1,
+    "visual_input_tokens": 3583,
+    "visual_output_tokens": 895,
+    "content_input_tokens": 6873,
+    "content_output_tokens": 709,
+    "timestamp": "2026-04-16T02:54:54.380046",
+    "auditor_version": "1.0.0"
+  }
+}

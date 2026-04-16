@@ -1,0 +1,86 @@
+{
+  "document_id": "BLACK_SEA_BASS_\u2013_COMMERCIAL_FISHING_OPERATIONS_\u2013_ATLANTIC_OCEAN_\u2013_NORTH_OF_CAPE_HATTERAS",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina Division of Marine Fisheries seal/logo present in the PDF header is missing from the HTML conversion.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows an official seal/logo with '200 Years' celebrating emblem in the top left corner. The HTML version has no image/logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined text formatting for key provisions in Section II (Harvest Period and Limits) items A through E is present in the PDF but rendered as bold in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows items II.A through II.E with underlined bold text. HTML shows these items in bold without underline styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image of Kathy B. Rawls appears in both versions but the HTML duplicates the signature block - once within the page content area and once at the bottom of the page.",
+      "severity": "minor",
+      "evidence": "PDF page 5 has one signature block. HTML page 6 equivalent shows the signature block appearing twice - once in the normal content flow and once repeated at the bottom.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The footer information (State of North Carolina | Division of Marine Fisheries address and phone) is repeated between page-equivalent sections in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF has footer on each page as standard page footer. HTML embeds at least one instance of the footer content inline within the document body between sections.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The RE: subject line is rendered as an h2 heading, but the sub-sections (I. SIZE LIMIT, II. HARVEST PERIOD AND LIMITS, III. GEAR RESTRICTIONS, IV. GENERAL INFORMATION) are rendered as plain bold text within list items rather than as proper headings. This flattens the document hierarchy.",
+      "severity": "major",
+      "evidence": "PDF has clearly delineated sections I through IV with bold underlined headings. In HTML these are embedded as bold text within <ol> <li> elements with no heading tags (h2/h3).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The signature image is included with an alt text description, but immediately below it the text 'By: _______________________________' and the signature block are repeated as text, which is redundant with the image content. This is a minor duplication artifact.",
+      "severity": "minor",
+      "evidence": "HTML contains both <img alt='Signature of Kathy B. Rawls'> and the text 'By: _______________________________\\nKathy B. Rawls, Director\\nDIVISION OF MARINE FISHERIES'. The PDF has only the signature line with the handwritten signature above it.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The signature image alt text says 'Signature of Kathy B. Rawls' but the image dimensions are set to 612pt width, suggesting it may be a full-width image or page scan rather than just a signature. The alt text is reasonable but may not fully describe the image content.",
+      "severity": "minor",
+      "evidence": "HTML: <img src='[embedded-image-removed]' alt='Signature of Kathy B. Rawls' style='width: 612.0pt; height: auto;'>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The page footer information (State of North Carolina | Division of Marine Fisheries, address, phone number) that appears at the bottom of each page in the PDF is omitted from the HTML. This is standard practice for page-by-page conversion but is noted for completeness.",
+      "severity": "minor",
+      "evidence": "PDF footer: 'State of North Carolina | Division of Marine Fisheries, 3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557, 252-726-7021' \u2014 not present in HTML body.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 35.3,
+    "page_count": 3,
+    "visual_input_tokens": 10319,
+    "visual_output_tokens": 687,
+    "content_input_tokens": 11568,
+    "content_output_tokens": 853,
+    "timestamp": "2026-04-16T02:52:43.792890",
+    "auditor_version": "1.0.0"
+  }
+}

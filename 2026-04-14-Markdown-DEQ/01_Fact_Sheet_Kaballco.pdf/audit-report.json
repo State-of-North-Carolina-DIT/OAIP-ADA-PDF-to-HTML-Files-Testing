@@ -1,0 +1,54 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C2",
+      "description": "The document header 'FACT SHEET' appearing at the top of the PDF is not explicitly reproduced in the HTML. The HTML uses 'Draft Corrective Action Permit' as the h1 title instead.",
+      "severity": "minor",
+      "evidence": "PDF has 'FACT SHEET' as the document header at the top of each page. The HTML omits this and uses 'Draft Corrective Action Permit' as the h1.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL for the administrative record has an erroneous trailing period included in the link, and the link URL in the HTML differs from the PDF. The PDF shows the URL without a period as part of it.",
+      "severity": "major",
+      "evidence": "HTML: href='https://deq.nc.gov/about/divisions/waste-management/laserfiche.' \u2014 the trailing period is included in the link URL. The PDF shows the URL as 'https://deq.nc.gov/about/divisions/waste-management/laserfiche' with the period being sentence punctuation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The email contact on page 1 for comments is listed as caroline.bari@ncdenr.gov in both the PDF and HTML, but on page 2 of the PDF the contact email is caroline.bari@deq.nc.gov. The HTML preserves both emails. However, the HTML mailto link on the first email uses caroline.bari@ncdenr.gov which matches the PDF. No fabrication issue here \u2014 but note the PDF itself has two different email domains for the same person.",
+      "severity": "critical",
+      "evidence": "Page 1 PDF: 'caroline.bari@ncdenr.gov'; Page 2 PDF: 'caroline.bari@deq.nc.gov'. HTML preserves both correctly.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text formatting difference: the PDF has 'forty-five day period' (with line break between 'forty-five' and 'day') but it reads as 'forty-five-day period'. The HTML correctly renders this as 'forty-five-day period'. No meaning change.",
+      "severity": "minor",
+      "evidence": "PDF text appears to say 'forty-fiveday' due to line break. HTML: 'forty-five-day'. This is actually a correction/normalization.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 23.01,
+    "page_count": 2,
+    "visual_input_tokens": 5875,
+    "visual_output_tokens": 224,
+    "content_input_tokens": 7034,
+    "content_output_tokens": 792,
+    "timestamp": "2026-04-16T02:50:33.672279",
+    "auditor_version": "1.0.0"
+  }
+}

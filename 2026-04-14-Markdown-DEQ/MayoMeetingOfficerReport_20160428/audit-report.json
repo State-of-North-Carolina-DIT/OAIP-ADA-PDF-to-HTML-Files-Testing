@@ -1,0 +1,94 @@
+{
+  "document_id": "MayoMeetingOfficerReport_20160428",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC Waste Management logo appears in the HTML but the layout positions it differently relative to the official names on the right side",
+      "severity": "minor",
+      "evidence": "In the PDF, the logo is on the left with PAT MCCRORY/Governor, DONALD R. VAN DER VAART/Secretary, and MICHAEL SCOTT/Acting Director aligned to the right. In the HTML, these are stacked vertically below the logo rather than positioned to the right.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The digital signature block is present in the HTML but not visible in the PDF rendering",
+      "severity": "major",
+      "evidence": "The HTML shows 'Digitally signed by Elizabeth S Werner', DN details, and date '2016.04.28 09:56:21 -04'00'' which are not visible in the PDF page 1 rendering. This appears to be metadata from the digital signature that was exposed in the HTML conversion.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer contact information appears inline between page 1 and page 2 content in the HTML",
+      "severity": "minor",
+      "evidence": "In the PDF, the footer with 'State of North Carolina | Environmental Quality | Waste Management' and address/phone appears at the bottom of page 1. In the HTML, this appears between the outline section and the History/Background section, disrupting reading flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header content from PDF pages appears between sections in HTML",
+      "severity": "minor",
+      "evidence": "The PDF header 'Meeting Officer's Report / Coal Ash Impoundment Classification(s) / Mayo Steam Electric Plant, Person County / April 28, 2016 / Page X of 5' appears at the top of each PDF page but is removed in the HTML, which is acceptable. However, the footer content from page 1 appears inline.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated email address in the HTML. The PDF's digital signature block shows 'email=elizabeth.werner@nc' with a line break then 'denr.gov', but the HTML constructs this into a clickable mailto link 'elizabeth.werner@ncdenr.gov'. The actual domain appears to be 'ncdenr.gov' based on context, but the HTML creates a hyperlink that does not exist in the PDF.",
+      "severity": "critical",
+      "evidence": "PDF shows: 'email=elizabeth.werner@nc denr.gov' (split across lines in signature block). HTML creates: '<a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>' - a clickable mailto link that was not present in the source PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "A mailto hyperlink was fabricated in the HTML that does not exist in the source PDF. The digital signature metadata in the PDF is plain text, not a hyperlink.",
+      "severity": "critical",
+      "evidence": "HTML contains '<a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>' but the PDF has no hyperlinks - the email address appears only as plain text within a digital signature certificate block.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page footer content (State of North Carolina address, phone number, and decorative footer bar image) from page 1 is included in the HTML body content after Section I but is not repeated on every page in the PDF - it appears only as a footer on certain pages. This is a minor artifact but the footer content appears inline between sections.",
+      "severity": "major",
+      "evidence": "HTML includes between the outline and Section I: 'State of North Carolina | Environmental Quality | Waste Management 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646 919 707 8200' followed by a footer bar image. This is page footer content that was embedded into the document flow.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'MEMORANDUM' is rendered as h1, which is acceptable, but the page header information (PAT MCCRORY Governor, DONALD R. VAN DER VAART Secretary, MICHAEL SCOTT Acting Director) is rendered as plain paragraph text rather than being identified as header/masthead content. This is a minor structural choice but acceptable.",
+      "severity": "minor",
+      "evidence": "PDF has these as letterhead elements; HTML renders them as body paragraphs.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The digital signature organization field 'o=DWM-Soild Waste' is faithfully reproduced including the original typo 'Soild' (should be 'Solid'). This is correct behavior - not flagging as error, just noting the typo exists in both.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML contain 'o=DWM-Soild Waste'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 46.13,
+    "page_count": 5,
+    "visual_input_tokens": 14784,
+    "visual_output_tokens": 890,
+    "content_input_tokens": 15358,
+    "content_output_tokens": 994,
+    "timestamp": "2026-04-16T02:54:06.303329",
+    "auditor_version": "1.0.0"
+  }
+}

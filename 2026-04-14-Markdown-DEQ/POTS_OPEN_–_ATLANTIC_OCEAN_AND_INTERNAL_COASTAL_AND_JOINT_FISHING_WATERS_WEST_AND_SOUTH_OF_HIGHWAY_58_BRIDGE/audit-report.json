@@ -1,0 +1,54 @@
+{
+  "document_id": "POTS_OPEN_\u2013_ATLANTIC_OCEAN_AND_INTERNAL_COASTAL_AND_JOINT_FISHING_WATERS_WEST_AND_SOUTH_OF_HIGHWAY_58_BRIDGE",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina Marine Fisheries logo/seal image present in the PDF header is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC Marine Fisheries seal/logo in the upper left corner. The HTML version has no image/logo present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF contains a typo 'UNLAWFULLTO' (missing space), and the HTML corrects this to 'UNLAWFUL TO' with a space added. While a minor text change, it alters the exact text of the legal proclamation.",
+      "severity": "major",
+      "evidence": "PDF: 'IT SHALL BE UNLAWFULLTO USE POTS' | HTML: 'IT SHALL BE UNLAWFUL TO USE POTS'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has no heading hierarchy beyond the single h1 for 'PROCLAMATION'. The major sections (Roman numerals I-X, county names) are rendered as bold text within list items rather than as proper subheadings. While this is a structural choice, the lack of any h2/h3 headings for significant sections like county groupings and GENERAL INFORMATION flattens the document structure.",
+      "severity": "major",
+      "evidence": "Sections like 'CARTERET COUNTY/ONSLOW COUNTY', 'ONSLOW COUNTY', 'PENDER COUNTY', 'NEW HANOVER COUNTY', 'BRUNSWICK COUNTY', and 'GENERAL INFORMATION' are all bold text within <li> elements rather than headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page footer text ('State of North Carolina | Division of Marine Fisheries | 3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557 | 252-515-5500') that appears on each page of the PDF is omitted from the HTML, as are page headers like 'Proclamation PT-2-2024 Pg. 2'. This is acceptable removal of repeated boilerplate.",
+      "severity": "minor",
+      "evidence": "Footer appears on all 3 pages of PDF but not in HTML. This is acceptable behavior per calibration guidelines.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 25.79,
+    "page_count": 3,
+    "visual_input_tokens": 9893,
+    "visual_output_tokens": 314,
+    "content_input_tokens": 12644,
+    "content_output_tokens": 753,
+    "timestamp": "2026-04-16T02:53:56.675211",
+    "auditor_version": "1.0.0"
+  }
+}

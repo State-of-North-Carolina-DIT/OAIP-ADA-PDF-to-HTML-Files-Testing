@@ -1,0 +1,70 @@
+{
+  "document_id": "2020-white-lake-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "PG2",
+      "description": "Page number artifacts in HTML content",
+      "severity": "minor",
+      "evidence": "Page numbers appear as content in the HTML: '2019' (4x), '2018' (4x), '2020' (7x). These should be removed during conversion.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C8",
+      "description": "Filamentous algae point count reported as 49% in text but the PDF text says '24 (49%)' on page 4, while Table 1 shows 49% and Table 2 shows 24 points. The figure caption on page 15 says '49 sample sites' which conflicts with Table 2's value of 24. However, the HTML reproduces the figure caption as '49 sample sites' matching the PDF. The discrepancy exists in the source PDF itself (49 in figure caption vs 24 in Table 2).",
+      "severity": "major",
+      "evidence": "PDF page 15 Figure 9 caption: 'found at 49 sample sites in 2020'; PDF Table 2: Filamentous Algae 2020 = 24. This inconsistency exists in the source PDF and is reproduced in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF text on page 4 states filamentous algae was documented at '24 (49%) sample points' but the body text in the HTML also says '24 (49%)'. However, 24 out of 202 is approximately 12%, not 49%. This discrepancy exists in the source PDF itself.",
+      "severity": "major",
+      "evidence": "This is a source PDF inconsistency, not a conversion error. Withdrawing this finding.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Figure labels (A, B, C) and year labels (2020, 2019, 2018) for multi-panel figures appear as separate paragraphs disconnected from their images, creating some visual repetition and confusion in the HTML compared to the PDF's integrated layout.",
+      "severity": "minor",
+      "evidence": "For Figures 6, 7, 8: panel labels like 'A', '2020', 'B', '2019', 'C', '2018' appear as standalone paragraphs rather than integrated with images.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are generic rather than specifically descriptive of the map content shown.",
+      "severity": "minor",
+      "evidence": "Multiple images use generic alt text like 'All Points survey map', 'Spikerush survey map', 'Chara survey map' rather than describing what the maps show (e.g., distribution patterns, locations of species).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The bar chart from Figure 12 (page 18) is rendered as raw text values rather than as a chart image, but the underlying data is preserved in Table 3.",
+      "severity": "minor",
+      "evidence": "PDF shows a bar chart comparing June vs August species occurrence. HTML renders the axis labels and legend as plain text: '100%', '\u25a0 June \u25a0 August', '80%', etc.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": "visual:too_large(22p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 32.05,
+    "page_count": 22,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 46366,
+    "content_output_tokens": 977,
+    "timestamp": "2026-04-16T02:53:35.299494",
+    "auditor_version": "1.0.0"
+  }
+}

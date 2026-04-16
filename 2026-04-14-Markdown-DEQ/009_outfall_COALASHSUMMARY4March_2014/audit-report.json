@@ -1,0 +1,78 @@
+{
+  "document_id": "009_outfall_COALASHSUMMARY4March_2014",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table column structure is altered. The PDF has clearly grouped columns under date headers (2/14/2014, 2/17/2014, 2/26/2014, 2/27/2014) with sub-columns for sample IDs and qualifiers. The HTML table splits these into individual columns with verbose multi-line headers, losing the visual grouping and making the qualifier columns less clearly associated with their parent date columns.",
+      "severity": "major",
+      "evidence": "PDF shows compact grouped headers like '2/14/2014 AC04986 AC04987 AC04993' as a single column group. HTML renders these as separate columns with lengthy wrapped header text like '2/14/2014 AC04986 AC04987 AC04993' and '2/17/2014 AC05085 AC05086 AC05104 Qualifier' as distinct columns.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Some table cell alignment for 'U' qualifier values appears differently positioned relative to their data columns compared to the PDF, though the data itself is present.",
+      "severity": "minor",
+      "evidence": "In PDF, 'U' qualifiers appear in dedicated narrow sub-columns right next to numeric values. In HTML, qualifier columns are full-width columns making the association less immediately clear.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF presents the entire dataset as a compact single-page table with footnotes below. The HTML renders it as a very long vertically-stretched layout with significantly more row height, fundamentally changing the compact tabular presentation into a much more spread-out format.",
+      "severity": "major",
+      "evidence": "PDF fits all data rows in a compact table on one page. HTML stretches the same content over a much longer vertical space with generous row padding.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The footnote about Aluminum being pH and hardness dependent is rendered as a bullet list item in HTML but appears as plain text with an asterisk in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: '* Aluminum is pH and hardness dependent...' as inline text. HTML: rendered as a bullet point in a list.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The HTML table header structure is overly complex and does not clearly represent the column layout of the PDF. The PDF has distinct columns for each sampling date with sub-columns for Report #, Lab Dissolved, and Hg 1631, but the HTML merges these into confusing combined header cells with separate 'Qualifier' columns.",
+      "severity": "major",
+      "evidence": "PDF has clear column headers: '2/14/2014 AC04986 AC04987 AC04993' as one sampling event with values and qualifiers in adjacent sub-columns. HTML splits each date into two columns labeled e.g. '2/14/2014 AC04986 AC04987 AC04993' and '2/14/2014 AC04986 AC04987 AC04993 Qualifier', which is functionally acceptable but the header text 'Report # Dissolved Units\\Hg 1631' is confusing compared to the PDF's separate header rows.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The heading 'Sampling Dates and Sample ID' is presented as h3 in the HTML, but in the PDF it appears as a secondary subtitle line, not a distinct section heading. This is a minor structural choice.",
+      "severity": "minor",
+      "evidence": "PDF: 'Sampling Dates and Sample ID' appears as a subtitle under the main title. HTML: rendered as <h3>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The footnote for Aluminum uses a bullet list format in HTML instead of the asterisk prefix used in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: '* Aluminum is pH and hardness dependent...' HTML: '<ul><li>Aluminum is pH and hardness dependent...</li></ul>'. The meaning is preserved but the formatting differs from the source's simple asterisk notation.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.43,
+    "page_count": 1,
+    "visual_input_tokens": 3735,
+    "visual_output_tokens": 768,
+    "content_input_tokens": 11501,
+    "content_output_tokens": 658,
+    "timestamp": "2026-04-16T02:50:33.659439",
+    "auditor_version": "1.0.0"
+  }
+}

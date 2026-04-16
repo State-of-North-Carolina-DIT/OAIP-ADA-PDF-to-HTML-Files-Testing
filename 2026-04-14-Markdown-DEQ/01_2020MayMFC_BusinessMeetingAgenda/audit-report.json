@@ -1,0 +1,54 @@
+{
+  "document_id": "01_2020MayMFC_BusinessMeetingAgenda",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a two-column time/content layout (time on the left, agenda items on the right) throughout the agenda. The HTML collapses this into a single-column flow where times and content items are on the same line or stacked sequentially, losing the structured schedule layout.",
+      "severity": "major",
+      "evidence": "PDF shows times like '9:00 a.m.', '9:10 a.m.', '9:30 a.m.', '10:00 a.m.' in a left column with corresponding content indented to the right. HTML renders these as inline text (e.g., '9:00 a.m. Meeting Overview \u2013 Lara Klibansky') without the columnar structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The sub-items under the Chairman's Report at 9:30 a.m. lose their hierarchical indentation distinction in the HTML. In the PDF, items like 'Letters', 'Ethics Training...' are indented under 'Chairman's Report', and 'Southern Regional Advisory Committee' is further indented under 'Committee Reports'.",
+      "severity": "minor",
+      "evidence": "PDF shows clear multi-level indentation hierarchy. HTML uses bullet list for 'Southern Regional Advisory Committee' but the intermediate items (Letters, Ethics Training, etc.) are rendered as flat text lines.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 also uses the two-column time/content layout in the PDF which is collapsed to single-column in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows times like '11:15 a.m.', '12:15 p.m.', '1:15 p.m.', '2:30 p.m.', '3:00 p.m.', '3:30 p.m.', '3:45 p.m.', '4:00 p.m.' in a left column with corresponding content aligned to the right. HTML renders these inline.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page header/footer artifacts are absent from the HTML, which is acceptable. However, the footnote markers '* Times indicated are merely for guidance...' and '**Probable Action Items' that appear at the bottom of each page in the PDF are not reproduced in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page footers contain: '* Times indicated are merely for guidance. The commission will proceed through the agenda until completed.' and '**Probable Action Items' with page numbers. These are omitted from the HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 24.13,
+    "page_count": 2,
+    "visual_input_tokens": 7253,
+    "visual_output_tokens": 749,
+    "content_input_tokens": 8219,
+    "content_output_tokens": 337,
+    "timestamp": "2026-04-16T02:50:30.453758",
+    "auditor_version": "1.0.0"
+  }
+}

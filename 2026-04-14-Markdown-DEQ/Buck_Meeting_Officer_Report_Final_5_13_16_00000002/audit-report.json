@@ -1,0 +1,62 @@
+{
+  "document_id": "Buck_Meeting_Officer_Report_Final_5_13_16_00000002",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "In the PDF, topic headings in the oral comments summary (e.g., 'Beneficial Reuse', 'Dam Safety', 'Groundwater Assessments') are bold and underlined. In the HTML, 'Groundwater Assessments' loses its bullet indentation and appears as a non-bulleted paragraph, breaking it out of the list structure.",
+      "severity": "minor",
+      "evidence": "PDF page 3/6: 'Groundwater Assessments' is a bulleted item like the others. HTML equivalent: 'Groundwater Assessments' appears as a standalone paragraph outside the bulleted list.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The 'Groundwater Assessments' section in the oral comments summary is visually separated from the bullet list in the HTML, whereas in the PDF it is part of the same bulleted list as other topics.",
+      "severity": "minor",
+      "evidence": "PDF: Groundwater Assessments is indented as a bullet point. HTML: It appears flush left as a separate section heading outside the list.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The director's name 'S. JAY ZIMMERMAN' is rendered as a list item under an ordered list type A, making it appear as 'A. JAY ZIMMERMAN' structurally.",
+      "severity": "minor",
+      "evidence": "HTML: <ol type=\"A\"><li>JAY ZIMMERMAN<br /><em>Director</em></li></ol>. PDF shows 'S. JAY ZIMMERMAN' as a plain text header element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The 'Groundwater Assessments' bullet point from oral comments (Section II) lost its bullet point formatting and is rendered as a standalone paragraph instead of a list item, breaking the list structure and making it appear separate from the other oral comment topics.",
+      "severity": "major",
+      "evidence": "In the PDF, 'Groundwater Assessments' is a bulleted item in the same list as 'Beneficial Reuse', 'Dam Safety', 'Excavation', etc. In the HTML, it appears as a <p> tag between two <ul> blocks, outside the list structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header/footer block from the PDF is duplicated and inserted into the body content between the outline and Section I, including the state address and phone number appearing as body text.",
+      "severity": "major",
+      "evidence": "HTML contains a paragraph after the outline: 'State of North Carolina | Environmental Quality | Water Resources<br />1611 Mail service Center | Raleigh, North Carolina 27699-1611<br />919 707 9000' followed by an image tag. This is a page footer artifact repeated within body content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 30.74,
+    "page_count": 6,
+    "visual_input_tokens": 16841,
+    "visual_output_tokens": 617,
+    "content_input_tokens": 18447,
+    "content_output_tokens": 668,
+    "timestamp": "2026-04-16T02:52:46.080498",
+    "auditor_version": "1.0.0"
+  }
+}

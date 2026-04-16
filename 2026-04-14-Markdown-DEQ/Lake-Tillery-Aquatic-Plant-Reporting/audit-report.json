@@ -1,0 +1,142 @@
+{
+  "document_id": "Lake-Tillery-Aquatic-Plant-Reporting",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Slide 2 (Our Role) has a two-column layout in the PDF with NC DEQ content on the left and SCDNR content on the right, but the HTML renders everything in a single column",
+      "severity": "major",
+      "evidence": "PDF shows DEQ website screenshot and SCDNR Aquatic Nuisance Species Program side by side; HTML stacks them vertically with partner logos listed sequentially",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Partner logos on slide 2 are arranged in a multi-row grid layout in the PDF but displayed as a single vertical column in the HTML",
+      "severity": "major",
+      "evidence": "PDF shows logos arranged in rows (NC Wildlife, NC State, Duke Energy, UofSC, Catawba Riverkeeper in one row; Storm Water, Charlotte Water, etc. in another row; lake associations in a third row). HTML lists them all vertically one per line",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 4 has a two-column layout with the reporting form on the left and key takeaways on the right, but the HTML renders it as single column",
+      "severity": "major",
+      "evidence": "PDF shows the Aquatic Plant Report form screenshot on the left side with key takeaways bullet list and agency logos on the right. HTML stacks form details and key takeaways sequentially",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 5 has a two-column layout with good ID photos (green border) on the left and bad ID photos (red border) on the right, but HTML collapses to single column",
+      "severity": "major",
+      "evidence": "PDF shows green-bordered good examples on left and red-bordered bad examples on right side-by-side. HTML stacks the images vertically, losing the visual comparison layout",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Several partner/organization logos from slide 2 are missing or appear as very small thumbnails that are hard to identify in the HTML",
+      "severity": "major",
+      "evidence": "PDF shows clearly identifiable logos for Charlotte Water, Charlotte-Mecklenburg Storm Water, Gastonia, Selmon(t), and others. Some of these appear very small or are difficult to identify in the HTML",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 has a two-column layout with contact info on the left and Stop Aquatic Hitchhikers poster on the right, but HTML renders single column",
+      "severity": "major",
+      "evidence": "PDF shows contact emails on left with the STOP AQUATIC HITCHHIKERS infographic on the right. HTML stacks them vertically",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The green and red border visual distinction for good vs bad ID photos is partially lost in HTML rendering",
+      "severity": "minor",
+      "evidence": "PDF uses green borders for good photo examples and red borders for bad photo examples as a clear visual teaching tool. HTML shows the images but the border-based categorization context may be less clear",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated organization names/logos that do not appear in the PDF source. The HTML includes references to 'Gastonia logo' and 'Belmont North Carolina logo' in alt text for images, but these organizations are not identifiable in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains alt text 'Gastonia logo' and 'Belmont North Carolina logo' - these specific organization names cannot be confirmed from the PDF content. The PDF page 2 shows many small logos but the specific identification of these as 'Gastonia' and 'Belmont North Carolina' may be fabricated alt text descriptions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are potentially inaccurate or unverifiable for the many small logos on page 2.",
+      "severity": "minor",
+      "evidence": "The PDF page 2 contains numerous small organizational logos. Alt text like 'Gastonia logo', 'Belmont North Carolina logo' cannot be verified from the PDF content alone. However, some alt text like 'Lake James Environmental Association' logo appears to be missing from the HTML entirely while other logos are described.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The Lake James Environmental Association logo visible on PDF page 2 is not represented in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows a 'Lake James Environmental Association' logo among the partner organizations, but this is not included as an image or mentioned in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Key takeaways' section is rendered as an h2 heading, but in the PDF it appears as a content label on page 4, not a major section heading. Meanwhile, some actual slide titles from the PDF are rendered at appropriate levels, creating an inconsistent hierarchy.",
+      "severity": "major",
+      "evidence": "PDF page 4 shows 'Key takeaways:' as a content element alongside the reporting form screenshot. HTML renders it as '<h2>Key takeaways:</h2>' which elevates it to the same level as major section headings like 'Our Role' and 'How to Take a Good ID Photo'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The key takeaways bullet list content appears twice in the HTML - once as plain text extracted from page 4 and once as a formatted bullet list under the h2 heading.",
+      "severity": "major",
+      "evidence": "The HTML contains: first as page 4 text '| 4 Key takeaways: \u2022 Provides contact information \u2022 Plant location \u2022 Photo of plant for ID \u2022 Amount of area impacted \u2022 Reporting tool is found on our website: duke-energy.com/AquaticPlants This information is communicated to the appropriate state resource agencies for incorporation into management plan' and then again as a structured list under '<h2>Key takeaways:</h2>' with the same bullets and follow-up paragraph.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The NC DEQ and NC Wildlife Resources Commission logos appear multiple times across the HTML, which reflects their appearance on multiple PDF pages but could be considered duplication.",
+      "severity": "minor",
+      "evidence": "NC DEQ logo appears in the 'Our Role' section and again after the key takeaways section. NC Wildlife Resources Commission logo similarly appears multiple times.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The PDF contains several hyperlinks on page 3 (Related Links section) that are presented as plain text in the HTML rather than as functional links.",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows clickable links for 'Aquatic Plant Reporting Form', 'Catawba-Wateree Aquatic Plant Survey', 'Hydrilla Fact Sheet', 'What to Know About Harmful Algal Blooms', and 'How Duke Energy's aquatic plant scientists survey lake shorelines'. HTML renders these as plain list items without href attributes.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Catawba Wateree Water Management Group logo/name from page 2 of the PDF is split into separate references in the HTML, potentially losing the association.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows 'CATAWBA WATEREE WATER MANAGEMENT GROUP' as a single entity. The HTML references 'Lake Wateree Association logo' and 'Catawba Riverkeeper logo' as separate entities, which may not accurately represent the original organizations shown.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 9,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 63.98,
+    "page_count": 6,
+    "visual_input_tokens": 19997,
+    "visual_output_tokens": 1267,
+    "content_input_tokens": 15083,
+    "content_output_tokens": 1393,
+    "timestamp": "2026-04-16T02:55:04.982055",
+    "auditor_version": "1.0.0"
+  }
+}

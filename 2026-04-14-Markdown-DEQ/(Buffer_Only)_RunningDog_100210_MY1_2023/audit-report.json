@@ -1,0 +1,78 @@
+{
+  "document_id": "(Buffer_Only)_RunningDog_100210_MY1_2023",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th></th>] (and 9 more)",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 1 Buffer Project Areas and Assets Table is significantly restructured from the PDF's complex spreadsheet format into multiple simpler tables, losing some of the visual layout and making it harder to cross-reference data. However, the core data values appear preserved.",
+      "severity": "major",
+      "evidence": "The PDF has a single complex table with multiple sections (credit types, preservation, mitigation totals, nutrient offset). The HTML splits this into 5+ separate tables. Data values appear correct but the integrated structure is lost.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 9 Vegetation Performance Standards Summary Table is split into four separate tables in the HTML, losing the integrated view. The PDF presents all 12 plots in a single table with monitoring years as rows.",
+      "severity": "major",
+      "evidence": "PDF has one unified table showing Veg Plot 1-12 with Monitoring Year 0-7 rows. HTML splits into 4 separate tables (plots 1-3, 4-6, 7-9, 10-12).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Table 10 Vegetation Height Data, Plot 12 has a height entry recorded as 'fee' which is faithfully reproduced from the PDF but appears to be a data entry error in the source. This is not a conversion error.",
+      "severity": "minor",
+      "evidence": "Plot 12, Quercus rubra, X=8.0, Y=4.0, Height='fee' - same in both PDF and HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The Appendix 4 Correspondence email content has 'Stephanie Erickson' rendered as an h2 heading, which in the PDF is simply the name at the top of an email printout, not a document section heading.",
+      "severity": "minor",
+      "evidence": "PDF page 41 shows 'Stephanie Erickson' as the recipient header in an email chain. HTML renders it as '<h2>Stephanie Erickson</h2>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 8a and 8b footnotes are duplicated in the HTML, appearing identically after both tables. This matches the PDF source where both pages carry the same footnotes.",
+      "severity": "minor",
+      "evidence": "Footnotes 1-4 appear after both Table 8a and Table 8b in both the PDF and HTML. Not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some map figure alt texts are generic descriptions rather than describing the specific map content shown, though they are not inaccurate.",
+      "severity": "minor",
+      "evidence": "Figure 1 alt='Project Vicinity Map', Figure 2 alt='Project Service Area Map' - these match the figure titles but don't describe the map content itself. Acceptable given these are titled figures.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": "visual:too_large(42p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 42.28,
+    "page_count": 42,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 133517,
+    "content_output_tokens": 972,
+    "timestamp": "2026-04-16T02:58:49.167716",
+    "auditor_version": "1.0.0"
+  }
+}

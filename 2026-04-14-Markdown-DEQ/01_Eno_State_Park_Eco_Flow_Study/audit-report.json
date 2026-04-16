@@ -1,0 +1,54 @@
+{
+  "document_id": "01_Eno_State_Park_Eco_Flow_Study",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: '2 cfs 5 cfs 38 cfs' (3x); '2 cfs 31 cfs' (3x); '2 cfs 5 cfs 31 cfs' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content duplication: Each slide's content appears twice - once as embedded image with alt text summary, and again as extracted text (headings, bullet points). The presentation slides are image-based, so the HTML reproduces the content of each slide both as an image tag and as separate text elements, creating redundancy.",
+      "severity": "major",
+      "evidence": "For example, Slide 2 content ('Eno River State Park Ecological Flow Study' with its bullet points) appears as an <img> alt text AND as a separate <h2> heading and <ul> list. This pattern repeats for all slides throughout the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Repeated h2 headings with identical text. 'Eno River State Park Ecological Flow Study' appears as an h2 heading twice (pages 2 and 3 content), which could be confusing. The PDF had these as separate slides with the same title, but the HTML doesn't differentiate them.",
+      "severity": "major",
+      "evidence": "Two consecutive sections both have '<h2>Eno River State Park Ecological Flow Study</h2>' with no distinguishing numbering or subtitle.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Transect #7 cross-section profile graph is missing. The PDF shows transect photos for #7 (pages 18-19) but unlike all other transects, there is no corresponding cross-section elevation graph page for Transect #7.",
+      "severity": "minor",
+      "evidence": "All other transects (#1-#6, #8-#12) have both photo slides and corresponding cross-section elevation graphs. Transect #7 only has photo slides. However, this appears to also be the case in the source PDF, so this is likely not a conversion error but a feature of the original document.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": "visual:too_large(30p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 32.5,
+    "page_count": 30,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 52608,
+    "content_output_tokens": 689,
+    "timestamp": "2026-04-16T03:32:05.112066",
+    "auditor_version": "1.0.0"
+  }
+}

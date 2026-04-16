@@ -1,0 +1,78 @@
+{
+  "document_id": "Asheville_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC Energy, Mineral & Land Resources logo/graphic present in the PDF header is not rendered in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NC green tree logo with 'Energy, Mineral & Land Resources ENVIRONMENTAL QUALITY' text. HTML shows only plain text 'NC Energy, Mineral & Land Resources ENVIRONMENTAL QUALITY'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF header has official names (PAT McCRORY, DONALD R. VAN DER VAART, TRACY DAVIS) right-aligned. The HTML renders them left-aligned in a stacked format.",
+      "severity": "minor",
+      "evidence": "PDF shows right-aligned header with Governor, Secretary, Director titles. HTML shows left-aligned plain text block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The outline in the PDF uses Roman numerals with indented text formatting consistent with a formal outline. The HTML uses a different list style with smaller Roman numerals.",
+      "severity": "minor",
+      "evidence": "PDF shows I. through IV. with indented section titles. HTML shows the same but with slightly different presentation using 'I.' prefix style.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF, the CAMA process items are rendered with bullet points (\u2022). In the HTML, they are rendered with filled circle bullets, which is functionally equivalent but the attachment list in section IV uses Roman numerals in both.",
+      "severity": "minor",
+      "evidence": "Both versions use bullet lists for CAMA process requirements - this is consistent.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In Section II of the PDF, comment category labels use filled bullet (\u2022) markers. The HTML uses the same filled circle bullets, maintaining consistency.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML use bullet markers for Environmental, Environmental Justice, Health Issues, etc. categories.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The attachment list in Section IV uses Roman numeral ordered list (I-VI) in the HTML, but the PDF uses Roman numerals I-VI as labels. While the content matches, the HTML's Section IV heading numbering duplicates the pattern used for the main document outline (Sections I-IV), which could cause minor confusion but is acceptable reformatting.",
+      "severity": "minor",
+      "evidence": "PDF Section IV lists attachments as I through VI. HTML renders them as <ol type='I'> which matches.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page footer containing the State of North Carolina address and phone number appears on every page of the PDF but is omitted from the HTML. This is acceptable behavior for page-level boilerplate removal, but noted for completeness.",
+      "severity": "minor",
+      "evidence": "PDF footer: 'State of North Carolina | Environmental Quality | Energy, Mineral and Land Resources / 512 N. Salisbury Street | 1612 Mail Service Center | Raleigh, North Carolina 27699-1612 / 919 707 9200' \u2014 not present in HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 37.96,
+    "page_count": 5,
+    "visual_input_tokens": 13489,
+    "visual_output_tokens": 1024,
+    "content_input_tokens": 14613,
+    "content_output_tokens": 517,
+    "timestamp": "2026-04-16T02:52:43.064068",
+    "auditor_version": "1.0.0"
+  }
+}

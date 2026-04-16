@@ -1,0 +1,118 @@
+{
+  "document_id": "RoxboroMeetingOfficerReport_20160428",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The memo header layout differs - PDF has a structured To/From/Subject layout with clear label-value alignment, while HTML renders these more linearly without the same visual separation",
+      "severity": "minor",
+      "evidence": "PDF shows 'To:', 'From:', 'Subject:' as distinct left-aligned labels with values indented to the right. HTML renders them more as flowing text lines.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The green-to-blue gradient bar at the bottom of the PDF page 1 is absent in the HTML version on the equivalent page, though a similar gradient bar appears later in the HTML",
+      "severity": "minor",
+      "evidence": "PDF page 1 has a horizontal green-to-blue gradient bar at the very bottom. The HTML equivalent page does not show this bar at the bottom but shows one between sections later.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'MEMORANDUM' heading in the PDF is underlined, which is a meaningful formatting distinction. In the HTML it appears as a large heading without underline but with a horizontal rule beneath it, which is an acceptable alternative representation.",
+      "severity": "major",
+      "evidence": "PDF: 'MEMORANDUM' with underline text decoration. HTML: 'MEMORANDUM' as a heading with a red/dark horizontal rule beneath.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The digital signature information appears in the HTML between the From field and the Subject field, adding content not visually present in the PDF's main page rendering",
+      "severity": "minor",
+      "evidence": "HTML shows 'Digitally signed by Elizabeth S Werner', 'DN: cn=Elizabeth S Werner, o=DWM-Soild Waste, ou=NCDENR, email=elizabeth.werner@ncdenr.gov, c=US', and 'Date: 2016.04.28 10:23:05 -04'00'' between From and Subject sections. PDF page 1 does not show this digital signature information.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The outline items (I through IV) in the PDF use Roman numerals as a formatted list with clear indentation, while the HTML renders them similarly but with slightly different list formatting",
+      "severity": "minor",
+      "evidence": "Both versions show the same four items (I. History/Background, II. March 16, 2016 Public Meeting..., III. Written Public Comments Summary, IV. Attachments) in the same order with Roman numerals.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold and underlined topic headings in the oral comments summary bullet points lose their underline formatting in the HTML",
+      "severity": "major",
+      "evidence": "PDF shows topic labels like 'Excavation', 'Groundwater Assessments', 'Well Testing', etc. as bold and underlined. HTML shows them as bold only without underline.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold and underlined topic headings in the written public comments summary bullet points lose their underline formatting in the HTML",
+      "severity": "major",
+      "evidence": "PDF page 4-5 shows 'Beneficial Reuse', 'Health Concerns', 'Environmental Justice', 'Excavation', 'Groundwater Assessments', 'Landfills', 'Risk Classification', 'Surface Water' as bold and underlined. HTML shows them as bold only.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated email address in the HTML. The digital signature block in the PDF shows 'email=elizabeth.werner@nc denr.gov' (with a line break), but the HTML renders it as a clickable mailto link 'elizabeth.werner@ncdenr.gov'. While this is likely a reasonable interpretation of a line-broken email, the HTML also fabricates an active hyperlink that does not exist in the PDF.",
+      "severity": "critical",
+      "evidence": "PDF: 'email=elizabeth.werner@nc denr.gov, c=US' (split across lines). HTML: '<a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>'. The email address reconstruction is plausible but the mailto hyperlink is fabricated.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The document header/footer block from page 1 is duplicated. The letterhead information (State of North Carolina | Environmental Quality | Waste Management, address, phone) appears both at the top of the HTML and again at the bottom of the first page's content section, reproducing footer text inline with the main content.",
+      "severity": "major",
+      "evidence": "HTML contains 'State of North Carolina | Environmental Quality | Waste Management 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646 919 707 8200' both near the top (as part of initial rendering) and again after the outline list as a separate paragraph block.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page 1 content is effectively duplicated. The memorandum header (To, From, Subject) and the introductory paragraph and outline appear twice in the HTML \u2014 once from the first rendering of page 1 and again from the second rendering of page 1.",
+      "severity": "minor",
+      "evidence": "The HTML contains two instances of the memorandum text: first a condensed version at the top, then a full version with the digital signature details. Both contain 'On March 16, 2016, I served as meeting officer...' and the same outline list.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'MEMORANDUM' is used as h1, while the actual major section headings (I. History/Background, II. March 16, 2016..., III. Written Public Comment Summary, IV. Attachments) are h2. This is acceptable but the heading text for Section II differs slightly from the PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 3 header: 'II. March 16, 2016 Public Meeting and Oral Comments Summary'. HTML h2: 'II. March 16, 2016 Public Meeting and Oral Comments Summary'. These match. No issue here upon closer inspection.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image has an empty alt attribute, providing no description of the image content.",
+      "severity": "minor",
+      "evidence": "HTML: '<img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 654.4pt; height: auto;\">'. The alt text is empty string rather than descriptive.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 51.19,
+    "page_count": 5,
+    "visual_input_tokens": 14229,
+    "visual_output_tokens": 1265,
+    "content_input_tokens": 15235,
+    "content_output_tokens": 1008,
+    "timestamp": "2026-04-16T02:54:57.541617",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "document_id": "2021-white-lake-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table 1 in the HTML has the 2021 column values highlighted in red and green background colors that do not appear in the PDF version, but more importantly the data presentation is consistent. However, the 2021 column data in Table 2 also shows red/green highlighting not in the PDF. This is a styling addition but does not lose information.",
+      "severity": "major",
+      "evidence": "PDF Table 1 and Table 2 show plain black text on white background for all cells. HTML version shows colored backgrounds (red/green) on the 2021 column cells.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 7 in the PDF shows spikerush points concentrated on the western/northwestern side of the lake, while the HTML version of the same figure shows the points concentrated on the southwestern/western side. The map orientations appear different between the two versions.",
+      "severity": "minor",
+      "evidence": "PDF Figure 7 shows points in the upper-left (northwestern) area of the lake; HTML Figure 7 shows points distributed more toward the southwestern/western area.",
+      "page": 22,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Stray text '2020' appears before Figure 11 in the HTML, which is a label artifact from the PDF page for Figure 11 but appears out of context as standalone body text.",
+      "severity": "minor",
+      "evidence": "HTML contains '<p>2020 </p>' immediately before the Figure 11 image. In the PDF, '2020' appears as a label/text on the Figure 11 page but is not standalone body text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF uses 'Myriophyllum tentellum' (likely a typo in the original) in the first species listing on page 3, but also uses 'Myriophyllum tenellum' elsewhere. The HTML reproduces both spellings faithfully, so this is not a conversion error but is noted for completeness.",
+      "severity": "minor",
+      "evidence": "PDF page 3: 'Myriophyllum tentellum', PDF page 4: 'Myriophyllum tenellum'. HTML preserves both.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "One image has generic/unclear alt text 'Icon or Logo' for what appears to be an artifact image extracted from Figure 10's page.",
+      "severity": "minor",
+      "evidence": "HTML: '<img src=\"[embedded-image-removed]\" alt=\"Icon or Logo\" style=\"width: 43.2pt; height: auto;\">'. This appears to be a small artifact/icon from the PDF that was extracted as a separate image.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 51.86,
+    "page_count": 19,
+    "visual_input_tokens": 47985,
+    "visual_output_tokens": 1518,
+    "content_input_tokens": 39912,
+    "content_output_tokens": 599,
+    "timestamp": "2026-04-16T02:55:13.562285",
+    "auditor_version": "1.0.0"
+  }
+}

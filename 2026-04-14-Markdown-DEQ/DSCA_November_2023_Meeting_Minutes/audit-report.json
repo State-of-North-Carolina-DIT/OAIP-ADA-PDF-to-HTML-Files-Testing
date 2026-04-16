@@ -1,0 +1,46 @@
+{
+  "document_id": "DSCA_November_2023_Meeting_Minutes",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Roman numeral numbering changed to Arabic numerals for sections VI through X in the HTML version",
+      "severity": "major",
+      "evidence": "PDF uses Roman numerals consistently (VI, VII, VIII, IX, X) for all agenda items. HTML switches to Arabic numerals (1, 2, 3, 4, 5) starting from section VI (Remediation Unit Updates/Issues).",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Ordered list numbering breaks after item V. Items VI through X in the PDF use Roman numerals continuously (I through X), but in the HTML the list breaks after item V and restarts as a new ordered list with Arabic numerals starting at 1, losing the Roman numeral sequence for items VI-X.",
+      "severity": "major",
+      "evidence": "PDF has items I through X as a continuous Roman numeral list. HTML has the first <ol type='I'> ending after item V (Fund & Site Statistics), then content for item V is placed outside the list as plain paragraphs, followed by a new <ol> (default Arabic numerals) starting at 1 for items VI (Remediation), VII (Compliance), VIII (Case Studies), IX (Other Issues), and X (Next Meeting).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The content under item V (Fund & Site Statistics) is rendered outside of the ordered list structure, appearing as standalone paragraphs rather than as part of the list item. While the text content is preserved, it is structurally detached from its parent list item.",
+      "severity": "minor",
+      "evidence": "In the PDF, all Fund & Site Statistics content falls under Roman numeral V. In the HTML, the <li> for item V contains only the heading 'Fund & Site Statistics' and the subsequent paragraphs about fund balance, contracts, sales tax revenue, and facility counts are placed after the closing </ol> tag as plain <p> elements.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 24.64,
+    "page_count": 3,
+    "visual_input_tokens": 9227,
+    "visual_output_tokens": 416,
+    "content_input_tokens": 11385,
+    "content_output_tokens": 584,
+    "timestamp": "2026-04-16T02:52:53.907081",
+    "auditor_version": "1.0.0"
+  }
+}

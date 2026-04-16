@@ -1,0 +1,21 @@
+{
+  "document_id": "0_ManteoAmend1Certif_021209",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 9.09,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 156,
+    "content_input_tokens": 4062,
+    "content_output_tokens": 181,
+    "timestamp": "2026-04-16T02:50:57.790973",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "document_id": "Marshall_Meeting_Officer_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC Water Resources Environmental Quality logo appears slightly different in styling between the PDF and HTML versions, but is present and correctly placed in both.",
+      "severity": "minor",
+      "evidence": "Logo is present in both versions at the top of the document. Minor visual differences in rendering are acceptable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF has a right-aligned header block with Governor name, Secretary name, and Director name positioned in the upper right corner, while the HTML renders these as left-aligned block elements below the logo, collapsing the two-column header layout.",
+      "severity": "major",
+      "evidence": "PDF: PAT MCCRORY (Governor), DONALD R. VAN DER VAART (Secretary), S. JAY ZIMMERMAN (Director) are right-aligned. HTML: Same names are left-aligned below the logo in a single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'MEMORANDUM' title loses its underline formatting in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: 'MEMORANDUM' is underlined and centered. HTML: 'MEMORANDUM' is rendered as a heading without underline, with a horizontal rule below it instead.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The memo header fields (To, From, Subject) lose their tabular/indented alignment in the HTML, but the information is preserved.",
+      "severity": "minor",
+      "evidence": "PDF uses consistent indentation with labels left-aligned and values indented. HTML renders them as flowing text blocks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer information (State of North Carolina address and phone number) appears between the memo content and the History/Background section in the HTML, disrupting reading flow.",
+      "severity": "minor",
+      "evidence": "PDF: Footer at bottom of page 1. HTML: Footer text appears inline between the outline list and the History/Background section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the oral comments summary, topic headings lose their underline formatting in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: Topic headings like 'Air Quality', 'Beneficial Reuse', 'Costs' etc. are bold and underlined. HTML: Same headings are bold but not underlined.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the written public comments summary, topic headings lose their underline formatting in the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF: Topic headings like 'Air Quality', 'Groundwater Assessment', etc. are bold and underlined. HTML: Same headings are bold but not underlined.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "S. JAY ZIMMERMAN rendered as an ordered list item instead of plain text",
+      "severity": "minor",
+      "evidence": "The PDF shows 'S. JAY ZIMMERMAN / Director' as a header block element. The HTML wraps it in '<ol type=\"A\"><li>JAY ZIMMERMAN...' which renders it as 'A. JAY ZIMMERMAN' instead of 'S. JAY ZIMMERMAN'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer/header content repeated inline between sections",
+      "severity": "minor",
+      "evidence": "After the outline list and before Section I, the HTML includes the footer text 'State of North Carolina | Environmental Quality | Water Resources / 1611 Mail service Center | Raleigh, North Carolina 27699-1611 / 919 707 9000' plus a bottom banner image. This is a page footer artifact from page 1 that appears inline in the content flow.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "S. JAY ZIMMERMAN's initial 'S.' is lost due to ordered list formatting",
+      "severity": "major",
+      "evidence": "PDF: 'S. JAY ZIMMERMAN'. HTML: '<ol type=\"A\"><li>JAY ZIMMERMAN' which renders as 'A. JAY ZIMMERMAN'. The 'S.' is replaced by the list marker 'A.', losing the correct initial.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 39.12,
+    "page_count": 6,
+    "visual_input_tokens": 16619,
+    "visual_output_tokens": 1136,
+    "content_input_tokens": 18362,
+    "content_output_tokens": 607,
+    "timestamp": "2026-04-16T02:53:56.336280",
+    "auditor_version": "1.0.0"
+  }
+}

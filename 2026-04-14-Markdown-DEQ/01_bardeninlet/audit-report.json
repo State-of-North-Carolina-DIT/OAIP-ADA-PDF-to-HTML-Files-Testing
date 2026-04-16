@@ -1,0 +1,94 @@
+{
+  "document_id": "01_bardeninlet",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The nautical chart image from the PDF is completely missing in the HTML conversion",
+      "severity": "critical",
+      "evidence": "The PDF shows a detailed nautical chart map of Cape Lookout with depth soundings, navigation markers, coastline features, and geographic labels. The HTML version contains no image at all - only extracted text labels listed vertically.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The spatial layout of the nautical chart has been destroyed - map annotations are presented as a flat text list instead of positioned on a chart",
+      "severity": "critical",
+      "evidence": "In the PDF, text labels like depth soundings, navigation aids (R \"2\", Fl R 6s, etc.), geographic names (Lookout Bight, Barden Inlet, Lighthouse Bay), and warnings (Breakers, COLREGS DEMARCATION LINE) are spatially positioned on a map. In the HTML, these are rendered as a simple vertical list of text items, losing all spatial context and geographic meaning.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Depth soundings (numbers) from the chart are completely omitted in the HTML",
+      "severity": "major",
+      "evidence": "The PDF chart contains numerous depth sounding numbers (e.g., 24, 33, 39, 28, 15, 17, 12, 22, etc.) distributed across the water areas. These numerical depth values are entirely absent from the HTML text extraction.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The source PDF is a nautical chart image containing extensive depth soundings (numbers scattered across the chart representing water depths), which are not systematically captured in the HTML. Dozens of depth values like 28, 24, 33, 39, 43, 44, 49, 51, 52, 54, 47, 12, 22, 27, 33, 34, 36, 24, 25, 37, 31, etc. are present on the chart but not reproduced.",
+      "severity": "major",
+      "evidence": "The PDF chart contains numerous depth soundings across the entire image. The HTML only captures landmark labels and navigational aid descriptions but omits all the depth numbers scattered across the chart.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The nautical chart image itself is missing from the HTML. The source PDF is primarily a visual chart/map, and the HTML contains no image element reproducing or referencing it.",
+      "severity": "major",
+      "evidence": "The PDF is a full nautical chart image. The HTML contains only extracted text labels but no <img> tag representing the chart itself.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML title 'Cape Lookout Nautical Chart' is an AI-generated title not explicitly found as a document title in the PDF. However, this is an acceptable AI-generated document title for an h1 heading.",
+      "severity": "minor",
+      "evidence": "PDF has 'CAPE LOOKOUT' as a label on the chart but no formal document title. HTML uses 'Cape Lookout Nautical Chart' as h1.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text accuracy issue: '29ft' in the HTML appears to be a misinterpretation. On the chart, '29' is a depth sounding near R '4', not the height of the light. The chart shows 'R \"4\" Fl R 6s' with 29 being a nearby depth number, not '29ft' as a characteristic of the aid.",
+      "severity": "minor",
+      "evidence": "PDF shows R '4' Fl R 6s with '29' as a separate depth sounding nearby. HTML combines them as 'R \"4\" Fl R 6s 29ft'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text reading: 'S Sh' in the HTML \u2014 on nautical charts this is typically 'S SA' (sand) or similar bottom type abbreviation. The chart appears to show 'S SA'.",
+      "severity": "minor",
+      "evidence": "PDF shows what appears to be 'S SA' near the bottom. HTML renders it as 'S Sh'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "'Obsrn PA' in the HTML \u2014 the chart appears to show 'Obstn PA' (obstruction), not 'Obsrn' (observation).",
+      "severity": "minor",
+      "evidence": "PDF chart label near Cape Pt shows 'Obstn PA'. HTML renders as 'Obsrn PA'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 35.91,
+    "page_count": 1,
+    "visual_input_tokens": 4253,
+    "visual_output_tokens": 578,
+    "content_input_tokens": 4102,
+    "content_output_tokens": 1006,
+    "timestamp": "2026-04-16T02:51:12.703301",
+    "auditor_version": "1.0.0"
+  }
+}

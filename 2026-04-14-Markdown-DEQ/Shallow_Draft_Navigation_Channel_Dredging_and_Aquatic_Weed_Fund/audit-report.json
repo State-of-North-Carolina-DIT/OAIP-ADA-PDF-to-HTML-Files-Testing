@@ -1,0 +1,118 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "North Carolina state seal image and DEQ logo are missing from the HTML conversion of the cover letter",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC state seal at the top center and the DEQ logo at the bottom. HTML page 2 shows these are absent.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The cover letter content is repeated in the HTML. The letter appears once as a formatted page (page 2 in HTML) and then the same content appears again as plain text continuing into the report body.",
+      "severity": "major",
+      "evidence": "PDF has the cover letter once (page 1), but the HTML shows the letter content twice - once as a styled letter and again as flowing text before the report title.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "North Carolina state seal image missing from the report title page",
+      "severity": "critical",
+      "evidence": "PDF page 3 (title page) has no seal but PDF page 1 had a seal at top. The HTML title page also has no seal, which is correct. However, the cover letter page in the HTML is missing its seal as noted separately.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Shallow Draft Navigation Channel Dredging table has a row with amount 12,344.94 missing the dollar sign in the PDF image but this appears in both versions",
+      "severity": "minor",
+      "evidence": "PDF row for 3/16/2022 8161 Dare County Southern channel shows '12,344.94' without $ prefix in the image table. HTML shows '$12,344.94'. This discrepancy exists in the source PDF itself between the image table and the structured table.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content appears between page sections in the HTML conversion. The cover letter metadata (ROY COOPER Governor, ELIZABETH S. BISER Secretary, RICHARD E. ROGERS JR. Director, October 1, 2022, address information) appears again mid-flow in the HTML.",
+      "severity": "major",
+      "evidence": "PDF has these as header elements on page 1 only. HTML repeats them as body text between the formatted letter and the report content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the Aquatic Weed Control table, the NC WRC - Land & Water Access cooperator row shows mismatched Proposed State Funding ($3,100.00) vs Proposed Cooperator Funding ($18,100.00) - but this discrepancy exists in the source PDF as well",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show $3,100.00 state funding and $18,100.00 cooperator funding for Northeast NC Waterfowl Habitat Improvement. This is a source document issue, not a conversion error.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "The cover page 'Due Date' field shows 'Oct. 1, 2021' in both the PDF and HTML, but the cover letter is dated October 1, 2022 and covers FY 2021-2022. This is a discrepancy that exists in the source PDF, so not a conversion error per se, but it is faithfully reproduced.",
+      "severity": "major",
+      "evidence": "PDF page 2: 'Due Date: Oct. 1, 2021'; HTML: 'Due Date: Oct. 1, 2021'. This matches the source and is not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Shallow Draft Navigation Channel Dredging table is present both as an embedded image and as an HTML table. This is acceptable for accessibility. However, the second occurrence of '8161 Dare County Southern channel' on 3/16/2022 shows amount '$12,344.94' in the HTML, while the PDF shows '12,344.94' (without dollar sign formatting consistent with other entries). The PDF actually shows this value as '$12,344.94' as well, so this is correct. But the entry on 3/16/2022 for '8161 Dare County Southern channel' appears to be listed with a comma-less amount in PDF ('12,344.94') \u2014 checking more carefully, the PDF shows it the same way. No error here.",
+      "severity": "major",
+      "evidence": "Verified \u2014 amounts match between PDF and HTML for duplicate Dare County Southern channel entries.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Shallow Draft Navigation Channel Dredging table data appears twice in the HTML \u2014 once as an embedded image reference and once as a fully rendered HTML table. The image is redundant with the table.",
+      "severity": "major",
+      "evidence": "HTML contains: <img alt='Shallow Draft Navigation Channel Dredging Annual Report Table'> followed by a full <table> with all the same data. The PDF only has this data once as a table on page 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Project Cooperators reference table at the end of page 10 is incomplete and malformed in the HTML. The 'Lake Norman' and 'Mountain Island Reservoir' cooperators are incorrectly split \u2014 'Charlotte' is cut off from 'Charlotte Water' for Lake Norman, and 'Stormwater Services and Duke Energy' is listed as a cooperator for Mountain Island Reservoir when the PDF shows the Mountain Island Reservoir cooperators as 'Charlotte Stormwater Services and Duke Energy' combined with the Lake Norman entry showing 'Lake Norman Marine Commission, Charlotte Water'.",
+      "severity": "major",
+      "evidence": "PDF page 10 shows: Lake Norman cooperators = 'Lake Norman Marine Commission, Charlotte Water,' and Mountain Island Reservoir = 'Charlotte Stormwater Services and Duke Energy'. HTML splits these incorrectly: Lake Norman = 'Lake Norman Marine Commission, Charlotte Water, Charlotte' and Mountain Island Reservoir = 'Stormwater Services and Duke Energy'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title in the PDF is 'Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed' \u2014 the h1 in HTML matches this but is oddly truncated (missing 'Fund' as a continuation). The 'Fund Statutory Authority' line follows separately. While the PDF has the same layout, the heading hierarchy has an issue: 'Shallow Draft Navigation Channel Dredging Annual Report' appears as an h3 under the Intro h2, when it represents a major section heading for the dredging table.",
+      "severity": "major",
+      "evidence": "HTML: <h3>Shallow Draft Navigation Channel Dredging Annual Report</h3> appears under <h2>Intro</h2>. In the PDF, this is a standalone table title/section, not subordinate to 'Intro'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The cover letter states 'Department of Environment Quality' (missing 'al' from 'Environmental') \u2014 this typo exists in the source PDF and is faithfully reproduced, so it is not a conversion error.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'Department of Environment Quality'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 7,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 61.69,
+    "page_count": 10,
+    "visual_input_tokens": 31829,
+    "visual_output_tokens": 1063,
+    "content_input_tokens": 36904,
+    "content_output_tokens": 1334,
+    "timestamp": "2026-04-16T02:55:16.981364",
+    "auditor_version": "1.0.0"
+  }
+}

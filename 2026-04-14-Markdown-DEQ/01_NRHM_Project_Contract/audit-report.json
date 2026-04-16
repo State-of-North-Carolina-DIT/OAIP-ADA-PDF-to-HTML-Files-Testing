@@ -1,0 +1,174 @@
+{
+  "document_id": "01_NRHM_Project_Contract",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th style=\"text-align: left;\"></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th style=\"text-align: left;\"></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th style=\"text-align: left;\"></th>] (and 4 more)",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The vendor information section on page 1 of the PDF is laid out as a two-column form with fields and values side by side. In the HTML, this is rendered as a multi-row table with different column structure, collapsing some of the paired field layout.",
+      "severity": "major",
+      "evidence": "PDF shows a form with VENDOR/FEDERAL ID, STREET ADDRESS/P.O. BOX/ZIP, CITY & STATE & ZIP/TELEPHONE NUMBER/TOLL FREE TEL. NO as paired columns. HTML renders these as a 3-column generic table (Column 1, Column 2, Column 3) which loses the form-like paired layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The authorized signature on page 1 is missing from the HTML version.",
+      "severity": "critical",
+      "evidence": "PDF shows a handwritten signature for Brian J. McCrodden. HTML only has text 'AUTHORIZED SIGNATURE: Brian J McCrodden' with no signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DENR acceptance signature at the bottom of page 1 is missing from the HTML.",
+      "severity": "critical",
+      "evidence": "PDF shows a handwritten signature by the authorized representative of DENR in the 'FOR DENR USE ONLY' section. HTML has only 'by Michael G. ... (Authorized representative of DENR).' with no signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The vendor information table in the HTML uses generic column headers (Column 1, Column 2, Column 3) that don't exist in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF has no column headers for the vendor form section. HTML introduces 'Column 1', 'Column 2', 'Column 3' headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the ITS Terms and Conditions section, the payment terms sub-items (a, b, c) are rendered as raw HTML comments and preformatted code blocks instead of a proper ordered list.",
+      "severity": "major",
+      "evidence": "PDF shows lettered items a), b), c) under section 12 Payment Terms as normal formatted text. HTML shows '<!--OL_TYPE_a-->' comment markup and items rendered in monospace/code formatting.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the intellectual property section, a sub-item about vendor's ownership is rendered as preformatted code text instead of normal paragraph text.",
+      "severity": "major",
+      "evidence": "PDF shows item f) as normal text. HTML renders it as monospace code: '1. Nothing stated herein, however, shall affect Vendor's ownership in or rights to its preexisting intellectual property and proprietary rights.'",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Stop Work Order sub-items are rendered with raw HTML comments and preformatted code blocks.",
+      "severity": "major",
+      "evidence": "PDF shows properly formatted sub-items i) and ii) under sections 32a and 32b. HTML shows '<!--OL_TYPE_1-->' comments and items in monospace code formatting.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Exhibit 2 content about Moffatt & Nichol scope of work appears to have some content from the end of Exhibit 1 (about irrigation and crop methods) mixed into the Exhibit 1/2 transition area.",
+      "severity": "minor",
+      "evidence": "PDF cleanly separates Exhibit 1 (ending with training schedule) and Exhibit 2 (starting with scope overview and agricultural data). HTML shows irrigation crop content appearing after the training schedule note, which may cause confusion about which exhibit it belongs to.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Missing pages 3-6 of PDF content (Instructions to Vendors, pages 3-6 of ITS Terms and Conditions). The HTML jumps from partial page 3 content into page 5+ content but large portions of the ITS Terms and Conditions from pages 3-6 are reorganized/interleaved rather than presented in order, and several numbered sections (6-10, 18-20, 26-29) are missing entirely.",
+      "severity": "critical",
+      "evidence": "PDF pages 3-6 contain ITS Terms and Conditions sections 1-39. The HTML is missing or has incomplete coverage of sections 6 (Vendor's Representation continued), 7-10 (likely on missing pages between pages 3-5), sections 18-20 (Intellectual Property provisions), and sections 26-29 (Termination provisions). The PDF page structure suggests pages were missing from the original scan between pages 3 and the visible content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Exhibit 2 content (pages 8-9 of PDF) for Moffatt & Nichol scope of work is partially included but missing the beginning sections. The HTML includes content from page 9 but omits the initial sections of Exhibit 2 that would have appeared on the missing page 8 equivalent.",
+      "severity": "critical",
+      "evidence": "PDF page 2 references 'Deliverable 2 \u2013 A scope of work for Deliverable 2 is attached and identified as Exhibit 2'. The HTML includes Exhibit 2 content starting mid-document with crop irrigation discussion and deliverables/schedule sections, but the opening sections of Exhibit 2 (scope description header, introduction) appear to be from a page not fully captured.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The vendor information table on page 1 has been restructured with fabricated column headers ('Column 1', 'Column 2', 'Column 3') that do not exist in the PDF.",
+      "severity": "major",
+      "evidence": "PDF page 1 has a form-style table with labeled fields (VENDOR, FEDERAL ID OR SOCIAL SECURITY NO., STREET ADDRESS, P.O. BOX, ZIP, etc.). The HTML adds column headers 'Column 1', 'Column 2', 'Column 3' which are fabricated.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated column headers 'Column 1', 'Column 2', 'Column 3' added to vendor information table that do not appear anywhere in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML: '<th style=\"text-align: left;\">Column 1</th><th style=\"text-align: left;\">Column 2</th><th style=\"text-align: left;\">Column 3</th>'. These headers are not in the source PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Item 3 cost in the bid table shows '99,000' in the HTML but the PDF shows '99,000'. The description text differs: PDF says '1930/2006' but HTML says '1930/2006' - this matches. However, the Exhibit 3 total budget components table has header rows with empty headers that don't match the PDF structure.",
+      "severity": "major",
+      "evidence": "Multiple tables in Exhibit 3 section have empty header rows (<th style='text-align: left;'></th>) which is a structural artifact not present in the PDF's layout.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Numbered ITS Terms and Conditions sections are rendered inconsistently - some as ordered list items, some as inline numbered text within paragraphs, and sub-items use HTML comment markers like '<!--OL_TYPE_a-->' that appear as visible text or are improperly rendered.",
+      "severity": "major",
+      "evidence": "HTML contains raw markdown artifacts: '<!--OL_TYPE_a-->' and '<!--OL_TYPE_i-->' appear multiple times within the content. Sections 30-32 appear as inline numbered text within an ordered list item starting from 'i' (roman numeral list), creating a confusing hierarchy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The statute reference for collusion is rendered as 'G.S. 147-33-100' in the HTML, matching the PDF which also shows '147-33-100'. However, 'Moffatt & Nichols' is used in one place in the PDF (page 2) while the HTML also uses 'Moffatt & Nichols' - but in Exhibit 2 and other references the PDF uses 'Moffatt & Nichol' (without 's'). The HTML preserves this inconsistency from the source.",
+      "severity": "major",
+      "evidence": "This is not a conversion error - the inconsistency exists in the source PDF itself.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF spells 'Moffatt & Nichol' (Exhibit 2 header area) but the bid table on page 2 says 'Moffatt & Nichols'. HTML preserves this inconsistency correctly - not a conversion error.",
+      "severity": "minor",
+      "evidence": "N/A - withdrawing this as it's a source document issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The ITS Terms and Conditions content appears somewhat disorganized with sections from different pages interleaved, and some numbered provisions appear within other provisions' list items rather than as separate items.",
+      "severity": "minor",
+      "evidence": "Sections 30, 31, 32, 33-39 appear embedded within an ordered list item that starts as a roman numeral list ('i' and 'ii'), creating content nesting that doesn't match the PDF's flat numbered structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Exhibit 3 'Provide Project Management Support' and other sub-tables use empty table headers rather than descriptive headers, though the PDF also doesn't have traditional table headers for these key-value style layouts.",
+      "severity": "minor",
+      "evidence": "HTML tables for Exhibit 3 sub-sections have '<thead>' with empty '<th>' elements where the PDF uses a label-value format without formal headers.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 5,
+  "major_count": 8,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 89.4,
+    "page_count": 10,
+    "visual_input_tokens": 31589,
+    "visual_output_tokens": 1749,
+    "content_input_tokens": 30177,
+    "content_output_tokens": 1833,
+    "timestamp": "2026-04-16T02:52:16.449763",
+    "auditor_version": "1.0.0"
+  }
+}

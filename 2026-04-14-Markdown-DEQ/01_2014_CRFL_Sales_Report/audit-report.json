@@ -1,0 +1,86 @@
+{
+  "document_id": "01_2014_CRFL_Sales_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th></th>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Cover page logo appears slightly different in size/rendering but is present and correctly placed",
+      "severity": "minor",
+      "evidence": "PDF shows NC Coastal Recreational Fishing License logo centered on cover page; HTML shows same logo in similar position",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Marine Resources Fund Balance table in PDF has clear row separations, while HTML version splits some monetary values across two lines within cells (e.g., '$15,080,055' shown as '$ 15,080,055' on two lines), but data is preserved",
+      "severity": "major",
+      "evidence": "PDF shows compact single-line dollar amounts in table cells; HTML shows some dollar signs separated from amounts on different lines within the same cell",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Marine Resources Endowment Fund Balance table has similar two-line splitting of dollar values in HTML",
+      "severity": "major",
+      "evidence": "PDF shows values like '$1,135,370' on one line; HTML shows '$ 1,135,370' split across lines within cells",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The PDF page 3 contains both the Marine Resources Fund Balance table and Marine Resources Endowment Fund Balance table plus Projects Approved and Summary sections all on one page, while HTML splits these across multiple page-equivalent sections",
+      "severity": "minor",
+      "evidence": "PDF page 3 is a dense single page with multiple tables; HTML spreads this across pages 3-6 equivalent sections",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the county sales tables, Avery county 2014 Rank is blank in both PDF and HTML (0 sold), which is correctly preserved",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show Avery with 0 sold and no rank in 2014",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "For Hire Blanket license table for 2014 in HTML does not show the 'More than 6 passengers' row that appears in the PDF",
+      "severity": "minor",
+      "evidence": "PDF 2014 For Hire table shows two rows (6 or fewer passengers and More than 6 passengers) with totals; HTML only shows 6 or fewer passengers row and total row",
+      "page": 28,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse content fidelity response as JSON",
+      "severity": "major",
+      "evidence": "```json\n{\n  \"findings\": [\n    {\n      \"check_id\": \"C3\",\n      \"severity\": \"major\",\n      \"description\": \"In the DMF Sales Office table for 2010, Wilmington's % Sold is listed as 15.53 in the HTML, but the PDF source shows it as 12.95 (331/2555 = 12.96%). However, re-examining the PDF, the value shown is actually 15.53 for Wilmington 2010 in the column layout. The Manteo row shows 14.44. Actually the PDF page 20 shows Wilmington at position with value that appears to be 12.95 or 15.53 depending o",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 71.07,
+    "page_count": 20,
+    "visual_input_tokens": 62289,
+    "visual_output_tokens": 1664,
+    "content_input_tokens": 97093,
+    "content_output_tokens": 1361,
+    "timestamp": "2026-04-16T02:51:33.411452",
+    "auditor_version": "1.0.0"
+  }
+}

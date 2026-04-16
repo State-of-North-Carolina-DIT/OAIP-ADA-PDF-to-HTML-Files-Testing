@@ -1,0 +1,54 @@
+{
+  "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The memorandum header fields (TO, FROM, THROUGH, SUBJECT) lose their tabular alignment structure in the HTML version, appearing as simple label-value pairs rather than the indented memo format of the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows structured memo format with aligned labels and values using consistent indentation. HTML renders them as simple bold-label paragraphs.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Subscript formatting for chemical formulas is lost in the HTML conversion. NO2 and NOX appear as plain text rather than with subscript characters.",
+      "severity": "minor",
+      "evidence": "PDF shows NO\u2082 and NO\u2093 with proper subscript formatting throughout. HTML shows 'NO2' and 'NOX' as plain text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Superscript formatting in table footnotes is lost in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows superscript (1) and (2) in table column headers and footnote references like '8th' with superscript 'th'. HTML shows 'Concentration(1)', 'Concentration(2)', '8th', '98th' as plain text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'DIVISION OF AIR QUALITY' is rendered as h1, which is acceptable, but 'MEMORANDUM' is rendered as h2 which is reasonable. However, Table A1 and Table A2 titles are rendered as bold paragraphs rather than headings, which is consistent with the PDF formatting and not a real issue. The heading hierarchy is acceptable overall.",
+      "severity": "minor",
+      "evidence": "N/A - no actual issue upon closer review",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 31.6,
+    "page_count": 7,
+    "visual_input_tokens": 21784,
+    "visual_output_tokens": 865,
+    "content_input_tokens": 28690,
+    "content_output_tokens": 338,
+    "timestamp": "2026-04-16T02:53:27.475281",
+    "auditor_version": "1.0.0"
+  }
+}

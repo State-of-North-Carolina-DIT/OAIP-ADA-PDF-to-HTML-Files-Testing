@@ -1,0 +1,78 @@
+{
+  "document_id": "Dan_River_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC Water Resources Environmental Quality logo appears slightly different in color rendering between PDF and HTML, but is present and correctly placed in both.",
+      "severity": "minor",
+      "evidence": "PDF shows logo with specific color gradients; HTML shows same logo with minor color variation. Logo is present and in correct location.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout in the PDF has the logo on the left with official names (Pat McCrory, Donald R. Van Der Vaart, S. Jay Zimmerman) right-aligned, creating a two-column header. The HTML stacks everything in a single column on the left.",
+      "severity": "major",
+      "evidence": "PDF: Logo left, names right-aligned. HTML: Logo top, names stacked below in left-aligned single column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The Director name shows 'S. JAY ZIMMERMAN' in the PDF but 'A. JAY ZIMMERMAN' in the HTML, which appears to be a text content discrepancy.",
+      "severity": "minor",
+      "evidence": "PDF page 1: 'S. JAY ZIMMERMAN'; HTML page 1: 'A. JAY ZIMMERMAN'",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The footer content (State of North Carolina | Environmental Quality | Water Resources, address, phone) from the PDF page 1 appears between page-equivalent sections in the HTML rather than being removed.",
+      "severity": "minor",
+      "evidence": "PDF: footer at bottom of page 1. HTML: footer content appears inline between the outline section and the History/Background section.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "S. Jay Zimmerman's name is rendered as an ordered list item due to the 'S.' being misinterpreted as a list marker",
+      "severity": "minor",
+      "evidence": "PDF shows 'S. JAY ZIMMERMAN / Director' as plain text. HTML renders it as '<ol type=\"A\"><li>JAY ZIMMERMAN<br /><em>Director</em></li></ol>', converting the 'S.' into a list marker and losing the 'S.' initial.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The 'S.' initial of S. Jay Zimmerman's name is lost due to misinterpretation as a list marker",
+      "severity": "major",
+      "evidence": "PDF: 'S. JAY ZIMMERMAN'. HTML: rendered as list item 'JAY ZIMMERMAN' with 'S.' consumed as the list marker, changing the name.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer content from page 1 is included as body text between the outline and Section I",
+      "severity": "minor",
+      "evidence": "HTML includes 'State of North Carolina | Environmental Quality | Water Resources / 1611 Mail service Center | Raleigh, North Carolina 27699-1611 / 919 707 9000' as a paragraph in the middle of the document flow, along with the footer bar image. This is page footer content that appears as inline content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.35,
+    "page_count": 4,
+    "visual_input_tokens": 12209,
+    "visual_output_tokens": 758,
+    "content_input_tokens": 12933,
+    "content_output_tokens": 584,
+    "timestamp": "2026-04-16T02:53:08.507207",
+    "auditor_version": "1.0.0"
+  }
+}

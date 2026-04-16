@@ -1,0 +1,150 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th></th>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Cover page collage image border/frame is missing in the HTML rendering",
+      "severity": "major",
+      "evidence": "PDF shows the collage of photos with a distinct black border/frame around the entire composite image. HTML shows the same images without the border frame.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "NC State University logo at bottom of cover page is missing in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF has the NC STATE UNIVERSITY logo banner and 'Aquatic Plant Management Program' text at bottom. HTML version does not show this logo/banner, though the text appears at top of the next page-equivalent section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header content between page sections in HTML",
+      "severity": "minor",
+      "evidence": "The HTML includes the NC STATE UNIVERSITY branding and a small plant image at the top of the Introduction section that serves as a repeated header element, which doesn't appear in the PDF body pages (it's only on the cover).",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Superscript formatting for trademark symbols lost in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows 'GIS Cloud\u2122', 'BioBase\u2122', and 'Esri\u2122' with proper superscript TM symbols. HTML shows 'GIS CloudTM', 'BioBaseTM', and 'EsriTM' without superscript formatting.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Superscript for mathematical notation lost",
+      "severity": "minor",
+      "evidence": "PDF shows 'tuber per m\u00b2' with proper superscript 2. HTML shows 'tuber per m2' without superscript.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Running header 'Lake Gaston Aquatic Vegetation Report 2023' appears between content sections in HTML",
+      "severity": "minor",
+      "evidence": "PDF uses this as a page header on each page. HTML omits these headers between sections, which is acceptable, but it's noted for completeness.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 column header formatting differs - '% of Total Vegetation' column header text in PDF spans differently",
+      "severity": "major",
+      "evidence": "PDF Table 1 has '% of Total Vegetation (2022)' as the last column header. HTML renders the same headers but the table structure appears intact with correct data alignment.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 bar graph is not rendered as a visual chart in HTML",
+      "severity": "critical",
+      "evidence": "PDF shows a complete bar graph titled 'Total Number of Survey Sites - By Year' with visual bars and data labels. HTML renders this as a list of raw numbers (0, 2012, 2013...6311) without the actual chart visualization.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 2 bar graph is not rendered as a visual chart in HTML",
+      "severity": "critical",
+      "evidence": "PDF shows a colored bar graph titled 'Lake Gaston Aquatic Plant Community - 2023' with species on x-axis and % Total Vegetation on y-axis. HTML renders this as a plain text list of species names and axis values without chart visualization.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 7 hydrilla acreage/rake toss chart is not rendered as a visual chart in HTML",
+      "severity": "critical",
+      "evidence": "PDF shows a dual-axis bar and line chart titled 'Lake Gaston Hydrilla'. HTML renders this as a list of raw numbers (1800, 1600...0) and text labels without chart visualization.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 9 lyngbya acreage chart is not rendered as a visual chart in HTML",
+      "severity": "critical",
+      "evidence": "PDF shows a dual-axis bar and line chart titled 'Lake Gaston Lyngbya'. HTML renders this as a list of raw numbers without chart visualization.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 11 eel grass chart is not rendered as a visual chart in HTML",
+      "severity": "critical",
+      "evidence": "PDF shows a dual-axis bar and line chart titled 'Lake Gaston Eel Grass'. HTML renders this as a list of raw numbers without chart visualization.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Conclusion and Management Implications' section is split into two separate h2 headings in the HTML, with the continuation labeled as a separate h2 'Conclusion and Management Implications (con't)'. While this mirrors the PDF's page break structure, it creates two top-level sections for what is logically one section. More importantly, the first part uses h2 while it should arguably be consistent with the overall structure.",
+      "severity": "major",
+      "evidence": "PDF has 'Conclusion and Management Implications' starting on page 5 and continuing on page 6 as 'Conclusion and Management Implications (con't)'. HTML has both as separate h2 headings. This actually matches the PDF structure, so this is borderline.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Figure and chart data for Figures 1, 2, 7, 9, and 11 are reproduced as raw text dumps of axis labels and data values in addition to being described in figure captions. This creates confusing duplicate content that appears as garbled text paragraphs with line breaks between individual numbers and labels.",
+      "severity": "major",
+      "evidence": "For example, Figure 1 data is rendered as plain text: 'Total Number of Survey Sites - By Year\\n7000\\n6000\\n5000...6564\\n5775\\n5378...' followed by the proper Figure 1 caption. Similarly for Figures 2, 7, 9, and 11. These chart-rendered-as-text blocks are artifacts of converting chart images to text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The report text body says 'The aquatic plant community was primarily comprised of emergent species (58%), submersed species (11%), floating leaf species (4%), and algal species (27%)' - the percentages in the body text differ slightly from Table 1 totals (63%, 9%, 5%, 23%). However, this discrepancy exists in the source PDF as well, so it is not a conversion error. The HTML faithfully reproduces both sets of numbers.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML contain the same body text percentages (58%, 11%, 4%, 27%) and Table 1 percentages (63%, 9%, 5%, 23%). Not a conversion issue.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 5,
+  "major_count": 4,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 67.77,
+    "page_count": 20,
+    "visual_input_tokens": 53409,
+    "visual_output_tokens": 2006,
+    "content_input_tokens": 50325,
+    "content_output_tokens": 823,
+    "timestamp": "2026-04-16T02:52:31.710871",
+    "auditor_version": "1.0.0"
+  }
+}

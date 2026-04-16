@@ -1,0 +1,150 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018_2",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Title slide layout collapsed - the two-panel layout with NC logo on left and title text on right is flattened to a single column",
+      "severity": "major",
+      "evidence": "PDF shows NC logo and title side by side in a structured layout. HTML shows them stacked vertically with the logo above and title text below, losing the side-by-side presentation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Title slide missing the lighthouse panoramic photo at top and cityscape photo at bottom",
+      "severity": "major",
+      "evidence": "PDF has a panoramic coastal/lighthouse image at top and a city skyline image at bottom. HTML shows only fragments of these images or they appear as separate disconnected elements.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 2 layout is significantly different - the collage of images interspersed with text is collapsed",
+      "severity": "major",
+      "evidence": "PDF shows a complex visual collage layout with text bullets overlaid on/alongside multiple images. HTML shows the images and text separated into a simpler linear layout.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Process Components flowchart diagram layout not preserved as a proper hierarchical diagram",
+      "severity": "major",
+      "evidence": "PDF shows a hierarchical flowchart with Hydrologic Model at top connecting to River Basin Water Resources Plan, with four sub-components (Historical Flows, Operation Guidelines, Water Use, Evaluation Criteria) below. HTML renders this as a flat bulleted list losing the visual hierarchy and relationships.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Operations Guidelines slide images are disconnected from their context",
+      "severity": "major",
+      "evidence": "PDF shows images of water infrastructure (intake, dam, fish, cooling towers, recreation) arranged alongside relevant text. HTML shows these images isolated at the bottom after text from the next slide's content.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Water Use slide with two charts side by side is collapsed to single column",
+      "severity": "major",
+      "evidence": "PDF shows Water Use Pattern chart and 2006 Supply and Demand Projections chart side by side. HTML stacks them vertically.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Content from Operations Guidelines slide images appears after Water Use text content, breaking reading order",
+      "severity": "major",
+      "evidence": "PDF shows Operations Guidelines images on slide 6 and Water Use text on slide 7. HTML shows Water Use text content interleaved with Operations Guidelines images, creating confusion about which content belongs to which section.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Evaluation Criteria visual collage slide reduced to plain text list",
+      "severity": "major",
+      "evidence": "PDF shows dramatic imagery (dead fish, dry lake bed, locked faucet, exposed water tower, closed boat ramp) with 'How often? What's the chance?' text overlaid. HTML shows these as disconnected images with plain text.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Project Organization Venn diagram layout lost",
+      "severity": "major",
+      "evidence": "PDF shows three overlapping circles (Data Collection/HDR, Model Development/HydroLogics, Data Model Evaluation & Plan Development/NCDWR) as a Venn diagram. HTML renders as a simple bulleted list.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Water Use map for Haywood/Buncombe/Henderson/Transylvania area - small details may be lost in HTML rendering",
+      "severity": "minor",
+      "evidence": "PDF shows a detailed schematic map with labeled locations and connection lines. HTML shows the map but at potentially different resolution.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Water Supply Deficits table - systems highlighted in red in PDF may lose color distinction",
+      "severity": "minor",
+      "evidence": "PDF shows Raleigh and SGWASA rows in red text to indicate systems with deficits predicted seven or more years. HTML table renders the data but the red highlighting that indicates critical systems may not be preserved.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Supply Deficits table data appears both as a referenced image and as a fully rendered HTML table, and additionally the table header row content from the PDF is duplicated in a paragraph above the table.",
+      "severity": "major",
+      "evidence": "The HTML contains both an <img> tag with alt text describing the table AND a full <table> element with the same data. The PDF only shows this once as a single table on page 16.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The bullet point for '>200 of QAA' in the Flow Regime Changes section is incorrectly wrapped in a blockquote element, altering the presentation of the content.",
+      "severity": "minor",
+      "evidence": "PDF shows '>200 of QAA' as a legend item. HTML renders it as: '<li><blockquote><p>200 of QAA</p></blockquote></li>' which loses the '>' character as part of the text content (it was interpreted as markdown).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds descriptive location text 'HAYWOOD, BUNCOMBE, HENDERSON, TRANSYLVANIA' as a standalone paragraph under the Water Use map section, presenting county names as a separate labeled element that doesn't appear as such in the PDF.",
+      "severity": "minor",
+      "evidence": "In the PDF (page 8), these county names appear as labels on the map image itself. The HTML extracts them as a separate paragraph: 'HAYWOOD, BUNCOMBE, HENDERSON, TRANSYLVANIA' and then lists additional location names as a separate paragraph.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The Hydrologic Model section in HTML adds a paragraph listing county names extracted from the map schematic that appear only as map labels in the PDF.",
+      "severity": "minor",
+      "evidence": "HTML contains: 'Buncombe, McDowell, Rutherford, Polk, Henderson, Upper Broad, Cherokee, Cleveland, Lincoln, Gaston.' as body text. In the PDF (page 10) these are labels on the Broad River Basin Schematic map image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Some PDF slide titles that include both the section name and sub-topic are split or merged in the HTML heading structure. The 'Process Components' repeated heading pattern from the slides is handled inconsistently.",
+      "severity": "minor",
+      "evidence": "PDF has repeated 'Process Components' as the main title on many slides with sub-labels like 'Historical Flows', 'Operations Guidelines', 'Water Use', etc. HTML sometimes uses the sub-label as the heading (e.g., 'Historical Flows', 'Operations Guidelines') and sometimes combines them (e.g., 'Hydrologic Model: Major Assumptions'). This is generally reasonable but inconsistent.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 10,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 258.79,
+    "page_count": 23,
+    "visual_input_tokens": 55150,
+    "visual_output_tokens": 1921,
+    "content_input_tokens": 44215,
+    "content_output_tokens": 949,
+    "timestamp": "2026-04-16T02:56:16.737862",
+    "auditor_version": "1.0.0"
+  }
+}

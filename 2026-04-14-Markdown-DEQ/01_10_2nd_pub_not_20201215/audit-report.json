@@ -1,0 +1,86 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal and DEQ logo in the HTML header area appear upside down/inverted compared to the PDF original.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows the NC state seal right-side up at the top center and the DEQ logo right-side up at the bottom. HTML page 1 shows the state seal and 'NORTH CAROLINA Environmental Quality' text rendered upside down.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF letterhead layout has the officials' names (Roy Cooper, Michael S. Regan, Brian Wrenn) in a left column with the state seal centered at top. The HTML renders these elements in a single column with the seal/logo block appearing below the officials' names rather than beside them.",
+      "severity": "major",
+      "evidence": "PDF has a two-element header layout (names left, seal center). HTML renders everything in a single linear column flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image of David Miller is missing from the HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF shows a handwritten signature between 'Sincerely,' and 'David Miller, PE'. HTML shows only the text without the signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom of page 1 in the HTML footer area appears upside down/inverted.",
+      "severity": "major",
+      "evidence": "PDF shows the DEQ logo right-side up in the footer. HTML shows the DEQ logo upside down.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signatures of Brian Wrenn and Brenda Harris are missing from the HTML conversion of page 2.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows handwritten signatures for Brian Wrenn and Brenda Harris. HTML shows only their typed names without signature images.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The h1 title 'Notice of Issuance of Mining Permit' is used as the document title, but the first page is actually a cover letter, not the notice itself. The notice title appears on page 2. The h1 effectively misrepresents the structure by making the letter appear to be part of the notice.",
+      "severity": "major",
+      "evidence": "Page 1 of PDF is a cover letter from David Miller dated December 15, 2020. The 'NOTICE OF ISSUANCE OF MINING PERMIT' heading appears on page 2 as a separate document. HTML uses this as h1 at the top, conflating the two documents.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The HTML says 'November 30th' with the ordinal suffix 'th', but the PDF uses a superscripted 'th' after '30'. While the meaning is preserved, the HTML also has a comma after 'November 30th' that does not appear in the PDF text.",
+      "severity": "major",
+      "evidence": "PDF: 'was issued on November 30th, 2020.' HTML: 'was issued on November 30th, 2020.' \u2014 This is actually consistent; minor formatting difference only. Withdrawing this finding.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The handwritten mailing date is transcribed as '12-15-2020' but the handwriting in the PDF reads '12-15-20 20' which appears to be '12-15-2020'. The transcription is reasonable.",
+      "severity": "minor",
+      "evidence": "PDF handwritten: '12-15-20 20' (with space); HTML: '12-15-2020'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 34.91,
+    "page_count": 2,
+    "visual_input_tokens": 6831,
+    "visual_output_tokens": 747,
+    "content_input_tokens": 6254,
+    "content_output_tokens": 637,
+    "timestamp": "2026-04-16T02:50:28.784416",
+    "auditor_version": "1.0.0"
+  }
+}

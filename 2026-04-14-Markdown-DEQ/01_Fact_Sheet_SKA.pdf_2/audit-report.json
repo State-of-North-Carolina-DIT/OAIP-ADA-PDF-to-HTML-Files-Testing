@@ -1,0 +1,21 @@
+{
+  "document_id": "01_Fact_Sheet_SKA.pdf_2",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 12.06,
+    "page_count": 2,
+    "visual_input_tokens": 6319,
+    "visual_output_tokens": 197,
+    "content_input_tokens": 7547,
+    "content_output_tokens": 230,
+    "timestamp": "2026-04-16T02:50:27.362396",
+    "auditor_version": "1.0.0"
+  }
+}

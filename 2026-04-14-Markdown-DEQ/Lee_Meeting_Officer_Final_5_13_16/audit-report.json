@@ -1,0 +1,102 @@
+{
+  "document_id": "Lee_Meeting_Officer_Final_5_13_16",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The subject line item 'H. F. Lee Energy Complex' is rendered as 'A. F. Lee Energy Complex' in the HTML, which appears to be indented as a sub-item rather than part of the Subject field.",
+      "severity": "major",
+      "evidence": "PDF shows 'H. F. Lee Energy Complex' as the third line of the Subject field. HTML shows 'A. F. Lee Energy Complex' indented as a separate sub-item with the letter changed from H to A.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The name of the energy complex is changed from 'H. F. Lee Energy Complex' to 'A. F. Lee Energy Complex' in the HTML Subject line, altering factual content.",
+      "severity": "major",
+      "evidence": "PDF Subject line reads 'H. F. Lee Energy Complex'; HTML reads 'A. F. Lee Energy Complex'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Water Resources logo in the HTML appears slightly different in rendering but is present and in the correct location.",
+      "severity": "minor",
+      "evidence": "PDF has the logo in the upper left; HTML also has it in the upper left but with minor stylistic differences.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer information (State of North Carolina, address, phone number) appears between page content sections in the HTML rather than only at the bottom of the page.",
+      "severity": "minor",
+      "evidence": "PDF has footer at bottom of page 1 only. HTML shows footer content between the outline section and the History/Background section.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "A colored gradient bar appears in the HTML between the footer content and Section I that does not appear in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 2 has no gradient bar. HTML shows a multicolored gradient bar between the footer text and the History/Background heading.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML converts 'S. JAY ZIMMERMAN' into a lettered list item 'A. JAY ZIMMERMAN', fabricating incorrect initials for the Director's name.",
+      "severity": "critical",
+      "evidence": "PDF: 'S. JAY ZIMMERMAN' in the header. HTML: '<ol type=\"A\"><li>JAY ZIMMERMAN<br /><em>Director</em></li></ol>' which renders as 'A. JAY ZIMMERMAN'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML converts 'H. F. Lee Energy Complex' in the subject line into a lettered list item 'A. F. Lee Energy Complex', fabricating an incorrect facility name.",
+      "severity": "critical",
+      "evidence": "PDF Subject line: 'H. F. Lee Energy Complex'. HTML: '<ol type=\"A\"><li>F. Lee Energy Complex</li></ol>' which renders as 'A. F. Lee Energy Complex'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page footer text from the PDF is duplicated and inserted as body content between sections in the HTML, appearing both at the bottom of the first section and as part of the document flow.",
+      "severity": "major",
+      "evidence": "HTML includes 'State of North Carolina | Environmental Quality | Water Resources 1611 Mail service Center | Raleigh, North Carolina 27699-1611 919 707 9000' as inline body text after the outline section, in addition to it appearing at the top of the document. This is a page footer artifact.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'MEMORANDUM' is set as h1, while the Roman numeral section headings (I, II, III, IV) are set as h2. This is acceptable. However, the 'S. JAY ZIMMERMAN' and 'H. F. Lee Energy Complex' lines are incorrectly rendered as ordered list items (type A) rather than plain text, breaking the document structure.",
+      "severity": "major",
+      "evidence": "PDF has 'S. JAY ZIMMERMAN' as a header name and 'H. F. Lee Energy Complex' as part of the Subject line. HTML wraps these in '<ol type=\"A\">' tags, misrepresenting them as list items.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image has empty alt text, providing no description of the image content.",
+      "severity": "minor",
+      "evidence": "HTML: '<img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 598.3pt; height: auto;\">' \u2014 alt text is empty string.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 37.76,
+    "page_count": 5,
+    "visual_input_tokens": 14784,
+    "visual_output_tokens": 878,
+    "content_input_tokens": 15985,
+    "content_output_tokens": 928,
+    "timestamp": "2026-04-16T02:53:47.651356",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "document_id": "PRLF_Durham_Parks_June_2024_Update",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 10.87,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 198,
+    "content_input_tokens": 4990,
+    "content_output_tokens": 196,
+    "timestamp": "2026-04-16T02:53:45.963233",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "DSCA_Fund_Program_Statistics_March_2021",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a two-column layout for the financial data (FY 2020-2021 on the left, Duration of Program on the right), but the HTML converts this into a single three-column table, collapsing the two distinct side-by-side sections into one unified table structure.",
+      "severity": "major",
+      "evidence": "PDF shows two visually separate sections with their own headers ('Receipts:' and 'Disbursements:' appearing twice, once per column). HTML renders this as a single table with columns 'Category', 'FY 2020-2021 (through 3/31/21)', and 'Duration of Program (through 3/31/21)'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Dash/hyphen values in the FY 2020-2021 column are rendered as '$-' in the HTML rather than showing just a dash, which slightly changes the visual representation of zero/null values.",
+      "severity": "minor",
+      "evidence": "PDF shows '-' for items like Rebate, Interest, Dept. of Revenue Admin, etc. in the FY column. HTML shows '$ -' for these same values.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The DSCA Site Statistics section in the PDF uses a simple two-column layout with labels on the left and numbers on the right. The HTML converts this into a formal table with 'Statistic' and 'Count' headers, which is functionally equivalent but structurally different.",
+      "severity": "minor",
+      "evidence": "PDF shows a simple list-style format with a bold header. HTML shows a table with header row containing 'Statistic' and 'Count' columns.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF presents fund statistics as two side-by-side sections (FY 2020-2021 and Duration of Program), each with their own Receipts and Disbursements subsections. The HTML merges these into a single table with three columns. While the data values are preserved, the original structure of two separate financial statements is altered into a combined table format. This is an acceptable structural choice, but the 'Receipts:' and 'Disbursements:' rows are presented as section label rows within the table, which matches the PDF's structure.",
+      "severity": "major",
+      "evidence": "The PDF has two distinct columns of financial data; the HTML combines them into one table with Category, FY 2020-2021, and Duration of Program columns. All numerical values match correctly.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 22.8,
+    "page_count": 1,
+    "visual_input_tokens": 4201,
+    "visual_output_tokens": 649,
+    "content_input_tokens": 5802,
+    "content_output_tokens": 384,
+    "timestamp": "2026-04-16T02:52:46.670850",
+    "auditor_version": "1.0.0"
+  }
+}

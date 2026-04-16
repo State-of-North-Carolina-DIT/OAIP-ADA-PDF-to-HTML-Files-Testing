@@ -1,0 +1,54 @@
+{
+  "document_id": "Networking_&_Outreach_Efforts_Kate_MacLeod,_ESI_Outreach_Coordinator",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 headings used and heading hierarchy is inconsistent. The document uses h1 for the title 'ESI Networking & Outreach' which is appropriate, but then nearly all subsequent section headings are h2, including sub-sections like 'Webinars & Trainings' that are under the 'Year in Review: 2025 Recap' section. The Program Advancement sub-levels (Partner, Rising Steward, Steward) correctly use h3, but the overall structure is flat.",
+      "severity": "major",
+      "evidence": "PDF has clear hierarchical structure: 'Year in Review: 2025 Recap' is a major section containing 'Webinars & Trainings', 'Steward Forum', 'Regulatory Roundtable', 'Networking Events', 'Regional Networking' as sub-sections. Similarly 'Looking Ahead: 2026 Events' contains 'Returning Events', 'Internal Auditor Training', etc. All are rendered as h2 in HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Section transition slides from the PDF are duplicated as both standalone headings and repeated within subsequent content. 'Year in Review: 2025 Recap' appears as both a standalone h2 heading (from page 3) and is referenced again. 'Looking Ahead: 2026 Events' similarly appears twice - once as a section divider and once as a heading.",
+      "severity": "major",
+      "evidence": "HTML has 'Year in Review: 2025 Recap' as an h2 heading after the collage image, which comes from the transition slide on page 3. The content from page 3 is essentially a title-only page that is reproduced separately from the subsequent content pages. Same pattern for 'Looking Ahead: 2026 Events' and 'Staying Connected: ESI Communications'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are reasonable but could be more specific. Most alt text is descriptive and appropriate for the images shown in the PDF slides.",
+      "severity": "minor",
+      "evidence": "Alt text like 'Two people looking at a binder during a training session' for the Webinars & Trainings slide image is accurate. 'Collage of photos from 2025 events' for the Year in Review page is appropriate.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The listserv email address appears truncated in the PDF as 'nc-environmentalassistance@lists.deq.nc' and the HTML reproduces this same truncation. The actual address likely ends in '.nc.gov' but both PDF and HTML show the same text, so this is not a conversion error.",
+      "severity": "minor",
+      "evidence": "PDF page 16 header shows 'nc-environmentalassistance@lists.deq.nc' and HTML shows the same. This is faithful reproduction.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": "visual:too_large(21p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.69,
+    "page_count": 21,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 38956,
+    "content_output_tokens": 953,
+    "timestamp": "2026-04-16T03:28:17.433841",
+    "auditor_version": "1.0.0"
+  }
+}

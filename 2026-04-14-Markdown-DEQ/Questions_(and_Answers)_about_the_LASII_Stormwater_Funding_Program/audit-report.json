@@ -1,0 +1,86 @@
+{
+  "document_id": "Questions_(and_Answers)_about_the_LASII_Stormwater_Funding_Program",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The 'Background' heading in the PDF is bold and underlined, while in the HTML it appears as a larger heading without underline styling.",
+      "severity": "minor",
+      "evidence": "PDF: 'Background' is underlined bold text. HTML: 'Background' is rendered as a large heading without underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Answer text indentation is lost in HTML. In the PDF, ANSWER blocks are indented under their questions, while in HTML they appear at the same level as questions.",
+      "severity": "minor",
+      "evidence": "PDF: ANSWER paragraphs are visually indented from QUESTION text. HTML: ANSWER paragraphs appear at the same indentation level as QUESTION text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The label 'ANSWSER' (typo in original) in Question 3 is preserved in both versions - not a finding, just noting it exists in source.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show 'ANSWSER:' - this is a source document issue, not a conversion error.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The footnote reference '1' for levee definition appears inline in HTML rather than as a footnote at the bottom of the page.",
+      "severity": "minor",
+      "evidence": "PDF: Footnote '1 Levee Terms & Definitions (army.mil)' appears at bottom of page 4. HTML: The footnote text 'Levee Terms & Definitions (army.mil)' appears inline after the answer to Question 14.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The footnote reference for the levee definition links to army.mil in the PDF but is rendered as plain text in the HTML rather than as a hyperlink.",
+      "severity": "minor",
+      "evidence": "PDF has a footnote with hyperlink 'Levee Terms & Definitions (army.mil)'. HTML renders it as plain text: '1 Levee Terms & Definitions (army.mil)' without a link.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Background' section is rendered as h2 in the HTML, which is reasonable, but no other questions or groupings use sub-headings. The document is essentially a flat Q&A list under 'Background', which matches the PDF structure, so the hierarchy is acceptable but minimal.",
+      "severity": "minor",
+      "evidence": "PDF has 'Background' as a bold underlined section header. HTML uses <h2>Background</h2>. All Q&A items are rendered as body paragraphs, consistent with the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Answer 3, the PDF has a typo 'ANSWSER' which is faithfully reproduced in the HTML. This is not a conversion error but is noted for completeness \u2014 the HTML correctly preserves the source typo.",
+      "severity": "minor",
+      "evidence": "PDF: 'ANSWSER: No.' HTML: '<strong>ANSWSER:</strong> No.' \u2014 both match.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The link for 'Division's website' in Question 19's answer points to the Division's website but no specific URL is visible in the PDF to verify the exact target. The HTML includes it as a link which appears consistent with the PDF's formatting.",
+      "severity": "minor",
+      "evidence": "PDF Answer 19: 'Resolution templates are available on the Division's website.' (with hyperlink). HTML preserves this as a hyperlink.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.16,
+    "page_count": 5,
+    "visual_input_tokens": 14229,
+    "visual_output_tokens": 723,
+    "content_input_tokens": 16915,
+    "content_output_tokens": 705,
+    "timestamp": "2026-04-16T02:54:28.283094",
+    "auditor_version": "1.0.0"
+  }
+}

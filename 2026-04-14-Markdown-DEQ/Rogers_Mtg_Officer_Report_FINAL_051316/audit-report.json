@@ -1,0 +1,46 @@
+{
+  "document_id": "Rogers_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC state logo/seal image present in the PDF header is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows an NC logo with tree graphic and 'Energy, Mineral & Land Resources' branding in the upper left. The HTML version has no image, only text for the official names.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The outline list (I through IV) appears twice in the HTML - once as a standalone ordered list at the end of the introduction, and again as the section headings themselves. This mirrors the PDF structure, but the initial outline also appears as a formatted ordered list in addition to the body content, which is faithful to the source.",
+      "severity": "minor",
+      "evidence": "This is actually faithful to the PDF which shows the outline at the end of page 1 and then the sections. Not a true finding - retracting.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'MEMORANDUM' is used as h1, while the actual section headings (I, II, III, IV) are h2. This is reasonable, but the outline items in the introduction are rendered as an ordered list while they appear as a simple indented list in the PDF. This is acceptable reformatting.",
+      "severity": "minor",
+      "evidence": "PDF shows Roman numeral outline; HTML uses <ol type='I'>. Acceptable.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 30.68,
+    "page_count": 5,
+    "visual_input_tokens": 14229,
+    "visual_output_tokens": 440,
+    "content_input_tokens": 15766,
+    "content_output_tokens": 547,
+    "timestamp": "2026-04-16T02:54:33.226079",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The title slide in the PDF has the presentation title, author info, and 'Department of Environmental Quality' text alongside the NC logo, lighthouse photo, and city skyline photo. The HTML version is missing the title text, author details, and department name from the first visible section - they appear later as plain text.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a composed title slide with 'River Basin Water Resources Plan/Hydrologic Model Development Process', 'Neela Sarwar', 'NCDEQ - DWR', 'April 10, 2018', and 'Department of Environmental Quality' integrated with imagery. HTML separates the images from the text content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Process Components slide (page 4) shows a hierarchical flowchart diagram with the Hydrologic Model at top connecting to River Basin Water Resources Plan, with sub-components (Historical Flows, Operation Guidelines, Water Use, Evaluation Criteria) below. The HTML renders this as a static image but the layout relationship between components is preserved only as an image.",
+      "severity": "major",
+      "evidence": "PDF shows a structured organizational chart with colored boxes and connecting lines. HTML shows the same as an embedded image, which is acceptable.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On the Operations Guidelines slide (page 6), several images appear on the right side of the slide in the PDF showing water infrastructure, fish, waterskiing, dam, and cooling towers. In the HTML, these images are stacked vertically on the left side, separated from the text content they were associated with.",
+      "severity": "major",
+      "evidence": "PDF has images arranged alongside bullet text on the right. HTML shows images stacked vertically at the top, detached from the corresponding text content.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Water Use slide (page 9) has a side-by-side layout with 'Water Use Pattern' chart on the left and '50 yr Projected Demands' chart on the right. The HTML renders these sequentially (stacked vertically), losing the comparative side-by-side layout.",
+      "severity": "major",
+      "evidence": "PDF shows two charts placed side by side for comparison. HTML stacks them vertically.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Evaluation Criteria slide (page 12) has a collage of drought/water shortage images (dead fish, dry lake bed, faucet, exposed dam intake, boat ramp closed sign, dry pipe). In the HTML, these images appear but the contextual text 'How often? What's the chance?' is separated from the visual collage.",
+      "severity": "major",
+      "evidence": "PDF integrates text questions with drought imagery in a visual collage. HTML separates the text from images.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Flow Regime Changes slide (page 15) shows a complex grouped bar chart with multiple QAA percentage categories across Unimpaired, 2003, 2030, and 2050 Demands scenarios. In the HTML, the chart appears as an image but the legend items are extracted as a plain bulleted list separated from the chart.",
+      "severity": "major",
+      "evidence": "PDF shows chart with integrated legend. HTML separates the legend categories as bullet points below the chart image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The Water Supply Deficits table (page 16) includes explanatory footnotes about 'Longest Deficit (Days)', 'Years Demand Not Met', and 'Systems in Red'. In the HTML, these footnotes appear both within the slide image and as separate text, creating duplication.",
+      "severity": "minor",
+      "evidence": "PDF has footnotes once at the bottom of the table. HTML shows them in the image and again as separate text.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Supply Deficits table data from the image on page 16 is duplicated - it appears both as an embedded image and as a fully rendered HTML table with all cell values reproduced.",
+      "severity": "major",
+      "evidence": "Page 16 shows Table 4-3 as an image. The HTML includes both an <img> tag with alt text describing the table AND a separate fully rendered <table> element with all the data rows. The table caption text 'Table 4-3: Water Supply Demand & Deficits...' also appears twice - once in the image alt text and once as a paragraph.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple sections from the PDF use the same slide title 'Process Components' with different subtopics, but the HTML sometimes combines them with colons (e.g., 'Process Components: Historical Flows') and other times keeps them separate. This is generally acceptable but creates inconsistent heading patterns.",
+      "severity": "minor",
+      "evidence": "PDF pages 4-18 all use 'Process Components' as main title with colored label boxes for subtopics. HTML renders these as 'Process Components: Historical Flows', 'Process Components: Operations Guidelines', etc. - which is a reasonable consolidation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Flow Regime Changes chart data on page 15 is rendered as raw text values rather than being described as a chart, losing the visual bar chart representation and presenting the legend items as a bullet list without the corresponding data visualization context.",
+      "severity": "minor",
+      "evidence": "PDF page 15 shows a bar chart 'Stream Condition Middle Deep River (Node 280)' with grouped bars. HTML renders the axis labels (35.0%, 30.0%, etc.) and legend items as plain text and bullet lists, which could be confusing without the image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Operations Guidelines section has three separate small images with alt text that doesn't fully match what's visible - one describes 'Fish swimming in a stream' and another 'Person water skiing' which appear to be partial descriptions of a collage on the PDF page.",
+      "severity": "minor",
+      "evidence": "PDF page 6 shows multiple photos integrated into the slide. HTML splits these into three separate image tags with varying alt text descriptions.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 7,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 77.98,
+    "page_count": 23,
+    "visual_input_tokens": 56001,
+    "visual_output_tokens": 1859,
+    "content_input_tokens": 44371,
+    "content_output_tokens": 809,
+    "timestamp": "2026-04-16T02:53:14.791395",
+    "auditor_version": "1.0.0"
+  }
+}

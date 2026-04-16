@@ -1,0 +1,126 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'where,' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Professional engineer seal/stamp image is missing from the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a North Carolina Professional Engineer seal (SEAL 038141) with signature. The HTML version on page 2 shows the seal image but it appears to be present. However, on page 1 (cover page) of the PDF, the seal is prominently displayed, while the HTML page 2 equivalent shows it.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Cover page layout is significantly simplified in HTML",
+      "severity": "major",
+      "evidence": "PDF page 1 has a formal cover page with horizontal rule, large centered title block, and structured layout with prepared for/prepared by sections. HTML renders this as simple flowing text without the cover page structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header content between page-equivalent sections in HTML",
+      "severity": "major",
+      "evidence": "The HTML includes repeated Geosyntec letterhead information (company name, license numbers) between content sections that correspond to different PDF pages, creating redundant content in the reading flow.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 2 flowchart image is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 13 shows a detailed flowchart (Figure 2) for determining concentration for loading at Outfall 002 with decision diamonds and process boxes. The HTML renders this as a text-based description of the flowchart logic rather than the actual flowchart image.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 3 flowchart image is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 14 shows a flowchart (Figure 3) for determining concentration for loading at the River Water Intake. The HTML renders this as text-based description rather than the actual flowchart image.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Consent Order Addendum italic quoted text formatting partially lost",
+      "severity": "minor",
+      "evidence": "PDF page 7 shows the Consent Order requirements in italicized block quote format with specific indentation structure. The HTML preserves the italic but the block quote structure with sub-indentation (c., i.) is slightly different.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Mathematical equations rendered as plain text rather than formatted equations",
+      "severity": "minor",
+      "evidence": "PDF pages 9-10 show Equations 1, 2, and 3 with proper mathematical notation including subscripts, summation symbols, and formatted variables. The HTML renders these as plain text (e.g., 'M_OF002 = \u03a3 (n=1 to N) m_OF002,n - m_intake,n').",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The Consent Order Addendum sampling requirements text is rendered as an ordered list item (<ol type='i'>) with 'Outfall 002 Trendline:' as a list item, but in the PDF it is formatted as 'c. Outfall 002 Trendline:' with sub-item 'i.' \u2014 the 'c.' label is lost and the structural hierarchy is misrepresented.",
+      "severity": "major",
+      "evidence": "PDF shows 'c. Outfall 002 Trendline: i. Starting no later than...' HTML uses '<ol type=\"i\"><li>Outfall 002 Trendline:...' losing the 'c.' designation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The document title page content (prepared for, prepared by, project number, date) appears once in the HTML but the cover page content from the PDF page 1 is effectively rendered once, which is correct. However, the Table of Contents is reproduced in full as body text, which duplicates the section structure already present in the document headings.",
+      "severity": "minor",
+      "evidence": "The full TOC with page numbers ('1 INTRODUCTION ................................................................................................ 1') is reproduced verbatim in the HTML body, which is acceptable as it mirrors the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Equation 1 representation, the summation formula is rendered inaccurately. The PDF shows the subtraction inside the summation (sum of m_OF002,n minus m_intake,n), but the HTML text rendering is ambiguous and could be read differently.",
+      "severity": "major",
+      "evidence": "PDF equation: M_OF002 = \u03a3(n=1 to N) [m_OF002,n \u2212 m_intake,n]. HTML renders: 'M_OF002 = \u2211 (n=1 to N) m_OF002,n - m_intake,n' \u2014 the lack of brackets makes it ambiguous whether m_intake,n is inside or outside the summation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Subscript notation in equations is rendered as plain text with underscores rather than proper subscript formatting, reducing readability but not technically altering the content meaning.",
+      "severity": "minor",
+      "evidence": "PDF uses proper mathematical subscript notation (e.g., m_{OF002,j}). HTML uses 'm_OF002,j' as plain text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 1 accurately reproduces all 12 analyte rows with correct data. The 'Analytical Method' column correctly shows 'Table 3+ Lab SOP' for all rows. No data integrity issues found.",
+      "severity": "minor",
+      "evidence": "All 12 PFAS compounds, their CASN numbers, chemical names, and formulas match between PDF and HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 5,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 61.03,
+    "page_count": 17,
+    "visual_input_tokens": 39984,
+    "visual_output_tokens": 1470,
+    "content_input_tokens": 43071,
+    "content_output_tokens": 989,
+    "timestamp": "2026-04-16T02:51:06.622787",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "document_id": "SSAB_Meeting_April_2025",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the page is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the Great Seal of North Carolina centered at the top of the document. The HTML version has no such image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom of the page is missing in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NC DEQ logo in the footer area. The HTML version does not display this logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Agenda item numbering changed from Roman numerals to Arabic numerals in the Action Item and Informational Items sections.",
+      "severity": "major",
+      "evidence": "PDF shows 'VI.' for the 1,4-Dioxane HHRA item and 'VII.' for the DEQ Secretary item. HTML shows 'I.' for both the action item and the first informational item, losing the original sequential numbering scheme.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo in the footer of page 3 (WebEx information page) is missing in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows the NC DEQ logo at the bottom. HTML does not include it.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken. 'WebEx Meeting Information' is h2, then 'NC DEQ Secretaries' Science Advisory Board Meeting', 'Date and time', 'Join link', 'Webinar number', and 'Join by phone' are all h3. These subheadings under WebEx info are fine, but 'NC DEQ Secretaries' Science Advisory Board Meeting' is a meeting title/label in the PDF, not a section heading at the same level as 'Date and time'. More importantly, the document uses h1 for the main title but then the agenda items use ordered list formatting with inconsistent numbering schemes.",
+      "severity": "major",
+      "evidence": "PDF has 'WebEx Meeting Information:' as a section header and sub-items below it. HTML renders 'NC DEQ Secretaries' Science Advisory Board Meeting' as h3, same level as 'Date and time:', 'Join link:', etc.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Roman numeral numbering for agenda items is inconsistent and broken in the HTML. Items VI through IX lose their proper Roman numeral context due to the ordered list restarting. Item VI appears as the sole item in one list, VII appears as the sole item in another list, VIII and IX are rendered as plain text with manual Roman numerals, and XI appears as a single-item ordered list.",
+      "severity": "major",
+      "evidence": "PDF has continuous numbering I through XI. HTML has multiple separate <ol type='I'> lists that restart numbering: first list has items I-V, then a separate list with one item for VI, another separate list with one item for VII, then VIII and IX as plain paragraphs with manual numerals, X as a plain paragraph, and XI as another separate single-item ordered list.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The 'D. REID WILSON' line in the header is rendered inside an ordered list item (Roman numeral I) instead of as plain text, due to the 'D.' being parsed as a list marker.",
+      "severity": "minor",
+      "evidence": "PDF shows 'D. REID WILSON / Secretary' as header text. HTML renders it as '<ol type=\"I\"><li>REID WILSON<br />Secretary</li></ol>', losing the 'D.' initial.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "No images are present in the HTML. The PDF contains the NC state seal and the DEQ logo, but no <img> tags appear in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has NC state seal at top center and DEQ logo at bottom. PDF page 2 has DEQ logo at bottom. HTML has zero <img> tags.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 34.64,
+    "page_count": 2,
+    "visual_input_tokens": 6763,
+    "visual_output_tokens": 648,
+    "content_input_tokens": 6728,
+    "content_output_tokens": 894,
+    "timestamp": "2026-04-16T02:54:40.634725",
+    "auditor_version": "1.0.0"
+  }
+}

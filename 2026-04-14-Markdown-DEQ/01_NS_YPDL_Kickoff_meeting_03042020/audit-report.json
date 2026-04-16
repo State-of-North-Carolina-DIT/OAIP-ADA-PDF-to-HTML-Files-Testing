@@ -1,0 +1,182 @@
+{
+  "document_id": "01_NS_YPDL_Kickoff_meeting_03042020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Title slide layout collapsed - the two-section layout with lighthouse photo on top and cityscape photo on bottom is not preserved in a comparable arrangement",
+      "severity": "major",
+      "evidence": "PDF has distinct top photo (lighthouse), middle text section, and bottom photo (cityscape with DEQ logo) as a cohesive title slide. HTML shows these as stacked elements with the bottom cityscape image cropped/cut off",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "DEQ logo in the bottom-right of the title slide cityscape section is cut off/not fully visible in HTML",
+      "severity": "major",
+      "evidence": "PDF shows full DEQ logo overlaid on cityscape. HTML version cuts off the bottom portion of the page",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Two-column layout of slide 2 collapsed into single column",
+      "severity": "major",
+      "evidence": "PDF shows left column (Drought of 1998-2002 with photos and Interbasin Transfer text) and right column (2007-08 Drought photos and Jordan Lake Partnership map) side by side. HTML renders these as stacked sequential content",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Fontana Lake drought photos are misplaced relative to their section heading",
+      "severity": "major",
+      "evidence": "PDF shows Fontana Lake photos under '2007-08 Drought' heading in right column. HTML places the drought photos below the 'Towns desperate for water' images and text, disrupting the visual association",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order of slide 2 content is scrambled - Jordan Lake Partnership map appears before drought content",
+      "severity": "major",
+      "evidence": "PDF reads left-to-right with drought content and interbasin transfer on left, drought photos and Jordan Lake on right. HTML shows Jordan Lake map at top, then drought heading, then desperate-for-water photos, then interbasin transfer text",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 3 two-part layout with gear diagram on left and concentric circles on right collapsed",
+      "severity": "major",
+      "evidence": "PDF shows interlocking gears (Basin Plan, Basin Model, Water Resources Management) on left and concentric circles (Water Resources Management > Integrated Basin Plan > Hydrologic Model) on right. HTML linearizes these as bullet lists",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Gear diagram and concentric circle diagram from slide 3 are completely missing",
+      "severity": "critical",
+      "evidence": "PDF shows two distinct diagrams - interlocking gears and concentric circles. HTML renders the content as plain text bullet lists with no diagrams",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 hierarchical org chart layout collapsed to flat list",
+      "severity": "major",
+      "evidence": "PDF shows a structured hierarchy chart with Hydrologic Model at top branching to Historical Flows, Operation Guidelines, Water Use, and Evaluation Criteria, with Water Use further branching to sub-categories. HTML renders as nested bullet lists",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Process Components hierarchy diagram (org chart) is missing",
+      "severity": "critical",
+      "evidence": "PDF shows a visual organizational chart with colored boxes and connecting lines. HTML has no diagram, only text lists",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 8 two-column layout with bullet points on left and multiple photos on right collapsed",
+      "severity": "major",
+      "evidence": "PDF shows operation guidelines text on left with multiple photos (dam, waterskiing, fish, cooling towers) arranged vertically on right side. HTML shows only the fish photo with text below it",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Multiple photos from slide 8 are missing - dam/weir, waterskiing, and cooling towers photos",
+      "severity": "major",
+      "evidence": "PDF shows 4+ photos on the right side of the operation guidelines slide. HTML only shows the fish/trout photo",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 9 side-by-side layout with water use diagram on left and bullet points on right collapsed",
+      "severity": "major",
+      "evidence": "PDF shows Water Use hierarchy diagram on left and Local Water Supply Plans / Water Withdrawal Registrations bullets on right. HTML shows text in linear format",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Water Use hierarchy diagram from slide 9 missing as a visual element",
+      "severity": "major",
+      "evidence": "PDF shows a visual box diagram with Water Use at top branching to Local Water Supply Plans, Self-supplied Industry, Agriculture, and Other Registered Withdrawers. HTML has only text",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 11 side-by-side chart layout collapsed to stacked",
+      "severity": "major",
+      "evidence": "PDF shows Water Use Pattern chart on left and 2006 Supply and Demand Projections chart on right, side by side. HTML stacks them vertically",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Venn diagram from Project Organization slide is missing",
+      "severity": "critical",
+      "evidence": "PDF shows three overlapping circles for Data Coordination (HDR), Model Development/Data Process (HydroLogics Team, Hazen and Sawyer), and Data, Model Evaluation & Plan Development (NCDWR). HTML renders as bullet list only",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated slide title banners appear in HTML between content sections disrupting reading flow",
+      "severity": "major",
+      "evidence": "HTML shows the 'Process Components' banner image repeatedly between content that belongs to different slides, creating visual noise not present when reading the PDF sequentially",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Process Components' section for Water Use (Users/Systems) is duplicated. The sub-items (Local Water Supply Plans, Self-supplied Industry, Agriculture, Other Registered Withdrawers) appear once in the structured list under the main Process Components hierarchy, and then again as standalone plain text lines immediately after.",
+      "severity": "major",
+      "evidence": "HTML contains the structured list with 'Local Water Supply Plans: Municipal Data', 'Self-supplied Industry: Industrial Data', etc. as sub-items under Water Use, then repeats them as standalone paragraph text: 'Local Water Supply Plans: Municipal Data\\nSelf-supplied Industry: Industrial Data\\nAgriculture: Agri Data\\nOther Registered Withdrawers: Golf Course'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple 'Process Components' h2 headings are repeated throughout the HTML document. In the PDF, 'Process Components' is a single recurring slide title across multiple slides. The HTML creates many separate h2 sections all titled 'Process Components', which obscures the document structure. While this mirrors the PDF's slide-based repetition, the heading hierarchy becomes confusing with so many identical h2 headings.",
+      "severity": "major",
+      "evidence": "The heading 'Process Components' appears as h2 approximately 12 times in the HTML document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Session Law section, the ordered list uses 'a, b, c' lettering in the HTML, but the original PDF uses 'a.' for the first item, 'b.' for the second, and 'c.' for the third. The HTML converts these into an ordered list which is acceptable, but the sub-items under point b (1, 2, 3) are rendered as line breaks within point b rather than as a proper sub-list.",
+      "severity": "minor",
+      "evidence": "PDF shows numbered sub-items '1. Yield may be inadequate to meet all needs.' etc. as distinct numbered items. HTML renders them as bold/italic text with <br> breaks within the <li> for point b.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The bullet points in the 'Interbasin Transfer' section use dashes in the HTML ('- Case originates...', '- Dismissed...') whereas the PDF uses arrow/bullet markers (\u27a4). This is a minor formatting difference but the content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows bullet markers for 'Case originates in the Supreme Court...' and 'Dismissed \u2013 December, 2010'. HTML uses '- ' prefix.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 15,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 81.4,
+    "page_count": 24,
+    "visual_input_tokens": 57497,
+    "visual_output_tokens": 2394,
+    "content_input_tokens": 47141,
+    "content_output_tokens": 900,
+    "timestamp": "2026-04-16T02:54:18.581653",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "document_id": "01_January_2013_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table column 'Report Month' data is missing for several rows in the HTML that have no Report Month in the PDF (DV-2013-0005, DV-2013-0006, DV-2013-0007, PC-2012-0036). These are correctly blank in both, so this is not an issue. However, the table header row in the HTML breaks 'As Built Flow MGD' into a multi-line format that could cause misalignment perception, but data appears intact.",
+      "severity": "major",
+      "evidence": "Reviewed all rows - data content matches between PDF and HTML tables.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML renders the table in a significantly narrower layout, causing extensive word-wrapping in the Owner-Facility column and Case Number column, making the table much taller and harder to scan compared to the wide single-page table layout in the PDF.",
+      "severity": "major",
+      "evidence": "PDF shows a wide landscape table fitting on one page. HTML shows a narrow table with heavy word-wrapping, e.g., 'LV-2013-0007' broken across lines, facility names broken into 4-5 lines each.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Total Cases: 40' summary row at the bottom of page 2 in the PDF is rendered outside the table in the HTML as plain text rather than as a table row.",
+      "severity": "minor",
+      "evidence": "PDF: 'Total Cases: 40' appears as the last row of the table. HTML: 'Total Cases: 40' appears as text below the table.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Total Penalties value for case LV-2013-0012 appears as $200.00 in both the PDF and HTML, but this appears to be a source data issue where Penalty Amount ($200.00) + Enforcement Costs ($27.13) should equal $227.13. However, since this matches the PDF, it is not a conversion error.",
+      "severity": "major",
+      "evidence": "PDF and HTML both show $200.00 for Total Penalties on LV-2013-0012. Not a conversion error - retracted.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header 'DWQ January 2013 Civil Penalty Assessments' and the column headers appear twice in the PDF (once per page) but are consolidated into a single table in the HTML. This is acceptable behavior for page-by-page conversion consolidation.",
+      "severity": "minor",
+      "evidence": "PDF has the title and table headers repeated on page 2; HTML consolidates into one table. This is acceptable.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.3,
+    "page_count": 2,
+    "visual_input_tokens": 6613,
+    "visual_output_tokens": 642,
+    "content_input_tokens": 14433,
+    "content_output_tokens": 527,
+    "timestamp": "2026-04-16T02:50:55.411146",
+    "auditor_version": "1.0.0"
+  }
+}

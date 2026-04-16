@@ -1,0 +1,94 @@
+{
+  "document_id": "Riverbend_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC Water Resources Environmental Quality logo in the HTML appears slightly different in rendering quality but is present and correctly placed.",
+      "severity": "minor",
+      "evidence": "PDF shows the logo at top-left with clear rendering; HTML shows the same logo at top-left but with slightly different sizing. Both are functional.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header information (PAT MCCRORY, Governor, DONALD R. VAN DER VAART, Secretary, S. JAY ZIMMERMAN, Director) is right-aligned in the PDF but left-aligned in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: header info is right-aligned on the page. HTML: same info is left-aligned under the logo. Layout difference but content preserved.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer contact information (State of North Carolina | Environmental Quality | Water Resources, address, phone) appears at the bottom of page 1 in the PDF, but in the HTML it appears between the outline section and Section I content.",
+      "severity": "minor",
+      "evidence": "PDF: footer info at very bottom of page 1. HTML: same info appears mid-page between the outline and Section I, disrupting reading flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "A colored decorative bar appears in the HTML between the footer info and Section I that does not appear in the PDF at that location.",
+      "severity": "minor",
+      "evidence": "HTML shows a dark gradient/colored bar between contact info and Section I heading. PDF has a simple line under MEMORANDUM heading.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF, bullet point topic headers are bold and underlined (e.g., 'Beneficial Reuse Areas', 'Costs'). In the HTML, they appear bold but the underline styling varies.",
+      "severity": "minor",
+      "evidence": "PDF page 3: topic headers like 'Beneficial Reuse Areas', 'Dam Safety' are bold and underlined. HTML: same headers appear bold with underline, formatting is preserved.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "S. Jay Zimmerman's name is rendered as an ordered list item ('A. JAY ZIMMERMAN') due to the 'S.' being interpreted as a list marker in the HTML structure.",
+      "severity": "minor",
+      "evidence": "PDF: 'S. JAY ZIMMERMAN / Director'. HTML: '<ol type=\"A\"><li>JAY ZIMMERMAN<br /><em>Director</em></li></ol>' \u2014 The 'S.' prefix is lost and replaced by 'A.' list formatting.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The name 'S. JAY ZIMMERMAN' is altered to effectively display as 'A. JAY ZIMMERMAN' due to incorrect list parsing, changing the Director's initial.",
+      "severity": "major",
+      "evidence": "PDF header: 'S. JAY ZIMMERMAN'. HTML renders as ordered list item 'A' resulting in 'A. JAY ZIMMERMAN'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer text (State of North Carolina | Environmental Quality | Water Resources, address, phone number) appears as body content between the outline and Section I, duplicating what already appears at the top of the page.",
+      "severity": "minor",
+      "evidence": "HTML includes 'State of North Carolina | Environmental Quality | Water Resources / 1611 Mail service Center | Raleigh, North Carolina 27699-1611 / 919 707 9000' as inline body content after the outline section. This is a page footer artifact from the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "A second embedded image tag appears between the outline and Section I that corresponds to a page-break artifact.",
+      "severity": "minor",
+      "evidence": "HTML: '<figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 598.3pt; height: auto;\"></figure>' appears as an extra image between sections with no descriptive alt text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 41.33,
+    "page_count": 5,
+    "visual_input_tokens": 13859,
+    "visual_output_tokens": 952,
+    "content_input_tokens": 15020,
+    "content_output_tokens": 739,
+    "timestamp": "2026-04-16T02:54:40.750943",
+    "auditor_version": "1.0.0"
+  }
+}

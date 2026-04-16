@@ -1,0 +1,54 @@
+{
+  "document_id": "0_JLA4_Email_Announcement_20160316",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The document title 'Draft Cape Fear River Water Supply Evaluation' loses its italic formatting in the HTML version.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'Draft Cape Fear River Water Supply Evaluation' is italicized. In the HTML, it appears without italic formatting, just in quotation marks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The document title 'Draft Jordan Lake Water Supply Allocation Recommendations' loses its italic formatting in the HTML version.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'Draft Jordan Lake Water Supply Allocation Recommendations' is italicized. In the HTML, it appears without italic formatting, just in quotation marks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The two 'here' hyperlinks for meeting location maps contain specific Google Maps URLs that are not visible in the PDF source text. The PDF only shows the word 'here' as a hyperlink without displaying the destination URL.",
+      "severity": "minor",
+      "evidence": "HTML contains full Google Maps URLs like 'https://www.google.com/maps/place/Chatham+Community+Library/...' and 'https://www.google.com/maps/place/230+Government+Center+Dr,...'. These may be the actual link destinations embedded in the PDF, but they cannot be verified from the PDF text alone.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The main DEQ website URL in the HTML differs slightly from the PDF in hyphenation of the path segments, though it appears to resolve to the same page.",
+      "severity": "minor",
+      "evidence": "PDF shows: 'http://deq.nc.gov/about/divisions/water-resources/planning/basin-planning/mappage/cape-fear-river-basin-landing/jordan-lake-water-supply-allocation/jordan-lake-water-supplyallocation-round-4'. HTML shows: 'http://deq.nc.gov/about/divisions/water-resources/planning/basin-planning/map-page/cape-fear-river-basin-landing/jordan-lake-water-supply-allocation/jordan-lake-water-supply-allocation-round-4'. The PDF version has 'mappage' (no hyphen) and 'supplyallocation' (no hyphen) due to line-break artifacts, while the HTML correctly restores the hyphens.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 22.49,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 345,
+    "content_input_tokens": 5317,
+    "content_output_tokens": 624,
+    "timestamp": "2026-04-16T02:51:07.243113",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'mark piazza | manager, pipeline compliance and r&d colonial pipeline company' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image is missing from the HTML version of page 1.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the North Carolina state seal prominently at the top center of the letter. The HTML rendering on page 2 does show the seal, but the first paired HTML image (page 1) shows only a title 'Proposed Alamance Quarry and Construction Materials Quarry' without the seal context of the original letter format.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 1 of the PDF is split across two HTML pages, with a large title heading 'Proposed Alamance Quarry and Construction Materials Quarry' added at the top of the HTML that does not exist in the PDF.",
+      "severity": "major",
+      "evidence": "The PDF page 1 is a standard letter format. The HTML conversion adds a large title heading at the top and splits the content across two HTML pages/sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom of PDF page 1 is not present in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF page 1 footer area shows the NC DEQ logo. HTML does not include this logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "David Miller's signature is missing from the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows a handwritten signature by David Miller. The HTML shows only 'for David Miller' text without the signature image.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The email chain content ordering and structure is preserved but email header details from page 5 email are duplicated in both image-based and text-based HTML renderings, creating redundancy.",
+      "severity": "major",
+      "evidence": "The email from Mark Piazza dated August 6, 2020 appears in both the scanned image version and the HTML text version with the same content.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Social media icons from Colonial Pipeline's email signature are missing in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF pages 5 and 7 show LinkedIn, Facebook, Twitter, and Instagram icons in Mark Piazza's email signature. HTML does not render these icons.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Mark Piazza's handwritten signature is missing from the HTML version of the Colonial Pipeline letter.",
+      "severity": "minor",
+      "evidence": "PDF page 18 shows a handwritten signature by Mark Piazza. The HTML does not include this signature image.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Colonial Pipeline Company logo (CD logo) appears in the HTML but its placement and size differ; the logo is shown as a smaller circular icon.",
+      "severity": "minor",
+      "evidence": "PDF page 17 shows the Colonial Pipeline CD logo at the top of the letterhead. HTML shows a smaller version.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC State Seal image in Rep. Dennis Riddell's signature block appears lower resolution or different in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 14 shows the NC State Seal in Riddell's signature. HTML page shows a similar but slightly different rendering.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Attachment 1 document from Colonial Pipeline is a formally structured legal document with specific sections and subsections. The HTML conversion flattens some of the hierarchical structure.",
+      "severity": "major",
+      "evidence": "PDF pages 19-22 show Attachment 1 with formal legal formatting including Roman numeral sections (I, II), lettered subsections (A-M), and numbered sub-items. While the HTML preserves most of the content, the indentation hierarchy is somewhat flattened.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The site plan drawings (Exhibits 1A and 1B) are present in the PDF but appear as very low-quality or hard-to-read images in both versions, though the HTML does include them.",
+      "severity": "major",
+      "evidence": "PDF page 23 shows Exhibit 1A site plan. The HTML includes the image but it may be less legible.",
+      "page": 23,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy is broken. The document uses h1 for the title, then h2 for 'Wehner, Judy' (an email header, not a document section), h2 for 'Colonial Pipeline Company Letter', h2 for 'ATTACHMENT 1', h3 for section I, h3 for section II (skipped within attachment structure), and h2 for 'EXHIBITS 1A. AND 1B.' The hierarchy does not consistently reflect the document's logical structure.",
+      "severity": "major",
+      "evidence": "h2 used for 'Wehner, Judy' which is just an email sender header, not a document section. 'ATTACHMENT 1' is h2 while its subsections I and II are h3, which is reasonable, but the email metadata sections are given the same heading level as major document sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The numbered list structure under Section I.B is incorrectly rendered. Item B.1 sub-items (a through j) and item B.2 are part of section B, but in the HTML, items a-j appear as a separate ordered list with type='a', and the continuation item 2 is not clearly nested under B. Additionally, Section I.M sub-items are incorrectly structured with mixed list types.",
+      "severity": "major",
+      "evidence": "PDF Section I.M has items 1-4, with sub-items 2.a and 2.b. HTML renders items 3 and 4 as sub-items a-d under an ordered list type='a', conflating M.3 and M.4 with M.2.a and M.2.b formatting.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Section I.M item numbering is misrepresented. In the PDF, M has items 1, 2, 3, and 4 at the same level. In the HTML, items M.1 and M.2 are rendered under an ordered list type='I', but M.3 and M.4 are rendered as items a and b under a separate ordered list type='a', making them appear as sub-items rather than main items.",
+      "severity": "major",
+      "evidence": "PDF: '3. Alamance Aggregates agrees that blasting activities shall not proceed...' and '4. In the event Colonial makes an objection...' are numbered 3 and 4 under Section M. HTML renders these as items 'a' through 'd' in an <ol type='a'> list.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Colonial Pipeline confidentiality notice appears twice in the HTML, matching the PDF which contains it twice (from two separate email threads). This is not a conversion error but is noted for completeness.",
+      "severity": "minor",
+      "evidence": "The notice 'Colonial Pipeline Notice - This e-mail message (including any attachment) contains information that may be confidential...' appears twice in both PDF and HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Page 2 header 'Page Two' from the PDF letter is omitted in the HTML, which is acceptable reformatting, but the 'Certified Mail / Mr. Threatt' text from page 2 header appears as standalone text without context.",
+      "severity": "minor",
+      "evidence": "HTML has 'Certified Mail / Mr. Threatt' appearing as a standalone paragraph between the letter body and the page 2 continuation text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for images is generic but not inaccurate. The state seal images are described as 'North Carolina state seal' and Colonial Pipeline logos as 'Colonial Pipeline Company logo', which are reasonable descriptions.",
+      "severity": "minor",
+      "evidence": "alt='North Carolina state seal', alt='Colonial Pipeline Company logo'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 8,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 83.28,
+    "page_count": 17,
+    "visual_input_tokens": 44264,
+    "visual_output_tokens": 2115,
+    "content_input_tokens": 42186,
+    "content_output_tokens": 1216,
+    "timestamp": "2026-04-16T02:51:34.247750",
+    "auditor_version": "1.0.0"
+  }
+}

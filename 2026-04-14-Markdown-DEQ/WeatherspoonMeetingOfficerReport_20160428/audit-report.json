@@ -1,0 +1,62 @@
+{
+  "document_id": "WeatherspoonMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The memorandum header layout is restructured. In the PDF, the 'From' field includes Division and Office on indented lines next to the label. In the HTML, 'Division of Waste Management' and 'Raleigh Central Office' are separated below the signature, breaking the memo field grouping.",
+      "severity": "major",
+      "evidence": "PDF shows 'From: Shawn McKee / Division of Waste Management / Raleigh Central Office' as a grouped block with signature inline. HTML separates the signature from the From field and places Division/Office below it as standalone lines.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The outline list (I through IV) in the PDF uses indented Roman numerals with aligned text. The HTML renders them as a flat list without the structured indentation grouping seen in the PDF memo format.",
+      "severity": "minor",
+      "evidence": "PDF shows Roman numerals I-IV with tab-aligned descriptions in a formal memo outline format. HTML shows them as a simple bulleted/numbered list.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Attachment I reference in the History/Background section has an inconsistent date reference between the PDF and HTML, though both appear in the PDF itself.",
+      "severity": "minor",
+      "evidence": "PDF page 2 states 'Attachment I - Public Notice of March 16, 2016 Meeting' but the actual meeting date throughout the document and on page 1 is March 10, 2016. The Attachments list on page 5 says 'Public Notice of March 10, 2016 Meeting'. The HTML preserves the 'March 16, 2016' reference from page 2 as-is, so this is a source document inconsistency, not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page header/footer information (page numbers, report title repetitions) from pages 2-5 of the PDF have been properly removed, which is acceptable. No content duplication issues found.",
+      "severity": "minor",
+      "evidence": "N/A - no duplication detected.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document uses 'MEMORANDUM' as h1 rather than a more descriptive document title. This is acceptable as it matches the PDF's primary heading. The four main sections (I-IV) are rendered as h2, which correctly reflects the document structure.",
+      "severity": "minor",
+      "evidence": "PDF has 'MEMORANDUM' as the document's main heading, HTML uses <h1>MEMORANDUM</h1>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 30.63,
+    "page_count": 5,
+    "visual_input_tokens": 14414,
+    "visual_output_tokens": 583,
+    "content_input_tokens": 15492,
+    "content_output_tokens": 623,
+    "timestamp": "2026-04-16T02:54:52.039563",
+    "auditor_version": "1.0.0"
+  }
+}

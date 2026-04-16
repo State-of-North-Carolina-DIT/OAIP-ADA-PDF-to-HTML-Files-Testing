@@ -1,0 +1,38 @@
+{
+  "document_id": "01_January_2014_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Table column layout is significantly altered. The PDF shows a compact, single-page horizontal table with all columns visible in a traditional spreadsheet format. The HTML renders the table with heavily wrapped cell content, making it much taller and harder to read across rows.",
+      "severity": "major",
+      "evidence": "In the PDF, the table fits on one page with clear horizontal alignment. In the HTML, columns like 'Owner - Facility' are broken into many lines (e.g., 'Cape Fear Public Utility Authority - CFPUA Collection System' wraps across 6+ lines), and the table spans many vertical pages worth of content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Column header text differs slightly between PDF and HTML. The PDF header reads 'Total Cases in Previous 12 Months' while the HTML header reads 'Total Cases in Previous 12 Months' split differently across lines, but the content is preserved.",
+      "severity": "minor",
+      "evidence": "PDF: 'Total Cases in Previous 12 Months' as column header. HTML: Same text but wrapped differently. Content is the same.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 18.53,
+    "page_count": 1,
+    "visual_input_tokens": 3947,
+    "visual_output_tokens": 510,
+    "content_input_tokens": 7926,
+    "content_output_tokens": 209,
+    "timestamp": "2026-04-16T02:50:45.087164",
+    "auditor_version": "1.0.0"
+  }
+}

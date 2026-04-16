@@ -1,0 +1,158 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NCDENR logo/seal image at the top of the document is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NCDENR logo/seal at the top center of the page. The HTML version has no image present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout with Governor name on left, Director in center, and Secretary on right is collapsed into a simpler stacked layout in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows a three-column header layout (Beverly Eaves Perdue/Governor on left, Charles Wakild P.E./Director in center, Dee Freeman/Secretary on right). HTML renders these as stacked single-column elements.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'One NorthCarolina Naturally' logo at the bottom right of the PDF page is missing from the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NorthCarolina Naturally branding logo in the bottom right. HTML does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings 'I.' and 'II.' lose their underlined formatting which distinguishes them as section headings in the PDF.",
+      "severity": "major",
+      "evidence": "PDF shows 'Umbrella Mitigation Banking Instrument (UMBI) Template for Nutrient Offset Mitigation Banks' and 'Proposed Water Quality Certification...' as underlined, bolded headings. In the HTML they appear as plain text without clear heading distinction.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML rendering of page 2 content is extremely compressed and difficult to read, with text appearing much smaller than expected relative to the page.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows normal-sized readable text. HTML rendering shows the same content but in a very condensed, small format that is hard to read.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The two-column table of Corps' Regional General Permit Numbers and DWQ General Certification Numbers is rendered differently in the HTML, appearing as a pipe-delimited text format rather than a clean table.",
+      "severity": "major",
+      "evidence": "PDF shows a clean two-column table with headers 'Corps' Regional General Permit Number' and 'DWQ General Certification Number'. HTML shows this as pipe-delimited text rows.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The footer information from page 1 (Wetlands, Buffers, Stormwater address, phone, etc.) appears to be repeated between content sections in the HTML.",
+      "severity": "major",
+      "evidence": "PDF has this footer only at the bottom of page 1. HTML includes it as inline content that disrupts reading flow.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italic formatting for conditions text is not preserved in the HTML, losing the distinction between condition language and explanatory notes.",
+      "severity": "major",
+      "evidence": "PDF pages 3-5 use italic formatting extensively for condition text (e.g., culvert placement conditions, compensatory mitigation text). HTML renders these as plain text without italic distinction.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold formatting for key terms like '401 Stormwater Requirements' is lost in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows '401 Stormwater Requirements' in bold italic. HTML does not preserve this emphasis which is meaningful for identifying required regulatory documents.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Pages 3-7 content in the HTML is rendered in an extremely compressed format making it nearly illegible at normal viewing.",
+      "severity": "major",
+      "evidence": "PDF pages 3-7 show normal-sized text with standard margins. HTML equivalents show all text compressed into a very small area.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bracket annotations like '[Condition has been updated...]' and '[Clarified that mitigation...]' lose their distinction from the main condition text.",
+      "severity": "major",
+      "evidence": "PDF shows these bracketed editorial notes in regular (non-italic) text indented below the italic condition text, creating a clear visual distinction. HTML does not preserve this formatting hierarchy.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The table of Corps' Regional General Permit Numbers and DWQ General Certification Numbers is rendered as a code block (preformatted text) rather than as a proper HTML table, though the data content appears correct.",
+      "severity": "major",
+      "evidence": "The PDF contains a structured two-column table. The HTML renders it inside a <pre><code> block with pipe-delimited markdown-style table syntax rather than using <table>, <tr>, <td> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Section D and Section E from the PDF are not given proper heading treatment. Section D (GC3685 Emergency Watershed Protection) and Section E (specific GC changes) are major lettered sections in the PDF but are not rendered with heading tags in the HTML. Section E's content is placed inside an ordered list item rather than as a distinct section.",
+      "severity": "major",
+      "evidence": "PDF has sections A through E as major lettered sections at the same level. HTML properly has no heading for A, B, C (they appear as paragraphs starting with letter labels), but D and E are similarly presented as paragraphs/list items with no heading structure, losing the parallel structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The majority of Section C content (construction moratoriums, culvert placement, compensatory mitigation, etc.) is rendered inside a <pre><code> block, which is semantically incorrect and treats structured regulatory conditions as preformatted code. This significantly impacts readability and structure.",
+      "severity": "major",
+      "evidence": "Pages 2-6 of the PDF contain detailed regulatory conditions with bullet points and sub-items. In the HTML, all of this content from the 'Construction Moratoriums and Coordination' through to 'Activities that require written approval' is wrapped in a single <pre><code> block.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The NCDOT NPDES permit number is rendered as 'NCS000250' in the HTML but the PDF shows 'NC5000250'.",
+      "severity": "minor",
+      "evidence": "PDF page 3: 'their individual NPDES (NC5000250) stormwater permit'. HTML: 'their individual NPDES (NCS000250) stormwater permit'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text variation: 'supercede' appears in both PDF and HTML (a misspelling in the source), which is correctly preserved. However, 'All applications' in the PDF (page 3) reads 'All applicationshall' (missing space) which the HTML corrects to 'All applications shall'. This is acceptable but noted.",
+      "severity": "minor",
+      "evidence": "PDF page 3: 'All applicationshall address stormwater management'. HTML: 'All applications shall address stormwater management'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains an NCDENR logo/seal at the top and a 'One North Carolina Naturally' logo at the bottom of page 1. Neither image is represented in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 header has NCDENR seal/logo image and footer has 'One NorthCarolina Naturally' branding image. HTML has no <img> tags.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 12,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 65.16,
+    "page_count": 7,
+    "visual_input_tokens": 14819,
+    "visual_output_tokens": 1632,
+    "content_input_tokens": 24761,
+    "content_output_tokens": 1084,
+    "timestamp": "2026-04-16T02:51:10.245164",
+    "auditor_version": "1.0.0"
+  }
+}

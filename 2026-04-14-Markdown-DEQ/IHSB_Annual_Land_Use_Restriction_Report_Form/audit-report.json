@@ -1,0 +1,70 @@
+{
+  "document_id": "IHSB_Annual_Land_Use_Restriction_Report_Form",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The logo placement and header layout differ significantly. In the PDF, the DEQ logo is centered at the top with the title 'Inactive Hazardous Sites Branch' and subtitle centered below it. In the HTML, the logo is left-aligned and the title is rendered as a large heading separated from the subtitle by a horizontal rule.",
+      "severity": "major",
+      "evidence": "PDF: Centered logo with centered title and subtitle as a cohesive header block. HTML: Left-aligned logo, title as large left-aligned heading with horizontal divider, subtitle as separate section heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'NA' in 'YES NA (not applicable)' loses its underline formatting in the HTML. In the PDF, 'NA' is underlined to distinguish it, which is meaningful as it denotes a selectable option.",
+      "severity": "minor",
+      "evidence": "PDF: 'YES' is underlined and bold, 'NA' is underlined and bold. HTML: 'YES NA' appears bold but 'NA' is not underlined.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The signature section layout differs. In the PDF, Signature of Property Owner and Date are on the same line (left and right respectively), with subsequent fields below. In the HTML, they appear concatenated as '(Signature of Property Owner) (Date)' on the same line without spatial separation.",
+      "severity": "minor",
+      "evidence": "PDF: Signature line on left, Date line on right with clear spatial separation. HTML: '(Signature of Property Owner) (Date)' run together as text on one line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title is split into two separate headings (h1 and h2) when in the PDF they form a single combined title. 'Annual Report Form for Perpetual Land-Use Restrictions' is a subtitle of the same header block, not a separate section.",
+      "severity": "major",
+      "evidence": "PDF shows 'Inactive Hazardous Sites Branch' and 'Annual Report Form for Perpetual Land-Use Restrictions' as a unified header block. HTML renders them as <h1> and <h2> respectively, which could imply two separate sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The checklist items in the PDF have two columns of checkboxes (YES and NA) for each item, representing a structured two-option response format. The HTML converts these into a simple bulleted list, losing the dual-checkbox structure entirely. Users cannot distinguish which checkbox column (YES vs NA) applies.",
+      "severity": "major",
+      "evidence": "PDF has two checkbox columns labeled 'YES' and 'NA (not applicable)' with checkbox pairs for each of 7 items. HTML renders them as <ul><li> items with no checkboxes or indication of the two-column response format.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The Comments section in the PDF includes an empty box/area for writing comments. The HTML only has the word 'Comments:' with no indication of an input area.",
+      "severity": "minor",
+      "evidence": "PDF shows a bordered comment box area below 'Comments:'. HTML just has '<p>Comments:</p>' with no box or space representation.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 28.21,
+    "page_count": 1,
+    "visual_input_tokens": 4225,
+    "visual_output_tokens": 614,
+    "content_input_tokens": 4873,
+    "content_output_tokens": 604,
+    "timestamp": "2026-04-16T02:53:14.177612",
+    "auditor_version": "1.0.0"
+  }
+}

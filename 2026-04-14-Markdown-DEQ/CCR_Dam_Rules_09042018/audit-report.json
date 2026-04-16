@@ -1,0 +1,94 @@
+{
+  "document_id": "CCR_Dam_Rules_09042018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The title slide layout is significantly simplified in HTML. The PDF has a layered design with two panoramic images (lighthouse and cityscape) flanking the title and author info, whereas the HTML shows these elements stacked vertically with the NC logo and images separated from the text content.",
+      "severity": "major",
+      "evidence": "PDF shows title, author info, and images integrated in a cohesive slide layout. HTML shows the images and logo stacked separately with the title and author details appearing as plain text below.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The coal combustion residuals image on the DEMLR Dam Safety Rulemaking slide is significantly smaller in the HTML compared to the PDF, where it occupied roughly half the slide area.",
+      "severity": "minor",
+      "evidence": "PDF: Image is large and prominently placed next to the bullet points. HTML: Image is rendered as a small thumbnail below the bullet points.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "On the DEMLR Dam Safety Rulemaking page, the image appears below the bullet list in the HTML, whereas in the PDF it appears to the right of the bullet list.",
+      "severity": "minor",
+      "evidence": "PDF: Image is placed alongside/right of 'Purpose, Methodology, Major Components' bullets. HTML: Image appears below the bullets.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Regulatory Impact Analysis data is presented as a simple list in the PDF slide but rendered as a table in the HTML. While the data is preserved, the structure changed from a paired list to a formal table with Category/Impact headers.",
+      "severity": "minor",
+      "evidence": "PDF: Simple two-column text pairs (e.g., 'State Government: Minimal Costs'). HTML: Formal table with 'Category' and 'Impact' column headers.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The contact information on the Questions and Answers slide is rendered as a table with Name/Email/Phone headers in the HTML, whereas the PDF shows it as simple text lines.",
+      "severity": "minor",
+      "evidence": "PDF: 'Andrew Brooks Andrew.brooks@ncdenr.gov 919-707-9219' as plain text. HTML: Formal table with Name, Email, Phone columns.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Regulatory Impact Analysis in the PDF is presented as a simple list of key-value pairs, not as a formal table with headers. The HTML converts it into a table with fabricated column headers 'Category' and 'Impact' that do not exist in the source PDF.",
+      "severity": "major",
+      "evidence": "PDF page 7 shows a simple list: 'State Government: Minimal Costs', 'Local Government: None', etc. HTML adds a <thead> with 'Category' and 'Impact' headers not present in the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Questions contact information in the PDF is presented as a simple aligned list, not a formal table. The HTML converts it into a table with fabricated column headers 'Name', 'Email', and 'Phone' that do not exist in the source PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 8 shows contact info as aligned text. HTML creates a table with <thead> containing 'Name', 'Email', 'Phone' headers not in the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Department of Environmental Quality' footer text appears on every slide in the PDF as a recurring footer but is not reproduced in the HTML, which is acceptable. However, the 'DEMLR Dam Safety Rulemaking' page 2 content from the PDF includes slide notes/annotations like 'Picture??' which are not reproduced \u2014 this is acceptable as it's likely a draft annotation, not content.",
+      "severity": "minor",
+      "evidence": "PDF page 2 contains 'Picture??' text. HTML omits this. This is acceptable as it appears to be an editing note.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There are two consecutive H2 headings both titled 'Dam Safety CCR Rulemaking Methodology' reflecting separate slides in the PDF, which is technically correct reproduction but could cause confusion. This mirrors the PDF structure accurately.",
+      "severity": "minor",
+      "evidence": "PDF pages 4 and 5 both have the title 'Dam Safety CCR Rulemaking Methodology'. HTML has two consecutive <h2> elements with the same text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 45.42,
+    "page_count": 8,
+    "visual_input_tokens": 17033,
+    "visual_output_tokens": 1102,
+    "content_input_tokens": 16539,
+    "content_output_tokens": 768,
+    "timestamp": "2026-04-16T02:53:04.947100",
+    "auditor_version": "1.0.0"
+  }
+}

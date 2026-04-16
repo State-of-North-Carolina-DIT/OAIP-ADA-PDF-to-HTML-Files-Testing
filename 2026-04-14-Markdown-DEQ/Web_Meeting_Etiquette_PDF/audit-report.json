@@ -1,0 +1,46 @@
+{
+  "document_id": "Web_Meeting_Etiquette_PDF",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "The asterisk note about Commission Members chat function loses its asterisk framing in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF shows '* Commission Members...*' with asterisks at beginning and end of the paragraph. HTML shows the opening asterisk is removed and only a trailing asterisk remains, and the note is reformatted as a bullet point rather than a standalone paragraph.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The 'Alternatively' paragraph is positioned differently in the HTML - it appears outside the bullet list structure",
+      "severity": "minor",
+      "evidence": "In the PDF, 'Alternatively:' appears as a continuation under the voting bullet point with indentation. In the HTML, it appears as a standalone paragraph outside the bullet list at the left margin.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "The asterisk note about Commission Members' chat usage is presented differently. In the PDF, it begins and ends with asterisks (*) as a standalone note. In the HTML, it is formatted as a bullet list item and only has the closing asterisk.",
+      "severity": "minor",
+      "evidence": "PDF: '* Commission Members, if you use the chat function on WebEx: Since there should be no group discussion amongst just Commission members, as that violates the open meetings law for the Commission, make sure you use the default option in the chat box to chat with Everyone, which will include the public attending the web meeting. Exception: if you have a technical difficulty you can chat with only the moderator/host. *' HTML: formatted as a <li> inside a <ul>, losing the standalone note format and the opening asterisk marker.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 21.01,
+    "page_count": 2,
+    "visual_input_tokens": 6245,
+    "visual_output_tokens": 399,
+    "content_input_tokens": 6905,
+    "content_output_tokens": 408,
+    "timestamp": "2026-04-16T02:54:40.699018",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th></th>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Cheoah River example slide image (appears to be a photograph/video of the river) is rendered as a solid black rectangle in the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 8 shows what appears to be a river/landscape image above the data table. The HTML renders this as a completely black rectangle.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Cheoah River High Flow Events table (Table 2) in HTML is cut off, showing only partial data with rows truncated at the bottom",
+      "severity": "major",
+      "evidence": "PDF page 9 shows the complete Table 2 with all 12 months plus Total Per Year row and footnotes. The HTML page shows the table starting but the bottom rows are cut off in the first view, though they appear to continue in the next HTML segment.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 2 column headers differ between PDF and HTML - the HTML shows individual columns for 'Magnitude (cfs)3 Day 1', 'Magnitude (cfs)3 Day 2', 'Magnitude (cfs)3 Day 3' separately while PDF shows 'Magnitude (cfs)^3' as a merged header spanning Day 1, Day 2, Day 3",
+      "severity": "major",
+      "evidence": "PDF shows 'Magnitude (cfs)^3' as a single header row with Day 1, Day 2, Day 3 below it. HTML shows them as separate flat columns without the merged header grouping.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Flow Regime Tied to Ecology diagram's hierarchical flowchart structure is converted to a nested text list, losing the visual organizational chart layout",
+      "severity": "major",
+      "evidence": "PDF page 10 shows a structured flowchart/organizational diagram with boxes and arrows showing relationships between Sound Ecological Environment, flow types (Subsistence, Base, High Flow Pulses, Overbank), their functions, and specific details. HTML converts this to a nested bullet list.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Duplicate heading text for 'Instream Flow Status' creates two separate h2 sections, which accurately reflects the PDF's two separate slides but could be confusing. The hierarchy itself is acceptable.",
+      "severity": "minor",
+      "evidence": "Two h2 headings both titled 'Instream Flow Status (pp 84-86 of IFC book)' corresponding to pages 2 and 3 of the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Cheoah River High Flow Events table, the March Day 2 magnitude shows '6002' as a single concatenated value instead of '600' with a superscript footnote marker '2'. This misrepresents the data.",
+      "severity": "major",
+      "evidence": "PDF shows '600\u00b2' (600 with superscript 2 footnote reference) in March Day 2 column. HTML shows '6002' which looks like the number six thousand and two.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Cheoah River High Flow Events table, the February Day 2 magnitude shows 'Var1' as a concatenated value instead of 'Var' with a superscript footnote marker '1'.",
+      "severity": "major",
+      "evidence": "PDF shows 'Var\u00b9' (Var with superscript 1 footnote reference) in February Day 2. HTML shows 'Var1' which obscures the footnote reference.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Cheoah River High Flow Events table, the column header 'Magnitude (cfs)3' concatenates the superscript footnote '3' with the text instead of properly indicating a footnote reference.",
+      "severity": "major",
+      "evidence": "PDF shows 'Magnitude (cfs)\u00b3' with superscript 3. HTML header shows 'Magnitude (cfs)3'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the Cheoah River base flow table image says 'Table showing Monthly Base Flow releases for Tier A and Tier B' which is accurate but generic. The actual table data is also reproduced in HTML below, so this is not a significant issue.",
+      "severity": "minor",
+      "evidence": "Image alt text: 'Table showing Monthly Base Flow releases for Tier A and Tier B'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Cheoah River base flow data appears both as an image with alt text AND as an HTML table below it, creating mild duplication. However, this is acceptable as the image is from the PDF and the table is the accessible text version.",
+      "severity": "minor",
+      "evidence": "Image with alt text about base flow table followed by a full HTML table with the same data.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 6,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 48.39,
+    "page_count": 12,
+    "visual_input_tokens": 30329,
+    "visual_output_tokens": 1082,
+    "content_input_tokens": 26092,
+    "content_output_tokens": 960,
+    "timestamp": "2026-04-16T02:51:13.744747",
+    "auditor_version": "1.0.0"
+  }
+}

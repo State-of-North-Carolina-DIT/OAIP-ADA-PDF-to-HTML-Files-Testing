@@ -1,0 +1,190 @@
+{
+  "document_id": "Energy_Balance_Malvika_Ogale,_Novo_Nordisk",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Slide 2 (Novo Nordisk at a glance) has a multi-column grid layout with statistics tiles, therapy area images, and key facts arranged in a structured grid. The HTML renders this as a linear single-column flow, losing the visual grouping of the infographic-style layout.",
+      "severity": "major",
+      "evidence": "PDF shows a structured grid with '50%', '290.4', '80', '52', '45.2' stats in colored tiles alongside therapy area images. HTML renders these as sequential text paragraphs.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 4 (Product Supply in NC & Virginia) has a complex multi-column grid layout with statistics, awards, and images arranged in tiles. HTML renders as a single column.",
+      "severity": "major",
+      "evidence": "PDF shows a tile-based infographic grid with stats like '31 years', '$10B', '60+', LEED certification badge, awards, and '$40M+' arranged in a grid. HTML shows all content linearized.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 5 (Novo Nordisk in North Carolina) has a two-column layout with facility photos on the left and bullet points on the right. HTML collapses to single column with photos stacked above text.",
+      "severity": "major",
+      "evidence": "PDF shows photos in left column with text content in right column. HTML places all photos first then all text.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 (Four must-win battles) has a structured layout with numbered battles (#1-#4) arranged around a central globe illustration. HTML linearizes to a simple numbered list.",
+      "severity": "major",
+      "evidence": "PDF shows #1 and #3 at top, globe in center, #2 and #4 at bottom in a balanced layout. HTML shows sequential list.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 7 (Must-win challenge to reduce CO2 emissions) has a two-column layout with city illustration on left and targets with circular images on right. HTML renders as single column.",
+      "severity": "major",
+      "evidence": "PDF shows illustration left, three targets with images stacked on right. HTML linearizes all content.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 8 (Driving change as environmentally responsible business) has a multi-column layout with three circular pillars (Circular supply, Circular company, Circular products). HTML linearizes this.",
+      "severity": "major",
+      "evidence": "PDF shows three equal columns with circular images and descriptions. HTML shows them sequentially.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 10 (Mapping Strategy) has a hierarchical diagram showing Site Usage \u2192 Building Usage \u2192 Process/Other Usage \u2192 M/U structure. HTML renders as flat text losing the visual hierarchy.",
+      "severity": "major",
+      "evidence": "PDF shows a structured organizational chart/diagram with nested boxes. HTML shows 'Site Usage', 'Building Usage' repeated, and 'Process Usage | Other Usage' as flat text.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 11 (Goal - Mapping) has a two-column layout with bullet points on left and pie chart on right. HTML places them sequentially.",
+      "severity": "major",
+      "evidence": "PDF shows text content and pie chart side by side. HTML shows text first then pie chart below.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 14 (Water Mapping - Visualization) has a two-column layout with benefits list and heat map on the left and a bar chart on the right. HTML linearizes.",
+      "severity": "major",
+      "evidence": "PDF shows heat map and bar chart side by side. HTML shows them sequentially.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 17 (Energy Savings Project Examples) has a two-column layout with Inactivation Skid Optimization on left and Distillation Optimization on right. HTML linearizes.",
+      "severity": "major",
+      "evidence": "PDF shows two project examples side by side. HTML shows them sequentially.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 18 (Water Savings Project Examples) has a two-column layout with Filter backwash reduction on left and Conductivity Setpoint Changes on right. HTML linearizes.",
+      "severity": "major",
+      "evidence": "PDF shows two project examples side by side. HTML shows them sequentially.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Slide 3 (Our global presence) - the dotted/pixelated world map is rendered very differently in HTML, appearing as a dark/inverted image that loses the color-coded regional distinction visible in the PDF.",
+      "severity": "major",
+      "evidence": "PDF shows a colorful dot-matrix world map with regions in different colors (blue, orange, teal, pink). HTML shows what appears to be a dark/inverted version that loses the regional color coding.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Multiple slides are merged together in the HTML without clear page/slide boundaries, causing content from different slides to flow together. For example, slides 6-7 content flows together, slides 7-8 flow together, etc.",
+      "severity": "major",
+      "evidence": "PDF has distinct slides. HTML merges content from Must-win battles (slide 6), CO2 emissions (slide 7), and environmentally responsible business (slide 8) into a continuous flow without clear separation.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 15 (Mapping through collaboration) has a two-column layout with text/bullets on left and a photo plus decorative illustration on right. HTML linearizes.",
+      "severity": "major",
+      "evidence": "PDF shows bullet points alongside a photo of two workers. HTML shows them sequentially.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content from the 'Novo Nordisk at a glance' section is presented redundantly. The PDF page 2 presents facts once in an infographic layout, but the HTML lists items like 'Affiliates in 80 countries' and the globe icon, therapy area names, and 'A top ten pharma company' in a way that some content appears to echo between the structured data and the descriptive paragraphs. However, more significantly, the page header/footer artifact '12 October 2025 Novo Nordisk company presentation' from the PDF pages is correctly omitted in the HTML, which is acceptable.",
+      "severity": "major",
+      "evidence": "On review this is borderline \u2014 the PDF itself has text in multiple locations on the same slide. Not a true conversion error. Withdrawing this as a finding.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Some PDF slide titles are rendered at inconsistent heading levels. All slide titles use h2, which is acceptable for a flat presentation deck structure. However, 'Novo Nordisk at a glance' is an h2 rather than potentially being distinguished from subsection headings. This is a reasonable structural choice for a slide deck conversion.",
+      "severity": "minor",
+      "evidence": "All slide titles rendered as h2 under a single h1. Acceptable for flat deck structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text alteration: The PDF slide 13 has the text 'produtciton' (a typo in the original for 'production'). The HTML faithfully reproduces this typo, which is correct behavior. No actual error here.",
+      "severity": "minor",
+      "evidence": "PDF: 'Softened water produtciton' \u2014 HTML: 'Softened water produtciton'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The mapping strategy diagram (page 10) is described in text but the hierarchical visual structure showing Site Usage \u2192 Building Usage \u2192 Process Usage \u2192 Other Usage with M/U subdivisions is rendered as flat text rather than preserving the nested visual hierarchy. Some structural meaning may be lost.",
+      "severity": "minor",
+      "evidence": "PDF shows a nested block diagram with Site Usage at top, three Building Usage blocks below, each with Process Usage and Other Usage subdivisions with M and U sub-blocks. HTML renders this as flat paragraph text: 'Building Usage Building Usage Building Usage' and 'Process Usage | Other Usage | ...'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The water process flow data in the HTML under 'Water Example \u2013 Process Flows' includes extracted numerical data presented in a semi-structured list format. While these numbers appear to come from the flow diagram on page 13 of the PDF, the specific formatting as a 'Process Flow Chart Data Extraction' labeled list with dash-separated items is an HTML organizational choice, not fabrication per se. The numbers themselves trace back to the diagram.",
+      "severity": "minor",
+      "evidence": "HTML: 'Process Flow Chart Data Extraction:' \u2014 this label does not appear in the PDF, but the data points listed do correspond to values shown in the flow diagram on page 13.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The label 'Process Flow Chart Data Extraction:' is introduced in the HTML but does not appear anywhere in the source PDF. This is a minor organizational label added by the converter, not substantive content fabrication.",
+      "severity": "minor",
+      "evidence": "PDF page 13 has no text reading 'Process Flow Chart Data Extraction'. HTML introduces this as a label for the extracted flow diagram data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The inactivation skid optimization temperature data is presented as inline text in the HTML rather than a visual diagram comparison. The temperature values are preserved but the visual current vs. ideal comparison layout is lost to text.",
+      "severity": "minor",
+      "evidence": "PDF page 17 shows two heat exchanger diagrams side-by-side with labeled temperatures. HTML renders: 'Current / Ideal 102\u00b0C / 102\u00b0C Steam Heat +17\u00b0 C / Steam Heat +5\u00b0 C 85\u00b0C, 57\u00b0C, 40\u00b0C, 57\u00b0C (+10\u00b0 C system cooling 29\u00b0C) / 97\u00b0C, 45\u00b0C, 40\u00b0C, 45\u00b0C (+10\u00b0 C system cooling 3\u00b0C)'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 15,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 91.76,
+    "page_count": 19,
+    "visual_input_tokens": 52013,
+    "visual_output_tokens": 2412,
+    "content_input_tokens": 41213,
+    "content_output_tokens": 1315,
+    "timestamp": "2026-04-16T02:54:45.361503",
+    "auditor_version": "1.0.0"
+  }
+}

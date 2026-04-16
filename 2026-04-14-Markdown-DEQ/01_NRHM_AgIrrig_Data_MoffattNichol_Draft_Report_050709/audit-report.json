@@ -1,0 +1,126 @@
+{
+  "document_id": "01_NRHM_AgIrrig_Data_MoffattNichol_Draft_Report_050709",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Cover page Moffatt & Nichol logo appears at bottom of PDF but is not visible in the HTML rendering",
+      "severity": "minor",
+      "evidence": "PDF shows the Moffatt & Nichol logo at the bottom of the cover page; HTML does not display this logo",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "NCDENR logo present in PDF header is not shown in HTML",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows NCDENR logo in upper left; HTML version does not include this logo",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated headers/footers from PDF pages appear inline in HTML between content sections",
+      "severity": "major",
+      "evidence": "PDF has page headers ('NEUSE BASIN MODELING - DATA COLLECTION DRAFT REPORT') and footers ('April 2009', page numbers, Moffatt & Nichol logo) on each page. The HTML consolidates content but some of these repeated elements may appear between sections disrupting reading flow",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1-1 Crop Water Requirements - column header formatting differs slightly but structure is preserved",
+      "severity": "minor",
+      "evidence": "PDF shows 'Start Date' as a spanning header with 'High', 'Mid', 'Low' sub-columns; HTML renders these as separate columns 'Start Date - High', 'Start Date - Mid', 'Start Date - Low' without the spanning header structure",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Section numbering inconsistency between PDF and HTML",
+      "severity": "minor",
+      "evidence": "PDF uses numbering starting with '1. Agriculture' (Introduction is unnumbered), while HTML uses '1. Agriculture' consistently matching the PDF TOC which shows '2. Agriculture'. The TOC in PDF page 3 shows Agriculture as section 2, but the body text in PDF page 6 shows it as '1. Agriculture'",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Section numbering in HTML does not match PDF. The PDF uses '1. Agriculture' with subsections '1.1', '1.2', '1.3', then '2. Municipal and Industrial Withdrawals', '3. Municipal and Industrial Discharges', '4. References'. The HTML uses '1. Agriculture' with '1.1/1.2/1.3', then '2. Municipal and Industrial Withdrawals', '3. Municipal and Industrial Discharges', '4. References' - which matches the body text. However, the Table of Contents uses numbering 2-5 (2. Agriculture, 3. Municipal Withdrawals, 4. Discharges, 5. References) while the body uses 1-4. This mismatch exists in the PDF itself, but the HTML TOC uses different numbering than the PDF TOC.",
+      "severity": "major",
+      "evidence": "PDF TOC: '2. Agriculture...3. Municipal and Industrial Withdrawals...4. Municipal and Industrial Discharges...5. References'. HTML TOC uses ordered list starting at 1 with 'Introduction, Agriculture, Municipal and Industrial Withdrawals, Municipal and Industrial Discharges, References'. The PDF TOC starts with '1. Introduction' then '2. Agriculture' etc., but the HTML ordered list renumbers them.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The Introduction section in the PDF is not numbered (it appears as 'Introduction' without a section number in the body text), but the TOC shows '1. Introduction'. The HTML body renders it as h2 'Introduction' without numbering, which is acceptable, but the Agriculture section headings use '1. Agriculture', '1.1. Data Sources' etc. in the body. The PDF body text labels the Agriculture section headings as '1. Agriculture' with '1.1. Data Sources', '1.2. Methods', '1.3. Data Distribution', then '2. Municipal and Industrial Withdrawals' etc. The HTML matches this pattern.",
+      "severity": "major",
+      "evidence": "This is actually consistent between PDF body and HTML body. Withdrawing this concern - the TOC numbering differs from body numbering in the PDF itself.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 4 in the HTML is missing the ID column header label. The PDF shows 'PWSS' as a combined row identifier but the HTML adds an 'ID' column header that doesn't exist in the PDF.",
+      "severity": "major",
+      "evidence": "PDF Table 4 columns: PWSS, Plants, SW Sources, Historical Assumptions, Data Available, Projected Withdrawal Period. HTML Table 4 adds an 'ID' column header not present in the PDF table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML Table 4 adds a fabricated column header 'ID' that does not exist in the PDF. The numbered identifiers (1-13) are present in the PDF's PWSS column but not as a separate column.",
+      "severity": "critical",
+      "evidence": "PDF has the numbers 1-13 in the leftmost part of the PWSS column. HTML creates a separate 'ID' column with these numbers and a header 'ID' that does not appear in the source PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 5 in the PDF contains data split across pages 17-19 (PDF pages 14-16) with many rows. Several historical discharge entries in the PDF are missing county information in some rows, and the HTML reproduces this. However, several 'Current?' column values appear truncated in the HTML compared to the PDF.",
+      "severity": "major",
+      "evidence": "PDF shows 'Current?' dates like '01/1994-11/2006' but the HTML also shows these. This appears to be consistent.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The text 'National Climactic Data Center' appears in both PDF and HTML, preserving the original misspelling of 'Climatic' as 'Climactic'. This is not a conversion error but exists in both.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML use 'Climactic' - consistent reproduction.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the reference section, the PDF lists Census years as '1940, 1945, 1950, 1954, 1959, 1964, 199, 1974, 1978, 1982, 1987' (with '199' being a typo in the original). The HTML preserves this typo faithfully.",
+      "severity": "minor",
+      "evidence": "PDF: '199, 1974, 1978' - HTML: '199, 1974, 1978' - consistent.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The subsections under 1.2.1 (Tobacco, Turf, Golf Courses, etc.) are rendered as h5 elements in HTML. The PDF shows these as sub-subsections (1.2.1.1 through 1.2.1.9). The hierarchy h2 > h3 > h4 > h5 is maintained consistently, so this is acceptable.",
+      "severity": "minor",
+      "evidence": "PDF: 1.2.1.1 Tobacco, 1.2.1.2 Turf etc. HTML: <h5>1.2.1.1. Tobacco</h5> etc.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 76.01,
+    "page_count": 24,
+    "visual_input_tokens": 75425,
+    "visual_output_tokens": 1474,
+    "content_input_tokens": 76778,
+    "content_output_tokens": 1599,
+    "timestamp": "2026-04-16T02:52:07.458300",
+    "auditor_version": "1.0.0"
+  }
+}

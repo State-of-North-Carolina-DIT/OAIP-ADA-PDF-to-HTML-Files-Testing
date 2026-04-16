@@ -1,0 +1,38 @@
+{
+  "document_id": "01_NRHM_Meeting_Agenda_052708",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a three-column layout for agenda items (time, topic/details, presenter) which is collapsed in the HTML into a single-column flow where the presenter name is placed inline with the topic rather than right-aligned as a distinct column.",
+      "severity": "major",
+      "evidence": "In the PDF, presenter names (e.g., '(Neelufa Sarwar)', '(Brian McCrodden)') are right-aligned in a separate column. In the HTML, they appear inline parenthetically after the topic title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Bullet points converted from bullet symbols to dashes",
+      "severity": "minor",
+      "evidence": "PDF uses bullet points (\u2022) for sub-items under each agenda topic; HTML uses dashes (-) instead. This is a minor formatting difference that does not change meaning.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 17.31,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 327,
+    "content_input_tokens": 4411,
+    "content_output_tokens": 266,
+    "timestamp": "2026-04-16T02:50:47.669745",
+    "auditor_version": "1.0.0"
+  }
+}

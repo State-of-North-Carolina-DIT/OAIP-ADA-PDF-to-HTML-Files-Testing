@@ -1,0 +1,21 @@
+{
+  "document_id": "01_2018_Agenda_Hydrologics_Mtg_2_002",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 10.74,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 183,
+    "content_input_tokens": 4282,
+    "content_output_tokens": 194,
+    "timestamp": "2026-04-16T02:50:09.692239",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "01_NRBM_Agenda_032509",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a two-column-like layout with agenda items on the left and presenter names right-aligned on the right. The HTML collapses this into a single left-aligned flow, placing presenter names inline with the agenda item text in parentheses.",
+      "severity": "major",
+      "evidence": "In the PDF, presenter names like '(Neelufa Sarwar)', '(Peter Elkan or Johnny Martin)', '(Steve Nebiker and Casey Caldwell)' are right-aligned in a separate column. In the HTML, they are placed inline in parentheses after the agenda item title on the same line.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bullet points in the PDF are rendered as dashes in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF uses bullet characters (\u2022) for sub-items under each agenda topic. HTML uses dashes (-) instead.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'AGENDA' is rendered as h1, which is acceptable, but the subtitle 'NEUSE RIVER BASIN HYDROLOGIC MODEL / TECHNICAL REVIEW COMMITTEE / MEETING' and the agenda item headings are all rendered as plain paragraph text rather than using any heading hierarchy. While the PDF doesn't have explicit heading levels either, the agenda items could benefit from structured headings. However, this is a minor structural choice rather than a misrepresentation.",
+      "severity": "minor",
+      "evidence": "All agenda items (Review Agenda, Project Finance Update, Discuss Agricultural Data Development, etc.) are rendered as <p> tags in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Bullet points in the PDF are rendered with dashes (-) in the HTML instead of actual bullet list elements (<ul><li>). While the content is preserved, the formatting differs from the PDF which uses bullet (\u2022) characters.",
+      "severity": "minor",
+      "evidence": "PDF uses bullet points (\u2022) for sub-items; HTML uses '- ' dash prefixes within <p> tags with <br /> line breaks.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 20.44,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 396,
+    "content_input_tokens": 4467,
+    "content_output_tokens": 475,
+    "timestamp": "2026-04-16T02:50:47.742077",
+    "auditor_version": "1.0.0"
+  }
+}

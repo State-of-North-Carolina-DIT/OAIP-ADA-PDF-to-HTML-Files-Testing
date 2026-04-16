@@ -1,0 +1,62 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC state logo and Energy, Mineral & Land Resources logo/branding image present in the PDF header is missing from the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows an NC state logo with tree graphic and 'Energy, Mineral & Land Resources' text in the upper left corner. HTML page 1 has no such image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF memo header has a two-column layout with the NC logo on the left and official names/titles on the right. The HTML renders these as a single left-aligned column at the top.",
+      "severity": "minor",
+      "evidence": "PDF: Logo on left, 'PAT McCRORY Governor / DONALD R. VAN DER VAART Secretary / TRACY DAVIS Director' right-aligned. HTML: These names are left-aligned in a single column with no logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The 'MEMORANDUM' title is underlined in the PDF but appears without underline in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: 'MEMORANDUM' is centered and underlined. HTML: 'MEMORANDUM' appears as a large bold heading without underline decoration.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The outline items in the report structure list use Roman numerals with different formatting. In the PDF they are indented and formatted as a structured list; in the HTML they appear as a simpler list.",
+      "severity": "minor",
+      "evidence": "PDF shows indented Roman numeral list items (I through IV) with clear tabular alignment. HTML shows them as a simple bulleted-style list.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse content fidelity response as JSON",
+      "severity": "major",
+      "evidence": "```json\n{\n  \"findings\": [\n    {\n      \"check_id\": \"C5\",\n      \"severity\": \"minor\",\n      \"description\": \"The document title 'MEMORANDUM' is rendered as h1, which is acceptable, but the report outline in the opening section uses an ordered list with Roman numerals that duplicates the section headings. The Roman numeral sections (I through IV) are rendered as h2, which is reasonable. However, the Attachments section lists items I through VI, which in the PDF are sub-items under Section IV but in t",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 42.79,
+    "page_count": 5,
+    "visual_input_tokens": 13489,
+    "visual_output_tokens": 832,
+    "content_input_tokens": 14552,
+    "content_output_tokens": 850,
+    "timestamp": "2026-04-16T02:52:54.371962",
+    "auditor_version": "1.0.0"
+  }
+}
