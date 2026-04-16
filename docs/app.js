@@ -454,83 +454,6 @@ function truncateBase64(html) {
   });
 }
 
-// Extract body-only content from full HTML string (strips head, html wrapper, footer)
-function extractBody(htmlStr) {
-  const bodyMatch = htmlStr.match(/<body[^>]*>([\s\S]*)<\/body>/i);
-  let body = bodyMatch ? bodyMatch[1] : htmlStr;
-  body = body.replace(/<footer[\s\S]*?<\/footer>/gi, '');
-  return body.trim();
-}
-
-// Lightweight HTML syntax highlighting — builds DOM nodes safely (no innerHTML)
-function highlightHtmlToNodes(code) {
-  const frag = document.createDocumentFragment();
-  const TOKEN_RE = /<!--[\s\S]*?-->|<\/?[a-zA-Z][\s\S]*?\/?>|[^<]+|</g;
-  let match;
-  while ((match = TOKEN_RE.exec(code)) !== null) {
-    const tok = match[0];
-    if (tok.startsWith('<!--')) {
-      const span = document.createElement('span');
-      span.className = 'hl-comment';
-      span.textContent = tok;
-      frag.appendChild(span);
-    } else if (tok.startsWith('<')) {
-      const tagMatch = tok.match(/^(<\/?)([a-zA-Z][\w-]*)([\s\S]*?)(\/?>)$/);
-      if (tagMatch) {
-        const [, open, tagName, attrStr, close] = tagMatch;
-        const bOpen = document.createElement('span');
-        bOpen.className = 'hl-bracket';
-        bOpen.textContent = open;
-        frag.appendChild(bOpen);
-        const nameSpan = document.createElement('span');
-        nameSpan.className = 'hl-tag';
-        nameSpan.textContent = tagName;
-        frag.appendChild(nameSpan);
-        if (attrStr.trim()) {
-          const attrRegex = /([\w-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|(\S+))|([\w-]+)/g;
-          let attrMatch, lastIdx = 0;
-          while ((attrMatch = attrRegex.exec(attrStr)) !== null) {
-            if (attrMatch.index > lastIdx) {
-              frag.appendChild(document.createTextNode(attrStr.slice(lastIdx, attrMatch.index)));
-            }
-            lastIdx = attrMatch.index + attrMatch[0].length;
-            if (attrMatch[1]) {
-              const an = document.createElement('span');
-              an.className = 'hl-attr';
-              an.textContent = attrMatch[1];
-              frag.appendChild(an);
-              frag.appendChild(document.createTextNode('='));
-              const val = attrMatch[2] ?? attrMatch[3] ?? attrMatch[4] ?? '';
-              const q = attrMatch[2] !== undefined ? '"' : attrMatch[3] !== undefined ? "'" : '';
-              const vs = document.createElement('span');
-              vs.className = 'hl-val';
-              vs.textContent = q + val + q;
-              frag.appendChild(vs);
-            } else if (attrMatch[5]) {
-              const an = document.createElement('span');
-              an.className = 'hl-attr';
-              an.textContent = attrMatch[5];
-              frag.appendChild(an);
-            }
-          }
-          if (lastIdx < attrStr.length) {
-            frag.appendChild(document.createTextNode(attrStr.slice(lastIdx)));
-          }
-        }
-        const bClose = document.createElement('span');
-        bClose.className = 'hl-bracket';
-        bClose.textContent = close;
-        frag.appendChild(bClose);
-      } else {
-        frag.appendChild(document.createTextNode(tok));
-      }
-    } else {
-      frag.appendChild(document.createTextNode(tok));
-    }
-  }
-  return frag;
-}
-
 function toggleHtmlRaw(containerId, toggleBtn) {
   const panel = htmlPanels[containerId];
   if (!panel || !panel.html) return;
@@ -543,7 +466,7 @@ function toggleHtmlRaw(containerId, toggleBtn) {
       const doc = current.contentDocument.documentElement;
       const maxScroll = doc.scrollHeight - doc.clientHeight;
       scrollRatio = maxScroll > 0 ? doc.scrollTop / maxScroll : 0;
-    } else if (current.classList?.contains('raw-html')) {
+    } else if (current.tagName === 'PRE') {
       const maxScroll = current.scrollHeight - current.clientHeight;
       scrollRatio = maxScroll > 0 ? current.scrollTop / maxScroll : 0;
     }
@@ -554,13 +477,9 @@ function toggleHtmlRaw(containerId, toggleBtn) {
   container.replaceChildren();
 
   if (panel.raw) {
-    const bodyOnly = extractBody(panel.html);
-    const truncated = truncateBase64(bodyOnly);
     const pre = document.createElement('pre');
     pre.className = 'raw-html';
-    const codeEl = document.createElement('code');
-    codeEl.appendChild(highlightHtmlToNodes(truncated));
-    pre.appendChild(codeEl);
+    pre.textContent = truncateBase64(panel.html);
     container.appendChild(pre);
     requestAnimationFrame(() => {
       const maxScroll = pre.scrollHeight - pre.clientHeight;

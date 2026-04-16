@@ -204,13 +204,6 @@ input{font-family:var(--font)}
   background:var(--bg-0);white-space:pre-wrap;word-break:break-all;
   line-height:1.5;
 }
-.raw-html code{font-family:inherit;font-size:inherit}
-/* HTML syntax highlighting */
-.hl-bracket{color:#6d8da6}
-.hl-tag{color:#3892E1;font-weight:600}
-.hl-attr{color:#d4a72c}
-.hl-val{color:#2ea043}
-.hl-comment{color:#6d8da6;font-style:italic}
 .html-toggle{
   padding:1px 6px;border:1px solid var(--border);border-radius:var(--radius);
   background:transparent;color:var(--text-3);font-size:10px;font-weight:600;
