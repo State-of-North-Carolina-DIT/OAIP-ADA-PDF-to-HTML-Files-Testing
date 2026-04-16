@@ -446,28 +446,32 @@ function renderHtmlPanel(containerId, html, emptyMsg) {
 }
 
 function truncateBase64(html) {
-  // Replace base64 data URIs with a short preview + char count.
-  // Uses split/rejoin to avoid regex stack overflow on huge base64 strings.
-  const parts = html.split(/data:image\/[^;]+;base64,/);
-  if (parts.length === 1) return html;
-  const marker = /^data:(image\/[^;]+);base64,/;
-  let result = parts[0];
-  let offset = parts[0].length;
-  for (let i = 1; i < parts.length; i++) {
-    const headerStr = html.slice(offset).match(marker);
-    const mime = headerStr ? headerStr[1] : 'image/unknown';
-    const header = headerStr ? headerStr[0] : 'data:image/unknown;base64,';
-    offset += header.length;
-    const b64 = parts[i];
-    offset += b64.length;
-    if (b64.length >= 80) {
-      const preview = b64.slice(0, 32);
-      const kb = (b64.length * 0.75 / 1024).toFixed(1);
-      result += `data:${mime};base64,${preview}...[base64 truncated — ${kb} KB]`;
+  // Iteratively find data URI headers and truncate the base64 payload.
+  // Avoids regex .replace() which overflows the stack on huge base64 strings.
+  const headerRe = /data:image\/[^;]+;base64,/g;
+  const b64Chars = /^[A-Za-z0-9+/=]/;
+  let result = '';
+  let lastEnd = 0;
+  let match;
+  while ((match = headerRe.exec(html)) !== null) {
+    const headerStart = match.index;
+    const dataStart = headerStart + match[0].length;
+    // Walk forward to find end of base64 characters
+    let end = dataStart;
+    while (end < html.length && b64Chars.test(html[end])) end++;
+    const b64Len = end - dataStart;
+    result += html.slice(lastEnd, dataStart); // everything before the base64 payload
+    if (b64Len >= 80) {
+      const preview = html.slice(dataStart, dataStart + 32);
+      const kb = (b64Len * 0.75 / 1024).toFixed(1);
+      result += `${preview}...[base64 truncated — ${kb} KB]`;
     } else {
-      result += header + b64;
+      result += html.slice(dataStart, end);
     }
+    lastEnd = end;
+    headerRe.lastIndex = end; // resume search after the base64
   }
+  result += html.slice(lastEnd);
   return result;
 }
 
