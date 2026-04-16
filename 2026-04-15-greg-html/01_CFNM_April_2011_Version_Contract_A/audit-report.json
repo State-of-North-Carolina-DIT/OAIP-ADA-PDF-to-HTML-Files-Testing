@@ -1,0 +1,150 @@
+{
+  "document_id": "01_CFNM_April_2011_Version_Contract_A",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "NCDENR logo/seal image is missing from the HTML version of the cover letter",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NCDENR logo/seal at the top of the page. HTML page 2 does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "NC E-Procurement logo rendered differently",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows the NC E-Procurement logo as a graphical image. HTML page 2 shows a stylized but different rendering of similar branding text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Ship To / Bill To side-by-side layout collapsed",
+      "severity": "major",
+      "evidence": "PDF page 3 shows Ship To and Bill To information in a side-by-side two-column layout. HTML page 4 shows them stacked vertically as separate sections.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated content between requisition and purchase order sections",
+      "severity": "minor",
+      "evidence": "The HTML renders both the requisition (PR10689541) and purchase order (EP4799093) as continuous content with repeated approval tables, item tables, and eRequisition comments appearing multiple times in sequence.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature image missing from RFQ execution section",
+      "severity": "minor",
+      "evidence": "PDF page 11 shows handwritten signatures for both the bidder (Brian McCrodden) and DENR acceptance. HTML page 12 shows '[Signature]' placeholder text instead.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature image missing from Attachment A certification",
+      "severity": "minor",
+      "evidence": "PDF page 31 shows a handwritten signature from Brian McCrodden. HTML shows '[Signature]' placeholder text.",
+      "page": 31,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The RFQ execution/bidder information table is restructured into a confusing multi-column format that does not match the original PDF layout, with cells duplicated across columns",
+      "severity": "major",
+      "evidence": "The PDF page 6 has a clear form layout with BIDDER, STREET ADDRESS, CITY & STATE & ZIP, etc. as labeled fields. The HTML renders this as a 3-column table with 'BIDDER: HydroLogics, Inc.' repeated three times across columns, and 'FAX NUMBER: 919-831-1295' duplicated across two columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 elements used in the document. The HTML has at least three h1 headings instead of a single document title h1",
+      "severity": "major",
+      "evidence": "HTML contains h1 for 'PR10689541: 3808 Upgrade to Cape Fear & Neuse River Digital Models' and h1 for 'EP4799093: 3808 Upgrade to Cape Fear & Neuse River Digital Models' - these should be h2 or lower since there should be only one h1.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Purchase Order line items in the FURNISH AND DELIVER table show different descriptions from the PDF",
+      "severity": "major",
+      "evidence": "PDF page 10 shows Item 1 as 'Update Cape Fear River Basin and Neuse River Basin OASIS Model Inflow Data Sets' and Item 2 as 'Upgrade Cape Fear River Basin and Neuse River Basin OASIS Models'. HTML matches these correctly in the FURNISH AND DELIVER table, but the purchase order tables (PR and EP) use the simplified 'Update Cape Fear and Neuse River Basin Models' for both items, which matches the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The entire PR10689541 requisition content appears to be duplicated - once from the web page rendering (pages 2-3) and the content is also represented in the EP4799093 purchase order (pages 4-5), but the HTML presents both fully which matches the PDF. However, the bidder information table has content duplicated within its cells.",
+      "severity": "major",
+      "evidence": "The bidder table has 'BIDDER: HydroLogics, Inc.' appearing in 3 cells of the same row, and 'FAX NUMBER: 919-831-1295' appearing in 2 cells of the same row, which is not how the PDF form is structured.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The title of person signing on the RFQ front page is listed as 'Vice President' in both PDF and HTML, but the HTML omits the title designation from the Acceptance of Quote section",
+      "severity": "minor",
+      "evidence": "PDF page 6 ACCEPTANCE OF QUOTE section shows the contract was 'accepted and awarded this 11 day of APRIL, 2011'. The HTML correctly reproduces this.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Payment Schedule item 2 references 'Task 3' but in the PDF it also references 'Task 3', and item 3 references 'Task 6' - both match the PDF which itself appears to have inconsistent task numbering",
+      "severity": "minor",
+      "evidence": "PDF page 9: Payment Schedule item 2a says 'Task 3' and item 3a says 'Task 6'. HTML matches this exactly. This is a source document issue, not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 6,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 548.03,
+    "page_count": 22,
+    "visual_input_tokens": 68093,
+    "visual_output_tokens": 1485,
+    "content_input_tokens": 80916,
+    "content_output_tokens": 1155,
+    "timestamp": "2026-04-16T00:54:15.039609",
+    "auditor_version": "1.0.0"
+  }
+}

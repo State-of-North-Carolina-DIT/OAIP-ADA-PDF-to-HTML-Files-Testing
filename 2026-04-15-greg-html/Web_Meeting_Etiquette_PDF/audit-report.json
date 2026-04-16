@@ -1,0 +1,70 @@
+{
+  "document_id": "Web_Meeting_Etiquette_PDF",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C8",
+      "description": "The word 'Everyone' in the asterisked note loses its bold formatting in the HTML, which slightly reduces its visual emphasis compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: 'chat with **Everyone**' (bold). HTML: 'chat with Everyone' (no bold/strong tag).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There are two nested <main> elements in the HTML, which is structurally unusual but does not affect content fidelity or heading hierarchy.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main><main>...</main></main></body>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.45,
+    "page_count": 2,
+    "visual_input_tokens": 6393,
+    "visual_output_tokens": 269,
+    "content_input_tokens": 6841,
+    "content_output_tokens": 362,
+    "timestamp": "2026-04-16T00:53:19.591927",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "document_id": "01_NRHM_AgIrrig_Data_MoffattNichol_Draft_Report_050709",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Cover page logo (NCDENR) and Moffatt & Nichol logo are missing from the HTML rendering",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows NCDENR logo at top-left and Moffatt & Nichol logo at bottom-center. HTML page 1 has no logos/images.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Table of Contents in the PDF (page 3) uses dotted leaders with page numbers aligned to the right margin. The HTML version lacks page numbers entirely in the TOC.",
+      "severity": "major",
+      "evidence": "PDF TOC shows entries like 'Introduction...1', 'Agriculture...1' etc. with page numbers. HTML TOC on page 2 shows hyperlinked entries without page numbers.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "HTML combines List of Tables and List of Figures on the same page as the Table of Contents, while PDF separates them across pages 3 and 4",
+      "severity": "minor",
+      "evidence": "PDF has List of Figures on a separate page (page 4). HTML has it immediately following List of Tables on the same scrolling page.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "NCDENR header logo missing from all PDF pages in HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF pages 3-21 all show NCDENR logo in header. HTML has no header logos on any page.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Section numbering changed between PDF and HTML. PDF uses numbering starting at 1 (1. Agriculture, 2. Municipal and Industrial Withdrawals, etc.) while HTML uses different numbering (2. Agriculture, 3. Municipal and Industrial Withdrawals, etc.)",
+      "severity": "major",
+      "evidence": "PDF section '1. Agriculture' with subsections '1.1. Data Sources', '1.2. Methods'. HTML shows '1. Agriculture' in body text but TOC shows '2. Agriculture'. The body text sections appear numbered differently from the TOC.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 (Neuse River Basin map) is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 17 shows a detailed map of the Neuse River Basin with county boundaries, rivers, and legend. HTML shows no corresponding image.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 2 (Rain Gages map) is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 18 shows a map of rain gages locations. HTML shows no corresponding image.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 3 (Distribution of Agriculture map) is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 19 shows a detailed agricultural distribution map with percentages and subbasin numbers. HTML shows no corresponding image.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 4 (Water withdrawals map) is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 20 shows a map of water withdrawal locations. HTML shows no corresponding image.",
+      "page": 20,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 5 (Wastewater discharges map) is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 21 shows a map of wastewater discharge locations. HTML shows no corresponding image.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 5 (Summary of Wastewater Discharges) in the HTML splits the 'Current?' column date ranges differently than the PDF, which combines start and end dates in a single field",
+      "severity": "minor",
+      "evidence": "PDF shows 'Current?' column with entries like '01/1994-06/2008'. HTML renders these similarly but formatting varies slightly in some cells.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has multiple h1 elements and the heading hierarchy does not match the PDF's numbering structure. The PDF uses '1. Agriculture', '2. Municipal and Industrial Withdrawals', '3. Municipal and Industrial Discharges', '4. References' as its main numbered sections after an unnumbered Introduction. The HTML renders Agriculture, Municipal and Industrial Withdrawals, Municipal and Industrial Discharges, and References all as h1 tags, and the Introduction is also h1. The Table of Contents navigation uses different numbering (2. Agriculture, 3. Municipal..., 4. Municipal..., 5. References) that doesn't match the body section numbering (1. Agriculture, 2. Municipal..., 3. Municipal..., 4. References).",
+      "severity": "major",
+      "evidence": "PDF body text: '1. Agriculture', '2. Municipal and Industrial Withdrawals', '3. Municipal and Industrial Discharges', '4. References'. HTML TOC nav: '2. Agriculture', '3. Municipal and Industrial Withdrawals', '4. Municipal and Industrial Discharges', '5. References'. HTML body headings use '1. Agriculture', '2. Municipal...', '3. Municipal...', '4. References' but all as h1 elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The TOC numbering in the HTML navigation is inconsistent with the body headings and with the PDF. The TOC lists sections as 2-5 while the body sections are numbered 1-4, matching the PDF.",
+      "severity": "major",
+      "evidence": "HTML TOC: '<li><a href=\"#1-agriculture\">2. Agriculture</a></li>' but body heading: '<h1 id=\"1-agriculture\">1. Agriculture</h1>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In Table 5 (Summary of Wastewater Discharges), several historical entries are missing the County column data that appears in the PDF.",
+      "severity": "major",
+      "evidence": "PDF shows counties for historical permits, e.g., NC0003859 is in the Orange county area (subbasin 03-04-01), NC0020541 in Lenoir area (subbasin 03-04-05). The HTML leaves the County cells empty for these historical rows.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In Table 5, some 'Current?' date ranges appear truncated in the PDF representation (e.g., '01/1994-11/2' should be '01/1994-11/2006'). The HTML correctly expands some of these but it's inconsistent with the PDF's formatting.",
+      "severity": "minor",
+      "evidence": "PDF shows '01/1994-11/2' for Riverplace II LLC; HTML shows '01/1994-11/2006'. The HTML appears to have corrected truncation from the PDF, which is acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Introduction section in the PDF does not have a numbered section heading - it's simply 'Introduction'. The HTML preserves this correctly but the TOC lists it as item '1. Introduction' which matches the PDF TOC.",
+      "severity": "minor",
+      "evidence": "This is actually correct - no issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains duplicate nested <main> elements, which is a structural issue but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML has '<main>' wrapping the whole document, then another '<main>' inside it after the header.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The section numbering system changes between the PDF's TOC and the HTML TOC. The PDF TOC lists sections as 1-5 (Introduction=1, Agriculture=2, etc.) but the body text of the PDF numbers them differently (Agriculture=1, Municipal Withdrawals=2, etc.). The HTML TOC uses 1-5 numbering but the body uses 1-4, matching the PDF body.",
+      "severity": "minor",
+      "evidence": "PDF TOC: '1. Introduction...2. Agriculture...3. Municipal and Industrial Withdrawals...4. Municipal and Industrial Discharges...5. References'. PDF body: 'Introduction' (unnumbered), '1. Agriculture', '2. Municipal and Industrial Withdrawals', '3. Municipal and Industrial Discharges', '4. References'. This inconsistency exists in the source PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some image alt texts are generic rather than descriptive of specific map content, though they do identify the general subject matter.",
+      "severity": "minor",
+      "evidence": "Alt text 'Table 3 page 1 background' and 'Table 3 page 2 background' and 'Table 4 background' are not very descriptive. However, these appear to be background page images rather than meaningful figures.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 7,
+  "major_count": 6,
+  "minor_count": 10,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 683.14,
+    "page_count": 24,
+    "visual_input_tokens": 74945,
+    "visual_output_tokens": 2064,
+    "content_input_tokens": 77068,
+    "content_output_tokens": 1482,
+    "timestamp": "2026-04-16T00:57:28.252672",
+    "auditor_version": "1.0.0"
+  }
+}

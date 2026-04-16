@@ -1,0 +1,142 @@
+{
+  "document_id": "2021-white-lake-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Cover page image/title page layout is not rendered as a distinct cover page in HTML. The PDF has a standalone title page with centered title and author information, while HTML renders it as inline header text.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a centered cover page with '2021 White Lake' and 'Aquatic Vegetation Survey' as large centered titles with significant whitespace. HTML renders this as a header block at the top of the content flow.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table 1 and Table 2 in the PDF have color-coded cells (red and green highlighting) in the 2021 column to indicate increases/decreases. The HTML tables preserve this color coding.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show colored cells in the 2021 column - this is consistent.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Figure captions and labels appear duplicated in the HTML rendering. Figures are shown twice - once in the flowing web content and once separately, creating duplicate content that disrupts reading order.",
+      "severity": "major",
+      "evidence": "For example, Figure 1 caption 'The 202 predetermined sample points in White Lake' appears in the web flow, then the same figure and caption appear again. Similarly for Figures 2-13, captions and images appear to be duplicated in the HTML.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Figure 4 caption text and labels 'A', '2021', 'A' appear as disconnected text fragments between images in the HTML, disrupting reading flow.",
+      "severity": "major",
+      "evidence": "PDF shows Figure 4 as a composite image with panels A, B, C labeled inline. HTML breaks these out with orphaned text labels 'A', '2021', 'A' appearing as separate lines between image elements.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Figure 9 has an orphaned 'A' label appearing as standalone text in the HTML between figure renderings.",
+      "severity": "minor",
+      "evidence": "PDF Figure 9 is a single map image. HTML shows an 'A' text label appearing between duplicate renderings of the figure.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Figure 10 has an orphaned '2020' label appearing as standalone text in the HTML between figure renderings.",
+      "severity": "minor",
+      "evidence": "PDF Figure 10 is a single map. HTML shows '2020' text appearing as a separate line near the figure content.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content duplication: stray text 'A' and '2021' from figure labels are repeated as standalone paragraphs in the HTML body, and '2020' appears as a standalone paragraph near Figure 10/11 area, duplicating figure label fragments.",
+      "severity": "major",
+      "evidence": "HTML contains standalone '<p>A</p>' after Figure 4 caption, another '<p>A</p>' after Figure 9, and '<p>2020</p>' near Figure 11. These are artifacts from PDF page labels ('A', '2021', '2020') that annotated multi-panel figures and should not appear as separate paragraphs.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create broken document structure. There is a <main> inside the outer <main>, which is invalid HTML structure.",
+      "severity": "major",
+      "evidence": "HTML has '<main>' wrapping the entire body, then a '<header>' block, then another '<main>' element inside for the content body.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor species name discrepancy: the PDF text on page 3 refers to 'Myriophyllum tentellum' (likely a typo in the original), while the HTML reproduces this faithfully. However, in the same paragraph the PDF also says 'slender spikerush' while the report body later uses 'Proliferating spikerush' - this exists in the source PDF and is not a conversion error.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'dwarf milfoil (Myriophyllum tentellum)' in one place and 'Myriophyllum tenellum' in another. This inconsistency exists in the source PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "One image (tables page) has an empty alt text attribute, providing no description.",
+      "severity": "minor",
+      "evidence": "HTML: '<img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\">' for the tables image on page 8.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "A small extraneous image tag appears near Figure 10 with empty alt text, likely an artifact.",
+      "severity": "minor",
+      "evidence": "HTML: '<figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 43.2pt; height: auto;\"></figure>' appears between Figure 10 and its caption.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 896.69,
+    "page_count": 19,
+    "visual_input_tokens": 49391,
+    "visual_output_tokens": 1475,
+    "content_input_tokens": 39782,
+    "content_output_tokens": 885,
+    "timestamp": "2026-04-16T01:04:37.392317",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "document_id": "009_outfall_COALASHSUMMARY4March_2014",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table header structure is altered. The PDF shows a compact multi-row header with Report #, Lab PQL, Units/Hg 1631, and date columns (2/14/2014 AC04986/AC04987/AC04993, 2/17/2014 AC05085/AC05086/AC05104, etc.) neatly aligned. The HTML splits these into separate lines within cells and the column alignment differs, making it harder to associate sample IDs with dates.",
+      "severity": "major",
+      "evidence": "PDF header has compact multi-line cells with Report #/Dissolved columns clearly under each date. HTML header has 'Report # Dissolved Units/Hg 1631' broken across multiple lines with different visual grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The qualifier 'U' flags that appear next to values in the PDF table (e.g., '0.4 U', '0.50 U', '2.0 U') are placed in separate qualifier columns in the PDF but appear as separate columns in the HTML as well, however some qualifier column headers show '1/14/2014 Qualifier' etc. which differ from the PDF's implicit qualifier column structure.",
+      "severity": "minor",
+      "evidence": "PDF shows qualifier U in implicit adjacent sub-columns under each date. HTML labels them explicitly as '1/14/2014 Qualifier', '2/17/2014 Qualifier', etc.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The compact, dense tabular layout of the PDF is significantly expanded vertically in the HTML. The PDF fits all data (both total and dissolved metals sections) on a single page with dense row spacing. The HTML stretches this into a very long scrolling layout with excessive whitespace between rows.",
+      "severity": "major",
+      "evidence": "PDF: entire table with ~70+ rows fits on one page. HTML: the same content is spread across a very long vertical scroll with large gaps between row groups.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Basis for Standard' column values in the HTML appear truncated or wrapped differently. For example, 'Human Health' appears fully in PDF but is broken across lines in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Human Health' on one line; HTML wraps it as 'Human Health' across multiple lines in a narrow column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 'Applicable Water Quality Standard' column for dissolved metals rows is misrepresented. The PDF shows 'no NC standards for dissolved metals' as a note spanning the Al-Dissolved and As-Dissolved rows, but the HTML duplicates this text into both the 'Applicable Water Quality Standard' and 'Basis for Standard' columns for both rows.",
+      "severity": "major",
+      "evidence": "PDF: 'no NC standards for dissolved metals' appears once as a note. HTML: Al-Dissolved Aluminum row has 'no NC standards for' in both Standard and Basis columns; As Dissolved Arsenic row has 'dissolved metals' in both Standard and Basis columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h3 for 'Sampling Dates and Sample ID' which is a sub-header in the PDF document. While structurally reasonable, the heading hierarchy h1 > h2 > h3 is acceptable. No significant issue.",
+      "severity": "minor",
+      "evidence": "PDF has 'Sampling Dates and Sample ID' as a sub-header line. HTML uses <h3>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 51.61,
+    "page_count": 1,
+    "visual_input_tokens": 3567,
+    "visual_output_tokens": 824,
+    "content_input_tokens": 11467,
+    "content_output_tokens": 493,
+    "timestamp": "2026-04-16T00:45:58.397208",
+    "auditor_version": "1.0.0"
+  }
+}

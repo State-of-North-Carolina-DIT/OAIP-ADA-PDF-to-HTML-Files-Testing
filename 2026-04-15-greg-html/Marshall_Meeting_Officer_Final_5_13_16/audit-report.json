@@ -1,0 +1,86 @@
+{
+  "document_id": "Marshall_Meeting_Officer_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C4",
+      "description": "The HTML adds internal anchor links in the table of contents that do not exist in the source PDF. The PDF simply lists sections I-IV as plain text without hyperlinks.",
+      "severity": "minor",
+      "evidence": "HTML contains <a href=\"#history-background\">, <a href=\"#march-29-2016-public-meeting-and-oral-comments-summary\">, etc. These are navigational aids added by the converter, not fabricated external links.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h1 for 'MEMORANDUM' and h2 for the four main sections (I-IV). The PDF uses 'MEMORANDUM' as a centered title and the sections as bold headings. This is a reasonable structural interpretation, though the document title might more naturally be the subject line rather than 'MEMORANDUM'.",
+      "severity": "minor",
+      "evidence": "HTML: <h1 style=\"text-align: center; text-decoration: underline;\">MEMORANDUM</h1> followed by <h2> for sections I-IV.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements - there is a <main> in the body wrapper and another <main> element inside it, which is a structural duplication artifact but does not duplicate content.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main> wrapping everything, then inside the header section another <main> tag appears before section I.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The section III heading text differs slightly between the PDF and HTML. The PDF uses 'Written Public Comment Summary' on page 4 while the table of contents on page 1 uses 'Written Public Comments Summary'. The HTML uses both forms in different locations, matching the PDF's inconsistency.",
+      "severity": "minor",
+      "evidence": "PDF page 4: 'III. Written Public Comment Summary'; PDF page 1 TOC: 'III. Written Public Comments Summary'. HTML h2: 'III. Written Public Comment Summary'; HTML TOC: 'Written Public Comments Summary'. This mirrors the PDF's own inconsistency.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 106.93,
+    "page_count": 6,
+    "visual_input_tokens": 17063,
+    "visual_output_tokens": 342,
+    "content_input_tokens": 18557,
+    "content_output_tokens": 780,
+    "timestamp": "2026-04-16T00:51:20.200879",
+    "auditor_version": "1.0.0"
+  }
+}

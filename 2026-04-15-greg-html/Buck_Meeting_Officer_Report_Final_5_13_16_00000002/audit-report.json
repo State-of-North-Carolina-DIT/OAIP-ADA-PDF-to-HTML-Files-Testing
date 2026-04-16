@@ -1,0 +1,86 @@
+{
+  "document_id": "Buck_Meeting_Officer_Report_Final_5_13_16_00000002",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C4",
+      "description": "The HTML adds internal anchor links in the table of contents that do not exist in the PDF. The PDF has a simple numbered list without hyperlinks.",
+      "severity": "minor",
+      "evidence": "HTML contains <a href=\"#history-background\">History/Background</a> and similar anchor links in the table of contents <nav> element. The PDF has no hyperlinks in its outline list.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two nested <main> elements - one in the overall body structure and another wrapping the content sections. This is a structural HTML issue but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML has <main> in body, then another <main> after </header>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header/footer content from the PDF (state address, phone number, official names) appears in the HTML header area. This is acceptable consolidation of repeated page elements, but the footer image tag at the bottom is an artifact.",
+      "severity": "minor",
+      "evidence": "HTML footer contains <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 598.3pt;\"> which appears to be the page footer bar/line repeated from page footers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor typo in the PDF ('requests de that Duke not pass on their cost') is faithfully preserved in the HTML, which is correct behavior. No conversion error.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: 'A majority of the comments were requests de that Duke not pass on their cost to the consumers.'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 138.87,
+    "page_count": 6,
+    "visual_input_tokens": 17063,
+    "visual_output_tokens": 380,
+    "content_input_tokens": 18457,
+    "content_output_tokens": 652,
+    "timestamp": "2026-04-16T00:49:19.203894",
+    "auditor_version": "1.0.0"
+  }
+}

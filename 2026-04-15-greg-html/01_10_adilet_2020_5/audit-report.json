@@ -1,0 +1,198 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'mark piazza | manager, pipeline compliance and r&d colonial pipeline company o. ...' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the letter is missing in the HTML version",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the official North Carolina state seal/emblem at the top center of the letterhead. The HTML version omits this image entirely.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina DEQ logo at the bottom of page 1 is missing in the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 1 has the DEQ logo at the bottom left. HTML omits it.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Social media icons from Colonial Pipeline email signature are missing in HTML",
+      "severity": "minor",
+      "evidence": "PDF pages 5-8 show LinkedIn, Facebook, Twitter, and Instagram social media icons in email signatures. HTML omits these decorative icons.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Colonial Pipeline Company logo is missing in the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF pages 15-16 show the Colonial Pipeline Company logo (circle with CD) at the top of the letterhead. HTML omits this logo.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image of David Miller is missing in the HTML",
+      "severity": "major",
+      "evidence": "PDF page 3 shows a handwritten signature of David Miller. The HTML version on page 4 (equivalent) does not show a signature image.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image of Mark Piazza is missing in the HTML",
+      "severity": "major",
+      "evidence": "PDF page 16 shows a handwritten signature of Mark Piazza. The HTML equivalent omits the signature image.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Rep. Dennis Riddell's state seal image is missing",
+      "severity": "major",
+      "evidence": "PDF page 12 shows a small North Carolina state seal near Rep. Riddell's contact information. HTML omits it.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Exhibit 1A quarry site plan map is present in PDF but appears only as a very low-quality reproduction in HTML",
+      "severity": "major",
+      "evidence": "PDF page 21 shows Exhibit 1A - a detailed quarry site plan. The HTML version references Exhibit 1A and 1B labels but the actual map images need verification for legibility.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The email thread reading order may cause confusion with repeated header/footer content between sections",
+      "severity": "major",
+      "evidence": "The email chain spanning pages 5-12 contains multiple forwarded/replied emails. The HTML version consolidates these but the Colonial Pipeline confidentiality notices appear as repeated content between logical sections.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italicized text in Colonial Pipeline's letter loses italic formatting in some places",
+      "severity": "minor",
+      "evidence": "PDF pages 9-10 use italic text for emphasis on key terms and conditions (e.g., 'approval of the permit would require that Alamance Aggregates construct the alternate Emergency Access roadway...'). The HTML version renders some of these in italic but should be verified for consistency.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No h1 element exists in the HTML. The document lacks a clear top-level heading. Multiple h2 and h3 elements are used but without a proper h1 document title.",
+      "severity": "major",
+      "evidence": "The HTML has no h1 tag. The first headings encountered are h2 elements like 'Wehner, Judy' and 'Colonial Pipeline Company'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The formal letter date is incorrectly stated as 'August 7, 2020' in the HTML body text, but the source PDF page 1 clearly shows 'August 7, 2020'. However, the email from Brian Wrenn references the decision date as 'this Friday, August 7th' which is consistent. No error here actually - retracting this finding.",
+      "severity": "minor",
+      "evidence": "N/A - not an actual finding upon review.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The email address 'janelecahicks@gmail.com' appears in the HTML CC list for the August 5 2:39 PM email, matching the PDF which shows 'janeleahicks@gmail.com'. The HTML has a typo 'janelecahicks' vs 'janeleahicks' in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 4: 'Jane Lea Hicks <janeleahicks@gmail.com>'. HTML: 'Jane Lea Hicks <janelecahicks@gmail.com>'. The 'a' before 'hicks' is missing, replaced with 'c'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The HTML contains no img tags despite the PDF having site plan diagrams on pages 16 and 17 (Exhibits 1A and 1B). These images are completely absent from the HTML.",
+      "severity": "minor",
+      "evidence": "PDF pages 16-17 contain detailed quarry site plan maps. The HTML has section headings referencing 'Exhibit 1A' and 'Exhibit 1B' but no <img> tags for these diagrams.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The site plan images/diagrams from PDF pages 16 and 17 (Exhibits 1A and 1B) are missing from the HTML. Only the captions are present, not the actual map content.",
+      "severity": "major",
+      "evidence": "PDF pages 16-17 show detailed quarry site plans with topographic details, property boundaries, pipeline locations, etc. HTML only shows the caption text 'Exhibit 1A. Location of the Proposed Emergency Access Route Intersecting Quakenbush Road' and 'Exhibit 1B...' without the images.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Colonial Pipeline confidentiality notice appears twice at the end of the email chain section in the HTML, matching the PDF which also has it twice (pages 7-8). This is not a conversion error but a faithful reproduction of the source.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML contain two instances of the Colonial Pipeline Notice disclaimer.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 9,
+  "minor_count": 10,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 544.28,
+    "page_count": 17,
+    "visual_input_tokens": 44264,
+    "visual_output_tokens": 1618,
+    "content_input_tokens": 38878,
+    "content_output_tokens": 1052,
+    "timestamp": "2026-04-16T00:54:11.121221",
+    "auditor_version": "1.0.0"
+  }
+}

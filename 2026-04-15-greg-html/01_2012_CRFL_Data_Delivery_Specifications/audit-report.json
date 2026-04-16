@@ -1,0 +1,110 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse visual fidelity response as JSON",
+      "severity": "major",
+      "evidence": "```json\n{\n  \"findings\": [\n    {\n      \"check_id\": \"V3\",\n      \"severity\": \"critical\",\n      \"description\": \"The data relationship diagram (flowchart) in Appendix B showing the hierarchical relationships between record types is missing from the HTML conversion.\",\n      \"evidence\": \"PDF page 7 contains a flowchart diagram showing Environmental Data Record Type 1, Gear Data Record Type 7, Replicate Data Record Type 2, Species Data Record Type 3, Individual Data Record Type 4, Tag Recapture Data Rec",
+      "page": null,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The hierarchical diagram from Appendix B showing the relationships between record types is missing. The HTML replaces the visual diagram with a flat unordered list, losing the visual hierarchy and relationship arrows.",
+      "severity": "major",
+      "evidence": "PDF page 4 contains a diagram showing Environmental Data (Record Type 1) connected to Gear Data (Record Type 7), then flowing down to Replicate Data (Record Type 2), Species Data (Record Type 3), Individual Data (Record Type 4) with branches to Tag Recapture Data (Record Type 9) and Age Data (Record Type 5). HTML replaces this with a simple <ul> list.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Key Information Fields table, the SPECIES CODE field shows 'Position to the first' as '11- 12' in the HTML, but the PDF shows '11- 20' (implied by the field being 10 bytes starting at position 11). The PDF page 5 table actually shows position '11-20' for the 10-byte SPECIES CODE field, but the HTML shows '11- 12'.",
+      "severity": "major",
+      "evidence": "PDF: SPECIES CODE, 10 bytes, Position 11-20 (10 bytes starting at 11). HTML: '<td>11- 12</td>' which only spans 2 positions, inconsistent with 10 bytes.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There are nested <main> elements in the HTML - a <main> in the body template wraps another <main> element from the content, which is invalid HTML structure.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main> from template, then another <main> inside after the <header> section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Appendix B diagram, the HTML lists 'Gear Data Record Type 7' but the PDF diagram also shows 'Gear Data Record Type 7' in the visual diagram while the text list above it says 'Record Type 8 Fishing Gear Data'. This inconsistency exists in the source PDF itself, but the HTML bullet list combines both references without clarification.",
+      "severity": "minor",
+      "evidence": "PDF text says 'Record Type 8 Fishing Gear Data' but the diagram box says 'Gear Data Record Type 7'. HTML bullet list says 'Gear Data Record Type 7'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The file extension '.cvs' appears in the HTML matching the PDF, which contains a typo (should be '.csv'). This is not a conversion error but is noted - both source and HTML contain the same typo.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML: '.txt or .cvs'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Appendix A data appears twice - once on page 1 reference and page 3 full content, both of which are reproduced. However, the pre-formatted code block in Appendix A contains the data once, matching the PDF structure. No actual duplication issue.",
+      "severity": "minor",
+      "evidence": "Appendix A data block appears once in the HTML <pre> section, matching PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 142.25,
+    "page_count": 10,
+    "visual_input_tokens": 25809,
+    "visual_output_tokens": 1895,
+    "content_input_tokens": 30812,
+    "content_output_tokens": 1055,
+    "timestamp": "2026-04-16T00:47:29.115335",
+    "auditor_version": "1.0.0"
+  }
+}

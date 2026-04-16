@@ -1,0 +1,174 @@
+{
+  "document_id": "Lake-Tillery-Aquatic-Plant-Reporting",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 2 (Our Role) has a two-column layout in the PDF with NC DEQ content on the left and SC DNR content on the right, but the HTML renders this as a single column with content stacked vertically.",
+      "severity": "major",
+      "evidence": "PDF shows DEQ logo/website and SCDNR logo/website side by side in two columns. HTML shows them stacked sequentially in a single column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 2 partner logos arranged in a grid layout in the PDF are displayed as a single-column vertical list in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows partner logos (NC Wildlife, NC State, Duke Energy, USC, Catawba Riverkeeper, Charlotte-Mecklenburg Storm Water, Charlotte Water, Lake James, Lake Norman, Lake Wylie, Lake Wateree, Yadkin-Pee Dee, Catawba Wateree) arranged in organized rows. HTML shows them stacked vertically as individual items.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On slide 2, partner logos appear cut off or partially displayed in HTML (e.g., Lake Norman Marine Commission logo is cropped).",
+      "severity": "minor",
+      "evidence": "PDF shows full Lake Norman Marine Commission logo. HTML shows it partially cut off.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 4 has a two-column layout with the reporting form on the left and key takeaways on the right, but HTML renders as a single column.",
+      "severity": "major",
+      "evidence": "PDF shows Aquatic Plant Report form on left side and key takeaways bullet list on right side. HTML shows key takeaways first, then the form below it.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Slide 4 reading order is changed: HTML places the key takeaways text above the reporting form, while the PDF shows them side by side with the form on the left.",
+      "severity": "major",
+      "evidence": "PDF: form (left) beside key takeaways (right). HTML: key takeaways (top) then form (bottom).",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 5 (How to Take a Good ID Photo) has a two-column layout with good photos (green border) on left and bad photos (red border) on right, but HTML renders them in a different arrangement.",
+      "severity": "major",
+      "evidence": "PDF shows green-bordered good examples on left, red-bordered bad examples on right in two distinct columns. HTML shows the red-bordered images first, then the green-bordered images below, reversing the visual emphasis.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Slide 5 reading order is reversed: bad photo examples appear before good photo examples in HTML, opposite of PDF order.",
+      "severity": "major",
+      "evidence": "PDF: good photos (green, left) then bad photos (red, right). HTML: bad photos appear first, then good photos below.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 (How to Get in Touch) has a two-column layout with contact info on left and 'Stop Aquatic Hitchhikers' poster on right, but HTML renders as single column.",
+      "severity": "major",
+      "evidence": "PDF shows contact emails on left side and the Stop Aquatic Hitchhikers flyer on the right. HTML stacks them vertically.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Slide 1 - Duke Energy logo and tagline 'Building a Smarter Energy Future' at bottom of PDF title slide is not visible in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows Duke Energy logo with tagline at bottom center. HTML does not display this logo/tagline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Key takeaways' bullet list from page 4 is rendered as a separate section with its own h2 heading, but in the PDF it is part of the same slide/section as the reporting tool content (page 4). More importantly, the heading hierarchy has a nested <main> element, which while not a heading issue per se, the 'Key takeaways:' text is promoted to an h2 when it was a sub-element within the reporting tool slide.",
+      "severity": "major",
+      "evidence": "PDF page 4 title is effectively the reporting form page (continuation of New Reporting Tool). HTML creates a separate <section> with <h2>Key takeaways:</h2>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside another <main> element, creating a structural duplication of the main content wrapper.",
+      "severity": "major",
+      "evidence": "HTML contains: <main>\\n        <main> \u2014 two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Some detailed text content from the PDF page 2 (Our Role section) describing the NC DEQ Aquatic Weed Control Program purpose and SC DNR laws is not reproduced in the HTML. These were screenshot/website content visible on the slide.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows readable text from NC DEQ website ('The purpose of the Aquatic Weed Control Program is to provide units of local government and residents of North Carolina...') and SC DNR website ('Title 46, Chapter 23 - South Carolina Noxious Weed Act...'). HTML only includes image alt text references but none of this readable text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Text content from the PDF page 3 describing aquatic plants in reservoirs and related links is not fully reproduced in the HTML. The page showed readable text about Duke Energy's Aquatic Plant Management Program.",
+      "severity": "minor",
+      "evidence": "PDF page 3 contains text: 'A key aspect of being a good environmental steward is monitoring and managing our rivers and lakes...', 'Many invasive aquatic plants have the potential to invade Duke Energy's lakes and rivers...', and Related Links including 'Aquatic Plant Reporting Form', 'Catawba-Wateree Aquatic Plant Survey', 'Hydrilla Fact Sheet', etc. HTML only has image alt text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The two photo example images on page 5 have their good/bad distinction lost. In the PDF, good photos are bordered in green and bad photos in red, but the alt text does not distinguish which are good vs. bad examples.",
+      "severity": "minor",
+      "evidence": "PDF page 5 shows green-bordered (good) close-up photos and red-bordered (bad) distant/unclear photos. HTML alt text says 'Examples of aquatic plants in water and on shore' and 'Close-up examples of individual aquatic plants held in a hand or floating' without indicating good vs. bad.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The URL duke-energy.com/AquaticPlants appears as plain text in the key takeaways section but was shown as a hyperlink in the PDF reporting form screenshot.",
+      "severity": "minor",
+      "evidence": "PDF page 4 shows 'duke-energy.com/AquaticPlants' as a clickable link in both the form and the bullet point. HTML has it as a hyperlink on page 3's section but as plain text in the key takeaways bullet.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 10,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 456.49,
+    "page_count": 6,
+    "visual_input_tokens": 18803,
+    "visual_output_tokens": 1392,
+    "content_input_tokens": 13265,
+    "content_output_tokens": 1136,
+    "timestamp": "2026-04-16T00:56:51.027434",
+    "auditor_version": "1.0.0"
+  }
+}

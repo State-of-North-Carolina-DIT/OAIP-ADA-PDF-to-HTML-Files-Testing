@@ -1,0 +1,126 @@
+{
+  "document_id": "01_Agenda_Timeline",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-complementary-is-top-level",
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The null landmark is contained in another landmark. [<aside>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>\n<h1>Welcome to the CHPP Steering Committee Meeting</h1>\n<p>July 30, 2020</p>\n<p>Say \u201cHi\u201d in the chat box, let us know who you work for, and tel]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The welcome slide has a two-panel layout (left panel with audio troubleshooting, right panel with welcome text) that is collapsed into a single column in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a left blue panel with audio troubleshooting info and a right cork-board panel with 'Welcome to the CHPP Steering Committee Meeting'. HTML renders these as sequential single-column content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The decorative cork-board background texture on the right panel of the welcome slide is missing in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 1 right panel has a distinctive cork-board texture background. HTML shows plain white background.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Coastal Habitat Protection Plan Timeline slide has a two-panel layout (table on left, stacked wildlife images on right) that is collapsed to single column in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows the timeline table on the left with a vertical strip of nature/wildlife photos on the right side. HTML renders the images separately above the table in a single column.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The wildlife/nature images from the timeline slide are placed above the table rather than alongside it, changing their contextual relationship.",
+      "severity": "minor",
+      "evidence": "PDF page 3 has images stacked vertically on the right side of the table. HTML places them above the table in a different arrangement.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> element inside the first <section> creates invalid HTML structure and the first section uses an <aside> for the audio troubleshooting content alongside a nested <main>, which is semantically incorrect (two <main> elements).",
+      "severity": "major",
+      "evidence": "The HTML contains <main> as the outer wrapper, then inside the first <section> there is another <main> element wrapping the welcome content. This is invalid HTML structure with duplicate <main> landmarks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The page 3 heading 'Coastal Habitat Protection Plan Timeline' is rendered as h2 but in the PDF, 'Coastal Habitat Protection Plan' is the main title and 'Timeline' is a subtitle. This is a minor formatting difference but acceptable.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Coastal Habitat Protection Plan' as large title with 'Timeline' as subtitle below. HTML combines them as '<h2>Coastal Habitat Protection Plan Timeline</h2>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for images on page 3 is partially fabricated or inaccurate. The PDF page 3 shows a vertical strip of wildlife/habitat photos on the right side, but the HTML splits them into three separate figure elements with specific alt texts that may not precisely match each individual image.",
+      "severity": "minor",
+      "evidence": "HTML has three separate figures with alt texts: 'Composite image showing various coastal wildlife and habitats', 'Egret wading in a marsh', 'Scallop on a seagrass bed'. The PDF shows a continuous strip of approximately 5 stacked images including an egret, fish, oysters, a horseshoe crab/scallop, and what appears to be a sea turtle or fish on coral.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The page number '3' shown on page 3 of the PDF is not in the HTML, but this is acceptable page number removal.",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows '3' at bottom. HTML omits it.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 100.89,
+    "page_count": 3,
+    "visual_input_tokens": 10487,
+    "visual_output_tokens": 657,
+    "content_input_tokens": 9027,
+    "content_output_tokens": 768,
+    "timestamp": "2026-04-16T00:46:47.832019",
+    "auditor_version": "1.0.0"
+  }
+}

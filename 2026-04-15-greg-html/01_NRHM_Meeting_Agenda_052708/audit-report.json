@@ -1,0 +1,86 @@
+{
+  "document_id": "01_NRHM_Meeting_Agenda_052708",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 41. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a three-column layout (Time, Topic, Presenter) without visible table borders, but the HTML renders this as a formal bordered table. While the data is preserved, the original layout was a free-form agenda, not a bordered table.",
+      "severity": "major",
+      "evidence": "PDF shows time slots on the left, topics in the center, and presenters on the right without any table borders or grid lines. HTML renders this inside a bordered table with headers 'Time', 'Topic', 'Presenter'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF does not present the agenda as a table with headers; the HTML converts the agenda items into a table with fabricated column headers 'Time', 'Topic', and 'Presenter'.",
+      "severity": "minor",
+      "evidence": "The PDF uses a formatted list layout with time ranges, topics, and presenter names. The HTML wraps these into a <table> with <thead> containing 'Time', 'Topic', 'Presenter' headers that do not exist in the source PDF. However, all data content is accurately represented.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has nested <main> elements, and the heading hierarchy uses h1 for 'AGENDA' and h2 for the full meeting title, which is acceptable, but the subtitle structure combining the committee name with <br/> tags in h2 is a structural choice. More notably, there are no further heading levels used for the agenda items, which is consistent with the PDF.",
+      "severity": "major",
+      "evidence": "HTML has <h1>AGENDA</h1> and <h2>NEUSE RIVER BASIN HYDROLOGIC MODEL<br/>TECHNICAL REVIEW COMMITTEE<br/>MEETING</h2>. The PDF has 'AGENDA' as a title and the committee/meeting name as a subtitle. This is acceptable.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> elements, which is invalid HTML structure but does not cause content duplication.",
+      "severity": "minor",
+      "evidence": "The outer <main> wraps the entire content, and an inner <main> wraps the table. This is a structural issue but no content is duplicated.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 28.99,
+    "page_count": 1,
+    "visual_input_tokens": 4222,
+    "visual_output_tokens": 351,
+    "content_input_tokens": 4636,
+    "content_output_tokens": 636,
+    "timestamp": "2026-04-16T00:46:27.386003",
+    "auditor_version": "1.0.0"
+  }
+}

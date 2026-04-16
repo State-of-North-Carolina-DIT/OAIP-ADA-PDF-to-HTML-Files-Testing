@@ -1,0 +1,126 @@
+{
+  "document_id": "Southside_Park_Stream_Sediment_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF is a map/figure with spatial layout where data callout boxes are positioned geographically relative to sample locations. The HTML converts this into a linear, single-column list of sediment data tables, completely losing the spatial/geographic layout context.",
+      "severity": "critical",
+      "evidence": "PDF shows a map with SD-1 through SD-5 data boxes positioned at specific geographic locations on the map. HTML renders all data as sequential tables in a single column with no spatial context.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The sediment data callout boxes in the PDF are compact two-column tables (parameter | value) positioned on a map. In the HTML, they are rendered as separate labeled sections with key-value pairs, but the SD-1/DUP-6102025-SD table loses some structural clarity by mixing the Risk Assessment sub-section inline.",
+      "severity": "major",
+      "evidence": "PDF shows each SD location as a discrete bordered callout with parameter-value pairs and a separate Risk Assessment sub-section. HTML preserves the data content but presents them as flat sequential sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The map image in the HTML is a small, low-resolution thumbnail that loses nearly all legibility of the original map details including street names, property boundaries, sample locations, and geographic features.",
+      "severity": "major",
+      "evidence": "PDF shows a full-page detailed map with clearly readable street names, property boundaries, sample locations (SW/SD-1 through SW/SD-5), and legend. HTML shows a small thumbnail image where these details are not readable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The map labels section in the HTML lists 'SW/SD-1, SW/SD-2, SW/SD-3, SW/SD-4, SW/SD-5' as a text line, which in the PDF are visual labels positioned on the map at specific geographic locations. The reading order converts a spatial document into a linear one.",
+      "severity": "major",
+      "evidence": "PDF: Map labels are spatially positioned on the map figure. HTML: Map labels listed as a comma-separated text string under a 'Map Labels' heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "Risk Assessment rows are awkwardly placed inside the data tables with 'Risk Assessment' repeated in both columns, which misrepresents the structure. In the PDF, the Risk Assessment section is a separate block below each sample's data, not a table row with the label duplicated across both columns.",
+      "severity": "major",
+      "evidence": "Each HTML table contains a row like <tr><td>Risk Assessment</td><td>Risk Assessment</td></tr> which fabricates a duplicate cell value. The PDF shows 'Risk Assessment' as a section header, not a two-column data row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds section headings that do not appear in the PDF: 'Map Labels', 'Sediment Data Results', 'Legend', 'Document Information'. These are organizational headings created by the converter.",
+      "severity": "minor",
+      "evidence": "PDF contains no headings like 'Map Labels', 'Sediment Data Results', 'Legend', or 'Document Information'. These are structural additions by the HTML conversion, not content fabrication per se, but they introduce text not in the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two <main> elements nested (one in the template wrapper and one in the content), and the heading hierarchy has issues. The document uses h1 for the title, h2 for the subtitle, but then h3 and h4 for subsections, which is acceptable. However, the main structural issue is the nested <main> elements.",
+      "severity": "major",
+      "evidence": "HTML source shows <main> wrapping another <main> element, which is invalid HTML structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The SD-5 Risk Assessment labels differ slightly between PDF and HTML. The PDF shows 'RES CR:' and 'RES HI:' for SD-5, and the HTML preserves this. However, in the PDF text block at the top of the page, SD-5 shows 'RES CR:' and 'RES HI:' while the map callout appears to match. No actual error here on closer inspection.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show 'RES CR: 3.3E-06' and 'RES HI: 1.7' for SD-5. This is consistent.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the map scale bar image is 'Map scale bar' and for another image is 'NC DEQ Logo'. These are reasonable guesses but cannot be verified since the images are stripped. The main map alt text is descriptive and appropriate.",
+      "severity": "minor",
+      "evidence": "alt='Map scale bar' (style width 7.7pt) and alt='NC DEQ Logo' (style width 44.7pt) \u2014 these are plausible descriptions of small embedded images from the PDF figure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 6,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 101.69,
+    "page_count": 1,
+    "visual_input_tokens": 3471,
+    "visual_output_tokens": 770,
+    "content_input_tokens": 7028,
+    "content_output_tokens": 945,
+    "timestamp": "2026-04-16T00:54:05.909926",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "01_January_2013_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF table is rendered as a single wide table with all columns visible in a compact layout. The HTML conversion breaks each row into a much taller multi-line format, losing the compact tabular layout and making columns appear stacked rather than side-by-side.",
+      "severity": "major",
+      "evidence": "PDF shows a dense table with ~12 columns fitting on one page. HTML shows the same data but with each cell's content wrapping extensively, making rows very tall and the table much longer vertically.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'Total Cases in Previous 12 Months' column header is truncated/reformatted in the HTML version, showing as 'Total Cases in Previous 12 Months' split across multiple lines differently, and the column data alignment is affected throughout the table.",
+      "severity": "major",
+      "evidence": "PDF header shows 'Total Cases in Previous 12 Months' clearly in the column header. HTML shows it reformatted as 'Total Cases in Previous 12 Months' but the overall table structure makes it harder to associate data with headers.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in the HTML structure - there is an outer <main> wrapping a <header> and an inner <main> containing the table content.",
+      "severity": "minor",
+      "evidence": "The HTML has <body><main><header>...</header><main>...</main></main></body> which is invalid nesting but does not affect content fidelity.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 71.44,
+    "page_count": 2,
+    "visual_input_tokens": 6613,
+    "visual_output_tokens": 578,
+    "content_input_tokens": 14421,
+    "content_output_tokens": 358,
+    "timestamp": "2026-04-16T00:47:00.335423",
+    "auditor_version": "1.0.0"
+  }
+}

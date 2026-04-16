@@ -1,0 +1,142 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Components slide contains two diagrams (a hydrograph showing discharge over months with labeled flow components, and a cross-section illustration of a river valley showing flow levels). In the HTML, these images appear but are rendered at a much smaller scale and are separated across different page-equivalent sections, reducing legibility.",
+      "severity": "major",
+      "evidence": "PDF slide 6 shows both diagrams large and together on one slide. In the HTML, the images are split across sections and appear significantly smaller, with the cross-section diagram appearing well below the hydrograph.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Trinity River example chart showing releases from Lewiston Dam with multiple water year type lines is significantly smaller in the HTML rendering, reducing legibility of the legend and axis labels.",
+      "severity": "major",
+      "evidence": "PDF slide 7 shows the chart prominently on the slide. In the HTML the chart is smaller and details like the legend entries and axis dates are harder to read.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Regime Tied to Ecology diagram (organizational/flowchart showing Sound Ecological Environment branching into Subsistence Flows, Base Flows, High Flow Pulses, and Overbank Flows with sub-details) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF slide 9 shows a full hierarchical flowchart diagram. In the HTML, the content is rendered as nested bullet lists without the diagram/image.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Scenario Examples chart (line graph showing Actual Flow, 80% of Previous Day, 80% of Weekly Average, and 20/30/40 MAF over a year) is missing from the HTML rendering.",
+      "severity": "major",
+      "evidence": "PDF slide 11 shows a detailed line chart. In the HTML, only the legend items appear as bullet points without the chart image.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Cheoah River high flow events table (Table 2) in the HTML has column headers that are slightly restructured - the magnitude columns are labeled differently ('Magnitude (cfs)3 Day 1', 'Magnitude (cfs)3 Day 2', 'Magnitude (cfs)3 Day 3') compared to the PDF which shows 'Magnitude (cfs)\u00b3' as a spanning header with Day 1, Day 2, Day 3 sub-columns.",
+      "severity": "minor",
+      "evidence": "PDF slide 8 shows a merged header cell for Magnitude with sub-columns. HTML renders these as separate flat column headers.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Cheoah River High Flow Events table, the March Day 2 magnitude value has the superscript footnote marker merged into the number, making it appear as '6002' instead of '600' with a superscript '2' footnote reference.",
+      "severity": "major",
+      "evidence": "PDF shows '600' with superscript '2' as a footnote marker in the March/Day 2 column. HTML renders it as '6002' in one cell, which could be misread as the number 6002 rather than 600 with footnote 2.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "In the Cheoah River High Flow Events table, the February Day 2 magnitude value has the superscript footnote marker merged into the text, showing 'Var1' instead of 'Var' with superscript '1'.",
+      "severity": "major",
+      "evidence": "PDF shows 'Var' with superscript '1' as a footnote reference. HTML renders it as 'Var1' which could be confusing.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The column header for the Magnitude column includes the footnote marker '3' merged into the header text as 'Magnitude (cfs)3' instead of presenting '3' as a superscript footnote reference.",
+      "severity": "major",
+      "evidence": "PDF: 'Magnitude (cfs)' with superscript 3. HTML header: 'Magnitude (cfs)3 Day 1', 'Magnitude (cfs)3 Day 2', 'Magnitude (cfs)3 Day 3'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The second 'Instream Flow Status' section on page 3 reuses the same h2 heading text as the section on page 2. While this matches the PDF, the heading hierarchy has a duplicate h2 with identical text which could cause navigation confusion.",
+      "severity": "minor",
+      "evidence": "Both sections use 'Instream Flow Status (pp 84-86 of IFC book)' as h2 headings, matching the PDF slide titles.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The Flow Scenario Examples section (page 12) loses the visual chart information. Only the legend items are listed as bullet points, but the chart data (axes showing values 0-800 on y-axis, dates 1/1 through 12/1 on x-axis, and the actual flow patterns) is not described.",
+      "severity": "minor",
+      "evidence": "PDF page 12 shows a detailed line chart with 4 series plotted over a full year. HTML section 'Flow Scenario Examples' only lists the 4 legend items as bullets with no description of the chart's content or data patterns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a duplicate <main> tag nesting - there is an outer <main> wrapping an inner <main> element.",
+      "severity": "minor",
+      "evidence": "HTML source shows '<main>' followed by another '<main>' before the content sections begin.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 8,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 154.66,
+    "page_count": 12,
+    "visual_input_tokens": 30569,
+    "visual_output_tokens": 1170,
+    "content_input_tokens": 26268,
+    "content_output_tokens": 1020,
+    "timestamp": "2026-04-16T00:47:41.733619",
+    "auditor_version": "1.0.0"
+  }
+}

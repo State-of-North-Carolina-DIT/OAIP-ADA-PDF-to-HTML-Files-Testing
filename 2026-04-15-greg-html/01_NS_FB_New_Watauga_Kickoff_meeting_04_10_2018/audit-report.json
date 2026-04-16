@@ -1,0 +1,182 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components - water use' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "Title slide layout collapsed - the two-column layout with NC logo on left and title/author info on right is not preserved",
+      "severity": "major",
+      "evidence": "PDF shows NC logo positioned left with title text 'River Basin Water Resources Plan/ Hydrologic Model Development Process' and author details to the right. HTML renders these as stacked elements with logo centered above text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 2 (Why Need River Basin Plans) layout collapsed - the photo collage with overlaid text is rendered differently",
+      "severity": "major",
+      "evidence": "PDF shows a complex visual layout with images arranged around bullet text within a blue-background panel. HTML renders the bullet text separately from the images, losing the integrated collage layout.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Multiple decorative/contextual images from the 'Why Need River Basin Plans' slide are missing or not properly rendered in the HTML",
+      "severity": "major",
+      "evidence": "PDF slide 2 contains numerous photos (heron, dam, child fishing, forest, trout, water faucet, waterskier, pipes, tractor, Charlotte skyline, power plant, rafting). HTML appears to show only some of these images separated from their context.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Process Components diagram page - the organizational chart/flowchart layout is not preserved as a structured diagram",
+      "severity": "major",
+      "evidence": "PDF shows a clear hierarchical flowchart with colored boxes (Hydrologic Model -> River Basin Water Resources Plan, with sub-components Historical Flows, Operation Guidelines, Water Use, Evaluation Criteria). HTML renders the diagram as an image but the structural relationship may not be clear.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Operations Guidelines slide layout - multi-column text with images on right side collapsed to single column",
+      "severity": "major",
+      "evidence": "PDF shows bullet text on left with multiple contextual photos arranged on the right side. HTML renders text and images in a linear single-column flow.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Water Use slide with two charts - side-by-side layout collapsed",
+      "severity": "major",
+      "evidence": "PDF slide 9 shows 'Water Use Pattern' chart on the left and '2006 Supply and Demand Projections' chart on the right. HTML stacks them vertically.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Evaluation Criteria photo collage slide - images showing drought impacts are rendered separately from their contextual placement",
+      "severity": "major",
+      "evidence": "PDF shows a carefully arranged collage of drought/water shortage images with 'How often? What's the chance?' text overlay. HTML separates these into individual images losing the collage arrangement.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Water Supply Deficits table - color coding for systems in red (Raleigh, SGWASA) may not be preserved in HTML table",
+      "severity": "minor",
+      "evidence": "PDF table has Raleigh and SGWASA rows displayed in red text to indicate deficit concerns. HTML table appears to render all rows in the same style.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Project Organization Venn diagram - the overlapping circles diagram showing HDR, HydroLogics, and NCDWR relationships rendered differently",
+      "severity": "major",
+      "evidence": "PDF shows three overlapping circles (Data Collection/HDR, Model Development/HydroLogics, Data Model Evaluation & Plan Development/NCDWR). HTML renders this as a simple bulleted list losing the visual overlap relationship.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Content from multiple slides appears to run together in the HTML without clear page/slide boundaries, causing reading order confusion",
+      "severity": "major",
+      "evidence": "HTML screenshots show content from consecutive slides merged together (e.g., Operations Guidelines text running into Water Use content, Evaluation Criteria sections merging). Slide boundaries that provide context separation in PDF are lost.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two nested <main> elements, which is invalid HTML structure, and the document has two h1 headings ('Department of Environmental Quality' and the implicit document structure), though 'Department of Environmental Quality' as h1 is arguably acceptable as a document title.",
+      "severity": "major",
+      "evidence": "HTML contains '<main>' nested inside another '<main>'. The first h1 is 'Department of Environmental Quality' and 'River Basin Water Resources Plan/ Hydrologic Model Development Process' is h2. In the PDF, the presentation title is the primary heading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Supply Deficits table data is presented twice on the same page - once as an image with alt text describing the table, and then again as a fully rendered HTML table with identical data.",
+      "severity": "major",
+      "evidence": "In the Evaluation Criteria - Water Supply Deficits section, there is both '<figure><img ... alt=\"Table showing Water Supply Demand and Deficits...\">' AND a full '<table>' with all the same data rows (Orange-Alamance, Hillsborough, Piedmont Minerals, Raleigh, Durham, SGWASA). The PDF shows this content only once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Model Development Tasks section includes image tags for highlighted text ('Task 2 - OASIS Application Development' and 'Task 4 \u2013 Deliverables') in addition to listing them in the bullet points, creating visual duplication.",
+      "severity": "minor",
+      "evidence": "The section has both '<figure><img ... alt=\"Highlighted text: Task 2 - OASIS Application Development\">' and the bullet '<li>Task 2 - OASIS Application Development</li>'. Similarly for Task 4.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Flow Regime Changes bar chart data is awkwardly converted to plain text with raw percentage values listed vertically, which loses the visual meaning and context of the original chart.",
+      "severity": "minor",
+      "evidence": "PDF page 15 shows a grouped bar chart with clear visual comparison. HTML converts this to raw text: '35.0%<br/>30.0%<br/>25.0%...' which doesn't convey the data meaningfully. The legend items are preserved as a list but separated from the chart context.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are overly specific or slightly embellished beyond what can be confirmed from the PDF content alone.",
+      "severity": "minor",
+      "evidence": "Alt text 'Background landscape featuring a coastal sunset and lighthouse' for page 1 - the image shows a lighthouse scene but 'coastal sunset' adds interpretation. Alt text 'Dam structure over water' for page 6 - the PDF shows what appears to be a spillway/dam but the image is one of several on the slide.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 13,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 546.74,
+    "page_count": 23,
+    "visual_input_tokens": 55150,
+    "visual_output_tokens": 1972,
+    "content_input_tokens": 44181,
+    "content_output_tokens": 940,
+    "timestamp": "2026-04-16T00:55:08.853767",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "document_id": "01_NS_YPDL_Kickoff_meeting_03042020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components evaluation criteria' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 1 title slide layout collapsed from a visually structured cover page with two-column-like arrangement (title center, author info right, department info left) into a single linear flow",
+      "severity": "major",
+      "evidence": "PDF shows a structured title slide with 'Department of Environmental Quality' positioned left and 'Neela Sarwar / NCDEQ - DWR / March 04, 2020' positioned right. HTML renders all text linearly.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 two-column layout collapsed into single column. The PDF has a clear left column (Drought of 1998-2002, Interbasin Transfer) and right column (2007-08 Drought, Jordan Lake Partnership) side by side.",
+      "severity": "major",
+      "evidence": "PDF shows four distinct content areas in a 2x2 grid layout. HTML renders all content sequentially in a single column, losing the spatial relationship between the drought events and the other topics.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 3 shows a left column with bullet points and gear diagram alongside a right column with concentric circle diagram. HTML collapses into single column.",
+      "severity": "major",
+      "evidence": "PDF has bullet points and gear graphics on left, concentric circles diagram on right showing Water Resources Management hierarchy. HTML lists all elements linearly.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The gear diagram showing the relationship between Basin Model, Basin Plan, and Water Resources Management is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows an interconnected gear graphic on the left side. HTML has no equivalent image or representation.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The concentric circles diagram showing Water Resources Management > Integrated Basin Plan > Hydrologic Model hierarchy is missing from the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows concentric circles on the right side. HTML has only text labels 'Integrated Basin Plan' and 'HYDROLOGIC MODEL' without the visual diagram.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 9 two-column layout collapsed. PDF shows Water Use data categories on the left and Local Water Supply Plans / Water Withdrawal Registrations bullet points on the right.",
+      "severity": "major",
+      "evidence": "PDF has a clear two-column layout with the organizational chart on left and descriptive bullets on right. HTML presents everything in a single column.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 11 side-by-side chart layout collapsed. PDF shows Water Use Pattern chart on left and 2006 Supply and Demand Projections chart on right.",
+      "severity": "major",
+      "evidence": "PDF displays two charts side by side with labels 'Seasonal Use Pattern / Avg Annual Demands' and '50 yr Projected Demands'. HTML stacks them vertically.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/banner images appear between page-equivalent sections throughout the HTML, disrupting reading flow",
+      "severity": "major",
+      "evidence": "The decorative banner image from the slide template appears repeatedly between content sections in the HTML, creating visual noise not present in page-by-page PDF reading.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Page 8 - multiple contextual images (dam/water infrastructure, water skier, cooling towers) shown alongside operation guidelines content are separated from their contextual positioning",
+      "severity": "major",
+      "evidence": "PDF shows images integrated alongside the bullet points on the right side. HTML stacks the images below all the text content, losing their contextual association.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Page 21 Venn diagram showing Project Organization with three overlapping circles (Data Coordination/HDR, Model Development/HydroLogics Team & Hazen and Sawyer, Data Model Evaluation & Plan Development/NCDWR) is missing",
+      "severity": "critical",
+      "evidence": "PDF shows a three-circle Venn diagram illustrating project organization relationships. HTML replaces this with only a bullet list of the three components.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Page 6 hierarchical organizational chart showing Hydrologic Model components is missing as a visual diagram",
+      "severity": "major",
+      "evidence": "PDF shows a structured tree/organizational chart with Hydrologic Model at top branching to Historical Flows, Operation Guidelines, Water Use, and Evaluation Criteria, with Water Use further branching. HTML renders this as nested bullet lists only.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 16 shows Stream Flows with Lock and Dam #3 Flow Duration chart alongside an Evaluation Criteria label. The two-element layout is collapsed.",
+      "severity": "major",
+      "evidence": "PDF has 'Evaluation Criteria' label prominently positioned in upper right with chart below. HTML linearizes the content.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Page 14 collage of drought/water shortage images loses its composed mosaic layout",
+      "severity": "minor",
+      "evidence": "PDF shows a carefully arranged mosaic of images (dead fish, dry lake bed, locked faucet, exposed water intake, closed boat ramp, dry pipe) with 'How often? What's the chance?' text overlay. HTML shows the composite image but the contextual overlay text positioning differs.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Page 18 table - Raleigh and SGWASA rows were in red text in the PDF to indicate systems with deficits predicted in 7+ years, but the red coloring distinction may not be preserved in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows Raleigh and SGWASA rows in red font. HTML table shows the same data but the red text distinction indicating at-risk systems may be lost.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Document has two <main> elements nested, and the h1 is 'Department of Environmental Quality' which is the organization name, not the document title. The actual document title 'Hydrologic Model Development For River Basin Water Resources Plan' is an h2.",
+      "severity": "major",
+      "evidence": "PDF title slide shows 'Hydrologic Model Development For River Basin Water Resources Plan' as the main title, with 'Department of Environmental Quality' as the organizational label. HTML uses h1 for the org name and h2 for the actual title.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The table in the HTML includes an extra row for 'Water Systems' as a label/header row with empty data cells, which in the PDF is a sub-header within the table, not a data row.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Water Systems' as a column sub-header label. HTML renders it as: <tr><td>Water Systems</td><td></td><td></td><td></td><td></td></tr> with empty cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Department of Environmental Quality' organization name and DEQ logo references appear repeatedly throughout the HTML as artifacts of page-by-page conversion from presentation slides. Multiple decorative header images are also repeated.",
+      "severity": "major",
+      "evidence": "The PDF has 'Department of Environmental Quality' as a footer/branding on each slide, but these are slide decorations. The HTML reproduces header images multiple times (e.g., 'Decorative header image of a pottery maker' appears at least twice).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Water Use process component boxes are listed both as structured content in the hierarchy and then repeated as plain paragraph text in the same section.",
+      "severity": "minor",
+      "evidence": "Page 9 content appears in the HTML with both the bullet list items AND separate paragraphs like 'Local Water Supply Plans: Municipal Data', 'Self-supplied Industry: Industrial Data', 'Agriculture: Agri Data', 'Other Registered Withdrawers: Golf Course' duplicating the list items above.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are slightly generic or imprecise but not inaccurate.",
+      "severity": "minor",
+      "evidence": "Alt text 'Task 2 - OASIS Application Development' and 'Task 4 - Deliverables' are used for what appear to be decorative/grayed-out text elements in the PDF, which is acceptable but slightly misleading as image descriptions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "On page 10, location labels from the map are transcribed as body text, creating a confusing block of comma-separated place names that doesn't clearly indicate it's map label data.",
+      "severity": "minor",
+      "evidence": "HTML contains: 'ROWAN, Faith, China Grove, WELL #2, WELL #3, WELL #4, WELL #8, Rockwell, Denton, Handy SD, LIS LAKE, nnapolis, LDWATER CR...' as a paragraph, which are map labels from the schematic.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor truncation of place name 'Kannapolis' appears as 'nnapolis' in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF map shows 'Kannapolis' but HTML text has 'nnapolis' - likely due to partial text extraction from the map image.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 13,
+  "minor_count": 10,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 524.18,
+    "page_count": 24,
+    "visual_input_tokens": 59273,
+    "visual_output_tokens": 2546,
+    "content_input_tokens": 47444,
+    "content_output_tokens": 1122,
+    "timestamp": "2026-04-16T00:55:01.871196",
+    "auditor_version": "1.0.0"
+  }
+}

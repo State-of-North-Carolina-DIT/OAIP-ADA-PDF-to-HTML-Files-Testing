@@ -1,0 +1,78 @@
+{
+  "document_id": "Riverbend_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 48. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements: the HTML contains a <main> inside the <body>'s <main>, which is invalid HTML structure, though it does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The HTML has <main> at the top level wrapping everything, and then another <main> element after the <header> section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The table of contents items are rendered as internal anchor links (href='#history-background', etc.) which do not exist in the source PDF. These are navigational aids added by the converter, not fabricated external links, so this is a minor structural addition.",
+      "severity": "minor",
+      "evidence": "HTML: <a href=\"#history-background\">History/Background</a> etc. PDF has no hyperlinks in the table of contents.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header block information (State of North Carolina, address, officials' names/titles) appears both in the <header> section and is also present in the PDF as a single letterhead. This is a faithful reproduction of the letterhead, not problematic duplication.",
+      "severity": "minor",
+      "evidence": "Header information appears once in the HTML header block, matching the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 71.96,
+    "page_count": 5,
+    "visual_input_tokens": 14229,
+    "visual_output_tokens": 318,
+    "content_input_tokens": 15053,
+    "content_output_tokens": 515,
+    "timestamp": "2026-04-16T00:52:21.026783",
+    "auditor_version": "1.0.0"
+  }
+}

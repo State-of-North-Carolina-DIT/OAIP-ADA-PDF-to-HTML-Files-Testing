@@ -1,0 +1,102 @@
+{
+  "document_id": "01_2014_CRFL_Sales_Report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Cover page logo/image is missing from the HTML rendering",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC Coastal Recreational Fishing License logo prominently centered. The HTML page 1 equivalent is not shown as a separate page with the cover image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Marine Resources Fund Balance table loses row for Agent Commission expense in the HTML version on page 2",
+      "severity": "major",
+      "evidence": "PDF page 3 shows Agent Commission as a separate expense row with values ($1,127,616 / $335,608 / $325,722 / $331,381 / $206,149 / $2,326,476). The HTML page 2 table cuts off at the bottom and the Agent Commission row is partially visible/truncated.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Marine Resources Endowment Fund Balance table in the spreadsheet version (page 3) has rows presented in a more structured format than the HTML, but the HTML separates this into distinct sub-tables losing the visual connection between sections",
+      "severity": "major",
+      "evidence": "PDF page 3 shows the Marine Resources Fund Balance and Endowment Fund Balance as continuous spreadsheet tables with clear delineation. HTML splits these into separate styled tables with different visual treatment.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Projects Approved for Funding table has a partially cut-off row for Coastal Angling Program in the HTML",
+      "severity": "minor",
+      "evidence": "PDF page 3 clearly shows 'Coastal Angling Program' with $596,575. In the HTML (page 5), the Coastal Angling Program row is cut off at the bottom of the visible table section.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "County sales tables split across multiple HTML pages maintain data integrity but the 2014 Rank column for counties with 0 sales sometimes shows blank instead of no rank",
+      "severity": "minor",
+      "evidence": "PDF shows Avery county 2014 with 0 sold and no rank. Cherokee 2014 shows 0 sold with no rank. HTML matches this pattern consistently.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse content fidelity response as JSON",
+      "severity": "major",
+      "evidence": "```json\n{\n  \"findings\": [\n    {\n      \"check_id\": \"C3\",\n      \"severity\": \"major\",\n      \"description\": \"In the Wilmington DMF Sales Office row for 2010, the HTML shows '15.53' for % Sold, but the PDF shows '12.95' derived from 331/2555. However, reviewing the PDF more carefully, the PDF page 20 actually shows Wilmington at 15.53% for 2010 (331 sold). The Manteo row shows 14.44 for 2010 in PDF but the HTML also shows 14.44. Actually upon re-reading, the PDF page 20 layout shows Wilmington listed",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 275.34,
+    "page_count": 20,
+    "visual_input_tokens": 62289,
+    "visual_output_tokens": 1593,
+    "content_input_tokens": 98016,
+    "content_output_tokens": 1655,
+    "timestamp": "2026-04-16T00:49:42.291225",
+    "auditor_version": "1.0.0"
+  }
+}

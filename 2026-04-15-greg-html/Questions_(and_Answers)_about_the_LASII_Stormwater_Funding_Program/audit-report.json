@@ -1,0 +1,86 @@
+{
+  "document_id": "Questions_(and_Answers)_about_the_LASII_Stormwater_Funding_Program",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 32. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements - the outer <main> wraps the content, and there is a second <main> inside it. This is invalid HTML structure but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The HTML has <main> as the outermost wrapper (from the template), then <header> followed by another <main> element containing the Q&A content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Background' section is rendered as h2 but in the PDF it appears as a bold/underlined section heading. This is acceptable structural interpretation, but the Q&A items lack any sub-heading structure - all 20 questions are at the same flat level with no heading tags, which matches the PDF's flat structure.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Background' as an underlined heading; HTML uses <h2>Background</h2>. All Q&A items are rendered as paragraphs with bold labels, matching the PDF structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The page footers ('LASII Stormwater Program Questions and Answers / LASII Program Administered by NC Dept. of Environmental Quality Division of Water Infrastructure / Page X') that appear on each page of the PDF are correctly omitted from the HTML body content, which is acceptable.",
+      "severity": "minor",
+      "evidence": "Footer text appears on all 5 PDF pages but is not reproduced in the HTML content, which is expected behavior.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Answer 3, the PDF has a typo 'ANSWSER' which the HTML faithfully preserves. This is not a conversion error but confirms text fidelity.",
+      "severity": "minor",
+      "evidence": "PDF: 'ANSWSER: No.' HTML: '<strong>ANSWSER:</strong> No.' - both contain the same typo.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 85.35,
+    "page_count": 5,
+    "visual_input_tokens": 14599,
+    "visual_output_tokens": 296,
+    "content_input_tokens": 16717,
+    "content_output_tokens": 726,
+    "timestamp": "2026-04-16T00:52:24.216286",
+    "auditor_version": "1.0.0"
+  }
+}

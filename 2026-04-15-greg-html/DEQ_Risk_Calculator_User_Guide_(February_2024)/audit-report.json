@@ -1,0 +1,190 @@
+{
+  "document_id": "DEQ_Risk_Calculator_User_Guide_(February_2024)",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 35. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF page 9 has a two-column layout with a sidebar callout box on the left and main text on the right. The HTML renders this as a single column, losing the side-by-side layout.",
+      "severity": "major",
+      "evidence": "PDF page 9 shows italic sidebar text ('In addition to risk-based remediation...') alongside the main paragraph about toxicity values. HTML renders these sequentially as separate blocks.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The blue callout/sidebar box background that appears in the PDF on page 9 is missing in the HTML - only a blue left-border blockquote-style element remains, with no visible text content inside.",
+      "severity": "critical",
+      "evidence": "PDF shows a blue highlighted box with text. HTML shows an empty blockquote-style element with a blue left border.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 12 in the PDF has a two-column layout with the sidebar callout box ('The calculator can be used to dictate...') next to the Construction Worker Scenario text. The HTML collapses this to single column.",
+      "severity": "major",
+      "evidence": "PDF shows side-by-side callout and main text. HTML renders them sequentially.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 12 PDF has a two-column layout with sidebar callouts for Groundwater and Surface Water sections. HTML renders all as single column.",
+      "severity": "major",
+      "evidence": "PDF shows 'Risk-based groundwater remedies...' callout box alongside groundwater text, and 'Surface water quality...' callout alongside surface water text. HTML linearizes these.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On the HTML version of page 12 (Groundwater section), the callout box content appears as an empty blockquote with only a blue border - the text content of the callout is missing.",
+      "severity": "major",
+      "evidence": "PDF shows callout with text 'Risk-based groundwater remedies (site-specific cleanup levels) must rely on institutional controls...' HTML shows an empty blue-bordered blockquote.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On the HTML version of page 12 (Surface Water section), the callout box content appears as an empty blockquote - the text content is missing.",
+      "severity": "major",
+      "evidence": "PDF shows 'Surface water quality must meet the 15A NCAC 02B standards...' HTML shows empty blockquote.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 14 PDF has a two-column layout with sidebar callout ('When only the default parameters are used...') next to the soil leaching text. HTML collapses to single column.",
+      "severity": "major",
+      "evidence": "PDF shows side-by-side layout. HTML linearizes the content.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On the HTML version of page 14, the callout box for soil leaching section appears as an empty blockquote - text content is missing.",
+      "severity": "major",
+      "evidence": "PDF shows 'When only the default parameters are used, the result will be close to the Protection of Groundwater PSRG.' HTML shows empty blue-bordered blockquote.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 13 PDF has a two-column layout with a sidebar callout ('The Risk Calculator does not include a calculation for soil to indoor air...') next to the vapor intrusion text. HTML collapses to single column.",
+      "severity": "major",
+      "evidence": "PDF shows side-by-side layout. HTML linearizes.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On HTML version of the vapor intrusion section, the sidebar callout about soil to indoor air calculation appears as an empty blockquote.",
+      "severity": "major",
+      "evidence": "PDF has visible text about soil to indoor air challenges. HTML shows empty blockquote.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content appears between page-equivalent sections in the HTML, including 'Risk Calculator User Guide' footer text and 'February 2024' with page numbers embedded in the flow of content.",
+      "severity": "major",
+      "evidence": "HTML contains inline page footers like 'February 2024 4 Risk Calculator User Guide' embedded within the reading flow between sections.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On HTML page equivalent to PDF page 15, the groundwater migration zone map of North Carolina showing Mountain Zone, Piedmont Zone, and Coastal Plain Zone with geological coloring is rendered but the detailed geological background colors and boundary lines are less legible.",
+      "severity": "major",
+      "evidence": "PDF shows detailed geological map with clear zone boundaries. HTML shows the same map image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two <main> elements nested, and the document title is set as h1 while subsequent major sections (1.0, 2.0, 3.0, 4.0, 5.0, 6.0) alternate between h2 and h3 inconsistently. Subsections like 3.1.1 Cover Page use h4 correctly under h3, but sections like 1.1 and 1.2 are rendered as h3 under h2, which is fine, yet 2.3 Receptors and 2.4 Exposure Units are also h3. However, the main structural issue is that the document contains a nested <main> element which is invalid HTML structure.",
+      "severity": "major",
+      "evidence": "HTML contains <main> at the top level, then another <main> nested inside after the </header> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Risk Calculator Cell Color Codes table in the HTML uses generic descriptions for cell appearances ('Yellow cell', 'White cell', 'Green cell', 'Grey cell') that are not present in the PDF. The PDF uses actual colored cell backgrounds without text labels - the HTML fabricates column header 'Cell Appearance' and invents the text labels.",
+      "severity": "major",
+      "evidence": "PDF shows colored cells with no text labels for the colors. HTML table has: 'Yellow cell | Data entry field...', 'White cell | Non-volatile chemical*', 'Green cell | Soil concentration exceeds...', 'Grey cell | Entry not required...'. The PDF does not contain the words 'Yellow cell', 'White cell', 'Green cell', or 'Grey cell' as text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The exposure unit diagram's text labels are duplicated - they appear both as part of the image alt text context and then again as a separate paragraph of plain text after the figure.",
+      "severity": "minor",
+      "evidence": "HTML has: <figure><img ... alt='Diagram of an example site...'></figure> followed by <p>A B C D Exposed Soil Contamination Industrial Building on Municipal Water Groundwater Contamination Residences on Municipal Water Potential Water Supply Well</p> - this text was part of the diagram in the PDF, not standalone paragraph text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Domenico reference in section 6.0, the HTML omits the second reference 'Domenico (1987)' that is mentioned in section 3.5.2 of the PDF text.",
+      "severity": "minor",
+      "evidence": "PDF section 3.5.2 references 'Domenico and Robbins (1985) and Domenico (1987)' but the References section in both PDF and HTML only lists the 1985 reference. This is consistent between PDF and HTML, so not actually a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds the word 'White cell' as a descriptor for non-volatile chemicals in the color codes table. The PDF shows an unmarked/plain cell background - the PDF does not use the term 'White cell'.",
+      "severity": "minor",
+      "evidence": "PDF Section 1.2 shows a blank/unmarked cell next to 'Non-volatile chemical*'. HTML converts this to 'White cell | Non-volatile chemical*'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 14,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 711.41,
+    "page_count": 33,
+    "visual_input_tokens": 94691,
+    "visual_output_tokens": 2064,
+    "content_input_tokens": 83904,
+    "content_output_tokens": 1087,
+    "timestamp": "2026-04-16T01:00:13.641530",
+    "auditor_version": "1.0.0"
+  }
+}

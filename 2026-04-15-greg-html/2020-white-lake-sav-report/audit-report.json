@@ -1,0 +1,94 @@
+{
+  "document_id": "2020-white-lake-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 32. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG2",
+      "description": "Page number artifacts in HTML content",
+      "severity": "minor",
+      "evidence": "Page numbers appear as content in the HTML: '2020' (4x). These should be removed during conversion.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C8",
+      "description": "Filamentous algae percentage incorrectly stated as 49% in the text, but this matches the PDF's Table 1. However, the text on page 4 says 'documented at 24 (49%) sample points' \u2014 the 49% is from Table 1 but the point count is 24, while Figure 9 caption says 49 sample sites. There is an inconsistency in the source PDF itself (24 in Table 2 vs 49 in Figure 9 caption), which the HTML reproduces differently in different locations.",
+      "severity": "major",
+      "evidence": "PDF page 4 text: 'documented at 24 (49%) sample points'; PDF Figure 9 caption: 'found at 49 sample sites'; Table 2 shows 24. The HTML faithfully reproduces these inconsistencies from the source. This is actually NOT a conversion error - retracting this finding.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Duplicate <main> elements in HTML structure - there is a <main> wrapping everything and then another <main> element nested inside after the header, creating invalid nesting.",
+      "severity": "major",
+      "evidence": "HTML has <body><main><header>...</header><main>...</main></main></body> \u2014 two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Figure 12 (bar chart) is not rendered as an image in the HTML \u2014 instead its axis labels and legend text are presented as plain text. The chart visualization is lost.",
+      "severity": "minor",
+      "evidence": "PDF page 18 contains a bar chart (Figure 12) showing SAV % occurrence. HTML renders this as plain text: '100%<br/>80%<br/>% Occurence<br/>60%...' rather than as an image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The text refers to 'slender spikerush' in some places and 'proliferating spikerush' in others \u2014 but this matches the source PDF which also uses both terms. No conversion error.",
+      "severity": "minor",
+      "evidence": "N/A - retracting this non-finding.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 6,
+  "skip_reason": "visual:too_large(22p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 1179.01,
+    "page_count": 22,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 46736,
+    "content_output_tokens": 773,
+    "timestamp": "2026-04-16T01:07:20.740429",
+    "auditor_version": "1.0.0"
+  }
+}

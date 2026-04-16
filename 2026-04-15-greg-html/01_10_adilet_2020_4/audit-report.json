@@ -1,0 +1,126 @@
+{
+  "document_id": "01_10_adilet_2020_4",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 52. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image/logo is missing from the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the Great Seal of North Carolina centered at the top of the page. The HTML renders descriptive text ('THE GREAT SEAL OF THE STATE OF NORTH CAROLINA', 'MAY 20, 1775', 'APRIL 12, 1776', 'ESSE QUAM VIDERI') instead of the actual seal image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Seal descriptive text appearing as readable content disrupts reading order",
+      "severity": "major",
+      "evidence": "The HTML renders text like 'THE GREAT SEAL OF THE STATE OF NORTH CAROLINA', 'MAY 20, 1775', 'APRIL 12, 1776', 'ESSE QUAM VIDERI' as body content between the header officials and the date. In the PDF, these are embedded in the seal image and not read as separate text content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated footer content appears in the HTML between page sections",
+      "severity": "minor",
+      "evidence": "The HTML includes 'NORTH CAROLINA Department of Environmental Quality' and the full address/phone at the bottom, which was a footer element in the PDF. This content appears after the letter's closing content and could be confused with letter body content.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes seal text details ('MAY 20, 1775', 'APRIL 12, 1776', 'ESSE QUAM VIDERI') in the header that are derived from the seal image in the PDF but not explicitly rendered as text in the PDF.",
+      "severity": "minor",
+      "evidence": "HTML header contains: 'THE GREAT SEAL OF THE STATE OF NORTH CAROLINA<br/>MAY 20, 1775<br/>APRIL 12, 1776<br/>ESSE QUAM VIDERI'. These are inscriptions visible on the seal image but not presented as document text in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has no heading elements (h1-h6) at all. The document has no structured heading hierarchy - everything is rendered as paragraphs. The document title, the RE: line, and numbered items that could serve as structural headings are all plain paragraph text.",
+      "severity": "major",
+      "evidence": "The HTML contains no h1, h2, h3, or any heading tags. The document title 'Converted Document' appears only in the <title> tag. The CSS includes styles for h1-h4 but none are used in the body.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element inside the outer <main>, creating a redundant structural duplication.",
+      "severity": "minor",
+      "evidence": "The HTML has <body><main> wrapping everything, then another <main> element inside it containing the letter content. This is a structural artifact, not content duplication.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The footer text 'NORTH CAROLINA Department of Environmental Quality' is slightly different from the PDF, which shows them as separate elements on the letterhead rather than a standalone footer paragraph.",
+      "severity": "minor",
+      "evidence": "HTML footer: '<p>NORTH CAROLINA Department of Environmental Quality</p>' appears as a separate repeated element. The PDF shows 'NORTH CAROLINA' and 'Environmental Quality' as part of the header/seal area.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "No images are present in the HTML despite the PDF containing the North Carolina state seal image. The seal content was converted to text descriptions instead of an image with alt text.",
+      "severity": "minor",
+      "evidence": "PDF page 1 contains the NC state seal image. HTML has no <img> tags - the seal is represented as text in a paragraph.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 9,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 104.34,
+    "page_count": 4,
+    "visual_input_tokens": 12345,
+    "visual_output_tokens": 665,
+    "content_input_tokens": 10635,
+    "content_output_tokens": 848,
+    "timestamp": "2026-04-16T00:46:51.131670",
+    "auditor_version": "1.0.0"
+  }
+}

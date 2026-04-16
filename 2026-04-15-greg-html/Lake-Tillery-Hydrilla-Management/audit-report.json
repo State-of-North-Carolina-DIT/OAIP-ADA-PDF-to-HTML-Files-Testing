@@ -1,0 +1,158 @@
+{
+  "document_id": "Lake-Tillery-Hydrilla-Management",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'history of hydrilla at lake tillery' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 3 (History of Hydrilla at Lake Tillery) has a two-column layout in the PDF with the site-by-year table on the left and the TGC stocking table on the right. In the HTML, both tables are rendered sequentially in a single column, losing the side-by-side layout.",
+      "severity": "major",
+      "evidence": "PDF shows the site acreage table and TGC stocking table side by side. HTML renders them stacked vertically.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 5 (Hydrilla Management in 2023) has a two-column layout with bullet points on the left and a map on the right. The HTML renders them sequentially rather than side-by-side.",
+      "severity": "major",
+      "evidence": "PDF shows text bullets and satellite map in parallel columns. HTML stacks them vertically.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 (Proposed Management Activities for 2024) has a three-column layout with text on the left and two treatment area maps on the right. The HTML loses this side-by-side arrangement.",
+      "severity": "major",
+      "evidence": "PDF shows text and two maps in a multi-column layout. HTML stacks all content vertically.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 7 (Fall Vegetation Surveys) has a two-column layout with text on the left and a photo on the right. The HTML stacks them vertically.",
+      "severity": "major",
+      "evidence": "PDF shows bullet text and rake toss photo side by side. HTML renders them sequentially.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 9 (SONAR data) has a two-column layout with a Biobase heat map on the left and a SONAR screen capture on the right. The HTML renders them stacked.",
+      "severity": "major",
+      "evidence": "PDF shows two images side by side. HTML stacks them vertically.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 10 (Hydrilla coverage and density maps) has a two-panel side-by-side layout showing hydrilla acreage map on left and density rating map on right. The HTML stacks them vertically.",
+      "severity": "major",
+      "evidence": "PDF has two satellite maps side by side with separate legends. HTML renders them sequentially.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Slide 8 shows survey point locations on an aerial map. The image appears in HTML but is noticeably cropped or rendered without the same context as in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows the full lake survey point map clearly. HTML shows the same map but may lose some peripheral context.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML inserts repeated slide images (the original PDF slide rendering) before the extracted text content for each section, creating duplicated content that doesn't exist in the source PDF.",
+      "severity": "major",
+      "evidence": "For example, on pages corresponding to slides 3, 5, 6, 7, the HTML shows both the slide image and then the extracted text/tables below it, effectively doubling the content presentation.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated slide image + extracted text pattern continues throughout the HTML conversion, creating a confusing doubled reading experience for slides 4, 5, 6, 7, 9, 10, and 11.",
+      "severity": "major",
+      "evidence": "Each slide appears first as an embedded image of the original slide, then as extracted HTML content below it. A reader encounters the same information twice in sequence.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a standalone h2 'Department of Environmental Quality' before the h1 title, which misrepresents the document hierarchy. The department name functions as a header/branding element in the PDF, not a section heading.",
+      "severity": "minor",
+      "evidence": "HTML has <h2>Department of Environmental Quality</h2> before <h1>Hydrilla management at Lake Tillery, past and present</h1>. In the PDF, 'Department of Environmental Quality' is a branding/header element on the title slide.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element inside another <main> element, which is a structural artifact but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML structure: <main><main>...</main></main>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are slightly interpretive but generally accurate. The alt text for page 3's image describes 'laboratory workers' which may not precisely match what the PDF header image shows (it appears to be a generic background).",
+      "severity": "minor",
+      "evidence": "Alt text: 'Background header showing laboratory workers with a composite layout containing two data tables' - the PDF shows a background image that may or may not specifically depict laboratory workers.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 10,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 400.21,
+    "page_count": 12,
+    "visual_input_tokens": 34469,
+    "visual_output_tokens": 1570,
+    "content_input_tokens": 27625,
+    "content_output_tokens": 571,
+    "timestamp": "2026-04-16T00:59:59.799682",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "document_id": "01_10_Corrected_cover_letter_20201221",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image/logo is missing from the HTML version",
+      "severity": "critical",
+      "evidence": "PDF has the North Carolina state seal centered at the top of the page. HTML has no image present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined text rendered differently in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows 'Please attach this letter to the cover of your existing mining permit for future reference.' with underline. HTML preserves the underline styling but breaks it across lines differently.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has no h1 element serving as a document title, and no heading hierarchy at all. The document structure lacks any headings to organize the content.",
+      "severity": "major",
+      "evidence": "The HTML contains no h1, h2, or any heading tags. The entire document is rendered as paragraphs within nested <main> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements, which is invalid HTML structure. The outer <main> wraps the entire body content, and an inner <main> contains the letter body.",
+      "severity": "minor",
+      "evidence": "HTML has <main> inside <main>, with <header> and <footer> siblings to the inner <main>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains two images (the NC state seal and the DEQ logo at the bottom), but neither has an <img> tag in the HTML. The images are omitted entirely rather than having alt text.",
+      "severity": "minor",
+      "evidence": "PDF shows the North Carolina state seal at the top and the DEQ logo near the footer. The HTML contains no <img> tags at all.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 53.82,
+    "page_count": 1,
+    "visual_input_tokens": 4273,
+    "visual_output_tokens": 340,
+    "content_input_tokens": 4448,
+    "content_output_tokens": 521,
+    "timestamp": "2026-04-16T00:46:00.593896",
+    "auditor_version": "1.0.0"
+  }
+}

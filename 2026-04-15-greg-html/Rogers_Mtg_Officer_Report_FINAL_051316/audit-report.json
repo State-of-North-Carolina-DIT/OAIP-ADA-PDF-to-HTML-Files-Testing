@@ -1,0 +1,102 @@
+{
+  "document_id": "Rogers_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC state logo/seal image present in the PDF header is not rendered in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NC Energy, Mineral & Land Resources logo with tree graphic in the top-left corner. HTML page 4 shows only a colored bar instead of the logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 of the PDF is a blank page with only header/footer content, which is rendered as a separate page in the HTML but appears essentially empty in both versions",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows letterhead with no body content. HTML equivalent also shows just header content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the Attachments section (Section IV), the PDF uses Roman numerals with periods aligned in a formatted list, while the HTML uses a slightly different presentation but content is preserved",
+      "severity": "minor",
+      "evidence": "PDF shows 'I.' through 'VI.' with tab-aligned descriptions. HTML shows 'I.' through 'VI.' with different spacing but same content.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure",
+      "severity": "minor",
+      "evidence": "The HTML has a <main> element in the outer template and then another <main> element inside the converted content, resulting in nested <main> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The introductory memorandum content (To, From, Subject, and first paragraph) appears twice - once in the header area and once in the main body",
+      "severity": "major",
+      "evidence": "The header section contains the full To/From/Subject block and the introductory paragraph about the March 14, 2016 meeting. This same content is then repeated immediately after as part of the main body content, including the outline list. The PDF only presents this content once on page 1.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the header image is reasonable but generic",
+      "severity": "minor",
+      "evidence": "Alt text reads 'NC DEQ Energy, Mineral and Land Resources logo' which is a reasonable description of the NC state logo and department branding shown in the PDF header.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 106.07,
+    "page_count": 5,
+    "visual_input_tokens": 15894,
+    "visual_output_tokens": 823,
+    "content_input_tokens": 15754,
+    "content_output_tokens": 530,
+    "timestamp": "2026-04-16T00:52:56.003025",
+    "auditor_version": "1.0.0"
+  }
+}

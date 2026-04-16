@@ -1,0 +1,118 @@
+{
+  "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'sab \u2013 what it is' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state flag image is missing from the title slide in the HTML rendering",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC state flag prominently centered above the title text. The HTML rendering does not display this flag image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC state flag image present on PDF page 2 is missing in the HTML rendering",
+      "severity": "critical",
+      "evidence": "PDF page 2 shows the NC state flag on the left side. The HTML rendering shows no flag image.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 in the PDF appears to be a transition/divider slide with just the flag, but the HTML renders it as an empty section between the title and the legislation content",
+      "severity": "major",
+      "evidence": "PDF page 2 has just the NC flag as a visual divider. HTML shows this as a blank area with no content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Modeling Supports Planning diagram with nested ellipses is missing from the HTML",
+      "severity": "major",
+      "evidence": "PDF page 10 shows a nested ellipse diagram with 'Water Supply Planning' as the outer ellipse and 'River Basin Modeling' as the inner ellipse. The HTML replaces this with plain text listing the two items.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DWR (Division of Water Resources) logo is present in the HTML but appears significantly different in size/rendering compared to the PDF",
+      "severity": "major",
+      "evidence": "PDF page 11 shows the DWR logo prominently. The HTML shows a smaller version of the logo.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Duplicate heading text for 'SAB \u2013 What It Is' used across three separate sections without differentiation",
+      "severity": "minor",
+      "evidence": "The PDF has three slides all titled 'SAB \u2013 What It Is' (pages 6, 7, 8). The HTML reproduces these as three separate <h2> sections with identical heading text. While this matches the PDF, the heading hierarchy has a minor issue: the 'SAB \u2013 What It Is' on page 7 and 8 could benefit from differentiation, but this mirrors the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a duplicate nested <main> element, creating a structural redundancy",
+      "severity": "major",
+      "evidence": "The HTML contains <body><main><main>...</main></main></body> \u2014 two nested <main> tags. This is a structural duplication artifact of the conversion.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 6,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 81.05,
+    "page_count": 11,
+    "visual_input_tokens": 21761,
+    "visual_output_tokens": 996,
+    "content_input_tokens": 21292,
+    "content_output_tokens": 492,
+    "timestamp": "2026-04-16T00:47:03.142159",
+    "auditor_version": "1.0.0"
+  }
+}

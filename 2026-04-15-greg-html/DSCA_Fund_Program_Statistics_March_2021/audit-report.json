@@ -1,0 +1,86 @@
+{
+  "document_id": "DSCA_Fund_Program_Statistics_March_2021",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a clear two-column layout for Receipts and Disbursements, with FY 2020-2021 data on the left and Duration of Program data on the right. The HTML converts this into a single four-column table, collapsing the two distinct side-by-side sections into one merged table structure.",
+      "severity": "major",
+      "evidence": "PDF shows two visually separate sections side by side (FY 2020-2021 on left, Duration of Program on right) with their own headers. HTML merges them into a single table with four columns.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the PDF, dash entries (indicating zero or no value) for Receipts items like Rebate and Interest are shown as '-'. In the HTML, these are rendered as '$ -' which is slightly different formatting but preserves the meaning.",
+      "severity": "minor",
+      "evidence": "PDF: Rebate: $ - (dash), Interest: $ - (dash). HTML: '$ -' for same fields.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Fund Balance and Encumbered in Contracts summary section appears as standalone right-aligned lines in the PDF, but is rendered as a separate table in the HTML. While data is preserved, the visual grouping differs from the original.",
+      "severity": "major",
+      "evidence": "PDF shows 'Fund Balance as of 3/31/2021: $ 13,054,308.66' and 'Encumbered in Contracts as of 3/31/21: $ 9,051,143.57' as right-aligned standalone lines. HTML renders them in a separate 'Summary Metric' table.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The DSCA Site Statistics section in the PDF uses a simple list format with values aligned to the right. The HTML converts this into a formal table with headers 'Statistic' and 'Value', which adds structure not present in the original.",
+      "severity": "minor",
+      "evidence": "PDF: simple indented list with values. HTML: formal table with column headers 'Statistic' and 'Value'.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 36.25,
+    "page_count": 1,
+    "visual_input_tokens": 4237,
+    "visual_output_tokens": 768,
+    "content_input_tokens": 6119,
+    "content_output_tokens": 211,
+    "timestamp": "2026-04-16T00:48:57.374188",
+    "auditor_version": "1.0.0"
+  }
+}

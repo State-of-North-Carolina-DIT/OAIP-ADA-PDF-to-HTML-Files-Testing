@@ -1,0 +1,150 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image/logo in the header is missing from the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC state seal centered at the top of the letterhead. The HTML version does not display this seal image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo in the footer is missing from the HTML conversion",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the DEQ logo with contact information at the bottom. The HTML shows the contact text but the logo image is absent.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image is missing from the HTML conversion",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows Kevin Hart's handwritten signature. The HTML version does not display the signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated letter content appears between the cover page and report content in the HTML",
+      "severity": "major",
+      "evidence": "The HTML shows the full cover letter text repeated - once as the original letter rendering and then again as inline text before the report title, creating duplicate content that doesn't exist as a single flow in the PDF.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The cover page of the report is not preserved as a distinct page/section in the HTML",
+      "severity": "major",
+      "evidence": "PDF page 3 shows a standalone title page with 'Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed' centered, with Fund Statutory Authority, Due Date, Receiving Entities, and Submitting Entity as separate sections. In the HTML this content is merged inline with the letter and subsequent report content.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The NC Parks & Recreation cooperator rows have visual rendering artifacts in the PDF table that are faithfully reproduced in the HTML",
+      "severity": "minor",
+      "evidence": "In the PDF on page 5, the NC Parks & Recreation rows appear to have overlapping text. The HTML table reproduces the same data.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Missing Project name for NC Parks & Recreation lake-wide surveys row",
+      "severity": "minor",
+      "evidence": "In the PDF table page 4, the NC Parks & Recreation row for '$1,000.00 lake-wide surveys' has no project name listed. The HTML also shows no project name, which matches.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Shallow Draft Navigation Channel Dredging Annual Report table on page 3 is rendered as an image in the HTML rather than as a structured HTML table, making the data inaccessible as text.",
+      "severity": "major",
+      "evidence": "Page 3 of the PDF contains a detailed table with ~43 rows of dredging project data (dates, projects, cooperators, amounts, project types) totaling $9,543,427.32. The HTML renders this as: <figure><img src='[embedded-image-removed]' alt='Table: Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022'></figure> instead of a proper HTML table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Project Cooperators table at the bottom of page 10 is inaccurately reproduced - the Lake Gaston and Lake Norman/Mountain Island Reservoir cooperator entries are split incorrectly across rows.",
+      "severity": "major",
+      "evidence": "In the PDF, Lake Gaston cooperators are 'Halifax Co., Northampton Co., Warren Co.' and Lake Norman cooperators are 'Lake Norman Marine Commission, Charlotte Water,' while Mountain Island Reservoir cooperators are 'Charlotte Stormwater Services and Duke Energy'. In the HTML, the Lake Norman cooperators column shows 'Lake Norman Marine Commission, Charlotte Water, Charlotte' and the Mountain Island Reservoir cooperators show 'Stormwater Services and Duke Energy' - splitting 'Charlotte Stormwater Services' across two rows.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has nested <main> elements, and the heading hierarchy is somewhat confused. The title page content ('Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed') is used as h1, but the cover page metadata like 'Due Date: Oct. 1, 2021' appears as standalone text rather than being structured properly.",
+      "severity": "minor",
+      "evidence": "The h1 is 'Annual Report on Projects Funded by the Shallow Draft Navigation Channel Dredging and Aquatic Weed' which is acceptable, but the 'North Carolina Aquatic Weed Control Program - Funds Expended During the Fiscal Year' section heading is an h2, while 'Intro' is also h2, creating a reasonable structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header/letterhead information (NC DEQ address and phone) appears at the top of the HTML body text, which duplicates what is in the header image area.",
+      "severity": "minor",
+      "evidence": "The HTML contains both an <img> with alt text referencing the NC DEQ header AND separate text: 'North Carolina Department of Environmental Quality | Division of Water Resources / 512 N. Salisbury Street | Raleigh, North Carolina 27699-1617 / 919-707-9000'. This text appears both in the image area and as explicit paragraph text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Due Date on the title page shows 'Oct. 1, 2021' which matches the PDF page 2, but the cover letter on page 1 is dated October 1, 2022 and references FY 2021-2022. This inconsistency exists in the source PDF itself, so it is not a conversion error, but notable.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows 'Due Date: Oct. 1, 2021' and the HTML also shows 'Due Date: Oct. 1, 2021' - this matches the source.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 10,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 126.17,
+    "page_count": 10,
+    "visual_input_tokens": 31669,
+    "visual_output_tokens": 902,
+    "content_input_tokens": 33994,
+    "content_output_tokens": 1128,
+    "timestamp": "2026-04-16T00:54:16.497763",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 36. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDENR logo/seal image at the top of the document is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NCDENR logo/seal at the top center of the page. The HTML version does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The header layout with Governor name on left, Director in center, and Secretary on right is collapsed into a stacked single-column layout in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows 'Beverly Eaves Perdue / Governor' on left, 'Charles Wakild, P.E. / Director' in center, and 'Dee Freeman / Secretary' on right in a three-column arrangement. HTML renders these as stacked lines.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'One North Carolina Naturally' branding logo in the footer is missing from the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF shows the styled 'NorthCarolina Naturally' logo in the bottom right. HTML has plain text 'One North Carolina Naturally' instead.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The handwritten initials/signatures next to the FROM field are lost in HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF shows handwritten initials/signatures after Karen Higgins' unit name and Brian Wrenn's unit name. HTML has no indication of these signatures.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header content appears between the two renditions of page 1 in the HTML, with 'North Carolina Department of Environment and Natural Resources' and 'Division of Water Quality' appearing as a large heading between the scanned and digital versions.",
+      "severity": "major",
+      "evidence": "The HTML shows the organizational header text repeated as large headings between what appears to be two versions of the same page content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The entire document content appears to be duplicated in the HTML - the scanned PDF pages (1-7) are followed by an HTML re-rendering of the same content, effectively doubling the document.",
+      "severity": "critical",
+      "evidence": "Pages 1-7 from the PDF appear as images/scanned content, then the same content is repeated in HTML format below, creating a duplicate reading experience.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The table of Corps' Regional General Permit Numbers and DWQ General Certification Numbers is rendered with a different visual style but maintains correct structure.",
+      "severity": "minor",
+      "evidence": "PDF shows the table with underlined headers and aligned columns. HTML shows a properly structured table with borders. Content and structure match.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In Section E bullet points, the PDF uses arrow bullet markers (\u25ba) while the HTML uses circle markers (\u25cb) for some items.",
+      "severity": "minor",
+      "evidence": "PDF page 7 uses right-pointing triangle/arrow bullets for sub-items under section E. HTML uses small circle markers.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two nested <main> elements. The header uses <h1> for the department name and <h2> for 'Division of Water Quality', then the section headings I and II use <h3>. The document structure is somewhat unusual with nested main tags, but heading text matches the PDF content.",
+      "severity": "minor",
+      "evidence": "HTML has <main> inside <body>, then another <main> inside the first <main>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains two nested <main> elements, which is a structural duplication of the semantic container element.",
+      "severity": "minor",
+      "evidence": "The outer <main> wraps the entire page content including header, and an inner <main> wraps the body content starting after the header.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF footer shows 'NCS000250' as the NCDOT NPDES permit number in parentheses, but this is accurately reproduced in the HTML. However, minor text normalization: PDF shows 'oil$nd grade' (apparent OCR error for 'original grade') - the HTML corrects this to 'original grade'.",
+      "severity": "minor",
+      "evidence": "PDF page 4: 'restored to oil$nd grade' vs HTML: 'restored to original grade'. This is actually a reasonable correction of an OCR artifact.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "PDF shows 'supercede' which the HTML preserves correctly. The PDF shows 'All applicationshall' (missing space) which the HTML corrects to 'All applications shall'. These are minor corrections of PDF OCR issues.",
+      "severity": "minor",
+      "evidence": "PDF page 3: 'All applicationshall' vs HTML: 'All applications shall'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The PDF shows the email as 'katie.merritt@ncdenr.gov' but with a visible display of 'katie.merritt@ncdenr.qov' (OCR artifact with 'q' instead of 'g'). The HTML correctly uses 'katie.merritt@ncdenr.gov'. Similarly other email addresses with 'qov' in the PDF are correctly rendered as 'gov' in the HTML. These are appropriate corrections.",
+      "severity": "minor",
+      "evidence": "PDF: 'katie.merritt@ncdenr.qov' displayed, HTML: href='mailto:katie.merritt@ncdenr.gov' - this is a correction of OCR artifacts.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 12,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 446.44,
+    "page_count": 7,
+    "visual_input_tokens": 22463,
+    "visual_output_tokens": 1281,
+    "content_input_tokens": 25364,
+    "content_output_tokens": 919,
+    "timestamp": "2026-04-16T00:52:33.255084",
+    "auditor_version": "1.0.0"
+  }
+}

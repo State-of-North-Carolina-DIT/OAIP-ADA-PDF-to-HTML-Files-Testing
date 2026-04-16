@@ -1,0 +1,110 @@
+{
+  "document_id": "01_10_adilet_2020_3",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 47. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal/logo image present at the top of the PDF is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 has a state seal/logo centered at the top of the page. The HTML page 1 has no image at all.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The underlined formatting on 'Certified Mail' and 'Return Receipt Requested' in the PDF is rendered as underlined in the HTML, which is correct. However, the numbered list items in the PDF use a hanging indent format that groups sub-text clearly under each number, whereas the HTML renders them as a standard ordered list. This is acceptable but noted.",
+      "severity": "minor",
+      "evidence": "PDF uses indented block formatting for numbered items; HTML uses standard list formatting. Both are readable.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The RE: subject line in the PDF has 'Proposed Alamance Quarry and Construction Materials Quarry', 'Alamance County', and 'Cape Fear River Basin' indented under the 'RE:' label as a block. In the HTML, these are rendered as separate lines without the 'RE:' label indentation structure, appearing as standalone lines prefixed with 'RE:'.",
+      "severity": "major",
+      "evidence": "PDF: 'RE:' followed by indented block of three lines. HTML: 'RE: Proposed Alamance Quarry...' on one line, then 'Alamance County' and 'Cape Fear River Basin' as separate lines without clear association to the RE: label.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "No heading elements (h1-h6) are used anywhere in the HTML document. The document has no structured heading hierarchy at all - not even a document title as h1.",
+      "severity": "major",
+      "evidence": "The HTML body contains only <header>, <main>, <footer>, <p>, <ol>, <li>, <u>, <strong>, and <br/> elements. No h1, h2, h3 etc. are present.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside another <main> element, creating a structural oddity, though no content is duplicated.",
+      "severity": "minor",
+      "evidence": "The outer <main> from the body wrapper contains an inner <main> element where the letter body content resides.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The NC state seal image present in the PDF header is not represented in the HTML at all - no <img> tag exists for it.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the North Carolina state seal at the top. The HTML has no <img> tag anywhere in the document.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 67.41,
+    "page_count": 2,
+    "visual_input_tokens": 6979,
+    "visual_output_tokens": 630,
+    "content_input_tokens": 6236,
+    "content_output_tokens": 505,
+    "timestamp": "2026-04-16T00:46:14.199530",
+    "auditor_version": "1.0.0"
+  }
+}

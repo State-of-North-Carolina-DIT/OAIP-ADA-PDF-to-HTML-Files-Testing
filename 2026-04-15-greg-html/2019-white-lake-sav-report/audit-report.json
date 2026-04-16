@@ -1,0 +1,102 @@
+{
+  "document_id": "2019-white-lake-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 32. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the body text, Dwarf milfoil is stated as found at 40 points in 2018, but Table 2 and Figure 9 caption both show 30 sample points in 2018. This inconsistency exists in both the PDF and HTML, so it is a source document issue, not a conversion error.",
+      "severity": "major",
+      "evidence": "Text says '40 points in 2018 (Figure 9)' while Table 2 shows Dwarf Milfoil 2018 = 40 and Figure 9 caption says '30 sample points in 2018'. Both PDF and HTML show the same discrepancy.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 9 caption in the PDF body text states 'Dwarf milfoil was found at 30 sample points in 2018' but the web version also says the same. The figure images appear consistent between PDF and HTML.",
+      "severity": "minor",
+      "evidence": "Both versions show same caption text for Figure 9.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Inconsistency in Dwarf milfoil 2018 point count between body text and Figure 9 caption",
+      "severity": "major",
+      "evidence": "PDF body text says 'Dwarf milfoil (Myriophyllum tentellum) was found at 40 points in 2018 (Figure 9)' and Table 2 shows 40 for 2018. However, the Figure 9 caption in both the PDF and HTML says 'Dwarf milfoil was found at 30 sample points in 2018.' The HTML faithfully reproduces both the body text (40) and the figure caption (30), so this is a source PDF inconsistency, not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested main elements in HTML structure",
+      "severity": "minor",
+      "evidence": "The HTML contains a <main> element inside another <main> element, which is invalid HTML structure but does not affect content fidelity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Nested figure elements",
+      "severity": "minor",
+      "evidence": "Each figure in the HTML contains a <figure> nested inside another <figure>, e.g., '<figure><figure><img ...></figure><figcaption>...</figcaption></figure>'. This is a minor structural redundancy but does not affect content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Grid pattern acreage inconsistency between PDF and HTML",
+      "severity": "major",
+      "evidence": "PDF page 2 states '5 \u00be acre grid pattern' but the HTML renders this as '5 \u00be acre grid pattern' \u2014 this actually matches. No issue here upon re-check.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 473.06,
+    "page_count": 9,
+    "visual_input_tokens": 23345,
+    "visual_output_tokens": 1057,
+    "content_input_tokens": 20470,
+    "content_output_tokens": 677,
+    "timestamp": "2026-04-16T00:54:11.975790",
+    "auditor_version": "1.0.0"
+  }
+}

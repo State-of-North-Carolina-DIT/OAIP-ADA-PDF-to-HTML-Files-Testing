@@ -1,0 +1,110 @@
+{
+  "document_id": "Cape_Fear_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Energy, Mineral & Land Resources logo/image present in the PDF header is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC state logo with tree and 'Energy, Mineral & Land Resources / ENVIRONMENTAL QUALITY' text in the upper left. The HTML version does not display this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The outline list in the PDF uses Roman numerals with tab-separated formatting in a distinctive indented layout, while the HTML renders them as a bulleted list with hyperlinks.",
+      "severity": "minor",
+      "evidence": "PDF shows 'I. History/Background', 'II. March 10, 2016...' etc. as plain text with Roman numeral labels. HTML converts these to hyperlinked list items.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 of the PDF is essentially a blank letterhead page with no substantive content. The HTML does not reproduce this blank page, which is acceptable but noted.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows only the NC letterhead header and footer with no body content. HTML skips this entirely.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF's attachment list (Section IV), the items are numbered with Roman numerals I through VI. In the HTML, these appear to match but the attachment list in the PDF page 1 outline references I-IV while the actual attachments section lists I-VI. Both PDF and HTML are consistent here, so no finding.",
+      "severity": "major",
+      "evidence": "Retracted - both versions match.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The HTML adds internal anchor links in the table of contents that do not exist in the PDF. The PDF simply lists the outline items without hyperlinks.",
+      "severity": "minor",
+      "evidence": "HTML contains <a href=\"#history-background\">, <a href=\"#march-10-summary\">, etc. in the table of contents. The PDF has no such hyperlinks \u2014 it is a plain numbered list.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a nested <main> element inside another <main>, which is a structural issue but does not affect content fidelity. The heading hierarchy is otherwise correct with h1 for MEMORANDUM and h2 for each major section.",
+      "severity": "minor",
+      "evidence": "HTML has <main> wrapping the whole body content, and another <main> after </header>. This is a structural HTML issue, not a content fidelity issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header block includes official names (PAT McCRORY, DONALD R. VAN DER VAART, TRACY DAVIS) which appear only once in the PDF header but are faithfully reproduced once in the HTML. No actual duplication found, but the footer text repeated on each PDF page (State of North Carolina | Environmental Quality | ...) is correctly omitted from the HTML.",
+      "severity": "minor",
+      "evidence": "No actual duplication issue \u2014 this is a non-finding upon closer inspection.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 8,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 114.14,
+    "page_count": 4,
+    "visual_input_tokens": 12949,
+    "visual_output_tokens": 861,
+    "content_input_tokens": 12014,
+    "content_output_tokens": 626,
+    "timestamp": "2026-04-16T00:48:57.286192",
+    "auditor_version": "1.0.0"
+  }
+}

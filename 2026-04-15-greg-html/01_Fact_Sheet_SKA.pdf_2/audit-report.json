@@ -1,0 +1,70 @@
+{
+  "document_id": "01_Fact_Sheet_SKA.pdf_2",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 38. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'DRAFT PERMIT RENEWAL' is rendered as h2, while 'FACT SHEET' is h1. In the PDF, 'FACT SHEET' and 'DRAFT PERMIT RENEWAL' are both part of the document header. This is an acceptable structural choice, but the PDF section headings 'Background' and 'Public Comment & Public Hearing' are underlined section headings rendered as h2, which is consistent.",
+      "severity": "minor",
+      "evidence": "PDF: 'FACT SHEET' and 'DRAFT PERMIT RENEWAL' appear as header block; HTML: h1 for 'FACT SHEET', h2 for 'DRAFT PERMIT RENEWAL'. This is a reasonable choice.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside the outer <main>, which is a structural issue but does not cause content duplication. However, the page header block (FACT SHEET / DRAFT PERMIT RENEWAL / address / EPA ID) from the PDF's page 2 header is not repeated in the HTML, which is correct consolidation.",
+      "severity": "major",
+      "evidence": "PDF page 2 repeats the header block; HTML correctly consolidates to a single header.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 43.26,
+    "page_count": 2,
+    "visual_input_tokens": 6615,
+    "visual_output_tokens": 195,
+    "content_input_tokens": 7497,
+    "content_output_tokens": 512,
+    "timestamp": "2026-04-16T00:45:50.312818",
+    "auditor_version": "1.0.0"
+  }
+}

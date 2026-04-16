@@ -1,0 +1,78 @@
+{
+  "document_id": "Networking_&_Outreach_Efforts_Kate_MacLeod,_ESI_Outreach_Coordinator",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has two <main> elements nested, and the h1 is 'ESI Networking & Outreach' which is acceptable, but some section headings that are peer-level in the PDF (like 'Webinars & Trainings', 'Steward Forum', 'Regulatory Roundtable', 'Networking Events', 'Regional Networking') are rendered as h3 under the 'Year in Review: 2025 Recap' h2, which is reasonable. However, 'Staying Connected: ESI Communications' is an h2 section header in the PDF but its sub-items ('Listserv', 'Constant Contact', 'Newsletter', 'ESI Interest List', 'Feedback Form') appear before the h2 heading in the HTML structure due to page ordering. The structure is actually correct upon closer inspection.",
+      "severity": "major",
+      "evidence": "After re-checking, the heading hierarchy follows the PDF structure appropriately. Withdrawing this finding.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains two nested <main> elements, which is a structural duplication artifact, though it does not cause content duplication.",
+      "severity": "minor",
+      "evidence": "HTML has <main> in the body and then another <main> inside the first <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The listserv email address in the PDF appears to be 'nc-environmentalassistance@lists.deq.nc' but it may be truncated from the original which could be a .gov domain. However, the HTML matches what is shown on the PDF slide, so this is not a conversion error.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML show 'nc-environmentalassistance@lists.deq.nc'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": "visual:too_large(21p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 532.14,
+    "page_count": 21,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 38961,
+    "content_output_tokens": 669,
+    "timestamp": "2026-04-16T01:01:48.144392",
+    "auditor_version": "1.0.0"
+  }
+}

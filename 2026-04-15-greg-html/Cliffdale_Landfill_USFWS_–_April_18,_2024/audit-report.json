@@ -1,0 +1,110 @@
+{
+  "document_id": "Cliffdale_Landfill_USFWS_\u2013_April_18,_2024",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'status: federally-listed endangered biological determination: no effect' (5x); 'cumberland county/ cliffdale landfill 7583 lowell harris road fayetteville, cumb...' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 headings used in the HTML. The document has 'United States Department of the Interior' as h1 in at least three places (Self-Certification Letter section, IPaC letter section, and NCNHP section), plus 'NC DEPARTMENT OF NATURAL AND CULTURAL RESOURCES' as h1. Only one h1 should be used for the document title.",
+      "severity": "major",
+      "evidence": "HTML contains <h1>United States Department of the Interior</h1> at least twice and <h1>NC DEPARTMENT OF NATURAL AND CULTURAL RESOURCES</h1> once. These represent separate sub-documents but the HTML heading hierarchy should use h1 only once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Self-Certification Letter content appears twice - once as a blank template (from page 1 of PDF) and once as the filled-in version (from page 2). The HTML reproduces both as a single merged section, but the blank template version's checkbox items and the filled version's checkbox items are both present.",
+      "severity": "minor",
+      "evidence": "Page 1 of PDF is a blank template with empty checkboxes and no date/project name. Page 2 has filled-in fields. The HTML merges these but includes the checkbox list once, which is acceptable. However, the page 2 content from the filled version is the one rendered, and the blank template content is effectively folded in.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Self-Certification Letter references 'Northern long-eared bat' in the concurrence paragraph on page 2 of the PDF, which the HTML faithfully reproduces. However, this appears to be a template artifact since the species assessment discusses 'tricolored bat' not 'Northern long-eared bat'. This is not a conversion error but exists in both versions.",
+      "severity": "minor",
+      "evidence": "Both PDF and HTML contain: 'the \"may affect\" determination for Northern long-eared bat' - this is faithfully reproduced.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text is generic rather than descriptive of actual image content.",
+      "severity": "minor",
+      "evidence": "Photo images have alt text like 'Photo 1', 'Photo 2' etc. rather than describing the actual content shown. Map images have reasonable alt text like 'Vicinity Exhibit Map', 'USGS Topographic Exhibit Map'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes map area labels in a text paragraph for the NCNHP map that are extracted from the map image itself. While these labels exist on the map in the PDF, they are rendered as text content in the HTML rather than being part of the image only.",
+      "severity": "minor",
+      "evidence": "HTML contains: 'Map Area Labels: Woodmark Dr, Christina St, Cliffdale Rd, Beverly Dr, Leslie Dr, Adrian Dr, Raeford Rd, Lake William, Olted Rd, English Saddle Dr, Rim Rd, Bones Creek...' These are street names from the map on page 29 of the PDF, extracted from the image and presented as text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The IPaC Record Locator # field in the HTML shows a blank line whereas the PDF shows it as a blank fill-in field. The HTML renders it with underscores to simulate the blank line.",
+      "severity": "minor",
+      "evidence": "HTML: 'IPaC Record Locator # __________________________' vs PDF which shows a blank line for fill-in.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 8,
+  "skip_reason": "visual:too_large(29p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 1140.84,
+    "page_count": 29,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 75148,
+    "content_output_tokens": 1149,
+    "timestamp": "2026-04-16T01:08:43.132367",
+    "auditor_version": "1.0.0"
+  }
+}

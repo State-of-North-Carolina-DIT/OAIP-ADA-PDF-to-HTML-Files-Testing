@@ -1,0 +1,198 @@
+{
+  "document_id": "Energy_Balance_Malvika_Ogale,_Novo_Nordisk",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 2 (Novo Nordisk at a glance) has a multi-column grid layout with statistics, images, and therapy area cards. The HTML renders this as a single-column flow with interleaved images and text, losing the grid structure.",
+      "severity": "major",
+      "evidence": "PDF shows a structured grid with stat boxes (50%, 290.4, 80, 52, 45.2) alongside therapy area images in a visual dashboard. HTML renders these as sequential bullet points and separate images.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 4 (Product Supply in NC & Virginia) has a rich grid layout with statistics, awards, and images in a mosaic pattern. HTML collapses this to a linear list.",
+      "severity": "major",
+      "evidence": "PDF shows a mosaic grid with 31 years, $10B, 60+ countries, awards, LEED certification arranged visually. HTML renders as a sequential image followed by bullet-point text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 5 (Novo Nordisk in North Carolina) has a two-column layout with facility images on the left and bullet points on the right. HTML collapses to single column.",
+      "severity": "major",
+      "evidence": "PDF shows 3 aerial facility photos stacked vertically on the left with bullet points and stats on the right. HTML shows images stacked above the bullet points.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 (four must-win battles) has a specific layout with numbered battles (#1-#4) arranged around a central globe illustration. HTML linearizes this.",
+      "severity": "major",
+      "evidence": "PDF shows #1 and #3 at top, globe in center, #2 and #4 at bottom in a quadrant-like layout. HTML renders as a sequential bullet list.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 8 (Driving change as environmentally responsible business) has a three-column layout for Circular supply/company/products. HTML renders as single column.",
+      "severity": "major",
+      "evidence": "PDF shows three equal columns with circular images and descriptions for supply, company, and products side by side. HTML renders each sequentially.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 11 (Goal - Mapping) has a two-column layout with bullet points on the left and a pie chart on the right. HTML linearizes this.",
+      "severity": "major",
+      "evidence": "PDF shows text bullets and pie chart side by side. HTML shows pie chart below the text with the chart data listed as separate bullet points.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 17 (Energy Savings Project Examples) has a two-column layout with Inactivation Skid Optimization on the left and Distillation Optimization on the right. HTML linearizes this.",
+      "severity": "major",
+      "evidence": "PDF shows two project examples side by side. HTML renders them sequentially.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 18 (Water Savings Project Examples) has a two-column layout with Filter backwash reduction on the left and Conductivity Setpoint Changes on the right. HTML linearizes this.",
+      "severity": "major",
+      "evidence": "PDF shows two project examples side by side. HTML renders them sequentially.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "On the HTML for Slide 9 (Circular for Zero), content from the bottom portion of the slide (Project savings bullet points) appears duplicated - once in extracted text and again visible in the embedded slide image.",
+      "severity": "minor",
+      "evidence": "HTML shows the Project savings bullets in text form AND the same content is visible in the embedded slide screenshot below, creating redundancy.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "On the HTML for Slide 7 (Must-win challenge to reduce CO2 emissions), the slide image is embedded showing the full slide content, and then the same targets are repeated as bullet points below.",
+      "severity": "minor",
+      "evidence": "HTML shows the embedded slide image with targets visible, then lists the same targets again as text bullets below.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "On the HTML for Slide 13 (Water Example - Process Flows), the slide image is embedded showing the full diagram, then the same driver bullets and detailed process labels are repeated below as text.",
+      "severity": "minor",
+      "evidence": "Driver bullets and process labels appear both in the embedded slide image and again as extracted text below.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> tags create invalid HTML structure",
+      "severity": "major",
+      "evidence": "The HTML contains <main> inside another <main> element, which is invalid HTML structure and could cause rendering issues.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page 2 content is substantially duplicated - both the text summary and the visual grid content are rendered, resulting in key statistics appearing twice",
+      "severity": "major",
+      "evidence": "Statistics like '50% of the world's insulin', '290.4 billion DKK', '80 countries', '45.2 million people', '52 billion DKK in R&D' appear in the text list AND again under the image/grid section. The therapy areas (Cardiovascular & Emerging Therapy Areas, Rare Disease, Obesity, Diabetes) and 'A top ten pharma company' also appear twice.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text discrepancy in the number of affiliates/countries",
+      "severity": "minor",
+      "evidence": "PDF page 2 states 'Affiliates in 80 countries' but page 3 says '80 countries with affiliates' and also mentions '170' affiliates. The HTML on page 2 section lists '80 countries' but the PDF slide 2 header area shows '170' (affiliates) and '80' (countries) as separate statistics. The '170' affiliates figure is missing from the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The '170' affiliates statistic from page 2 is not captured in the HTML",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows '170' as a standalone number alongside text about affiliates. The HTML does not include this '170' figure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Natural Gas and Steam Example page content is partially captured with fragmented text",
+      "severity": "minor",
+      "evidence": "PDF page 12 contains a detailed process flow diagram with extensive labels and notes. The HTML captures some label text but in a fragmented, hard-to-follow manner. Much of the detailed equipment labeling, flow connections, and notes from the diagram are only partially transcribed.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The market cap URL is split across multiple anchor tags unnecessarily",
+      "severity": "minor",
+      "evidence": "The single URL 'https://companiesmarketcap.com/pharmaceuticals/largest-pharmaceutical-companies-by-market-cap/' is broken into 6 separate <a> tags in the HTML, though they all point to the same URL. The link content and destination are preserved.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text is generic rather than specifically descriptive",
+      "severity": "minor",
+      "evidence": "Multiple facility aerial photos on page 5 all have the same alt text 'Aerial view of manufacturing facility' rather than distinguishing between the different facilities shown.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 11,
+  "minor_count": 11,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 587.02,
+    "page_count": 19,
+    "visual_input_tokens": 55528,
+    "visual_output_tokens": 2053,
+    "content_input_tokens": 41811,
+    "content_output_tokens": 1021,
+    "timestamp": "2026-04-16T00:58:39.254978",
+    "auditor_version": "1.0.0"
+  }
+}
