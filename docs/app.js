@@ -471,21 +471,125 @@ function truncateBase64(html) {
   return result;
 }
 
+// Strip <head>, <!DOCTYPE>, <html>, </html>, <body>, </body> wrappers — keep only body content
+function extractBodyContent(html) {
+  let body = html;
+  body = body.replace(/<!DOCTYPE[^>]*>/i, '');
+  body = body.replace(/<head[\s\S]*?<\/head>/i, '');
+  body = body.replace(/<\/?(html|body)[^>]*>/gi, '');
+  return body.trim();
+}
+
+// Find a visible text landmark near the current scroll position in an iframe
+function getVisibleLandmark(iframe) {
+  try {
+    const doc = iframe.contentDocument;
+    if (!doc) return null;
+    const walker = doc.createTreeWalker(doc.body || doc.documentElement, NodeFilter.SHOW_TEXT);
+    const viewTop = doc.documentElement.scrollTop;
+    const viewBot = viewTop + doc.documentElement.clientHeight;
+    let node;
+    while ((node = walker.nextNode())) {
+      const range = doc.createRange();
+      range.selectNodeContents(node);
+      const rect = range.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top <= (viewBot - viewTop)) {
+        const text = node.textContent.trim();
+        if (text.length >= 6) return text.slice(0, 60);
+      }
+    }
+  } catch {}
+  return null;
+}
+
+// Scroll a <pre> element so that the given text landmark is visible
+function scrollPreToLandmark(pre, landmark) {
+  if (!landmark) return;
+  const text = pre.textContent;
+  const idx = text.indexOf(landmark);
+  if (idx < 0) return;
+  // Create a range around the landmark to measure its vertical position
+  const textNode = findTextNodeAtOffset(pre, idx);
+  if (!textNode) return;
+  const range = document.createRange();
+  range.setStart(textNode.node, textNode.localOffset);
+  range.setEnd(textNode.node, Math.min(textNode.localOffset + landmark.length, textNode.node.length));
+  const rect = range.getBoundingClientRect();
+  const preRect = pre.getBoundingClientRect();
+  pre.scrollTop += rect.top - preRect.top - 40;
+}
+
+// Find the text node and local offset within a container given an absolute char offset
+function findTextNodeAtOffset(container, absOffset) {
+  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+  let pos = 0;
+  let node;
+  while ((node = walker.nextNode())) {
+    const len = node.length;
+    if (pos + len > absOffset) {
+      node._absOffset = pos;
+      return { node, localOffset: absOffset - pos };
+    }
+    pos += len;
+  }
+  return null;
+}
+
+// Scroll an iframe so that the given text landmark is visible
+function scrollIframeToLandmark(iframe, landmark) {
+  if (!landmark) return;
+  try {
+    const doc = iframe.contentDocument;
+    if (!doc) return;
+    const walker = doc.createTreeWalker(doc.body || doc.documentElement, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      const idx = node.textContent.indexOf(landmark);
+      if (idx >= 0) {
+        const range = doc.createRange();
+        range.setStart(node, idx);
+        range.setEnd(node, Math.min(idx + landmark.length, node.length));
+        const rect = range.getBoundingClientRect();
+        doc.documentElement.scrollTop += rect.top - 40;
+        return;
+      }
+    }
+  } catch {}
+}
+
 function toggleHtmlRaw(containerId, toggleBtn) {
   const panel = htmlPanels[containerId];
   if (!panel || !panel.html) return;
   const container = document.getElementById(containerId);
 
-  let scrollRatio = 0;
+  // Find a text landmark near the current scroll position
+  let landmark = null;
   const current = container.firstElementChild;
   if (current) {
-    if (current.tagName === 'IFRAME' && current.contentDocument?.documentElement) {
-      const doc = current.contentDocument.documentElement;
-      const maxScroll = doc.scrollHeight - doc.clientHeight;
-      scrollRatio = maxScroll > 0 ? doc.scrollTop / maxScroll : 0;
+    if (current.tagName === 'IFRAME') {
+      landmark = getVisibleLandmark(current);
     } else if (current.tagName === 'PRE') {
-      const maxScroll = current.scrollHeight - current.clientHeight;
-      scrollRatio = maxScroll > 0 ? current.scrollTop / maxScroll : 0;
+      // Find first visible text line in the pre
+      const preRect = current.getBoundingClientRect();
+      const lines = current.textContent.split('\n');
+      let charPos = 0;
+      for (const line of lines) {
+        const trimmed = line.trim();
+        if (trimmed.length >= 6) {
+          const tn = findTextNodeAtOffset(current, charPos + line.indexOf(trimmed));
+          if (tn) {
+            const range = document.createRange();
+            range.setStart(tn.node, tn.localOffset);
+            range.setEnd(tn.node, Math.min(tn.localOffset + trimmed.length, tn.node.length));
+            const rect = range.getBoundingClientRect();
+            if (rect.top >= preRect.top && rect.top <= preRect.bottom) {
+              landmark = trimmed.slice(0, 60);
+              break;
+            }
+          }
+        }
+        charPos += line.length + 1;
+      }
     }
   }
 
@@ -494,27 +598,19 @@ function toggleHtmlRaw(containerId, toggleBtn) {
   container.replaceChildren();
 
   if (panel.raw) {
+    const bodyHtml = extractBodyContent(panel.html);
     const pre = document.createElement('pre');
     pre.className = 'raw-html';
-    pre.textContent = truncateBase64(panel.html);
+    pre.textContent = truncateBase64(bodyHtml);
     container.appendChild(pre);
-    requestAnimationFrame(() => {
-      const maxScroll = pre.scrollHeight - pre.clientHeight;
-      pre.scrollTop = scrollRatio * maxScroll;
-    });
+    requestAnimationFrame(() => scrollPreToLandmark(pre, landmark));
   } else {
     const iframe = document.createElement('iframe');
     iframe.sandbox = 'allow-same-origin allow-scripts allow-popups';
     iframe.title = containerId.includes('old') ? 'Old HTML conversion' : 'New HTML conversion';
     iframe.srcdoc = applyTheme(panel.html);
     container.appendChild(iframe);
-    iframe.addEventListener('load', () => {
-      const doc = iframe.contentDocument?.documentElement;
-      if (doc) {
-        const maxScroll = doc.scrollHeight - doc.clientHeight;
-        doc.scrollTop = scrollRatio * maxScroll;
-      }
-    });
+    iframe.addEventListener('load', () => scrollIframeToLandmark(iframe, landmark));
   }
 }
 
@@ -997,7 +1093,7 @@ function setupHResize(handle, topEl, bottomEl) {
       const newTop = Math.max(80, topH + dy);
       const newBot = Math.max(80, botH - dy);
       topEl.style.flex = '0 0 ' + newTop + 'px';
-      bottomEl.style.height = newBot + 'px';
+      bottomEl.style.flex = '0 0 ' + newBot + 'px';
     };
     const onUp = () => {
       handle.classList.remove('active');
