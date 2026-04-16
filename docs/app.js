@@ -445,13 +445,29 @@ function renderHtmlPanel(containerId, html, emptyMsg) {
 }
 
 function truncateBase64(html) {
-  // Replace base64 data URIs with a short preview + char count
-  return html.replace(/data:(image\/[^;]+);base64,([A-Za-z0-9+/=]{80,})/g, (match, mime, b64) => {
-    const preview = b64.slice(0, 32);
-    const len = b64.length;
-    const kb = (len * 0.75 / 1024).toFixed(1);
-    return `data:${mime};base64,${preview}...[base64 truncated — ${kb} KB]`;
-  });
+  // Replace base64 data URIs with a short preview + char count.
+  // Uses split/rejoin to avoid regex stack overflow on huge base64 strings.
+  const parts = html.split(/data:image\/[^;]+;base64,/);
+  if (parts.length === 1) return html;
+  const marker = /^data:(image\/[^;]+);base64,/;
+  let result = parts[0];
+  let offset = parts[0].length;
+  for (let i = 1; i < parts.length; i++) {
+    const headerStr = html.slice(offset).match(marker);
+    const mime = headerStr ? headerStr[1] : 'image/unknown';
+    const header = headerStr ? headerStr[0] : 'data:image/unknown;base64,';
+    offset += header.length;
+    const b64 = parts[i];
+    offset += b64.length;
+    if (b64.length >= 80) {
+      const preview = b64.slice(0, 32);
+      const kb = (b64.length * 0.75 / 1024).toFixed(1);
+      result += `data:${mime};base64,${preview}...[base64 truncated — ${kb} KB]`;
+    } else {
+      result += header + b64;
+    }
+  }
+  return result;
 }
 
 function toggleHtmlRaw(containerId, toggleBtn) {
