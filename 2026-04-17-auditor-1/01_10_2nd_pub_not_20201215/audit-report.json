@@ -1,0 +1,102 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the letter is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the North Carolina state seal/emblem centered at the top of the letterhead. The HTML version does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom of the PDF letter is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the North Carolina DEQ logo at the bottom of the page. The HTML version does not include this logo image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "David Miller's handwritten signature is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a handwritten signature above 'David Miller, PE'. The HTML version has only the typed name without the signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Brian Wrenn's handwritten signature is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows a handwritten signature above 'Brian Wrenn, Director'. The HTML version has only the typed name without the signature image.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Brenda Harris's handwritten signature is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows a handwritten signature above 'Brenda Harris'. The HTML version has only the typed name without the signature image.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains images (state seal logo, DEQ logo, and two handwritten signatures) but the HTML has no <img> tags at all. These images are completely omitted.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has the NC state seal, a DEQ logo at the bottom, and David Miller's signature. PDF page 2 has Brian Wrenn's signature and Brenda Harris's signature. None are represented in the HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 5,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 79.61,
+    "page_count": 2,
+    "visual_input_tokens": 7683,
+    "visual_output_tokens": 724,
+    "content_input_tokens": 6762,
+    "content_output_tokens": 349,
+    "timestamp": "2026-04-17T19:55:47.981252",
+    "auditor_version": "1.0.0"
+  }
+}

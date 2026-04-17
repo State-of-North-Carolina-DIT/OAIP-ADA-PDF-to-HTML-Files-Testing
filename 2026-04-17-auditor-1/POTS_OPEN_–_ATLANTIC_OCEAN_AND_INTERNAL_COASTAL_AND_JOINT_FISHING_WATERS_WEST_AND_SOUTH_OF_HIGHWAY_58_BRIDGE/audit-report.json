@@ -1,0 +1,86 @@
+{
+  "document_id": "POTS_OPEN_\u2013_ATLANTIC_OCEAN_AND_INTERNAL_COASTAL_AND_JOINT_FISHING_WATERS_WEST_AND_SOUTH_OF_HIGHWAY_58_BRIDGE",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 40. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-list",
+      "description": "Ensure that lists are structured correctly",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  List element has direct children that are not allowed: figure [<ol type=\"I\">]; Fix all of the following:\n  List element has direct children that are not allowed: figure [<ol type=\"A\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections in the HTML, disrupting the reading flow.",
+      "severity": "major",
+      "evidence": "In the HTML, the State of North Carolina footer block and the ROY COOPER/Governor/ELIZABETH S. BISER/Secretary/KATHY B. RAWLS/Director header block and PT-2-2024 identifier are repeated between page 1 and page 2 content, inserted inline within the proclamation text flow. This creates reading-order disruption not present in the PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Page footer text from the PDF appears mid-content in the HTML as embedded images (page break footers showing 'State of North Carolina | Division of Marine Fisheries | 3441 Arendell Street...'). Two extra embedded images appear between list items in the HTML that correspond to page-break artifacts, potentially breaking reading flow.",
+      "severity": "major",
+      "evidence": "Two <figure><img> elements appear mid-content: one between item VI.C and VI.D (after Queens Creek), and another between item IX.E and item X (after Bonaparte Creek). These correspond to PDF page footers/headers that should have been stripped.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "County headings (CARTERET COUNTY/ONSLOW COUNTY, ONSLOW COUNTY, PENDER COUNTY, NEW HANOVER COUNTY, BRUNSWICK COUNTY, GENERAL INFORMATION) are rendered as bold/underlined text within list items rather than as distinct headings. In the PDF these are visually prominent bold underlined section headers within the numbered list. This is acceptable given they are sub-items of a Roman numeral list, but the GENERAL INFORMATION section (Item X) is a major section that could warrant heading treatment.",
+      "severity": "major",
+      "evidence": "PDF shows 'CARTERET COUNTY/ONSLOW COUNTY', 'ONSLOW COUNTY', etc. as bold underlined text within Roman numeral items. HTML renders them as <u> text within <li> elements. This is a faithful rendering of the list structure.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 98.93,
+    "page_count": 3,
+    "visual_input_tokens": 9853,
+    "visual_output_tokens": 385,
+    "content_input_tokens": 13532,
+    "content_output_tokens": 628,
+    "timestamp": "2026-04-17T20:01:12.491724",
+    "auditor_version": "1.0.0"
+  }
+}

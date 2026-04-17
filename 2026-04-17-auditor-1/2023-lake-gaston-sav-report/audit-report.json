@@ -1,0 +1,110 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 49. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF, 'Prepared By:' and 'Submitted To:' are underlined and italic. In the HTML, they appear as underlined bold text but lose the italic formatting.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Prepared By:' and 'Submitted To:' in italic+underline; HTML shows them as underlined bold without italic.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The cover page collage of images appears slightly differently arranged in the HTML - one small image appears separated below the main collage rather than being part of it.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows all images contained within a single bordered collage. HTML page 2 shows one small image (plant close-up) separated below the main image grid.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In Table 1, the PDF uses italic formatting for category subtotal rows (TOTAL EMERGENT SPECIES, TOTAL SUBMERSED SPECIES, etc.) to distinguish them from individual species rows. The HTML table preserves the data accurately.",
+      "severity": "major",
+      "evidence": "PDF Table 1 has italic subtotal rows; HTML table renders all rows in similar formatting but data is correct.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings 'Introduction', 'Methods', 'Conclusion and Management Implications' in the PDF are underlined and bold/italic. In the HTML, 'Methods' and subsection headers like 'Vegetation Survey' and 'Tuber Survey' lose their underline/italic formatting but remain bold, which is acceptable. However, 'Results' in the PDF is bold+underlined, and in the HTML it appears as a styled heading without underline.",
+      "severity": "minor",
+      "evidence": "PDF: 'Methods' is bold+underlined; HTML: 'Methods' is a heading without underline - underline removal is acceptable per rules.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 1 and Table 2 data appear to be duplicated in the HTML - they appear once as embedded images (with <figure><img> tags) and again as full HTML <table> elements. The PDF only has them once each.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img src='[embedded-image-removed]' alt='' style='width: 612.0pt; height: auto;'></figure> immediately before the HTML <table> for both Table 1 and Table 2 sections. The PDF only shows each table once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The figures description text for bar graphs (Figures 1, 2, 7, 9, 11) includes raw axis labels and data values as paragraph text in addition to the figure captions. While these values come from the PDF charts, they appear as disconnected text blocks that duplicate chart content in a confusing manner since the images themselves are also present.",
+      "severity": "major",
+      "evidence": "HTML includes paragraphs like 'Total Number of Survey Sites - By Year', 'Number of Survey Sites', '2012 2013 2014...', '5775 6564 5378 5714...' as plain text paragraphs representing chart data for Figure 1, when the chart image is also embedded.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "In Table 1, the category rows (Emergent, Submersed, Floating Leaf, Algae) are presented as regular table rows with empty cells rather than as section headers/sub-headers spanning the table. The 'TOTAL' rows also lack visual distinction. While all data is present, the hierarchical structure of the original table groupings is flattened.",
+      "severity": "major",
+      "evidence": "PDF shows 'Emergent', 'Submersed', 'Floating Leaf', 'Algae' as category labels above their respective species. HTML renders them as regular <tr><td> rows with empty cells in the other columns.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 1185.08,
+    "page_count": 20,
+    "visual_input_tokens": 62511,
+    "visual_output_tokens": 1170,
+    "content_input_tokens": 50893,
+    "content_output_tokens": 1144,
+    "timestamp": "2026-04-17T20:18:50.027403",
+    "auditor_version": "1.0.0"
+  }
+}

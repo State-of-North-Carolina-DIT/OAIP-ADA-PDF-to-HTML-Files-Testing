@@ -1,0 +1,70 @@
+{
+  "document_id": "SuttonMeetingOfficerReport_20160428",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 44. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections in the HTML disrupts reading order",
+      "severity": "major",
+      "evidence": "In the HTML, the full memorandum header block (State of NC address, officials' names, MEMORANDUM heading, To/From/Subject, signature) is repeated \u2014 appearing once as page 1 content and then again at the top of the next HTML chunk before the body text continues. In the PDF, this header appears only once on page 1.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The HTML adds internal anchor links in the table of contents (href=\"#history-background\", etc.) that do not exist as hyperlinks in the source PDF. These are navigation anchors linking to section IDs within the document.",
+      "severity": "critical",
+      "evidence": "PDF TOC is plain text: 'I. History/Background' etc. HTML wraps these in <a href=\"#history-background\"> etc. However, these are internal navigation enhancements, not fabricated external URLs.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 72.2,
+    "page_count": 5,
+    "visual_input_tokens": 16805,
+    "visual_output_tokens": 415,
+    "content_input_tokens": 15422,
+    "content_output_tokens": 394,
+    "timestamp": "2026-04-17T20:03:24.724282",
+    "auditor_version": "1.0.0"
+  }
+}

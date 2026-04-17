@@ -1,0 +1,86 @@
+{
+  "document_id": "01_2019_shellfish_sale_tag_template",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The PDF contains a detailed diagram/illustration of a shellstock tag with labeled arrows pointing to various parts of the tag (dealer name, certification number, harvest date, harvest area, etc.). The HTML conversion does not include this image/diagram at all.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a detailed annotated example shellstock tag with arrows and callout boxes explaining each field. The HTML page 1 renders all this information as plain text without the visual tag diagram.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF page 1 uses a complex layout with a central tag image surrounded by explanatory callouts/annotations on left and right sides, creating a multi-column visual arrangement. The HTML converts this to a single-column linear text flow, which fundamentally changes the visual structure and the relationship between annotations and tag fields.",
+      "severity": "major",
+      "evidence": "PDF has a central tag with left-side annotations (Harvest Date explanation, Harvest Area explanation, 90 Day tag retention notice, Notice that product must remain refrigerated, Consumer Advisory Notice) and right-side annotations (Dealer Name info, Certification Number info, Type of shellfish info, Space for Reshipper). HTML presents all of this as sequential plain text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds a section heading 'Example Shellstock Tag with Explanations' that does not appear anywhere in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains <h2>Example Shellstock Tag with Explanations</h2> but no such heading exists in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds a section heading 'Tag Format and Handling Requirements' that does not appear anywhere in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains <h2>Tag Format and Handling Requirements</h2> but no such heading exists in the PDF. The PDF presents these rules as standalone paragraphs without a section heading.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 42.86,
+    "page_count": 1,
+    "visual_input_tokens": 4521,
+    "visual_output_tokens": 556,
+    "content_input_tokens": 6155,
+    "content_output_tokens": 404,
+    "timestamp": "2026-04-17T19:55:14.636661",
+    "auditor_version": "1.0.0"
+  }
+}

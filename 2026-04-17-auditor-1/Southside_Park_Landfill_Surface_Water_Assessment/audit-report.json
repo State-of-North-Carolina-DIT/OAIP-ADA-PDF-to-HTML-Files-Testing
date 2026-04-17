@@ -1,0 +1,86 @@
+{
+  "document_id": "Southside_Park_Landfill_Surface_Water_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The map image in the HTML is very small and lacks legibility compared to the PDF. The detailed map labels, road names, property boundaries, sample locations, and legend details that are clearly readable in the PDF are extremely difficult or impossible to read in the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF shows a full-page detailed map with clearly readable labels (SW/SD-1 through SW/SD-5, road names like Remus Rd, Remount Rd, Chicago Ave, etc.), sample data tables overlaid on the map, and a detailed legend. The HTML shows the same map but rendered at a very small size where these details are illegible.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The surface water sample data tables in the PDF are presented as labeled callout boxes overlaid on the map with clear table structure. In the HTML, these are converted to separate standalone tables below the map, which changes the spatial context but preserves the data. However, the tables lack the visual grouping and headers that the PDF uses (bold underlined headers like 'Risk Assessment').",
+      "severity": "major",
+      "evidence": "PDF shows tables like SW-1/DUP-6102025-SD, SW-2, SW-3, SW-4, SW-5 as map callouts with clear borders and headers. HTML shows these as simple two-column tables separated from the map context. The data values are preserved correctly.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Risk Assessment rows are mixed into the data tables as regular rows rather than being presented as a separate sub-section or distinct formatting. In the PDF, the Risk Assessment values (CR and HI) are visually distinct from the sample data rows, but in the HTML they appear as regular table rows within the same table structure. This mixes metadata with analytical data.",
+      "severity": "major",
+      "evidence": "Each of the five sample tables in the HTML contains 'Risk Assessment', 'CR:', and 'HI:' as table rows alongside analytical parameters like Copper and Lead. In the PDF, these are visually separated callout boxes with distinct formatting.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The sample location labels SW/SD-1 through SW/SD-5 appear both in a dedicated 'Map Labels' section and also as table headers in the 'Surface Water Sample Data' section. In the PDF, these labels appear once on the map and once in the data callouts - the HTML creates a separate redundant 'Map Labels' section listing them as paragraphs.",
+      "severity": "major",
+      "evidence": "HTML has a section '<h3>Map Labels</h3>' listing 'SW/SD-1' through 'SW/SD-5' as separate paragraphs, then also references SW-1 through SW-5 in the table headers. The map labels section is a redundant extraction of map annotations.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 96.26,
+    "page_count": 1,
+    "visual_input_tokens": 3897,
+    "visual_output_tokens": 572,
+    "content_input_tokens": 7176,
+    "content_output_tokens": 545,
+    "timestamp": "2026-04-17T20:02:57.894104",
+    "auditor_version": "1.0.0"
+  }
+}

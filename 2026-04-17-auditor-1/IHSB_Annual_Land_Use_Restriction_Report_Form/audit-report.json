@@ -1,0 +1,78 @@
+{
+  "document_id": "IHSB_Annual_Land_Use_Restriction_Report_Form",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 35. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The DEQ logo is positioned differently in the HTML version - it is left-aligned instead of centered as in the PDF, and the page title structure is split across what appears to be two separate heading levels rather than being grouped together under the logo.",
+      "severity": "major",
+      "evidence": "PDF: DEQ logo is centered at top with 'Inactive Hazardous Sites Branch' and 'Annual Report Form for Perpetual Land-Use Restrictions' directly below it as a single centered header block. HTML: Logo is left-aligned, 'Inactive Hazardous Sites Branch' appears as a separate large heading, and 'Annual Report Form for Perpetual Land-Use Restrictions' appears as a secondary heading below a horizontal rule.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Comments section in the PDF has a visible bordered text box for writing comments, which is absent in the HTML version.",
+      "severity": "major",
+      "evidence": "PDF: Comments section has a large rectangular bordered box below the 'Comments:' label for entering text. HTML: Only shows 'Comments:' label with no visible input box or bordered area.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The two title lines in the PDF are both visually top-level headings of equal weight. In the HTML, 'Inactive Hazardous Sites Branch' is rendered as h1 and 'Annual Report Form for Perpetual Land-Use Restrictions' is rendered as h2, implying a parent-child nesting that doesn't exist in the PDF where they are co-equal title lines.",
+      "severity": "major",
+      "evidence": "PDF: Both lines appear centered in equal bold formatting as a combined document title. HTML: <h1>Inactive Hazardous Sites Branch</h1> followed by <h2>Annual Report Form for Perpetual Land-Use Restrictions</h2>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 43.83,
+    "page_count": 1,
+    "visual_input_tokens": 4515,
+    "visual_output_tokens": 654,
+    "content_input_tokens": 5383,
+    "content_output_tokens": 356,
+    "timestamp": "2026-04-17T19:58:46.760050",
+    "auditor_version": "1.0.0"
+  }
+}

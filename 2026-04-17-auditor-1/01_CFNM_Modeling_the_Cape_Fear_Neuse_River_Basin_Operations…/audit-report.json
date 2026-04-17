@@ -1,0 +1,142 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 36. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'legend: reservoir node, demand node, junction node, flow arc, withdrawal arc, ww...' (7x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined section headings in PDF ('Static and Pattern Data', 'Timeseries Data', 'Operating Rules') lose their underline and bold formatting in HTML, appearing as plain bold text without underline distinction.",
+      "severity": "minor",
+      "evidence": "PDF page 7-8 shows 'Static and Pattern Data', 'Timeseries Data', and 'Operating Rules' as bold+underlined subheadings. HTML shows them as bold only without underline. Since bold is preserved, this is acceptable per rules.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart diagrams on pages 10-16 are converted to text-based bullet lists in HTML rather than preserving the visual diagrams with shapes (triangles, squares, circles) and connecting arrows.",
+      "severity": "critical",
+      "evidence": "PDF pages 10, 11, 12, 13, 14, 15, 16 show graphical flow charts with colored shapes (red triangles for reservoirs, blue squares for demands, yellow circles for junctions) connected by arrows. HTML replaces these with bulleted text lists of node names and text descriptions of the legend items.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Middle Cape Fear Basin diagram missing as image, replaced with text list",
+      "severity": "critical",
+      "evidence": "PDF page 11 shows a graphical flow chart with reservoir nodes, demand nodes, junction nodes and connecting arcs for the Middle Cape Fear Basin. HTML converts this to a bullet list of node names.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes on the Deep River diagram missing as image, replaced with text list",
+      "severity": "critical",
+      "evidence": "PDF page 12 shows a graphical flow chart diagram. HTML converts this to a bullet list of node names with text descriptions.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Lower Cape Fear Basin diagram missing as image, replaced with text list",
+      "severity": "critical",
+      "evidence": "PDF page 13 shows a graphical flow chart. HTML converts this to a bullet list.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Upper Neuse Basin diagram missing as image, replaced with text list",
+      "severity": "critical",
+      "evidence": "PDF page 14 shows a graphical flow chart with shapes and arrows. HTML converts this to a bullet list with text descriptions.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Middle Neuse Basin diagram missing as image, replaced with text list",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows a graphical flow chart. HTML converts this to a bullet list.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Lower Neuse Basin diagram missing as image, replaced with text list",
+      "severity": "critical",
+      "evidence": "PDF page 16 shows a graphical flow chart with colored shapes and arrows. HTML converts this to a bullet list.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The HTML Table of Contents adds internal anchor links (href attributes linking to section IDs like #introduction, #schematic, etc.) that do not exist in the PDF. However, these are internal navigation anchors for accessibility, not fabricated external URLs, so this is an enhancement rather than an error.",
+      "severity": "critical",
+      "evidence": "HTML TOC has <a href='#introduction'>1 \u2013 Introduction</a> etc. PDF TOC has no hyperlinks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The flowchart titles in the PDF are presented as prominent slide-like headings. In the HTML, most are rendered as h3, which is reasonable. However, the sub-headings 'Static and Pattern Data', 'Timeseries Data', and 'Operating Rules' are rendered as h4 in the HTML. In the PDF, these appear as bold/underlined subheadings under Section 2.2. The h4 level under h3 (2.2 Model Input) is appropriate, so hierarchy is preserved.",
+      "severity": "major",
+      "evidence": "PDF: bold underlined 'Static and Pattern Data' under 2.2; HTML: <h4>Static and Pattern Data</h4> under <h3>2.2 Model Input</h3>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 8,
+  "major_count": 3,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 409.55,
+    "page_count": 18,
+    "visual_input_tokens": 55729,
+    "visual_output_tokens": 1588,
+    "content_input_tokens": 44710,
+    "content_output_tokens": 923,
+    "timestamp": "2026-04-17T20:01:24.807646",
+    "auditor_version": "1.0.0"
+  }
+}

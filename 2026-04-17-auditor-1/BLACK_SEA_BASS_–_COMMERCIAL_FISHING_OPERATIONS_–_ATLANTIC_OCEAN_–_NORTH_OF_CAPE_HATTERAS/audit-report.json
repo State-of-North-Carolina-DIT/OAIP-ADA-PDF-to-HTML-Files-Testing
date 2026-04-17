@@ -1,0 +1,86 @@
+{
+  "document_id": "BLACK_SEA_BASS_\u2013_COMMERCIAL_FISHING_OPERATIONS_\u2013_ATLANTIC_OCEAN_\u2013_NORTH_OF_CAPE_HATTERAS",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina Marine Fisheries seal/logo with the '200 Years' celebration emblem is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a circular seal/logo in the upper left corner with 'North Carolina Marine Fisheries' and a '200 Years' celebration badge. The HTML rendering does not display this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections disrupts reading order in HTML.",
+      "severity": "major",
+      "evidence": "The HTML rendering shows the footer content (State of North Carolina | Division of Marine Fisheries, 3441 Arendell Street...) and then the header content (ROY COOPER Governor, ELIZABETH S. BISER Secretary, KATHY B. RAWLS Director, FF-52-2023) repeated between the first and second page content, and again between pages 3 and 4. This creates reading order disruption as a reader encounters administrative header/footer blocks mid-document.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The signature image of Kathy B. Rawls is missing from the HTML rendering on the final page.",
+      "severity": "critical",
+      "evidence": "PDF page 4 shows a handwritten signature of 'Kathy B. Rawls' above the typed name. The HTML rendering on the final page shows 'By:' with a blank line but no signature image.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer text from the PDF pages (State of North Carolina | Division of Marine Fisheries, 3441 Arendell Street | P.O. Box 769 | Morehead City, North Carolina 28557, 252-726-7021) is not consolidated but rather absent from the HTML body. However, embedded images with page-level content appear mid-flow (between list items III.B and IV, and between items J and K), breaking the reading flow of the document.",
+      "severity": "major",
+      "evidence": "Two <figure><img> tags appear mid-content: one between trawl gear restriction text (Section III.B) splitting the paragraph across a page break image, and another between items J and K in Section IV, inserting page-break images inline.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 144.71,
+    "page_count": 3,
+    "visual_input_tokens": 9069,
+    "visual_output_tokens": 637,
+    "content_input_tokens": 12336,
+    "content_output_tokens": 451,
+    "timestamp": "2026-04-17T19:58:14.975477",
+    "auditor_version": "1.0.0"
+  }
+}

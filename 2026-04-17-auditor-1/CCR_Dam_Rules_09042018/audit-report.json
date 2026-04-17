@@ -1,0 +1,78 @@
+{
+  "document_id": "CCR_Dam_Rules_09042018",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The title slide's lighthouse/coastal panoramic image is missing from the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 1 has a panoramic coastal image with a lighthouse at the top of the slide. The HTML version only shows the cityscape image and the NC logo, but the lighthouse/coastal panoramic image is absent.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC logo with tree graphic is missing from slides 2-8 in the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF pages 2-8 each show an NC logo with tree in the bottom right corner as part of the slide template. These decorative logos are not present in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The Regulatory Impact Analysis on PDF page 7 is presented as a simple label-value list (not a table), but the HTML converts it into a formal table. While all data is present, the structure is changed. This is an acceptable semantic conversion, but the table lacks headers (th elements), which misrepresents the structure slightly.",
+      "severity": "major",
+      "evidence": "PDF shows a simple two-column label-value layout without borders. HTML renders it as <table> with <td> elements but no <th> header row.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 126.14,
+    "page_count": 8,
+    "visual_input_tokens": 20455,
+    "visual_output_tokens": 644,
+    "content_input_tokens": 17151,
+    "content_output_tokens": 532,
+    "timestamp": "2026-04-17T19:58:30.339609",
+    "auditor_version": "1.0.0"
+  }
+}

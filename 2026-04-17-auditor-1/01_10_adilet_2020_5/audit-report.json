@@ -1,0 +1,174 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'mark piazza | manager, pipeline compliance and r&d colonial pipeline company o. ...' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image/logo at the top of page 1 is missing in the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the North Carolina state seal emblem at the top center of the letterhead. The HTML version does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Colonial Pipeline Company logo at the top of the formal letter (page 16) is missing in the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 16 shows the Colonial Pipeline Company circular logo at top left. The HTML does not include this image.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of David Miller is missing from the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows a handwritten signature above 'David Miller / State Mining Engineer'. The HTML shows only the text 'for / David Miller / State Mining Engineer' without the signature image.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Colonial Pipeline Company logo and social media icons in email signatures are missing",
+      "severity": "critical",
+      "evidence": "PDF pages 5-6 show the Colonial Pipeline circular logo and social media icons (LinkedIn, Facebook, Twitter, Instagram) in Mark Piazza's email signature blocks. The HTML does not include these images.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal in Rep. Dennis Riddell's email signature is missing",
+      "severity": "critical",
+      "evidence": "PDF page 13 shows a small North Carolina state seal image below Rep. Riddell's contact information. The HTML does not include this image.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Mark Piazza's handwritten signature on the Colonial Pipeline letter is missing",
+      "severity": "critical",
+      "evidence": "PDF page 17 shows a handwritten signature above 'Mark Piazza / Manager, Pipeline Compliance and R&D'. The HTML does not include this signature image.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Exhibit 1A site plan map image is missing or not visible in the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 21 shows a detailed quarry site plan map labeled 'Exhibit 1A. Location of the Proposed Emergency Access Route Intersecting Quakenbush Road'. The HTML references exhibit labels but the actual map images appear to be missing.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Exhibit 1B site plan map image is missing or not visible in the HTML",
+      "severity": "critical",
+      "evidence": "PDF page 22 shows a detailed zoomed-in quarry site plan map labeled 'Exhibit 1B. Location of the Proposed Emergency Access Route Intersecting Quakenbush Road'. The HTML references exhibit labels but the actual map image appears to be missing.",
+      "page": 22,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold italic emphasis on key statements in Colonial Pipeline's email to Rep. Riddell is lost",
+      "severity": "minor",
+      "evidence": "PDF page 9 uses bold italic for critical statements like 'approval of the permit would require that Alamance Aggregates construct the alternate Emergency Access roadway...' and 'The results of that initial analysis indicated that there are no concerns with the integrity of Colonial's pipelines...'. The HTML uses only italic for these passages, losing the bold emphasis that distinguished these as key findings.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains site plan images (Exhibits 1A and 1B) and the NC state seal, but the HTML has no <img> tags at all for these images.",
+      "severity": "minor",
+      "evidence": "PDF pages 16 and 17 contain site plan diagrams labeled 'Exhibit 1A' and 'Exhibit 1B', and page 1 contains the NC state seal. The HTML references these exhibits by text caption only but contains no <img> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The letter date on page 1 of the PDF is 'August 7, 2020' but the HTML renders it as 'August 7, 2020' \u2014 this is correct. However, the email from Brian Wrenn references 'decision date to approve, deny, or request additional information is this Friday, August 7th' but the formal letter is also dated August 7, 2020. This is faithful to the PDF. No actual text accuracy issue here.",
+      "severity": "major",
+      "evidence": "Both PDF and HTML show August 7, 2020 for the letter date.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML includes 'janelecahicks@gmail.com' as an email address in the CC line of the August 5 email from Piazza to Rep. Riddell. The PDF on page 4 shows 'janeleahicks@gmail.com'. This appears to be a faithful reproduction of what's in the PDF (the PDF text itself shows 'janeleahicks').",
+      "severity": "critical",
+      "evidence": "PDF page 4: 'Jane Lea Hicks <janeleahicks@gmail.com>' vs HTML: 'Jane Lea Hicks <janelecahicks@gmail.com>'. The HTML has 'janelecahicks' instead of 'janeleahicks' \u2014 an 'c' replacing 'a'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor email address discrepancy: the HTML renders 'janelecahicks@gmail.com' where the PDF shows 'janeleahicks@gmail.com' \u2014 the letter 'c' appears to have been inserted.",
+      "severity": "major",
+      "evidence": "PDF page 4 CC line: 'janeleahicks@gmail.com'; HTML CC line: 'janelecahicks@gmail.com'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 9,
+  "major_count": 4,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 760.75,
+    "page_count": 17,
+    "visual_input_tokens": 53820,
+    "visual_output_tokens": 1765,
+    "content_input_tokens": 39549,
+    "content_output_tokens": 1086,
+    "timestamp": "2026-04-17T20:07:11.516584",
+    "auditor_version": "1.0.0"
+  }
+}

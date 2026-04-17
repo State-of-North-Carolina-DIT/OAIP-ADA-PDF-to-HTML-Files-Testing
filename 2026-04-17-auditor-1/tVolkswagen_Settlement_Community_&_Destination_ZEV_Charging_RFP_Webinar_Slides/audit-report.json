@@ -1,0 +1,126 @@
+{
+  "document_id": "tVolkswagen_Settlement_Community_&_Destination_ZEV_Charging_RFP_Webinar_Slides",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'community and destination zev infrastructure program' (6x); 'daq grant management system (gms)' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DC Fast Funding Levels table in the PDF (slide 9) uses a green/olive color-coded table design with colored header and row backgrounds that conveys visual grouping. The HTML renders this as a plain unstyled table, losing the visual distinction but preserving all data.",
+      "severity": "critical",
+      "evidence": "PDF shows a green-themed table with colored cells for headers and data rows. HTML shows a plain table with no background colors. Data content is preserved correctly.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Level 2 Add On Funding Levels table in the PDF (slide 10) uses a green/olive color-coded table design. The HTML renders this as a plain unstyled table.",
+      "severity": "critical",
+      "evidence": "PDF shows a green-themed table with colored cells. HTML shows a plain table. Data content is preserved correctly.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 11 has a two-panel layout in the PDF - a dark gray left panel with 'Community and Destination ZEV Infrastructure' text and bullet points, and a light right panel with 'Access to GMS' information and a checklist. The HTML renders this as a single-column sequential layout.",
+      "severity": "major",
+      "evidence": "PDF shows two distinct side-by-side panels with different backgrounds. HTML shows all content in a single column, but reading order and all content are preserved.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "On slide 12, the date 'January 13, 2025' is displayed in large red bold text in the PDF for emphasis. In the HTML, while the date is present, it loses its red color emphasis and large size distinction.",
+      "severity": "minor",
+      "evidence": "PDF: 'January 13, 2025' in very large red bold text. HTML: 'January 13, 2025' appears as a regular heading without the red color emphasis.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slides 16 and 17 in the PDF show a two-panel layout with bullet points on the left and a GMS form screenshot on the right. The HTML renders these sequentially in a single column.",
+      "severity": "major",
+      "evidence": "PDF shows side-by-side layout with text and form screenshot. HTML shows content sequentially with the form image below the text.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "DC Fast Funding Levels table structure is over-expanded. The PDF table has a merged 'Or (whichever is less)' condition spanning all rows for each property type, but the HTML splits this into separate columns with the condition repeated per row, creating 8 columns instead of the PDF's effective 5-column layout.",
+      "severity": "major",
+      "evidence": "PDF shows 'Or (whichever is less)' as a single merged label between percentage and dollar amount columns. HTML creates separate 'Government-Owned Property Condition' and 'Non-Government-Owned Property Condition' columns repeating 'Or (whichever is less)' in every row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Level 2 Add On Funding Levels table structure is over-expanded similarly. The PDF has 'Or (whichever is less)' as a merged element, but the HTML adds a separate 'Amount Condition' column.",
+      "severity": "major",
+      "evidence": "PDF shows 'or' between dollar amount and percentage as a merged condition. HTML creates 6 columns including 'Amount Condition' with 'or (whichever is less)' repeated per row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The GMS access instructions section (slides 16 and 17 in PDF) appear as two nearly identical sections in the HTML, both containing the same bullet points about NCID, W-9 Form, and DAQ Access Authorization. In the PDF these are two separate slides with different screenshots but the same text, so this is technically faithful, but the duplicated text blocks appear back-to-back in the continuous HTML.",
+      "severity": "major",
+      "evidence": "Two consecutive sections both titled 'DAQ Grant Management System (GMS)' with identical bullet text: 'After getting your NCID', 'Completed the North Carolina Substitute W-9 Form...', 'Finally Submit the DAQ Access Authorization WEB Form', 'Each organization is allowed up to 3 authorized users...'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 7,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 526.64,
+    "page_count": 40,
+    "visual_input_tokens": 109448,
+    "visual_output_tokens": 1759,
+    "content_input_tokens": 78071,
+    "content_output_tokens": 1052,
+    "timestamp": "2026-04-17T20:11:27.075076",
+    "auditor_version": "1.0.0"
+  }
+}

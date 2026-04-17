@@ -1,0 +1,142 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components - water use' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The process components flow chart diagram (slide 4) loses significant legibility in the HTML conversion - the hierarchical organizational chart with colored boxes showing the relationship between Hydrologic Model, River Basin Water Resources Plan, Historical Flows, Operation Guidelines, Water Use, and Evaluation Criteria is rendered as an embedded image but appears twice in the HTML (duplicated across chunks).",
+      "severity": "critical",
+      "evidence": "PDF slide 4 shows a clear organizational chart with colored boxes (green, orange, yellow, gold) and connecting lines. The HTML renders this as an image that appears to be preserved, but the chart appears in multiple HTML chunks as expected due to overlap.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Broad River Basin Schematic map on slide 10 loses significant detail and legibility in the HTML rendering due to the complexity of the map being compressed into a smaller image.",
+      "severity": "critical",
+      "evidence": "PDF shows a detailed schematic map with numerous labeled nodes, dams, intakes, and county boundaries for the Broad River Basin. HTML shows the same image but at reduced legibility.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 9 has a side-by-side layout with Water Use Pattern chart on the left and 50 yr Projected Demands chart on the right. In the HTML, these are stacked vertically rather than side-by-side.",
+      "severity": "major",
+      "evidence": "PDF shows two charts arranged horizontally - Water Use Pattern chart on left and 2006 Supply and Demand Projections chart on right. HTML stacks them vertically with Water Use Pattern on top and the projections chart below.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "On slide 3 (3 Critical Questions), the emphasized italic/bold formatting of the three critical questions is lost in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF shows items 1-3 in bold italic: 'Yield may be inadequate to meet all needs.', 'Yield may be inadequate to meet all essential water uses.', 'Ecological flow may be adversely affected'. HTML renders these as plain numbered list items without bold or italic emphasis.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "On slide 5 (Process Components - Historical Flows), the bold formatting of 'Water Use Data + Hydrologic Model' formula text from slide 3 is completely removed in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF slide 3 shows 'Water Use Data + Hydrologic Model' in bold italic as a key formula. HTML renders it as plain text 'Water Use Data + Hydrologic Model' without any emphasis.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 12 (Evaluation Criteria) has images arranged in a collage layout with text overlaid. The HTML converts this to a simple image embed, losing the interactive visual arrangement but preserving the content.",
+      "severity": "major",
+      "evidence": "PDF shows a carefully arranged photo collage with 'How often? What's the chance?' text overlaid alongside 'Evaluation Criteria' label box. HTML shows this as a single embedded image.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 (Operations Guidelines) has a two-column layout with bullet text on the left and multiple images stacked on the right. HTML collapses this to single-column with images appearing separately below text.",
+      "severity": "major",
+      "evidence": "PDF shows operations guidelines text with multiple photos (dam, water ski, fish, cooling tower) arranged vertically on the right side. HTML shows the text content as bullets followed by individual images separated from their visual context.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Model Development Tasks section includes redundant highlighted image references for Task 2 and Task 4, followed by the same tasks listed again in the bullet list, creating duplication of those task names.",
+      "severity": "major",
+      "evidence": "HTML has <figure> tags for 'Task 2 - OASIS Application Development' and 'Task 4 \u2013 Deliverables' as images, then repeats them as list items. In the PDF these appear once each on slide 20.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The PDF slide 'Water Resources Plans support' subtitle is rendered under the h2 'Why Need River Basin Plans' but the subtitle 'Water Resources Plans support' is not present as a heading or text in the HTML - it only appears as part of an image alt text description.",
+      "severity": "major",
+      "evidence": "PDF page 2 has a clear subtitle 'Water Resources Plans support' with bullet points 'Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making'. HTML only has an image alt text referencing these concepts but not the actual text content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The bullet point text from page 2 ('Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making') is missing from the HTML body text, appearing only in an image alt text description.",
+      "severity": "critical",
+      "evidence": "PDF page 2 has explicit bullet text: 'Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making'. The HTML has no corresponding text elements - only an alt attribute on an image tag mentions these items.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 7,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 1045.42,
+    "page_count": 23,
+    "visual_input_tokens": 71744,
+    "visual_output_tokens": 1433,
+    "content_input_tokens": 44852,
+    "content_output_tokens": 645,
+    "timestamp": "2026-04-17T20:13:08.696206",
+    "auditor_version": "1.0.0"
+  }
+}

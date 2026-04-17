@@ -1,0 +1,166 @@
+{
+  "document_id": "01_NS_YPDL_Kickoff_meeting_03042020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components evaluation criteria' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 2 has a two-column layout with distinct content areas (left: Drought/Interbasin Transfer, right: 2007-08 Drought/Jordan Lake Partnership) that is collapsed into a single column in the HTML, altering the visual grouping of related content.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows four distinct content blocks in a two-column arrangement. HTML renders all content sequentially in a single column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "On the Process Components slide (slide 6), the HTML renders the hierarchical chart as a flat bulleted list, losing the visual hierarchy showing the Hydrologic Model at the top with sub-components branching below.",
+      "severity": "major",
+      "evidence": "PDF shows a structured organizational chart with Hydrologic Model at top and four branches (Historical Flows, Operation Guidelines, Water Use, Evaluation Criteria) with Water Use having sub-branches. HTML converts this to a flat list.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 9 (Process Components - Water Use) has a two-column layout with the organizational chart on the left and bullet point content on the right. HTML collapses this into a single column.",
+      "severity": "major",
+      "evidence": "PDF shows Water Use chart on left with Local Water Supply Plans and Water Withdrawal Registrations bullet points on right. HTML renders everything sequentially.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 11 (Process Components - Water Use) has a two-column layout showing Seasonal Use Pattern on the left and 50 yr Projected Demands on the right. HTML renders them sequentially in a single column.",
+      "severity": "major",
+      "evidence": "PDF shows two charts side by side. HTML shows Water Use Pattern chart followed by 2006 Supply and Demand Projections chart vertically.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "On slide 8 (Process Components - Operation Guidelines), the right-side images showing a dam/spillway, water skier, and power plant cooling towers from the PDF are present in the HTML but separated from their contextual position alongside the bullet points.",
+      "severity": "critical",
+      "evidence": "PDF shows images integrated alongside bullet text on the right side. HTML places images below the text content.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 3 (River Basin Water Resources Management) has a two-column layout with bullet points and gear diagram on the left and concentric circles diagram on the right. HTML collapses to single column with diagram elements listed as plain text.",
+      "severity": "major",
+      "evidence": "PDF shows interlocking gear graphic (Basin Model, Basin Plan, Water Resources Management) and concentric circles (Water Resources Management > Integrated Basin Plan > HYDROLOGIC MODEL). HTML renders these as plain text labels.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The interlocking gears diagram and concentric circles diagram on slide 3 are not rendered as images in the HTML; they appear only as plain text labels.",
+      "severity": "critical",
+      "evidence": "PDF shows graphical gear and concentric circle diagrams. HTML shows only text: 'Basin Model', 'Basin Plan', 'Water Resources Management', 'Integrated Basin Plan', 'HYDROLOGIC MODEL'.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 21 (Project Organization) shows a Venn diagram with three overlapping circles. HTML converts this to a flat bulleted list losing the visual representation of organizational overlap.",
+      "severity": "major",
+      "evidence": "PDF shows three overlapping circles (Data Coordination/HDR, Model Development/HydroLogics Team/Hazen and Sawyer, Data Model Evaluation & Plan Development/NCDWR). HTML renders as bullet list.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The table includes an empty 'Water Systems' header row that appears as a data row rather than a sub-header or category label. In the PDF, 'Water Systems' appears as a label under the 'Model Scenario' column header, not as a separate row with empty cells.",
+      "severity": "major",
+      "evidence": "HTML has: <tr><td>Water Systems</td><td></td><td></td><td></td><td></td></tr>. In the PDF, 'Water Systems' appears as a sub-label under the 'Model Scenario' column header, not as a standalone empty row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Process Components' heading appears many times in the HTML as separate section headings. While this mirrors the PDF slide deck structure where each slide is titled 'Process Components', some of the water use sub-content from the flow chart on page 6 is duplicated - appearing both in the structured list on the Process Components section and again in the Water Use section (page 9 content). The items 'Local Water Supply Plans: Municipal Data', 'Self-supplied Industry: Industrial Data', 'Agriculture: Agri Data', 'Other Registered Withdrawers: Golf Course' appear as both structured list items AND as standalone paragraph text.",
+      "severity": "major",
+      "evidence": "HTML contains these items first as list items under 'Water Use: Users/Systems' and then again as standalone paragraphs: '<p>Local Water Supply Plans: Municipal Data</p><p>Self-supplied Industry: Industrial Data</p><p>Agriculture: Agri Data</p><p>Other Registered Withdrawers: Golf Course</p>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Evaluation Criteria section for Reservoir Water Levels duplicates chart legend/axis content as standalone paragraphs after the figure, repeating text that is part of the chart image.",
+      "severity": "major",
+      "evidence": "HTML has standalone paragraphs: '<p>Elevation (Feet)</p><p>Percent of simulated time steps</p><p>2003_Demands</p><p>2030_Demands</p><p>2050_Demands</p>' - these are axis labels and legend items from the chart image, duplicated as body text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Stream Flows evaluation criteria section similarly duplicates chart axis labels and legend items as standalone paragraphs.",
+      "severity": "major",
+      "evidence": "HTML has: '<p>Flow (CFS)</p><p>Percent of simulated time steps</p><p>2003_Demands</p><p>2030_Demands</p><p>2050_Demands</p><p>Unimpaired_Case</p>' as body text duplicating what appears in the chart image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "On the water use map section (PDF page 10), location names from the map are extracted as paragraph text, but several are truncated or garbled, such as 'nnapolis' (should be 'Kannapolis'), 'Mt. Pleasan' (should be 'Mt. Pleasant'), 'Stan ey Co.' (should be 'Stanley Co.').",
+      "severity": "major",
+      "evidence": "HTML: 'nnapolis, LDWATER CR, LAKE FISHER/COLDWATER CRK... Mt. Pleasan... Stan ey Co.' - These are map labels that were partially extracted with errors.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 13,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 1093.55,
+    "page_count": 24,
+    "visual_input_tokens": 75633,
+    "visual_output_tokens": 1825,
+    "content_input_tokens": 48115,
+    "content_output_tokens": 1086,
+    "timestamp": "2026-04-17T20:14:29.676746",
+    "auditor_version": "1.0.0"
+  }
+}

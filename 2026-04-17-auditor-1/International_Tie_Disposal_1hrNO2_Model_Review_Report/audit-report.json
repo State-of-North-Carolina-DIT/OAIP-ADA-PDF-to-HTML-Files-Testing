@@ -1,0 +1,78 @@
+{
+  "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 32. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Table A1 contains embedded image rows that break the table structure. Rows with images spanning the table are inserted between data rows (e.g., between K24 and K25, between K51 and K52), creating spurious rows with empty cells that do not exist in the PDF.",
+      "severity": "major",
+      "evidence": "HTML contains rows like: <tr><td><figure><img src=\"[embedded-image-removed]\" alt=\"Table A1 continued\" ...></figure></td><td></td><td></td>...</tr> inserted mid-table between K24/K25 and K51/K52. The PDF has no such row breaks \u2014 it is a continuous table across pages.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Table A2 contains embedded image rows that break the table structure, similar to Table A1. Spurious rows with images and empty cells are inserted between K10/K11 and K38/K39.",
+      "severity": "major",
+      "evidence": "HTML contains rows like: <tr><td><figure><img src=\"[embedded-image-removed]\" alt=\"Table A2 continued\" ...></figure></td><td></td><td></td></tr> inserted mid-table. The PDF has no such interruptions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table A1 data appears twice in the HTML: once as an embedded image (with alt text referencing the table) and once as an actual HTML table with all the data rows. The PDF contains the table only once.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img ... alt=\"Table A1 Modeled Release Parameters for Point Sources\"> before the actual <table> containing Table A1 data. The PDF only has the table once.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 158.35,
+    "page_count": 7,
+    "visual_input_tokens": 20117,
+    "visual_output_tokens": 445,
+    "content_input_tokens": 27958,
+    "content_output_tokens": 687,
+    "timestamp": "2026-04-17T20:00:44.595968",
+    "auditor_version": "1.0.0"
+  }
+}

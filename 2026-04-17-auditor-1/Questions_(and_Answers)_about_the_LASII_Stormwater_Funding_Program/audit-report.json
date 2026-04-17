@@ -1,0 +1,62 @@
+{
+  "document_id": "Questions_(and_Answers)_about_the_LASII_Stormwater_Funding_Program",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 32. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C4a",
+      "description": "PDF contains hyperlinks with descriptive text ('Division's website', 'training video', '(available here)', 'US Environmental Protection Agency', 'Levee Terms & Definitions (army.mil)', 'Division's website' again) that appear in the HTML as plain text without href attributes.",
+      "severity": "critical",
+      "evidence": "In the PDF, 'Division's website', 'training video', '(available here)', 'US Environmental Protection Agency', and 'Division's website' (Q19 answer) are all rendered as hyperlinks with underlying URLs. In the HTML, these appear as plain text without <a href> tags. For example: '<p>All materials needed for applying for funds through the LASII Stormwater Program are posted on the Division's website.</p>' has no link.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 157.39,
+    "page_count": 5,
+    "visual_input_tokens": 16733,
+    "visual_output_tokens": 313,
+    "content_input_tokens": 17388,
+    "content_output_tokens": 600,
+    "timestamp": "2026-04-17T20:02:16.855720",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 36. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NCDENR logo/seal image present at the top of the PDF document is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NCDENR seal/logo graphic at the top center of the page. The HTML rendering does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'One North Carolina Naturally' logo/branding image in the footer of the PDF is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 footer area shows the 'One NorthCarolina Naturally' stylized logo. The HTML renders this as plain text instead.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF reads 'All applicationshall address stormwater management' (missing space, likely OCR artifact). The HTML corrects this to 'All applications shall address stormwater management'. This is an improvement, not an error, but noted for completeness of the audit trail.",
+      "severity": "major",
+      "evidence": "PDF: 'All applicationshall address stormwater management' -> HTML: 'All applications shall address stormwater management'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 556.87,
+    "page_count": 7,
+    "visual_input_tokens": 21237,
+    "visual_output_tokens": 728,
+    "content_input_tokens": 26035,
+    "content_output_tokens": 488,
+    "timestamp": "2026-04-17T20:03:45.895473",
+    "auditor_version": "1.0.0"
+  }
+}

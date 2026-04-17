@@ -1,0 +1,102 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the cover letter is missing or not rendered in the HTML version.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the North Carolina state seal centered at the top of the letterhead. The HTML rendering does not display this seal image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom of the cover letter is missing in the HTML version.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the DEQ (Department of Environmental Quality) logo at the bottom of the page. The HTML rendering replaces this with plain text of the address information without the logo graphic.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Kevin Hart's signature image is missing from the HTML version.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a handwritten signature image between 'Sincerely,' and 'Kevin Hart'. The HTML version omits this signature image entirely.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML version repeats the full cover letter content multiple times before the report content begins, disrupting reading order.",
+      "severity": "major",
+      "evidence": "The PDF has the cover letter once (page 1), then the title page (page 2), then the report content. The HTML rendering shows the cover letter text appearing at least twice before the report content, with the DEQ header information repeated, creating a confusing reading flow.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3a",
+      "description": "The Shallow Draft Navigation Channel Dredging table on PDF page 3 is rendered as an image in the HTML rather than as an HTML table. All 42+ rows of data in this table are not available as searchable/accessible text.",
+      "severity": "critical",
+      "evidence": "PDF page 3 contains a full table with columns Date, Project, Cooperator, Amount, Project Type with ~42 data rows and a total of $9,543,427.32. HTML renders this as: '<img src=\"[embedded-image-removed]\" alt=\"Table: Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022\">' with no corresponding HTML table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The cooperators reference table at the bottom of the last page is split incorrectly. The Lake Norman and Mountain Island Reservoir cooperator data is conflated \u2014 'Charlotte Water, Charlotte' and 'Stormwater Services and Duke Energy' appear as if they are separate cooperators for separate projects, when in the PDF the cooperators for Lake Norman are 'Lake Norman Marine Commission, Charlotte Water,' and for Mountain Island Reservoir are 'Charlotte Stormwater Services and Duke Energy'.",
+      "severity": "major",
+      "evidence": "PDF page 10: Lake Norman cooperators = 'Lake Norman Marine Commission, Charlotte Water,' and Mountain Island Reservoir cooperators = 'Charlotte Stormwater Services and Duke Energy'. HTML table: Lake Norman row has 'Lake Norman Marine Commission, Charlotte Water, Charlotte' and Mountain Island Reservoir row has 'Stormwater Services and Duke Energy'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 4,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 220.69,
+    "page_count": 10,
+    "visual_input_tokens": 30375,
+    "visual_output_tokens": 1158,
+    "content_input_tokens": 34665,
+    "content_output_tokens": 818,
+    "timestamp": "2026-04-17T20:05:05.314707",
+    "auditor_version": "1.0.0"
+  }
+}

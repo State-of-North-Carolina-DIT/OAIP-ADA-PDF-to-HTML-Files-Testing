@@ -1,0 +1,78 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 43. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Energy, Mineral & Land Resources logo/graphic present in the PDF header is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC tree logo with 'Energy, Mineral & Land Resources / ENVIRONMENTAL QUALITY' text beneath it in the upper left corner. The HTML does not render this logo image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections in the HTML disrupts the reading flow.",
+      "severity": "major",
+      "evidence": "Between the end of page 1 content and the start of page 3 content in the HTML, the full footer (State of North Carolina address block) and header block (PAT McCRORY Governor, DONALD R. VAN DER VAART Secretary, TRACY DAVIS Director, MEMORANDUM) are repeated, interrupting the continuous reading flow that the PDF achieves with simple page breaks.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The outline section numbering in the PDF uses Roman numerals with indentation alignment, while HTML converts this to a flat bulleted/numbered list with hyperlinks, changing the structural presentation.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows I., II., III., IV. as a formatted outline with consistent indentation. HTML renders these as a list with clickable hyperlinks (I. History/Background, II. March 24, 2016 Public Meeting..., etc.) \u2014 while content is preserved, the hyperlinks are added elements not in the PDF.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 131.39,
+    "page_count": 5,
+    "visual_input_tokens": 16793,
+    "visual_output_tokens": 847,
+    "content_input_tokens": 15391,
+    "content_output_tokens": 225,
+    "timestamp": "2026-04-17T19:58:02.924996",
+    "auditor_version": "1.0.0"
+  }
+}

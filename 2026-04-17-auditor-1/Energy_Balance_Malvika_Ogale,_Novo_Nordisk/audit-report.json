@@ -1,0 +1,134 @@
+{
+  "document_id": "Energy_Balance_Malvika_Ogale,_Novo_Nordisk",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 10 (Mapping Strategy) has a hierarchical diagram showing Site Usage broken into Building Usage blocks, each with Process Usage and Other Usage subdivided into M (Measured) and U (Unmeasured). In the HTML, this is rendered as nested bullet lists, losing the visual structure of the grid/tree diagram.",
+      "severity": "major",
+      "evidence": "PDF shows a structured grid with 'Site Usage' at top, three 'Building Usage' columns each containing 'Process Usage' and 'Other Usage' with M/U boxes. HTML renders this as a flat nested bullet list repeated three times.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 4 (Product Supply in NC & Virginia) has a mosaic/grid layout of achievement tiles. The HTML renders these as a single image followed by a flat list of text items, losing the visual grid structure.",
+      "severity": "major",
+      "evidence": "PDF shows a structured mosaic grid with tiles for '31 years', '$10B', '60+', 'LEED Gold', '$40M+', etc. HTML shows the mosaic as an image but then repeats all the tile content as a flat bullet list below.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Slide 12 (Natural Gas and Steam Example) contains a detailed process flow diagram. While the image is present in the HTML, the resolution/legibility is significantly reduced, and the diagram's detail (labels, connections, flow paths) becomes very difficult to read.",
+      "severity": "critical",
+      "evidence": "PDF shows a large, detailed steam/condensate flow diagram spanning the full slide with readable labels. HTML shows the same diagram but at reduced size making internal labels illegible.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Slide 13 (Water Example - Process Flows) contains a detailed Sankey-style water flow diagram. While present in the HTML, it appears at reduced size with reduced legibility.",
+      "severity": "critical",
+      "evidence": "PDF shows a full-width detailed water flow diagram with color-coded streams and readable numeric values. HTML shows the same diagram but smaller with reduced readability of internal labels and values.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 17 (Energy Savings Project Examples) has a two-column layout with 'Inactivation Skid Optimization' on the left and 'Distillation Optimization' on the right. The HTML collapses this into a single column.",
+      "severity": "major",
+      "evidence": "PDF shows two distinct project examples side by side. HTML shows them stacked vertically as separate sections.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 18 (Water Savings Project Examples) has a two-column layout with 'Filter backwash reduction' on the left and 'Conductivity Setpoint Changes' on the right. The HTML collapses this into a single column.",
+      "severity": "major",
+      "evidence": "PDF shows two water savings examples side by side. HTML shows them stacked vertically.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The URL 'https://companiesmarketcap.com/pharmaceuticals/largest-pharmaceutical-companies-by-market-cap/' is broken into multiple fragmented <a> tags in the HTML, which is unusual but technically linked. However, the fragments create broken links with partial URL paths that would not resolve correctly.",
+      "severity": "major",
+      "evidence": "HTML has: <a href=\"...largest\">1. https://companiesmarketcap.com/pharmaceuticals/largest</a><a href=\"...\">-pharmaceutical</a><a href=\"...\">-companies</a><a href=\"...\">-by</a><a href=\"...\">-market</a><a href=\"...\">-cap/</a> \u2014 this fragments one URL into six separate anchor tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Novo Nordisk at a glance' section content from PDF page 2 appears to have its key statistics duplicated \u2014 the statistics appear both as extracted text items and again within the image grid description. This reflects the PDF's dual presentation (text + infographic) but the HTML lists items like 'Supplier of nearly 50%', 'Net sales 290.4 billion DKK', etc. twice in different forms within the same section.",
+      "severity": "major",
+      "evidence": "The section first lists stats like 'Supplier of nearly 50% of the world's insulin', 'Net sales 290.4 billion DKK', etc. as standalone paragraphs, then the same content appears in the body text block above (e.g., '170 Affiliates in countries' vs 'Affiliates in 80 countries'). This mirrors the PDF slide layout where text and infographic co-exist.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF states 'Affiliates in 170 countries' on page 2 (in the body text paragraph), but the HTML converts this to 'Affiliates in 80 countries'. The PDF itself has conflicting numbers (170 in body text vs 80 in the infographic). The HTML chose 80 but dropped the 170 reference entirely.",
+      "severity": "major",
+      "evidence": "PDF page 2 body text: '170 Affiliates in countries' and separately '80 countries'. HTML only shows: 'Affiliates in 80 countries'. The number 170 appears in the PDF as a distinct statistic that is lost.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "PDF page 2 states 'Investing more than 52 billion DKK in R&D' and '12' (number of strategic production sites) \u2014 the number 12 for strategic production sites is not reflected in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows '12' alongside 'Strategic production sites'. HTML only mentions 'Strategic production sites in Belgium, Brazil, China, Denmark, France, Italy and US' without the count '12'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 9,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 999.53,
+    "page_count": 19,
+    "visual_input_tokens": 60961,
+    "visual_output_tokens": 1643,
+    "content_input_tokens": 42482,
+    "content_output_tokens": 1098,
+    "timestamp": "2026-04-17T20:16:29.499195",
+    "auditor_version": "1.0.0"
+  }
+}

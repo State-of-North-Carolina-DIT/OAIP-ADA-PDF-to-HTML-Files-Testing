@@ -1,0 +1,118 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Components slide contains a combined hydrograph chart and cross-section illustration showing riverine flow levels. The image is present in the HTML but should be verified for completeness.",
+      "severity": "critical",
+      "evidence": "The PDF slide 6 shows a detailed combined graphic with a hydrograph (Discharge vs time showing Overbank Flow, High Flow Pulses, Base Flow, Subsistence Flow) and a cross-section illustration showing Valley or Channel Forming Flow, Riparian Maintenance, Channel Maintenance, Habitat Flow, Flushing Flow, and Water Quality levels. The HTML rendering includes this image.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The Cheoah River base flow table in the PDF slide 8 is rendered as inline text in the slide image, while the HTML renders it as a proper HTML table. The data content matches, which is acceptable, but the slide image also shows the table as styled text rather than a formal table structure.",
+      "severity": "major",
+      "evidence": "PDF shows the table as formatted text within the slide. HTML converts it to a proper HTML table with borders and headers. Data values match: Tier A Jan=50, Feb=100, etc. and Tier B Jan=50, Feb=90, etc.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Regime Tied to Ecology flowchart diagram from PDF slide 10 is missing as an image in the HTML. The content is converted to text/lists but the visual diagram itself is not present.",
+      "severity": "critical",
+      "evidence": "PDF shows a structured flowchart diagram with boxes and connecting arrows. HTML replaces the entire diagram with nested bullet lists, losing the visual flowchart representation.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Scenario Examples chart from PDF slide 11 showing Actual Flow, 80% of Previous Day, 80% of Weekly Average, and 20/30/40 MAF lines is reduced to just legend items in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF shows a detailed time-series chart with 4 colored lines (Actual Flow in blue, 80% of Previous Day in red, 80% of Weekly Average in green/olive, 20/30/40 MAF in purple) plotted from 1/1 to 12/1 with y-axis up to 800. HTML only lists the legend items as bullet points: Actual Flow, 80% of Previous Day, 80% of Weekly Average, 20/30/40 MAF, without the chart image.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Cheoah River High Flow table, the March Day 2 magnitude value '600' has a superscript '2' appended to it in the HTML as '6002' without proper separation, making it read as the number 6002 rather than '600' with footnote marker 2.",
+      "severity": "major",
+      "evidence": "PDF shows: March Day 2 = 600 with superscript 2 (footnote reference). HTML shows: '<td>6002</td>' which reads as the number 6002.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Cheoah River High Flow table, the February Day 2 magnitude value 'Var' has a superscript '1' appended as 'Var1' without proper separation from the footnote reference.",
+      "severity": "major",
+      "evidence": "PDF shows: February Day 2 = Var with superscript 1 (footnote reference). HTML shows: '<td>Var1</td>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Cheoah River High Flow table header, the column header 'Magnitude (cfs)' has a superscript '3' that is rendered inline as 'Magnitude (cfs)3' in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows: 'Magnitude (cfs)' with superscript 3. HTML header shows: 'Magnitude (cfs)3 Day 1'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The last slide (page 12) showing the 'Flow Scenario Examples' chart is reduced to only a heading and a plain bullet list of legend items. The actual chart visualization and its axes (showing values 0-800 on y-axis, dates 1/1 through 12/1 on x-axis) are not represented even as an image tag or figure.",
+      "severity": "critical",
+      "evidence": "PDF page 12 contains a detailed line chart titled 'Flow Scenario Examples' with four data series plotted over a full year. HTML only has: '<h2>Flow Scenario Examples</h2><ul><li>Actual Flow</li><li>80% of Previous Day</li><li>80% of Weekly Average</li><li>20/30/40 MAF</li></ul>' \u2014 no <figure> or <img> tag for this chart.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 4,
+  "major_count": 5,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 262.76,
+    "page_count": 12,
+    "visual_input_tokens": 38543,
+    "visual_output_tokens": 1346,
+    "content_input_tokens": 26939,
+    "content_output_tokens": 813,
+    "timestamp": "2026-04-17T19:59:00.787523",
+    "auditor_version": "1.0.0"
+  }
+}

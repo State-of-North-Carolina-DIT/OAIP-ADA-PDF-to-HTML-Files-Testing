@@ -1,0 +1,70 @@
+{
+  "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'sab \u2013 what it is' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Venn diagram showing 'Modeling Supports Planning' with nested ellipses for 'Water Supply Planning' and 'River Basin Modeling' is missing from the HTML conversion. Only plain text labels are shown.",
+      "severity": "critical",
+      "evidence": "PDF page 8 shows a graphical Venn/nested ellipse diagram with green and orange ovals. The HTML replacement shows only plain text 'Water Supply Planning' and 'River Basin Modeling' without any diagram.",
+      "page": 8,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 69.55,
+    "page_count": 11,
+    "visual_input_tokens": 25812,
+    "visual_output_tokens": 544,
+    "content_input_tokens": 21963,
+    "content_output_tokens": 211,
+    "timestamp": "2026-04-17T19:56:24.186194",
+    "auditor_version": "1.0.0"
+  }
+}

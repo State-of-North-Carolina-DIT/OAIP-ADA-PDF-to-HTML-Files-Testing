@@ -1,0 +1,86 @@
+{
+  "document_id": "01_10_adilet_2020_4",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 52. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image present in the PDF header is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the Great Seal of North Carolina as an image between the header text and 'NORTH CAROLINA'. The HTML renders the seal text as plain text ('THE GREAT SEAL OF THE STATE OF NORTH CAROLINA', 'MAY 20, 1775', 'APRIL 12, 1776', 'ESSE QUAM VIDERI') instead of displaying the seal image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content is inserted between page-equivalent sections in the HTML, disrupting reading flow.",
+      "severity": "major",
+      "evidence": "The HTML inserts repeated elements like 'March 25, 2020', 'Certified Mail', 'Return Receipt Requested', the full address block, and the RE: line between the content that corresponds to PDF pages. The PDF has these only on page 1, with subsequent pages showing only 'Certified Mail / Mr. Threatt / Page Two' etc. as headers. This creates reading-order disruption in the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML header contains fabricated seal description text that does not appear as readable text in the PDF. The PDF shows an image of the NC state seal, but the HTML converts it into explicit text describing the seal's contents.",
+      "severity": "critical",
+      "evidence": "HTML contains: 'THE GREAT SEAL OF THE STATE OF NORTH CAROLINA<br/>MAY 20, 1775<br/>APRIL 12, 1776<br/>ESSE QUAM VIDERI' \u2014 this text is embedded in the seal image in the PDF but is not presented as document text. This is a borderline case as it describes the seal's content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 108.01,
+    "page_count": 4,
+    "visual_input_tokens": 13887,
+    "visual_output_tokens": 597,
+    "content_input_tokens": 11306,
+    "content_output_tokens": 517,
+    "timestamp": "2026-04-17T19:56:16.123717",
+    "auditor_version": "1.0.0"
+  }
+}

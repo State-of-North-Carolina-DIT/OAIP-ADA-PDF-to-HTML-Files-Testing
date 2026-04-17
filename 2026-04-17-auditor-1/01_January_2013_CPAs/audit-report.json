@@ -1,0 +1,70 @@
+{
+  "document_id": "01_January_2013_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table cells in the HTML are excessively tall with line-wrapped content that breaks readability of the table structure. Column headers and data cells that are single-line in the PDF are wrapped into multiple lines in the HTML, making the table visually broken and difficult to read.",
+      "severity": "major",
+      "evidence": "PDF shows a compact, well-aligned table with single-line entries for Owner-Facility, County, Region, etc. HTML shows the same data but with extreme row heights due to word-wrapping in narrow columns (e.g., 'Linville Ridge Country Club - Linville Ridge Country Club WWTP' spans 5+ lines in HTML vs 2 lines in PDF).",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML renders the table in a significantly narrower layout than the PDF, causing column compression and excessive vertical expansion of rows throughout all pages.",
+      "severity": "major",
+      "evidence": "PDF has a wide landscape-oriented table spanning the full page width with readable columns. HTML compresses this into a narrow portrait-style layout where columns like 'Owner - Facility' and 'Case Number' are squeezed, causing multi-line wrapping throughout.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 64.12,
+    "page_count": 2,
+    "visual_input_tokens": 6143,
+    "visual_output_tokens": 597,
+    "content_input_tokens": 15092,
+    "content_output_tokens": 743,
+    "timestamp": "2026-04-17T19:56:10.527345",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "document_id": "009_outfall_COALASHSUMMARY4March_2014",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V2",
+      "description": "The HTML table loses the dense, compact multi-column layout of the PDF. While the data appears present, the table structure is significantly spread out vertically with each row taking much more space, and the column header groupings (Report #, Lab PQL, Units\\Hg 1631, etc.) are reformatted in a way that changes the visual table structure.",
+      "severity": "major",
+      "evidence": "PDF has a compact table with clear column groupings under date headers (2/14/2014, 2/17/2014, 2/26/2014, 2/27/2014) each with sub-columns for sample IDs and qualifiers. HTML renders the same columns but spreads them out significantly, with the header structure reorganized.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Several 'U' qualifier flags that appear as superscript-style annotations next to numeric values in the PDF table (e.g., '0.4 U', '0.50 U', '2.0 U', '5.0 U', '10 U') are placed in separate qualifier columns in the HTML. While the data is preserved, the visual alignment and association between values and their qualifiers differs from the PDF's compact layout where value and qualifier share a cell space.",
+      "severity": "major",
+      "evidence": "PDF shows values like '0.50 U' where U appears immediately adjacent to the value within the same visual cell area. HTML separates these into distinct 'Qualifier' columns, which preserves data but changes table structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The table structure is corrupted in the header area. The PDF has a clear multi-row header with sampling dates (2/14/2014, 2/17/2014, 2/26/2014, 2/27/2014) spanning multiple sample IDs (e.g., AC04986/AC04987/AC04993), but the HTML merges all sample IDs into single header cells and splits the qualifier flags into separate columns, creating a 12-column structure that doesn't match the PDF's layout. The PDF presents values and their U qualifiers together in the same cell, while the HTML separates them into distinct columns.",
+      "severity": "major",
+      "evidence": "PDF header: '2/14/2014 | AC04986 AC04987 AC04993' as a date with sub-IDs. HTML: '<th>2/14/2014 AC04986 AC04987 AC04993</th><th>2/14/2014 Qualifier</th>' \u2014 qualifier split into separate column not present in PDF structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The 'Applicable Water Quality Standard' and 'Basis for Standard' columns for 'Al - Dissolved Aluminum' and 'As Dissolved Arsenic' rows contain fabricated repetitions. The PDF shows 'no NC standards for dissolved metals' as a single note spanning those rows, but the HTML duplicates it across both the 'Applicable Water Quality Standard' and 'Basis for Standard' columns for Al - Dissolved Aluminum and then repeats it for As Dissolved Arsenic.",
+      "severity": "critical",
+      "evidence": "PDF: 'no NC standards for dissolved metals' appears once as a note for the dissolved metals section. HTML: Al - Dissolved Aluminum row has '<td>no NC standards for</td><td>no NC standards for</td>' and As Dissolved Arsenic has '<td>dissolved metals</td><td>dissolved metals</td>' \u2014 duplicating and splitting the note into four cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Aluminum standard value '87*' in the PDF is correctly shown, but the asterisk footnote reference is missing from the HTML table cell rendering context. More importantly, several parameter names have had underscores removed or reformatted (e.g., 'Aluminum_Al' \u2192 'Aluminum Al', 'Residue_Suspended' \u2192 'Residue Suspended'), which is a minor but systematic text alteration.",
+      "severity": "major",
+      "evidence": "PDF: 'Aluminum_Al', 'Arsenic_As', 'Residue_Suspended'. HTML: 'Aluminum Al', 'Arsenic As', 'Residue Suspended'. Underscores systematically removed from parameter names.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 57.37,
+    "page_count": 1,
+    "visual_input_tokens": 3881,
+    "visual_output_tokens": 609,
+    "content_input_tokens": 12138,
+    "content_output_tokens": 914,
+    "timestamp": "2026-04-17T19:55:26.006645",
+    "auditor_version": "1.0.0"
+  }
+}

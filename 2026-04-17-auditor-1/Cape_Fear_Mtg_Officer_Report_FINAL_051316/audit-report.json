@@ -1,0 +1,78 @@
+{
+  "document_id": "Cape_Fear_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC state logo/seal image present in the PDF header is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows an NC state logo with tree and 'Energy, Mineral & Land Resources' text in the upper left. The HTML rendering does not display this logo image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML inserts repeated header/footer content (PAT McCRORY Governor, DONALD R. VAN DER VAART Secretary, TRACY DAVIS Director, and footer address block) between pages, disrupting the reading flow.",
+      "severity": "major",
+      "evidence": "PDF pages transition cleanly from page content to next page content. HTML chunk 2 shows the footer address block followed immediately by the header official names (PAT McCRORY, etc.) and then the MEMORANDUM heading again, creating a duplicate reading of the memo header that doesn't occur in the PDF's reading flow.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Attachments section in the PDF uses Roman numeral labels (I through VI) aligned in a structured list format. The HTML preserves this content but the numbering labels appear slightly differently formatted.",
+      "severity": "major",
+      "evidence": "PDF page 7 shows Roman numerals I-VI as a cleanly indented list under section IV Attachments. HTML renders the same content with the same Roman numerals, so this is preserved adequately.",
+      "page": 7,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 143.56,
+    "page_count": 4,
+    "visual_input_tokens": 13651,
+    "visual_output_tokens": 789,
+    "content_input_tokens": 12685,
+    "content_output_tokens": 262,
+    "timestamp": "2026-04-17T19:59:04.950515",
+    "auditor_version": "1.0.0"
+  }
+}

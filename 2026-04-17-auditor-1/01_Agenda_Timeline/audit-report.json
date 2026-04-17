@@ -1,0 +1,78 @@
+{
+  "document_id": "01_Agenda_Timeline",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-complementary-is-top-level",
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The null landmark is contained in another landmark. [<aside>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>\n<h1>Welcome to the CHPP Steering Committee Meeting</h1>\n<p>July 30, 2020</p>\n<p>Say \u201cHi\u201d in the chat box, let us know who you work for, and tel]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Coastal Habitat Protection Plan Timeline slide images (wildlife/habitat photos on the right side of the slide) are displayed differently in HTML - they appear as separate stacked images in a column rather than as a vertical strip alongside the table as in the PDF.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows wildlife photos as a narrow vertical strip to the right of the timeline table. HTML renders them as separate, larger images stacked above the table, disconnected from their original layout context.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Coastal Habitat Protection Plan Timeline slide layout is significantly altered - the PDF shows the table and images side by side, but the HTML separates the images from the table, placing images above and the table below.",
+      "severity": "major",
+      "evidence": "PDF page 3 has a two-section layout with the timeline table on the left and wildlife photos on the right. HTML collapses this into a single-column layout with images stacked above the table.",
+      "page": 3,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 127.09,
+    "page_count": 3,
+    "visual_input_tokens": 10601,
+    "visual_output_tokens": 536,
+    "content_input_tokens": 9698,
+    "content_output_tokens": 575,
+    "timestamp": "2026-04-17T19:56:41.372891",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "document_id": "01_2019_Consumer_Shellfish_Advisory_ENGLISH",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the PDF, 'oysters, clams or mussels' is displayed in bold italic on the main consumer advisory sign. In the HTML (page 2), these words appear in italic only, losing the bold emphasis.",
+      "severity": "minor",
+      "evidence": "PDF page 1: 'oysters, clams or mussels' is bold and italic. HTML page 2: 'oysters, clams or mussels' appears in italic only without bold.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 29.56,
+    "page_count": 2,
+    "visual_input_tokens": 6559,
+    "visual_output_tokens": 408,
+    "content_input_tokens": 6311,
+    "content_output_tokens": 126,
+    "timestamp": "2026-04-17T19:55:01.415781",
+    "auditor_version": "1.0.0"
+  }
+}

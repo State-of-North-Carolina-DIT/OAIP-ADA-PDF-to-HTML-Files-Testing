@@ -1,0 +1,70 @@
+{
+  "document_id": "01_2020MayMFC_BusinessMeetingAgenda",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C5",
+      "description": "The PDF has 'AGENDA' as a prominent title (visually large, centered, distinct), but in the HTML it is rendered as an h2 under the h1. While this is a reasonable choice, the sub-items under Chairman's Report are rendered as a bulleted list rather than indented items, which changes the visual hierarchy slightly. However, more notably, 'Thursday, May 14' is a clear section header in the PDF rendered as h3, which is acceptable. No significant hierarchy break detected beyond minor choices.",
+      "severity": "major",
+      "evidence": "PDF: 'AGENDA' is a large centered title; HTML: rendered as <h2>AGENDA</h2> under <h1>. This is an acceptable conversion choice.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer text '* Times indicated are merely for guidance. The commission will proceed through the agenda until completed. **Probable Action Items' appears on both pages of the PDF (as page footers). In the HTML, it appears once in a footer element, which is correct consolidation. However, the 'Informational Materials' section is split into two bullet points in the HTML ('Informational Materials:' and 'Informational Materials continued:'), faithfully mirroring the PDF's page break presentation. This is not an error but worth noting that the page-break artifact is preserved.",
+      "severity": "major",
+      "evidence": "PDF page 1 ends with 'Informational Materials:' listing two sub-items; PDF page 2 starts with 'Informational Materials continued:' with more sub-items. HTML preserves both as separate bullets.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 67.25,
+    "page_count": 2,
+    "visual_input_tokens": 7619,
+    "visual_output_tokens": 195,
+    "content_input_tokens": 8893,
+    "content_output_tokens": 592,
+    "timestamp": "2026-04-17T19:55:39.122274",
+    "auditor_version": "1.0.0"
+  }
+}

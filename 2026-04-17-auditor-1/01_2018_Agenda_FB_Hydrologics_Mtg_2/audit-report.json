@@ -1,0 +1,78 @@
+{
+  "document_id": "01_2018_Agenda_FB_Hydrologics_Mtg_2",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 37. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-landmark-main-is-top-level",
+      "description": "Ensure the main landmark is at top level",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-no-duplicate-main",
+      "description": "Ensure the document has at most one main landmark",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-landmark-unique",
+      "description": "Ensure landmarks are unique",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a dotted leader line format connecting agenda items to speakers in a flowing layout, while the HTML converts this into a structured table with explicit Time, Topic, and Speaker columns. Additionally, sub-items like 'Confirm local data source contacts', 'Model schematic', and 'Inflow development' are broken out into separate rows in the HTML table rather than being grouped under their parent time slots.",
+      "severity": "major",
+      "evidence": "PDF shows agenda items with dotted leaders (e.g., '1:10 - 2:00  Review data collection/ data needs ............Jonathan Williams, HDR / Confirm local data source contacts' as a grouped item). HTML shows these as a table with separate rows, where sub-items like 'Confirm local data source contacts' appear in their own rows with empty Time and Speaker cells.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds table column headers ('Time', 'Topic', 'Speaker') that do not exist in the source PDF. The PDF presents the agenda as a simple list, not a table with labeled columns.",
+      "severity": "critical",
+      "evidence": "HTML contains <thead> with <th>Time</th><th>Topic</th><th>Speaker</th>. The PDF has no such column headers \u2014 it is a simple agenda listing with dotted lines connecting topics to speakers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Sub-items under agenda entries are split into separate rows with empty Time and Speaker cells, rather than being kept as part of the parent row. For example, 'Confirm local data source contacts' is a sub-item under 'Review data collection/ data needs' (1:10-2:00, Jonathan Williams, HDR), but appears as its own row. Similarly, 'Model schematic' and 'Inflow development' are sub-items under 'Demonstrate Oasis Model' but appear as separate rows.",
+      "severity": "major",
+      "evidence": "PDF shows 'Confirm local data source contacts' as a continuation line under the 1:10-2:00 entry. HTML renders it as a separate <tr> with empty <td> for Time and Speaker. Same pattern for 'Model schematic' and 'Inflow development' under the 2:20-3:10 entry.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 35.49,
+    "page_count": 1,
+    "visual_input_tokens": 4354,
+    "visual_output_tokens": 406,
+    "content_input_tokens": 5083,
+    "content_output_tokens": 546,
+    "timestamp": "2026-04-17T19:55:06.402766",
+    "auditor_version": "1.0.0"
+  }
+}
