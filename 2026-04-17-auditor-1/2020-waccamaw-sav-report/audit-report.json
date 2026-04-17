@@ -11,30 +11,6 @@
       "call_source": "structural"
     },
     {
-      "check_id": "AXE-landmark-main-is-top-level",
-      "description": "Ensure the main landmark is at top level",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-no-duplicate-main",
-      "description": "Ensure the document has at most one main landmark",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-unique",
-      "description": "Ensure landmarks are unique",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
       "check_id": "C5",
       "description": "Table captions rendered as h3 headings instead of proper figure/table captions, while section headings like 'Introduction', 'Background', 'Results', 'Summary' are h2. The table titles 'Table 1' and 'Table 2' and 'Diagram 1' are not section headings in the PDF but are rendered as h3, which is a minor hierarchy concern but acceptable as they are subordinate content labels.",
       "severity": "major",
@@ -45,7 +21,7 @@
   ],
   "critical_count": 0,
   "major_count": 2,
-  "minor_count": 3,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",

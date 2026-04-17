@@ -11,30 +11,6 @@
       "call_source": "structural"
     },
     {
-      "check_id": "AXE-landmark-main-is-top-level",
-      "description": "Ensure the main landmark is at top level",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-no-duplicate-main",
-      "description": "Ensure the document has at most one main landmark",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-unique",
-      "description": "Ensure landmarks are unique",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
       "check_id": "C1",
       "description": "The HTML fabricates an email address as a mailto link that is not explicitly present as a clickable link in the PDF. The PDF shows digital signature metadata with 'email=elizabeth.werner@nc denr.gov, c=US' (with line break), but the HTML constructs a clean mailto link 'elizabeth.werner@ncdenr.gov'. While the email address content is derived from the PDF's digital signature block, wrapping it in an <a href='mailto:'> link is an invention.",
       "severity": "critical",
@@ -53,7 +29,7 @@
   ],
   "critical_count": 2,
   "major_count": 1,
-  "minor_count": 3,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",

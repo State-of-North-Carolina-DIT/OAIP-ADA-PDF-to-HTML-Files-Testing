@@ -11,30 +11,6 @@
       "call_source": "structural"
     },
     {
-      "check_id": "AXE-landmark-main-is-top-level",
-      "description": "Ensure the main landmark is at top level",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-no-duplicate-main",
-      "description": "Ensure the document has at most one main landmark",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-unique",
-      "description": "Ensure landmarks are unique",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
       "check_id": "V1",
       "description": "The DEQ logo is positioned differently in the HTML version - it is left-aligned instead of centered as in the PDF, and the page title structure is split across what appears to be two separate heading levels rather than being grouped together under the logo.",
       "severity": "major",
@@ -61,7 +37,7 @@
   ],
   "critical_count": 0,
   "major_count": 4,
-  "minor_count": 3,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",

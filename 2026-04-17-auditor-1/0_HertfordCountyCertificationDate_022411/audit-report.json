@@ -9,35 +9,11 @@
       "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
       "page": null,
       "call_source": "structural"
-    },
-    {
-      "check_id": "AXE-landmark-main-is-top-level",
-      "description": "Ensure the main landmark is at top level",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>\n<h1>Hertford County CAMA Land Use Plan Update</h1>\n<p>Certified by the Coastal Resources Commission on February 24, 2011</p>\n</main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-no-duplicate-main",
-      "description": "Ensure the document has at most one main landmark",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>\n        <main>\n<h1>Hertford County CAMA Land Use Plan Update</h1>\n<p>Certified by the Coastal Resources Commission on February 24, 2011</p>\n</m]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-unique",
-      "description": "Ensure landmarks are unique",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>\n        <main>\n<h1>Hertford County CAMA Land Use Plan Update</h1>\n<p>Certified by the Coastal Resources Commission on February 24, 2011</p>\n</m]",
-      "page": null,
-      "call_source": "accessibility"
     }
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 3,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",

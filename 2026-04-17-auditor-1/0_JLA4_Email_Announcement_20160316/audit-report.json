@@ -11,30 +11,6 @@
       "call_source": "structural"
     },
     {
-      "check_id": "AXE-landmark-main-is-top-level",
-      "description": "Ensure the main landmark is at top level",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-no-duplicate-main",
-      "description": "Ensure the document has at most one main landmark",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-unique",
-      "description": "Ensure landmarks are unique",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
       "check_id": "V4",
       "description": "The italic formatting on the document titles 'Draft Cape Fear River Water Supply Evaluation' and 'Draft Jordan Lake Water Supply Allocation Recommendations' is removed in the HTML version.",
       "severity": "minor",
@@ -45,7 +21,7 @@
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 4,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",

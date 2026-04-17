@@ -11,30 +11,6 @@
       "call_source": "structural"
     },
     {
-      "check_id": "AXE-landmark-main-is-top-level",
-      "description": "Ensure the main landmark is at top level",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-no-duplicate-main",
-      "description": "Ensure the document has at most one main landmark",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-unique",
-      "description": "Ensure landmarks are unique",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
       "check_id": "C5",
       "description": "The PDF has 'AGENDA' as a prominent title (visually large, centered, distinct), but in the HTML it is rendered as an h2 under the h1. While this is a reasonable choice, the sub-items under Chairman's Report are rendered as a bulleted list rather than indented items, which changes the visual hierarchy slightly. However, more notably, 'Thursday, May 14' is a clear section header in the PDF rendered as h3, which is acceptable. No significant hierarchy break detected beyond minor choices.",
       "severity": "major",
@@ -53,7 +29,7 @@
   ],
   "critical_count": 0,
   "major_count": 3,
-  "minor_count": 3,
+  "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",

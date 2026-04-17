@@ -19,30 +19,6 @@
       "call_source": "accessibility"
     },
     {
-      "check_id": "AXE-landmark-main-is-top-level",
-      "description": "Ensure the main landmark is at top level",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The main landmark is contained in another landmark. [<main>\n<h1>Welcome to the CHPP Steering Committee Meeting</h1>\n<p>July 30, 2020</p>\n<p>Say \u201cHi\u201d in the chat box, let us know who you work for, and tel]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-no-duplicate-main",
-      "description": "Ensure the document has at most one main landmark",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  Document has more than one main landmark [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
-      "check_id": "AXE-landmark-unique",
-      "description": "Ensure landmarks are unique",
-      "severity": "minor",
-      "evidence": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable [<main>]",
-      "page": null,
-      "call_source": "accessibility"
-    },
-    {
       "check_id": "V3",
       "description": "The Coastal Habitat Protection Plan Timeline slide images (wildlife/habitat photos on the right side of the slide) are displayed differently in HTML - they appear as separate stacked images in a column rather than as a vertical strip alongside the table as in the PDF.",
       "severity": "critical",
@@ -61,7 +37,7 @@
   ],
   "critical_count": 1,
   "major_count": 2,
-  "minor_count": 4,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
