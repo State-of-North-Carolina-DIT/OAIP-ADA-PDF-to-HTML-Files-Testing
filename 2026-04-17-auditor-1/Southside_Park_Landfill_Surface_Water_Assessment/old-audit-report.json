@@ -1,0 +1,70 @@
+{
+  "document_id": "Southside_Park_Landfill_Surface_Water_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF is a single-page map figure with complex spatial layout including map imagery, data callout boxes positioned at specific locations on the map, a legend, notes section, and metadata block. The HTML converts this into a linear, top-to-bottom layout with separate sections for map labels, tabular data, legend, metadata, and notes, completely losing the spatial map-based layout.",
+      "severity": "critical",
+      "evidence": "PDF shows a map with sample location callout boxes (SW-1 through SW-5) positioned spatially on the map near their respective sampling points. HTML renders all this as sequential tables and text sections below a small thumbnail of the map image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The map image in the HTML is rendered as a small thumbnail that is significantly reduced compared to the PDF where the map is the primary content occupying the full page. The map details, labels, and callout boxes visible in the PDF map are largely illegible in the HTML thumbnail.",
+      "severity": "major",
+      "evidence": "PDF: Full-page detailed map with readable labels, road names, property boundaries, and sample data callouts. HTML: Small thumbnail image of the map at the top of the page with details not legible.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The sample data that appears in callout boxes on the PDF map is converted to HTML tables. While the data content is preserved, the table structure differs from the original - the PDF shows each sample's data as a compact box with parameter/value pairs, while the HTML renders them as full-width two-column tables with each parameter on its own row.",
+      "severity": "minor",
+      "evidence": "PDF: Compact callout boxes like 'SW-2: Tetrachloroethene 6.07, Copper 4.85' in a small table format on the map. HTML: Full-width tables with the same data but in a different visual structure.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has nested <main> elements and uses 'Map Labels' and 'Surface Water Sample Data' as section headings that don't exist in the PDF. However, these are organizational headings added by the converter for structure, not fabricated content.",
+      "severity": "minor",
+      "evidence": "HTML contains <h3>Map Labels</h3>, <h3>Surface Water Sample Data</h3>, <h3>Legend</h3>, <h3>Metadata</h3> which are converter-added organizational headings not present as explicit headings in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside another <main> element, which is invalid HTML structure but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The HTML contains <main> wrapping the entire body content, and then another <main> element inside it wrapping the sections.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 118.82,
+    "page_count": 1,
+    "visual_input_tokens": 3583,
+    "visual_output_tokens": 696,
+    "content_input_tokens": 6505,
+    "content_output_tokens": 489,
+    "timestamp": "2026-04-16T00:54:19.852484",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -9,30 +9,22 @@
       "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
       "page": null,
       "call_source": "structural"
-    },
-    {
-      "check_id": "V1",
-      "description": "The PDF has a two-section side-by-side layout for FY 2020-2021 and Duration of Program data (both Receipts and Disbursements), which is collapsed into a single four-column table in the HTML. While the data is preserved, the visual grouping of two distinct reporting periods as separate sections is lost.",
-      "severity": "major",
-      "evidence": "PDF shows two visually distinct column sections with separate headers 'FY 2020-2021 (through 3/31/21)' and 'Duration of Program (through 3/31/21)' side by side. HTML merges these into a single unified table with four columns.",
-      "page": 1,
-      "call_source": "visual"
     }
   ],
   "critical_count": 0,
-  "major_count": 2,
+  "major_count": 1,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 35.72,
+    "duration_seconds": 59.03,
     "page_count": 1,
-    "visual_input_tokens": 4551,
-    "visual_output_tokens": 379,
-    "content_input_tokens": 6790,
-    "content_output_tokens": 205,
-    "timestamp": "2026-04-17T19:57:09.650436",
+    "visual_input_tokens": 4804,
+    "visual_output_tokens": 1352,
+    "content_input_tokens": 7105,
+    "content_output_tokens": 1550,
+    "timestamp": "2026-04-20T02:43:12.156990",
     "auditor_version": "1.0.0"
   }
 }

@@ -12,35 +12,27 @@
     },
     {
       "check_id": "C7",
-      "description": "The header/footer contact information block (State of North Carolina | Environmental Quality | Waste Management, 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646, 919 707 8200) appears both at the top of the HTML body (in a meta-description style) and again mid-content after the table of contents, duplicating what was a single page footer in the PDF.",
+      "description": "PDF page footer/header text and a decorative image are inserted mid-content between the Table of Contents and Section I, breaking reading flow.",
       "severity": "major",
-      "evidence": "The footer text 'State of North Carolina | Environmental Quality | Waste Management / 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646 / 919 707 8200' appears once at the very top of the HTML and again after the TOC nav element.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C7",
-      "description": "An embedded image tag with an empty alt attribute appears between the History/Background section heading and the content, representing a decorative/separator image. This corresponds to an apparent page break or separator in the PDF but appears mid-content in the HTML.",
-      "severity": "major",
-      "evidence": "HTML contains '<figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 654.4pt; height: auto;\"></figure>' inserted between the footer block and the section II heading, which appears to be a page-level artifact.",
+      "evidence": "The HTML inserts a paragraph 'State of North Carolina | Environmental Quality | Waste Management<br/>1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646<br/>919 707 8200' followed by a wide decorative <img> (width: 654.4pt, alt=\"\") between the TOC and the Section I heading. In the PDF, this text is a repeating page footer/letterhead and does not appear as inline body content between these sections.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 3,
+  "major_count": 2,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 79.72,
+    "duration_seconds": 147.02,
     "page_count": 5,
-    "visual_input_tokens": 16753,
-    "visual_output_tokens": 380,
-    "content_input_tokens": 16199,
-    "content_output_tokens": 763,
-    "timestamp": "2026-04-17T20:03:43.585816",
+    "visual_input_tokens": 17006,
+    "visual_output_tokens": 2195,
+    "content_input_tokens": 16514,
+    "content_output_tokens": 4078,
+    "timestamp": "2026-04-20T12:16:16.254580",
     "auditor_version": "1.0.0"
   }
 }

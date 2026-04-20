@@ -1,6 +1,6 @@
 {
   "document_id": "Southside_Park_Stream_Sediment_Assessment",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -11,60 +11,28 @@
       "call_source": "structural"
     },
     {
-      "check_id": "V3",
-      "description": "The main map image in the HTML is extremely small and lacks legibility compared to the PDF. The PDF shows a detailed, full-page map with clearly readable labels, sediment data callouts, road names, property boundaries, and legend. The HTML renders this as a tiny thumbnail that loses all detail and legibility.",
-      "severity": "critical",
-      "evidence": "PDF: Full-page detailed map showing stream sediment assessment with readable station labels (SW/SD-1 through SW/SD-5), sediment data tables, road names, property boundaries, scale bar, and legend. HTML: Same map rendered as a small thumbnail image where none of the details, labels, or data callouts are legible.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The PDF presents sediment data results as spatial callout boxes positioned on the map at their respective sampling locations, providing geographic context. The HTML converts these into a sequential list of flat tables, losing the spatial relationship between the data and the map locations.",
-      "severity": "major",
-      "evidence": "PDF: SD-1 through SD-5 data boxes are positioned at specific locations on the map, each connected to its sampling point. HTML: All sediment data is presented as a linear sequence of labeled sections (SD-1/DUP-6102025-SD, SD-2, SD-3, SD-4, SD-5) without spatial context.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V2",
-      "description": "The sediment data in the PDF is presented in compact labeled tables within map callout boxes with clear column headers (parameter and mg/kg). The HTML renders these as two-column tables but some lack explicit column headers, and the Risk Assessment sub-sections are formatted inconsistently compared to the PDF.",
-      "severity": "major",
-      "evidence": "PDF: Each station box has a clear header line (e.g., 'SD-2  mg/kg') followed by parameter-value pairs, then 'Risk Assessment' with CR and HI values. HTML: Similar data is present but structured as separate table rows with 'Risk Assessment' appearing as a text row rather than a sub-header, and column headers vary (some show 'mg/kg' in the header row, others show 'Risk Assessment' as a value).",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "C3b",
-      "description": "Risk Assessment rows are embedded within the data tables as regular data rows rather than being a separate sub-section. The 'Risk Assessment' label appears as both columns (e.g., 'Risk Assessment | Risk Assessment') which is not how it appears in the PDF where it is a sub-header within each callout box.",
+      "description": "In all five sediment data tables, the 'Risk Assessment' sub-header row is rendered with duplicated text ('Risk Assessment' | 'Risk Assessment') across both columns. In the PDF, 'Risk Assessment' is a single underlined label spanning the full width of each callout box, not a two-cell data row. The underlying data (CR, HI values) is intact, but the header is misrepresented as a data cell pair.",
       "severity": "major",
-      "evidence": "In each HTML table, there is a row '<td>Risk Assessment</td><td>Risk Assessment</td>' which duplicates the label across both columns. In the PDF, 'Risk Assessment' is an underlined sub-header label, not a two-column data row.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "The REFERENCE section is rendered as an h4 under NOTES which is an h3, but in the PDF 'REFERENCE:' is at the same level as the notes header - both are bold labels within the notes block. This is a minor hierarchy interpretation difference.",
-      "severity": "major",
-      "evidence": "PDF shows 'NOTES:' and 'REFERENCE:' as same-level bold labels. HTML has '<h3>NOTES:</h3>' and '<h4>REFERENCE:</h4>' creating a parent-child relationship not present in the PDF.",
+      "evidence": "HTML: <tr><td>Risk Assessment</td><td>Risk Assessment</td></tr> appears in all five tables (SD-1 through SD-5). PDF: 'Risk Assessment' appears once as an underlined section label within each callout, not duplicated across columns.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 1,
-  "major_count": 5,
+  "critical_count": 0,
+  "major_count": 2,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 136.4,
+    "duration_seconds": 134.25,
     "page_count": 1,
-    "visual_input_tokens": 3785,
-    "visual_output_tokens": 772,
-    "content_input_tokens": 7699,
-    "content_output_tokens": 691,
-    "timestamp": "2026-04-17T20:03:41.212623",
+    "visual_input_tokens": 4038,
+    "visual_output_tokens": 2827,
+    "content_input_tokens": 8014,
+    "content_output_tokens": 2045,
+    "timestamp": "2026-04-20T12:15:08.161603",
     "auditor_version": "1.0.0"
   }
 }

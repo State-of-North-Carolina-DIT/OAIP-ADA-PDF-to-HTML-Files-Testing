@@ -1,6 +1,6 @@
 {
   "document_id": "Buck_Meeting_Officer_Report_Final_5_13_16_00000002",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -11,44 +11,28 @@
       "call_source": "structural"
     },
     {
-      "check_id": "V3",
-      "description": "The NC Water Resources / Environmental Quality logo appears in the PDF header but is not rendered as a visible image in the HTML version on page 1.",
-      "severity": "critical",
-      "evidence": "PDF page 1 shows the NC logo with 'Water Resources ENVIRONMENTAL QUALITY' text beneath it in the upper left. The HTML page 1 also shows this logo, so checking more carefully - the HTML does include the logo image. No issue found on closer inspection.",
+      "check_id": "V1",
+      "description": "Table of contents outline numbering changed from Roman numerals to Arabic numerals",
+      "severity": "major",
+      "evidence": "PDF uses Roman numerals (I, II, III, IV) for the report outline on page 1. HTML converts these to Arabic numerals (1, 2, 3, 4) as a numbered list. The actual section headings in the body retain Roman numerals.",
       "page": 1,
       "call_source": "visual"
-    },
-    {
-      "check_id": "C7",
-      "description": "The memorandum header information (To, From, Subject, date, introductory paragraphs, and table of contents) appears twice in the HTML \u2014 once inside the <header> block and again inside the <main> block. In the PDF, this content appears only once on page 1.",
-      "severity": "major",
-      "evidence": "The HTML has a <header> section containing the full memo metadata (To: Secretary Donald R. van der Vaart, From: Andrew Pitner, Subject: Meeting Officer's Report..., the two introductory paragraphs, and the outline list I-IV), then immediately after, the <main> section repeats all of this same content with the h1 'MEMORANDUM' heading.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C4a",
-      "description": "The HTML adds internal navigation anchor links (TOC linking to section IDs) in the outline list that do not exist in the PDF. However, per instructions, internal anchor links added for accessibility are enhancements and not errors. No external URLs were fabricated.",
-      "severity": "critical",
-      "evidence": "HTML contains <a href=\"#history-background\">History/Background</a> etc. in the TOC nav. These are accessibility enhancements. Noting for completeness but this is NOT a true finding.",
-      "page": null,
-      "call_source": "content"
     }
   ],
-  "critical_count": 2,
+  "critical_count": 0,
   "major_count": 2,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 183.01,
+    "duration_seconds": 125.75,
     "page_count": 6,
-    "visual_input_tokens": 19695,
-    "visual_output_tokens": 586,
-    "content_input_tokens": 19128,
-    "content_output_tokens": 544,
-    "timestamp": "2026-04-17T19:59:13.535183",
+    "visual_input_tokens": 19948,
+    "visual_output_tokens": 3158,
+    "content_input_tokens": 19443,
+    "content_output_tokens": 2373,
+    "timestamp": "2026-04-18T02:45:49.390884",
     "auditor_version": "1.0.0"
   }
 }

@@ -9,30 +9,22 @@
       "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
       "page": null,
       "call_source": "structural"
-    },
-    {
-      "check_id": "C5",
-      "description": "Table captions rendered as h3 headings instead of proper figure/table captions, while section headings like 'Introduction', 'Background', 'Results', 'Summary' are h2. The table titles 'Table 1' and 'Table 2' and 'Diagram 1' are not section headings in the PDF but are rendered as h3, which is a minor hierarchy concern but acceptable as they are subordinate content labels.",
-      "severity": "major",
-      "evidence": "PDF has 'Table 1.' and 'Table 2.' and 'Diagram 1.' as bold captions; HTML renders them as <h3> elements.",
-      "page": null,
-      "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 2,
+  "major_count": 1,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 561.44,
+    "duration_seconds": 95.35,
     "page_count": 10,
-    "visual_input_tokens": 31927,
-    "visual_output_tokens": 586,
-    "content_input_tokens": 24227,
-    "content_output_tokens": 430,
-    "timestamp": "2026-04-17T20:05:05.317324",
+    "visual_input_tokens": 32180,
+    "visual_output_tokens": 2037,
+    "content_input_tokens": 24542,
+    "content_output_tokens": 2364,
+    "timestamp": "2026-04-18T02:39:34.015925",
     "auditor_version": "1.0.0"
   }
 }

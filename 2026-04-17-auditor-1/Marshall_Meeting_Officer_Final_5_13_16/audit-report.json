@@ -9,38 +9,22 @@
       "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
       "page": null,
       "call_source": "structural"
-    },
-    {
-      "check_id": "C7",
-      "description": "The footer content (State of North Carolina | Environmental Quality | Water Resources, address, phone number) appears both in the HTML <header> area at the very top and again in the <footer> at the bottom. In the PDF, this footer text appears at the bottom of page 1 only (repeated on each page as a running footer). The HTML also places this text at the top of the document outside any landmark, which is a minor duplication but does not break reading flow significantly since it's in header/footer areas.",
-      "severity": "major",
-      "evidence": "Top of HTML body: 'State of North Carolina | Environmental Quality | Water Resources 1611 Mail service Center | Raleigh, North Carolina 27699-1611 919 707 9000' and again in <footer>: 'State of North Carolina | Environmental Quality | Water Resources 1611 Mail Service Center | Raleigh, North Carolina 27699-1611 919 707 9000'",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C8",
-      "description": "Minor capitalization difference in footer: PDF consistently uses 'Mail service Center' (lowercase 's' in 'service') while the HTML footer uses 'Mail Service Center' (uppercase 'S'). The HTML header area preserves the original lowercase 's'.",
-      "severity": "major",
-      "evidence": "PDF footer: '1611 Mail service Center'; HTML footer: '1611 Mail Service Center'; HTML header: '1611 Mail service Center'",
-      "page": null,
-      "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 3,
+  "major_count": 1,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 153.8,
+    "duration_seconds": 89.81,
     "page_count": 6,
-    "visual_input_tokens": 19695,
-    "visual_output_tokens": 407,
-    "content_input_tokens": 19228,
-    "content_output_tokens": 618,
-    "timestamp": "2026-04-17T20:01:20.568233",
+    "visual_input_tokens": 19948,
+    "visual_output_tokens": 1799,
+    "content_input_tokens": 19543,
+    "content_output_tokens": 2037,
+    "timestamp": "2026-04-20T02:47:38.671206",
     "auditor_version": "1.0.0"
   }
 }

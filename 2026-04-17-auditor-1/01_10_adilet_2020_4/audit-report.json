@@ -20,43 +20,75 @@
     },
     {
       "check_id": "V3",
-      "description": "The North Carolina state seal image present in the PDF header is missing from the HTML conversion.",
+      "description": "The North Carolina state seal image is missing from the HTML. Instead of rendering the seal as an image, the HTML displays OCR-extracted text from the seal ('THE GREAT SEAL OF THE STATE OF NORTH CAROLINA', 'MAY 20, 1775', 'APRIL 12, 1776', 'ESSE QUAM VIDERI').",
       "severity": "critical",
-      "evidence": "PDF page 1 shows the Great Seal of North Carolina as an image between the header text and 'NORTH CAROLINA'. The HTML renders the seal text as plain text ('THE GREAT SEAL OF THE STATE OF NORTH CAROLINA', 'MAY 20, 1775', 'APRIL 12, 1776', 'ESSE QUAM VIDERI') instead of displaying the seal image.",
+      "evidence": "PDF page 1 shows a circular state seal image between the header officials and the 'NORTH CAROLINA / Environmental Quality' text. HTML replaces this with plain text lines extracted from the seal.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V5",
-      "description": "Repeated header/footer content is inserted between page-equivalent sections in the HTML, disrupting reading flow.",
+      "description": "OCR text extracted from the state seal image is injected into the reading flow, disrupting the content sequence. A reader encounters 'THE GREAT SEAL OF THE STATE OF NORTH CAROLINA / MAY 20, 1775 / APRIL 12, 1776 / ESSE QUAM VIDERI' as body-level text between the officials' names and the department name.",
       "severity": "major",
-      "evidence": "The HTML inserts repeated elements like 'March 25, 2020', 'Certified Mail', 'Return Receipt Requested', the full address block, and the RE: line between the content that corresponds to PDF pages. The PDF has these only on page 1, with subsequent pages showing only 'Certified Mail / Mr. Threatt / Page Two' etc. as headers. This creates reading-order disruption in the HTML.",
-      "page": 2,
+      "evidence": "In the PDF, the seal is a graphic that does not contribute to reading-order text. In the HTML, four lines of seal text appear between 'Acting Director' and 'NORTH CAROLINA / Environmental Quality', inserting content a reader would not encounter when reading the PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of Judith A. Wehner is missing from the HTML rendering on the closing page.",
+      "severity": "critical",
+      "evidence": "PDF page 4 shows a handwritten signature ('Judith Whn' style cursive) between 'Sincerely,' and the typed name 'Judith A. Wehner'. The HTML shows only 'Sincerely,' followed directly by 'Judith A. Wehner' with no signature image.",
+      "page": 4,
       "call_source": "visual"
     },
     {
       "check_id": "C1",
-      "description": "The HTML header contains fabricated seal description text that does not appear as readable text in the PDF. The PDF shows an image of the NC state seal, but the HTML converts it into explicit text describing the seal's contents.",
+      "description": "Fabricated body text describing the state seal image. The HTML presents 'THE GREAT SEAL OF THE STATE OF NORTH CAROLINA / MAY 20, 1775 / APRIL 12, 1776 / ESSE QUAM VIDERI' as paragraph text in the header. These words are inscriptions visible on the seal image in the PDF, but they do not appear as document text in the PDF.",
       "severity": "critical",
-      "evidence": "HTML contains: 'THE GREAT SEAL OF THE STATE OF NORTH CAROLINA<br/>MAY 20, 1775<br/>APRIL 12, 1776<br/>ESSE QUAM VIDERI' \u2014 this text is embedded in the seal image in the PDF but is not presented as document text. This is a borderline case as it describes the seal's content.",
+      "evidence": "HTML contains: '<p>THE GREAT SEAL OF THE STATE OF NORTH CAROLINA<br/>MAY 20, 1775<br/>APRIL 12, 1776<br/>ESSE QUAM VIDERI</p>' \u2014 No such text exists as readable document text in the PDF; it exists only as part of the seal image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The North Carolina state seal image at the top of PDF page 1 is missing from the HTML. There is no <img> tag for it; instead, its inscriptions are rendered as plain text.",
+      "severity": "minor",
+      "evidence": "PDF page 1 contains the Great Seal of the State of North Carolina as a centered image. The HTML has zero <img> tags anywhere in the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The NC DEQ logo/seal image at the bottom of PDF page 1 is missing from the HTML with no corresponding <img> tag.",
+      "severity": "minor",
+      "evidence": "PDF page 1 footer area contains a logo for the North Carolina Department of Environmental Quality. No <img> tag exists in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The handwritten signature of Judith A. Wehner on PDF page 4 is missing from the HTML with no corresponding <img> tag.",
+      "severity": "minor",
+      "evidence": "PDF page 4 contains a handwritten signature above 'Judith A. Wehner'. The HTML only has text 'Sincerely,<br/><br/>Judith A. Wehner' with no <img> tag for the signature.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 2,
+  "critical_count": 3,
   "major_count": 2,
-  "minor_count": 1,
+  "minor_count": 4,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 108.01,
+    "duration_seconds": 115.12,
     "page_count": 4,
-    "visual_input_tokens": 13887,
-    "visual_output_tokens": 597,
-    "content_input_tokens": 11306,
-    "content_output_tokens": 517,
-    "timestamp": "2026-04-17T19:56:16.123717",
+    "visual_input_tokens": 14114,
+    "visual_output_tokens": 1912,
+    "content_input_tokens": 11621,
+    "content_output_tokens": 3169,
+    "timestamp": "2026-04-18T02:24:06.748242",
     "auditor_version": "1.0.0"
   }
 }

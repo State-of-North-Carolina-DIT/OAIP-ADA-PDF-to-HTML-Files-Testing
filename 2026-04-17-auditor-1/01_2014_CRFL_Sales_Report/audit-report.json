@@ -1,0 +1,38 @@
+{
+  "document_id": "01_2014_CRFL_Sales_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C3b",
+      "description": "For Hire Blanket CRFL tables: 8 separate year-specific tables (2007\u20132014) in the PDF are merged into a single HTML table. Year labels and column headers (e.g., 'For Hire Blanket Type', '0 to 18 Feet', etc.) are inserted as plain data rows in the <tbody>, losing their semantic meaning as headers and year-section dividers.",
+      "severity": "major",
+      "evidence": "PDF pages 16-17 present each year as a distinct table with its own header row. HTML combines all into one <table> where, e.g., '<tr><td>2008</td><td></td>...' and '<tr><td>For Hire Blanket Type</td><td>0 to 18 Feet</td>...' appear as regular data rows within <tbody>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 325.98,
+    "page_count": 20,
+    "visual_input_tokens": 61044,
+    "visual_output_tokens": 4229,
+    "content_input_tokens": 99002,
+    "content_output_tokens": 13701,
+    "timestamp": "2026-04-18T02:33:40.398857",
+    "auditor_version": "1.0.0"
+  }
+}

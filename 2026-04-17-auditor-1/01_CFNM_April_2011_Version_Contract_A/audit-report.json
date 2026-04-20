@@ -1,0 +1,102 @@
+{
+  "document_id": "01_CFNM_April_2011_Version_Contract_A",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "NCDENR graphical logo missing from page header",
+      "severity": "critical",
+      "evidence": "PDF page 1 displays a substantive graphical emblem (mountain/sun/tree design with 'NCDENR' text) centered at the top of the cover letter. The HTML rendering replaces this with plain text 'North Carolina Department of Environment and Natural Resources' only, with no logo image present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Ed Daughtry handwritten signature missing",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a handwritten cursive signature between 'Sincerely,' and the typed name 'Ed Daughtry, Contracting Officer.' The HTML rendering omits this signature image entirely, showing only the typed name.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Bidder authorized handwritten signature missing from RFQ form",
+      "severity": "critical",
+      "evidence": "PDF page 10 (scanned RFQ No. 16-3808 form) contains a handwritten cursive signature by Brian J. McCrodden in the 'AUTHORIZED SIGNATURE' field. The HTML rendering shows '[Signature]' placeholder text instead of the signature image.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "DENR authorized representative handwritten signature missing from RFQ acceptance section",
+      "severity": "critical",
+      "evidence": "PDF page 10 'FOR DENR USE ONLY' section contains a handwritten signature by the DENR authorized representative next to 'Offer accepted and contract awarded this 11 day of APRIL, 2011.' The HTML rendering shows '[Signature]' placeholder text instead of the signature image.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Handwritten signature missing from Attachment A certification",
+      "severity": "critical",
+      "evidence": "PDF page 28 (Attachment A \u2013 Certification of Compliance With Executive Order #24) shows Brian J. McCrodden's handwritten cursive signature in the 'AUTHORIZED SIGNATURE' field. The HTML rendering shows '[Signature]' placeholder text instead of the signature image.",
+      "page": 28,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The bidder information form from PDF page 6 has its structure corrupted in the HTML. The BIDDER field spans the full width in the PDF but is duplicated across all 3 columns in the HTML table. The FAX NUMBER field appears once in the PDF but is duplicated into 2 cells in row 4.",
+      "severity": "major",
+      "evidence": "PDF: BIDDER row spans full width with single entry 'HydroLogics, Inc.' HTML: <tr><td>BIDDER:<br/>HydroLogics, Inc.</td><td>BIDDER:<br/>HydroLogics, Inc.</td><td>BIDDER:<br/>HydroLogics, Inc.</td></tr>. Also PDF has FAX NUMBER: 919-831-1295 once in row 4, HTML repeats it in two cells of that row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content duplication in the bidder form table: 'BIDDER: HydroLogics, Inc.' appears 3 times in the HTML when it appears once in the PDF, and 'FAX NUMBER: 919-831-1295' appears twice when it appears once in the PDF.",
+      "severity": "major",
+      "evidence": "PDF page 6 bidder form: single BIDDER field. HTML: BIDDER label and value repeated in all 3 columns of row 1. PDF: single FAX NUMBER field. HTML: FAX NUMBER repeated in columns 2 and 3 of row 4.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "NCDENR logo/seal from PDF page 1 header has no corresponding <img> tag in the HTML. Handwritten signature images (Ed Daughtry on page 1, Brian McCrodden on pages 6 and 22, DENR acceptance on page 6) are all missing from the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 displays the NCDENR logo prominently at top. HTML cover letter section contains no <img> tag for it. Signatures are replaced with text '[Signature]' rather than having <img> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "A spurious image with misleading alt text 'Full page vector graphic overlay' is inserted between rows of the PR requisition items table, breaking table structure. This appears to be a page-break artifact, not a substantive image from the PDF.",
+      "severity": "minor",
+      "evidence": "HTML: <figure><img src='[embedded-image-removed]' alt='Full page vector graphic overlay' style='width: 612.0pt; height: auto;'></figure> placed between item 1 and item 2 <tr> elements inside the table's <tbody>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 5,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 386.86,
+    "page_count": 22,
+    "visual_input_tokens": 62776,
+    "visual_output_tokens": 12271,
+    "content_input_tokens": 81902,
+    "content_output_tokens": 7192,
+    "timestamp": "2026-04-18T02:37:55.190258",
+    "auditor_version": "1.0.0"
+  }
+}

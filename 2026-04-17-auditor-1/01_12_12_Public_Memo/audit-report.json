@@ -12,43 +12,43 @@
     },
     {
       "check_id": "V3",
-      "description": "The NCDENR logo/seal image present at the top of the PDF document is missing in the HTML conversion.",
+      "description": "Handwritten initials/signatures next to the FROM field names are missing from the HTML text content.",
       "severity": "critical",
-      "evidence": "PDF page 1 shows the NCDENR seal/logo graphic at the top center of the page. The HTML rendering does not include this image.",
+      "evidence": "PDF FROM field shows handwritten initials (appearing as 'KH' and 'bw') next to 'Karen Higgins, Wetlands, Buffers and Stormwater Compliance and Permitting Unit' and 'Brian Wrenn, Transportation Permitting Unit'. The HTML FROM field renders these names as plain text with no signature or initial marks.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "V3",
-      "description": "The 'One North Carolina Naturally' logo/branding image in the footer of the PDF is missing in the HTML conversion.",
-      "severity": "critical",
-      "evidence": "PDF page 1 footer area shows the 'One NorthCarolina Naturally' stylized logo. The HTML renders this as plain text instead.",
-      "page": 1,
-      "call_source": "visual"
+      "check_id": "C6",
+      "description": "Handwritten signatures/initials next to the FROM names (Karen Higgins and Brian Wrenn) are not captured in the HTML. The PDF shows handwritten authentication marks after each name.",
+      "severity": "minor",
+      "evidence": "PDF FROM line shows handwritten initials/signatures after 'Karen Higgins, Wetlands, Buffers and Stormwater Compliance and Permitting Unit' and 'Brian Wrenn, Transportation Permitting Unit'. HTML renders only the typed text with no <img> tags for these marks.",
+      "page": null,
+      "call_source": "content"
     },
     {
-      "check_id": "C8",
-      "description": "The PDF reads 'All applicationshall address stormwater management' (missing space, likely OCR artifact). The HTML corrects this to 'All applications shall address stormwater management'. This is an improvement, not an error, but noted for completeness of the audit trail.",
-      "severity": "major",
-      "evidence": "PDF: 'All applicationshall address stormwater management' -> HTML: 'All applications shall address stormwater management'",
+      "check_id": "C6",
+      "description": "The 'One NorthCarolina Naturally' branding logo in the PDF footer is rendered as plain text in the HTML rather than being preserved as an image.",
+      "severity": "minor",
+      "evidence": "PDF page 1 footer contains a stylized branding logo 'NorthCarolina Naturally'. HTML footer renders this as plain text: '<p>One North Carolina Naturally</p>' with no corresponding <img> tag.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 2,
-  "major_count": 2,
-  "minor_count": 0,
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 556.87,
+    "duration_seconds": 312.09,
     "page_count": 7,
-    "visual_input_tokens": 21237,
-    "visual_output_tokens": 728,
-    "content_input_tokens": 26035,
-    "content_output_tokens": 488,
-    "timestamp": "2026-04-17T20:03:45.895473",
+    "visual_input_tokens": 21490,
+    "visual_output_tokens": 9552,
+    "content_input_tokens": 26350,
+    "content_output_tokens": 4860,
+    "timestamp": "2026-04-18T02:28:00.251526",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,0 +1,86 @@
+{
+  "document_id": "MayoMeetingOfficerReport_20160428",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 44. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated email address in the HTML. The PDF's digital signature block shows 'email=elizabeth.werner@nc' followed by 'denr.gov' (split across lines), but the HTML constructs a clickable mailto link 'elizabeth.werner@ncdenr.gov'. While the intent may be similar, the PDF actually shows 'elizabeth.werner@ncdenr.gov' split as 'elizabeth.werner@nc' and 'denr.gov', and the HTML creates a hyperlink that does not exist in the source PDF.",
+      "severity": "critical",
+      "evidence": "PDF: 'email=elizabeth.werner@nc denr.gov' (line-broken in signature metadata). HTML: '<a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>' \u2014 a clickable mailto link not present in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "Fabricated hyperlink. The HTML creates a mailto: link for the email address in the digital signature block. The source PDF contains no hyperlinks \u2014 the email address appears only as metadata text in the digital signature stamp.",
+      "severity": "critical",
+      "evidence": "HTML: '<a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>'. PDF: no hyperlinks present; email appears as plain text in digital signature metadata.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "Fabricated internal navigation links in the table of contents. The HTML adds anchor href links (#history-background, etc.) to the outline items, creating navigation that does not exist in the source PDF.",
+      "severity": "minor",
+      "evidence": "HTML TOC items: '<a href=\"#history-background\">History/Background</a>', etc. PDF: plain numbered outline text with no hyperlinks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title 'MEMORANDUM' is set as h1, but the actual section headings (I. History/Background, II. Public Meeting, III. Written Comments, IV. Attachments) are set as h2. This is acceptable. However, there is a nested <main> element inside the outer <main>, which is a structural HTML error though not a heading hierarchy issue per se.",
+      "severity": "major",
+      "evidence": "HTML has <main> containing another <main> element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The full content of page 1 appears to be duplicated. The header information (State of NC, addresses, officials, MEMORANDUM, date, To/From/Subject, outline) appears once in the <header> section and then again in the <main> section, effectively rendering the first page content twice.",
+      "severity": "major",
+      "evidence": "Header block contains: 'State of North Carolina | Environmental Quality | Waste Management', PAT MCCRORY/Governor, etc. Then the <main> section repeats MEMORANDUM, April 28, 2016, To/From/Subject blocks and the entire outline again.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "An embedded image placeholder appears between the table of contents and Section I that does not correspond to meaningful content separation in the PDF. This appears to be a page-break artifact.",
+      "severity": "minor",
+      "evidence": "HTML: '<figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 654.4pt; height: auto;\"></figure>' inserted between the TOC and Section I.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image has empty alt text, providing no accessibility value. It appears to be a decorative or page-break artifact.",
+      "severity": "minor",
+      "evidence": "HTML: '<img src=\"[embedded-image-removed]\" alt=\"\">' \u2014 empty alt attribute.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 89.71,
+    "page_count": 5,
+    "visual_input_tokens": 14229,
+    "visual_output_tokens": 385,
+    "content_input_tokens": 15215,
+    "content_output_tokens": 1195,
+    "timestamp": "2026-04-16T00:51:09.065236",
+    "auditor_version": "1.0.0"
+  }
+}

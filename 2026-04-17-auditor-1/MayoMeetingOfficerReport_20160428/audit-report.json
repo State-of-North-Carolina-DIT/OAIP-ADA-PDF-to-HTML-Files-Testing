@@ -11,52 +11,36 @@
       "call_source": "structural"
     },
     {
-      "check_id": "V3",
-      "description": "The NC Waste Management Environmental Quality logo appears in the PDF header but is not rendered in the HTML version.",
-      "severity": "critical",
-      "evidence": "PDF page 1 shows the NC tree logo with 'Waste Management ENVIRONMENTAL QUALITY' text at top left. The HTML page 1 shows the same logo image. However, comparing rendering quality, both versions include the logo, so this is actually acceptable.",
+      "check_id": "V5",
+      "description": "Digital signature metadata rendered as visible text in the memo header, disrupting reading order",
+      "severity": "major",
+      "evidence": "PDF page 1 shows 'From: Elizabeth S. Werner' followed immediately by 'Division of Waste Management / Raleigh Central Office'. The HTML inserts four lines of digital signature metadata between them: 'Digitally signed by Elizabeth S Werner', 'DN: cn=Elizabeth S Werner, o=DWM-Solid Waste, ou=NCDENR, email=elizabeth.werner@ncdenr.gov, c=US', and 'Date: 2016.04.28 09:56:21 -04'00''. This content is not visually present on the PDF page and breaks the memo header flow.",
       "page": 1,
       "call_source": "visual"
     },
     {
-      "check_id": "C1",
-      "description": "The HTML fabricates an email link for elizabeth.werner@ncdenr.gov. While the PDF's digital signature block contains the email 'elizabeth.werner@ncdenr.gov', the PDF does not present it as a clickable hyperlink. However, the HTML wraps it in an <a href='mailto:...'> tag, which could be considered an enhancement rather than fabrication since the email text itself is present in the PDF's digital signature metadata.",
+      "check_id": "C4a",
+      "description": "The HTML wraps the email address from the digital signature metadata block in a mailto: hyperlink that does not exist in the source PDF. The PDF presents 'email=elizabeth.werner@nc denr.gov' as plain text within the digital signature annotation.",
       "severity": "critical",
-      "evidence": "PDF digital signature: 'email=elizabeth.werner@ncdenr.gov'. HTML: '<a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>'. The email address text is present in the PDF but not as a hyperlink.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C7",
-      "description": "The HTML contains a duplicate embedded image tag. There is a second <img> tag with an empty alt attribute between Section I heading and the History/Background content that does not correspond to any meaningful content in the PDF at that location. The PDF page 2 does not have an image between the header and section content.",
-      "severity": "major",
-      "evidence": "HTML contains: '<figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 654.4pt; height: auto;\"></figure>' appearing between the Table of Contents and Section I, which does not correspond to a distinct image in the PDF at that location.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "The document title 'MEMORANDUM' is styled as h1 with underline in the HTML, which is reasonable. However, the header area text (PAT MCCRORY/Governor, DONALD R. VAN DER VAART/Secretary, MICHAEL SCOTT/Acting Director) is rendered as a plain paragraph rather than preserving any visual hierarchy, though in the PDF these appear as distinct header elements. This is a minor structural choice difference.",
-      "severity": "major",
-      "evidence": "PDF header has 'PAT MCCRORY Governor', 'DONALD R. VAN DER VAART Secretary', 'MICHAEL SCOTT Acting Director' as distinct styled header elements. HTML renders them in a single <p> block.",
+      "evidence": "HTML: <a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>. PDF: plain text in digital signature block: 'email=elizabeth.werner@nc denr.gov, c=US' with no hyperlink.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 2,
-  "major_count": 3,
+  "critical_count": 1,
+  "major_count": 2,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 143.83,
+    "duration_seconds": 156.73,
     "page_count": 5,
-    "visual_input_tokens": 16739,
-    "visual_output_tokens": 563,
-    "content_input_tokens": 15886,
-    "content_output_tokens": 784,
-    "timestamp": "2026-04-17T20:01:24.624919",
+    "visual_input_tokens": 16992,
+    "visual_output_tokens": 2101,
+    "content_input_tokens": 16201,
+    "content_output_tokens": 5064,
+    "timestamp": "2026-04-20T02:48:49.989990",
     "auditor_version": "1.0.0"
   }
 }

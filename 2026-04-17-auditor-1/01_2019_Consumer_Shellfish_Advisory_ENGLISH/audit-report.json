@@ -12,27 +12,35 @@
     },
     {
       "check_id": "V4",
-      "description": "In the PDF, 'oysters, clams or mussels' is displayed in bold italic on the main consumer advisory sign. In the HTML (page 2), these words appear in italic only, losing the bold emphasis.",
+      "description": "Bold emphasis completely removed from the consumer advisory body text on page 1. The PDF renders the entire advisory warning in bold (poster format), but the HTML body text is in regular weight.",
       "severity": "minor",
-      "evidence": "PDF page 1: 'oysters, clams or mussels' is bold and italic. HTML page 2: 'oysters, clams or mussels' appears in italic only without bold.",
+      "evidence": "PDF page 1: All body text ('Eating raw, or undercooked oysters, clams or mussels may cause severe illness...') is rendered in bold. HTML: The same body text is rendered in regular (non-bold) weight. 'oysters, clams or mussels' retains italic but loses bold.",
       "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Bold emphasis completely removed from the legal failure-to-post warning on page 2. The PDF renders this paragraph in bold to highlight its legal significance, but the HTML renders it in regular weight.",
+      "severity": "minor",
+      "evidence": "PDF page 2: 'Failure to post this Consumer Advisory is a violation of the \"Rules Governing the Sanitation of Restaurants and Other Foodhandling Establishments\"...' is entirely bold. HTML: The same paragraph is rendered in regular (non-bold) weight.",
+      "page": 2,
       "call_source": "visual"
     }
   ],
   "critical_count": 0,
   "major_count": 1,
-  "minor_count": 1,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 29.56,
+    "duration_seconds": 79.53,
     "page_count": 2,
-    "visual_input_tokens": 6559,
-    "visual_output_tokens": 408,
-    "content_input_tokens": 6311,
-    "content_output_tokens": 126,
-    "timestamp": "2026-04-17T19:55:01.415781",
+    "visual_input_tokens": 6812,
+    "visual_output_tokens": 2770,
+    "content_input_tokens": 6626,
+    "content_output_tokens": 747,
+    "timestamp": "2026-04-18T02:26:10.474874",
     "auditor_version": "1.0.0"
   }
 }

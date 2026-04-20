@@ -11,36 +11,36 @@
       "call_source": "structural"
     },
     {
-      "check_id": "C7",
-      "description": "The introductory paragraph and report outline appear twice in the HTML: once in the initial section before the TOC navigation, and again implicitly through the full body content. The opening memo text (To/From/Subject, introductory paragraph, and outline) appears both in the header/intro area and then again in the main body, duplicating the content that appeared only once in the PDF.",
+      "check_id": "V1",
+      "description": "Digital signature metadata block inserted into the memorandum header layout between the 'From' and 'Subject' fields, which is not visually present in the PDF rendering.",
       "severity": "major",
-      "evidence": "The paragraph 'On March 22, 2016, I served as meeting officer...' and the four-item outline (I-IV) appear both above the <nav> element and then again as part of the main body content sections. In the PDF, this content appears only once on page 1.",
-      "page": null,
-      "call_source": "content"
+      "evidence": "PDF page 1 goes directly from 'Solid Waste Section' to 'Subject: Meeting Officer's Report'. The HTML inserts 'Digitally signed by LYF / DN: cn=LYF, o=DWM, ou=SWS, email=larry.frost@ncdenr.gov, c=US / Date: 2016.05.12 12:11:52 -04:00' between those elements, adding content to the visual layout that a PDF reader would not see.",
+      "page": 1,
+      "call_source": "visual"
     },
     {
-      "check_id": "C8",
-      "description": "In the Attachments section (Section IV), the HTML lists items V and VI with swapped descriptions compared to the PDF page 4 body text references.",
-      "severity": "major",
-      "evidence": "PDF page 4 body text references: 'Attachment V-Supporting Documentation' and 'Attachment VI-USPS Comment'. PDF page 5 attachment list: 'V. Written Public Comments Received' and 'VI. Supporting documentation received during public hearing'. The HTML attachment list matches page 5 (V = Written Public Comments Received, VI = Supporting documentation), which is faithful. However, the body text on page 4 references 'Attachment V-Supporting Documentation' for hand-submitted comments and 'Attachment VI-USPS Comment' for USPS letters - this inconsistency exists in the source PDF itself.",
+      "check_id": "C6",
+      "description": "The handwritten/digital signature image of Larry Frost that appears in the PDF memo header is missing from the HTML. There is no corresponding <img> tag for the signature, though the digital signature metadata text is reproduced.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a visible handwritten signature next to 'From: Larry Frost, Engineer'. The HTML includes the digital signature metadata text (DN, date, etc.) but has no <img> tag representing the signature image itself.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 3,
-  "minor_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 136.85,
+    "duration_seconds": 133.72,
     "page_count": 5,
-    "visual_input_tokens": 16793,
-    "visual_output_tokens": 360,
-    "content_input_tokens": 15503,
-    "content_output_tokens": 628,
-    "timestamp": "2026-04-17T19:58:06.248245",
+    "visual_input_tokens": 16992,
+    "visual_output_tokens": 3431,
+    "content_input_tokens": 15818,
+    "content_output_tokens": 2586,
+    "timestamp": "2026-04-18T02:42:10.640341",
     "auditor_version": "1.0.0"
   }
 }

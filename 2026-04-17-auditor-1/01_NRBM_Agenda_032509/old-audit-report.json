@@ -1,0 +1,46 @@
+{
+  "document_id": "01_NRBM_Agenda_032509",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 41. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C5",
+      "description": "The committee name and meeting type are rendered as an h2, which is reasonable but combines what could be considered the document title with the subtitle. The heading hierarchy is acceptable overall.",
+      "severity": "minor",
+      "evidence": "H1: 'AGENDA', H2: 'NEUSE RIVER BASIN HYDROLOGIC MODEL TECHNICAL REVIEW COMMITTEE MEETING' \u2014 this matches the PDF structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements, effectively duplicating the structural wrapper. While this is a structural/semantic HTML issue rather than content duplication, it represents a malformed document structure.",
+      "severity": "major",
+      "evidence": "The HTML has <body><main>...<main>...</main></main></body> \u2014 two nested <main> tags.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 20.6,
+    "page_count": 1,
+    "visual_input_tokens": 4219,
+    "visual_output_tokens": 163,
+    "content_input_tokens": 4490,
+    "content_output_tokens": 415,
+    "timestamp": "2026-04-16T00:46:10.873543",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -11,76 +11,84 @@
       "call_source": "structural"
     },
     {
-      "check_id": "V4",
-      "description": "In the PDF, 'Prepared By:' and 'Submitted To:' are underlined and italic. In the HTML, they appear as underlined bold text but lose the italic formatting.",
-      "severity": "minor",
-      "evidence": "PDF shows 'Prepared By:' and 'Submitted To:' in italic+underline; HTML shows them as underlined bold without italic.",
-      "page": 2,
+      "check_id": "V3",
+      "description": "Figure 1 bar chart ('Total Number of Survey Sites - By Year') is missing as an image. The chart's axis labels and data values are rendered as plain text instead of preserving the chart graphic.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a bar chart with bars for each year 2012-2023 and labeled data values. The HTML renders only extracted text: 'Total Number of Survey Sites - By Year', 'Number of Survey Sites', '2012 2013 2014...', '5775 6564 5378...' etc., with no chart image.",
+      "page": 10,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "The cover page collage of images appears slightly differently arranged in the HTML - one small image appears separated below the main collage rather than being part of it.",
+      "description": "Figure 2 bar chart ('Lake Gaston Aquatic Plant Community - 2023') is missing as an image. The chart's axis labels and species names are rendered as plain text instead of preserving the chart graphic.",
       "severity": "critical",
-      "evidence": "PDF page 1 shows all images contained within a single bordered collage. HTML page 2 shows one small image (plant close-up) separated below the main image grid.",
-      "page": 1,
+      "evidence": "PDF page 10 shows a grouped bar chart categorized by Emergent, Submergent, Floating, and Algae species. The HTML renders only extracted text: 'Lake Gaston Aquatic Plant Community - 2023', '% Total Vegetation', species names listed as plain text, with no chart image.",
+      "page": 10,
       "call_source": "visual"
     },
     {
-      "check_id": "V2",
-      "description": "In Table 1, the PDF uses italic formatting for category subtotal rows (TOTAL EMERGENT SPECIES, TOTAL SUBMERSED SPECIES, etc.) to distinguish them from individual species rows. The HTML table preserves the data accurately.",
-      "severity": "major",
-      "evidence": "PDF Table 1 has italic subtotal rows; HTML table renders all rows in similar formatting but data is correct.",
-      "page": 7,
+      "check_id": "V3",
+      "description": "Figure 7 dual-axis chart ('Lake Gaston Hydrilla') showing estimated standing acreage (bars) and percent occurrence (line) is missing as an image. Only axis labels and scale values appear as plain text.",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows a combined bar-and-line chart for hydrilla acreage and rake toss percentage from 2012-2023. The HTML renders only: 'Lake Gaston Hydrilla', 'Acres Rake Tosses', 'Acres Percent of Rake Tosses', '0 200 400 600...', '0 10 20 30...', '2012 2013...' as plain text, with no chart image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 9 dual-axis chart ('Lake Gaston Lyngbya') showing estimated standing acreage and percent occurrence is missing as an image. Only axis labels and scale values appear as plain text.",
+      "severity": "critical",
+      "evidence": "PDF page 17 shows a combined bar-and-line chart for lyngbya acreage and rake toss percentage from 2012-2023. The HTML renders only: 'Lake Gaston Lyngbya', 'Acres Percent of Rake Tosses', 'Acres', '0 200 400 600...', '0 5 10 15 20 25', '2012 2013...' as plain text, with no chart image.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 11 chart ('Lake Gaston Eel Grass') showing estimated standing acreage and percent occurrence is missing as an image. Only axis labels and scale values appear as plain text.",
+      "severity": "critical",
+      "evidence": "PDF page 19 shows a bar chart with line overlay for eel grass acreage and percent survey sites from 2019-2023. The HTML renders only: 'Lake Gaston Eel Grass', 'Acres Percent Survey Sites', 'Acres % Sites', '0 20 40 60 80 100 120 140', '0.0 0.5 1.0...', '2019 2020...' as plain text, with no chart image.",
+      "page": 19,
       "call_source": "visual"
     },
     {
       "check_id": "V4",
-      "description": "Section headings 'Introduction', 'Methods', 'Conclusion and Management Implications' in the PDF are underlined and bold/italic. In the HTML, 'Methods' and subsection headers like 'Vegetation Survey' and 'Tuber Survey' lose their underline/italic formatting but remain bold, which is acceptable. However, 'Results' in the PDF is bold+underlined, and in the HTML it appears as a styled heading without underline.",
+      "description": "Table 2 loses italic formatting that distinguishes sites where hydrilla populations have fallen below detectable levels. The table description references italicized results, but no italic text appears in the HTML table, making the referenced formatting distinction meaningless.",
       "severity": "minor",
-      "evidence": "PDF: 'Methods' is bold+underlined; HTML: 'Methods' is a heading without underline - underline removal is acceptable per rules.",
-      "page": 3,
+      "evidence": "PDF Table 2 uses italic text across entire rows for sites like Timberline Shores, Cold Springs Branch, Lakeview, Pretty Creek, Poe Creek, Woodland Hurst, Sledge Creek, and Flats (including their Starting Bank Density and n/a values). The HTML table renders all values in regular text. The accompanying note 'Results for the 2023 survey season that are represented in italics indicate sites in which the hydrilla population has fallen below detectable levels' still appears but has no corresponding italic formatting to reference.",
+      "page": 9,
       "call_source": "visual"
     },
     {
-      "check_id": "C7",
-      "description": "Table 1 and Table 2 data appear to be duplicated in the HTML - they appear once as embedded images (with <figure><img> tags) and again as full HTML <table> elements. The PDF only has them once each.",
-      "severity": "major",
-      "evidence": "HTML contains <figure><img src='[embedded-image-removed]' alt='' style='width: 612.0pt; height: auto;'></figure> immediately before the HTML <table> for both Table 1 and Table 2 sections. The PDF only shows each table once.",
+      "check_id": "C6",
+      "description": "Five chart/graph figures (Figures 1, 2, 7, 9, and 11) from the PDF are missing as <img> tags in the HTML. Their data is rendered as unstructured text paragraphs instead of chart images, losing the visual representation of trends over time.",
+      "severity": "minor",
+      "evidence": "PDF pages 10, 15, 17, and 19 contain bar/line charts for: Figure 1 (Total Number of Survey Sites by Year), Figure 2 (Aquatic Plant Community 2023), Figure 7 (Lake Gaston Hydrilla acreage/rake tosses), Figure 9 (Lake Gaston Lyngbya acreage/rake tosses), and Figure 11 (Lake Gaston Eel Grass acreage/% sites). In the HTML, these are rendered as raw text paragraphs like '<p>Total Number of Survey Sites - By Year</p><p>5775 6564 5378\u2026</p>' with no corresponding <img> tags.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "The figures description text for bar graphs (Figures 1, 2, 7, 9, 11) includes raw axis labels and data values as paragraph text in addition to the figure captions. While these values come from the PDF charts, they appear as disconnected text blocks that duplicate chart content in a confusing manner since the images themselves are also present.",
+      "description": "Tables 1 and 2 each appear twice in the HTML \u2014 once as an embedded page-width image and once as a full HTML <table> \u2014 resulting in content duplication.",
       "severity": "major",
-      "evidence": "HTML includes paragraphs like 'Total Number of Survey Sites - By Year', 'Number of Survey Sites', '2012 2013 2014...', '5775 6564 5378 5714...' as plain text paragraphs representing chart data for Figure 1, when the chart image is also embedded.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C3b",
-      "description": "In Table 1, the category rows (Emergent, Submersed, Floating Leaf, Algae) are presented as regular table rows with empty cells rather than as section headers/sub-headers spanning the table. The 'TOTAL' rows also lack visual distinction. While all data is present, the hierarchical structure of the original table groupings is flattened.",
-      "severity": "major",
-      "evidence": "PDF shows 'Emergent', 'Submersed', 'Floating Leaf', 'Algae' as category labels above their respective species. HTML renders them as regular <tr><td> rows with empty cells in the other columns.",
+      "evidence": "For Table 1, the HTML contains both '<figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"></figure>' immediately followed by a complete '<table>' with all the same data rows. The same pattern is repeated for Table 2. These full-page-width images (612pt \u2248 8.5in) are screenshots of the PDF table pages and duplicate the HTML table content.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 1,
-  "major_count": 5,
+  "critical_count": 5,
+  "major_count": 2,
   "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 1185.08,
+    "duration_seconds": 356.75,
     "page_count": 20,
-    "visual_input_tokens": 62511,
-    "visual_output_tokens": 1170,
-    "content_input_tokens": 50893,
-    "content_output_tokens": 1144,
-    "timestamp": "2026-04-17T20:18:50.027403",
+    "visual_input_tokens": 62764,
+    "visual_output_tokens": 14983,
+    "content_input_tokens": 51208,
+    "content_output_tokens": 4816,
+    "timestamp": "2026-04-18T02:45:33.004511",
     "auditor_version": "1.0.0"
   }
 }

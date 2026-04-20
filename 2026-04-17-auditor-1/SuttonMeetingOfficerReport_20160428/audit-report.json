@@ -1,6 +1,6 @@
 {
   "document_id": "SuttonMeetingOfficerReport_20160428",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -9,38 +9,22 @@
       "evidence": "<main> at line 27 contains another <main> at line 44. Only one <main> landmark is valid per document.",
       "page": null,
       "call_source": "structural"
-    },
-    {
-      "check_id": "V5",
-      "description": "Repeated header/footer content inserted between page-equivalent sections in the HTML disrupts reading order",
-      "severity": "major",
-      "evidence": "In the HTML, the full memorandum header block (State of NC address, officials' names, MEMORANDUM heading, To/From/Subject, signature) is repeated \u2014 appearing once as page 1 content and then again at the top of the next HTML chunk before the body text continues. In the PDF, this header appears only once on page 1.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C4a",
-      "description": "The HTML adds internal anchor links in the table of contents (href=\"#history-background\", etc.) that do not exist as hyperlinks in the source PDF. These are navigation anchors linking to section IDs within the document.",
-      "severity": "critical",
-      "evidence": "PDF TOC is plain text: 'I. History/Background' etc. HTML wraps these in <a href=\"#history-background\"> etc. However, these are internal navigation enhancements, not fabricated external URLs.",
-      "page": null,
-      "call_source": "content"
     }
   ],
-  "critical_count": 1,
-  "major_count": 2,
+  "critical_count": 0,
+  "major_count": 1,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 72.2,
+    "duration_seconds": 143.76,
     "page_count": 5,
-    "visual_input_tokens": 16805,
-    "visual_output_tokens": 415,
-    "content_input_tokens": 15422,
-    "content_output_tokens": 394,
-    "timestamp": "2026-04-17T20:03:24.724282",
+    "visual_input_tokens": 17058,
+    "visual_output_tokens": 2411,
+    "content_input_tokens": 15737,
+    "content_output_tokens": 2894,
+    "timestamp": "2026-04-20T12:15:27.014111",
     "auditor_version": "1.0.0"
   }
 }

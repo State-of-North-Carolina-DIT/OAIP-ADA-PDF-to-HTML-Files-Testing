@@ -1,0 +1,54 @@
+{
+  "document_id": "Dan_River_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 43. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C4",
+      "description": "The HTML adds internal navigation links (anchor links) in the table of contents that do not exist in the PDF. These are functional enhancements rather than fabricated external URLs, but they are not present in the source.",
+      "severity": "minor",
+      "evidence": "HTML contains <a href=\"#history-background\">, <a href=\"#march-1-2016-public-meeting-and-oral-comments-summary\">, etc. The PDF's outline is a plain numbered list with no hyperlinks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML nests a <main> element inside another <main> element, which is structurally unusual but does not affect heading hierarchy. The heading hierarchy itself (h1 for MEMORANDUM, h2 for sections I-IV) is reasonable and text matches the PDF.",
+      "severity": "minor",
+      "evidence": "Outer <main> from body, inner <main> after header. Not a heading issue per se but a structural oddity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer content (State of North Carolina address block) appears both in the HTML footer and in the original PDF page footer. This is acceptable consolidation, but the header information (Governor, Secretary, Director names) from the PDF letterhead is reproduced in the HTML header area, which matches the PDF. No actual duplication issue beyond the structural nesting of two <main> elements.",
+      "severity": "minor",
+      "evidence": "Footer text appears once in the HTML footer section, matching PDF page footers.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 67.35,
+    "page_count": 4,
+    "visual_input_tokens": 12357,
+    "visual_output_tokens": 233,
+    "content_input_tokens": 12981,
+    "content_output_tokens": 602,
+    "timestamp": "2026-04-16T00:49:49.743393",
+    "auditor_version": "1.0.0"
+  }
+}

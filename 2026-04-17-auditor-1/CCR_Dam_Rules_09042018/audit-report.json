@@ -1,6 +1,6 @@
 {
   "document_id": "CCR_Dam_Rules_09042018",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -11,44 +11,28 @@
       "call_source": "structural"
     },
     {
-      "check_id": "V3",
-      "description": "The title slide's lighthouse/coastal panoramic image is missing from the HTML conversion",
-      "severity": "critical",
-      "evidence": "PDF page 1 has a panoramic coastal image with a lighthouse at the top of the slide. The HTML version only shows the cityscape image and the NC logo, but the lighthouse/coastal panoramic image is absent.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "The NC logo with tree graphic is missing from slides 2-8 in the HTML conversion",
-      "severity": "critical",
-      "evidence": "PDF pages 2-8 each show an NC logo with tree in the bottom right corner as part of the slide template. These decorative logos are not present in the HTML.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C3b",
-      "description": "The Regulatory Impact Analysis on PDF page 7 is presented as a simple label-value list (not a table), but the HTML converts it into a formal table. While all data is present, the structure is changed. This is an acceptable semantic conversion, but the table lacks headers (th elements), which misrepresents the structure slightly.",
-      "severity": "major",
-      "evidence": "PDF shows a simple two-column label-value layout without borders. HTML renders it as <table> with <td> elements but no <th> header row.",
+      "check_id": "C6",
+      "description": "The cityscape photograph at the bottom of PDF page 1 (showing a city skyline at dusk with mountains) is missing from the HTML. Only the top lighthouse banner image from the cover slide is included.",
+      "severity": "minor",
+      "evidence": "PDF page 1 contains two distinct landscape photographs: a coastal lighthouse scene at top and a city skyline at dusk at the bottom. The HTML has only one <img> tag for the cover section, with alt text referencing only the lighthouse landscape.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 2,
-  "major_count": 2,
-  "minor_count": 0,
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 126.14,
+    "duration_seconds": 120.57,
     "page_count": 8,
-    "visual_input_tokens": 20455,
-    "visual_output_tokens": 644,
-    "content_input_tokens": 17151,
-    "content_output_tokens": 532,
-    "timestamp": "2026-04-17T19:58:30.339609",
+    "visual_input_tokens": 20708,
+    "visual_output_tokens": 2663,
+    "content_input_tokens": 17466,
+    "content_output_tokens": 2604,
+    "timestamp": "2026-04-18T02:46:14.391484",
     "auditor_version": "1.0.0"
   }
 }

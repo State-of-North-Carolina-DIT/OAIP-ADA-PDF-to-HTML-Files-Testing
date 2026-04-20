@@ -1,0 +1,62 @@
+{
+  "document_id": "01_2018_Agenda_FB_Hydrologics_Mtg_2",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 37. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V2",
+      "description": "The PDF agenda is formatted as a simple list with dotted leader lines connecting topics to speakers. The HTML converts this into a formal table with headers (Time, Topic, Speaker), borders, and separate rows for sub-items like 'Confirm local data source contacts', 'Model schematic', and 'Inflow development'. In the PDF, these sub-items are grouped under their parent time slots, but in the HTML they appear as separate rows with empty Time and Speaker cells.",
+      "severity": "major",
+      "evidence": "PDF: Sub-items like 'Confirm local data source contacts' appear directly under '1:10 - 2:00' as part of the same entry. HTML: These sub-items are rendered as separate table rows with blank Time and Speaker columns, which could suggest they are distinct agenda items rather than sub-points.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML fabricates table column headers (Time, Topic, Speaker) that do not exist in the source PDF. The PDF presents the agenda as a simple list, not a table with labeled columns.",
+      "severity": "critical",
+      "evidence": "HTML contains <thead> with <th>Time</th>, <th>Topic</th>, <th>Speaker</th>. The PDF has no such column headers \u2014 it presents the agenda as formatted text lines with dotted leaders.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The sub-items 'Confirm local data source contacts', 'Model schematic', and 'Inflow development' are separated into their own rows with empty Time and Speaker cells. While this is a reasonable structural interpretation, it fragments what are clearly sub-bullets of their parent agenda items in the PDF into standalone rows, which could be misleading.",
+      "severity": "major",
+      "evidence": "PDF shows 'Confirm local data source contacts' as a sub-item under the 1:10-2:00 slot, and 'Model schematic' / 'Inflow development' as sub-items under 2:20-3:10. HTML puts them in separate <tr> elements with empty <td> cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h2 for 'Stakeholder Meeting #2' which is actually a subtitle/part of the document title in the PDF, not a separate section heading. This is a minor structural choice but acceptable.",
+      "severity": "minor",
+      "evidence": "PDF shows 'French Broad Hydrologic Model' and 'Stakeholder Meeting #2' as a combined title block. HTML splits them into h1 and h2.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 38.47,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 399,
+    "content_input_tokens": 4412,
+    "content_output_tokens": 632,
+    "timestamp": "2026-04-16T00:45:45.369028",
+    "auditor_version": "1.0.0"
+  }
+}

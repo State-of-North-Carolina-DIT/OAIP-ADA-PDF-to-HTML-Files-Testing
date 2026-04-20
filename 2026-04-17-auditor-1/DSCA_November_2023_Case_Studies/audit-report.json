@@ -1,0 +1,10 @@
+{
+  "document_id": "DSCA_November_2023_Case_Studies",
+  "verdict": "skipped",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "Rendering failed (PDF or HTML render error -- see batch logs)",
+  "metadata": null
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "2021-white-lake-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C7",
+      "description": "Figure panel labels and year annotations extracted as standalone body paragraphs mid-content, breaking reading flow. Labels 'A', '2021', and 'A' appear between Figures 4 and 5 captions; another 'A' appears between Figures 9 and 10; '2020' appears between Figures 10 and 11. These are figure overlay annotations in the PDF (e.g., panel labels A/B/C and year markers on composite maps) that should not be rendered as separate text paragraphs.",
+      "severity": "major",
+      "evidence": "HTML contains: <p>A</p><p>2021</p><p>A</p> after Figure 4 caption and before Figure 5; <p>A</p> after Figure 9 caption and before Figure 10; <p>2020</p> after Figure 10 caption and before Figure 11. In the PDF, 'A' is a panel label overlaid on the map image (page 10, 16) and '2021'/'2020' are year labels on figures (pages 10, 17).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(19p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 318.23,
+    "page_count": 19,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 40768,
+    "content_output_tokens": 6286,
+    "timestamp": "2026-04-20T12:20:02.295618",
+    "auditor_version": "1.0.0"
+  }
+}

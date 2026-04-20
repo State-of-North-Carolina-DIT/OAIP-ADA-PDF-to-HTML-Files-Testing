@@ -20,27 +20,43 @@
     },
     {
       "check_id": "V3",
-      "description": "The North Carolina state seal/logo image present at the top of page 1 in the PDF is missing from the HTML conversion.",
+      "description": "North Carolina state seal/emblem missing from HTML header",
       "severity": "critical",
-      "evidence": "PDF page 1 shows a North Carolina state seal/emblem image centered at the top of the page. The HTML conversion does not include this image.",
+      "evidence": "PDF page 1 displays the official North Carolina state seal centered at the top of the letterhead. The HTML rendering omits this image entirely.",
       "page": 1,
       "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Handwritten signature of Judith A. Wehner missing from HTML",
+      "severity": "critical",
+      "evidence": "PDF page 2 shows a handwritten cursive signature above the printed name 'Judith A. Wehner'. The HTML rendering shows only the printed name with no signature image.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The North Carolina state seal image present in the PDF header is missing from the HTML \u2014 there is no <img> tag for it.",
+      "severity": "minor",
+      "evidence": "PDF page 1 displays the official North Carolina state seal between the header officials and the 'NORTH CAROLINA / Environmental Quality' text. The HTML contains no <img> tag anywhere in the document.",
+      "page": null,
+      "call_source": "content"
     }
   ],
-  "critical_count": 1,
+  "critical_count": 2,
   "major_count": 1,
-  "minor_count": 1,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 52.57,
+    "duration_seconds": 50.53,
     "page_count": 2,
-    "visual_input_tokens": 7691,
-    "visual_output_tokens": 210,
-    "content_input_tokens": 6907,
-    "content_output_tokens": 183,
-    "timestamp": "2026-04-17T19:55:20.912437",
+    "visual_input_tokens": 7944,
+    "visual_output_tokens": 1415,
+    "content_input_tokens": 7222,
+    "content_output_tokens": 867,
+    "timestamp": "2026-04-18T02:22:59.586293",
     "auditor_version": "1.0.0"
   }
 }

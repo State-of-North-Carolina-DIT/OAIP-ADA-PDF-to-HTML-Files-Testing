@@ -1,0 +1,54 @@
+{
+  "document_id": "(Buffer_Only)_RunningDog_100210_MY1_2023",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 50. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C6",
+      "description": "Missing close-up plant/vegetation photo from cover page. The PDF cover has two side-by-side photographs: a wide aerial view of the site and a close-up of vegetation/corn on the right side. The HTML only contains one <img> tag for the cover area with alt text 'Aerial view of Running Dog Mitigation Site'; the second close-up photo is absent.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows two distinct photographs side by side on the cover. HTML header section contains only: <figure><img src=\"[embedded-image-removed]\" alt=\"Aerial view of Running Dog Mitigation Site\" style=\"width: 472.2pt; height: auto;\"></figure> \u2014 no second image for the close-up plant photo.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Table 1 (Buffer Project Areas and Assets Table) structure corrupted. Summary/total rows that span multiple columns via merged cells in the PDF are represented in the HTML by duplicating the label text in every cell of the row. The data values are present but the merged-cell layout is lost.",
+      "severity": "major",
+      "evidence": "PDF Table 1 has rows like 'Totals (ft2):' as a merged cell spanning the first 7 columns. In the HTML these become: <td>Totals (ft2):</td><td>Totals (ft2):</td><td>Totals (ft2):</td>... repeated 7 times. Same pattern for 'Total Buffer (ft2):', 'Total Nutrient Offset (ft2):', 'Total Ephemeral Area (ft2) for Credit:', 'Total Eligible Ephemeral Area (ft2):' and 'Preservation Area Subtotals (ft2):'. Similarly, 'Ephemeral Reaches as % TABM' and 'Preservation as % TABM' labels are duplicated across all remaining columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Tables 8a, 8b, and 9 are rendered in the HTML both as embedded page-capture images AND as full text HTML tables, resulting in the same data appearing twice in the document.",
+      "severity": "major",
+      "evidence": "HTML includes <figure><img alt='Vector-merged page - Table 8a...'> followed by a full HTML <table> with all the same stem count data. Same for Table 8b (<img alt='Vector-merged page - Table 8b...'> plus text table) and Table 9 (<img alt='Vector-merged page - Table 9...'> plus text table). These page-capture images duplicate the tabular data already rendered as text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": "visual:too_large(42p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 501.53,
+    "page_count": 42,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 135275,
+    "content_output_tokens": 10149,
+    "timestamp": "2026-04-20T12:22:21.992537",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018_2",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 36. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Title slide missing key text content - the presentation title, presenter name, date, and department are not visible in the HTML version's slide rendering area",
+      "severity": "major",
+      "evidence": "PDF shows 'River Basin Water Resources Plan/ Hydrologic Model Development Process', 'Neela Sarwar', 'NCDEQ - DWR', 'April 10, 2018', 'Department of Environmental Quality' overlaid on the slide. HTML shows these as separate text below the images rather than as part of the slide layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 6 (Operations Guidelines) - the two-part layout with bullet points on the left and images on the right is collapsed to a single column in HTML with images separated from their contextual content",
+      "severity": "major",
+      "evidence": "PDF shows bullet points for 'Quantity and timing of specific flows' and 'Reservoir water level limits and timing' alongside relevant images of dams, water infrastructure. HTML shows images detached from text content with incomplete text extraction.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Slide 6 (Operations Guidelines) - bullet point content is largely missing from the HTML conversion. The detailed sub-bullets are present in the accessible text but images and text are poorly associated.",
+      "severity": "major",
+      "evidence": "PDF shows structured bullet lists with checkmarks (\u2713) for 'Intake coverage'. HTML preserves the text but loses visual association with the slide context.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Slide 8 (Water Use map) - the detailed geographic map showing water use connections between towns in Haywood, Buncombe, Henderson, and Transylvania counties has small text labels that may lose legibility",
+      "severity": "major",
+      "evidence": "PDF shows a detailed schematic map with colored lines and town labels. HTML shows the same map but split across page views.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 9 (Water Use - Seasonal Pattern) - the side-by-side layout of Water Use Pattern chart and 50 yr Projected Demands chart is lost in HTML",
+      "severity": "major",
+      "evidence": "PDF shows two charts side by side on the same slide. HTML shows them stacked vertically with the charts separated across different scroll positions.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Slide 12 (Evaluation Criteria) - collage of drought/water shortage images present but the contextual questions 'How often? What's the chance?' text overlay positioning differs",
+      "severity": "minor",
+      "evidence": "PDF shows text overlaid on images in a visually cohesive collage. HTML shows the collage as a single block image with text extracted separately.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Throughout the HTML, slide content from the original presentation and its accessible text extraction appear as duplicated content - once as an image and once as extracted text",
+      "severity": "minor",
+      "evidence": "Each slide appears both as a rendered image and as extracted text below or around it, creating a doubled reading experience not present in the original PDF.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. The document has a <main> inside the <body>'s <main>, which is structurally incorrect.",
+      "severity": "major",
+      "evidence": "The HTML has <main> as the outermost content wrapper, then inside <header> it closes, and another <main> begins containing the actual content sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Supply Deficits table data is presented twice - once as an embedded image reference and once as an HTML table. The PDF only contains the table once.",
+      "severity": "major",
+      "evidence": "HTML contains both <figure><img alt='Table showing water supply demand and deficits'> AND a full <table> with the same data rows (Orange-Alamance, Hillsborough, etc.). The PDF page 16 shows this content only once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Some alt text descriptions are generic or vaguely accurate rather than precisely describing the image content.",
+      "severity": "minor",
+      "evidence": "Alt text 'Photos illustrating operations guidelines' for the dam/spillway photo on page 6 is very generic. Alt text 'Highlighted text for Task 2 OASIS Application Development' describes formatting rather than content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Checkmark items in Operations Guidelines are rendered as '\u2713 Intake coverage' with a space, while the PDF shows them as checkmark bullet items. This is acceptable formatting but the checkmarks are presented as part of the text content alongside regular bullets, creating a mixed formatting approach.",
+      "severity": "minor",
+      "evidence": "PDF page 6: '\u2713Intake coverage' appears as a bullet item with a checkmark. HTML: '<li>\u2713 Intake coverage</li>' - minor but preserves the meaning.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 8,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 655.63,
+    "page_count": 23,
+    "visual_input_tokens": 55150,
+    "visual_output_tokens": 1673,
+    "content_input_tokens": 44091,
+    "content_output_tokens": 714,
+    "timestamp": "2026-04-16T00:56:59.512111",
+    "auditor_version": "1.0.0"
+  }
+}

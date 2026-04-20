@@ -20,27 +20,35 @@
     },
     {
       "check_id": "V3",
-      "description": "The Venn diagram showing 'Modeling Supports Planning' with nested ellipses for 'Water Supply Planning' and 'River Basin Modeling' is missing from the HTML conversion. Only plain text labels are shown.",
+      "description": "Nested ellipse diagram showing relationship between Water Supply Planning and River Basin Modeling is missing in the HTML, replaced by plain text labels only.",
       "severity": "critical",
-      "evidence": "PDF page 8 shows a graphical Venn/nested ellipse diagram with green and orange ovals. The HTML replacement shows only plain text 'Water Supply Planning' and 'River Basin Modeling' without any diagram.",
-      "page": 8,
+      "evidence": "PDF page 10 shows a Venn-style diagram with a larger green ellipse labeled 'Water Supply Planning' containing a smaller orange/peach ellipse labeled 'River Basin Modeling', visually conveying a subset relationship. The HTML renders only the text 'Water Supply Planning' and 'River Basin Modeling' as plain text lines without any diagram.",
+      "page": 10,
       "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The nested-ellipses diagram on PDF page 10 ('Modeling Supports Planning') showing 'River Basin Modeling' nested inside 'Water Supply Planning' is missing as an image. The HTML renders only two plain-text paragraphs, losing the visual relationship conveyed by the diagram.",
+      "severity": "minor",
+      "evidence": "PDF page 10 contains a concentric-ellipse diagram with 'Water Supply Planning' in the outer ellipse and 'River Basin Modeling' in the inner ellipse. HTML section 'Modeling Supports Planning' has only <p>Water Supply Planning</p><p>River Basin Modeling</p> with no <img> tag for the diagram.",
+      "page": null,
+      "call_source": "content"
     }
   ],
   "critical_count": 1,
   "major_count": 2,
-  "minor_count": 0,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 69.55,
+    "duration_seconds": 62.23,
     "page_count": 11,
-    "visual_input_tokens": 25812,
-    "visual_output_tokens": 544,
-    "content_input_tokens": 21963,
-    "content_output_tokens": 211,
-    "timestamp": "2026-04-17T19:56:24.186194",
+    "visual_input_tokens": 26065,
+    "visual_output_tokens": 1561,
+    "content_input_tokens": 22278,
+    "content_output_tokens": 1356,
+    "timestamp": "2026-04-18T02:32:05.027127",
     "auditor_version": "1.0.0"
   }
 }

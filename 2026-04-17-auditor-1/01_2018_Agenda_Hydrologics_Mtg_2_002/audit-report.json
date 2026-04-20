@@ -1,6 +1,6 @@
 {
   "document_id": "01_2018_Agenda_Hydrologics_Mtg_2_002",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -9,30 +9,22 @@
       "evidence": "<main> at line 27 contains another <main> at line 37. Only one <main> landmark is valid per document.",
       "page": null,
       "call_source": "structural"
-    },
-    {
-      "check_id": "C1",
-      "description": "The HTML adds table column headers 'Time', 'Topic', and 'Presenter' that do not exist in the source PDF. The PDF presents the agenda as a simple list format without any table headers.",
-      "severity": "critical",
-      "evidence": "HTML contains <thead> with <th>Time</th><th>Topic</th><th>Presenter</th>. The PDF has no such column headers; it presents agenda items as dotted-line entries.",
-      "page": null,
-      "call_source": "content"
     }
   ],
-  "critical_count": 1,
+  "critical_count": 0,
   "major_count": 1,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 31.69,
+    "duration_seconds": 43.78,
     "page_count": 1,
-    "visual_input_tokens": 4354,
-    "visual_output_tokens": 187,
-    "content_input_tokens": 5119,
-    "content_output_tokens": 333,
-    "timestamp": "2026-04-17T19:55:02.765526",
+    "visual_input_tokens": 4607,
+    "visual_output_tokens": 1001,
+    "content_input_tokens": 5434,
+    "content_output_tokens": 957,
+    "timestamp": "2026-04-18T02:24:50.741506",
     "auditor_version": "1.0.0"
   }
 }

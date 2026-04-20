@@ -18,13 +18,13 @@
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 47.95,
+    "duration_seconds": 77.18,
     "page_count": 2,
-    "visual_input_tokens": 6391,
-    "visual_output_tokens": 257,
-    "content_input_tokens": 13805,
-    "content_output_tokens": 202,
-    "timestamp": "2026-04-17T19:55:49.362616",
+    "visual_input_tokens": 6756,
+    "visual_output_tokens": 1721,
+    "content_input_tokens": 14120,
+    "content_output_tokens": 2177,
+    "timestamp": "2026-04-18T02:33:22.386127",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,0 +1,54 @@
+{
+  "document_id": "DSCA_Compliance_Voluntary_Self-Inspection_Checklist_for_Petroleum_and_Alternative-solvent_Dry_Cleaners_Form",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "The signature/form fields section layout is significantly altered. In the PDF, the DATE, SIGNATURE, PRINTED NAME, etc. fields are arranged with DATE on the left and SIGNATURE on the right in a side-by-side layout, with the NC logo on the left and form fields on the right. In the HTML, all fields are stacked vertically in a single column with no side-by-side arrangement.",
+      "severity": "major",
+      "evidence": "PDF shows DATE on left with SIGNATURE on same line to the right, with NC Waste Management logo positioned to the left of the form fields. HTML shows all fields stacked vertically with the logo appearing below all fields.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Waste Management / Environmental Quality logo is repositioned from beside the form fields (left side) in the PDF to below the form fields in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF: Logo appears to the left of TITLE or POSITION, FACILITY ADDRESS, etc. fields. HTML: Logo appears below the EMAIL field at the bottom.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Nested duplicate <main> elements in the HTML structure",
+      "severity": "minor",
+      "evidence": "The HTML contains <main> nested inside another <main>, which is a structural duplication, though it does not cause visible content duplication.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 30.11,
+    "page_count": 1,
+    "visual_input_tokens": 4231,
+    "visual_output_tokens": 484,
+    "content_input_tokens": 5525,
+    "content_output_tokens": 278,
+    "timestamp": "2026-04-16T00:48:42.159533",
+    "auditor_version": "1.0.0"
+  }
+}

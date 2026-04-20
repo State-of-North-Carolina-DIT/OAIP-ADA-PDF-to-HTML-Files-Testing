@@ -1,0 +1,46 @@
+{
+  "document_id": "01_January_2014_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 32. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF uses a compact horizontal table layout fitting all columns on one page, while the HTML renders a much more vertically expanded layout with narrower columns, causing each row to wrap extensively and the table to span many more vertical pages.",
+      "severity": "major",
+      "evidence": "PDF shows a single-page compact table with all 18 cases visible. HTML stretches the same content vertically with each row taking significantly more vertical space due to text wrapping in narrow columns.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table header labels are slightly abbreviated in the HTML version compared to the PDF.",
+      "severity": "minor",
+      "evidence": "PDF header: 'Owner - Facility' \u2192 HTML: 'Owner - Facility'; PDF: 'As Built Flow MGD' \u2192 HTML: 'As Built Flow MGD'; PDF: 'Total Cases in Previous 12 Months' \u2192 HTML: 'Total Cases in Previous 12 Months'. These match, but column 'Case Number' is split across lines differently.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 32.32,
+    "page_count": 1,
+    "visual_input_tokens": 3891,
+    "visual_output_tokens": 487,
+    "content_input_tokens": 7914,
+    "content_output_tokens": 211,
+    "timestamp": "2026-04-16T00:46:17.692073",
+    "auditor_version": "1.0.0"
+  }
+}

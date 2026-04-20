@@ -1,6 +1,6 @@
 {
   "document_id": "01_NRHM_Meeting_Agenda_052708",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -11,28 +11,28 @@
       "call_source": "structural"
     },
     {
-      "check_id": "C1",
-      "description": "The HTML adds table column headers ('Time', 'Topic', 'Presenter') that do not exist in the source PDF. The PDF presents the agenda as a formatted list, not a table with labeled columns.",
-      "severity": "critical",
-      "evidence": "HTML contains <thead><tr><th>Time</th><th>Topic</th><th>Presenter</th></tr></thead> which are not present in the PDF.",
-      "page": null,
-      "call_source": "content"
+      "check_id": "V4",
+      "description": "Bold emphasis removed from agenda topic headings within the table",
+      "severity": "minor",
+      "evidence": "In the PDF, topic titles such as 'Review Agenda and Brief Introductions', 'Project Finance Update', 'Project Status', 'Discuss Model Schematic', 'Discuss Data Collection', 'Discuss Next Steps', and 'Adjourn' are rendered in bold to distinguish them from sub-bullet text. In the HTML table, these same topic titles appear in regular (non-bold) weight, losing the visual differentiation from their bullet-point details.",
+      "page": 1,
+      "call_source": "visual"
     }
   ],
-  "critical_count": 1,
+  "critical_count": 0,
   "major_count": 1,
-  "minor_count": 0,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 22.77,
+    "duration_seconds": 60.63,
     "page_count": 1,
-    "visual_input_tokens": 4536,
-    "visual_output_tokens": 173,
-    "content_input_tokens": 5307,
-    "content_output_tokens": 316,
-    "timestamp": "2026-04-17T19:55:43.876420",
+    "visual_input_tokens": 4789,
+    "visual_output_tokens": 1809,
+    "content_input_tokens": 5622,
+    "content_output_tokens": 1078,
+    "timestamp": "2026-04-18T02:35:22.064635",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,6 +1,6 @@
 {
   "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
-  "verdict": "needs_review",
+  "verdict": "fail",
   "findings": [
     {
       "check_id": "S1",
@@ -11,44 +11,52 @@
       "call_source": "structural"
     },
     {
-      "check_id": "C3b",
-      "description": "Table A1 contains embedded image rows that break the table structure. Rows with images spanning the table are inserted between data rows (e.g., between K24 and K25, between K51 and K52), creating spurious rows with empty cells that do not exist in the PDF.",
+      "check_id": "V3",
+      "description": "Spurious thumbnail images of table data embedded within Table A2 in the HTML that do not exist in the PDF. Small, largely illegible embedded images of table portions appear between text-converted table rows near the K10/K11 boundary and the K38/K39 boundary.",
+      "severity": "critical",
+      "evidence": "PDF pages 7 and 8 contain only clean text-based tables for Table A2. The HTML rendering inserts small thumbnail images (appearing to be captured portions of the PDF table) between rows K10 and K11, and between rows K38 and K39. These images are not present in the source PDF.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order of Table A2 is disrupted by spurious embedded thumbnail images inserted between table rows, forcing a reader to skip over illegible image artifacts to continue reading sequential table data.",
       "severity": "major",
-      "evidence": "HTML contains rows like: <tr><td><figure><img src=\"[embedded-image-removed]\" alt=\"Table A1 continued\" ...></figure></td><td></td><td></td>...</tr> inserted mid-table between K24/K25 and K51/K52. The PDF has no such row breaks \u2014 it is a continuous table across pages.",
-      "page": null,
-      "call_source": "content"
+      "evidence": "In the HTML, Table A2 rows K1-K10 are followed by an embedded image thumbnail, then K11-K38; similarly K28-K38 are followed by another embedded image thumbnail, then K39-K62. The PDF presents all rows sequentially without interruption.",
+      "page": 7,
+      "call_source": "visual"
     },
     {
       "check_id": "C3b",
-      "description": "Table A2 contains embedded image rows that break the table structure, similar to Table A1. Spurious rows with images and empty cells are inserted between K10/K11 and K38/K39.",
+      "description": "Embedded page-screenshot images inserted as table rows within Table A1 and Table A2, corrupting the table structure. In Table A1, two spurious rows appear after K24 and after K51, each containing an <img> in the first <td> and nine empty <td> cells. In Table A2, two spurious rows appear after K10 and after K38, each containing an <img> in the first <td> and two empty <td> cells. All 64 data rows in each table are present, but the structure is broken by these artifact rows.",
       "severity": "major",
-      "evidence": "HTML contains rows like: <tr><td><figure><img src=\"[embedded-image-removed]\" alt=\"Table A2 continued\" ...></figure></td><td></td><td></td></tr> inserted mid-table. The PDF has no such interruptions.",
+      "evidence": "HTML Table A1 after K24: <tr><td><figure><img ... alt=\"Table A1 continued\"></figure></td><td></td>...<td></td></tr>. Same pattern after K51. HTML Table A2 after K10 and K38 have identical artifact rows with alt=\"Table A2 continued\".",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C7",
-      "description": "Table A1 data appears twice in the HTML: once as an embedded image (with alt text referencing the table) and once as an actual HTML table with all the data rows. The PDF contains the table only once.",
+      "description": "Five page-screenshot images are embedded in the HTML alongside the fully extracted HTML table data, creating duplicate representations of the same content. The PDF contains no standalone images; these are conversion artifacts that reproduce table content already present as text.",
       "severity": "major",
-      "evidence": "HTML has <figure><img ... alt=\"Table A1 Modeled Release Parameters for Point Sources\"> before the actual <table> containing Table A1 data. The PDF only has the table once.",
+      "evidence": "Image 1: <figure><img alt=\"Table A1 Modeled Release Parameters for Point Sources\" ...></figure> appears immediately before the <table> containing the same data as HTML rows. Images 2-5 appear inside Table A1 (after K24, after K51) and Table A2 (after K10, after K38) with alt text \"Table A1 continued\" / \"Table A2 continued\", duplicating data already rendered as table rows.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 0,
+  "critical_count": 1,
   "major_count": 4,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 158.35,
+    "duration_seconds": 161.93,
     "page_count": 7,
-    "visual_input_tokens": 20117,
-    "visual_output_tokens": 445,
-    "content_input_tokens": 27958,
-    "content_output_tokens": 687,
-    "timestamp": "2026-04-17T20:00:44.595968",
+    "visual_input_tokens": 20370,
+    "visual_output_tokens": 4507,
+    "content_input_tokens": 28273,
+    "content_output_tokens": 3785,
+    "timestamp": "2026-04-20T02:46:08.635242",
     "auditor_version": "1.0.0"
   }
 }

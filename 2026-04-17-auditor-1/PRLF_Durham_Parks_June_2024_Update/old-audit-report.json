@@ -1,0 +1,46 @@
+{
+  "document_id": "PRLF_Durham_Parks_June_2024_Update",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains nested <main> elements, which is a structural duplication of the container element.",
+      "severity": "minor",
+      "evidence": "HTML has <main> inside another <main> element. This is a structural artifact but does not duplicate any content text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 24.48,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 159,
+    "content_input_tokens": 4769,
+    "content_output_tokens": 265,
+    "timestamp": "2026-04-16T00:51:03.676306",
+    "auditor_version": "1.0.0"
+  }
+}

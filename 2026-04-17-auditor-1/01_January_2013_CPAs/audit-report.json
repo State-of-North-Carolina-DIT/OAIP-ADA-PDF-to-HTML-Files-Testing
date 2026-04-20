@@ -9,38 +9,22 @@
       "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
       "page": null,
       "call_source": "structural"
-    },
-    {
-      "check_id": "V2",
-      "description": "Table cells in the HTML are excessively tall with line-wrapped content that breaks readability of the table structure. Column headers and data cells that are single-line in the PDF are wrapped into multiple lines in the HTML, making the table visually broken and difficult to read.",
-      "severity": "major",
-      "evidence": "PDF shows a compact, well-aligned table with single-line entries for Owner-Facility, County, Region, etc. HTML shows the same data but with extreme row heights due to word-wrapping in narrow columns (e.g., 'Linville Ridge Country Club - Linville Ridge Country Club WWTP' spans 5+ lines in HTML vs 2 lines in PDF).",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The HTML renders the table in a significantly narrower layout than the PDF, causing column compression and excessive vertical expansion of rows throughout all pages.",
-      "severity": "major",
-      "evidence": "PDF has a wide landscape-oriented table spanning the full page width with readable columns. HTML compresses this into a narrow portrait-style layout where columns like 'Owner - Facility' and 'Case Number' are squeezed, causing multi-line wrapping throughout.",
-      "page": 1,
-      "call_source": "visual"
     }
   ],
   "critical_count": 0,
-  "major_count": 3,
+  "major_count": 1,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 64.12,
+    "duration_seconds": 106.11,
     "page_count": 2,
-    "visual_input_tokens": 6143,
-    "visual_output_tokens": 597,
-    "content_input_tokens": 15092,
-    "content_output_tokens": 743,
-    "timestamp": "2026-04-17T19:56:10.527345",
+    "visual_input_tokens": 6396,
+    "visual_output_tokens": 4210,
+    "content_input_tokens": 15407,
+    "content_output_tokens": 1665,
+    "timestamp": "2026-04-18T02:35:08.686357",
     "auditor_version": "1.0.0"
   }
 }

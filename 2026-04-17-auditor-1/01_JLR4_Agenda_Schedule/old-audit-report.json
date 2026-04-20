@@ -1,0 +1,94 @@
+{
+  "document_id": "01_JLR4_Agenda_Schedule",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V2",
+      "description": "The HTML table for the Jordan Lake schedule has extra 'EMC Model Approval' entries in the Cape Fear-Neuse River Basin Hydrologic Model column for rows 4/1/2013 and 5/1/2013, which do not appear in the PDF source.",
+      "severity": "major",
+      "evidence": "PDF shows the Cape Fear-Neuse column as empty for 4/1/2013 and 5/1/2013 rows. HTML shows 'EMC Model Approval' in those cells.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The HTML table splits the 11/14/2013 and 9/11/2014 rows across two separate columns (Jordan Lake and Cape Fear), but in the PDF these rows span across both the Jordan Lake and Cape Fear columns as merged cells.",
+      "severity": "major",
+      "evidence": "PDF shows merged cells spanning both Jordan Lake Water Supply Allocations and Cape Fear River Basin Water Supply Plan columns for 11/14/2013 and 9/11/2014. HTML duplicates the text into separate cells in each column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "In the HTML table, the 1/1/2013 row shows 'EMC Model Approval' in the Cape Fear-Neuse column, but the PDF shows this entry at the 2/1/2013 row.",
+      "severity": "major",
+      "evidence": "PDF: 2/1/2013 row has 'EMC Model Approval'. HTML: 1/1/2013 row has 'EMC Model Approval' and 2/1/2013 also has 'EMC Model Approval'.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 'EMC Model Approval' entry in the table is incorrectly duplicated across multiple rows. In the PDF, 'EMC Model Approval' appears only in the row for 2/1/2013 in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column, but the HTML repeats it in rows for 1/1/2013, 4/1/2013, and 5/1/2013 as well.",
+      "severity": "major",
+      "evidence": "PDF shows 'EMC Model Approval' spanning or appearing at 2/1/2013 row only. HTML has <td>EMC Model Approval</td> in rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 11/14/2013 row in the PDF shows the text spanning the Jordan Lake and Cape Fear Water Supply Plan columns together, but the HTML duplicates the identical text into both columns separately. Additionally, the Cape Fear \u2013 Neuse River Basin Hydrologic Model column should be empty for this row.",
+      "severity": "major",
+      "evidence": "PDF: 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' appears to span Jordan Lake and Water Supply Plan columns. HTML duplicates it into both <td> cells individually.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The 9/11/2014 row in the PDF shows 'EMC decision at the September 2014 meeting.' spanning across columns, but the HTML duplicates it into both the Jordan Lake and Cape Fear Water Supply Plan columns separately.",
+      "severity": "major",
+      "evidence": "PDF shows the text spanning columns. HTML has identical text in both <td>EMC decision at the September 2014 meeting.</td> cells.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "There are two <h1> elements in the HTML. The Agenda section and the Jordan Lake Water Supply Storage Allocation section both use <h1>. Only one h1 should be used for the document title.",
+      "severity": "major",
+      "evidence": "HTML has <h1>Agenda</h1> and <h1>Jordan Lake Water Supply Storage Allocation - Updated Schedule</h1>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer text 'Managing Water Resources to Support North Carolina's Future' and the DWR logo appear as repeated elements across both sections in the HTML, mirroring page-by-page artifacts from the PDF.",
+      "severity": "minor",
+      "evidence": "The footer tagline appears in both sections as part of the content, and the DWR logo image appears twice.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 8,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 56.81,
+    "page_count": 2,
+    "visual_input_tokens": 6393,
+    "visual_output_tokens": 656,
+    "content_input_tokens": 6789,
+    "content_output_tokens": 908,
+    "timestamp": "2026-04-16T00:46:03.878035",
+    "auditor_version": "1.0.0"
+  }
+}

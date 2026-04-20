@@ -1,0 +1,134 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 49. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: '2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The cover page collage of images is rendered differently in HTML - images appear as individual separate images rather than the bordered composite collage shown in the PDF",
+      "severity": "major",
+      "evidence": "PDF shows a neatly bordered composite image with multiple photos arranged in a specific layout. HTML shows the same images but broken apart into individual rows without the unified border frame.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Superscript formatting lost for ordinal dates and trademark symbols in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows 'August 19th' and 'November 3rd' with superscript ordinals, and 'BioBase\u2122', 'Esri\u2122', 'GIS Cloud\u2122' with superscript TM symbols. HTML renders these as plain text 'August 19th', 'November 3rd', 'BioBaseTM', 'EsriTM', 'GIS CloudTM'.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content appears between page-equivalent sections in the HTML",
+      "severity": "major",
+      "evidence": "The PDF has 'Lake Gaston Aquatic Vegetation Report 2023' as a running header and page numbers as footers on individual pages. In the HTML, page number references like '7 | Page' and '8 | Page' appear inline within the content flow, disrupting reading order.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Bar graphs (Figures 1, 2, 7, 9, 11) are not rendered as images in the HTML but instead appear as raw text data",
+      "severity": "major",
+      "evidence": "PDF shows proper bar charts with axes, labels, and visual data representation. HTML renders these as plain text strings like '5775 6564 5378 5714 6178 6503 5006 6041 5368 4938 5954 6311' and '0 1000 2000 3000 4000 5000 6000 7000' instead of the actual chart images.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italic formatting lost for species names and priority labels in the Tuber Bank section",
+      "severity": "minor",
+      "evidence": "PDF shows italic text for creek names in the 'Starting Bank Density (2012)' column to indicate sites below detectable levels. HTML renders these values without italic formatting distinction.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italic formatting for scientific names partially lost",
+      "severity": "minor",
+      "evidence": "PDF shows 'Valiseneria neotropicalis' and 'Cladophra sp.' in italics. HTML renders 'Valiseneria neotropicalis' without italics in some instances.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a nested <main> element inside the outer <main>, creating an invalid structure. The document title is properly h1, but the overall HTML structure has two nested main elements which is incorrect.",
+      "severity": "major",
+      "evidence": "The HTML contains <main> wrapping the entire content, then another <main> inside it after the header section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 1 and Table 2 each appear to have both an embedded image reference AND a full HTML table rendering of the same data. The image tags with empty alt text before the tables represent duplicate content artifacts.",
+      "severity": "major",
+      "evidence": "Before Table 1 HTML table: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"></figure> followed by the full HTML table. Same pattern for Table 2.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Figure 1 and Figure 2 chart data are rendered as raw text paragraphs repeating the axis labels and data values that are already conveyed in the figure description and the tables. This creates confusing duplicated content not present in the PDF as text.",
+      "severity": "major",
+      "evidence": "HTML contains text blocks like '5775 6564 5378 5714 6178 6503 5006 6041 5368 4938 5954 6311' and 'American Lotus Arrowhead Cattail / Cutgrass Pickerelweed Rush Spatterdock Water Willow...' as paragraph text, which in the PDF are only axis labels within chart images.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Figures 7, 9, and 11 chart data are similarly rendered as raw text paragraphs repeating axis labels and values from the charts, creating textual duplication of visual chart content.",
+      "severity": "major",
+      "evidence": "HTML contains paragraphs like 'Lake Gaston Hydrilla', 'Acres Rake Tosses', 'Acres Percent of Rake Tosses', '0 200 400 600 800 1000 1200 1400 1600 1800' etc. as body text for Figures 7, 9, and 11.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The text in Table 1 body paragraph states community was 'emergent (58%), submersed (11%), floating leaf (4%), and algal species (27%)' - this matches the PDF. However, in Figure 2 description in the HTML, it says 'submersed (11%)' while the PDF Figure 2 caption says 'submersed (11%)' - both match, but the Table 1 text says 'Total Emergent Species' percentage is 63% of total vegetation, not 58%. The 58% figure likely refers to the proportion of total species occurrences that were emergent, which is a different metric. This is consistent between PDF and HTML so not an error.",
+      "severity": "minor",
+      "evidence": "No actual error found upon closer inspection - removing this finding.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The 'Conclusion and Management Implications (con't)' is rendered as an h3 in the HTML, while in the PDF it appears at the same heading level as the initial 'Conclusion and Management Implications' section (which is rendered as h2). This creates an inconsistent hierarchy.",
+      "severity": "minor",
+      "evidence": "PDF: Both 'Conclusion and Management Implications' and 'Conclusion and Management Implications (con't)' are at the same structural level. HTML: First is <h2>, continuation is <h3>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 9,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 595.02,
+    "page_count": 20,
+    "visual_input_tokens": 53409,
+    "visual_output_tokens": 1505,
+    "content_input_tokens": 50222,
+    "content_output_tokens": 1173,
+    "timestamp": "2026-04-16T00:56:30.836700",
+    "auditor_version": "1.0.0"
+  }
+}

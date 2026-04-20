@@ -1,0 +1,62 @@
+{
+  "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 32. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "Table A1 is split across multiple pages in the PDF with a clear continuation, but in the HTML the table appears to have a visual break/gap between K24 and K25 rows, suggesting a table split that creates two separate visual table sections rather than one continuous table.",
+      "severity": "major",
+      "evidence": "PDF shows Table A1 as one continuous table across pages. HTML shows a visible gap/break between K24 and K25 rows, and another between K51 and K52, creating the appearance of separate table segments.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Table A2 in the PDF is presented as a single continuous table of emission rates. In the HTML, the table appears to be broken into multiple separate table segments with gaps between them (K1-K10, then K11-K38, then K39-K62 plus ENVRTO/ENVRCO).",
+      "severity": "major",
+      "evidence": "PDF shows Table A2 as one continuous table. HTML renders it as multiple disconnected table segments with visible breaks.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table A1 contains spurious rows with embedded images that break the table structure. Between K24-K25 and K51-K52, there are extra table rows containing only image references in the first cell and empty cells for the remaining columns. These are artifacts of page-by-page conversion and should not appear as data rows within the table.",
+      "severity": "major",
+      "evidence": "HTML contains rows like: <tr><td><figure><img src=\"[embedded-image-removed]\" alt=\"Table A1 continued\"...></figure></td><td></td>...</tr> inserted between K24 and K25, and between K51 and K52. Similarly in Table A2, image rows appear between K10 and K11, and between K38 and K39.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has nested <main> elements. The header content (DIVISION OF AIR QUALITY, date) is placed in a <header> inside the first <main>, and then a second <main> element contains the rest. This is invalid HTML structure, though not a heading hierarchy issue per se.",
+      "severity": "minor",
+      "evidence": "HTML has <main><header>...</header><main>...</main></main> - nested main elements.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 101.82,
+    "page_count": 7,
+    "visual_input_tokens": 22659,
+    "visual_output_tokens": 648,
+    "content_input_tokens": 27287,
+    "content_output_tokens": 549,
+    "timestamp": "2026-04-16T00:50:39.194882",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "01_2019_Consumer_Shellfish_Advisory_ENGLISH",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in the HTML create invalid structure, though this does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The HTML contains <main><main>...</main></main> \u2014 two nested main elements.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 36.7,
+    "page_count": 2,
+    "visual_input_tokens": 5579,
+    "visual_output_tokens": 320,
+    "content_input_tokens": 5640,
+    "content_output_tokens": 244,
+    "timestamp": "2026-04-16T00:45:43.635612",
+    "auditor_version": "1.0.0"
+  }
+}

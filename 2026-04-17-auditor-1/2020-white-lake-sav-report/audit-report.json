@@ -1,0 +1,62 @@
+{
+  "document_id": "2020-white-lake-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 32. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "PG2",
+      "description": "Page number artifacts in HTML content",
+      "severity": "minor",
+      "evidence": "Page numbers appear as content in the HTML: '2020' (4x). These should be removed during conversion.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C6",
+      "description": "Figure 12 (bar chart showing SAV % occurrence at mid-year monitoring events) from PDF page 18 is not rendered as an image in the HTML. The chart's axis labels, legend text, and species names are dumped as plain text paragraphs rather than being included as an <img> tag.",
+      "severity": "minor",
+      "evidence": "PDF page 18 contains a bar chart with y-axis '% Occurence' (0-100%), x-axis species labels, and bars for June and August. HTML renders this as: '<p>100%<br/>80%<br/>% Occurence<br/>60%<br/>40%<br/>20%<br/>0%<br/>\u25a0 June \u25a0 August<br/>...' with no <img> tag for the chart.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The content of Tables 1 and 2 from PDF page 8 is represented twice in the HTML: once as a full-page image and once as properly structured HTML tables, creating content duplication.",
+      "severity": "major",
+      "evidence": "HTML contains both '<img src=\"[embedded-image-removed]\" alt=\"Vector-merged layout highlighting tables on Page 8\">' AND two fully structured <table> elements with captions 'Table 1: White Lake SAV % Occurrence' and 'Table 2: White Lake Point Count' containing identical data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the table page image is fabricated meta-description of the conversion process rather than a description of the actual content.",
+      "severity": "minor",
+      "evidence": "HTML alt text reads 'Vector-merged layout highlighting tables on Page 8' \u2014 this describes a conversion artifact, not the content itself (Tables 1 and 2 showing SAV species occurrence percentages and point counts across survey years 2014-2020 with color-coded highlighting).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": "visual:too_large(22p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 185.88,
+    "page_count": 22,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 47722,
+    "content_output_tokens": 9487,
+    "timestamp": "2026-04-20T02:46:13.078857",
+    "auditor_version": "1.0.0"
+  }
+}

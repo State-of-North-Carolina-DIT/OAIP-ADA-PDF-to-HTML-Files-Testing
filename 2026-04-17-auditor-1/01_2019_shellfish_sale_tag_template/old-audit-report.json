@@ -1,0 +1,70 @@
+{
+  "document_id": "01_2019_shellfish_sale_tag_template",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF page 1 contains a structured visual tag layout with labeled arrows pointing to different sections of the example tag, forming a diagram with annotations on both left and right sides. The HTML renders this as a flat, linear text list without the spatial layout or annotated diagram structure.",
+      "severity": "critical",
+      "evidence": "PDF shows a central 'SALE TAG' box with annotation callouts on left (Harvest Date explanation, Harvest Area explanation, 90 Day tag retention notice, Notice that product must remain refrigerated, Consumer Advisory Notice) and right (Dealer Name/Address/Certification Number, Certification Number of original shipper, Type of shellfish, Space for Reshipper). HTML renders all content as sequential paragraphs without any spatial arrangement or visual diagram.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The PDF contains a visual diagram of a shellstock tag with arrows and annotation boxes. This diagram/graphic is completely absent in the HTML conversion.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a bordered tag example with arrows connecting explanatory text to specific parts of the tag. HTML has no image, diagram, or visual representation of this tag layout.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The heading 'Example Shellstock Tag with Explanations' is fabricated - it does not appear in the PDF. The PDF does not have a section heading for the tag example area.",
+      "severity": "minor",
+      "evidence": "HTML contains '<h2>Example Shellstock Tag with Explanations</h2>' but no such heading exists in the PDF. Similarly, '<h2>Tag Format and Handling Requirements</h2>' is invented; the PDF has no such section heading - the requirements text follows directly after the tag example.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Two section headings were fabricated that do not appear in the source PDF.",
+      "severity": "minor",
+      "evidence": "HTML has 'Example Shellstock Tag with Explanations' and 'Tag Format and Handling Requirements' as h2 headings. These are AI-generated organizational headings not present in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> elements, with two <main> tags. This is a structural duplication issue in the HTML markup.",
+      "severity": "major",
+      "evidence": "The HTML contains '<main>' inside the body, and then another '<main>' immediately nested inside the first one.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 58.17,
+    "page_count": 1,
+    "visual_input_tokens": 4207,
+    "visual_output_tokens": 548,
+    "content_input_tokens": 5484,
+    "content_output_tokens": 550,
+    "timestamp": "2026-04-16T00:46:05.112296",
+    "auditor_version": "1.0.0"
+  }
+}

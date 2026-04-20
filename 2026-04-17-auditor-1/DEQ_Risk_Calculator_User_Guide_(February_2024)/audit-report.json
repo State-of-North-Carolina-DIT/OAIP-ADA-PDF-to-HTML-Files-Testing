@@ -1,0 +1,54 @@
+{
+  "document_id": "DEQ_Risk_Calculator_User_Guide_(February_2024)",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 35. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C4a",
+      "description": "Multiple descriptive-text hyperlinks present in the PDF are rendered as plain text in the HTML with no href attribute. This affects navigation and reference links throughout the document.",
+      "severity": "critical",
+      "evidence": "PDF contains hyperlinked descriptive text for: 'Risk Evaluation Resources' (section 1.0), 'USEPA Regional Screening Level (RSL) Tables' (section 1.0), 'Technical Guidance for Risk-Based Environmental Remediation of Sites' (sections 1.0, 5.0), 'Risk Evaluation Equations and Calculations' (sections 3.2.3, 3.3.2, 3.3.3, 3.4.3), 'Risk-Based Remediation Website' (section 3.0), 'North Carolina Division of Waste Management Vapor Intrusion Guidance document' (section 3.4.3), 'Risk Evaluation Resources | NC DEQ' (section 3.5), and reference links in the Mutagenic Contaminants table (IRIS, Supplemental Guidance, PPRTV, CalEPA and IRIS, etc.). All appear as plain text in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The cover page DEQ logo image has inaccurate alt text describing it as a 'North Carolina state seal' when it is the NCDEQ/DEQ logo featuring an outline of North Carolina with 'DEQ' text and 'Department of Environmental Quality' branding.",
+      "severity": "minor",
+      "evidence": "HTML: alt='North Carolina state seal'. The PDF image is clearly the DEQ organizational logo, not the NC state seal.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The Risk Calculator Cell Color Codes table (section 1.2) adds color name labels in the 'Cell Appearance' column ('Yellow cell', 'White cell', 'Green cell', 'Grey cell') that do not appear as text anywhere in the source PDF. The PDF uses colored visual boxes without text labels. While 'yellow' and 'grey/gray' are confirmed by text elsewhere in the document, 'White cell' and 'Green cell' are not verified by any PDF text.",
+      "severity": "critical",
+      "evidence": "PDF section 1.2 shows colored box indicators with no text naming the color. HTML creates a table with column 'Cell Appearance' containing labels 'Yellow cell', 'White cell', 'Green cell', 'Grey cell'. The PDF text never uses the terms 'White cell' or 'Green cell'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 431.84,
+    "page_count": 33,
+    "visual_input_tokens": 102144,
+    "visual_output_tokens": 10708,
+    "content_input_tokens": 84890,
+    "content_output_tokens": 9563,
+    "timestamp": "2026-04-20T02:49:16.080420",
+    "auditor_version": "1.0.0"
+  }
+}

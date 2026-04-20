@@ -1,6 +1,6 @@
 {
   "document_id": "01_JLR4_Agenda_Schedule",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -12,67 +12,43 @@
     },
     {
       "check_id": "V2",
-      "description": "In the PDF slide 2 table, the 11/14/2013 row spans across the Jordan Lake and Cape Fear columns as a single merged cell, but in the HTML conversion, the content is split into separate cells for Jordan Lake and Cape Fear columns, each repeating the text.",
+      "description": "Merged table cells for rows 11/14/2013 and 9/11/2014 were split, duplicating content across columns",
       "severity": "major",
-      "evidence": "PDF: 11/14/2013 row has merged content across Jordan Lake and Cape Fear columns as one cell. HTML: The same text appears duplicated in both the Jordan Lake Water Supply Allocations column and the Cape Fear River Basin Water Supply Plan column separately.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V2",
-      "description": "In the PDF slide 2 table, the 9/11/2014 row spans across the Jordan Lake and Cape Fear columns as a single merged cell, but in the HTML conversion, the content is split into separate cells with duplicated text.",
-      "severity": "major",
-      "evidence": "PDF: 9/11/2014 row has 'EMC decision at the September 2014 meeting.' spanning across columns as merged. HTML: The text is duplicated in both Jordan Lake and Cape Fear columns separately.",
-      "page": 2,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V2",
-      "description": "In the PDF slide 2 table, the EMC Model Approval entries for dates 1/1/2013 through 5/1/2013 appear to span multiple rows in the Cape Fear-Neuse column, but in the HTML they are repeated in each individual row.",
-      "severity": "major",
-      "evidence": "PDF: 'EMC Model Approval' appears once spanning rows from 1/1/2013 to 5/1/2013 in the Hydrologic Model column. HTML: 'EMC Model Approval' is repeated individually in rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013.",
+      "evidence": "In the PDF, the 11/14/2013 and 9/11/2014 rows have cells that span across both the 'Jordan Lake Water Supply Allocations' and 'Cape Fear River Basin Water Supply Plan' columns as a single merged cell. In the HTML, these merged cells are split into two separate columns with the full text duplicated in each (e.g., 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' appears identically in both columns).",
       "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "C3b",
-      "description": "In the schedule table, the 'EMC Model Approval' entry in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column is duplicated across rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013. In the PDF, 'EMC Model Approval' appears to span rows 1/1/2013 through 2/1/2013 (or possibly further), but the HTML repeats it in four separate rows instead of using a rowspan or leaving cells empty where appropriate.",
+      "description": "Merged cell spanning Jordan Lake and Cape Fear columns for 11/14/2013 and 9/11/2014 rows is split into duplicate cells, repeating the same text in both columns.",
       "severity": "major",
-      "evidence": "PDF shows 'EMC Model Approval' listed once spanning the 2/1/2013 row area. HTML duplicates it in rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013.",
+      "evidence": "PDF 11/14/2013 row: 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' spans across Jordan Lake and Cape Fear columns as one merged cell. HTML duplicates this text into two separate <td> cells. Same issue with 9/11/2014 row: 'EMC decision at the September 2014 meeting.' duplicated into both columns.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C3b",
-      "description": "In the schedule table, the row for 11/14/2013 in the PDF shows the text spanning across the Jordan Lake and Cape Fear columns as a single merged entry. The HTML duplicates the text into both the Jordan Lake Water Supply Allocations column and the Cape Fear River Basin Water Supply Plan column separately, and similarly for 9/11/2014.",
+      "description": "'EMC Model Approval' appears in a single merged cell in the PDF's Hydrologic Model column but is duplicated across four rows (1/1/2013, 2/1/2013, 4/1/2013, 5/1/2013) in the HTML.",
       "severity": "major",
-      "evidence": "PDF 11/14/2013 row: 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' spans across columns. HTML duplicates this text in both columns separately. Same issue for 9/11/2014 row.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C7",
-      "description": "The footer text 'Managing Water Resources to Support North Carolina's Future' appears as a heading at the top of the HTML document body before the Agenda section, duplicating the footer content from the PDF as a standalone element.",
-      "severity": "major",
-      "evidence": "PDF has 'Managing Water Resources to Support North Carolina's Future' as a footer/tagline at bottom of slides. HTML places it before the main content as well as the sections containing it are separated.",
+      "evidence": "PDF shows 'EMC Model Approval' once in a vertically merged cell in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column spanning approximately from 2/1/2013 onward. HTML repeats it in four separate row cells.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 7,
+  "major_count": 4,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 49.86,
+    "duration_seconds": 131.85,
     "page_count": 2,
-    "visual_input_tokens": 7583,
-    "visual_output_tokens": 714,
-    "content_input_tokens": 7460,
-    "content_output_tokens": 742,
-    "timestamp": "2026-04-17T19:55:27.739651",
+    "visual_input_tokens": 7820,
+    "visual_output_tokens": 5021,
+    "content_input_tokens": 7775,
+    "content_output_tokens": 2004,
+    "timestamp": "2026-04-18T02:32:58.639447",
     "auditor_version": "1.0.0"
   }
 }

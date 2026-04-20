@@ -20,99 +20,67 @@
     },
     {
       "check_id": "V3",
-      "description": "The process components flow chart diagram (slide 4) loses significant legibility in the HTML conversion - the hierarchical organizational chart with colored boxes showing the relationship between Hydrologic Model, River Basin Water Resources Plan, Historical Flows, Operation Guidelines, Water Use, and Evaluation Criteria is rendered as an embedded image but appears twice in the HTML (duplicated across chunks).",
+      "description": "Flow Regime Changes bar chart (Stream Condition Middle Deep River, Node 280) is not preserved as a visual graphic. The chart is replaced by extracted text values and bullet-point legend items.",
       "severity": "critical",
-      "evidence": "PDF slide 4 shows a clear organizational chart with colored boxes (green, orange, yellow, gold) and connecting lines. The HTML renders this as an image that appears to be preserved, but the chart appears in multiple HTML chunks as expected due to overlap.",
-      "page": 4,
+      "evidence": "PDF page 15 shows a grouped bar chart comparing % of Days at Flow Level across Unimpaired, 2003, 2030, and 2050 Demands with color-coded QAA percentage ranges. The HTML renders only the axis labels (35.0%, 30.0%, etc.), category labels ('Unimpaired | 2003 Demands | 2030 Demands | 2050 Demands'), and legend entries as bullet points \u2014 no chart image is present.",
+      "page": 15,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "The Broad River Basin Schematic map on slide 10 loses significant detail and legibility in the HTML rendering due to the complexity of the map being compressed into a smaller image.",
+      "description": "Project Organization Venn diagram is missing from the HTML. The three overlapping circles showing relationships between Data Collection (HDR), Model Development (HydroLogics), and Data/Model Evaluation & Plan Development (NCDWR) are replaced by plain-text bullet points.",
       "severity": "critical",
-      "evidence": "PDF shows a detailed schematic map with numerous labeled nodes, dams, intakes, and county boundaries for the Broad River Basin. HTML shows the same image but at reduced legibility.",
-      "page": 10,
+      "evidence": "PDF page 19 shows a Venn diagram with three overlapping circles conveying the interrelationships among the three project roles. The HTML lists these as flat bullet points ('Data Collection HDR', 'Model Development HydroLogics', 'Data, Model Evaluation & Plan Development NCDWR') with no diagram image, losing the visual representation of overlap and collaboration.",
+      "page": 19,
       "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Slide 9 has a side-by-side layout with Water Use Pattern chart on the left and 50 yr Projected Demands chart on the right. In the HTML, these are stacked vertically rather than side-by-side.",
-      "severity": "major",
-      "evidence": "PDF shows two charts arranged horizontally - Water Use Pattern chart on left and 2006 Supply and Demand Projections chart on right. HTML stacks them vertically with Water Use Pattern on top and the projections chart below.",
-      "page": 9,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "On slide 3 (3 Critical Questions), the emphasized italic/bold formatting of the three critical questions is lost in the HTML conversion.",
-      "severity": "minor",
-      "evidence": "PDF shows items 1-3 in bold italic: 'Yield may be inadequate to meet all needs.', 'Yield may be inadequate to meet all essential water uses.', 'Ecological flow may be adversely affected'. HTML renders these as plain numbered list items without bold or italic emphasis.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V4",
-      "description": "On slide 5 (Process Components - Historical Flows), the bold formatting of 'Water Use Data + Hydrologic Model' formula text from slide 3 is completely removed in the HTML.",
-      "severity": "minor",
-      "evidence": "PDF slide 3 shows 'Water Use Data + Hydrologic Model' in bold italic as a key formula. HTML renders it as plain text 'Water Use Data + Hydrologic Model' without any emphasis.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Slide 12 (Evaluation Criteria) has images arranged in a collage layout with text overlaid. The HTML converts this to a simple image embed, losing the interactive visual arrangement but preserving the content.",
-      "severity": "major",
-      "evidence": "PDF shows a carefully arranged photo collage with 'How often? What's the chance?' text overlaid alongside 'Evaluation Criteria' label box. HTML shows this as a single embedded image.",
-      "page": 12,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Slide 6 (Operations Guidelines) has a two-column layout with bullet text on the left and multiple images stacked on the right. HTML collapses this to single-column with images appearing separately below text.",
-      "severity": "major",
-      "evidence": "PDF shows operations guidelines text with multiple photos (dam, water ski, fish, cooling tower) arranged vertically on the right side. HTML shows the text content as bullets followed by individual images separated from their visual context.",
-      "page": 6,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C7",
-      "description": "The Model Development Tasks section includes redundant highlighted image references for Task 2 and Task 4, followed by the same tasks listed again in the bullet list, creating duplication of those task names.",
-      "severity": "major",
-      "evidence": "HTML has <figure> tags for 'Task 2 - OASIS Application Development' and 'Task 4 \u2013 Deliverables' as images, then repeats them as list items. In the PDF these appear once each on slide 20.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "The PDF slide 'Water Resources Plans support' subtitle is rendered under the h2 'Why Need River Basin Plans' but the subtitle 'Water Resources Plans support' is not present as a heading or text in the HTML - it only appears as part of an image alt text description.",
-      "severity": "major",
-      "evidence": "PDF page 2 has a clear subtitle 'Water Resources Plans support' with bullet points 'Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making'. HTML only has an image alt text referencing these concepts but not the actual text content.",
-      "page": null,
-      "call_source": "content"
     },
     {
       "check_id": "C2",
-      "description": "The bullet point text from page 2 ('Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making') is missing from the HTML body text, appearing only in an image alt text description.",
+      "description": "The body text content of the 'Why Need River Basin Plans' slide (PDF page 2) is missing from the HTML text body. The key bullet points ('Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making') and the subheading 'Water Resources Plans support' are only paraphrased inside an image alt attribute, not rendered as readable HTML text.",
       "severity": "critical",
-      "evidence": "PDF page 2 has explicit bullet text: 'Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making'. The HTML has no corresponding text elements - only an alt attribute on an image tag mentions these items.",
+      "evidence": "PDF page 2 has distinct text bullets: 'Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making'. HTML section 'Why Need River Basin Plans' contains only the heading and a <figure><img> with alt text paraphrasing these points, but no standalone text elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Flow Regime Changes bar chart from PDF page 15 is missing as an image in the HTML. Instead of a chart image, the HTML renders the Y-axis labels (35.0%, 30.0%, etc.) and legend entries as plain text, losing the visual data representation.",
+      "severity": "minor",
+      "evidence": "PDF page 15 contains a bar chart titled 'Stream Condition Middle Deep River (Node 280) June - November' with grouped bars for Unimpaired, 2003, 2030, and 2050 Demands. The HTML section has no <img> tag for this chart; axis values are rendered as '<p>35.0%<br/>30.0%<br/>...' and legend items as a <ul>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Venn diagram from the Project Organization slide (PDF page 19) showing three overlapping circles for HDR, HydroLogics, and NCDWR is missing as an image. Content is rendered as a plain list instead.",
+      "severity": "minor",
+      "evidence": "PDF page 19 shows a Venn diagram with three overlapping circles labeled 'Data Collection HDR', 'Model Development HydroLogics', and 'Data, Model Evaluation & Plan Development NCDWR'. The HTML section 'Project Organization' has no <img> tag; it uses a <ul> list instead.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Task 2 and Task 4 from the Model Development Tasks slide are duplicated in the HTML \u2014 they appear both as standalone images and as text within the bullet-point list. In the PDF, they appear only once each as styled (italic/purple) bullet items.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt='Highlighted text: Task 2 - OASIS Application Development'> and <figure><img alt='Highlighted text: Task 4 \u2013 Deliverables'> as well as <li>Task 2 - OASIS Application Development</li> and <li>Task 4 \u2013 Deliverables</li> within the same section.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 3,
-  "major_count": 7,
+  "major_count": 3,
   "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 1045.42,
+    "duration_seconds": 279.49,
     "page_count": 23,
-    "visual_input_tokens": 71744,
-    "visual_output_tokens": 1433,
-    "content_input_tokens": 44852,
-    "content_output_tokens": 645,
-    "timestamp": "2026-04-17T20:13:08.696206",
+    "visual_input_tokens": 71997,
+    "visual_output_tokens": 6335,
+    "content_input_tokens": 45167,
+    "content_output_tokens": 6991,
+    "timestamp": "2026-04-18T02:39:36.078850",
     "auditor_version": "1.0.0"
   }
 }

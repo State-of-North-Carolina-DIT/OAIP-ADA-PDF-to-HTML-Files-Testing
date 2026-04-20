@@ -19,100 +19,84 @@
       "call_source": "structural"
     },
     {
-      "check_id": "V4",
-      "description": "Underlined section headings in PDF ('Static and Pattern Data', 'Timeseries Data', 'Operating Rules') lose their underline and bold formatting in HTML, appearing as plain bold text without underline distinction.",
-      "severity": "minor",
-      "evidence": "PDF page 7-8 shows 'Static and Pattern Data', 'Timeseries Data', and 'Operating Rules' as bold+underlined subheadings. HTML shows them as bold only without underline. Since bold is preserved, this is acceptable per rules.",
-      "page": 7,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V3",
-      "description": "Flow chart diagrams on pages 10-16 are converted to text-based bullet lists in HTML rather than preserving the visual diagrams with shapes (triangles, squares, circles) and connecting arrows.",
+      "description": "Flow Chart diagram image for Upper Cape Fear Basin is missing. The PDF shows a visual diagram with shaped nodes (triangles, squares, ovals), directional arrows, and spatial layout. The HTML replaces this with a text-based bullet list of node names.",
       "severity": "critical",
-      "evidence": "PDF pages 10, 11, 12, 13, 14, 15, 16 show graphical flow charts with colored shapes (red triangles for reservoirs, blue squares for demands, yellow circles for junctions) connected by arrows. HTML replaces these with bulleted text lists of node names and text descriptions of the legend items.",
+      "evidence": "PDF page 10 has a full flow chart diagram with Reidsville Dam, Old Stony Ck Reservoir, Lake Brandt, Lake Townsend, etc. connected by colored arrows (Flow Arc, Withdrawal Arc, WW Return Arc) with a legend. HTML renders only the node names as bullet points and a text legend, losing all spatial and relational information.",
       "page": 10,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Flow Chart of Major Nodes in the Middle Cape Fear Basin diagram missing as image, replaced with text list",
+      "description": "Flow Chart diagram image for Middle Cape Fear Basin is missing. The visual diagram with nodes, arrows, and annotations is replaced by a text list.",
       "severity": "critical",
-      "evidence": "PDF page 11 shows a graphical flow chart with reservoir nodes, demand nodes, junction nodes and connecting arcs for the Middle Cape Fear Basin. HTML converts this to a bullet list of node names.",
+      "evidence": "PDF page 11 shows a flow chart with Cane Creek Reservoir, OWASA Demand, University Lake, Stone Quarry, Jordan Lake, Pittsboro Demand, Harris Lake, etc. connected by arrows with annotation boxes. HTML shows only bullet points listing these nodes.",
       "page": 11,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Flow Chart of Major Nodes on the Deep River diagram missing as image, replaced with text list",
+      "description": "Flow Chart diagram image for Deep River is missing. The visual diagram is replaced by a text list.",
       "severity": "critical",
-      "evidence": "PDF page 12 shows a graphical flow chart diagram. HTML converts this to a bullet list of node names with text descriptions.",
+      "evidence": "PDF page 12 shows a flow chart with High Point Reservoir, Siler City Reservoirs, Randleman Reservoir, Ramseur Reservoir, etc. connected by colored arrows with annotation boxes. HTML shows only bullet points.",
       "page": 12,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Flow Chart of Major Nodes in the Lower Cape Fear Basin diagram missing as image, replaced with text list",
+      "description": "Flow Chart diagram image for Lower Cape Fear Basin is missing. The visual diagram is replaced by a text list.",
       "severity": "critical",
-      "evidence": "PDF page 13 shows a graphical flow chart. HTML converts this to a bullet list.",
+      "evidence": "PDF page 13 shows a flow chart with Flow from Upstream at Lillington, Harnett Co. Demand, Dunn Demand, Fayetteville Demand, Glenville Reservoir, Cape Fear Kelly Gage, Wilmington & Lower Cape Fear WASA Demands, Model Terminus connected by arrows. HTML shows only bullet points.",
       "page": 13,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Flow Chart of Major Nodes in the Upper Neuse Basin diagram missing as image, replaced with text list",
+      "description": "Flow Chart diagram image for Upper Neuse Basin is missing. The visual diagram is replaced by a text list.",
       "severity": "critical",
-      "evidence": "PDF page 14 shows a graphical flow chart with shapes and arrows. HTML converts this to a bullet list with text descriptions.",
+      "evidence": "PDF page 14 shows a flow chart with West Fork Eno Reservoir, Lake Orange, Lake Michie, Little River Reservoir, Hillsborough Demand, Durham Demand, Beaverdam Lake, Falls Lake, Raleigh Demand, Neuse Clayton Gage connected by arrows with multiple annotation boxes. HTML shows only bullet points.",
       "page": 14,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Flow Chart of Major Nodes in the Middle Neuse Basin diagram missing as image, replaced with text list",
+      "description": "Flow Chart diagram image for Middle Neuse Basin is missing. The visual diagram is replaced by a text list.",
       "severity": "critical",
-      "evidence": "PDF page 15 shows a graphical flow chart. HTML converts this to a bullet list.",
+      "evidence": "PDF page 15 shows a flow chart with Crabtree Creek Flood Impoundments, Lake Wheeler, Swift Creek, Lake Benson, Neuse Clayton Gage, Johnson Co. & Smithfield Demand, Neuse Goldsboro Gage, Goldsboro Demand connected by arrows. HTML shows only bullet points.",
       "page": 15,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Flow Chart of Major Nodes in the Lower Neuse Basin diagram missing as image, replaced with text list",
+      "description": "Flow Chart diagram image for Lower Neuse Basin is missing. The visual diagram is replaced by a text list.",
       "severity": "critical",
-      "evidence": "PDF page 16 shows a graphical flow chart with colored shapes and arrows. HTML converts this to a bullet list.",
+      "evidence": "PDF page 16 shows a flow chart with Buckhorn Reservoir, Contentnea Creek, Wilson Demand, Neuse Kinston Gage, Lower Neuse WASA Demand, Model Terminus connected by arrows with an annotation box. HTML shows only bullet points.",
       "page": 16,
       "call_source": "visual"
     },
     {
-      "check_id": "C4a",
-      "description": "The HTML Table of Contents adds internal anchor links (href attributes linking to section IDs like #introduction, #schematic, etc.) that do not exist in the PDF. However, these are internal navigation anchors for accessibility, not fabricated external URLs, so this is an enhancement rather than an error.",
-      "severity": "critical",
-      "evidence": "HTML TOC has <a href='#introduction'>1 \u2013 Introduction</a> etc. PDF TOC has no hyperlinks.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C5",
-      "description": "The flowchart titles in the PDF are presented as prominent slide-like headings. In the HTML, most are rendered as h3, which is reasonable. However, the sub-headings 'Static and Pattern Data', 'Timeseries Data', and 'Operating Rules' are rendered as h4 in the HTML. In the PDF, these appear as bold/underlined subheadings under Section 2.2. The h4 level under h3 (2.2 Model Input) is appropriate, so hierarchy is preserved.",
-      "severity": "major",
-      "evidence": "PDF: bold underlined 'Static and Pattern Data' under 2.2; HTML: <h4>Static and Pattern Data</h4> under <h3>2.2 Model Input</h3>",
+      "check_id": "C6",
+      "description": "Seven substantive flow chart diagrams (PDF pages 10\u201316) showing spatial relationships between nodes, connection arrows, and arc types for each basin area are missing as images from the HTML. The text annotations from each diagram are extracted into unordered bullet lists, but the actual diagram images are absent, losing the visual depiction of how nodes connect and water flows through the system.",
+      "severity": "minor",
+      "evidence": "PDF has flow chart diagrams for: Upper Cape Fear Basin (p10), Middle Cape Fear Basin (p11), Deep River (p12), Lower Cape Fear Basin (p13), Upper Neuse Basin (p14), Middle Neuse Basin (p15), Lower Neuse Basin (p16). The HTML has no <img> tags for any of these seven diagrams; their content is rendered only as <ul> bullet lists.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 8,
-  "major_count": 3,
+  "critical_count": 7,
+  "major_count": 2,
   "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 409.55,
+    "duration_seconds": 185.97,
     "page_count": 18,
-    "visual_input_tokens": 55729,
-    "visual_output_tokens": 1588,
-    "content_input_tokens": 44710,
-    "content_output_tokens": 923,
-    "timestamp": "2026-04-17T20:01:24.807646",
+    "visual_input_tokens": 55982,
+    "visual_output_tokens": 5371,
+    "content_input_tokens": 45025,
+    "content_output_tokens": 3895,
+    "timestamp": "2026-04-18T02:31:28.125040",
     "auditor_version": "1.0.0"
   }
 }

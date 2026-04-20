@@ -12,49 +12,49 @@
     },
     {
       "check_id": "V3",
-      "description": "The North Carolina state seal image at the top of the letter is missing in the HTML conversion.",
+      "description": "North Carolina state seal/emblem at the top of the letter is missing in the HTML rendering.",
       "severity": "critical",
-      "evidence": "PDF page 1 shows the North Carolina state seal/emblem centered at the top of the letterhead. The HTML version does not include this image.",
+      "evidence": "PDF page 1 displays the official North Carolina state seal between the header names and the agency name. The HTML has no image or placeholder for this seal.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "The DEQ logo at the bottom of the PDF letter is missing in the HTML conversion.",
+      "description": "David Miller's handwritten signature is missing in the HTML rendering.",
       "severity": "critical",
-      "evidence": "PDF page 1 shows the North Carolina DEQ logo at the bottom of the page. The HTML version does not include this logo image.",
+      "evidence": "PDF page 1 shows a handwritten signature above the printed name 'David Miller, PE'. The HTML only shows the text 'Sincerely,' followed by the printed name with no signature image.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "David Miller's handwritten signature is missing from the HTML conversion.",
+      "description": "DEQ organizational logo in the footer is missing in the HTML rendering.",
       "severity": "critical",
-      "evidence": "PDF page 1 shows a handwritten signature above 'David Miller, PE'. The HTML version has only the typed name without the signature image.",
+      "evidence": "PDF page 1 displays the NC DEQ logo (with 'DEQ' text and the North Carolina branding) in the footer area alongside the address. The HTML reproduces the footer text but omits the logo image.",
       "page": 1,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Brian Wrenn's handwritten signature is missing from the HTML conversion.",
+      "description": "Brian Wrenn's handwritten signature is missing in the HTML rendering.",
       "severity": "critical",
-      "evidence": "PDF page 3 shows a handwritten signature above 'Brian Wrenn, Director'. The HTML version has only the typed name without the signature image.",
-      "page": 3,
+      "evidence": "PDF page 2 shows a handwritten signature above the printed name 'Brian Wrenn, Director'. The HTML only shows the printed text with no signature image.",
+      "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "Brenda Harris's handwritten signature is missing from the HTML conversion.",
+      "description": "Brenda Harris's handwritten signature is missing in the HTML rendering.",
       "severity": "critical",
-      "evidence": "PDF page 3 shows a handwritten signature above 'Brenda Harris'. The HTML version has only the typed name without the signature image.",
-      "page": 3,
+      "evidence": "PDF page 2 shows a handwritten signature above the printed name 'Brenda Harris, Mining Program Administrative Assistant'. The HTML only shows the printed text with no signature image.",
+      "page": 2,
       "call_source": "visual"
     },
     {
       "check_id": "C6",
-      "description": "The PDF contains images (state seal logo, DEQ logo, and two handwritten signatures) but the HTML has no <img> tags at all. These images are completely omitted.",
+      "description": "All substantive images from the PDF are missing from the HTML. There are zero <img> tags in the HTML, yet the PDF contains the NC State Seal, the DEQ logo, and three signatures (David Miller, Brian Wrenn, Brenda Harris).",
       "severity": "minor",
-      "evidence": "PDF page 1 has the NC state seal, a DEQ logo at the bottom, and David Miller's signature. PDF page 2 has Brian Wrenn's signature and Brenda Harris's signature. None are represented in the HTML.",
+      "evidence": "PDF page 1 has the NC State Seal at top, David Miller's signature mid-page, and the DEQ logo at the bottom. PDF page 2 has Brian Wrenn's signature and Brenda Harris's signature. The HTML contains no <img> tags for any of these.",
       "page": null,
       "call_source": "content"
     }
@@ -66,13 +66,13 @@
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 79.61,
+    "duration_seconds": 62.44,
     "page_count": 2,
-    "visual_input_tokens": 7683,
-    "visual_output_tokens": 724,
-    "content_input_tokens": 6762,
-    "content_output_tokens": 349,
-    "timestamp": "2026-04-17T19:55:47.981252",
+    "visual_input_tokens": 7936,
+    "visual_output_tokens": 1760,
+    "content_input_tokens": 7077,
+    "content_output_tokens": 1418,
+    "timestamp": "2026-04-18T02:23:04.558182",
     "auditor_version": "1.0.0"
   }
 }

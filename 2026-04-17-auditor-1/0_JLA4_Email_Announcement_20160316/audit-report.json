@@ -1,6 +1,6 @@
 {
   "document_id": "0_JLA4_Email_Announcement_20160316",
-  "verdict": "needs_review",
+  "verdict": "fail",
   "findings": [
     {
       "check_id": "S1",
@@ -12,27 +12,35 @@
     },
     {
       "check_id": "V4",
-      "description": "The italic formatting on the document titles 'Draft Cape Fear River Water Supply Evaluation' and 'Draft Jordan Lake Water Supply Allocation Recommendations' is removed in the HTML version.",
+      "description": "Italic emphasis completely removed from two referenced document titles",
       "severity": "minor",
-      "evidence": "In the PDF, 'Draft Cape Fear River Water Supply Evaluation' and 'Draft Jordan Lake Water Supply Allocation Recommendations' are rendered in italics. In the HTML, these titles appear in regular (non-italic) text within quotation marks.",
+      "evidence": "In the PDF, 'Draft Cape Fear River Water Supply Evaluation' and 'Draft Jordan Lake Water Supply Allocation Recommendations' are rendered in italics to distinguish them as document titles. In the HTML, both titles appear as plain (non-italic) text within quotation marks, losing all emphasis.",
       "page": 1,
       "call_source": "visual"
+    },
+    {
+      "check_id": "C4a",
+      "description": "Two 'here' hyperlinks from the PDF (linking to maps for the Pittsboro and Wilmington meeting locations) are rendered as plain text in the HTML, losing the href.",
+      "severity": "critical",
+      "evidence": "PDF: 'A map of the location for this meeting is available here.' (with 'here' as a clickable link) appears twice \u2014 once for the Chatham Community Library meeting and once for the New Hanover County Government Center meeting. HTML: both instances render 'here' as plain text with no <a> tag.",
+      "page": null,
+      "call_source": "content"
     }
   ],
-  "critical_count": 0,
+  "critical_count": 1,
   "major_count": 1,
   "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 34.88,
+    "duration_seconds": 43.35,
     "page_count": 1,
-    "visual_input_tokens": 4428,
-    "visual_output_tokens": 268,
-    "content_input_tokens": 5726,
-    "content_output_tokens": 309,
-    "timestamp": "2026-04-17T19:55:57.510388",
+    "visual_input_tokens": 4681,
+    "visual_output_tokens": 692,
+    "content_input_tokens": 6041,
+    "content_output_tokens": 1342,
+    "timestamp": "2026-04-18T02:37:08.817130",
     "auditor_version": "1.0.0"
   }
 }

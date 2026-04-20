@@ -20,67 +20,67 @@
     },
     {
       "check_id": "V3",
-      "description": "Authorized signature image/handwritten signature is missing from the HTML conversion",
+      "description": "Two handwritten signatures present in the PDF are missing from the HTML conversion.",
       "severity": "critical",
-      "evidence": "PDF page 1 shows a handwritten signature next to 'AUTHORIZED SIGNATURE' field and another signature in the 'FOR DENR USE ONLY' section. The HTML replaces these with '[Signature]' text placeholder.",
+      "evidence": "PDF page 1 shows: (1) Brian J. McCrodden's handwritten authorized signature above the date 12/18/07, and (2) the DENR authorized representative's handwritten signature in the 'FOR DENR USE ONLY' section. The HTML replaces the first with just the text 'AUTHORIZED SIGNATURE: Brian J. McCrodden' and the second with 'by [Signature] (Authorized representative of DENR).' \u2014 no signature images are rendered.",
       "page": 1,
       "call_source": "visual"
-    },
-    {
-      "check_id": "V2",
-      "description": "The vendor information form layout is converted from a visually distinct form layout to a three-column table structure that introduces redundant column headers and duplicates data",
-      "severity": "major",
-      "evidence": "PDF page 1 shows a two-column form layout (labels on left, values on right). The HTML converts this into a three-column table with 'Column 1', 'Column 2', 'Column 3' headers, where some data like Federal ID and FAX NUMBER appear duplicated across columns 2 and 3.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C3b",
-      "description": "The vendor information table on page 1 is restructured into a 3-column table in HTML, but the PDF shows a 2-column layout. The FEDERAL ID OR SOCIAL SECURITY NO. value '52-1413880' is duplicated across columns 2 and 3, and the FAX NUMBER '919-831-1295' is similarly duplicated. The TOLL FREE TEL. NO field is present but shown as its own column when it was part of the same row as TELEPHONE NUMBER in the PDF.",
-      "severity": "major",
-      "evidence": "PDF: Two-column layout with FEDERAL ID in one merged cell. HTML: <th>Column 1</th><th>Column 2</th><th>Column 3</th> with duplicated values like '52-1413880' appearing in both Column 2 and Column 3.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C2",
-      "description": "Exhibit 2 heading and substantial content from Exhibit 2 (Moffatt & Nichol scope of work) is missing as a clearly identified section. The Exhibit 2 content appears partially in the HTML without the 'Exhibit 2' heading. PDF pages 8-9 contain Exhibit 2 content including sections on scope, agricultural demand methodology, and deliverables, but the HTML lacks the 'Exhibit 2' heading.",
-      "severity": "critical",
-      "evidence": "PDF page 9 has content from Exhibit 2 including crop irrigation methodology, municipal/industrial withdrawal computation, deliverables section (2.0), schedule (3.0), and estimate of cost (4.0). HTML includes the content but never labels it as 'Exhibit 2' - only Exhibit 1 and Exhibit 3 have explicit headings.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C2",
-      "description": "Pages 2-3 of the PDF contain numbered instructions/conditions (items 1-13 approximately) under various headings. Some of these items from pages 2-6 in the PDF appear to be present but are reorganized and some instructional content from the beginning of page 3 (documentation for protest, item 14 MISCELLANEOUS) appears mixed with ITS Terms content.",
-      "severity": "critical",
-      "evidence": "PDF page 3 top has protest documentation text and item 14 MISCELLANEOUS. In the HTML, this content appears within the ITS Terms section rather than in a separate instructions section, though the text itself is present.",
-      "page": null,
-      "call_source": "content"
     },
     {
       "check_id": "C1",
-      "description": "The HTML states 'Offer accepted and contract awarded this 1 day of JANUARY, 2008' but the PDF handwriting appears to show 'JANUARY' (partially legible). The '2008' in the HTML appears to be read as '200[8]' from the PDF which shows '200' followed by a handwritten character that could be interpreted as '8'. This is a reasonable interpretation of handwritten text, not fabrication.",
+      "description": "Fabricated table column headers added to multiple tables that have no corresponding headers in the source PDF. Headers such as 'Left Information', 'Right Information', 'Column 1', 'Column 2', 'Column 3', 'Attribute', 'Details', 'Rate Type', 'Role', and 'Rate' are invented text.",
       "severity": "critical",
-      "evidence": "PDF: handwritten 'day of JANUARY, 200[handwritten]'. HTML: '1 day of JANUARY, 2008'. The PDF shows what appears to be a handwritten 'B' or '8' after '200'.",
+      "evidence": "PDF page 1 header area has a two-column form layout with no column headers. HTML renders it as a table with <th>Left Information</th> and <th>Right Information</th>. PDF vendor info section is a form with labeled fields but no overarching column headers; HTML adds <th>Column 1</th>, <th>Column 2</th>, <th>Column 3</th>. Exhibit 3 details in the PDF are presented as labeled line items, not tables with 'Attribute'/'Details' headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Vendor information form from PDF page 1 is restructured into a 3-column table, causing data cells to be duplicated across columns. The original form has a two-region layout (left fields and right fields), not a 3-column structure.",
+      "severity": "major",
+      "evidence": "PDF has 'FEDERAL ID OR SOCIAL SECURITY NO. 52-1413880' once in the right portion of the form. HTML duplicates it in both Column 2 and Column 3 of row 1. PDF has 'FAX NUMBER: 919-831-1295' once; HTML duplicates it in Column 2 and Column 3 of the TYPE OR PRINT NAME row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content duplication in the vendor info table: several field values that appear once in the PDF are duplicated across multiple columns in the HTML table.",
+      "severity": "major",
+      "evidence": "'FEDERAL ID OR SOCIAL SECURITY NO. 52-1413880' appears twice (in Column 2 and Column 3). 'FAX NUMBER: 919-831-1295' appears twice. 'Where will services be performed:' appears three times (once per column). All of these appear only once each in the PDF form.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Two handwritten signatures present in the PDF are not represented by any <img> tags in the HTML. These are substantive authenticating elements of the document.",
+      "severity": "minor",
+      "evidence": "PDF page 1 contains the authorized vendor signature (Brian J. McCrodden) and the DENR acceptance signature in the 'FOR DENR USE ONLY' section. The HTML has no <img> tags anywhere in the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "'AWARD CRITERIA' is a standalone underlined heading in the PDF but is demoted to inline underlined text within a paragraph in the HTML, losing its heading status.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows 'AWARD CRITERIA:' as a distinct underlined heading. HTML renders it as: '<p><u>AWARD CRITERIA:</u> Qualified bids will be evaluated...' \u2014 merged into the paragraph rather than as a heading element.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 4,
-  "major_count": 3,
-  "minor_count": 1,
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 533.93,
+    "duration_seconds": 373.3,
     "page_count": 10,
-    "visual_input_tokens": 28935,
-    "visual_output_tokens": 985,
-    "content_input_tokens": 29860,
-    "content_output_tokens": 1333,
-    "timestamp": "2026-04-17T20:04:21.669500",
+    "visual_input_tokens": 28740,
+    "visual_output_tokens": 4100,
+    "content_input_tokens": 30175,
+    "content_output_tokens": 13849,
+    "timestamp": "2026-04-18T02:41:00.200366",
     "auditor_version": "1.0.0"
   }
 }

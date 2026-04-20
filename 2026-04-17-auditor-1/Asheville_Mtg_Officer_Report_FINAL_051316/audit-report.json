@@ -1,6 +1,6 @@
 {
   "document_id": "Asheville_Mtg_Officer_Report_FINAL_051316",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -11,36 +11,28 @@
       "call_source": "structural"
     },
     {
-      "check_id": "V3",
-      "description": "The NC Energy, Mineral & Land Resources logo/graphic present in the PDF header is missing from the HTML conversion.",
-      "severity": "critical",
-      "evidence": "PDF page 1 shows the NC tree logo with 'Energy, Mineral & Land Resources / ENVIRONMENTAL QUALITY' branding in the top-left corner. The HTML rendering does not display this logo image.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V5",
-      "description": "Repeated header/footer content (PAT McCRORY Governor, DONALD R. VAN DER VAART Secretary, TRACY DAVIS Director, and MEMORANDUM heading) is inserted between page-equivalent sections in the HTML, disrupting reading flow.",
+      "description": "Header official names and titles are duplicated in the HTML rendering, appearing once in the letterhead header area at the top and again as plain body text below the footer/divider bar, before the MEMORANDUM heading.",
       "severity": "major",
-      "evidence": "In the PDF, the header information and MEMORANDUM title appear only on page 1. In the HTML, between pages 2 and 3 content, the full header block (PAT McCRORY / Governor / DONALD R. VAN DER VAART / Secretary / TRACY DAVIS / Director) and MEMORANDUM heading are repeated, creating a reading order disruption.",
-      "page": 2,
+      "evidence": "PDF page 1 shows 'PAT McCRORY Governor / DONALD R. VAN DER VAART Secretary / TRACY DAVIS Director' once in the upper-right letterhead area. HTML chunk 1 shows these same names/titles in the upper-right header AND again as left-aligned body text ('PAT McCRORY / Governor / DONALD R. VAN DER VAART / Secretary / TRACY DAVIS / Director') below the footer and colored divider bar, before the MEMORANDUM heading. A reader encounters this information twice.",
+      "page": 1,
       "call_source": "visual"
     }
   ],
-  "critical_count": 1,
+  "critical_count": 0,
   "major_count": 2,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 127.14,
+    "duration_seconds": 191.34,
     "page_count": 5,
-    "visual_input_tokens": 16819,
-    "visual_output_tokens": 635,
-    "content_input_tokens": 15378,
-    "content_output_tokens": 202,
-    "timestamp": "2026-04-17T19:58:04.649054",
+    "visual_input_tokens": 17046,
+    "visual_output_tokens": 7252,
+    "content_input_tokens": 15693,
+    "content_output_tokens": 1607,
+    "timestamp": "2026-04-18T02:43:43.422517",
     "auditor_version": "1.0.0"
   }
 }

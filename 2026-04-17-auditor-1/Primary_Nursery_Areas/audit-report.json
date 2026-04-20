@@ -17,22 +17,30 @@
       "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
       "page": null,
       "call_source": "accessibility"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title '15A NCAC 03R .0103 PRIMARY NURSERY AREAS' is clearly a top-level heading in the PDF (bold, distinct from body text) but is rendered as a plain paragraph with bold styling (<p><strong>) in the HTML rather than as a heading element (e.g., <h1> or <h2>).",
+      "severity": "major",
+      "evidence": "PDF: Bold header text '15A NCAC 03R .0103 PRIMARY NURSERY AREAS' at top of document. HTML: '<p><strong>15A NCAC 03R .0103 PRIMARY NURSERY AREAS</strong></p>' \u2014 demoted to body text.",
+      "page": null,
+      "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 1,
+  "major_count": 2,
   "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 1077.54,
+    "duration_seconds": 269.56,
     "page_count": 19,
-    "visual_input_tokens": 59749,
-    "visual_output_tokens": 1091,
-    "content_input_tokens": 88524,
-    "content_output_tokens": 318,
-    "timestamp": "2026-04-17T20:18:00.336288",
+    "visual_input_tokens": 60002,
+    "visual_output_tokens": 3400,
+    "content_input_tokens": 88839,
+    "content_output_tokens": 2962,
+    "timestamp": "2026-04-20T12:15:18.365711",
     "auditor_version": "1.0.0"
   }
 }

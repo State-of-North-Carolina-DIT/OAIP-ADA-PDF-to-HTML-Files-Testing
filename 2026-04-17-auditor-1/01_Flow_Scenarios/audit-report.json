@@ -12,83 +12,59 @@
     },
     {
       "check_id": "V3",
-      "description": "The Flow Components slide contains a combined hydrograph chart and cross-section illustration showing riverine flow levels. The image is present in the HTML but should be verified for completeness.",
+      "description": "Flow Regime Tied to Ecology flowchart diagram is missing from the HTML conversion",
       "severity": "critical",
-      "evidence": "The PDF slide 6 shows a detailed combined graphic with a hydrograph (Discharge vs time showing Overbank Flow, High Flow Pulses, Base Flow, Subsistence Flow) and a cross-section illustration showing Valley or Channel Forming Flow, Riparian Maintenance, Channel Maintenance, Habitat Flow, Flushing Flow, and Water Quality levels. The HTML rendering includes this image.",
-      "page": 6,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V2",
-      "description": "The Cheoah River base flow table in the PDF slide 8 is rendered as inline text in the slide image, while the HTML renders it as a proper HTML table. The data content matches, which is acceptable, but the slide image also shows the table as styled text rather than a formal table structure.",
-      "severity": "major",
-      "evidence": "PDF shows the table as formatted text within the slide. HTML converts it to a proper HTML table with borders and headers. Data values match: Tier A Jan=50, Feb=100, etc. and Tier B Jan=50, Feb=90, etc.",
-      "page": 8,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "The Flow Regime Tied to Ecology flowchart diagram from PDF slide 10 is missing as an image in the HTML. The content is converted to text/lists but the visual diagram itself is not present.",
-      "severity": "critical",
-      "evidence": "PDF shows a structured flowchart diagram with boxes and connecting arrows. HTML replaces the entire diagram with nested bullet lists, losing the visual flowchart representation.",
+      "evidence": "PDF page 10 contains a visual flowchart with boxes and connecting arrows showing 'Sound Ecological Environment' branching to Subsistence Flows, Base Flows, High Flow Pulses, and Overbank Flows, each with subordinate descriptions. The HTML renders this content only as nested bullet lists with no diagram image.",
       "page": 10,
       "call_source": "visual"
     },
     {
       "check_id": "V3",
-      "description": "The Flow Scenario Examples chart from PDF slide 11 showing Actual Flow, 80% of Previous Day, 80% of Weekly Average, and 20/30/40 MAF lines is reduced to just legend items in the HTML.",
+      "description": "Flow Scenario Examples line chart is missing from the HTML conversion",
       "severity": "critical",
-      "evidence": "PDF shows a detailed time-series chart with 4 colored lines (Actual Flow in blue, 80% of Previous Day in red, 80% of Weekly Average in green/olive, 20/30/40 MAF in purple) plotted from 1/1 to 12/1 with y-axis up to 800. HTML only lists the legend items as bullet points: Actual Flow, 80% of Previous Day, 80% of Weekly Average, 20/30/40 MAF, without the chart image.",
-      "page": 11,
+      "evidence": "PDF page 12 contains a detailed line chart titled 'Flow Scenario Examples' plotting four data series (Actual Flow, 80% of Previous Day, 80% of Weekly Average, 20/30/40 MAF) across dates 1/1 through 12/1 with y-axis up to 800. The HTML only lists the four legend items as bullet points with no chart image.",
+      "page": 12,
       "call_source": "visual"
     },
     {
-      "check_id": "C8",
-      "description": "In the Cheoah River High Flow table, the March Day 2 magnitude value '600' has a superscript '2' appended to it in the HTML as '6002' without proper separation, making it read as the number 6002 rather than '600' with footnote marker 2.",
+      "check_id": "V2",
+      "description": "Superscript footnote markers in the Cheoah River High Flow Events table are lost, creating data ambiguity",
       "severity": "major",
-      "evidence": "PDF shows: March Day 2 = 600 with superscript 2 (footnote reference). HTML shows: '<td>6002</td>' which reads as the number 6002.",
+      "evidence": "PDF shows 'Var\u00b9' (Var with superscript 1) and '600\u00b2' (600 with superscript 2) in the Magnitude columns, and '(cfs)\u00b3' in the header. HTML renders these as 'Var1', '6002', and '(cfs)3', merging the footnote markers into the data values. '6002' is particularly ambiguous as it could be misread as the number 6002 rather than 600 with footnote reference 2.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Flow Scenario Examples chart (PDF page 12) showing time-series flow data is missing from the HTML. Only the legend items (Actual Flow, 80% of Previous Day, 80% of Weekly Average, 20/30/40 MAF) are reproduced as a bullet list; the actual chart with plotted flow values over time (x-axis 1/1 through 12/1, y-axis 0-800) has no corresponding <img> tag.",
+      "severity": "minor",
+      "evidence": "PDF page 12 contains a line chart titled 'Flow Scenario Examples' with four plotted flow time series. HTML section has <h2>Flow Scenario Examples</h2> followed only by a <ul> with four legend items and no <img> tag.",
       "page": null,
       "call_source": "content"
     },
     {
       "check_id": "C8",
-      "description": "In the Cheoah River High Flow table, the February Day 2 magnitude value 'Var' has a superscript '1' appended as 'Var1' without proper separation from the footnote reference.",
+      "description": "In the Cheoah River High Flow Events table, superscript footnote references are rendered inline, making them appear as part of the data values. '600' with superscript '2' (footnote reference) becomes '6002' which reads as the number six thousand two. Similarly, 'Var' with superscript '1' becomes 'Var1'.",
       "severity": "major",
-      "evidence": "PDF shows: February Day 2 = Var with superscript 1 (footnote reference). HTML shows: '<td>Var1</td>'.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C8",
-      "description": "In the Cheoah River High Flow table header, the column header 'Magnitude (cfs)' has a superscript '3' that is rendered inline as 'Magnitude (cfs)3' in the HTML.",
-      "severity": "major",
-      "evidence": "PDF shows: 'Magnitude (cfs)' with superscript 3. HTML header shows: 'Magnitude (cfs)3 Day 1'.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C2",
-      "description": "The last slide (page 12) showing the 'Flow Scenario Examples' chart is reduced to only a heading and a plain bullet list of legend items. The actual chart visualization and its axes (showing values 0-800 on y-axis, dates 1/1 through 12/1 on x-axis) are not represented even as an image tag or figure.",
-      "severity": "critical",
-      "evidence": "PDF page 12 contains a detailed line chart titled 'Flow Scenario Examples' with four data series plotted over a full year. HTML only has: '<h2>Flow Scenario Examples</h2><ul><li>Actual Flow</li><li>80% of Previous Day</li><li>80% of Weekly Average</li><li>20/30/40 MAF</li></ul>' \u2014 no <figure> or <img> tag for this chart.",
+      "evidence": "PDF March row Day 2 column shows '600' with a superscript '2' footnote marker; HTML renders it as '6002'. PDF February Day 2 column shows 'Var' with superscript '1'; HTML renders it as 'Var1'. These inline renderings change the apparent numeric values.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 4,
-  "major_count": 5,
-  "minor_count": 0,
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 262.76,
+    "duration_seconds": 163.54,
     "page_count": 12,
-    "visual_input_tokens": 38543,
-    "visual_output_tokens": 1346,
-    "content_input_tokens": 26939,
-    "content_output_tokens": 813,
-    "timestamp": "2026-04-17T19:59:00.787523",
+    "visual_input_tokens": 38796,
+    "visual_output_tokens": 4518,
+    "content_input_tokens": 27254,
+    "content_output_tokens": 3416,
+    "timestamp": "2026-04-18T02:34:46.700902",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,0 +1,46 @@
+{
+  "document_id": "Lake-Tillery-Hydrilla-Management",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'history of hydrilla at lake tillery' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The AWCP Website link on the Additional Resources page has descriptive hyperlink text in the PDF but is rendered as plain unlinked text in the HTML, losing the href.",
+      "severity": "critical",
+      "evidence": "PDF page 11 lists 'AWCP Website (Aquatic Weed Control Program | NC DEQ)' as a hyperlink. HTML renders it as: '<li>AWCP Website (Aquatic Weed Control Program | NC DEQ)</li>' with no <a href> wrapping the descriptive text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(12p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 242.91,
+    "page_count": 12,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 28611,
+    "content_output_tokens": 2802,
+    "timestamp": "2026-04-20T12:15:00.103736",
+    "auditor_version": "1.0.0"
+  }
+}

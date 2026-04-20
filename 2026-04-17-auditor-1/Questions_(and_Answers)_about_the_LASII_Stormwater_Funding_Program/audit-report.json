@@ -12,27 +12,35 @@
     },
     {
       "check_id": "C4a",
-      "description": "PDF contains hyperlinks with descriptive text ('Division's website', 'training video', '(available here)', 'US Environmental Protection Agency', 'Levee Terms & Definitions (army.mil)', 'Division's website' again) that appear in the HTML as plain text without href attributes.",
+      "description": "Multiple hyperlinks with descriptive text from the PDF are rendered as plain text in the HTML without href attributes. At least five linked text spans lost their URLs.",
       "severity": "critical",
-      "evidence": "In the PDF, 'Division's website', 'training video', '(available here)', 'US Environmental Protection Agency', and 'Division's website' (Q19 answer) are all rendered as hyperlinks with underlying URLs. In the HTML, these appear as plain text without <a href> tags. For example: '<p>All materials needed for applying for funds through the LASII Stormwater Program are posted on the Division's website.</p>' has no link.",
+      "evidence": "PDF has hyperlinked text for: \"Division's website\" (Background section, page 1), \"training video\" (Background section, page 1), \"(available here)\" (Q3 answer, page 2), \"US Environmental Protection Agency\" (Q7 answer, page 2), and \"Division's website\" (Q19 answer, page 5). All appear as plain text in the HTML with no <a href> wrapping.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4a",
+      "description": "Footnote hyperlink for levee definition lost its href in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 4 footnote has hyperlinked text \"Levee Terms & Definitions (army.mil)\" linking to an army.mil URL. HTML footer renders it as plain text: '<sup>1</sup> Levee Terms &amp; Definitions (army.mil)' with no <a href>.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 1,
+  "critical_count": 2,
   "major_count": 1,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 157.39,
+    "duration_seconds": 117.89,
     "page_count": 5,
-    "visual_input_tokens": 16733,
-    "visual_output_tokens": 313,
-    "content_input_tokens": 17388,
-    "content_output_tokens": 600,
-    "timestamp": "2026-04-17T20:02:16.855720",
+    "visual_input_tokens": 16986,
+    "visual_output_tokens": 2138,
+    "content_input_tokens": 17703,
+    "content_output_tokens": 1558,
+    "timestamp": "2026-04-20T12:12:53.910128",
     "auditor_version": "1.0.0"
   }
 }

@@ -11,28 +11,28 @@
       "call_source": "structural"
     },
     {
-      "check_id": "C8",
-      "description": "The bold emphasis on 'Everyone' in the Commission Members chat warning paragraph is missing in the HTML.",
-      "severity": "major",
-      "evidence": "PDF: 'make sure you use the default option in the chat box to chat with **Everyone**' (bold). HTML: 'chat with Everyone' (no bold/emphasis).",
-      "page": null,
-      "call_source": "content"
+      "check_id": "V4",
+      "description": "The word 'Everyone' loses its bold emphasis in the HTML conversion. In the PDF, 'Everyone' is clearly bolded to highlight the specific chat option Commission Members must select to comply with open meetings law.",
+      "severity": "minor",
+      "evidence": "PDF page 2: '...chat box to chat with **Everyone**, which will include the public...' \u2014 'Everyone' is bold. HTML: 'with Everyone, which will include the public...' \u2014 'Everyone' appears in regular weight, indistinguishable from surrounding text.",
+      "page": 2,
+      "call_source": "visual"
     }
   ],
   "critical_count": 0,
-  "major_count": 2,
-  "minor_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 29.66,
+    "duration_seconds": 72.2,
     "page_count": 2,
-    "visual_input_tokens": 7583,
-    "visual_output_tokens": 207,
-    "content_input_tokens": 7512,
-    "content_output_tokens": 291,
-    "timestamp": "2026-04-17T20:02:46.517818",
+    "visual_input_tokens": 7836,
+    "visual_output_tokens": 1774,
+    "content_input_tokens": 7827,
+    "content_output_tokens": 1143,
+    "timestamp": "2026-04-20T12:14:44.062827",
     "auditor_version": "1.0.0"
   }
 }

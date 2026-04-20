@@ -1,0 +1,62 @@
+{
+  "document_id": "2020-waccamaw-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V4",
+      "description": "Section headings in PDF are underlined (Introduction, Background, Results, Summary) but in HTML they are rendered as larger bold headings without underline decoration.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Introduction', 'Background', etc. centered and underlined. HTML shows them as left-aligned bold headings without underline.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Table captions rendered as h3 headings instead of proper figure/table captions, creating a broken heading hierarchy. 'Table 1' and 'Table 2' and 'Diagram 1' are presented as h3 elements under h2 sections, but these are captions, not subsections.",
+      "severity": "major",
+      "evidence": "HTML uses <h3>Table 1. Longitude and Latitude...</h3>, <h3>Diagram 1. Biobase website...</h3>, and <h3>Table 2. Secchi Disk locations...</h3>. In the PDF these are table/diagram captions, not section headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements - the HTML has both an outer <main> and an inner <main>, which is structurally incorrect but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main>...<header>...</header><main>...content...</main></main></body>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Map 1 figcaption duplicates: The figcaption text 'Map 1. Area of lake showing treatment area.' appears as both a bold label in the PDF page and is correctly rendered, but the figure element has a nested <figure> inside another <figure> which is unusual but not duplicated content.",
+      "severity": "minor",
+      "evidence": "HTML: <figure><figure><img...></figure><figcaption>Map 1...</figcaption></figure>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 331.21,
+    "page_count": 10,
+    "visual_input_tokens": 28399,
+    "visual_output_tokens": 659,
+    "content_input_tokens": 23556,
+    "content_output_tokens": 652,
+    "timestamp": "2026-04-16T00:51:54.142065",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "document_id": "01_2018_Agenda_Hydrologics_Mtg_2_002",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 37. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V2",
+      "description": "The PDF agenda is formatted as a dotted-leader list (not a table), but the HTML renders it as a formal table with borders, rows, and columns. While the data content is preserved, the structural representation has changed from a simple list/agenda format to a bordered table.",
+      "severity": "major",
+      "evidence": "PDF shows time slots and topics connected by dot leaders in a flowing text format. HTML shows the same data organized in a bordered table with distinct Time, Topic, and Presenter columns.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds column headers 'Time', 'Topic', and 'Presenter' to the agenda table. These headers do not appear in the source PDF, which presents the agenda as a simple list format without explicit column headers.",
+      "severity": "minor",
+      "evidence": "HTML contains <th>Time</th><th>Topic</th><th>Presenter</th> \u2014 these labels are not present in the PDF. However, they are reasonable structural inferences from the content layout.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The PDF presents the agenda as a dotted-leader list rather than a formal table. The HTML converts this into a structured table with explicit headers. While the data content is preserved accurately, the format is changed.",
+      "severity": "minor",
+      "evidence": "PDF uses dotted leaders (e.g., 'Introductions, opening remarks ........ Tom Fransen, DWR') while HTML uses a 3-column table structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has nested <main> elements. 'Stakeholder Meeting #2' is rendered as h2, which is reasonable, but the heading hierarchy could be seen as slightly off since in the PDF both lines form the title together.",
+      "severity": "minor",
+      "evidence": "PDF title block: 'New and Watauga Hydrologic Model / Stakeholder Meeting #2' \u2014 HTML splits into h1 and h2.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 35.18,
+    "page_count": 1,
+    "visual_input_tokens": 4040,
+    "visual_output_tokens": 332,
+    "content_input_tokens": 4448,
+    "content_output_tokens": 580,
+    "timestamp": "2026-04-16T00:45:42.094152",
+    "auditor_version": "1.0.0"
+  }
+}

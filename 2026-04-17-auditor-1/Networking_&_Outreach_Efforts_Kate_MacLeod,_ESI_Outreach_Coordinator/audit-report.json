@@ -1,0 +1,30 @@
+{
+  "document_id": "Networking_&_Outreach_Efforts_Kate_MacLeod,_ESI_Outreach_Coordinator",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(21p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 277.66,
+    "page_count": 21,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 39947,
+    "content_output_tokens": 2915,
+    "timestamp": "2026-04-20T12:14:59.714548",
+    "auditor_version": "1.0.0"
+  }
+}

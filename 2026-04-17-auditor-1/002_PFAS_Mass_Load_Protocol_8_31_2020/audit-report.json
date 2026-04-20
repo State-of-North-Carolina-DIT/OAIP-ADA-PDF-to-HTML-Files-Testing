@@ -20,43 +20,43 @@
     },
     {
       "check_id": "V4",
-      "description": "Section headings in the PDF have underlined text (e.g., '2.1 Outfall 002 Sample Types', '2.2 River Intake Samples', etc.) which is removed in the HTML. However, underline removal is acceptable per the rules. The headings still have bold formatting preserved.",
+      "description": "Italic emphasis removed from quoted Consent Order regulatory text in Section 2.3",
       "severity": "minor",
-      "evidence": "This is not actually a finding - underline removal is acceptable. Withdrawing.",
-      "page": 7,
+      "evidence": "PDF pages 9-10 show the Consent Order quoted text (starting with 'c. Outfall 002 Trendline: i. Starting no later than August 31, 2020, Chemours shall...') rendered entirely in italics to distinguish it from the document's own narrative. In the HTML (chunk 10), this same quoted text is rendered in regular (non-italic) style, losing the visual distinction between regulatory quoted language and the document's own prose.",
+      "page": 9,
       "call_source": "visual"
     },
     {
-      "check_id": "C5",
-      "description": "Section headings for major numbered sections use inconsistent heading levels. Sections 1 and 2 use <h1> tags, but their subsections (2.1, 2.2, etc.) use <h2>. The LIST OF TABLES and LIST OF FIGURES headings under the TOC use <h3>. Meanwhile, the LIST OF ABBREVIATIONS uses <h2>. The TABLES and FIGURES divider pages use <h1>. This creates a somewhat inconsistent hierarchy, though the main issue is that Section 2 top-level heading uses <h1> while its subsections correctly use <h2>, which is reasonable. However, Section 3 top-level heading uses <h1> but its subsections also use <h2>, which is consistent. The real issue is that the 'LIST OF TABLES' and 'LIST OF FIGURES' are demoted to <h3> while in the PDF they appear as visually similar-level headings to 'LIST OF ABBREVIATIONS' which is <h2>.",
+      "check_id": "C8",
+      "description": "In Equations 2 and 3, the PDF distinguishes between uppercase C (total PFAS concentration) and lowercase c (individual compound concentration). The HTML converts all instances to uppercase C, losing this mathematical distinction.",
       "severity": "major",
-      "evidence": "PDF: LIST OF TABLES, LIST OF FIGURES, and LIST OF ABBREVIATIONS are all similar-level section headings. HTML: LIST OF TABLES and LIST OF FIGURES are <h3>, while LIST OF ABBREVIATIONS is <h2>.",
+      "evidence": "PDF Eq 2 second line: '= \u2211 c_OF002,j,i \u00d7 Q_OF002,j \u00d7 F' (lowercase c). HTML: '= \u2211 C_OF002,j,i \u00d7 Q_OF002,j \u00d7 F' (uppercase C). Same issue in variable definitions: PDF 'c_OF002,j,i = is the measured or estimated concentration of the ith PFAS compound' vs HTML 'C_OF002,j,i = is the measured or estimated concentration of the ith PFAS compound'. The same discrepancy occurs in Equation 3 with c_intake,k,i changed to C_intake,k,i.",
       "page": null,
       "call_source": "content"
     },
     {
-      "check_id": "C7",
-      "description": "The Geosyntec consultants logo image appears multiple times in the HTML body mid-content (before TABLES section and before FIGURES section), replicating the PDF page headers/logos. While consolidation would be expected, these appear mid-content and are acceptable as section dividers. However, the cover page content with the professional seal and Geosyntec logo information is essentially duplicated - appearing both in the cover page div and being part of the continuous document flow.",
-      "severity": "major",
-      "evidence": "Multiple <figure><img alt='Geosyntec consultants logo'> tags appear mid-content before TABLES and FIGURES sections.",
+      "check_id": "C6",
+      "description": "Figure 3 (Flowchart for Determining the Concentration for Loading at the River Water Intake) from PDF page 17 is missing its own <img> tag in the HTML. Only a text description of the flowchart is present.",
+      "severity": "minor",
+      "evidence": "PDF page 17 contains a separate flowchart graphic for Figure 3. The HTML has an <img> tag only for Figure 2 (alt='Flowchart for Determining the Concentration for Loading at Outfall 002') but no corresponding <img> tag for Figure 3. The Figure 3 flowchart logic is rendered as plain text only: 'Was a 24-hr composite sample collected? YES \u2192 Use 24-hr composite sample concentration... NO \u2193 Use 60-day rolling average dry concentration'.",
       "page": null,
       "call_source": "content"
     }
   ],
   "critical_count": 0,
-  "major_count": 4,
-  "minor_count": 1,
+  "major_count": 3,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 487.03,
+    "duration_seconds": 247.36,
     "page_count": 17,
-    "visual_input_tokens": 53435,
-    "visual_output_tokens": 1040,
-    "content_input_tokens": 44698,
-    "content_output_tokens": 741,
-    "timestamp": "2026-04-17T20:02:40.416170",
+    "visual_input_tokens": 53493,
+    "visual_output_tokens": 5937,
+    "content_input_tokens": 45013,
+    "content_output_tokens": 6830,
+    "timestamp": "2026-04-18T02:28:21.973899",
     "auditor_version": "1.0.0"
   }
 }

@@ -12,51 +12,35 @@
     },
     {
       "check_id": "V3",
-      "description": "The hierarchical data relationship diagram (flowchart) showing the relationships between Record Types 1, 7, 2, 3, 4, 5, and 9 is missing from the HTML conversion.",
+      "description": "Appendix B flowchart diagram showing hierarchical relationships between record types is missing from the HTML rendering.",
       "severity": "critical",
-      "evidence": "PDF page 5 contains a flowchart/diagram showing Environmental Data (Record Type 1) and Gear Data (Record Type 7) pointing to Replicate Data (Record Type 2), which points to Species Data (Record Type 3), which branches to Individual Data (Record Type 4) and Tag Recapture Data (Record Type 9), with Individual Data pointing to Age Data (Record Type 5). The HTML conversion has no such diagram.",
-      "page": 5,
+      "evidence": "PDF shows a visual flowchart diagram with labeled boxes (Environmental Data Record Type 1, Gear Data Record Type 7, Replicate Data Record Type 2, Species Data Record Type 3, Individual Data Record Type 4, Tag Recapture Data Record Type 9, Age Data Record Type 5) connected by lines illustrating the data hierarchy. The HTML replaces this diagram with only a bulleted text list of the record type labels and the textual description, losing the visual representation of parent-child relationships and data flow.",
+      "page": 4,
       "call_source": "visual"
     },
     {
-      "check_id": "C2",
-      "description": "The hierarchical diagram from Appendix B (showing the relationships between Record Types as a flowchart/organizational chart) is missing from the HTML. The HTML replaces it with a plain bulleted list.",
-      "severity": "critical",
-      "evidence": "PDF page 4 contains a visual diagram showing Environmental Data Record Type 1 connecting to Gear Data Record Type 7, then flowing down to Replicate Data Record Type 2, Species Data Record Type 3, Individual Data Record Type 4 (with Tag Recapture Data Record Type 9 as extension), and Age Data Record Type 5. HTML converts this to a flat <ul> list losing the hierarchical relationship visualization.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C8",
-      "description": "In Data Specification item 3, the data dictionary description includes 'field length' in the PDF text but the Appendix C data dictionary example table does not have a 'Field Length' column - it shows 'Column #' instead. This is faithful to the PDF. However, a minor text difference: the PDF says '.cvs' (likely a typo for .csv) and the HTML reproduces '.cvs' - this is faithful.",
-      "severity": "major",
-      "evidence": "Both PDF and HTML: 'delimited text (.txt or .cvs) file'",
-      "page": null,
-      "call_source": "content"
-    },
-    {
       "check_id": "C6",
-      "description": "The hierarchical diagram/flowchart image from Appendix B is not present as an image in the HTML at all - it was converted to a text list. No alt text issue per se, but the visual content is lost.",
+      "description": "The hierarchical relationship diagram from Appendix B (showing boxes with connecting lines for Environmental Data \u2192 Replicate Data \u2192 Species Data \u2192 Individual Data, plus extensions for Gear Data, Tag Recapture Data, and Age Data) is missing from the HTML. It is replaced with a flat bullet list that loses the parent-child relationship information conveyed by the diagram's connecting lines and layout.",
       "severity": "minor",
-      "evidence": "PDF page 4 has a visual flowchart diagram. HTML has no <img> tag for it.",
+      "evidence": "PDF page 4 contains a box-and-line diagram showing Record Types 1\u21922\u21923\u21924 hierarchy with extensions (Types 7/8, 5, 9). The HTML replaces this with a flat <ul> list: '<li>Environmental Data Record Type 1</li><li>Gear Data Record Type 7</li>...' which does not convey the hierarchical relationships.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 2,
-  "major_count": 2,
+  "critical_count": 1,
+  "major_count": 1,
   "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 125.33,
+    "duration_seconds": 554.58,
     "page_count": 10,
-    "visual_input_tokens": 31797,
-    "visual_output_tokens": 752,
-    "content_input_tokens": 31483,
-    "content_output_tokens": 768,
-    "timestamp": "2026-04-17T19:56:33.929524",
+    "visual_input_tokens": 32050,
+    "visual_output_tokens": 25025,
+    "content_input_tokens": 31798,
+    "content_output_tokens": 3449,
+    "timestamp": "2026-04-18T02:32:02.972789",
     "auditor_version": "1.0.0"
   }
 }

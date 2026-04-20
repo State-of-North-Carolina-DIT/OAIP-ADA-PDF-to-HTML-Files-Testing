@@ -1,6 +1,6 @@
 {
   "document_id": "01_NCDAQ_Final_RH_SIP_Transmittal_Letter_040422.pdf",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -19,52 +19,28 @@
       "call_source": "accessibility"
     },
     {
-      "check_id": "V3",
-      "description": "The North Carolina state seal image at the top of page 1 is missing in the HTML conversion",
-      "severity": "critical",
-      "evidence": "PDF page 1 shows the Great Seal of North Carolina at the top center of the letterhead. The HTML rendering does not display this seal image.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "The DEQ logo at the bottom of page 1 is missing in the HTML conversion",
-      "severity": "critical",
-      "evidence": "PDF page 1 shows the North Carolina DEQ logo at the bottom of the page near the footer. The HTML rendering does not display this logo.",
-      "page": 1,
-      "call_source": "visual"
-    },
-    {
       "check_id": "V5",
-      "description": "Reading order disruption: header/footer content from the letterhead is repeated between page-equivalent sections in the HTML",
+      "description": "The HTML document duplicates the entire page-1 letter content. After the first complete rendering of the letter (state seal, header, body text, bullet list, and footer), a second rendering of the full letterhead block (ROY COOPER / ELIZABETH S. BISER / MICHAEL ABRACZINSKAS), date, addressee, subject line, salutation, body paragraphs, and bullet list appears again before the page-2 continuation. A reader scrolling through the HTML encounters the same information twice.",
       "severity": "major",
-      "evidence": "The HTML inserts the full letterhead block (ROY COOPER Governor, ELIZABETH S. BISER Secretary, MICHAEL ABRACZINSKAS Director, NORTH CAROLINA Environmental Quality, date, recipient address, subject line) between what corresponds to page 1 and page 2 content in the PDF, creating a repeated block that disrupts reading flow.",
-      "page": 2,
+      "evidence": "PDF: The letter header, 'Dear Mr. Blackman:', body paragraphs, and 8-item bullet list appear once on page 1. HTML: These elements appear first in the initial formatted rendering, then a DEQ footer and contact block intervene, after which 'ROY COOPER Governor / ELIZABETH S. BISER Secretary / MICHAEL ABRACZINSKAS Director', 'April 4, 2022', the full addressee block, subject line, 'Dear Mr. Blackman:', body paragraphs, and the same 8-item bullet list all appear a second time before the page-2 content ('In Section 7.8.3\u2026') continues.",
+      "page": 1,
       "call_source": "visual"
-    },
-    {
-      "check_id": "C8",
-      "description": "In the PDF page 1, the CFR reference reads '40 CFR 51.308(\u00b1)' (likely an OCR artifact for '(f)'). The HTML corrects this to '40 CFR 51.308(f)'. This is an acceptable OCR correction, not a finding.",
-      "severity": "major",
-      "evidence": "PDF: '40 CFR 51.308(\u00b1)'; HTML: '40 CFR 51.308(f)' - this is an improvement.",
-      "page": null,
-      "call_source": "content"
     }
   ],
-  "critical_count": 2,
-  "major_count": 3,
+  "critical_count": 0,
+  "major_count": 2,
   "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 293.26,
+    "duration_seconds": 360.01,
     "page_count": 4,
-    "visual_input_tokens": 12419,
-    "visual_output_tokens": 482,
-    "content_input_tokens": 13407,
-    "content_output_tokens": 551,
-    "timestamp": "2026-04-17T20:00:11.648476",
+    "visual_input_tokens": 12672,
+    "visual_output_tokens": 14228,
+    "content_input_tokens": 13722,
+    "content_output_tokens": 3285,
+    "timestamp": "2026-04-18T02:39:56.744231",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,6 +1,6 @@
 {
   "document_id": "01_Agenda_Timeline",
-  "verdict": "fail",
+  "verdict": "needs_review",
   "findings": [
     {
       "check_id": "S1",
@@ -17,38 +17,22 @@
       "evidence": "Fix any of the following:\n  The null landmark is contained in another landmark. [<aside>]",
       "page": null,
       "call_source": "accessibility"
-    },
-    {
-      "check_id": "V3",
-      "description": "The Coastal Habitat Protection Plan Timeline slide images (wildlife/habitat photos on the right side of the slide) are displayed differently in HTML - they appear as separate stacked images in a column rather than as a vertical strip alongside the table as in the PDF.",
-      "severity": "critical",
-      "evidence": "PDF page 3 shows wildlife photos as a narrow vertical strip to the right of the timeline table. HTML renders them as separate, larger images stacked above the table, disconnected from their original layout context.",
-      "page": 3,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "The Coastal Habitat Protection Plan Timeline slide layout is significantly altered - the PDF shows the table and images side by side, but the HTML separates the images from the table, placing images above and the table below.",
-      "severity": "major",
-      "evidence": "PDF page 3 has a two-section layout with the timeline table on the left and wildlife photos on the right. HTML collapses this into a single-column layout with images stacked above the table.",
-      "page": 3,
-      "call_source": "visual"
     }
   ],
-  "critical_count": 1,
-  "major_count": 2,
+  "critical_count": 0,
+  "major_count": 1,
   "minor_count": 1,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 127.09,
+    "duration_seconds": 138.52,
     "page_count": 3,
-    "visual_input_tokens": 10601,
-    "visual_output_tokens": 536,
-    "content_input_tokens": 9698,
-    "content_output_tokens": 575,
-    "timestamp": "2026-04-17T19:56:41.372891",
+    "visual_input_tokens": 10854,
+    "visual_output_tokens": 3512,
+    "content_input_tokens": 10013,
+    "content_output_tokens": 2615,
+    "timestamp": "2026-04-18T02:30:19.001164",
     "auditor_version": "1.0.0"
   }
 }

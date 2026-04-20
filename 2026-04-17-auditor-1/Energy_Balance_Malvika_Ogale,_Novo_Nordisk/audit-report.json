@@ -11,100 +11,36 @@
       "call_source": "structural"
     },
     {
-      "check_id": "V1",
-      "description": "Slide 10 (Mapping Strategy) has a hierarchical diagram showing Site Usage broken into Building Usage blocks, each with Process Usage and Other Usage subdivided into M (Measured) and U (Unmeasured). In the HTML, this is rendered as nested bullet lists, losing the visual structure of the grid/tree diagram.",
-      "severity": "major",
-      "evidence": "PDF shows a structured grid with 'Site Usage' at top, three 'Building Usage' columns each containing 'Process Usage' and 'Other Usage' with M/U boxes. HTML renders this as a flat nested bullet list repeated three times.",
+      "check_id": "V3",
+      "description": "The Mapping Strategy hierarchical diagram (showing boxes for Site Usage, Building Usage, Process Usage, Other Usage, M/U with directional arrows from External and Internal Data sources) is not preserved as a visual element. It is decomposed into nested text bullet lists, losing the diagram and its visual flow relationships.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a structured box diagram with dark blue boxes arranged hierarchically (Site Usage \u2192 Building Usage \u2192 Process Usage / Other Usage \u2192 M / U) and two arrows indicating External Data flows down and Internal Data flows up into the structure. The HTML renders this only as nested bullet lists (Building Usage > Process Usage > M, U; Other Usage > M, U repeated three times) with no diagram image, unlike other complex diagrams in the presentation (pages 12\u201313) which are preserved as images.",
       "page": 10,
       "call_source": "visual"
     },
     {
-      "check_id": "V1",
-      "description": "Slide 4 (Product Supply in NC & Virginia) has a mosaic/grid layout of achievement tiles. The HTML renders these as a single image followed by a flat list of text items, losing the visual grid structure.",
-      "severity": "major",
-      "evidence": "PDF shows a structured mosaic grid with tiles for '31 years', '$10B', '60+', 'LEED Gold', '$40M+', etc. HTML shows the mosaic as an image but then repeats all the tile content as a flat bullet list below.",
-      "page": 4,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Slide 12 (Natural Gas and Steam Example) contains a detailed process flow diagram. While the image is present in the HTML, the resolution/legibility is significantly reduced, and the diagram's detail (labels, connections, flow paths) becomes very difficult to read.",
-      "severity": "critical",
-      "evidence": "PDF shows a large, detailed steam/condensate flow diagram spanning the full slide with readable labels. HTML shows the same diagram but at reduced size making internal labels illegible.",
-      "page": 12,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V3",
-      "description": "Slide 13 (Water Example - Process Flows) contains a detailed Sankey-style water flow diagram. While present in the HTML, it appears at reduced size with reduced legibility.",
-      "severity": "critical",
-      "evidence": "PDF shows a full-width detailed water flow diagram with color-coded streams and readable numeric values. HTML shows the same diagram but smaller with reduced readability of internal labels and values.",
-      "page": 13,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Slide 17 (Energy Savings Project Examples) has a two-column layout with 'Inactivation Skid Optimization' on the left and 'Distillation Optimization' on the right. The HTML collapses this into a single column.",
-      "severity": "major",
-      "evidence": "PDF shows two distinct project examples side by side. HTML shows them stacked vertically as separate sections.",
-      "page": 17,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "V1",
-      "description": "Slide 18 (Water Savings Project Examples) has a two-column layout with 'Filter backwash reduction' on the left and 'Conductivity Setpoint Changes' on the right. The HTML collapses this into a single column.",
-      "severity": "major",
-      "evidence": "PDF shows two water savings examples side by side. HTML shows them stacked vertically.",
-      "page": 18,
-      "call_source": "visual"
-    },
-    {
-      "check_id": "C4b",
-      "description": "The URL 'https://companiesmarketcap.com/pharmaceuticals/largest-pharmaceutical-companies-by-market-cap/' is broken into multiple fragmented <a> tags in the HTML, which is unusual but technically linked. However, the fragments create broken links with partial URL paths that would not resolve correctly.",
-      "severity": "major",
-      "evidence": "HTML has: <a href=\"...largest\">1. https://companiesmarketcap.com/pharmaceuticals/largest</a><a href=\"...\">-pharmaceutical</a><a href=\"...\">-companies</a><a href=\"...\">-by</a><a href=\"...\">-market</a><a href=\"...\">-cap/</a> \u2014 this fragments one URL into six separate anchor tags.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C7",
-      "description": "The 'Novo Nordisk at a glance' section content from PDF page 2 appears to have its key statistics duplicated \u2014 the statistics appear both as extracted text items and again within the image grid description. This reflects the PDF's dual presentation (text + infographic) but the HTML lists items like 'Supplier of nearly 50%', 'Net sales 290.4 billion DKK', etc. twice in different forms within the same section.",
-      "severity": "major",
-      "evidence": "The section first lists stats like 'Supplier of nearly 50% of the world's insulin', 'Net sales 290.4 billion DKK', etc. as standalone paragraphs, then the same content appears in the body text block above (e.g., '170 Affiliates in countries' vs 'Affiliates in 80 countries'). This mirrors the PDF slide layout where text and infographic co-exist.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
       "check_id": "C8",
-      "description": "The PDF states 'Affiliates in 170 countries' on page 2 (in the body text paragraph), but the HTML converts this to 'Affiliates in 80 countries'. The PDF itself has conflicting numbers (170 in body text vs 80 in the infographic). The HTML chose 80 but dropped the 170 reference entirely.",
+      "description": "The 'Note on clean steam setup' paragraph at the bottom of the Natural Gas and Steam diagram (PDF page 12) is missing from the HTML, even though other text elements from the same diagram (legend items, equipment labels, general notes) were extracted as HTML text.",
       "severity": "major",
-      "evidence": "PDF page 2 body text: '170 Affiliates in countries' and separately '80 countries'. HTML only shows: 'Affiliates in 80 countries'. The number 170 appears in the PDF as a distinct statistic that is lost.",
-      "page": null,
-      "call_source": "content"
-    },
-    {
-      "check_id": "C8",
-      "description": "PDF page 2 states 'Investing more than 52 billion DKK in R&D' and '12' (number of strategic production sites) \u2014 the number 12 for strategic production sites is not reflected in the HTML.",
-      "severity": "major",
-      "evidence": "PDF page 2 shows '12' alongside 'Strategic production sites'. HTML only mentions 'Strategic production sites in Belgium, Brazil, China, Denmark, France, Italy and US' without the count '12'.",
+      "evidence": "PDF page 12 includes: 'Note on clean steam setup: For each full generator's 125A and 125B can supply both of parallel M streams. Currently, each still generator is set to low pressure as a backup to high pressure generators on C5 supply\u2026The generators set to low pressure varies depending on the day.' This paragraph does not appear anywhere in the HTML.",
       "page": null,
       "call_source": "content"
     }
   ],
-  "critical_count": 2,
-  "major_count": 9,
+  "critical_count": 1,
+  "major_count": 2,
   "minor_count": 0,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 999.53,
+    "duration_seconds": 511.64,
     "page_count": 19,
-    "visual_input_tokens": 60961,
-    "visual_output_tokens": 1643,
-    "content_input_tokens": 42482,
-    "content_output_tokens": 1098,
-    "timestamp": "2026-04-17T20:16:29.499195",
+    "visual_input_tokens": 61214,
+    "visual_output_tokens": 8979,
+    "content_input_tokens": 42797,
+    "content_output_tokens": 14470,
+    "timestamp": "2026-04-20T02:52:34.453763",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,0 +1,70 @@
+{
+  "document_id": "01_NRHM_AgIrrig_Data_MoffattNichol_Draft_Report_050709",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Cover page logos (NCDENR and Moffatt & Nichol) are missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 1 (cover) displays the NCDENR agency logo at top-left and the Moffatt & Nichol logo at bottom-center. The HTML cover area contains only text ('NEUSE RIVER BASIN MODELING - DATA COLLECTION DRAFT REPORT', 'Prepared for Hydrologics Inc.', '5/7/2009', 'MOFFATT & NICHOL') with no logo images.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Referenced Tables section contains embedded images of original PDF table pages alongside HTML-rendered tables, causing content duplication and disrupted reading order.",
+      "severity": "major",
+      "evidence": "In the HTML, Table 1 (Summary of Neuse River Basin) appears first as an embedded image of the PDF page (showing the NCDENR header, table title, and data), then immediately after as an HTML-rendered table with the same data. This duplication pattern repeats for subsequent tables (Tables 3, 4, 5), with embedded PDF page images interspersed among the HTML tables, creating a confusing reading sequence where a reader encounters the same data twice.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Table 4 column headers \"PWSS (ID)\" and \"PWSS (Name)\" are fabricated. The PDF has a single column header \"PWSS\" covering both the number and name fields; the clarifying sub-labels \"(ID)\" and \"(Name)\" do not appear anywhere in the source PDF.",
+      "severity": "critical",
+      "evidence": "PDF Table 4 header row: \"PWSS | Plants | SW Sources | Historical Assumptions | Data Available | Projected Withdrawal Period\". HTML: \"PWSS (ID) | PWSS (Name) | Plants | SW Sources | Historical Assumptions | Data Available | Projected Withdrawal Period\"",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The NCDA Water Use Studies URL is broken across a link and plain text. Only the first part is linked; the remainder appears as unlinked text.",
+      "severity": "major",
+      "evidence": "PDF reference: \"<http://www.agr.state.nc.us/stats/release/WU2007 Central.pdf>\". HTML: <a href=\"http://www.agr.state.nc.us/stats/release/WU2007\">http://www.agr.state.nc.us/stats/release/WU2007</a> Central.pdf> \u2014 the \" Central.pdf\" portion is plain text outside the anchor tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The \"Referenced Figures\" section heading present in the PDF is missing from the HTML. The figures themselves are present, but the heading that separates them from the Referenced Tables section is absent.",
+      "severity": "major",
+      "evidence": "PDF page 20 (document page 17) shows a bold heading \"Referenced Figures\" before Figure 1. The HTML has <h2>Referenced Tables</h2> but no corresponding <h2>Referenced Figures</h2> \u2014 the figure images follow directly after Table 5 with no section heading.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 566.58,
+    "page_count": 24,
+    "visual_input_tokens": 75540,
+    "visual_output_tokens": 18690,
+    "content_input_tokens": 78054,
+    "content_output_tokens": 11721,
+    "timestamp": "2026-04-18T02:47:15.532537",
+    "auditor_version": "1.0.0"
+  }
+}

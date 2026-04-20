@@ -20,27 +20,51 @@
     },
     {
       "check_id": "V3",
-      "description": "The North Carolina state seal image present at the top of the PDF letter is missing from the HTML conversion.",
+      "description": "The North Carolina state seal/emblem at the top center of the PDF letterhead is missing from the HTML rendering.",
       "severity": "critical",
-      "evidence": "PDF shows the North Carolina state seal/emblem centered at the top of the page. HTML has no image present.",
+      "evidence": "PDF shows the official North Carolina state seal image centered at the top of the page. HTML has no corresponding image element.",
       "page": 1,
       "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of David Miller is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF shows a handwritten signature above the printed name 'David Miller, PE'. HTML only contains the printed name and title with no signature image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ agency logo/emblem in the footer area is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF shows the DEQ organizational logo next to the footer contact information. HTML renders the footer text only, without the logo image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains three substantive images \u2014 the North Carolina state seal at the top, David Miller's handwritten signature, and the DEQ logo at the bottom \u2014 none of which have corresponding <img> tags in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows the NC state seal (top center), a cursive signature above 'David Miller, PE', and the DEQ logo in the footer. The HTML contains zero <img> tags for any of these.",
+      "page": null,
+      "call_source": "content"
     }
   ],
-  "critical_count": 1,
+  "critical_count": 3,
   "major_count": 1,
-  "minor_count": 1,
+  "minor_count": 2,
   "skip_reason": null,
   "metadata": {
     "model": "claude-opus-4-6",
     "provider": "claude",
-    "duration_seconds": 54.7,
+    "duration_seconds": 46.24,
     "page_count": 1,
-    "visual_input_tokens": 4587,
-    "visual_output_tokens": 233,
-    "content_input_tokens": 5119,
-    "content_output_tokens": 234,
-    "timestamp": "2026-04-17T19:55:22.632091",
+    "visual_input_tokens": 4840,
+    "visual_output_tokens": 1027,
+    "content_input_tokens": 5434,
+    "content_output_tokens": 934,
+    "timestamp": "2026-04-18T02:22:47.969909",
     "auditor_version": "1.0.0"
   }
 }

@@ -1,0 +1,150 @@
+{
+  "document_id": "01_NRHM_Project_Contract",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 57. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "The vendor information section on page 1 is restructured from a two-column layout into a three-column table, adding a redundant 'Column 3' that duplicates data from Column 2. The PDF has a clear two-column form layout, but the HTML renders it as a three-column table with headers 'Column 1', 'Column 2', 'Column 3'.",
+      "severity": "major",
+      "evidence": "PDF shows a standard two-column form (labels on left, values on right). HTML adds generic column headers and a third column that duplicates the Federal ID/Social Security No. and FAX number data.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The vendor information table in HTML has an extra third column not present in the PDF. The PDF form has two columns of data, but the HTML table has three columns with duplicated content in the third column.",
+      "severity": "major",
+      "evidence": "PDF: Two-column layout with fields like VENDOR/FEDERAL ID, STREET ADDRESS/P.O. BOX, etc. HTML: Three-column table with 'Column 1', 'Column 2', 'Column 3' headers, where Column 3 duplicates values like '52-1413880' and '919-831-1295'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The authorized signature on page 1 is missing from the HTML. The PDF contains a handwritten signature for Brian J. McCrodden, and the DENR acceptance signature is also missing.",
+      "severity": "critical",
+      "evidence": "PDF shows handwritten signatures for both the vendor (Brian J. McCrodden) and the DENR authorized representative. HTML shows only text placeholders like 'AUTHORIZED SIGNATURE: Brian J. McCrodden' and 'by [Signature]' without any signature images.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "On the cost table (page 2/3 in PDF), Item 4 has no cost value shown in the COST column in the PDF table, but the HTML correctly shows $25,000. This is actually correct per context but the PDF layout shows the cost aligned differently.",
+      "severity": "minor",
+      "evidence": "PDF shows Item 4 cost as 25,000 aligned to the right. HTML shows it correctly as 25,000. No actual discrepancy on review.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Exhibit 2 content (pages 8-9 of PDF) describing Moffatt & Nichol's scope of work for demand data development is missing its header/title 'Exhibit 2' and the initial scope description sections about agricultural demand data methodology.",
+      "severity": "critical",
+      "evidence": "PDF page 8-9 contains Exhibit 2 with detailed scope including sections on agricultural demand (crop types, irrigation estimation), but the HTML does not include an 'Exhibit 2' heading. The content appears partially under a generic section without proper exhibit identification.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "Pages 2-6 of the PDF contain Instructions to Vendors (items 1-13) which are entirely missing from the HTML. The HTML jumps from the page 1 content directly to ITS Terms and Conditions.",
+      "severity": "major",
+      "evidence": "PDF pages 2-6 contain numbered instructions (Items 1-13) for vendors regarding bid submission, mailing instructions, bid bonds, etc. These are not present in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The vendor information table on page 1 is restructured with incorrect column headers ('Column 1', 'Column 2', 'Column 3') and has duplicated cell values.",
+      "severity": "major",
+      "evidence": "The PDF has a form layout with fields like VENDOR, FEDERAL ID, P.O. BOX, ZIP, etc. The HTML creates a 3-column table with generic headers and duplicates values like 'FEDERAL ID OR SOCIAL SECURITY NO. 52-1413880' across columns 2 and 3, and 'FAX NUMBER: 919-831-1295' across columns 2 and 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Exhibit 3 total budget components don't sum correctly in the source, but the HTML also introduces a discrepancy - the Exhibit 3 total is $24,000 but the item costs shown ($6,000 + $2,000 + $16,000) sum to $24,000. However, the main bid table shows Item 4 as $25,000 for Administrative Support, not $24,000.",
+      "severity": "major",
+      "evidence": "PDF Exhibit 3 shows 'Total Budget for Project Support $24,000' while the bid table on page 2 shows Item 4 cost as '25,000'. Both values are in the PDF - this is not a conversion error but worth noting the HTML correctly reproduces both figures.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The Exhibit 2 subcontractor name is inconsistently rendered - PDF says 'Moffatt & Nichols' (with 's') in some places and 'Moffatt & Nichol' (without 's') in others. The HTML changes some instances.",
+      "severity": "major",
+      "evidence": "PDF page 2 says 'Moffatt & Nichols' while PDF Exhibit 2 (page 9) says 'Moffatt & Nichol'. The HTML uses both forms but should match the source exactly in each location.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The acceptance section states 'JANUARY, 2008' but the PDF handwriting appears to read 'JANUARY' with the year partially visible as '200[8]'.",
+      "severity": "minor",
+      "evidence": "PDF FOR DENR USE ONLY section has handwritten 'JANUARY' and '200 8' (with what appears to be a handwritten '8'). HTML renders this as 'JANUARY, 2008' which appears to be a reasonable interpretation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "No h1 document title is present. The document uses nested <main> tags (main within main) which is invalid HTML structure. Multiple h2 and h3 headings are used without a clear h1 title.",
+      "severity": "major",
+      "evidence": "HTML has <main> wrapping another <main> element. No h1 heading exists for the document title. The first heading is an h2 'NOTICE TO VENDOR'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The 'Where will services be performed' row in the vendor table has the same text duplicated across all three columns.",
+      "severity": "minor",
+      "evidence": "HTML shows 'Where will services be performed:' in Column 1, Column 2, and Column 3, whereas the PDF has this as a single field spanning the row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The ITS Terms and Conditions section 17 on Confidentiality runs into content from a different section (intellectual property/infringement provisions) without proper separation, creating a confusing merged paragraph.",
+      "severity": "major",
+      "evidence": "In the HTML, section 17 Confidentiality paragraph continues without break into content about 'Vendor, at its option and expense, either to procure for the State the right to continue using the goods/hardware or software...' which appears to be from a separate intellectual property section (sections 18-20 area in the PDF).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The vendor name 'HydroLogics' is sometimes rendered as 'Hydrologics' (lowercase 'l') in the HTML, not matching the PDF's capitalization.",
+      "severity": "minor",
+      "evidence": "PDF consistently uses 'HydroLogics' with capital L. HTML sometimes uses 'Hydrologics' (e.g., in the email address rendering and in some body text).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 9,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 420.3,
+    "page_count": 10,
+    "visual_input_tokens": 31699,
+    "visual_output_tokens": 994,
+    "content_input_tokens": 29189,
+    "content_output_tokens": 1657,
+    "timestamp": "2026-04-16T00:53:00.892576",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'where,' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Professional engineer seal/stamp is missing or significantly degraded in the HTML version on the cover page",
+      "severity": "major",
+      "evidence": "PDF shows a clear North Carolina Professional Engineer seal (SEAL 038141) with DocuSigned signature and date 8/31/2020. HTML shows the seal image but it appears as a separate element with less clarity and the date is truncated to '8/3:'",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML version splits the cover page content across two visible sections, with the company info appearing as a separate block followed by the seal as another block",
+      "severity": "major",
+      "evidence": "PDF has a single cohesive cover page layout. HTML breaks the cover page into two distinct sections - one with text content and another with the seal/signature area",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated Geosyntec header information appears between content sections in HTML",
+      "severity": "minor",
+      "evidence": "PDF has headers as page decorations. HTML includes repeated instances of 'Geosyntec Consultants of NC, P.C.' and 'NC License No.: C-3500 and C-295' between content sections",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The Table of Contents loses its formatted layout with dotted leaders and page numbers",
+      "severity": "major",
+      "evidence": "PDF shows a formal TOC with section headings, dotted leaders, and right-aligned page numbers. HTML renders it as a bulleted list with hyperlinks but no page numbers",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "List of Abbreviations rendered as a table in HTML vs. a simple aligned list in PDF",
+      "severity": "minor",
+      "evidence": "PDF shows abbreviations as a simple two-column aligned list. HTML renders them as a formal table with borders, header row, and grid lines. The data content is preserved correctly.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 (Outfall 002 Sampling Locations map) is missing the formal figure border/title block in the HTML version",
+      "severity": "critical",
+      "evidence": "PDF shows Figure 1 as a formally bordered figure with title block, legend box, and Geosyntec branding within the figure frame. HTML shows the aerial image but renders legend and title information as plain text below the image rather than within a formatted figure frame",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 2 flowchart is partially shown - the HTML appears to split the flowchart across sections with text descriptions appended below",
+      "severity": "major",
+      "evidence": "PDF shows Figure 2 as a complete flowchart within a bordered frame. HTML shows the flowchart image followed by a text-based description of the flowchart logic as plain text",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flowchart decision logic from Figures 2 and 3 is rendered as both images and redundant text descriptions in HTML",
+      "severity": "major",
+      "evidence": "PDF shows Figures 2 and 3 as standalone flowchart diagrams. HTML includes the flowchart images AND additional text-based representations of the same decision trees, creating duplicate content",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Equation 1 mathematical notation loses subscript/superscript formatting in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows M_OF002 = \u03a3(n=1 to N) m_OF002,n - m_intake,n with proper mathematical formatting including superscripts and subscripts. HTML shows it as plain text 'M_OF002 = \u03a3_n=1^N m_OF002,n \u2013 m_intake,n' with subscripts rendered inline",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Consent Order Addendum quoted text loses italic formatting distinction in HTML",
+      "severity": "minor",
+      "evidence": "PDF shows the CO Addendum requirements in italics to distinguish quoted regulatory text from the document's own text. HTML renders the quoted text with reduced formatting distinction",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 headings used. The document has h1 for the title, then h1 for Section 2 and Section 3, creating an inconsistent heading hierarchy. Sections 1, 2, and 3 should all be at the same level (h1 or h2), but Section 1 uses h1 while its subsections use h2, and Section 2 also uses h1 with subsections at h2. Additionally, 'TABLES' and 'FIGURES' divider pages are rendered as h1.",
+      "severity": "major",
+      "evidence": "HTML has: <h1 id='introduction'>1 INTRODUCTION</h1>, <h1 id='outfall-002-and-river-intake-sampling'>2 OUTFALL 002...</h1>, <h1 id='pfas-mass-loading-calculation-methodology'>3 PFAS MASS LOADING...</h1>, <h1>TABLES</h1>, <h1>FIGURES</h1> \u2014 at least 6 h1 elements total.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Geosyntec logo images and company identifiers are duplicated multiple times in the HTML body content, appearing as standalone elements between sections. These are page header artifacts from the PDF that should have been consolidated or removed.",
+      "severity": "major",
+      "evidence": "Multiple instances of <figure><img ... alt='Geosyntec consultants logo'></figure> appear between the main content sections (before TABLES section and before FIGURES section), replicating page headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML wraps the entire content in nested <main> tags, with two <main> elements. This is a structural duplication artifact.",
+      "severity": "minor",
+      "evidence": "<body><main><main>... content ...</main></main></body>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The Table of Contents contains internal anchor links (href='#introduction', etc.) that were not present in the PDF. These are functional additions rather than fabrications, but are technically new links.",
+      "severity": "minor",
+      "evidence": "HTML TOC: <a href='#introduction'>1 INTRODUCTION</a>, etc. PDF TOC had no hyperlinks.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 9,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 363.13,
+    "page_count": 17,
+    "visual_input_tokens": 43129,
+    "visual_output_tokens": 1687,
+    "content_input_tokens": 44027,
+    "content_output_tokens": 812,
+    "timestamp": "2026-04-16T00:51:09.931688",
+    "auditor_version": "1.0.0"
+  }
+}

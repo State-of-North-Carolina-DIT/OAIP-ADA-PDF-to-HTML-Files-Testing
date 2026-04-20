@@ -1,0 +1,46 @@
+{
+  "document_id": "SSAB_Meeting_April_2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 51. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V5",
+      "description": "DEQ footer content (logo, address, phone number) is placed before the main body content in the HTML, disrupting the reading order from the PDF.",
+      "severity": "major",
+      "evidence": "In the PDF, the reading order is: state seal + officials (header) \u2192 heading + agenda items (body) \u2192 DEQ logo + contact info (footer). In the HTML, the order is: state seal (header) \u2192 DEQ logo + contact info (footer) \u2192 officials listing \u2192 heading + agenda items (body). A sighted user reading the HTML top-to-bottom encounters the footer contact information before the body content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Second image in HTML has empty alt text (alt=\"\") rather than a descriptive label. Based on the PDF, this corresponds to the NC DEQ logo that appears at the bottom of the pages.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\">. The PDF shows the NC DEQ logo with text \"North Carolina Department of Environmental Quality\" at the footer of both pages.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 207.49,
+    "page_count": 2,
+    "visual_input_tokens": 6980,
+    "visual_output_tokens": 6284,
+    "content_input_tokens": 7604,
+    "content_output_tokens": 2602,
+    "timestamp": "2026-04-20T12:14:52.245788",
+    "auditor_version": "1.0.0"
+  }
+}

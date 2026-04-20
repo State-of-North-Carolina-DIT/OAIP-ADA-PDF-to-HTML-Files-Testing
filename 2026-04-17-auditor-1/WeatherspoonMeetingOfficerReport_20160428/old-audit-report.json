@@ -1,0 +1,86 @@
+{
+  "document_id": "WeatherspoonMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF has a structured layout with the letterhead positioned in the upper-left and official names/titles positioned in the upper-right. The HTML stacks these elements vertically (logo on top, then names below it on the left), losing the two-region header layout.",
+      "severity": "major",
+      "evidence": "PDF: NC logo upper-left, PAT MCCRORY/Governor, DONALD R. VAN DER VAART/Secretary, MICHAEL SCOTT/Acting Director all right-aligned. HTML: Logo on top, then all names left-aligned below it.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The memo header fields (To/From/Subject) in the PDF are laid out in a label-value table format with clear alignment. In the HTML, the From field's division/office information appears after the signature rather than alongside the name as in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF: 'From: Shawn McKee / Division of Waste Management / Raleigh Central Office' with signature beside it. HTML: 'From: Shawn McKee' then signature, then 'Division of Waste Management / Raleigh Central Office' below the signature.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The footer information from page 1 (State of North Carolina | Environmental Quality | Waste Management address and phone) appears between the outline section and the History/Background section in the HTML, disrupting reading flow.",
+      "severity": "minor",
+      "evidence": "PDF: Footer at bottom of page 1 only. HTML: Footer content appears inline between the report outline and Section I.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The footer contact information block is duplicated in the HTML body as both a header element and again after the table of contents, whereas in the PDF it only appears once at the bottom of page 1.",
+      "severity": "major",
+      "evidence": "The HTML contains the footer text 'State of North Carolina | Environmental Quality | Waste Management / 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646 / 919 707 8200' both in the <header> area implicitly and again as a standalone paragraph after the table of contents nav element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses h1 for 'MEMORANDUM' and h2 for sections, which is a reasonable choice, but the document has nested <main> elements (a <main> inside the outer <main>), which is invalid HTML structure.",
+      "severity": "minor",
+      "evidence": "The HTML has <main> wrapping the whole body content and another <main> tag inside it after the header section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF page 1 references 'Attachment I - Public Notice of March 16, 2016 Meeting' on page 2, but the actual meeting date throughout the document is March 10, 2016. The HTML preserves this same reference. However, the HTML's anchor link text in the table of contents says 'March 10, 2016 Public Meeting and Oral Comments Summary' which matches the PDF section heading correctly. The discrepancy between 'March 16' and 'March 10' exists in the source PDF itself, so this is not a conversion error.",
+      "severity": "major",
+      "evidence": "PDF page 2: 'Attachment I - Public Notice of March 16, 2016 Meeting'. This is the same in both. Not a conversion issue.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "An extra empty/decorative image tag appears in the HTML between the footer block and the History/Background section that does not correspond to meaningful content.",
+      "severity": "minor",
+      "evidence": "HTML contains: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 654.4pt; height: auto;\"></figure> between the footer text and Section I, with empty alt text, likely a page-break artifact or decorative line.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 88.32,
+    "page_count": 5,
+    "visual_input_tokens": 14599,
+    "visual_output_tokens": 754,
+    "content_input_tokens": 15528,
+    "content_output_tokens": 817,
+    "timestamp": "2026-04-16T00:54:13.541444",
+    "auditor_version": "1.0.0"
+  }
+}
