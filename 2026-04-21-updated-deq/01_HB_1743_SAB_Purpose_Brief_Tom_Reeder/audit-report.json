@@ -1,0 +1,46 @@
+{
+  "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "North Carolina state flag image is missing from the HTML rendering",
+      "severity": "critical",
+      "evidence": "PDF page 1 prominently displays the North Carolina state flag (blue vertical bar with NC seal, red and white horizontal bars). The HTML rendering shows no flag image at all.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Nested ellipses diagram ('Modeling Supports Planning') is missing from HTML",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a Venn-like diagram with a green outer ellipse labeled 'Water Supply Planning' containing an orange inner ellipse labeled 'River Basin Modeling'. The HTML renders only the text labels ('Water Supply Planning' and 'River Basin Modeling') as plain text without the graphic diagram, losing the visual relationship between the two concepts.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The nested-oval Venn-style diagram on PDF page 10 ('Modeling Supports Planning') showing River Basin Modeling nested inside Water Supply Planning is missing from the HTML. No <img> tag exists for this substantive diagram; only the two text labels are rendered as plain paragraphs, losing the visual relationship the diagram conveys.",
+      "severity": "minor",
+      "evidence": "PDF page 10 contains a diagram with two concentric ovals: outer labeled 'Water Supply Planning', inner labeled 'River Basin Modeling'. HTML section 'Modeling Supports Planning' only has <p>Water Supply Planning</p><p>River Basin Modeling</p> with no <img> tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 72.89,
+    "page_count": 11,
+    "visual_input_tokens": 26805,
+    "visual_output_tokens": 2053,
+    "content_input_tokens": 22461,
+    "content_output_tokens": 1169,
+    "timestamp": "2026-04-20T20:11:39.422197",
+    "auditor_version": "1.0.0"
+  }
+}

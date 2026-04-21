@@ -1,0 +1,10 @@
+{
+  "document_id": "t2023-2024_DMS_Annual_Report",
+  "verdict": "skipped",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "Both calls failed: visual:too_large(39p); content:too_large(39p)",
+  "metadata": null
+}

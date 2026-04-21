@@ -1,0 +1,94 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 43. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Energy, Mineral & Land Resources logo/graphic in the PDF header is not present in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the NC logo with tree graphic in the upper left. HTML page equivalent shows the organization header text and contact info but rendered differently as a banner-style header without the logo graphic.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 in the PDF is essentially a blank page with only the letterhead header. The HTML does not reproduce this blank page, which is acceptable for pagination but noted.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows only the NC Energy, Mineral & Land Resources letterhead with no content. The HTML skips this entirely and continues with content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The memo header fields (To, From, Subject) are rendered as a table in the HTML but as simple labeled text lines in the PDF. While the data is preserved, the addition of table borders/structure changes the visual presentation significantly.",
+      "severity": "major",
+      "evidence": "PDF shows 'To:', 'From:', 'Subject:' as simple indented text lines. HTML renders these in a bordered table with cells.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In Section II, the outline numbering for the report sections uses Roman numerals with periods in the PDF but appears with periods and as hyperlinks in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows 'I. History/Background' etc. as plain text. HTML shows them as clickable hyperlinks with underline styling.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The bullet style difference in Section I History/Background: PDF uses dash/dot bullets while HTML uses filled circle bullets.",
+      "severity": "minor",
+      "evidence": "PDF page 3 uses small dot/dash bullets for the CAMA process list items. HTML uses standard filled circle bullets.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "The HTML adds internal anchor links in the table of contents that do not exist in the PDF. The PDF simply lists the outline items without hyperlinks.",
+      "severity": "minor",
+      "evidence": "HTML contains <a href=\"#history-background\">, <a href=\"#march-24-2016-public-meeting-and-oral-comments-summary\">, etc. These are navigational additions not present in the source PDF, though they point to content that does exist in the document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has a nested <main> element inside another <main>, which is a structural issue but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The HTML body contains <main> wrapping the entire content, and then another <main> element inside it after the <header>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The memo header (To/From/Subject) is rendered as a table in HTML, but it is not a table in the PDF - it is formatted as a standard memo header with labels and values. This is an acceptable structural interpretation but noted for completeness. The table includes a comment '<!-- COLUMNS: Field | Value -->' which is metadata not in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows standard memo format; HTML wraps it in <table> with comment <!-- COLUMNS: Field | Value -->",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 6,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 133.28,
+    "page_count": 5,
+    "visual_input_tokens": 15154,
+    "visual_output_tokens": 1149,
+    "content_input_tokens": 14720,
+    "content_output_tokens": 559,
+    "timestamp": "2026-04-16T00:49:04.416471",
+    "auditor_version": "1.0.0"
+  }
+}

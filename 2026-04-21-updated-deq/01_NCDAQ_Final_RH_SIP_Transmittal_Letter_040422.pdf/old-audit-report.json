@@ -1,0 +1,110 @@
+{
+  "document_id": "01_NCDAQ_Final_RH_SIP_Transmittal_Letter_040422.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of page 1 is missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the Great Seal of North Carolina centered at the top of the letterhead. The HTML version does not display this seal image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo in the footer of page 1 is missing in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has a DEQ logo with the department name and contact information at the bottom. The HTML shows only the text without the logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML renders page 1 content and then repeats the full letter structure including header metadata (ROY COOPER Governor, ELIZABETH S. BISER Secretary, etc.) and recipient address block before continuing to page 2 content.",
+      "severity": "major",
+      "evidence": "In the PDF, pages are separate with no repeated headers. In the HTML, after page 1 content ends with the bullet list and the SO2 emission limits paragraph, the full letterhead information (ROY COOPER, Governor, ELIZABETH S. BISER, Secretary, MICHAEL ABRACZINSKAS, Director, NORTH CAROLINA, Environmental Quality, April 4, 2022, and full recipient address) is repeated before the page 2 content begins.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML repeats footer content (North Carolina Department of Environmental Quality | Division of Air Quality, address, phone) between page-equivalent sections.",
+      "severity": "major",
+      "evidence": "PDF has footer only at the bottom of page 1. HTML shows this footer content repeated between page sections.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of Michael A. Abraczinskas is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows a handwritten signature above the typed name 'Michael A. Abraczinskas, Director'. The HTML version only shows the typed name without the signature image.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML has no h1 or any heading elements at all. The document has no heading hierarchy structure despite having a clear subject line and identifiable sections in the PDF.",
+      "severity": "major",
+      "evidence": "The PDF has a clear subject line 'Subject: Final Regional Haze State Implementation Plan (SIP) for North Carolina Class I Federal Areas for Second Planning Period (2019 \u2013 2028)' and the document title 'Converted Document' appears only in the <title> tag, but no h1-h6 elements are used in the body content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains a nested <main> element inside another <main> element, which is a structural duplication artifact.",
+      "severity": "major",
+      "evidence": "HTML contains '<main>' immediately followed by another '<main>' creating nested main elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The first image alt text describes 'North Carolina State Seal and Letterhead' which is reasonable, but the second and third images have empty alt text, providing no description of what those page images contain.",
+      "severity": "minor",
+      "evidence": "Second image: alt=\"\", Third image: alt=\"\". These appear to be full page images from the PDF but have no descriptive alt text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the CC list, the PDF shows 'Ms. Joel Huey' but this is faithfully reproduced in the HTML. However, the PDF page 1 references '40 CFR 51.308(\u00b1)' which appears to be a scanning/OCR artifact for '40 CFR 51.308(f)'. The HTML correctly renders this as '40 CFR 51.308(f)' on page 1 content, which is actually a correction rather than an error.",
+      "severity": "minor",
+      "evidence": "PDF page 1: '40 CFR 51.308(\u00b1)' appears in the scanned text; HTML: '40 CFR 51.308(f)'. This is a reasonable correction of an OCR artifact.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 5,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 222.96,
+    "page_count": 4,
+    "visual_input_tokens": 13449,
+    "visual_output_tokens": 1012,
+    "content_input_tokens": 12736,
+    "content_output_tokens": 730,
+    "timestamp": "2026-04-16T00:49:33.269331",
+    "auditor_version": "1.0.0"
+  }
+}

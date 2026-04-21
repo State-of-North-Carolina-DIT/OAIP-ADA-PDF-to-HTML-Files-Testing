@@ -1,0 +1,78 @@
+{
+  "document_id": "RoxboroMeetingOfficerReport_20160428",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 48. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "A decorative colored horizontal bar/divider appears in the HTML between the outline section and the History/Background section that does not appear in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 2 (HTML page showing outline and History/Background) has no colored bar between sections, but the HTML shows a gradient green-blue-dark bar between the outline and Section I.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated email address in the digital signature block. The HTML contains a mailto hyperlink 'elizabeth.werner@ncdenr.gov' but the PDF shows the email as 'elizabeth.werner@nc denr.gov' split across lines. While the intent may be correct, the HTML constructs a clickable mailto link that is not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML: <a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>. PDF shows: 'email=elizabeth.werner@nc denr.gov, c=US' as part of a digital signature stamp image/text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "Fabricated hyperlinks in table of contents. The HTML adds internal anchor links (#history-background, #march-16-2016-public-meeting-and-oral-comments-summary, etc.) to the table of contents items. The PDF has no such hyperlinks; these are plain text items in a numbered list.",
+      "severity": "critical",
+      "evidence": "HTML: <a href=\"#history-background\">History/Background</a>, etc. PDF: plain text outline 'I. History/Background' with no links.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements and the document title 'MEMORANDUM' is used as h1 while the actual section headings use h2. This is acceptable structurally, but the PDF page header text 'Meeting Officer's Report / Coal Ash Impoundment Classification(s) / Roxboro Steam Electric Plant, Person County' which appears on pages 2-5 is not represented as a document title. The choice of 'MEMORANDUM' as h1 is reasonable but worth noting.",
+      "severity": "major",
+      "evidence": "HTML uses h1 for 'MEMORANDUM' and h2 for section headings I-IV. PDF has 'MEMORANDUM' as a heading on page 1 and running headers on subsequent pages.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains two nested <main> elements and duplicates the full header/letterhead information. The page 1 content appears to be rendered twice - once in the initial structure and again within the nested main. The memorandum text, To/From/Subject fields, introductory paragraphs, and table of contents all appear in both the header area and the nested main element.",
+      "severity": "major",
+      "evidence": "The HTML has <header> containing the full memo details (To, From, Subject, intro paragraph, TOC), followed by a second <main> that repeats the same content starting with <h1>MEMORANDUM</h1> and all the same fields.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "An unexplained embedded image tag appears between the table of contents and Section I, which seems to be an artifact (possibly a page break or decorative element from the PDF conversion).",
+      "severity": "minor",
+      "evidence": "HTML: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 654.4pt; height: auto;\"></figure> appears between the TOC and Section I with empty alt text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 89.93,
+    "page_count": 5,
+    "visual_input_tokens": 14414,
+    "visual_output_tokens": 446,
+    "content_input_tokens": 15325,
+    "content_output_tokens": 1050,
+    "timestamp": "2026-04-16T00:52:50.137615",
+    "auditor_version": "1.0.0"
+  }
+}

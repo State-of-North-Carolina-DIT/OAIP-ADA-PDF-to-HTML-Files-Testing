@@ -1,0 +1,78 @@
+{
+  "document_id": "Asheville_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 39. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The NC Energy, Mineral & Land Resources logo/graphic in the PDF header is not rendered in the HTML version. The HTML shows only text-based header information.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has a green/blue NC logo with tree graphic on the left side. HTML page equivalent has the state header information as text only without the logo graphic.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Page 2 of the PDF is essentially a blank page with only the letterhead header. The HTML does not reproduce this blank page, which is acceptable, but the header content from this page appears duplicated at the top of the HTML content area.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows only the NC letterhead with PAT McCRORY Governor, DONALD R. VAN DER VAART Secretary, TRACY DAVIS Director. The HTML renders these as standalone text blocks before the MEMORANDUM heading.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "In the outline section of the memo, the PDF uses Roman numerals (I, II, III, IV) as a formatted list with tab spacing. The HTML renders these with hyperlinks (underlined blue text), adding interactive formatting not present in the original PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows plain text 'I. History/Background', 'II. March 1, 2016 Public Meeting...' etc. HTML shows these as clickable hyperlinks with underline and blue color.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The attachment numbering in the PDF's Section IV uses Roman numerals (I through VI) aligned with tab stops in a list format. The HTML preserves the same list but without the consistent indentation alignment.",
+      "severity": "minor",
+      "evidence": "PDF shows neatly aligned Roman numeral list I-VI under IV. Attachments. HTML shows the same items but alignment differs.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in the HTML create an invalid structure. The document has a <main> inside the outer <main>, which is semantically incorrect but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "The HTML has <main> as the outermost content wrapper and then another <main> inside it after the header section.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4",
+      "description": "The table of contents in the HTML contains internal anchor links (href attributes) that do not exist in the source PDF. These are navigational aids added by the converter, not fabricated external URLs.",
+      "severity": "minor",
+      "evidence": "HTML has <a href=\"#history-background\">, <a href=\"#march-1-2016-public-meeting-and-oral-comments-summary\">, etc. The PDF has no hyperlinks in the table of contents.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 96.93,
+    "page_count": 5,
+    "visual_input_tokens": 14969,
+    "visual_output_tokens": 943,
+    "content_input_tokens": 14707,
+    "content_output_tokens": 467,
+    "timestamp": "2026-04-16T00:48:21.118853",
+    "auditor_version": "1.0.0"
+  }
+}

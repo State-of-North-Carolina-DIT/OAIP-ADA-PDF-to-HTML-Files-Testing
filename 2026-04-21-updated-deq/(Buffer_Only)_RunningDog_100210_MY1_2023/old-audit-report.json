@@ -1,0 +1,78 @@
+{
+  "document_id": "(Buffer_Only)_RunningDog_100210_MY1_2023",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 50. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C5",
+      "description": "Multiple h1 headings used throughout the document. The HTML uses h1 for Section 1, Section 2, Section 3, Section 4, Section 5, Section 6, and each Appendix heading, plus the initial title. Only one h1 should be used for the document title.",
+      "severity": "major",
+      "evidence": "HTML contains h1 tags for: 'Running Dog Mitigation Site', 'Section 1: PROJECT OVERVIEW', 'Section 2: DETERMINATION OF CREDITS', 'Section 3: PERFORMANCE CRITERIA AND MONITORING PROTOCOLS', 'Section 4: ANNUAL MONITORING AND REPORTING', 'Section 5: RESULTS OF YEAR 1 MONITORING', 'Section 6: REFERENCES', 'APPENDIX 1. General Figures and Tables', 'APPENDIX 2. Visual Assessment Data', 'APPENDIX 3. Vegetation Plot Data', 'APPENDIX 4. Correspondence'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 1 (Buffer Project Areas and Assets Table) is poorly structured in HTML. The complex multi-section table from the PDF with distinct sections for main credits, preservation credits, and mitigation totals is split into multiple tables but with row labels repeated across cells in a confusing manner (e.g., 'Totals (ft2):' repeated across all columns of a row).",
+      "severity": "major",
+      "evidence": "In the HTML, rows like 'Total Ephemeral Area (ft2) for Credit:' have the label text repeated in every cell of the row rather than spanning columns as in the PDF. The 'Ephemeral Reaches as % TABM' label is also repeated in every column cell.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Tables 8a and 8b in the HTML have summary statistic rows where labels are unnecessarily repeated across all columns. The row labels like 'Mitigation Plan Performance Standard Current Year Stem Count' are duplicated across every cell in those rows instead of appearing once as a row header.",
+      "severity": "major",
+      "evidence": "In the HTML tables, rows for performance standard metrics have the full label text repeated in the Scientific Name, Common Name, Tree/Shrub, and Indicator Status columns, rather than having a single spanning label as in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 10 (Vegetation Height Data Table) contains the complete data for all 12 plots inline in the HTML as a single massive table. While this preserves the data, the PDF splits this across multiple pages with repeated headers. The HTML consolidation is acceptable, but there is no duplication issue here.",
+      "severity": "major",
+      "evidence": "N/A - upon closer review this is acceptable consolidation, not duplication.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the References section, the Merrit/Katie reference has 'October X, 2023' which matches the PDF exactly - this is not a conversion error but exists in the source.",
+      "severity": "minor",
+      "evidence": "PDF page 11: 'Merrit, Katie. 2023. Reply email to Wildlands about a planted species approval. NC Division of Water Resources (DWR), Raleigh, NC. October X, 2023.' HTML matches.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "Table 9 (Vegetation Performance Standards Summary Table) is split into four separate HTML tables by plot groups, which matches the PDF layout structure but loses the overall single-table context. Data values are preserved correctly.",
+      "severity": "minor",
+      "evidence": "PDF has one table with plots 1-12 organized in groups of 3; HTML reproduces this as four separate tables.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 2,
+  "skip_reason": "visual:too_large(42p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 1275.22,
+    "page_count": 42,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 134289,
+    "content_output_tokens": 1194,
+    "timestamp": "2026-04-16T01:10:19.636162",
+    "auditor_version": "1.0.0"
+  }
+}

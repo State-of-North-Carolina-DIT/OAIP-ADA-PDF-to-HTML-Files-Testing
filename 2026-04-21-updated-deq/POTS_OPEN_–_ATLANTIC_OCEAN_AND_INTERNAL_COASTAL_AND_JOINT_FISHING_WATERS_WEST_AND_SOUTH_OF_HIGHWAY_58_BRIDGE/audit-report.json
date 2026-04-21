@@ -1,0 +1,30 @@
+{
+  "document_id": "POTS_OPEN_\u2013_ATLANTIC_OCEAN_AND_INTERNAL_COASTAL_AND_JOINT_FISHING_WATERS_WEST_AND_SOUTH_OF_HIGHWAY_58_BRIDGE",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C6",
+      "description": "An image placed inside the Brunswick County (IX) section has an empty alt attribute. Given the document references Maps 1\u20138 throughout, this is likely a map image and should have descriptive alt text rather than alt=\"\".",
+      "severity": "minor",
+      "evidence": "HTML: <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 611.8pt; height: auto;\"/></figure> placed after IX.E (Bonaparte Creek) inside the Brunswick County list item. The image is nearly page-width (611.8pt), suggesting substantive content such as a map.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 163.08,
+    "page_count": 3,
+    "visual_input_tokens": 10386,
+    "visual_output_tokens": 3011,
+    "content_input_tokens": 13976,
+    "content_output_tokens": 4073,
+    "timestamp": "2026-04-20T20:31:58.807019",
+    "auditor_version": "1.0.0"
+  }
+}

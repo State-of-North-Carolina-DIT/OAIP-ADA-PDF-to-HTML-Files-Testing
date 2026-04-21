@@ -1,0 +1,46 @@
+{
+  "document_id": "01_Fact_Sheet_SKA.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 38. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C5",
+      "description": "The h1 combines 'FACT SHEET' and 'DRAFT PERMIT RENEWAL' into one heading, which is acceptable, but the document header info (facility name, address, EPA ID) that appears as a centered header block in the PDF is rendered as a plain paragraph. This is a reasonable structural choice and not a significant issue.",
+      "severity": "minor",
+      "evidence": "PDF header: 'FACT SHEET / DRAFT PERMIT RENEWAL / Safety-Kleen Archdale / 6182 Old Mendenhall Road / Archdale, North Carolina / EPA ID Number: NCD 077 840 148'. HTML: h1 contains 'FACT SHEET<br/>DRAFT PERMIT RENEWAL', rest in <p> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has a nested <main> element inside the outer <main>, which is an HTML structural issue but does not cause content duplication.",
+      "severity": "minor",
+      "evidence": "HTML source has <main> wrapping the whole body content, then another <main> after the <header> section.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 50.73,
+    "page_count": 2,
+    "visual_input_tokens": 6615,
+    "visual_output_tokens": 194,
+    "content_input_tokens": 7504,
+    "content_output_tokens": 500,
+    "timestamp": "2026-04-16T00:45:57.768625",
+    "auditor_version": "1.0.0"
+  }
+}

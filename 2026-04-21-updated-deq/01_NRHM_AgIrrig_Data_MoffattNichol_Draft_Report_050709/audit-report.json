@@ -1,0 +1,46 @@
+{
+  "document_id": "01_NRHM_AgIrrig_Data_MoffattNichol_Draft_Report_050709",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C5",
+      "description": "Section 1.1.4 'Consultation with Dr. Ronald Sneed' is a bold heading in the PDF (matching the style of sibling headings 1.1.1, 1.1.2, 1.1.3, 1.1.5) but is demoted to a plain <p> tag in the HTML instead of <h4>.",
+      "severity": "major",
+      "evidence": "PDF page 5 shows '1.1.4. Consultation with Dr. Ronald Sneed' as a bold heading. HTML renders it as: <p id=\"consultation-sneed\">1.1.4. Consultation with Dr. Ronald Sneed</p> while all other subsections at the same level use <h4>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Table 4 (Summary Water Withdrawal Data) has a header/data column count mismatch. The HTML thead has 6 <th> elements but each data row has 7 <td> elements. The entity name column (Creedmoor, Durham, Goldsboro, etc.) lacks a corresponding header cell, causing all subsequent columns to be misaligned with their headers.",
+      "severity": "major",
+      "evidence": "HTML thead has: PWSS | Plants | SW Sources | Historical Assumptions | Data Available | Projected Withdrawal Period (6 columns). First data row has: 1 | Creedmoor | Creedmoor WTP | Lake Rogers | using Creedmoor City's... | 1992/1997/2006 data | 1935-2008 (7 columns). The 'Plants' header aligns with the entity name 'Creedmoor' instead of the plant name 'Creedmoor WTP'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "In the References section, the URL for the NCDA Water Use Studies is split \u2014 only the first portion is hyperlinked and the remainder ('Central.pdf>') appears as unlinked plain text.",
+      "severity": "major",
+      "evidence": "PDF shows: <http://www.agr.state.nc.us/stats/release/WU2007 Central.pdf>. HTML renders: <a href=\"http://www.agr.state.nc.us/stats/release/WU2007\">http://www.agr.state.nc.us/stats/release/WU2007</a> Central.pdf&gt; \u2014 'Central.pdf' is outside the anchor tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(24p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 195.99,
+    "page_count": 24,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 78252,
+    "content_output_tokens": 9586,
+    "timestamp": "2026-04-20T20:17:12.467453",
+    "auditor_version": "1.0.0"
+  }
+}

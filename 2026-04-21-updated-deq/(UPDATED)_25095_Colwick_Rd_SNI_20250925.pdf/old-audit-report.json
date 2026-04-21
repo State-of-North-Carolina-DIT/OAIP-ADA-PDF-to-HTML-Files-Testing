@@ -1,0 +1,46 @@
+{
+  "document_id": "(UPDATED)_25095_Colwick_Rd_SNI_20250925.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 33. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document title and subtitle headings use h1 and h2 in a reasonable way, but the two h2 elements ('Brownfields Property Name' and 'Brownfields Project Number') could be considered sub-headings of the title rather than separate sections. However, this is a reasonable structural choice and only a minor observation.",
+      "severity": "minor",
+      "evidence": "PDF has a centered block title 'SUMMARY OF NOTICE OF INTENT TO REDEVELOP A BROWNFIELDS PROPERTY' with subtitles 'Brownfields Property Name: Colwick Road Property' and 'Brownfields Project Number: 25095-21-060'. HTML uses h1 for the main title and h2 for the two subtitles.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML has nested <main> elements \u2014 an outer <main> wrapping everything and an inner <main> for the body content. This is an HTML structural issue but does not cause content duplication or data loss.",
+      "severity": "minor",
+      "evidence": "HTML source contains '<main>' at the top level and another '<main>' inside after the '<header>' block.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 42.11,
+    "page_count": 1,
+    "visual_input_tokens": 4207,
+    "visual_output_tokens": 185,
+    "content_input_tokens": 5778,
+    "content_output_tokens": 487,
+    "timestamp": "2026-04-16T00:45:48.889808",
+    "auditor_version": "1.0.0"
+  }
+}

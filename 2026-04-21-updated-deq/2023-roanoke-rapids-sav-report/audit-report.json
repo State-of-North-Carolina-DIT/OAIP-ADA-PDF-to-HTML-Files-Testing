@@ -1,0 +1,21 @@
+{
+  "document_id": "2023-roanoke-rapids-sav-report",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(19p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 103.13,
+    "page_count": 19,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 43028,
+    "content_output_tokens": 4494,
+    "timestamp": "2026-04-20T20:21:11.950604",
+    "auditor_version": "1.0.0"
+  }
+}

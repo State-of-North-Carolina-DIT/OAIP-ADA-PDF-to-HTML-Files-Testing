@@ -1,0 +1,70 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image at the top of the letter is missing from the HTML version.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the NC state seal centered at the top of the letterhead. The HTML version has no image present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo at the bottom of the letter is missing from the HTML version.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows the DEQ logo in the footer area. The HTML version does not include this logo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signature images are missing from the HTML versions.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has David Miller's handwritten signature; PDF page 2 has Brian Wrenn's and Brenda Harris's signatures. HTML versions have no signature images.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. The document has a <main> inside another <main>, which is semantically incorrect.",
+      "severity": "major",
+      "evidence": "The HTML has <main> wrapping the entire body content, and then another <main> element inside it wrapping the sections.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "No images are present in the HTML conversion. The PDF contains the NC State seal/logo and the DEQ logo at the bottom, as well as signature images. No <img> tags or alt text are provided for these.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has the NC state seal at top, DEQ logo at bottom, and two signature images (David Miller on page 1, Brian Wrenn and Brenda Harris on page 2). None are represented in the HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 60.51,
+    "page_count": 2,
+    "visual_input_tokens": 6683,
+    "visual_output_tokens": 469,
+    "content_input_tokens": 6091,
+    "content_output_tokens": 404,
+    "timestamp": "2026-04-16T00:46:07.280388",
+    "auditor_version": "1.0.0"
+  }
+}

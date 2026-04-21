@@ -1,0 +1,30 @@
+{
+  "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Tables A1 and A2 are duplicated in the HTML output. Each table appears twice: first in a compact/small inline format and then again in a full-width expanded HTML table format. A reader scrolling through the HTML would encounter all of Table A1 data (K1-K62, ENVRTO, ENVRCO) and Table A2 data twice in sequence, which does not occur in the PDF.",
+      "severity": "major",
+      "evidence": "In the HTML, after the 'cc: Tom Anderson' line, compact renderings of Table A1 (K1-K62 + ENVRTO/ENVRCO) and Table A2 (K1-K62 + ENVRTO/ENVRCO) appear first. Then the same tables are rendered again in expanded, full-width HTML table format with the same headers ('Table A1. Modeled Release Parameters for Point Sources' and 'Table A2. 1-hour SO2 and NO2 Modeled Emission Rates'). The PDF contains each table only once.",
+      "page": 3,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 198.08,
+    "page_count": 7,
+    "visual_input_tokens": 19978,
+    "visual_output_tokens": 7462,
+    "content_input_tokens": 30346,
+    "content_output_tokens": 2382,
+    "timestamp": "2026-04-20T20:29:15.721329",
+    "auditor_version": "1.0.0"
+  }
+}

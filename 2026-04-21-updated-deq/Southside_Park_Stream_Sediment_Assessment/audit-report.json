@@ -1,0 +1,30 @@
+{
+  "document_id": "Southside_Park_Stream_Sediment_Assessment",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C6",
+      "description": "Nine small images extracted from the map all share the identical generic alt text 'Map symbol', which likely represent distinct elements (north arrow, scale bar, sample-location icon, property-boundary line, surface-water line, etc.). The descriptions do not differentiate among them.",
+      "severity": "minor",
+      "evidence": "HTML contains nine <figure><img alt=\"Map symbol\" \u2026/></figure> tags in sequence, all with the same alt text, though the PDF map shows distinct legend icons for sample locations, property boundaries, surface water, compass rose, etc.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 178.16,
+    "page_count": 1,
+    "visual_input_tokens": 3982,
+    "visual_output_tokens": 5100,
+    "content_input_tokens": 8741,
+    "content_output_tokens": 3276,
+    "timestamp": "2026-04-20T20:36:20.097665",
+    "auditor_version": "1.0.0"
+  }
+}

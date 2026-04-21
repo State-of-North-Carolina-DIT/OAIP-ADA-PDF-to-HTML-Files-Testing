@@ -1,0 +1,38 @@
+{
+  "document_id": "01_CFNM_April_2011_Version_Contract_A",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C3b",
+      "description": "Execution Bidder Details table structure corrupted: the BIDDER field, which spans the full width as a single cell in the PDF form, is split into three duplicate cells across three columns. The FAX NUMBER field is also duplicated across two columns in row 4.",
+      "severity": "major",
+      "evidence": "PDF page 6 shows 'BIDDER: HydroLogics, Inc.' as a single full-width field. HTML renders it as three cells all containing 'BIDDER: HydroLogics, Inc.' in the same row. Similarly, 'FAX NUMBER: 919-831-1295' appears once in the PDF but twice in row 4 of the HTML table (columns 2 and 3).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Task sub-section headings (Task 1 through Task 5) are visually distinct bold/underlined headings in the PDF Scope of Work, functioning as sub-sections under 'SCOPE OF WORK'. In the HTML, they are demoted to styled bold paragraphs (<p><strong>) instead of heading elements (e.g., h3).",
+      "severity": "major",
+      "evidence": "PDF pages 7-8 show 'Task 1: Update Model Inflow Data', 'Task 2: Update Cape Fear River Basin Model Components', 'Task 3: Update / Develop Combined Model Components', 'Task 4: Organize and Conduct Meetings', 'Task 5: Update Model Documentation and Update NCDENR Sever Files' as bold underlined section headings. HTML renders all five as '<p><strong>Task N:...</strong></p>' under the 'SCOPE OF WORK' h2.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(22p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 118.61,
+    "page_count": 22,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 82531,
+    "content_output_tokens": 5136,
+    "timestamp": "2026-04-20T20:10:26.535002",
+    "auditor_version": "1.0.0"
+  }
+}

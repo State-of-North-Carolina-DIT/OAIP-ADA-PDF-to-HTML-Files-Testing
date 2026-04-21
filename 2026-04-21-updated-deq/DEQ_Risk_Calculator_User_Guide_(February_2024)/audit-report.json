@@ -1,0 +1,38 @@
+{
+  "document_id": "DEQ_Risk_Calculator_User_Guide_(February_2024)",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "Multiple descriptive-text hyperlinks present in the PDF are rendered as plain text in the HTML with no href attribute. At least 10 distinct linked references lost their URLs.",
+      "severity": "critical",
+      "evidence": "PDF contains hyperlinked descriptive text including: 'Risk Evaluation Resources' (page 1/5), 'USEPA Regional Screening Level (RSL) Tables' (page 5), 'Technical Guidance for Risk-Based Environmental Remediation of Sites' (pages 5, 27), 'Risk-Based Remediation Website' (page 8), 'Risk Evaluation Equations and Calculations' (pages 9, 13, 14, 17, 19, 22), 'North Carolina Division of Waste Management Vapor Intrusion Guidance document' (page 19), and 'Risk Evaluation Resources | NC DEQ' (page 22). All appear as plain text without <a href> in the HTML. Additionally, the Reference column entries in the Mutagenic Contaminants table (e.g., 'IRIS', 'Supplemental Guidance', 'PPRTV', 'CalEPA and IRIS', 'Benzo[a]pyrene*', '70 Federal Register 19992') are hyperlinks in the PDF but plain text in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Sub-section headings within 3.3.1 (Soil, Sediment, Groundwater, Surface Water, Vapor Intrusion) are rendered as h6 under h5, creating a six-level deep heading nesting (h1>h2>h3>h4>h5>h6) that pushes beyond typical HTML heading depth and could misrepresent the document hierarchy.",
+      "severity": "major",
+      "evidence": "In the PDF, 'Soil', 'Sediment', 'Groundwater', 'Surface Water', and 'Vapor Intrusion' are italicized sub-headings within the section '3.3.1 Complete Exposure Pathways'. The HTML renders them as h6 elements nested under h5 ('Human Health (Direct Contact) Pathway Considerations'), which is itself under h4 (3.3.1), h3 (3.3), h2 (3.0), and h1. This h6 usage is the deepest level available and may not accurately convey the relatively minor sub-heading status in the original.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(33p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 220.52,
+    "page_count": 33,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 84817,
+    "content_output_tokens": 10727,
+    "timestamp": "2026-04-20T20:28:05.550407",
+    "auditor_version": "1.0.0"
+  }
+}

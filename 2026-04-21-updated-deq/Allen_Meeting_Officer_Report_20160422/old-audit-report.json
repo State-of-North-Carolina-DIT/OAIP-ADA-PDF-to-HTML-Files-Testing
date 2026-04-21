@@ -1,0 +1,86 @@
+{
+  "document_id": "Allen_Meeting_Officer_Report_20160422",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF memorandum header uses a clear 'To:/From:/Subject:' label-value layout with indentation, while the HTML uses bold labels inline. The structure is preserved but the visual distinction of the memo format is slightly reduced.",
+      "severity": "minor",
+      "evidence": "PDF shows 'To:', 'From:', 'Subject:' as left-aligned labels with values indented to the right. HTML shows the same with bold labels but less visual separation.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The report outline items in the PDF (I through IV) are presented as a simple indented list without hyperlinks, while the HTML renders them as clickable hyperlinks with underline styling.",
+      "severity": "minor",
+      "evidence": "PDF: plain text 'I. History/Background', 'II. March 22, 2016...'. HTML: same items rendered as blue underlined hyperlinks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF has a digital signature block at the bottom of the second page with 'Digitally signed by LYF' details. The HTML also includes this but it appears as part of the memo header area rather than as a separate signature block.",
+      "severity": "minor",
+      "evidence": "PDF page 2 shows signature block below the From section. HTML shows the same information in a similar location.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated hyperlink added to email address that does not appear as a link in the PDF",
+      "severity": "critical",
+      "evidence": "The HTML wraps larry.frost@ncdenr.gov in an <a href=\"mailto:larry.frost@ncdenr.gov\"> tag. While the email address text itself appears in the PDF's digital signature block, it is not a hyperlink in the source document. This is a minor fabrication of link functionality.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The HTML uses 'MEMORANDUM' as the h1 heading, which is reasonable, but the document also has a nested <main> inside <main>, creating an unusual structure. More importantly, the heading hierarchy is acceptable but the Table of Contents uses anchor links (href attributes) that are structural additions not in the PDF.",
+      "severity": "major",
+      "evidence": "The TOC in HTML has <a href=\"#history-background\">, <a href=\"#march-22-2016-public-meeting-and-oral-comments-summary\">, etc. These are navigational additions, not content fabrication per se.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The digital signature metadata block appears in the HTML body as visible text, reproducing content that appears in the PDF as a signature overlay. This is acceptable for a text conversion but worth noting.",
+      "severity": "minor",
+      "evidence": "HTML includes 'Digitally signed by LYF DN: cn=LYF, o=DWM, ou=SWS, email=larry.frost@ncdenr.gov, c=US Date: 2016.05.12 12:11:52 -04'00'' as body text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor discrepancy in attachment list numbering between page 4 (body text) and page 5 (attachments section). The body text on page 4 refers to 'Attachment V-Supporting Documentation' and 'Attachment VI-USPS Comment', but the attachment list on page 5 shows Attachment V as 'Written Public Comments Received' and Attachment VI as 'Supporting documentation received during public hearing'. The HTML faithfully reproduces both, so this is a source document inconsistency, not a conversion error.",
+      "severity": "minor",
+      "evidence": "This is noted for completeness but is NOT a conversion error - both versions appear in the PDF and HTML identically.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 5,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 114.84,
+    "page_count": 5,
+    "visual_input_tokens": 14044,
+    "visual_output_tokens": 915,
+    "content_input_tokens": 14832,
+    "content_output_tokens": 870,
+    "timestamp": "2026-04-16T00:48:22.228833",
+    "auditor_version": "1.0.0"
+  }
+}

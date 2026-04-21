@@ -1,0 +1,30 @@
+{
+  "document_id": "01_January_2012_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 31. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 35.27,
+    "page_count": 2,
+    "visual_input_tokens": 7085,
+    "visual_output_tokens": 269,
+    "content_input_tokens": 13134,
+    "content_output_tokens": 221,
+    "timestamp": "2026-04-16T00:46:18.911459",
+    "auditor_version": "1.0.0"
+  }
+}

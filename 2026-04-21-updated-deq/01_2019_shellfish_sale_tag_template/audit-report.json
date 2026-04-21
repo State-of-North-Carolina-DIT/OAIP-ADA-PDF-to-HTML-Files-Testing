@@ -1,0 +1,38 @@
+{
+  "document_id": "01_2019_shellfish_sale_tag_template",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The PDF contains a visual diagram of an example shellstock tag \u2014 a bordered rectangular box with arrow callouts connecting marginal annotations to specific fields on the tag. This diagram/illustration is entirely absent in the HTML, which renders all content as plain linear text.",
+      "severity": "critical",
+      "evidence": "PDF shows a bordered rectangle labeled 'SALE TAG' with content inside and arrows connecting left-side annotations (e.g., 'Harvest Date; may be mo/dy/yr\u2026', '90 Day tag retention notice') and right-side annotations (e.g., 'Dealer Name, Address, & Certification Number', 'Type of shellfish\u2026') to corresponding fields within the tag. HTML has no bordered box, no arrows, and no spatial diagram \u2014 explanatory text is placed inline in italics below each field.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains a substantive diagram of a sample shellstock sale tag rendered as a bordered rectangle with annotation arrows pointing to each required field. This visual layout diagram, which illustrates the required spatial arrangement and order of information on a physical tag, has no corresponding <img> tag in the HTML.",
+      "severity": "minor",
+      "evidence": "The PDF shows a bordered tag mockup with arrows and callout labels (e.g., arrows from 'Dealer Name, Address, & Certification Number' pointing to 'ABC OYSTER CO.' block, arrows from 'Harvest Date' label to the date field, etc.). The HTML has zero <img> tags and renders all content as linear paragraphs, losing the visual tag layout.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 131.89,
+    "page_count": 1,
+    "visual_input_tokens": 4789,
+    "visual_output_tokens": 3460,
+    "content_input_tokens": 6779,
+    "content_output_tokens": 1655,
+    "timestamp": "2026-04-20T20:09:11.800231",
+    "auditor_version": "1.0.0"
+  }
+}

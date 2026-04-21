@@ -1,0 +1,46 @@
+{
+  "document_id": "2023-roanoke-rapids-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 40. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements in the HTML. The document has a <main> in the outer structure and another <main> inside it, which is invalid HTML structure.",
+      "severity": "minor",
+      "evidence": "The HTML has <body><main>...<main>...</main></main></body> with two nested <main> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The cover page image (lake photo with NC State logo) appears as a figure in the body content area rather than being separated as a cover element, but this is a minor structural choice and does not duplicate content.",
+      "severity": "minor",
+      "evidence": "The cover image is placed inline after the header section.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": "visual:too_large(19p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 982.46,
+    "page_count": 19,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 41482,
+    "content_output_tokens": 416,
+    "timestamp": "2026-04-16T01:02:47.300190",
+    "auditor_version": "1.0.0"
+  }
+}

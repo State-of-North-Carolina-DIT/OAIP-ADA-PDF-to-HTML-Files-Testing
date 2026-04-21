@@ -1,0 +1,30 @@
+{
+  "document_id": "01_NRBM_Agenda_032509",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Bold emphasis on 'TECHNICAL REVIEW COMMITTEE' in the header block is removed in the HTML",
+      "severity": "minor",
+      "evidence": "PDF: 'TECHNICAL REVIEW COMMITTEE' is rendered in bold, clearly distinct from the non-bold 'NEUSE RIVER BASIN HYDROLOGIC MODEL' and 'MEETING' lines. HTML: All three lines appear in the same non-bold weight, losing the emphasis distinction.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 60.03,
+    "page_count": 1,
+    "visual_input_tokens": 4778,
+    "visual_output_tokens": 1349,
+    "content_input_tokens": 5965,
+    "content_output_tokens": 987,
+    "timestamp": "2026-04-20T20:13:25.210707",
+    "auditor_version": "1.0.0"
+  }
+}

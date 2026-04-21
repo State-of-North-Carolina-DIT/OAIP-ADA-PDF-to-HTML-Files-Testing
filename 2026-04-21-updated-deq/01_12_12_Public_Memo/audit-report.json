@@ -1,0 +1,46 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-list",
+      "description": "Ensure that lists are structured correctly",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  List element has direct children that are not allowed: figure [<ol type=\"a\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Handwritten initials/signatures next to the FROM names are missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows handwritten initials/marks next to 'Karen Higgins' (appears to be 'KH' with a flourish) and next to 'Brian Wrenn' (appears to be 'bjw'). The HTML conversion does not reproduce these handwritten marks.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 224.37,
+    "page_count": 7,
+    "visual_input_tokens": 18186,
+    "visual_output_tokens": 3524,
+    "content_input_tokens": 27062,
+    "content_output_tokens": 6027,
+    "timestamp": "2026-04-20T20:06:59.908882",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "document_id": "01_2020MayMFC_BusinessMeetingAgenda",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 76.72,
+    "page_count": 2,
+    "visual_input_tokens": 7876,
+    "visual_output_tokens": 1893,
+    "content_input_tokens": 9694,
+    "content_output_tokens": 1255,
+    "timestamp": "2026-04-20T20:08:33.485654",
+    "auditor_version": "1.0.0"
+  }
+}

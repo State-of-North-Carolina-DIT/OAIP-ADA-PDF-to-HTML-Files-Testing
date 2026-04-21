@@ -1,0 +1,21 @@
+{
+  "document_id": "DSCA_November_2023_Meeting_Minutes",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 79.75,
+    "page_count": 3,
+    "visual_input_tokens": 10852,
+    "visual_output_tokens": 1875,
+    "content_input_tokens": 12516,
+    "content_output_tokens": 1804,
+    "timestamp": "2026-04-20T20:26:21.827871",
+    "auditor_version": "1.0.0"
+  }
+}

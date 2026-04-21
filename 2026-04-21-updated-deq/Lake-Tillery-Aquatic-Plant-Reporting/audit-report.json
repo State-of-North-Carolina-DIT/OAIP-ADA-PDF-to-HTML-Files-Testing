@@ -1,0 +1,78 @@
+{
+  "document_id": "Lake-Tillery-Aquatic-Plant-Reporting",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Duke Energy logo with 'BUILDING A SMARTER ENERGY FUTURE' tagline missing from title page",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the Duke Energy corporate logo (green leaf icon with 'DUKE ENERGY' text) and 'BUILDING A SMARTER ENERGY FUTURE' tagline centered at the bottom of the title slide. The HTML rendering does not include this logo or tagline anywhere in the title page section.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Duke Energy logo missing from partner/stakeholder logos section on Our Role page",
+      "severity": "critical",
+      "evidence": "PDF page 2 includes the Duke Energy logo prominently among the partner organization logos (alongside NC Wildlife, NC State, UofSC, Catawba Riverkeeper, etc.). The HTML rendering lists all other partner logos vertically but omits the Duke Energy logo from the group.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "NC DEQ logo missing from bottom of key takeaways page",
+      "severity": "critical",
+      "evidence": "PDF page 4 displays both the NC DEQ logo and the NC Wildlife Resources Commission logo side by side at the bottom right of the slide. The HTML rendering only shows the NC Wildlife Resources Commission logo; the NC DEQ logo is absent.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4b",
+      "description": "\"duke-energy.com/AquaticPlants\" appears as plain text in two locations in the HTML (sections 3 and 4) rather than being wrapped in an <a href> tag. The PDF presents this URL as a styled/clickable hyperlink.",
+      "severity": "major",
+      "evidence": "HTML Section 3: '<p>duke-energy.com/AquaticPlants</p>' and Section 4 bullet: 'duke-energy.com/AquaticPlants' \u2014 both rendered as plain text without anchor tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The NC DEQ (Department of Environmental Quality) logo visible on PDF page 4 alongside the NC Wildlife Resources Commission logo is missing from the corresponding HTML section. Only the WRC logo has an <img> tag in that section.",
+      "severity": "minor",
+      "evidence": "PDF page 4 shows both the DEQ logo and the WRC logo side by side below the key takeaways. HTML section 4 contains only: '<img alt=\"North Carolina Wildlife Resources Commission logo\".../>'. No DEQ logo img tag is present.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Duke Energy logo shown among partner organization logos on PDF page 2 has no corresponding <img> tag in the HTML 'Our Role' section.",
+      "severity": "minor",
+      "evidence": "PDF page 2 includes the Duke Energy logo among partner logos (NC Wildlife, NC State, Duke Energy, Charlotte Water, etc.). The HTML section 2 lists 16 logo images but none with alt text referencing Duke Energy.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The 'Lake James Environmental Association' logo clearly visible on PDF page 2 has no corresponding correctly-labeled <img> tag in the HTML. Instead, the HTML contains images with alt text 'City of Belmont logo' and 'City of Gastonia logo' which cannot be verified against clearly identifiable logos in the PDF, suggesting possible alt text misidentification.",
+      "severity": "minor",
+      "evidence": "PDF page 2 bottom row shows a logo labeled 'Lake James Environmental Association'. HTML section 2 has no img with that alt text, but does contain '<img alt=\"City of Belmont logo\">' and '<img alt=\"City of Gastonia logo\">' which do not correspond to clearly readable logos in the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 344.88,
+    "page_count": 6,
+    "visual_input_tokens": 20500,
+    "visual_output_tokens": 11703,
+    "content_input_tokens": 14509,
+    "content_output_tokens": 6198,
+    "timestamp": "2026-04-20T20:33:21.933048",
+    "auditor_version": "1.0.0"
+  }
+}

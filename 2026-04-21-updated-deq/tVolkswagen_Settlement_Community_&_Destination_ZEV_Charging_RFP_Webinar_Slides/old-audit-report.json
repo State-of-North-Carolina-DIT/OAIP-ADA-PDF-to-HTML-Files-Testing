@@ -1,0 +1,118 @@
+{
+  "document_id": "tVolkswagen_Settlement_Community_&_Destination_ZEV_Charging_RFP_Webinar_Slides",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'community and destination zev infrastructure program' (6x); 'daq grant management system (gms)' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "Slide 11 has a two-column layout in the PDF (left column with introductory text, right column with checklist details) that is collapsed into a single column in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows 'Community and Destination ZEV Infrastructure' in a dark box on the left with bullet points, and 'Access to GMS' section plus 'General Application Requirements' checklist on the right. HTML renders all content sequentially in a single column.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Alternative Fuels Corridors Map on slide 6 is present in both versions but the map in the HTML appears without the surrounding styled box/header treatment visible in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows the map within a light blue/gray styled container with a header 'North Carolina's Alternative Fuel Corridors (AFCs)'. HTML shows just the map image with the title as text above.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated section headers and content between page-equivalent sections in the HTML create reading order disruption. The timeline table appears twice (slides 3 and 35 in PDF are intentionally repeated), but in the HTML the transition between these duplicates is not clearly delineated, and intermediate content from other slides flows between them without clear page breaks.",
+      "severity": "major",
+      "evidence": "The HTML shows the timeline table content flowing into eligible applicants content, then into program details, without clear visual separation that existed via slide boundaries in the PDF.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The DC Fast Funding Levels table on slide 9 has the 'Or (whichever is less)' condition spanning multiple rows in the PDF but is repeated per row in the HTML table.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Or (whichever is less)' as a vertically spanning condition across all four charging capacity rows. HTML repeats 'Or (whichever is less)' in each individual row.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Slide 12 and slide 36 contain very similar content about GMS access deadline (January 13, 2025). In the HTML, both instances appear sequentially which may confuse readers about whether these are distinct requirements.",
+      "severity": "minor",
+      "evidence": "PDF has these as separate slides at different points in the presentation. HTML renders both in sequence with slightly different wording ('we can't guarantee access by the application close date' vs 'we there is no guarantee you will get access before the application closes').",
+      "page": 36,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Hyperlinks in the HTML point to specific file URLs that are plausible but not explicitly shown as full URLs in the PDF presentation slides. These appear to be reasonable inferences from the link text rather than fabrications.",
+      "severity": "minor",
+      "evidence": "For example, 'How-to-Create-a-NC-ID.pdf' links to 'https://files.nc.gov/ncdeq/Air%20Quality/motor/grants/files/VW/How-to-Create-a-NC-ID.pdf' and 'Substitute W-9 Form' links to 'https://www.deq.nc.gov/documents/files/grant-forms/state-north-carolina-sub-w-9-01292019/download'. These full URLs are not visible in the PDF but are plausible resolved URLs from the hyperlinks in the original presentation.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The DAQ Grant Management System (GMS) section from pages 16-17 is duplicated in the HTML. Pages 16 and 17 of the PDF contain essentially the same content (with page 17 showing a different screenshot of the agency dropdown), and both are reproduced as separate sections with nearly identical text.",
+      "severity": "major",
+      "evidence": "Two separate sections both titled 'DAQ Grant Management System (GMS)' contain identical bullet points: 'After getting your NCID', 'Completed the North Carolina Substitute W-9 Form...', 'Finally Submit the DAQ Access Authorization WEB Form', etc. This duplication exists in the PDF itself (pages 16 and 17 repeat the same text with different screenshots), so this is a faithful reproduction of the source.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The timeline table appears twice in the HTML (from pages 3 and 35 of the PDF), and the GMS access deadline section appears twice (from pages 12 and 36). The Subscribe section also appears twice (pages 22 and 38). These are faithful reproductions of the PDF's repetitive slide content.",
+      "severity": "minor",
+      "evidence": "PDF pages 3 and 35 both show the same timeline; pages 12 and 36 both show the GMS access deadline; pages 22 and 38 both show the subscribe information. HTML reproduces all of these. This is the source PDF's repetition, not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Some heading hierarchy choices are inconsistent. The 'January 13, 2025' deadline text is rendered as h3 in one instance, which is appropriate, but the 'January 31, 2025 by 11:59 PM EST' is also rendered as h3 nested inside a list item, which is unusual structurally.",
+      "severity": "minor",
+      "evidence": "In the application due date section, '<h3>January 31, 2025 by 11:59 PM EST</h3>' appears inside a '<li>' element. While the PDF emphasizes this date prominently, nesting a heading inside a list item is structurally unusual.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3",
+      "description": "The DC Fast Funding Levels table in the HTML has 8 columns including separate columns for the 'Or (whichever is less)' condition, which makes the table wider but preserves all data accurately. The PDF presents this as a more compact visual table with the 'Or (whichever is less)' spanning rows.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Or (whichever is less)' as a spanning condition between the percentage and dollar amount columns. HTML breaks this into separate 'Government-Owned Property Condition' and 'Non-Government-Owned Property Condition' columns. All numeric data is preserved correctly.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 403.73,
+    "page_count": 40,
+    "visual_input_tokens": 87489,
+    "visual_output_tokens": 1958,
+    "content_input_tokens": 77400,
+    "content_output_tokens": 1157,
+    "timestamp": "2026-04-16T00:59:44.623075",
+    "auditor_version": "1.0.0"
+  }
+}

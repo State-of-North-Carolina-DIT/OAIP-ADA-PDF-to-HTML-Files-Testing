@@ -1,0 +1,30 @@
+{
+  "document_id": "009_outfall_COALASHSUMMARY4March_2014",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C3b",
+      "description": "The PDF's multi-row table header (with separate rows for dates, Report #/Lab/Dissolved sample ID labels, and Parameter/PQL/Units) is collapsed into a single header row with misleading combined labels. 'PQL' becomes 'Lab PQL', the units column becomes 'Report # / Dissolved Units\\Hg 1631', and each date column header concatenates all three sample IDs (e.g., '2/14/2014 AC04986 AC04987 AC04993 Value'). The underlying data values are intact, but the header structure misrepresents the original column hierarchy.",
+      "severity": "major",
+      "evidence": "PDF has distinct header rows: Row for dates (2/14/2014, etc.), Row for 'Report #' with sample IDs (AC04986, AC05085, etc.), Row for 'Lab Dissolved' with IDs (AC04987, AC05086, etc.), Row for 'PQL Units\\Hg 1631' with IDs (AC04993, AC05104, etc.). HTML merges all into one row: e.g., <th>Report # / Dissolved Units\\Hg 1631</th> for what is the 'Units' column, and <th>Lab PQL</th> combining a row label with a column header.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 311.03,
+    "page_count": 1,
+    "visual_input_tokens": 4358,
+    "visual_output_tokens": 12238,
+    "content_input_tokens": 16415,
+    "content_output_tokens": 5595,
+    "timestamp": "2026-04-20T20:07:11.493484",
+    "auditor_version": "1.0.0"
+  }
+}

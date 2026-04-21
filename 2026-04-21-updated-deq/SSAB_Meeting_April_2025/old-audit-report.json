@@ -1,0 +1,78 @@
+{
+  "document_id": "SSAB_Meeting_April_2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 51. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "The HTML conversion splits the single-page PDF into two separate page sections with a large blank gap, and the DEQ logo/footer content appears in the middle of the document as a separator between the agenda content and the WebEx information, disrupting the original layout.",
+      "severity": "major",
+      "evidence": "In the PDF, page 1 is a single cohesive agenda page. In the HTML, the agenda content is followed by a large whitespace gap, then the DEQ footer logo, then official titles (Josh Stein, Governor, etc.), then the 'Secretaries' Science Advisory Board' heading again, effectively duplicating header/structural content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content appears between page-equivalent sections in the HTML. The governor name, secretary name, deputy secretary name, department name, and board title are repeated between the agenda content and the WebEx meeting information section.",
+      "severity": "major",
+      "evidence": "In the PDF pages 1-2, the header information (Josh Stein Governor, D. Reid Wilson Secretary, Sushma Masemore, North Carolina Environmental Quality, Secretaries' Science Advisory Board) appears once at the top. In the HTML, this information is repeated in the middle of the document between the agenda and WebEx sections.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure",
+      "severity": "minor",
+      "evidence": "The HTML has a <main> element wrapping the entire page, and then another <main> element inside it after the <header> block. This is a structural issue but does not affect content fidelity.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The full-page embedded images from the PDF are included as <img> tags alongside the text content, effectively duplicating the entire document content visually",
+      "severity": "major",
+      "evidence": "Two <img> tags with style='width: 612.0pt' appear in the HTML. These appear to be full-page images of the PDF pages rendered alongside the already-converted text content. The first image has alt='North Carolina State Seal' (which is inaccurate - it's the entire first page, not just the seal) and the second has alt='' (appears between the agenda and WebEx info sections, representing the full second page).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "First image alt text is inaccurate - describes only a small element of what appears to be a full-page image",
+      "severity": "minor",
+      "evidence": "The first <img> has alt='North Carolina State Seal' but based on the 612pt width, it appears to be a full-page rendering of page 1, not just the state seal.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Footer content from page 2 (DEQ address and phone) is duplicated - it appears once in the page 2 image area and the footer info from page 1 is not explicitly rendered as text",
+      "severity": "minor",
+      "evidence": "The PDF footer shows 'North Carolina Department of Environmental Quality, 217 West Jones Street | 1601 Mail Service Center | Raleigh, North Carolina 27699-1601, 919-707-8700' on both pages. The HTML does not include this footer text explicitly, which is acceptable header/footer removal.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 51.08,
+    "page_count": 2,
+    "visual_input_tokens": 7305,
+    "visual_output_tokens": 653,
+    "content_input_tokens": 6618,
+    "content_output_tokens": 737,
+    "timestamp": "2026-04-16T00:52:45.221250",
+    "auditor_version": "1.0.0"
+  }
+}

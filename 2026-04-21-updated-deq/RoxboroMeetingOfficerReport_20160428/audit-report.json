@@ -1,0 +1,38 @@
+{
+  "document_id": "RoxboroMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Digital signature metadata rendered as visible inline text in the HTML, inserted between the 'From' field and the 'Subject' field, which is not visually present in the PDF and disrupts the reading flow of the memorandum header.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows 'From: Elizabeth S. Werner / Division of Waste Management / Raleigh Central Office' followed directly by 'Subject: Meeting Officer's Report'. HTML inserts three additional lines between them: 'Digitally signed by Elizabeth S Werner', 'DN: cn=Elizabeth S Werner, o=DWM-Solid Waste, ou=NCDENR, email=elizabeth.werner@ncdenr.gov, c=US', and 'Date: 2016.04.28 10:23:05 -04'00''.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The handwritten signature image of Elizabeth S. Werner visible in the PDF (page 1, next to the digital signature metadata) is not present as an <img> tag in the HTML. The digital signature text metadata is reproduced, but the actual signature graphic is missing.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a handwritten cursive signature next to the digital signature block. The HTML includes two <img> tags (one for the NC DEQ logo, one for what appears to be the footer bar at width 654.4pt), but no <img> for the signature itself.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 157.55,
+    "page_count": 5,
+    "visual_input_tokens": 16992,
+    "visual_output_tokens": 3044,
+    "content_input_tokens": 16588,
+    "content_output_tokens": 4204,
+    "timestamp": "2026-04-20T20:34:36.356654",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse content fidelity response as JSON",
+      "severity": "major",
+      "evidence": "```json\n{\n  \"findings\": [\n    {\n      \"check_id\": \"C1\",\n      \"severity\": \"critical\",\n      \"description\": \"The email address for the project manager is different in the HTML contact paragraph versus the PDF. The PDF page 1 states 'caroline.bari@ncdenr.gov' while page 2 states the contact email as 'caroline.bari@deq.nc.gov'. The HTML reproduces both emails correctly matching their respective locations in the PDF. However, the HTML mailto link for the first occurrence correctly uses 'caroline.bar",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 43.29,
+    "page_count": 2,
+    "visual_input_tokens": 6023,
+    "visual_output_tokens": 200,
+    "content_input_tokens": 6980,
+    "content_output_tokens": 789,
+    "timestamp": "2026-04-16T00:45:50.270343",
+    "auditor_version": "1.0.0"
+  }
+}

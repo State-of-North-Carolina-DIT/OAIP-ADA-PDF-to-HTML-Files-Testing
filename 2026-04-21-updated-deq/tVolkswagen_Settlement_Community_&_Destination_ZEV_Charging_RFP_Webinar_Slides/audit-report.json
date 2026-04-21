@@ -1,0 +1,62 @@
+{
+  "document_id": "tVolkswagen_Settlement_Community_&_Destination_ZEV_Charging_RFP_Webinar_Slides",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'community and destination zev infrastructure program' (6x); 'daq grant management system (gms)' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C1",
+      "description": "The Level 2 Add On Funding Levels table introduces the column header 'Condition' which does not appear anywhere in the source PDF. The PDF column header reads 'Or (whichever is less)'.",
+      "severity": "critical",
+      "evidence": "PDF page 10 table column header: 'Or (whichever is less)'. HTML table header: '<th scope=\"col\">Condition</th>' with cell data 'or (whichever is less)'. The word 'Condition' is fabricated.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The link for the program information URL has an href that does not appear in the PDF. The PDF shows the URL 'https://deq.nc.gov/VW-Community-Destination' but the HTML wraps it in an <a> tag with a different, longer href that is not visible anywhere in the PDF text.",
+      "severity": "critical",
+      "evidence": "PDF page 40 text: 'https://deq.nc.gov/VW-Community-Destination'. HTML href: 'https://www.deq.nc.gov/news/events/volkswagen-settlement-community-and-destination-zero-emission-vehicle-infrastructure-program'. The href URL is not present in the source PDF text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The DC Fast Funding Levels table structure was reorganized. In the PDF, 'Or (whichever is less)' appears once as a vertically spanning element between the percentage column and dollar amount column for each property type. In the HTML, this text is repeated and appended to each dollar amount cell.",
+      "severity": "major",
+      "evidence": "PDF page 9: 'Or (whichever is less)' is a single element spanning rows between 100% and the dollar amounts. HTML: Each cell reads e.g. '$67,500 Or (whichever is less)' with the qualifier text embedded in each data cell rather than as a separate structural element.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The city/urban skyline photograph from the bottom portion of PDF page 1 (title slide) is missing from the HTML. Only the lighthouse/coastal landscape image from the top portion is included.",
+      "severity": "minor",
+      "evidence": "PDF page 1 has two distinct photographs: a coastal scene with a lighthouse (top) and a city skyline at night (bottom, appearing to show Asheville). The HTML only has one image for page 1 content: <img alt='Coastal landscape with lighthouse at sunset'>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 273.12,
+    "page_count": 40,
+    "visual_input_tokens": 105335,
+    "visual_output_tokens": 4793,
+    "content_input_tokens": 77651,
+    "content_output_tokens": 7836,
+    "timestamp": "2026-04-20T20:40:53.217969",
+    "auditor_version": "1.0.0"
+  }
+}

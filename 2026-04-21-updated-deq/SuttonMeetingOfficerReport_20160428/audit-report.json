@@ -1,0 +1,21 @@
+{
+  "document_id": "SuttonMeetingOfficerReport_20160428",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 111.33,
+    "page_count": 5,
+    "visual_input_tokens": 16888,
+    "visual_output_tokens": 3157,
+    "content_input_tokens": 15990,
+    "content_output_tokens": 1895,
+    "timestamp": "2026-04-20T20:36:27.686318",
+    "auditor_version": "1.0.0"
+  }
+}

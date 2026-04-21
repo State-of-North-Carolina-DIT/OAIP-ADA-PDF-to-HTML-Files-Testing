@@ -1,0 +1,21 @@
+{
+  "document_id": "01_2014_CRFL_Sales_Report",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 565.91,
+    "page_count": 20,
+    "visual_input_tokens": 61084,
+    "visual_output_tokens": 9453,
+    "content_input_tokens": 103025,
+    "content_output_tokens": 21471,
+    "timestamp": "2026-04-20T20:16:37.409498",
+    "auditor_version": "1.0.0"
+  }
+}

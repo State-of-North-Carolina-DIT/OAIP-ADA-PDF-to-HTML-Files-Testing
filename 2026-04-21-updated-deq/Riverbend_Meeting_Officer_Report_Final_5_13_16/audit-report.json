@@ -1,0 +1,21 @@
+{
+  "document_id": "Riverbend_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 82.38,
+    "page_count": 5,
+    "visual_input_tokens": 17058,
+    "visual_output_tokens": 1817,
+    "content_input_tokens": 16330,
+    "content_output_tokens": 1568,
+    "timestamp": "2026-04-20T20:32:39.116034",
+    "auditor_version": "1.0.0"
+  }
+}

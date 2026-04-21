@@ -1,0 +1,38 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf_2",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "PARSE_ERROR",
+      "description": "Failed to parse content fidelity response as JSON",
+      "severity": "major",
+      "evidence": "```json\n{\n  \"findings\": [\n    {\n      \"check_id\": \"C1\",\n      \"severity\": \"critical\",\n      \"description\": \"The email contact address on page 1 of the PDF is caroline.bari@ncdenr.gov, but on page 2 the contact email is caroline.bari@deq.nc.gov. The HTML preserves both correctly. However, the HTML mailto link for the first instance uses caroline.bari@ncdenr.gov which matches the PDF. No fabrication here \u2014 disregard this note. Actual issue: The EPA ID Number used for locating documents differs bet",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 55.11,
+    "page_count": 2,
+    "visual_input_tokens": 6023,
+    "visual_output_tokens": 233,
+    "content_input_tokens": 6980,
+    "content_output_tokens": 707,
+    "timestamp": "2026-04-16T00:46:02.108190",
+    "auditor_version": "1.0.0"
+  }
+}

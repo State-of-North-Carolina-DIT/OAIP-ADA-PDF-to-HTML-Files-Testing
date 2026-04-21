@@ -1,0 +1,30 @@
+{
+  "document_id": "01_bardeninlet",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 155.11,
+    "page_count": 1,
+    "visual_input_tokens": 4240,
+    "visual_output_tokens": 153,
+    "content_input_tokens": 3712,
+    "content_output_tokens": 211,
+    "timestamp": "2026-04-16T00:48:42.391157",
+    "auditor_version": "1.0.0"
+  }
+}

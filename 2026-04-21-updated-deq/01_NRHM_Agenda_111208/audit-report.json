@@ -1,0 +1,30 @@
+{
+  "document_id": "01_NRHM_Agenda_111208",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Bold emphasis on 'TECHNICAL REVIEW COMMITTEE' in the document header is lost in the HTML conversion.",
+      "severity": "minor",
+      "evidence": "In the PDF, 'TECHNICAL REVIEW COMMITTEE' is rendered in bold, visually distinguishing it from the non-bold 'NEUSE RIVER BASIN HYDROLOGIC MODEL' and 'MEETING' lines. In the HTML, all three header lines appear in the same regular weight, removing the bold emphasis entirely.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 48.07,
+    "page_count": 1,
+    "visual_input_tokens": 4802,
+    "visual_output_tokens": 1177,
+    "content_input_tokens": 5992,
+    "content_output_tokens": 705,
+    "timestamp": "2026-04-20T20:14:13.285333",
+    "auditor_version": "1.0.0"
+  }
+}

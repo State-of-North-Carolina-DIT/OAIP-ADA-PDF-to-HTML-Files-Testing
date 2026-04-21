@@ -1,0 +1,30 @@
+{
+  "document_id": "2020-waccamaw-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "Two extra images labeled 'Full page vector graphic for Table 1' and 'Full page vector graphic for Table 2' duplicate the table data already rendered as HTML tables. These images have no equivalent standalone visual in the source PDF \u2014 they are full-page renders of the same table content.",
+      "severity": "major",
+      "evidence": "HTML contains <img alt=\"Full page vector graphic for Table 1\" \u2026> immediately before the HTML <table> for Table 1, and <img alt=\"Full page vector graphic for Table 2\" \u2026> immediately before the HTML <table> for Table 2. The PDF has each table only once on its respective page (pages 5 and 10).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 126.16,
+    "page_count": 10,
+    "visual_input_tokens": 31952,
+    "visual_output_tokens": 3698,
+    "content_input_tokens": 24398,
+    "content_output_tokens": 2036,
+    "timestamp": "2026-04-20T20:20:01.560844",
+    "auditor_version": "1.0.0"
+  }
+}

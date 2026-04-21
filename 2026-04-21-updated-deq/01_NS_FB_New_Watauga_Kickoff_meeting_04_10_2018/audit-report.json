@@ -1,0 +1,70 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-image-redundant-alt",
+      "description": "Ensure image alternative is not repeated as text",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text [<img alt=\"Task 2 - OASIS Application Development\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABrMAAAC7CAIAAABJkPKKAAAACXBIWXMAAA7EAAAOxAGVKw4bA]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Regime Changes bar chart (Stream Condition Middle Deep River, Node 280) is missing from the HTML. Only the legend categories are rendered as text bullet points, losing the actual data visualization.",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows a grouped bar chart with '% of Days at Flow Level' on the y-axis, QAA percentage ranges in the legend, and four demand scenarios (Unimpaired, 2003, 2030, 2050) on the x-axis. The HTML converts this to a flat bullet list of the QAA categories (< 10% of QAA*, 10-20% of QAA, etc.) and scenario labels, with no chart image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Project Organization Venn diagram is missing from the HTML. The three overlapping circles showing the relationship between Data Collection (HDR), Model Development (HydroLogics), and Data/Model Evaluation & Plan Development (NCDWR) are replaced by plain bullet points.",
+      "severity": "critical",
+      "evidence": "PDF page 19 shows a Venn diagram with three intersecting circles, visually conveying the collaborative/overlapping nature of the three project roles. The HTML renders this as a simple bulleted list: 'Data Collection: HDR', 'Model Development: HydroLogics', 'Data, Model Evaluation & Plan Development: NCDWR', losing the visual relationship.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Venn diagram on PDF page 19 (Project Organization) showing the overlapping roles of HDR, HydroLogics, and NCDWR is missing from the HTML. Only a text bullet list is provided, losing the visual representation of the organizational overlap.",
+      "severity": "minor",
+      "evidence": "PDF page 19 shows three overlapping circles labeled 'Data Collection / HDR', 'Model Development / HydroLogics', and 'Data, Model Evaluation & Plan Development / NCDWR'. HTML section 'Project Organization' has only <ul> text with no <img> tag for the diagram.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The bar chart for Flow Regime Changes (PDF page 15) showing 'Stream Condition Middle Deep River (Node 280) June - November' is missing as an image from the HTML. Only the legend categories and scenario labels are listed as text, but no <img> tag exists for the chart itself.",
+      "severity": "minor",
+      "evidence": "PDF page 15 has a detailed stacked bar chart comparing flow levels across Unimpaired, 2003, 2030, and 2050 Demands. HTML section 'Evaluation Criteria - Flow Regime Changes' lists the legend items as bullet points and scenario names as a paragraph, but has no corresponding <img> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Supply Demand & Deficits table (PDF page 16) is duplicated in the HTML\u2014appearing both as an <img> (with alt text describing the table) and as a fully structured HTML <table> with the same data.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img alt=\"Table of Water Supply Demand & Deficits Predicted by the Neuse River Basin Hydrologic Model, 2050 Scenario\" .../></figure> immediately followed by a <table> reproducing all six data rows (Orange-Alamance through SGWASA). The PDF shows this data only once.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 204.67,
+    "page_count": 23,
+    "visual_input_tokens": 71183,
+    "visual_output_tokens": 4178,
+    "content_input_tokens": 45331,
+    "content_output_tokens": 4436,
+    "timestamp": "2026-04-20T20:17:37.955930",
+    "auditor_version": "1.0.0"
+  }
+}

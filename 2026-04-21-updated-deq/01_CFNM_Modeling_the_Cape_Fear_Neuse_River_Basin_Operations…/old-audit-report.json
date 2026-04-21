@@ -1,0 +1,182 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 36. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'legend: reservoir node, demand node, junction node, flow arc, withdrawal arc, ww...' (7x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DRAFT watermark present in the PDF is absent in the HTML, but this is a decorative element and acceptable. However, the HydroLogics logo on the cover page is missing in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the HydroLogics logo with the green/blue circular graphic. HTML page 1 shows the logo image is present.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The full-page model schematic map is missing or significantly degraded in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 6 shows a large detailed map schematic of the Cape Fear and Neuse River basins with nodes, arcs, and geographic labels. The HTML shows only a partial/cropped version of this map.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow chart diagrams for basin operations are converted to bullet lists in HTML, losing the visual relationships (flow arcs, connections, node types) shown in the diagrams.",
+      "severity": "critical",
+      "evidence": "PDF pages 10-16 show detailed flow chart diagrams with Reservoir Nodes (red triangles), Demand Nodes (blue squares), Junction Nodes (yellow circles), and connecting arcs (Flow, Withdrawal, WW Return). HTML renders these as flat bullet lists of node names, losing all spatial/relational information.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Middle Cape Fear Basin diagram is replaced with a bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 11 shows a detailed flow chart with spatial relationships between Cane Creek Reservoir, OWASA Demand, Jordan Lake, Harris Lake, etc. HTML shows only a bulleted text list.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes on the Deep River diagram is replaced with a bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 12 shows flow relationships between High Point Reservoir, Siler City Reservoirs, Randleman Reservoir, Ramseur Reservoir, etc. HTML renders as flat bullet list.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Lower Cape Fear Basin diagram is replaced with a bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 13 shows flow chart with Harnett Co., Dunn, Fayetteville demands, Glenville Reservoir, and Cape Fear gages. HTML renders as bullet list.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Upper Neuse Basin diagram is replaced with a bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 14 shows complex flow chart with West Fork Eno, Lake Orange, Falls Lake, Beaverdam Lake, etc. HTML renders as bullet list.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Middle Neuse Basin diagram is replaced with a bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows flow chart with Crabtree Creek, Falls Lake flows, Lake Wheeler, Lake Benson, Goldsboro. HTML renders as bullet list.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart of Major Nodes in the Lower Neuse Basin diagram is replaced with a bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 16 shows flow chart with Buckhorn Reservoir, Contentnea Creek, Kinston Gage, Wilson Demand. HTML renders as bullet list.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Underlined subheadings in section 2.2 (Static and Pattern Data, Timeseries Data, Operating Rules) lose their underline formatting in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 7-8 shows 'Static and Pattern Data', 'Timeseries Data', and 'Operating Rules' as bold underlined subheadings. HTML shows them as plain bold text without underline.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "Italic formatting on filenames is lost in HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 8 shows OCL filenames like 'basedata.dss', 'main.ocl', 'filter_inflows.ocl' in italics. HTML renders them as plain text.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The word 'representative' loses its italic emphasis in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 4 shows 'representative' in italics for emphasis: 'whose variation is *representative* of history'. HTML shows it as plain text.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4",
+      "description": "Internal anchor links were fabricated in the Table of Contents that do not exist in the source PDF",
+      "severity": "minor",
+      "evidence": "The HTML TOC contains href links like '#introduction', '#model-components', '#schematic', '#model-input', '#run-configurations', '#model-output'. The PDF has no hyperlinks in its Table of Contents - it is a plain text listing with page numbers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "HTML has nested <main> elements creating invalid structure, and uses two <main> tags",
+      "severity": "major",
+      "evidence": "The HTML has a <main> wrapper at the top level, then another <main> element nested inside it after the header section, creating invalid HTML structure.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The flowchart content is presented twice - once as inline descriptive text in the flowchart sections and also partially repeated via the bullet list items that describe operational notes",
+      "severity": "minor",
+      "evidence": "For example, the Jordan Lake operational description appears both in the flowchart section heading area and repeated within the bullet list items for the Middle Cape Fear Basin flowchart.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Minor text issue: PDF says 'Appendices C1 and C2' in the Timeseries Data section but Appendix C in the TOC is singular",
+      "severity": "minor",
+      "evidence": "PDF page 8: 'using the provisional approach for facilitating real-time drought management described in Appendices C1 and C2'. HTML reproduces this faithfully. The TOC lists 'C\u2013 Provisional Inflow Data Development' (singular). This inconsistency exists in the source PDF itself, so not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The PDF text on page 5 has a grammatical/structural issue with '58 reservoir 42 actual reservoirs' which the HTML reproduces verbatim - however the PDF clearly has a formatting artifact (parenthetical structure lost)",
+      "severity": "major",
+      "evidence": "PDF page 5: 'There are 58 reservoir 42 actual reservoirs, 11 flood impoundments on Crabtree Creek, and five artificial storage nodes used for time-of-travel flow routing)'. The HTML reproduces this exactly. The original PDF text appears to have a missing opening parenthesis, which both versions share. Not a conversion error.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the second image is reasonably descriptive but not perfectly accurate",
+      "severity": "minor",
+      "evidence": "The alt text 'Map-based schematic of the Cape Fear and Neuse River Basins' is a reasonable description of the schematic image shown on page 6 of the PDF. The first image alt text 'Hydrologics logo' is appropriate for the logo.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 9,
+  "major_count": 4,
+  "minor_count": 7,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 225.25,
+    "page_count": 18,
+    "visual_input_tokens": 42857,
+    "visual_output_tokens": 2059,
+    "content_input_tokens": 44039,
+    "content_output_tokens": 995,
+    "timestamp": "2026-04-16T00:48:52.237008",
+    "auditor_version": "1.0.0"
+  }
+}

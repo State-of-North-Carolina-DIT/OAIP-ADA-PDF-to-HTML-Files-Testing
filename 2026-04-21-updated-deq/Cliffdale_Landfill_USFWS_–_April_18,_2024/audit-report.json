@@ -1,0 +1,78 @@
+{
+  "document_id": "Cliffdale_Landfill_USFWS_\u2013_April_18,_2024",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>] (and 3 more)",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'status: federally-listed endangeredbiological determination: no effect' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C4a",
+      "description": "Malformed mailto link created by incorrectly merging email address and surrounding text into one href attribute.",
+      "severity": "critical",
+      "evidence": "PDF page 2 says: 'you can write to us at Raleigh@fws.gov or please contact Leigh Mann'. HTML creates a single malformed link: <a href=\"mailto:Raleigh@fws.govorpleasecontact\">Raleigh@fws.gov or please contact</a>. The email address and the phrase 'or please contact' should not be combined in the href.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Determination checkboxes rendered as unchecked (\u25a1) in the HTML, while the filled/submitted version on PDF page 2 shows all three boxes as checked/filled (dark squares).",
+      "severity": "major",
+      "evidence": "PDF page 2 shows three filled/checked checkboxes for 'no effect', 'may affect, not likely to adversely affect', and 'no Eagle Act permit required'. HTML renders them as empty checkbox characters: '\u25a1 \"no effect\"...', '\u25a1 \"may affect, not likely to adversely affect\"...', '\u25a1 \"no Eagle Act permit required\"...' \u2014 losing the checked state from the submitted document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The NCNHP map from PDF page 29 (showing project boundary, buffered boundary, and managed areas on an aerial/street basemap) is missing as an image in the HTML. Only the map legend text is present.",
+      "severity": "minor",
+      "evidence": "PDF page 29 contains a full-page map titled 'NCNHDE-25195: Cliffdale Landfill' with project boundary, buffered project boundary, and managed area overlays. The HTML has text for the legend items (Managed Area, Buffered Project Boundary, Project Boundary) and attribution text, but no <img> tag for the map itself.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 1 (Federal Species of Concern) is rendered twice in the HTML \u2014 once as an embedded image and once as an HTML table \u2014 when the PDF contains it only once.",
+      "severity": "major",
+      "evidence": "The HTML includes <figure><img alt=\"Table graphic\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> immediately followed by a full HTML <table><caption>Table 1 \u2013 Federal Species of Concern</caption>... with all 9 species rows. The PDF page 5 presents this table only once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text 'Table graphic' for the image rendering of Table 1 is generic and non-descriptive.",
+      "severity": "minor",
+      "evidence": "HTML has <img alt=\"Table graphic\"> for what is clearly Table 1 \u2013 Federal Species of Concern from PDF page 5. A descriptive alt text like 'Table 1 \u2013 Federal Species of Concern listing nine species with their scientific names and federal listing status' would be more appropriate.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": "visual:too_large(29p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 131.37,
+    "page_count": 29,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 76471,
+    "content_output_tokens": 5364,
+    "timestamp": "2026-04-20T20:28:33.196845",
+    "auditor_version": "1.0.0"
+  }
+}

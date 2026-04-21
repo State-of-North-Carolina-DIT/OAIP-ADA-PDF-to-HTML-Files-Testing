@@ -1,0 +1,38 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Officials' names (PAT McCRORY/Governor, DONALD R. VAN DER VAART/Secretary, TRACY DAVIS/Director) are duplicated on page 1. They appear once in the letterhead header area and then again as inline body text below a colored banner bar before the MEMORANDUM heading. Footer address text also appears between the header area and the memo body content.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows officials' names once in the upper-right header. HTML page 1 shows them first in the header area, then footer text ('State of North Carolina | Environmental Quality...'), then a colored bar, then officials' names listed again as body text, then the MEMORANDUM heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated footer and header content inserted between page-equivalent sections disrupts reading flow. Between the end of page 1 content (outline I\u2013IV) and the start of page 2 content (Section I History/Background), the HTML inserts footer address text and a header banner bar with officials' names.",
+      "severity": "major",
+      "evidence": "PDF flows directly from the outline on page 1 to Section I on page 2 with only a page break. HTML interposes footer text and a colored header banner with officials' names between these sections, creating an interruption for a continuous reader.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 187.62,
+    "page_count": 5,
+    "visual_input_tokens": 16506,
+    "visual_output_tokens": 6111,
+    "content_input_tokens": 16016,
+    "content_output_tokens": 2196,
+    "timestamp": "2026-04-20T20:24:13.865950",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "document_id": "01_JLR4_Agenda_Schedule",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Merged table cells in rows for 11/14/2013 and 9/11/2014 were split, and the content was duplicated across separate columns instead of spanning them.",
+      "severity": "major",
+      "evidence": "In the PDF, the 11/14/2013 row shows 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' in a single merged cell spanning columns 2-4. In the HTML, the same text is duplicated separately in both the 'Jordan Lake Water Supply Allocations' column and the 'Cape Fear River Basin Water Supply Plan' column, with the 'Hydrologic Model' column left empty. The same duplication occurs for the 9/11/2014 row ('EMC decision at the September 2014 meeting.').",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 'EMC Model Approval' entry in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column appears to be duplicated across additional rows in the HTML that are empty in the PDF.",
+      "severity": "major",
+      "evidence": "In the PDF, 'EMC Model Approval' appears as a vertically merged cell in the rightmost column (approximately rows 2/1/2013). In the HTML, 'EMC Model Approval' is repeated individually in the rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013, whereas in the PDF rows 4/1/2013 and 5/1/2013 appear empty in that column.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Rows 11/14/2013 and 9/11/2014 in the PDF table have text that spans across the 'Jordan Lake Water Supply Allocations' and 'Cape Fear River Basin Water Supply Plan' columns as a single merged cell. In the HTML, the identical text is duplicated into both columns as separate cells, misrepresenting the original structure.",
+      "severity": "major",
+      "evidence": "PDF 11/14/2013: single merged cell reads 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' spanning Jordan Lake and Cape Fear columns. HTML duplicates this text into both <td> cells separately. Same duplication occurs for 9/11/2014 row ('EMC decision at the September 2014 meeting.').",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "'EMC Model Approval' in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column appears as a single vertically-merged cell in the PDF (spanning approximately the 2/1/2013 through 5/1/2013 date range). The HTML repeats this value across four separate rows (1/1/2013, 2/1/2013, 4/1/2013, 5/1/2013), fabricating apparent cell content for rows where the PDF had a merged cell.",
+      "severity": "major",
+      "evidence": "PDF shows 'EMC Model Approval' once in a merged cell in column 4. HTML contains <td>EMC Model Approval</td> in four distinct rows.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 119.35,
+    "page_count": 2,
+    "visual_input_tokens": 7700,
+    "visual_output_tokens": 3174,
+    "content_input_tokens": 8137,
+    "content_output_tokens": 2844,
+    "timestamp": "2026-04-20T20:13:38.773737",
+    "auditor_version": "1.0.0"
+  }
+}

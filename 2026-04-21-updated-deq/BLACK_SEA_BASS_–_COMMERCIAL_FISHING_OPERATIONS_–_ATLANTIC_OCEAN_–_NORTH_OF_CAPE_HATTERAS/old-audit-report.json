@@ -1,0 +1,62 @@
+{
+  "document_id": "BLACK_SEA_BASS_\u2013_COMMERCIAL_FISHING_OPERATIONS_\u2013_ATLANTIC_OCEAN_\u2013_NORTH_OF_CAPE_HATTERAS",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 34. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated footer content appears inline between page-equivalent sections in the HTML",
+      "severity": "minor",
+      "evidence": "The PDF has footer text ('State of North Carolina | Division of Marine Fisheries...') at the bottom of each page as standard footer content. In the HTML, this footer content appears inline between page sections, disrupting reading flow.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Nested <main> elements create invalid HTML structure. The document has a <main> inside a <main>, which is semantically incorrect.",
+      "severity": "major",
+      "evidence": "The outer <body> contains <main> which contains <header> and then another <main> element holding the document content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Embedded page-break images appear as inline figures within list items, breaking the flow of content. These are artifacts of page-by-page conversion.",
+      "severity": "minor",
+      "evidence": "Within Section III.B (TRAWLS), a <figure><img> tag appears mid-sentence between '...from January 1 through March 31, or more than 100 pounds of black sea bass from' and 'April 1 through December 31...'. Similarly in Section IV.J another <figure><img> appears mid-content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The first image alt text describes it as a seal but is somewhat generic. The second image has empty alt text. The third image's alt text says 'Signature of Kathy B. Rawls' which is reasonable but the image actually contains the full page 3 footer/signature area.",
+      "severity": "minor",
+      "evidence": "First img: alt='North Carolina Marine Fisheries 200 Years seal'; Second img: alt=''; Third img: alt='Signature of Kathy B. Rawls'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 84.21,
+    "page_count": 3,
+    "visual_input_tokens": 10373,
+    "visual_output_tokens": 378,
+    "content_input_tokens": 11665,
+    "content_output_tokens": 585,
+    "timestamp": "2026-04-16T00:48:12.047383",
+    "auditor_version": "1.0.0"
+  }
+}

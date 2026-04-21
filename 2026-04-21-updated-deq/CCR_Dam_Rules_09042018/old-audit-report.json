@@ -1,0 +1,94 @@
+{
+  "document_id": "CCR_Dam_Rules_09042018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V1",
+      "description": "The title slide layout is significantly simplified in HTML. The PDF has a full-page cover layout with panoramic images at top and bottom, the NC logo, title text, author info, and date arranged in a specific visual composition. The HTML strips most of this layout structure.",
+      "severity": "major",
+      "evidence": "PDF shows a visually rich cover page with two panoramic photos framing the content. HTML shows the images and logo stacked vertically with minimal layout, losing the integrated cover page design.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The title and author text from the cover slide is completely missing from the HTML rendering of page 1.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows '15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals' and author info 'Andrew Brooks, PE' etc. The HTML page 1 rendering shows only the images and NC logo with no title or author text visible.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The presentation slide layout with image on the right and bullet points on the left (page 2/slide 2) is not preserved. In the HTML, the image appears above the bullet list rather than beside it.",
+      "severity": "major",
+      "evidence": "PDF shows a two-column-style layout with bullet points (Purpose, Methodology, Major Components) on the left and a photo on the right. HTML stacks the image above the bullet points.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "On the HTML rendering of page 2, content from the next slide (Dam Safety CCR Rulemaking Purpose) begins appearing below the DEMLR Dam Safety Rulemaking content, merging two slides together.",
+      "severity": "minor",
+      "evidence": "PDF has 'DEMLR Dam Safety Rulemaking' as a standalone slide. HTML shows the heading 'Dam Safety CCR Rulemaking Purpose' starting at the bottom of the same section, merging slides 2 and 3.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Content from multiple slides is merged together in the HTML rendering of pages 3-4, with slide boundaries not clearly delineated.",
+      "severity": "minor",
+      "evidence": "PDF shows separate slides for 'Dam Safety CCR Rulemaking Methodology' (slides 4 and 5). HTML merges the content of these slides together with content from surrounding slides into a continuous flow.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3",
+      "description": "The Regulatory Impact Analysis is presented as a simple aligned list in the PDF but converted to a table in the HTML. While the data values are preserved, the table adds column structure (headers implied by HTML comment but no actual <th> row) that does not exist in the source PDF. This is a minor structural change but acceptable. However, the table lacks header rows which is a minor formatting issue.",
+      "severity": "major",
+      "evidence": "PDF shows aligned text pairs (e.g., 'State Government:' aligned with 'Minimal Costs'). HTML wraps these in a <table> with an HTML comment '<!-- COLUMNS: Entity/Impact | Status -->' but no <th> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The second occurrence of 'Dam Safety CCR Rulemaking Methodology' in the PDF (page 5) is rendered as a duplicate h2 heading in the HTML. While this faithfully mirrors the PDF's slide structure, it results in two identical h2 headings which could be confusing in a non-presentation context.",
+      "severity": "minor",
+      "evidence": "Both PDF page 4 and page 5 have the title 'Dam Safety CCR Rulemaking Methodology'. HTML has two <h2> elements with identical text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "There are two nested <main> elements in the HTML, which is a structural duplication artifact.",
+      "severity": "minor",
+      "evidence": "HTML contains '<main>' inside '<body>' then another '<main>' nested inside, creating duplicate main landmarks.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 105.42,
+    "page_count": 8,
+    "visual_input_tokens": 17033,
+    "visual_output_tokens": 1103,
+    "content_input_tokens": 16480,
+    "content_output_tokens": 633,
+    "timestamp": "2026-04-16T00:49:14.540425",
+    "auditor_version": "1.0.0"
+  }
+}

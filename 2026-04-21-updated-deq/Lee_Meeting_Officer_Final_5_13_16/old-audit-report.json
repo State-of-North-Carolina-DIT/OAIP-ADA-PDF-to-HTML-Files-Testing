@@ -1,0 +1,54 @@
+{
+  "document_id": "Lee_Meeting_Officer_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 41. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C4",
+      "description": "The HTML adds internal navigation anchor links (#history-background, etc.) in the table of contents that do not exist in the source PDF. These are functional additions for HTML navigation, not fabricated external URLs.",
+      "severity": "minor",
+      "evidence": "HTML contains <a href=\"#history-background\">, <a href=\"#march-10-2016-public-meeting-and-oral-comments-summary\">, etc. The PDF has no hyperlinks in its table of contents.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The document has nested <main> elements - an outer <main> from the template and an inner <main> wrapping the actual content. This is an HTML structural issue but does not affect content fidelity.",
+      "severity": "minor",
+      "evidence": "HTML has <body><main>...<main>...</main></main></body>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header block content (State of North Carolina | Environmental Quality | Water Resources, address, phone number, and the names/titles of Pat McCrory, Donald R. Van Der Vaart, S. Jay Zimmerman) appears in both the <header> section and also exists implicitly as part of the page footer in the PDF. The HTML consolidates it to the header only, which is acceptable. No actual content duplication issue.",
+      "severity": "minor",
+      "evidence": "Footer text '1611 Mail service Center | Raleigh, North Carolina 27699-1611 | 919 707 9000' appears once in HTML header, matching the PDF letterhead.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 99.66,
+    "page_count": 5,
+    "visual_input_tokens": 14969,
+    "visual_output_tokens": 330,
+    "content_input_tokens": 16082,
+    "content_output_tokens": 640,
+    "timestamp": "2026-04-16T00:50:58.865555",
+    "auditor_version": "1.0.0"
+  }
+}

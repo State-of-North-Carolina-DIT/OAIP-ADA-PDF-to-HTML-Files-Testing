@@ -1,0 +1,54 @@
+{
+  "document_id": "0_JLA4_Email_Announcement_20160316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S1",
+      "description": "Nested <main> landmark elements - ensure the document has at most one main landmark at top level",
+      "severity": "major",
+      "evidence": "<main> at line 27 contains another <main> at line 28. Only one <main> landmark is valid per document.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V4",
+      "description": "The italic formatting on document titles is lost in the HTML version",
+      "severity": "minor",
+      "evidence": "PDF shows 'Draft Cape Fear River Water Supply Evaluation' and 'Draft Jordan Lake Water Supply Allocation Recommendations' in italics. HTML renders these in plain text within quotation marks without italic styling.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "The subtitle 'Jordan Lake Water Supply Allocations and Cape Fear Water Supply Evaluation' is rendered as an h2 under the h1. In the PDF, it appears as a subtitle/subject line rather than a distinct section heading. This is an acceptable structural interpretation but worth noting.",
+      "severity": "minor",
+      "evidence": "PDF shows it as a subtitle line. HTML uses <h2> which is a reasonable conversion choice.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The HTML contains two nested <main> elements, which is a structural duplication artifact. While this doesn't duplicate visible content, it is an HTML structural error.",
+      "severity": "major",
+      "evidence": "HTML has <main> wrapping another <main> element: '<body><main><main>...'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.32,
+    "page_count": 1,
+    "visual_input_tokens": 4114,
+    "visual_output_tokens": 252,
+    "content_input_tokens": 5055,
+    "content_output_tokens": 397,
+    "timestamp": "2026-04-16T00:46:44.189875",
+    "auditor_version": "1.0.0"
+  }
+}
