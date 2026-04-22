@@ -1,0 +1,10 @@
+{
+  "document_id": "Lake-Tillery-Hydrilla-Management",
+  "verdict": "skipped",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual too large (12p)",
+  "metadata": null
+}

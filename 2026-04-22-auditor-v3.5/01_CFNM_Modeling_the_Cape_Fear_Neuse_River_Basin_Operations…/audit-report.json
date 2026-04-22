@@ -1,0 +1,113 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'legend: reservoir node, demand node, junction node, flow arc, withdrawal arc, ww...' (7x); 'nodes:' (6x); 'notes:' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flow chart diagram image for Upper Cape Fear Basin contains embedded text (title, legend, notes, node labels) that is also rendered as separate HTML text elements, creating content duplication.",
+      "severity": "major",
+      "evidence": "PDF page 10 has a single flow chart image with all text embedded. HTML presents the same title, legend items, notes about reservoir operations, and a bulleted node list as separate HTML text AND the diagram image containing the same text.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flow chart diagram image for Middle Cape Fear Basin contains embedded text (title, legend, notes about OWASA/Jordan Lake, node labels) that is also rendered as separate HTML text, creating content duplication.",
+      "severity": "major",
+      "evidence": "PDF page 11 shows one diagram with embedded text. HTML duplicates the title, legend, notes (OWASA policy, Jordan demands, Jordan Lake zones), and node names as both HTML text and within the preserved image.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flow chart diagram image for Deep River contains embedded text (title, legend, notes about reservoir operations and Siler City, node labels) duplicated as separate HTML text.",
+      "severity": "major",
+      "evidence": "PDF page 12 has a single diagram. HTML renders the same legend, notes, and node list as HTML text alongside the image that still contains all that text.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flow chart diagram image for Lower Cape Fear Basin contains embedded text duplicated as separate HTML text.",
+      "severity": "major",
+      "evidence": "PDF page 13 has a single diagram. HTML renders title, legend, and node list as HTML text alongside the image containing the same labels.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flow chart diagram image for Upper Neuse Basin contains embedded text (title, legend, extensive notes about reservoir policies, node labels) duplicated as separate HTML text.",
+      "severity": "major",
+      "evidence": "PDF page 14 has one diagram with multiple annotation boxes. HTML presents all notes (about reservoir weighting, Lake Orange, WFER, Little River, Beaverdam, Falls Lake) and node list as HTML text alongside the image.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flow chart diagram image for Middle Neuse Basin contains embedded text duplicated as separate HTML text.",
+      "severity": "major",
+      "evidence": "PDF page 15 has a single diagram. HTML renders title, legend, notes (Crabtree Creek, Raleigh/Wheeler/Benson), and node list as HTML text alongside the image containing the same text.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Flow chart diagram image for Lower Neuse Basin contains embedded text duplicated as separate HTML text.",
+      "severity": "major",
+      "evidence": "PDF page 16 has a single diagram. HTML renders title, legend, note about Buckhorn Reservoir, and node list as HTML text alongside the image containing the same text.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Seven flowchart diagrams (Upper Cape Fear Basin, Middle Cape Fear Basin, Deep River, Lower Cape Fear Basin, Upper Neuse Basin, Middle Neuse Basin, Lower Neuse Basin) from PDF pages 10\u201316 are missing as <img> tags. Their textual annotations are extracted into bullet lists, but the visual diagrams showing spatial relationships between nodes, arcs, and flow directions are lost.",
+      "severity": "minor",
+      "evidence": "PDF pages 10\u201316 each contain a full-page flowchart image with node shapes, arcs, and legend boxes. The HTML has no <img> tags for any of these seven diagrams; content is represented only as text under headings like 'Flow Chart of Major Nodes in the Upper Cape Fear Basin'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML introduces organizational labels 'Legend:', 'Notes:', and 'Nodes:' (rendered as bold text) within the flowchart sections. These words do not appear anywhere in the source PDF; the PDF contains these as visual legend boxes and annotation callouts within the flowchart images, not as labeled text sections.",
+      "severity": "critical",
+      "evidence": "HTML: '<p><strong>Legend:</strong> Reservoir Node, Demand Node...' and '<p><strong>Notes:</strong>' and '<p><strong>Nodes:</strong>' \u2014 none of these bold labels appear in the PDF text; they are fabricated organizers for content extracted from the images.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Upper Cape Fear flowchart section, the PDF image label 'GrahamMebane Reservoir' (no hyphen, no space) is normalized to 'Graham-Mebane Reservoir' in the HTML, altering the text shown in the source.",
+      "severity": "major",
+      "evidence": "PDF page 10 flowchart image shows 'GrahamMebane Reservoir'; HTML renders it as 'Graham-Mebane Reservoir' in the bullet list.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 9,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 352.09,
+    "page_count": 18,
+    "visual_input_tokens": 56028,
+    "visual_output_tokens": 10810,
+    "content_input_tokens": 45838,
+    "content_output_tokens": 4280,
+    "triage_input_tokens": 42209,
+    "triage_output_tokens": 1676,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:04:04.582956",
+    "auditor_version": "1.0.0"
+  }
+}

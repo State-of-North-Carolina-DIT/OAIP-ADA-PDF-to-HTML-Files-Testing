@@ -1,0 +1,89 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018_2",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-image-redundant-alt",
+      "description": "Ensure image alternative is not repeated as text",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text [<img alt=\"Task 2 - OASIS Application Development\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABrMAAAC7CAIAAABJkPKKAAAACXBIWXMAAA7EAAAOxAGVKw4bA]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components evaluation criteria' (5x); 'process components water use' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Regime Changes bar chart is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows a detailed bar chart titled 'Stream Condition Middle Deep River (Node 280) June - November' with multiple QAA percentage categories across Unimpaired, 2003 Demands, 2030 Demands, and 2050 Demands scenarios. The HTML only contains the text labels ('Flow Regime Changes', 'Stream Condition Middle Deep River (Node 280)', 'June - November') but the actual bar chart image is absent, including in adjacent HTML chunks.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Project Organization Venn diagram is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 19 shows a Venn diagram with three overlapping circles labeled 'Data Collection HDR', 'Model Development HydroLogics', and 'Data, Model Evaluation & Plan Development NCDWR'. The HTML only shows these as a bullet list of text items; the Venn diagram image is absent from all adjacent HTML chunks.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Slide image of 'Why Need River Basin Plans' displayed alongside extracted text of the same content, creating duplication.",
+      "severity": "major",
+      "evidence": "The HTML shows the full slide image (containing 'Sustainable management', 'Reliable, quantitative methods for planning', 'Objective management and regulatory decision making' text over photos) AND then repeats these same three items as separate text bullet points below the image.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Water Supply Deficits table appears as both a slide image and an HTML table, duplicating the same data.",
+      "severity": "major",
+      "evidence": "The HTML renders the Table 4-3 image from the PDF slide (showing Water Supply Demand & Deficits for the Neuse River Basin Hydrologic Model, 2050 Scenario) AND also creates a separate HTML table below it with the identical data for Orange-Alamance, Hillsborough, Piedmont Minerals, Raleigh, Durham, and SGWASA.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Model Development Tasks slide image fragments appear alongside the same content as extracted text, creating duplication.",
+      "severity": "major",
+      "evidence": "The HTML shows cropped fragments of the original slide (showing purple italic text for 'Task 2 - OASIS Application Development', 'Task 4 \u2013 Deliverables', and partial view of other tasks) alongside the same content rendered as plain text bullet points.",
+      "page": 20,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Supply Deficits table from PDF page 16 is rendered both as an embedded image (<img> with alt text 'Table showing Water Supply Demand & Deficits...') AND as a separate HTML <table> element. The same content appears twice in the HTML.",
+      "severity": "major",
+      "evidence": "HTML contains: <figure><img alt=\"Table showing Water Supply Demand &amp; Deficits Predicted by the Neuse River Basin Hydrologic Model\"...> immediately followed by <table><caption>Table 4-3: Water Supply Demand &amp; Deficits...</caption>... with identical data rows. PDF page 16 has this content only once.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 5,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 272.01,
+    "page_count": 23,
+    "visual_input_tokens": 72820,
+    "visual_output_tokens": 7016,
+    "content_input_tokens": 45439,
+    "content_output_tokens": 5940,
+    "triage_input_tokens": 45096,
+    "triage_output_tokens": 86,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:03:24.888646",
+    "auditor_version": "1.0.0"
+  }
+}

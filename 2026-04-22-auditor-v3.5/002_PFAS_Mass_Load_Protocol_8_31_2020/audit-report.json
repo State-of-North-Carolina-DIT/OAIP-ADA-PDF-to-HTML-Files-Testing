@@ -1,0 +1,57 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'where,' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V5",
+      "description": "Figure 3 flowchart content is rendered both as an image and as a duplicate text-based bullet-point rendition in the HTML, creating a reading-order duplication.",
+      "severity": "major",
+      "evidence": "PDF shows Figure 3 only as a graphical flowchart. HTML shows Figure 3 as an image AND as bullet-point text below ('Was a 24-hr composite sample collected? YES: Use 24-hr composite sample concentration* ... NO: Use 60-day rolling average dry concentration'), duplicating the same content.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Figure 3 (Flowchart for Determining the Concentration for Loading at the River Water Intake) from PDF page 17 is missing as an image in the HTML. Instead, its content is rendered as a text-based list, but no <img> tag is present for this figure.",
+      "severity": "minor",
+      "evidence": "PDF page 17 contains a full flowchart image for Figure 3. The HTML has <img> tags for Figures 1 and 2 but replaces Figure 3 with: '<ul><li>Was a 24-hr composite sample collected?<ul><li><strong>YES:</strong> Use 24-hr composite sample concentration*...<li><strong>NO:</strong> Use 60-day rolling average dry concentration</li></ul></li></ul>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Equations 2 and 3, the PDF distinguishes between uppercase C (total PFAS concentration) and lowercase c (individual compound concentration). The HTML renders both as uppercase C, losing this meaningful notational distinction.",
+      "severity": "major",
+      "evidence": "PDF Equation 2 second line: '\u03a3 c_OF002,j,i \u00d7 Q_OF002,j \u00d7 F' (lowercase c). HTML renders: '\u03a3 (from i=1 to I) C<sub>OF002,j,i</sub> \u00d7 Q<sub>OF002,j</sub> \u00d7 F' (uppercase C). Same issue in Equation 3 where PDF 'c_intake,k,i' becomes HTML 'C<sub>intake,k,i</sub>'. The document explicitly defines C as total concentration and c as individual compound concentration.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 194.72,
+    "page_count": 17,
+    "visual_input_tokens": 53050,
+    "visual_output_tokens": 2910,
+    "content_input_tokens": 45075,
+    "content_output_tokens": 6510,
+    "triage_input_tokens": 41010,
+    "triage_output_tokens": 62,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:03:09.563685",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "document_id": "DEQ_Risk_Calculator_User_Guide_(February_2024)",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "Fabricated color labels in the Cell Color Codes table. The PDF section 1.2 presents colored cells visually without text labels for the colors. The HTML invents the text labels 'Yellow', 'Orange', 'Green', and 'Gray' to describe the colors, which do not appear anywhere in the PDF text.",
+      "severity": "critical",
+      "evidence": "HTML: '<td>Yellow</td><td>Data entry field...</td>', '<td>Orange</td><td>Non-volatile chemical*</td>', '<td>Green</td><td>Soil concentration exceeds...</td>', '<td>Gray</td><td>Entry not required...</td>'. PDF shows colored cells with no text color names.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4a",
+      "description": "Multiple descriptive-text hyperlinks present in the PDF are rendered as plain text in the HTML with href attributes lost. At least 8 distinct linked phrases from the PDF lose their hyperlink destinations.",
+      "severity": "critical",
+      "evidence": "PDF has underlined/linked text for: 'Risk Evaluation Resources', 'USEPA Regional Screening Level (RSL) Tables', 'Technical Guidance for Risk-Based Environmental Remediation of Sites', 'Risk-Based Remediation Website', 'Risk Evaluation Equations and Calculations' (multiple instances), 'North Carolina Division of Waste Management Vapor Intrusion Guidance document', 'Risk Evaluation Resources | NC DEQ'. All appear as plain unlinked text in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Several substantive images have empty alt text (alt='') where descriptive alt text is needed. These include screenshots of the Risk Calculator toolbar/button layouts and sidebar callout boxes with important contextual information.",
+      "severity": "minor",
+      "evidence": "Examples: Under section 3.1.1, '<img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 406.9pt\">' corresponds to the toolbar showing COVER PAGE, TABLE OF CONTENTS, SELECT SHEETS TO PRINT buttons. Under section 3.3.1, '<img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 463.5pt\">' corresponds to the DATA INPUT SHEETS button layout. Multiple sidebar images also have alt=''.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The PDF running page header 'Risk Calculator User Guide' is inserted into the HTML body as a standalone paragraph, rather than being omitted or placed in a consolidated header/footer element.",
+      "severity": "major",
+      "evidence": "HTML body contains '<p>Risk Calculator User Guide</p>' immediately after the cover page header section. This text appears as a repeating page header on pages 2-33 of the PDF and should not appear mid-content in the HTML body.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The Cell Color Codes table in the PDF has no explicit column headers \u2014 it is a two-column visual table with colored cells and descriptions. The HTML fabricates column headers 'Indicator' and 'Description' that do not exist in the PDF.",
+      "severity": "major",
+      "evidence": "HTML: '<th scope=\"col\">Indicator</th><th scope=\"col\">Description</th>'. PDF section 1.2 shows a visual table with colored rows and description text but no header row.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 391.53,
+    "page_count": 33,
+    "visual_input_tokens": 102922,
+    "visual_output_tokens": 8135,
+    "content_input_tokens": 84973,
+    "content_output_tokens": 10884,
+    "triage_input_tokens": 71559,
+    "triage_output_tokens": 131,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T19:06:50.910919",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "document_id": "Questions_(and_Answers)_about_the_LASII_Stormwater_Funding_Program",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "The footnote reference 'Levee Terms & Definitions (army.mil)' is a hyperlink in the PDF (underlined, colored text linking to army.mil) but is rendered as plain text in the HTML with no <a href> wrapping.",
+      "severity": "critical",
+      "evidence": "PDF page 4 footnote: '1 Levee Terms & Definitions (army.mil)' appears as a clickable hyperlink. HTML renders it as: '<p><sup>1</sup> Levee Terms &amp; Definitions (army.mil)</p>' with no link.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 121.83,
+    "page_count": 5,
+    "visual_input_tokens": 16948,
+    "visual_output_tokens": 2910,
+    "content_input_tokens": 18249,
+    "content_output_tokens": 2536,
+    "triage_input_tokens": 14181,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:02:38.374146",
+    "auditor_version": "1.0.0"
+  }
+}

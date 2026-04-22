@@ -1,0 +1,41 @@
+{
+  "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Tables A1 and A2 appear to be duplicated in the HTML. The table data first appears in a compact, bordered rendering (HTML pages 2-4) and then appears a second time in a spacious, differently-styled rendering (HTML pages 5-7). A reader scrolling through the HTML top-to-bottom would encounter the full Table A1 data (K1-K62, ENVRTO, ENVRCO) twice and Table A2 data twice, disrupting reading flow.",
+      "severity": "major",
+      "evidence": "HTML page 4 ends with Table A2 emission rates for K1-K10 in compact format. HTML page 5 then restarts with 'Table A1. Modeled Release Parameters for Point Sources' heading and K1 data in a spacious format, re-presenting all Table A1 data that was already shown in HTML pages 2-4. Similarly, Table A2 emission rate data is shown again in HTML pages 6-7 after already appearing in chunk 4.",
+      "page": 5,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Tables A1 and A2 are rendered both as embedded page images AND as separate HTML <table> elements, creating real content duplication. Five <figure>/<img> tags reproduce the same data that is already present in the two HTML tables.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img alt=\"Vector-merged page 3 showing Table A1 Modeled Release Parameters for Point Sources Part 1\" ...> (and 4 more similar images for pages 4-7) alongside full HTML <table> renderings of Table A1 (64 rows) and Table A2 (64 rows). The same tabular data appears twice in two different formats.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 208.79,
+    "page_count": 7,
+    "visual_input_tokens": 19950,
+    "visual_output_tokens": 8205,
+    "content_input_tokens": 30502,
+    "content_output_tokens": 1749,
+    "triage_input_tokens": 20156,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:02:29.902285",
+    "auditor_version": "1.0.0"
+  }
+}

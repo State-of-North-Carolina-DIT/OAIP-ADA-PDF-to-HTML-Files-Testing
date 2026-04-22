@@ -1,0 +1,97 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Title slide content appears both as a slide image and as an HTML text rendition of the same content, creating reading-order duplication.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a single title slide. HTML renders it first as a screenshot image of the slide, then immediately below as text headings and paragraphs repeating the same title, date, and author.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Cheoah River base flow table appears both as a slide image and as an HTML table, duplicating the same content.",
+      "severity": "major",
+      "evidence": "PDF page 8 shows one slide with the monthly base flow table. HTML renders the slide image followed by an identical HTML table with the same Tier A and Tier B data.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Cheoah River high flow events table appears both as a slide image and as an HTML table, duplicating the same content.",
+      "severity": "major",
+      "evidence": "PDF page 9 shows one slide with Table 2 (High Flow Events). HTML renders the full slide image followed by an HTML table repeating the same 5-year schedule data.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Superscript footnote markers in the high flow events table are merged into the numeric values, misrepresenting the data.",
+      "severity": "major",
+      "evidence": "PDF shows March Day 2 magnitude as '600\u00b2' (600 with superscript footnote 2) and February Day 2 as 'Var\u00b9'. HTML table renders these as '6002' and 'Var1', making '6002' appear as a different number rather than 600 with a footnote reference.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Organizational chart/flowchart diagram for 'Flow Regime Tied to Ecology' is missing from the HTML, replaced by text-only nested bullet points.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a visual flowchart with boxes and connecting arrows: 'Sound Ecological Environment' branching to 'Subsistence Flows', 'Base Flows', 'High Flow Pulses', and 'Overbank Flows', each with sub-boxes. HTML renders this as nested bullet lists with no diagram image.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Cheoah River Monthly Base Flow table (PDF page 8) is rendered both as an embedded image AND as a separate HTML <table>. The same content appears twice in two different formats.",
+      "severity": "major",
+      "evidence": "HTML contains <img alt=\"Table of monthly base flow releases from Santeetlah Dam into the Cheoah River bypassed reach\"> immediately followed by a <table><caption>Monthly Base Flow (cfs) Releases from Santeetlah Dam...</caption> with identical data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Cheoah River High Flow Events table (PDF page 9) is rendered both as an embedded image AND as a separate HTML <table>. The same content appears twice in two different formats.",
+      "severity": "major",
+      "evidence": "HTML contains <img alt=\"Table showing High Flow Events 5-year Repeating Schedule\"> immediately followed by a <table><caption>Table 2. High Flow Events \u2013 5-year Repeating Schedule.</caption> with identical data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Flow Scenario Examples chart (PDF page 12) is completely absent from the HTML. This is a substantive line chart comparing four flow scenarios (Actual Flow, 80% of Previous Day, 80% of Weekly Average, 20/30/40 MAF) across a full calendar year. The HTML section contains only the heading with no image or data.",
+      "severity": "minor",
+      "evidence": "PDF page 12 shows a line chart with y-axis 0-800, x-axis dates 1/1 through 12/1, and four colored lines. HTML section is: <section><h2>Flow Scenario Examples</h2></section> with no <img> tag or any chart data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Superscript footnote markers in the High Flow Events table are concatenated with adjacent text, creating ambiguous or incorrect values. '600' with superscript '2' becomes '6002' (looks like the number 6002), 'Var' with superscript '1' becomes 'Var1', and the column header 'Magnitude (cfs)' with superscript '3' becomes 'Magnitude (cfs)3'.",
+      "severity": "major",
+      "evidence": "PDF shows 'Var\u00b9' (footnote marker), '600\u00b2' (meaning 600 cfs, see footnote 2), and 'Magnitude (cfs)\u00b3'. HTML renders these as plain text 'Var1', '6002', and 'Magnitude (cfs)3', losing the superscript distinction and changing the apparent meaning.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 7,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 289.24,
+    "page_count": 12,
+    "visual_input_tokens": 38708,
+    "visual_output_tokens": 10013,
+    "content_input_tokens": 28599,
+    "content_output_tokens": 4614,
+    "triage_input_tokens": 27936,
+    "triage_output_tokens": 201,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:03:00.888657",
+    "auditor_version": "1.0.0"
+  }
+}

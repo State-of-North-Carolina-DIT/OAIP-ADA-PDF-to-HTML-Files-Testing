@@ -1,0 +1,65 @@
+{
+  "document_id": "Southside_Park_Landfill_Surface_Water_Assessment",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "S3",
+      "description": "Nested <section> landmark elements",
+      "severity": "minor",
+      "evidence": "<section> at line 35 contains another <section> at line 214.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "S3",
+      "description": "Nested <section> landmark elements",
+      "severity": "minor",
+      "evidence": "<section> at line 35 contains another <section> at line 229.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "S3",
+      "description": "Nested <section> landmark elements",
+      "severity": "minor",
+      "evidence": "<section> at line 35 contains another <section> at line 236.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C7",
+      "description": "The sample data (SW-1 through SW-5 results and risk assessments) appears both within the embedded map image and as separate HTML tables, duplicating the same content in two renderings.",
+      "severity": "major",
+      "evidence": "The main map <img alt=\"Map showing surface water assessment sample locations at Southside Park Landfill\"> contains all five sample callout boxes with parameter values and risk assessments. The HTML also renders each of these as standalone <table> elements (captions: SW-1/DUP-6102025-SD, SW-2, SW-3, SW-4, SW-5). Per C7 MUST FLAG: 'a table rendered both as a screenshot <img> and as a parallel <table>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Multiple small images from the PDF (likely legend symbols or map icons) are included in the HTML with empty alt text, providing no informational value.",
+      "severity": "minor",
+      "evidence": "Nine <figure><img alt=\"\" ...> tags with widths ranging from 7.0pt to 8.8pt appear in sequence. These appear to correspond to legend symbols from the PDF map but have empty alt attributes, offering no descriptive information about what they represent.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 102.16,
+    "page_count": 1,
+    "visual_input_tokens": 4122,
+    "visual_output_tokens": 2315,
+    "content_input_tokens": 8369,
+    "content_output_tokens": 1715,
+    "triage_input_tokens": 9162,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:04:47.261205",
+    "auditor_version": "1.0.0"
+  }
+}

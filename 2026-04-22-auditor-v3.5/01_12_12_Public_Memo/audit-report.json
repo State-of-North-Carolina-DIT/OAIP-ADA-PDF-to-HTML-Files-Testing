@@ -1,0 +1,73 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-list",
+      "description": "Ensure that lists are structured correctly",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  List element has direct children that are not allowed: figure [<ol type=\"a\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Handwritten initials/signatures next to the FROM field names are missing in the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows handwritten initials (appearing as 'KH' or similar) next to Karen Higgins' name and handwritten initials (appearing as 'bw' or similar) next to Brian Wrenn's name in the FROM field. The HTML rendering omits these handwritten marks entirely.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Full-page PDF screenshots are embedded inline within the HTML body alongside the complete text transcription, creating duplicate rendering of all content. Seven page images are interspersed throughout the text flow, breaking the reading order.",
+      "severity": "major",
+      "evidence": "Seven <img> tags with alt text like 'North Carolina Department of Environment and Natural Resources document page 1', 'Document page 2 continuing proposed revisions', etc. appear mid-content alongside the identical text rendered as HTML paragraphs, lists, and tables. For example, the full permits table on page 2 appears both as an embedded page image and as an HTML <table>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text on all seven embedded page images is generic, describing pagination rather than actual content. The descriptions provide no meaningful information about what appears in the images.",
+      "severity": "minor",
+      "evidence": "Alt text examples: 'North Carolina Department of Environment and Natural Resources document page 1', 'Document page 2 continuing proposed revisions', 'Document page 3 continuing additional conditions', 'Document page 4 text continuing culvert requirements'. These are generic page-level descriptions rather than descriptions of actual content (e.g., the NCDENR logo/seal, the permits table, condition text).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C2",
+      "description": "The first visible heading in the PDF \u2014 'North Carolina Department of Environment and Natural Resources' (the largest, boldest text at the top of page 1) \u2014 is demoted to a <p> tag in the HTML rather than being rendered as a heading element.",
+      "severity": "critical",
+      "evidence": "PDF: 'North Carolina Department of Environment and Natural Resources' appears as the prominent organizational heading/letterhead. HTML: rendered as '<p>North Carolina Department of Environment and Natural Resources<br/> Division of Water Quality</p>' inside a <header> element with no heading tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 222.79,
+    "page_count": 7,
+    "visual_input_tokens": 18158,
+    "visual_output_tokens": 4422,
+    "content_input_tokens": 27218,
+    "content_output_tokens": 5646,
+    "triage_input_tokens": 23441,
+    "triage_output_tokens": 101,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:04:09.046215",
+    "auditor_version": "1.0.0"
+  }
+}

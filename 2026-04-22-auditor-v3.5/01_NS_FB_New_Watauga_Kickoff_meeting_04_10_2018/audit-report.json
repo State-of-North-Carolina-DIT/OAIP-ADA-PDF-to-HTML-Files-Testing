@@ -1,0 +1,81 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-image-redundant-alt",
+      "description": "Ensure image alternative is not repeated as text",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text [<img alt=\"Task 2 - OASIS Application Development\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABrMAAAC7CAIAAABJkPKKAAAACXBIWXMAAA7EAAAOxAGVKw4bA]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V5",
+      "description": "Slide images appear alongside HTML text extraction of the same content, creating duplicated reading flow throughout the document.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows the 'Why Need River Basin Plans' slide with bullet points. HTML renders the same bullets as text AND embeds the full slide image immediately below, so a reader sees the content twice. Same pattern repeats on pages 3, 4, 12, 16, 20, and others.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Bar chart for Stream Condition Middle Deep River (Node 280) is missing from HTML; only the legend text labels and category names are rendered as bullet points.",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows a grouped bar chart with colored bars for different QAA percentage ranges across Unimpaired, 2003, 2030, and 2050 Demands. HTML replaces this with a text bullet list of QAA ranges (< 10% of QAA*, 10-20% of QAA, etc.) and scenario names, losing the visual data entirely.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Venn diagram showing project organization relationships is missing from the HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 19 shows three overlapping circles labeled 'Data Collection / HDR', 'Model Development / HydroLogics', and 'Data, Model Evaluation & Plan Development / NCDWR'. HTML replaces this with a flat bullet-point list, losing the visual representation of the overlapping relationships.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Table 4-3 Water Supply Deficits data is duplicated: appears both as an embedded image of the original slide table and as a reconstructed HTML table.",
+      "severity": "major",
+      "evidence": "PDF page 16 shows Table 4-3 once. HTML renders the original slide image containing the table, followed immediately by an HTML table containing the same data rows (Orange-Alamance, Hillsborough, etc.), creating duplicate content in the reading flow.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Model Development Tasks slide image appears alongside extracted text, duplicating the same content.",
+      "severity": "major",
+      "evidence": "PDF page 20 shows task list (Tasks 1-5). HTML shows extracted text of the tasks AND partially visible slide image with the same task list below, creating reading order disruption.",
+      "page": 20,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Supply Deficits table from PDF page 16 is rendered BOTH as an embedded image (<img>) AND as a fully structured HTML <table>. The PDF contains only one representation of this table.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt=\"Table of Water Supply Demand &amp; Deficits Predicted by the Neuse River Basin Hydrologic Model, 2050 Scenario\"\u2026/></figure> immediately followed by <table><caption>Table 4-3: Water Supply Demand &amp; Deficits\u2026</caption>\u2026</table> containing the identical data.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 273.49,
+    "page_count": 23,
+    "visual_input_tokens": 71155,
+    "visual_output_tokens": 7549,
+    "content_input_tokens": 45487,
+    "content_output_tokens": 4750,
+    "triage_input_tokens": 45073,
+    "triage_output_tokens": 86,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:09:20.962145",
+    "auditor_version": "1.0.0"
+  }
+}

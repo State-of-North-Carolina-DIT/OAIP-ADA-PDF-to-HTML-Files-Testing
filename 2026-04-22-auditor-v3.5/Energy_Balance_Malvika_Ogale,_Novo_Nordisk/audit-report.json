@@ -1,0 +1,73 @@
+{
+  "document_id": "Energy_Balance_Malvika_Ogale,_Novo_Nordisk",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "CO\u2082 emissions targets appear both as extracted HTML text and within an embedded slide image, creating duplicated reading of the same content.",
+      "severity": "major",
+      "evidence": "PDF page 7 shows three targets (Net Zero by 2045, 100% renewable by 2030, Zero CO\u2082 by 2030) once. HTML shows these targets first as bullet text, then again within the embedded slide image below, so a reader encounters the identical information twice.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Project savings bullet points are duplicated in the HTML \u2014 the same text appears twice in different visual styles.",
+      "severity": "major",
+      "evidence": "PDF page 9 lists 'Novo Nordisk has a goal of 2% energy and water reduction through projects' and 'These projects can be dedicated for savings, process improvements, equipment maintenance or configuration adjustments, among others' once. HTML renders these bullets first as extracted text and then again in a different typographic style (from the slide rendering), creating a double reading.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Water Example \u2013 Process Flows content appears both as HTML text extraction and within an embedded slide image, duplicating the heading and driver bullets.",
+      "severity": "major",
+      "evidence": "PDF page 13 shows 'Water Example \u2013 Process Flows' heading and three driver bullets once alongside the process flow diagram. HTML shows the heading and driver bullets as extracted text first, then the full slide image containing the same heading and bullets (plus the diagram) appears below, creating duplicated reading flow.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated heading 'Site Usage Hierarchy' inserted in the Mapping Strategy section. This h3 heading does not appear anywhere in the PDF. The PDF page 10 only contains the title 'Mapping Strategy \u2013 Energy and Water' and a diagram; no sub-heading 'Site Usage Hierarchy' exists.",
+      "severity": "critical",
+      "evidence": "HTML: '<h3>Site Usage Hierarchy</h3>' under the 'Mapping Strategy \u2013 Energy and Water' section. PDF page 10: Only shows the slide title 'Mapping Strategy \u2013 Energy and Water' with a hierarchical diagram \u2014 no text reads 'Site Usage Hierarchy'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Several images have generic or minimally descriptive alt text that conveys little meaningful information about the image content.",
+      "severity": "minor",
+      "evidence": "HTML: alt='Globe icon' (page 2 globe illustration), alt='Circular for Zero globe icon' (page 9 icon). These are near-placeholder labels. More descriptive alternatives would note the illustration context (e.g., 'Globe illustration representing Novo Nordisk's global reach in 80 countries').",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The number '170' that appears as a prominent statistic on PDF page 2 is entirely absent from the HTML. The PDF text shows '170' as a standalone figure alongside the '80 countries with affiliates' statistic, likely representing the number of countries where Novo Nordisk's products are available or shipped.",
+      "severity": "major",
+      "evidence": "PDF page 2 extracted text: '170 80 Affiliates in countries' and '170 We do so by pioneering scientific breakthroughs...' \u2014 the number 170 appears twice as a displayed statistic. HTML: No mention of '170' anywhere in the 'Novo Nordisk at a glance' section or elsewhere in the document.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 430.04,
+    "page_count": 19,
+    "visual_input_tokens": 61226,
+    "visual_output_tokens": 12316,
+    "content_input_tokens": 42426,
+    "content_output_tokens": 6888,
+    "triage_input_tokens": 40334,
+    "triage_output_tokens": 86,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:10:03.124105",
+    "auditor_version": "1.0.0"
+  }
+}

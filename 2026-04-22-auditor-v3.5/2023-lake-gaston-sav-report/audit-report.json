@@ -1,0 +1,81 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Figure 1 (bar graph of Total Number of Survey Sites by Year) and Figure 2 (bar graph of Lake Gaston Aquatic Plant Community 2023) are not rendered as chart images. Instead, their axis labels and data values are presented as raw text.",
+      "severity": "critical",
+      "evidence": "PDF page 9 shows two clear bar charts with visual bars, axes, and labels. HTML rendering shows text like '7000 6564 6178 6503 6041 5954 6311' and species names listed as plain text rather than chart images.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 7 (Lake Gaston Hydrilla chart showing acreage bars and rake toss percent line) is not rendered as a chart image. The chart data is presented as raw text.",
+      "severity": "critical",
+      "evidence": "PDF page 14 shows a dual-axis bar/line chart. HTML rendering shows text like '1800 70', 'Acres', 'Rake Tosses', '1600 60' etc. as plain text rather than a chart image.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 9 (Lake Gaston Lyngbya chart showing acreage bars and percent of rake tosses line) is not rendered as a chart image. The chart data is presented as raw text.",
+      "severity": "critical",
+      "evidence": "PDF page 16 shows a dual-axis bar/line chart. HTML rendering shows text like '1600 25', 'Acres', '1400', '20' etc. as plain text rather than a chart image.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 11 (Lake Gaston Eel Grass chart showing acreage bars and percent sites line) is not rendered as a chart image. The chart data is presented as raw text.",
+      "severity": "critical",
+      "evidence": "PDF page 18 shows a dual-axis bar/line chart. HTML rendering shows text like '5.0', '140 Acres - % Sites', '4.5', '120' etc. as plain text rather than a chart image.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Cover page collage: one photo (person holding aquatic vegetation) is separated from the main image collage and rendered as a standalone element below it.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows all photos within a single bordered collage frame. HTML renders one small photo separately below the main collage group.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Tables 1 and 2 are each rendered twice in the HTML: once as an <img> tag (with alt text 'Vector background for Table 1' / 'Vector background for Table 2') and once as a fully structured <table> element. This duplicates the same table content in two different formats within the HTML body.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img alt=\"Vector background for Table 1\" \u2026/></figure> immediately followed by the <table> with caption 'Table 1\u2026'. Same pattern for Table 2 with 'Vector background for Table 2'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Several image alt texts are generic and non-descriptive: 'Vector background for Table 1', 'Vector background for Table 2', and 'Detail photo of aquatic vegetation'. These do not meaningfully describe the image content.",
+      "severity": "minor",
+      "evidence": "HTML: alt=\"Vector background for Table 1\", alt=\"Vector background for Table 2\", alt=\"Detail photo of aquatic vegetation\"",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 5,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 199.55,
+    "page_count": 20,
+    "visual_input_tokens": 62368,
+    "visual_output_tokens": 4721,
+    "content_input_tokens": 51594,
+    "content_output_tokens": 4673,
+    "triage_input_tokens": 45375,
+    "triage_output_tokens": 183,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T19:02:40.065466",
+    "auditor_version": "1.0.0"
+  }
+}

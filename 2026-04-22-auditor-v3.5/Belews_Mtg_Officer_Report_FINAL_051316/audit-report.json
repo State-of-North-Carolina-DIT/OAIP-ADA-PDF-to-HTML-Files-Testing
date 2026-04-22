@@ -1,0 +1,49 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections disrupts reading order",
+      "severity": "major",
+      "evidence": "In HTML chunk 1, the official names (PAT McCRORY Governor, DONALD R. VAN DER VAART Secretary, TRACY DAVIS Director) appear twice: once in the letterhead area at top and again as plain text below the colored bar before the MEMORANDUM heading. Footer text ('State of North Carolina | Environmental Quality...') and a colored bar are also inserted between the letterhead and memo content. In the PDF page 1, the names appear only once in the letterhead.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer and decorative bar inserted between content sections disrupts reading flow",
+      "severity": "major",
+      "evidence": "In HTML chunk 2, footer text ('State of North Carolina | Environmental Quality...') and a colored bar appear between the outline (sections I-IV) and the 'I. History/Background' heading. In PDF page 2, these sections flow directly without intervening footer/header material.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A repeated PDF page-header image from page 2 is inserted mid-content in the HTML body (inside a <section>, just before the 'I. History/Background' heading), rather than being removed or consolidated into the single <header>.",
+      "severity": "major",
+      "evidence": "HTML contains: <section><figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure><h2 id=\"history-background\">I. History/Background</h2>... This is a duplicate of the NC DEQ page header already rendered in the <header> element above. The PDF repeats this header image on every page, but the HTML should consolidate it once.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 226.64,
+    "page_count": 5,
+    "visual_input_tokens": 16478,
+    "visual_output_tokens": 7663,
+    "content_input_tokens": 16172,
+    "content_output_tokens": 2464,
+    "triage_input_tokens": 16392,
+    "triage_output_tokens": 330,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:02:05.364408",
+    "auditor_version": "1.0.0"
+  }
+}

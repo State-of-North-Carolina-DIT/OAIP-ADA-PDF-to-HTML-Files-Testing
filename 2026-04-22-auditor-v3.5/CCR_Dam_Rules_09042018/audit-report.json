@@ -1,0 +1,81 @@
+{
+  "document_id": "CCR_Dam_Rules_09042018",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Lighthouse panoramic photograph is severely cropped in the HTML, losing the lighthouse structure entirely.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a wide panoramic image spanning the full page width featuring marshland on the left and a prominent black-and-white striped lighthouse with buildings on the right. The HTML rendering crops the image roughly to the left half, completely omitting the lighthouse and adjacent buildings.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Cityscape panoramic photograph is cropped in the HTML, losing the right portion of the image.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a wide cityscape panorama spanning the full page width with mountains in the background. The HTML rendering only shows roughly the left half of this image, cutting off content on the right side.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "NC state logo is partially cropped in the HTML title area, cutting off the left portion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the full NC logo with 'NORTH CAROLINA' text. The HTML rendering shows the logo with the 'N' in 'NORTH' cut off, displaying 'ORTH CAROLINA'.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Coal combustion residuals photograph is rendered as an extremely narrow vertical strip, losing virtually all meaningful visual content.",
+      "severity": "critical",
+      "evidence": "PDF page 2 shows a wide landscape photo of heavy equipment processing coal combustion residuals with piles of material and sky. The HTML renders this as a thin vertical sliver approximately 20-30 pixels wide, retaining almost none of the original image content.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds a fabricated table caption 'Contact Information for Rule Questions' that does not appear anywhere in the PDF source. The PDF simply has a bold heading 'Questions about the rule can be directed to:' followed by aligned contact details.",
+      "severity": "critical",
+      "evidence": "HTML: <caption>Contact Information for Rule Questions</caption>. PDF page 8 shows only 'Questions about the rule can be directed to:' with no such caption text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML adds fabricated table column headers 'Entity / Category' and 'Impact' to the Regulatory Impact Analysis table. These header labels do not appear in the PDF, which simply shows label-value pairs in aligned text.",
+      "severity": "critical",
+      "evidence": "HTML: <th scope=\"col\">Entity / Category</th><th scope=\"col\">Impact</th>. PDF page 7 shows only the label:value pairs (e.g., 'State Government: Minimal Costs') with no such column headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The NC state logo image's alt text describes it as 'North Carolina Department of Environmental Quality logo', but the actual logo shown in the PDF is the general North Carolina state logo featuring the pine tree, 'NC' letters, and 'Nothing Compares / NORTH CAROLINA' tagline \u2014 not a DEQ-specific logo.",
+      "severity": "minor",
+      "evidence": "HTML alt: 'North Carolina Department of Environmental Quality logo'. PDF shows the NC state branding logo with 'Nothing Compares' and 'NORTH CAROLINA' text, which is the state's general brand mark.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 6,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 187.38,
+    "page_count": 8,
+    "visual_input_tokens": 25120,
+    "visual_output_tokens": 3182,
+    "content_input_tokens": 18091,
+    "content_output_tokens": 5611,
+    "triage_input_tokens": 19396,
+    "triage_output_tokens": 99,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:01:26.878657",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "document_id": "0_ManteoAmend1Certif_021209",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 33.97,
+    "page_count": 1,
+    "visual_input_tokens": 4579,
+    "visual_output_tokens": 910,
+    "content_input_tokens": 5407,
+    "content_output_tokens": 644,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T18:58:45.250881",
+    "auditor_version": "1.0.0"
+  }
+}

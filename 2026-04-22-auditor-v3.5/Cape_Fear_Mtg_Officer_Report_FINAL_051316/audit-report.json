@@ -1,0 +1,57 @@
+{
+  "document_id": "Cape_Fear_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "The entire memorandum content (PAT McCRORY/VAN DER VAART/DAVIS header, MEMORANDUM heading, date, To/From/Subject, body text, and outline) is duplicated in the HTML. The full first-page memo content appears twice consecutively, separated by footer text and a color bar, before the History/Background section begins.",
+      "severity": "major",
+      "evidence": "PDF page 1 has a single instance of the memorandum. In the HTML, the PAT McCRORY header info \u2192 MEMORANDUM heading \u2192 May 13, 2016 \u2192 To/From/Subject \u2192 body paragraph \u2192 outline appears once, then after a footer block and color bar, the entire sequence (PAT McCRORY \u2192 MEMORANDUM \u2192 memo content \u2192 outline) repeats a second time before transitioning to I. History/Background.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text and a decorative color bar are inserted between the NC logo/letterhead and the main memorandum content, disrupting the header reading order. Additionally, footer blocks are inserted between the memo outline and the History/Background section.",
+      "severity": "major",
+      "evidence": "In the PDF, the NC logo (top-left) and PAT McCRORY/VAN DER VAART/DAVIS info (top-right) appear together at the top of page 1. In the HTML, the NC logo appears first, followed by a large blank space, then the full page footer ('State of North Carolina | Environmental Quality\u2026'), then a color bar, and only then the PAT McCRORY header info and MEMORANDUM content. A similar footer+colorbar block is also inserted between the outline and the I. History/Background section heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Governor's surname capitalization altered. The PDF shows 'PAT McCRORY' (all uppercase after 'Mc'), but the HTML renders it as 'PAT McCrORY' with a lowercase 'r'.",
+      "severity": "major",
+      "evidence": "PDF: 'PAT McCRORY' (page 1 header). HTML: '<p>PAT McCrORY<br/>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "A decorative page-bottom bar or background image from the PDF was converted into a standalone figure placed mid-content (between the TOC and Section I) with generic alt text 'Decorative page background'. While it is indeed decorative, it should ideally have an empty alt attribute (alt=\"\") so assistive technology skips it, and its mid-content placement is unnecessary.",
+      "severity": "minor",
+      "evidence": "HTML: '<figure><img alt=\"Decorative page background\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure>' appears between the TOC <nav> and the first <section>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 487.8,
+    "page_count": 4,
+    "visual_input_tokens": 13424,
+    "visual_output_tokens": 21572,
+    "content_input_tokens": 13585,
+    "content_output_tokens": 2641,
+    "triage_input_tokens": 14590,
+    "triage_output_tokens": 60,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:09:00.508132",
+    "auditor_version": "1.0.0"
+  }
+}

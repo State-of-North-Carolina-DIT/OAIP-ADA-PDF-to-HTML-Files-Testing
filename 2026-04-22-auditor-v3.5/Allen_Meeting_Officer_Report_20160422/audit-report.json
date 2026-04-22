@@ -1,0 +1,41 @@
+{
+  "document_id": "Allen_Meeting_Officer_Report_20160422",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "The email address larry.frost@ncdenr.gov in the digital signature block is plain text in the PDF but has been wrapped in a mailto hyperlink in the HTML, constituting link injection.",
+      "severity": "critical",
+      "evidence": "PDF shows: 'email=larry.frost@ncdenr.gov' as plain text within the digital signature certification block. HTML converts to: 'email=<a href=\"mailto:larry.frost@ncdenr.gov\">larry.frost@ncdenr.gov</a>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The handwritten signature image next to Larry Frost's name on page 1 of the PDF is missing from the HTML. Signatures are substantive images that authenticate the document.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a visible handwritten/cursive signature graphic adjacent to 'Larry Frost, Engineer'. The HTML has no <img> tag for this signature, only the digital signature text metadata.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 127.0,
+    "page_count": 5,
+    "visual_input_tokens": 16860,
+    "visual_output_tokens": 3092,
+    "content_input_tokens": 16210,
+    "content_output_tokens": 2584,
+    "triage_input_tokens": 16921,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:01:38.777132",
+    "auditor_version": "1.0.0"
+  }
+}

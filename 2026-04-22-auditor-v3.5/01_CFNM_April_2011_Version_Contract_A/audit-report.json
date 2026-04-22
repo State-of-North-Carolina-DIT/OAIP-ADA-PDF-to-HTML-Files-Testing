@@ -1,0 +1,57 @@
+{
+  "document_id": "01_CFNM_April_2011_Version_Contract_A",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "NC E-Procurement logo/header rendered upside-down in the HTML between the cover letter and PR10689541 requisition section. The PDF shows this logo right-side-up at the top of the PR10689541 web printout page.",
+      "severity": "critical",
+      "evidence": "PDF page 2 shows the NC E-Procurement logo (@your service, www.ncgov.com) right-side-up at the top of the PR10689541 requisition printout. In the HTML (page 1), between the end of the cover letter and the PR10689541 heading, the same logo appears rotated 180 degrees with inverted text visible (e.g., reversed 'www.ncgov.com', '@your service', 'E-Procurement').",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Execution Bidder Details table (RFQ page 6) has corrupted structure. The BIDDER field, which is a single spanning field in the PDF form, is replicated across all 3 columns in the HTML table row. Similarly, FAX NUMBER is duplicated in two cells of the same row.",
+      "severity": "major",
+      "evidence": "HTML row 1: 'BIDDER: HydroLogics, Inc.' | 'BIDDER: HydroLogics, Inc.' | 'BIDDER: HydroLogics, Inc.' \u2014 PDF has a single BIDDER field. HTML row 4 has 'FAX NUMBER: 919-831-1295' in both column 2 and column 3 \u2014 PDF has it once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content duplication in the Execution Bidder Details table. 'BIDDER: HydroLogics, Inc.' appears 3 times in one row and 'FAX NUMBER: 919-831-1295' appears twice in one row, when each appeared only once in the PDF form.",
+      "severity": "major",
+      "evidence": "HTML: <tr><td>BIDDER: HydroLogics, Inc.</td><td>BIDDER: HydroLogics, Inc.</td><td>BIDDER: HydroLogics, Inc.</td></tr> \u2014 PDF: single 'BIDDER: HydroLogics, Inc.' field.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4a",
+      "description": "Email addresses that appear as plain text in PDF form fields are wrapped in mailto hyperlinks in the HTML. This constitutes fabricated linking.",
+      "severity": "critical",
+      "evidence": "HTML: <a href=\"mailto:ed.daughtry@ncdenr.gov\">ed.daughtry@ncdenr.gov</a> and <a href=\"mailto:bmccrodden@hydrologics.net\">bmccrodden@hydrologics.net</a> (multiple instances). PDF: these email addresses appear as plain text in form fields on pages 6 and 22.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 704.86,
+    "page_count": 22,
+    "visual_input_tokens": 61628,
+    "visual_output_tokens": 23798,
+    "content_input_tokens": 82687,
+    "content_output_tokens": 11520,
+    "triage_input_tokens": 61091,
+    "triage_output_tokens": 128,
+    "triage_dropped": 2,
+    "timestamp": "2026-04-22T19:10:09.025166",
+    "auditor_version": "1.0.0"
+  }
+}

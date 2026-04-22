@@ -1,0 +1,57 @@
+{
+  "document_id": "Lake-Tillery-Aquatic-Plant-Reporting",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Duke Energy logo missing from the partner logos grid on the 'Our Role' slide",
+      "severity": "critical",
+      "evidence": "PDF page 2 shows the Duke Energy logo prominently in the first row of partner logos (between NC State University and University of South Carolina). The HTML rendering of the partner logos section omits the Duke Energy logo entirely; it does not appear among the stacked partner logos.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Two images in the Our Role section have fabricated or inaccurate alt text. The PDF page 2 shows logos for 'Lake James Environmental Association' and 'Duke Energy' among the partner logos, but the HTML instead labels two figures as 'City of Belmont logo' and 'City of Gastonia logo', which cannot be confirmed in the PDF.",
+      "severity": "minor",
+      "evidence": "HTML contains: alt=\"City of Belmont logo\" and alt=\"City of Gastonia logo\". PDF page 2 clearly shows a 'Lake James Environmental Association' logo (bottom-left row) and a 'Duke Energy' logo (middle row) among the partner organizations, neither of which are identified in the HTML's alt text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The URL 'duke-energy.com/AquaticPlants' appears as plain text in the HTML in two locations, but is displayed as a hyperlink (colored/underlined) in the PDF.",
+      "severity": "major",
+      "evidence": "HTML: '<p>duke-energy.com/AquaticPlants</p>' (New Reporting Tool section) and 'duke-energy.com/AquaticPlants' in the Key takeaways list item \u2014 both plain text, not wrapped in <a href>. PDF pages 3 and 4 show this URL as a styled hyperlink.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "NC DEQ logo from PDF page 4 (Key takeaways section) is missing in the HTML. The PDF shows both the NC DEQ logo and the NC Wildlife Resources Commission logo at the bottom of the page, but the HTML only includes the NC Wildlife Resources Commission logo.",
+      "severity": "minor",
+      "evidence": "PDF page 4 shows two logos at the bottom: NC DEQ 'Department of Environmental Quality' and NC Wildlife Resources Commission. HTML Key takeaways section only has: <figure><img alt=\"North Carolina Wildlife Resources Commission logo\" .../>. The NC DEQ logo figure is absent.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 211.59,
+    "page_count": 6,
+    "visual_input_tokens": 20472,
+    "visual_output_tokens": 4688,
+    "content_input_tokens": 14665,
+    "content_output_tokens": 5993,
+    "triage_input_tokens": 16760,
+    "triage_output_tokens": 60,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:04:20.160634",
+    "auditor_version": "1.0.0"
+  }
+}

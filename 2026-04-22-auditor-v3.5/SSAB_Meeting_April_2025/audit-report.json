@@ -1,0 +1,24 @@
+{
+  "document_id": "SSAB_Meeting_April_2025",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 135.78,
+    "page_count": 2,
+    "visual_input_tokens": 6952,
+    "visual_output_tokens": 4539,
+    "content_input_tokens": 8101,
+    "content_output_tokens": 1347,
+    "triage_input_tokens": 9650,
+    "triage_output_tokens": 41,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T19:03:29.506149",
+    "auditor_version": "1.0.0"
+  }
+}

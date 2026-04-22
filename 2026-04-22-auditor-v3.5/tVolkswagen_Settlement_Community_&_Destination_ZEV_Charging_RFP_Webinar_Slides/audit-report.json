@@ -1,0 +1,65 @@
+{
+  "document_id": "tVolkswagen_Settlement_Community_&_Destination_ZEV_Charging_RFP_Webinar_Slides",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'community and destination zev infrastructure program' (6x); 'daq grant management system (gms)' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C1",
+      "description": "The Level 2 Add On Funding Levels table column header 'Or (whichever is less)' from the PDF was replaced with the fabricated word 'Condition' in the HTML. The word 'Condition' does not appear anywhere in the source PDF.",
+      "severity": "critical",
+      "evidence": "PDF page 10 table column header: 'Or (whichever is less)'. HTML <th>: 'Condition'. The cell data was also expanded from 'or' to 'or (whichever is less)' in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "DC Fast Funding Levels table has multi-row headers in the PDF (a spanning 'Reimbursement Amount (Per Port)' header over both Government and Non-Government sub-columns) that were flattened into composite single-row headers in the HTML. The fabricated composite headers like 'Government-Owned Property Reimbursement %' and 'Government-Owned Property Reimbursement Amount' do not exist as-is in the PDF. All underlying data values are preserved.",
+      "severity": "major",
+      "evidence": "PDF page 9 has a two-row header: Row 1 spans 'Reimbursement Amount (Per Port)' across 4 sub-columns; Row 2 has 'Government-Owned Property' and 'Non-Government-Owned Property' as group headers. HTML flattens to 6 single-row headers with invented composite names.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The '(Per Port)' qualifier from the DC Fast Funding Levels table header is lost in the HTML. The PDF explicitly labels the reimbursement amounts as 'Reimbursement Amount (Per Port)' in a spanning header, but the HTML table and its caption omit '(Per Port)', which could lead to misinterpretation of the dollar amounts.",
+      "severity": "major",
+      "evidence": "PDF page 9 spanning header: 'Reimbursement Amount (Per Port)'. HTML table caption: 'DC Fast Funding Levels' with no '(Per Port)' in any header or caption.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the Q&A image uses the generic term 'icon', which is flagged as generic placeholder alt text per the audit criteria.",
+      "severity": "minor",
+      "evidence": "HTML alt text: 'Q and A speech bubbles icon'. The word 'icon' is listed as a generic placeholder term.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 372.06,
+    "page_count": 40,
+    "visual_input_tokens": 105307,
+    "visual_output_tokens": 7378,
+    "content_input_tokens": 77807,
+    "content_output_tokens": 10206,
+    "triage_input_tokens": 74123,
+    "triage_output_tokens": 122,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T19:07:00.218270",
+    "auditor_version": "1.0.0"
+  }
+}

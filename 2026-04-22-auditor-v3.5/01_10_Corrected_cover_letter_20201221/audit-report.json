@@ -1,0 +1,41 @@
+{
+  "document_id": "01_10_Corrected_cover_letter_20201221",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V5",
+      "description": "The signature block is duplicated: the handwritten signature image (which includes 'Sincerely,', the signature, and 'David Miller, PE / State Mining Engineer') is rendered alongside separate HTML text versions of the same content ('Sincerely,', 'David Miller, PE', 'State Mining Engineer'). This creates a reading-order disruption with duplicated content.",
+      "severity": "major",
+      "evidence": "PDF shows one instance of 'Sincerely,' followed by the signature and typed name/title. HTML shows 'Sincerely,' as text, then an image containing 'Sincerely,' plus signature plus name/title, then again 'David Miller, PE' and 'State Mining Engineer' as separate text lines.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 85.37,
+    "page_count": 1,
+    "visual_input_tokens": 4810,
+    "visual_output_tokens": 1126,
+    "content_input_tokens": 6045,
+    "content_output_tokens": 2310,
+    "triage_input_tokens": 8321,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T18:59:31.333488",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "document_id": "01_JLR4_Agenda_Schedule",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Merged cells in rows 11/14/2013 and 9/11/2014 were split, causing content duplication across columns",
+      "severity": "major",
+      "evidence": "PDF: '11/14/2013' and '9/11/2014' rows have text spanning across 'Jordan Lake Water Supply Allocations' and 'Cape Fear River Basin Water Supply Plan' columns as a single merged cell. HTML: The text is duplicated independently in both columns rather than merged.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Merged cell 'EMC Model Approval' in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column spans multiple rows (approximately 1/1/2013 through 5/1/2013) in the PDF but is duplicated as separate identical cell values in four rows (1/1/2013, 2/1/2013, 4/1/2013, 5/1/2013) in the HTML.",
+      "severity": "major",
+      "evidence": "PDF shows a single merged cell with 'EMC Model Approval' spanning rows. HTML repeats '<td>EMC Model Approval</td>' in four separate rows.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The 11/14/2013 row in the PDF has a single merged cell spanning the 'Jordan Lake Water Supply Allocations' and 'Cape Fear River Basin Water Supply Plan' columns. The HTML duplicates the text into both columns as separate cells.",
+      "severity": "major",
+      "evidence": "PDF: single merged cell reads 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' spanning columns 2\u20133. HTML: identical text appears in two separate <td> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The 9/11/2014 row in the PDF has a single merged cell spanning the 'Jordan Lake Water Supply Allocations' and 'Cape Fear River Basin Water Supply Plan' columns. The HTML duplicates the text into both columns.",
+      "severity": "major",
+      "evidence": "PDF: single merged cell reads 'EMC decision at the September 2014 meeting.' spanning columns 2\u20133. HTML: identical text in two separate <td> elements.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 107.61,
+    "page_count": 2,
+    "visual_input_tokens": 7820,
+    "visual_output_tokens": 1985,
+    "content_input_tokens": 8293,
+    "content_output_tokens": 2755,
+    "triage_input_tokens": 10603,
+    "triage_output_tokens": 136,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T18:59:53.924596",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "document_id": "(UPDATED)_25095_Colwick_Rd_SNI_20250925.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "The email address 'lonnavines@cmlibrary.org' is plain text in the PDF (no underline or hyperlink styling) but is wrapped in a mailto link in the HTML, constituting link injection.",
+      "severity": "critical",
+      "evidence": "PDF shows 'lonnavines@cmlibrary.org' as plain text (no color change or underline, unlike 'shirley.liggins@deq.nc.gov' which is visibly hyperlinked). HTML wraps it: <a href=\"mailto:lonnavines@cmlibrary.org\">lonnavines@cmlibrary.org</a>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 89.14,
+    "page_count": 1,
+    "visual_input_tokens": 4758,
+    "visual_output_tokens": 962,
+    "content_input_tokens": 7200,
+    "content_output_tokens": 2623,
+    "triage_input_tokens": 5305,
+    "triage_output_tokens": 300,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T18:59:37.267348",
+    "auditor_version": "1.0.0"
+  }
+}

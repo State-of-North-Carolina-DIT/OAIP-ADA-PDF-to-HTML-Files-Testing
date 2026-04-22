@@ -1,0 +1,24 @@
+{
+  "document_id": "01_Fact_Sheet_SKA.pdf_2",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 63.98,
+    "page_count": 2,
+    "visual_input_tokens": 7808,
+    "visual_output_tokens": 816,
+    "content_input_tokens": 8911,
+    "content_output_tokens": 1685,
+    "triage_input_tokens": 7012,
+    "triage_output_tokens": 76,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T18:59:10.447522",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The hierarchical flowchart diagram in Appendix B showing the relationships between record types (boxes connected by lines illustrating the data hierarchy) is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 5 contains a clear flowchart with boxes (Environmental Data Record Type 1, Gear Data Record Type 7, Replicate Data Record Type 2, Species Data Record Type 3, Individual Data Record Type 4, Tag Recapture Data Record Type 9, Age Data Record Type 5) connected by directional lines showing the hierarchy. The HTML replaces this diagram with a flat text listing of the record type names, losing the visual representation of the hierarchical relationships.",
+      "page": 5,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 152.95,
+    "page_count": 10,
+    "visual_input_tokens": 32015,
+    "visual_output_tokens": 2380,
+    "content_input_tokens": 32574,
+    "content_output_tokens": 4382,
+    "triage_input_tokens": 24875,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:00:42.537331",
+    "auditor_version": "1.0.0"
+  }
+}

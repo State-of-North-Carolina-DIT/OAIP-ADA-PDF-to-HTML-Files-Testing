@@ -1,0 +1,41 @@
+{
+  "document_id": "009_outfall_COALASHSUMMARY4March_2014",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C3b",
+      "description": "The third column header in the HTML is labeled \"Report # / Dissolved Units\\Hg 1631\" which incorrectly merges labels from different header rows. In the PDF, \"Report #\" and \"Dissolved\" are row labels for the sub-headers of the sampling-date columns (identifying which sample ID is the Report #, which is the Dissolved sample, and which is the Hg 1631 sample). They do not belong to the Units column. The column should be labeled \"Units\" or \"Units\\Hg 1631\".",
+      "severity": "major",
+      "evidence": "PDF header rows stack: Row1 has 'Report #' above date columns; Row2 has 'Dissolved' above date columns; Row3 has 'Units\\Hg 1631' for the units column. HTML merges all three into a single column header: \"Report # / Dissolved Units\\Hg 1631\" for the column that only contains unit values like mg/L, ug/L, NTU.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The PDF's multi-row header structure identifying three sample IDs per date (Report #, Lab/Dissolved, Hg 1631) is flattened into single-row headers in the HTML, and each date column is split into separate Value and Qualifier columns. While all data is present, the original header hierarchy and merged-cell structure is lost.",
+      "severity": "major",
+      "evidence": "PDF header for 2/14/2014 shows three stacked sample IDs: AC04986 (Report #), AC04987 (Lab/Dissolved), AC04993 (Hg 1631). HTML combines all into one header: '2/14/2014 AC04986 AC04987 AC04993 Value' plus a separate '2/14/2014 Qualifier' column.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 296.97,
+    "page_count": 1,
+    "visual_input_tokens": 4330,
+    "visual_output_tokens": 9979,
+    "content_input_tokens": 16571,
+    "content_output_tokens": 6286,
+    "triage_input_tokens": 7786,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:03:04.888033",
+    "auditor_version": "1.0.0"
+  }
+}

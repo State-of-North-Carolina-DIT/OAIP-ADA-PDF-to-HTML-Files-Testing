@@ -1,0 +1,65 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Cover letter header content duplicated in HTML. The official header names (ROY COOPER/Governor, ELIZABETH S. BISER/Secretary, RICHARD E. ROGERS, JR./Director) appear twice: first as standalone text at the top of the HTML page, and again below the state seal as part of the reconstructed letterhead layout. A sighted reader encounters the same identifying information twice in sequence.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows ROY COOPER/Governor, ELIZABETH S. BISER/Secretary, RICHARD E. ROGERS, JR./Director once in the upper-left header area. HTML page 1 shows these names first as plain text at the very top, then again below the seal image in a second text block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Shallow Draft Navigation Channel Dredging table rendered as both an embedded image and an HTML table, creating duplicated content. The table data appears first as a screenshot-like image from the PDF and then immediately below as a fully formatted HTML table with the same rows and columns.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows the dredging table once. In the HTML (visible in HTML chunk 2\u20133), the table first appears as an embedded image of the original PDF table, followed by an HTML <table> rendering of the identical data (Date, Project, Cooperator, Amount, Project Type).",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Shallow Draft Navigation Channel Dredging table from PDF page 3 is rendered BOTH as an embedded image (<img>) AND as a separate HTML <table>. The same content appears twice in different formats.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img alt=\"Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022 table\" ...></figure> immediately followed by a full <table> with caption \"Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022 G.S. 143-215.73F\" containing all 37 data rows plus a total row. The PDF shows this content only once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "In the Cooperators per Project table, the word 'Charlotte' was incorrectly moved from the Mountain Island Reservoir row to the Lake Norman row, corrupting both entries.",
+      "severity": "major",
+      "evidence": "PDF shows Lake Norman cooperators as 'Lake Norman Marine Commission, Charlotte Water,' and Mountain Island Reservoir cooperators as 'Charlotte Stormwater Services and Duke Energy'. HTML shows Lake Norman as 'Lake Norman Marine Commission, Charlotte Water, Charlotte' and Mountain Island Reservoir as 'Stormwater Services and Duke Energy' \u2014 the word 'Charlotte' was shifted to the wrong row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The handwritten signature of Kevin Hart on the cover letter (PDF page 1) is not included as an image in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 contains a handwritten signature between 'Sincerely,' and 'Kevin Hart'. The HTML has no <img> tag for this signature.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 369.81,
+    "page_count": 10,
+    "visual_input_tokens": 29272,
+    "visual_output_tokens": 13113,
+    "content_input_tokens": 36357,
+    "content_output_tokens": 5391,
+    "triage_input_tokens": 27569,
+    "triage_output_tokens": 385,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:06:25.897472",
+    "auditor_version": "1.0.0"
+  }
+}

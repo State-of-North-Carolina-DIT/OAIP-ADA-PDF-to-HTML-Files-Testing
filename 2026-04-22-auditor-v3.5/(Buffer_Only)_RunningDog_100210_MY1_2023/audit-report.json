@@ -1,0 +1,10 @@
+{
+  "document_id": "(Buffer_Only)_RunningDog_100210_MY1_2023",
+  "verdict": "skipped",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual too large (42p)",
+  "metadata": null
+}

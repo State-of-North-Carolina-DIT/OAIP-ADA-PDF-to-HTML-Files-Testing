@@ -1,0 +1,89 @@
+{
+  "document_id": "01_NRHM_AgIrrig_Data_MoffattNichol_Draft_Report_050709",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Figure 2 (Rain Gages) is truncated/cropped in the HTML rendering, losing the eastern portion of the Neuse River Basin map",
+      "severity": "critical",
+      "evidence": "PDF Figure 2 shows the full basin extent with 9 rain gages including GREENVILLE (19300101), KINSTON AG-RSCH (19660301), and KINSTON 7 SE (19300101) in the eastern portion, plus counties PITT, GREENE, LENOIR, CRAVEN, JONES, PAMLICO, BEAUFORT, CARTERET, and the Legend box. The HTML version only shows the western/central portion (PERSON through WAYNE/JOHNSTON area), cutting off approximately 40% of the geographic extent and omitting 3 of 9 rain gages and the legend.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 3 (Distribution of Agriculture) is truncated/cropped in the HTML rendering, losing the eastern portion of the basin map",
+      "severity": "critical",
+      "evidence": "PDF Figure 3 shows the full agriculture distribution map extending to CRAVEN, JONES, PAMLICO, and CARTERET counties on the east with subbasin percentages and calibration gage locations. The HTML version cuts off the eastern portion, omitting several subbasins including areas in LENOIR, CRAVEN, JONES and their associated percentage distributions.",
+      "page": 22,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 4 (Water withdrawals) is truncated/cropped in the HTML rendering, losing the eastern portion of the basin map",
+      "severity": "critical",
+      "evidence": "PDF Figure 4 shows the full basin with all water withdrawal locations extending to CRAVEN, JONES, PAMLICO, and CARTERET counties. The HTML version is cut off on the east, missing withdrawal locations in the lower/eastern basin (e.g., near New Bern, Vanceboro areas) and associated geographic context including ONSLOW county at the southern edge.",
+      "page": 23,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 5 (Wastewater discharges) is truncated/cropped in the HTML rendering, losing the eastern portion of the basin map",
+      "severity": "critical",
+      "evidence": "PDF Figure 5 shows the complete map of active and historical wastewater discharge locations extending across the full basin to CRAVEN, JONES, PAMLICO, CARTERET, and BEAUFORT counties. The HTML version is truncated on the east, omitting discharge locations (e.g., NC0003191 New Bern Mill area, NC0031828 Vanceboro) and associated eastern counties.",
+      "page": 24,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C5",
+      "description": "Section heading '1.1.4. Consultation with Dr. Ronald Sneed' is demoted from a heading to a plain paragraph in the HTML. In the PDF, it is a bold heading at the same visual level as 1.1.3 and 1.1.5, which are correctly rendered as <h4> elements in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 5: '1.1.4. Consultation with Dr. Ronald Sneed' appears as a bold section heading. HTML renders it as: <p id=\"consultation-sneed\">1.1.4. Consultation with Dr. Ronald Sneed</p> instead of <h4>.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Table 4 (Summary Water Withdrawal Data) has a column count mismatch between header and data rows. The header row has 6 <th> elements (PWSS, Plants, SW Sources, Historical Assumptions, Data Available, Projected Withdrawal Period) but every data row has 7 <td> elements. The entity name column (containing values like 'Creedmoor', 'Durham', 'Goldsboro') is missing its header.",
+      "severity": "major",
+      "evidence": "HTML <thead> has 6 <th> columns: PWSS | Plants | SW Sources | Historical Assumptions | Data Available | Projected Withdrawal Period. But data row for Creedmoor has 7 <td>: 1 | Creedmoor | Creedmoor WTP | Lake Rogers | using Creedmoor City's... | 1992/1997/2006 data | 1935-2008. The PDF shows the second column with entity names (Creedmoor, Durham, etc.) between the PWSS number and Plants columns.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Referenced Tables section contains 7 page-scan images (based on their page-width dimensions of 612pt and 1224pt) interspersed among the HTML <table> elements. The same table content appears both as embedded images and as rendered HTML tables, creating duplicate content.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt=\"\" style=\"width: 612.0pt\"> before Table 1, two similar images between Tables 2 and 3, one after Table 3, and three <img alt=\"\" style=\"width: 1224.0pt\"> (landscape-width) after Table 4. All these are placed within the same section as the corresponding HTML <table> elements containing identical data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Seven images in the Referenced Tables section have completely empty alt text (alt=\"\"), marking them as decorative when they appear to be page-scan images containing table data. If substantive, they need descriptive alt text; if truly decorative duplicates, they should be removed entirely rather than left in the document flow.",
+      "severity": "minor",
+      "evidence": "Seven instances of <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt/1224.0pt\"/> placed between Table 1 through Table 5 in the HTML body.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 4,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 548.72,
+    "page_count": 24,
+    "visual_input_tokens": 75712,
+    "visual_output_tokens": 15906,
+    "content_input_tokens": 78408,
+    "content_output_tokens": 13563,
+    "triage_input_tokens": 57724,
+    "triage_output_tokens": 112,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:09:13.112900",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "document_id": "RoxboroMeetingOfficerReport_20160428",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Digital signature metadata text inserted inline between the 'From' address block and the 'Subject' line, disrupting reading flow compared to the PDF where this metadata is not visually rendered inline.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows 'From: Elizabeth S. Werner / Division of Waste Management / Raleigh Central Office' followed directly by 'Subject:'. HTML inserts 'Digitally signed by Elizabeth S Werner', DN details, and date stamp between these two blocks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The email address 'elizabeth.werner@ncdenr.gov' in the digital signature block is wrapped in an <a href=\"mailto:...\"> tag in the HTML, but it appears as plain text within the digital certificate information in the PDF. This constitutes link injection.",
+      "severity": "critical",
+      "evidence": "HTML: <a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>. PDF: The digital signature block shows 'email=elizabeth.werner@nc denr.gov, c=US' as plain certificate metadata text with no hyperlink.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 176.92,
+    "page_count": 5,
+    "visual_input_tokens": 16964,
+    "visual_output_tokens": 3185,
+    "content_input_tokens": 16744,
+    "content_output_tokens": 4361,
+    "triage_input_tokens": 17427,
+    "triage_output_tokens": 84,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T19:04:17.266677",
+    "auditor_version": "1.0.0"
+  }
+}

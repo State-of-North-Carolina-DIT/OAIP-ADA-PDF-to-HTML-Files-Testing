@@ -1,0 +1,41 @@
+{
+  "document_id": "01_2019_shellfish_sale_tag_template",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Italic emphasis lost on a portion of the Consumer Advisory text",
+      "severity": "minor",
+      "evidence": "In the PDF, the phrase 'immune system. Ask your doctor if you are unsure of your risk.' is rendered in italic within the Consumer Advisory, differentiating it from the surrounding text. In the HTML, this phrase appears in the same regular (roman) style as the rest of the advisory, losing the italic emphasis entirely.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains a substantive diagram of the sale tag layout \u2014 a bordered tag mockup with callout arrows linking explanatory annotations to specific tag fields. This visual figure is the central illustrative element of the document, yet no corresponding <img> tag exists in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF shows a bordered 'SALE TAG' box with annotation arrows pointing from labels (e.g., 'Dealer Name, Address, & Certification Number', '90 Day tag retention notice') to the relevant portions of the tag. The HTML has zero <img> tags; the text content is reproduced inline but the visual diagram is absent.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 158.45,
+    "page_count": 1,
+    "visual_input_tokens": 4761,
+    "visual_output_tokens": 4193,
+    "content_input_tokens": 6935,
+    "content_output_tokens": 2082,
+    "triage_input_tokens": 5142,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:00:44.479009",
+    "auditor_version": "1.0.0"
+  }
+}

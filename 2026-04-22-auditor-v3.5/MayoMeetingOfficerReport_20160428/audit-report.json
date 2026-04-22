@@ -1,0 +1,49 @@
+{
+  "document_id": "MayoMeetingOfficerReport_20160428",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Digital signature metadata exposed as visible text in HTML, inserting extra content into the reading flow between the 'From' block and the 'Subject' block that is not visually present in the PDF rendering.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows 'From: Elizabeth S. Werner / Division of Waste Management / Raleigh Central Office' followed directly by 'Subject:'. HTML inserts 'Digitally signed by Elizabeth S Werner / DN: cn=Elizabeth S Werner, o=DWM-Soild Waste, ou=NCDENR, email=elizabeth.werner@ncdenr.gov, c=US / Date: 2016.04.28 09:56:21 -04:00' between the From and Subject blocks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4a",
+      "description": "Link injection: The HTML wraps the email address 'elizabeth.werner@ncdenr.gov' in a mailto hyperlink, but in the PDF this email appears only as plain text within the digital signature metadata block (DN field). The PDF does not present it as a clickable link.",
+      "severity": "critical",
+      "evidence": "HTML: <a href=\"mailto:elizabeth.werner@ncdenr.gov\">elizabeth.werner@ncdenr.gov</a>. PDF: 'email=elizabeth.werner@nc denr.gov, c=US' shown as plain digital signature certificate text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second <img> tag in the HTML has empty alt text (alt=\"\"). This image likely corresponds to the handwritten signature of Elizabeth S. Werner visible on PDF page 1 in the 'From:' field area. If so, it is a substantive image (signature) and should have descriptive alt text rather than being marked as decorative.",
+      "severity": "minor",
+      "evidence": "HTML: <img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 654.4pt; height: auto;\"/>. PDF page 1 shows a handwritten signature near the 'From: Elizabeth S. Werner' line.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 162.04,
+    "page_count": 5,
+    "visual_input_tokens": 17018,
+    "visual_output_tokens": 2267,
+    "content_input_tokens": 16511,
+    "content_output_tokens": 5171,
+    "triage_input_tokens": 17367,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:04:26.665521",
+    "auditor_version": "1.0.0"
+  }
+}

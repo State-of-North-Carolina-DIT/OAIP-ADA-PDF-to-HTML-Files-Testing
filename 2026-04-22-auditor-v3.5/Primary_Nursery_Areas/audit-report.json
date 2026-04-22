@@ -1,0 +1,24 @@
+{
+  "document_id": "Primary_Nursery_Areas",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 153.0,
+    "page_count": 19,
+    "visual_input_tokens": 55274,
+    "visual_output_tokens": 3513,
+    "content_input_tokens": 87880,
+    "content_output_tokens": 3483,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:02:18.689365",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "David Miller's signature image duplicates surrounding text, creating reading-order disruption. The image contains 'Sincerely,', the handwritten signature, 'David Miller, PE', and 'State Mining Engineer', all of which also appear as separate HTML text.",
+      "severity": "major",
+      "evidence": "PDF has one 'Sincerely,' and one 'David Miller, PE / State Mining Engineer' below the signature. HTML shows these texts both inside the signature image AND as separate text elements, so a reader encounters them twice.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Brian Wrenn's signature image duplicates adjacent HTML text. The image contains 'Brian Wrenn, Director' text which is also rendered as separate HTML text below it.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows signature with 'Brian Wrenn, Director' printed once. HTML shows the signature image (which includes that text) plus separate HTML text for 'Brian Wrenn,', 'Director', 'Division of Energy, Mineral, and Land Resources', 'North Carolina Department of Environmental Quality'.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Brenda Harris's signature image duplicates adjacent HTML text. The image contains the date '12-15-2020' and 'Brenda Harris / Mining Program Administrative' which are also rendered as separate HTML text.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows the mailing date and Brenda Harris's name/title once each. HTML shows both inside the signature image AND as separate text elements below it.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "PDF page-1 footer content (DEQ logo, agency address, and phone number) is placed mid-body in the HTML between the cover letter section and the NOTICE OF ISSUANCE OF MINING PERMIT section, breaking reading flow. Per the C7 MUST FLAG rule, a page-footer block inserted between body sections is a defect even if it appears only once.",
+      "severity": "major",
+      "evidence": "HTML has a <footer> element containing the DEQ logo, 'North Carolina Department of Environmental Quality | Division of Energy, Mineral and Land Resources | 512 North Salisbury Street | 1612 Mail Service Center | Raleigh, North Carolina 27699-1612 | 919.707.9200' placed between the cover letter ('cc: Ms. Tamera Eplin, PE') and the '<h1>NOTICE OF ISSUANCE OF MINING PERMIT</h1>' heading.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 132.45,
+    "page_count": 2,
+    "visual_input_tokens": 7900,
+    "visual_output_tokens": 2110,
+    "content_input_tokens": 7785,
+    "content_output_tokens": 3861,
+    "triage_input_tokens": 10351,
+    "triage_output_tokens": 272,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:00:19.159602",
+    "auditor_version": "1.0.0"
+  }
+}

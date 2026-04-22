@@ -1,0 +1,24 @@
+{
+  "document_id": "PFAS_Data_Synthesis_Support_STEP_Initiative_2022",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 58.43,
+    "page_count": 3,
+    "visual_input_tokens": 10860,
+    "visual_output_tokens": 1642,
+    "content_input_tokens": 10355,
+    "content_output_tokens": 776,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:00:52.541107",
+    "auditor_version": "1.0.0"
+  }
+}

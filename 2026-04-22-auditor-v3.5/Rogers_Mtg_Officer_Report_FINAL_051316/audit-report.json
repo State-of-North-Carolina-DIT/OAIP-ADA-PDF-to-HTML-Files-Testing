@@ -1,0 +1,57 @@
+{
+  "document_id": "Rogers_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeated institutional header/footer content inserted between page-equivalent content sections in the HTML, disrupting reading order.",
+      "severity": "major",
+      "evidence": "In the HTML, after the initial letterhead rendering (NC logo, PAT McCRORY/Governor, DONALD R. VAN DER VAART/Secretary, TRACY DAVIS/Director), footer text and a colored bar appear, followed by a second block repeating 'Energy, Mineral & Land Resources', 'ENVIRONMENTAL QUALITY', and the same governor/secretary/director names before the MEMORANDUM heading. This duplication does not exist in the PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated institutional header block and footer text inserted between the 'I. History/Background' section heading and its body content in the HTML flow.",
+      "severity": "major",
+      "evidence": "In the HTML, after the 'I. History/Background' heading, there is a large blank space, footer text, a colored bar, and then the full institutional header block (Energy, Mineral & Land Resources, PAT McCRORY, etc.) before the actual CAMA content begins. In the PDF, the heading leads directly into the content without interruption.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated institutional header block inserted between Section I content and Section II content in the HTML flow.",
+      "severity": "major",
+      "evidence": "In the HTML rendering, the institutional header block (Energy, Mineral & Land Resources, ENVIRONMENTAL QUALITY, governor/secretary/director names) with colored bar and footer text appears again between the end of History/Background bullet points and the beginning of Section II meeting details, interrupting the continuous reading flow that exists in the PDF.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A spurious image element is inserted at the beginning of Section I (History/Background) that has no corresponding substantive image in the PDF at that location. This likely represents a duplicated page header/border element from PDF page 2 that was incorrectly captured and placed in the body flow.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> immediately after the <h2 id=\"history-background\">I. History/Background</h2> heading. PDF page 2 has no substantive image at that location\u2014only body text beginning with 'Under the historic Coal Ash Management Act...'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 224.24,
+    "page_count": 5,
+    "visual_input_tokens": 16214,
+    "visual_output_tokens": 7154,
+    "content_input_tokens": 17381,
+    "content_output_tokens": 3066,
+    "triage_input_tokens": 17316,
+    "triage_output_tokens": 100,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T19:02:55.602191",
+    "auditor_version": "1.0.0"
+  }
+}

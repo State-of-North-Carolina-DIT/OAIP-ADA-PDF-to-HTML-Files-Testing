@@ -1,0 +1,97 @@
+{
+  "document_id": "01_NS_YPDL_Kickoff_meeting_03042020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components' (15x); 'evaluation criteria' (7x); 'hydrologic model' (4x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Gear mechanism diagram (showing interlocking relationship between Basin Plan, Basin Model, and Water Resources Management) and concentric circles diagram (showing hierarchical nesting of Water Resources Management > Integrated Basin Plan > Hydrologic Model) are missing as visual elements. Only flat text labels remain, losing the relational meaning conveyed by the diagrams.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows a gear diagram with three interlocking gears and a concentric circles diagram illustrating hierarchical relationships. HTML renders these as a flat list of text labels: 'Water Resources Management', 'Integrated Basin Plan', 'HYDROLOGIC MODEL', 'Basin Plan', 'Basin Model', 'Water Resources Management' without any visual diagram.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Venn diagram showing project organization with three overlapping circles is missing. The overlap between circles conveys shared responsibilities/collaboration between teams, which is lost in the flat text rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 21 shows a Venn diagram with three overlapping circles: 'Data Coordination / HDR', 'Model Development/Data Process / HydroLogics Team / Hazen and Sawyer', and 'Data, Model Evaluation & Plan Development / NCDWR'. HTML renders these as separate text blocks without showing the overlapping visual relationship.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Table 4-3 (Water Supply Demand & Deficits) appears both as a PDF image and as a separately rendered HTML table, creating duplicated content that interrupts reading flow.",
+      "severity": "major",
+      "evidence": "PDF page 18 shows one table. HTML shows the same table twice: once as the original PDF image of the table and once as a properly structured HTML table with identical data. Both versions appear sequentially in the reading flow.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Water Supply Deficits table from PDF page 18 is rendered BOTH as an <img> tag AND as a separate HTML <table> element, duplicating the same content in two forms.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img alt=\"Table showing Water Supply Demand & Deficits Predicted by the Neuse River Basin Hydrologic Model, 2050 Scenario\" ...> immediately followed by a full <table> with the same 6 data rows (Orange-Alamance, Hillsborough, Piedmont Minerals, Raleigh, Durham, SGWASA). The PDF presents this content once as a single table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Tasks 2 and 4 from PDF page 22 each appear twice in the HTML \u2014 once as an <img> and once as <em> text.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt=\"Faded text: Task 2 - OASIS Application Development\" ...></figure> followed by <em>Task 2 - OASIS Application Development</em>, and similarly for Task 4. In the PDF each appears only once (as grayed-out text).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Stream Condition bar chart from PDF page 17 is missing as an image. Only text descriptions of axes and legend items are provided.",
+      "severity": "minor",
+      "evidence": "PDF page 17 shows a bar chart titled 'Stream Condition Middle Deep River (Node 280) June - November' with grouped bars showing % of Days at Flow Level across four demand scenarios. The HTML section has no <img> tag for this chart \u2014 only text descriptions of Y-axis, X-axis categories, and legend items.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Concentric circles diagram from PDF page 3 showing nested relationships (HYDROLOGIC MODEL \u2192 Integrated Basin Plan \u2192 Water Resources Management) is missing as an image.",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows concentric circles with HYDROLOGIC MODEL at center, Integrated Basin Plan in middle ring, and Water Resources Management as outer ring. HTML represents this as plain text paragraphs with no <img> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "HTML adds axis-label prefixes 'Y-axis:' and 'X-axis categories:' for the page 17 chart description that do not appear anywhere in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains: '<p>Y-axis: % of Days at Flow Level (0.0% to 35.0%)</p>' and '<p>X-axis categories: Unimpaired, 2003 Demands, 2030 Demands, 2050 Demands</p>'. The PDF has '% of Days at Flow Level' as a chart axis label and the category names on the chart axis, but the 'Y-axis:' and 'X-axis categories:' prefixes are fabricated connective text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 405.13,
+    "page_count": 24,
+    "visual_input_tokens": 75821,
+    "visual_output_tokens": 8694,
+    "content_input_tokens": 48906,
+    "content_output_tokens": 10063,
+    "triage_input_tokens": 47603,
+    "triage_output_tokens": 112,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:05:54.051472",
+    "auditor_version": "1.0.0"
+  }
+}

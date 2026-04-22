@@ -1,0 +1,81 @@
+{
+  "document_id": "01_NCDAQ_Final_RH_SIP_Transmittal_Letter_040422.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V5",
+      "description": "PDF page 1 is rendered as both an embedded screenshot image and as HTML text, creating duplicated content that disrupts reading flow.",
+      "severity": "major",
+      "evidence": "In the HTML chunk for page 1, a scaled-down image of the entire PDF page 1 (showing the state seal, letterhead, body text, and DEQ footer) appears at the top, followed immediately by the same content rendered as HTML text (ROY COOPER Governor, ELIZABETH S. BISER Secretary, etc.). A sighted reader encounters all content twice.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "PDF page 2 is rendered as both an embedded screenshot image and as HTML text, creating duplicated content that disrupts reading flow.",
+      "severity": "major",
+      "evidence": "In the HTML chunk for page 2, a scaled-down image of PDF page 2 (showing the page header 'Daniel Blackman, April 4, 2022, Page 2', appendix list, and public comment details) is embedded alongside the same content rendered as HTML text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "PDF page 3 is rendered as both an embedded screenshot image and as HTML text, creating duplicated content that disrupts reading flow.",
+      "severity": "major",
+      "evidence": "In the HTML chunk for page 3, an embedded image of PDF page 3 (showing the closing paragraphs, signature block, MAA/rps notation, and cc list) appears alongside the same content rendered as HTML text, causing the reader to encounter the closing, signature, and cc list twice.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The email address randy.strait@ncdenr.gov is wrapped in an <a href=\"mailto:...\"> link in the HTML, but in the source PDF it appears as plain, unlinked text.",
+      "severity": "critical",
+      "evidence": "HTML: <a href=\"mailto:randy.strait@ncdenr.gov\">randy.strait@ncdenr.gov</a>. PDF page 3 shows the same email as plain text without any hyperlink.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "A page-footer DEQ logo image from the bottom of PDF page 1 is inserted mid-content in the HTML body (between the bulleted list and the continuation paragraph about Section 7.8.3), breaking reading flow rather than being consolidated into the footer or removed.",
+      "severity": "major",
+      "evidence": "HTML: <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> appears between the bulleted list and the 'In Section 7.8.3 of the final SIP...' paragraph. In the PDF, this image is the DEQ logo at the very bottom of page 1, part of the page footer.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image in the HTML (the DEQ footer logo from PDF page 1 placed mid-content) has empty alt text (alt=\"\"), providing no description of the logo/seal image.",
+      "severity": "minor",
+      "evidence": "HTML: <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure>. This corresponds to the NC DEQ logo/seal at the bottom of PDF page 1.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 176.19,
+    "page_count": 4,
+    "visual_input_tokens": 12756,
+    "visual_output_tokens": 4585,
+    "content_input_tokens": 14136,
+    "content_output_tokens": 3149,
+    "triage_input_tokens": 13706,
+    "triage_output_tokens": 86,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:01:04.004783",
+    "auditor_version": "1.0.0"
+  }
+}

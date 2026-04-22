@@ -1,0 +1,49 @@
+{
+  "document_id": "Southside_Park_Stream_Sediment_Assessment",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C6",
+      "description": "Eight images use the generic placeholder alt text 'Map symbol', which conveys no meaningful information about each symbol's purpose or meaning.",
+      "severity": "minor",
+      "evidence": "HTML contains 8 <img> tags with alt=\"Map symbol\". These should describe the specific symbol (e.g., sample location marker, property boundary indicator, surface water line).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The five sediment-sample data callout boxes (SD-1 through SD-5) are rendered both inside the main map image (alt='Main map showing sampling locations around Southside Park Landfill') AND as five separate HTML <table> elements. The same analytical results and risk assessment data thus appear twice in the HTML.",
+      "severity": "major",
+      "evidence": "The map image inherently contains the data callout boxes visible in the PDF figure. The HTML also reproduces this data as five standalone tables under the 'Sample Results' heading (e.g., SD-1/DUP-6102025-SD table, SD-2 table, etc.).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "In each of the five sample-result tables, the 'Risk Assessment' label and the CR/HI values are placed as regular body rows rather than as a distinct sub-section or separate summary table. In the PDF, 'Risk Assessment' is a sub-heading within each callout box, not a data row with an empty second cell.",
+      "severity": "major",
+      "evidence": "HTML: <tr><td><strong>Risk Assessment</strong></td><td><span class='sr-only'>No data</span></td></tr> followed by CR and HI as separate rows. PDF shows 'Risk Assessment' as an underlined label separating the analyte data from the risk metrics.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 238.0,
+    "page_count": 1,
+    "visual_input_tokens": 3954,
+    "visual_output_tokens": 8839,
+    "content_input_tokens": 8897,
+    "content_output_tokens": 2348,
+    "triage_input_tokens": 9604,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:03:19.449114",
+    "auditor_version": "1.0.0"
+  }
+}

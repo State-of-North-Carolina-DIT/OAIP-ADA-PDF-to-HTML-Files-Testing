@@ -1,0 +1,41 @@
+{
+  "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "North Carolina state flag image is missing from the HTML conversion of the title slide.",
+      "severity": "critical",
+      "evidence": "PDF page 1 prominently displays the NC state flag (blue vertical stripe with NC seal, red and white horizontal stripes). The HTML rendering shows no flag image at all.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Venn/nested ellipse diagram showing the relationship between Water Supply Planning and River Basin Modeling is missing from HTML. Only plain text labels remain.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a large green ellipse labeled 'Water Supply Planning' containing a smaller orange ellipse labeled 'River Basin Modeling', visually conveying that modeling is a subset of planning. The HTML renders these as two plain-text lines without any diagram.",
+      "page": 10,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 96.34,
+    "page_count": 11,
+    "visual_input_tokens": 26777,
+    "visual_output_tokens": 2449,
+    "content_input_tokens": 22617,
+    "content_output_tokens": 1555,
+    "triage_input_tokens": 24531,
+    "triage_output_tokens": 73,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-22T18:59:44.850667",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "document_id": "2020-waccamaw-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "Table 1 data is duplicated: it appears both as an embedded full-page image and as a separate HTML <table>.",
+      "severity": "major",
+      "evidence": "HTML contains <img alt=\"Full page vector graphic for Table 1\" ...> immediately followed by a <table> with <caption>Table 1. Longitude and Latitude values...</caption> containing all 37 data rows. The PDF has only one rendering of this table (page 5).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 2 data is duplicated: it appears both as an embedded full-page image and as a separate HTML <table>.",
+      "severity": "major",
+      "evidence": "HTML contains <img alt=\"Full page vector graphic for Table 2\" ...> immediately followed by a <table> with <caption>Table 2. Secchi Disk locations and results.</caption> containing 3 data rows. The PDF has only one rendering of this table (page 10).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 115.65,
+    "page_count": 10,
+    "visual_input_tokens": 31924,
+    "visual_output_tokens": 2664,
+    "content_input_tokens": 24554,
+    "content_output_tokens": 2347,
+    "triage_input_tokens": 21332,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:00:15.865755",
+    "auditor_version": "1.0.0"
+  }
+}

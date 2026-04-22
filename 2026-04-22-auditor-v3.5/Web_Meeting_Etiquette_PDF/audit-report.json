@@ -1,0 +1,33 @@
+{
+  "document_id": "Web_Meeting_Etiquette_PDF",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C6",
+      "description": "Alt text for all four icons uses the word 'icon', which is listed as a generic placeholder term. While the alt texts are more descriptive than bare 'icon', they could be improved to describe the purpose rather than the graphic type (e.g., 'Keep your microphone muted' instead of 'Muted microphone icon').",
+      "severity": "minor",
+      "evidence": "HTML alt texts: \"Muted microphone icon\", \"Chat bubble icon\", \"Share screen icon\", \"Red X icon\" \u2014 each ends with the generic word 'icon'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 59.81,
+    "page_count": 2,
+    "visual_input_tokens": 7746,
+    "visual_output_tokens": 1073,
+    "content_input_tokens": 8225,
+    "content_output_tokens": 1246,
+    "triage_input_tokens": 10324,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-22T19:00:36.342040",
+    "auditor_version": "1.0.0"
+  }
+}
