@@ -1,0 +1,38 @@
+{
+  "document_id": "Questions_(and_Answers)_about_the_LASII_Stormwater_Funding_Program",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "Hyperlink lost on 'Division's website' in Question 19 answer. The PDF shows this as a clickable hyperlink but the HTML renders it as plain text with no <a> tag.",
+      "severity": "critical",
+      "evidence": "PDF page 5 Q19 answer: 'Resolution templates are available on the Division's website.' where 'Division's website' is a hyperlink. HTML: '<p>...Resolution templates are available on the Division's website.</p>' \u2014 no <a> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4a",
+      "description": "Footnote hyperlink lost for 'Levee Terms & Definitions (army.mil)'. The PDF shows this footnote text as a clickable hyperlink, but the HTML renders it as plain text.",
+      "severity": "critical",
+      "evidence": "PDF page 4 footnote: '1 Levee Terms & Definitions (army.mil)' is a hyperlink. HTML: '<p><sup>1</sup> Levee Terms &amp; Definitions (army.mil)</p>' \u2014 no <a> tag wrapping the text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 96.27,
+    "page_count": 5,
+    "visual_input_tokens": 16992,
+    "visual_output_tokens": 2175,
+    "content_input_tokens": 18093,
+    "content_output_tokens": 2195,
+    "timestamp": "2026-04-20T20:32:51.659121",
+    "auditor_version": "1.0.0"
+  }
+}

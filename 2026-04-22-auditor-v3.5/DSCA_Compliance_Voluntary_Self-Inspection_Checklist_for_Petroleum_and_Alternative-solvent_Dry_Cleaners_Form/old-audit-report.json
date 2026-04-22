@@ -1,0 +1,38 @@
+{
+  "document_id": "DSCA_Compliance_Voluntary_Self-Inspection_Checklist_for_Petroleum_and_Alternative-solvent_Dry_Cleaners_Form",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "The signature/facility information section at the bottom of the page loses its two-column layout. In the PDF, the NC logo sits to the left of the form fields (TITLE or POSITION through EMAIL). In the HTML, this two-column arrangement is collapsed to a single column, causing the logo to appear between PRINTED NAME and TITLE or POSITION, interrupting the form field sequence.",
+      "severity": "major",
+      "evidence": "PDF: NC logo occupies the left column alongside TITLE or POSITION, FACILITY ADDRESS, FACILITY CITY & ZIP, FACILITY PHONE, and EMAIL fields on the right. HTML: NC logo is rendered full-width between PRINTED NAME and TITLE or POSITION, breaking the logical grouping of form fields.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Reading order of the signature section is disrupted by the NC logo being placed inline between form fields rather than alongside them.",
+      "severity": "major",
+      "evidence": "PDF reading order: DATE, SIGNATURE, PRINTED NAME, TITLE or POSITION, FACILITY ADDRESS, FACILITY CITY & ZIP, FACILITY PHONE, EMAIL (with logo as a side element). HTML reading order: DATE, SIGNATURE, PRINTED NAME, [NC logo + text], TITLE or POSITION, FACILITY ADDRESS, FACILITY CITY & ZIP, FACILITY PHONE, EMAIL. The logo interrupts the natural form-field sequence.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 86.62,
+    "page_count": 1,
+    "visual_input_tokens": 4798,
+    "visual_output_tokens": 2114,
+    "content_input_tokens": 6940,
+    "content_output_tokens": 1879,
+    "timestamp": "2026-04-20T20:25:40.483452",
+    "auditor_version": "1.0.0"
+  }
+}

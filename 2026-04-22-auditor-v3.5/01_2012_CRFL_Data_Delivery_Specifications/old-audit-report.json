@@ -1,0 +1,38 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The hierarchical flowchart diagram in Appendix B showing the relationships between record types (boxes connected with lines/arrows) is missing from the HTML conversion. The diagram visually depicts how Environmental Data (Record Type 1), Gear Data (Record Type 7), Replicate Data (Record Type 2), Species Data (Record Type 3), Individual Data (Record Type 4), Tag Recapture Data (Record Type 9), and Age Data (Record Type 5) are hierarchically related.",
+      "severity": "critical",
+      "evidence": "PDF page 4 contains a box-and-line flowchart diagram with labeled boxes for each record type and connecting lines showing parent-child relationships. The HTML (chunks 5-6) renders only flat text lists of the record type names ('Environmental Data Record Type 1', 'Gear Data Record Type 7', etc.) without the visual diagram.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The hierarchical relationship diagram in Appendix B (showing Environmental Data Record Type 1 \u2192 Replicate Data \u2192 Species Data \u2192 Individual Data \u2192 Age Data, plus extensions for Gear Data and Tag Recapture Data) is missing from the HTML. No <img> tag exists for this substantive diagram. The box labels are linearized as plain text, but the visual structure (arrows, hierarchy) is lost.",
+      "severity": "minor",
+      "evidence": "PDF page 4 contains a box-and-line diagram illustrating record type relationships. The HTML renders the box labels as a flat text list: 'Environmental Data Record Type 1<br/>Gear Data Record Type 7<br/>Replicate Data Record Type 2<br/>...' with no <img> tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 218.06,
+    "page_count": 10,
+    "visual_input_tokens": 32043,
+    "visual_output_tokens": 3191,
+    "content_input_tokens": 32418,
+    "content_output_tokens": 6787,
+    "timestamp": "2026-04-20T20:07:16.768382",
+    "auditor_version": "1.0.0"
+  }
+}

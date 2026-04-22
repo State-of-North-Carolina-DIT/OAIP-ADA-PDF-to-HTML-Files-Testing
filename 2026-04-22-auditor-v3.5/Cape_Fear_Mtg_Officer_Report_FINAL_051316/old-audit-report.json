@@ -1,0 +1,38 @@
+{
+  "document_id": "Cape_Fear_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections disrupts reading order. The officials' names and titles (PAT McCRORY/Governor, DONALD R. VAN DER VAART/Secretary, TRACY DAVIS/Director) and the 'State of North Carolina | Environmental Quality...' footer text appear as interstitial blocks between the main memorandum sections throughout the HTML.",
+      "severity": "major",
+      "evidence": "In the PDF, page 1 has the letterhead with officials at top and footer at bottom, with the MEMORANDUM content in between. In the HTML, after the letterhead image area and a blank section, the footer text appears, then a color bar, then the officials are repeated as text, and only then does the MEMORANDUM heading and content appear. This pattern of interstitial footer/header blocks repeats between subsequent page-equivalent sections.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Governor's surname capitalization altered from the PDF's rendering.",
+      "severity": "major",
+      "evidence": "PDF shows \"PAT McCRORY\" (all capitals). HTML renders it as \"PAT McCrORY\" with a lowercase 'r', which matches neither the PDF's all-caps presentation nor the standard spelling \"McCrory\".",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 142.66,
+    "page_count": 4,
+    "visual_input_tokens": 13452,
+    "visual_output_tokens": 4502,
+    "content_input_tokens": 13429,
+    "content_output_tokens": 1659,
+    "timestamp": "2026-04-20T20:25:05.611890",
+    "auditor_version": "1.0.0"
+  }
+}

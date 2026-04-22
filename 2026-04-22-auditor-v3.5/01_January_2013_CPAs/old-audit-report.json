@@ -1,0 +1,21 @@
+{
+  "document_id": "01_January_2013_CPAs",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 92.01,
+    "page_count": 2,
+    "visual_input_tokens": 6396,
+    "visual_output_tokens": 2441,
+    "content_input_tokens": 15826,
+    "content_output_tokens": 1921,
+    "timestamp": "2026-04-20T20:12:25.180510",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "2020-white-lake-sav-report",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "PG2",
+      "description": "Page number artifacts in HTML content",
+      "severity": "minor",
+      "evidence": "Page numbers appear as content in the HTML: '2020' (4x). These should be removed during conversion.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C6",
+      "description": "Figure 12 (bar chart showing mid-year SAV % occurrence comparison between June and August) is missing from the HTML. No <img> tag exists for this chart; instead, the axis labels and legend text are rendered as plain text.",
+      "severity": "minor",
+      "evidence": "PDF page 18 contains a bar chart labeled 'Figure 12. White Lake SAV % occurrence at mid-year monitoring events.' The HTML has only: '<p>100%, 80%, 60%, 40%, 20%, 0%<br/> % Occurence<br/> June August<br/> Species: Tuckerman\u2019s Pondweed, Spikerush...' followed by the figure caption, but no <img> tag for the chart itself.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": "visual:too_large(22p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 165.21,
+    "page_count": 22,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 47712,
+    "content_output_tokens": 8255,
+    "timestamp": "2026-04-20T20:22:31.039566",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Signature image for David Miller includes surrounding text ('Sincerely,', 'David Miller, PE', 'State Mining Engineer'), which is also rendered as standalone HTML text, causing visible duplication of content.",
+      "severity": "major",
+      "evidence": "PDF shows 'Sincerely,' once followed by signature, then 'David Miller, PE / State Mining Engineer' once. HTML shows 'Sincerely,' as text, then an image containing 'Sincerely,' + signature + 'David Miller, PE' + 'State Mining Engineer', then again 'David Miller, PE' and 'State Mining Engineer' as text\u2014tripling the typed elements.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Signature images for Brian Wrenn and Brenda Harris include surrounding text that is also present as standalone HTML text, creating visible content duplication.",
+      "severity": "major",
+      "evidence": "PDF shows Brian Wrenn's signature once with typed name/title below. HTML shows a signature image containing partial surrounding text ('t and General Counsel, Department of Environ\u2026', 'aleigh, NC 27699-1601.', 'Brian Wrenn, Director') plus the same name and title repeated as standalone text. Similarly, Brenda Harris's signature image includes '12-15-2020' and her name/title, which are also repeated as text.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 98.96,
+    "page_count": 2,
+    "visual_input_tokens": 7928,
+    "visual_output_tokens": 2478,
+    "content_input_tokens": 7629,
+    "content_output_tokens": 1914,
+    "timestamp": "2026-04-20T20:03:38.705044",
+    "auditor_version": "1.0.0"
+  }
+}

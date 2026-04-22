@@ -1,0 +1,21 @@
+{
+  "document_id": "Networking_&_Outreach_Efforts_Kate_MacLeod,_ESI_Outreach_Coordinator",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(21p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 99.22,
+    "page_count": 21,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 40199,
+    "content_output_tokens": 3382,
+    "timestamp": "2026-04-20T20:38:06.906103",
+    "auditor_version": "1.0.0"
+  }
+}

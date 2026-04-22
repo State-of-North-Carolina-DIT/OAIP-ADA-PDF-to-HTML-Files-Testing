@@ -1,0 +1,102 @@
+{
+  "document_id": "01_NS_YPDL_Kickoff_meeting_03042020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components' (15x); 'evaluation criteria' (7x); 'hydrologic model' (4x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Gear diagram and concentric circles diagram on slide 3 are missing as images, replaced with plain text labels",
+      "severity": "critical",
+      "evidence": "PDF shows three interlocking gears (Basin Plan, Basin Model, Water Resources Management) and nested concentric circles (Water Resources Management > Integrated Basin Plan > Hydrologic Model) as visual diagrams. HTML renders only the text labels ('Water Resources Management', 'Integrated Basin Plan', 'HYDROLOGIC MODEL', 'Basin Plan', 'Basin Model') as plain text, losing the visual relationships (interlocking, nesting) entirely.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Organizational hierarchy chart on slide 6 is missing as an image, replaced with text list",
+      "severity": "critical",
+      "evidence": "PDF shows a structured flowchart with labeled boxes and connecting lines depicting the Hydrologic Model's components (Historical Flows, Operation Guidelines, Water Use with sub-categories, Evaluation Criteria). HTML renders this as nested bullet points without the visual chart/diagram.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Bar chart 'Stream Condition Middle Deep River (Node 280)' is missing as an image on slide 17",
+      "severity": "critical",
+      "evidence": "PDF shows a grouped bar chart with Y-axis '% of Days at Flow Level' and X-axis categories (Unimpaired, 2003/2030/2050 Demands) with nine QAA-range color-coded bars per category. HTML replaces the chart with text descriptions of axes and legend items as bullet points (e.g., '< 10% of QAA*', '10 - 20% of QAA', etc.), losing all visual data.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Venn diagram on slide 21 (Project Organization) is missing as an image",
+      "severity": "critical",
+      "evidence": "PDF shows three overlapping circles representing Data Coordination (HDR), Model Development/Data Process (HydroLogics Team, Hazen and Sawyer), and Data, Model Evaluation & Plan Development (NCDWR). HTML renders only the text labels without the Venn diagram visual, losing the representation of overlapping collaboration areas.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Flow regime bar chart from PDF page 17 (\"Stream Condition Middle Deep River (Node 280) June - November\") is missing as an image. The HTML provides only textual descriptions of the axis labels and legend categories but no <img> tag for the chart itself. The actual bar-height data values visible in the chart are lost.",
+      "severity": "minor",
+      "evidence": "PDF page 17 shows a grouped bar chart with specific percentage values for nine flow-level categories across four scenarios (Unimpaired, 2003/2030/2050 Demands). HTML replaces it with: '<h3>Stream Condition Middle Deep River (Node 280)...' followed by 'Y-axis: % of Days at Flow Level (0.0% to 35.0%)' and a legend list, but no <img> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Inaccurate alt text for the faucet image in the page 14 evaluation-criteria collage. The PDF shows a chrome faucet with a padlock (symbolizing water restrictions/rationing), but the HTML alt text describes it as 'a dripping faucet,' which reverses the intended meaning.",
+      "severity": "minor",
+      "evidence": "HTML alt text: 'Collage showing images of dead fish, a dry lakebed with a stranded dock, a dripping faucet, a low reservoir structure, a pipe discharging water, and a closed boat ramp'. PDF image clearly shows a faucet with a padlock, not a dripping faucet.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Venn diagram on PDF page 21 (Project Organization) showing the overlapping roles of HDR, HydroLogics/Hazen and Sawyer, and NCDWR is missing as an image. The HTML renders the three labels as plain text paragraphs, losing the visual representation of how the teams' responsibilities overlap.",
+      "severity": "minor",
+      "evidence": "PDF page 21 shows three overlapping circles. HTML section has only: '<p><strong>Data Coordination</strong><br/>HDR</p>...' with no <img> tag for the diagram.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Gear diagram and concentric-circles diagram on PDF page 3 (River Basin Water Resources Management) are missing as images. The content is described textually but the visual hierarchy of nested elements (Hydrologic Model inside Integrated Basin Plan inside Water Resources Management) and the interlocking gears metaphor are lost.",
+      "severity": "minor",
+      "evidence": "PDF page 3 shows a gear diagram (Basin Plan, Basin Model, Water Resources Management) and a concentric circles diagram. HTML has only a DEQ logo <img> and text descriptions for these visual elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Water Use sub-component labels from the flow chart on PDF page 9 are reproduced as a standalone list in the HTML, duplicating items already listed in the descriptive bullets immediately below in the same section. This creates within-section duplication not visually present in the PDF, where the chart and bullets occupied separate spatial regions.",
+      "severity": "major",
+      "evidence": "HTML shows first list: '<li><strong>Local Water Supply Plans:</strong> Municipal Data</li><li><strong>Self-supplied Industry:</strong>...' followed by a second list starting with '<li><strong>Local Water Supply Plans</strong><ul><li>Local Government Water Systems</li>...' in the same <section>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 4,
+  "major_count": 2,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 401.86,
+    "page_count": 24,
+    "visual_input_tokens": 75849,
+    "visual_output_tokens": 7757,
+    "content_input_tokens": 48750,
+    "content_output_tokens": 11324,
+    "timestamp": "2026-04-20T20:23:45.428258",
+    "auditor_version": "1.0.0"
+  }
+}

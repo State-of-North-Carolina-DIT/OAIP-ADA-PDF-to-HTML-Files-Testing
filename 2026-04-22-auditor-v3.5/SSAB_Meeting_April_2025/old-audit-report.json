@@ -1,0 +1,30 @@
+{
+  "document_id": "SSAB_Meeting_April_2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Officials' header information is duplicated at the top of the HTML rendering, causing a reader to encounter the same content twice before reaching the agenda.",
+      "severity": "major",
+      "evidence": "In the PDF, the officials (Josh Stein/Governor, D. Reid Wilson/Secretary, Sushma Masemore/Deputy Secretary) appear once in the letterhead. In the HTML (chunk 1), the same names appear first as plain extracted text at the very top, then again within a rendered letterhead section below, duplicating the header content within the same continuous document.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 259.86,
+    "page_count": 2,
+    "visual_input_tokens": 6980,
+    "visual_output_tokens": 11287,
+    "content_input_tokens": 7945,
+    "content_output_tokens": 1373,
+    "timestamp": "2026-04-20T20:38:42.749626",
+    "auditor_version": "1.0.0"
+  }
+}

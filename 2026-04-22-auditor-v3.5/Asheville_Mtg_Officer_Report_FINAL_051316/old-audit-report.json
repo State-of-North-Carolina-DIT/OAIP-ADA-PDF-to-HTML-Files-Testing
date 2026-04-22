@@ -1,0 +1,30 @@
+{
+  "document_id": "Asheville_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Footer text, a decorative page-break bar, and the full set of header names (PAT McCRORY/Governor, DONALD R. VAN DER VAART/Secretary, TRACY DAVIS/Director) are inserted between the letterhead header and the MEMORANDUM heading. In the PDF, the letterhead flows directly into the MEMORANDUM title on the same page with no intervening content.",
+      "severity": "major",
+      "evidence": "PDF page 1 reading order: NC logo + right-aligned names \u2192 MEMORANDUM \u2192 date \u2192 To/From/Subject \u2192 body. HTML page 1 reading order: NC logo + right-aligned names \u2192 large blank \u2192 footer address block \u2192 colored bar \u2192 left-aligned names repeated \u2192 MEMORANDUM \u2192 date \u2192 To/From/Subject \u2192 body. The repeated header names and footer between the letterhead and memo content disrupt the visual reading sequence.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 280.19,
+    "page_count": 5,
+    "visual_input_tokens": 16714,
+    "visual_output_tokens": 12084,
+    "content_input_tokens": 16101,
+    "content_output_tokens": 1838,
+    "timestamp": "2026-04-20T20:24:41.755600",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'legend: reservoir node, demand node, junction node, flow arc, withdrawal arc, ww...' (7x); 'nodes:' (6x); 'notes:' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram for Upper Cape Fear Basin is missing from HTML. The PDF shows a detailed visual flow chart with colored shapes (red triangles for reservoirs, blue squares for demands, yellow ovals for junctions) connected by flow/withdrawal/return arcs. The HTML only has the heading, legend as plain text, notes, and a bulleted list of node names.",
+      "severity": "critical",
+      "evidence": "PDF page 10 contains a graphical flow chart showing interconnected nodes (Reidsville Dam, Lake Brandt, Lake Townsend, Greensboro Demand, Burlington Demand, Mackintosh Reservoir, Haw River, etc.) with colored arcs. HTML shows only text: heading, inline legend text, and bulleted node list with no diagram image.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram for Middle Cape Fear Basin is missing from HTML. The PDF shows a visual flow chart with nodes for Jordan Lake, OWASA Demand, Cane Creek Reservoir, University Lake, Stone Quarry, Pittsboro Demand, Harris Lake, etc. connected by arcs. The HTML only has text descriptions and node lists.",
+      "severity": "critical",
+      "evidence": "PDF page 11 contains a graphical flow chart with reservoir, demand, and junction nodes connected by flow/withdrawal/return arcs. HTML renders only the heading, notes about OWASA and Jordan Lake operations, and a bulleted node list without any diagram image.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram for Deep River is missing from HTML. The PDF shows a visual flow chart with nodes for High Point Reservoir, Randleman Reservoir, Ramseur Reservoir, Upper/Lower Siler City Reservoir, Rocky River, etc. The HTML only shows text and node lists.",
+      "severity": "critical",
+      "evidence": "PDF page 12 contains a graphical flow chart with interconnected nodes and arcs. HTML renders only the heading, notes about Siler City's Reservoirs, and a bulleted node list without any diagram image.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram for Lower Cape Fear Basin is missing from HTML. The PDF shows a visual flow chart with nodes for Glenville Reservoir, Harnett Co. Demand, Dunn Demand, Fayetteville Demand, Cape Fear gages, Wilmington demands, and Model Terminus. The HTML only has text and node lists.",
+      "severity": "critical",
+      "evidence": "PDF page 13 contains a graphical flow chart with reservoir, demand, and junction nodes. HTML renders only the heading and a bulleted node list without any diagram image.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram for Upper Neuse Basin is missing from HTML. The PDF shows a detailed visual flow chart with nodes for West Fork Eno Reservoir, Lake Orange, Little River Reservoir, Lake Michie, Falls Lake, Beaverdam Lake, Durham/Raleigh Demand, etc. with extensive annotations. The HTML only has text and node lists.",
+      "severity": "critical",
+      "evidence": "PDF page 14 contains a graphical flow chart with multiple annotated text boxes explaining operating rules (Capacity Use Area Rules, Beaverdam Lake sharing pool with Falls, Falls Lake zones). HTML renders only the heading, notes as bullet points, and a bulleted node list without any diagram image.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram for Middle Neuse Basin is missing from HTML. The PDF shows a visual flow chart with nodes for Crabtree Creek Flood Impoundments, Lake Wheeler, Lake Benson, Swift Creek, Neuse Clayton/Goldsboro Gages, and annotated notes about Raleigh's water supply operations.",
+      "severity": "critical",
+      "evidence": "PDF page 15 contains a graphical flow chart with reservoir, demand, and junction nodes connected by arcs. HTML renders only the heading, notes about flood impoundments and Raleigh's operations, and a bulleted node list without any diagram image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram for Lower Neuse Basin is missing from HTML. The PDF shows a visual flow chart with Buckhorn Reservoir, Wilson Demand, Contentnea Creek, Neuse Kinston Gage, Lower Neuse WASA Demand, and Model Terminus.",
+      "severity": "critical",
+      "evidence": "PDF page 16 contains a graphical flow chart with nodes and arcs. HTML renders only the heading, notes about Buckhorn Reservoir, and a bulleted node list without any diagram image.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Seven substantive flow chart diagram images from PDF pages 10-16 are missing from the HTML. These visual diagrams show spatial node relationships, colored node types (reservoir, demand, junction), flow directions with different arc types (flow, withdrawal, WW return), and system interconnections. The HTML substitutes text lists of nodes and notes, but the actual diagram images with their spatial/relational information are not included as <img> tags.",
+      "severity": "minor",
+      "evidence": "PDF pages 10-16 each contain a titled flow chart diagram: 'Flow Chart of Major Nodes in the Upper Cape Fear Basin', 'Middle Cape Fear Basin', 'Deep River', 'Lower Cape Fear Basin', 'Upper Neuse Basin', 'Middle Neuse Basin', and 'Lower Neuse Basin'. The HTML has only 2 <img> tags (logo and map schematic) but no <img> tags for any of these 7 flow chart diagrams.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the PDF flow chart on page 10, the reservoir label reads 'GrahamMebane Reservoir' (no hyphen), but the HTML transcription renders it as 'Graham-Mebane Reservoir' (with hyphen). While other references in the PDF text use the hyphenated form, the specific label in the diagram differs.",
+      "severity": "major",
+      "evidence": "PDF page 10 flow chart node label: 'GrahamMebane Reservoir'; HTML text: 'Graham-Mebane Reservoir'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 7,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 163.56,
+    "page_count": 18,
+    "visual_input_tokens": 56056,
+    "visual_output_tokens": 5248,
+    "content_input_tokens": 45682,
+    "content_output_tokens": 2855,
+    "timestamp": "2026-04-20T20:11:09.109465",
+    "auditor_version": "1.0.0"
+  }
+}

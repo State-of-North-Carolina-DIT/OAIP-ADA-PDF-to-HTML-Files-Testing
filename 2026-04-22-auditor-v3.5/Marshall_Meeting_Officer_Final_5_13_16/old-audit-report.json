@@ -1,0 +1,21 @@
+{
+  "document_id": "Marshall_Meeting_Officer_Final_5_13_16",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 98.72,
+    "page_count": 6,
+    "visual_input_tokens": 20116,
+    "visual_output_tokens": 2744,
+    "content_input_tokens": 19654,
+    "content_output_tokens": 1632,
+    "timestamp": "2026-04-20T20:29:40.624169",
+    "auditor_version": "1.0.0"
+  }
+}

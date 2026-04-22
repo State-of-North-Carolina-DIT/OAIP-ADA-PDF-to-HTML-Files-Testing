@@ -1,0 +1,21 @@
+{
+  "document_id": "(UPDATED)_25095_Colwick_Rd_SNI_20250925.pdf",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 57.41,
+    "page_count": 1,
+    "visual_input_tokens": 4786,
+    "visual_output_tokens": 1082,
+    "content_input_tokens": 7044,
+    "content_output_tokens": 1273,
+    "timestamp": "2026-04-20T20:02:56.651331",
+    "auditor_version": "1.0.0"
+  }
+}

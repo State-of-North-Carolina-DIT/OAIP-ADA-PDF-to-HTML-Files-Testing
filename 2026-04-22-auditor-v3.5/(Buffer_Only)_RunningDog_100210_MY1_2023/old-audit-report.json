@@ -1,0 +1,30 @@
+{
+  "document_id": "(Buffer_Only)_RunningDog_100210_MY1_2023",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "Email mailto link incorrectly injected around unrelated body text in Section 1.1 Project Description. The text about the Carolina heelsplitter is wrapped in an <a href='mailto:aeckardt@wildlandseng.com'> tag that does not exist in the PDF. The email address belongs to a separate section (the cover letter) and should not wrap ecological description text.",
+      "severity": "critical",
+      "evidence": "HTML: '\u2026North Carolina to still <a href=\"mailto:aeckardt@wildlandseng.com\">support the Carolina heelsplitter (Lasmigona decorata), a federally and state endangered freshwater mussel.\" According to the report</a>, improving and protecting\u2026'. PDF page 6: This is plain body text with no hyperlink. The email aeckardt@wildlandseng.com only appears in the cover letter on page 4.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(42p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 107.8,
+    "page_count": 42,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 140654,
+    "content_output_tokens": 3084,
+    "timestamp": "2026-04-20T20:14:13.836221",
+    "auditor_version": "1.0.0"
+  }
+}

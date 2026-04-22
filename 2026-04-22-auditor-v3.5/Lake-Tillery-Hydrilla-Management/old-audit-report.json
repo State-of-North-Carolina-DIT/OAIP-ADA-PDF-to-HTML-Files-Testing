@@ -1,0 +1,38 @@
+{
+  "document_id": "Lake-Tillery-Hydrilla-Management",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'history of hydrilla at lake tillery' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The AWCP Website link in the HTML includes a fabricated Google Chrome text-fragment URL that does not appear anywhere in the PDF. The PDF shows only the display text 'Aquatic Weed Control Program | NC DEQ' without exposing the underlying href. The HTML injects a long URL ending with '#:~:text=Purpose%20The%20purpose%20of%20the%20Aquatic%20Weed%20Control,prevention%20and%20management%20of%20noxious%20aquatic%20weed%20infestations.' which is a Chrome-specific text-fragment selector not present in the source PDF.",
+      "severity": "critical",
+      "evidence": "PDF page 11: 'AWCP Website (Aquatic Weed Control Program | NC DEQ)'. HTML: <a href=\"https://www.deq.nc.gov/about/divisions/water-resources/water-planning/water-supply-planning/aquatic-weed-control-program#:%7E:text=Purpose%20The%20purpose%20of%20the%20Aquatic%20Weed%20Control,prevention%20and%20management%20of%20noxious%20aquatic%20weed%20infestations.\">Aquatic Weed Control Program | NC DEQ</a>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(12p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 91.23,
+    "page_count": 12,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 31724,
+    "content_output_tokens": 4087,
+    "timestamp": "2026-04-20T20:34:22.887658",
+    "auditor_version": "1.0.0"
+  }
+}

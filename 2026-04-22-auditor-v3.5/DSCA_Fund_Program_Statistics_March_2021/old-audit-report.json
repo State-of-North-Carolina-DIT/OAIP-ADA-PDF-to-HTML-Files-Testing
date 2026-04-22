@@ -1,0 +1,21 @@
+{
+  "document_id": "DSCA_Fund_Program_Statistics_March_2021",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 75.88,
+    "page_count": 1,
+    "visual_input_tokens": 4804,
+    "visual_output_tokens": 2134,
+    "content_input_tokens": 7566,
+    "content_output_tokens": 1621,
+    "timestamp": "2026-04-20T20:25:57.642228",
+    "auditor_version": "1.0.0"
+  }
+}

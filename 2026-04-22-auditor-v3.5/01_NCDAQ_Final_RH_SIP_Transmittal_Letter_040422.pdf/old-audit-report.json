@@ -1,0 +1,54 @@
+{
+  "document_id": "01_NCDAQ_Final_RH_SIP_Transmittal_Letter_040422.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 1 content is duplicated in the HTML: the entire page is first rendered as a compact embedded image (including seal, letterhead, body text, bullets, and DEQ footer), then the same content is repeated as HTML text starting from 'ROY COOPER Governor' onward. A reader encounters the information twice.",
+      "severity": "major",
+      "evidence": "PDF page 1 presents content once. The HTML shows a miniaturized rendering of the complete PDF page at the top of the document, followed by a full HTML text rendering of the same content (letterhead names, date, address block, subject, body paragraphs, and bullet list).",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Page 3 content is duplicated in the HTML: the closing section (COVID-19 paragraph, thank-you paragraph, contact info, signature block) appears both inside an embedded bordered section showing the original PDF page 3 and again as separate HTML text below it.",
+      "severity": "major",
+      "evidence": "PDF page 3 presents the closing paragraphs, 'Sincerely,' signature, and signatory info once. The HTML shows an embedded section containing 'Daniel Blackman / April 4, 2022 / Page 3' through the signature, then repeats the same closing text, signature image, signatory name, and cc list as standalone HTML text.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A page-footer image from the bottom of PDF page 1 is inserted mid-content in the HTML, between the bulleted list of SIP elements and the paragraph beginning 'In Section 7.8.3\u2026', breaking reading flow.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> placed between the closing </ul> of the SIP-elements bullet list and the next <p> paragraph. This image corresponds to the DEQ footer logo at the bottom of PDF page 1, which should not appear mid-content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 400.52,
+    "page_count": 4,
+    "visual_input_tokens": 12784,
+    "visual_output_tokens": 15540,
+    "content_input_tokens": 13980,
+    "content_output_tokens": 2917,
+    "timestamp": "2026-04-20T20:18:55.057140",
+    "auditor_version": "1.0.0"
+  }
+}

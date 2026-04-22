@@ -1,0 +1,30 @@
+{
+  "document_id": "01_10_adilet_2020_4",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Duplicated closing block content: 'Sincerely,' the signer's name, and title appear twice \u2014 once embedded in the signature image and again as separate text below it.",
+      "severity": "major",
+      "evidence": "PDF page 4 shows a single 'Sincerely,' followed by the handwritten signature, then 'Judith A. Wehner / Assistant State Mining Specialist'. The HTML renders 'Sincerely,' as text, then displays a signature image that itself contains 'Sincerely,' and 'Judith A. Wehner / Assistant State Mining S\u2026', then repeats 'Judith A. Wehner' and 'Assistant State Mining Specialist' as separate text lines. A reader encounters the closing salutation and name/title twice.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 126.92,
+    "page_count": 4,
+    "visual_input_tokens": 14114,
+    "visual_output_tokens": 3454,
+    "content_input_tokens": 11877,
+    "content_output_tokens": 2175,
+    "timestamp": "2026-04-20T20:05:03.572011",
+    "auditor_version": "1.0.0"
+  }
+}

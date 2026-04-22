@@ -1,0 +1,78 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Figure 1 bar graph (Total Number of Survey Sites - By Year) is rendered as raw text data instead of a chart image",
+      "severity": "critical",
+      "evidence": "PDF page 9 shows a bar graph with bars for years 2012-2023. HTML renders this as plain text numbers (e.g., '7000 6564 6178 6503 6041 5954 6311', '6000 5775 5714 5378 5368 4938 5006') with no visible chart image.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 2 bar graph (Lake Gaston Aquatic Plant Community - 2023) is rendered as raw text data instead of a chart image",
+      "severity": "critical",
+      "evidence": "PDF page 9 shows a color-coded bar graph with species on x-axis and % Total Vegetation on y-axis. HTML renders axis labels and category names as plain text ('45 Emergent Submergent Floating Algae', '40', '35'...) with no visible chart image.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 7 dual-axis chart (Lake Gaston Hydrilla acreage and percent of rake tosses) is rendered as raw text data instead of a chart image",
+      "severity": "critical",
+      "evidence": "PDF page 14 shows a combination bar/line chart with Acres (bars) and Rake Tosses (line) from 2012-2023. HTML renders this as plain text ('1800 70', 'Acres', 'Rake Tosses', '1600 60', '1400', '50'...) with no visible chart image.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 9 dual-axis chart (Lake Gaston Lyngbya acreage and percent occurrence) is rendered as raw text data instead of a chart image",
+      "severity": "critical",
+      "evidence": "PDF page 16 shows a combination bar/line chart for lyngbya from 2012-2023. HTML renders this as plain text ('1600 25', 'Acres', '1400', '20', '1200'...) with no visible chart image.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 11 dual-axis chart (Lake Gaston Eel Grass acreage and percent survey sites) is rendered as raw text data instead of a chart image",
+      "severity": "critical",
+      "evidence": "PDF page 18 shows a combination bar/line chart for eel grass from 2019-2023. HTML renders this as plain text ('5.0', '140 Acres - % Sites', '4.5', '120', '4.0'...) with no visible chart image.",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Five substantive chart/graph figures from the PDF (Figures 1, 2, 7, 9, and 11) are missing as images in the HTML. They are replaced by garbled text representations of axis labels and data values, losing the visual charts.",
+      "severity": "minor",
+      "evidence": "PDF pages 10, 15, 17, 19 contain bar/line graphs for survey sites by year (Fig 1), aquatic plant community breakdown (Fig 2), hydrilla acres/rake tosses (Fig 7), lyngbya acres (Fig 9), and eel grass acres (Fig 11). The HTML has no <img> tags for any of these five figures; instead, it renders them as paragraphs of mixed text like '7000 6564 6178 6503 6041 5954 6311<br/> 6000 5775 5714 5378 5368 4938 5006'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Two spurious images with alt text 'Vector background for Table 1' and 'Vector background for Table 2' appear in the HTML. These do not correspond to any substantive content images in the PDF; they appear to be conversion artifacts from table background rendering.",
+      "severity": "minor",
+      "evidence": "HTML contains <img alt=\"Vector background for Table 1\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/> and a similar tag for Table 2. No such standalone background images exist as content in the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 5,
+  "major_count": 0,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 227.89,
+    "page_count": 20,
+    "visual_input_tokens": 62396,
+    "visual_output_tokens": 4782,
+    "content_input_tokens": 51438,
+    "content_output_tokens": 6396,
+    "timestamp": "2026-04-20T20:22:42.945090",
+    "auditor_version": "1.0.0"
+  }
+}

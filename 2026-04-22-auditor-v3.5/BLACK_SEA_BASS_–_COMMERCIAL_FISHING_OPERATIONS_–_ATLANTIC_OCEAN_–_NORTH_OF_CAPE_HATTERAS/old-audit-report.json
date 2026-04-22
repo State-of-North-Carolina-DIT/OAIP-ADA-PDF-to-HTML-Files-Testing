@@ -1,0 +1,38 @@
+{
+  "document_id": "BLACK_SEA_BASS_\u2013_COMMERCIAL_FISHING_OPERATIONS_\u2013_ATLANTIC_OCEAN_\u2013_NORTH_OF_CAPE_HATTERAS",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "PDF page footer text is inserted between the letterhead/header area and the main proclamation content (FF-52-2023), disrupting the natural reading order.",
+      "severity": "major",
+      "evidence": "In the PDF, the footer 'State of North Carolina | Division of Marine Fisheries / 3441 Arendell Street...' appears only at the bottom of each page. In the HTML, this footer text appears between the logo/officials header block and the 'FF-52-2023' proclamation number, forcing a reader to encounter footer content mid-flow before reaching the main document body.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated footer content inserted between the end of Section III (Gear Restrictions) and the start of Section IV (General Information), disrupting reading order.",
+      "severity": "major",
+      "evidence": "In the PDF, the footer only appears at the page bottom and a reader flows directly from the end of Section III.B (Trawls) to Section IV (General Information) across the page break. In the HTML, the footer text 'State of North Carolina | Division of Marine Fisheries / 3441 Arendell Street...' is inserted inline between these sections, breaking the content flow.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 168.82,
+    "page_count": 3,
+    "visual_input_tokens": 9938,
+    "visual_output_tokens": 3992,
+    "content_input_tokens": 12826,
+    "content_output_tokens": 3675,
+    "timestamp": "2026-04-20T20:24:00.775527",
+    "auditor_version": "1.0.0"
+  }
+}

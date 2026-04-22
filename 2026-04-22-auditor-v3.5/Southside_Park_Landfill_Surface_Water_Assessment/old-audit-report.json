@@ -1,0 +1,62 @@
+{
+  "document_id": "Southside_Park_Landfill_Surface_Water_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "S3",
+      "description": "Nested <section> landmark elements",
+      "severity": "minor",
+      "evidence": "<section> at line 35 contains another <section> at line 214.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "S3",
+      "description": "Nested <section> landmark elements",
+      "severity": "minor",
+      "evidence": "<section> at line 35 contains another <section> at line 229.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "S3",
+      "description": "Nested <section> landmark elements",
+      "severity": "minor",
+      "evidence": "<section> at line 35 contains another <section> at line 236.",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The full-page map figure, which is the primary content of this page, is rendered as a small thumbnail in the HTML. The map contains critical spatial information (sampling locations relative to roads, property boundaries, surface water features) that loses legibility at the reduced size.",
+      "severity": "critical",
+      "evidence": "PDF: The map occupies the entire page and shows readable road names (Remus Rd, Remount Rd, Chicago Ave, etc.), clearly distinguishable property boundaries (Mecklenburg County, City of Charlotte), sampling location markers, and surface water paths. HTML: The same map appears as a small thumbnail image where these spatial details are not readily legible, though the quantitative data from map callouts is preserved in separate HTML tables.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The PDF page is a single integrated figure (Figure 6) where data callout boxes are spatially positioned on the map at their corresponding sampling locations. The HTML converts this into a linear layout with a small map followed by separate sequential data tables, losing the spatial association between data and map location.",
+      "severity": "major",
+      "evidence": "PDF: Each data callout (SW-1 through SW-5) is visually placed on the map adjacent to its corresponding sampling point, allowing the reader to see the data in its geographic context. HTML: Data is presented as five sequential tables (SW-1/DUP-6102025-SD, SW-2, SW-3, SW-4, SW-5) below the map, with no visual spatial association to the sampling points on the map.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 150.6,
+    "page_count": 1,
+    "visual_input_tokens": 4150,
+    "visual_output_tokens": 2584,
+    "content_input_tokens": 8213,
+    "content_output_tokens": 4251,
+    "timestamp": "2026-04-20T20:35:09.722051",
+    "auditor_version": "1.0.0"
+  }
+}

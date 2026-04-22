@@ -1,0 +1,21 @@
+{
+  "document_id": "DSCA_November_2023_Case_Studies",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(29p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 195.13,
+    "page_count": 29,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 55788,
+    "content_output_tokens": 7754,
+    "timestamp": "2026-04-20T20:39:57.098710",
+    "auditor_version": "1.0.0"
+  }
+}

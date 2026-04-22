@@ -1,0 +1,62 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'where,' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V5",
+      "description": "Company name and license number duplicated on the cover page in the HTML conversion",
+      "severity": "major",
+      "evidence": "In the PDF, 'Geosyntec Consultants of NC, P.C.' and 'NC License No.: C-3500 and C-295' appear once below the logo. In the HTML, these two lines appear twice \u2014 once in small text associated with the logo and again as separate regular-sized text \u2014 before the DocuSign Envelope ID and document title.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Geosyntec page header/branding rendered as inline content between the TABLES section divider and Table 1, disrupting reading flow",
+      "severity": "major",
+      "evidence": "In the PDF, page 12 is a 'TABLES' divider page and page 13 shows Table 1 with its own page header. In the HTML, the Geosyntec logo, 'consultants', and 'Geosyntec Consultants of NC, P.C. / NC License No.: C-3500 and C-295' appear as inline content between the 'TABLES' heading and the 'TABLE 1 / PFAS ANALYTICAL METHODS AND ANALYTE LIST' title block, inserting repeated header material into the reading flow.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Figure 3 flowchart image (PDF page 17) is missing from the HTML. The PDF shows a substantive flowchart diagram for 'Determining the Concentration for Loading at the River Water Intake,' but the HTML has no corresponding <img> tag. Instead, the flowchart content is only rendered as a nested text list.",
+      "severity": "minor",
+      "evidence": "PDF page 17 contains a flowchart image with decision diamond ('Was a 24-hr composite sample collected?') and outcome boxes. HTML replaces this with: '<ul><li>Was a 24-hr composite sample collected?<ul><li><strong>YES:</strong> Use 24-hr composite sample concentration*...' \u2014 no <img> tag exists for Figure 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In Equations 2 and 3, the PDF uses lowercase 'c' for individual PFAS compound concentration (c_OF002,j,i and c_intake,k,i) to distinguish it from uppercase 'C' for total PFAS concentration. The HTML renders both as uppercase 'C', losing this meaningful notational distinction.",
+      "severity": "major",
+      "evidence": "PDF Equation 2 second line: '\u2211 c_OF002,j,i \u00d7 Q_OF002,j \u00d7 F' (lowercase c). HTML: '= \u03a3 (from i=1 to I) C<sub>OF002,j,i</sub> \u00d7 Q<sub>OF002,j</sub> \u00d7 F' (uppercase C). Similarly in the 'where' clauses: PDF uses 'c_OF002,j,i' but HTML shows 'C<sub>OF002,j,i</sub>'. Same issue repeats in Equation 3 with c_intake,k,i.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 320.18,
+    "page_count": 17,
+    "visual_input_tokens": 53078,
+    "visual_output_tokens": 13174,
+    "content_input_tokens": 44919,
+    "content_output_tokens": 3818,
+    "timestamp": "2026-04-20T20:07:29.342073",
+    "auditor_version": "1.0.0"
+  }
+}

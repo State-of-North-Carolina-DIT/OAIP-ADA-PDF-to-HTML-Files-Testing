@@ -1,0 +1,21 @@
+{
+  "document_id": "01_NRHM_Project_Contract",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(10p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 282.33,
+    "page_count": 10,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 31905,
+    "content_output_tokens": 13065,
+    "timestamp": "2026-04-20T20:19:28.820444",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "document_id": "01_Eno_State_Park_Eco_Flow_Study",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual:too_large(30p)",
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 112.69,
+    "page_count": 30,
+    "visual_input_tokens": 0,
+    "visual_output_tokens": 0,
+    "content_input_tokens": 55579,
+    "content_output_tokens": 3770,
+    "timestamp": "2026-04-20T20:31:15.388495",
+    "auditor_version": "1.0.0"
+  }
+}

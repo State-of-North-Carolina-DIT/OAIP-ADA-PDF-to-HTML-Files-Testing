@@ -1,0 +1,30 @@
+{
+  "document_id": "Lee_Meeting_Officer_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "PDF page footer content is rendered as inline body text in the HTML, inserting itself between the memo outline (Section I\u2013IV list) and the start of Section I (History/Background), disrupting reading flow.",
+      "severity": "major",
+      "evidence": "In the PDF, 'State of North Carolina | Environmental Quality | Water Resources / 1611 Mail service Center | Raleigh, North Carolina 27699-1611 / 919 707 9000' appears as a page footer at the very bottom of page 1. In the HTML, this same text appears as body content between the report outline (I\u2013IV) and the 'I. History/Background' heading, so a reader encounters footer-style contact information mid-document.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 98.29,
+    "page_count": 5,
+    "visual_input_tokens": 16986,
+    "visual_output_tokens": 2463,
+    "content_input_tokens": 17154,
+    "content_output_tokens": 1667,
+    "timestamp": "2026-04-20T20:28:01.904565",
+    "auditor_version": "1.0.0"
+  }
+}

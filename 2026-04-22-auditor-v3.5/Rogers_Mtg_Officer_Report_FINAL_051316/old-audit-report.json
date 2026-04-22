@@ -1,0 +1,46 @@
+{
+  "document_id": "Rogers_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content from PDF page breaks rendered as inline body content between the logo and the MEMORANDUM heading, disrupting reading order. The organizational header information (PAT McCRORY/Governor, DONALD R. VAN DER VAART/Secretary, TRACY DAVIS/Director) appears twice \u2014 once at the top of the HTML and again after inserted footer text and a decorative banner \u2014 before the MEMORANDUM heading.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows the letterhead header, then MEMORANDUM, then memo content, with footer only at the page bottom. The HTML inserts page-1 footer text ('State of North Carolina | Environmental Quality\u2026') and a decorative gradient banner, followed by a second rendering of the organizational header, between the logo and the MEMORANDUM heading.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text and decorative banner from a PDF page break are rendered as body content between the 'I. History/Background' section heading and the beginning of its body text, creating a reading-order disruption with a large blank gap and extraneous footer information splitting the section.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows 'I. History/Background' immediately followed by the paragraph beginning 'Under the historic Coal Ash Management Act (CAMA) of 2014\u2026'. In the HTML, a large blank space, footer text ('State of North Carolina | Environmental Quality\u2026'), and a decorative colored banner are inserted between the heading and this paragraph.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Spurious image inserted at the start of Section I (History/Background) that has no corresponding substantive image in the PDF. The PDF's Section I begins directly with text; no image or figure appears there.",
+      "severity": "minor",
+      "evidence": "HTML contains <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> at the beginning of the History/Background section. The PDF page 2 has no image at the start of Section I \u2014 only the heading and body text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 268.93,
+    "page_count": 5,
+    "visual_input_tokens": 16242,
+    "visual_output_tokens": 9938,
+    "content_input_tokens": 17225,
+    "content_output_tokens": 3195,
+    "timestamp": "2026-04-20T20:36:00.628031",
+    "auditor_version": "1.0.0"
+  }
+}

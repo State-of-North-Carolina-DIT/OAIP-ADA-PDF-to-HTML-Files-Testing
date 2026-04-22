@@ -1,0 +1,38 @@
+{
+  "document_id": "CCR_Dam_Rules_09042018",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Top banner panoramic photograph is severely cropped in HTML, cutting off the lighthouse on the right side which is a prominent visual element of the title slide.",
+      "severity": "critical",
+      "evidence": "PDF shows a full-width panoramic photo of a marsh/coastline scene with a clearly visible black-and-white striped lighthouse on the right side. HTML renders only the left portion of this image, completely omitting the lighthouse.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Coal/mining operations photograph is rendered as a broken thin vertical sliver, making the image completely illegible.",
+      "severity": "critical",
+      "evidence": "PDF page 2 shows a wide panoramic photograph of industrial coal operations with machinery, dirt mounds, and sky. HTML renders this as a narrow vertical strip approximately 20-30 pixels wide, destroying the image content entirely.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 133.26,
+    "page_count": 8,
+    "visual_input_tokens": 25148,
+    "visual_output_tokens": 2621,
+    "content_input_tokens": 17935,
+    "content_output_tokens": 3284,
+    "timestamp": "2026-04-20T20:25:58.692356",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'mark piazza | manager, pipeline compliance and r&d colonial pipeline company o. ...' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C8",
+      "description": "Email address for Jane Lea Hicks is altered: 'janeleahicks@gmail.com' in the PDF was changed to 'janelecahicks@gmail.com' in the HTML, substituting 'a' with 'c' in the local part of the address.",
+      "severity": "major",
+      "evidence": "PDF page 4 CC line: 'Jane Lea Hicks <janeleahicks@gmail.com>'. HTML: 'Jane Lea Hicks <janelecahicks@gmail.com>'. The 'a' in 'lea' was changed to 'c', making it 'lec', which corrupts the email address.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 298.5,
+    "page_count": 17,
+    "visual_input_tokens": 53878,
+    "visual_output_tokens": 10722,
+    "content_input_tokens": 40352,
+    "content_output_tokens": 3188,
+    "timestamp": "2026-04-20T20:08:25.548804",
+    "auditor_version": "1.0.0"
+  }
+}

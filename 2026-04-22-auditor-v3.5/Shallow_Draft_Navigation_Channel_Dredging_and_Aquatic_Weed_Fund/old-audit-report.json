@@ -1,0 +1,70 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Cover letter content appears twice in the HTML flow \u2014 once as an embedded page image and again as semantic HTML text below, causing a sighted reader to encounter the same information twice",
+      "severity": "major",
+      "evidence": "PDF page 1 presents the cover letter once. In the HTML, the full letter (NC state seal, officials header, letter body, handwritten signature, DEQ footer) first appears as an embedded page image. Below a DEQ branding divider, the same text content reappears as HTML (October 1, 2022, addressee block, 'To Whom It May Concern', body paragraphs, 'Sincerely, Kevin Hart', Enclosures, cc line). The letter body is read twice in sequence.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Shallow Draft Navigation Channel Dredging table is rendered twice \u2014 as an embedded image and then as an HTML table",
+      "severity": "major",
+      "evidence": "PDF page 3 shows the 42-row dredging table once. In the HTML, the same table first appears as an embedded image of the PDF table, then immediately below as a fully rendered HTML table with identical columns (Date, Project, Cooperator, Amount, Project Type) and total $9,543,427.32. A reader encounters all rows twice.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Aquatic Weed Control Program table is rendered twice \u2014 as an embedded image and then as an HTML table",
+      "severity": "major",
+      "evidence": "PDF page 4 begins the multi-page aquatic weed table. In the HTML, the table first appears as an embedded image, then is repeated below as a full HTML table with the same columns and data. This duplication pattern persists through all subsequent aquatic weed table pages.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Cooperators table has misarranged data: 'Charlotte Stormwater Services' was incorrectly split across two rows. 'Charlotte' was placed in the Lake Norman cooperator cell, while 'Stormwater Services and Duke Energy' was placed in the Mountain Island Reservoir cell.",
+      "severity": "major",
+      "evidence": "PDF shows: Lake Norman cooperators = 'Lake Norman Marine Commission, Charlotte Water,' and Mountain Island Reservoir cooperators = 'Charlotte Stormwater Services and Duke Energy'. HTML shows: Lake Norman = 'Lake Norman Marine Commission, Charlotte Water, Charlotte' and Mountain Island Reservoir = 'Stormwater Services and Duke Energy'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Shallow Draft Navigation Channel Dredging table data appears twice in the HTML \u2014 once as an embedded image and once as a fully rendered HTML table. In the PDF, this data appears only once as a single table.",
+      "severity": "major",
+      "evidence": "HTML contains <img alt=\"Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022 table\" ...> immediately followed by a <table> with <caption>Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022 G.S. 143-215.73F</caption>, duplicating the same content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Kevin Hart's handwritten signature from the cover letter (PDF page 1) is missing from the HTML. No <img> tag represents the signature.",
+      "severity": "minor",
+      "evidence": "PDF page 1 contains a handwritten signature between 'Sincerely,' and 'Kevin Hart'. The HTML goes directly from 'Sincerely,' to 'Kevin Hart' with no image element for the signature.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 448.72,
+    "page_count": 10,
+    "visual_input_tokens": 29300,
+    "visual_output_tokens": 17209,
+    "content_input_tokens": 36201,
+    "content_output_tokens": 5254,
+    "timestamp": "2026-04-20T20:40:02.092342",
+    "auditor_version": "1.0.0"
+  }
+}

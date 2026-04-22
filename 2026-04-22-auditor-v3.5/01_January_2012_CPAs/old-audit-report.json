@@ -1,0 +1,30 @@
+{
+  "document_id": "01_January_2012_CPAs",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Extra subtitle text 'Civil Penalty Assessments Data' inserted between the main title and the table headers in the HTML, which does not appear in the source PDF.",
+      "severity": "major",
+      "evidence": "PDF shows only 'DWQ January 2012 Civil Penalty Assessments' followed immediately by the table column headers. HTML inserts an additional line 'Civil Penalty Assessments Data' between the title and the column headers.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 96.77,
+    "page_count": 2,
+    "visual_input_tokens": 6644,
+    "visual_output_tokens": 3270,
+    "content_input_tokens": 14703,
+    "content_output_tokens": 1344,
+    "timestamp": "2026-04-20T20:12:26.033789",
+    "auditor_version": "1.0.0"
+  }
+}

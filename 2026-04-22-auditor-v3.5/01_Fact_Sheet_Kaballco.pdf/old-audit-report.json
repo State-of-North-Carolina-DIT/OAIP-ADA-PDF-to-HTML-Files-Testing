@@ -1,0 +1,21 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 76.13,
+    "page_count": 2,
+    "visual_input_tokens": 7182,
+    "visual_output_tokens": 1604,
+    "content_input_tokens": 8220,
+    "content_output_tokens": 1698,
+    "timestamp": "2026-04-20T20:09:49.616055",
+    "auditor_version": "1.0.0"
+  }
+}

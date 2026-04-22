@@ -1,0 +1,70 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Superscript footnote markers in Table 2 (High Flow Events) are rendered as regular inline characters, causing data values to be misread.",
+      "severity": "major",
+      "evidence": "PDF shows 'Var\u00b9' (Var with superscript 1) and '600\u00b2' (600 with superscript 2) in the Magnitude columns. HTML renders these as 'Var1' and '6002', making '6002' appear to be a magnitude value of 6002 cfs rather than 600 cfs with footnote reference 2. Column header '(cfs)\u00b3' also renders as '(cfs)3'.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'Flow Regime Tied to Ecology' flowchart diagram is missing from the HTML and replaced with a nested bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a visual flowchart diagram with boxes and arrows illustrating the hierarchy from 'Sound Ecological Environment' branching to 'Subsistence Flows', 'Base Flows', 'High Flow Pulses', and 'Overbank Flows' with downstream functions. The HTML converts this entirely to nested text bullets with no diagram image present in any adjacent HTML chunk.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'Flow Scenario Examples' line chart is missing from the HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 12 shows a detailed line chart titled 'Flow Scenario Examples' with four data series (Actual Flow, 80% of Previous Day, 80% of Weekly Average, 20/30/40 MAF) plotted across a full year (1/1 to 12/1). The HTML only renders the heading 'Flow Scenario Examples' with no chart image visible in this or adjacent HTML chunks.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Flow Scenario Examples chart (PDF page 12) is completely missing from the HTML. This is a substantive line chart showing Actual Flow, 80% of Previous Day, 80% of Weekly Average, and 20/30/40 MAF over a calendar year. The HTML section contains only the heading with no image or alternative data representation.",
+      "severity": "minor",
+      "evidence": "PDF page 12 has a chart titled 'Flow Scenario Examples' with y-axis to 800, x-axis from 1/1 to 12/1, and four data series. HTML section has only: '<h2>Flow Scenario Examples</h2></section>' \u2014 no <img> tag or data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Flow Regime Tied to Ecology flowchart diagram (PDF page 10) is missing as an image. The textual content is represented as nested lists, which preserves the information, but the original visual flowchart diagram is not included.",
+      "severity": "minor",
+      "evidence": "PDF page 10 shows a visual flowchart/diagram with boxes and arrows connecting 'Sound Ecological Environment' to four flow types. HTML has no <img> tag for this section; content is rendered entirely as nested <ul>/<li> elements.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Superscript footnote markers in the Cheoah River High Flow Events table are merged with adjacent text, creating misleading numbers. '600' with superscript footnote 2 becomes '6002' (looks like the number six thousand and two), and 'Var' with superscript 1 becomes 'Var1'.",
+      "severity": "major",
+      "evidence": "PDF Table 2, March row, Day 2 column shows '600' with superscript '2' (a footnote reference). HTML renders this as '6002'. PDF February row, Day 2 column shows 'Var' with superscript '1'; HTML renders as 'Var1'. The column header '(cfs)\u00b3' similarly becomes '(cfs)3'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 192.69,
+    "page_count": 12,
+    "visual_input_tokens": 38676,
+    "visual_output_tokens": 5596,
+    "content_input_tokens": 28443,
+    "content_output_tokens": 3661,
+    "timestamp": "2026-04-20T20:13:56.473625",
+    "auditor_version": "1.0.0"
+  }
+}
