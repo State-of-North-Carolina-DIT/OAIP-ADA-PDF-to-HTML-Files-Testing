@@ -21,7 +21,7 @@ docs/                             # GitHub Pages comparison tool (NOT LFS-tracke
     source.pdf                    # Original PDF
     old-converted.html            # Previous pipeline conversion
     converted.html                # New pipeline conversion
-    old-audit.json                # Legacy audit (quality scores, fidelity, axe scan)
+    old-audit-report.json         # Legacy audit (quality scores, fidelity, axe scan)
     audit-report-claude.json      # Claude audit of new conversion
     audit-report-gpt.json         # GPT audit of new conversion
     audit-report-gemini.json      # Gemini audit of new conversion
@@ -77,7 +77,7 @@ Uses the DIT "First in Flight" dark theme. Colors and typography are defined as 
 ## Adding New Document Batches
 
 1. Create a directory at the repo root following the naming convention: `YYYY-MM-DD-agency/`
-2. Inside, create one subfolder per document containing: `source.pdf`, `converted.html`, and optionally `old-converted.html` and any audit JSON files (`audit-report-claude.json`, `audit-report-gpt.json`, `audit-report-gemini.json`, `old-audit.json`)
+2. Inside, create one subfolder per document containing: `source.pdf`, `converted.html`, and optionally `old-converted.html` and any audit JSON files (`audit-report-claude.json`, `audit-report-gpt.json`, `audit-report-gemini.json`, `old-audit-report.json`)
 3. Commit and push — LFS will handle the large HTML/PDF files automatically. The new batch will appear in the dropdown automatically.
 
 ## GitHub Pages

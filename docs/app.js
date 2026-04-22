@@ -233,7 +233,7 @@ async function loadSubdirFiles(name) {
     fileNames.has('converted.html') ? fetchTextFile(filePath('converted.html')) : null,
     fileNames.has('old-converted.html') ? fetchTextFile(filePath('old-converted.html')) : null,
     // Old audit variants
-    fileNames.has('old-audit.json') ? fetchTextFile(filePath('old-audit.json')) : null,
+    fileNames.has('old-audit-report.json') ? fetchTextFile(filePath('old-audit-report.json')) : null,
     fileNames.has('old-audit-report-claude.json') ? fetchTextFile(filePath('old-audit-report-claude.json')) : null,
     fileNames.has('old-audit-report-gpt.json') ? fetchTextFile(filePath('old-audit-report-gpt.json')) : null,
     fileNames.has('old-audit-report-gemini.json') ? fetchTextFile(filePath('old-audit-report-gemini.json')) : null,
@@ -250,7 +250,7 @@ async function loadSubdirFiles(name) {
     pdfUrl = await resolvePdfUrl(filePath('source.pdf'));
   }
 
-  // Build old audits object: prefer multi-vendor files, fall back to single old-audit.json
+  // Build old audits object: prefer multi-vendor files, fall back to single old-audit-report.json
   const oldAudits = {};
   const oldClaude = parseJson(oldClaudeRaw);
   const oldGpt = parseJson(oldGptRaw);
