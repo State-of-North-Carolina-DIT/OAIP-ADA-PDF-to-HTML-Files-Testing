@@ -27,7 +27,13 @@ const S = {
   cache: {},
   pdfBlobUrl: null,
   collapsed: { sidebar: false, oldCol: false, newCol: false, pdfCol: false },
+  // Aggregated audit verdict per doc: 'pass' | 'review' | 'fail' | 'none' | undefined (loading)
+  verdicts: {},
+  // Sidebar filter chip state — 'none' covers both skipped and missing
+  filter: { pass: true, review: true, fail: true, none: true },
 };
+
+const VERDICT_LABELS = { pass: 'Pass', review: 'Review', fail: 'Fail', none: '—', loading: '…' };
 
 const $ = s => document.querySelector(s);
 const $$ = s => document.querySelectorAll(s);
@@ -169,6 +175,7 @@ async function loadRepo() {
 function loadBatch(batchName) {
   S.basePath = batchName;
   S.cache = {};
+  S.verdicts = {};
   S.selected = null;
   // Update URL to reflect current batch (clear doc when switching batches)
   updateUrlParams({ batch: batchName, doc: null });
@@ -211,6 +218,90 @@ function loadBatch(batchName) {
   const urlDoc = new URLSearchParams(window.location.search).get('doc');
   const startDoc = urlDoc && S.subdirs.some(d => d.name === urlDoc) ? urlDoc : (S.subdirs[0]?.name ?? null);
   if (startDoc) selectSubdir(startDoc);
+
+  // Kick off background fetch of audit verdicts for sidebar badges + filtering
+  loadAllVerdicts(batchName);
+}
+
+// ================================================================
+// Verdict aggregation (sidebar badges + filter)
+// ================================================================
+function classifyRawVerdict(raw) {
+  if (raw == null) return null;
+  const v = String(raw).toLowerCase().trim();
+  if (v === 'pass') return 'pass';
+  if (v === 'fail') return 'fail';
+  if (v === 'needs_review' || v.includes('review')) return 'review';
+  if (v === 'skipped' || v.includes('skip')) return null;
+  // Legacy quality_grade values
+  if (v.includes('good') || v.includes('excellent')) return 'pass';
+  if (v.includes('poor')) return 'fail';
+  if (v.includes('approve')) return 'pass';
+  if (v.includes('reject')) return 'fail';
+  return null;
+}
+
+// Majority vote with ties resolved to the worse verdict (pass < review < fail).
+// Skipped/missing/unrecognized verdicts do not count as votes.
+function aggregateVerdict(audits) {
+  const counts = { pass: 0, review: 0, fail: 0 };
+  let total = 0;
+  for (const a of audits) {
+    if (!a) continue;
+    const cls = classifyRawVerdict(a.verdict ?? a.routing_label ?? a.quality_grade);
+    if (cls) { counts[cls]++; total++; }
+  }
+  if (total === 0) return 'none';
+  for (const k of ['pass', 'review', 'fail']) {
+    if (counts[k] > total / 2) return k;
+  }
+  const max = Math.max(counts.pass, counts.review, counts.fail);
+  if (counts.fail === max) return 'fail';
+  if (counts.review === max) return 'review';
+  return 'pass';
+}
+
+async function fetchDocVerdict(name) {
+  const subdir = S.subdirs.find(d => d.name === name);
+  if (!subdir) return 'none';
+  const fileNames = S.fileIndex[name] || new Set();
+  const auditFiles = ['audit-report.json', 'audit-report-claude.json', 'audit-report-gpt.json', 'audit-report-gemini.json']
+    .filter(f => fileNames.has(f));
+  if (auditFiles.length === 0) return 'none';
+  const raws = await Promise.all(
+    auditFiles.map(f => fetchTextFile(`${subdir.path}/${f}`).catch(() => null))
+  );
+  const audits = raws.map(r => { if (!r) return null; try { return JSON.parse(r); } catch { return null; } });
+  return aggregateVerdict(audits);
+}
+
+async function loadAllVerdicts(batchToken) {
+  // Fire all in parallel; update each pill in place as it resolves.
+  // Stale results from a previous batch are dropped via batchToken check.
+  const tasks = S.subdirs.map(async (dir) => {
+    try {
+      const verdict = await fetchDocVerdict(dir.name);
+      if (S.basePath !== batchToken) return;
+      S.verdicts[dir.name] = verdict;
+      updateVerdictPill(dir.name, verdict);
+    } catch {
+      if (S.basePath !== batchToken) return;
+      S.verdicts[dir.name] = 'none';
+      updateVerdictPill(dir.name, 'none');
+    }
+  });
+  await Promise.allSettled(tasks);
+  // After all loaded, re-render so filter chips can hide non-matching rows
+  if (S.basePath === batchToken) renderSidebar();
+}
+
+function updateVerdictPill(name, verdict) {
+  const row = document.querySelector(`.sb-item[data-name="${CSS.escape(name)}"]`);
+  if (!row) return;
+  const pill = row.querySelector('.sb-verdict');
+  if (!pill) return;
+  pill.className = 'sb-verdict ' + verdict;
+  pill.textContent = VERDICT_LABELS[verdict];
 }
 
 async function loadSubdirFiles(name) {
@@ -288,9 +379,14 @@ async function loadSubdirFiles(name) {
 // ================================================================
 function renderSidebar() {
   const list = $('#sidebarList');
-  const filter = ($('#sidebarSearch').value || '').toLowerCase();
-  const filtered = S.subdirs.filter(d => d.name.toLowerCase().includes(filter));
-  $('#sidebarCount').textContent = filtered.length + (filter ? ' / ' + S.subdirs.length : '');
+  const search = ($('#sidebarSearch').value || '').toLowerCase();
+  const filtered = S.subdirs.filter(d => {
+    if (!d.name.toLowerCase().includes(search)) return false;
+    const v = S.verdicts[d.name];
+    if (v === undefined) return true; // verdict still loading — always show
+    return S.filter[v];
+  });
+  $('#sidebarCount').textContent = filtered.length + (filtered.length !== S.subdirs.length ? ' / ' + S.subdirs.length : '');
 
   list.replaceChildren();
   if (filtered.length === 0) {
@@ -315,6 +411,9 @@ function renderSidebar() {
     // Name via textContent (safe)
     const nameSpan = el('span', { className: 'sb-item-name', title: dir.name }, dir.name);
     item.appendChild(nameSpan);
+    // Verdict pill (right side); 'loading' state until verdict resolves
+    const verdict = S.verdicts[dir.name] || 'loading';
+    item.appendChild(el('span', { className: 'sb-verdict ' + verdict }, VERDICT_LABELS[verdict]));
     list.appendChild(item);
   }
 }
@@ -1177,6 +1276,17 @@ function toggleCollapse(panelKey) {
 // ================================================================
 $('#sidebarSearch').addEventListener('input', renderSidebar);
 $('#batchSelect').addEventListener('change', (e) => loadBatch(e.target.value));
+
+// Filter chip toggles
+document.querySelectorAll('.sb-filter-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const cat = chip.dataset.filter;
+    S.filter[cat] = !S.filter[cat];
+    chip.classList.toggle('active', S.filter[cat]);
+    chip.setAttribute('aria-pressed', String(S.filter[cat]));
+    renderSidebar();
+  });
+});
 $('#oldHtmlToggle').addEventListener('click', () => toggleHtmlRaw('oldHtmlBody', $('#oldHtmlToggle')));
 $('#newHtmlToggle').addEventListener('click', () => toggleHtmlRaw('newHtmlBody', $('#newHtmlToggle')));
 

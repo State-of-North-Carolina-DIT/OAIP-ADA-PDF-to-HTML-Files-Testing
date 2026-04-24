@@ -1,0 +1,49 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The NC pine tree organizational logo/emblem ('Energy, Mineral & Land Resources / ENVIRONMENTAL QUALITY') prominently displayed in the upper left of PDF page 1 is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a green NC-shaped logo with a white pine tree silhouette and agency text beneath it. The HTML rendering shows the colored banner bar and official names text but no logo image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections disrupts reading flow. Between the memorandum cover content and the History/Background section, the HTML inserts the page footer ('State of North Carolina | Environmental Quality\u2026'), a colored banner bar, and the official names block (PAT McCRORY, DONALD R. VAN DER VAART, TRACY DAVIS).",
+      "severity": "major",
+      "evidence": "In the continuous HTML flow, after the memo outline (I\u2013IV) and before 'I. History/Background', a reader encounters the full page footer text, a colored bar, and the repeated government officials' header block. In the PDF, these are simply page chrome on separate pages and do not interrupt reading.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A decorative page-border image from the PDF page footers is inserted mid-content between the memo header section and Section I (History/Background), breaking body reading flow.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt=\"Decorative page border\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> placed between </section> (memo header) and the <section> containing 'I. History/Background'. This colored bar appears at the bottom of every PDF page and should not appear in the body content flow.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 227.24,
+    "page_count": 5,
+    "visual_input_tokens": 16478,
+    "visual_output_tokens": 7613,
+    "content_input_tokens": 16085,
+    "content_output_tokens": 2222,
+    "triage_input_tokens": 16421,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:10:55.157126",
+    "auditor_version": "1.0.0"
+  }
+}

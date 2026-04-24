@@ -1,0 +1,89 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-list",
+      "description": "Ensure that lists are structured correctly",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  List element has direct children that are not allowed: figure [<ol type=\"a\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "NCDENR logo/emblem at the top of the document is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 displays a prominent NCDENR seal/logo centered at the top of the letterhead. The HTML rendering has no corresponding image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Handwritten initials/signatures next to the names in the FROM field are missing.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows handwritten initials next to 'Karen Higgins' (appears as 'KH' with flourish) and 'Brian Wrenn' (appears as 'bw'). These are absent in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "'One North Carolina Naturally' logo in the footer is missing from the HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 1 footer contains the 'One NorthCarolina Naturally' stylized logo in the bottom-right corner. The HTML does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The HTML contains small embedded thumbnail images of the original PDF pages at the top of the document, followed by the full text conversion of the same content, creating a duplication of content that disrupts reading order.",
+      "severity": "major",
+      "evidence": "HTML chunk 1 shows compressed/thumbnail images of source PDF pages near the top, then the same content is repeated below as HTML text. A reader encounters the content twice \u2014 once as images, once as text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4b",
+      "description": "Multiple literal URLs and email addresses appear as underlined plain text (<u>) in the HTML without being wrapped in <a href> tags.",
+      "severity": "major",
+      "evidence": "At least 9 URLs/emails rendered as <u> text only: http://portal.ncdenr.org/web/wq/swp/ws/401/publicnotices, http://portal.ncdenr.org/web/wq/swp/ws/401/certsandpermits/mitigation/memos, katie.merritt@ncdenr.gov, http://portal.ncdenr.org/web/wq/2012_draft_gcs, karen.higgins@ncdenr.gov, ian.mcmillan@ncdenr.gov, http://portal.ncdenr.org/web/wq/swp/ws/401/certsandpermits/swmanagement, http://portal.ncdenr.org/web/wq/ws/su/npdessw#tab-w, www.ncwaterquality.org. None of these have <a href> wrapping.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Six images embedded at page boundaries have empty alt text (alt=\"\"), making it impossible to determine their purpose. If they are full-page captures or contain header/footer content, they should have descriptive alt text rather than being marked decorative.",
+      "severity": "minor",
+      "evidence": "Six <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> elements are interspersed throughout the document body at what appear to be page-break positions (between pages 1-2, 2-3, 3-4, 4-5, 5-6, 6-7).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 2,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 307.37,
+    "page_count": 7,
+    "visual_input_tokens": 18158,
+    "visual_output_tokens": 5082,
+    "content_input_tokens": 26779,
+    "content_output_tokens": 8813,
+    "triage_input_tokens": 23732,
+    "triage_output_tokens": 137,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T21:57:43.302786",
+    "auditor_version": "1.0.0"
+  }
+}

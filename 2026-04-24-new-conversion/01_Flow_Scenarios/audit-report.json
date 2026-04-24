@@ -1,0 +1,97 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Title slide content is duplicated: HTML renders extracted text (heading, subtitle, author) AND an embedded screenshot image of the same title slide below it.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows a single title slide. HTML chunk 1 shows the title 'Introduction to Flow Scenarios', date, and author as HTML text, then immediately below shows the full slide as an embedded image containing the same content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Cheoah River base flow table content is duplicated: the data appears once as styled text extracted from the slide and again as a separate HTML table.",
+      "severity": "major",
+      "evidence": "PDF page 8 shows one table. HTML shows the table data first in a bordered box (slide-extracted content) and then again as a properly formatted HTML table with the same Tier A and Tier B monthly base flow values.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Cheoah River high flow events table is duplicated: the slide image of Table 2 appears alongside an HTML table rendering of the same data.",
+      "severity": "major",
+      "evidence": "PDF page 9 shows Table 2 once. HTML includes the slide image (with decorative wave header) showing Table 2, and below it a full HTML table repeating all the same Year 1\u20135 events, days, and magnitude data.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Superscript footnote markers in Table 2 are rendered inline, corrupting data values. '600\u00b2' becomes '6002', 'Var\u00b9' becomes 'Var1', and '(cfs)\u00b3' becomes '(cfs)3'.",
+      "severity": "major",
+      "evidence": "PDF Table 2 shows March Day 2 magnitude as '600\u00b2' (600 with footnote 2) and February Day 2 as 'Var\u00b9' (Var with footnote 1). HTML table renders these as '6002' and 'Var1', which look like different numbers/values rather than footnoted references.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'Flow Regime Tied to Ecology' flowchart diagram is missing. The diagram with boxes and arrows showing the hierarchical relationship between Sound Ecological Environment, flow types, and ecological functions is replaced by nested bullet points only.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a structured flowchart with boxes and connecting arrows: 'Sound Ecological Environment' \u2192 Subsistence Flows, Base Flows, High Flow Pulses, Overbank Flows \u2192 detailed ecological functions. HTML renders this as nested bullet lists with no diagram image.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'Flow Scenario Examples' line chart is missing from the HTML. Only the heading 'Flow Scenario Examples' appears with no chart below it.",
+      "severity": "critical",
+      "evidence": "PDF page 12 shows a detailed line chart with four series (Actual Flow, 80% of Previous Day, 80% of Weekly Average, 20/30/40 MAF) plotted over 12 months. The HTML shows the heading 'Flow Scenario Examples' followed by blank space with no chart image.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Cheoah River Monthly Base Flow table (page 8) is rendered both as an embedded image AND as a separate HTML <table>. The same data appears twice.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt=\"Data table for Monthly Base Flow Releases\" ...></figure> followed immediately by a <table><caption>Monthly Base Flow (cfs) Releases from Santeetlah Dam...</caption> containing identical Tier A/Tier B row data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Cheoah River High Flow Events table (page 9) is rendered both as an embedded image AND as a separate HTML <table>. The same data appears twice.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt=\"\" ...></figure> followed by <table><caption>Table 2. High Flow Events \u2013 5-year Repeating Schedule.</caption> containing the same monthly high-flow event data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Superscript footnote references in the High Flow Events table are merged into cell values, changing apparent meaning. '600' with superscript '2' (footnote ref) becomes '6002', appearing to be the number six thousand and two. Similarly 'Var' with superscript '1' becomes 'Var1'.",
+      "severity": "major",
+      "evidence": "PDF page 9 March row Day 2: '600' with superscript \u00b2 (footnote reference to footnote 2). HTML: <td>6002</td>. PDF February Day 2: 'Var' with superscript \u00b9. HTML: <td>Var1</td>. Column header 'Magnitude (cfs)' with superscript \u00b3 becomes 'Magnitude (cfs)3'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 7,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 426.13,
+    "page_count": 12,
+    "visual_input_tokens": 38648,
+    "visual_output_tokens": 16676,
+    "content_input_tokens": 27346,
+    "content_output_tokens": 3991,
+    "triage_input_tokens": 28010,
+    "triage_output_tokens": 256,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-23T22:07:05.274256",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "document_id": "SSAB_Meeting_April_2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Reading order disruption: footer DEQ logo/contact info and duplicated header content appear before main body content in the HTML.",
+      "severity": "major",
+      "evidence": "In the PDF, the DEQ logo and contact info appear at the bottom footer, and officials' names/titles (Josh Stein, D. Reid Wilson, Sushma Masemore) appear once in the upper-left letterhead. In the HTML, the DEQ logo with full address appears above the main content, and the officials' names/titles are listed twice \u2014 once in a small header area at the top and again in larger text below the DEQ logo \u2014 before the Secretaries' Science Advisory Board heading and agenda begin.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The header area content (officials' names, titles, state seal, and agency name) is rendered both as a full-width embedded image (alt text: 'State of North Carolina Seal and document header') AND as separate HTML text paragraphs immediately following the image. This duplicates the same content in two formats.",
+      "severity": "major",
+      "evidence": "HTML has <img alt=\"State of North Carolina Seal and document header\" ... style=\"width: 612.0pt; height: auto;\"/> followed by <p>JOSH STEIN<br/><em>Governor</em></p>, <p>D. REID WILSON<br/><em>Secretary</em></p>, etc. The image at 612pt width captures the full header area including these names and titles, which are then repeated as text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image has generic, non-descriptive alt text 'Blank document page background' which describes a decorative page background rather than substantive content. If the image is purely decorative, it should not be included; if it is substantive, the alt text is inadequate.",
+      "severity": "minor",
+      "evidence": "HTML: <img alt=\"Blank document page background\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/> \u2014 This appears to be a full-page decorative background capture from PDF page 2 with no informational value.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 173.04,
+    "page_count": 2,
+    "visual_input_tokens": 6840,
+    "visual_output_tokens": 3953,
+    "content_input_tokens": 8136,
+    "content_output_tokens": 3779,
+    "triage_input_tokens": 10030,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:23:08.761668",
+    "auditor_version": "1.0.0"
+  }
+}

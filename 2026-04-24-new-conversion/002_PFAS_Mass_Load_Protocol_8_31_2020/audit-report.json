@@ -1,0 +1,97 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'where,' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V5",
+      "description": "Duplicated company/license text on cover page. 'Geosyntec Consultants of NC, P.C.' and 'NC License No.: C-3500 and C-295' appear twice in the HTML \u2014 once extracted from the logo image area and once as standalone text.",
+      "severity": "major",
+      "evidence": "PDF shows this text once below the Geosyntec logo. HTML renders it twice in succession before the title block.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 (Outfall 002 Sampling Locations aerial map) is rendered as a tiny, barely legible thumbnail in the HTML, with its text labels decomposed into separate text elements. The full aerial/satellite map showing facility layout, sampling locations, inset detail, and spatial context is effectively lost.",
+      "severity": "critical",
+      "evidence": "PDF shows a full-page aerial map with labeled sampling locations, inset detail of Outfall 002, scale bars, and legend. HTML shows only a small cropped thumbnail of the 'River Water Intake at Facility' area, with labels like '24-hr Composite and Continuous Flow', '3.5-day Composite', scale bars, and legend items rendered as plain text outside the image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Figure 3 flowchart content appears both as a flowchart image and as a text rendition of the same decision logic, creating duplicated reading of the same content.",
+      "severity": "major",
+      "evidence": "PDF shows Figure 3 as a single flowchart image. HTML shows the flowchart image AND a separate text rendition below it: 'Was a 24-hr composite sample collected? YES: Use 24-hr composite sample concentration... NO: Use 60-day rolling average dry concentration.'",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer branding text inserted inline between body content sections, disrupting reading flow.",
+      "severity": "major",
+      "evidence": "PDF page headers ('Geosyntec consultants', 'Geosyntec Consultants of NC, P.C.', 'NC License No.: C-3500 and C-295') appear inline between Section 3.6 and the TABLES section in the HTML, interrupting the document flow.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Figure 3 (Flowchart for Determining the Concentration for Loading at the River Water Intake) from PDF page 17 is missing as an image. The HTML renders its content only as a textual list (<ul>) within a <figure> element, but has no <img> tag for the actual flowchart diagram that is present in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF page 17 contains a visual flowchart diagram with decision diamonds and outcome boxes. HTML has: <figure><figcaption>Flowchart for Determining the Concentration for Loading at the River Water Intake...</figcaption><ul><li>Was a 24-hr composite sample collected?...</li></ul></figure> \u2014 no <img> tag is present, unlike Figure 2 which does have an <img> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Figure 1 map annotation labels that are part of the map image in the PDF are also extracted as separate <p> elements in the HTML body, creating duplication of content that exists within the image.",
+      "severity": "major",
+      "evidence": "HTML contains separate paragraphs: '<p>River Water Intake at Facility</p>', '<p>24-hr Composite and Continuous Flow</p>', '<p>3.5-day Composite</p>', '<p>0 25 50 ft</p>', '<p>0 500 1000 ft</p>', '<p><strong>Legend</strong><br/>Sampling Location</p>' \u2014 these are text labels that appear ON the Figure 1 map image in the PDF (page 15) and should not be rendered as separate body text alongside the image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Geosyntec Consultants logo from PDF page headers appears three times in the HTML body. The logo repeats on every page of the PDF as a page header but should be consolidated rather than appearing mid-content.",
+      "severity": "major",
+      "evidence": "HTML contains three <img alt='Geosyntec Consultants logo'> tags: (1) at the title page, (2) before the TABLE OF CONTENTS heading, and (3) after Section 3.6 before the TABLES heading. Occurrences #2 and #3 are PDF page headers inserted into the body flow.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Geosyntec license text from the Figure 3 title block appears at the very end of the HTML body as a stray paragraph, appearing as repeated header/footer content in the body flow.",
+      "severity": "major",
+      "evidence": "HTML ends with: '<p>Geosyntec Consultants of NC, P.C.<br/>NC License No.: C 3500 and C 295</p>' \u2014 this is from the title block of Figure 3 on PDF page 17, appearing as body content after all figure content has ended.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 7,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 397.03,
+    "page_count": 17,
+    "visual_input_tokens": 53078,
+    "visual_output_tokens": 7473,
+    "content_input_tokens": 45145,
+    "content_output_tokens": 12915,
+    "triage_input_tokens": 41664,
+    "triage_output_tokens": 177,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T21:57:16.772204",
+    "auditor_version": "1.0.0"
+  }
+}

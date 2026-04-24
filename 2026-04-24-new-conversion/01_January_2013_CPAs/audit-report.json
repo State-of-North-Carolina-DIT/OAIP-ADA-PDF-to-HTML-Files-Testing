@@ -1,0 +1,24 @@
+{
+  "document_id": "01_January_2013_CPAs",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 71.72,
+    "page_count": 2,
+    "visual_input_tokens": 6368,
+    "visual_output_tokens": 1541,
+    "content_input_tokens": 15877,
+    "content_output_tokens": 1963,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:01:32.387276",
+    "auditor_version": "1.0.0"
+  }
+}

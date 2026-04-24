@@ -1,0 +1,33 @@
+{
+  "document_id": "01_10_Corrected_cover_letter_20201221",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "The signature image in the HTML includes surrounding text ('Sincerely,', 'David Miller, PE', 'State Mi...') that is also rendered as separate HTML text, creating visible duplication in the reading flow.",
+      "severity": "major",
+      "evidence": "PDF shows one 'Sincerely,' followed by the signature, then 'David Miller, PE / State Mining Engineer'. HTML shows 'Sincerely,' as text, then a signature image that itself contains 'Sincerely,' and 'David Miller, PE / State Mi...' text, then again 'David Miller, PE' and 'State Mining Engineer' as HTML text below the image.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 58.19,
+    "page_count": 1,
+    "visual_input_tokens": 4810,
+    "visual_output_tokens": 1086,
+    "content_input_tokens": 5978,
+    "content_output_tokens": 1279,
+    "triage_input_tokens": 8288,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T21:51:58.721712",
+    "auditor_version": "1.0.0"
+  }
+}

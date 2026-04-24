@@ -1,0 +1,33 @@
+{
+  "document_id": "DSCA_Compliance_Voluntary_Self-Inspection_Checklist_for_Petroleum_and_Alternative-solvent_Dry_Cleaners_Form",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C4b",
+      "description": "The DSCA inspector map URL in the footer appears as plain text in the HTML but is displayed as a hyperlink (blue, underlined) in the PDF.",
+      "severity": "major",
+      "evidence": "PDF footer shows 'https://deq.nc.gov/media/20408/download' as a clickable hyperlink. HTML footer renders it as plain text: 'The DSCA inspector map can be found at this address: https://deq.nc.gov/media/20408/download' without an <a href> wrapper.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 106.24,
+    "page_count": 1,
+    "visual_input_tokens": 4770,
+    "visual_output_tokens": 1769,
+    "content_input_tokens": 7014,
+    "content_output_tokens": 3148,
+    "triage_input_tokens": 6644,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:12:54.643363",
+    "auditor_version": "1.0.0"
+  }
+}

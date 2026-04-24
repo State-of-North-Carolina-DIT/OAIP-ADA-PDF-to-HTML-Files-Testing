@@ -1,0 +1,81 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Duplicate text fragment and duplicate 'Sincerely,' disrupt reading flow in signature area",
+      "severity": "major",
+      "evidence": "PDF page 2 shows a single 'Sincerely,' followed by David Miller's signature. The HTML renders 'Sincerely,' as text, then inserts a stray fragment '07-9220 if you have any c' (a truncated duplicate from the contact line), then shows another 'Sincerely,' within the embedded signature image, resulting in duplicated and jumbled text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Duplicate 'Sincerely,' in signature area of Colonial Pipeline letter",
+      "severity": "major",
+      "evidence": "PDF page 10 shows a single 'Sincerely,' followed by Mark Piazza's handwritten signature. The HTML renders 'Sincerely,' as text and then shows 'Sincerely,' again as part of the embedded signature image, creating a duplicated closing.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Exhibit 1B image (PDF page 17, zoomed-in site plan map) is missing from the HTML. The caption text 'Exhibit 1B. Location of the Proposed Emergency Access Route Intersecting Quakenbush Road' is present but no corresponding <img> tag exists.",
+      "severity": "minor",
+      "evidence": "PDF page 17 shows a zoomed-in map of the proposed emergency access route area with detailed labels (wetlands, property lines, phases, monitoring wells, etc.). The HTML has only the caption paragraph with no image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Colonial Pipeline 'CD' logo images from email signatures in the email chain (PDF pages 3, 4, and 6) are missing from the HTML. These are company branding logos appearing alongside Mark Piazza's contact information blocks.",
+      "severity": "minor",
+      "evidence": "PDF pages 3, ~4 bottom, and 6 each show a circular 'CD' Colonial Pipeline logo preceding the email signature contact block. The HTML email chain sections have the text contact info and social media icons but no <img> tag for the CD logo.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text 'Social media icons' is generic and does not describe which platforms are represented (LinkedIn, Facebook, Twitter/X, Instagram).",
+      "severity": "minor",
+      "evidence": "Three <img> tags in the HTML use alt='Social media icons'. The PDF shows four distinct social media platform icons (LinkedIn, Facebook, Twitter, Instagram) in the email signature blocks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "www.colpipe.com appears as plain text in multiple email signature blocks in the HTML, but in the PDF it is formatted and presented as a hyperlink (underlined/colored).",
+      "severity": "major",
+      "evidence": "HTML: 'o. 678.762.2531 | m. 678.763 5911 | www.colpipe.com' as plain text. PDF pages 3, 4, and 6 show www.colpipe.com formatted as a clickable hyperlink in the email signatures.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for Exhibit 1A map says 'Zoomed-in map showing proposed emergency access road' but the PDF page 16 image is actually the full quarry site plan (not zoomed-in). The zoomed-in version is Exhibit 1B on page 17.",
+      "severity": "minor",
+      "evidence": "PDF page 16: full-page quarry site plan labeled 'Exhibit 1A. Location of the Proposed Emergency Access Route Intersecting Quakenbush Road'. HTML alt='Zoomed-in map showing proposed emergency access road' \u2014 inaccurate description.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 4,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 418.54,
+    "page_count": 17,
+    "visual_input_tokens": 54166,
+    "visual_output_tokens": 12809,
+    "content_input_tokens": 40054,
+    "content_output_tokens": 7088,
+    "triage_input_tokens": 33675,
+    "triage_output_tokens": 155,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T21:58:57.265212",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "document_id": "01_JLR4_Agenda_Schedule",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C3b",
+      "description": "In the PDF, 'EMC Model Approval' appears once in a merged cell in the Cape Fear \u2013 Neuse River Basin Hydrologic Model column, spanning approximately the 1/1/2013 through 5/1/2013 rows. The HTML duplicates this text into four separate rows (1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013), converting a single merged cell into repeated data.",
+      "severity": "major",
+      "evidence": "PDF: single merged cell reading 'EMC Model Approval' spanning multiple rows. HTML: <td>EMC Model Approval</td> appears in rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The footnote URL http://www.doodle.com/5ctdbuc2n3akshim appears as plain text in the HTML and is not wrapped in an <a href> tag.",
+      "severity": "major",
+      "evidence": "HTML: <p><sup>1</sup>http://www.doodle.com/5ctdbuc2n3akshim</p> \u2014 URL is not linked.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 115.13,
+    "page_count": 2,
+    "visual_input_tokens": 7450,
+    "visual_output_tokens": 3105,
+    "content_input_tokens": 8088,
+    "content_output_tokens": 2126,
+    "triage_input_tokens": 10214,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:03:06.177204",
+    "auditor_version": "1.0.0"
+  }
+}

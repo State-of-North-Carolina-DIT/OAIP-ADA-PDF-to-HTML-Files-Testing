@@ -48,6 +48,12 @@
           <span class="sidebar-count" id="sidebarCount">0</span>
           <button class="collapse-toggle" id="sidebarCollapseBtn" aria-expanded="true" title="Collapse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
         </div>
+        <div class="sb-filters" id="sbFilters" role="group" aria-label="Filter by audit verdict">
+          <button class="sb-filter-chip pass active" data-filter="pass" aria-pressed="true">Pass</button>
+          <button class="sb-filter-chip review active" data-filter="review" aria-pressed="true">Review</button>
+          <button class="sb-filter-chip fail active" data-filter="fail" aria-pressed="true">Fail</button>
+          <button class="sb-filter-chip none active" data-filter="none" aria-pressed="true">No Audit</button>
+        </div>
         <input type="search" id="sidebarSearch" placeholder="Filter folders..." aria-label="Filter folders">
       </div>
       <div id="sidebarList" role="listbox" aria-label="Document list"></div>

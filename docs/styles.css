@@ -117,12 +117,39 @@ input{font-family:var(--font)}
 .sb-item.active{background:rgba(56,146,225,.1);border-left-color:var(--secondary)}
 .sb-item-icon{width:15px;height:15px;color:var(--secondary);opacity:.6;flex-shrink:0}
 .sb-item-name{
-  font-size:12.5px;color:var(--text-2);white-space:nowrap;
+  flex:1;font-size:12.5px;color:var(--text-2);white-space:nowrap;
   overflow:hidden;text-overflow:ellipsis;min-width:0;
 }
 .sb-item.active .sb-item-name{color:var(--text-1);font-weight:600}
 .sb-item:hover .sb-item-name{color:var(--text-1)}
 .sb-empty{padding:24px 12px;text-align:center;font-size:13px;color:var(--text-3)}
+
+/* ── Sidebar Verdict Pills ── */
+.sb-verdict{
+  flex-shrink:0;font-size:9.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.4px;padding:1px 6px;border-radius:3px;
+  border:1px solid transparent;line-height:1.4;
+}
+.sb-verdict.pass{background:var(--green-sub);color:var(--green);border-color:rgba(46,160,67,.35)}
+.sb-verdict.review{background:var(--yellow-sub);color:var(--yellow);border-color:rgba(212,167,44,.35)}
+.sb-verdict.fail{background:var(--red-sub);color:var(--red);border-color:rgba(207,31,66,.4)}
+.sb-verdict.none{background:var(--bg-3);color:var(--text-3);border-color:var(--border-lt)}
+.sb-verdict.loading{background:transparent;color:var(--text-3);border-color:var(--border-lt);animation:sb-pulse 1.4s ease-in-out infinite}
+@keyframes sb-pulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+/* ── Sidebar Filter Chips ── */
+.sb-filters{display:flex;flex-wrap:wrap;gap:4px}
+.sb-filter-chip{
+  font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;
+  padding:2px 7px;border-radius:10px;border:1px solid var(--border);
+  background:transparent;color:var(--text-3);
+  transition:all var(--tr);
+}
+.sb-filter-chip:hover{color:var(--text-1);border-color:var(--secondary)}
+.sb-filter-chip.active.pass{background:var(--green-sub);color:var(--green);border-color:rgba(46,160,67,.45)}
+.sb-filter-chip.active.review{background:var(--yellow-sub);color:var(--yellow);border-color:rgba(212,167,44,.45)}
+.sb-filter-chip.active.fail{background:var(--red-sub);color:var(--red);border-color:rgba(207,31,66,.5)}
+.sb-filter-chip.active.none{background:var(--bg-3);color:var(--text-1);border-color:var(--border)}
 
 /* ── Resize Handles ── */
 .rh-v{
@@ -162,6 +189,7 @@ input{font-family:var(--font)}
 #sidebar.collapsed .sidebar-top-row{justify-content:center}
 #sidebar.collapsed .sidebar-label,
 #sidebar.collapsed .sidebar-count,
+#sidebar.collapsed .sb-filters,
 #sidebar.collapsed #sidebarSearch,
 #sidebar.collapsed #sidebarList{display:none}
 

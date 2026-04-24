@@ -1,0 +1,41 @@
+{
+  "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'sab \u2013 what it is' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Nested ellipse diagram on 'Modeling Supports Planning' slide is missing from the HTML. The PDF shows two nested ellipses (green outer 'Water Supply Planning' containing orange inner 'River Basin Modeling'), conveying a subset relationship. The HTML renders only the two text labels as plain text, losing the diagrammatic representation.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a nested ellipse/Venn-style diagram with 'Water Supply Planning' as the outer green ellipse and 'River Basin Modeling' as the inner orange ellipse. HTML shows only the two text labels without any graphic.",
+      "page": 10,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 73.98,
+    "page_count": 11,
+    "visual_input_tokens": 26407,
+    "visual_output_tokens": 1625,
+    "content_input_tokens": 22665,
+    "content_output_tokens": 1519,
+    "triage_input_tokens": 24552,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:01:05.667364",
+    "auditor_version": "1.0.0"
+  }
+}

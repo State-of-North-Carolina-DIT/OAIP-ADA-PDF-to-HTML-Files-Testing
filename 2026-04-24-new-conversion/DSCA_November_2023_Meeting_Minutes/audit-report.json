@@ -1,0 +1,33 @@
+{
+  "document_id": "DSCA_November_2023_Meeting_Minutes",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C4b",
+      "description": "A literal URL for DSCA stakeholder work group presentations appears as plain text in the HTML without being wrapped in an <a href> tag.",
+      "severity": "major",
+      "evidence": "HTML contains: \"https://www.deq.nc.gov/about/divisions/waste-management/superfund-section/dry-cleaning-solvent-cleanup-act-program/dsca-stakeholder-work-group-information\" as plain text inside a <p> element, not linked.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 81.18,
+    "page_count": 3,
+    "visual_input_tokens": 10854,
+    "visual_output_tokens": 1536,
+    "content_input_tokens": 12611,
+    "content_output_tokens": 2103,
+    "triage_input_tokens": 9935,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:13:44.510311",
+    "auditor_version": "1.0.0"
+  }
+}

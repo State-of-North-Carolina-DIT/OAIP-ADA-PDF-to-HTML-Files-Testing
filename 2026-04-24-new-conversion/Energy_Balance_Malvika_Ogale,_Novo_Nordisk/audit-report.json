@@ -1,0 +1,89 @@
+{
+  "document_id": "Energy_Balance_Malvika_Ogale,_Novo_Nordisk",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "North Carolina metrics collage image is embedded alongside an HTML table containing the same metric data (e.g., 'More than 31 years', 'More than $10B', '60+', 'LEED GOLD', '$40M+'), creating duplicate reading of the same content.",
+      "severity": "major",
+      "evidence": "PDF: Single visual collage grid of photos and metrics. HTML: The collage image is shown, then a table titled 'North Carolina manufacturing metrics and milestones' repeats every metric value in text form.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The four must-win battle descriptions appear both as text labels within the embedded globe illustration image AND as separate HTML bullet points below it, duplicating reading content.",
+      "severity": "major",
+      "evidence": "PDF: Globe illustration with '#1 Reach more vulnerable patients\u2026' etc. positioned around it. HTML: Globe image embedded, then the same four battles listed as HTML bullets '#1 Reach more vulnerable patients with treatment', '#2 Reach more children\u2026', '#3 Reduce CO\u2082 emissions', '#4 Reduce the plastic footprint from our products'.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Environmental targets text appears both within the embedded slide screenshot image and in an 'Environmental Targets' table below it, duplicating the same content.",
+      "severity": "major",
+      "evidence": "PDF: Single slide with targets listed next to photos. HTML: Slide image embedded showing 'Net Zero emissions by 2045', 'All supply based on 100% renewable power by 2030', 'Zero CO\u2082 from own operations and transport by 2030', then a table below listing the identical three targets.",
+      "page": 7,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Project savings bullet points appear both as structured HTML text AND in an embedded slide image showing the same text, creating a clear duplicate passage.",
+      "severity": "major",
+      "evidence": "PDF: Single slide with bullet text. HTML: Structured HTML bullets state 'Novo Nordisk has a goal of 2% energy and water reduction through projects' and 'These projects can be dedicated for savings, process improvements, equipment maintenance or configuration adjustments, among others.' Then an embedded image of the slide repeats the identical sentences.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The Water Example \u2013 Process Flows slide image is embedded and its driver bullet text is also rendered as separate HTML bullets, duplicating the driver content.",
+      "severity": "major",
+      "evidence": "PDF: Single slide with driver bullets and Sankey diagram. HTML: Embedded slide image shows 'Identify high water users in the process flow', 'Understand process vs. non-process consumers of water', 'Understand potential for internal recycle projects'. The same three items appear again as HTML bullet points below the image.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Generic placeholder alt text 'Globe icon' is used for two different images, providing no meaningful information about the image content. The guidelines explicitly flag alt text containing the word 'icon' as generic.",
+      "severity": "minor",
+      "evidence": "HTML has two separate <img> tags with alt=\"Globe icon\" \u2014 one in the 'Novo Nordisk at a glance' section and one in the 'Circular for Zero \u2013 Energy and Water Goals' section. These are different images in the PDF (one is a stylized earth graphic, the other is a Circular for Zero branded icon) but share the same uninformative alt text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The number '170' from PDF page 2 \u2014 likely representing countries where Novo Nordisk products are marketed/available \u2014 is not captured anywhere in the HTML. The PDF layout positions '170' and '80' as separate metrics, but only '80 countries' (affiliates) is reflected in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 2 extracted text shows '170 80 Affiliates in countries' as two distinct displayed numbers. The HTML table row only states 'Affiliates in | 80 countries'. The '170' metric is absent from the entire HTML document.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The single footnote URL from PDF page 2 is fragmented into six separate <a> tags in the HTML, each wrapping a portion of the URL text but all pointing to the same full href. While the destination is correct, the splitting creates six clickable links where the PDF had one.",
+      "severity": "critical",
+      "evidence": "HTML: <a href=\"...\">1. https://companiesmarketcap.com/pharmaceuticals/largest</a> <a href=\"...\">-pharmaceutical</a> <a href=\"...\">-companies</a><a href=\"...\">-by</a><a href=\"...\">-market</a><a href=\"...\">-cap/</a>. PDF has this as a single footnote reference.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 6,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 569.22,
+    "page_count": 19,
+    "visual_input_tokens": 61062,
+    "visual_output_tokens": 12818,
+    "content_input_tokens": 43323,
+    "content_output_tokens": 12340,
+    "triage_input_tokens": 40131,
+    "triage_output_tokens": 152,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:22:00.847519",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "document_id": "Southside_Park_Landfill_Surface_Water_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The HTML contains the fabricated label 'Map Labels:' which does not appear anywhere in the source PDF. The items listed after it (SW/SD-1 through SW/SD-5, N) are actual map labels but the bold introductory phrase 'Map Labels:' is invented.",
+      "severity": "critical",
+      "evidence": "HTML: '<p><strong>Map Labels:</strong> SW/SD-1, SW/SD-2, SW/SD-3, SW/SD-4, SW/SD-5, N</p>' \u2014 no corresponding text 'Map Labels:' exists in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The surface water sample data (chemical concentrations and risk assessments for SW-1 through SW-5) appears both within the main map image (as callout boxes) and as separate HTML tables. This is the same content rendered as an embedded image AND as parallel tables.",
+      "severity": "major",
+      "evidence": "HTML has <img alt='Main map background showing Southside Park Landfill and sampling locations'> which contains the callout data, AND five separate <table> elements (SW-1 through SW-5) reproducing the identical data (e.g., SW-3 Tetrachloroethene 12, Copper 5.86, CR 1.6E-07, HI 0.091).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Multiple images have generic placeholder alt text that adds no meaningful information, including 'Map feature symbol', 'Additional map marker', 'Legend icon for sampling locations', 'Legend icon for map features', 'Iconographic overlay on map', 'Sampling location indicator on the map', and 'Map marker indicating a sampling location'.",
+      "severity": "minor",
+      "evidence": "HTML alt texts: 'Map feature symbol', 'Additional map marker', 'Legend icon for sampling locations', 'Legend icon for map features', 'Iconographic overlay on map' \u2014 these are generic placeholders per C6 criteria.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Risk Assessment data is mixed into the same table as chemical concentration data, with 'Risk Assessment' appearing as a data row with an empty value cell rather than as a sub-header or separator. CR and HI labels include trailing colons in the Parameter column, treating them inconsistently with chemical parameter rows.",
+      "severity": "major",
+      "evidence": "HTML: '<tr><td><u>Risk Assessment</u></td><td></td></tr><tr><td>CR:</td><td>2.4E-08</td></tr>' \u2014 In the PDF, 'Risk Assessment' is a visually distinct underlined sub-heading, not a table row with an empty data cell.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 102.31,
+    "page_count": 1,
+    "visual_input_tokens": 4178,
+    "visual_output_tokens": 1487,
+    "content_input_tokens": 8177,
+    "content_output_tokens": 2798,
+    "triage_input_tokens": 9682,
+    "triage_output_tokens": 60,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:20:06.881725",
+    "auditor_version": "1.0.0"
+  }
+}

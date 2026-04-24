@@ -1,0 +1,33 @@
+{
+  "document_id": "PFAS_Data_Synthesis_Support_STEP_Initiative_2022",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "Two email hyperlinks present in the PDF (DEQInternships@ncdenr.gov) lost their href attributes in the HTML and appear as plain text.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows 'DEQInternships@ncdenr.gov' as a clickable hyperlink in two places (application instructions and bottom contact). In HTML, the first instance is bare text inside a <li> and the second is wrapped only in <u> with no <a href>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 78.36,
+    "page_count": 3,
+    "visual_input_tokens": 10774,
+    "visual_output_tokens": 1253,
+    "content_input_tokens": 10415,
+    "content_output_tokens": 1905,
+    "triage_input_tokens": 12276,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:16:10.908290",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "document_id": "tVolkswagen_Settlement_Community_&_Destination_ZEV_Charging_RFP_Webinar_Slides",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'community and destination zev infrastructure program' (6x); 'daq grant management system (gms)' (5x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V2",
+      "description": "DC Fast Funding Levels table lost the spanning header row 'Reimbursement Amount (Per Port)' which provided critical 'per port' context for all dollar amounts in the table. The hierarchical merged header structure was flattened into individual column headers.",
+      "severity": "major",
+      "evidence": "PDF shows a merged header 'Reimbursement Amount (Per Port)' spanning across both Government-Owned and Non-Government-Owned Property columns. HTML replaces this with individual column headers like 'Government-Owned Property Maximum Amount' without the 'Per Port' qualifier.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "Level 2 Add On Funding Levels table column header text changed from 'Or (whichever is less)' to 'Condition', losing the descriptive meaning of the column.",
+      "severity": "major",
+      "evidence": "PDF table header reads 'Or (whichever is less)' for the column between 'Maximum Amount per Charging Port' and 'Maximum % of Total Project Costs'. HTML renders this column header as 'Condition' instead.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The Level 2 Add On Funding Levels table in the HTML uses a fabricated column header 'Condition' that does not appear anywhere in the source PDF. The PDF uses the phrase 'Or (whichever is less)' as the in-table label connecting the amount and percentage columns.",
+      "severity": "critical",
+      "evidence": "HTML: <th scope=\"col\">Condition</th> with cell values 'or'. PDF page 10: the column between amount and percentage reads 'Or (whichever is less)'. The word 'Condition' is not in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "DC Fast Funding Levels table structure is significantly altered. The PDF has a spanning header row 'Reimbursement Amount (Per Port)' above the Government/Non-Government group headers, with merged cells for 'Or (whichever is less)' spanning rows. The HTML decomposes these into individual columns with fabricated sub-header names not present in the PDF.",
+      "severity": "major",
+      "evidence": "PDF page 9 header: 'Reimbursement Amount (Per Port)' spanning columns. HTML headers: 'Government-Owned Property %', 'Government-Owned Property Condition', 'Government-Owned Property Maximum Amount', 'Non-Government-Owned Property %', 'Non-Government-Owned Property Condition', 'Non-Government-Owned Property Maximum Amount'. None of these sub-header labels appear in the PDF. The 'Reimbursement Amount (Per Port)' text is absent from HTML entirely.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The 'Where to get more information' link displays the URL 'https://deq.nc.gov/VW-Community-Destination' (matching the PDF) but the href points to an entirely different fabricated URL path.",
+      "severity": "critical",
+      "evidence": "HTML: <a href=\"https://www.deq.nc.gov/news/events/volkswagen-settlement-community-and-destination-zero-emission-vehicle-infrastructure-program\">https://deq.nc.gov/VW-Community-Destination</a>. PDF page 40 shows 'https://deq.nc.gov/VW-Community-Destination' as the URL. The href path '/news/events/volkswagen-settlement-community-and-destination-zero-emission-vehicle-infrastructure-program' differs from the displayed link.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 402.42,
+    "page_count": 40,
+    "visual_input_tokens": 105307,
+    "visual_output_tokens": 10289,
+    "content_input_tokens": 78067,
+    "content_output_tokens": 8746,
+    "triage_input_tokens": 74248,
+    "triage_output_tokens": 73,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:29:14.616215",
+    "auditor_version": "1.0.0"
+  }
+}

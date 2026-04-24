@@ -1,0 +1,81 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V1",
+      "description": "Cover page collage layout disrupted: one image from the photo collage appears as a separate standalone element below the main image grouping",
+      "severity": "major",
+      "evidence": "PDF: All photos are arranged within a single bordered collage frame on the cover page. HTML: One small image (showing a hand holding aquatic plant material) appears as a separate standalone image below the collage grid, outside the visual grouping of the other collage photos.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Five chart/graph figures from the PDF (Figures 1, 2, 7, 9, and 11) have no corresponding <img> tags in the HTML. Only their caption text is present. These are substantive bar/line charts showing survey site counts, hydrilla acreage trends, lyngbya acreage trends, and eel grass acreage trends.",
+      "severity": "minor",
+      "evidence": "PDF pages 10, 15, 17, and 19 contain Figures 1, 2, 7, 9, and 11 as bar/line charts. The HTML includes their caption text (e.g., '<p><strong>Figure 7.</strong> Estimated standing acreage (bars) and percent occurrence...') but no <img> tags are associated with these figures.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Two images in the HTML have generic and inaccurate alt text that does not describe the actual content.",
+      "severity": "minor",
+      "evidence": "HTML contains <img alt=\"Vector map/graph elements on Page 8\"> and <img alt=\"Vector map/graph elements on Page 9\">. These alt texts are generic placeholders that do not meaningfully describe what is in the images. 'Vector map/graph elements on Page 8' and 'Page 9' do not correspond to identifiable PDF figures.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Both Table 1 and Table 2 have their spanning titles rendered as regular data rows within <tbody> rather than as a proper spanning header or integrated into the caption. This creates extra rows with mostly empty cells.",
+      "severity": "major",
+      "evidence": "Table 1 has a tbody row: '<td><strong>LAKE GASTON AQUATIC PLANT COMMUNITY - 2023</strong></td>' with 4 empty <td> siblings. Table 2 has: '<td><strong>LAKE GASTON HYDRILLA TUBER BANK ESTIMATES</strong></td>' with 7 empty <td> siblings. In the PDF, these are spanning table titles.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Table 2 section header rows ('East of Easton's Ferry Bridge' and 'West of Easton's Ferry Bridge') are rendered as regular data rows with empty cells instead of spanning sub-header rows.",
+      "severity": "major",
+      "evidence": "HTML: '<td><strong><em>East of Easton's Ferry Bridge</em></strong></td>' followed by 7 empty <td>s. In the PDF, these are spanning section dividers within the table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Two unidentified images ('Vector map/graph elements on Page 8' and 'Vector map/graph elements on Page 9') are inserted into the HTML body between the References section and the Tables, at positions that don't correspond to any figure placement in the PDF. These appear to be extraneous image artifacts that duplicate or misrepresent content.",
+      "severity": "major",
+      "evidence": "HTML places <figure><img alt=\"Vector map/graph elements on Page 8\"> immediately before Table 1, and <figure><img alt=\"Vector map/graph elements on Page 9\"> immediately before Table 2. The PDF has no figures at those positions (PDF pages 8-9 contain only the tables).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 309.66,
+    "page_count": 20,
+    "visual_input_tokens": 62467,
+    "visual_output_tokens": 7987,
+    "content_input_tokens": 50966,
+    "content_output_tokens": 7590,
+    "triage_input_tokens": 45273,
+    "triage_output_tokens": 86,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:12:13.510489",
+    "auditor_version": "1.0.0"
+  }
+}

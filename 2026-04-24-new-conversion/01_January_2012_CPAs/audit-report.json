@@ -1,0 +1,41 @@
+{
+  "document_id": "01_January_2012_CPAs",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-page-has-heading-one",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  Page must have a level-one heading [<html lang=\"en\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "C2",
+      "description": "The first visible heading in the PDF ('DWQ January 2012 Civil Penalty Assessments') is not represented as a heading element in the HTML. It only appears as a <caption> inside the table, which is structurally equivalent to a paragraph demotion.",
+      "severity": "critical",
+      "evidence": "PDF: 'DWQ January 2012 Civil Penalty Assessments' is the largest, boldest text at the top of page 1, functioning as the document title. HTML: This text appears only as <caption>DWQ January 2012 Civil Penalty Assessments</caption> within the <table>; no <h1> or other heading element carries this title.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 87.39,
+    "page_count": 2,
+    "visual_input_tokens": 6616,
+    "visual_output_tokens": 1309,
+    "content_input_tokens": 14563,
+    "content_output_tokens": 2997,
+    "triage_input_tokens": 10452,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:01:26.673436",
+    "auditor_version": "1.0.0"
+  }
+}

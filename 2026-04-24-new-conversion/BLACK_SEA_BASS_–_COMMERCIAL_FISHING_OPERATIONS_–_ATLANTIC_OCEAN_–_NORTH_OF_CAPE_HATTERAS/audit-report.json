@@ -1,0 +1,65 @@
+{
+  "document_id": "BLACK_SEA_BASS_\u2013_COMMERCIAL_FISHING_OPERATIONS_\u2013_ATLANTIC_OCEAN_\u2013_NORTH_OF_CAPE_HATTERAS",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Header official names and titles are duplicated in the HTML. They appear once alongside the logo/seal image and again as separate text elements below, creating a reading-order disruption.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows ROY COOPER Governor, ELIZABETH S. BISER Secretary, KATHY B. RAWLS Director once in the letterhead. HTML renders them twice: once next to the logo and again as standalone text blocks below the inline footer.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "PDF page footer content is inserted inline in the HTML content flow between the letterhead area and the proclamation body, disrupting reading order.",
+      "severity": "major",
+      "evidence": "PDF page 1 footer ('State of North Carolina | Division of Marine Fisheries, 3441 Arendell Street\u2026') appears inline in the HTML between the header/logo section and the start of the proclamation text, rather than being removed or consolidated.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "PDF page footer content inserted inline between page-equivalent sections in the HTML, disrupting reading flow between Gear Restrictions and General Information.",
+      "severity": "major",
+      "evidence": "The footer text 'State of North Carolina | Division of Marine Fisheries\u2026' from the PDF page 2/3 boundary appears inline in the HTML between the end of Section III (Gear Restrictions) and the start of Section IV (General Information).",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A full-page-width image (612pt) is inserted mid-content between Section III (Gear Restrictions) and Section IV (General Information), corresponding to a PDF page break. This is a page-boundary artifact (likely a captured page footer/header graphic) that disrupts the reading flow of the HTML body.",
+      "severity": "major",
+      "evidence": "HTML contains: <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> placed between the closing </ol> of Section III and the <h2> for Section IV. No corresponding substantive image exists at this location in the PDF; this is a page break artifact.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The first image (NC Division of Marine Fisheries seal/logo) and the mid-content page-break artifact image both have empty alt=\"\" attributes. The state agency seal is a substantive organizational image and warrants descriptive alt text.",
+      "severity": "minor",
+      "evidence": "HTML: <img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 611.5pt; height: auto;\"/> \u2014 PDF shows the NC Division of Marine Fisheries bicentennial seal. Alt text should describe the seal, e.g., 'North Carolina Division of Marine Fisheries seal'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 183.46,
+    "page_count": 3,
+    "visual_input_tokens": 9798,
+    "visual_output_tokens": 5014,
+    "content_input_tokens": 13073,
+    "content_output_tokens": 3400,
+    "triage_input_tokens": 13475,
+    "triage_output_tokens": 73,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:11:08.403430",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "Tables A1 and A2 appear both as embedded images (<img> tags inside <figure> elements) AND as fully-rendered HTML <table> elements, creating content duplication. Three images appear before Table A1 and two images appear before Table A2, likely representing PDF page screenshots of the same tabular data.",
+      "severity": "major",
+      "evidence": "HTML contains 5 <figure><img> tags with alt=\"\" placed immediately before the HTML <table> for Table A1 (3 images) and Table A2 (2 images). The PDF contains these tables as native text data, not as standalone images. The same content is therefore rendered twice in the HTML.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Five embedded images have empty alt text (alt=\"\"), providing no description of the image content. While these appear to be redundant renderings of the tables, the alt text is generic/empty rather than descriptive (e.g., indicating they are page screenshots or marking them explicitly as decorative).",
+      "severity": "minor",
+      "evidence": "HTML: <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 792.0pt; height: auto;\"/></figure> appears 5 times. All have alt=\"\" which is a generic empty placeholder.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 108.73,
+    "page_count": 7,
+    "visual_input_tokens": 19950,
+    "visual_output_tokens": 1791,
+    "content_input_tokens": 28419,
+    "content_output_tokens": 2690,
+    "triage_input_tokens": 20105,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:14:43.373323",
+    "auditor_version": "1.0.0"
+  }
+}

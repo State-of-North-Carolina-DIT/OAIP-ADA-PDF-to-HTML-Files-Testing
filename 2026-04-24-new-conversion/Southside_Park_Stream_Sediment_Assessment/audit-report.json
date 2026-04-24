@@ -1,0 +1,57 @@
+{
+  "document_id": "Southside_Park_Stream_Sediment_Assessment",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C3b",
+      "description": "Risk Assessment sub-headers are duplicated across both columns of each sample table. In the PDF, 'Risk Assessment' is a single label/sub-header within each callout box. The HTML places '<strong>Risk Assessment</strong>' in both the analyte-name column and the mg/kg column, making it appear as if 'Risk Assessment' is a concentration value.",
+      "severity": "major",
+      "evidence": "HTML: <tr><td><strong>Risk Assessment</strong></td><td><strong>Risk Assessment</strong></td></tr> appears in all five tables. In the PDF, 'Risk Assessment' is a single sub-header line, not a two-column entry.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Multiple images use generic placeholder alt text that provides no meaningful description of what the marker represents or looks like.",
+      "severity": "minor",
+      "evidence": "HTML contains 8 images with alt text 'Sampling location map marker 1' through 'Sampling location map marker 9'. These are generic numbered labels akin to 'Map symbol' and do not describe the actual content or purpose of each marker image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text 'NC DEQ logo' may be inaccurate. The PDF figure appears to contain a consulting firm or project logo area, not necessarily an NC DEQ logo. The alt text may be fabricated or misidentified.",
+      "severity": "minor",
+      "evidence": "HTML: <img alt=\"NC DEQ logo\" .../>. The PDF figure header area contains a small graphic element whose identity as specifically an NC DEQ logo is not confirmed by the document text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "The sediment sample data from all five callout boxes (SD-1 through SD-5) appears both within the embedded map image and as separate HTML tables, constituting content duplication. The PDF presents this as a single integrated figure.",
+      "severity": "major",
+      "evidence": "HTML has <img alt='Main map showing Southside Park Landfill site, surface water, and sediment sample locations'> which visually contains all sample data boxes, AND five separate <table> elements reproducing the identical analyte concentrations and risk assessment values.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 164.81,
+    "page_count": 1,
+    "visual_input_tokens": 3954,
+    "visual_output_tokens": 2862,
+    "content_input_tokens": 8950,
+    "content_output_tokens": 4189,
+    "triage_input_tokens": 9704,
+    "triage_output_tokens": 101,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:22:32.194305",
+    "auditor_version": "1.0.0"
+  }
+}

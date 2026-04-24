@@ -1,0 +1,65 @@
+{
+  "document_id": "Lake-Tillery-Aquatic-Plant-Reporting",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Duke Energy logo missing from the partner organization logos grid on page 2",
+      "severity": "critical",
+      "evidence": "PDF page 2 shows a grid of partner logos including a prominent Duke Energy logo (first row, center). The corresponding HTML rendering lists many partner logos but the Duke Energy logo is absent from the group.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "NC DEQ logo missing from page 4 bottom-right area",
+      "severity": "critical",
+      "evidence": "PDF page 4 displays both the NC DEQ (green diamond) logo and the NC Wildlife Resources Commission logo at the bottom right. The HTML only shows the NC Wildlife Resources Commission logo; the NC DEQ logo is absent.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Two partner logos on PDF page 2 have fabricated/incorrect alt text. The PDF clearly shows 'LAKE WATEREE ASSOCIATION' and 'CATAWBA WATEREE WATER MANAGEMENT GROUP' logos, but the HTML describes two images as 'Belmont North Carolina logo' and 'Gastonia logo' instead. Neither 'Belmont' nor 'Gastonia' appears anywhere in the PDF.",
+      "severity": "minor",
+      "evidence": "HTML: <img alt=\"Belmont North Carolina logo\" ...> and <img alt=\"Gastonia logo\" ...>. PDF page 2 bottom row logos show 'LAKE WATEREE ASSOCIATION' and 'CATAWBA WATEREE WATER MANAGEMENT GROUP' in those positions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The URL 'duke-energy.com/AquaticPlants' appears as plain text in the HTML in two places (section 3 paragraph and section 4 bullet item) without being wrapped in an <a href> tag, despite being presented as a styled/linked URL in the PDF.",
+      "severity": "major",
+      "evidence": "HTML Section 3: <p>duke-energy.com/AquaticPlants</p>; HTML Section 4: <li>...duke-energy.com/AquaticPlants</li>. PDF pages 3 and 4 show this URL as colored/underlined text indicating a hyperlink.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "Email addresses 'AquaticPlants@duke-energy.com' and 'LakeServices@duke-energy.com' appear as plain text in the HTML without being wrapped in <a href='mailto:'> tags, despite being presented as styled/linked contact addresses in the PDF.",
+      "severity": "major",
+      "evidence": "HTML Section 6: plain text 'AquaticPlants@duke-energy.com' and 'LakeServices@duke-energy.com'. PDF page 6 presents these as prominently colored contact links.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 241.93,
+    "page_count": 6,
+    "visual_input_tokens": 20472,
+    "visual_output_tokens": 4167,
+    "content_input_tokens": 14587,
+    "content_output_tokens": 7581,
+    "triage_input_tokens": 16849,
+    "triage_output_tokens": 73,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:17:34.890391",
+    "auditor_version": "1.0.0"
+  }
+}
