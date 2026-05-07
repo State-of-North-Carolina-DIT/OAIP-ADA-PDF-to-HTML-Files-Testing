@@ -1,0 +1,24 @@
+{
+  "document_id": "01_NRHM_Meeting_Agenda_052708",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 60.96,
+    "page_count": 1,
+    "visual_input_tokens": 4690,
+    "visual_output_tokens": 1398,
+    "content_input_tokens": 5815,
+    "content_output_tokens": 1155,
+    "triage_input_tokens": 3878,
+    "triage_output_tokens": 34,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-23T22:03:34.238325",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'legend: reservoir node, demand node, junction node, flow arc, withdrawal arc, ww...' (7x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram of Major Nodes in the Upper Cape Fear Basin is missing. The visual diagram with reservoir nodes (red triangles), demand nodes (blue squares), junction nodes (yellow circles), and connecting arcs is replaced by a text-only description of the legend, nodes/features, and notes.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a full visual flow chart diagram with shapes and arrows showing connectivity between Reidsville Dam, Lake Brandt, Lake Townsend, Greensboro Demand, Burlington Demand, etc. HTML renders only textual descriptions: 'Legend:', 'Nodes and Features:', 'Notes:' without the diagram image.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram of Major Nodes in the Middle Cape Fear Basin is missing. The visual diagram showing OWASA, Jordan Lake, Harris Lake, Pittsboro Demand and their connections is replaced by text-only descriptions.",
+      "severity": "critical",
+      "evidence": "PDF page 11 shows a full visual flow chart with reservoir/demand/junction nodes and flow arcs. HTML renders only textual legend, nodes/features list, and notes without the diagram image.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram of Major Nodes on the Deep River is missing. The visual diagram showing High Point Reservoir, Randleman Reservoir, Siler City reservoirs and their connections is replaced by text-only descriptions.",
+      "severity": "critical",
+      "evidence": "PDF page 12 shows a full visual flow chart diagram with shapes and arrows. HTML renders only textual legend, nodes/features list, and notes without the diagram image.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram of Major Nodes in the Lower Cape Fear Basin is missing. The visual diagram showing Fayetteville Demand, Glenville Reservoir, Wilmington demands, and their connections is replaced by text-only descriptions.",
+      "severity": "critical",
+      "evidence": "PDF page 13 shows a full visual flow chart diagram. HTML renders only textual legend and nodes/features list without the diagram image.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram of Major Nodes in the Upper Neuse Basin is missing. The visual diagram showing West Fork Eno Reservoir, Falls Lake, Beaverdam Lake, Durham Demand, Raleigh Demand and their connections is replaced by text-only descriptions.",
+      "severity": "critical",
+      "evidence": "PDF page 14 shows a full visual flow chart diagram with detailed annotations. HTML renders only textual legend, nodes/features, and notes without the diagram image.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram of Major Nodes in the Middle Neuse Basin is missing. The visual diagram showing Crabtree Creek, Lake Wheeler, Lake Benson, Goldsboro Demand and their connections is replaced by text-only descriptions.",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows a full visual flow chart diagram. HTML renders only textual legend, nodes/features, and notes without the diagram image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Chart diagram of Major Nodes in the Lower Neuse Basin is missing. The visual diagram showing Buckhorn Reservoir, Contentnea Creek, Wilson Demand, Neuse Kinston Gage and their connections is replaced by text-only descriptions.",
+      "severity": "critical",
+      "evidence": "PDF page 16 shows a full visual flow chart diagram. HTML renders only textual legend, nodes/features, and notes without the diagram image.",
+      "page": 16,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 7,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 179.65,
+    "page_count": 18,
+    "visual_input_tokens": 53312,
+    "visual_output_tokens": 4261,
+    "content_input_tokens": 45214,
+    "content_output_tokens": 4033,
+    "triage_input_tokens": 41905,
+    "triage_output_tokens": 99,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:01:11.047195",
+    "auditor_version": "1.0.0"
+  }
+}

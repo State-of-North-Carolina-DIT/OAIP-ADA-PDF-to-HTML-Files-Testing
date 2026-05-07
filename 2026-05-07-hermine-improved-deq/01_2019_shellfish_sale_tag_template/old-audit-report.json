@@ -1,0 +1,33 @@
+{
+  "document_id": "01_2019_shellfish_sale_tag_template",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The PDF contains an annotated diagram of a shellstock sale tag \u2014 a bordered box with arrows pointing from explanatory callout text to specific tag fields. This substantive diagram (showing the physical format of a required tag with spatial relationships between annotations and tag elements) is completely absent in the HTML. The arrows, box borders, and visual spatial layout are all lost.",
+      "severity": "critical",
+      "evidence": "PDF shows a central bordered 'SALE TAG' with arrows connecting left-side callouts (e.g., 'Harvest Date; may be mo/dy/yr\u2026', '90 Day tag retention notice') and right-side callouts (e.g., 'Dealer Name, Address, & Certification Number', 'Type of shellfish\u2026') to specific fields on the tag. HTML renders all text content linearly without any diagram, borders, or arrows.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 137.23,
+    "page_count": 1,
+    "visual_input_tokens": 4758,
+    "visual_output_tokens": 3303,
+    "content_input_tokens": 6934,
+    "content_output_tokens": 2346,
+    "triage_input_tokens": 5081,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T21:57:34.870451",
+    "auditor_version": "1.0.0"
+  }
+}

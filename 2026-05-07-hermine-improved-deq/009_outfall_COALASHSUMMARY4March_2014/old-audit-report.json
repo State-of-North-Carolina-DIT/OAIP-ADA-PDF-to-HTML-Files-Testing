@@ -1,0 +1,24 @@
+{
+  "document_id": "009_outfall_COALASHSUMMARY4March_2014",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 338.28,
+    "page_count": 1,
+    "visual_input_tokens": 4330,
+    "visual_output_tokens": 12066,
+    "content_input_tokens": 13090,
+    "content_output_tokens": 6299,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T21:56:15.143681",
+    "auditor_version": "1.0.0"
+  }
+}

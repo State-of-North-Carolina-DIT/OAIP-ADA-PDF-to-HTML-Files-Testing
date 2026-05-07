@@ -1,0 +1,113 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018_2",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "The \"Why Need River Basin Plans\" slide is rendered as a full slide image AND its text content (bullet points for Sustainable management, Reliable quantitative methods, Objective management) is also rendered as HTML text below the image, creating duplicate content.",
+      "severity": "major",
+      "evidence": "PDF page 2 has a single slide. HTML shows the entire slide as an image followed by the same bullet points as HTML text underneath.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The Process Components flow chart diagram is rendered as a full slide image AND the same hierarchy of components (Hydrologic Model, River Basin Water Resources Plan, Historical Flows, Operation Guidelines, Water Use, Evaluation Criteria, etc.) is duplicated as a bulleted HTML text list below the image.",
+      "severity": "major",
+      "evidence": "PDF page 4 shows a single diagram. HTML shows the diagram image AND a full bullet list repeating all labels from the diagram.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The Evaluation Criteria photo collage slide image (containing text 'How often?' and 'What's the chance?') is rendered as an image AND the same text is separately rendered as HTML text above the image.",
+      "severity": "major",
+      "evidence": "PDF page 12 shows the text only within the photo collage. HTML renders 'How often?' and 'What's the chance?' as separate text elements AND in the image.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Flow Regime Changes bar chart ('Stream Condition Middle Deep River Node 280, June - November') showing multi-colored bars for Unimpaired, 2003, 2030, and 2050 Demands across multiple QAA flow-level categories is entirely missing from the HTML. It is replaced by a simplified flat table that does not convey the visual distribution of the data.",
+      "severity": "critical",
+      "evidence": "PDF page 15 has a detailed multi-colored bar chart with 9 flow-level categories across 4 scenarios. HTML has only a single-row table listing the categories as text, losing all visual information.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Table 4-3 (Water Supply Demand & Deficits) appears both as the original slide image AND as a separately rendered HTML table with the same data, duplicating the content.",
+      "severity": "major",
+      "evidence": "PDF page 16 shows the table once. HTML shows the table as a slide image AND again as a fully rendered HTML table below it.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Project Organization Venn diagram showing three overlapping circles (Data Collection/HDR, Model Development/HydroLogics, Data Model Evaluation & Plan Development/NCDWR) is completely missing from the HTML, replaced only by a bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 19 has a Venn diagram graphic with three overlapping colored circles. HTML has only bullet-point text with no diagram image.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The Model Development Tasks slide is partially rendered as a slide image (showing purple italic 'Task 2 - OASIS Application Development' and 'Task 4 - Deliverables') AND the same task list is rendered as HTML text, creating duplicate overlapping content.",
+      "severity": "major",
+      "evidence": "PDF page 20 shows the tasks once. HTML shows fragments of the slide image alongside the full text rendition of the same tasks.",
+      "page": 20,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Supply Deficits table from PDF page 16 appears BOTH as an embedded image (<img alt=\"Table showing Water Supply Demand and Deficits\">) AND as a separate HTML <table> with the same data. This is real content duplication.",
+      "severity": "major",
+      "evidence": "HTML contains: <figure><img alt=\"Table showing Water Supply Demand and Deficits\" ...></figure> immediately followed by <table><caption>Table 4-3: Water Supply Demand & Deficits...</caption>...</table> with identical data rows for Orange-Alamance, Hillsborough, Piedmont Minerals, Raleigh, Durham, SGWASA.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The Flow Regime Changes bar chart (PDF page 15) is converted to a table with a corrupted structure. Instead of meaningful rows and columns mapping scenarios to flow-level percentages, all Y-axis tick labels are dumped into one cell, all scenario names into another, and all legend categories into a third cell in a single row.",
+      "severity": "major",
+      "evidence": "HTML table row contains: '<td>35.0%, 30.0%, 25.0%, 20.0%, 15.0%, 10.0%, 5.0%, 0.0%</td><td>Unimpaired, 2003 Demands, 2030 Demands, 2050 Demands</td><td>< 10% of QAA*,...</td>'. The PDF chart shows distinct bars for each scenario at each flow level category \u2014 this relationship is completely lost.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The URL on the final slide (PDF page 23) for the Division of Water Resources appears as plain text in the HTML rather than being wrapped in an <a href> tag.",
+      "severity": "major",
+      "evidence": "HTML: '<p>https://deq.nc.gov/about/divisions/water-resources/</p>' \u2014 no anchor tag wrapping this URL.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for Task 2 and Task 4 images is generic and non-descriptive. These images represent highlighted/italicized purple text headings in the PDF, not banners.",
+      "severity": "minor",
+      "evidence": "HTML: alt=\"Highlight banner for Task 2\" and alt=\"Highlight banner for Task 4\". In the PDF, these are purple italic text reading 'Task 2 - OASIS Application Development' and 'Task 4 \u2013 Deliverables'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 8,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 270.33,
+    "page_count": 23,
+    "visual_input_tokens": 72842,
+    "visual_output_tokens": 6915,
+    "content_input_tokens": 45697,
+    "content_output_tokens": 4893,
+    "triage_input_tokens": 45749,
+    "triage_output_tokens": 206,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:07:53.199039",
+    "auditor_version": "1.0.0"
+  }
+}

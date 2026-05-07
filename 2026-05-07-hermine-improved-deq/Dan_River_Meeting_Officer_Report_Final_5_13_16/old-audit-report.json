@@ -1,0 +1,24 @@
+{
+  "document_id": "Dan_River_Meeting_Officer_Report_Final_5_13_16",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 87.59,
+    "page_count": 4,
+    "visual_input_tokens": 13918,
+    "visual_output_tokens": 1159,
+    "content_input_tokens": 14421,
+    "content_output_tokens": 2645,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:12:22.749598",
+    "auditor_version": "1.0.0"
+  }
+}

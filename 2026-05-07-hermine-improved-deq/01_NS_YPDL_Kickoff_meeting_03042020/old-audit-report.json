@@ -1,0 +1,137 @@
+{
+  "document_id": "01_NS_YPDL_Kickoff_meeting_03042020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components' (4x); 'process components evaluation criteria' (4x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Gear cycle diagram (Basin Plan / Basin Model / Water Resources Management) and concentric circles diagram (Water Resources Management > Integrated Basin Plan > HYDROLOGIC MODEL) are missing from the HTML and replaced with plain text descriptions.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows two substantive diagrams: interlocking gears showing the cycle of Basin Plan, Basin Model, and Water Resources Management, and concentric circles showing the nested relationship. HTML renders only text: 'Process relationships: Basin Plan, Basin Model, and Water Resources Management are interconnected.' and 'Water Resources Management contains the Integrated Basin Plan, which contains the HYDROLOGIC MODEL.'",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Hierarchical organizational chart showing Hydrologic Model process components is missing from the HTML, replaced with nested bullet lists.",
+      "severity": "critical",
+      "evidence": "PDF page 6 shows a visual tree-structure chart with 'Hydrologic Model' at top branching to Historical Flows, Operation Guidelines, Water Use (with four sub-branches), and Evaluation Criteria. HTML renders this as nested bullet points without the chart image.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Water Use organizational sub-chart on the left side of the slide is missing as an image in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 9 shows a visual tree diagram for Water Use: Users/Systems branching into four sub-boxes (Local Water Supply Plans, Self-supplied Industry, Agriculture, Other Registered Withdrawers). HTML renders this as a flat bullet list without the diagram.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Detailed water use map showing locations across Rowan, Cabarrus, Stanly, and Montgomery counties is completely missing and replaced with alt-text rendered as visible body text.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a detailed color-coded geographic map with wells, reservoirs, water infrastructure, and county boundaries. HTML contains only a text paragraph: 'Map showing water use locations and infrastructure across Rowan, Cabarrus, Stanly, and Montgomery counties. Key locations marked include China Grove, Faith, Rockwell\u2026'",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Bar chart 'Stream Condition Middle Deep River (Node 280)' is missing from HTML, replaced with a text listing of QAA categories without data values.",
+      "severity": "critical",
+      "evidence": "PDF page 17 shows a detailed grouped bar chart with % of Days at Flow Level across Unimpaired, 2003, 2030, and 2050 Demand scenarios with nine QAA flow-level categories. HTML only lists the category names (< 10% of QAA*, 10-20% of QAA, etc.) as bullet points without any chart image or data values.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Venn diagram showing project organization with three overlapping circles is missing from HTML, replaced with text labels.",
+      "severity": "critical",
+      "evidence": "PDF page 21 shows a Venn diagram with three overlapping circles: Data Coordination (HDR), Model Development/Data Process (HydroLogics Team, Hazen and Sawyer), and Data, Model Evaluation & Plan Development (NCDWR). HTML shows only three text lines with labels and no diagram image, losing the visual representation of overlapping responsibilities.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "On the Model Development Tasks page, slide image text for Tasks 2-5 appears as an overlapping image alongside the HTML text rendition of the same content, creating visual duplication and disrupted reading flow.",
+      "severity": "major",
+      "evidence": "HTML for page 22 area shows the 'Task 2 - OASIS Application Development' and 'Task 3 - Organize and Conduct Meetings' text appearing as both a slide image and as HTML text, with the image partially overlapping the text content below it.",
+      "page": 22,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated body-text sentence describing the gear diagram on PDF page 3. This sentence does not appear anywhere in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains: '<p><strong>Process relationships:</strong> Basin Plan, Basin Model, and Water Resources Management are interconnected.</p>' \u2014 The PDF page 3 shows an interlocking gear diagram with these labels but has no such descriptive sentence in its text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated body-text sentence describing the concentric-circles diagram on PDF page 3. This sentence is not in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains: '<p><strong>Water Resources Management</strong> contains the <strong>Integrated Basin Plan</strong>, which contains the <strong>HYDROLOGIC MODEL</strong>.</p>' \u2014 The PDF conveys this via a nested-circle diagram, but no such sentence appears in the PDF text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated paragraph describing the water-use map from PDF page 10. The individual place names come from map labels, but the narrative sentence structure is not in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML contains: '<p>Map showing water use locations and infrastructure across Rowan, Cabarrus, Stanly, and Montgomery counties. Key locations marked include China Grove, Faith, Rockwell, Handy SD, Concord, Albemarle, Troy, Biscoe, Candor, Mt Gilead, Norwood, Oakboro, Lake Tillery, Tuckertown Reservoir, Narrows Reservoir/Badin L, Dutch Buffalo Creek, Lake Fisher/Coldwater Crk, Black Run Crk Reservior, and Mt. Pleasant.</p>' \u2014 No such paragraph exists in the PDF. Additionally, map labels such as 'Denton', 'Star', 'Pfeiffer-N.Stanl', and 'Stanley Co.' are omitted.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated introductory label 'Categories:' not present in the PDF, used to introduce x-axis labels from the bar chart on page 17.",
+      "severity": "critical",
+      "evidence": "HTML: '<p>Categories: Unimpaired, 2003 Demands, 2030 Demands, 2050 Demands</p>' \u2014 The PDF chart uses these as x-axis labels but never includes the word 'Categories:' as text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Water-use map from PDF page 10 (showing Rowan, Cabarrus, Stanly, Montgomery counties with intake locations, connections, and color-coded regions) is missing \u2014 no <img> tag present; replaced with fabricated text paragraph.",
+      "severity": "minor",
+      "evidence": "PDF page 10 is a full-page map. HTML section for 'Water Use' has no <img> tag for this map.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Venn diagram from PDF page 21 (Project Organization showing overlapping circles for HDR, HydroLogics/Hazen and Sawyer, and NCDWR) is missing \u2014 no <img> tag present.",
+      "severity": "minor",
+      "evidence": "PDF page 21 shows a three-circle Venn diagram. HTML converts the content to three <p> tags but has no <img> for the diagram.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 10,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 374.96,
+    "page_count": 24,
+    "visual_input_tokens": 75944,
+    "visual_output_tokens": 7614,
+    "content_input_tokens": 48833,
+    "content_output_tokens": 10041,
+    "triage_input_tokens": 48088,
+    "triage_output_tokens": 177,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:09:59.165182",
+    "auditor_version": "1.0.0"
+  }
+}

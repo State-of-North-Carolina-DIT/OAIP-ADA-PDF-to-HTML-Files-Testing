@@ -1,0 +1,41 @@
+{
+  "document_id": "CCR_Dam_Rules_09042018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C4b",
+      "description": "Multiple hyperlinked URLs and email addresses from PDF page 8 appear as plain text in the HTML without <a href> wrapping.",
+      "severity": "major",
+      "evidence": "PDF page 8 shows clickable hyperlinks for: 'https://deq.nc.gov/documents/15a-ncac-02k-0224-additional-requirements-dams-impound-coal-combustion-residual', 'Andrew.brooks@ncdenr.gov', and 'daniel.kang@ncdenr.gov'. All three appear as plain text in the HTML with no <a> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "One image has empty alt text (alt=\"\") but based on its full-page width (792.2pt) it may correspond to the city skyline banner from page 1, which is a substantive photograph rather than a purely decorative element.",
+      "severity": "minor",
+      "evidence": "HTML: <img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 792.2pt; height: auto;\"/> \u2014 PDF page 1 bottom shows a panoramic city skyline photograph that is substantive content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 102.38,
+    "page_count": 8,
+    "visual_input_tokens": 21198,
+    "visual_output_tokens": 1909,
+    "content_input_tokens": 17703,
+    "content_output_tokens": 2661,
+    "triage_input_tokens": 19915,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:12:23.327210",
+    "auditor_version": "1.0.0"
+  }
+}

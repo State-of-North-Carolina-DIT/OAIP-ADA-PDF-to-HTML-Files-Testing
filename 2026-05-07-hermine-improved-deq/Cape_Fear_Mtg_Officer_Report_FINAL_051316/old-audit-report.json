@@ -1,0 +1,41 @@
+{
+  "document_id": "Cape_Fear_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections in the HTML disrupts reading order. Officials' names (PAT McCRORY/Governor, DONALD R. VAN DER VAART/Secretary, TRACY DAVIS/Director), footer address blocks, and colored divider bars appear inline between content sections throughout the continuous HTML document.",
+      "severity": "major",
+      "evidence": "In HTML chunk 1, the officials' names appear twice: first at the top (matching PDF letterhead position) and again after a footer block and color bar, before the MEMORANDUM heading. Similar footer text and color bars separate content corresponding to PDF page boundaries across all HTML chunks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A full-width page-break artifact image (likely a footer bar/stripe from the PDF page boundary) is inserted mid-content between the document outline and Section I, breaking reading flow. This is a PDF page element that should not appear in the HTML body.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> between the outline <ol> and the <h2>I. History/Background</h2> heading. This image does not correspond to any substantive content in the PDF; it is a page-transition artifact.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 208.12,
+    "page_count": 4,
+    "visual_input_tokens": 13424,
+    "visual_output_tokens": 5709,
+    "content_input_tokens": 13455,
+    "content_output_tokens": 2915,
+    "triage_input_tokens": 14405,
+    "triage_output_tokens": 680,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-23T22:13:27.286593",
+    "auditor_version": "1.0.0"
+  }
+}

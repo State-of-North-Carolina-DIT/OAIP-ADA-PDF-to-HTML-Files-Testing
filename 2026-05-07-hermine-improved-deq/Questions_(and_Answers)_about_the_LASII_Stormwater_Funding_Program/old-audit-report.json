@@ -1,0 +1,33 @@
+{
+  "document_id": "Questions_(and_Answers)_about_the_LASII_Stormwater_Funding_Program",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "The footnote hyperlink for 'Levee Terms & Definitions (army.mil)' lost its href. In the PDF (page 4 footnote), this text is a clickable hyperlink. In the HTML, it is rendered as underlined plain text (<u>) inside the footer with no <a href> tag, so the destination URL is lost.",
+      "severity": "critical",
+      "evidence": "PDF footnote 1: 'Levee Terms & Definitions (army.mil)' appears as a blue/underlined hyperlink. HTML: '<u>Levee Terms &amp; Definitions (army.mil)</u>' \u2014 no <a> wrapper, href is absent.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 106.82,
+    "page_count": 5,
+    "visual_input_tokens": 16964,
+    "visual_output_tokens": 2196,
+    "content_input_tokens": 18332,
+    "content_output_tokens": 2369,
+    "triage_input_tokens": 14213,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:18:14.987585",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "David Miller's signature block is duplicated: the signature image contains 'Sincerely,' plus the handwritten signature plus 'David Miller, PE / State Mining Engineer' as printed text, and those same elements are also rendered as separate HTML text immediately below the image.",
+      "severity": "major",
+      "evidence": "PDF shows one 'Sincerely,' followed by signature and typed name/title. HTML shows 'Sincerely,' as text, then an image containing 'Sincerely,' + signature + 'David Miller, PE / State Mining Engineer', then 'David Miller, PE' and 'State Mining Engineer' repeated again as HTML text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Brian Wrenn's signature block is duplicated: the signature image includes 'Brian Wrenn,' text and surrounding context text fragments ('t and General Counsel, Department of Enviro\u2026', 'aleigh, NC 27699-1601.'), and those items are also rendered as HTML text alongside the image.",
+      "severity": "major",
+      "evidence": "PDF shows Brian Wrenn's signature once with typed name/title below. HTML shows a signature image containing 'Brian Wrenn,' plus surrounding text fragments, then 'Brian Wrenn,' / 'Director' / 'Division of Energy, Mineral, and Land Resources' / 'North Carolina Department of Environmental Quality' repeated as HTML text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Brenda Harris's signature block is duplicated: the signature image includes handwritten date '12-15-2020', signature, and 'Brenda Harris / Mining Program Administrative Assistant' text, and those items are also rendered as HTML text below the image.",
+      "severity": "major",
+      "evidence": "PDF shows handwritten mailing date, Brenda Harris signature, and printed name/title once. HTML shows image containing these plus 'Brenda Harris' and 'Mining Program Administrative Assistant' repeated as separate HTML text.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 119.53,
+    "page_count": 2,
+    "visual_input_tokens": 7880,
+    "visual_output_tokens": 3203,
+    "content_input_tokens": 7780,
+    "content_output_tokens": 2085,
+    "triage_input_tokens": 10207,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T21:52:35.927234",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "document_id": "Buck_Meeting_Officer_Report_Final_5_13_16_00000002",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "A large full-width image (598.3pt wide, approximately full US-Letter page width) is embedded in the HTML body between the outline listing and Section I. This likely represents a full-page embedded rendering of PDF page 1, duplicating content that already appears as HTML text immediately above it (the memo header, date, To/From/Subject, introductory paragraphs, and outline).",
+      "severity": "major",
+      "evidence": "HTML: <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 598.3pt; height: auto;\"/></figure> appears directly after the outline text ('I. History/Background \u2026 IV. Attachments') and before the <h2> for Section I. No corresponding standalone image exists at that position in the PDF.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image in the HTML has empty alt text (alt=\"\"). If this is a substantive full-page embedded image of PDF page 1 (as its 598.3pt width suggests), the empty alt provides no information about its content.",
+      "severity": "minor",
+      "evidence": "HTML: <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 598.3pt; height: auto;\"/></figure>",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 199.59,
+    "page_count": 6,
+    "visual_input_tokens": 20016,
+    "visual_output_tokens": 3338,
+    "content_input_tokens": 19890,
+    "content_output_tokens": 5824,
+    "triage_input_tokens": 19630,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:12:25.731696",
+    "auditor_version": "1.0.0"
+  }
+}

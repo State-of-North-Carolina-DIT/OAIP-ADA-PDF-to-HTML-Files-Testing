@@ -1,0 +1,33 @@
+{
+  "document_id": "MayoMeetingOfficerReport_20160428",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C6",
+      "description": "The handwritten/cursive signature image of Elizabeth S. Werner visible on PDF page 1 (between the 'From:' line and the digital signature text block) has no corresponding <img> tag in the HTML. Signatures are substantive images.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a cursive signature reading approximately 'Elizabeth S Werner'. The HTML contains only two <img> tags: one for the NC DEQ logo and one for a decorative footer element. No <img> for the signature.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 154.49,
+    "page_count": 5,
+    "visual_input_tokens": 16964,
+    "visual_output_tokens": 2823,
+    "content_input_tokens": 16634,
+    "content_output_tokens": 3860,
+    "triage_input_tokens": 17004,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:16:28.160320",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "document_id": "2020-waccamaw-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "Table 1 data appears both as a full-page screenshot image AND as a separate HTML <table>. The 612pt-wide image with empty alt text placed immediately before the HTML table duplicates the same content.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> immediately followed by <table><caption><strong>Table 1.</strong>...</caption>. PDF page 5 contains only Table 1 data, so the 612pt-wide image is a page screenshot duplicating the table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 2 data appears both as a full-page screenshot image AND as a separate HTML <table>. The 612pt-wide image with empty alt text placed immediately before the HTML table duplicates the same content.",
+      "severity": "major",
+      "evidence": "HTML has <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> immediately followed by <table><caption><strong>Table 2.</strong>...</caption>. PDF page 10 contains only Table 2 data, so the 612pt-wide image is a page screenshot duplicating the table.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Two full-page-width images have empty alt text (alt=\"\"), providing no information about their content.",
+      "severity": "minor",
+      "evidence": "Two <img> tags with alt=\"\" and style=\"width: 612.0pt\": one after Map 2 and one after Map 5. These appear to be full-page screenshots of the table pages but have no descriptive alt text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 122.71,
+    "page_count": 10,
+    "visual_input_tokens": 31924,
+    "visual_output_tokens": 2695,
+    "content_input_tokens": 24614,
+    "content_output_tokens": 2507,
+    "triage_input_tokens": 21432,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:06:55.537182",
+    "auditor_version": "1.0.0"
+  }
+}

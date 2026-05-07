@@ -1,0 +1,24 @@
+{
+  "document_id": "2019-white-lake-sav-report",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 145.34,
+    "page_count": 9,
+    "visual_input_tokens": 29060,
+    "visual_output_tokens": 3091,
+    "content_input_tokens": 21783,
+    "content_output_tokens": 4245,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:07:03.847358",
+    "auditor_version": "1.0.0"
+  }
+}

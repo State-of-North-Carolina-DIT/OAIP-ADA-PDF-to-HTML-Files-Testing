@@ -1,0 +1,33 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The flowchart diagram in Appendix B showing the hierarchical relationships between record types (Environmental Data, Gear Data, Replicate Data, Species Data, Individual Data, Age Data, Tag Recapture Data) with boxes and connecting lines is missing from the HTML. It has been replaced by a nested bullet list.",
+      "severity": "critical",
+      "evidence": "PDF page 4 contains a visual flowchart with labeled boxes (e.g., 'Environmental Data Record Type 1', 'Replicate Data Record Type 2', etc.) connected by lines showing parent-child relationships. The HTML (pages 4-5) renders this as a nested unordered list instead of preserving the diagram as an image.",
+      "page": 4,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 275.39,
+    "page_count": 10,
+    "visual_input_tokens": 31669,
+    "visual_output_tokens": 2862,
+    "content_input_tokens": 32160,
+    "content_output_tokens": 10551,
+    "triage_input_tokens": 24912,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T21:56:28.566569",
+    "auditor_version": "1.0.0"
+  }
+}

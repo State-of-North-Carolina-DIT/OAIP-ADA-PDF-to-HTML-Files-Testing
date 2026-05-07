@@ -1,0 +1,24 @@
+{
+  "document_id": "IHSB_Annual_Land_Use_Restriction_Report_Form",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 67.22,
+    "page_count": 1,
+    "visual_input_tokens": 4758,
+    "visual_output_tokens": 1487,
+    "content_input_tokens": 6024,
+    "content_output_tokens": 1242,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:13:32.955934",
+    "auditor_version": "1.0.0"
+  }
+}

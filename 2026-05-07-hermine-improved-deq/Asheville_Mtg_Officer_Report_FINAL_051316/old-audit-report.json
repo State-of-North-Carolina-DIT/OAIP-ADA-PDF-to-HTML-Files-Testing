@@ -1,0 +1,49 @@
+{
+  "document_id": "Asheville_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections disrupts reading order. The letterhead information (PAT McCRORY Governor, DONALD R. VAN DER VAART Secretary, TRACY DAVIS Director, Energy Mineral & Land Resources) and the state footer (address, phone) appear inline as body text between content sections, duplicating the PDF's page-decoration elements within the reading flow.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows the letterhead header once at the top as page decoration. In the HTML (page 1), the state footer text ('State of North Carolina | Environmental Quality...') appears mid-page, followed by a colored bar, then the header info (PAT McCRORY Governor, etc.) is repeated as inline text content before the MEMORANDUM heading begins. A sighted reader encounters this duplicated header/footer content as if it were document body text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text from PDF page boundaries rendered inline within the HTML document body, disrupting the continuous reading flow between Section I/II content.",
+      "severity": "major",
+      "evidence": "At the boundary corresponding to PDF pages 2-3 in the HTML (visible at the bottom of HTML page 3), the state footer ('State of North Carolina | Environmental Quality | Energy, Mineral and Land Resources | 512 N. Salisbury Street...') and a colored decorative bar appear inline between the Section II oral comments content, interrupting the reading flow.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A full-page-width image (612pt) is inserted mid-content between the introductory MEMORANDUM section and the History/Background section. This likely represents a decorative page footer bar or full-page scan from PDF page 1, placed within the body flow rather than being omitted or placed in a footer.",
+      "severity": "major",
+      "evidence": "HTML: <figure><img alt=\"\" src=\"[embedded-image-removed]\" style=\"width: 612.0pt; height: auto;\"/></figure> appears between the closing </section> of the TOC and the <section> for 'I. History/Background'. No corresponding standalone substantive image exists at this position in the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 215.67,
+    "page_count": 5,
+    "visual_input_tokens": 16478,
+    "visual_output_tokens": 5395,
+    "content_input_tokens": 16260,
+    "content_output_tokens": 4281,
+    "triage_input_tokens": 16483,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:10:40.942806",
+    "auditor_version": "1.0.0"
+  }
+}

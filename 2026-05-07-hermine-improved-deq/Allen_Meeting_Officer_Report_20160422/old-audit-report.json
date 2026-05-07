@@ -1,0 +1,41 @@
+{
+  "document_id": "Allen_Meeting_Officer_Report_20160422",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Digital signature metadata surfaced as visible text in the HTML, disrupting reading order between the 'From' field and the 'Subject' field.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows 'From: Larry Frost, Engineer / Division of Waste Management / Solid Waste Section' followed directly by 'Subject: Meeting Officer's Report'. The HTML inserts 'Digitally signed by LYF / DN: cn=LYF, o=DWM, ou=SWS, email=larry.frost@ncdenr.gov, c=US / Date: 2016.05.12 12:11:52 -04'00'' between the From and Subject fields. This metadata is not visually rendered in the PDF.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The handwritten-style signature image visible next to the 'From: Larry Frost' line in the PDF is missing from the HTML. The digital signature metadata text is present, but the visual signature graphic has no corresponding <img> tag.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a handwritten signature image adjacent to the digital signature block. The HTML renders only the textual digital signature info ('Digitally signed by LYF / DN: cn=LYF, o=DWM...') without the signature graphic.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 137.57,
+    "page_count": 5,
+    "visual_input_tokens": 16905,
+    "visual_output_tokens": 1943,
+    "content_input_tokens": 16085,
+    "content_output_tokens": 4010,
+    "triage_input_tokens": 17002,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-04-23T22:09:06.141090",
+    "auditor_version": "1.0.0"
+  }
+}

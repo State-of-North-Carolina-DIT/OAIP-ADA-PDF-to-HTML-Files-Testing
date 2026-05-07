@@ -1,0 +1,57 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "The entire cover letter (PDF page 1) is duplicated in the HTML conversion. It appears first as a formatted version with the state seal, signature image, and DEQ logo, and then a second time as plain text (ROY COOPER / Governor through cc: NCGA Fiscal Research), forcing a reader to encounter the identical letter content twice.",
+      "severity": "major",
+      "evidence": "PDF page 1 contains the letter once. In HTML page 2, after the overlap/footer from page 1, the full letter text is repeated as plain text (headers ROY COOPER/Governor, ELIZABETH S. BISER/Secretary, etc., the full body, Sincerely, Kevin Hart, Enclosures, cc: NCGA Fiscal Research) before the title page content begins.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3a",
+      "description": "The Shallow Draft Navigation Channel Dredging Annual Report table from PDF page 3 contains approximately 37 data rows (dates, project names, cooperators, amounts, project types, and a total of $9,543,427.32). In the HTML, this entire table is rendered only as an <img> tag, not as an HTML <table>. All row data is lost from the structured, accessible text perspective.",
+      "severity": "critical",
+      "evidence": "PDF page 3 contains text-extractable table data starting with '7/14/2021 7956 Ocean Isle Beach / Ocean Isle / $420.00 / Channel Maintenance' through '6/27/2022 CW24993 Emerald Isle Boat Ramp / Emerald Isle / $60,000.00 / Channel Maintenance' plus a Total row. HTML renders this as: <img alt=\"Table showing Shallow Draft Navigation Channel Dredging Annual Report for FY 2021-2022\" src=\"[embedded-image-removed]\"/>",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "In the Project Cooperators table, 'Charlotte Stormwater Services' is incorrectly split across two rows. 'Charlotte' is appended to the Lake Norman cooperators row, while 'Stormwater Services and Duke Energy' appears for the Mountain Island Reservoir row. The PDF clearly attributes 'Charlotte Stormwater Services and Duke Energy' to Mountain Island Reservoir.",
+      "severity": "major",
+      "evidence": "PDF: Lake Norman cooperators = 'Lake Norman Marine Commission, Charlotte Water,' and Mountain Island Reservoir cooperators = 'Charlotte Stormwater Services and Duke Energy'. HTML: Lake Norman = 'Lake Norman Marine Commission, Charlotte Water, Charlotte' and Mountain Island Reservoir = 'Stormwater Services and Duke Energy'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Kevin Hart's handwritten signature image from PDF page 1 (between 'Sincerely,' and 'Kevin Hart') is missing from the HTML. No corresponding <img> tag exists for the signature.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a handwritten signature between 'Sincerely,' and 'Kevin Hart'. HTML only has text: '<p>Sincerely,</p><p>Kevin Hart</p>' with no signature image.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 324.61,
+    "page_count": 10,
+    "visual_input_tokens": 30600,
+    "visual_output_tokens": 4572,
+    "content_input_tokens": 35607,
+    "content_output_tokens": 10812,
+    "triage_input_tokens": 27688,
+    "triage_output_tokens": 136,
+    "triage_dropped": 1,
+    "timestamp": "2026-04-23T22:23:39.595938",
+    "auditor_version": "1.0.0"
+  }
+}
