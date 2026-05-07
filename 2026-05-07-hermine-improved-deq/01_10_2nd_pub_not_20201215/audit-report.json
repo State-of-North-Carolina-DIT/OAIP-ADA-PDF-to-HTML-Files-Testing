@@ -1,0 +1,49 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "David Miller's signature image includes 'Sincerely,' and 'David Miller, PE' text that is also rendered as separate HTML text, creating a duplicated reading of the same content.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows 'Sincerely,' once, signature once, 'David Miller, PE' once. HTML has an image containing 'Sincerely,' and 'David Miller, PE', plus separate HTML text repeating 'Sincerely,' above the image and 'David Miller, PE' / 'State Mining Engineer' below it.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Brian Wrenn's signature image captures surrounding paragraph text ('t and General Counsel, Department of Environmen' / 'aleigh, NC 27699-1601.') and 'Brian Wrenn,' which is also rendered as HTML text, creating duplication.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows the text and signature once. HTML shows an image containing partial paragraph text and 'Brian Wrenn,' plus the same content rendered again as HTML text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Brenda Harris's signature image includes the date '12-15-2020' and 'Brenda Harris' text that is also rendered as separate HTML text, creating duplication.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows the mailing date and signature once. HTML has an image containing '12-15-2020' and 'Brenda Harris' plus separate HTML text repeating 'This notice was mailed on 12-15-2020' and 'Brenda Harris' / 'Mining Program Administrative Assistant'.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 110.18,
+    "page_count": 2,
+    "visual_input_tokens": 7900,
+    "visual_output_tokens": 3244,
+    "content_input_tokens": 7877,
+    "content_output_tokens": 1913,
+    "triage_input_tokens": 10157,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:38:39.577552",
+    "auditor_version": "1.0.0"
+  }
+}

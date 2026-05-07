@@ -1,0 +1,57 @@
+{
+  "document_id": "Southside_Park_Landfill_Surface_Water_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "The map image in the HTML contains visible text (title 'SURFACE WATER ASSESSMENT', site info, notes, references, scale/date/project info) and the same content is repeated as HTML text below the image, creating reading-order duplication.",
+      "severity": "major",
+      "evidence": "PDF: Single integrated figure page with map, legend, notes, references, and title block. HTML: Map rendered as an image that still contains all that text, followed by a full HTML-text rendition of the same title, notes, references, scale, date, project number, and figure number below the image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "The primary analytical data of the figure \u2014 the five surface water sample result callouts (SW-1/DUP-6102025-SD, SW-2, SW-3, SW-4, SW-5) with contaminant concentrations and risk assessments \u2014 are present as text in the PDF but entirely absent from the HTML body. Only the embedded map image (which has been stripped) contains this data.",
+      "severity": "critical",
+      "evidence": "PDF contains text blocks such as 'SW-1/DUP-6102025-SD ug/L / Copper 4.69 / Lead 0.868 J / Risk Assessment CR: 2.4E-08 HI: 0.39', 'SW-3 ug/L / Tetrachloroethene 12 / Copper 5.86 / Risk Assessment CR: 1.6E-07 HI: 0.091', etc. None of these five data blocks appear anywhere in the HTML text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3a",
+      "description": "Five sample-result data tables (one per surface water location) present in the PDF are completely missing from the HTML. The HTML contains zero tables.",
+      "severity": "critical",
+      "evidence": "PDF has tabular data for SW-1 (2 analytes + risk), SW-2 (2 analytes + risk), SW-3 (2 analytes + risk), SW-4 (2 analytes + risk), SW-5 (2 analytes + risk). HTML has no <table> elements at all.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The NCDEQ ID number is missing one zero. The PDF has five zeros ('NONCD00000870') while the HTML has four zeros ('NONCD0000870').",
+      "severity": "major",
+      "evidence": "PDF: 'NCDEQ ID NO. NONCD00000870'; HTML: 'NCDEQ ID NO. NONCD0000870'",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 119.13,
+    "page_count": 1,
+    "visual_input_tokens": 4850,
+    "visual_output_tokens": 1736,
+    "content_input_tokens": 6493,
+    "content_output_tokens": 3411,
+    "triage_input_tokens": 8339,
+    "triage_output_tokens": 60,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:09:00.097833",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "document_id": "01_NS_YPDL_Kickoff_meeting_03042020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'evaluation criteria' (7x); 'hydrologic model' (4x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Gear-cycle diagram and concentric-circles diagram are missing from the HTML. The PDF shows a gear diagram illustrating the cyclical relationship among Basin Plan, Basin Model, and Water Resources Management, plus a concentric-circles graphic nesting Hydrologic Model inside Integrated Basin Plan inside Water Resources Management. The HTML renders these only as flat, disconnected text labels.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows two distinct diagrams (interlocking gears and nested circles with colored backgrounds). HTML shows only standalone text: 'Basin Plan', 'Basin Model', 'Water Resources Management', 'Integrated Basin Plan', 'HYDROLOGIC MODEL' without any diagram images.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Organizational hierarchy chart/diagram for the Hydrologic Model's process components is missing. The PDF shows a box-and-line tree diagram; the HTML renders the same information as a nested bullet list without the diagram image.",
+      "severity": "critical",
+      "evidence": "PDF page 6 shows a tree diagram with 'Hydrologic Model' at top branching to four boxes (Historical Flows, Operation Guidelines, Water Use, Evaluation Criteria) with Water Use further branching to four sub-boxes. HTML shows only nested bullet text.",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Geographic map of water use infrastructure across ROWAN, CABARRUS, STANLY, and MONTGOMERY counties is missing. Location names from the map are extracted and listed as standalone text items, losing all spatial/geographic context.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a large colored map with county boundaries, well sites, reservoirs, intake points, and water system connections drawn geographically. HTML shows only a flat list of place names (ROWAN, Faith, China Grove, Rockwell, Denton, Handy SD, TUCKERTOWN RESERVOIR, etc.) with no map image.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Bar chart 'Stream Condition Middle Deep River (Node 280) June - November' is missing. Only the chart's text labels (legend items, axis labels) are rendered as bullet points and text; the actual bar chart visualization with quantitative data is absent.",
+      "severity": "critical",
+      "evidence": "PDF page 17 shows a grouped bar chart with bars for multiple QAA percentage ranges across four demand scenarios (Unimpaired, 2003, 2030, 2050). HTML shows only bullet-listed legend entries (< 10% of QAA*, 10-20% of QAA, etc.) and scenario labels as text, with no chart image.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Venn diagram showing project organization with three overlapping circles is missing. Content is rendered as a flat bullet list, losing the visual representation of overlapping responsibilities.",
+      "severity": "critical",
+      "evidence": "PDF page 21 shows a three-circle Venn diagram (Data Coordination / HDR, Model Development / HydroLogics Team & Hazen and Sawyer, Data & Model Evaluation / NCDWR). HTML renders this as a simple bullet list without the Venn diagram image.",
+      "page": 21,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Image fragments of grayed-out task text appear alongside HTML text renditions of the same content, creating visual duplication and disrupted reading flow for Tasks 3 and 5.",
+      "severity": "major",
+      "evidence": "PDF page 22 shows Tasks 2 and 4 in gray italic and Tasks 1, 3, 5 in bold black. HTML renders image fragments containing text for 'Task 2 - OASIS Application Development', 'Task 3 - Organize and Conduct Meetings', 'Task 4 \u2013 Deliverables', and 'Task 5 - Training and I...' overlapping with HTML text renditions of Task 3 and Task 5, causing content duplication.",
+      "page": 22,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Water Use sub-hierarchy (Local Water Supply Plans, Self-supplied Industry, Agriculture, Other Registered Withdrawers) is presented twice in the HTML body \u2014 once under the page 6 Process Components section and again under the page 9 Process Components section \u2014 duplicating the identical sub-items.",
+      "severity": "major",
+      "evidence": "HTML first occurrence under page 6: '<li><strong>Water Use:</strong> Users/Systems<ul><li><strong>Local Water Supply Plans:</strong> Municipal Data</li>...' Second occurrence under page 9: '<p><strong>Water Use:</strong> Users/Systems</p><ul><li><strong>Local Water Supply Plans:</strong> Municipal Data</li>...' Both contain identical items. While the PDF has this on two separate slides, the continuous HTML document creates noticeable redundancy.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 5,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 453.99,
+    "page_count": 24,
+    "visual_input_tokens": 75997,
+    "visual_output_tokens": 10761,
+    "content_input_tokens": 48763,
+    "content_output_tokens": 11166,
+    "triage_input_tokens": 47623,
+    "triage_output_tokens": 99,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:12:27.316401",
+    "auditor_version": "1.0.0"
+  }
+}

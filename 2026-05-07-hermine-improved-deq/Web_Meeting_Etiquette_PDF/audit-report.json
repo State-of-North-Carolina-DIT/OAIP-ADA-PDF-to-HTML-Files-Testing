@@ -1,0 +1,33 @@
+{
+  "document_id": "Web_Meeting_Etiquette_PDF",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C6",
+      "description": "All four image alt texts use the generic word 'icon', which is listed as a generic placeholder term. While they include a brief descriptor (e.g., 'Microphone mute'), appending 'icon' keeps them in generic territory.",
+      "severity": "minor",
+      "evidence": "HTML alt texts: 'Microphone mute icon', 'Chat bubble icon', 'Share screen icon', 'Red X exit icon'. Guidance flags 'icon' as generic placeholder alt text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 52.27,
+    "page_count": 2,
+    "visual_input_tokens": 7746,
+    "visual_output_tokens": 958,
+    "content_input_tokens": 8248,
+    "content_output_tokens": 1282,
+    "triage_input_tokens": 10321,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:09:52.650517",
+    "auditor_version": "1.0.0"
+  }
+}

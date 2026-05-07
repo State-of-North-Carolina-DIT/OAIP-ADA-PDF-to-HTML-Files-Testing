@@ -1,0 +1,89 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components evaluation criteria' (7x); 'process components water use' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V5",
+      "description": "Full slide image containing text and photos appears alongside HTML text extraction of the same bullet point content, creating duplicated reading flow.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows a single slide with 'Water Resources Plans support' and three bullet points. HTML renders the bullet points as extracted text AND includes the full slide image below, duplicating the same text.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Full slide image with 'How often? What's the chance?' text and drought photos appears alongside extracted HTML text of the same content.",
+      "severity": "major",
+      "evidence": "PDF page 12 shows the Evaluation Criteria slide with text and photos. HTML renders 'How often?' and 'What's the chance?' as text AND shows the full slide image containing the same text below.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Bar chart for Flow Regime Changes is missing from HTML. Only text labels for the chart categories are preserved as bullet points.",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows a detailed bar chart titled 'Stream Condition Middle Deep River (Node 280)' with colored bars showing '% of Days at Flow Level' for different QAA ranges across Unimpaired, 2003, 2030, and 2050 Demands scenarios. HTML renders only the category labels (< 10% of QAA*, 10-20% of QAA, etc.) as a bullet list with scenario names as plain text \u2014 no chart image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Venn diagram showing project organization relationships is missing from HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 19 shows a three-circle Venn diagram with overlapping circles for 'Data Collection HDR', 'Model Development HydroLogics', and 'Data, Model Evaluation & Plan Development NCDWR'. HTML renders only the three labels as plain text lines, losing the visual representation of organizational overlap.",
+      "page": 19,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Cropped slide image fragments showing task names appear inline alongside extracted HTML text of the same tasks, creating confusing duplicated reading flow.",
+      "severity": "major",
+      "evidence": "PDF page 20 shows a task list. HTML renders the tasks as extracted text AND includes image fragments showing 'Task 2 - OASIS Application Development' and 'Task 4 \u2013 Deliverables' as cropped slide images between the text items.",
+      "page": 20,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 4-3 (Water Supply Demand & Deficits) is rendered both as an embedded image AND as a structured HTML <table>. The PDF contains this content only once.",
+      "severity": "major",
+      "evidence": "HTML contains: <figure><img ... alt=\"Table 4-3 Water Supply Demand and Deficits\" ...></figure> immediately followed by <table><caption>Table 4-3: Water Supply Demand & Deficits Predicted by the Neuse River Basin Hydrologic Model, 2050 Scenario</caption>...</table>. The same data appears twice.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The Division of Water Resources URL on the closing slide (page 23) appears as plain text in the HTML and is not wrapped in an <a href> tag.",
+      "severity": "major",
+      "evidence": "HTML renders: 'https://deq.nc.gov/about/divisions/water-resources/' as plain text within a <p> tag, without a hyperlink wrapper.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 6,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 248.54,
+    "page_count": 23,
+    "visual_input_tokens": 72768,
+    "visual_output_tokens": 6390,
+    "content_input_tokens": 45770,
+    "content_output_tokens": 5063,
+    "triage_input_tokens": 45213,
+    "triage_output_tokens": 99,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:06:27.430474",
+    "auditor_version": "1.0.0"
+  }
+}

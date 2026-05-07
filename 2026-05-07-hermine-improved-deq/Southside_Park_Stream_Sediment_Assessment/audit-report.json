@@ -1,0 +1,33 @@
+{
+  "document_id": "Southside_Park_Stream_Sediment_Assessment",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C2",
+      "description": "Five sample-location data blocks (SD-1/DUP-6102025-SD, SD-2, SD-3, SD-4, SD-5) containing analytical results and risk assessment values are present as extractable text in the PDF but are entirely absent from the HTML body text. These blocks include contaminant concentrations (e.g., Arsenic, Cobalt, Manganese, Vanadium, Hexavalent Chromium, PAHs) and risk values (CR and HI). The data exists only inside the embedded map image and is not searchable or accessible as text.",
+      "severity": "critical",
+      "evidence": "PDF contains, e.g., 'SD-5 mg/kg / Arsenic 1.40 / Cobalt 23.7 / Manganese 559 / Vanadium 93.0 / Hexavalent Chromium 1.15 / Risk Assessment RES CR: 3.3E-06 / RES HI: 1.7' and similar blocks for SD-1 through SD-4. None of this data appears anywhere in the HTML text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 113.26,
+    "page_count": 1,
+    "visual_input_tokens": 4850,
+    "visual_output_tokens": 1479,
+    "content_input_tokens": 6617,
+    "content_output_tokens": 3374,
+    "triage_input_tokens": 8155,
+    "triage_output_tokens": 51,
+    "triage_dropped": 1,
+    "timestamp": "2026-05-07T04:12:12.965267",
+    "auditor_version": "1.0.0"
+  }
+}

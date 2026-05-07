@@ -1,0 +1,41 @@
+{
+  "document_id": "DEQ_Risk_Calculator_User_Guide_(February_2024)",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C1",
+      "description": "The Risk Calculator Cell Color Codes table (section 1.2) adds fabricated text in the first column. The PDF shows colored cells visually but does not label them with color names in text. The HTML fabricates a column header 'Color Format' and adds descriptive labels 'Yellow background', 'Orange background', 'Green background', 'Gray background' that do not appear anywhere in the PDF text.",
+      "severity": "critical",
+      "evidence": "PDF section 1.2 shows a table with colored cells (visual only) beside descriptions. HTML table has: '<th scope=\"col\">Color Format</th>' (not in PDF), and cell values 'Yellow background', 'Orange background', 'Green background', 'Gray background' (not in PDF text). The PDF only shows the colors visually, never naming them in text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Multiple fabricated table captions added for callout/sidebar boxes that were converted to tables. These caption texts do not appear anywhere in the source PDF.",
+      "severity": "critical",
+      "evidence": "HTML adds <caption> elements including: 'Risk Calculator Uses', 'Site Assessment Requirements', 'Vapor Intrusion Evaluation Note', 'Institutional Controls for Groundwater Remedies', 'Surface Water Quality Note', 'Vapor Intrusion Soil Source Limitation', 'Protection of Groundwater PSRG Default Parameters', 'Empirical Monitoring Data Preference'. None of these phrases appear as headings or labels in the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 339.84,
+    "page_count": 33,
+    "visual_input_tokens": 102935,
+    "visual_output_tokens": 8604,
+    "content_input_tokens": 85429,
+    "content_output_tokens": 7735,
+    "triage_input_tokens": 71259,
+    "triage_output_tokens": 101,
+    "triage_dropped": 1,
+    "timestamp": "2026-05-07T04:10:19.513375",
+    "auditor_version": "1.0.0"
+  }
+}

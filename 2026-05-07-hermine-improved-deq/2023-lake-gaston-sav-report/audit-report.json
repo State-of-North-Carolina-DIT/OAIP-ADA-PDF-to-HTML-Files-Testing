@@ -1,0 +1,105 @@
+{
+  "document_id": "2023-lake-gaston-sav-report",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>]; Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>] (and 10 more)",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 (Total Number of Survey Sites - By Year bar graph) is missing as an image. The chart's axis labels, data values, and year labels are rendered as plain text instead of preserving the bar graph image.",
+      "severity": "critical",
+      "evidence": "PDF page 9 shows a bar graph with bars for each year 2012-2023 with labeled values. HTML renders this as inline text: '7000 6564 6178 6503 6041 5954 6311 6000 5775 5714 5378...' with no chart image.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 2 (Lake Gaston Aquatic Plant Community - 2023 bar graph) is missing as an image. The chart's species names, categories, and percentage values are rendered as plain text instead of the grouped bar chart image.",
+      "severity": "critical",
+      "evidence": "PDF page 9 shows a color-coded bar graph with species on x-axis and % Total Vegetation on y-axis. HTML renders this as inline text: '45 Emergent Submergent Floating Algae 40 35 30 25 20 15 10 5 0 American Lotus Arrowhead...'",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 7 (Lake Gaston Hydrilla dual-axis chart showing estimated standing acreage bars and percent occurrence line) is missing as an image. Chart data is rendered as plain text.",
+      "severity": "critical",
+      "evidence": "PDF page 14 shows a dual-axis bar/line chart with green bars (Acres) and dashed line (Rake Tosses) from 2012-2023. HTML renders this as text: '1800 70 Acres Rake Tosses 1600 60 1400 50 1200 40 1000 800 30 600 20 400 10 200 0 0 2012 2013...'",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 9 (Lake Gaston Lyngbya dual-axis chart showing estimated standing acreage bars and percent occurrence line) is missing as an image. Chart data is rendered as plain text.",
+      "severity": "critical",
+      "evidence": "PDF page 16 shows a dual-axis bar/line chart with pink bars (Acres) and dashed line from 2012-2023. HTML renders this as text: '1600 25 Acres 1400 20 1200 1000 15 800 10 600 400 5 200 0 0 2012 2013...'",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 11 (Lake Gaston Eel Grass dual-axis chart showing estimated standing acreage bars and percent survey sites line) is missing as an image. Chart data is rendered as plain text.",
+      "severity": "critical",
+      "evidence": "PDF page 18 shows a dual-axis bar/line chart with green bars (Acres) and dashed line (% Sites) from 2019-2023. HTML renders this as text: '5.0 140 Acres % Sites 4.5 120 4.0 3.5 100 3.0 80 2.5 60 2.0 1.5 40 1.0 20 0.5 0 0.0 2019 2020...'",
+      "page": 18,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Chart data values from Figures 1, 2, 7, 9, and 11 are rendered as raw inline text sequences, creating nonsensical reading flow where a reader encounters strings of numbers and labels without visual chart context.",
+      "severity": "major",
+      "evidence": "For example, where Figure 7 should appear, the HTML presents '1800 70 Acres Rake Tosses 1600 60 1400 50 1200 40 1000 800 30 600 20 400 10 200 0 0 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 Acres Percent of Rake Tosses' as flowing text between the preceding paragraph and figure caption.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 1 data is duplicated: it appears both as an embedded image (alt='Background shading and borders for Table 1') and as a fully-rendered HTML <table>. Same applies to Table 2.",
+      "severity": "major",
+      "evidence": "HTML contains '<figure><img src=\"[embedded-image-removed]\" alt=\"Background shading and borders for Table 1\" ...></figure>' immediately followed by '<table><caption>Table 1...' with all the same data. Same pattern repeats for Table 2.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Both Tables 1 and 2 have awkward double-header structures where the table title ('LAKE GASTON AQUATIC PLANT COMMUNITY - 2023') is placed in the first cell of a <th> row with empty <th> siblings, then the actual column headers are in a second <tr>. In the PDF the title is a spanning header across the full width of the table.",
+      "severity": "major",
+      "evidence": "HTML Table 1 thead: first <tr> has '<th>LAKE GASTON AQUATIC PLANT COMMUNITY - 2023</th><th></th><th></th><th></th><th></th>', then second <tr> has the real column headers. PDF shows this as a single merged spanning title row.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for table background images is inaccurate and non-descriptive \u2014 'Background shading and borders for Table 1' and 'Background shading and borders for Table 2' describe decorative formatting rather than the substantive table content these images actually depict.",
+      "severity": "minor",
+      "evidence": "HTML: alt='Background shading and borders for Table 1' and alt='Background shading and borders for Table 2'. These images render the full visual tables from the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 5,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 281.09,
+    "page_count": 20,
+    "visual_input_tokens": 63074,
+    "visual_output_tokens": 8001,
+    "content_input_tokens": 52049,
+    "content_output_tokens": 6080,
+    "triage_input_tokens": 45849,
+    "triage_output_tokens": 125,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:16:51.290240",
+    "auditor_version": "1.0.0"
+  }
+}

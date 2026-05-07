@@ -1,0 +1,113 @@
+{
+  "document_id": "01_CFNM_April_2011_Version_Contract_A",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Ed Daughtry's handwritten signature on the cover letter is rendered as a dark/black rectangle in the HTML, effectively obscuring the signature content.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows a clear handwritten signature between 'Sincerely,' and 'Ed Daughtry, Contracting Officer'. HTML shows a dark rectangle/block in that location instead of the recognizable signature.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The 'cc' recipient text ('Darren England, Division of Water Resources Controller's Office') appears duplicated above the signature area in the HTML, overlaid on the dark rectangle, in addition to its correct position below 'Enclosures'. This disrupts reading order.",
+      "severity": "major",
+      "evidence": "PDF shows the cc text only once, below 'Enclosures'. HTML shows the text appearing both overlaid on/above the dark signature rectangle AND in its correct position below 'Enclosures', creating duplicate content and reading confusion.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Brian J. McCrodden's handwritten authorized signature in the EXECUTION/BIDDER section of the RFQ form is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 8 shows a handwritten signature next to 'AUTHORIZED SIGNATURE' in the bidder block. HTML shows the field label and surrounding text but the actual handwritten signature image is not present.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DENR authorized representative's handwritten signature in the 'FOR DENR USE ONLY' acceptance section is missing or not clearly rendered in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 8 shows a handwritten signature with 'by' and the acceptance text in the FOR DENR USE ONLY box. HTML shows the text references but the signature image is not clearly visible.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Brian J. McCrodden's handwritten signature in the Attachment A - Certification of Compliance With Executive Order #24 is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 27 shows a handwritten signature next to 'AUTHORIZED SIGNATURE' in the certification block. HTML shows the name, email, and date fields but the actual handwritten signature image is absent.",
+      "page": 27,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated column headers in the bidder execution form table. The PDF shows a form-style grid with field labels (BIDDER, STREET ADDRESS, P.O. BOX, ZIP, etc.) but no overarching column headers. The HTML invents three column headers: 'BIDDER Information', 'Contact Information', 'Additional Information' that do not appear anywhere in the PDF.",
+      "severity": "critical",
+      "evidence": "HTML: <th scope=\"col\">BIDDER Information</th><th scope=\"col\">Contact Information</th><th scope=\"col\">Additional Information</th>. PDF page 6 shows individual field labels only, with no such column headers.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "Fabricated column headers 'Question' and 'Response' in the outsourcing work table. The PDF shows a simple box with the question and blank lines, not a two-column table with labeled headers.",
+      "severity": "critical",
+      "evidence": "HTML: <th scope=\"col\">Question</th><th scope=\"col\">Response</th>. PDF page 10 shows a plain box: 'Will any work under this contract be performed outside the United States? YES___ NO___'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Bidder execution form table has data duplicated into incorrect cells. 'BIDDER: HydroLogics, Inc.' appears in all three columns of row 1, but in the PDF it is a single full-width field. 'FAX NUMBER: 919-831-1295' appears in both columns 2 and 3 of row 4, but in the PDF it appears only once.",
+      "severity": "major",
+      "evidence": "HTML row 1: all three <td> cells contain 'BIDDER: HydroLogics, Inc.' HTML row 4 shows 'FAX NUMBER: 919-831-1295' in both the 2nd and 3rd columns. PDF page 6 shows BIDDER as one row and FAX NUMBER as a single field.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Outsourcing question box has row 2 content duplicated across both columns. The text 'Where will services be performed: ____' appears in both cells of the second row, but in the PDF it is a single line.",
+      "severity": "major",
+      "evidence": "HTML row 2: <td>Where will services be performed: _____</td><td>Where will services be performed: _____</td>. PDF page 10 shows this as a single line in a box.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "Two literal URLs in the E-Procurement section appear as plain text without href links.",
+      "severity": "major",
+      "evidence": "HTML shows 'http://eprocurement.nc.gov/' and 'http://eprocurement.nc.gov/Vendor.html' as plain text. PDF page 10 presents these as URLs (the second is underlined, suggesting a hyperlink).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "An image with empty alt text (alt='') is inserted between the item info table and the 'Status: Ordered' section. This 612pt-wide image does not correspond to any visible substantive content in the PDF at that location and may be a spurious artifact.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"> placed between the PR10689541 line-items table and the Approvals table. PDF pages 2-3 show no full-width image between these sections.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 6,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 383.17,
+    "page_count": 22,
+    "visual_input_tokens": 61628,
+    "visual_output_tokens": 9135,
+    "content_input_tokens": 83797,
+    "content_output_tokens": 10154,
+    "triage_input_tokens": 61628,
+    "triage_output_tokens": 231,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:07:40.405496",
+    "auditor_version": "1.0.0"
+  }
+}

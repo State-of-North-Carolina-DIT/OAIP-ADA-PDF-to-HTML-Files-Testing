@@ -1,0 +1,33 @@
+{
+  "document_id": "01_Fact_Sheet_Kaballco.pdf",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C4b",
+      "description": "A literal URL in the document body appears as plain text in the HTML without being wrapped in an <a href> tag.",
+      "severity": "major",
+      "evidence": "The URL 'https://deq.nc.gov/about/divisions/waste-management/laserfiche' appears in the HTML as plain text within a <p> element, not wrapped in an <a> tag. The PDF similarly shows the URL but good HTML conversion practice would make it a clickable link.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 53.54,
+    "page_count": 2,
+    "visual_input_tokens": 7302,
+    "visual_output_tokens": 738,
+    "content_input_tokens": 8349,
+    "content_output_tokens": 1667,
+    "triage_input_tokens": 6413,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:54:50.460419",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "document_id": "POTS_OPEN_\u2013_ATLANTIC_OCEAN_AND_INTERNAL_COASTAL_AND_JOINT_FISHING_WATERS_WEST_AND_SOUTH_OF_HIGHWAY_58_BRIDGE",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections disrupts reading order on page 1.",
+      "severity": "major",
+      "evidence": "In the PDF, the header (seal, officials' names, PT-2-2024) appears once followed by the PROCLAMATION title. In the HTML, the officials' names and seal appear first, then the page footer text ('State of North Carolina | Division of Marine Fisheries, 3441 Arendell Street\u2026') is inserted, then the officials' names (ROY COOPER/Governor, ELIZABETH S. BISER/Secretary, KATHY B. RAWLS/Director) are repeated a second time in plain text before PT-2-2024 and the PROCLAMATION heading. A sighted reader encounters the same identifying information twice with footer text in between.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The third image at the bottom of the HTML has an empty alt attribute (alt=\"\"), which marks it as decorative. However, at 611.8pt width (full page), this appears to be a substantive image (likely one of the referenced maps or a page element) and should have descriptive alt text.",
+      "severity": "minor",
+      "evidence": "HTML: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 611.8pt; height: auto;\"></figure> \u2014 appears between the signature date and the footer, with full-page width suggesting substantive content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The first image has alt text stating \"North Carolina Marine Fisheries logo\" but its inline width is set to 612.0pt (full page width). If this image captures the entire header area (logo + officials' names + document number), the alt text is incomplete and potentially misleading, as it only describes the logo.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"North Carolina Marine Fisheries logo\" style=\"width: 612.0pt; height: auto;\"> \u2014 612pt is the full page width, while the actual NC Marine Fisheries logo in the PDF is a small seal in the top-left corner of page 1.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 220.25,
+    "page_count": 3,
+    "visual_input_tokens": 10358,
+    "visual_output_tokens": 3839,
+    "content_input_tokens": 14362,
+    "content_output_tokens": 6291,
+    "triage_input_tokens": 13850,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:09:54.040505",
+    "auditor_version": "1.0.0"
+  }
+}

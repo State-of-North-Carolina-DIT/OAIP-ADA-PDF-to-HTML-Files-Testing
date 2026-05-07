@@ -1,0 +1,97 @@
+{
+  "document_id": "01_CFNM_Modeling_the_Cape_Fear_Neuse_River_Basin_Operations\u2026",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Flow chart content duplicated as both extracted text (bullet lists of node names, legend items, and annotation paragraphs) and the original flow chart image. PDF page 10 shows only the diagram; HTML renders the same node names, annotations, and legend entries as separate text AND the image.",
+      "severity": "major",
+      "evidence": "PDF page 10 has only the Upper Cape Fear Basin flow chart diagram with embedded labels. HTML has a heading, descriptive paragraph, and bullet list (Reidsville Dam, Old Stony Ck Reservoir, \u2026, Reservoir Node, Demand Node, Junction Node, Flow Arc, Withdrawal Arc, WW Return Arc, etc.) followed by the same flow chart image containing those labels.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Middle Cape Fear Basin flow chart content duplicated as extracted text bullet lists alongside the flow chart image.",
+      "severity": "major",
+      "evidence": "PDF page 11 shows only the diagram. HTML renders extracted node names (Haw River Flow from Upstream, Cane Creek Reservoir, OWASA Demand, University Lake, Stone Quarry, Jordan Demands, etc.) and legend items as bullets, plus the same flow chart image.",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Deep River flow chart content duplicated as extracted text bullet lists alongside the flow chart image.",
+      "severity": "major",
+      "evidence": "PDF page 12 shows only the diagram. HTML renders extracted node names (High Point Reservoir, High Point Demand, Upper Siler City Reservoir, etc.) and legend items as bullets, plus the same flow chart image.",
+      "page": 12,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Lower Cape Fear Basin flow chart content duplicated as extracted text bullet lists alongside the flow chart image.",
+      "severity": "major",
+      "evidence": "PDF page 13 shows only the diagram. HTML renders extracted node names (Flow from Upstream at Lillington, Harnett Co. Demand, Dunn Demand, Fayetteville Demand, etc.) as bullets, plus the same flow chart image.",
+      "page": 13,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Upper Neuse Basin flow chart content duplicated as extracted text bullet lists alongside the flow chart image.",
+      "severity": "major",
+      "evidence": "PDF page 14 shows only the diagram. HTML renders extracted node names (West Fork Eno Reservoir, Lake Orange, Hillsborough Demand, Lake Michie, etc.) and annotation text as bullets/paragraphs, plus the same flow chart image.",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Middle Neuse Basin flow chart content duplicated as extracted text bullet lists alongside the flow chart image.",
+      "severity": "major",
+      "evidence": "PDF page 15 shows only the diagram. HTML renders extracted node names (Flow from Falls Lake, Crabtree Creek Flood Impoundments, Johnson Co. & Smithfield Demand, Raleigh WD, etc.) as bullets, plus the same flow chart image.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Lower Neuse Basin flow chart content duplicated as extracted text bullet lists alongside the flow chart image.",
+      "severity": "major",
+      "evidence": "PDF page 16 shows only the diagram. HTML renders extracted node names (Buckhorn Reservoir, Flow from Goldsboro, Wilson Demand, Contentnea Creek, etc.) as bullets, plus the same flow chart image.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Seven substantive flow chart diagrams from the PDF (pages 10-16) are missing as <img> tags in the HTML. These are complex network topology diagrams showing nodes, arcs, flow directions, and spatial relationships. The HTML converts their labels and annotations into unordered text lists, losing the visual topology entirely.",
+      "severity": "minor",
+      "evidence": "PDF contains flow chart diagrams for: Upper Cape Fear Basin (p10), Middle Cape Fear Basin (p11), Deep River (p12), Lower Cape Fear Basin (p13), Upper Neuse Basin (p14), Middle Neuse Basin (p15), Lower Neuse Basin (p16). HTML has no <img> tags for any of these; instead content is rendered as <ul> lists and <p> descriptions.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "Three clear sub-section headings within Section 2.2 ('Static and Pattern Data', 'Timeseries Data', 'Operating Rules') are bold/underlined headings in the PDF but are demoted to styled paragraph text (<p><strong><u>\u2026</u></strong></p>) rather than heading elements (e.g., <h3>) in the HTML. Similarly, 'Simulation:' and 'Position Analysis:' sub-headings in Section 2.3 are rendered as <p><u>\u2026</u></p> instead of heading elements.",
+      "severity": "major",
+      "evidence": "PDF page 7-9: 'Static and Pattern Data', 'Timeseries Data', 'Operating Rules' appear as distinct bold/underlined sub-headings. HTML renders them as: <p><strong><u>Static and Pattern Data</u></strong></p>, <p><strong><u>Timeseries Data</u></strong></p>, <p><strong><u>Operating Rules</u></strong></p>. PDF page 17: 'Simulation:' and 'Position Analysis:' are underlined sub-headings rendered as <p><u>Simulation:</u></p>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 8,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 251.25,
+    "page_count": 18,
+    "visual_input_tokens": 56011,
+    "visual_output_tokens": 6395,
+    "content_input_tokens": 45981,
+    "content_output_tokens": 4691,
+    "triage_input_tokens": 42336,
+    "triage_output_tokens": 924,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:56:06.179080",
+    "auditor_version": "1.0.0"
+  }
+}

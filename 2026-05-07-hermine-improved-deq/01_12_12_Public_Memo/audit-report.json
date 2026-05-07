@@ -1,0 +1,65 @@
+{
+  "document_id": "01_12_12_Public_Memo",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-list",
+      "description": "Ensure that lists are structured correctly",
+      "severity": "minor",
+      "evidence": "Fix all of the following:\n  List element has direct children that are not allowed: figure [<ol type=\"a\">]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V3",
+      "description": "Handwritten initials/signatures next to the FROM field names are missing in the HTML.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows handwritten initials next to 'Karen Higgins, Wetlands, Buffers and Stormwater Compliance and Permitting Unit' (appears as 'KH' mark) and next to 'Brian Wrenn, Transportation Permitting Unit' (appears as 'bw' mark). The HTML FROM field shows only the typed names with no handwritten marks.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "All seven PDF pages are rendered as full-page embedded images AND as separate HTML text, creating complete content duplication. Every paragraph, table, and heading appears twice\u2014once inside an <img> tag and once as structured HTML text.",
+      "severity": "major",
+      "evidence": "Seven <img> tags with alt text 'Document page 1' through 'Document page 7' are interspersed throughout the HTML body alongside the full textual transcription of those same pages. For example, the page 1 image is followed by the full header, TO/FROM/RE block, and Section I text; the page 2 image is followed by the same table and Section A-C text already visible in the image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "All seven embedded page images use generic, non-descriptive alt text that provides no meaningful information about the page content.",
+      "severity": "minor",
+      "evidence": "alt='Document page 1', alt='Document page 2', alt='Document page 3', etc. These should describe the content visible on each page (e.g., 'NCDENR letterhead with public notice memorandum header', 'Table of Regional General Permits and DWQ General Certification Numbers', etc.).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "Multiple literal URLs and email addresses appear as plain text in the HTML without being wrapped in <a href> tags.",
+      "severity": "major",
+      "evidence": "Examples: 'http://portal.ncdenr.org/web/wq/swp/ws/401/publicnotices' (appears twice as plain text), 'http://portal.ncdenr.org/web/wq/swp/ws/401/certsandpermits/mitigation/memos', 'http://portal.ncdenr.org/web/wq/2012_draft_gcs', 'katie.merritt@ncdenr.gov', 'karen.higgins@ncdenr.gov', 'ian.mcmillan@ncdenr.gov', 'http://portal.ncdenr.org/web/wq/swp/ws/401/certsandpermits/swmanagement', 'http://portal.ncdenr.org/web/wq/ws/su/npdessw#tab-w', 'www.ncwaterquality.org' \u2014 all appear as plain text without hyperlinks.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 191.41,
+    "page_count": 7,
+    "visual_input_tokens": 17878,
+    "visual_output_tokens": 2133,
+    "content_input_tokens": 27026,
+    "content_output_tokens": 5412,
+    "triage_input_tokens": 23514,
+    "triage_output_tokens": 80,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:44:49.287643",
+    "auditor_version": "1.0.0"
+  }
+}

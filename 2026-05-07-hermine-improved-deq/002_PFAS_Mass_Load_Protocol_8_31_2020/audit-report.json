@@ -1,0 +1,81 @@
+{
+  "document_id": "002_PFAS_Mass_Load_Protocol_8_31_2020",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'where,' (3x); 'geosyntec consultantsgeosyntec consultants of nc, p.c. nc license no.: c 3500 an...' (3x); 'raleighaugust 2020' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Figure 1 (Outfall 002 Sampling Locations aerial satellite map) is severely degraded in the HTML. The full-page aerial photograph showing the facility layout, sampling locations, and detailed inset is reduced to a very small thumbnail showing only a partial crop of the map area.",
+      "severity": "critical",
+      "evidence": "PDF Page 15 shows a large, detailed aerial satellite image of the Chemours Fayetteville Works facility with clearly marked sampling locations, a zoomed inset of the Outfall 002 area, scale bars, and legend. The HTML renders only a small cropped thumbnail of the River Water Intake area, with remaining figure elements extracted as disconnected text labels.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Figure 2 flowchart content is duplicated: the flowchart image is rendered alongside a plain-text extraction of all the decision-box and action-box text from the same flowchart, creating redundant content that disrupts reading flow.",
+      "severity": "major",
+      "evidence": "PDF Page 16 shows only the flowchart image. The HTML shows the flowchart image followed by text such as 'Was a 24-hr composite sample collected?', 'YES', 'Use 24-hr composite sample concentration*', 'NO', 'Use 60-day rolling average dry concentration', etc. \u2014 all duplicating content already visible in the image.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Figure 3 flowchart content is duplicated: the flowchart image is rendered alongside a plain-text extraction of the decision-box and action-box text from the same flowchart.",
+      "severity": "major",
+      "evidence": "PDF Page 17 shows only the Figure 3 flowchart image. The HTML shows the flowchart image followed by text such as 'Was a 24-hr composite sample collected?', 'YES', 'Use 24-hr composite sample concentration*', 'NO', 'Use 60-day rolling average dry concentration', '*For the 24-hr time period', duplicating content already in the image.",
+      "page": 17,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "Figure 1 main satellite/aerial map image showing Outfall 002 sampling locations is missing from the HTML. Only two small decorative fragments (a north arrow at 9.1pt wide and a callout image at 89.8pt wide) are present instead of the full map.",
+      "severity": "minor",
+      "evidence": "PDF page 15 shows a full satellite photo with facility overview (0\u20131000 ft scale), a zoomed inset of the outfall area (0\u201350 ft scale), and labeled sampling locations. The HTML has only <img alt=\"North Arrow symbol on map\" style=\"width: 9.1pt\"> and <img alt=\"Map features layer callout image\" style=\"width: 89.8pt\"> \u2014 no img tag for the primary aerial photograph.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Figure 3 flowchart diagram image is entirely missing from the HTML. The flowchart content is rendered only as unstructured text paragraphs, losing the visual decision-tree structure.",
+      "severity": "minor",
+      "evidence": "PDF page 17 shows a flowchart diagram with decision diamond and result boxes for determining concentration at the River Water Intake. The HTML has no <img> tag for this figure; instead it renders the box text as flat paragraphs: '<p>Was a 24-hr composite sample collected?</p><p>YES</p><p>Use 24-hr composite sample concentration*</p><p>NO</p><p>Use 60-day rolling average dry concentration</p>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text 'Map features layer callout image' is generic and non-descriptive; it does not convey what the image depicts.",
+      "severity": "minor",
+      "evidence": "HTML: <img alt=\"Map features layer callout image\">. This fragment appears to be the inset showing the Outfall 002 sampling area but the alt text does not describe the sampling locations or facility context shown.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 3,
+  "minor_count": 3,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 357.44,
+    "page_count": 17,
+    "visual_input_tokens": 53512,
+    "visual_output_tokens": 7986,
+    "content_input_tokens": 45186,
+    "content_output_tokens": 9966,
+    "triage_input_tokens": 41571,
+    "triage_output_tokens": 178,
+    "triage_dropped": 1,
+    "timestamp": "2026-05-07T03:41:41.682545",
+    "auditor_version": "1.0.0"
+  }
+}

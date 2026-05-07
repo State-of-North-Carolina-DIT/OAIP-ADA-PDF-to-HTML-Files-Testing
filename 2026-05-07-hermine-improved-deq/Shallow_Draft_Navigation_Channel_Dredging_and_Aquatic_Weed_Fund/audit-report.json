@@ -1,0 +1,65 @@
+{
+  "document_id": "Shallow_Draft_Navigation_Channel_Dredging_and_Aquatic_Weed_Fund",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Cover letter content is duplicated in the HTML: the formatted cover letter (with seal, signature, and DEQ logo images) is immediately followed by a plain-text rendition of the identical letter content (ROY COOPER header, full letter body, Kevin Hart sign-off), creating a reading-order disruption through duplication.",
+      "severity": "major",
+      "evidence": "PDF page 1 has a single cover letter. In the HTML, after the formatted cover letter ends (DEQ logo and footer), the text 'ROY COOPER, Governor, ELIZABETH S. BISER, Secretary...' begins again, repeating the entire letter body through 'Kevin Hart, Enclosures, cc: NCGA Fiscal Research' before continuing to the Annual Report content.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "The Shallow Draft Navigation Channel Dredging Annual Report table appears both as an embedded image from the PDF and as an HTML table of the same data, creating duplicated content that disrupts reading flow.",
+      "severity": "major",
+      "evidence": "PDF page 3 contains an embedded image of the table (FY 2021-2022, G.S. 143-215.73F, 38 data rows + total). The HTML preserves this image and then immediately renders a full HTML table with identical data (same dates, projects, cooperators, amounts, project types, total of $9,543,427.32). A reader encounters the same table data twice.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "The Shallow Draft Navigation Channel Dredging table (PDF page 3) is rendered BOTH as an embedded <img> AND as a fully structured <table> in the HTML, duplicating the same content in two formats.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img src=\"[embedded-image-removed]\" alt=\"Table showing Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022\" ...></figure> immediately followed by <table><caption>Shallow Draft Navigation Channel Dredging Annual Report FY 2021-2022 G.S. 143-215.73F</caption>...</table> with identical data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "Cooperators table: 'Charlotte' was incorrectly split between rows. In the PDF, Mountain Island Reservoir's cooperator is 'Charlotte Stormwater Services and Duke Energy'. In the HTML, 'Charlotte' was appended to the Lake Norman row and removed from the Mountain Island Reservoir row, changing the meaning.",
+      "severity": "major",
+      "evidence": "PDF: Lake Norman = 'Lake Norman Marine Commission, Charlotte Water,' / Mountain Island Reservoir = 'Charlotte Stormwater Services and Duke Energy'. HTML: Lake Norman = 'Lake Norman Marine Commission, Charlotte Water, Charlotte' / Mountain Island Reservoir = 'Stormwater Services and Duke Energy'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Kevin Hart's handwritten signature image from the cover letter (PDF page 1) is missing from the HTML. No corresponding <img> tag exists for the signature.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a handwritten signature between 'Sincerely,' and 'Kevin Hart'. The HTML goes directly from '<p>Sincerely,</p>' to '<p>Kevin Hart</p>' with no signature image.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 467.7,
+    "page_count": 10,
+    "visual_input_tokens": 29272,
+    "visual_output_tokens": 16829,
+    "content_input_tokens": 39638,
+    "content_output_tokens": 6728,
+    "triage_input_tokens": 27691,
+    "triage_output_tokens": 119,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:16:49.448445",
+    "auditor_version": "1.0.0"
+  }
+}

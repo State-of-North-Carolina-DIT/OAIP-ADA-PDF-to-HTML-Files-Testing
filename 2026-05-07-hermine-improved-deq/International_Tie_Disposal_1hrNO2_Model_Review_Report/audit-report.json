@@ -1,0 +1,41 @@
+{
+  "document_id": "International_Tie_Disposal_1hrNO2_Model_Review_Report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "Tables A1 and A2 are rendered both as embedded images (<img> tags) and as fully structured HTML <table> elements, creating real content duplication. Five <figure><img> tags (three before the HTML Table A1 and two between Tables A1 and A2) reproduce the same table content that follows as HTML tables.",
+      "severity": "major",
+      "evidence": "HTML contains 5 <figure><img> tags with src=\"[embedded-image-removed]\" interspersed among the HTML tables for Table A1 (Modeled Release Parameters) and Table A2 (Modeled Emission Rates). The PDF pages 3\u20137 contain these tables only once. Per C7 MUST FLAG rule: 'a table rendered both as a screenshot <img> and as a parallel <table>'.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "All five embedded images have empty alt text (alt=\"\"), providing no description of their content. These appear to be images of the data tables from pages 3\u20137 of the PDF and are substantive, not decorative.",
+      "severity": "minor",
+      "evidence": "HTML: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 792.0pt; height: auto;\"></figure> appears 5 times. Empty alt=\"\" conveys no information about what these images depict.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 134.91,
+    "page_count": 7,
+    "visual_input_tokens": 19950,
+    "visual_output_tokens": 3368,
+    "content_input_tokens": 28702,
+    "content_output_tokens": 2859,
+    "triage_input_tokens": 20061,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:07:46.913048",
+    "auditor_version": "1.0.0"
+  }
+}

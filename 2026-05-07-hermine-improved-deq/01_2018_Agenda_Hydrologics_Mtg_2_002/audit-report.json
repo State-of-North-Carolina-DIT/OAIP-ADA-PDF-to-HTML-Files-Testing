@@ -1,0 +1,24 @@
+{
+  "document_id": "01_2018_Agenda_Hydrologics_Mtg_2_002",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 76.79,
+    "page_count": 1,
+    "visual_input_tokens": 4579,
+    "visual_output_tokens": 1516,
+    "content_input_tokens": 5904,
+    "content_output_tokens": 1779,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:46:17.260847",
+    "auditor_version": "1.0.0"
+  }
+}

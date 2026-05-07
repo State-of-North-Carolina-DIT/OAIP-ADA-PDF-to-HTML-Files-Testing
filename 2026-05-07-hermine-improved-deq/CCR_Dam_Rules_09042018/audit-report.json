@@ -1,0 +1,49 @@
+{
+  "document_id": "CCR_Dam_Rules_09042018",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Title and author information are duplicated on the first page: the styled slide header area displays the title, presenter name, division, and date, and then the same content is repeated immediately below as plain HTML text headings and paragraphs.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows the title '15A NCAC 02K .0224 - Additional Requirements for Dams that Impound Coal Combustion Residuals' and 'Andrew Brooks, PE / State Dam Safety Engineer\u2026/ September 4, 2018' once. The HTML page 1 shows these in the styled banner area between the two photos AND again as an H1 heading and body text beneath the cityscape photo.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4b",
+      "description": "Three literal URLs/email addresses that were clickable hyperlinks in the PDF appear as underlined plain text in the HTML without <a href> wrapping.",
+      "severity": "major",
+      "evidence": "PDF page 8 shows clickable hyperlinks for: (1) 'https://deq.nc.gov/documents/15a-ncac-02k-0224-additional-requirements-dams-impound-coal-combustion-residual', (2) 'Andrew.brooks@ncdenr.gov', (3) 'daniel.kang@ncdenr.gov'. In the HTML, all three appear inside <u> tags as plain text without any <a href> wrapper.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "An image with empty alt text (alt=\"\") appears to be a substantive photograph (city skyline at dusk, likely Asheville, NC) from the bottom of PDF page 1, not a purely decorative element.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 792.2pt; height: auto;\"> \u2014 The PDF shows a large photograph of a city skyline at dusk, which is a substantive image deserving descriptive alt text rather than empty alt.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 182.84,
+    "page_count": 8,
+    "visual_input_tokens": 22012,
+    "visual_output_tokens": 3797,
+    "content_input_tokens": 18122,
+    "content_output_tokens": 4081,
+    "triage_input_tokens": 20152,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:05:45.021317",
+    "auditor_version": "1.0.0"
+  }
+}

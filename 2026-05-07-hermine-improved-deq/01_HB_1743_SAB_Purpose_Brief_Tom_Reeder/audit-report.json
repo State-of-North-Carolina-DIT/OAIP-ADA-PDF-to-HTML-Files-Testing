@@ -1,0 +1,41 @@
+{
+  "document_id": "01_HB_1743_SAB_Purpose_Brief_Tom_Reeder",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'sab \u2013 what it is' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "The Venn diagram showing nested ellipses (Water Supply Planning containing River Basin Modeling) is completely missing from the HTML, replaced by plain text labels only.",
+      "severity": "critical",
+      "evidence": "PDF page 10 shows a graphical Venn-style diagram with a large green ellipse labeled 'Water Supply Planning' containing a smaller orange/peach ellipse labeled 'River Basin Modeling'. The HTML renders only the two text labels 'Water Supply Planning' and 'River Basin Modeling' as plain text, losing the visual representation of the nested/containment relationship.",
+      "page": 10,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 79.05,
+    "page_count": 11,
+    "visual_input_tokens": 26407,
+    "visual_output_tokens": 2122,
+    "content_input_tokens": 22788,
+    "content_output_tokens": 1415,
+    "triage_input_tokens": 24560,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:58:24.062614",
+    "auditor_version": "1.0.0"
+  }
+}

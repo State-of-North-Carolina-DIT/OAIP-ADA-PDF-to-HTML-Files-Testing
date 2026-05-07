@@ -1,0 +1,57 @@
+{
+  "document_id": "Asheville_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Header/letterhead information is duplicated in the HTML. The officials' names and department name appear once as a visual header at the top of the page, then again as inline text content after a footer separator and colored bar, before the MEMORANDUM heading begins.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows the letterhead (PAT McCRORY/Governor, DONALD R. VAN DER VAART/Secretary, TRACY DAVIS/Director, Energy Mineral & Land Resources) once in the header area. HTML chunk 1 renders this header visually at the top, then inserts footer text and a colored bar, then repeats the same letterhead information as body text before the MEMORANDUM heading. A reader encounters the same identifying information twice with a footer in between.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text and a colored page-separator bar are inserted between page-equivalent content sections in the continuous HTML, specifically between the end of the memo outline (PDF page 1 content) and the beginning of Section I History/Background (PDF page 2 content).",
+      "severity": "major",
+      "evidence": "In HTML chunk 2, after the outline items I\u2013IV, there is a footer ('State of North Carolina | Environmental Quality\u2026') and a colored bar before the 'I. History/Background' section begins. This interleaving of footer material between content sections disrupts continuous reading order.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A decorative page-footer/background image from the PDF's page 1 is inserted mid-content in the HTML body, between the Table of Contents navigation and Section I (History/Background), breaking reading flow.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img src=\"[embedded-image-removed]\" alt=\"Page background graphic\" style=\"width: 612.0pt; height: auto;\"></figure> placed between the </nav> closing the TOC and the <h2 id=\"history-background\"> heading. This is a per-page decorative element from the PDF footer area, not substantive body content.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Generic placeholder alt text on a decorative image inserted mid-content. The alt text 'Page background graphic' contains the generic term 'graphic' and provides no meaningful information about the image content.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"Page background graphic\" style=\"width: 612.0pt; height: auto;\">. The word 'graphic' is explicitly listed as a generic placeholder term.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 255.53,
+    "page_count": 5,
+    "visual_input_tokens": 16478,
+    "visual_output_tokens": 8936,
+    "content_input_tokens": 16280,
+    "content_output_tokens": 2718,
+    "triage_input_tokens": 16608,
+    "triage_output_tokens": 345,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:06:48.729229",
+    "auditor_version": "1.0.0"
+  }
+}

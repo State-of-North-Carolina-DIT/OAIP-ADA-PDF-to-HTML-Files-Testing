@@ -1,0 +1,89 @@
+{
+  "document_id": "01_NS_FB_New_Watauga_Kickoff_meeting_04_10_2018_2",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'process components: evaluation criteria' (4x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V3",
+      "description": "Flow Regime Changes bar chart (Stream Condition Middle Deep River, Node 280, June-November) is missing from the HTML. The complex bar chart showing QAA percentages across Unimpaired, 2003, 2030, and 2050 Demands is not rendered.",
+      "severity": "critical",
+      "evidence": "PDF page 15 shows a detailed bar chart with 9 legend categories (< 10% of QAA through >200% of QAA) across four demand scenarios. The HTML only shows the text headings 'Flow Regime Changes', 'Stream Condition Middle Deep River (Node 280)', and 'June - November' but no chart image appears in this or adjacent HTML chunks.",
+      "page": 15,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Water Supply Deficits table appears twice in the HTML: once as a slide image and once as a separate HTML table, creating a reading-order duplication.",
+      "severity": "major",
+      "evidence": "PDF page 16 shows Table 4-3 once. The HTML renders both the slide image containing the table AND a fully formatted HTML table with the same data (Orange-Alamance, Hillsborough, Piedmont Minerals, Raleigh, Durham, SGWASA rows), causing the reader to encounter the same information twice.",
+      "page": 16,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Model Development Tasks content appears duplicated in the HTML as both slide images showing the task text and HTML text rendering of the same tasks.",
+      "severity": "major",
+      "evidence": "PDF page 20 lists Tasks 1-5 once. The HTML shows partial slide images with 'Task 2 - OASIS Application Development', 'Task 3 - Organize and Conduct Meetings', 'Task 4 \u2013 Deliverables' visible as images AND also renders the same tasks as HTML text, creating duplicated reading flow.",
+      "page": 20,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 4-3 (Water Supply Demand & Deficits) is rendered both as an embedded image AND as a separate HTML <table>. The PDF contains this only once (as a single table on page 16).",
+      "severity": "major",
+      "evidence": "HTML contains: <figure><img ... alt=\"Table 4-3 Water Supply Demand and Deficits Predicted by the Neuse River Basin Hydrologic Model\" ...></figure> immediately followed by <table><caption>Table 4-3: Water Supply Demand & Deficits...</caption>...</table>. The PDF has this content only once.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Venn diagram from PDF page 19 (Project Organization) showing the three overlapping circles for Data Collection (HDR), Model Development (HydroLogics), and Data/Model Evaluation & Plan Development (NCDWR) is missing from the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 19 has a three-circle Venn diagram illustrating the relationship between HDR, HydroLogics, and NCDWR. The HTML section for 'Project Organization' contains only a bulleted list with no <img> tag.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Task 2 and Task 4 text from page 20 appear both as embedded images (with alt text 'Highlighted text: Task 2 - OASIS Application Development' and 'Highlighted text: Task 4 - Deliverables') AND as inline HTML text within the same list items. The PDF shows these once each as styled text.",
+      "severity": "major",
+      "evidence": "HTML: '<li><figure><img ... alt=\"Highlighted text: Task 2 - OASIS Application Development\" ...></figure> Task 2 - OASIS Application Development</li>' \u2014 the same content rendered twice per item.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The URL 'https://deq.nc.gov/about/divisions/water-resources/' on the closing slide (page 23) is rendered as plain text in the HTML without an <a href> wrapper.",
+      "severity": "major",
+      "evidence": "HTML: '<p><strong>Division of Water Resources</strong><br>https://deq.nc.gov/about/divisions/water-resources/<br>919-707-9000<br>???</p>' \u2014 the URL is not wrapped in an anchor tag.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 6,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 196.09,
+    "page_count": 23,
+    "visual_input_tokens": 71118,
+    "visual_output_tokens": 4198,
+    "content_input_tokens": 45572,
+    "content_output_tokens": 4557,
+    "triage_input_tokens": 45413,
+    "triage_output_tokens": 99,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:05:30.420990",
+    "auditor_version": "1.0.0"
+  }
+}

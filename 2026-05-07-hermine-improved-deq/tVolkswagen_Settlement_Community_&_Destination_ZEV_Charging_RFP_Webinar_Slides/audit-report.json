@@ -1,0 +1,73 @@
+{
+  "document_id": "tVolkswagen_Settlement_Community_&_Destination_ZEV_Charging_RFP_Webinar_Slides",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'daq grant management system (gms)' (5x); 'community and destination zev infrastructure program' (4x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "C5",
+      "description": "Heading hierarchy broken: 'January 13, 2025' is rendered as <h1> (appearing twice) when it is a deadline callout, not a document-level title. This creates hierarchy jumps from h2\u2192h3\u2192h1, misrepresenting nesting.",
+      "severity": "major",
+      "evidence": "HTML: '<h3>You MUST apply for GMS access no later than</h3><h1>January 13, 2025</h1>' \u2014 In the PDF (pages 12 and 36), 'January 13, 2025' is emphasized red text within a section, not the top-level document heading.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "URL text altered: a hyphen was inserted between 'DAQ' and 'grants' in a URL, changing the displayed and linked address.",
+      "severity": "major",
+      "evidence": "PDF page 19: 'https://deq.nc.gov/DAQgrants-management' \u2014 HTML: 'https://deq.nc.gov/DAQ-grants-management'. The hyphen between 'DAQ' and 'grants' is not present in the PDF text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "Email address 'daq.NC_VWGrants@deq.nc.gov' appears as plain text in the HTML in multiple locations (subscribe sections and 'Where to get more information' section), whereas in the PDF it appears as hyperlinked/colored text.",
+      "severity": "major",
+      "evidence": "HTML subscribe section: 'to daq.NC_VWGrants@deq.nc.gov.' \u2014 plain text, no <a> tag. HTML final section: '<strong>E-mail questions to: daq.NC_VWGrants@deq.nc.gov</strong>' \u2014 plain text. PDF pages 22, 38, 40 show this email in link-colored text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "DC Fast Funding Levels table structure altered. The PDF table uses merged cells for 'Or (whichever is less)' spanning all data rows and has a hierarchical header with 'Reimbursement Amount (Per Port)' spanning Government/Non-Government sub-headers. The HTML flattens this into 8 individual columns with the condition text repeated in every row and the hierarchical header replaced by long dash-separated column names.",
+      "severity": "major",
+      "evidence": "PDF page 9: 'Or (whichever is less)' appears as a single merged area spanning 4 rows under Government-Owned and Non-Government-Owned headers. HTML: 8 separate <th> elements (e.g., 'Reimbursement Amount (Per Port) - Government-Owned Property (Condition)') and 'Or (whichever is less)' repeated in each <td> row. All data values are intact.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4a",
+      "description": "The href URL for the VW-Community-Destination link differs from the display text URL visible in the PDF. The HTML injects a long URL not shown in the PDF text.",
+      "severity": "critical",
+      "evidence": "PDF page 40 shows 'https://deq.nc.gov/VW-Community-Destination' as both display text and link. HTML: '<a href=\"https://www.deq.nc.gov/news/events/volkswagen-settlement-community-and-destination-zero-emission-vehicle-infrastructure-program\">https://deq.nc.gov/VW-Community-Destination</a>' \u2014 the href URL is not visible anywhere in the PDF.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 359.54,
+    "page_count": 40,
+    "visual_input_tokens": 106414,
+    "visual_output_tokens": 4495,
+    "content_input_tokens": 78079,
+    "content_output_tokens": 12284,
+    "triage_input_tokens": 74484,
+    "triage_output_tokens": 155,
+    "triage_dropped": 1,
+    "timestamp": "2026-05-07T04:18:04.751229",
+    "auditor_version": "1.0.0"
+  }
+}

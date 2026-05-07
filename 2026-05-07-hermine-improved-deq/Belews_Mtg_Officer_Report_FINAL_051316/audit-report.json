@@ -1,0 +1,57 @@
+{
+  "document_id": "Belews_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Officials' names and titles duplicated on HTML page 1. 'PAT McCRORY Governor', 'DONALD R. VAN DER VAART Secretary', and 'TRACY DAVIS Director' appear twice: once in the letterhead header area and again as plain body text before the MEMORANDUM heading. Footer text is also inserted between the header and memo content.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows officials' names only in the upper-right header. HTML page 1 renders them in the header AND repeats them as standalone body text lines below a footer block and color bar, creating a duplicated reading experience.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Repeated footer and decorative color bar inserted between the end of the memo outline (Section I\u2013IV list) and the beginning of the History/Background section, disrupting the continuous reading flow.",
+      "severity": "major",
+      "evidence": "PDF flows directly from the outline on page 1 to History/Background on page 2 with a simple page break. HTML inserts the full footer text ('State of North Carolina | Environmental Quality | \u2026') and a decorative color bar between these content sections within the continuous document.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A full-page-width embedded image (612pt wide) is inserted between body sections\u2014between the document outline and the 'I. History/Background' heading\u2014where no standalone image exists in the PDF at that position. This likely represents a duplicate page rendering (page header/footer or full-page image) placed mid-content alongside the same text already rendered as HTML.",
+      "severity": "major",
+      "evidence": "HTML: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"></figure> appears immediately before <h2>I. History/Background</h2>. The PDF has no standalone image at that location; the content is purely text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second embedded image has empty alt text (alt=\"\"), marking it as decorative. If it is in fact a substantive image (e.g., a full-page rendering or a page-level graphic), the empty alt text provides no information. Additionally, the first image's alt text 'NC DEQ logo' omits the sub-text 'Energy, Mineral & Land Resources / ENVIRONMENTAL QUALITY' visible in the PDF letterhead logo area.",
+      "severity": "minor",
+      "evidence": "HTML image 1: alt=\"NC DEQ logo\". PDF letterhead includes the NC tree logo with 'Energy, Mineral & Land Resources / ENVIRONMENTAL QUALITY' beneath it. HTML image 2: alt=\"\" with width 612pt inserted mid-content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 227.18,
+    "page_count": 5,
+    "visual_input_tokens": 16478,
+    "visual_output_tokens": 5247,
+    "content_input_tokens": 16160,
+    "content_output_tokens": 5219,
+    "triage_input_tokens": 16633,
+    "triage_output_tokens": 80,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:05:43.017099",
+    "auditor_version": "1.0.0"
+  }
+}

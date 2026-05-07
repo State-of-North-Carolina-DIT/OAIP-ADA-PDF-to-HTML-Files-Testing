@@ -1,0 +1,24 @@
+{
+  "document_id": "01_2019_Consumer_Shellfish_Advisory_ENGLISH",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 71.03,
+    "page_count": 2,
+    "visual_input_tokens": 6784,
+    "visual_output_tokens": 2248,
+    "content_input_tokens": 7036,
+    "content_output_tokens": 848,
+    "triage_input_tokens": 5100,
+    "triage_output_tokens": 34,
+    "triage_dropped": 1,
+    "timestamp": "2026-05-07T03:46:29.765341",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "document_id": "01_NCDAQ_Final_RH_SIP_Transmittal_Letter_040422.pdf",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina Great Seal image at the top of PDF page 1 is missing from the HTML rendering.",
+      "severity": "critical",
+      "evidence": "PDF page 1 has a large centered North Carolina state seal above the 'NORTH CAROLINA Environmental Quality' heading. The HTML has the text 'NORTH CAROLINA' and 'Environmental Quality' but the seal image is absent.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "PDF page 3 content is duplicated in the HTML as both an embedded screenshot image and as converted text, disrupting reading flow.",
+      "severity": "major",
+      "evidence": "The HTML contains an embedded screenshot image of the entire PDF page 3 (showing the closing paragraphs, signature, cc list) immediately followed by the same content rendered as HTML text. A reader encounters the same information twice in sequence.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The handwritten signature of Michael A. Abraczinskas is missing from the HTML text rendering of the closing section.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows a handwritten signature between 'Sincerely,' and 'Michael A. Abraczinskas, Director'. In the HTML text rendering, 'Sincerely,' is followed directly by 'Michael A. Abraczinskas, Director' with no signature image. The signature only appears in the embedded page screenshot.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "A page-footer/logo-bar image from PDF page 1 is inserted mid-content in the HTML body, between the bullet list of SIP elements and the paragraph about Section 7.8.3. This breaks the reading flow by placing a page-level decorative/footer element between body paragraphs.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"></figure> between the </ul> closing the SIP elements list and the <p> beginning 'In Section 7.8.3 of the final SIP\u2026'. This 612pt-wide (full page width) image corresponds to the DEQ footer/branding bar at the bottom of PDF page 1.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The second image (likely the DEQ department logo/branding bar from page 1 footer) has an empty alt attribute (alt=\"\"), marking it as purely decorative. If it contains the department logo, it should have descriptive alt text.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\">. This appears to correspond to the DEQ branding/logo element at the bottom of PDF page 1.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 230.07,
+    "page_count": 4,
+    "visual_input_tokens": 12644,
+    "visual_output_tokens": 5397,
+    "content_input_tokens": 14225,
+    "content_output_tokens": 5636,
+    "triage_input_tokens": 13539,
+    "triage_output_tokens": 73,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:04:53.108563",
+    "auditor_version": "1.0.0"
+  }
+}

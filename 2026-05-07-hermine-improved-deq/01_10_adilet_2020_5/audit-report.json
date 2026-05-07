@@ -1,0 +1,73 @@
+{
+  "document_id": "01_10_adilet_2020_5",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "PG1",
+      "description": "Repeated page header/footer content in HTML",
+      "severity": "major",
+      "evidence": "The following text blocks repeat 3+ times, likely page headers/footers that should not appear in the body: 'mark piazza | manager, pipeline compliance and r&dcolonial pipeline companyo. 67...' (3x).",
+      "page": null,
+      "call_source": "structural"
+    },
+    {
+      "check_id": "V5",
+      "description": "David Miller's signature image in the HTML captures surrounding text content that also appears as regular HTML text, creating reading duplication that interrupts flow",
+      "severity": "major",
+      "evidence": "PDF page shows a clean signature block: 'Sincerely,' followed by handwritten signature, then 'David Miller / State Mining Engineer'. HTML shows 'Sincerely,' and 'for' as text, then a signature image that includes the phone number fragment '(919) 707-9220 if you have an', 'Sincerely,', the handwritten signature, and 'David Miller / State Mining Engi...' \u2014 then 'David Miller' and 'State Mining Engineer' appear again as text below the image",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Mark Piazza's signature image in the HTML includes 'Sincerely,' and 'Mark Piazza' text that also appears as regular HTML text, creating reading duplication",
+      "severity": "major",
+      "evidence": "PDF shows 'Sincerely,' then handwritten signature then 'Mark Piazza / Manager, Pipeline Compliance and R&D'. HTML shows 'Sincerely,' as text, then a signature image containing 'Sincerely,' / handwritten signature / 'Mark Piazza', then 'Mark Piazza' and title appear again as regular text below the image",
+      "page": 14,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C4b",
+      "description": "www.colpipe.com appears as plain underlined text in the HTML without being wrapped in <a href> tags. In the PDF email signatures, this URL is rendered as a clickable hyperlink (blue text).",
+      "severity": "major",
+      "evidence": "HTML shows '<u>www.colpipe.com</u>' in at least 3 instances of Mark Piazza's email signature. The PDF shows these as active hyperlinks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text 'Social media icons' is generic and appears 3 times in the HTML. It does not describe which social media platforms are represented (LinkedIn, Facebook, Twitter, Instagram).",
+      "severity": "minor",
+      "evidence": "HTML: alt=\"Social media icons\" \u2014 PDF shows icons for LinkedIn, Facebook, Twitter, and Instagram in the email signature blocks.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for David Miller's signature is 'Handwritten signature' which does not identify the signer, unlike the Mark Piazza signature which correctly uses 'Handwritten signature of Mark Piazza'.",
+      "severity": "minor",
+      "evidence": "HTML: alt=\"Handwritten signature\" for the signature on page 2 of the PDF, which is David Miller's signature as State Mining Engineer.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 676.34,
+    "page_count": 17,
+    "visual_input_tokens": 54280,
+    "visual_output_tokens": 25316,
+    "content_input_tokens": 40060,
+    "content_output_tokens": 8270,
+    "triage_input_tokens": 33585,
+    "triage_output_tokens": 408,
+    "triage_dropped": 1,
+    "timestamp": "2026-05-07T03:52:58.257660",
+    "auditor_version": "1.0.0"
+  }
+}

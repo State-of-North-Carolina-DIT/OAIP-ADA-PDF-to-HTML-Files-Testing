@@ -1,0 +1,24 @@
+{
+  "document_id": "Buck_Meeting_Officer_Report_Final_5_13_16_00000002",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 139.65,
+    "page_count": 6,
+    "visual_input_tokens": 20016,
+    "visual_output_tokens": 1475,
+    "content_input_tokens": 19808,
+    "content_output_tokens": 4944,
+    "triage_input_tokens": 0,
+    "triage_output_tokens": 0,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:05:14.208355",
+    "auditor_version": "1.0.0"
+  }
+}

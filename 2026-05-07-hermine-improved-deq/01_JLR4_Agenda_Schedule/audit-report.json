@@ -1,0 +1,73 @@
+{
+  "document_id": "01_JLR4_Agenda_Schedule",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "Merged cells in the 'Cape Fear \u2013 Neuse River Basin Hydrologic Model' column that spanned multiple rows in the PDF were split into separate rows with 'EMC Model Approval' duplicated across four rows (1/1/2013, 2/1/2013, 4/1/2013, 5/1/2013) instead of appearing as a single merged cell.",
+      "severity": "major",
+      "evidence": "PDF shows 'EMC Model Approval' as one cell spanning approximately rows 1/1/2013 through 5/1/2013. HTML repeats the text in each individual row.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V2",
+      "description": "The 11/14/2013 and 9/11/2014 rows had content spanning across multiple columns in the PDF (merged cells), but in the HTML the text is duplicated into separate columns rather than shown as a single merged cell.",
+      "severity": "major",
+      "evidence": "PDF: 11/14/2013 row shows 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' spanning across Jordan Lake and Cape Fear columns. HTML: same text appears independently in both columns. Same pattern for 9/11/2014 row.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The PDF table row for 11/14/2013 has the text 'Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.' in a single cell spanning the Jordan Lake and Cape Fear Water Supply Plan columns. The HTML duplicates this text into two separate cells (columns 2 and 3), misrepresenting the merged structure.",
+      "severity": "major",
+      "evidence": "PDF: merged cell spanning columns 2-3 at 11/14/2013. HTML: <td>Final Water Supply Plan and DWR's Allocation Recommendations presented at the EMC's November 2013 meeting.</td> appears in both column 2 and column 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The PDF table row for 9/11/2014 has 'EMC decision at the September 2014 meeting.' in a single cell spanning columns 2-3. The HTML duplicates this into two separate cells.",
+      "severity": "major",
+      "evidence": "PDF: merged cell spanning columns 2-3 at 9/11/2014. HTML: <td>EMC decision at the September 2014 meeting.</td> appears in both column 2 and column 3.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C1",
+      "description": "The HTML places 'EMC Model Approval' in four separate table rows (1/1/2013, 2/1/2013, 4/1/2013, 5/1/2013) in the Cape Fear\u2013Neuse column. The PDF shows 'EMC Model Approval' as a single merged cell in that column spanning roughly those rows. Repeating it four times fabricates content in cells that were blank in the unmerged interpretation.",
+      "severity": "critical",
+      "evidence": "HTML rows for 1/1/2013, 2/1/2013, 4/1/2013, and 5/1/2013 all contain <td>EMC Model Approval</td>. PDF shows a single merged cell with that text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The footnote URL 'http://www.doodle.com/5ctdbuc2n3akshim' appears as plain text in the HTML and is not wrapped in an <a href> tag.",
+      "severity": "major",
+      "evidence": "HTML: <p><sup>1</sup>http://www.doodle.com/5ctdbuc2n3akshim</p> \u2014 no link tag present.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 113.34,
+    "page_count": 2,
+    "visual_input_tokens": 7820,
+    "visual_output_tokens": 2413,
+    "content_input_tokens": 8233,
+    "content_output_tokens": 2992,
+    "triage_input_tokens": 10667,
+    "triage_output_tokens": 367,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:02:54.377395",
+    "auditor_version": "1.0.0"
+  }
+}

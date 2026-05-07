@@ -1,0 +1,81 @@
+{
+  "document_id": "Lake-Tillery-Aquatic-Plant-Reporting",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Page 2 two-column layout collapsed, reversing natural reading order. PDF shows DEQ (left column) before SC DNR (right column); HTML renders SC DNR content first, followed by DEQ content.",
+      "severity": "major",
+      "evidence": "PDF page 2 has North Carolina DEQ logo and Aquatic Weed Control Program webpage on the left, SC DNR seal and Aquatic Nuisance Species Program webpage on the right. HTML shows SC DNR seal and content first, then partner logos interleaved, then DEQ webpage screenshot and remaining logos.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Website screenshot content from the Aquatic Plant Management webpage is displayed as an image AND also rendered as duplicate HTML text below it, creating a reading-order disruption through content duplication.",
+      "severity": "major",
+      "evidence": "PDF page 3 shows only a screenshot of duke-energy.com/AquaticPlants. HTML displays the same screenshot image, then immediately below it reproduces the screenshot's visible text as separate HTML elements: 'Aquatic Plant Management' heading, paragraphs about environmental stewardship, 'Aquatic Plants in our Reservoirs' section, and 'Related Links' bullet list.",
+      "page": 3,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Content from the website screenshot on PDF page 3 is duplicated: the screenshot image is present AND the text within it (body paragraphs about aquatic plant management, the 'Related Links' list items) is also extracted as separate HTML text elements. In the PDF, this content appears only within the embedded website screenshot, not as standalone text on the slide.",
+      "severity": "major",
+      "evidence": "HTML has <img alt='Aquatic Plant Management website screenshot'> AND separately renders 'A key aspect of being a good environmental steward is monitoring and managing our rivers and lakes...' and the Related Links list (Aquatic Plant Reporting Form, Catawba-Wateree Aquatic Plant Survey, etc.) as discrete HTML elements. In the PDF page 3, all this content is contained solely within the screenshot image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "The URL 'duke-energy.com/AquaticPlants' appears as a styled hyperlink in the PDF (pages 3 and 4) but is rendered as plain text without an <a href> wrapper in the HTML.",
+      "severity": "major",
+      "evidence": "PDF page 3 heading area shows 'duke-energy.com/AquaticPlants' as a teal/blue hyperlink. HTML section 3: '<p>duke-energy.com/AquaticPlants</p>' (plain text). HTML section 4 key takeaways: 'duke-energy.com/AquaticPlants' also plain text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C4b",
+      "description": "Email addresses on PDF page 6 appear as styled (teal-colored) text suggesting mailto links but are plain text in the HTML without <a href> wrappers.",
+      "severity": "major",
+      "evidence": "PDF page 6 shows 'AquaticPlants@duke-energy.com' and 'LakeServices@duke-energy.com' in colored styled text. HTML: '<p>For aquatic plant questions<br>AquaticPlants@duke-energy.com</p>' and '<p>For permitting questions<br>LakeServices@duke-energy.com</p>' \u2014 both plain text.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The NC DEQ logo image on PDF page 4 is missing from the HTML and has been replaced with plain paragraph text 'NORTH CAROLINA Department of Environmental Quality'. The PDF shows this as a graphical logo alongside the NC Wildlife Resources Commission logo.",
+      "severity": "minor",
+      "evidence": "PDF page 4 bottom: two logos side by side (DEQ and Wildlife). HTML section 4 has only: '<figure><img ... alt=\"NC Wildlife Resources Commission logo\">' and '<p>NORTH CAROLINA<br>Department of Environmental Quality</p>' \u2014 text substituted for the DEQ logo image.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The Duke Energy logo at the bottom of PDF page 1 ('BUILDING A SMARTER ENERGY FUTURE\u00ae') and the Duke Energy logo among the partner logos on PDF page 2 are both absent from the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 bottom: Duke Energy logo with tagline. PDF page 2: Duke Energy logo appears among partner organization logos. Neither has a corresponding <img> tag in the HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 5,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 313.51,
+    "page_count": 6,
+    "visual_input_tokens": 20052,
+    "visual_output_tokens": 6887,
+    "content_input_tokens": 14971,
+    "content_output_tokens": 8582,
+    "triage_input_tokens": 17306,
+    "triage_output_tokens": 99,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:15:06.353276",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "document_id": "0_JLA4_Email_Announcement_20160316",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "V4",
+      "description": "Italic emphasis completely removed from two document titles that are italicized in the PDF.",
+      "severity": "minor",
+      "evidence": "PDF shows 'Draft Cape Fear River Water Supply Evaluation' and 'Draft Jordan Lake Water Supply Allocation Recommendations' in italics to distinguish them as document titles. In the HTML, both titles are rendered in plain (non-italic) text within quotation marks, losing the italic emphasis entirely.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 70.93,
+    "page_count": 1,
+    "visual_input_tokens": 4579,
+    "visual_output_tokens": 904,
+    "content_input_tokens": 6635,
+    "content_output_tokens": 1994,
+    "triage_input_tokens": 4687,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:02:14.060858",
+    "auditor_version": "1.0.0"
+  }
+}

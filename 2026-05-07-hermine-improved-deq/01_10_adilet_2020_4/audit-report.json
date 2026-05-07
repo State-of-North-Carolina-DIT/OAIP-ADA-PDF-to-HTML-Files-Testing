@@ -1,0 +1,57 @@
+{
+  "document_id": "01_10_adilet_2020_4",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "North Carolina state seal/logo at top of page 1 is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 displays a prominent North Carolina state seal between the header names. The HTML rendering has no corresponding image element.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "DEQ logo/emblem at bottom of page 1 is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 footer area shows a DEQ organizational logo/seal to the left of the address block. The HTML renders only the text portion of the footer without the logo image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Handwritten signature of Judith A. Wehner is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 4 shows a handwritten signature above the printed name 'Judith A. Wehner'. The HTML version shows only 'Sincerely,' followed by the printed name with no signature image.",
+      "page": 4,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The PDF contains three substantive images \u2014 the North Carolina state seal (top of page 1), the NC DEQ logo (bottom of page 1), and a handwritten signature of Judith A. Wehner (page 4) \u2014 none of which have corresponding <img> tags in the HTML.",
+      "severity": "minor",
+      "evidence": "PDF page 1 top: NC state seal/coat of arms. PDF page 1 bottom: NC DEQ department logo. PDF page 4: handwritten signature reading 'Judith A. Wehner'. The HTML has zero <img> tags.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 3,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 76.31,
+    "page_count": 4,
+    "visual_input_tokens": 14048,
+    "visual_output_tokens": 1778,
+    "content_input_tokens": 11973,
+    "content_output_tokens": 1313,
+    "triage_input_tokens": 9647,
+    "triage_output_tokens": 60,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:42:05.238581",
+    "auditor_version": "1.0.0"
+  }
+}

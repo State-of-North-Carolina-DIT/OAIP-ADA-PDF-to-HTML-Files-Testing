@@ -1,0 +1,89 @@
+{
+  "document_id": "01_Flow_Scenarios",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "AXE-empty-table-header",
+      "description": "Ensure table headers have discernible text",
+      "severity": "minor",
+      "evidence": "Fix any of the following:\n  Element does not have text that is visible to screen readers [<th scope=\"col\"></th>]",
+      "page": null,
+      "call_source": "accessibility"
+    },
+    {
+      "check_id": "V5",
+      "description": "Title slide content is duplicated: the heading 'Introduction to Flow Scenarios' appears as HTML text AND the entire title slide is embedded as a screenshot image below it, creating redundant reading of the same content.",
+      "severity": "major",
+      "evidence": "PDF page 1 has one title slide. HTML page 1 shows a text heading 'Introduction to Flow Scenarios' at top, then the full title slide rendered as an embedded image below it with all the same text.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The 'Flow Regime Tied to Ecology' flowchart diagram is missing. The PDF shows a structured visual flowchart with boxes and arrows linking 'Sound Ecological Environment' to four flow types and their sub-functions. The HTML replaces this with a nested bulleted text list, losing the visual diagram entirely.",
+      "severity": "critical",
+      "evidence": "PDF page 10 contains a flowchart graphic with boxes for 'Sound Ecological Environment', 'Subsistence Flows', 'Base Flows', 'High Flow Pulses', 'Overbank Flows' connected by arrows with subordinate detail boxes. HTML renders only a nested text hierarchy with no image of the diagram.",
+      "page": 10,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Cheoah River base flow table appears twice: once as the embedded slide image and once as an HTML table, creating duplicated reading of the same data.",
+      "severity": "major",
+      "evidence": "PDF page 8 shows the Cheoah River monthly base flow table once in a slide. HTML shows the slide screenshot image containing the table AND a separate HTML table reproducing the same 'Monthly Base Flow (cfs) Releases from Santeetlah Dam' data directly below it.",
+      "page": 8,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Cheoah River high flow events table (Table 2) appears twice: once as the embedded slide image and once as an HTML table, creating duplicated reading of the same data.",
+      "severity": "major",
+      "evidence": "PDF page 9 shows Table 2 (High Flow Events \u2013 5-year Repeating Schedule) once in a slide. HTML shows the slide screenshot image containing the table AND a separate HTML table reproducing the same data with footnotes below it.",
+      "page": 9,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Cheoah River monthly base flow table (PDF page 8) is rendered both as an embedded slide image AND as a separate HTML <table>. The same data appears twice.",
+      "severity": "major",
+      "evidence": "HTML section 'Example \u2013 Cheoah River' contains <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 699.0pt; height: auto;\"></figure> immediately followed by a <table> with caption 'Monthly Base Flow (cfs) Releases from Santeetlah Dam into the Cheoah River Bypassed Reach.' containing identical Tier A/Tier B data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "Cheoah River high flow events table (PDF page 9) is rendered both as an embedded slide image AND as a separate HTML <table>. The same data appears twice.",
+      "severity": "major",
+      "evidence": "HTML second 'Example \u2013 Cheoah River' section contains <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 720.0pt; height: auto;\"></figure> immediately followed by a <table> with caption 'Table 2. High Flow Events \u2013 5-year Repeating Schedule.' containing identical data.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Two Cheoah River slide images have empty alt text (alt=\"\") despite containing meaningful visual content (table layouts, formatting context from the original slides).",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 699.0pt;\"> and <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 720.0pt;\"> \u2014 both for Cheoah River slides that show formatted tables.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 5,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 216.43,
+    "page_count": 12,
+    "visual_input_tokens": 38986,
+    "visual_output_tokens": 5576,
+    "content_input_tokens": 28160,
+    "content_output_tokens": 4595,
+    "triage_input_tokens": 27655,
+    "triage_output_tokens": 155,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:04:39.427072",
+    "auditor_version": "1.0.0"
+  }
+}

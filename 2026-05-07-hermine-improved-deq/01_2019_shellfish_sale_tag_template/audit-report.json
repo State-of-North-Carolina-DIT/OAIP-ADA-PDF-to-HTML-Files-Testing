@@ -1,0 +1,33 @@
+{
+  "document_id": "01_2019_shellfish_sale_tag_template",
+  "verdict": "pass",
+  "findings": [
+    {
+      "check_id": "C6",
+      "description": "The PDF contains a substantive diagram showing a sample shellstock sale tag with annotation arrows pointing to each required field. This visual layout is central to the document's purpose (showing users how a compliant tag should look). The HTML has no corresponding <img> tag; the content is converted to flat text and a bulleted list, losing the spatial layout and arrow annotations.",
+      "severity": "minor",
+      "evidence": "PDF: bordered tag diagram with arrows pointing from labels (e.g., 'Dealer Name, Address, & Certification Number', 'Harvest Date; may be mo/dy/yr...') to specific parts of the tag layout. HTML: zero <img> tags present; diagram content rendered as <section> paragraphs and a <ul> list.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 123.42,
+    "page_count": 1,
+    "visual_input_tokens": 4761,
+    "visual_output_tokens": 2613,
+    "content_input_tokens": 6971,
+    "content_output_tokens": 2600,
+    "triage_input_tokens": 5094,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:48:20.954689",
+    "auditor_version": "1.0.0"
+  }
+}

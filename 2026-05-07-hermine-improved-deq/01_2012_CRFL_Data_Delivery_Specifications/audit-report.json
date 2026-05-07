@@ -1,0 +1,33 @@
+{
+  "document_id": "01_2012_CRFL_Data_Delivery_Specifications",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "Flowchart diagram showing hierarchical data relationships between record types is missing from the HTML. The PDF contains a visual diagram with boxes and connecting lines illustrating how Record Types 1, 7, 2, 3, 4, 5, and 9 relate to each other. The HTML replaces this with a flat text listing of record type names, losing the visual hierarchy and connection lines.",
+      "severity": "critical",
+      "evidence": "PDF page 5 shows a flowchart with boxes (Environmental Data Record Type 1, Gear Data Record Type 7, Replicate Data Record Type 2, Species Data Record Type 3, Individual Data Record Type 4, Tag Recapture Data Record Type 9, Age Data Record Type 5) connected by lines showing parent-child relationships. HTML renders this as a sequential plain-text list without any diagram or visual structure.",
+      "page": 5,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 174.71,
+    "page_count": 10,
+    "visual_input_tokens": 32089,
+    "visual_output_tokens": 2771,
+    "content_input_tokens": 32434,
+    "content_output_tokens": 5350,
+    "triage_input_tokens": 24991,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:45:00.224320",
+    "auditor_version": "1.0.0"
+  }
+}

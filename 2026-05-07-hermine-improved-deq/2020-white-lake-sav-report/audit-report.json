@@ -1,0 +1,10 @@
+{
+  "document_id": "2020-white-lake-sav-report",
+  "verdict": "skipped",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": "visual too large (22p)",
+  "metadata": null
+}

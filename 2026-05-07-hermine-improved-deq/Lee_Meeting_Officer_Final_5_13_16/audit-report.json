@@ -1,0 +1,33 @@
+{
+  "document_id": "Lee_Meeting_Officer_Final_5_13_16",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "A large embedded image (width 598.3pt) is inserted mid-content between the table of contents and Section I heading. This appears to be a page-footer/separator element from the bottom of PDF page 1, placed into the HTML body flow rather than consolidated into a footer or removed. The agency contact information it likely contains is already rendered as text in the HTML header block.",
+      "severity": "major",
+      "evidence": "HTML: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 598.3pt; height: auto;\"></figure> appears between closing </nav> of table of contents and <h2 id=\"history-background\">. In the PDF, this corresponds to the footer bar at the bottom of page 1 containing 'State of North Carolina | Environmental Quality | Water Resources / 1611 Mail service Center | Raleigh, North Carolina 27699-1611 / 919 707 9000', which is already present as text in the HTML <header>.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 134.02,
+    "page_count": 5,
+    "visual_input_tokens": 17026,
+    "visual_output_tokens": 1614,
+    "content_input_tokens": 17495,
+    "content_output_tokens": 4244,
+    "triage_input_tokens": 17544,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:12:10.028103",
+    "auditor_version": "1.0.0"
+  }
+}

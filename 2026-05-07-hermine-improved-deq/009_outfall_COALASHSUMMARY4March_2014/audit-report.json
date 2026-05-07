@@ -1,0 +1,65 @@
+{
+  "document_id": "009_outfall_COALASHSUMMARY4March_2014",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V2",
+      "description": "The 'no NC standards for dissolved metals' annotation in the Standard/Basis columns is duplicated across both columns in the HTML. In the PDF, this text appears once (spanning or in the Standard column only), but in the HTML, 'no NC standards for' is placed in both the Standard AND Basis columns for the Al-Dissolved Aluminum row, and 'dissolved metals' is placed in both columns for the As Dissolved Arsenic row.",
+      "severity": "major",
+      "evidence": "PDF: 'no NC standards for dissolved metals' appears as a single annotation in the rightmost area for Al-Dissolved Aluminum row. HTML: 'no NC standards for' appears in both 'Applicable Water Quality Standard' AND 'Basis for Standard' columns for Al row, and 'dissolved metals' appears in both columns for As row, creating text duplication not present in the original.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C1",
+      "description": "The 'Basis for Standard' column for dissolved metals rows contains fabricated duplicate text. In the PDF, 'no NC standards for dissolved metals' appears only in the Standard column area. The HTML duplicates this text into the Basis column as well.",
+      "severity": "critical",
+      "evidence": "HTML Al-Dissolved row: <td>no NC standards for</td><td>no NC standards for</td>. HTML As-Dissolved row: <td>dissolved metals</td><td>dissolved metals</td>. In the PDF, this note only appears once in the Standard column area, not in the Basis column.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "Qualifier flags (U) are separated into dedicated columns rather than being inline with values as in the PDF. This doubles the number of date-related columns from 4 to 8, significantly altering the table structure.",
+      "severity": "major",
+      "evidence": "PDF shows values like '0.4 U' and '0.50 U' in a single cell. HTML splits these into two adjacent cells: <td>0.4</td><td>U</td> and <td>0.50</td><td>U</td>, with separate qualifier columns for each sampling date.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The PDF's multi-row header (3 rows showing dates, report numbers, lab/dissolved designations, and sample IDs) is flattened into a single header row with concatenated text, making the header confusing and structurally different from the original.",
+      "severity": "major",
+      "evidence": "PDF has three header rows with separate labels (e.g., 'Report #' / 'Lab Dissolved' / 'PQL Units\\Hg 1631'). HTML combines them into a single header cell: 'Report # Dissolved Units\\Hg 1631' which obscures the meaning. Date columns similarly concatenate all sample IDs into one header string.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C3b",
+      "description": "The 'no NC standards for dissolved metals' note from the PDF is split across two table rows (Al-Dissolved and As-Dissolved) in the HTML, with the first part in one row's Standard cell and the second part in the next row's Standard cell, breaking a single notation into two unrelated cells.",
+      "severity": "major",
+      "evidence": "PDF: 'no NC standards for dissolved metals' appears as a single note in the Standard/Basis area for the dissolved metals section. HTML: Al row has Standard='no NC standards for', As row has Standard='dissolved metals'.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 355.44,
+    "page_count": 1,
+    "visual_input_tokens": 4330,
+    "visual_output_tokens": 13182,
+    "content_input_tokens": 13855,
+    "content_output_tokens": 6877,
+    "triage_input_tokens": 8193,
+    "triage_output_tokens": 73,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:41:37.680081",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "document_id": "PFAS_Data_Synthesis_Support_STEP_Initiative_2022",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "C4a",
+      "description": "PDF email hyperlinks for DEQInternships@ncdenr.gov lost in HTML. The PDF shows these email addresses as clickable hyperlinks (blue/underlined as links), but the HTML renders them as plain text without <a href> wrapping.",
+      "severity": "critical",
+      "evidence": "PDF page 3 shows 'DEQInternships@ncdenr.gov' as a hyperlink twice (in the application instructions and at the bottom under QUESTIONS). HTML first instance: 'Send resume and cover letter to DEQInternships@ncdenr.gov' (plain text, no <a>). HTML second instance: '<u>DEQInternships@ncdenr.gov</u>' (underlined text only, no <a href>).",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 67.68,
+    "page_count": 3,
+    "visual_input_tokens": 10774,
+    "visual_output_tokens": 1109,
+    "content_input_tokens": 10415,
+    "content_output_tokens": 1850,
+    "triage_input_tokens": 12335,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:11:37.263887",
+    "auditor_version": "1.0.0"
+  }
+}

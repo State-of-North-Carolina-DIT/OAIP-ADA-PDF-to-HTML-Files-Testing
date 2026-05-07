@@ -1,0 +1,57 @@
+{
+  "document_id": "2020-waccamaw-sav-report",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Table 1 (rake toss sampling point coordinates) is duplicated in the HTML \u2014 it appears first as an embedded image of the original table and then again as an HTML-rendered table, creating redundant content that disrupts reading flow.",
+      "severity": "major",
+      "evidence": "PDF page 6 shows Table 1 once as a formatted table. In the HTML conversion (visible around HTML chunk 5), the same table appears first as a screenshot/image and then immediately again as a properly rendered HTML table, both with the heading 'Table 1. Longitude and Latitude values for rake toss sampling points.'",
+      "page": 6,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Table 2 (Secchi Disk locations and results) is duplicated in the HTML \u2014 it appears first as an embedded image of the original table and then again as an HTML-rendered table, creating redundant content that disrupts reading flow.",
+      "severity": "major",
+      "evidence": "PDF page 11 shows Table 2 once as a formatted table. In the HTML conversion (visible in the last HTML chunk), the same table appears first as a screenshot/image and then immediately again as a properly rendered HTML table, both with the heading 'Table 2. Secchi Disk locations and results.'",
+      "page": 11,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C7",
+      "description": "Table 1 content appears both as an embedded image (screenshot of the table) and as a separate HTML <table>. The same duplication occurs for Table 2. In each case the same data is rendered twice \u2014 once as an <img> and once as structured HTML.",
+      "severity": "major",
+      "evidence": "Before Table 1: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"></figure> immediately followed by <table><caption>Table 1...</caption>. Before Table 2: <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"></figure> immediately followed by <table><caption>Table 2...</caption>. The PDF shows each table only once (pages 5 and 10).",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Two images (apparent screenshots of Tables 1 and 2) have empty alt text (alt=\"\"), which marks them as decorative. If they are substantive images of tables, this is incorrect; if they are truly redundant with the HTML tables, they should be removed rather than marked decorative.",
+      "severity": "minor",
+      "evidence": "HTML: <img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"> appears twice \u2014 once before Table 1 and once before Table 2.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 158.55,
+    "page_count": 10,
+    "visual_input_tokens": 31924,
+    "visual_output_tokens": 5857,
+    "content_input_tokens": 24686,
+    "content_output_tokens": 2283,
+    "triage_input_tokens": 21707,
+    "triage_output_tokens": 60,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:04:34.233152",
+    "auditor_version": "1.0.0"
+  }
+}
