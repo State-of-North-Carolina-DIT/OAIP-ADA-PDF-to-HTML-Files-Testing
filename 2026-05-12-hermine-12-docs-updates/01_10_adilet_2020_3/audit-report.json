@@ -1,0 +1,41 @@
+{
+  "document_id": "01_10_adilet_2020_3",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Signature image containing text duplicated alongside HTML text rendition of the same content. The signature block image includes 'Sincerely,' 'Judith A. Wehner,' and 'Assistant State Mining Spe[cialist]' alongside separate HTML text of the same name and title, creating reading-order duplication.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows a single signature block with handwritten signature, printed name and title. HTML renders both a cropped image of the signature block (containing the printed name/title text) AND separate HTML text for 'Judith A. Wehner' and 'Assistant State Mining Specialist' below the image.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Partial text fragment from the letter body appears at the bottom of the HTML after the cc line and DEQ logo, disrupting reading flow. A red/bold block reading 'Please be advised that ou... above have been fully addresse... information, not included in this l' duplicates body content in the wrong location.",
+      "severity": "major",
+      "evidence": "PDF page 2 ends cleanly with Enclosures and cc line. HTML rendering shows a partial, styled text fragment from the letter body appearing below the cc line and DEQ logo, creating a duplicate out-of-order content block.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 119.37,
+    "page_count": 2,
+    "visual_input_tokens": 7912,
+    "visual_output_tokens": 3829,
+    "content_input_tokens": 7747,
+    "content_output_tokens": 1135,
+    "triage_input_tokens": 9833,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-12T01:08:43.260388",
+    "auditor_version": "1.0.0"
+  }
+}

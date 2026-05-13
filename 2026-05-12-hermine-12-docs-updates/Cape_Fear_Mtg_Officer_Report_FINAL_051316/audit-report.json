@@ -1,0 +1,24 @@
+{
+  "document_id": "Cape_Fear_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "pass",
+  "findings": [],
+  "critical_count": 0,
+  "major_count": 0,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 89.5,
+    "page_count": 4,
+    "visual_input_tokens": 13912,
+    "visual_output_tokens": 2189,
+    "content_input_tokens": 13502,
+    "content_output_tokens": 1239,
+    "triage_input_tokens": 14600,
+    "triage_output_tokens": 54,
+    "triage_dropped": 1,
+    "timestamp": "2026-05-12T01:48:20.152985",
+    "auditor_version": "1.0.0"
+  }
+}

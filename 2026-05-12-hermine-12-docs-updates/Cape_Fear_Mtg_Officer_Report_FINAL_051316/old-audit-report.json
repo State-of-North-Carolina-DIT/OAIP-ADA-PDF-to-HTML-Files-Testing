@@ -1,0 +1,57 @@
+{
+  "document_id": "Cape_Fear_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Repeated header/footer content inserted between page-equivalent sections disrupts reading order. The officials' names (Pat McCrory, Donald R. Van Der Vaart, Tracy Davis) appear once in the header area alongside the logo and then again as standalone text after an inline footer, before the MEMORANDUM heading.",
+      "severity": "major",
+      "evidence": "PDF page 1 shows officials' names only in the top-right header area. HTML page 1 shows officials' names in the header area at the top AND repeated below an inline footer ('State of North Carolina | Environmental Quality\u2026') before the MEMORANDUM heading, creating a duplicated block a reader would encounter twice.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text from the PDF page footer is rendered inline between the memorandum outline section and the start of Section I (History/Background), disrupting the reading flow.",
+      "severity": "major",
+      "evidence": "PDF page 1 ends with the outline and PDF page 2 begins with I. History/Background. In the HTML, the footer text ('State of North Carolina | Environmental Quality | Energy, Mineral and Land Resources / 512 N. Salisbury Street\u2026') and a decorative bar are inserted inline between the outline items and the History/Background heading.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C8",
+      "description": "Governor's name has altered capitalization. PDF shows 'PAT McCRORY' (small-caps styling) but HTML renders it as 'PAT McCrORY' with a lowercase 'r', which is neither the PDF's rendering nor the correct mixed-case spelling 'McCrory'.",
+      "severity": "major",
+      "evidence": "PDF header: 'PAT McCRORY' \u2014 HTML: '<p>PAT McCrORY<br>Governor</p>'",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C7",
+      "description": "A page-footer decorative bar image from the PDF is inserted mid-content in the HTML body between the outline list and Section I, breaking reading flow. This is a PDF page-boundary artifact that should not appear inline.",
+      "severity": "major",
+      "evidence": "HTML contains <figure><img src=\"[embedded-image-removed]\" alt=\"\" style=\"width: 612.0pt; height: auto;\"></figure> placed between the outline (ol) and the <h2>I. History/Background</h2> heading.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 4,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 159.51,
+    "page_count": 4,
+    "visual_input_tokens": 13424,
+    "visual_output_tokens": 5170,
+    "content_input_tokens": 13453,
+    "content_output_tokens": 2216,
+    "triage_input_tokens": 14471,
+    "triage_output_tokens": 60,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:09:07.120007",
+    "auditor_version": "1.0.0"
+  }
+}

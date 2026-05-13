@@ -1,0 +1,33 @@
+{
+  "document_id": "WeatherspoonMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "PDF page-1 footer (agency address and phone number) is inserted mid-content in the HTML body, between the table of contents and Section I, breaking reading flow.",
+      "severity": "major",
+      "evidence": "HTML contains a <footer> block with 'State of North Carolina | Environmental Quality | Waste Management / 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646 / 919 707 8200' positioned between the closing </nav> of the TOC and the <h2 id=\"history-background\"> heading. In the PDF this text appears only as the page-1 bottom footer, not between body content sections.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 109.62,
+    "page_count": 5,
+    "visual_input_tokens": 16964,
+    "visual_output_tokens": 1781,
+    "content_input_tokens": 17039,
+    "content_output_tokens": 3150,
+    "triage_input_tokens": 17252,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-12T01:13:48.376721",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "document_id": "SSAB_Meeting_April_2025",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "Full-page images of each PDF page are embedded in the HTML alongside the same content rendered as structured HTML text, creating content duplication. Each image has a width of 612pt (full page width), and the alt text explicitly references 'Page 1' and 'Page 2', indicating these are full-page renderings whose content is entirely duplicated by the surrounding HTML text.",
+      "severity": "major",
+      "evidence": "HTML contains <img> with alt='North Carolina State Seal and Department of Environmental Quality document background - Page 1' and alt='North Carolina Department of Environmental Quality document background - Page 2', each at full page width (612pt). All text content visible on those pages (agenda items, header info, WebEx details, footer) is also rendered as HTML paragraphs and headings.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "Alt text for the two embedded images is generic and references page numbers rather than meaningfully describing the visual content. The second image's alt text ('North Carolina Department of Environmental Quality document background - Page 2') is particularly generic and does not describe what is actually depicted.",
+      "severity": "minor",
+      "evidence": "PDF page 2 contains the NC DEQ logo at the bottom. HTML alt text is 'North Carolina Department of Environmental Quality document background - Page 2' \u2014 'document background' is a generic descriptor that doesn't convey meaningful image content.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 146.62,
+    "page_count": 2,
+    "visual_input_tokens": 6840,
+    "visual_output_tokens": 2762,
+    "content_input_tokens": 8218,
+    "content_output_tokens": 3545,
+    "triage_input_tokens": 9874,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:14:04.108216",
+    "auditor_version": "1.0.0"
+  }
+}

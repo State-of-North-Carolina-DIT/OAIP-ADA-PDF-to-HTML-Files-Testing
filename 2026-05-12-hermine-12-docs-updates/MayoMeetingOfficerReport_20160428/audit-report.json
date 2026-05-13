@@ -1,0 +1,41 @@
+{
+  "document_id": "MayoMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "C7",
+      "description": "PDF page-footer content (agency address and phone number) is inserted mid-body in the HTML, between the table of contents and Section I, breaking reading flow.",
+      "severity": "major",
+      "evidence": "The HTML places a <footer> block containing 'State of North Carolina | Environmental Quality | Waste Management / 1646 Mail Service Center | 217 West Jones Street | Raleigh, 27699-1646 / 919 707 8200' between the <nav> (TOC) and the <h2 id=\"history-background\"> heading. In the PDF this is a page-bottom footer on page 1. Per instructions, even a single agency-address-and-phone block dropped between body paragraphs is a defect.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The handwritten signature of Elizabeth S. Werner and the accompanying digital signature stamp (with signer details and date) visible on PDF page 1 are missing from the HTML. No corresponding <img> tag exists.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a handwritten signature and a digital signature box reading 'Digitally signed by Elizabeth S Werner, DN: cn=Elizabeth S Werner, o=DWM-Solid Waste, ou=NCDENR, email=elizabeth.werner@ncdenr.gov, c=US, Date: 2016.04.28 09:56:21 -04'00''. The HTML has no <img> tag or text for either the signature or the digital stamp.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 116.6,
+    "page_count": 5,
+    "visual_input_tokens": 17030,
+    "visual_output_tokens": 1962,
+    "content_input_tokens": 16502,
+    "content_output_tokens": 3143,
+    "triage_input_tokens": 17278,
+    "triage_output_tokens": 34,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-12T01:10:39.448640",
+    "auditor_version": "1.0.0"
+  }
+}

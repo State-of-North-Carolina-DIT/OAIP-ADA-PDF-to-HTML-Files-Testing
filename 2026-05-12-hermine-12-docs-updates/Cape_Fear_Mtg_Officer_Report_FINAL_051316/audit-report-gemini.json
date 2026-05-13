@@ -1,0 +1,46 @@
+{
+  "document_id": "Cape_Fear_Mtg_Officer_Report_FINAL_051316",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Entire body content is missing from the page.",
+      "severity": "critical",
+      "evidence": "The PDF shows a full page of text below the header, but the HTML rendering for this page only displays the header, with the rest of the page completely blank.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Footer text is rendered at the top of the reading order.",
+      "severity": "major",
+      "evidence": "The HTML page begins with the text 'State of North Carolina | Environmental Quality...', which appears as footer text at the bottom of the source PDF pages.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The agency logo is missing.",
+      "severity": "major",
+      "evidence": "The 'NC DEQ' logo present in the top-left of the PDF header is missing in the HTML, appearing to be replaced by a horizontal gradient bar.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 112.89,
+    "page_count": 4,
+    "visual_input_tokens": 9675,
+    "visual_output_tokens": 489,
+    "content_input_tokens": 6017,
+    "content_output_tokens": 161,
+    "timestamp": "2026-04-17T20:50:15.429349",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "document_id": "01_10_adilet_2020_3",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal/logo image present in the PDF header is missing from the HTML conversion.",
+      "severity": "critical",
+      "evidence": "PDF page 1 shows the North Carolina state seal centered at the top of the page. The HTML rendering has no image/seal.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "The RE: subject block formatting differs - in the PDF it is indented under 'RE:' label with the subject, county, and river basin as a structured block. In HTML it is rendered as large heading-style text spanning the full width.",
+      "severity": "major",
+      "evidence": "PDF shows 'RE:' with indented lines (Proposed Alamance Quarry..., Alamance County, Cape Fear River Basin) as regular-sized text. HTML renders these as very large heading text separated by a horizontal rule.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V4",
+      "description": "The RE: subject line content is rendered as prominent headings in HTML when it is regular body text in the PDF, significantly changing the visual hierarchy.",
+      "severity": "major",
+      "evidence": "PDF: RE subject is in same font size as body text. HTML: RE subject rendered as large H1/H2-level headings that dominate the page.",
+      "page": 1,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 1,
+  "major_count": 2,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 20.94,
+    "page_count": 2,
+    "visual_input_tokens": 6717,
+    "visual_output_tokens": 544,
+    "content_input_tokens": 6301,
+    "content_output_tokens": 220,
+    "timestamp": "2026-04-17T20:36:15.252864",
+    "auditor_version": "1.0.0"
+  }
+}

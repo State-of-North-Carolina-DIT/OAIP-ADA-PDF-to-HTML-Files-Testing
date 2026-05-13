@@ -1,0 +1,49 @@
+{
+  "document_id": "Allen_Meeting_Officer_Report_20160422",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Footer content from PDF page 1 is repositioned into the body reading flow in the HTML, appearing between the officials' names/titles and the MEMORANDUM heading.",
+      "severity": "major",
+      "evidence": "PDF: Footer text ('State of North Carolina | Environmental Quality | Waste Management, 1646 Mail Service Center | 217 West Jones Street | Raleigh, North Carolina 27699-1646, 919 707 8200 T') appears at the bottom of page 1. HTML: This same text appears between 'MICHAEL SCOTT / Acting Director' and the 'MEMORANDUM' heading, disrupting the reading order.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The handwritten signature image present on PDF page 1 (next to 'From: Larry Frost, Engineer') is missing from the HTML. This is a substantive image authenticating the memorandum.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a handwritten signature between the 'From:' line and the digital signature block. No corresponding <img> tag exists in the HTML for this signature.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C8",
+      "description": "The digital signature certification block text is entirely omitted from the HTML. This block contains the signer's identity, email, and signing date \u2014 substantive authentication information.",
+      "severity": "major",
+      "evidence": "PDF page 1 contains: 'Digitally signed by LYF / DN: cn=LYF, o=DWM, ou=SWS, / email=larry.frost@ncdenr.gov, / c=US / Date: 2016.05.12 12:11:52 / -04'00''. This text does not appear anywhere in the HTML.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 2,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 131.86,
+    "page_count": 5,
+    "visual_input_tokens": 16831,
+    "visual_output_tokens": 2729,
+    "content_input_tokens": 16090,
+    "content_output_tokens": 3114,
+    "triage_input_tokens": 17137,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T04:04:12.372017",
+    "auditor_version": "1.0.0"
+  }
+}

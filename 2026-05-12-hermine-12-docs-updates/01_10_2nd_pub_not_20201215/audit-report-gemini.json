@@ -1,0 +1,54 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V1",
+      "description": "Multi-column header layout collapsed",
+      "severity": "major",
+      "evidence": "The PDF header contains a left-aligned block (names and titles) and a center-aligned block (state seal, department name, date). The HTML collapses these into a single vertical sequence of text, losing the distinct visual grouping.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing images (state seal, signature, logo)",
+      "severity": "critical",
+      "evidence": "The PDF contains the North Carolina state seal at the top, a graphic signature for David Miller, and a DEQ logo at the bottom. None of these images are present in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Missing signature and handwriting images",
+      "severity": "critical",
+      "evidence": "The PDF includes graphic signatures for Brian Wrenn and Brenda Harris, along with a handwritten date entry. These graphical elements are entirely missing from the HTML.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C2",
+      "description": "Graphical elements and signature images were not extracted.",
+      "severity": "minor",
+      "evidence": "The source PDF contains the NC State Seal, the DEQ logo, and three handwritten signatures (David Miller, Brian Wrenn, Brenda Harris). The HTML does not contain any <img> tags to represent these visual elements, though all adjacent text and handwritten dates were correctly captured.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 1,
+  "minor_count": 1,
+  "skip_reason": null,
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "provider": "gemini",
+    "duration_seconds": 47.44,
+    "page_count": 2,
+    "visual_input_tokens": 5261,
+    "visual_output_tokens": 445,
+    "content_input_tokens": 3946,
+    "content_output_tokens": 271,
+    "timestamp": "2026-04-17T20:36:07.093145",
+    "auditor_version": "1.0.0"
+  }
+}

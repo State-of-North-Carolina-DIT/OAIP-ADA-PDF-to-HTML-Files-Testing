@@ -1,0 +1,49 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "David Miller's signature block image duplicates text that also appears as HTML text, disrupting reading flow.",
+      "severity": "major",
+      "evidence": "PDF shows 'Sincerely,' followed by signature, 'David Miller, PE', and 'State Mining Engineer' once. HTML shows these as typed text AND as an embedded signature-block image containing the same words, so a reader encounters them twice.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Brian Wrenn's signature block image duplicates surrounding text, creating fragmented and repeated content in reading flow.",
+      "severity": "major",
+      "evidence": "HTML renders the full paragraph about serving the Department of Environmental Quality, then shows text fragments 't and General Counsel, Department of Environ' and 'aleigh, NC 27699-1601.' extracted from the signature image, followed by the image itself and then 'Brian Wrenn, Director' as text again. PDF has this content only once.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V5",
+      "description": "Brenda Harris's signature block image duplicates surrounding text, creating fragmented and repeated content in reading flow.",
+      "severity": "major",
+      "evidence": "HTML shows text fragments like 'North Carolina Dep', 'd on 12-15-2020', 'n 12-15-2020' alongside the signature image, duplicating content already rendered as proper HTML text. PDF has this content only once.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 3,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 105.88,
+    "page_count": 2,
+    "visual_input_tokens": 7900,
+    "visual_output_tokens": 2786,
+    "content_input_tokens": 7797,
+    "content_output_tokens": 2130,
+    "triage_input_tokens": 10117,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-12T01:08:33.793371",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "01_10_2nd_pub_not_20201215",
+  "verdict": "fail",
+  "findings": [
+    {
+      "check_id": "V3",
+      "description": "The North Carolina state seal image is missing from the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 1 has the North Carolina state seal centered at the top of the letterhead. The HTML conversion does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "The DEQ logo image is missing from the HTML conversion",
+      "severity": "critical",
+      "evidence": "PDF page 1 has the DEQ (Department of Environmental Quality) logo at the bottom of the page. The HTML conversion does not include this image.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V1",
+      "description": "Letterhead layout is collapsed from a multi-column header to a single-column layout",
+      "severity": "major",
+      "evidence": "PDF has officials' names/titles on the left and the state seal centered with 'NORTH CAROLINA Environmental Quality' beneath it. HTML renders all header elements as a single left-aligned column.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signatures are missing from the HTML conversion",
+      "severity": "major",
+      "evidence": "PDF page 1 has David Miller's handwritten signature. PDF page 2 has Brian Wrenn's and Brenda Harris's handwritten signatures. Neither signature appears in the HTML.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "V3",
+      "description": "Signatures of Brian Wrenn and Brenda Harris are missing from the HTML conversion of the Notice of Issuance",
+      "severity": "major",
+      "evidence": "PDF page 2 shows handwritten signatures for Brian Wrenn (Director) and Brenda Harris (Mining Program Administrative Assistant). HTML page 2 only has typed names without signatures.",
+      "page": 2,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "No images are present in the HTML despite the PDF containing the NC state seal and DEQ logo images. However, since these are decorative/branding elements, this is minor.",
+      "severity": "minor",
+      "evidence": "PDF has NC state seal at top and DEQ logo at bottom of page 1; HTML has no <img> tags.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C5",
+      "description": "The cover letter section on page 1 has no heading, which is acceptable since it is a letter. The h1 is used for 'NOTICE OF ISSUANCE OF MINING PERMIT' which matches the PDF's underlined title on page 2. Structure is reasonable.",
+      "severity": "minor",
+      "evidence": "h1: 'NOTICE OF ISSUANCE OF MINING PERMIT' matches PDF page 2 title.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 2,
+  "major_count": 3,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 25.41,
+    "page_count": 2,
+    "visual_input_tokens": 6199,
+    "visual_output_tokens": 748,
+    "content_input_tokens": 6118,
+    "content_output_tokens": 409,
+    "timestamp": "2026-04-17T20:35:58.618832",
+    "auditor_version": "1.0.0"
+  }
+}

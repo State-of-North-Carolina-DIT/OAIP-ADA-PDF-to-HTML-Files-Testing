@@ -1,0 +1,33 @@
+{
+  "document_id": "01_10_adilet_2020_3",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "The signature block is duplicated: the scanned signature image includes 'Sincerely,', the handwritten signature, 'Judith A. Wehner', and 'Assistant State Mining Spe\u2026', and all of these also appear as separate HTML text elements. A reader encounters the same content twice.",
+      "severity": "major",
+      "evidence": "PDF page 2 shows 'Sincerely,' once, followed by a handwritten signature, then the printed name and title. HTML chunk 4 shows 'Sincerely,' as text, then an image of the full signature block (containing 'Sincerely,' + signature + name + title), then 'Judith A. Wehner' and 'Assistant State Mining Specialist' again as text.",
+      "page": 2,
+      "call_source": "visual"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 0,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 66.33,
+    "page_count": 2,
+    "visual_input_tokens": 7900,
+    "visual_output_tokens": 1479,
+    "content_input_tokens": 7697,
+    "content_output_tokens": 1525,
+    "triage_input_tokens": 9735,
+    "triage_output_tokens": 21,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-07T03:40:48.666172",
+    "auditor_version": "1.0.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "document_id": "RoxboroMeetingOfficerReport_20160428",
+  "verdict": "needs_review",
+  "findings": [
+    {
+      "check_id": "V5",
+      "description": "Digital signature metadata rendered as visible text in HTML, not visible in the PDF rendering. This inserts a block of extraneous content (DN, organization, email, timestamp) between the 'From' field and the 'Subject' field, disrupting reading flow.",
+      "severity": "major",
+      "evidence": "PDF shows 'From: Elizabeth S. Werner / Division of Waste Management / Raleigh Central Office' followed directly by 'Subject: Meeting Officer's Report'. HTML inserts a visible block: 'Digitally signed by Elizabeth S Werner / DN: cn=Elizabeth S Werner, o=DWM-Soild Waste, ou=NCDENR, email=elizabeth.werner@ncdenr.gov, c=US / Date: 2016.04.28 10:23:05 -04'00'' between From and Subject.",
+      "page": 1,
+      "call_source": "visual"
+    },
+    {
+      "check_id": "C6",
+      "description": "The handwritten signature of Elizabeth S. Werner visible in the PDF (page 1, next to the digital signature stamp) has no corresponding <img> tag in the HTML. Signatures are explicitly listed as substantive images.",
+      "severity": "minor",
+      "evidence": "PDF page 1 shows a cursive/handwritten signature reading 'Elizabeth S. Werner' adjacent to the digital signature overlay. The HTML has no <img> for this signature; only the digital certificate metadata text is reproduced as a plain paragraph.",
+      "page": null,
+      "call_source": "content"
+    },
+    {
+      "check_id": "C6",
+      "description": "The alt text for the NC logo image describes a 'pine tree icon,' which does not clearly correspond to the actual logo design visible in the PDF. The logo shows a stylized 'NC' in blue and red with the words 'Waste Management' and 'ENVIRONMENTAL QUALITY.'",
+      "severity": "minor",
+      "evidence": "HTML alt text: 'North Carolina Department of Environmental Quality Waste Management logo with a pine tree icon.' The PDF logo does not clearly contain a pine tree \u2014 it primarily features a stylized 'NC' letterform with agency text.",
+      "page": null,
+      "call_source": "content"
+    }
+  ],
+  "critical_count": 0,
+  "major_count": 1,
+  "minor_count": 2,
+  "skip_reason": null,
+  "metadata": {
+    "model": "claude-opus-4-6",
+    "provider": "claude",
+    "duration_seconds": 133.14,
+    "page_count": 5,
+    "visual_input_tokens": 16964,
+    "visual_output_tokens": 2119,
+    "content_input_tokens": 16789,
+    "content_output_tokens": 3796,
+    "triage_input_tokens": 17467,
+    "triage_output_tokens": 47,
+    "triage_dropped": 0,
+    "timestamp": "2026-05-12T01:11:59.548585",
+    "auditor_version": "1.0.0"
+  }
+}
